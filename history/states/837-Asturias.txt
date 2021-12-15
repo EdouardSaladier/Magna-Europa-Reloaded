@@ -1,10 +1,12 @@
+
 state={
 	id=837
 	name="STATE_837"
 	provinces={
-		233 3514 3667 4862 6400 9359 14673 14678 14679 14720 14726 
+		233 3514 3667 4862 6400 9359 14673 14678 14679 14720 14726 19797 
 	}
 	manpower=812000
 	buildings_max_level_factor=1.000
-	state_category = large_city
+	state_category=large_city
+	local_supplies=0.000
 }
