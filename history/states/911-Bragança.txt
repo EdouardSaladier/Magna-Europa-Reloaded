@@ -1,10 +1,12 @@
+
 state={
 	id=911
 	name="STATE_911"
 	provinces={
-		939 2597 6287 8785 15007 
+		939 2597 6287 8785 15007 20517 
 	}
 	manpower=199200
 	buildings_max_level_factor=1.000
-	state_category = town
+	state_category=town
+	local_supplies=0.000
 }
