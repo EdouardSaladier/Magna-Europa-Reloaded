@@ -1,10 +1,12 @@
+
 state={
 	id=817
 	name="STATE_817"
 	provinces={
-		1407 
+		1407 20533 
 	}
 	manpower=25905
 	buildings_max_level_factor=1.000
-	state_category = enclave
+	state_category=enclave
+	local_supplies=0.000
 }
