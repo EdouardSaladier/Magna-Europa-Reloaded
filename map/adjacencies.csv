@@ -2,6 +2,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15350;15368;sea;16316;-1;-1;-1;-1;;Strait of Messina
 1754;4722;sea;17685;-1;-1;-1;-1;;Strait of Boniface
 14733;19880;sea;17137;-1;-1;-1;-1;;Piombino-Elba
+13624;20008;sea;17829;-1;-1;-1;-1;;Ischia-Naples
 14357;20127;sea;16880;-1;-1;-1;-1;;Istria-Cherso
 20126;20127;sea;16992;-1;-1;-1;-1;;Krk-Cherso
 20126;2438;sea;16992;-1;-1;-1;-1;;Krk-Croatia
@@ -35,9 +36,89 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10305;19489;sea;17905;-1;-1;-1;-1;;Hjorring Isle
 7574;19621;sea;16889;-1;-1;-1;-1;;Odense Isle 1
 4072;19620;sea;16220;-1;-1;-1;-1;;Odense Isle 2
-8265;10650;sea;16809;-1;-1;-1;-1;;Odense-Sjaelland 1
+8625;10650;sea;16809;-1;-1;-1;-1;;Odense-Sjaelland 1
 7574;9674;sea;16809;-1;-1;-1;-1;;Odense-Sjaelland 2
 10561;19533;sea;17433;-1;-1;-1;-1;;Sjaelland-Scania
 4745;19625;sea;16809;-1;-1;-1;-1;;Sjaelland-Maribo
 19624;19625;sea;16809;-1;-1;-1;-1;;Maribo Isle
+4811;19629;sea;17772;-1;-1;-1;-1;;Kalmar Island
+19450;19463;sea;17957;-1;-1;-1;-1;;Norway Islands 1
+19462;19461;sea;16505;-1;-1;-1;-1;;Norway Islands 2
+1043;19461;sea;16505;-1;-1;-1;-1;;Norway Islands 3
+19458;3231;sea;17290;-1;-1;-1;-1;;Norway Islands 4
+19459;5080;sea;16484;-1;-1;-1;-1;;Norway Islands 5
+19466;9521;sea;18010;-1;-1;-1;-1;;Norway Islands 6
+19465;181;sea;17892;-1;-1;-1;-1;;Norway Islands 7
+2263;19464;sea;17102;-1;-1;-1;-1;;Norway Islands 8
+19467;8398;sea;18045;-1;-1;-1;-1;;Norway Islands 9
+19469;19439;sea;17417;-1;-1;-1;-1;;Norway Islands 10
+19470;19521;sea;17515;-1;-1;-1;-1;;Norway Islands 11
+19471;19522;sea;18247;-1;-1;-1;-1;;Norway Islands 12
+19472;19473;sea;17038;-1;-1;-1;-1;;Norway Islands 13
+4349;19472;sea;17038;-1;-1;-1;-1;;Norway Islands 14
+6564;19474;sea;17492;-1;-1;-1;-1;;Norway Islands 15
+19477;19476;sea;17128;-1;-1;-1;-1;;Norway Islands 16
+3995;19481;sea;16777;-1;-1;-1;-1;;Norway Islands 17
+19485;481;sea;16919;-1;-1;-1;-1;;Norway Islands 18
+19486;19520;sea;16919;-1;-1;-1;-1;;Norway Islands 19
+19487;19520;sea;16919;-1;-1;-1;-1;;Norway Islands 20
+75;19488;sea;16919;-1;-1;-1;-1;;Norway Islands 21
+75;4674;sea;16919;-1;-1;-1;-1;;Norway Islands 22
+970;19492;sea;16183;-1;-1;-1;-1;;Norway Islands 23
+19498;19499;sea;17894;-1;-1;-1;-1;;Norway Islands 24
+19494;19500;sea;17894;-1;-1;-1;-1;;Norway Islands 25
+19494;19501;sea;17894;-1;-1;-1;-1;;Norway Islands 26
+1883;19505;sea;17560;-1;-1;-1;-1;;Norway Islands 27
+1883;19506;sea;17560;-1;-1;-1;-1;;Norway Islands 28
+6602;19512;sea;17806;-1;-1;-1;-1;;Norway Islands 29
+19508;19513;sea;17806;-1;-1;-1;-1;;Norway Islands 30
+6602;19510;sea;17298;-1;-1;-1;-1;;Norway Islands 31
+6602;19511;sea;16874;-1;-1;-1;-1;;Norway Islands 32
+5084;19653;sea;17255;-1;-1;-1;-1;;Finland Islands 1
+19665;19652;sea;17782;-1;-1;-1;-1;;Finland Islands 2
+19656;19663;sea;16755;-1;-1;-1;-1;;Finland Islands 3
+19656;19655;sea;16810;-1;-1;-1;-1;;Finland Islands 4
+19654;19655;sea;16810;-1;-1;-1;-1;;Finland Islands 5
+9672;19985;sea;17665;-1;-1;-1;-1;;Laane-Saaremaa
+4973;19983;sea;17719;-1;-1;-1;-1;;Laane-Hiiumaa
+19984;19983;sea;17665;-1;-1;-1;-1;;Hiiumaa
+19982;19991;sea;16523;-1;-1;-1;-1;;Hiiumaa-Saaremaa
+5835;19935;sea;16520;-1;-1;-1;-1;;Klaipedos
+3541;19936;sea;17171;-1;-1;-1;-1;;Danzig Bay
+10957;19658;sea;16684;-1;-1;-1;-1;;Stralsund-Rugen
+5363;19647;sea;16046;-1;-1;-1;-1;;Kiel Island
+10830;19645;sea;17502;-1;-1;-1;-1;;Eiderstadt 1
+4894;19646;sea;17502;-1;-1;-1;-1;;Eiderstadt 2
+10830;19644;sea;17502;-1;-1;-1;-1;;Eiderstadt 3
+20128;14458;sea;16992;-1;-1;-1;-1;;Rab-Iablanaz
+20134;2213;sea;16992;-1;-1;-1;-1;;Pag Bridge
+14584;20135;sea;16992;-1;-1;-1;-1;;Ugljan-Zara
+7255;20136;sea;16857;-1;-1;-1;-1;;Morter Bridge
+20137;7536;sea;16857;-1;-1;-1;-1;;Sibenik Islands
+20140;20139;sea;16683;-1;-1;-1;-1;;Brac-Hvar
+20147;20138;sea;16538;-1;-1;-1;-1;;Orebic-Korcula
+20142;20147;sea;16538;-1;-1;-1;-1;;Mljet-Dubrovnik
+20535;20536;sea;17521;-1;-1;-1;-1;;Malta-Gozo
+20249;7957;sea;17342;-1;-1;-1;-1;;Corfu-Sarande
+20249;20280;sea;17342;-1;-1;-1;-1;;Corfu-Igoumenitsa
+20361;20283;sea;17342;-1;-1;-1;-1;;Lefkada-Kefalonia
+20284;20283;sea;17060;-1;-1;-1;-1;;Zakynthos-Kefalonia
+20284;20262;sea;17060;-1;-1;-1;-1;;Zakynthos-Elis
+4235;20282;sea;18466;-1;-1;-1;-1;;Kythira-Laconia
+15036;20286;sea;17572;-1;-1;-1;-1;;Thracian island
+9496;20313;sea;16577;-1;-1;-1;-1;;Thessalian islands 1
+20314;20313;sea;16577;-1;-1;-1;-1;;Thessalian islands 2
+20314;20315;sea;16577;-1;-1;-1;-1;;Thessalian islands 3
+15351;20298;sea;18449;-1;-1;-1;-1;;Euboea-Kyklades
+20299;20298;sea;16799;-1;-1;-1;-1;;Kyklades 1
+20299;20307;sea;16799;-1;-1;-1;-1;;Kyklades 2
+20299;20300;sea;16799;-1;-1;-1;-1;;Kyklades 3
+3130;20306;sea;16888;-1;-1;-1;-1;;Attica-Kyklades
+20305;20306;sea;16888;-1;-1;-1;-1;;Kyklades 4
+20305;20304;sea;16888;-1;-1;-1;-1;;Kyklades 5
+20303;20304;sea;18458;-1;-1;-1;-1;;Kyklades 6
+20300;20301;sea;16799;-1;-1;-1;-1;;Kyklades 7
+20302;20301;sea;18458;-1;-1;-1;-1;;Kyklades 8
+20311;20301;sea;18458;-1;-1;-1;-1;;Kyklades 9
+19804;20538;sea;16233;-1;-1;-1;-1;;Ibiza-Formentera
 -1;-1;;-1;-1;-1;-1;-1;-1
