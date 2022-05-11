@@ -4,6 +4,11 @@ state={
 	provinces={
 		2370 4687 7881 11864 11891 11912 11935 11954 11965 12032 
 	}
+	history={
+        victory_points = {
+            12032 10#5
+        }
+    }
 	manpower=1917600
 	buildings_max_level_factor=1.000
 	state_category = metropolis

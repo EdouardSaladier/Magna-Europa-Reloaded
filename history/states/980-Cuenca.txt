@@ -5,6 +5,11 @@ state={
 	provinces={
 		411 2045 2726 3722 4212 8410 8654 15096 15149 15171 15222 15246 15255 20509 
 	}
+	history={
+        victory_points = {
+            8410 10#1
+        }
+    }
 	manpower=321400
 	buildings_max_level_factor=1.000
 	state_category=city
