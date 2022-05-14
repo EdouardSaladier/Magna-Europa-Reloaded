@@ -2,19 +2,22 @@
 state={
 	id=880
 	name="STATE_880"
-	provinces={
-		1704 2399 2855 2936 2945 3024 6369 7736 8279 9670 14855 14888 14921 14948 14955 14983 19801 
-	}
+
 	history={
-        victory_points = {
-            14921 10
-        }
 		victory_points = {
-            8279 10#1
-        }
-    }
-	manpower=553300
+			14921 10 
+		}
+		victory_points = {
+			8279 10 
+		}
+
+	}
+
+	provinces={
+		2855 2945 3024 7736 9670 14855 14888 14921 
+	}
+	manpower=387310
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = large_city
 }

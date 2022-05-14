@@ -2,19 +2,22 @@
 state={
 	id=927
 	name="STATE_927"
-	provinces={
-		4009 5490 7586 9035 14988 19760 
-	}
+
 	history={
-        victory_points = {
-            19760 10#3
-        }
 		victory_points = {
-            4009 10#3
-        }
-    }
-	manpower=348900
+			19760 10 
+		}
+		victory_points = {
+			4009 10 
+		}
+
+	}
+
+	provinces={
+		4009 7586 9035 19760 
+	}
+	manpower=244230
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = city
 }

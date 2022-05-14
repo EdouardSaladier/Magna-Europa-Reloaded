@@ -2,14 +2,17 @@
 state={
 	id=939
 	name="STATE_939"
-	provinces={
-		220 1717 2733 4721 15011 15024 15132 20507 
-	}
+
 	history={
-        victory_points = {
-            4721 10#1
-        }
-    }
+		victory_points = {
+			4721 10 
+		}
+
+	}
+
+	provinces={
+		220 1717 2733 4721 8279 15011 15024 15132 20507 
+	}
 	manpower=253100
 	buildings_max_level_factor=1.000
 	state_category=city

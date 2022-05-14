@@ -2,14 +2,17 @@
 state={
 	id=854
 	name="STATE_854"
-	provinces={
-		3443 3956 4119 5772 6986 14728 14768 14777 14788 14815 14816 14847 14894 20524 
-	}
+
 	history={
-        victory_points = {
-            3956 10#3
-        }
-    }
+		victory_points = {
+			3956 10 
+		}
+
+	}
+
+	provinces={
+		3443 3956 4119 5772 6986 14728 14768 14777 14788 14815 14816 14847 20524 20539 
+	}
 	manpower=352500
 	buildings_max_level_factor=1.000
 	state_category=city
