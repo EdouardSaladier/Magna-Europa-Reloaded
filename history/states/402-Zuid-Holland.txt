@@ -2,16 +2,19 @@
 state={
 	id=402
 	name="STATE_402"
-	provinces={
-		1809 6838 8539 11833 11834 11886 11951 19872 19873 19895 
-	}
+
 	history={
-        victory_points = {
-            11886 40
-        }
-    }
-	manpower=2066000
+		victory_points = {
+			11886 40 
+		}
+
+	}
+
+	provinces={
+		1809 11833 11834 11886 
+	}
+	manpower=1652800
 	buildings_max_level_factor=1.000
+	state_category=metropolis
 	local_supplies=0.000
-	state_category = megalopolis
 }
