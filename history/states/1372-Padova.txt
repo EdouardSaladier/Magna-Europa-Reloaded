@@ -2,11 +2,16 @@
 state={
 	id=1372
 	name="STATE_1372"
-	history = {
-		victory_points = { 14294 10 }
+
+	history={
+		victory_points = {
+			14294 10 
+		}
+
 	}
+
 	provinces={
-		8156 14294 14326 20036 
+		8156 14157 14294 14326 20036 
 	}
 	manpower=668000
 	buildings_max_level_factor=1.000

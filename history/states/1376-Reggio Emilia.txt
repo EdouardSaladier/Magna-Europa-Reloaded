@@ -1,14 +1,20 @@
+
 state={
 	id=1376
 	name="STATE_1376"
-	history = {
-		victory_points = { 9013 5 }
+
+	history={
+		victory_points = {
+			9013 5 
+		}
+
 	}
+
 	provinces={
-		1706 6870 9013 14517 
+		1706 9013 14517 
 	}
 	manpower=375300
-	state_category=city
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
 }

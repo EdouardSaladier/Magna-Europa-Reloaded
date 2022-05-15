@@ -2,15 +2,22 @@
 state={
 	id=805
 	name="STATE_805"
-	history = {
-		victory_points = { 19882 20 }
-		victory_points = { 20014 5 }
+
+	history={
+		victory_points = {
+			19882 20 
+		}
+		victory_points = {
+			20014 5 
+		}
+
 	}
+
 	provinces={
-		337 2662 7667 8325 14578 19882 20014 
+		337 2662 7667 8325 14137 14578 19882 20014 
 	}
 	manpower=853000
-	state_category=large_city
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
 }
