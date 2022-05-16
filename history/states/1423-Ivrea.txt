@@ -2,16 +2,19 @@
 state={
 	id=1423
 	name="STATE_1423"
-	history = {
+
+	history={
 		victory_points = {
-			14305 2#1
+			14305 2 
 		}
+
 	}
+
 	provinces={
-		5687 14305 20006 
+		5687 14305 
 	}
 	manpower=144045
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

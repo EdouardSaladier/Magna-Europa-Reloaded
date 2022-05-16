@@ -2,14 +2,19 @@
 state={
 	id=718
 	name="STATE_718"
-	history = {
-		victory_points = { 1697 40 }
+
+	history={
+		victory_points = {
+			1697 40 
+		}
+
 	}
+
 	provinces={
-		1697 2487 3648 8124 8710 9372 14359 14407 14440 
+		1697 2487 8710 9372 14440 
 	}
-	manpower=1168400
-	state_category=metropolis
+	manpower=1051560
 	buildings_max_level_factor=1.000
+	state_category=metropolis
 	local_supplies=0.000
 }
