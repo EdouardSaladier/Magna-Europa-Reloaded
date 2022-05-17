@@ -2,14 +2,17 @@
 state={
 	id=566
 	name="STATE_566"
-	provinces={
-		5366 5735 8538 8998 9043 13170 13206 13296 20489 20490 
-	}
+
 	history={
-        victory_points = {
-            13296 20
-        }
-    }
+		victory_points = {
+			13296 20 
+		}
+
+	}
+
+	provinces={
+		5366 5735 8538 8998 9043 13129 13170 13206 13296 20489 20490 
+	}
 	manpower=711800
 	buildings_max_level_factor=1.000
 	state_category=large_city

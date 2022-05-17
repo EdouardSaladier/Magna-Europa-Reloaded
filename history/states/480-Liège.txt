@@ -2,16 +2,19 @@
 state={
 	id=480
 	name="STATE_480"
-	provinces={
-		3006 12481 12494 12503 12542 12549 19891 
-	}
+
 	history={
-        victory_points = {
-            19891 10
-        }
-    }
-	manpower=905000
+		victory_points = {
+			19891 10 
+		}
+
+	}
+
+	provinces={
+		3006 12494 19891 
+	}
+	manpower=735000
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
-	state_category = large_city
 }

@@ -2,16 +2,19 @@
 state={
 	id=442
 	name="STATE_442"
-	provinces={
-		65 3866 4143 5137 7234 8378 12766 12823 12870 12894 
-	}
+
 	history={
-        victory_points = {
-            5137 10#5
-        }
-    }
-	manpower=314990
+		victory_points = {
+			5137 10 
+		}
+
+	}
+
+	provinces={
+		65 497 3177 3866 5137 12870 12894 
+	}
+	manpower=202990
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = city
 }

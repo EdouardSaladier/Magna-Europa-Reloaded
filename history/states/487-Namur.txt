@@ -2,16 +2,19 @@
 state={
 	id=487
 	name="STATE_487"
-	provinces={
-		1744 1891 2586 4555 12516 12581 12620 19890 
-	}
+
 	history={
-        victory_points = {
-            19890 10
-        }
-    }
-	manpower=357000
+		victory_points = {
+			19890 10 
+		}
+
+	}
+
+	provinces={
+		1891 4555 12516 12620 19890 
+	}
+	manpower=257000
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }
