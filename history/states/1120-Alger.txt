@@ -2,6 +2,28 @@
 state={
 	id=1120
 	name="STATE_1120"
+			
+	history={
+	    victory_points = {
+		    21001 80 #Algiers
+			}
+			
+		victory_points = {
+		    21002 40 #Boumerdas
+			}
+		
+		
+		victory_points = {
+		    3163 20 #Bab Ezzouar
+			}
+			
+	    victory_points = {
+		    20996 10 #Blida
+			}
+			
+			
+		}
+		
 	provinces={
 		3163 9506 15503 15530 20996 21001 21002 21038 
 	}
