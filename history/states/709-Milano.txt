@@ -2,14 +2,24 @@
 state={
 	id=709
 	name="STATE_709"
-	history = {
-		victory_points = { 14270 80 }
-		victory_points = { 4888 5 }
+
+	history={
+		victory_points = {
+			14270 80 
+		}
+		victory_points = {
+			4888 6
+		}
+		victory_points = {
+			14293 5 
+		}
+
 	}
+
 	provinces={
-		4888 14255 14256 14270 14278 14299 
+		4888 14255 14256 14270 14278 14293 14299 
 	}
-	manpower=2009303
+	manpower=2167615
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 	local_supplies=0.000

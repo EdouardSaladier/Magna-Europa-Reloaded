@@ -2,14 +2,19 @@
 state={
 	id=956
 	name="STATE_956"
-	history = {
-		victory_points = { 15093 2 }
+
+	history={
+		victory_points = {
+			15093 2 
+		}
+
 	}
+
 	provinces={
-		3329 4738 6441 15046 15050 15081 15093 15158 20040 
+		3329 4738 15046 15081 15093 15158 20040 
 	}
 	manpower=376500
-	state_category=city
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
 }
