@@ -1,15 +1,20 @@
+
 state={
 	id=435
 	name="STATE_435"
-	provinces={
-		12008 12031 12038 
-	}
+
 	history={
-        victory_points = {
-            12038 80
-        }
-    }
+		victory_points = {
+			12038 80 
+		}
+
+	}
+
+	provinces={
+		12008 12031 
+	}
 	manpower=2058300
 	buildings_max_level_factor=1.000
-	state_category = megalopolis
+	state_category=metropolis
+	local_supplies=0.000
 }
