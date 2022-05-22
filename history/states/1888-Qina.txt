@@ -1,6 +1,24 @@
 state={
 	id=1888
 	name="STATE_1888"
+			
+	history={
+	
+	    victory_points = {
+		    21119 20 #Quina
+			}
+			
+		victory_points = {
+		    21113 20 #Luxor
+			}
+		
+		
+		victory_points = {
+		    21111 5 #Isna
+			}
+			
+		}
+		
 	provinces={
 		3451 15866 21111 21112 21113 21114 21115 21116 21118 21119 
 	}
