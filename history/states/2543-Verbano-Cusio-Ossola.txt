@@ -1,19 +1,18 @@
-
 state={
-	id=1356
-	name="STATE_1356"
-
+	id=2543
+	name="STATE_2543"
+	
 	history={
 		victory_points = {
-			14292 6 
+			830 2 
 		}
 	}
-
+	
 	provinces={
-		1653 14292 
+		830 14160 20048 
 	}
-	manpower=276990
+	manpower=118710
+	state_category=rural
 	buildings_max_level_factor=1.000
-	state_category=city
 	local_supplies=0.000
 }
