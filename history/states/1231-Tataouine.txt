@@ -2,19 +2,19 @@
 state={
 	id=1231
 	name="STATE_1231"
-					
+
 	history={
-	
-	    victory_points = {
-		    1352 5 #Tataouine
-			}
+		victory_points = {
+			1352 5 
+		}
+
 	}
-	
+
 	provinces={
-		452 1352 2111 2762 3815 5220 15712 21015 
+		452 1826 2111 2637 2762 3815 5220 
 	}
 	manpower=43616
-	state_category=wasteland
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=0.000
 }
