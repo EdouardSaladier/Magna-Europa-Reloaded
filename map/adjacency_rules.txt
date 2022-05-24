@@ -1,2 +1,152 @@
-﻿From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
--1;-1;;-1;-1;-1;-1;-1;-1
+﻿#Adjacency rules are special rules for adjacencies
+#If smbd who is at war fights over canal/strait it is considered closed
+#Enemy status is considered if any of sides controlling the chanel is at war with country
+#Friend status is considered non of sides controlling the chanel is at war with country and one of controllers is ally of giving military access
+#Every one else is considered as neutral according to canal/strait
+#Military access considered as being friend
+#Rules needs linking from the straits that are affected by the rule ( adjacency_rule_id )
+
+#Name is how you refer to the rule in adjecencies.csv
+
+#TO-DO LIST: OTRANTO, GIBRALTAR, SUEZ, SKAGERRAK, DANISH BELTS, VENETIAN BRIDGE (MAYBE)
+
+#adjacency_rule = {
+#	name = "RULE_NAME"
+#	contested = {
+#		army = 	
+#		navy = 	
+#		submarine = 	
+#		trade = 	
+#	}
+#	enemy = {
+#		army = 	
+#		navy = 	
+#		submarine = 	
+#		trade = 	
+#	}
+#	friend = {
+#		army = 	
+#		navy = 	
+#		submarine = 	
+#		trade = 	
+#	}
+#	neutral = {
+#		army = 	
+#		navy = 	
+#		submarine = 	
+#		trade = 	
+#	}
+#	required_provinces = {}
+#	icon = PROVINCE_ID
+#	offset = {  }
+#}
+adjacency_rule = #Bosphorus
+{
+	name = "BOSPHORUS_STRAIT"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 15010 21464 21463 15013 }
+	
+	icon = 15013
+	offset = { -2 0 -9 }
+}
+adjacency_rule = #Dardanelles
+{
+	name = "DARDANELLES_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 21445 21437 21439 15164 7535 }
+	
+	icon = 15164
+	offset = { -2 0 -9 }
+}
+adjacency_rule = #Messina
+{
+	name = "MESSINA_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 15368 15350 }
+	
+	icon = 15368
+	offset = { -2 0 -9 }
+}

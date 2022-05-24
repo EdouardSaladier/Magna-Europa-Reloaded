@@ -1,5 +1,6 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
-15350;15368;sea;16316;-1;-1;-1;-1;;Strait of Messina
+15350;15368;sea;16316;-1;-1;-1;-1;;Strait of Messina crossing
+16316;16428;;-1;-1;-1;-1;-1;MESSINA_STRAIT;Strait of Messina
 1754;4722;sea;17685;-1;-1;-1;-1;;Strait of Boniface
 14733;19880;sea;17137;-1;-1;-1;-1;;Piombino-Elba
 13624;20008;sea;17829;-1;-1;-1;-1;;Ischia-Naples
@@ -20,7 +21,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4251;19872;sea;16785;-1;-1;-1;-1;;Zeeland 10
 11951;19872;sea;16785;-1;-1;-1;-1;;South Holland Island 1
 19895;19873;sea;17639;-1;-1;-1;-1;;South Holland Island 2
-19873;19895;sea;17256;-1;-1;-1;-1;;South Holland Island 3
+19873;19895;sea;17639;-1;-1;-1;-1;;South Holland Island 3
 6618;19872;sea;16785;-1;-1;-1;-1;;South Holland Island 4
 19895;19872;sea;17639;-1;-1;-1;-1;;South Holland Island 5
 19874;8961;sea;17256;-1;-1;-1;-1;;Netherlands islands 0
@@ -101,7 +102,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20535;20536;sea;17521;-1;-1;-1;-1;;Malta-Gozo
 20249;7957;sea;17342;-1;-1;-1;-1;;Corfu-Sarande
 20249;20280;sea;17342;-1;-1;-1;-1;;Corfu-Igoumenitsa
-20361;20283;sea;17342;-1;-1;-1;-1;;Lefkada-Kefalonia
+20361;20283;sea;17033;-1;-1;-1;-1;;Lefkada-Kefalonia
 20284;20283;sea;17060;-1;-1;-1;-1;;Zakynthos-Kefalonia
 20284;20262;sea;17060;-1;-1;-1;-1;;Zakynthos-Elis
 4235;20282;sea;18466;-1;-1;-1;-1;;Kythira-Laconia
@@ -121,5 +122,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20302;20301;sea;18458;-1;-1;-1;-1;;Kyklades 8
 20311;20301;sea;18458;-1;-1;-1;-1;;Kyklades 9
 19804;20538;sea;16233;-1;-1;-1;-1;;Ibiza-Formentera
-14346;641;sea;16233;-1;-1;-1;-1;;Krym
+14346;641;sea;16302;-1;-1;-1;-1;;Krym
+15010;15013;sea;17867;-1;-1;-1;-1;;Bosphorus crossing
+17001;17867;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus strait
+18036;17398;;-1;-1;-1;-1;-1;DARDANELLES_STRAIT;Dardanelles strait
 -1;-1;;-1;-1;-1;-1;-1;-1
