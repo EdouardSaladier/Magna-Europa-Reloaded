@@ -1,4 +1,4 @@
-#Adjacency rules are special rules for adjacencies
+﻿#Adjacency rules are special rules for adjacencies
 #If smbd who is at war fights over canal/strait it is considered closed
 #Enemy status is considered if any of sides controlling the chanel is at war with country
 #Friend status is considered non of sides controlling the chanel is at war with country and one of controllers is ally of giving military access
@@ -40,7 +40,7 @@
 #	icon = PROVINCE_ID
 #	offset = {  }
 #}
-adjacency_rule =
+adjacency_rule = #Bosphorus
 {
 	name = "BOSPHORUS_STRAIT"
 
@@ -74,7 +74,7 @@ adjacency_rule =
 	icon = 15013
 	offset = { -2 0 -9 }
 }
-adjacency_rule =
+adjacency_rule = #Dardanelles
 {
 	name = "DARDANELLES_STRAIT"
 
@@ -112,7 +112,7 @@ adjacency_rule =
 	icon = 15164
 	offset = { -2 0 -9 }
 }
-adjacency_rule =
+adjacency_rule = #Messina
 {
 	name = "MESSINA_STRAIT"
 
@@ -149,4 +149,43 @@ adjacency_rule =
 	
 	icon = 15368
 	offset = { -2 0 -9 }
+}
+
+adjacency_rule = #Otranto
+{
+	name = "OTRANTO_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = {  }
+	
+	icon = 
+	offset = { 0 0 0 }
 }
