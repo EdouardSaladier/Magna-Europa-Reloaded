@@ -41,7 +41,6 @@ replace_path="common/units/names_ships"
 replace_path="common/units/codenames_operatives"
 replace_path="common/unit_leader"
 replace_path="events"
-replace_path="music"
 tags={
 	"Map"
 	"Utilities"
