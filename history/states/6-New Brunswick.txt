@@ -2,6 +2,15 @@
 state={
 	id=6
 	name="STATE_6"
+	
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = CAN
+	}
+	
 	provinces={
 		1445 7148 19374 19375 19379 19380 
 	}
