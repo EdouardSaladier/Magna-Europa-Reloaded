@@ -1,46 +1,9 @@
-﻿#Adjacency rules are special rules for adjacencies
-#If smbd who is at war fights over canal/strait it is considered closed
-#Enemy status is considered if any of sides controlling the chanel is at war with country
-#Friend status is considered non of sides controlling the chanel is at war with country and one of controllers is ally of giving military access
-#Every one else is considered as neutral according to canal/strait
-#Military access considered as being friend
-#Rules needs linking from the straits that are affected by the rule ( adjacency_rule_id )
-
-#Name is how you refer to the rule in adjecencies.csv
 
 #TO-DO LIST: OTRANTO, GIBRALTAR, SUEZ, SKAGERRAK, DANISH BELTS, VENETIAN BRIDGE (MAYBE)
 
-#adjacency_rule = {
-#	name = "RULE_NAME"
-#	contested = {
-#		army = 	
-#		navy = 	
-#		submarine = 	
-#		trade = 	
-#	}
-#	enemy = {
-#		army = 	
-#		navy = 	
-#		submarine = 	
-#		trade = 	
-#	}
-#	friend = {
-#		army = 	
-#		navy = 	
-#		submarine = 	
-#		trade = 	
-#	}
-#	neutral = {
-#		army = 	
-#		navy = 	
-#		submarine = 	
-#		trade = 	
-#	}
-#	required_provinces = {}
-#	icon = PROVINCE_ID
-#	offset = {  }
-#}
-adjacency_rule = #Bosphorus
+###Lollo please stop putting comments after adjacency_rule = it fucking breaks the file
+
+adjacency_rule =
 {
 	name = "BOSPHORUS_STRAIT"
 
@@ -74,7 +37,7 @@ adjacency_rule = #Bosphorus
 	icon = 15013
 	offset = { -2 0 -9 }
 }
-adjacency_rule = #Dardanelles
+adjacency_rule =
 {
 	name = "DARDANELLES_STRAIT"
 
@@ -112,7 +75,7 @@ adjacency_rule = #Dardanelles
 	icon = 15164
 	offset = { -2 0 -9 }
 }
-adjacency_rule = #Messina
+adjacency_rule =
 {
 	name = "MESSINA_STRAIT"
 
@@ -151,7 +114,7 @@ adjacency_rule = #Messina
 	offset = { -2 0 -9 }
 }
 
-adjacency_rule = #Otranto
+adjacency_rule =
 {
 	name = "OTRANTO_STRAIT"
 
