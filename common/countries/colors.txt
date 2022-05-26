@@ -3,12 +3,62 @@ CAN = {
 	color = rgb { 76 145 63 }
 	color_ui = rgb { 99 189 82 }
 }
+USA = {
+	color = rgb { 46 109 209 }
+	color_ui = rgb { 46 109 209 }
+}
 
 ###Central Europe
 GER = { 
 	color = rgb { 91 95 102 }
 	color_ui = rgb { 91 95 102 }
 }
+
+###Southern Europe
+YUG = {
+	color = rgb { 72 73 126 }
+	color_ui = rgb { 94 95 164 }
+}
+
+
+###Yugoslavian Releasables
+SER = {
+	color = rgb { 160 110 110 }
+	color_ui = rgb { 160 110 110 }
+}
+SLV = {
+	color = rgb { 102 178 255 }
+	color_ui = rgb { 102 178 255 }
+}
+BOS = {
+	color = rgb { 204 102 0 }
+	color_ui = rgb { 204 102 0 }
+}
+MAC = {
+	color rgb { 255 51 51 }
+	color_ui rgb { 255 51 51 }
+}
+KOS = {
+	color = rgb { 204 166 108 }
+	color_ui = rgb { 204 166 108 }
+}
+MNT = {
+	color = rgb { 77  90  105 }
+	color_ui = rgb { 77  90  105 }
+}
+CRO = {
+	color = rgb { 204 166 108 }
+	color_ui = rgb { 204 166 108 }
+}
+HRZ = {
+	color = rgb { 72 113 160 }
+	color_ui = rgb { 72 113 160 }
+}
+VJV = {
+	color = rgb { 210 220 175 }
+	color_ui = rgb { 210 220 175 }
+}
+
 
 ###German Releasables
 ESP = {
@@ -20,49 +70,6 @@ PMR = {
 	color = rgb { 60 136 65 }
 	color_ui = rgb { 60 136 65 }
 }
-GER = {
-	color = rgb { 70 70 70 }
-	color_ui = rgb { 70 70 70 }
-}
-YUG = {
-	color = rgb { 72 73 126 }
-	color_ui = rgb { 94 95 164 }
-}
-CRO = {
-	color = rgb { 230  70  180 }
-	color_ui = rgb { 230 255 122 }
-}
-SER = {
-	color = rgb { 46 109 209 }
-	color_ui = rgb { 46 109 209 }
-}
-MNT = {
-	color = rgb { 77  90  105 }
-	color_ui = rgb { 77  90  105 }
-}
-KOS = {
-	color = rgb { 208 166 80 }
-	color_ui = rgb { 208 166 80 }
-}
-SLV = {
-	color = rgb { 102 178 255 }
-	color_ui = rgb { 102 178 255 }
-}
-BOS = {
-	color = rgb { 204 102 0 }
-	color_ui = rgb { 204 102 0 }
-}
-MAC = {
-	color = rgb { 255 51 51 }
-	color_ui = rgb { 255 51 51 }
-}
-HRZ = {
-	color = rgb { 72 113 160 }
-	color_ui = rgb { 72 113 160 }
-}
-VJV = {
-	color = rgb { 130 191 190 }
-	color_ui = rgb { 130 191 190 }
 THU = {
 	color = rgb { 65 125 157 }
 	color_ui = rgb { 65 125 157 }
