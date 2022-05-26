@@ -5,12 +5,16 @@ state={
 		508 7912 9605 13049 13100 13172 20781 20782 
 	}
 	history={
+	    owner = GER
         victory_points = {
             13100 10
         }
+		add_core_of = GER
+		add_core_of = BVR
     }
 	manpower=239795
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = large_town
 }
+

@@ -1,6 +1,11 @@
 state={
 	id=1775
 	name="STATE_1775"
+	history={
+		owner = GER
+		add_core_of = GER
+		add_core_of = BVR
+    }
 	provinces={
 		1721 3768 4592 7688 12792 12863 20805 
 	}

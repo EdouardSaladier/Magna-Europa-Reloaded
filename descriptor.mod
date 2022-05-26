@@ -1,5 +1,8 @@
-﻿name="Magna Europa Reloaded"
-path="mod/Magna Europa Reloaded"
+version="1"
+tags={
+	"Map"
+}
+name="Magna Europa Reloaded"
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="history/general"
@@ -41,8 +44,5 @@ replace_path="common/units/names_ships"
 replace_path="common/units/codenames_operatives"
 replace_path="common/unit_leader"
 replace_path="events"
-tags={
-	"Map"
-	"Utilities"
-}
-supported_version="1.11.*"
+supported_version="1.11.11"
+remote_file_id="2812694202"
