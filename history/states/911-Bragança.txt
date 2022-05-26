@@ -2,6 +2,10 @@
 state={
 	id=911
 	name="STATE_911"
+	history={
+		owner = POR
+		add_core_of = POR
+	}
 	provinces={
 		939 2597 6287 8785 15007 20517 
 	}
