@@ -5,9 +5,13 @@ state={
 		7417 9111 9224 13519 13567 13625 20749 
 	}
 	history={
+	    owner = GER
         victory_points = {
             13519 20
         }
+		add_core_of = GER
+		add_core_of = PRS
+		add_core_of = BDN
     }
 	manpower=335624
 	buildings_max_level_factor=1.000
