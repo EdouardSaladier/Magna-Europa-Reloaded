@@ -35,7 +35,7 @@ adjacency_rule =
 	required_provinces = { 15010 21464 21463 15013 }
 	
 	icon = 15013
-	offset = { -2 0 -9 }
+	offset = { 2 0 -2 }
 }
 adjacency_rule =
 {
@@ -73,7 +73,7 @@ adjacency_rule =
 	required_provinces = { 21445 21437 21439 15164 7535 }
 	
 	icon = 15164
-	offset = { -2 0 -9 }
+	offset = { 2 0 0 }
 }
 adjacency_rule =
 {
@@ -111,7 +111,7 @@ adjacency_rule =
 	required_provinces = { 15368 15350 }
 	
 	icon = 15368
-	offset = { -2 0 -9 }
+	offset = { 2 0 2 }
 }
 adjacency_rule =
 {
@@ -149,5 +149,5 @@ adjacency_rule =
 	required_provinces = { 9328 15141 }
 	
 	icon = 18016
-	offset = { 10 0 10 }
+	offset = { -10 0 -10 }
 }

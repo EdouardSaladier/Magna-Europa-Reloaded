@@ -2,6 +2,10 @@
 state={
 	id=940
 	name="STATE_940"
+	history={
+		owner = SPR
+		add_core_of = SPR
+	}
 	provinces={
 		528 2373 2888 4308 5488 5767 5963 15032 15065 19786 
 	}

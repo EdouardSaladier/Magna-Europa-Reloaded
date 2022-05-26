@@ -1,8 +1,11 @@
 state={
 	id=1852
 	name="STATE_1852"
-					
+			
 	history={
+		owner = SPR
+		add_core_of = ADU
+		add_core_of = SPR
 	
 	    victory_points = {
 		    20911 5 #Melilla

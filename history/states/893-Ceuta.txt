@@ -2,8 +2,11 @@
 state={
 	id=893
 	name="STATE_893"
-					
+			
 	history={
+		owner = SPR
+		add_core_of = ADU
+		add_core_of = SPR
 	
 	    victory_points = {
 		    19768 5 #Ceuta
