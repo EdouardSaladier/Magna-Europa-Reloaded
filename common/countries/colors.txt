@@ -3,15 +3,60 @@ CAN = {
 	color = rgb { 76 145 63 }
 	color_ui = rgb { 99 189 82 }
 }
+
+###Central Europe
+GER = { 
+	color = rgb { 91 95 102 }
+	color_ui = rgb { 91 95 102 }
+}
+
+###German Releasables
 ESP = {
 	color = rgb { 53  54  61 }
 	color_ui = rgb { 53  54  61 }
 }
+
 PMR = {
 	color = rgb { 60 136 65 }
 	color_ui = rgb { 60 136 65 }
 }
-GER = {
-	color = rgb { 70 70 70 }
-	color_ui = rgb { 70 70 70 }
+
+THU = {
+	color = rgb { 65 125 157 }
+	color_ui = rgb { 65 125 157 }
+}
+
+###Thuringian states
+
+SXW  = {
+	color = rgb { 48 169 96 }
+	color_ui = rgb { 48 169 96 }
+}
+SXA = {
+	color = rgb { 118 229 215 }
+	color_ui = rgb { 118 229 215 }
+}
+SXC = {
+	color = rgb { 144 181 106 }
+	color_ui = rgb { 144 181 106 }
+}
+SXM = {
+	color = rgb { 209 212 126 }
+	color_ui = rgb { 209 212 126 }
+}
+RGR = {
+	color = rgb { 93 161 234 }
+	color_ui = rgb { 93 161 234 }
+}
+RGE = {
+	color = rgb { 243 201 33 }
+	color_ui = rgb { 243 201 33 }
+}
+SRD = {
+	color = rgb { 204 113 81 }
+	color_ui = rgb { 204 113 81 }
+}
+SSD = {
+	color = rgb { 180 137 148 }
+	color_ui = rgb { 180 137 148 }
 }
