@@ -1,11 +1,24 @@
 state={
 	id=1622
 	name="STATE_1622"
+	history = {
+		add_core_of = MLT
+		owner = ENG
+		victory_points = {
+			20535 2#1
+		}
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			MLT = { transfer_state = PREV }
+		}
+	}
 	provinces={
 		20535 20536 
 	}
 	manpower=258367
-	state_category=large_town
+	state_category=city
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
