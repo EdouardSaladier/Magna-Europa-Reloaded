@@ -5,6 +5,11 @@ state={
 	provinces={
 		826 6477 6755 7832 14475 14494 14514 20164 
 	}
+	history = {
+		owner = YUG
+		add_core_of = BOS
+		add_core_of = YUG
+	}
 	manpower=192902
 	state_category=town
 	buildings_max_level_factor=1.000

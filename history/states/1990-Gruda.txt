@@ -4,6 +4,11 @@ state={
 	provinces={
 		1932 
 	}
+	history = {
+		owner = YUG
+		add_core_of = CRO
+		add_core_of = YUG
+	}
 	manpower=4610
 	state_category=enclave
 	buildings_max_level_factor=1.000

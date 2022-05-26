@@ -4,6 +4,12 @@ state={
 	provinces={
 		1304 4383 4441 8512 20189 
 	}
+	history = {
+		add_core_of = BOS
+		owner = YUG
+		add_core_of = HRZ
+		add_core_of = YUG
+	}
 	manpower=117070
 	state_category=town
 	buildings_max_level_factor=1.000

@@ -2,11 +2,20 @@
 state={
 	id=775
 	name="STATE_775"
+
+	history={
+		owner = YUG
+		add_core_of = YUG
+		add_core_of = VJV
+		add_core_of = SER
+
+	}
+
 	provinces={
-		3816 5998 14426 20243 
+		3816 5998 14426 
 	}
 	manpower=252252
-	state_category=city
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
 }

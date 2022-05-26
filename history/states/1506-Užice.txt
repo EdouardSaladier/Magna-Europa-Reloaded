@@ -4,6 +4,11 @@ state={
 	provinces={
 		594 2570 5764 6125 14651 14675 20121 
 	}
+	history = {
+		owner = YUG
+		add_core_of = SER
+		add_core_of = YUG
+	}
 	manpower=88663
 	state_category=pastoral
 	buildings_max_level_factor=1.000

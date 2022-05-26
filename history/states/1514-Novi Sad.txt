@@ -4,6 +4,12 @@ state={
 	provinces={
 		2136 8942 14265 14312 14323 14328 
 	}
+	history = {
+		owner = YUG
+		add_core_of = SER
+		add_core_of = YUG
+		add_core_of = VJV
+	}
 	manpower=308087
 	state_category=city
 	buildings_max_level_factor=1.000

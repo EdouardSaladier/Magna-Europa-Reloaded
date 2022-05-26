@@ -5,6 +5,11 @@ state={
 	provinces={
 		1624 2959 4018 5999 8259 14774 20208 20210 
 	}
+	history = {
+		owner = YUG
+		add_core_of = SER
+		add_core_of = YUG
+	}
 	manpower=137825
 	buildings_max_level_factor=1.000
 	state_category=rural

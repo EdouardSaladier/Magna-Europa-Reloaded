@@ -5,6 +5,11 @@ state={
 	provinces={
 		20135 20136 
 	}
+	history = {
+		owner = YUG
+		add_core_of = CRO
+		add_core_of = YUG
+	}
 	manpower=21870
 	buildings_max_level_factor=1.000
 	state_category=small_island

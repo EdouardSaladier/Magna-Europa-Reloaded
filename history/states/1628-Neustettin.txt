@@ -2,13 +2,16 @@
 state={
 	id=1628
 	name="STATE_1628"
+
 	history={
 		owner = GER
 		add_core_of = GER
 		add_core_of = PMR
-    }
+
+	}
+
 	provinces={
-		674 3207 3919 8253 11077 11194 11265 18556 19024 20546 
+		3207 3919 8253 11077 11194 11265 18556 20546 
 	}
 	manpower=127177
 	buildings_max_level_factor=1.000

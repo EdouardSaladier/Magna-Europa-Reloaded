@@ -1,11 +1,21 @@
+
 state={
 	id=1512
 	name="STATE_1512"
-	provinces={
-		4534 6321 8544 14354 14420 20227 20244 20245 
+
+	history={
+		owner = YUG
+		add_core_of = YUG
+		add_core_of = VJV
+		add_core_of = SER
+
 	}
-	manpower=258522
-	state_category=city
+
+	provinces={
+		4534 6321 8544 14354 20227 20244 20245 
+	}
+	manpower=227522
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
 }

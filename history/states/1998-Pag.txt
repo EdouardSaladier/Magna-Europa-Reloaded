@@ -4,6 +4,11 @@ state={
 	provinces={
 		20134 
 	}
+	history = {
+		owner = YUG
+		add_core_of = CRO
+		add_core_of = YUG
+	}
 	manpower=1203
 	state_category=tiny_island
 	buildings_max_level_factor=1.000
