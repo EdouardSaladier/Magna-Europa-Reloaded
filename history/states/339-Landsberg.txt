@@ -6,9 +6,13 @@ state={
 		3839 7438 11448 11513 11580 11581 20550 20551 20587 20597 
 	}
 	history={
+	    owner = GER
         victory_points = {
             20551 10
         }
+		add_core_of = GER
+		add_core_of = PRS
+		add_core_of = BRN
     }
 	manpower=243619
 	buildings_max_level_factor=1.000
