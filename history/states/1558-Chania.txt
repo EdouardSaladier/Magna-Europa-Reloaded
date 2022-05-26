@@ -4,6 +4,11 @@ state={
 	provinces={
 		4060 20349 20351 
 	}
+	history={
+        victory_points = {
+            20349 5
+        }
+    }
 	manpower=95142
 	state_category=pastoral
 	buildings_max_level_factor=1.000

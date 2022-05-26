@@ -5,6 +5,11 @@ state={
 	provinces={
 		1114 5958 15305 20257 20358 20359 
 	}
+	history={
+        victory_points = {
+            20257 5
+        }
+    }
 	manpower=107140
 	buildings_max_level_factor=1.000
 	state_category=rural
