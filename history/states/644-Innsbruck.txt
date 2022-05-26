@@ -6,10 +6,13 @@ state={
 		1813 1832 1984 2476 5071 13779 20811 20814 
 	}
 	history={
-        victory_points = {
-            13779 10
-        }
-    }
+		owner = AUS
+		add_core_of = AUS
+		add_core_of = TIR
+       		victory_points = {
+           		13779 10
+        	}
+    	}
 	manpower=179718
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
