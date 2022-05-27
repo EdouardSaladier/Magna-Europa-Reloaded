@@ -2,20 +2,23 @@
 state={
 	id=273
 	name="STATE_273"
-		history={
+
+	history={
 		owner = GER
 		victory_points = {
-            9308 5
-        }
+			9308 5 
+		}
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = PMR
-    }
-	provinces={
-		1035 7416 9267 9308 11040 11150 20543 20561 
+
 	}
-	manpower=149390
+
+	provinces={
+		9308 11040 20561 
+	}
+	manpower=104573
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }
