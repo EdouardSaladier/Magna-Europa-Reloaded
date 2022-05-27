@@ -1,17 +1,21 @@
+
 state={
 	id=1649
 	name="STATE_1649"
-	provinces={
-		6502 9069 9334 11732 20584 
-	}
+
 	history={
 		owner = GER
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = WSP
+		add_core_of = BRN
+	}
+
+	provinces={
+		6502 9069 9334 11732 
 	}
 	manpower=114272
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }
