@@ -2,6 +2,10 @@
 state={
 	id=404
 	name="STATE_404"
+	history={
+		owner = LUX
+		add_core_of = LUX
+    }
 	provinces={
 		2715 4482 12699 
 	}

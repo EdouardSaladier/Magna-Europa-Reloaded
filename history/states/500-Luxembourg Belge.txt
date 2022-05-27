@@ -2,6 +2,10 @@
 state={
 	id=500
 	name="STATE_500"
+	history={
+		owner = BEL
+		add_core_of = BEL
+    }
 	provinces={
 		2150 2929 7944 7962 12671 12726 12736 12806 12844 12880 12909 
 	}
