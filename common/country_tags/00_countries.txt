@@ -50,6 +50,7 @@ HSK = "countries/Hesse-Kassel.txt"
 AUS = "countries/Austria.txt"
 VOR = "countries/Vorarlberg.txt"
 TIR = "countries/Tirol.txt"
+SWI = "countries/Switzerland.txt"
 
 ###Thuringian States
 SXW = "countries/Saxe-Weimar-Eisenach.txt"
@@ -75,10 +76,13 @@ BEL = "countries/Belgium.txt"
 POL = "countries/Poland.txt"
 HUN = "countries/Hungary.txt"
 CZE = "countries/Czechoslovakia.txt"
+SLO = "countries/Slovakia.txt"
 ROM = "countries/Romania.txt"
+BUL = "countries/Bulgaria.txt"
 YUG = "countries/Yugoslavia.txt"
 ALB = "countries/Albania.txt"
 DNZ = "countries/Danzig.txt"
+GRE = "countries/Greece.txt"
 
 ###Micronations
 SMR = "countries/San Marino.txt"
@@ -135,12 +139,13 @@ LIG = "countries/Liguria.txt"
 LCC = "countries/Lucca.txt"
 MCR = "countries/Massa.txt"
 
-###French Releasables
+###French Releasables (Unused is Nice)
 COR = "countries/Corsica.txt"
-SAV = "countries/Savoie.txt"
-NZA = "countries/Nice.txt"
+SAV = "countries/Savoy.txt"
+NZA = "countries/Unused.txt"
 PRV = "countries/Provence.txt"
 BRI = "countries/Brittany.txt"
+NMD = "countries/Normandy.txt"
 
 ###Polish Releasables
 KSH = "countries/Kashubia.txt"

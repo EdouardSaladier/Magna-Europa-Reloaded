@@ -5,7 +5,10 @@ state={
 	provinces={
 		1760 2152 6432 7452 8055 13490 13514 13539 13559 
 	}
-	history={
+	history = {
+		owner = HUN
+		add_core_of = HUN
+	
         victory_points = {
             13539 10
         }
