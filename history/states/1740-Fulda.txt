@@ -5,6 +5,13 @@ state={
 	provinces={
 		4263 6808 12401 12538 12539 20721 
 	}
+	history={
+	    owner = GER
+		add_core_of = GER
+		add_core_of = PRS
+		add_core_of = HSN
+		add_core_of = HSK
+    }
 	manpower=174996
 	buildings_max_level_factor=1.000
 	state_category=town

@@ -5,6 +5,11 @@ state={
 	provinces={
 		5731 9298 12881 20725 
 	}
+	history={
+	    owner = GER
+		add_core_of = GER
+		add_core_of = HES
+    }
 	manpower=146237
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

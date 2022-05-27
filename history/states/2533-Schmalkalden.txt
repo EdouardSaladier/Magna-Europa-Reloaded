@@ -4,6 +4,13 @@ state={
 	provinces={
 		20624 
 	}
+	history={
+	    owner = GER
+		add_core_of = GER
+		add_core_of = PRS
+		add_core_of = HSN
+		add_core_of = HSK
+    }
 	manpower=9500
 	state_category=enclave
 	buildings_max_level_factor=1.000
