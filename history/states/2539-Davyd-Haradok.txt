@@ -4,6 +4,11 @@ state={
 	provinces={
 		2009 9601 19949 
 	}
+	history={
+		owner = POL
+		add_core_of = POL
+		add_core_of = BLR
+  	}
 	manpower=43936
 	state_category=pastoral
 	buildings_max_level_factor=1.000

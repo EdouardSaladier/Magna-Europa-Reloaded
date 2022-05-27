@@ -5,6 +5,11 @@ state={
 	provinces={
 		4280 4622 8911 9394 10981 10993 11005 11050 11093 11131 11132 19922 
 	}
+	history={
+		owner = POL
+		add_core_of = POL
+		add_core_of = KSH
+  	}
 	manpower=214240
 	buildings_max_level_factor=1.000
 	state_category=large_town

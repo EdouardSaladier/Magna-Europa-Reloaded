@@ -5,6 +5,11 @@ state={
 	provinces={
 		672 3856 6561 6633 8480 8601 11953 12017 12018 12057 12109 12211 12222 12236 12253 
 	}
+	history={
+		owner = POL
+		add_core_of = POL
+		add_core_of = UKR
+  	}
 	manpower=245100
 	buildings_max_level_factor=1.000
 	state_category=large_town

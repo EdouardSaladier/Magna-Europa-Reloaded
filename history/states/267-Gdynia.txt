@@ -5,6 +5,11 @@ state={
 	provinces={
 		90 6271 6866 7803 10854 10920 10946 20545 
 	}
+	history={
+		owner = POL
+		add_core_of = POL
+		add_core_of = KSH
+  	}
 	manpower=170992
 	buildings_max_level_factor=1.000
 	state_category=town

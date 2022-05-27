@@ -19,7 +19,10 @@ GER = {
 	color = rgb { 91 95 102 }
 	color_ui = rgb { 91 95 102 }
 }
-
+POL = {
+	color = rgb { 214 102 139 }
+	color_ui = rgb { 255 120 138 }
+}
 ###Southern Europe
 YUG = {
 	color = rgb { 72 73 126 }
@@ -162,4 +165,25 @@ SRU = {
 SSD = {
 	color = rgb { 180 137 148 }
 	color_ui = rgb { 180 137 148 }
+}
+###Polish Releasables
+PRS = {
+	color = rgb { 48 81 129 }
+	color_ui = rgb { 48 81 129 }
+}
+UKR = {
+	color = rgb { 0  80  230 }
+	color_ui = rgb { 0  80  230 }	
+}
+BLR = {
+	color = rgb { 180 220 190 }
+	color_ui = rgb { 180 220 190 }
+}
+DNZ = {
+	color = rgb { 78 129 151 }
+	color_ui = rgb { 78 129 151 }
+}
+KSH = {
+	color = rgb { 255 220 0 }
+	color_ui = rgb { 255 220 0 }
 }

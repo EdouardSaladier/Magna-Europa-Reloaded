@@ -5,6 +5,11 @@ state={
 	provinces={
 		1069 3258 5860 6989 8356 11279 11376 11439 11483 11518 
 	}
+	history={
+		owner = POL
+		add_core_of = POL
+		add_core_of = BLR
+  	}
 	manpower=171300
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

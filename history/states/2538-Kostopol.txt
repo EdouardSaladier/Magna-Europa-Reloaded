@@ -3,8 +3,13 @@ state={
 	id=2538
 	name="STATE_2538"
 	provinces={
-		684 1161 2456 5894 6615 7371 7482 8026 12329 15774 
+		684 1161 2456 5894 6615 7371 7482 8026 
 	}
+	history={
+		owner = POL
+		add_core_of = POL
+		add_core_of = UKR
+  	}
 	manpower=144340
 	buildings_max_level_factor=1.000
 	state_category=town

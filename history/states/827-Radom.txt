@@ -5,6 +5,10 @@ state={
 	provinces={
 		773 1325 1369 3817 4421 4907 6574 12080 12120 12125 12179 12235 
 	}
+	history={
+		owner = POL
+		add_core_of = POL
+  	}
 	manpower=550300
 	buildings_max_level_factor=1.000
 	state_category=large_city

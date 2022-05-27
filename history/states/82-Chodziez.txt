@@ -5,6 +5,11 @@ state={
 	provinces={
 		420 7045 11362 11375 11449 11573 20554 
 	}
+	history={
+		owner = POL
+		add_core_of = POL
+		add_core_of = KSH
+  	}
 	manpower=98800
 	buildings_max_level_factor=1.000
 	state_category=rural

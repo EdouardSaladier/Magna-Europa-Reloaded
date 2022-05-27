@@ -4,6 +4,11 @@ state={
 	provinces={
 		215 480 1782 4641 6074 6387 8646 8672 10676 10702 10707 10736 10787 10832 10912 
 	}
+	history={
+		owner = POL
+		add_core_of = POL
+		add_core_of = BLR
+  	}
 	manpower=332640
 	buildings_max_level_factor=1.000
 	state_category = city
