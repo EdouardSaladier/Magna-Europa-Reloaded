@@ -2,6 +2,12 @@
 state={
 	id=301
 	name="STATE_301"
+	history={
+		owner = GER
+		add_core_of = GER
+		add_core_of = PRS
+		add_core_of = WSP
+	}
 	provinces={
 		748 3349 4806 11344 11399 11425 11481 
 	}
