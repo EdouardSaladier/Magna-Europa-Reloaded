@@ -5,6 +5,12 @@ state={
 	provinces={
 		801 7025 7757 11920 20670 
 	}
+	history={
+		owner = GER
+		add_core_of = GER
+		add_core_of = PRS
+		add_core_of = SXP
+    }
 	manpower=298122
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

@@ -7,8 +7,10 @@ state={
 	}
 	history = {
 		owner = YUG
-		add_core_of = SER
 		add_core_of = YUG
+		add_core_of = SER
+		victory_points = { 14459 80 }
+		victory_points = { 20200 5 }
 	}
 	manpower=297142
 	state_category=city

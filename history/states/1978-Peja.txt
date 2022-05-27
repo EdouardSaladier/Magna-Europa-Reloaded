@@ -7,9 +7,10 @@ state={
 	}
 	history = {
 		owner = YUG
-		add_core_of = KOS
-		add_core_of = SER
 		add_core_of = YUG
+		add_core_of = SER
+		add_core_of = KOS
+		victory_points = { 14848 5 }
 	}
 	manpower=39251
 	state_category=pastoral

@@ -6,9 +6,10 @@ state={
 		4355 6375 8533 9018 14262 14272 14295 20158 
 	}
 	history = {
-		add_core_of = CRO
 		owner = YUG
 		add_core_of = YUG
+		add_core_of = CRO
+		victory_points = { 14272 5 }
 	}
 	manpower=324140
 	state_category=city
