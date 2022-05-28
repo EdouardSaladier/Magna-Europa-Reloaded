@@ -4,6 +4,8 @@ state={
 	name="STATE_64"
 	provinces={
 		19385 
+	history = {
+		victory_points = { 19385 5 }
 	}
 	manpower=284872
 	buildings_max_level_factor=1.000
