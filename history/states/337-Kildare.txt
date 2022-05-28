@@ -2,6 +2,10 @@
 state={
 	id=337
 	name="STATE_337"
+	history={
+		owner = IRE
+		add_core_of = IRE
+	}
 	provinces={
 		8 6558 7270 8495 11322 
 	}

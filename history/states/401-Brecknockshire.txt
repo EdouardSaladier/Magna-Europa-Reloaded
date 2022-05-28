@@ -1,6 +1,10 @@
 state={
 	id=401
 	name="STATE_401"
+	history={
+		owner = WLS
+		add_core_of = WLS
+	}
 	provinces={
 		5253 5780 
 	}
