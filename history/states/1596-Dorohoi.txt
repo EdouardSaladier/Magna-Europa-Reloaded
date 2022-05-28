@@ -1,6 +1,10 @@
 state={
 	id=1596
 	name="STATE_1596"
+	history = {
+		owner = ROM
+		add_core_of = ROM
+	}
 	provinces={
 		1291 3755 13467 13536 13600 
 	}
