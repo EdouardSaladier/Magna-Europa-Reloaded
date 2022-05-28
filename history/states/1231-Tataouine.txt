@@ -3,7 +3,10 @@ state={
 	id=1231
 	name="STATE_1231"
 
-	history={
+	history = {
+		owner = FRA
+		add_core_of = TUN
+	
 		victory_points = {
 			1352 5 
 		}

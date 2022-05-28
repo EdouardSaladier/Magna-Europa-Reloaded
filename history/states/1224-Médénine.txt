@@ -3,7 +3,9 @@ state={
 	id=1224
 	name="STATE_1224"
 
-	history={
+	history = {
+		owner = FRA
+		add_core_of = TUN
 		victory_points = {
 			21020 5 
 		}

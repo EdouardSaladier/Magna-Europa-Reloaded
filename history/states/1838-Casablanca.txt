@@ -2,8 +2,11 @@
 state={
 	id=1838
 	name="STATE_1838"
-					
-	history={
+			
+				
+	history = {
+		owner = FRA
+		add_core_of = MOR
 	    victory_points = {
 		    20885 80 #Casablanca
 			}

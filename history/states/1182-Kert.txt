@@ -2,8 +2,10 @@
 state={
 	id=1182
 	name="STATE_1182"
-					
-	history={
+				
+	history = {
+		owner = SPR
+		add_core_of = MOR
 	
 	    victory_points = {
 		    20908 10 #Nador

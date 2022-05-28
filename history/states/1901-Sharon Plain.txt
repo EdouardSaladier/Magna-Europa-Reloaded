@@ -2,6 +2,10 @@
 state={
 	id=1901
 	name="STATE_1901"
+	history = {
+		owner = PAL
+		add_core_of = PAL
+	}
 	provinces={
 		21230 21234 21236 
 	}

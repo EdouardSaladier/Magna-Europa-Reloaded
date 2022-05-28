@@ -2,8 +2,10 @@
 state={
 	id=1120
 	name="STATE_1120"
-			
-	history={
+				
+	history = {
+		owner = FRA
+		add_core_of = ALG
 	    victory_points = {
 		    21001 80 #Algiers
 			}

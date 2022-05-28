@@ -1,7 +1,11 @@
 
 state={
 	id=1133
-	name="STATE_1133"
+	name="STATE_1133"	
+	history = {
+		owner = FRA
+		add_core_of = ALG
+	}
 	provinces={
 		3397 5471 21008 
 	}
