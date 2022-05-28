@@ -72,6 +72,7 @@ SPR = "countries/Spain.txt"
 HOL = "countries/Netherlands.txt"
 LUX = "countries/Luxembourg.txt"
 BEL = "countries/Belgium.txt"
+IRE = "countries/Ireland.txt"
 
 ###Eastern Europe
 POL = "countries/Poland.txt"
@@ -84,6 +85,21 @@ YUG = "countries/Yugoslavia.txt"
 ALB = "countries/Albania.txt"
 DNZ = "countries/Danzig.txt"
 GRE = "countries/Greece.txt"
+
+###North Africa
+LBA = "countries/Libya.txt"
+EGY = "countries/Egypt.txt"
+ALG = "countries/Algeria.txt"
+TUN = "countries/Tunisia.txt"
+MOR = "countries/Morocco.txt"
+
+###Levant
+ISR = "countries/Israel.txt"
+PAL = "countries/Palestine.txt"
+LEB = "countries/Lebanon.txt"
+JOR = "countries/Jordan.txt"
+SYR = "countries/Syria.txt"
+CYP = "countries/Cyprus.txt"
 
 ###Micronations
 SMR = "countries/San Marino.txt"
@@ -103,6 +119,7 @@ KOS = "countries/Kosovo.txt"
 VJV = "countries/Vojvodina.txt"
 SDZ = "countries/Sandzak.txt"
 DLM = "countries/Dalmatia.txt"
+BNT = "countries/Banat.txt"
 
 ###British Releasables
 MLT = "countries/Malta.txt"
@@ -140,13 +157,14 @@ LIG = "countries/Liguria.txt"
 LCC = "countries/Lucca.txt"
 MCR = "countries/Massa.txt"
 
-###French Releasables (Unused is Nice)
+###French Releasables
 COR = "countries/Corsica.txt"
 SAV = "countries/Savoy.txt"
 NZA = "countries/Nice.txt"
 PRV = "countries/Provence.txt"
 BRI = "countries/Brittany.txt"
 NMD = "countries/Normandy.txt"
+ALS = "countries/Alsace.txt"
 
 ###Polish Releasables
 KSH = "countries/Kashubia.txt"

@@ -25,6 +25,14 @@ HOL = {
 	color = rgb { 203 138 74 }
 	color_ui = rgb { 255 179 96 }
 }
+ENG = {
+	color = rgb { 178 51 51 }
+	color_ui = rgb { 178 51 51 }
+}
+IRE = {
+	color = rgb { 80 159 90 }
+	color_ui = rgb { 80 159 90 }
+}
 
 ###Central Europe
 GER = { 
@@ -35,17 +43,335 @@ POL = {
 	color = rgb { 214 102 139 }
 	color_ui = rgb { 255 120 138 }
 }
+AUS = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 194 198 215 }
+}
+SWI = {
+	color = rgb { 224 5 5 }
+	color_ui = rgb { 224 5 5 }
+}
+CZE = {
+	color = rgb { 54 167 156 }
+	color_ui = rgb { 54 167 156 }
+}
+SLO = {
+	color = rgb { 158  161  188 }
+	color_ui = rgb { 158  161  188 }
+}
+HUN = {
+	color = rgb { 138 163 117 }
+	color_ui = rgb { 138 163 117 }
+}
+LIE = {
+	color = rgb { 47 51 132 }
+	color_ui = rgb { 47 51 132 }
+}
+VOR = {
+	color = rgb { 86 216 158 }
+	color_ui = rgb { 86 216 158 }
+}
+TIR = {
+	color = rgb { 160 180 180 }
+	color_ui = rgb { 160 180 180 }
+}
+
 ###Southern Europe
+ITA = {
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 67 127 63 }
+}
+SPR = {
+	color = rgb { 242 205 94 }
+	color_ui = rgb { 242 205 94 }
+}
+POR = {
+	color = rgb { 39 116 70 }
+	color_ui = rgb { 39 116 70 }
+}
 YUG = {
 	color = rgb { 72 73 126 }
-	color_ui = rgb { 94 95 164 }
+	color_ui = rgb { 72 73 126 }
 }
-
 ALB = {
 	color = rgb { 154 13 42 }
-	color_ui = rgb { 174 0 35 }
+	color_ui = rgb { 154 13 42 }
+}
+GRE = {
+	color = rgb { 93 181 227 }
+	color_ui = rgb { 93 181 227 }
+}
+BUL = {
+	color = rgb { 51 155 0 }
+	color_ui = rgb { 51 155 0 }
+}
+ROM = {
+	color = rgb { 215 196 72 }
+	color_ui = rgb { 215 196 72 }
+}
+MLT = {
+	color = rgb { 255 255 153 }
+	color_ui = rgb { 255 255 153 }
+}
+SMR = {
+	color = rgb { 102 178 255 }
+	color_ui = rgb { 102 178 255 }
+}
+ADR = {
+	color = rgb { 246 168 116 }
+	color_ui = rgb { 246 168 116 }
+}
+MNC = {
+	color = rgb { 243 108 122 }
+	color_ui = rgb { 243 108 122 }
 }
 
+###North Africa
+LBA = {
+	color = rgb { 200 180 90 }
+	color_ui = rgb { 200 180 90 }
+}
+EGY = {
+	color = rgb { 230 230 70 }
+	color_ui = rgb { 230 230 70 }
+}
+ALG = {
+	color = rgb { 153 102 51 }
+	color_ui = rgb { 153 102 51 }
+}
+TUN = {
+	color = rgb { 153 153 102 }
+	color_ui = rgb { 153 153 102 }
+}
+MOR = {
+	color = rgb { 102 51 0 }
+	color_ui = rgb { 102 51 0 }
+}
+
+###Levant
+PAL = {
+	color = rgb { 170  125  80 }
+	color_ui = rgb { 170  125  80 }
+}
+ISR = {
+	color = rgb { 152  130  191 }
+	color_ui = rgb { 152  130  191 }
+}
+LEB = {
+	color = rgb { 130  150  60 }
+	color_ui = rgb { 130  150  60 }
+}
+JOR = {
+	color = rgb { 111  55  78 }
+	color_ui = rgb { 111  55  78 }
+}
+SYR = {
+	color = rgb { 100  100  150 }
+	color_ui = rgb { 100  100  150 }
+}
+CYP = {
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 255 204 0 }
+}
+
+###British Releasables
+SCO = {
+	color = rgb { 41 49 155 }
+	color_ui = rgb { 41 49 155 }
+}
+WLS = {
+	color = rgb { 0 127 10 }
+	color_ui = rgb { 0 127 10 }
+}
+NIR = {
+	color = rgb { 204 128 102 }
+	color_ui = rgb { 204 128 102 }
+}
+KER = {
+	color = rgb { 128 51 51 }
+	color_ui = rgb { 128 51 51 }
+}
+###Italian Releasables
+NAP = {
+	color = rgb { 216 216 82 }
+	color_ui = rgb { 216 216 82 }
+}
+SIC = {
+	color = rgb { 101 115 75 }
+	color_ui = rgb { 101 115 75 }
+}
+SRD = {
+	color = rgb { 210 165 255 }
+	color_ui = rgb { 210 165 255 }
+}
+TUS = {
+	color = rgb { 102 0 153 }
+	color_ui = rgb { 102 0 153 }
+}
+LAZ = {
+	color = rgb { 255 255 164 }
+	color_ui = rgb { 255 255 164 }
+}
+MDN = {
+	color = rgb { 15 71 175 }
+	color_ui = rgb { 15 71 175 }
+}
+PRM = {
+	color = rgb { 239 102 82 }
+	color_ui = rgb { 239 102 82 }
+}
+PIE = {
+	color = rgb { 75 97 209 }
+	color_ui = rgb { 75 97 209 }
+}
+LOM = {
+	color = rgb { 0 178 51 }
+	color_ui = rgb { 0 178 51 }
+}
+VNT = {
+	color = rgb { 152 0 51 }
+	color_ui = rgb { 152 0 51 }
+}
+FRI = {
+	color = rgb { 160 225 220 }
+	color_ui = rgb { 160 225 220 }
+}
+AOS = {
+	color = rgb { 153 51 51 }
+	color_ui = rgb { 153 51 51 }
+}
+TST = {
+	color = rgb { 86 216 158 }
+	color_ui = rgb { 86 216 158 }
+}
+BLG = {
+	color = rgb { 244 180 130 }
+	color_ui = rgb { 244 180 130 }
+}
+FRR = {
+	color = rgb { 21 128 21 }
+	color_ui = rgb { 21 128 21 }
+}
+RMG = {
+	color = rgb { 244 180 35 }
+	color_ui = rgb { 244 180 35 }
+}
+MAR = {
+	color = rgb { 38 127 0 }
+	color_ui = rgb { 38 127 0 }
+}
+UMB = {
+	color = rgb { 38 127 0 }
+	color_ui = rgb { 38 127 0 }
+}
+ABR = {
+	color = rgb { 102 153 255 }
+	color_ui = rgb { 102 153 255 }
+}
+PUG = {
+	color = rgb { 146 216 180 }
+	color_ui = rgb { 146 216 180 }
+}
+LUC = {
+	color = rgb { 245 194 199 }
+	color_ui = rgb { 245 194 199 }
+}
+CAL = {
+	color = rgb { 58 188 41 }
+	color_ui = rgb { 58 188 41 }
+}
+MLS = {
+	color = rgb { 200 220 200 }
+	color_ui = rgb { 200 220 200 }
+}
+LIG = {
+	color = rgb { 218 215 56 }
+	color_ui = rgb { 218 215 56 }
+}
+LCC = {
+	color = rgb { 0 204 153 }
+	color_ui = rgb { 0 204 153 }
+}
+MCR = {
+	color = rgb { 153 44 34 }
+	color_ui = rgb { 153 44 34 }
+}
+
+###Spanish Releasables
+ADU = {
+	color = rgb { 240 230 155 }
+	color_ui = rgb { 240 230 155 }
+}
+ARA = {
+	color = rgb { 166 68 72 }
+	color_ui = rgb { 166 68 72 }
+}
+ATR = {
+	color = rgb { 128 78 204 }
+	color_ui = rgb { 128 78 204 }
+}
+BAL = {
+	color = rgb { 203 128 0 }
+	color_ui = rgb { 203 128 0 }
+}
+CNR = {
+	color = rgb { 166 68 72 }
+	color_ui = rgb { 166 68 72 }
+}
+CAT = {
+	color = rgb { 213 132 76 }
+	color_ui = rgb { 213 132 76 }
+}
+EXT = {
+	color = rgb { 255 127 127 }
+	color_ui = rgb { 255 127 127 }
+}
+GLC = {
+	color = rgb { 105 177 229 }
+	color_ui = rgb { 105 177 229 }
+}
+LEO = {
+	color = rgb { 225 102 51 }
+	color_ui = rgb { 225 102 51 }
+}
+MUR = {
+	color = rgb { 255 52 60 }
+	color_ui = rgb { 255 52 60 }
+}
+NAV = {
+	color = rgb { 52 178 52 }
+	color_ui = rgb { 52 178 52 }
+}
+VAL = {
+	color = rgb { 85 122 201 }
+	color_ui = rgb { 85 122 201 }
+}
+
+###French Releasables
+SAV = {
+	color = rgb { 255 153 227 }
+	color_ui = rgb { 255 153 227 }
+}
+PRV = {
+	color = rgb { 145 37 20 }
+	color_ui = rgb { 145 37 20 }
+}
+NMD = {
+	color = rgb { 234 0 18 }
+	color_ui = rgb { 234 0 18 }
+}
+BRI = {
+	color = rgb { 118 99 151 }
+	color_ui = rgb { 118 99 151 }
+}
+NZA = {
+	color = rgb { 255 51 51 }
+	color_ui = rgb { 255 51 51 }
+}
+ALS = {
+	color = rgb  { 246 223 35 }
+	color_ui = rgb  { 246 223 35 }
+}
 
 ###Yugoslavian Releasables
 SER = {
@@ -91,6 +417,10 @@ SDZ = {
 DLM = {
 	color = rgb { 46 128 188 }
 	color_ui = rgb { 46 128 188 }
+}
+BNT = {
+	color = rgb { 153 51 51 }
+	color_ui = rgb { 153 51 51 }
 }
 
 
