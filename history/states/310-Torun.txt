@@ -2,15 +2,18 @@
 state={
 	id=310
 	name="STATE_310"
-	provinces={
-		6818 8474 9426 11198 11199 11234 11282 11286 11340 11341 11407 11408 11464 19921 
-	}
+
 	history={
 		owner = POL
 		add_core_of = POL
-  	}
+
+	}
+
+	provinces={
+		6818 9426 11199 11286 11340 11341 11407 11408 19921 
+	}
 	manpower=401700
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

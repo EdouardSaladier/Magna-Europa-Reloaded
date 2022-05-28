@@ -126,6 +126,12 @@ MNC = {
 	color_ui = rgb { 243 108 122 }
 }
 
+###Northern Europe
+LIT = {
+	color = rgb { 219 219 119 }
+	color_ui = rgb { 255 255 155 }
+}
+
 ###North Africa
 LBA = {
 	color = rgb { 200 180 90 }
@@ -572,4 +578,28 @@ DNZ = {
 KSH = {
 	color = rgb { 255 220 0 }
 	color_ui = rgb { 255 220 0 }
+}
+LEM = {
+	color = rgb { 82 163 131 }
+	color_ui = rgb { 82 163 131 }
+}
+WUK = {
+	color = rgb { 111 75 149 }
+	color_ui = rgb { 111 75 149 }
+}
+GAL = {
+	color = rgb { 184 24 74 }
+	color_ui = rgb { 184 24 74 }
+}
+CLT = {
+	color = rgb { 110 156 95 }
+	color_ui = rgb { 110 156 95 }
+}
+POM = {
+	color = rgb { 127 87 143 }
+	color_ui = rgb { 127 87 143 }
+}
+POS = {
+	color = rgb { 117 117 117 }
+	color_ui = rgb { 117 117 117 }
 }
