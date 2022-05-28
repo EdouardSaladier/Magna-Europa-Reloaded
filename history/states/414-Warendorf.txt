@@ -3,8 +3,14 @@ state={
 	id=414
 	name="STATE_414"
 	provinces={
-		395 11898 11952 20698 20704 
+		395 11898 11952 20698 
 	}
+	history={
+		add_core_of = GER
+		add_core_of = PRS
+		add_core_of = WST
+		owner = GER
+    }
 	manpower=135277
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

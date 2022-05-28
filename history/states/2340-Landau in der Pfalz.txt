@@ -4,6 +4,12 @@ state={
 	provinces={
 		6884 13106 
 	}
+	history={
+	    owner = GER
+		add_core_of = GER
+		add_core_of = BVR
+		add_core_of = BPA
+    }
 	manpower=205967
 	state_category=large_town
 	buildings_max_level_factor=1.000

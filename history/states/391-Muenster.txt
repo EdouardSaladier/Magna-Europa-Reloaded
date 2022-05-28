@@ -3,9 +3,13 @@ state={
 	id=391
 	name="STATE_391"
 	provinces={
-		11888 11931 11974 20699 20700 
+		11888 11931 11974 20699 20700 20704
 	}
 	history={
+		add_core_of = GER
+		add_core_of = PRS
+		add_core_of = WST
+		owner = GER
         victory_points = {
             11888 20
         }

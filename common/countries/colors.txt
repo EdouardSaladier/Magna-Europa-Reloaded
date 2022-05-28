@@ -197,6 +197,7 @@ KER = {
 	color = rgb { 128 51 51 }
 	color_ui = rgb { 128 51 51 }
 }
+
 ###Italian Releasables
 NAP = {
 	color = rgb { 216 216 82 }
@@ -523,6 +524,30 @@ RHN = {
 	color = rgb { 57 160 101 }
 	color_ui = rgb { 57 160 101 }
 }
+WDK = {
+	color = rgb { 193 159 68 }
+	color_ui = rgb { 193 159 68 }
+}
+WST = {
+	color = rgb { 205 103 79 }
+	color_ui = rgb { 205 103 79 }
+}
+LIP = {
+	color = rgb { 131 105 183 }
+	color_ui = rgb { 131 105 183 }
+}
+SCL = {
+	color = rgb { 252 191 98 }
+	color_ui = rgb { 252 191 98 }
+}
+SAA = {
+	color = rgb { 205 183 241 }
+	color_ui = rgb { 205 183 241 }
+}
+BPA = {
+	color = rgb { 115 142 205 }
+	color_ui = rgb { 115 142 205 }
+}
 
 ###Thuringian states
 
@@ -558,6 +583,7 @@ SSD = {
 	color = rgb { 180 137 148 }
 	color_ui = rgb { 180 137 148 }
 }
+
 ###Polish Releasables
 PRS = {
 	color = rgb { 48 81 129 }
