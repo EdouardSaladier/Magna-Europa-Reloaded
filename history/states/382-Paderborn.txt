@@ -2,16 +2,19 @@
 state={
 	id=382
 	name="STATE_382"
-	provinces={
-		3694 8976 11944 11970 11995 20664 20702 20703 
-	}
+
 	history={
-        victory_points = {
-            11995 10
-        }
-    }
-	manpower=231862
+		victory_points = {
+			11995 10 
+		}
+
+	}
+
+	provinces={
+		3694 8976 11944 11970 11995 20702 20703 
+	}
+	manpower=212700
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = large_town
 }
