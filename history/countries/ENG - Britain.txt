@@ -4,6 +4,29 @@ oob = ""
 
 set_research_slots = 4
 
+create_faction = Allies
+add_to_faction = ENG
+add_to_faction = CAN
+add_to_faction = EGY
+add_to_faction = MLT
+add_to_faction = PAL
+add_to_faction = JOR
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_autonomy = {
+		target = MLT
+		autonomous_state = autonomy_supervised_state
+	}
+	set_autonomy = {
+		target = PAL
+		autonomous_state = autonomy_supervised_state
+	}
+	set_autonomy = {
+		target = JOR
+		autonomous_state = autonomy_supervised_state
+	}
+}
 
 # Starting tech
 set_technology = {
