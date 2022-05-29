@@ -2,6 +2,11 @@
 state={
 	id=93
 	name="STATE_93"
+	history = {
+		owner = FIN
+		add_core_of = FIN
+		add_core_of = KAR
+	}
 	provinces={
 		599 2805 3782 3809 5852 8202 9890 9900 18559 18581 18772 19044 19691 19692 19704 19712 
 	}

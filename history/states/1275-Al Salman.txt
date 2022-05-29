@@ -2,6 +2,10 @@
 state={
 	id=1275
 	name="STATE_1275"
+	history = {
+		owner = IRQ
+		add_core_of = IRQ
+	}
 	provinces={
 		343 3148 5236 7185 15810 19237 19238 
 	}

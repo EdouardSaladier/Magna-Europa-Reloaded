@@ -3,7 +3,9 @@ state={
 	id=2206
 	name="STATE_2206"
 			
-	history={
+	history = {
+		owner = IRQ
+		add_core_of = IRQ
 	
 	    victory_points = {
 		    19149 10 #Umm Qasr

@@ -20,19 +20,19 @@ if = {
 		target = ICE
 		autonomy_state = autonomy_personal_union
 	}
-}
-else_if = {
-	limit = { has_dlc = "Together for Victory" }
-	set_autonomy = {
-		target = ICE
-		autonomy_state = autonomy_dominion
-	}
-}
-else_if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_autonomy = {
-		target = ICE
-		autonomy_state = autonomy_supervised_state
+	else_if = {
+		limit = { has_dlc = "Together for Victory" }
+		set_autonomy = {
+			target = ICE
+			autonomy_state = autonomy_dominion
+		}
+		else_if = {
+			limit = { has_dlc = "Man the Guns" }
+			set_autonomy = {
+				target = ICE
+				autonomy_state = autonomy_supervised_state
+			}
+		}
 	}
 }
 
@@ -88,20 +88,19 @@ if = {
 		basic_torpedo = 1
 	}
 }
+
+
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = democratic
+	last_election = "1935.10.22"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
-
 set_popularities = {
-	democratic = 25
-	fascism = 15
-	communism = 10
-	neutrality = 50
+	democratic = 97
+	fascism = 1
+	communism = 2
 }
-
 
 
 

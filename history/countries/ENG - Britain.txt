@@ -12,20 +12,53 @@ add_to_faction = MLT
 add_to_faction = PAL
 add_to_faction = JOR
 
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#	set_autonomy = {
+#		target = MLT
+#		autonomous_state = autonomy_supervised_state
+#	}
+#	set_autonomy = {
+#		target = PAL
+#		autonomous_state = autonomy_supervised_state
+#	}
+#	set_autonomy = {
+#		target = JOR
+#		autonomous_state = autonomy_supervised_state
+#	}
+#}
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = { has_dlc = "Together for Victory" }
 	set_autonomy = {
 		target = MLT
-		autonomous_state = autonomy_supervised_state
+		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
 		target = PAL
-		autonomous_state = autonomy_supervised_state
+		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
 		target = JOR
-		autonomous_state = autonomy_supervised_state
+		autonomous_state = autonomy_puppet
 	}
+	else = {
+		puppet = MLT
+		puppet = PAL
+		puppet = JOR
+	}
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	set_autonomy = {
+		target = CAN
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_dominion
+	}
+	else = { puppet = EGY }
 }
 
 # Starting tech

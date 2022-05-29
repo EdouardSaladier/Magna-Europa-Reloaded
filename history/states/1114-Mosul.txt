@@ -2,9 +2,10 @@
 state={
 	id=1114
 	name="STATE_1114"
-					
-	history={
-	
+			
+	history = {
+		owner = IRQ
+		add_core_of = IRQ
 	    victory_points = {
 		    4684 80 #Mosul
 			}

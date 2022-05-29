@@ -2,6 +2,11 @@
 state={
 	id=991
 	name="STATE_991"
+	history = {
+		owner = TUR
+		add_core_of = TUR
+		set_demilitarized_zone = yes
+	}
 	provinces={
 		7289 7535 15164 15200 15214 21417 21421 
 	}

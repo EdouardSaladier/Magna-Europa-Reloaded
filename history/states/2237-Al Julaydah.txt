@@ -2,6 +2,11 @@
 state={
 	id=2237
 	name="STATE_2237"
+	history = {
+		owner = IRQ
+		add_core_of = IRQ
+		set_demilitarized_zone = yes
+	}
 	provinces={
 		548 3471 
 	}

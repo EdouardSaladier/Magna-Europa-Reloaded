@@ -1,6 +1,11 @@
 state={
 	id=1934
 	name="STATE_1934"
+	history = {
+		owner = TUR
+		add_core_of = TUR
+		set_demilitarized_zone = yes
+	}
 	provinces={
 		20288 21437 21445 21454 
 	}
