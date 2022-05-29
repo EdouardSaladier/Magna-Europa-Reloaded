@@ -132,6 +132,12 @@ LIT = {
 	color_ui = rgb { 255 255 155 }
 }
 
+###Eastern Europe
+SOV = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
+}
+
 ###North Africa
 LBA = {
 	color = rgb { 200 180 90 }
@@ -648,4 +654,22 @@ POM = {
 POS = {
 	color = rgb { 117 117 117 }
 	color_ui = rgb { 117 117 117 }
+}
+
+###Soviet Releasables
+CRI = {
+	color = rgb { 255 80 80 }
+	color_ui = rgb { 204 0 0 }
+}
+MDA = {
+	color = rgb { 161 10 50 }
+	color_ui = rgb { 161 10 50 }
+}
+TSN = {
+	color = rgb { 113 176 170 }
+	color_ui = rgb { 113 176 170 }
+}
+RUS = {
+	color = rgb { 78 138 88 }
+	color_ui = rgb { 78 138 88 }
 }

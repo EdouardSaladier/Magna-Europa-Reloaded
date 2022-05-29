@@ -5,6 +5,11 @@ state={
 	provinces={
 		513 4375 5543 7986 9415 
 	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = BLR
+	}
 	manpower=13306
 	state_category=pastoral
 	buildings_max_level_factor=1.000

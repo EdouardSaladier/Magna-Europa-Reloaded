@@ -5,6 +5,12 @@ state={
 	provinces={
 		2716 8636 8939 13955 13977 20390 20448 20449 20450 
 	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = MDA
+		add_core_of = TSN
+	}
 	manpower=193200
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

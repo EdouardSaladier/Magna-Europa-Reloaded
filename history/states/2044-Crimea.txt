@@ -5,6 +5,13 @@ state={
 	provinces={
 		2330 3523 6544 14506 
 	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = RUS
+		add_core_of = CRI
+		add_core_of = UKR
+	}
 	manpower=602609
 	state_category=large_city
 	buildings_max_level_factor=1.000
