@@ -1,16 +1,20 @@
+
 state={
 	id=1719
 	name="STATE_1719"
-	provinces={
-		4248 8508 11207 11254 20691 
-	}
+
 	history={
-        victory_points = {
-            11207 10
-        }
-    }
-	manpower=160614
+		owner = GER
+		add_core_of = GER
+		add_core_of = PRS
+		add_core_of = HNV
+	}
+
+	provinces={
+		4248 8508 11254 20691 
+	}
+	manpower=90689
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = town
 }

@@ -2,16 +2,22 @@
 state={
 	id=1702
 	name="STATE_1702"
-	provinces={
-		11192 20647 20680 
-	}
+
 	history={
-        victory_points = {
-            11192 80
-        }
-    }
-	manpower=1698388
+		owner = GER
+		add_core_of = GER
+		add_core_of = HAM
+		victory_points = {
+			18767 80 
+		}
+
+	}
+
+	provinces={
+		18767 20647 
+	}
+	manpower=1273791
 	buildings_max_level_factor=1.000
+	state_category=metropolis
 	local_supplies=0.000
-	state_category = metropolis
 }
