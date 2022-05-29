@@ -131,6 +131,10 @@ LIT = {
 	color = rgb { 219 219 119 }
 	color_ui = rgb { 255 255 155 }
 }
+DEN = {
+	color = rgb { 172 70 66 }
+	color_ui = rgb { 172 70 66 }
+}
 
 ###Eastern Europe
 SOV = {
@@ -573,6 +577,22 @@ HNV = {
 BRW = {
 	color = rgb { 109 92 55 }
 	color_ui = rgb { 109 92 55 }
+}
+SLH = {
+	color = rgb { 220 150 158 }
+	color_ui = rgb { 220 150 158 }
+}
+SLW = {
+	color = rgb { 220 150 158 }
+	color_ui = rgb { 220 150 158 }
+}
+HLS = {
+	color = rgb { 240 205 140 }
+	color_ui = rgb { 240 205 140 }
+}
+LBK = {
+	color = rgb { 55 140 143 }
+	color_ui = rgb { 55 140 143 }
 }
 
 ###Thuringian states

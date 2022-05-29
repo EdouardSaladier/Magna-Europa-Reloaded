@@ -5,6 +5,13 @@ state={
 	provinces={
 		5465 7581 11089 11129 11149 11179 11225 
 	}
+	history={
+	    owner = GER
+		add_core_of = GER
+		add_core_of = PRS
+		add_core_of = SLH
+		add_core_of = HLS
+    }
 	manpower=137754
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
