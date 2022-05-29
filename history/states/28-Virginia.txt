@@ -5,6 +5,17 @@ state={
 	provinces={
 		1136 3033 5240 19358 19359 19386 
 	}
+	history={
+        victory_points = {
+            3033 20
+        }
+		victory_points = {
+            19359 20
+        }
+		victory_points = {
+            19358 5
+        }
+    }
 	manpower=2549812
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
