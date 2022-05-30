@@ -2,17 +2,20 @@
 state={
 	id=424
 	name="STATE_424"
-	provinces={
-		6357 8574 9603 
-	}
+
 	history={
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = WST
 		owner = GER
-    }
+
+	}
+
+	provinces={
+		8574 9603 
+	}
 	manpower=419492
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

@@ -1,21 +1,25 @@
+
 state={
 	id=1746
 	name="STATE_1746"
-	provinces={
-		8507 12623 12673 
-	}
+
 	history={
 		owner = GER
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = HSN
 		add_core_of = NAS
-        victory_points = {
-            12673 40
-        }
-    }
+		victory_points = {
+			12673 40 
+		}
+
+	}
+
+	provinces={
+		8507 12623 12673 20728 
+	}
 	manpower=691499
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
-	state_category = large_city
 }

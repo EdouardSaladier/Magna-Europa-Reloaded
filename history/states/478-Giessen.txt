@@ -2,16 +2,19 @@
 state={
 	id=478
 	name="STATE_478"
-	provinces={
-		12482 12534 12583 20717 
-	}
+
 	history={
-	    owner = GER
+		owner = GER
 		add_core_of = GER
 		add_core_of = HES
-    }
-	manpower=266701
+
+	}
+
+	provinces={
+		12482 12534 20717 
+	}
+	manpower=213360
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = city
 }

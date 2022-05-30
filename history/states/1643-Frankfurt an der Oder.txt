@@ -1,17 +1,21 @@
+
 state={
 	id=1643
 	name="STATE_1643"
+
 	history={
 		owner = GER
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = BRN
-    }
-	provinces={
-		2247 4306 5265 8905 9515 11720 11789 
+
 	}
-	manpower=271374
+
+	provinces={
+		4306 5265 8905 9515 11720 
+	}
+	manpower=251374
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

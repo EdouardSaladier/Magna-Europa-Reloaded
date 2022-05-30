@@ -1,16 +1,20 @@
+
 state={
 	id=1766
 	name="STATE_1766"
+
 	history={
 		owner = GER
 		add_core_of = GER
 		add_core_of = WRT
-    }
-	provinces={
-		3354 13133 13312 13364 20766 
+
 	}
-	manpower=168327
+
+	provinces={
+		3354 13312 20766 
+	}
+	manpower=117828
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = town
 }

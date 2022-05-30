@@ -1,18 +1,22 @@
+
 state={
 	id=1744
 	name="STATE_1744"
-	provinces={
-		7583 8152 12629 12654 
-	}
+
 	history={
-	    owner = GER
+		owner = GER
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = HSN
 		add_core_of = HSK
-    }
-	manpower=184533
+
+	}
+
+	provinces={
+		8152 
+	}
+	manpower=73813
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = town
 }

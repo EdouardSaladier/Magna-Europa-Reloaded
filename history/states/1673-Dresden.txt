@@ -1,19 +1,23 @@
+
 state={
 	id=1673
 	name="STATE_1673"
-	provinces={
-		2462 12209 12262 12268 
-	}
+
 	history={
-        victory_points = {
-            12268 20
-        }
+		victory_points = {
+			12268 20 
+		}
 		owner = GER
 		add_core_of = GER
 		add_core_of = SXN
-    }
-	manpower=936065
+
+	}
+
+	provinces={
+		12262 12268 
+	}
+	manpower=923065
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
-	state_category = large_city
 }

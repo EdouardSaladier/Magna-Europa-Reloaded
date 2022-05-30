@@ -4,16 +4,17 @@ state={
 	name="STATE_1771"
 
 	history={
-	    owner = GER
+		owner = GER
 		victory_points = {
 			1598 40 
 		}
-        add_core_of = GER
+		add_core_of = GER
 		add_core_of = WRT
+
 	}
 
 	provinces={
-		1497 1598 9541 13160 13212 13253 20768 
+		1497 1598 9541 13212 13253 20768 
 	}
 	manpower=878461
 	buildings_max_level_factor=1.000

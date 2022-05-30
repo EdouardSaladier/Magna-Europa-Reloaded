@@ -2,20 +2,22 @@
 state={
 	id=433
 	name="STATE_433"
-	provinces={
-		7843 12083 20711 
-	}
+
 	history={
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = WST
 		owner = GER
-        victory_points = {
-            7843 40
-        }
-    }
-	manpower=1580065
+		victory_points = {
+			7843 40 
+		}
+	}
+
+	provinces={
+		7843 20711 
+	}
+	manpower=1106045
 	buildings_max_level_factor=1.000
+	state_category=metropolis
 	local_supplies=0.000
-	state_category = metropolis
 }

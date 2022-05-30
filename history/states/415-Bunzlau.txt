@@ -2,16 +2,19 @@
 state={
 	id=415
 	name="STATE_415"
+
 	history={
 		owner = GER
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = SLS
-    }
-	provinces={
-		6959 8095 12195 20604 
+
 	}
-	manpower=225523
+
+	provinces={
+		8095 12195 
+	}
+	manpower=205523
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000

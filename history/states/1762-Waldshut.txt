@@ -1,16 +1,20 @@
+
 state={
 	id=1762
 	name="STATE_1762"
+
 	history={
 		owner = GER
 		add_core_of = GER
 		add_core_of = BDN
-    }
+
+	}
+
 	provinces={
-		2655 3091 5270 13472 13647 20750 
+		2655 5270 13647 20750 
 	}
 	manpower=191195
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = town
 }
