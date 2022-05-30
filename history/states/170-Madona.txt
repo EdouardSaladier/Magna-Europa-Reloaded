@@ -2,12 +2,15 @@
 state={
 	id=170
 	name="STATE_170"
-	history = {
+
+	history={
 		owner = LAT
 		add_core_of = LAT
+
 	}
+
 	provinces={
-		2558 6445 6607 10329 10359 10376 10398 10410 10445 16483 16871 
+		2558 6445 6607 10329 10359 10376 10398 10410 16483 16871 
 	}
 	manpower=72369
 	buildings_max_level_factor=1.000
