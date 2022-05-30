@@ -1,6 +1,11 @@
 state={
 	id=2238
 	name="STATE_2238"
+	history = {
+		owner = SAU
+		add_core_of = SAU
+		set_demilitarized_zone = yes
+	}
 	provinces={
 		2725 
 	}

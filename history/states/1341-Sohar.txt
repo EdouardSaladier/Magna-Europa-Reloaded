@@ -2,6 +2,10 @@
 state={
 	id=1341
 	name="STATE_1341"
+	history = {
+		owner = OMA
+		add_core_of = OMA
+	}
 	provinces={
 		6693 6777 7611 18229 18230 
 	}

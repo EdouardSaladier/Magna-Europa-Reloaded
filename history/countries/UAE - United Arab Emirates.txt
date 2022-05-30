@@ -1,4 +1,4 @@
-﻿capital = 1155
+﻿capital = 1338
 
 set_research_slots = 3
 
@@ -84,5 +84,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	democratic = 23
+	fascism = 1
+	communism = 1
+	neutrality = 75
 }
