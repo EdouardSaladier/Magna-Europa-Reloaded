@@ -4,8 +4,8 @@ CAN = {
 	color_ui = rgb { 99 189 82 }
 }
 USA = {
-	color = rgb { 46 109 209 }
-	color_ui = rgb { 46 109 209 }
+	color = rgb { 43 89 202 }
+	color_ui = rgb { 43 89 202 }
 }
 
 ###Western Europe
@@ -15,19 +15,19 @@ FRA = {
 }
 LUX = {
 	color = rgb { 65 175 179 }
-	color_ui = rgb { 85 228 233 }
+	color_ui = rgb { 65 175 179 }
 }
 BEL = { 
 	color 	 = rgb { 193 171 8  }
-	color_ui = rgb { 251 222 10 }
+	color_ui = rgb { 193 171 8 }
 }
 HOL = {	
 	color = rgb { 203 138 74 }
-	color_ui = rgb { 255 179 96 }
+	color_ui = rgb { 203 138 74 }
 }
 ENG = {
-	color = rgb { 178 51 51 }
-	color_ui = rgb { 178 51 51 }
+	color = rgb { 180 0 0 }
+	color_ui = rgb { 180 0 0 }
 }
 IRE = {
 	color = rgb { 80 159 90 }
@@ -102,8 +102,8 @@ GRE = {
 	color_ui = rgb { 93 181 227 }
 }
 BUL = {
-	color = rgb { 51 155 0 }
-	color_ui = rgb { 51 155 0 }
+	color = rgb { 0 150 70 }
+	color_ui = rgb { 0 150 70 }
 }
 ROM = {
 	color = rgb { 215 196 72 }
@@ -139,7 +139,7 @@ DEN = {
 ###Eastern Europe
 SOV = {
 	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
+	color_ui = rgb { 125 13 24 }
 }
 
 ###North Africa
@@ -165,6 +165,10 @@ MOR = {
 }
 
 ###Levant
+TUR = {
+	color = rgb { 167 17 1}
+	color_ui = rgb { 169 17 1 }
+}
 PAL = {
 	color = rgb { 170  125  80 }
 	color_ui = rgb { 170  125  80 }
@@ -189,6 +193,22 @@ CYP = {
 	color = rgb { 255 204 0 }
 	color_ui = rgb { 255 204 0 }
 }
+
+###Middle East
+PER = {
+	color = rgb { 57 143 107 }
+	color_ui = rgb { 57 143 107 }
+}
+IRQ = {
+	color = rgb { 178 114 99 }
+	color_ui = rgb { 231 148 129 }
+}
+SAU = {
+	color = rgb { 71 113 97 }
+	color_ui = rgb { 92 147 126 }
+}
+
+
 
 ###British Releasables
 SCO = {

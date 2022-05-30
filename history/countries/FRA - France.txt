@@ -16,11 +16,11 @@ if = {
 	limit = { has_dlc = "Together for Victory" }
 	set_autonomy = {
 		target = SYR
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_colony
 	}
 	set_autonomy = {
 		target = LEB
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_colony
 	}
 	else = {
 		puppet = SYR
