@@ -1,7 +1,5 @@
 
-#TO-DO LIST: OTRANTO, GIBRALTAR, SUEZ, SKAGERRAK, DANISH BELTS, VENETIAN BRIDGE (MAYBE)
-
-###Lollo please stop putting comments after adjacency_rule = it fucking breaks the file
+#TO-DO LIST: SKAGERRAK, DANISH BELTS, VENETIAN BRIDGE (MAYBE)
 
 adjacency_rule =
 {
@@ -35,7 +33,7 @@ adjacency_rule =
 	required_provinces = { 15010 21464 21463 15013 }
 	
 	icon = 15013
-	offset = { 2 0 -2 }
+	offset = { -9 0 -5 }
 }
 adjacency_rule =
 {
@@ -73,7 +71,7 @@ adjacency_rule =
 	required_provinces = { 21445 21437 21439 15164 7535 }
 	
 	icon = 15164
-	offset = { 2 0 0 }
+	offset = { -5 0 0 }
 }
 adjacency_rule =
 {
@@ -111,7 +109,7 @@ adjacency_rule =
 	required_provinces = { 15368 15350 }
 	
 	icon = 15368
-	offset = { 2 0 2 }
+	offset = { -10 0 2 }
 }
 adjacency_rule =
 {
@@ -149,5 +147,81 @@ adjacency_rule =
 	required_provinces = { 9328 15141 }
 	
 	icon = 18016
-	offset = { -10 0 -10 }
+	offset = { 15 0 -20 }
+}
+adjacency_rule =
+{
+	name = "SUEZ_CANAL"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 21192 21182 21173 21169 21162 21160 21161 21165 459 21183 }
+	
+	icon = 19209
+	offset = { 0 0 0 }
+}
+adjacency_rule =
+{
+	name = "GIBRALTAR_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 19770 19768 19769 }
+	
+	icon = 19768
+	offset = { 0 0 7 }
 }
