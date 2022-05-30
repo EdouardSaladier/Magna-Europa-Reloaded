@@ -2,13 +2,16 @@
 state={
 	id=2143
 	name="STATE_2143"
-	provinces={
-		161 4055 5447 8589 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = BLR
+
+	}
+
+	provinces={
+		161 4055 8589 
 	}
 	manpower=35173
 	buildings_max_level_factor=1.000
