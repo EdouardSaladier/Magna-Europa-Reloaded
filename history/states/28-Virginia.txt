@@ -5,7 +5,9 @@ state={
 	provinces={
 		1136 3033 5240 19358 19359 19386 
 	}
-	history={
+	history = {
+		owner = USA
+		add_core_of = USA
         victory_points = {
             3033 20
         }
