@@ -107,22 +107,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				rule = allow_release_nations
 				option = FREE
 			}
-			OR = {
-				NOT = { has_dlc = "Man the Guns" }
-				NOT = { original_tag = ENG }
-			}
-			OR = {
-				NOT = { has_dlc = "La Resistance" }
-				NOT = { original_tag = SPR }
-			}
-			OR = {
-				NOT = { has_dlc = "Death or Dishonor" }
-				AND = {
-					NOT = { original_tag = ROM }
-					NOT = { original_tag = YUG }
-				}
-			}
-			NOT = { original_tag = SOV }
 		}
 		always = yes
 	}
@@ -151,40 +135,12 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = KUW } }
 			NOT = { FROM = { tag = QAT } }
 			NOT = { FROM = { tag = UAE } }
-			NOT = { FROM = { tag = BLZ } }
-			NOT = { FROM = { tag = BAH } }
-			NOT = { FROM = { tag = JAM } }
-			NOT = { FROM = { tag = TRI } }
-			NOT = { FROM = { tag = BAS } }
-			NOT = { FROM = { tag = GYA } }
-			NOT = { FROM = { tag = SRL } }
-			NOT = { FROM = { tag = MLD } }
-			NOT = { FROM = { tag = FIJ } }
-			NOT = { FROM = { tag = BRM } }
-			NOT = { FROM = { tag = SUD } }
-			NOT = { FROM = { tag = SOM } }
-			NOT = { FROM = { tag = UGA } }
-			NOT = { FROM = { tag = KEN } }
-			NOT = { FROM = { tag = TZN } }
-			NOT = { FROM = { tag = ZAM } }
-			NOT = { FROM = { tag = MLW } }
-			NOT = { FROM = { tag = ZIM } }
-			NOT = { FROM = { tag = BOT } }
-			NOT = { FROM = { tag = NGA } }
-			NOT = { FROM = { tag = GHA } }
-			NOT = { FROM = { tag = SIE } }
-			NOT = { FROM = { tag = GAM } }
 		}
 	}
 	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = FREE
-			}
+		limit = { has_game_rule = { rule = allow_release_nations option = FREE }
 			has_dlc = "Death or Dishonor"
 			original_tag = YUG
-			NOT = { has_completed_focus = YUG_reunite_the_kingdom }
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_YUGOSLAVIA_TOOLTIP
@@ -196,7 +152,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = BOS } }
 			NOT = { FROM = { tag = HRZ } }
 			NOT = { FROM = { tag = MAC } }
-			NOT = { FROM = { tag = TRA } }
 		}
 	}
 	if = {
@@ -215,10 +170,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				original_tag = ROM
 				original_tag = HUN
 			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_TRANSYLVANIA_TOOLTIP
-			NOT = { FROM = { tag = TRA } }
 		}
 	}
 	if = {
@@ -251,17 +202,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 					rule = allow_release_nations
 					option = PEACE_ONLY
 				}
-			}
-			OR = {
-				FROM = { original_tag = DON }
-				FROM = { original_tag = KUB }
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_COSSACK_TOOLTIP
-			NOT = {
-				FROM = { tag = DON }
-				FROM = { tag = KUB }
 			}
 		}
 	}
@@ -304,10 +244,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				original_tag = GER
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_POLAND_SILESIA_TOOLTIP
-			NOT = { FROM = { tag = SIL } }
-		}
 	}
 	if = {
 		limit = {
@@ -338,10 +274,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			has_dlc = "La Resistance"
 			original_tag = SPR
 		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_SPAIN_TOOLTIP
-			has_global_flag = scw_over
-		}
 	}
 	if = {
 		limit = {
@@ -351,7 +283,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			}
 			has_dlc = "La Resistance"
 			original_tag = SPR
-			has_completed_focus = SPR_masters_of_our_own_fate
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_ANARCHIST_SPAIN_TOOLTIP
@@ -365,10 +296,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				option = FREE
 			}
 			original_tag = SOV
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_SOVIET_TOOLTIP
-			has_completed_focus = SOV_autonomous_soviet_republics
 		}
 	}
 	if = {
@@ -415,29 +342,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = KUW } }
 			NOT = { FROM = { tag = QAT } }
 			NOT = { FROM = { tag = UAE } }
-			NOT = { FROM = { tag = BLZ } }
-			NOT = { FROM = { tag = BAH } }
-			NOT = { FROM = { tag = JAM } }
-			NOT = { FROM = { tag = TRI } }
-			NOT = { FROM = { tag = BAS } }
-			NOT = { FROM = { tag = GYA } }
-			NOT = { FROM = { tag = SRL } }
-			NOT = { FROM = { tag = MLD } }
-			NOT = { FROM = { tag = FIJ } }
-			NOT = { FROM = { tag = BRM } }
-			NOT = { FROM = { tag = SUD } }
-			NOT = { FROM = { tag = SOM } }
-			NOT = { FROM = { tag = UGA } }
-			NOT = { FROM = { tag = KEN } }
-			NOT = { FROM = { tag = TZN } }
-			NOT = { FROM = { tag = ZAM } }
-			NOT = { FROM = { tag = MLW } }
-			NOT = { FROM = { tag = ZIM } }
-			NOT = { FROM = { tag = BOT } }
-			NOT = { FROM = { tag = NGA } }
-			NOT = { FROM = { tag = GHA } }
-			NOT = { FROM = { tag = SIE } }
-			NOT = { FROM = { tag = GAM } }
 		}
 	}
 	if = {
@@ -453,10 +357,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
 			has_war = no
 		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_SPAIN_TOOLTIP
-			has_global_flag = scw_over
-		}
 	}
 	if = {
 		limit = {
@@ -469,10 +369,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
 			has_war = no
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_SOVIET_TOOLTIP
-			has_completed_focus = SOV_autonomous_soviet_republics
 		}
 	}
 	if = {
@@ -1006,7 +902,7 @@ DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 		}
 	}
 }
- DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
+DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
 	if = {
 		limit = {
 			has_game_rule = {
@@ -1042,19 +938,6 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				option = ALWAYS_FREE
 			}
 		}
-		if = {
-			limit = {
-				NOT = { tag = SPC }
-				FROM = {
-					tag = SPC
-					has_completed_focus = SPR_regional_defense_council_of_aragon
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_NOT_ANARCHISTS_TT
-				NOT = { FROM = { tag = SPC } }
-			}
-		}
 		else = {
 			always = yes
 		}
@@ -1064,293 +947,6 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 			has_game_rule = {
 				rule = allow_volunteers
 				option = LIMITED
-			}
-		}
-		if = {
-			limit = {
-				NOT = { tag = SPC }
-				FROM = {
-					tag = SPC
-					has_completed_focus = SPR_regional_defense_council_of_aragon
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_NOT_ANARCHISTS_TT
-				NOT = { FROM = { tag = SPC } }
-			}
-		}
-		else_if = {
-			limit = {
-				has_dlc = "La Resistance"
-				tag = POR
-				FROM = { original_tag = SPR }
-				NOT = { has_global_flag = scw_over }
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_PORTUGAL_SCW_TT
-				NOT = {
-					AND = {
-						has_completed_focus = POR_support_the_spanish_republic
-						FROM = { NOT = { tag = SPD } }
-					}
-				}
-				NOT = {
-					AND = {
-						has_completed_focus = POR_support_the_spanish_nationalists
-						FROM = { NOT = { tag = SPA } }
-					}
-				}
-				NOT = {
-					AND = {
-						has_completed_focus = POR_support_a_spanish_monarchy_in_the_war
-						FROM = { NOT = { tag = SPB } }
-					}
-				}
-			}
-		}
-		else_if = { #Bulgarian volunteers in SCW (with La Resistance)
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-				tag = BUL
-				FROM = { original_tag = SPR }
-				has_dlc = "La Resistance"
-				NOT = { has_global_flag = scw_over }
-				
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_BULGARIA_SCW_TT
-				NOT = {
-					AND = {
-						has_completed_focus = BUL_the_spanish_struggle
-						FROM = { NOT = { tag = SPD } }
-					}
-				}
-				NOT = {
-					AND = {
-						has_completed_focus = BUL_support_the_spanish_coup
-						FROM = { NOT = { tag = SPA } }
-					}
-				}
-			}
-		}
-		else_if = { #Bulgarian volunteers in SCW (without La Resistance)
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-				NOT = { has_dlc = "La Resistance" }
-				tag = BUL
-				FROM = { original_tag = SPR }	
-				any_country = {
-					original_tag = SPR
-					has_civil_war = yes
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_BULGARIA_SCW_TT
-				NOT = {
-					AND = {
-						has_completed_focus = BUL_the_spanish_struggle
-						FROM = {
-							NOT = { has_government = communism }
-							NOT = { has_government = democratic }
-						}
-					}
-				}
-				NOT = {
-					AND = {
-						has_completed_focus = BUL_support_the_spanish_coup
-						FROM = {
-							NOT = { has_government = fascism }
-							NOT = { has_government = neutrality }
-						}
-					}
-				}
-			}
-		}
-		else_if = { #Soviet volunteers to China (Communist Soviet -> Only to the supported China)
-			limit = {
-				original_tag = SOV
-				has_government = communism
-				FROM = { is_literally_china = yes }
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_CHINA_SUPPORT_CHOSEN_ONE_TT
-				OR = {
-					has_completed_focus = SOV_the_gobi_gambit
-					has_completed_focus = SOV_two_red_flags
-					has_completed_focus = SOV_support_the_kuomintang
-				}
-				NOT = {
-					AND = {
-						has_completed_focus = SOV_the_gobi_gambit
-						FROM = { NOT = { tag = SIK } }
-					}
-				}
-				NOT = {
-					AND = {
-						has_completed_focus = SOV_two_red_flags
-						FROM = { NOT = { tag = PRC } }
-					}
-				}
-				NOT = {
-					AND = {
-						has_completed_focus = SOV_support_the_kuomintang
-						FROM = { NOT = { tag = CHI } }
-					}
-				}
-			}
-		}
-		else_if = { #Soviet volunteers to China (other ideologies -> Only to one China)
-			limit = {
-				original_tag = SOV
-				NOT = { has_government = communism }
-				FROM = { is_literally_china = yes }
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_CHINA_ONLY_ONE_TT
-				NOT = {
-					any_other_country = {
-						is_literally_china = yes
-						NOT = { tag = FROM }
-						has_country_flag = SOV_russian_volunteers_in_china_flag
-					}
-				}
-			}
-		}
-		else_if = { #Soviet volunteers to Spain (Commie & Democr) (no POUM) (with No Step Back)
-			limit = {
-				has_dlc = "No Step Back"
-				original_tag = SOV
-				OR = {
-					has_government = communism
-					has_government = democratic
-				}
-				FROM = { original_tag = SPR }
-				OR = {
-					NOT = { has_completed_focus = SOV_covert_support_for_spanish_poum }
-					AND = {
-						has_completed_focus = SOV_covert_support_for_spanish_poum
-						NOT = { has_global_flag = SPR_anarchist_uprising_flag }
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_SCW_TT
-				NOT = {
-					OR = {
-						AND = {
-							has_dlc = "La Resistance"
-							FROM = { NOT = { tag = SPD } }
-						}
-						AND = {
-							NOT = { has_dlc = "La Resistance" }
-							FROM = {
-								NOT = { has_government = communism }
-								NOT = { has_government = democratic }
-							}
-						}
-					}
-				}
-			}
-		}
-		else_if = { #Soviet volunteers to Spain (Commie) (supporting POUM -> POUM split happened -> Stalin in charge) (with No Step Back)
-			limit = {
-				has_dlc = "No Step Back"
-				has_dlc = "La Resistance"
-				original_tag = SOV
-				has_government = communism
-				FROM = { original_tag = SPR }
-				has_completed_focus = SOV_covert_support_for_spanish_poum
-				NOT = { has_completed_focus = SOV_coup_detat }
-				has_global_flag = SPR_anarchist_uprising_flag
-				SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_SCW_COVERT_POUM_TT
-				NOT = {
-					FROM = { NOT = { tag = SPD } }
-				}
-			}
-		}
-		else_if = { #Soviet volunteers to Spain (Commie) (supporting POUM -> POUM split happened -> Right Oppo in charge) (with No Step Back)
-			limit = {
-				has_dlc = "No Step Back"
-				has_dlc = "La Resistance"
-				original_tag = SOV
-				has_government = communism
-				FROM = { original_tag = SPR }
-				has_completed_focus = SOV_covert_support_for_spanish_poum
-				has_completed_focus = SOV_coup_detat
-				has_global_flag = SPR_anarchist_uprising_flag
-				SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_SCW_POUM_TT
-				NOT = {
-					AND = {
-						country_exists = SPC
-						FROM = { NOT = { tag = SPC } }
-					}
-				}
-			}
-		}
-		else_if = { #Soviet volunteers to Spain (Commie & Democr) (without No Step Back)
-			limit = {
-				NOT = { has_dlc = "No Step Back" }
-				original_tag = SOV
-				OR = {
-					has_government = communism
-					has_government = democratic
-				}
-				FROM = { original_tag = SPR }
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_SCW_TT
-				NOT = {
-					OR = {
-						AND = {
-							has_dlc = "La Resistance"
-							FROM = { NOT = { tag = SPD } }
-						}
-						AND = {
-							NOT = { has_dlc = "La Resistance" }
-							FROM = {
-								NOT = { has_government = communism }
-								NOT = { has_government = democratic }
-							}
-						}
-					}
-						
-				}
-			}
-		}
-		else_if = { #Soviet volunteers to Spain (Exiles)
-			limit = {
-				original_tag = SOV
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-				FROM = { original_tag = SPR }
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_EXILES_SCW_TT
-				NOT = {
-					OR = {
-						AND = {
-							has_dlc = "La Resistance"
-							FROM = { NOT = { tag = SPA } }
-							FROM = { NOT = { tag = SPB } }
-						}
-						AND = {
-							NOT = { has_dlc = "La Resistance" }
-							FROM = {
-								NOT = { has_government = fascism }
-								NOT = { has_government = neutrality }
-							}
-						}
-					}
-						
-				}
 			}
 		}
 		else = {
@@ -1367,19 +963,6 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 		custom_trigger_tooltip = {
 			tooltip = RULE_VOLUNTEERS_SAME_IDEOLOGY_TT
 			has_government = FROM
-		}
-		if = {
-			limit = {
-				NOT = { tag = SPC }
-				FROM = {
-					tag = SPC
-					has_completed_focus = SPR_regional_defense_council_of_aragon
-	}
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_NOT_ANARCHISTS_TT
-				NOT = { FROM = { tag = SPC } }
-			}
 		}
 	}
 	if = {
