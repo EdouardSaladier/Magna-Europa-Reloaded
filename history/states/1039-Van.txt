@@ -2,12 +2,15 @@
 state={
 	id=1039
 	name="STATE_1039"
-	history = {
+
+	history={
 		owner = TUR
 		add_core_of = KUR
+
 	}
+
 	provinces={
-		1531 1983 3472 4701 7781 7880 9410 15272 15336 15344 15358 18712 19176 19180 19187 21495 21508 
+		1531 1983 3472 4701 7781 7880 9410 15272 15336 15344 15358 19180 21495 21508 
 	}
 	manpower=154405
 	buildings_max_level_factor=1.000

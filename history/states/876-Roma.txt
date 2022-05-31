@@ -2,17 +2,22 @@
 state={
 	id=876
 	name="STATE_876"
-	history = {
+
+	history={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = LAZ
-		victory_points = { 20009 80 }
+		victory_points = {
+			20009 80 
+		}
+
 	}
+
 	provinces={
-		4846 6258 8316 14893 14895 14916 20009 20010 20026 20027 20047 20054 
+		20009 
 	}
-	manpower=1562600
-	state_category=metropolis
+	manpower=550947
 	buildings_max_level_factor=1.000
+	state_category=metropolis
 	local_supplies=0.000
 }
