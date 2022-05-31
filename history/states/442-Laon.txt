@@ -2,21 +2,15 @@
 state={
 	id=442
 	name="STATE_442"
-
 	history={
 		owner = FRA
 		add_core_of = FRA
-		victory_points = {
-			5137 10 
-		}
-
 	}
-
 	provinces={
-		65 3866 5137 12870 12894 
+		3866 12870 12894 
 	}
-	manpower=202990
+	manpower=81196
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=pastoral
 	local_supplies=0.000
 }
