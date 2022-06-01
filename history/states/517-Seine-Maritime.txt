@@ -10,6 +10,8 @@ state={
 		add_core_of =FRA
 		buildings = {
 			infrastructure = 4
+			6317 = { naval_base = 1 }
+			12898 = { naval_base = 5 }
 		}
 		add_core_of = NMD
 	    victory_points = {
