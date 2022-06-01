@@ -6,6 +6,10 @@ state={
 	history={
 		owner = ITA
 		add_core_of = LBA
+		buildings = {
+			infrastructure = 2
+			15718 = { naval_base = 5 }
+		}
 	
 	    victory_points = {
 		    15718 80 #Tripoli

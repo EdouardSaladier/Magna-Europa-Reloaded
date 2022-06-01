@@ -6,6 +6,10 @@ state={
 	history={
 		owner = ITA
 		add_core_of = LBA
+		buildings = {
+			infrastructure = 2
+			21078 = { naval_base = 6 }
+		}
 	
 	    victory_points = {
 		    21078 10 #Tobruch
