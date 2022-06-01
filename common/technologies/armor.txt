@@ -327,25 +327,6 @@ technologies = {
 			factor = 1
 			
 			modifier = {
-				factor = 2
-				is_major = yes
-				not = {
-					tag = JAP
-					num_of_military_factories < 50
-				}
-			}
-			modifier = {
-				is_major = yes
-				not = { tag = JAP }
-				has_war = yes
-				factor = 10 #you are embarassing yourself
-			}
-			modifier = {
-				tag = SOV
-				factor = 3
-			}
-			
-			modifier = {
 				factor = 1.1
 				date > "1937.1.1"
 			}
@@ -508,13 +489,6 @@ technologies = {
 				is_major = yes
 			}
 			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
 				not = {
 					any_controlled_state = {
 						is_coastal = yes
@@ -550,13 +524,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
 			}
 			modifier = {
 				not = {
@@ -726,19 +693,6 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 			
-			modifier = {
-				factor = 2
-				is_major = yes
-				not = {
-					tag = JAP
-					num_of_military_factories < 50
-				}
-				date > "1938.1.1"
-			}
-			modifier = {
-				tag = SOV
-				factor = 1.5
-			}
 			modifier = {
 				factor = 1.1
 				date > "1940.1.1"
@@ -942,27 +896,9 @@ technologies = {
 			factor = 3
 			
 			modifier = {
-				factor = 2
-				is_major = yes
-				not = {
-					tag = JAP
-					num_of_military_factories < 50
-				}
-			}
-			modifier = {
 				date < "1941.1.1"
 				factor = 0.3
 			}
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-			
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-			
 			modifier = {
 				factor = 1.1
 				date > "1942.1.1"
@@ -1535,11 +1471,6 @@ technologies = {
 				factor = 3
 			}
 			modifier = {
-				tag = JAP
-				num_of_military_factories < 100
-				factor = 0
-			}
-			modifier = {
 				factor = 0
 				OR = {
 					can_research = improved_heavy_tank
@@ -1683,11 +1614,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 0.8
-			modifier = {
-				tag = JAP
-				num_of_military_factories < 100
-				factor = 0
-			}
 			modifier = {
 				factor = 1.2
 				date > "1942.1.1"
