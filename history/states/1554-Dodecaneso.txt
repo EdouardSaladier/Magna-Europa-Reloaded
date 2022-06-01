@@ -5,6 +5,11 @@ state={
 		owner = ITA
 		add_core_of = GRE
 		add_claim_by = ITA
+		buildings = {
+			infrastructure = 3
+			20297 = { naval_base = 4 }
+			20317 = { naval_base = 1 }
+		}
 	}
 	provinces={
 		20297 20316 20317 20318 20321 20322 20323 20324 20325 

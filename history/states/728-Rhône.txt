@@ -4,7 +4,10 @@ state={
 	name="STATE_728"
 	history={
 		owner = FRA
-		add_core_of = FRA
+		add_core_of =FRA
+		buildings = {
+			infrastructure = 4
+		}
     }
 	provinces={
 		3627 4917 5489 14122 14181 

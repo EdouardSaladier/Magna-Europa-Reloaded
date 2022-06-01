@@ -6,6 +6,11 @@ state={
 	history = {
 		owner = ENG
 		add_core_of = EGY
+		buildings = {
+			infrastructure = 3
+			21160 = { naval_base = 2 }
+			21192 = { naval_base = 2 }
+		}
 	    victory_points = {
 		    21169 20 #Ismailia
 			}
