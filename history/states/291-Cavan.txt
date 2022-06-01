@@ -4,6 +4,9 @@ state={
 	history={
 		owner = IRE
 		add_core_of = IRE
+		buildings = {
+			infrastructure = 3
+		}
 	}
 	provinces={
 		5504 5586 9344 9612 

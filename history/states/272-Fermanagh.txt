@@ -5,6 +5,9 @@ state={
 	history={
 		owner = ENG
 		add_core_of = ENG
+		buildings = {
+			infrastructure = 4
+		}
 		add_core_of = NIR
 	}
 	provinces={
