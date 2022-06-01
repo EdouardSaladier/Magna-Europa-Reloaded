@@ -6,6 +6,9 @@ state={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = SIC
+		buildings = {
+			infrastructure = 3
+		}
 		victory_points = { 15438 3 }
 		victory_points = { 15461 2 }
 	}

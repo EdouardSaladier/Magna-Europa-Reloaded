@@ -7,6 +7,10 @@ state={
 		add_core_of = CRO
 		add_core_of = ITA
 		add_core_of = TST
+		buildings = {
+			infrastructure = 3
+			14309 = { naval_base = 3 }
+		}
 		victory_points = { 14309 5 }
 	}
 	provinces={

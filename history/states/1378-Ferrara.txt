@@ -5,6 +5,9 @@ state={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = FRR
+		buildings = {
+			infrastructure = 4
+		}
 		victory_points = { 14450 10 }
 	}
 	provinces={

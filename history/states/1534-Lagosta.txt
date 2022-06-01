@@ -6,6 +6,10 @@ state={
 		add_core_of = ITA
 		add_core_of = CRO
 		add_core_of = DLM
+		buildings = {
+			infrastructure = 2
+			20143 = { naval_base = 1 }
+		}
 	}
 	provinces={
 		20143 
