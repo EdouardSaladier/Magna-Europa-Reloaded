@@ -10,10 +10,16 @@ state={
 		add_core_of = VAL
 		add_core_of = SPR
         victory_points = {
-            15309 3
+            15309 5 #Alcoy
+        }
+        victory_points = {
+            19779 5 #Benidorm
         }
 		victory_points = {
-            19780 5
+            19780 20 #Alicante
+        }
+		victory_points = {
+            5529 20 #Elche
         }
     }
 	manpower=559900
