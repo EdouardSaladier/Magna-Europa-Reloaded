@@ -4,6 +4,10 @@ state={
 	provinces={
 		16081 17988 18114 18188 
 	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+	}
 	manpower=1797
 	state_category = tiny_island
 	buildings_max_level_factor=1.000
