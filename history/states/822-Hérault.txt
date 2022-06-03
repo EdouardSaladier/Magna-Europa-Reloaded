@@ -5,16 +5,19 @@ state={
 
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = OCC
 		buildings = {
 			infrastructure = 4
 		}
 		victory_points = {
-			14657 20 
+			14657 20 #Montpellier
 		}
 		victory_points = {
-			8584 10 
+			8584 5 #Beziers
+		}
+		victory_points = {
+			14692 2 #Sète
 		}
 
 	}

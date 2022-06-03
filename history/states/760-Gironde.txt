@@ -7,14 +7,17 @@ state={
 	}
 	history={
 		owner = FRA
-		add_core_of =FRA
-		add_core_of =AQT
+		add_core_of = FRA
+		add_core_of = AQT
 		buildings = {
 			infrastructure = 4
 			2751 = { naval_base = 3 }
 		}
         victory_points = {
-            14431 20
+            14431 20 #Bordeaux
+        }
+        victory_points = {
+            1777 2 #Libourne
         }
     }
 	manpower=765540

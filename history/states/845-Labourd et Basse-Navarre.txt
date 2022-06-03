@@ -3,11 +3,14 @@ state={
 	name="STATE_845"
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
+		add_core_of = NAV
+		victory_points = {
+            5987 5 #Biarritz
+        }
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = NAV
     }
 	provinces={
 		5987 7899 14708 
