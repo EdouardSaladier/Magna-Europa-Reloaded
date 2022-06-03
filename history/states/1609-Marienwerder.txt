@@ -2,14 +2,17 @@
 state={
 	id=1609
 	name="STATE_1609"
-    history={
+
+	history={
 		owner = GER
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = ESP
-    }
+
+	}
+
 	provinces={
-		6984 11122 11138 11171 11210 20477 
+		1693 6984 11122 11138 11171 11210 20477 
 	}
 	manpower=88070
 	buildings_max_level_factor=1.000
