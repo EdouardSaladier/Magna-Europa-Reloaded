@@ -2,16 +2,19 @@
 state={
 	id=569
 	name="STATE_569"
+
 	history={
 		owner = CZE
 		add_core_of = CZE
 		add_core_of = SLO
+
 	}
+
 	provinces={
-		3605 8364 9434 13004 13055 13071 
+		3605 9434 
 	}
-	manpower=186808
+	manpower=151314
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = town
 }
