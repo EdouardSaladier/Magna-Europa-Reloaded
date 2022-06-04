@@ -1,0 +1,15 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### METRPOLITAN FRANCE ###
+	fleet = {
+		name = "Amiral Nord"
+		naval_base = 12923 # Dunkerque
+		task_force = {				
+			name = "1ère Région Navale"			
+			location = 12923 # Dunkerque			
+			ship = { name = "Le Terrible" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
+		}
+	}	
+}
