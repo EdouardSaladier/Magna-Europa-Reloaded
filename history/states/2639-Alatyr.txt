@@ -5,6 +5,11 @@ state={
 	provinces={
 		1921 3125 4186 4588 4690 7018 10706 10712 10732 10747 10761 10769 
 	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = CHU
+	}
 	manpower=121043
 	state_category=rural
 	buildings_max_level_factor=1.000

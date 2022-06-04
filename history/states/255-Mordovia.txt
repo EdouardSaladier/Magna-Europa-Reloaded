@@ -3,9 +3,14 @@ state={
 	id=255
 	name="STATE_255"
 	provinces={
-		127 1436 2889 3168 3863 4835 5550 6229 6349 6716 7454 7677 7871 8585 8590 10842 10859 10954 11025 
+		2889 3168 3863 4835 5550 7677 7871 8585 10954 11025 17291 
 	}
-	manpower=493264
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = MRD
+	}
+	manpower=463264
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

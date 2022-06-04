@@ -5,6 +5,11 @@ state={
 	provinces={
 		734 2774 3444 3446 3649 5973 6116 6346 6686 7465 8320 9108 9197 9382 10905 10961 10972 10977 10984 11053 11087 11164 11181 11262 
 	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = BSK
+	}
 	manpower=43628
 	state_category=pastoral
 	buildings_max_level_factor=1.000

@@ -3,7 +3,12 @@ state={
 	id=2648
 	name="STATE_2648"
 	provinces={
-		4423 4830 7703 10665 17714 18120 18747 
+		4423 4830 10665 17714 18120 18747 
+	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = TAT
 	}
 	manpower=8040
 	buildings_max_level_factor=1.000

@@ -2,15 +2,18 @@
 state={
 	id=2634
 	name="STATE_2634"
-	provinces={
-		1566 1789 2299 6753 7079 8758 8885 9460 10303 10355 10394 10437 16961 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
+
+	}
+
+	provinces={
+		1566 1789 2299 6753 7079 8758 8885 10303 10355 10394 10437 16961 
 	}
 	manpower=83736
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

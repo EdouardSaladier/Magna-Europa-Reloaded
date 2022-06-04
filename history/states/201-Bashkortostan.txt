@@ -5,6 +5,11 @@ state={
 	provinces={
 		488 1140 1362 1410 2735 4585 6665 7577 7612 10598 10599 10741 10790 10791 10873 15915 16562 18352 
 	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = BSK
+	}
 	manpower=2236092
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
