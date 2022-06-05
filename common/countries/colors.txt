@@ -216,7 +216,8 @@ SCO = {
 	color_ui = rgb { 41 49 155 }
 }
 WLS = {
-	color = rgb { 0 127 10 }
+	#color = rgb { 0 127 10 }
+	color = rgb { 27 124 35 }
 	color_ui = rgb { 0 127 10 }
 }
 NIR = {
