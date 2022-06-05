@@ -4,13 +4,22 @@ state={
 	name="STATE_472"
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = PIC
 		buildings = {
 			infrastructure = 4
 		}
 		victory_points = {
-			12325 10 
+			12325 5 #Calais
+		}
+		victory_points = {
+			6129 5 #Lens
+		}
+		victory_points = {
+			1406 2 #Béthune
+		}
+		victory_points = {
+			73 5 #Boulogne-sur-Mer
 		}
 	}
 	provinces={

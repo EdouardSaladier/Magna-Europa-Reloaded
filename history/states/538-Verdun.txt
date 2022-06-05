@@ -4,8 +4,11 @@ state={
 	name="STATE_538"
 	history={
 		owner = FRA
-		add_core_of =FRA
-		add_core_of =LOR
+		add_core_of = FRA
+		add_core_of = LOR
+        victory_points = {
+            9248 2 #Verdun
+        }
 		buildings = {
 			infrastructure = 4
 		}

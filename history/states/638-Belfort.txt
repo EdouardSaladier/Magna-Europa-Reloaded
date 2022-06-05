@@ -7,13 +7,13 @@ state={
 	}
 	history={
 		owner = FRA
-		add_core_of =FRA
-		add_core_of =ALS
+		add_core_of = FRA
+		add_core_of = ALS
 		buildings = {
 			infrastructure = 4
 		}
         victory_points = {
-            6613 5
+            6613 5 #Belfort
         }
     }
 	manpower=99500

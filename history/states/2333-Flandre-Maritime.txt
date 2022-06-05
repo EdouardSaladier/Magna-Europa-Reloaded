@@ -7,14 +7,14 @@ state={
 	
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = FLA
 		buildings = {
 			infrastructure = 4
 			12284 = { naval_base = 6 }
 		}
 		victory_points = {
-			12284 10 
+			12284 5 #Dunkirk
 		}
 	}
 	

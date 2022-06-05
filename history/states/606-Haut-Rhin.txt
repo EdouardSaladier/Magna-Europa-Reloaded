@@ -5,13 +5,16 @@ state={
 
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 4
 		}
 		add_core_of = ALS
 		victory_points = {
-			19848 10 
+			19848 5 #Colmar
+		}
+		victory_points = {
+			19849 10 #Mulhouse
 		}
 	}
 

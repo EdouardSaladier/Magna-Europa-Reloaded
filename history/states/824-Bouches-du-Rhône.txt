@@ -6,7 +6,7 @@ state={
 	}
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 4
 			8560 = { naval_base = 3 }
@@ -14,7 +14,16 @@ state={
 		add_core_of = PRV
 		add_core_of = OCC
         victory_points = {
-            8560 40
+            8560 40 #Marseille
+        }
+        victory_points = {
+            14667 10 #Aix-en-Provence
+        }
+        victory_points = {
+            8806 5 #Arles
+        }
+        victory_points = {
+            8802 2 #Miramas
         }
     }
 	manpower=1224800
