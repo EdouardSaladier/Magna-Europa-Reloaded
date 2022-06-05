@@ -2,17 +2,18 @@
 state={
 	id=622
 	name="STATE_622"
-	history = {
+	history={
 		owner = ROM
 		add_core_of = ROM
-		victory_points = { 20398 10 }
-		victory_points = { 20397 10 }
+		victory_points = {
+			20397 10 
+		}
 	}
 	provinces={
-		3219 5876 8609 9192 13549 13651 13734 20397 20398 20404 
+		3219 8609 13549 20397 
 	}
-	manpower=309855
+	manpower=167321
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = city
 }

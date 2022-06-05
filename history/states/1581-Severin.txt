@@ -1,16 +1,17 @@
+
 state={
 	id=1581
 	name="STATE_1581"
-	history = {
+	history={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = BNT
 	}
 	provinces={
-		2556 4180 6124 8645 9473 14177 14275 14287 14335 14382 
+		4180 6124 14177 14275 
 	}
-	manpower=252735
+	manpower=151641
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = city
 }

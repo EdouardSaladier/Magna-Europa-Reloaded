@@ -2,15 +2,15 @@
 state={
 	id=692
 	name="STATE_692"
-	history = {
+	history={
 		owner = ROM
 		add_core_of = ROM
 	}
 	provinces={
-		148 2412 4093 4539 5640 7893 8412 13948 
+		2412 4093 8412 13948 
 	}
-	manpower=191100
+	manpower=152880
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = town
 }
