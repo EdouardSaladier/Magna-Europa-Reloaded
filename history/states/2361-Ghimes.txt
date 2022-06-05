@@ -2,13 +2,16 @@
 state={
 	id=2361
 	name="STATE_2361"
-	history = {
+
+	history={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = MOL
+
 	}
+
 	provinces={
-		8384 14099 18083 
+		8384 14099 18083 18234 20442 
 	}
 	manpower=18420
 	buildings_max_level_factor=1.000

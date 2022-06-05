@@ -2,16 +2,19 @@
 state={
 	id=2360
 	name="STATE_2360"
-	history = {
+
+	history={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = MOL
+
 	}
+
 	provinces={
-		83 9281 13813 18234 20442 
+		83 9281 13813 
 	}
 	manpower=27334
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

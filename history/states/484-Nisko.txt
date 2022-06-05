@@ -2,21 +2,24 @@
 state={
 	id=484
 	name="STATE_484"
-	provinces={
-		5192 6567 8148 8189 8912 12483 12505 12559 19937 
-	}
+
 	history={
 		owner = POL
 		add_core_of = POL
 		add_core_of = GAL
-        victory_points = {
-            19937 5
-        }
-        victory_points = {
-            12483 5
-        }
-  	}
-	manpower=166162
+		victory_points = {
+			19937 5 
+		}
+		victory_points = {
+			12483 5 
+		}
+
+	}
+
+	provinces={
+		5192 6567 8148 8189 8912 12483 19937 
+	}
+	manpower=158162
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000
