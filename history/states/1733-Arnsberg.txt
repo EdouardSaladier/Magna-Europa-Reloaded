@@ -5,10 +5,11 @@ state={
 		5615 8133 9136 12084 12201 20710 
 	}
 	history={
+	    owner = GER
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = WST
-		owner = GER
+		victory_points = { 12201 5 }
     }
 	manpower=221050
 	buildings_max_level_factor=1.000
