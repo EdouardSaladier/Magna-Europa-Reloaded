@@ -2,15 +2,15 @@
 state={
 	id=493
 	name="STATE_493"
-	provinces={
-		478 1833 5342 5657 5950 6149 6523 7707 8482 12830 
-	}
-	history = {
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = UKR
 	}
-	manpower=405374
+	provinces={
+		478 1833 5342 5657 6149 6523 7707 8482 12830 
+	}
+	manpower=304030
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

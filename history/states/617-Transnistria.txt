@@ -2,17 +2,19 @@
 state={
 	id=617
 	name="STATE_617"
-	provinces={
-		2716 8636 8939 13955 13977 20390 20448 20449 20450 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = MDA
 		add_core_of = TSN
 	}
-	manpower=193200
+
+	provinces={
+		8636 13955 13977 20449 20450 
+	}
+	manpower=115920
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = town
 }

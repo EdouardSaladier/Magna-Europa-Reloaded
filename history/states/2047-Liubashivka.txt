@@ -2,16 +2,19 @@
 state={
 	id=2047
 	name="STATE_2047"
-	provinces={
-		549 1163 1951 2783 5717 13699 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = UKR
+
 	}
-	manpower=65000
-	state_category=pastoral
+
+	provinces={
+		1951 4149 5717 13699 
+	}
+	manpower=45500
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

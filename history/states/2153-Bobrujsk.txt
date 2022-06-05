@@ -2,15 +2,15 @@
 state={
 	id=2153
 	name="STATE_2153"
-	provinces={
-		908 1829 5870 11334 11378 11379 11511 
-	}
-	history = {
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = BLR
 	}
-	manpower=175702
+	provinces={
+		908 1829 11379 
+	}
+	manpower=158131
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

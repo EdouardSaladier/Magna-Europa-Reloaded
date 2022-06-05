@@ -2,15 +2,15 @@
 state={
 	id=2185
 	name="STATE_2185"
-	provinces={
-		5793 6228 10516 10539 10627 
-	}
-	history = {
+	history={
 		owner = SOV
 		add_core_of = SOV
 	}
+	provinces={
+		6228 10516 10539 10627 
+	}
 	manpower=15319
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }
