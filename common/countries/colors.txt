@@ -127,13 +127,22 @@ MNC = {
 }
 
 ###Northern Europe
-LIT = {
-	color = rgb { 219 219 119 }
-	color_ui = rgb { 255 255 155 }
-}
+
 DEN = {
 	color = rgb { 172 70 66 }
 	color_ui = rgb { 172 70 66 }
+}
+SWE = {
+	color = rgb { 0 106 167 }
+	color_ui = rgb { 0 106 167 }
+}
+NOR = {
+	color = rgb { 111 71 71 }
+	color_ui = rgb { 111 71 71 }
+}
+FIN = {
+	color = rgb { 205 212 228 }
+	color_ui = rgb { 205 212 228 }
 }
 
 ###Eastern Europe
@@ -141,6 +150,19 @@ SOV = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 125 13 24 }
 }
+LIT = {
+	color = rgb { 253 185 19 }
+	color_ui = rgb { 253 185 19 }
+}
+LAT = {
+	color = rgb { 158 48 129 }
+	color_ui = rgb { 158 48 129 }
+}
+EST = {
+	color = rgb { 0 114 206 }
+	color_ui = rgb { 0 114 206 }
+}
+
 
 ###North Africa
 LBA = {
@@ -166,8 +188,8 @@ MOR = {
 
 ###Levant
 TUR = {
-	color = rgb { 167 17 1}
-	color_ui = rgb { 169 17 1 }
+	color = rgb { 156 42 31 }
+	color_ui = rgb { 156 42 31 }
 }
 PAL = {
 	color = rgb { 170  125  80 }
