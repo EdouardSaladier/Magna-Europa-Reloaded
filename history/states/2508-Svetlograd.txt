@@ -3,10 +3,17 @@ state={
 	id=2508
 	name="STATE_2508"
 	provinces={
-		2106 2394 5577 5826 14155 14172 14182 14214 14240 16585 
+		2106 2394 5577 5826 14155 14172 14182 14214 14240 
+	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = RUS
+		add_core_of = RUS
+		add_core_of = STV
 	}
 	manpower=102563
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

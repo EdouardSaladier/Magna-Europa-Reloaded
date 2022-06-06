@@ -3,10 +3,17 @@ state={
 	id=2406
 	name="STATE_2406"
 	provinces={
-		1776 2890 5980 7247 7400 7491 9271 14463 14498 14518 14575 15953 17526 18157 
+		7247 9271 14518 
 	}
-	manpower=283087
+	history = {
+		owner = SOV
+		add_core_of = RUS
+		add_core_of = SOV
+		add_core_of = RUS
+		add_core_of = KUB
+	}
+	manpower=70322
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=rural
 	local_supplies=0.000
 }

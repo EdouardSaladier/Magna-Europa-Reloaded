@@ -3,10 +3,17 @@ state={
 	id=2501
 	name="STATE_2501"
 	provinces={
-		5527 5540 6773 8098 8442 8845 14037 14048 14066 14206 
+		918 5527 5540 6773 7763 8098 8442 8797 8845 9278 13982 13991 14037 14048 14066 14206 
 	}
-	manpower=39638
-	state_category=pastoral
+	history = {
+		owner = SOV
+		add_core_of = RUS
+		add_core_of = SOV
+		add_core_of = RUS
+		add_core_of = KUB
+	}
+	manpower=139638
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }
