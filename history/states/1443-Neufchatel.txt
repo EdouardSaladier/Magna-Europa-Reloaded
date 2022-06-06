@@ -4,6 +4,12 @@ state={
 	history={
 		owner = SWI
 		add_core_of = SWI
+		victory_points = {
+            20103 2 #Yverdon-les-Bains
+        }
+		victory_points = {
+            20113 2 #La Chaux-de-Fonds
+        }
 	}
 	provinces={
 		6135 19323 20103 20113 
