@@ -6,13 +6,16 @@ state={
 	}
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = PIC
 		buildings = {
 			infrastructure = 4
 		}
         victory_points = {
-            8352 5
+            8352 5 #Beauvais
+        }
+        victory_points = {
+            12952 2 #Compiègne
         }
     }
 	manpower=402600

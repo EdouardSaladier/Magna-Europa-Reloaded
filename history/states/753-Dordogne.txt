@@ -4,9 +4,15 @@ state={
 	name="STATE_753"
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = AQT
 		add_core_of = OCC
+        victory_points = {
+            783 2 #Bergerac
+        }
+        victory_points = {
+            7758 2 #Périgueux
+        }
 		buildings = {
 			infrastructure = 4
 		}

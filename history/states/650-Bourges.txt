@@ -7,13 +7,16 @@ state={
 	}
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = ORL
 		buildings = {
 			infrastructure = 4
 		}
         victory_points = {
-            13846 5
+            13846 5 #Bourges
+        }
+        victory_points = {
+            13810 2 #Vierzon
         }
     }
 	manpower=173220

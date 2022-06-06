@@ -6,16 +6,19 @@ state={
 	}
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 4
 		}
 		add_core_of = BRI
         victory_points = {
-            13459 20
+            13459 20 #Rennes
         }
 		victory_points = {
-            13267 5
+            13267 5 #Saint-Malo
+        }
+        victory_points = {
+            13351 2 #Fougères
         }
     }
 	manpower=565800

@@ -3,8 +3,14 @@ state={
 	name="STATE_699"
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = AVG
+        victory_points = {
+            8264 2 #Vichy
+        }
+        victory_points = {
+            14068 2 #Montluçon
+        }
 		buildings = {
 			infrastructure = 4
 		}

@@ -7,17 +7,17 @@ state={
 	}
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 4
 			13346 = { naval_base = 10 }
 		}
 		add_core_of = BRI
         victory_points = {
-            13346 10
+            13346 10 #Brest
         }
 		victory_points = {
-            13526 5
+            13526 5 #Quimper
         }
     }
 	manpower=756800

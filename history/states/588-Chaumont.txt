@@ -4,8 +4,14 @@ state={
 	name="STATE_588"
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = CMP
+        victory_points = {
+            13307 2 #Saint-Dizier
+        }
+        victory_points = {
+            2444 2 #Chaumont
+        }
 		buildings = {
 			infrastructure = 4
 		}
