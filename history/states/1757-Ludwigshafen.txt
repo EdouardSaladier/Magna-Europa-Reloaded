@@ -10,6 +10,12 @@ state={
 		add_core_of = GER
 		add_core_of = BVR
 		add_core_of = BPA
+        victory_points = {
+            20743 10 #Ludwigshafen
+        }
+        victory_points = {
+            5086 5 #Neustadt
+        }
 		set_demilitarized_zone = yes
     }
 	manpower=308951

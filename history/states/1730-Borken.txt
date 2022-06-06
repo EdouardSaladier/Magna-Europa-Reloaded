@@ -8,7 +8,12 @@ state={
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = WST
-		victory_points = { 9545 5 }
+		victory_points = {
+			9545 5 #Bocholt
+		}
+        victory_points = {
+            11887 2 #Borken
+        }
 		set_demilitarized_zone = yes
 	}
 

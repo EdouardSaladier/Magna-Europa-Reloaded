@@ -6,6 +6,15 @@ state={
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = RHN
+        victory_points = {
+            20734 10 #Neuss
+        }
+        victory_points = {
+            8475 20 #Mönchengladbach
+        }
+        victory_points = {
+            20734 20 #Krefeld
+        }
 		set_demilitarized_zone = yes
     }
 	provinces={

@@ -10,7 +10,9 @@ state={
 		add_core_of = GER
 		add_core_of = BVR
 		add_core_of = BPA
-		victory_points = { 12953 5 }
+		victory_points = {
+			12953 5 #Kaiserslautern
+		}
 		set_demilitarized_zone = yes
     }
 	manpower=267928
