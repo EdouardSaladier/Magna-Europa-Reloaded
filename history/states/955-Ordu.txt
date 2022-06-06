@@ -5,6 +5,11 @@ state={
 	history = {
 		owner = TUR
 		add_core_of = TUR
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = { 5823 5 }
+		victory_points = { 15031 10 }
 	}
 	provinces={
 		3543 5103 5823 7041 8115 15031 21528 21540 

@@ -5,6 +5,9 @@ state={
 	history = {
 		owner = IRQ
 		add_core_of = IRQ
+		buildings = {
+			infrastructure = 3
+		}
 	}
 	provinces={
 		1603 2325 15747 18715 18742 19123 19128 19137 

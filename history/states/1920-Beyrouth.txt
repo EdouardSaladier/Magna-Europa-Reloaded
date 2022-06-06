@@ -5,6 +5,9 @@ state={
 	history = {
 		owner = LEB
 		add_core_of = LEB
+		buildings = {
+			infrastructure = 2
+		}
 	    victory_points = {
 		    15680 80 #Beirut
 			}

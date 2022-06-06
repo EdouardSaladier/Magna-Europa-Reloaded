@@ -6,6 +6,9 @@ state={
 	history = {
 		owner = IRQ
 		add_core_of = IRQ
+		buildings = {
+			infrastructure = 2
+		}
 		add_core_of = KUR
 	    victory_points = {
 		    4684 80 #Mosul

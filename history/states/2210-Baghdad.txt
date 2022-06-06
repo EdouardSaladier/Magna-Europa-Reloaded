@@ -6,6 +6,9 @@ state={
 	history = {
 		owner = IRQ
 		add_core_of = IRQ
+		buildings = {
+			infrastructure = 3
+		}
 	
 	    victory_points = {
 		    18589 80 #Baghdad

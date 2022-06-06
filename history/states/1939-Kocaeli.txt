@@ -5,6 +5,13 @@ state={
 	history = {
 		owner = TUR
 		add_core_of = TUR
+		buildings = {
+			infrastructure = 2
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = { 21456 10 }
 		set_demilitarized_zone = yes
 	}
 	provinces={
