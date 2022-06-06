@@ -2,15 +2,21 @@
 state={
 	id=88
 	name="STATE_88"
-	history = {
+
+	history={
 		owner = SWE
 		add_core_of = SWE
+		victory_points = {
+			9339 2 
+		}
+
 	}
+
 	provinces={
-		287 565 869 903 1415 1549 2178 2892 2897 3008 3312 3737 4312 4671 4890 5430 5476 5747 6215 7263 7891 8861 9339 9846 9868 9907 9946 9948 9952 9972 9977 19288 19592 19593 
+		287 565 1415 1549 2892 2897 3008 3312 3737 4312 4671 4890 5430 5747 7263 7891 9339 9907 9946 9948 9952 9972 9977 19288 19592 19593 
 	}
-	manpower=248900
+	manpower=211565
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = large_town
 }
