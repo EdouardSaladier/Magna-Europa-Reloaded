@@ -1,0 +1,21 @@
+state={
+	id=2713
+	name="STATE_2713"
+	provinces={
+		6618 6625 12107 5879 12039
+	}
+	history={
+		owner = HOL
+		add_core_of = HOL
+		victory_points = {
+			12039 10 #Tilburg
+		}
+		victory_points = {
+			6625 10 #Breda
+		}
+	}
+	manpower=390000
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

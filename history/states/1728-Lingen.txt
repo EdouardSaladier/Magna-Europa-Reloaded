@@ -2,7 +2,7 @@ state={
 	id=1728
 	name="STATE_1728"
 	provinces={
-		4781 4980 9221 11744 20683 
+		4980 20683 
 	}
 	history={
 		owner = GER
@@ -10,8 +10,8 @@ state={
 		add_core_of = PRS
 		add_core_of = HNV
     }
-	manpower=113190
+	manpower=61190
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = rural
+	state_category = pastoral
 }
