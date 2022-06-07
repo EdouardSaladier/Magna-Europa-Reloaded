@@ -6,6 +6,9 @@ state={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = WLC
+		buildings = {
+			infrastructure = 3
+		}
 	}
 	provinces={
 		2545 14389 16909 

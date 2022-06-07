@@ -5,6 +5,9 @@ state={
 	history={
 		owner = GRE
 		add_core_of = GRE
+		buildings = {
+			infrastructure = 2
+		}
 	}
 	provinces={
 		5567 5637 20344 20346 

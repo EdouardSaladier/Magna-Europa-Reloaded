@@ -8,6 +8,9 @@ state={
 	history={
 		owner = POL
 		add_core_of = POL
+		buildings = {
+			infrastructure = 3
+		}
 		add_core_of = GAL
   	}
 	manpower=303800

@@ -8,6 +8,9 @@ state={
 		owner = YUG
 		add_core_of = YUG
 		add_core_of = MAC
+		buildings = {
+			infrastructure = 2
+		}
 		victory_points = { 20199 5 }
 		victory_points = { 14979 5 }
 	}

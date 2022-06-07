@@ -9,6 +9,9 @@ state={
 		owner = YUG
 		add_core_of = YUG
 		add_core_of = MAC
+		buildings = {
+			infrastructure = 2
+		}
 	}
 	manpower=35619
 	buildings_max_level_factor=1.000

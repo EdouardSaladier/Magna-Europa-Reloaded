@@ -10,6 +10,9 @@ state={
 		add_core_of = YUG
 		add_core_of = KOS
 		add_core_of = SER
+		buildings = {
+			infrastructure = 2
+		}
 		victory_points = { 20223 10 }
 	}
 	manpower=15563

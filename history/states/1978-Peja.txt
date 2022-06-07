@@ -9,6 +9,9 @@ state={
 		owner = YUG
 		add_core_of = YUG
 		add_core_of = SER
+		buildings = {
+			infrastructure = 2
+		}
 		add_core_of = KOS
 		victory_points = { 14848 5 }
 	}

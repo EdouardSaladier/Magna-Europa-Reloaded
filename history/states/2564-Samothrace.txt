@@ -7,6 +7,9 @@ state={
 	history={
 		owner = GRE
 		add_core_of = GRE
+		buildings = {
+			infrastructure = 2
+		}
 
 	}
 	manpower=1837

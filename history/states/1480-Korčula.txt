@@ -9,6 +9,9 @@ state={
 		owner = YUG
 		add_core_of = YUG
 		add_core_of = CRO
+		buildings = {
+			infrastructure = 3
+		}
 		add_core_of = DLM
 	}
 	manpower=20698

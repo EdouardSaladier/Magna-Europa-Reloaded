@@ -4,6 +4,9 @@ state={
 	history={
 		owner = ITA
 		add_core_of = GRE
+		buildings = {
+			infrastructure = 2
+		}
 		add_claim_by = ITA
 		victory_points = { 20297 5 }
 		buildings = {

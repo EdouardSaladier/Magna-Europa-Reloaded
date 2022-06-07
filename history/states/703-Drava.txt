@@ -8,6 +8,9 @@ state={
 	history = {
 		owner = YUG
 		add_core_of = SLV
+		buildings = {
+			infrastructure = 3
+		}
 		add_core_of = YUG
 		add_core_of = STR
 		victory_points = { 14007 5 }

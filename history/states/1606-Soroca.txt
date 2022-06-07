@@ -5,6 +5,9 @@ state={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = MOL
+		buildings = {
+			infrastructure = 3
+		}
 	}
 	provinces={
 		1861 2967 5125 5151 9166 13377 13468 13469 13541 20452 

@@ -7,7 +7,13 @@ state={
 	history={
 		owner = POL
 		add_core_of = POL
+		buildings = {
+			infrastructure = 3
+		}
 		add_core_of = SLO
+		buildings = {
+			infrastructure = 3
+		}
   	}
 	manpower=16614
 	buildings_max_level_factor=1.000

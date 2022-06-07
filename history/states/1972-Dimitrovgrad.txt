@@ -8,6 +8,9 @@ state={
 		owner = YUG
 		add_core_of = YUG
 		add_core_of = SER
+		buildings = {
+			infrastructure = 2
+		}
 	}
 	manpower=6278
 	state_category=pastoral
