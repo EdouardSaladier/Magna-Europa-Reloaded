@@ -2,15 +2,20 @@
 state={
 	id=1348
 	name="STATE_1348"
-	history = {
+
+	history={
 		owner = LAT
 		add_core_of = LAT
-		victory_points = { 3868 10 }
+		victory_points = {
+			3868 10 
+		}
+
 	}
+
 	provinces={
-		3791 3868 5649 10538 19013 
+		3868 5649 
 	}
-	manpower=237023
+	manpower=235023
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000
