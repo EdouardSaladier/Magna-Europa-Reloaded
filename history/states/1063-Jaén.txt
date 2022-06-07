@@ -9,6 +9,9 @@ state={
 		owner = SPR
 		add_core_of = ADU
 		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+		}
         victory_points = {
             19775 5 #Jaén
         }

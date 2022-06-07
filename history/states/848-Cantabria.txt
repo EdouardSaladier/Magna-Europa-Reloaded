@@ -8,6 +8,10 @@ state={
 	history={
 		owner = SPR
 		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+			19763 = { naval_base = 1 }
+		}
         victory_points = {
             19763 10 #Santander
         }

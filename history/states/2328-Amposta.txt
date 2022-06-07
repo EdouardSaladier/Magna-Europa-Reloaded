@@ -5,6 +5,9 @@ state={
 		owner = SPR
 		add_core_of = CAT
 		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+		}
         victory_points = {
             5490 2 #Amposta
         }

@@ -9,6 +9,9 @@ state={
 		owner = SPR
 		add_core_of = GLC
 		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+		}
         victory_points = {
             14853 10 #Ourense
         }

@@ -7,6 +7,9 @@ state={
 		owner = SPR
 		add_core_of = CNR
 		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+		}
 	
 	    victory_points = {
 		    20917 5 #Arona

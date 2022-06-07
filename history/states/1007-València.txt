@@ -9,6 +9,10 @@ state={
 		owner = SPR
 		add_core_of = VAL
 		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+			15247 = { naval_base = 4 }
+		}
         victory_points = {
             6199 5 #Gandia
         }

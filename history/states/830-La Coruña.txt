@@ -8,6 +8,10 @@ state={
 		owner = SPR
 		add_core_of = GLC
 		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+			14694 = { naval_base = 6 }
+		}
         victory_points = {
             14694 20 #La Coruña
         }

@@ -9,6 +9,10 @@ state={
 		owner = SPR
 		add_core_of = NAV
 		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+			750 = { naval_base = 1 }
+		}
         victory_points = {
             750 20 #Bilbao
         }

@@ -5,6 +5,9 @@ state={
 		owner = SPR
 		add_core_of = ARA
 		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+		}
         victory_points = {
             1704 2 #Calatayud
         }

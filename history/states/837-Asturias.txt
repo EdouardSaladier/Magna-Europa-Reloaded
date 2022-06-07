@@ -9,6 +9,10 @@ state={
 		owner = SPR
 		add_core_of = ATR
 		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+			14678 = { naval_base = 2 }
+		}
         victory_points = {
             14678 20 #Gijón
         }

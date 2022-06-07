@@ -8,6 +8,10 @@ state={
 	history={
 	owner = POR
 	add_core_of = POR
+		buildings = {
+			infrastructure = 3
+			19734 = { naval_base = 2 }
+		}
         victory_points = {
             19734 10 #Setúbal
         }

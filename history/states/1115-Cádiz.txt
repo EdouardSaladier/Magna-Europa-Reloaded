@@ -9,6 +9,11 @@ state={
 		owner = SPR
 		add_core_of = ADU
 		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+			19767 = { naval_base = 4 }
+			19770 = { naval_base = 2 }
+		}
         victory_points = {
             19770 10 #Algeciras
         }

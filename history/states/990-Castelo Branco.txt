@@ -4,6 +4,9 @@ state={
 	history={
 		owner = POR
 		add_core_of = POR
+		buildings = {
+			infrastructure = 3
+		}
         victory_points = {
             2224 2 #Castelo Branco
         }

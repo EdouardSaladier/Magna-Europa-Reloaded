@@ -7,6 +7,10 @@ state={
 		owner = SPR
 		add_core_of = VAL
 		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+			15192 = { naval_base = 1 }
+		}
 		victory_points = {
 			15192 10 #Castellón de la Plana
 		}
