@@ -144,6 +144,18 @@ FIN = {
 	color = rgb { 205 212 228 }
 	color_ui = rgb { 205 212 228 }
 }
+ALA = {
+    color = rgb { 97 157 180 }
+    color_ui = rgb { 97 157 180 }
+}
+FAR = {
+    color = rgb { 240 240 240 }
+    color_ui = rgb { 240 240 240 }
+}
+SAP = {
+    color = rgb { 0 50 175 }
+    color_ui = rgb { 0 50 175 }
+}
 
 ###Eastern Europe
 SOV = {
@@ -162,7 +174,26 @@ EST = {
 	color = rgb { 0 114 206 }
 	color_ui = rgb { 0 114 206 }
 }
-
+LIV = {
+    color = rgb { 142 142 142 }
+    color_ui = rgb { 142 142 142 }
+}
+CUR = {
+    color = rgb { 201 7 42 }
+    color_ui = rgb { 201 7 42 }
+}
+BUR = {
+    color = rgb { 217 192 19 }
+    color_ui = rgb { 217 192 19 }
+}
+SBB = {
+    color = rgb { 4 62 119 }
+    color_ui = rgb { 4 62 119 }
+}
+GAG = {
+    color = rgb { 122 180 228 }
+    color_ui = rgb { 122 180 228 }
+}
 
 ###North Africa
 LBA = {
@@ -229,8 +260,10 @@ SAU = {
 	color = rgb { 71 113 97 }
 	color_ui = rgb { 92 147 126 }
 }
-
-
+PON = {
+    color = rgb { 83 160 153 }
+    color_ui = rgb { 83 160 153 }
+}
 
 ###British Releasables
 SCO = {
@@ -806,44 +839,11 @@ BOH = {
 	color = rgb { 187 44 36 }
 	color_ui = rgb { 187 44 36 }
 }
-
-LIV = {
-    color = rgb { 106 106 106 }
-    color_ui = rgb { 106 106 106 }
-}
-CUR = {
-    color = rgb { 201 7 42 }
-    color_ui = rgb { 201 7 42 }
-}
 SDT = {
     color = rgb { 51 106 106 }
     color_ui = rgb { 51 106 106 }
 }
-PON = {
-    color = rgb { 83 160 153 }
-    color_ui = rgb { 83 160 153 }
-}
-BUR = {
-    color = rgb { 217 192 19 }
-    color_ui = rgb { 217 192 19 }
-}
-SBB = {
-    color = rgb { 4 62 119 }
-    color_ui = rgb { 4 62 119 }
-}
-GAG = {
-    color = rgb { 122 180 228 }
-    color_ui = rgb { 122 180 228 }
-}
-ALA = {
-    color = rgb { 97 157 180 }
-    color_ui = rgb { 97 157 180 }
-}
-FAR = {
-    color = rgb { 240 240 240 }
-    color_ui = rgb { 240 240 240 }
-}
-SAP = {
-    color = rgb { 0 50 175 }
-    color_ui = rgb { 0 50 175 }
+CRP = {
+    color = rgb { 97 139 158 }
+    color_ui = rgb { 97 139 158 }
 }
