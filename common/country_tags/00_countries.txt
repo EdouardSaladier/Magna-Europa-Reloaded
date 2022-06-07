@@ -93,6 +93,7 @@ HOL = "countries/Netherlands.txt"
 LUX = "countries/Luxembourg.txt"
 BEL = "countries/Belgium.txt"
 IRE = "countries/Ireland.txt"
+BUR = "countries/Burgenland.txt"
 
 ###Eastern Europe
 POL = "countries/Poland.txt"
@@ -105,9 +106,16 @@ YUG = "countries/Yugoslavia.txt"
 ALB = "countries/Albania.txt"
 DNZ = "countries/Danzig.txt"
 GRE = "countries/Greece.txt"
+SBB = "countries/Baranya–Baja.txt"
+GAG = "countries/Gagauz.txt"
 
 ###Northern Europe
 LIT = "countries/Lithuania.txt"
+LIV = "countries/Livonia.txt"
+CUR = "countries/Courland.txt"
+ALA = "countries/Aland.txt"
+FAR = "countries/Faroe Islands.txt"
+SAP = "countries/Sapmi.txt"
 
 ###North Africa
 LBA = "countries/Libya.txt"
@@ -123,6 +131,7 @@ LEB = "countries/Lebanon.txt"
 JOR = "countries/Jordan.txt"
 SYR = "countries/Syria.txt"
 CYP = "countries/Cyprus.txt"
+PON = "countries/Pontus.txt"
 
 ###Micronations
 SMR = "countries/San Marino.txt"
@@ -241,13 +250,4 @@ KUB = "countries/Kuban.txt"
 ###Czech Releasables
 MRV = "countries/Moravia.txt"
 BOH = "countries/Bohemia.txt"
-LIV = "countries/Livonia.txt"
-CUR = "countries/Courland.txt"
 SDT = "countries/Sudetenland.txt"
-PON = "countries/Pontus.txt"
-BUR = "countries/Burgenland.txt"
-SBB = "countries/Baranya–Baja.txt"
-GAG = "countries/Gagauz.txt"
-ALA = "countries/Aland.txt"
-FAR = "countries/Faroe Islands.txt"
-SAP = "countries/Sapmi.txt"
