@@ -5,9 +5,12 @@ state={
 		owner = GER
 		add_core_of = GER
 		add_core_of = BVR
+		victory_points = {
+			20804 2 #Straubing
+		}
     }
 	provinces={
-		4530 13107 13304 20787 20797 20804 
+		4530 13107 13304 20787 20797 20804 20796
 	}
 	manpower=173556
 	buildings_max_level_factor=1.000

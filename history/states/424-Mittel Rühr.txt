@@ -11,14 +11,17 @@ state={
         victory_points = {
             8574 10 #Recklinghausen und Marl
         }
+        victory_points = {
+            12083 40 #Bochum und Gelsenkirchen
+        }
 		set_demilitarized_zone = yes
 	}
 
 	provinces={
-		8574 9603 
+		8574 12083
 	}
-	manpower=419492
+	manpower=779492
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	local_supplies=0.000
 }

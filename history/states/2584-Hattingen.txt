@@ -2,20 +2,17 @@ state={
 	id=2584
 	name="STATE_2584"
 	provinces={
-		12083 12141 
+		12141 
 	}
 	history={
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = WST
-        victory_points = {
-            12083 40 #Bochum und Gelsenkirchen
-        }
 		owner = GER
 		set_demilitarized_zone = yes
 	}
-	manpower=474019
-	state_category=large_city
+	manpower=74019
+	state_category=rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

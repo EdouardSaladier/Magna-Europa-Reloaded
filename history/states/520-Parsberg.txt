@@ -6,9 +6,12 @@ state={
 		owner = GER
 		add_core_of = GER
 		add_core_of = BVR
+		victory_points = {
+			12969 2 #Neumarkt in der Oberpfalz
+		}
     }
 	provinces={
-		2203 12969 13025 13048 13135 
+		2203 12969 13025 13048 13135 20798
 	}
 	manpower=87731
 	buildings_max_level_factor=1.000

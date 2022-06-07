@@ -6,10 +6,12 @@ state={
 		owner = GER
 		add_core_of = GER
 		add_core_of = BVR
-		victory_points = { 4897 5 }
+		victory_points = {
+			4897 5 #Passau
+		}
     }
 	provinces={
-		642 1475 4897 7845 13200 13341 20783 20788 20796 20807 
+		642 1475 4897 7845 13200 13341 20783 20788 20807 
 	}
 	manpower=241306
 	buildings_max_level_factor=1.000

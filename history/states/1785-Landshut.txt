@@ -5,10 +5,12 @@ state={
 		owner = GER
 		add_core_of = GER
 		add_core_of = BVR
-		victory_points = { 8013 5 }
+		victory_points = {
+			8013 5 #Landshut
+		}
     }
 	provinces={
-		2843 3007 3841 7552 8013 13213 13276 13374 20798 
+		2843 3007 3841 7552 8013 13213 13276 13374 
 	}
 	manpower=189853
 	buildings_max_level_factor=1.000
