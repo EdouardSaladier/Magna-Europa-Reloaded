@@ -3,9 +3,14 @@ state={
 	id=511
 	name="STATE_511"
 	provinces={
-		6313 9054 9107 13657 13680 13760 13799 13807 13839 
+		6313 9107 13657 13680 13760 13799 
 	}
-	manpower=1425312
+	history = {
+		owner = SOV
+		add_core_of = RUS
+		add_core_of = SOV
+	}
+	manpower=1285312
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 	local_supplies=0.000

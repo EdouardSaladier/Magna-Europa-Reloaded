@@ -5,6 +5,11 @@ state={
 	provinces={
 		1016 3129 7058 7687 8941 13144 13180 13338 
 	}
+	history = {
+		owner = SOV
+		add_core_of = RUS
+		add_core_of = SOV
+	}
 	manpower=140436
 	state_category=rural
 	buildings_max_level_factor=1.000

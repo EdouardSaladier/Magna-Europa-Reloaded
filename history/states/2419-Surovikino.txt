@@ -5,6 +5,11 @@ state={
 	provinces={
 		981 4649 5654 6591 6684 13329 17154 
 	}
+	history = {
+		owner = SOV
+		add_core_of = RUS
+		add_core_of = SOV
+	}
 	manpower=85335
 	buildings_max_level_factor=1.000
 	state_category=pastoral
