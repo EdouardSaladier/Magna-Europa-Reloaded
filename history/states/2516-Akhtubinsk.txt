@@ -2,16 +2,19 @@
 state={
 	id=2516
 	name="STATE_2516"
-	provinces={
-		1419 2315 2796 3506 4220 6072 7844 13204 13300 13306 13372 13553 13681 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
+
+	}
+
+	provinces={
+		1419 2796 3506 4220 6072 7844 13204 13300 13306 13372 13553 
 	}
 	manpower=105285
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }
