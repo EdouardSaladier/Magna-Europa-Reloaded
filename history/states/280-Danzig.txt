@@ -2,9 +2,7 @@
 state={
 	id=280
 	name="STATE_280"
-	provinces={
-		4378 6016 10923 10998 17161 19934 
-	}
+
 	history={
 		owner = DNZ
 		add_core_of = DNZ
@@ -12,14 +10,20 @@ state={
 		add_core_of = POL
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = KSH
 		add_core_of = POM
-        victory_points = {
-            10923 20
-        }
-  	}
-	manpower=410000
+		victory_points = {
+			10923 20 
+		}
+
+	}
+
+	provinces={
+		4378 10923 17161 
+	}
+	manpower=410296
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

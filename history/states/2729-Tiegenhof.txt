@@ -1,0 +1,26 @@
+
+state={
+	id=2729
+	name="STATE_2729"
+
+	history={
+		owner = DNZ
+		add_core_of = DNZ
+		add_core_of = GER
+		add_core_of = POL
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = POM
+
+	}
+
+	provinces={
+		6016 10998 19934 
+	}
+	manpower=8704
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}
