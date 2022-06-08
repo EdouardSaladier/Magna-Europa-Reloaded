@@ -7,8 +7,11 @@ state={
 	history={
 	    owner = GER
         victory_points = {
-            12918 20
+            12918 20 #Nürnberg
         }
+		victory_points = {
+			12889 10 #Erlangen
+		}
 		add_core_of = GER
 		add_core_of = BVR
 		add_core_of = FRN
