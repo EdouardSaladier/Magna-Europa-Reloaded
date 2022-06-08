@@ -2,6 +2,7 @@ autonomy_state = {
 	id = autonomy_reichskommissariat
 	
 	is_puppet = yes
+	use_overlord_color = yes
 	
 	min_freedom_level = 0.2
 	
@@ -40,6 +41,13 @@ autonomy_state = {
 
 	ai_overlord_wants_garrison = {
 		always = yes
+	}
+	
+	allowed = {
+		OR = {
+			has_dlc = "Death or Dishonor"
+		}
+		has_government = fascism
 	}
 
 	can_take_level = {
