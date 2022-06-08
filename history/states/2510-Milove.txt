@@ -2,16 +2,19 @@
 state={
 	id=2510
 	name="STATE_2510"
-	provinces={
-		2257 5600 7597 9475 13008 13044 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = RUS
 		add_core_of = SOV
+
+	}
+
+	provinces={
+		2257 5600 7597 9475 13008 
 	}
 	manpower=64022
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

@@ -2,16 +2,19 @@
 state={
 	id=2084
 	name="STATE_2084"
-	provinces={
-		4667 4967 5205 5730 13310 13371 13428 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = RUS
 		add_core_of = SOV
+
 	}
-	manpower=181323
-	state_category=town
+
+	provinces={
+		4967 5730 13428 
+	}
+	manpower=108793
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

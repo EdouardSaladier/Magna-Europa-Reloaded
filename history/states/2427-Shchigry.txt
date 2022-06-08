@@ -1,16 +1,20 @@
+
 state={
 	id=2427
 	name="STATE_2427"
-	provinces={
-		198 1764 3645 5183 6170 6203 6230 6385 7288 11903 11909 11959 11978 11998 12028 12062 12134 12155 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
+
 	}
-	manpower=116530
-	state_category=rural
+
+	provinces={
+		1764 5183 6170 6230 6385 7288 11903 11909 11959 11978 11998 12028 12062 12134 12155 
+	}
+	manpower=104877
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }
