@@ -6,6 +6,9 @@ state={
 	history={
 		owner = NOR
 		add_core_of = NOR
+		buildings = {
+			infrastructure = 2
+		}
 		add_core_of = SAP
 		victory_points = {
 			8701 2 

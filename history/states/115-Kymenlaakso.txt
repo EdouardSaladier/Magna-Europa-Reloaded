@@ -5,6 +5,10 @@ state={
 	history = {
 		owner = FIN
 		add_core_of = FIN
+		buildings = {
+			infrastructure = 2
+			19678 = { naval_base = 1 }
+		}
 		victory_points = { 19678 5 }
 		victory_points = { 3715 2 }
 	}

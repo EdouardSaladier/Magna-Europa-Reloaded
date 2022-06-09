@@ -5,6 +5,10 @@ state={
 	history = {
 		owner = SWE
 		add_core_of = SWE
+		buildings = {
+			infrastructure = 2
+			10646 = { naval_base = 5 }
+		}
 		victory_points = { 10646 20 }
 		victory_points = { 19533 10 }
 	}

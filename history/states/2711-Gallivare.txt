@@ -7,6 +7,9 @@ state={
 	history={
 		owner = SWE
 		add_core_of = SWE
+		buildings = {
+			infrastructure = 2
+		}
 		add_core_of = SAP
 	}
 	manpower=11776

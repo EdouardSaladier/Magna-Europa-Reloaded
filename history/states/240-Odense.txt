@@ -4,6 +4,10 @@ state={
 	history = {
 		owner = DEN
 		add_core_of = DEN
+		buildings = {
+			infrastructure = 4
+			10686 = { naval_base = 4 }
+		}
 		victory_points = { 10686 10 }
 	}
 	provinces={

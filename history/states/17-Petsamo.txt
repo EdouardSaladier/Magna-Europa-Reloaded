@@ -5,6 +5,10 @@ state={
 	history = {
 		owner = FIN
 		add_core_of = FIN
+		buildings = {
+			infrastructure = 2
+			533 = { naval_base = 1 }
+		}
 		add_core_of = SAP
 	}
 	provinces={
