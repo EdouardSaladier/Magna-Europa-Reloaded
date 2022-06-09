@@ -8,18 +8,20 @@ state={
 		add_core_of = FRA
 		buildings = {
 			infrastructure = 4
+
 		}
 		add_core_of = ALS
 		victory_points = {
-			19848 5 #Colmar
+			19848 5 
 		}
 		victory_points = {
-			19849 10 #Mulhouse
+			19849 10 
 		}
+
 	}
 
 	provinces={
-		2276 7718 7841 13484 13538 17872 19848 19849 
+		2276 7841 13484 13538 17071 17872 19848 19849 
 	}
 	manpower=507600
 	buildings_max_level_factor=1.000

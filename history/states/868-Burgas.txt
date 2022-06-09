@@ -2,20 +2,23 @@
 state={
 	id=868
 	name="STATE_868"
-	provinces={
-		1544 1878 7278 9088 14802 14834 20372 
-	}
+
 	history={
 		owner = BUL
 		add_core_of = BUL
 		buildings = {
 			infrastructure = 2
+
 		}
-	
-        victory_points = {
-            20372 10
-        }
-    }
+		victory_points = {
+			20372 10 
+		}
+
+	}
+
+	provinces={
+		1544 1878 7278 9088 14802 14834 17108 20372 
+	}
 	manpower=292635
 	buildings_max_level_factor=1.000
 	state_category=city

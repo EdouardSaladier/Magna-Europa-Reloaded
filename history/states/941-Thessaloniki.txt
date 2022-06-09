@@ -2,20 +2,23 @@
 state={
 	id=941
 	name="STATE_941"
-	provinces={
-		1020 15074 15097 20343 
-	}
+
 	history={
 		owner = GRE
 		add_core_of = GRE
 		buildings = {
 			infrastructure = 3
+
 		}
-	
-        victory_points = {
-            15074 20
-        }
-    }
+		victory_points = {
+			15074 20 
+		}
+
+	}
+
+	provinces={
+		1020 15074 15097 
+	}
 	manpower=580837
 	buildings_max_level_factor=1.000
 	state_category=large_city

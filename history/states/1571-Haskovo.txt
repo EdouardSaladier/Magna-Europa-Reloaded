@@ -2,20 +2,23 @@
 state={
 	id=1571
 	name="STATE_1571"
-	provinces={
-		14898 14899 14962 16993 20369 20375 20384 
-	}
+
 	history={
 		owner = BUL
 		add_core_of = BUL
 		buildings = {
 			infrastructure = 2
+
 		}
-	
-        victory_points = {
-            20369 5
-        }
-    }
+		victory_points = {
+			20369 5 
+		}
+
+	}
+
+	provinces={
+		14898 14899 16993 20369 20384 
+	}
 	manpower=217919
 	buildings_max_level_factor=1.000
 	state_category=large_town

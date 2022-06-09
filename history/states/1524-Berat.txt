@@ -2,18 +2,22 @@
 state={
 	id=1524
 	name="STATE_1524"
-	history = {
+
+	history={
 		owner = ALB
 		add_core_of = ALB
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
+
 	provinces={
-		3445 3924 5995 8916 20219 20232 
+		3445 3924 5995 8916 18375 20219 20232 
 	}
 	manpower=157218
-	state_category=town
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

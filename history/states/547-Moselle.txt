@@ -2,19 +2,23 @@
 state={
 	id=547
 	name="STATE_547"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = LOR
-        victory_points = {
-            13089 1 #Forbach
-        }
+		victory_points = {
+			13089 1 
+		}
 		buildings = {
 			infrastructure = 4
+
 		}
+
 	}
+
 	provinces={
-		5381 8467 12938 13089 13129 13246 
+		5381 8467 12938 13089 13129 
 	}
 	manpower=278480
 	buildings_max_level_factor=1.000

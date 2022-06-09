@@ -1,22 +1,28 @@
+
 state={
 	id=1934
 	name="STATE_1934"
-	history = {
+
+	history={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
 			infrastructure = 2
+
 		}
 		buildings = {
 			infrastructure = 2
+
 		}
 		set_demilitarized_zone = yes
+
 	}
+
 	provinces={
-		20288 21437 21445 21454 
+		21437 21445 21454 
 	}
-	manpower=30425
-	state_category=pastoral
+	manpower=23425
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

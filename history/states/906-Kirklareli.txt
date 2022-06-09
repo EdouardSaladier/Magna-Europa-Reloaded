@@ -2,20 +2,25 @@
 state={
 	id=906
 	name="STATE_906"
-	history = {
+
+	history={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
 			infrastructure = 2
+
 		}
-		buildings = {
-			infrastructure = 2
+		victory_points = {
+			14973 6 
 		}
-		victory_points = { 14973 6 }
-		victory_points = { 8085 2 }
+		victory_points = {
+			8085 2 
+		}
+
 	}
+
 	provinces={
-		206 3311 4485 8042 8085 8824 14939 14973 17061 17996 21552 
+		206 3311 8042 8085 8824 14939 14973 21552 
 	}
 	manpower=70982
 	buildings_max_level_factor=1.000

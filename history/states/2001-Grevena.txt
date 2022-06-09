@@ -2,18 +2,22 @@
 state={
 	id=2001
 	name="STATE_2001"
+
 	history={
 		owner = GRE
 		add_core_of = GRE
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
+
 	provinces={
-		6483 15137 20333 20334 
+		6483 15137 16100 20333 20334 
 	}
 	manpower=47224
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }
