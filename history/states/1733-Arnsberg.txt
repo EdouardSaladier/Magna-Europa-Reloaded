@@ -9,7 +9,9 @@ state={
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = WST
-		victory_points = { 12201 5 }
+		victory_points = {
+			12201 5 #Arnsberg
+		}
     }
 	manpower=221050
 	buildings_max_level_factor=1.000
