@@ -258,6 +258,14 @@ CYP = {
 	color = rgb { 255 204 0 }
 	color_ui = rgb { 255 204 0 }
 }
+ALW = {
+	color = rgb { 167 155 50 }
+	color_ui = rgb { 167 155 50 }
+}
+JDZ = {
+	color = rgb { 0 142 145 }
+	color_ui = rgb { 0 142 145 }
+}
 
 ###Middle East
 PER = {
@@ -705,6 +713,10 @@ EFR = {
     color = rgb { 103 87 41 }
     color_ui = rgb { 103 87 41 }
 }
+NFR = {
+    color = rgb { 61 163 184 }
+    color_ui = rgb { 61 163 184 }
+}
 UPS = {
     color = rgb { 115 115 180 }
     color_ui = rgb { 115 115 180 }
@@ -916,4 +928,8 @@ KHZ = {
 MHB = {
 	color = rgb { 182 141 58 }
 	color_ui = rgb { 182 141 58 }
+}
+TBZ = {
+	color = rgb { 206 104 140 }
+	color_ui = rgb { 206 104 140 }
 }
