@@ -2,71 +2,79 @@
 
 set_research_slots = 3
 
-# Starting tech
+add_ideas = {
+	limited_conscription
+}
+IF = {
+	limit = { has_dlc = "No Step Back" }
+	add_ideas = {
+		LAT_perkonkrust_idea
+		democratic_opposition
+	}
+}
+
+recruit_character = LAT_gustavs_celminsh
+recruit_character = LAT_augusts_kirhensteins
+recruit_character = LAT_martinsh_penikis
+recruit_character = LAT_hermanis_buks
+recruit_character = LAT_janis_berzins
+recruit_character = LAT_ludvigs_bolsteins
+recruit_character = LAT_teodors_zvejnieks
+recruit_character = LAT_kornelijs_veidnieks
+recruit_character = LAT_rudolfs_kandis
+recruit_character = LAT_konstantins_cakste
+recruit_character = LAT_arturs_silgailis
+recruit_character = LAT_fricis_celmins
+recruit_character = LAT_otto_hellmich
+recruit_character = LAT_rudolfs_kocins
+recruit_character = LAT_arturs_sprogis
+recruit_character = LAT_tomas_spade
+recruit_character = LAT_vilis_lacis
+recruit_character = LAT_vilhelms_munters
+recruit_character = LAT_janis_kaminskis
+recruit_character = LAT_fricis_menders
+recruit_character = LAT_alberts_kvesis
+recruit_character = LAT_karlis_ulmanis
+IF = { 
+	limit = { has_dlc = "No Step Back" }
+	recruit_character = LAT_janis_balodis
+	recruit_character = LAT_janis_sudrabkalns
+	recruit_character = LAT_emilija_veinberga
+	recruit_character = LAT_janis_rudzutaks
+	recruit_character = LAT_karlis_baumanis
+	recruit_character = LAT_fricis_virsaitis
+	recruit_character = LAT_andrejs_krustinsh
+	recruit_character = LAT_zhanis_bahs
+	recruit_character = LAT_krisjanis_berkis
+}
+
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_recon = 1
-	tech_support = 1		
-	tech_engineers = 1
-	motorised_infantry = 1
-	gw_artillery = 1
 	early_fighter = 1
-	fighter1 = 1
-}
-
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-	}
+	gw_artillery = 1
+	tech_support = 1
+	basic_train = 1
 }
 if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-}
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
+	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
 	}
 }
 if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
+	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		mtg_transport = 1
-		basic_battery = 1
 		basic_torpedo = 1
+		submarine_mine_laying = 1
+		early_ship_hull_submarine = 1
 	}
 }
+
+set_research_slots = 3
+
+set_convoys = 10
 
 set_politics = {
 	ruling_party = neutrality
@@ -82,4 +90,24 @@ set_popularities = {
 }
 
 
-
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Ronis Class"								
+		type = ship_hull_submarine_1
+		name_group = LAT_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+}
