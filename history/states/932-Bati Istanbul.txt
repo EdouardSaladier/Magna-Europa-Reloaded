@@ -6,10 +6,8 @@ state={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
-			infrastructure = 2
-		}
-		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			15010 = { naval_base = 8 }
 		}
 		victory_points = { 15010 80 }
 		set_demilitarized_zone = yes

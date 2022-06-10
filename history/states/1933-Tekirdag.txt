@@ -6,9 +6,7 @@ state={
 		add_core_of = TUR
 		buildings = {
 			infrastructure = 2
-		}
-		buildings = {
-			infrastructure = 2
+			15016 = { naval_base = 1 }
 		}
 		victory_points = { 15016 5 }
 		victory_points = { 1933 10 }
