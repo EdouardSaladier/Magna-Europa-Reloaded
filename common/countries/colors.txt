@@ -33,6 +33,10 @@ IRE = {
 	color = rgb { 80 159 90 }
 	color_ui = rgb { 80 159 90 }
 }
+WFR = {
+	color = rgb { 154 205 50 }
+	color_ui = rgb { 154 205 50 }
+}
 
 ###Central Europe
 GER = { 
@@ -219,6 +223,10 @@ TUN = {
 MOR = {
 	color = rgb { 102 51 0 }
 	color_ui = rgb { 102 51 0 }
+}
+KBL = {
+	color = rgb { 159 111 142 }
+	color_ui = rgb { 159 111 142 }
 }
 
 ###Levant
@@ -791,6 +799,24 @@ POS = {
 	color_ui = rgb { 117 117 117 }
 }
 
+###Czechoslovak Releasables
+MRV = {
+	color = rgb { 3 106 181 }
+	color_ui = rgb { 3 106 181 }
+}
+BOH = {
+	color = rgb { 187 44 36 }
+	color_ui = rgb { 187 44 36 }
+}
+SDT = {
+    color = rgb { 51 106 106 }
+    color_ui = rgb { 51 106 106 }
+}
+CRP = {
+    color = rgb { 97 139 158 }
+    color_ui = rgb { 97 139 158 }
+}
+
 ###Soviet Releasables
 CRI = {
 	color = rgb { 255 80 80 }
@@ -819,26 +845,6 @@ KAL = {
 SOA = {
 	color = rgb { 230 188 64 }
 	color_ui = rgb { 230 188 64 }
-}
-NGK = {
-	color = rgb { 110 71 108 }
-	color_ui = rgb { 110 71 108 }
-}
-NKH = {
-	color = rgb { 144 201 109 }
-	color_ui = rgb { 144 201 109 }
-}
-ING = {
-	color = rgb { 138 54 26 }
-	color_ui = rgb { 138 54 26 }
-}
-ADJ = {
-	color = rgb { 79 127 168 }
-	color_ui = rgb { 79 127 168 }
-}
-TCC = {
-	color = rgb { 201 201 109 }
-	color_ui = rgb { 201 201 109 }
 }
 MRD = {
 	color = rgb { 169 179 43 }
@@ -877,20 +883,37 @@ KKP = {
 	color_ui = rgb { 255 128 0 }
 }
 
-###Czechoslovak Releasables
-MRV = {
-	color = rgb { 3 106 181 }
-	color_ui = rgb { 3 106 181 }
+###Soviet Releasables - Caucasus
+
+NGK = {
+	color = rgb { 110 71 108 }
+	color_ui = rgb { 110 71 108 }
 }
-BOH = {
-	color = rgb { 187 44 36 }
-	color_ui = rgb { 187 44 36 }
+NKH = {
+	color = rgb { 144 201 109 }
+	color_ui = rgb { 144 201 109 }
 }
-SDT = {
-    color = rgb { 51 106 106 }
-    color_ui = rgb { 51 106 106 }
+ING = {
+	color = rgb { 138 54 26 }
+	color_ui = rgb { 138 54 26 }
 }
-CRP = {
-    color = rgb { 97 139 158 }
-    color_ui = rgb { 97 139 158 }
+ADJ = {
+	color = rgb { 79 127 168 }
+	color_ui = rgb { 79 127 168 }
+}
+TCC = {
+	color = rgb { 201 201 109 }
+	color_ui = rgb { 201 201 109 }
+}
+TMG = {
+	color = rgb { 181 113 96 }
+	color_ui = rgb { 181 113 96 }
+}
+KHZ = {
+	color = rgb { 191 153 0 }
+	color_ui = rgb { 191 153 0 }
+}
+MHB = {
+	color = rgb { 182 141 58 }
+	color_ui = rgb { 182 141 58 }
 }
