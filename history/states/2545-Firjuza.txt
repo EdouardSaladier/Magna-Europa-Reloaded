@@ -5,6 +5,11 @@ state={
 	provinces={
 		714 15381 
 	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = TMS
+	}
 	manpower=4032
 	state_category=enclave
 	buildings_max_level_factor=1.000

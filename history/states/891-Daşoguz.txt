@@ -3,7 +3,13 @@ state={
 	id=891
 	name="STATE_891"
 	provinces={
-		38 232 2283 3512 3840 4489 4812 5688 7387 7591 8827 8852 9148 9234 14909 14914 14940 14950 14989 15023 15064 15129 15139 16467 19141 
+		3512 3840 4489 5688 8827 9234 14909 14914 14940 14950 16467 19141 
+	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = TMS
+		add_core_of = KHI
 	}
 	manpower=311142
 	buildings_max_level_factor=1.000

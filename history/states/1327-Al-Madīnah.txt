@@ -2,20 +2,21 @@
 state={
 	id=1327
 	name="STATE_1327"
-		
-	history = {
+
+	history={
 		owner = SAU
 		add_core_of = SAU
-	    victory_points = {
-		    15403 80 #Medina
-			}
+		victory_points = {
+			15403 80 
+		}
+
 	}
-	
+
 	provinces={
-		146 785 1581 1959 3881 7673 7964 8524 15403 15859 15870 15871 15881 15886 18540 18576 19210 19213 19214 
+		146 785 1581 1959 3881 7673 7964 8524 15403 15859 15870 15871 15881 15886 18576 19210 19213 
 	}
 	manpower=99675
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

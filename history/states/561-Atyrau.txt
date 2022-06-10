@@ -3,7 +3,12 @@ state={
 	id=561
 	name="STATE_561"
 	provinces={
-		875 1591 4348 4436 6237 8527 13339 13532 13833 13881 19019 
+		875 1591 4348 4436 6237 8527 13339 13532 13833 13881 15921 17511 17907 19019 
+	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = KAZ
 	}
 	manpower=124477
 	buildings_max_level_factor=1.000

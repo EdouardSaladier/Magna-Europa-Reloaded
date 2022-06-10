@@ -2,14 +2,17 @@
 state={
 	id=2352
 	name="STATE_2352"
-	history = {
+
+	history={
 		owner = PER
 		add_core_of = PER
+
 	}
+
 	provinces={
-		1819 3134 5866 17242 17532 18262 18699 
+		1819 18699 
 	}
-	manpower=40146
+	manpower=23146
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000
