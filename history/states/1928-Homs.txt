@@ -1,18 +1,23 @@
+
 state={
 	id=1928
 	name="STATE_1928"
-	history = {
+
+	history={
 		owner = SYR
 		add_core_of = SYR
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
+
 	provinces={
-		4985 6166 15619 15631 15637 15655 
+		4985 6166 15619 15631 15637 15655 18660 
 	}
 	manpower=173300
-	state_category=town
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

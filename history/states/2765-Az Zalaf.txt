@@ -1,0 +1,19 @@
+state={
+	id=2765
+	name="STATE_2765"
+	provinces={
+		18642 21287 
+	}
+	history={
+		owner = SYR
+		add_core_of = SYR
+		add_core_of = JDZ
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=1000
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -2,18 +2,22 @@
 state={
 	id=1218
 	name="STATE_1218"
-	history = {
+
+	history={
 		owner = SYR
 		add_core_of = SYR
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
+
 	provinces={
-		21 4963 15702 19154 21289 21295 
+		21 4963 15702 21289 21295 
 	}
 	manpower=112500
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

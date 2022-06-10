@@ -2,18 +2,21 @@
 state={
 	id=1158
 	name="STATE_1158"
-	history = {
+
+	history={
 		owner = SYR
 		add_core_of = SYR
+		add_core_of = ALW
 		buildings = {
 			infrastructure = 2
 		}
 	}
+
 	provinces={
-		4805 15583 21305 
+		4805 15583 15598 15606 21305 
 	}
 	manpower=166203
-	state_category=town
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }
