@@ -156,6 +156,10 @@ SAP = {
     color = rgb { 0 50 175 }
     color_ui = rgb { 0 50 175 }
 }
+SCA = {
+    color = rgb { 36 132 247 }
+    color_ui = rgb { 36 132 247 }
+}
 
 ###Eastern Europe
 SOV = {
@@ -282,6 +286,14 @@ NIR = {
 KER = {
 	color = rgb { 128 51 51 }
 	color_ui = rgb { 128 51 51 }
+}
+SHT = {
+	color = rgb { 72 208 134 }
+	color_ui = rgb { 72 208 134 }
+}
+ISM = {
+	color = rgb { 160 183 76 }
+	color_ui = rgb { 160 183 76 }
 }
 
 ###Italian Releasables

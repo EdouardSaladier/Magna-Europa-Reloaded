@@ -5,8 +5,10 @@ state={
 	history={
 		owner = ENG
 		add_core_of = ENG
+		add_core_of = SHT
 		buildings = {
 			infrastructure = 4
+			19403 = { naval_base = 1 }
 		}
 		add_core_of = SCO
 	}

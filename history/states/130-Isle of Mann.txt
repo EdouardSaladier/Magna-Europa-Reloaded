@@ -8,8 +8,10 @@ state={
 	history={
 		owner = ENG
 		add_core_of = ENG
+		add_core_of = ISM
 		buildings = {
 			infrastructure = 4
+			19397 = { naval_base = 1 }
 		}
 	
         victory_points = {
