@@ -8,7 +8,12 @@ state={
 		add_core_of = PRS
 		add_core_of = SLS
 		add_core_of = LUS
-		victory_points = { 12220 5 }
+		victory_points = {
+			12220 5 #Görlitz
+		}
+        victory_points = {
+            7811 2 #Hoyerswerda
+        }
     }
 	provinces={
 		3304 6493 7811 9212 12118 12167 12184 12220 
