@@ -2,21 +2,30 @@
 state={
 	id=932
 	name="STATE_932"
-	history = {
+
+	history={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
 			infrastructure = 3
-			15010 = { naval_base = 8 }
+			15010 = {
+				naval_base = 8
+
+			}
+
 		}
-		victory_points = { 15010 80 }
+		victory_points = {
+			15010 80 
+		}
 		set_demilitarized_zone = yes
+
 	}
+
 	provinces={
-		2319 8676 15010 21462 21464 21465 21467 
+		15010 21464 
 	}
-	manpower=1926649
-	state_category=megalopolis
+	manpower=1756649
 	buildings_max_level_factor=1.000
+	state_category=megalopolis
 	local_supplies=0.000
 }

@@ -1,0 +1,21 @@
+
+state={
+	id=2766
+	name="STATE_2766"
+	provinces={
+		821 11014 11055 
+	}
+	history={
+		owner = POL
+		add_core_of = POL
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_claim_by = LIT
+	}
+	manpower=7302
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

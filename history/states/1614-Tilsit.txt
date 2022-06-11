@@ -1,17 +1,21 @@
+
 state={
 	id=1614
 	name="STATE_1614"
+
 	history={
 		owner = GER
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = ESP
-    }
+
+	}
+
 	provinces={
-		1120 7485 7828 10752 10795 20459 
+		1120 7485 7828 10752 10795 18151 20459 
 	}
 	manpower=208974
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = large_town
 }

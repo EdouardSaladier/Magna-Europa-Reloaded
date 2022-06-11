@@ -2,20 +2,26 @@
 state={
 	id=156
 	name="STATE_156"
-	history = {
+
+	history={
 		owner = EST
 		add_core_of = EST
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = LIV
-		victory_points = { 3259 2 }
+		victory_points = {
+			3259 2 
+		}
+
 	}
+
 	provinces={
-		3144 3259 5141 10136 18784 
+		3144 3259 5141 10136 17120 17659 18784 
 	}
 	manpower=75000
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }

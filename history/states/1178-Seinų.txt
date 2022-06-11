@@ -2,18 +2,25 @@
 state={
 	id=1178
 	name="STATE_1178"
-	provinces={
-		11006 11018 
-	}
+
 	history={
 		owner = LIT
 		add_core_of = LIT
 		buildings = {
 			infrastructure = 2
+
 		}
-  	}
+		victory_points = {
+			3124 2 
+		}
+
+	}
+
+	provinces={
+		3745 10872 10942 11006 
+	}
 	manpower=48000
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
-	state_category = pastoral
 }

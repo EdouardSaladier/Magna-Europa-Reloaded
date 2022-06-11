@@ -1,22 +1,33 @@
+
 state={
 	id=1933
 	name="STATE_1933"
-	history = {
+
+	history={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
 			infrastructure = 2
-			15016 = { naval_base = 1 }
+			15016 = {
+				naval_base = 1
+
+			}
+
 		}
-		victory_points = { 15016 5 }
-		victory_points = { 1933 10 }
-		set_demilitarized_zone = yes
+		victory_points = {
+			15016 5 
+		}
+		victory_points = {
+			1933 10 
+		}
+
 	}
+
 	provinces={
-		300 14969 14996 15016 15020 15043 21466 21468 
+		300 14969 14996 15016 15020 17220 21466 21468 
 	}
 	manpower=121700
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

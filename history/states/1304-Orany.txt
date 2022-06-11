@@ -2,20 +2,24 @@
 state={
 	id=1304
 	name="STATE_1304"
-	provinces={
-		82 6255 7221 10911 10934 
-	}
+
 	history={
 		owner = POL
 		add_core_of = POL
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = CLT
 		add_core_of = LIT
-  	}
+
+	}
+
+	provinces={
+		82 6255 10911 10934 18215 
+	}
 	manpower=96525
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }

@@ -2,18 +2,22 @@
 state={
 	id=143
 	name="STATE_143"
-	history = {
+
+	history={
 		owner = EST
 		add_core_of = EST
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
+
 	provinces={
-		4268 5861 5865 19975 
+		4268 5861 5865 16545 17412 18210 19975 
 	}
 	manpower=59000
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
-	state_category = pastoral
 }

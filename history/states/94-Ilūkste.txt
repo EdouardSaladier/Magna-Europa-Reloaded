@@ -2,16 +2,20 @@
 state={
 	id=94
 	name="STATE_94"
-	history = {
+
+	history={
 		owner = LAT
 		add_core_of = LAT
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = CUR
+
 	}
+
 	provinces={
-		456 7527 10526 
+		456 7527 16943 
 	}
 	manpower=46461
 	buildings_max_level_factor=1.000

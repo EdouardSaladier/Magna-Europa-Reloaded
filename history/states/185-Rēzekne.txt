@@ -8,13 +8,16 @@ state={
 		add_core_of = LAT
 		buildings = {
 			infrastructure = 2
+
 		}
-		victory_points = { 10434 2 }
+		victory_points = {
+			10434 2 
+		}
 
 	}
 
 	provinces={
-		6205 6259 6268 7114 8034 9201 10411 10434 10445 10455 16275 19308 19971 
+		3594 6205 6259 6268 7114 8034 9201 10411 10434 10445 10455 16275 16697 19308 19971 
 	}
 	manpower=136445
 	buildings_max_level_factor=1.000

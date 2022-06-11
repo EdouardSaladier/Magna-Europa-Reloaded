@@ -2,20 +2,28 @@
 state={
 	id=227
 	name="STATE_227"
-	provinces={
-		136 188 5835 7094 10723 19907 19935 
-	}
+
 	history={
 		owner = LIT
 		add_core_of = LIT
 		buildings = {
 			infrastructure = 3
+
 		}
-		victory_points = { 19907 10 }
-		victory_points = { 136 2 }
-  	}
+		victory_points = {
+			19907 10 
+		}
+		victory_points = {
+			136 2 
+		}
+
+	}
+
+	provinces={
+		136 188 5835 7094 10723 16922 18199 19907 19935 
+	}
 	manpower=153800
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = town
 }

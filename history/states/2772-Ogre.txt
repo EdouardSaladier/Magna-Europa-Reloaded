@@ -1,0 +1,25 @@
+
+state={
+	id=2772
+	name="STATE_2772"
+	provinces={
+		556 10375 10388 10410 15919 17509 17537 
+	}
+	history={
+		owner = LAT
+		add_core_of = LAT
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = LIV
+		victory_points = {
+			10388 2 
+		}
+
+	}
+	manpower=30549
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

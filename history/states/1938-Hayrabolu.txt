@@ -2,16 +2,19 @@
 state={
 	id=1938
 	name="STATE_1938"
-	history = {
+
+	history={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
 			infrastructure = 2
+
 		}
-		set_demilitarized_zone = yes
+
 	}
+
 	provinces={
-		4418 14980 14987 15004 15066 16530 
+		4418 14980 14987 15004 15066 16530 21454 
 	}
 	manpower=50708
 	buildings_max_level_factor=1.000

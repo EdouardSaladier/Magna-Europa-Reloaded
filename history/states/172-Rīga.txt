@@ -2,21 +2,26 @@
 state={
 	id=172
 	name="STATE_172"
-	history = {
+
+	history={
 		owner = LAT
 		add_core_of = LAT
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = LIV
-		victory_points = { 19998 40 }
-		victory_points = { 10388 2 }
+		victory_points = {
+			19998 40 
+		}
+
 	}
+
 	provinces={
-		556 3864 8457 10375 10388 19998 
+		3864 8457 16515 17876 19998 
 	}
-	manpower=631689
+	manpower=601689
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
-	state_category = large_city
 }

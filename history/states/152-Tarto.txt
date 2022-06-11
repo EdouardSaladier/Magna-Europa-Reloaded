@@ -2,17 +2,23 @@
 state={
 	id=152
 	name="STATE_152"
-	history = {
+
+	history={
 		owner = EST
 		add_core_of = EST
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = LIV
-		victory_points = { 19994 10 }
+		victory_points = {
+			19994 10 
+		}
+
 	}
+
 	provinces={
-		1268 1303 2765 3255 4043 5738 6113 7620 10114 10131 10138 10149 10166 19082 19087 19091 19994 
+		1268 1303 2765 3255 4043 5738 6113 7620 10114 10131 10138 10149 10166 16364 16478 19082 19087 19091 19994 
 	}
 	manpower=181300
 	buildings_max_level_factor=1.000

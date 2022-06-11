@@ -2,19 +2,25 @@
 state={
 	id=133
 	name="STATE_133"
-	history = {
+
+	history={
 		owner = EST
 		add_core_of = EST
 		buildings = {
 			infrastructure = 3
+
 		}
-		victory_points = { 19972 20 }
+		victory_points = {
+			19972 20 
+		}
+
 	}
+
 	provinces={
-		367 1223 3827 6099 6446 10066 10070 10090 19972 19979 
+		367 1223 3827 6099 6446 10066 10070 10090 16114 16163 17021 18135 18167 19972 19979 
 	}
 	manpower=243100
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = large_town
 }

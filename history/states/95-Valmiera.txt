@@ -2,17 +2,23 @@
 state={
 	id=95
 	name="STATE_95"
-	history = {
+
+	history={
 		owner = LAT
 		add_core_of = LAT
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = LIV
-		victory_points = { 19995 2 }
+		victory_points = {
+			19995 2 
+		}
+
 	}
+
 	provinces={
-		2891 3626 4543 7086 10245 10273 16342 19963 19995 
+		2891 3626 4543 7086 10245 10273 16342 17236 17450 19963 19995 
 	}
 	manpower=112836
 	buildings_max_level_factor=1.000
