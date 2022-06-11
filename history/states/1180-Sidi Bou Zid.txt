@@ -5,6 +5,9 @@ state={
 	history = {
 		owner = TUN
 		add_core_of = TUN
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	provinces={
 		697 6920 15627 21023 

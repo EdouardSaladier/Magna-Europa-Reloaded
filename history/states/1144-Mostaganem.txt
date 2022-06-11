@@ -6,6 +6,10 @@ state={
 	history = {
 		owner = FRA
 		add_core_of = ALG
+		buildings = {
+			infrastructure = 2
+			20958 = { naval_base = 1 }
+		}
 	    victory_points = {
 		    20958 5 #Mostaganem
 			}

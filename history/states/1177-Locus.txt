@@ -8,6 +8,10 @@ state={
 		owner = SPR
 		add_core_of = RIF
 		add_core_of = MOR
+		buildings = {
+			infrastructure = 2
+			20909 = { naval_base = 1 }
+		}
 	
 	    victory_points = {
 		    20909 10 #Larache

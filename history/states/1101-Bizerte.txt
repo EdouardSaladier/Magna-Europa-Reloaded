@@ -6,6 +6,10 @@ state={
 	history = {
 		owner = TUN
 		add_core_of = TUN
+		buildings = {
+			infrastructure = 2
+			21046 = { naval_base = 6 }
+		}
 	
 	    victory_points = {
 		    21046 5 #Bizerte

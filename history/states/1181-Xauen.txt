@@ -7,6 +7,9 @@ state={
 		owner = SPR
 		add_core_of = RIF
 		add_core_of = MOR
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	provinces={
 		3031 8820 15611 15620 

@@ -6,6 +6,10 @@ state={
 	history = {
 		owner = TUN
 		add_core_of = TUN
+		buildings = {
+			infrastructure = 2
+			21037 = { naval_base = 1 }
+		}
 	
 	    victory_points = {
 		    21037 2 #Douane

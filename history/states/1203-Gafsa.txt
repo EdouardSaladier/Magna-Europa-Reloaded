@@ -6,6 +6,9 @@ state={
 	history = {
 		owner = TUN
 		add_core_of = TUN
+		buildings = {
+			infrastructure = 1
+		}
 	
 	
 	    victory_points = {

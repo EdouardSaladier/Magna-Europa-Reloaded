@@ -6,6 +6,10 @@ state={
 	history = {
 		owner = SPR
 		add_core_of = MOR
+		buildings = {
+			infrastructure = 1
+			347 = { naval_base = 1 }
+		}
 	    victory_points = {
 		    347 2 #Sidi Ifni
 			}

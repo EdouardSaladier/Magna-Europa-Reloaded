@@ -6,6 +6,9 @@ state={
 	history = {
 		owner = MOR
 		add_core_of = MOR
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	provinces={
 		1135 3242 3735 4429 5821 15695 15737 20881 

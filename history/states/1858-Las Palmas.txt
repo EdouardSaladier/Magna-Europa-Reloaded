@@ -9,20 +9,19 @@ state={
 		add_core_of = SPR
 		buildings = {
 			infrastructure = 3
+			21011 = { naval_base = 2 }
+			20921 = { naval_base = 1 }
+			21013 = { naval_base = 1 }
 		}
 	    victory_points = {
 		    21013 5 #Arrecife
 			}
-			
 		victory_points = {
 		    20921 2 #La Oliva
 			}
-		
-		
 		victory_points = {
 		    21011 20 #Las Palmas
 			}
-			
 		}
 		
 	provinces={

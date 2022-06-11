@@ -6,9 +6,13 @@ state={
 	history = {
 		owner = MOR
 		add_core_of = MOR
+		buildings = {
+			infrastructure = 1
+			1937 = { naval_base = 1 }
+		}
 	    victory_points = {
 		    1937 20 #Agadir
-			}
+		}
 	}
 	
 	provinces={
