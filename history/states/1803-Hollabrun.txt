@@ -4,6 +4,9 @@ state={
 	history={
 		owner = AUS
 		add_core_of = AUS
+		buildings = {
+			infrastructure = 3
+		}
 		victory_points = {
             7710 2 #Krems an der Donau
         }

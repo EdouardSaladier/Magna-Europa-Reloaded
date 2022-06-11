@@ -8,6 +8,9 @@ state={
 	history={
 		owner = LIT
 		add_core_of = LIT
+		buildings = {
+			infrastructure = 2
+		}
   	}
 	manpower=99400
 	buildings_max_level_factor=1.000

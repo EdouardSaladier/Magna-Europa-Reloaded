@@ -5,6 +5,9 @@ state={
 	history = {
 		owner = EST
 		add_core_of = EST
+		buildings = {
+			infrastructure = 2
+		}
 		add_core_of = LIV
 		victory_points = { 3259 2 }
 	}

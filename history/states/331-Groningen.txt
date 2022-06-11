@@ -8,6 +8,9 @@ state={
 	history={
 		owner = HOL
 		add_core_of = HOL
+		buildings = {
+			infrastructure = 4
+		}
 		add_core_of = WFR
         victory_points = {
             11312 10 #Groningen

@@ -8,6 +8,9 @@ state={
 	history={
 		owner = BEL
 		add_core_of = BEL
+		buildings = {
+			infrastructure = 3
+		}
 		add_core_of = FLA
         victory_points = {
             19892 5 #Hasselt

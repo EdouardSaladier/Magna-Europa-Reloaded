@@ -8,6 +8,9 @@ state={
 	history={
 		owner = BEL
 		add_core_of = BEL
+		buildings = {
+			infrastructure = 4
+		}
 		add_core_of = WLN
         victory_points = {
             5375 20 #Charleroi

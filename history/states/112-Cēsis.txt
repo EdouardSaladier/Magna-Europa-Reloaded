@@ -5,6 +5,9 @@ state={
 	history = {
 		owner = LAT
 		add_core_of = LAT
+		buildings = {
+			infrastructure = 2
+		}
 		add_core_of = LIV
 	}
 	provinces={

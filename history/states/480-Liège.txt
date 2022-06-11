@@ -6,6 +6,9 @@ state={
 	history={
 		owner = BEL
 		add_core_of = BEL
+		buildings = {
+			infrastructure = 4
+		}
 		add_core_of = WLN
 		victory_points = {
 			19891 10 #Liège

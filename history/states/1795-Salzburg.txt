@@ -8,6 +8,9 @@ state={
 	history={
 		owner = AUS
 		add_core_of = AUS
+		buildings = {
+			infrastructure = 4
+		}
 		add_core_of = SLZ
         victory_points = {
             13572 10 #Salzburg

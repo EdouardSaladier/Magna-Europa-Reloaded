@@ -8,6 +8,9 @@ state={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = BNT
+		buildings = {
+			infrastructure = 2
+		}
 	}
 	manpower=101094
 	state_category=rural

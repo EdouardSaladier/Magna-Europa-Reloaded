@@ -7,6 +7,9 @@ state={
 	history={
 		owner = LIT
 		add_core_of = LIT
+		buildings = {
+			infrastructure = 3
+		}
   	}
 	manpower=12606
 	state_category=pastoral

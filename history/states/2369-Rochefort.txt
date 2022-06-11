@@ -5,6 +5,9 @@ state={
 	history={
 		owner = BEL
 		add_core_of = BEL
+		buildings = {
+			infrastructure = 2
+		}
 		add_core_of = WLN
     }
 	provinces={
