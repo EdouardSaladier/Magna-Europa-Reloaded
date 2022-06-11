@@ -9,21 +9,16 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
-	
+		victory_points = {
+		    18632 40 #Basrah
+		}	
 	    victory_points = {
-		    19149 10 #Umm Qasr
-			}
-			
-		victory_points = {
-		    8753 10 #Al Faw
-			}
-		
-		
-		victory_points = {
-		    18632 80 #Basrah
-			}
-			
+		    19155 5 #Umm Qasr
 		}
+		victory_points = {
+		    8753 5 #Al Faw
+		}
+	}
 		
 	provinces={
 		7253 8753 18632 18724 19146 19149 19150 19155 19208 
