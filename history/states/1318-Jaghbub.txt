@@ -2,15 +2,19 @@
 state={
 	id=1318
 	name="STATE_1318"
+
 	history={
 		owner = ITA
 		add_core_of = LBA
 		buildings = {
 			infrastructure = 1
+
 		}
+
 	}
+
 	provinces={
-		881 4371 18925 
+		881 18925 
 	}
 	manpower=3100
 	buildings_max_level_factor=1.000

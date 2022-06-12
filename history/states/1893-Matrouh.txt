@@ -1,23 +1,30 @@
+
 state={
 	id=1893
 	name="STATE_1893"
-				
-	history = {
+
+	history={
 		owner = EGY
 		add_core_of = EGY
 		buildings = {
 			infrastructure = 2
-			21193 = { naval_base = 1 }
+			21193 = {
+				naval_base = 1
+
+			}
+
 		}
 		victory_points = {
-		    21193 2 #Matrouh
+			21193 2 
 		}
+
 	}
+
 	provinces={
 		843 1817 1858 2982 5611 6293 8126 21163 21170 21171 21172 21174 21176 21178 21184 21191 21193 21195 21196 21197 21199 
 	}
 	manpower=52556
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }
