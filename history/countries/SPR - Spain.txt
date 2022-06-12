@@ -123,10 +123,10 @@ if = {
 	    set_state_flag = SPR_original_core
 	}
 	add_ideas = {
-		SPA_carlism_1
-		SPR_military_disloyalty
-		SPR_political_violence
-		SPR_national_strikes_3
+	#	SPA_carlism_1
+	#	SPR_military_disloyalty
+	#	SPR_political_violence
+	#	SPR_national_strikes_3
 	}
 	recruit_character = SPR_niceto_alcala_zamora
 	recruit_character = SPR_jose_diaz
