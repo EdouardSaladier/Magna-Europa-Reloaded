@@ -118,9 +118,40 @@ GER_german_monarchy = {
 	color = rgb { 128 128 128 }
 	color_ui = rgb { 128 128 128 }
 }
-ENG_england = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 201 56 93 }
+#RK Norway
+RKN = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+#RK Netherlands
+RKH = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+#RK Belgium
+RKB = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+#RK Ostland
+RKO = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+#RK Ukraine
+RKU = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+#General Government
+GGP = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+#RP Bohmen-Mahren
+RPB =  = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
 }
 OZAK = {
 	color = rgb { 115 115 115 }
@@ -129,6 +160,10 @@ OZAK = {
 OZAV = {
 	color = rgb { 115 115 115 }
 	color_ui = rgb { 115 115 115 }
+}
+ENG_england = {
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 201 56 93 }
 }
 CAN_UK = {
 	color = rgb { 119 48 39 }
