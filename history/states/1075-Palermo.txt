@@ -2,21 +2,30 @@
 state={
 	id=1075
 	name="STATE_1075"
-	history = {
+
+	history={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = SIC
 		buildings = {
 			infrastructure = 3
-			15356 = { naval_base = 2 }
+			15356 = {
+				naval_base = 2
+
+			}
+
 		}
-		victory_points = { 15356 40 }
+		victory_points = {
+			15356 40 
+		}
+
 	}
+
 	provinces={
-		3253 5079 15356 15361 15378 15395 
+		3253 5079 15356 15378 15395 
 	}
 	manpower=890800
-	state_category=large_city
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
 }

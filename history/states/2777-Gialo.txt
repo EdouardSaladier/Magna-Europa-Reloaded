@@ -1,0 +1,22 @@
+state={
+	id=2777
+	name="STATE_2777"
+
+	history={
+		owner = ITA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 0
+
+		}
+
+	}
+	impassable=yes
+	provinces={
+		187 473 1220 2309 15820 
+	}
+	manpower=1000
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

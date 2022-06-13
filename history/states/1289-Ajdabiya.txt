@@ -2,24 +2,25 @@
 state={
 	id=1289
 	name="STATE_1289"
-					
+
 	history={
 		owner = ITA
 		add_core_of = LBA
 		buildings = {
 			infrastructure = 1
+
 		}
-	
-	    victory_points = {
-		    21057 5 #Agedabia
-			}
+		victory_points = {
+			21057 5 
+		}
+
 	}
-	
+
 	provinces={
-		1011 1127 1292 2023 21051 21052 21053 21055 21056 21057 21060 
+		1011 1127 1292 2023 15827 21051 21052 21053 21055 21056 21057 21060 
 	}
 	manpower=23328
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

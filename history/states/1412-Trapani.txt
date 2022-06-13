@@ -9,16 +9,20 @@ state={
 		add_core_of = SIC
 		buildings = {
 			infrastructure = 3
-			7121 = { naval_base = 5 }
+			7121 = {
+				naval_base = 5
+
+			}
+
 		}
 		victory_points = {
-			7121 5
+			7121 5 
 		}
 
 	}
 
 	provinces={
-		7121 
+		7121 15361 
 	}
 	manpower=365394
 	buildings_max_level_factor=1.000
