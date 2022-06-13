@@ -5,16 +5,59 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 }
+
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1933.3.5"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_popularities = {
-	neutrality = 100
+	democratic = 25
+	fascism = 20
+	communism = 5
+	neutrality = 50
 }
 
-set_convoys = 5
+create_country_leader = {
+	name = "Bashir es Sadawi"
+	desc = ""
+	picture = GFX_portrait_Bashir_es_Sadawi
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ettore Bastico"
+	desc = ""
+	picture = GFX_portrait_Ettore_Bastico
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Idris Senussi"
+	desc = ""
+	picture = GFX_portrait_Idris_Senussi
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hassan as-Senussi"
+	desc = ""
+	picture = GFX_portrait_Hassan_as_Senussi
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+set_convoys = 20
 

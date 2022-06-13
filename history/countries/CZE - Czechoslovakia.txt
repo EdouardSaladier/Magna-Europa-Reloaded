@@ -2,39 +2,108 @@
 
 oob = ""
 
-set_research_slots = 3
-
-
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
-	tech_engineers = 1
+	tech_support = 1
+	tech_recon = 1
 	tech_mountaineers = 1
-	motorised_infantry = 1
 	gw_artillery = 1
+	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
-	naval_bomber1 = 1
 	CAS1 = 1
-	transport = 1
-	trench_warfare = 1
-	fleet_in_being = 1
+	fuel_silos = 1
+	basic_train = 1
 }
+recruit_character = CZE_karl_albrecht
+recruit_character = CZE_edvard_benesh
+recruit_character = CZE_jaroslav_krejchi
+recruit_character = CZE_klement_gottwald
+recruit_character = CZE_vojtyech_luzha
+recruit_character = CZE_josef_shnejdarek
+recruit_character = CZE_richard_tesarzhik
+recruit_character = CZE_sergej_vojcechovsky
+recruit_character = CZE_frantishek_havlik
+recruit_character = CZE_rudolf_viest
+recruit_character = CZE_alois_vicherek
+recruit_character = CZE_antonin_hasal
+recruit_character = CZE_jaroslav_fajfr
+recruit_character = CZE_jan_golian
+recruit_character = CZE_karel_janousek
+recruit_character = CZE_josef_frantisek
+recruit_character = CZE_ludvik_krejci
+recruit_character = CZE_karel_vaclav_petrik
+recruit_character = CZE_karel_kuttelwascher
+recruit_character = CZE_ludvik_svoboda
+recruit_character = CZE_frantisek_havel
+recruit_character = CZE_stefan_osusky
+recruit_character = CZE_ferdinand_catlos
+recruit_character = CZE_jozef_tiso
+recruit_character = CZE_vojtech_tuka
+recruit_character = CZE_konrad_henlein
+recruit_character = CZE_gustav_husak
+
+
+
 
 set_convoys = 10
 
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+	}
+}
+
+set_research_slots = 3
+
 set_politics = {
 	ruling_party = democratic
-	last_election = "1936.1.1"
-	election_frequency = 48
+	last_election = "1935.5.19"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 75
-	fascism = 10
-	communism = 0
-	neutrality = 15
+	democratic = 65
+	neutrality = 20
+	fascism = 5
+	communism = 10
 }
+
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	add_ideas = {
+	#	CZE_skoda_works
+	#	CZE_divided_nation
+	}
+	give_guarantee = YUG
+	give_guarantee = ROM
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "Death or Dishonor" }
+	}
+	add_ideas = {
+	#	CZE_fortification_focus
+	}
+}
+

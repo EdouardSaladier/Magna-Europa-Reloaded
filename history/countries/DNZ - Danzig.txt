@@ -94,3 +94,40 @@ set_popularities = { #popularities based on 1933 election statistics.
 	neutrality = 10
 }
 
+create_country_leader = {
+	name = "Albert Forster"
+	desc = ""
+	picture = "GFX_portrait_DNZ_Albert_Forster"
+	expire = "1953.3.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Arthur Brill"
+	desc = ""
+	picture = GFX_portrait_Arthur_Brill #TODO
+	expire = "1953.3.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Anton Plenikowski"
+	desc = ""
+	picture = GFX_portrait_Anton_Plenikowski #TODO
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+
+
+
+
+

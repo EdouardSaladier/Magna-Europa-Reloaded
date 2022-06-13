@@ -18,6 +18,8 @@ set_technology = {
 }
 
 set_convoys = 20
+
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -25,8 +27,48 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 5
-	fascism = 5
+	democratic = 25
+	fascism = 20
 	communism = 5
-	neutrality = 85
+	neutrality = 50
+}
+
+create_country_leader = {
+	name = "Hashim Kheir"
+	desc = ""
+	picture = GFX_portrait_Hashim_Kheir
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Saeed Ahmadi"
+	desc = ""
+	picture = GFX_portrait_Saeed_Ahmadi
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Abdullah bin al-Hussein"
+	desc = ""
+	picture = GFX_portrait_Abdullah_bin_al_Hussein
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fu'ad Nassar"
+	desc = ""
+	picture = GFX_portrait_Fuad_Nassar
+	ideology = leninism
+	traits = {
+		#
+	}
 }

@@ -19,18 +19,61 @@ set_technology = {
 	trench_warfare = 1
 }
 
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+recruit_character = SLO_jozef_tiso
+recruit_character = SLO_jaroslav_kratochvil
+recruit_character = SLO_vojtech_daubner
+recruit_character = SLO_jozef_hora
+recruit_character = SLO_frano_kral
+recruit_character = SLO_jozef_snejdarek
+recruit_character = SLO_fritz_gejza
+recruit_character = SLO_frantisek_sadek
+recruit_character = SLO_stefan_tiso
+recruit_character = SLO_cyril_kuchta
+recruit_character = SLO_jindrich_honzl
+recruit_character = SLO_frantisek_straka
+recruit_character = SLO_karol_sidor
+recruit_character = SLO_emil_lendvay
+recruit_character = SLO_jozef_turanec
+recruit_character = SLO_gustav_malar
+recruit_character = SLO_rudolf_viest
+recruit_character = SLO_janko_jesensky
+recruit_character = SLO_ferdinand_catlos
+recruit_character = SLO_anton_pulanick
+
+
+
+
+
 set_convoys = 10
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = democratic
+	last_election = "1933.3.5"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
-
 set_popularities = {
 	democratic = 15
-	fascism = 10
-	communism = 0
-	neutrality = 75
+	fascism = 70
+	neutrality = 10
+	communism = 5
 }
