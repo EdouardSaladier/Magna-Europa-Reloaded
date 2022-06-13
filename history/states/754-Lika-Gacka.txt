@@ -2,16 +2,19 @@
 state={
 	id=754
 	name="STATE_754"
-	provinces={
-		4403 6212 14483 14530 20124 20194 
-	}
 	history = {
 		owner = YUG
 		add_core_of = CRO
+		add_core_of = YUG
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = YUG
+		victory_points = {
+			4403 2
+		}
+	}
+	provinces={
+		4403 6212 14483 14530 20124 20194 
 	}
 	manpower=114117
 	buildings_max_level_factor=1.000

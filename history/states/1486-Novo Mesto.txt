@@ -1,9 +1,6 @@
 state={
 	id=1486
 	name="STATE_1486"
-	provinces={
-		7955 8635 9051 14258 
-	}
 	history = {
 		owner = YUG
 		add_core_of = YUG
@@ -11,6 +8,12 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			9051 2
+		}
+	}
+	provinces={
+		7955 8635 9051 14258 
 	}
 	manpower=115323
 	state_category=rural

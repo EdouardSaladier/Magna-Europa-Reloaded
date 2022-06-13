@@ -2,16 +2,19 @@
 state={
 	id=1465
 	name="STATE_1465"
-	provinces={
-		2626 4635 5612 20155 
-	}
 	history = {
 		owner = YUG
 		add_core_of = CRO
+		add_core_of = YUG
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = YUG
+		victory_points = {
+			5612 2
+		}
+	}
+	provinces={
+		2626 4635 5612 20155 
 	}
 	manpower=151584
 	state_category=town
