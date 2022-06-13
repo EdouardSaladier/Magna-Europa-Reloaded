@@ -5,18 +5,19 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 }
-
+set_cosmetic_tag = LBA_IT
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
+	ruling_party = fascism
+	last_election = "1934.3.26"
+	election_frequency = 60
 	elections_allowed = no
 }
+
 set_popularities = {
-	democratic = 25
-	fascism = 20
-	communism = 5
-	neutrality = 50
+	neutrality = 20
+	fascism = 75
+	democratic = 3
+	communism = 2
 }
 
 create_country_leader = {
@@ -30,9 +31,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ettore Bastico"
+	name = "Italo Balbo"
 	desc = ""
-	picture = GFX_portrait_Ettore_Bastico
+	picture = GFX_portrait_ITA_italo_balbo
 	ideology = fascism_ideology
 	traits = {
 		#
