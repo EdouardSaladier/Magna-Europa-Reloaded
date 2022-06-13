@@ -1,7 +1,6 @@
 ﻿capital = 1930
 
 #oob = ""
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -18,15 +17,56 @@ set_technology = {
 }
 
 set_convoys = 20
+
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 5
-	fascism = 5
-	communism = 5
-	neutrality = 85
+	democratic = 50
+	fascism = 10
+	communism = 10
+	neutrality = 30
+}
+
+create_country_leader = {
+	name = "Hashim al-Atassi"
+	desc = ""
+	picture = GFX_portrait_Hashim_al_Atassi
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Antun Saadeh"
+	desc = ""
+	picture = GFX_portrait_Antun_Saadeh
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ghazi bin Faisal"
+	desc = ""
+	picture = GFX_portrait_Ghazi_bin_Faisal
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Khalid Bakdash"
+	desc = ""
+	picture = GFX_portrait_Khalid_Bakdash
+	ideology = leninism
+	traits = {
+		#
+	}
 }

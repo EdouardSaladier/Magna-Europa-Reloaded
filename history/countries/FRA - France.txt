@@ -123,6 +123,14 @@ if = {
 		autonomous_state = autonomy_colony
 	}
 	set_autonomy = {
+		target = ALW
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = JDZ
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
 		target = LEB
 		autonomous_state = autonomy_colony
 	}
@@ -136,6 +144,8 @@ if = {
 	}
 	else = {
 		puppet = SYR
+		puppet = JDZ
+		puppet = ALW
 		puppet = LEB
 		puppet = MOR
 		puppet = TUN

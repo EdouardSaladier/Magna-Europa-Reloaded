@@ -1,7 +1,7 @@
 ﻿capital = 1230
 
 set_research_slots = 3
-
+set_cosmetic_tag = JDZ_FR
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -78,9 +78,15 @@ if = {
 	}
 }
 
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
 set_popularities = {
-	democratic = 15
-	neutrality = 20
-	communism = 60
-	fascism = 5
+	democratic = 50
+	fascism = 10
+	communism = 10
+	neutrality = 30
 }
