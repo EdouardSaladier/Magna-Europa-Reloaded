@@ -8,8 +8,15 @@ state={
 		add_core_of = PRS
 		add_core_of = SLS
 		add_core_of = UPS
-		victory_points = { 19942 10 }
-		victory_points = { 6758 5 }
+		victory_points = {
+			19942 10 #Gleiwitz
+		}
+		victory_points = {
+			6758 5 #Kandrzin-Cosel
+		}
+		victory_points = {
+			12567 5 #Hindenburg
+		}
     }
 	provinces={
 		6758 7914 12405 12552 12567 12594 12656 19942 

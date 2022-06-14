@@ -8,8 +8,11 @@ state={
 	history={
 	    owner = GER
         victory_points = {
-            8402 10
+            8402 10 #Waldenburg
         }
+		victory_points = {
+			5693 5 #Schweidnitz
+		}
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = SLS

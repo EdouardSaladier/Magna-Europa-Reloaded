@@ -10,7 +10,12 @@ state={
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = HNV
-		victory_points = { 11343 5 }
+		victory_points = {
+			11343 5 #Lüneburg
+		}
+        victory_points = {
+            11430 2 #Uelzen
+        }
     }
 	manpower=141365
 	buildings_max_level_factor=1.000

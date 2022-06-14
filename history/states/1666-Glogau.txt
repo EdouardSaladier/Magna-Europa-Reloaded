@@ -6,7 +6,12 @@ state={
 		add_core_of = GER
 		add_core_of = PRS
 		add_core_of = SLS
-		victory_points = { 20607 5 }
+		victory_points = {
+			20607 5 #Glogau
+		}
+		victory_points = {
+			6045 5 #Lüben
+		}
     }
 	provinces={
 		6045 12005 12055 12123 20607 
