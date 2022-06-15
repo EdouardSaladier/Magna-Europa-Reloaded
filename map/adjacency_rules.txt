@@ -5,6 +5,9 @@ adjacency_rule =
 {
 	name = "BOSPHORUS_STRAIT"
 
+	#is_friend = {
+	#	TUR_is_friend_for_bosphorus = yes
+	#}
 	contested = {
 		army = no
 		navy = no
@@ -44,6 +47,9 @@ adjacency_rule =
 {
 	name = "DARDANELLES_STRAIT"
 
+	#is_friend = {
+	#	TUR_is_friend_for_dardanelles = yes
+	#}
 	contested =
 	{
 		army = no
@@ -318,4 +324,156 @@ adjacency_rule =
 	
 	icon = 20051
 	offset = { -5 0 -2 }
+}
+adjacency_rule =
+{
+	name = "LITTLE_BELT_STRAIT"
+	
+	contested = 
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy = 
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = 
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral = 
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 7073 10636 7789 6240 19614 19613 }
+	
+	icon = 17860
+	offset = { 0 0 0 }
+}
+adjacency_rule =
+{
+	name = "GREAT_BELT_STRAIT"
+	
+	contested = 
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy = 
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = 
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral = 
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 10650 9674 8625 7574 19621 19622 19620 }
+	
+	icon = 16809
+	offset = { 0 0 0 }
+}
+adjacency_rule =
+{
+	name = "ORESUND_STRAIT"
+	
+	contested = 
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy = 
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = 
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral = 
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 19533 10561 10625 10646 }
+	
+	icon = 6764
+	offset = { -7 0 0 }
+}
+adjacency_rule =
+{
+	name = "SKAGERRAK_STRAIT"
+
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 10201 7048 }
+	
+	icon = 17862
+	offset = { 0 0 5 }
 }
