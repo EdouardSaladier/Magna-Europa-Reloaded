@@ -1,5 +1,5 @@
 
-#TO-DO LIST: SKAGERRAK, DANISH BELTS, VENETIAN BRIDGE (MAYBE)
+#TO-DO LIST: SKAGERRAK, DANISH BELTS
 
 adjacency_rule =
 {
@@ -31,6 +31,11 @@ adjacency_rule =
 	}
 	
 	required_provinces = { 15010 21464 21463 15013 }
+
+	is_disabled = {
+		has_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY
+		tooltip = bosporus_strait_blocked_tt
+	}
 	
 	icon = 15013
 	offset = { -9 0 -5 }
@@ -69,6 +74,11 @@ adjacency_rule =
 	}
 	
 	required_provinces = { 21445 21437 21439 15164 7535 }
+
+	is_disabled = {
+		has_country_flag = DARDANELLES_STRAIT_BLOCKED_FOR_COUNTRY
+		tooltip = dardanelles_strait_blocked_tt
+	}
 	
 	icon = 15164
 	offset = { -5 0 0 }
@@ -224,4 +234,88 @@ adjacency_rule =
 	
 	icon = 19768
 	offset = { 0 0 7 }
+}
+adjacency_rule =
+{
+	name = "KIEL_CANAL"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7356 5595 20651 11003 10956 10963 10927 10968 10938 7341 }
+	
+	icon = 10963
+	offset = { 0 0 2 }
+}
+adjacency_rule =
+{
+	name = "VENETIAN_BRIDGE"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	is_disabled = {
+		OR = {
+			has_global_flag = VENICE_BRIDGE_BLOCKED
+			has_country_flag = VENICE_BRIDGE_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_bridge_venice_tt
+	}
+	
+	required_provinces = { 20051 547 }
+	
+	icon = 20051
+	offset = { -5 0 -2 }
 }
