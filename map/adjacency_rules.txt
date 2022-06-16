@@ -79,7 +79,7 @@ adjacency_rule =
 		trade = yes
 	}
 	
-	required_provinces = { 21445 21437 21439 15164 7535 }
+	required_provinces = { 21445 21437 21439 15164 7535 11865 }
 
 	is_disabled = {
 		has_country_flag = DARDANELLES_STRAIT_BLOCKED_FOR_COUNTRY
@@ -126,6 +126,44 @@ adjacency_rule =
 	
 	icon = 15368
 	offset = { -10 0 2 }
+}
+adjacency_rule =
+{
+	name = "BONIFACIO_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 1754 4722 }
+	
+	icon = 17685
+	offset = { -10 0 -10 }
 }
 adjacency_rule =
 {
