@@ -1,7 +1,7 @@
 ﻿capital = 280
 
 set_research_slots = 3
-
+give_military_access = POL
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -79,7 +79,9 @@ if = {
 		basic_torpedo = 1
 	}
 }
-
+add_ideas = {
+	disarmed_nation
+}
 set_politics = {
 	ruling_party = fascism
 	last_election = "1935.4.7"
