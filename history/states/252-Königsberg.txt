@@ -13,6 +13,10 @@ state={
 		add_core_of = PRS
 		add_core_of = ESP
 		add_core_of = GER
+		buildings = {
+			infrastructure = 3
+			19906 = { naval_base = 5 }
+		}
     }
 	manpower=371729
 	buildings_max_level_factor=1.000

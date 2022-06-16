@@ -10,6 +10,10 @@ state={
             6762 10 #Köslin
         }
 		add_core_of = GER
+		buildings = {
+			infrastructure = 3
+			6762 = { naval_base = 1 }
+		}
 		add_core_of = PRS
 		add_core_of = PMR
     }

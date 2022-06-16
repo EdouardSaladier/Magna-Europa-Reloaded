@@ -9,6 +9,9 @@ state={
 			20767 20 #Mannheim und Heidelberg
 		}
 		add_core_of = GER
+		buildings = {
+			infrastructure = 4
+		}
 		add_core_of = BDN
 		set_demilitarized_zone = yes
 	}

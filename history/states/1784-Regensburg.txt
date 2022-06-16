@@ -10,6 +10,9 @@ state={
             13100 10 #Regensburg
         }
 		add_core_of = GER
+		buildings = {
+			infrastructure = 3
+		}
 		add_core_of = BVR
     }
 	manpower=239795

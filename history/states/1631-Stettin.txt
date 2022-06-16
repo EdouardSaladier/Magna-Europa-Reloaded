@@ -11,6 +11,10 @@ state={
             11257 20 #Stettin
         }
 		add_core_of = GER
+		buildings = {
+			infrastructure = 3
+			11208 = { naval_base = 4 }
+		}
 		add_core_of = PRS
 		add_core_of = PMR
     }

@@ -12,6 +12,9 @@ state={
 			3091 2 #Waldshut-Tiengen
 		}
 		add_core_of = GER
+		buildings = {
+			infrastructure = 4
+		}
 		add_core_of = BDN
 		set_demilitarized_zone = yes
 	}

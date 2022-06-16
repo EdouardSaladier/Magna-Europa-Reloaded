@@ -4,8 +4,11 @@ state={
 	history={
 		owner = GER
 		add_core_of = GER
+		buildings = {
+			infrastructure = 3
+		}
 		add_core_of = PRS
-		add_core_of = SLS
+		add_core_of = SLS 
 		add_claim_by = CZE
 		victory_points = {
 			12599 2 #Glatz

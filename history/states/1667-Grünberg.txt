@@ -10,6 +10,9 @@ state={
             5425 10 #Grünberg in Schlesien
         }
 		add_core_of = GER
+		buildings = {
+			infrastructure = 3
+		}
 		add_core_of = PRS
 		add_core_of = SLS
     }

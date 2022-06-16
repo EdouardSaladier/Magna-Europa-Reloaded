@@ -7,6 +7,10 @@ state={
 	history={
 		owner = GER
 		add_core_of = GER
+		buildings = {
+			infrastructure = 3
+			5035 = { naval_base = 6 }
+		}
 		add_core_of = MKW
         victory_points = {
             5035 10 #Rostock

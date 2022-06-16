@@ -11,6 +11,9 @@ state={
             20598 10 #Oppeln
         }
 		add_core_of = GER
+		buildings = {
+			infrastructure = 3
+		}
 		add_core_of = PRS
 		add_core_of = SLS
 		add_core_of = UPS

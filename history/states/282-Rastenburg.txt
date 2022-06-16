@@ -7,6 +7,9 @@ state={
 		add_core_of = PRS
 		add_core_of = ESP
 		add_core_of = GER
+		buildings = {
+			infrastructure = 3
+		}
 		victory_points = { 2421 2 }
 		victory_points = { 20478 2 }
     }
