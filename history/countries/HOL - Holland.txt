@@ -59,21 +59,21 @@ if = {
 	}
 }
 
-add_ideas = {
-	HOL_wilhelmina
-}
-
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = {
-		HOL_aloof_neutrality
-		HOL_shell_shocked_spectator_5
-		HOL_de_crisisjaren_5
-		HOL_weak_government
-	}
-}
+#add_ideas = {
+#	HOL_wilhelmina
+#}
+#
+#if = {
+#	limit = {
+#		has_dlc = "Man the Guns"
+#	}
+#	add_ideas = {
+#		HOL_aloof_neutrality
+#		HOL_shell_shocked_spectator_5
+#		HOL_de_crisisjaren_5
+#		HOL_weak_government
+#	}
+#}
 
 recruit_character = HOL_hendrikus_colijn
 recruit_character = HOL_anton_mussert
