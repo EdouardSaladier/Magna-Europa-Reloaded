@@ -10,10 +10,11 @@ state={
 		add_core_of = IRE
 		buildings = {
 			infrastructure = 3
+			19391 = { naval_base = 6 }
 		}
 	
         victory_points = {
-            19391 20
+            19391 80
         }
     }
 	manpower=118822

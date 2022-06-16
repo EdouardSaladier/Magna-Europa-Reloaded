@@ -1,8 +1,6 @@
-
 state={
 	id=386
 	name="STATE_386"
-
 	history={
 		owner = ENG
 		add_core_of = ENG
@@ -11,11 +9,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 4
-
+			6529 = { naval_base = 3 }
 		}
-
 	}
-
 	provinces={
 		3972 6142 6461 6529 6570 8934 11735 11755 
 	}
