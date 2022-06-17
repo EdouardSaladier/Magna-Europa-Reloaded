@@ -7,10 +7,10 @@ add_ideas = {
 }
 IF = {
 	limit = { has_dlc = "No Step Back" }
-	add_ideas = {
-		democratic_opposition
-		EST_vaps_idea_1
-	}
+#	add_ideas = {
+#		democratic_opposition
+#		EST_vaps_idea_1
+#	}
 }
 
 recruit_character = EST_konstantin_pats

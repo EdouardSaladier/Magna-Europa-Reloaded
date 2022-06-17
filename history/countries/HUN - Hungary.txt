@@ -25,11 +25,11 @@ if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
 	}
-	#give_guarantee = AUS
-	#add_ideas = {
-	#	disarmed_nation
+	give_guarantee = AUS
+	add_ideas = {
+		disarmed_nation
 	#	HUN_treaty_of_triannon
-	#}
+	}
 }
 
 if = {
@@ -57,11 +57,11 @@ if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
 	}
-	#give_guarantee = AUS
-	#add_ideas = {
-	#	disarmed_nation
+	give_guarantee = AUS
+	add_ideas = {
+		disarmed_nation
 	#	HUN_treaty_of_triannon
-	#}
+	}
 }
 
 #if = {
