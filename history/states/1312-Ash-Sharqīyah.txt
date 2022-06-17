@@ -5,6 +5,9 @@ state={
 	history = {
 		owner = SAU
 		add_core_of = SAU
+		buildings = {
+			infrastructure = 1
+		}
 		victory_points = { 6840 10 }
 	}
 	provinces={

@@ -5,6 +5,10 @@ state={
 	history = {
 		owner = QAT
 		add_core_of = QAT
+		buildings = {
+			infrastructure = 1
+			19151 = { naval_base = 1 }
+		}
 		victory_points = { 19151 20 }
 	}
 	provinces={

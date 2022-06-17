@@ -5,6 +5,10 @@ state={
 	history = {
 		owner = KUW
 		add_core_of = KUW
+		buildings = {
+			infrastructure = 2
+			19157 = { naval_base = 4 }
+		}
 		victory_points = { 19157 80 }
 	}
 	provinces={

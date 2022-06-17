@@ -5,6 +5,10 @@ state={
 	history = {
 		owner = OMA
 		add_core_of = OMA
+		buildings = {
+			infrastructure = 1
+			18230 = { naval_base = 3 }
+		}
 		victory_points = { 18230 10 }
 	}
 	provinces={

@@ -6,6 +6,9 @@ state={
 	history={
 		owner = SAU
 		add_core_of = SAU
+		buildings = {
+			infrastructure = 2
+		}
 		victory_points = {
 			15403 40
 		}
