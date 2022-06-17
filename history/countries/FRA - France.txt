@@ -146,6 +146,10 @@ if = {
 		target = TUN
 		autonomous_state = autonomy_colony
 	}
+	set_autonomy = {
+		target = MRT
+		autonomous_state = autonomy_colony
+	}
 	else = {
 		puppet = SYR
 		puppet = JDZ

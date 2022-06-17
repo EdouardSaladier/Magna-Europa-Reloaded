@@ -1,5 +1,6 @@
 ﻿capital = 1340
 
+set_cosmetic_tag = MRT_FR
 #oob = ""
 
 # Starting tech
@@ -18,6 +19,31 @@ set_technology = {
 }
 
 set_convoys = 20
+
+recruit_character = MRT_pot
+recruit_character = MRT_awt
+recruit_character = MRT_communist_guy
+recruit_character = MRT_ncm
+recruit_character = MRT_acgs
+recruit_character = MRT_nccr
+recruit_character = MRT_fascist_guy
+recruit_character = MRT_ar
+recruit_character = MRT_stc
+recruit_character = MRT_aco2
+recruit_character = MRT_aa2
+recruit_character = MRT_ncs
+recruit_character = MRT_nt
+recruit_character = MRT_acas
+recruit_character = MRT_acd2
+recruit_character = MRT_democratic_guy
+recruit_character = MRT_mt
+recruit_character = MRT_ai2
+recruit_character = MRT_coi
+recruit_character = MRT_acr
+
+
+
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -25,8 +51,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 5
-	fascism = 5
+	democratic = 25
+	fascism = 20
 	communism = 5
-	neutrality = 85
+	neutrality = 50
 }
