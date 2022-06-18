@@ -562,7 +562,7 @@ ITAL_PAR_01 = {
 	division_types = { "paratrooper" } 
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { ITA_INF_01 } 
+	link_numbering_with = { ITAL_INF_01 } 
 
 	fallback_name = "%da Divisione Paracadutisti" 
 }
@@ -634,7 +634,7 @@ ITAL_GAR_01 = {
 	division_types = { "infantry" } 
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { ITA_INF_01 } 
+	link_numbering_with = { ITAL_INF_01 } 
 
 	fallback_name = "%da Divisione Costiera" 
 }
@@ -669,7 +669,7 @@ ITAL_MOT_01 = {
 	division_types = { "motorized" } 
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { ITA_INF_01 } 
+	link_numbering_with = { ITAL_INF_01 } 
 
 	fallback_name = "%da Divisione Motorizzata" 
 }
@@ -686,7 +686,7 @@ ITAL_MEC_01 = {
 	division_types = { "mechanized" } 
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { ITA_INF_01 } 
+	link_numbering_with = { ITAL_INF_01 } 
 
 	fallback_name = "%da Divisione Meccanizzata" 
 }
@@ -704,7 +704,7 @@ ITAL_ARM_01 = {
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" } 
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { ITA_INF_01 } 
+	link_numbering_with = { ITAL_INF_01 } 
 
 	fallback_name = "%da Divisione Corazzata" 
 }
