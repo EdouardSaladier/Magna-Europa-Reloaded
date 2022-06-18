@@ -12,8 +12,10 @@ state={
 			infrastructure = 3
 		}
         victory_points = {
-            775 20
+            775 5 #Pruszków
         }
+		victory_points = {
+			11900 2 #Skierniewice
   	}
 	manpower=440800
 	buildings_max_level_factor=1.000
