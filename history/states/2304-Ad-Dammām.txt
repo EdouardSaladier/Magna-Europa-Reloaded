@@ -6,7 +6,8 @@ state={
 		owner = SAU
 		add_core_of = SAU
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			19236 = { naval_base = 1 }
 		}
 		victory_points = { 19236 20 }
 		victory_points = { 19234 10 }

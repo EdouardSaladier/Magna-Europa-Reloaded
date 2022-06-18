@@ -5,6 +5,9 @@ state={
 	history = {
 		owner = PER
 		add_core_of = PER
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	provinces={
 		365 1857 7337 15177 17883 

@@ -7,6 +7,8 @@ state={
 		add_core_of = UAE
 		buildings = {
 			infrastructure = 1
+			16829 = { naval_base = 1 }
+			16125 = { naval_base = 1 }
 		}
 		victory_points = { 16829 40 }
 		victory_points = { 16125 40 }

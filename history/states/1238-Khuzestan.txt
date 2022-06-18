@@ -5,9 +5,13 @@ state={
 	history = {
 		owner = PER
 		add_core_of = PER
+		buildings = {
+			infrastructure = 2
+			887 = { naval_base = 1 }
+		}
 		add_core_of = KHZ
 		victory_points = { 18776 20 }
-		victory_points = { 15734 2 }
+		victory_points = { 18882 2 }
 		victory_points = { 15753 2 }
 	}
 	provinces={
