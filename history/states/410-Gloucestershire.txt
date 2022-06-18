@@ -3,7 +3,7 @@ state={
 	id=410
 	name="STATE_410"
 	provinces={
-		3595 5806 7617 9058 9068 11964 12026 12106 19419 
+		698 3595 5806 7617 9058 9068 11897 11964 12026 12106 19419 
 	}
 	history={
 		owner = ENG
@@ -15,6 +15,9 @@ state={
 	
         victory_points = {
             19419 20
+        }
+		victory_points = {
+            7617 10
         }
     }
 	manpower=815600
