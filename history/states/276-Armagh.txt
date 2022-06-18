@@ -7,11 +7,14 @@ state={
 		buildings = {
 			infrastructure = 4
 		}
+		victory_points = {
+            10897 2
+        }
 		add_core_of = NIR
 		add_core_of = IRE
 	}
 	provinces={
-		1890 
+		1890 10897 10909
 	}
 	manpower=108800
 	buildings_max_level_factor=1.000
