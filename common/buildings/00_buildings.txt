@@ -25,7 +25,7 @@ buildings = {
 		base_cost_conversion = 4000
 		military_production = 1
 		icon_frame = 2
-		max_level = 20
+		max_level = 5000
 		shares_slots = yes
 		value = 8
 		infrastructure_construction_effect = yes
@@ -37,7 +37,7 @@ buildings = {
 		base_cost_conversion = 9000
 		general_production = 1
 		icon_frame = 1
-		max_level = 20
+		max_level = 5000
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
@@ -57,7 +57,7 @@ buildings = {
 
 	supply_node = {
 		show_on_map = 1
-		base_cost = 15000
+		base_cost = 10000
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 15
@@ -71,12 +71,13 @@ buildings = {
 	}	
 	
 	rail_way = {
-		base_cost = 50
-		per_level_extra_cost = 25
+		base_cost = 100
+		per_level_extra_cost = 50
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 16
 		max_level = 1
+		allied_build = yes
 		infrastructure_construction_effect = yes
 	}
 	
@@ -142,10 +143,11 @@ buildings = {
 	
 	anti_air_building = {
 		show_on_map = 3
-		base_cost = 2500
+		base_cost = 1500
 		icon_frame = 9
 		anti_air = yes
 		disabled_in_dmz = yes
+		allied_build = yes
 		air_defence = 1
 		max_level = 5 # This is the max unlock level
 		damage_factor = 0.1
