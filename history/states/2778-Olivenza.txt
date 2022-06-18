@@ -1,0 +1,23 @@
+state={
+	id=2778
+	name="STATE_2778"
+	provinces={
+		18656 
+	}
+	history={
+		owner = SPR
+		add_core_of = EXT
+		add_core_of = SPR
+		add_core_of = POR
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+            18656 2 #Olivenza
+        }
+    }
+	manpower=11813
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

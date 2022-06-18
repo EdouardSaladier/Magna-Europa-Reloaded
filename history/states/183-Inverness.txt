@@ -2,23 +2,32 @@
 state={
 	id=183
 	name="STATE_183"
-	provinces={
-		745 2481 2860 3805 4192 4735 4850 8272 9064 10284 10314 10326 10342 19452 19455 
-	}
+
 	history={
 		owner = ENG
 		add_core_of = ENG
 		buildings = {
 			infrastructure = 4
-			8272 = { naval_base = 2 }
-			3805 = { naval_base = 1 }
+			10284 = {
+				naval_base = 2
+
+			}
+			3805 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = SCO
-	
-        victory_points = {
-            10284 1
-        }
-    }
+		victory_points = {
+			10284 2 
+		}
+
+	}
+
+	provinces={
+		745 2481 2860 3805 4192 4735 8272 9064 10284 10342 19455 
+	}
 	manpower=81500
 	buildings_max_level_factor=1.000
 	state_category=rural

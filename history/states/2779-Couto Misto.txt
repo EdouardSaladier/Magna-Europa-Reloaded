@@ -1,0 +1,19 @@
+state={
+	id=2779
+	name="STATE_2779"
+	provinces={
+		14678 
+	}
+	history={
+		owner = SPR
+		add_core_of = GLC
+		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+		}
+    }
+	manpower=1000
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

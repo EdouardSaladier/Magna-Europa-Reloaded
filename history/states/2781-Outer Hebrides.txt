@@ -1,0 +1,19 @@
+state={
+	id=2781
+	name="STATE_2781"
+	provinces={
+		3989 10326 19452 19453 
+	}
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SCO
+	}
+	manpower=26830
+	state_category = tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

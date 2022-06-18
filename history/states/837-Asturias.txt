@@ -2,27 +2,34 @@
 state={
 	id=837
 	name="STATE_837"
-	provinces={
-		233 3514 3667 4862 6400 9359 14673 14678 14679 14720 14726 19797 20521 
-	}
+
 	history={
 		owner = SPR
 		add_core_of = ATR
 		add_core_of = SPR
 		buildings = {
 			infrastructure = 3
-			14678 = { naval_base = 2 }
+			14673 = {
+				naval_base = 2
+
+			}
+
 		}
-        victory_points = {
-            14678 20 #Gijón
-        }
 		victory_points = {
-            3667 20 #Oviedo
-        }
+			14673 20 
+		}
 		victory_points = {
-            9359 5 #Avilés
-        }
-    }
+			3667 20 
+		}
+		victory_points = {
+			9359 5 
+		}
+
+	}
+
+	provinces={
+		233 3514 3667 4862 6400 9359 14673 14679 14720 14726 19797 20521 
+	}
 	manpower=812000
 	buildings_max_level_factor=1.000
 	state_category=large_city
