@@ -293,21 +293,21 @@ ITA_MOT_01 = {
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered = { 
-		9 = { "%da Divisione Autotrasportabile 'Pasubio'" } 						# Created in '34
-		10 = { "%da Divisione Autotrasportabile 'Piave'" } 							# Created in '34
-		17 = { "%da Divisione Autotrasportabile 'Pavia'" } 							# Created in '34 as 'Rubicone', renamed in '39
-		25 = { "%da Divisione Autotrasportabile 'Bologna'" } 						# Created in '34 as 'Volturno', renamed in '39
-		27 = { "%da Divisione Autotrasportabile 'Brescia'" } 						# Created in '35 as 'Sila', renamed in '39
+		9 = { "%da Divisione Motorizzata 'Pasubio'" } 						# Created in '34
+		10 = { "%da Divisione Motorizzata 'Piave'" } 							# Created in '34
+		17 = { "%da Divisione Motorizzata 'Pavia'" } 							# Created in '34 as 'Rubicone', renamed in '39
+		25 = { "%da Divisione Motorizzata 'Bologna'" } 						# Created in '34 as 'Volturno', renamed in '39
+		27 = { "%da Divisione Motorizzata 'Brescia'" } 						# Created in '35 as 'Sila', renamed in '39
 		8 = { "%da Divisione Motorizzata 'Po'" } 									# Created in '36
-		60 = { "%da Divisione Autotrasportabile 'Sabratha'" } 						# Created in '37
-		61 = { "%da Divisione Autotrasportabile 'Sirte'" } 							# Created in '37
-		62 = { "%da Divisione Autotrasportabile 'Marmarica'" } 						# Created in '37
-		63 = { "%da Divisione Autotrasportabile 'Cirene'" } 						# Created in '37
-		55 = { "%da Divisione Autotrasportabile 'Savona'" } 						# Created in '39
+		60 = { "%da Divisione Motorizzata 'Sabratha'" } 						# Created in '37
+		61 = { "%da Divisione Motorizzata 'Sirte'" } 							# Created in '37
+		62 = { "%da Divisione Motorizzata 'Marmarica'" } 						# Created in '37
+		63 = { "%da Divisione Motorizzata 'Cirene'" } 						# Created in '37
+		55 = { "%da Divisione Motorizzata 'Savona'" } 						# Created in '39
 		102 = { "%da Divisione Motorizzata 'Trento'" } 								# Created in '39
 		101 = { "%da Divisione Motorizzata 'Trieste'" } 							# Created in '39
-		52 = { "%da Divisione Autotrasportabile 'Torino'" } 						# Created in '40
-		64 = { "%da Divisione Autotrasportabile 'Catanzaro'" } 						# Created in '40
+		52 = { "%da Divisione Motorizzata 'Torino'" } 						# Created in '40
+		64 = { "%da Divisione Motorizzata 'Catanzaro'" } 						# Created in '40
 		103 = { "%da Divisione Motorizzata 'Piacenza'" } 							# Created in '42
 		104 = { "%da Divisione Motorizzata 'Mantova'" } 							# Created in '42
 		105 = { "%da Divisione Motorizzata 'Rovigo'" } 								# Created in '42
@@ -466,7 +466,7 @@ ITA_PAR_01 = {
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered = { 
-		80 = { "%da Divisione Aviotrasportabile 'La Spezia'" } 						# Created in '41
+		80 = { "%da Divisione di Fanteria 'La Spezia'" } 						# Created in '41
 		185 = { "%da Divisione Paracadutisti 'Folgore'" } 							# Created in '42
 		184 = { "%da Divisione Paracadutisti 'Nembo'" } 							# Created in '42
 		183 = { "%da Divisione Paracadutisti 'Ciclone'" } 							# Created in '43
@@ -529,3 +529,182 @@ ITA_GAR_01 = {
 		229 = { "%da Divisione Costiera" } 
 	} 
 } 
+
+
+###Italian culture names start here
+ITAL_INF_01 = {
+	name = "Infantry Division" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	} 
+
+	division_types = { "infantry" } 
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "%da Divisione di Fanteria" 
+}
+
+ITAL_PAR_01 = { 
+	name = "Paratrooper Division" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	} 
+
+	division_types = { "paratrooper" } 
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { ITA_INF_01 } 
+
+	fallback_name = "%da Divisione Paracadutisti" 
+}
+
+ITAL_MNT_01 = { 
+	name = "Mountain Division" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	} 
+
+	division_types = { "mountaineers" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ITA_MNT_01 } 
+
+	fallback_name = "%da Divisione Alpina" 
+}
+
+ITAL_MAR_01 = { 
+	name = "Marine Regiment" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	} 
+
+	division_types = { "marine" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ITA_MAR_01 } 
+
+	fallback_name = "%d° Reggimento da Sbarco" 
+}
+
+ITAL_COL_01 = { 
+	name = "Colonial Division" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	} 
+
+	division_types = { "infantry" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ITA_COL_01 } 
+
+	fallback_name = "%da Divisione Coloniale" 
+}
+
+ITAL_GAR_01 = { 
+	name = "Garrison Division" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	} 
+
+	division_types = { "infantry" } 
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { ITA_INF_01 } 
+
+	fallback_name = "%da Divisione Costiera" 
+}
+
+ITAL_CAV_01 = { 
+	name = "Cavalry Regiment" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	} 
+
+	division_types = { "cavalry" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ITA_CAV_01 } 
+
+	fallback_name = "%d° Reggimento di Cavalleria" 
+}
+
+ITAL_MOT_01 = { 
+	name = "Motorized Division" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	}
+	division_types = { "motorized" } 
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { ITA_INF_01 } 
+
+	fallback_name = "%da Divisione Motorizzata" 
+}
+
+ITAL_MEC_01 = { 
+	name = "Mechanized Division" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	}
+	division_types = { "mechanized" } 
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { ITA_INF_01 } 
+
+	fallback_name = "%da Divisione Meccanizzata" 
+}
+
+ITAL_ARM_01 = { 
+	name = "Armored Division" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	} 
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" } 
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { ITA_INF_01 } 
+
+	fallback_name = "%da Divisione Corazzata" 
+}
