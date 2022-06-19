@@ -2,16 +2,19 @@
 state={
 	id=2376
 	name="STATE_2376"
-	provinces={
-		2387 3483 11153 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
+
+	}
+
+	provinces={
+		2387 3483 11153 17858 
 	}
 	manpower=5946
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

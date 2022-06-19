@@ -2,13 +2,16 @@
 state={
 	id=127
 	name="STATE_127"
-	provinces={
-		1424 2192 2679 6857 9973 9984 9988 9989 10005 10012 10028 17228 18548 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
+
+	}
+
+	provinces={
+		1424 2192 2679 3792 5455 6857 8894 9973 9984 9988 9989 10005 10012 10028 10052 17228 18145 18548 19010 
 	}
 	manpower=416073
 	buildings_max_level_factor=1.000
