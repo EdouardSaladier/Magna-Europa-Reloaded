@@ -2,13 +2,16 @@
 state={
 	id=154
 	name="STATE_154"
-	provinces={
-		850 1231 1743 1910 2142 3126 4616 4644 4986 5292 5319 6681 7266 7499 8326 9614 10316 10320 10371 10472 18955 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
+
+	}
+
+	provinces={
+		850 1231 1743 1910 2142 3126 4616 4644 4986 5292 5319 6681 7499 8326 9614 10316 10320 10371 10472 16745 18955 
 	}
 	manpower=545332
 	buildings_max_level_factor=1.000
