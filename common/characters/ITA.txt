@@ -81,11 +81,11 @@ characters={
 		}
 
 		field_marshal={
-			traits={ old_guard inflexible_strategist politically_connected defensive_doctrine }
-			skill=1
+			traits={ old_guard inflexible_strategist politically_connected defensive_doctrine war_hero organizer }
+			skill=2
 			attack_skill=1
 			defense_skill=1
-			planning_skill=1
+			planning_skill=2
 			logistics_skill=1
 			legacy_id=0
 		}
@@ -154,11 +154,11 @@ characters={
 		
 		corps_commander={
 			traits={ old_guard career_officer trait_cautious }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=3
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
 			legacy_id=0
 		}
 	}
@@ -187,7 +187,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ armor_officer war_hero }
+			traits={ brilliant_strategist armor_officer war_hero }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -260,8 +260,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
-			traits={ career_officer politically_connected }
+		field_marshal={
+			traits={ inspirational_leader career_officer politically_connected trait_reckless media_personality }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -297,8 +297,8 @@ characters={
 			}
 		}
 
-		field_marshal={
-			traits={ trait_cautious politically_connected offensive_doctrine }
+		corps_commander={
+			traits={ trait_cautious politically_connected offensive_doctrine desert_fox }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -482,6 +482,7 @@ characters={
 		name=ITA_guiseppe_fioravanzo
 		portraits={
 			army={
+				large="gfx/leaders/LBA/Portrait_Italy_Giuseppe_Fioravanzo.dds"
 				small="GFX_idea_guiseppe_fioravanzo"
 			}
 		}
@@ -496,6 +497,15 @@ characters={
 			traits = {
 				grand_fleet_proponent
 			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast blockade_runner }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=4
+			coordination_skill=2
+			legacy_id=0
 		}
 	}
 
