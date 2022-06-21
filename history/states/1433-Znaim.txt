@@ -2,20 +2,24 @@
 state={
 	id=1433
 	name="STATE_1433"
+
 	history={
 		owner = CZE
 		add_core_of = CZE
 		add_core_of = MRV
 		add_core_of = SDT
-        victory_points = {
-            2195 2 #Znaim
-        }
+		victory_points = {
+			2195 2 
+		}
 		buildings = {
 			infrastructure = 3
+
 		}
+
 	}
+
 	provinces={
-		2195 13136 20841 
+		2195 13136 
 	}
 	manpower=140037
 	buildings_max_level_factor=1.000
