@@ -13,8 +13,11 @@ state={
 		}
 		add_core_of = BLR
         	victory_points = {
-       	    	8713 5
+       	    	8713 5 #Kobryń
        		}
+			victory_points = {
+				5230 2 #Bereza
+			}
   	}
 	manpower=181000
 	buildings_max_level_factor=1.000

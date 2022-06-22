@@ -14,8 +14,11 @@ state={
 		add_core_of = BLR
 		add_claim_by = LIT
         	victory_points = {
-       	    	19941 10
+       	    	19941 10 #Mołodeczno
        		}
+			victory_points = {
+				20002 2 #Postawy
+			}
   	}
 	manpower=206800
 	buildings_max_level_factor=1.000

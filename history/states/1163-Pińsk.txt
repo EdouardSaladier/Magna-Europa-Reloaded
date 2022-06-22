@@ -8,12 +8,15 @@ state={
 	history={
 		owner = POL
 		add_core_of = POL
+		victory_points = {
+			11775 2 #Łuniniec
+		}
 		buildings = {
 			infrastructure = 3
 		}
 		add_core_of = BLR
         victory_points = {
-            19924 10
+            19924 10 #Pińsk
         }
   	}
 	manpower=175744
