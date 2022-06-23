@@ -2,21 +2,30 @@
 state={
 	id=77
 	name="STATE_77"
-	history = {
+
+	history={
 		owner = FIN
 		add_core_of = FIN
 		buildings = {
 			infrastructure = 2
-			19664 = { naval_base = 2 }
+			19664 = {
+				naval_base = 2
+
+			}
+
 		}
 		add_core_of = KAR
-		victory_points = { 19664 5 }
+		victory_points = {
+			19664 5 
+		}
+
 	}
+
 	provinces={
-		2642 3402 5130 5638 7151 9877 9942 19045 19047 19664 
+		2642 3402 5130 5638 7151 9877 9942 16211 16419 17101 17353 18517 19045 19047 19664 
 	}
 	manpower=238980
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = large_town
 }

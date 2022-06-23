@@ -2,16 +2,20 @@
 state={
 	id=33
 	name="STATE_33"
-	history = {
+
+	history={
 		owner = FIN
 		add_core_of = FIN
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = KAR
+
 	}
+
 	provinces={
-		71 718 3728 9705 17979 19706 
+		71 718 3728 9705 15913 16858 17140 17979 19706 
 	}
 	manpower=42000
 	buildings_max_level_factor=1.000
