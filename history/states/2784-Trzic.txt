@@ -1,0 +1,21 @@
+state={
+	id=2784
+	name="STATE_2784"
+	provinces={
+		14042 
+	}
+	history={
+		owner = YUG
+		add_core_of = YUG
+		add_core_of = SLV
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	manpower=1830
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

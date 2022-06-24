@@ -2,18 +2,24 @@
 state={
 	id=1485
 	name="STATE_1485"
-	history = {
+
+	history={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = SLV
 		add_core_of = TST
-		victory_points = { 14257 1 }
+		victory_points = {
+			14257 1 
+		}
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
+
 	provinces={
-		14153 14257 
+		14153 14257 17019 
 	}
 	manpower=67666
 	buildings_max_level_factor=1.000

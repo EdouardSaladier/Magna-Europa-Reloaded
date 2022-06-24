@@ -2,17 +2,20 @@
 state={
 	id=24
 	name="STATE_24"
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
 		add_core_of = KAR
+
 	}
+
 	provinces={
-		959 1864 3069 3261 3920 4162 6318 8211 9228 9825 9851 9871 18637 18984 18991 19716 19726 
+		959 1864 3069 3261 3920 4162 6318 8211 9228 9825 9851 9871 16312 16452 16763 17113 17240 17325 17908 18142 18164 18637 18984 18991 19716 19726 
 	}
 	manpower=155000
-	state_category=town
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

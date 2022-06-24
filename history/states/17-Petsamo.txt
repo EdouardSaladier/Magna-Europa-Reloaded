@@ -2,20 +2,27 @@
 state={
 	id=17
 	name="STATE_17"
-	history = {
+
+	history={
 		owner = FIN
 		add_core_of = FIN
 		buildings = {
 			infrastructure = 2
-			533 = { naval_base = 1 }
+			533 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = SAP
+
 	}
+
 	provinces={
-		533 1004 2127 2375 4954 9691 19561 19671 19672 
+		533 1004 2127 2375 4954 9691 17121 18109 19561 19671 19672 
 	}
 	manpower=118000
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }

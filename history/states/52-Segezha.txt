@@ -2,17 +2,20 @@
 state={
 	id=52
 	name="STATE_52"
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
 		add_core_of = KAR
+
 	}
+
 	provinces={
-		1247 1307 3695 4833 9834 18529 18577 18599 18629 18743 18936 18938 
+		1247 1307 3695 4833 9834 15962 16469 17730 17927 18529 18577 18599 18629 18743 18936 18938 19718 
 	}
 	manpower=24000
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }
