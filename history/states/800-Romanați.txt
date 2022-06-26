@@ -7,10 +7,11 @@ state={
 		add_core_of = WLC
 		buildings = {
 			infrastructure = 2
-		}
+		}		
+		victory_points = { 4777 2 }
 	}
 	provinces={
-		2837 4777 14556 14644 
+		2837 4777 14644 
 	}
 	manpower=284865
 	buildings_max_level_factor=1.000
