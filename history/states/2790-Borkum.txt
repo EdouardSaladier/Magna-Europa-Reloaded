@@ -1,0 +1,22 @@
+
+state={
+	id=2790
+	name="STATE_2790"
+	provinces={
+		19879 
+	}
+	history={
+		owner = GER
+		add_core_of = GER
+		add_core_of = PRS
+		add_core_of = HNV
+		add_core_of = EFR
+		buildings = {
+			infrastructure = 3
+		}
+    }
+	manpower=5000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}
