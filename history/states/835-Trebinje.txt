@@ -7,12 +7,12 @@ state={
 	}
 	history = {
 		owner = YUG
+		add_core_of = YUG
 		add_core_of = BOS
+		add_core_of = HRZ
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = YUG
-		add_core_of = HR
 		victory_points = { 14800 2 }
 	}
 	manpower=75051
