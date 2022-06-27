@@ -9,8 +9,18 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
-		victory_points = { 3599 10 }
-		victory_points = { 12150 2 }
+		victory_points = {
+			3599 10
+		}
+		victory_points = {
+			12012 2
+		}
+		victory_points = {
+			12150 2
+		}
+		victory_points = {
+			2236 2
+		}
 	}
 	manpower=403216
 	buildings_max_level_factor=1.000

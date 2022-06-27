@@ -10,7 +10,15 @@ state={
 		add_core_of = SOV
 		add_core_of = RUS
 		add_core_of = BSK
-		victory_points = { 10899 10 }
+		victory_points = {
+			10899 10
+		}
+		victory_points = {
+			10827 5
+		}
+		victory_points = {
+			10850 2
+		}
 	}
 	manpower=139232
 	buildings_max_level_factor=1.000
