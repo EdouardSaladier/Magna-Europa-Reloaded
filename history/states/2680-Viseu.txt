@@ -11,8 +11,10 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-        	victory_points = { 2680 2 }
-    	}
+        victory_points = { 
+			208 2 #Borșa
+		}
+    }
 	manpower=51093
 	state_category=pastoral
 	buildings_max_level_factor=1.000

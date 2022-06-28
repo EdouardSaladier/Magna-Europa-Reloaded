@@ -11,7 +11,12 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = YUG
-		victory_points = { 5842 2 }
+		victory_points = { 
+			5842 2 
+		}
+		victory_points = {
+			3833 2 #Knjazevac
+		}
 	}
 	manpower=104531
 	state_category=rural

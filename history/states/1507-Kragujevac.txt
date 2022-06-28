@@ -11,7 +11,12 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
-		victory_points = { 4719 10 }
+		victory_points = { 
+			4719 10 #Kragujevac
+		}
+		victory_points = {
+			1085 2 #Aranđelovac
+		}
 	}
 	manpower=31879
 	state_category=pastoral
