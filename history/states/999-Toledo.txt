@@ -12,12 +12,12 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
-        victory_points = {
-            19749 5 #Tavalera de la Reina
-        }
 		victory_points = {
-            19750 5 #Toledo
-        }
+			19750 6 #Toledo
+        	}
+		victory_points = {
+			19749 5 #Tavalera de la Reina
+		}
     }
 	manpower=509300
 	buildings_max_level_factor=1.000

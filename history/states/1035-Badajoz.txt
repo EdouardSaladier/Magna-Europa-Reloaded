@@ -12,16 +12,16 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
-        victory_points = {
-            19740 10 #Badajoz
-        }
 		victory_points = {
-            19745 5 #Mérida
-        }
+        		19745 11 #Mérida
+        	}
+        	victory_points = {
+        		19740 10 #Badajoz
+        	}
 		victory_points = {
-            4122 2 #Don Benito
-        }
-    }
+        		4122 2 #Don Benito
+        	}
+    	}
 	manpower=727000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
