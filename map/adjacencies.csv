@@ -174,16 +174,22 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 19659;768;sea;16684;-1;-1;-1;-1;;Greifswald 3
 19660;11027;sea;17981;-1;-1;-1;-1;;Wolin 1
 19660;20563;sea;17981;-1;-1;-1;-1;;Wolin 2
+14170;8532;impassable;-1;-1;-1;-1;-1;;Valais-Haute Savoie
+14041;236;impassable;-1;-1;-1;-1;-1;;Monthey-Haute Savoie
 997;15898;impassable;-1;-1;-1;-1;-1;;Briga
 17972;15898;impassable;-1;-1;-1;-1;-1;;Nice-Briga
 1407;15898;impassable;-1;-1;-1;-1;-1;;Menton-Briga
-14529;15898;impassable;-1;-1;-1;-1;-1;;Sampeyre-Briga
+20529;16400;impassable;-1;-1;-1;-1;-1;;Sampeyre-Nice
 20529;14582;impassable;-1;-1;-1;-1;-1;;Sampeyre-Nice
+2290;20488;impassable;-1;-1;-1;-1;-1;;Sampeyre-Alpes de Haute-Provence
 19861;14407;impassable;-1;-1;-1;-1;-1;;Bardonecchia-Briançon
 21659;14407;impassable;-1;-1;-1;-1;-1;;Bardonecchia-Briançon
+2487;14407;impassable;-1;-1;-1;-1;-1;;Bardonecchia-Torino
+14359;14407;impassable;-1;-1;-1;-1;-1;;Bardonecchia-Locana
 21658;20531;impassable;-1;-1;-1;-1;-1;;Valle Stretta-Hautes-Alpes
 21658;14353;impassable;-1;-1;-1;-1;-1;;Valle Stretta-Modane
 14359;14353;impassable;-1;-1;-1;-1;-1;;Locana-Modane
+8124;14353;impassable;-1;-1;-1;-1;-1;;Locana-Modane
 8124;14277;impassable;-1;-1;-1;-1;-1;;Locana-Savoy
 20006;14277;impassable;-1;-1;-1;-1;-1;;Locana-Savoy
 20049;14277;impassable;-1;-1;-1;-1;-1;;Aosta-Savoy
@@ -225,6 +231,33 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6257;2583;impassable;-1;-1;-1;-1;-1;;Sondrio-Trento
 14136;2613;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
 14136;14163;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
+5987;14728;impassable;-1;-1;-1;-1;-1;;Navarra-Labourd et Basse Navarre
+5987;5772;impassable;-1;-1;-1;-1;-1;;Navarra-Labourd et Basse Navarre
+5772;20523;impassable;-1;-1;-1;-1;-1;;Navarra-Soule
+6986;20523;impassable;-1;-1;-1;-1;-1;;Navarra-Soule
+19827;20523;impassable;-1;-1;-1;-1;-1;;Huesca-Soule
+19827;19828;impassable;-1;-1;-1;-1;-1;;Huesca-Pyrenees Atlantiques
+19827;20522;impassable;-1;-1;-1;-1;-1;;Huesca-Pyrenees Atlantiques
+5346;20522;impassable;-1;-1;-1;-1;-1;;Hautes Pyrenees-Pyrenees Atlantiques
+5346;20525;impassable;-1;-1;-1;-1;-1;;Hautes Pyrenees-Huesca
+5346;6873;impassable;-1;-1;-1;-1;-1;;Hautes Pyrenees-Huesca
+7624;6873;impassable;-1;-1;-1;-1;-1;;Hautes Pyrenees-Huesca
+7624;485;impassable;-1;-1;-1;-1;-1;;Hautes Pyrenees-Huesca
+3170;485;impassable;-1;-1;-1;-1;-1;;Haute Garonne-Huesca
+3170;19806;impassable;-1;-1;-1;-1;-1;;Haute Garonne-Lleida
+6233;19806;impassable;-1;-1;-1;-1;-1;;Ariège-Lleida
+6233;4544;impassable;-1;-1;-1;-1;-1;;Ariège-Lleida
+8650;4544;impassable;-1;-1;-1;-1;-1;;Ariège-Lleida
+8033;4544;impassable;-1;-1;-1;-1;-1;;Andorra-Lleida
+8033;8650;impassable;-1;-1;-1;-1;-1;;Andorra-Ariège
+8033;6859;impassable;-1;-1;-1;-1;-1;;Andorra-Ariège
+14793;19809;impassable;-1;-1;-1;-1;-1;;Aude-Ariège
+8964;19809;impassable;-1;-1;-1;-1;-1;;Aude-Pyrenees Orientales
+19807;14832;impassable;-1;-1;-1;-1;-1;;Lleida-Pyrenees Orientales
+8964;14873;impassable;-1;-1;-1;-1;-1;;Girona-Pyrenees Orientales
+8964;5400;impassable;-1;-1;-1;-1;-1;;Girona-Pyrenees Orientales
+14838;5400;impassable;-1;-1;-1;-1;-1;;Girona-Pyrenees Orientales
+14838;14865;impassable;-1;-1;-1;-1;-1;;Girona-Pyrenees Orientales
 7896;7220;impassable;-1;-1;-1;-1;-1;;Sochi
 7896;8919;impassable;-1;-1;-1;-1;-1;;Sochi
 7896;1788;impassable;-1;-1;-1;-1;-1;;Sochi
@@ -316,4 +349,63 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15099;5753;impassable;-1;-1;-1;-1;-1;;Dagliq-Sirvan
 15099;5102;impassable;-1;-1;-1;-1;-1;;Dagliq-Sirvan
 15099;15170;impassable;-1;-1;-1;-1;-1;;Dagliq-Sirvan
+1582;16138;impassable;-1;-1;-1;-1;-1;;Artvin
+14971;16138;impassable;-1;-1;-1;-1;-1;;Artvin
+5466;16138;impassable;-1;-1;-1;-1;-1;;Artvin
+5466;3089;impassable;-1;-1;-1;-1;-1;;Artvin
+5466;18211;impassable;-1;-1;-1;-1;-1;;Artvin
+1063;18211;impassable;-1;-1;-1;-1;-1;;Artvin
+6619;18211;impassable;-1;-1;-1;-1;-1;;Artvin
+6619;4607;impassable;-1;-1;-1;-1;-1;;Artvin
+3089;7952;impassable;-1;-1;-1;-1;-1;;Adjara
+3089;17868;impassable;-1;-1;-1;-1;-1;;Adjara
+3089;6876;impassable;-1;-1;-1;-1;-1;;Adjara
+5219;6876;impassable;-1;-1;-1;-1;-1;;Imereti
+5219;16151;impassable;-1;-1;-1;-1;-1;;Imereti
+223;8923;impassable;-1;-1;-1;-1;-1;;Kvemo Kartli
+223;1078;impassable;-1;-1;-1;-1;-1;;Kvemo Kartli
+17202;1078;impassable;-1;-1;-1;-1;-1;;Kvemo Kartli
+14918;1078;impassable;-1;-1;-1;-1;-1;;Kvemo Kartli
+18059;1078;impassable;-1;-1;-1;-1;-1;;Kvemo Kartli
+2917;21534;impassable;-1;-1;-1;-1;-1;;Kars
+2917;4359;impassable;-1;-1;-1;-1;-1;;Kars
+5335;4359;impassable;-1;-1;-1;-1;-1;;Kars
+5335;15107;impassable;-1;-1;-1;-1;-1;;Kars
+21542;17613;impassable;-1;-1;-1;-1;-1;;Kars
+21542;4658;impassable;-1;-1;-1;-1;-1;;Kars
+15044;4658;impassable;-1;-1;-1;-1;-1;;Kars
+15092;19173;impassable;-1;-1;-1;-1;-1;;Shirak
+15092;15069;impassable;-1;-1;-1;-1;-1;;Shirak
+6332;15069;impassable;-1;-1;-1;-1;-1;;Shirak
+6332;16460;impassable;-1;-1;-1;-1;-1;;Shirak
+18569;6332;impassable;-1;-1;-1;-1;-1;;Gegharkunk
+18569;15154;impassable;-1;-1;-1;-1;-1;;Gegharkunk
+18569;18187;impassable;-1;-1;-1;-1;-1;;Gegharkunk
+18569;3227;impassable;-1;-1;-1;-1;-1;;Gegharkunk
+15951;16343;impassable;-1;-1;-1;-1;-1;;Syunik
+15951;1379;impassable;-1;-1;-1;-1;-1;;Syunik
+7001;1379;impassable;-1;-1;-1;-1;-1;;Syunik
+7001;19224;impassable;-1;-1;-1;-1;-1;;Syunik
+15278;19224;impassable;-1;-1;-1;-1;-1;;Syunik
+1379;15963;impassable;-1;-1;-1;-1;-1;;Syunik
+1379;15206;impassable;-1;-1;-1;-1;-1;;Syunik
+15288;6772;impassable;-1;-1;-1;-1;-1;;Syunik
+15288;19221;impassable;-1;-1;-1;-1;-1;;Syunik
+15144;15963;impassable;-1;-1;-1;-1;-1;;Kalbacer
+15144;1771;impassable;-1;-1;-1;-1;-1;;Kalbacer
+15144;6963;impassable;-1;-1;-1;-1;-1;;Kalbacer
+15144;18488;impassable;-1;-1;-1;-1;-1;;Kalbacer
+19170;18488;impassable;-1;-1;-1;-1;-1;;Kalbacer
+19167;18488;impassable;-1;-1;-1;-1;-1;;Kalbacer
+6963;1771;impassable;-1;-1;-1;-1;-1;;Kalbacer
+1719;1771;impassable;-1;-1;-1;-1;-1;;Kalbacer
+1719;16010;impassable;-1;-1;-1;-1;-1;;Kalbacer
+14997;9406;impassable;-1;-1;-1;-1;-1;;Lori
+14997;18682;impassable;-1;-1;-1;-1;-1;;Lori
+15040;18682;impassable;-1;-1;-1;-1;-1;;Lori
+15019;3744;impassable;-1;-1;-1;-1;-1;;Qazax
+15019;18163;impassable;-1;-1;-1;-1;-1;;Qazax
+15062;18163;impassable;-1;-1;-1;-1;-1;;Qazax
+15062;991;impassable;-1;-1;-1;-1;-1;;Qazax
+15045;991;impassable;-1;-1;-1;-1;-1;;Qazax
 -1;-1;;-1;-1;-1;-1;-1;-1
