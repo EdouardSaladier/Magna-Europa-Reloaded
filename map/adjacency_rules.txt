@@ -238,6 +238,14 @@ adjacency_rule =
 	
 	required_provinces = { 21192 21182 21173 21169 21162 21160 21161 21165 459 21183 }
 	
+	is_disabled = {
+		OR = {
+			has_global_flag = SUEZ_CANAL_BLOCKED
+			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_canal_tt
+	}
+	
 	icon = 19209
 	offset = { 0 0 0 }
 }
@@ -314,6 +322,13 @@ adjacency_rule =
 	
 	required_provinces = { 7356 5595 20651 11003 10956 10963 10927 10968 10938 7341 }
 	
+	is_disabled = {
+		OR = {
+			has_global_flag = KIEL_CANAL_BLOCKED
+			has_country_flag = KIEL_CANAL_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_canal_tt
+	}
 	icon = 10963
 	offset = { 0 0 2 }
 }
