@@ -179,6 +179,17 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14014;4789;impassable;-1;-1;-1;-1;-1;;Wallis-Oberland
 14014;13985;impassable;-1;-1;-1;-1;-1;;Wallis-Oberland
 14041;236;impassable;-1;-1;-1;-1;-1;;Monthey-Haute Savoie
+14009;6344;impassable;-1;-1;-1;-1;-1;;Monthey-Freiburg
+4789;6344;impassable;-1;-1;-1;-1;-1;;Monthey-Oberland
+13957;6344;impassable;-1;-1;-1;-1;-1;;Monthey-Oberland
+9376;13858;impassable;-1;-1;-1;-1;-1;;Luzern-Oberland
+13939;13858;impassable;-1;-1;-1;-1;-1;;Luzern-Oberland
+20118;13858;impassable;-1;-1;-1;-1;-1;;Luzern-Obwalden
+20110;20105;impassable;-1;-1;-1;-1;-1;;Luzern-Schwyz
+6343;4744;impassable;-1;-1;-1;-1;-1;;Glarus-St Gallen
+13835;4744;impassable;-1;-1;-1;-1;-1;;Glarus-St Gallen
+13835;13884;impassable;-1;-1;-1;-1;-1;;St Gallen
+13819;20105;impassable;-1;-1;-1;-1;-1;;Zug-Schwyz
 997;15898;impassable;-1;-1;-1;-1;-1;;Briga
 17972;15898;impassable;-1;-1;-1;-1;-1;;Nice-Briga
 1407;15898;impassable;-1;-1;-1;-1;-1;;Menton-Briga
@@ -214,6 +225,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14026;20106;impassable;-1;-1;-1;-1;-1;;Uri-Ticino
 14026;6668;impassable;-1;-1;-1;-1;-1;;Graubunden-Ticino
 14026;910;impassable;-1;-1;-1;-1;-1;;Graubunden-Ticino
+14026;14063;impassable;-1;-1;-1;-1;-1;;Moesa-Ticino
 7837;14063;impassable;-1;-1;-1;-1;-1;;Como-Moesa
 3836;14063;impassable;-1;-1;-1;-1;-1;;Sondrio-Moesa
 3836;910;impassable;-1;-1;-1;-1;-1;;Sondrio-Graubunden
@@ -237,7 +249,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13909;5380;impassable;-1;-1;-1;-1;-1;;Alto Adige-Landeck
 13898;5071;impassable;-1;-1;-1;-1;-1;;Alto Adige-Innsbruk
 13898;1984;impassable;-1;-1;-1;-1;-1;;Alto Adige-Innsbruk
-7529;1984;impassable;-1;-1;-1;-1;-1;;Alto Adige-Innsbruk
+7529;20811;impassable;-1;-1;-1;-1;-1;;Alto Adige-Innsbruk
 20811;7885;impassable;-1;-1;-1;-1;-1;;Alto Adige-Innsbruk
 20809;7885;impassable;-1;-1;-1;-1;-1;;Alto Adige-Zell am See
 13885;7885;impassable;-1;-1;-1;-1;-1;;Alto Adige-Lienz
@@ -276,6 +288,23 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8964;5400;impassable;-1;-1;-1;-1;-1;;Girona-Pyrenees Orientales
 14838;5400;impassable;-1;-1;-1;-1;-1;;Girona-Pyrenees Orientales
 14838;14865;impassable;-1;-1;-1;-1;-1;;Girona-Pyrenees Orientales
+6894;1860;impassable;-1;-1;-1;-1;-1;;Errachidia
+6894;4647;impassable;-1;-1;-1;-1;-1;;Errachidia
+6894;9424;impassable;-1;-1;-1;-1;-1;;Errachidia
+3897;9424;impassable;-1;-1;-1;-1;-1;;Errachidia
+878;9424;impassable;-1;-1;-1;-1;-1;;Errachidia
+20877;20931;impassable;-1;-1;-1;-1;-1;;Azilal
+20877;5670;impassable;-1;-1;-1;-1;-1;;Azilal
+15763;5670;impassable;-1;-1;-1;-1;-1;;Azilal
+15763;9576;impassable;-1;-1;-1;-1;-1;;Azilal
+1226;9576;impassable;-1;-1;-1;-1;-1;;Azilal
+1226;5530;impassable;-1;-1;-1;-1;-1;;Azilal
+2724;4010;impassable;-1;-1;-1;-1;-1;;Taroudannt
+2724;20873;impassable;-1;-1;-1;-1;-1;;Taroudannt
+5367;20873;impassable;-1;-1;-1;-1;-1;;Taroudannt
+5367;7697;impassable;-1;-1;-1;-1;-1;;Taroudannt
+5367;5387;impassable;-1;-1;-1;-1;-1;;Taroudannt
+15788;5387;impassable;-1;-1;-1;-1;-1;;Taroudannt
 13684;4501;impassable;-1;-1;-1;-1;-1;;Nasaud
 13684;208;impassable;-1;-1;-1;-1;-1;;Nasaud
 8275;208;impassable;-1;-1;-1;-1;-1;;Nasaud
