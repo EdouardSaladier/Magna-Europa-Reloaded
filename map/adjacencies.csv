@@ -191,10 +191,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13835;13884;impassable;-1;-1;-1;-1;-1;;St Gallen
 13819;20105;impassable;-1;-1;-1;-1;-1;;Zug-Schwyz
 997;15898;impassable;-1;-1;-1;-1;-1;;Briga
+14582;3619;impassable;-1;-1;-1;-1;-1;;Nice-Alpes de Haute Provence
+20488;3619;impassable;-1;-1;-1;-1;-1;;Alpes de Haute Provence
 17972;15898;impassable;-1;-1;-1;-1;-1;;Nice-Briga
 1407;15898;impassable;-1;-1;-1;-1;-1;;Menton-Briga
 20529;16400;impassable;-1;-1;-1;-1;-1;;Sampeyre-Nice
 20529;14582;impassable;-1;-1;-1;-1;-1;;Sampeyre-Nice
+20488;396;impassable;-1;-1;-1;-1;-1;;Alpes de Haute Provence-Hautes Alpes
+14528;396;impassable;-1;-1;-1;-1;-1;;Alpes de Haute Provence-Hautes Alpes
 2290;20488;impassable;-1;-1;-1;-1;-1;;Sampeyre-Alpes de Haute-Provence
 19861;14407;impassable;-1;-1;-1;-1;-1;;Bardonecchia-Briançon
 21659;14407;impassable;-1;-1;-1;-1;-1;;Bardonecchia-Briançon
@@ -202,6 +206,13 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14359;14407;impassable;-1;-1;-1;-1;-1;;Bardonecchia-Locana
 21658;20531;impassable;-1;-1;-1;-1;-1;;Valle Stretta-Hautes-Alpes
 21658;14353;impassable;-1;-1;-1;-1;-1;;Valle Stretta-Modane
+14476;822;impassable;-1;-1;-1;-1;-1;;Hautes Alpes
+14473;822;impassable;-1;-1;-1;-1;-1;;Hautes Alpes-Isere
+14473;14417;impassable;-1;-1;-1;-1;-1;;Hautes Alpes-Isere
+4884;14417;impassable;-1;-1;-1;-1;-1;;Hautes Alpes-Isere
+20531;14339;impassable;-1;-1;-1;-1;-1;;Savoie-Hautes Alpes
+822;14339;impassable;-1;-1;-1;-1;-1;;Savoie-Isere
+8784;14339;impassable;-1;-1;-1;-1;-1;;Savoie-Isere
 14359;14353;impassable;-1;-1;-1;-1;-1;;Locana-Modane
 8124;14353;impassable;-1;-1;-1;-1;-1;;Locana-Modane
 8124;14277;impassable;-1;-1;-1;-1;-1;;Locana-Savoy
@@ -210,6 +221,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20049;20006;impassable;-1;-1;-1;-1;-1;;Aosta-Locana
 20049;19862;impassable;-1;-1;-1;-1;-1;;Aosta-Mont Blanc
 14204;19863;impassable;-1;-1;-1;-1;-1;;Aosta-Mont Blanc
+19862;9311;impassable;-1;-1;-1;-1;-1;;Savoie-Mont Blanc
+14277;9311;impassable;-1;-1;-1;-1;-1;;Savoie
+14277;6032;impassable;-1;-1;-1;-1;-1;;Savoie
+8532;9311;impassable;-1;-1;-1;-1;-1;;Haute Savoie-Savoie
+1187;9311;impassable;-1;-1;-1;-1;-1;;Haute Savoie-Savoie
+1187;5065;impassable;-1;-1;-1;-1;-1;;Haute Savoie-Savoie
 14204;8532;impassable;-1;-1;-1;-1;-1;;Aosta-Haute Savoie
 14204;3936;impassable;-1;-1;-1;-1;-1;;Aosta-Valais
 2381;3936;impassable;-1;-1;-1;-1;-1;;Aosta-Valais
