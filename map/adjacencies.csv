@@ -213,6 +213,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20531;14339;impassable;-1;-1;-1;-1;-1;;Savoie-Hautes Alpes
 822;14339;impassable;-1;-1;-1;-1;-1;;Savoie-Isere
 8784;14339;impassable;-1;-1;-1;-1;-1;;Savoie-Isere
+6000;14339;impassable;-1;-1;-1;-1;-1;;Savoie-Isere
+14476;20531;impassable;-1;-1;-1;-1;-1;;Hautes Alpes
 14359;14353;impassable;-1;-1;-1;-1;-1;;Locana-Modane
 8124;14353;impassable;-1;-1;-1;-1;-1;;Locana-Modane
 8124;14277;impassable;-1;-1;-1;-1;-1;;Locana-Savoy
@@ -228,6 +230,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1187;9311;impassable;-1;-1;-1;-1;-1;;Haute Savoie-Savoie
 1187;5065;impassable;-1;-1;-1;-1;-1;;Haute Savoie-Savoie
 14204;8532;impassable;-1;-1;-1;-1;-1;;Aosta-Haute Savoie
+236;375;impassable;-1;-1;-1;-1;-1;;Haute Savoie
+236;14035;impassable;-1;-1;-1;-1;-1;;Haute Savoie
 14204;3936;impassable;-1;-1;-1;-1;-1;;Aosta-Valais
 2381;3936;impassable;-1;-1;-1;-1;-1;;Aosta-Valais
 2381;5109;impassable;-1;-1;-1;-1;-1;;Aosta-Vercelli
@@ -272,11 +276,33 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13885;7885;impassable;-1;-1;-1;-1;-1;;Alto Adige-Lienz
 13986;20822;impassable;-1;-1;-1;-1;-1;;Belluno-Lienz
 13986;13953;impassable;-1;-1;-1;-1;-1;;Belluno-Villach
+13986;4692;impassable;-1;-1;-1;-1;-1;;Belluno-Pordenone
+9279;4692;impassable;-1;-1;-1;-1;-1;;Belluno-Pordenone
+14079;4692;impassable;-1;-1;-1;-1;-1;;Belluno-Pordenone
+5487;4692;impassable;-1;-1;-1;-1;-1;;Belluno-Pordenone
+5487;5701;impassable;-1;-1;-1;-1;-1;;Belluno-Pordenone
+4692;5142;impassable;-1;-1;-1;-1;-1;;Udine-Pordenone
+139;5142;impassable;-1;-1;-1;-1;-1;;Udine-Pordenone
+14144;9474;impassable;-1;-1;-1;-1;-1;;Belluno-Treviso
+8898;18773;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
+20053;14164;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
+20053;2838;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
+6257;2583;impassable;-1;-1;-1;-1;-1;;Sondrio-Trento
+14136;2613;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
+19098;18619;impassable;-1;-1;-1;-1;-1;;Ampezzo-Alto Adige
 5142;13953;impassable;-1;-1;-1;-1;-1;;Udine-Villach
 20480;13953;impassable;-1;-1;-1;-1;-1;;Udine-Villach
 20480;8168;impassable;-1;-1;-1;-1;-1;;Udine-Villach
-6257;2583;impassable;-1;-1;-1;-1;-1;;Sondrio-Trento
-14136;2613;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
+4659;18916;impassable;-1;-1;-1;-1;-1;;Tarvisio-Tolmino
+14033;18916;impassable;-1;-1;-1;-1;-1;;Gorenjska-Tolmino
+14089;18916;impassable;-1;-1;-1;-1;-1;;Gorenjska-Tolmino
+14089;2174;impassable;-1;-1;-1;-1;-1;;Gorenjska-Tolmino
+8093;14153;impassable;-1;-1;-1;-1;-1;;Gorenjska-Postumia
+14033;14000;impassable;-1;-1;-1;-1;-1;;Gorenjska-Klagenfurt
+14033;14001;impassable;-1;-1;-1;-1;-1;;Gorenjska-Volkermarkt
+14165;14153;impassable;-1;-1;-1;-1;-1;;Gorenjska-Ljubljana
+17019;1252;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
+17019;7706;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
 14136;14163;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
 5987;14728;impassable;-1;-1;-1;-1;-1;;Navarra-Labourd et Basse Navarre
 5987;5772;impassable;-1;-1;-1;-1;-1;;Navarra-Labourd et Basse Navarre
