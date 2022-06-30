@@ -175,6 +175,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 19660;11027;sea;17981;-1;-1;-1;-1;;Wolin 1
 19660;20563;sea;17981;-1;-1;-1;-1;;Wolin 2
 14170;8532;impassable;-1;-1;-1;-1;-1;;Valais-Haute Savoie
+20096;4789;impassable;-1;-1;-1;-1;-1;;Valais-Oberland
+14014;4789;impassable;-1;-1;-1;-1;-1;;Wallis-Oberland
+14014;13985;impassable;-1;-1;-1;-1;-1;;Wallis-Oberland
 14041;236;impassable;-1;-1;-1;-1;-1;;Monthey-Haute Savoie
 997;15898;impassable;-1;-1;-1;-1;-1;;Briga
 17972;15898;impassable;-1;-1;-1;-1;-1;;Nice-Briga
@@ -193,17 +196,24 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8124;14277;impassable;-1;-1;-1;-1;-1;;Locana-Savoy
 20006;14277;impassable;-1;-1;-1;-1;-1;;Locana-Savoy
 20049;14277;impassable;-1;-1;-1;-1;-1;;Aosta-Savoy
+20049;20006;impassable;-1;-1;-1;-1;-1;;Aosta-Locana
 20049;19862;impassable;-1;-1;-1;-1;-1;;Aosta-Mont Blanc
 14204;19863;impassable;-1;-1;-1;-1;-1;;Aosta-Mont Blanc
 14204;8532;impassable;-1;-1;-1;-1;-1;;Aosta-Haute Savoie
 14204;3936;impassable;-1;-1;-1;-1;-1;;Aosta-Valais
 2381;3936;impassable;-1;-1;-1;-1;-1;;Aosta-Valais
+2381;5109;impassable;-1;-1;-1;-1;-1;;Aosta-Vercelli
+2381;6673;impassable;-1;-1;-1;-1;-1;;Aosta-Vercelli
 5109;3936;impassable;-1;-1;-1;-1;-1;;Vercelli-Valais
+5109;14160;impassable;-1;-1;-1;-1;-1;;Vercelli-Verbania
 14160;3936;impassable;-1;-1;-1;-1;-1;;Verbania-Valais
 14160;1655;impassable;-1;-1;-1;-1;-1;;Verbania-Valais
 20048;20104;impassable;-1;-1;-1;-1;-1;;Verbania-Valais
 20048;14088;impassable;-1;-1;-1;-1;-1;;Verbania-Ticino
 9086;7837;impassable;-1;-1;-1;-1;-1;;Como-Ticino
+14026;20106;impassable;-1;-1;-1;-1;-1;;Uri-Ticino
+14026;6668;impassable;-1;-1;-1;-1;-1;;Graubunden-Ticino
+14026;910;impassable;-1;-1;-1;-1;-1;;Graubunden-Ticino
 7837;14063;impassable;-1;-1;-1;-1;-1;;Como-Moesa
 3836;14063;impassable;-1;-1;-1;-1;-1;;Sondrio-Moesa
 3836;910;impassable;-1;-1;-1;-1;-1;;Sondrio-Graubunden
@@ -213,6 +223,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8943;6257;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
 20108;6257;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
 8943;14017;impassable;-1;-1;-1;-1;-1;;Grischun-Graubunden
+6668;4744;impassable;-1;-1;-1;-1;-1;;Glarus-Graubunden
+2119;4744;impassable;-1;-1;-1;-1;-1;;Glarus-Graubunden
+2119;13884;impassable;-1;-1;-1;-1;-1;;St Gallen-Graubunden
+13861;13828;impassable;-1;-1;-1;-1;-1;;Vorarlberg-Graubunden
+4479;13828;impassable;-1;-1;-1;-1;-1;;Vorarlberg-Graubunden
+20108;13828;impassable;-1;-1;-1;-1;-1;;Vorarlberg-Grischun
+20108;7218;impassable;-1;-1;-1;-1;-1;;Vorarlberg-Grischun
+13897;7218;impassable;-1;-1;-1;-1;-1;;Vorarlberg-Grischun
 3766;13967;impassable;-1;-1;-1;-1;-1;;Alto Adige-Grischun
 9483;13962;impassable;-1;-1;-1;-1;-1;;Alto Adige-Landeck
 13909;13962;impassable;-1;-1;-1;-1;-1;;Alto Adige-Landeck
@@ -258,6 +276,92 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8964;5400;impassable;-1;-1;-1;-1;-1;;Girona-Pyrenees Orientales
 14838;5400;impassable;-1;-1;-1;-1;-1;;Girona-Pyrenees Orientales
 14838;14865;impassable;-1;-1;-1;-1;-1;;Girona-Pyrenees Orientales
+13684;4501;impassable;-1;-1;-1;-1;-1;;Nasaud
+13684;208;impassable;-1;-1;-1;-1;-1;;Nasaud
+8275;208;impassable;-1;-1;-1;-1;-1;;Nasaud
+13685;208;impassable;-1;-1;-1;-1;-1;;Nasaud
+13685;13626;impassable;-1;-1;-1;-1;-1;;Nasaud
+13685;8470;impassable;-1;-1;-1;-1;-1;;Nasaud
+13741;8470;impassable;-1;-1;-1;-1;-1;;Nasaud
+13741;20454;impassable;-1;-1;-1;-1;-1;;Nasaud
+3813;20420;impassable;-1;-1;-1;-1;-1;;Odorhei
+3813;1766;impassable;-1;-1;-1;-1;-1;;Odorhei
+14046;1766;impassable;-1;-1;-1;-1;-1;;Odorhei
+14052;1766;impassable;-1;-1;-1;-1;-1;;Odorhei
+14052;9335;impassable;-1;-1;-1;-1;-1;;Odorhei
+14052;5589;impassable;-1;-1;-1;-1;-1;;Odorhei
+14127;8384;impassable;-1;-1;-1;-1;-1;;Ciuc
+5589;8384;impassable;-1;-1;-1;-1;-1;;Ciuc
+9335;8384;impassable;-1;-1;-1;-1;-1;;Ciuc
+13943;8384;impassable;-1;-1;-1;-1;-1;;Ciuc
+13943;18234;impassable;-1;-1;-1;-1;-1;;Ciuc
+13923;18234;impassable;-1;-1;-1;-1;-1;;Ciuc
+13923;20442;impassable;-1;-1;-1;-1;-1;;Ciuc
+13900;20442;impassable;-1;-1;-1;-1;-1;;Ciuc
+13900;13813;impassable;-1;-1;-1;-1;-1;;Ciuc
+4454;13813;impassable;-1;-1;-1;-1;-1;;Ciuc
+2784;13813;impassable;-1;-1;-1;-1;-1;;Ciuc
+4454;2784;impassable;-1;-1;-1;-1;-1;;Ciuc
+1586;2784;impassable;-1;-1;-1;-1;-1;;Ciuc
+1586;13849;impassable;-1;-1;-1;-1;-1;;Ciuc
+20407;13849;impassable;-1;-1;-1;-1;-1;;Ciuc
+20431;18083;impassable;-1;-1;-1;-1;-1;;Brasov
+14216;18083;impassable;-1;-1;-1;-1;-1;;Brasov
+14216;20418;impassable;-1;-1;-1;-1;-1;;Brasov
+14216;6643;impassable;-1;-1;-1;-1;-1;;Brasov
+4428;6643;impassable;-1;-1;-1;-1;-1;;Brasov
+4428;17138;impassable;-1;-1;-1;-1;-1;;Brasov
+4428;5063;impassable;-1;-1;-1;-1;-1;;Brasov
+14221;5063;impassable;-1;-1;-1;-1;-1;;Brasov
+14266;5063;impassable;-1;-1;-1;-1;-1;;Brasov
+14254;14263;impassable;-1;-1;-1;-1;-1;;Fagaras
+14254;5659;impassable;-1;-1;-1;-1;-1;;Fagaras
+14254;9373;impassable;-1;-1;-1;-1;-1;;Fagaras
+14254;20429;impassable;-1;-1;-1;-1;-1;;Fagaras
+14263;5659;impassable;-1;-1;-1;-1;-1;;Fagaras
+14263;9373;impassable;-1;-1;-1;-1;-1;;Fagaras
+14263;20429;impassable;-1;-1;-1;-1;-1;;Fagaras
+8765;20429;impassable;-1;-1;-1;-1;-1;;Fagaras
+8765;14246;impassable;-1;-1;-1;-1;-1;;Fagaras
+14301;14246;impassable;-1;-1;-1;-1;-1;;Fagaras
+14301;2376;impassable;-1;-1;-1;-1;-1;;Sibiu
+17815;2376;impassable;-1;-1;-1;-1;-1;;Sibiu
+17815;3720;impassable;-1;-1;-1;-1;-1;;Sibiu
+7474;3720;impassable;-1;-1;-1;-1;-1;;Sibiu
+16909;7873;impassable;-1;-1;-1;-1;-1;;Hunedoara
+16909;2545;impassable;-1;-1;-1;-1;-1;;Hunedoara
+1193;2545;impassable;-1;-1;-1;-1;-1;;Hunedoara
+1193;14389;impassable;-1;-1;-1;-1;-1;;Hunedoara
+14335;14389;impassable;-1;-1;-1;-1;-1;;Hunedoara
+14335;144;impassable;-1;-1;-1;-1;-1;;Hunedoara
+14335;1193;impassable;-1;-1;-1;-1;-1;;Hunedoara
+14287;1193;impassable;-1;-1;-1;-1;-1;;Hunedoara
+14287;20426;impassable;-1;-1;-1;-1;-1;;Hunedoara
+19441;3650;impassable;-1;-1;-1;-1;-1;;Northern Scandes
+19441;19556;impassable;-1;-1;-1;-1;-1;;Northern Scandes
+168;19556;impassable;-1;-1;-1;-1;-1;;Northern Scandes
+9707;19556;impassable;-1;-1;-1;-1;-1;;Northern Scandes
+9707;419;impassable;-1;-1;-1;-1;-1;;Northern Scandes
+8701;419;impassable;-1;-1;-1;-1;-1;;Northern Scandes
+8701;19558;impassable;-1;-1;-1;-1;-1;;Northern Scandes
+1465;19558;impassable;-1;-1;-1;-1;-1;;Northern Scandes
+1465;19557;impassable;-1;-1;-1;-1;-1;;Northern Scandes
+1465;2338;impassable;-1;-1;-1;-1;-1;;Northern Scandes
+229;2338;impassable;-1;-1;-1;-1;-1;;Northern Scandes
+19517;2338;impassable;-1;-1;-1;-1;-1;;Northern Scandes
+1919;9927;impassable;-1;-1;-1;-1;-1;;Southern Scandes
+7790;9927;impassable;-1;-1;-1;-1;-1;;Southern Scandes
+7790;1919;impassable;-1;-1;-1;-1;-1;;Southern Scandes
+19432;1919;impassable;-1;-1;-1;-1;-1;;Southern Scandes
+19432;3275;impassable;-1;-1;-1;-1;-1;;Southern Scandes
+2231;3275;impassable;-1;-1;-1;-1;-1;;Southern Scandes
+2231;392;impassable;-1;-1;-1;-1;-1;;Southern Scandes
+2935;2923;impassable;-1;-1;-1;-1;-1;;Southern Scandes
+3702;9965;impassable;-1;-1;-1;-1;-1;;Southern Scandes
+3702;7147;impassable;-1;-1;-1;-1;-1;;Southern Scandes
+7147;1992;impassable;-1;-1;-1;-1;-1;;Southern Scandes
+9987;1992;impassable;-1;-1;-1;-1;-1;;Southern Scandes
+10009;1992;impassable;-1;-1;-1;-1;-1;;Southern Scandes
 7896;7220;impassable;-1;-1;-1;-1;-1;;Sochi
 7896;8919;impassable;-1;-1;-1;-1;-1;;Sochi
 7896;1788;impassable;-1;-1;-1;-1;-1;;Sochi
@@ -408,29 +512,4 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15062;18163;impassable;-1;-1;-1;-1;-1;;Qazax
 15062;991;impassable;-1;-1;-1;-1;-1;;Qazax
 15045;991;impassable;-1;-1;-1;-1;-1;;Qazax
-19441;3650;impassable;-1;-1;-1;-1;-1;;Northern Scandes
-19441;19556;impassable;-1;-1;-1;-1;-1;;Northern Scandes
-168;19556;impassable;-1;-1;-1;-1;-1;;Northern Scandes
-9707;19556;impassable;-1;-1;-1;-1;-1;;Northern Scandes
-9707;419;impassable;-1;-1;-1;-1;-1;;Northern Scandes
-8701;419;impassable;-1;-1;-1;-1;-1;;Northern Scandes
-8701;19558;impassable;-1;-1;-1;-1;-1;;Northern Scandes
-1465;19558;impassable;-1;-1;-1;-1;-1;;Northern Scandes
-1465;19557;impassable;-1;-1;-1;-1;-1;;Northern Scandes
-1465;2338;impassable;-1;-1;-1;-1;-1;;Northern Scandes
-229;2338;impassable;-1;-1;-1;-1;-1;;Northern Scandes
-19517;2338;impassable;-1;-1;-1;-1;-1;;Northern Scandes
-1919;9927;impassable;-1;-1;-1;-1;-1;;Southern Scandes
-7790;9927;impassable;-1;-1;-1;-1;-1;;Southern Scandes
-7790;1919;impassable;-1;-1;-1;-1;-1;;Southern Scandes
-19432;1919;impassable;-1;-1;-1;-1;-1;;Southern Scandes
-19432;3275;impassable;-1;-1;-1;-1;-1;;Southern Scandes
-2231;3275;impassable;-1;-1;-1;-1;-1;;Southern Scandes
-2231;392;impassable;-1;-1;-1;-1;-1;;Southern Scandes
-2935;2923;impassable;-1;-1;-1;-1;-1;;Southern Scandes
-3702;9965;impassable;-1;-1;-1;-1;-1;;Southern Scandes
-3702;7147;impassable;-1;-1;-1;-1;-1;;Southern Scandes
-7147;1992;impassable;-1;-1;-1;-1;-1;;Southern Scandes
-9987;1992;impassable;-1;-1;-1;-1;-1;;Southern Scandes
-10009;1992;impassable;-1;-1;-1;-1;-1;;Southern Scandes
 -1;-1;;-1;-1;-1;-1;-1;-1
