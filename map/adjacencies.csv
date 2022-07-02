@@ -274,6 +274,19 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20811;7885;impassable;-1;-1;-1;-1;-1;;Alto Adige-Innsbruk
 20809;7885;impassable;-1;-1;-1;-1;-1;;Alto Adige-Zell am See
 13885;7885;impassable;-1;-1;-1;-1;-1;;Alto Adige-Lienz
+89;2583;impassable;-1;-1;-1;-1;-1;;Alto Adige-Trento
+89;14058;impassable;-1;-1;-1;-1;-1;;Alto Adige-Trento
+13952;5380;impassable;-1;-1;-1;-1;-1;;Alto Adige
+20017;14058;impassable;-1;-1;-1;-1;-1;;Trento-Bolzano
+20018;18773;impassable;-1;-1;-1;-1;-1;;Trento-Bolzano
+20018;8091;impassable;-1;-1;-1;-1;-1;;Trento-Bolzano
+8223;8091;impassable;-1;-1;-1;-1;-1;;Trento-Bolzano
+9471;5402;impassable;-1;-1;-1;-1;-1;;Trento-Vicenza
+9471;14242;impassable;-1;-1;-1;-1;-1;;Trento-Vicenza
+9471;14164;impassable;-1;-1;-1;-1;-1;;Trento-Vicenza
+20018;18619;impassable;-1;-1;-1;-1;-1;;Alto Adige-Bolzano
+20017;89;impassable;-1;-1;-1;-1;-1;;Alto Adige-Bolzano
+13944;20018;impassable;-1;-1;-1;-1;-1;;Alto Adige-Bolzano
 13986;20822;impassable;-1;-1;-1;-1;-1;;Belluno-Lienz
 13986;13953;impassable;-1;-1;-1;-1;-1;;Belluno-Villach
 13986;4692;impassable;-1;-1;-1;-1;-1;;Belluno-Pordenone
@@ -287,9 +300,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8898;18773;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
 20053;14164;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
 20053;2838;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
+8898;8091;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
 6257;2583;impassable;-1;-1;-1;-1;-1;;Sondrio-Trento
 14136;2613;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
 19098;18619;impassable;-1;-1;-1;-1;-1;;Ampezzo-Alto Adige
+19098;8898;impassable;-1;-1;-1;-1;-1;;Ampezzo-Belluno
 5142;13953;impassable;-1;-1;-1;-1;-1;;Udine-Villach
 20480;13953;impassable;-1;-1;-1;-1;-1;;Udine-Villach
 20480;8168;impassable;-1;-1;-1;-1;-1;;Udine-Villach
@@ -300,9 +315,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8093;14153;impassable;-1;-1;-1;-1;-1;;Gorenjska-Postumia
 14033;14000;impassable;-1;-1;-1;-1;-1;;Gorenjska-Klagenfurt
 14033;14001;impassable;-1;-1;-1;-1;-1;;Gorenjska-Volkermarkt
-14165;14153;impassable;-1;-1;-1;-1;-1;;Gorenjska-Ljubljana
+14165;14153;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
 17019;1252;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
 17019;7706;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
+14165;14257;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
 14136;14163;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
 5987;14728;impassable;-1;-1;-1;-1;-1;;Navarra-Labourd et Basse Navarre
 5987;5772;impassable;-1;-1;-1;-1;-1;;Navarra-Labourd et Basse Navarre
