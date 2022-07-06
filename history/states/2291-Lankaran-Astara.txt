@@ -2,15 +2,16 @@ state={
 	id=2291
 	name="STATE_2291"
 	history = {
-		victory_points = { 7548 20 }
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = AZR
 		buildings = {
 			infrastructure = 2
+			7548 = { naval_base = 1 }
 		}
 		add_core_of = TCC
 		add_core_of = TMG
+		victory_points = { 7548 20 }
         victory_points = { 992 2 }
     }
 	provinces={

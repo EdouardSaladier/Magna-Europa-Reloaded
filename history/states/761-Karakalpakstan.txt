@@ -10,6 +10,9 @@ state={
 		add_core_of = SOV
 		add_core_of = UZB
 		add_core_of = KKP
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	manpower=124412
 	buildings_max_level_factor=1.000

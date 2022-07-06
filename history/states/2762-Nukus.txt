@@ -12,6 +12,9 @@ state={
 		add_core_of = KKP
 		add_core_of = KHI
 		victory_points = { 9375 20 }
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	manpower=240381
 	state_category=large_town
