@@ -9,6 +9,9 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
+		buildings = {
+			infrastructure = 3
+		}
 	}
 	manpower=6000
 	state_category=enclave

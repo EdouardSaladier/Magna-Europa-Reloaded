@@ -8,6 +8,9 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
+		buildings = {
+			infrastructure = 3
+		}
 		add_core_of = AKG
 	}
 	manpower=79123

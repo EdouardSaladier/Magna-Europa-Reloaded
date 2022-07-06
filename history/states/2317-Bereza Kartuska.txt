@@ -15,6 +15,9 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = BLR
+		buildings = {
+			infrastructure = 3
+		}
   	}
 	manpower=42000
 	state_category=pastoral

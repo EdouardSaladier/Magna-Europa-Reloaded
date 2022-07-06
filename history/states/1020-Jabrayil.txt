@@ -7,6 +7,9 @@ state={
 		add_core_of = SOV
 		add_core_of = TCC
 		add_core_of = AZR
+		buildings = {
+			infrastructure = 2
+		}
         victory_points = { 19219 2 }
    	}
 	provinces={

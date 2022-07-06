@@ -9,6 +9,9 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
+		buildings = {
+			infrastructure = 3
+		}
 		victory_points = {
 			12188 20
 		}

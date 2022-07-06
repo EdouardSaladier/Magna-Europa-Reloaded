@@ -5,6 +5,9 @@ state={
 	history={
 		owner = SWI
 		add_core_of = SWI
+		buildings = {
+			infrastructure = 3
+		}
 	}
 	provinces={
 		13637 13665 13682 13703 19322 

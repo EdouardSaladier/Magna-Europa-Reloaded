@@ -7,6 +7,9 @@ state={
 		add_core_of = SOV
 		add_core_of = TCC
 		add_core_of = AZR
+		buildings = {
+			infrastructure = 2
+		}
 	}
 	provinces={
 		2472 5442 6545 7722 8322 15152 18741 

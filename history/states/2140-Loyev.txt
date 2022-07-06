@@ -9,6 +9,9 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = BLR
+		buildings = {
+			infrastructure = 3
+		}
 	}
 	manpower=13976
 	state_category=pastoral

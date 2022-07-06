@@ -11,7 +11,13 @@ state={
 		add_core_of = SOV
 		add_core_of = CRI
 		add_core_of = UKR
+		buildings = {
+			infrastructure = 3
+		}
 		add_core_of = RUS
+		buildings = {
+			infrastructure = 3
+		}
 	}
 	manpower=264368
 	state_category=city

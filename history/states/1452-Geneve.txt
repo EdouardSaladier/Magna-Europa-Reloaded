@@ -7,6 +7,9 @@ state={
 	history={
 		owner = SWI
 		add_core_of = SWI
+		buildings = {
+			infrastructure = 3
+		}
 	
         victory_points = {
             19840 10 #Genève

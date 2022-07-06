@@ -5,6 +5,9 @@ state={
 	history={
 		owner = SWI
 		add_core_of = SWI
+		buildings = {
+			infrastructure = 3
+		}
 		victory_points = {
             6704 2 #Chur
         }
