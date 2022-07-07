@@ -60,38 +60,38 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1043;19461;sea;16505;-1;-1;-1;-1;;Norway Islands 3
 19458;3231;sea;17290;-1;-1;-1;-1;;Norway Islands 4
 19459;5080;sea;16484;-1;-1;-1;-1;;Norway Islands 5
-19466;9521;sea;18010;-1;-1;-1;-1;;Norway Islands 6
+19466;9521;sea;16420;-1;-1;-1;-1;;Norway Islands 6
 19465;181;sea;17892;-1;-1;-1;-1;;Norway Islands 7
-2263;19464;sea;17102;-1;-1;-1;-1;;Norway Islands 8
-19469;19439;sea;17749;-1;-1;-1;-1;;Norway Islands 10
+2263;19464;sea;16334;-1;-1;-1;-1;;Norway Islands 8
+19469;19439;sea;17515;-1;-1;-1;-1;;Norway Islands 10
 19470;19521;sea;17515;-1;-1;-1;-1;;Norway Islands 11
 19471;19522;sea;18247;-1;-1;-1;-1;;Norway Islands 12
 19472;19473;sea;18247;-1;-1;-1;-1;;Norway Islands 13
 4349;19472;sea;18247;-1;-1;-1;-1;;Norway Islands 14
 6564;19474;sea;18228;-1;-1;-1;-1;;Norway Islands 15
-19477;19476;sea;17194;-1;-1;-1;-1;;Norway Islands 16
-3995;19481;sea;16531;-1;-1;-1;-1;;Norway Islands 17
-19485;481;sea;16919;-1;-1;-1;-1;;Norway Islands 18
-19486;19520;sea;16919;-1;-1;-1;-1;;Norway Islands 19
-19487;19520;sea;16919;-1;-1;-1;-1;;Norway Islands 20
-75;19488;sea;16919;-1;-1;-1;-1;;Norway Islands 21
-75;4674;sea;16919;-1;-1;-1;-1;;Norway Islands 22
+19477;19476;sea;18228;-1;-1;-1;-1;;Norway Islands 16
+3995;19481;sea;17646;-1;-1;-1;-1;;Norway Islands 17
+19485;481;sea;16183;-1;-1;-1;-1;;Norway Islands 18
+19486;19520;sea;16183;-1;-1;-1;-1;;Norway Islands 19
+19487;19520;sea;16183;-1;-1;-1;-1;;Norway Islands 20
+75;19488;sea;16183;-1;-1;-1;-1;;Norway Islands 21
+75;4674;sea;16183;-1;-1;-1;-1;;Norway Islands 22
 970;19492;sea;16183;-1;-1;-1;-1;;Norway Islands 23
-19498;19499;sea;17894;-1;-1;-1;-1;;Norway Islands 24
-19494;19500;sea;17894;-1;-1;-1;-1;;Norway Islands 25
-19494;19501;sea;17894;-1;-1;-1;-1;;Norway Islands 26
-1883;19505;sea;17560;-1;-1;-1;-1;;Norway Islands 27
-1883;19506;sea;17560;-1;-1;-1;-1;;Norway Islands 28
+19498;19499;sea;16241;-1;-1;-1;-1;;Norway Islands 24
+19494;19500;sea;16241;-1;-1;-1;-1;;Norway Islands 25
+19494;19501;sea;16241;-1;-1;-1;-1;;Norway Islands 26
+1883;19505;sea;17806;-1;-1;-1;-1;;Norway Islands 27
+1883;19506;sea;17806;-1;-1;-1;-1;;Norway Islands 28
 6602;19512;sea;17806;-1;-1;-1;-1;;Norway Islands 29
 19508;19513;sea;17806;-1;-1;-1;-1;;Norway Islands 30
-6602;19510;sea;17298;-1;-1;-1;-1;;Norway Islands 31
+6602;19510;sea;17854;-1;-1;-1;-1;;Norway Islands 31
 6602;19511;sea;17854;-1;-1;-1;-1;;Norway Islands 32
-19467;19468;sea;17074;-1;-1;-1;-1;;Norway Islands 33
+19467;19468;sea;16334;-1;-1;-1;-1;;Norway Islands 33
 7635;19460;sea;16420;-1;-1;-1;-1;;Norway Islands 34
-7558;19475;sea;17354;-1;-1;-1;-1;;Norway Islands 35
+7558;19475;sea;16557;-1;-1;-1;-1;;Norway Islands 35
 19479;19480;sea;17646;-1;-1;-1;-1;;Norway Islands 36
-9113;19514;sea;16229;-1;-1;-1;-1;;Norway Islands 37
-19495;19498;sea;18073;-1;-1;-1;-1;;Norway Islands 38
+9113;19514;sea;16468;-1;-1;-1;-1;;Norway Islands 37
+19495;19498;sea;16183;-1;-1;-1;-1;;Norway Islands 38
 1560;19502;sea;16241;-1;-1;-1;-1;;Norway Islands 39
 1560;19503;sea;16241;-1;-1;-1;-1;;Norway Islands 40
 19503;19504;sea;16241;-1;-1;-1;-1;;Norway Islands 41
@@ -286,7 +286,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8223;8091;impassable;-1;-1;-1;-1;-1;;Trento-Bolzano
 9471;5402;impassable;-1;-1;-1;-1;-1;;Trento-Vicenza
 9471;14242;impassable;-1;-1;-1;-1;-1;;Trento-Vicenza
-9471;14164;impassable;-1;-1;-1;-1;-1;;Trento-Vicenza
 20018;18619;impassable;-1;-1;-1;-1;-1;;Alto Adige-Bolzano
 20017;89;impassable;-1;-1;-1;-1;-1;;Alto Adige-Bolzano
 13944;20018;impassable;-1;-1;-1;-1;-1;;Alto Adige-Bolzano
@@ -301,11 +300,13 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 139;5142;impassable;-1;-1;-1;-1;-1;;Udine-Pordenone
 14144;9474;impassable;-1;-1;-1;-1;-1;;Belluno-Treviso
 8898;18773;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
-20053;14164;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
 20053;2838;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
 8898;8091;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
 6257;2583;impassable;-1;-1;-1;-1;-1;;Sondrio-Trento
 14136;2613;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
+15945;14163;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
+15945;2613;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
+18459;20053;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
 19098;18619;impassable;-1;-1;-1;-1;-1;;Ampezzo-Alto Adige
 19098;8898;impassable;-1;-1;-1;-1;-1;;Ampezzo-Belluno
 5142;13953;impassable;-1;-1;-1;-1;-1;;Udine-Villach
@@ -367,10 +368,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5367;7697;impassable;-1;-1;-1;-1;-1;;Taroudannt
 5367;5387;impassable;-1;-1;-1;-1;-1;;Taroudannt
 15788;5387;impassable;-1;-1;-1;-1;-1;;Taroudannt
+17799;13684;impassable;-1;-1;-1;-1;-1;;Nasaud
 13684;4501;impassable;-1;-1;-1;-1;-1;;Nasaud
 13684;208;impassable;-1;-1;-1;-1;-1;;Nasaud
-8275;208;impassable;-1;-1;-1;-1;-1;;Nasaud
-13685;208;impassable;-1;-1;-1;-1;-1;;Nasaud
+8275;17799;impassable;-1;-1;-1;-1;-1;;Nasaud
+13685;17799;impassable;-1;-1;-1;-1;-1;;Nasaud
 13685;13626;impassable;-1;-1;-1;-1;-1;;Nasaud
 13685;8470;impassable;-1;-1;-1;-1;-1;;Nasaud
 13741;8470;impassable;-1;-1;-1;-1;-1;;Nasaud

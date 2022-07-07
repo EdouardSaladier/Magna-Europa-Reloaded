@@ -2,20 +2,24 @@
 state={
 	id=501
 	name="STATE_501"
-	provinces={
-		5033 7209 12648 12782 
-	}
+
 	history={
 		owner = POL
 		add_core_of = GAL
 		add_core_of = POL
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = WUK
-  	}
+
+	}
+
+	provinces={
+		5033 7209 12648 12782 18227 
+	}
 	manpower=144028
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }

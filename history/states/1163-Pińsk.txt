@@ -2,26 +2,26 @@
 state={
 	id=1163
 	name="STATE_1163"
-	provinces={
-		3852 6835 7821 11775 19924 19944 19946 19948 
-	}
+
 	history={
 		owner = POL
 		add_core_of = POL
 		victory_points = {
-			11775 2 #Łuniniec
+			11775 2 
 		}
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = BLR
-		buildings = {
-			infrastructure = 3
-		}
         victory_points = {
             19924 10 #Pińsk
         }
   	}
+
+	provinces={
+		3852 6835 7821 11775 17354 18174 19924 19944 19946 19948 
+	}
 	manpower=175744
 	buildings_max_level_factor=1.000
 	state_category=town

@@ -1,0 +1,28 @@
+
+state={
+	id=2792
+	name="STATE_2792"
+	provinces={
+		1424 9973 10005 10012 17228 
+	}
+	history={
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = RUS
+		add_core_of = IGR
+		victory_points = {
+			10005 10 
+		}
+		victory_points = {
+			10012 5 
+		}
+		victory_points = {
+			17228 2 
+		}
+
+	}
+	manpower=413901
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

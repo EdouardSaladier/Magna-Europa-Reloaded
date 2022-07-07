@@ -1,20 +1,27 @@
+
 state={
 	id=1366
 	name="STATE_1366"
-	history = {
+
+	history={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = LIG
 		buildings = {
 			infrastructure = 4
+
 		}
-		victory_points = { 19860 4 }
+		victory_points = {
+			19860 4 
+		}
+
 	}
+
 	provinces={
-		19860 
+		17039 17339 19860 
 	}
 	manpower=158600
-	state_category=town
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }
