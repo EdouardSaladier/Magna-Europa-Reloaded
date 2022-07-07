@@ -224,6 +224,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20006;14277;impassable;-1;-1;-1;-1;-1;;Locana-Savoy
 20049;14277;impassable;-1;-1;-1;-1;-1;;Aosta-Savoy
 20049;20006;impassable;-1;-1;-1;-1;-1;;Aosta-Locana
+18364;20006;impassable;-1;-1;-1;-1;-1;;Aosta-Locana
 20049;19862;impassable;-1;-1;-1;-1;-1;;Aosta-Mont Blanc
 14204;19863;impassable;-1;-1;-1;-1;-1;;Aosta-Mont Blanc
 19862;9311;impassable;-1;-1;-1;-1;-1;;Savoie-Mont Blanc
@@ -235,7 +236,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14204;8532;impassable;-1;-1;-1;-1;-1;;Aosta-Haute Savoie
 236;375;impassable;-1;-1;-1;-1;-1;;Haute Savoie
 236;14035;impassable;-1;-1;-1;-1;-1;;Haute Savoie
-14204;3936;impassable;-1;-1;-1;-1;-1;;Aosta-Valais
+14204;14170;impassable;-1;-1;-1;-1;-1;;Aosta-Valais
+16144;3936;impassable;-1;-1;-1;-1;-1;;Aosta-Valais
 2381;3936;impassable;-1;-1;-1;-1;-1;;Aosta-Valais
 2381;5109;impassable;-1;-1;-1;-1;-1;;Aosta-Vercelli
 2381;6673;impassable;-1;-1;-1;-1;-1;;Aosta-Vercelli
@@ -257,7 +259,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8943;20055;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
 14078;20055;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
 8943;6257;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
+16159;8943;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
+16159;20108;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
 20108;6257;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
+4920;9388;impassable;-1;-1;-1;-1;-1;;Sondrio-Bergamo
+6412;9432;impassable;-1;-1;-1;-1;-1;;Lecco-Bergamo
 8943;14017;impassable;-1;-1;-1;-1;-1;;Grischun-Graubunden
 6668;4744;impassable;-1;-1;-1;-1;-1;;Glarus-Graubunden
 2119;4744;impassable;-1;-1;-1;-1;-1;;Glarus-Graubunden
@@ -281,20 +287,21 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 89;14058;impassable;-1;-1;-1;-1;-1;;Alto Adige-Trento
 13952;5380;impassable;-1;-1;-1;-1;-1;;Alto Adige
 20017;14058;impassable;-1;-1;-1;-1;-1;;Trento-Bolzano
-20018;18773;impassable;-1;-1;-1;-1;-1;;Trento-Bolzano
 20018;8091;impassable;-1;-1;-1;-1;-1;;Trento-Bolzano
-8223;8091;impassable;-1;-1;-1;-1;-1;;Trento-Bolzano
-9471;5402;impassable;-1;-1;-1;-1;-1;;Trento-Vicenza
+8223;2838;impassable;-1;-1;-1;-1;-1;;Trento-Bolzano
+18459;2838;impassable;-1;-1;-1;-1;-1;;Trento
 9471;14242;impassable;-1;-1;-1;-1;-1;;Trento-Vicenza
 20018;18619;impassable;-1;-1;-1;-1;-1;;Alto Adige-Bolzano
 20017;89;impassable;-1;-1;-1;-1;-1;;Alto Adige-Bolzano
 13944;20018;impassable;-1;-1;-1;-1;-1;;Alto Adige-Bolzano
 13986;20822;impassable;-1;-1;-1;-1;-1;;Belluno-Lienz
 13986;13953;impassable;-1;-1;-1;-1;-1;;Belluno-Villach
+8898;9279;impassable;-1;-1;-1;-1;-1;;Belluno
 13986;4692;impassable;-1;-1;-1;-1;-1;;Belluno-Pordenone
 9279;4692;impassable;-1;-1;-1;-1;-1;;Belluno-Pordenone
 14079;4692;impassable;-1;-1;-1;-1;-1;;Belluno-Pordenone
 5487;4692;impassable;-1;-1;-1;-1;-1;;Belluno-Pordenone
+5487;17212;impassable;-1;-1;-1;-1;-1;;Belluno-Pordenone
 5487;5701;impassable;-1;-1;-1;-1;-1;;Belluno-Pordenone
 4692;5142;impassable;-1;-1;-1;-1;-1;;Udine-Pordenone
 139;5142;impassable;-1;-1;-1;-1;-1;;Udine-Pordenone
@@ -303,11 +310,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8898;8091;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
 6257;2583;impassable;-1;-1;-1;-1;-1;;Sondrio-Trento
 14136;2613;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
+4208;2583;impassable;-1;-1;-1;-1;-1;;Alto Adige-Trento
+4208;6257;impassable;-1;-1;-1;-1;-1;;Alto Adige-Sondrio
 15945;14163;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
+14136;2613;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
 15945;2613;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
+14136;14163;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
+14136;7129;impassable;-1;-1;-1;-1;-1;;Verona-Trento
 18459;20053;impassable;-1;-1;-1;-1;-1;;Belluno-Trento
 19098;18619;impassable;-1;-1;-1;-1;-1;;Ampezzo-Alto Adige
-19098;8898;impassable;-1;-1;-1;-1;-1;;Ampezzo-Belluno
 5142;13953;impassable;-1;-1;-1;-1;-1;;Udine-Villach
 20480;13953;impassable;-1;-1;-1;-1;-1;;Udine-Villach
 20480;8168;impassable;-1;-1;-1;-1;-1;;Udine-Villach
@@ -322,7 +333,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 17019;1252;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
 17019;7706;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
 14165;14257;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
-14136;14163;impassable;-1;-1;-1;-1;-1;;Brescia-Trento
 5987;14728;impassable;-1;-1;-1;-1;-1;;Navarra-Labourd et Basse Navarre
 5987;5772;impassable;-1;-1;-1;-1;-1;;Navarra-Labourd et Basse Navarre
 5772;20523;impassable;-1;-1;-1;-1;-1;;Navarra-Soule
