@@ -1,10 +1,9 @@
+
 state={
 	id=2382
 	name="STATE_2382"
-	provinces={
-		257 1113 2031 3238 3368 3457 4682 4736 4887 5034 5725 6856 7160 7866 8092 8307 8456 8516 8799 9437 10121 10146 10188 10240 10254 10272 10275 10308 10334 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
@@ -12,8 +11,12 @@ state={
 			infrastructure = 3
 		}
 	}
+
+	provinces={
+		257 1113 2031 3238 3368 3457 4682 4736 5034 5725 6856 7160 7866 8092 8307 8456 8516 8799 9437 10121 10146 10188 10240 10254 10272 10275 10308 10334 
+	}
 	manpower=144639
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

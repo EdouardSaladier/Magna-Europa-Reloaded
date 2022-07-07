@@ -2,20 +2,24 @@
 state={
 	id=546
 	name="STATE_546"
-	provinces={
-		1698 8712 11167 
-	}
+
 	history={
 		owner = POL
 		add_core_of = POL
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = KSH
 		add_core_of = POM
-  	}
+
+	}
+
+	provinces={
+		1698 8712 11167 16024 18011 
+	}
 	manpower=72800
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
-	state_category = pastoral
 }

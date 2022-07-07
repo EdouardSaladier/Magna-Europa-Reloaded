@@ -2,22 +2,26 @@
 state={
 	id=745
 	name="STATE_745"
-	history = {
+
+	history={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = AOS
 		buildings = {
 			infrastructure = 3
+
 		}
 		victory_points = {
-			14204 4
+			14204 4 
 		}
+
 	}
+
 	provinces={
-		2381 14204 20049 
+		2381 14204 16144 18364 20049 
 	}
 	manpower=83455
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

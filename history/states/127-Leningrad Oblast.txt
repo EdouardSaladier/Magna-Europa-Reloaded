@@ -9,37 +9,20 @@ state={
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
+			9984 = { naval_base = 1 }
 		}
 		add_core_of = IGR
+		victory_points = {
+			9984 5 
+		}
 
-		victory_points = {
-			10005 10
-		}
-		victory_points = {
-			9984 5
-		}
-		victory_points = {
-			10012 5
-		}
-		victory_points = {
-			10028 5
-		}
-		victory_points = {
-			10005 5
-		}
-		victory_points = {
-			2679 2
-		}
-		victory_points = {
-			17228 2
-		}
 	}
 
 	provinces={
-		1424 2192 2679 3792 5455 6857 8894 9973 9984 9988 9989 10005 10012 10028 10052 17042 17228 18145 18548 19010 
+		2192 6857 9984 9988 
 	}
-	manpower=416073
+	manpower=153073
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=town
 	local_supplies=0.000
 }

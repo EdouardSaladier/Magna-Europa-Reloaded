@@ -2,21 +2,25 @@
 state={
 	id=693
 	name="STATE_693"
-	provinces={
-		3105 4275 5931 6832 11823 11880 11925 11957 
-	}
+
 	history={
 		owner = POL
 		add_core_of = POL
 		victory_points = {
-			5931 2 #Łęczyska
+			5931 2 
 		}
 		buildings = {
 			infrastructure = 3
+
 		}
-  	}
+
+	}
+
+	provinces={
+		3105 4275 5931 6832 11823 11880 11925 11957 17162 
+	}
 	manpower=367900
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }
