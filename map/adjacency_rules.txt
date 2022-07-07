@@ -530,3 +530,41 @@ adjacency_rule =
 	icon = 17862
 	offset = { 0 0 5 }
 }
+adjacency_rule =
+{
+	name = "KERCH_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 14325 4075 }
+	
+	icon = 14325
+	offset = { 3 0 -3 }
+}

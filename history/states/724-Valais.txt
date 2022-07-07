@@ -5,12 +5,14 @@ state={
 	history={
 		owner = SWI
 		add_core_of = SWI
+		add_core_of = VLS
+		add_core_of = RMD
 		buildings = {
 			infrastructure = 3
 		}
 		victory_points = {
-            20096 2 #Sion
-        }
+			20096 2 #Sion
+		}
 	}
 	provinces={
 		3936 14170 20096 

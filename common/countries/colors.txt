@@ -76,8 +76,24 @@ VOR = {
 	color_ui = rgb { 86 216 158 }
 }
 TIR = {
-	color = rgb { 160 180 180 }
-	color_ui = rgb { 160 180 180 }
+	color = rgb { 210 160 160 }
+	color_ui = rgb { 210 160 160 }
+}
+TIC = {
+	color = rgb { 225 204 51 }
+	color_ui = rgb { 225 204 51 }
+}
+GRS = {
+	color = rgb { 175 175 175 }
+	color_ui = rgb { 175 175 175 }
+}
+VLS = {
+	color = rgb { 225 128 51 }
+	color_ui = rgb { 225 128 51 }
+}
+RMD = {
+	color = rgb { 155 34 152 }
+	color_ui = rgb { 155 34 56 }
 }
 
 ###Southern Europe
