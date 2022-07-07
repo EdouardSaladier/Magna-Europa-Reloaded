@@ -242,10 +242,6 @@ KBL = {
 }
 
 ###Levant
-TUR = {
-	color = rgb { 156 42 31 }
-	color_ui = rgb { 156 42 31 }
-}
 PAL = {
 	color = rgb { 170  125  80 }
 	color_ui = rgb { 170  125  80 }
@@ -281,6 +277,16 @@ ALW = {
 JDZ = {
 	color = rgb { 0 142 145 }
 	color_ui = rgb { 0 142 145 }
+}
+
+### Turkey and Its Releaseables
+TUR = {
+	color = rgb { 156 42 31 }
+	color_ui = rgb { 156 42 31 }
+}
+WAM = {
+	color = rgb { 14 49 247 }
+	color_ui = rgb { 14 49 247 }
 }
 
 ###Middle East
