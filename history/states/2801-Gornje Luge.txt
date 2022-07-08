@@ -1,0 +1,22 @@
+state={
+	id=2801
+	name="STATE_2801"
+	provinces={
+		9055 
+	}
+	history={
+		owner = YUG
+		add_core_of = MNT
+		add_core_of = SDZ
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YUG
+
+	}
+	manpower=804
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,20 +1,29 @@
+
 state={
 	id=884
 	name="STATE_884"
-	provinces={
-		4123 
-	}
-	history = {
+
+	history={
 		owner = YUG
 		add_core_of = YUG
 		add_core_of = MNT
 		buildings = {
 			infrastructure = 2
-			4123 = { naval_base = 1 }
+			4123 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = DLM
+
+	}
+
+	provinces={
+		4123 17287 
 	}
 	manpower=34379
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

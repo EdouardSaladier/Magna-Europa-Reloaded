@@ -1,0 +1,22 @@
+
+state={
+	id=2798
+	name="STATE_2798"
+	provinces={
+		1435 17925 
+	}
+	history={
+		owner = YUG
+		add_core_of = MNT
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YUG
+	}
+
+	state_category=pastoral
+	manpower=21049
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

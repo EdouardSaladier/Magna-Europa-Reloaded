@@ -2,22 +2,30 @@
 state={
 	id=1978
 	name="STATE_1978"
-	provinces={
-		3540 14821 14848 20222 
-	}
-	history = {
+
+	history={
 		owner = YUG
 		add_core_of = YUG
 		add_core_of = SER
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = KOS
-		victory_points = { 20222 10 }
-		victory_points = { 14848 5 }
+		victory_points = {
+			20222 10 
+		}
+		victory_points = {
+			14848 5 
+		}
+
+	}
+
+	provinces={
+		3540 14821 14848 16988 20222 
 	}
 	manpower=39251
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

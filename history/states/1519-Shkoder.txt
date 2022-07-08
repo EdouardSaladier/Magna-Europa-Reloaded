@@ -2,19 +2,23 @@
 state={
 	id=1519
 	name="STATE_1519"
-	provinces={
-		12 3246 14886 18647 20224 
-	}
+
 	history={
 		owner = ALB
 		add_core_of = ALB
 		buildings = {
 			infrastructure = 2
+
 		}
-        victory_points = {
-            14886 5
-        }
-    }
+		victory_points = {
+			14886 5 
+		}
+
+	}
+
+	provinces={
+		12 3246 14886 17870 18647 20224 
+	}
 	manpower=112695
 	buildings_max_level_factor=1.000
 	state_category=rural

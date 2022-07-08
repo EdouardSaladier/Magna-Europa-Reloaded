@@ -1,20 +1,25 @@
+
 state={
 	id=1986
 	name="STATE_1986"
-	provinces={
-		21656 
-	}
-	history = {
+
+	history={
 		owner = YUG
 		add_core_of = YUG
 		add_core_of = MNT
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = SDZ
+
+	}
+
+	provinces={
+		16392 21656 
 	}
 	manpower=9120
-	state_category=enclave
 	buildings_max_level_factor=1.000
+	state_category=enclave
 	local_supplies=0.000
 }

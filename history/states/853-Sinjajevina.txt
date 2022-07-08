@@ -2,19 +2,23 @@
 state={
 	id=853
 	name="STATE_853"
-	provinces={
-		4425 20169 20181 
-	}
-	history = {
+
+	history={
 		owner = YUG
 		add_core_of = MNT
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = YUG
+
 	}
-	manpower=38347
-	state_category=pastoral
+
+	provinces={
+		2986 4425 16828 
+	}
+	manpower=8347
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

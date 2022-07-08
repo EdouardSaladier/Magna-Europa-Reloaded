@@ -1,18 +1,23 @@
+
 state={
 	id=2008
 	name="STATE_2008"
-	history = {
+
+	history={
 		owner = SAU
 		add_core_of = SAU
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
+
 	provinces={
-		1996 
+		1284 1996 
 	}
-	manpower=1000
-	state_category=wasteland
+	manpower=3000
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=0.000
 }
