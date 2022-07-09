@@ -2,18 +2,24 @@
 state={
 	id=873
 	name="STATE_873"
-	provinces={
-		19227 20223 
-	}
-	history = {
+
+	history={
 		owner = YUG
 		add_core_of = YUG
 		add_core_of = KOS
 		add_core_of = SER
 		buildings = {
 			infrastructure = 2
+
 		}
-		victory_points = { 20223 10 }
+		victory_points = {
+			20223 10 
+		}
+
+	}
+
+	provinces={
+		20223 
 	}
 	manpower=15563
 	buildings_max_level_factor=1.000

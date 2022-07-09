@@ -2,20 +2,26 @@
 state={
 	id=1499
 	name="STATE_1499"
-	provinces={
-		624 4305 4393 5290 6833 14586 14607 14626 14631 20166 20176 
-	}
-	history = {
+
+	history={
 		owner = YUG
 		add_core_of = BOS
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = YUG
-		victory_points = { 14631 40 }
+		victory_points = {
+			14631 40 
+		}
+
 	}
-	manpower=319403
-	state_category=city
+
+	provinces={
+		4305 14631 20166 
+	}
+	manpower=230403
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
 }

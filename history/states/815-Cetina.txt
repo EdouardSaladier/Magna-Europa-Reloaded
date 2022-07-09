@@ -2,20 +2,24 @@
 state={
 	id=815
 	name="STATE_815"
-	provinces={
-		3435 5345 8012 9133 14662 14695 20133 
-	}
-	history = {
+
+	history={
 		owner = YUG
 		add_core_of = CRO
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = YUG
 		add_core_of = DLM
+
+	}
+
+	provinces={
+		3435 5345 8012 9133 14662 14695 18299 20133 
 	}
 	manpower=213135
-	state_category=large_town
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
 }

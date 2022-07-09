@@ -2,21 +2,29 @@
 state={
 	id=790
 	name="STATE_790"
-	provinces={
-		6031 14459 14487 14502 14509 14541 14561 14564 20200 
-	}
-	history = {
+
+	history={
 		owner = YUG
 		add_core_of = YUG
 		add_core_of = SER
 		buildings = {
 			infrastructure = 4
+
 		}
-		victory_points = { 14459 80 }
-		victory_points = { 20200 5 }
+		victory_points = {
+			14459 80 
+		}
+		victory_points = {
+			20200 5 
+		}
+
+	}
+
+	provinces={
+		6031 14459 14487 14502 14509 14541 14561 14564 17669 20200 
 	}
 	manpower=297142
-	state_category=city
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
 }

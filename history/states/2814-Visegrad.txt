@@ -1,0 +1,25 @@
+
+state={
+	id=2814
+	name="STATE_2814"
+	provinces={
+		624 4393 5290 6833 14586 14607 17321 17336 20176 
+	}
+	history={
+		owner = YUG
+		add_core_of = BOS
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YUG
+		victory_points = {
+			14631 40 
+		}
+
+	}
+	manpower=84930
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

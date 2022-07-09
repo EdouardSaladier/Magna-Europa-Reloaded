@@ -10,14 +10,20 @@ state={
 		add_core_of = SER
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = BNT
-		victory_points = { 8544 10 }
-		victory_points = { 14354 2 }
+		victory_points = {
+			8544 10 
+		}
+		victory_points = {
+			14354 2 
+		}
+
 	}
 
 	provinces={
-		4534 6321 8544 14354 20227 20244 20245 
+		4534 6321 8544 14354 20244 20245 
 	}
 	manpower=227522
 	buildings_max_level_factor=1.000

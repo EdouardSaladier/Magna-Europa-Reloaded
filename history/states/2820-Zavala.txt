@@ -1,0 +1,21 @@
+state={
+	id=2820
+	name="STATE_2820"
+	provinces={
+		17974 
+	}
+	history={
+		owner = YUG
+		add_core_of = YUG
+		add_core_of = BOS
+		add_core_of = HRZ
+		buildings = {
+			infrastructure = 2
+
+		}
+	}
+	manpower=249
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

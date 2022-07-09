@@ -1,0 +1,24 @@
+
+state={
+	id=2807
+	name="STATE_2807"
+
+	history={
+		owner = YUG
+		add_core_of = SER
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YUG
+
+	}
+
+	provinces={
+		4699 5416 14682 14717 
+	}
+	manpower=1162
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

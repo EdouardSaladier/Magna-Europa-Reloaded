@@ -1,21 +1,28 @@
+
 state={
 	id=1500
 	name="STATE_1500"
-	provinces={
-		1304 4383 4441 8512 20189 
-	}
-	history = {
+
+	history={
 		add_core_of = BOS
 		buildings = {
 			infrastructure = 2
+
 		}
 		owner = YUG
 		add_core_of = HRZ
 		add_core_of = YUG
-		victory_points = { 20189 2 }
+		victory_points = {
+			20189 2 
+		}
+
+	}
+
+	provinces={
+		1304 4383 4441 8512 16930 20189 
 	}
 	manpower=117070
-	state_category=town
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

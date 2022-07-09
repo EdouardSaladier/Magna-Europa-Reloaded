@@ -2,19 +2,22 @@
 state={
 	id=834
 	name="STATE_834"
-	provinces={
-		4699 5416 14663 14682 14717 14731 
-	}
-	history = {
+
+	history={
 		owner = YUG
 		add_core_of = SER
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = YUG
-		victory_points = { 14731 5 }
+
 	}
-	manpower=72170
+
+	provinces={
+		218 
+	}
+	manpower=21028
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

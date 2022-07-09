@@ -1,22 +1,31 @@
+
 state={
 	id=1514
 	name="STATE_1514"
-	provinces={
-		2136 8942 14265 14312 14323 14328 
-	}
-	history = {
+
+	history={
 		owner = YUG
 		add_core_of = SER
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = YUG
 		add_core_of = VJV
-		victory_points = { 14328 20 }
-		victory_points = { 14265 2 }
+		victory_points = {
+			14328 20 
+		}
+		victory_points = {
+			14265 2 
+		}
+
+	}
+
+	provinces={
+		2136 8942 14265 14312 14323 14328 17510 
 	}
 	manpower=308087
-	state_category=city
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
 }
