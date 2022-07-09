@@ -2,20 +2,21 @@
 state={
 	id=913
 	name="STATE_913"
-	provinces={
-		493 14911 14942 16350 17923 20362 20374 20377 
-	}
 	history={
 		owner = BUL
 		add_core_of = BUL
+		add_core_of = RUM
 		buildings = {
 			infrastructure = 2
 		}
-        	victory_points = {
-        	    20362 5
-        	}
+		victory_points = {
+			20362 5 
+		}
 	}
-	manpower=128813
+	provinces={
+		20362 20374 20375 
+	}
+	manpower=90169
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

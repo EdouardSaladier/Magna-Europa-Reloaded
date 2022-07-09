@@ -2,7 +2,6 @@
 state={
 	id=861
 	name="STATE_861"
-
 	history={
 		owner = BUL
 		add_core_of = BUL
@@ -10,18 +9,14 @@ state={
 			infrastructure = 3
 		}
 		victory_points = {
-            3778 2
-        }
-		victory_points = {
-            3994 2
-        }
+			3994 2 
+		}
 	}
-
 	provinces={
-		3778 3994 5956 7095 14841 14860 18389 20379 
+		3994 14860 
 	}
-	manpower=214590
+	manpower=96565
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category=rural
 	local_supplies=0.000
 }

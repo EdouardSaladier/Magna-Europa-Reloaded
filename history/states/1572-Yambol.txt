@@ -1,19 +1,24 @@
+
 state={
 	id=1572
 	name="STATE_1572"
+
 	history={
 		owner = BUL
 		add_core_of = BUL
 		add_core_of = RUM
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
+
 	provinces={
 		1957 3434 6798 14833 
 	}
 	manpower=122570
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }
