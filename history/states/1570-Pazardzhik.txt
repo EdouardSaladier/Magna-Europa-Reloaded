@@ -1,23 +1,27 @@
+
 state={
 	id=1570
 	name="STATE_1570"
-	provinces={
-		4535 4746 14870 20380 
-	}
+
 	history={
 		owner = BUL
 		add_core_of = BUL
 		add_core_of = RUM
 		buildings = {
 			infrastructure = 2
+
 		}
-	
-        victory_points = {
-            14870 5
-        }
-    }
+		victory_points = {
+			14870 5 
+		}
+
+	}
+
+	provinces={
+		4535 4746 14870 18970 20380 
+	}
 	manpower=122014
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }
