@@ -2,17 +2,21 @@
 state={
 	id=1999
 	name="STATE_1999"
-	provinces={
-		1328 15860 
-	}
-	history = {
+
+	history={
 		owner = YUG
 		add_core_of = CRO
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = YUG
 		add_core_of = DLM
+
+	}
+
+	provinces={
+		1328 
 	}
 	manpower=12014
 	buildings_max_level_factor=1.000
