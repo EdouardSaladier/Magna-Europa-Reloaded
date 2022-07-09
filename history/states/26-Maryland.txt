@@ -8,11 +8,14 @@ state={
 	history = {
 		owner = USA
 		add_core_of = USA
+		buildings = {
+			infrastructure = 4
+		}
         victory_points = {
             19351 40
         }
 		victory_points = {
-            19352 40
+            19352 45
         }
     }
 	manpower=1726385

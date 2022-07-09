@@ -9,6 +9,9 @@ state={
 		owner = ENG
 		add_core_of = CAN
 		victory_points = { 19385 5 }
+		buildings = {
+			infrastructure = 2
+		}
 	}
 	manpower=284872
 	buildings_max_level_factor=1.000
