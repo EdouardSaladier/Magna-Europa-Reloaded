@@ -6,6 +6,9 @@ state={
 	history={
 		owner = LIT
 		add_core_of = LIT
+		add_core_of = LTM
+		add_core_of = PRS
+		add_core_of = ESP
 		buildings = {
 			infrastructure = 3
 			19907 = { naval_base = 1 }
