@@ -5,6 +5,9 @@ state={
 	history = {
 		owner = ICE
 		add_core_of = ICE
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	provinces={
 		671 678 867 1195 1227 1802 2280 2894 3404 4545 7935 8737 9760 9774 

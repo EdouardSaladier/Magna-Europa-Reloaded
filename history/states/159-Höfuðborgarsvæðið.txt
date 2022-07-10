@@ -5,6 +5,9 @@ state={
 	history = {
 		owner = ICE
 		add_core_of = ICE
+		buildings = {
+			infrastructure = 1
+		}
 		victory_points = { 969 10 }
 	}
 	provinces={
