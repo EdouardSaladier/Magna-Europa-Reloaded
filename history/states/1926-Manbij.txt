@@ -2,19 +2,27 @@
 state={
 	id=1926
 	name="STATE_1926"
-	history = {
+
+	history={
 		owner = SYR
 		add_core_of = SYR
-		victory_points = { 8575 5 }
-		victory_points = { 692 2 }
+		victory_points = {
+			8575 5 
+		}
+		victory_points = {
+			692 2 
+		}
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
+
 	provinces={
-		692 888 2721 4178 6768 8575 8694 8705 15500 15528 15543 19338 21313 21346 
+		692 888 4178 6768 8575 8694 8705 15500 15528 15543 
 	}
-	manpower=239209
+	manpower=215288
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000
