@@ -1,4 +1,3 @@
-
 state={
 	id=1342
 	name="STATE_1342"
@@ -6,14 +5,17 @@ state={
 	history = {
 		owner = SPR
 		add_core_of = MOR
+		
 		buildings = {
 			infrastructure = 1
 		}
 	}
+
 	provinces={
 		196 517 
 	}
-	manpower=10400
+
+	manpower=7800
 	state_category=wasteland
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
