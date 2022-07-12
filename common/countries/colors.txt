@@ -634,16 +634,16 @@ ALS = {
 
 ###Yugoslavian Releasables
 SER = {
-	color = rgb { 72 73 126 }
-	color_ui = rgb { 72 73 126 }
+	color = rgb { 70 70 150 }
+	color_ui = rgb { 70 70 150 }
 }
 SLV = {
 	color = rgb { 100 170 180 }
 	color_ui = rgb { 100 170 180 }
 }
 BOS = {
-	color = rgb { 203 127 91 }
-	color_ui = rgb { 203 127 91 }
+	color = rgb { 179 196 111 }
+	color_ui = rgb { 179 196 111 }
 }
 MAC = {
 	color rgb { 255 60 60 }
@@ -662,8 +662,8 @@ CRO = {
 	color_ui = rgb { 145 69 105 }
 }
 HRZ = {
-	color = rgb { 72 113 160 }
-	color_ui = rgb { 72 113 160 }
+	color = rgb { 203 127 91 }
+	color_ui = rgb { 203 127 91 }
 }
 VJV = {
 	color = rgb { 204 166 108 }
@@ -674,8 +674,8 @@ SDZ = {
 	color_ui = rgb { 126 203 120 }
 }
 DLM = {
-	color = rgb { 46 128 188 }
-	color_ui = rgb { 46 128 188 }
+	color = rgb { 117 71 192 }
+	color_ui = rgb { 117 71 192 }
 }
 BNT = {
 	color = rgb { 147 128 83 }
@@ -688,6 +688,22 @@ BHC = {
 UZC = {
 	color = rgb { 70 70 150 }
 	color_ui = rgb { 70 70 150 }
+}
+SRP = {
+	color = rgb { 67 90 168 }
+	color_ui = rgb { 67 90 168 }
+}
+KRJ = {
+	color = rgb { 118 96 225 }
+	color_ui = rgb { 118 96 225 }
+}
+HZB = {
+	color = rgb { 171 94 98 }
+	color_ui = rgb { 171 94 98 }
+}
+WBS = {
+	color = rgb { 126 143 58 }
+	color_ui = rgb { 126 143 58 }
 }
 
 ###German Releasables
