@@ -1,0 +1,23 @@
+state={
+	id=2850
+	name="STATE_2850"
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = FRI
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			20015 10 
+		}
+	}
+	provinces={
+		5142 5779 
+	}
+	manpower=55108
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

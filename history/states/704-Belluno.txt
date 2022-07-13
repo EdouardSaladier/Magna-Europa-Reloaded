@@ -9,17 +9,18 @@ state={
 		add_core_of = VNT
 		buildings = {
 			infrastructure = 2
+
 		}
 		victory_points = {
-			14079 2
+			14079 2 
 		}
 
 	}
 
 	provinces={
-		5487 8898 9279 13986 14079 14144 20053 
+		5487 8898 14079 14144 20053 
 	}
-	manpower=216300
+	manpower=181503
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000
