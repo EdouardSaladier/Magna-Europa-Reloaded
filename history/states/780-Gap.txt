@@ -1,0 +1,30 @@
+
+state={
+	id=780
+	name="STATE_780"
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = PRV
+		add_core_of = OCC
+		add_core_of = DAU
+		add_core_of = OCC
+		victory_points = {
+			14473 2 
+		}
+
+	}
+
+	provinces={
+		4884 9599 14473 
+	}
+	manpower=54464
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

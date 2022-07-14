@@ -1,0 +1,23 @@
+state={
+	id=2851
+	name="STATE_2851"
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SAV
+		add_core_of = ARP
+
+	}
+	provinces={
+		236 375 1187 8532 14082 14130 
+	}
+	manpower=89000
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

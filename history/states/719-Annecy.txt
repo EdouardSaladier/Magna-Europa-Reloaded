@@ -1,0 +1,28 @@
+
+state={
+	id=719
+	name="STATE_719"
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		victory_points = {
+			2451 2 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SAV
+		add_core_of = ARP
+
+	}
+
+	provinces={
+		2451 14135 
+	}
+	manpower=158000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

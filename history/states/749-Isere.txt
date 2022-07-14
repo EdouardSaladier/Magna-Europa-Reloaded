@@ -1,0 +1,27 @@
+
+state={
+	id=749
+	name="STATE_749"
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = DAU
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			1933 10 
+		}
+
+	}
+
+	provinces={
+		1933 2170 5174 6000 14381 14417 20530 
+	}
+	manpower=382680
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}
