@@ -7,6 +7,9 @@ state={
 		add_core_of = ICE
 		buildings = {
 			infrastructure = 1
+			969 = {
+				naval_base = 1
+			}
 		}
 		victory_points = { 969 10 }
 	}

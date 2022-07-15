@@ -10,6 +10,9 @@ state={
 		add_core_of = USA
 		buildings = {
 			infrastructure = 3
+			3033 = {
+				naval_base = 10
+			}
 		}
         victory_points = {
             3033 20
