@@ -2,21 +2,25 @@
 state={
 	id=806
 	name="STATE_806"
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = KRC
 		add_core_of = KUB
 		add_core_of = MOU
+
 	}
+
 	provinces={
-		1396 2550 3582 3878 7640 14600 14652 14653 14713 18614 19067 
+		1396 2550 3582 3878 14600 14652 14653 14713 
 	}
-	manpower=172169
+	manpower=137735
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

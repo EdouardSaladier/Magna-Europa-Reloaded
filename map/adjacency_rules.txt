@@ -568,3 +568,49 @@ adjacency_rule =
 	icon = 14325
 	offset = { 3 0 -3 }
 }
+adjacency_rule =
+{
+	name = "AMERICA_BORDER"
+
+	#is_friend = {
+	#	TUR_is_friend_for_dardanelles = yes
+	#}
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 18655 }
+
+	is_disabled = {
+		has_country_flag = AMERICA_BORDER_BLOCKED_FOR_COUNTRY
+		tooltip = america_blocked_tt
+	}
+	
+	icon = 18655
+	offset = { -5 0 0 }
+}

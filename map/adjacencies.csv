@@ -211,6 +211,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14359;14407;impassable;-1;-1;-1;-1;-1;;Bardonecchia-Locana
 21658;20531;impassable;-1;-1;-1;-1;-1;;Valle Stretta-Hautes-Alpes
 21658;14353;impassable;-1;-1;-1;-1;-1;;Valle Stretta-Modane
+21658;21659;impassable;-1;-1;-1;-1;-1;;Valle Stretta-Montgenevre
 14476;822;impassable;-1;-1;-1;-1;-1;;Hautes Alpes
 14473;822;impassable;-1;-1;-1;-1;-1;;Hautes Alpes-Isere
 14476;14417;impassable;-1;-1;-1;-1;-1;;Hautes Alpes-Isere
@@ -223,6 +224,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6000;14339;impassable;-1;-1;-1;-1;-1;;Savoie-Isere
 14476;20531;impassable;-1;-1;-1;-1;-1;;Hautes Alpes
 14359;14353;impassable;-1;-1;-1;-1;-1;;Locana-Modane
+21657;14353;impassable;-1;-1;-1;-1;-1;;Moncenisio-Modane
 8124;14381;impassable;-1;-1;-1;-1;-1;;Locana-Modane
 8124;14277;impassable;-1;-1;-1;-1;-1;;Locana-Savoy
 20006;14277;impassable;-1;-1;-1;-1;-1;;Locana-Savoy
@@ -391,6 +393,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8033;4544;impassable;-1;-1;-1;-1;-1;;Andorra-Lleida
 8033;8650;impassable;-1;-1;-1;-1;-1;;Andorra-Ariège
 8033;6859;impassable;-1;-1;-1;-1;-1;;Andorra-Ariège
+8033;14832;impassable;-1;-1;-1;-1;-1;;Andorra-Pyrenees Orientales
 14793;19809;impassable;-1;-1;-1;-1;-1;;Aude-Ariège
 8964;19809;impassable;-1;-1;-1;-1;-1;;Aude-Pyrenees Orientales
 19807;14832;impassable;-1;-1;-1;-1;-1;;Lleida-Pyrenees Orientales
@@ -769,4 +772,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7148;19383;sea;18108;-1;-1;-1;-1;;Northumberland Strait
 19641;19651;sea;16479;-1;-1;-1;-1;;Fårö Strait
 3033;19386;sea;16391;-1;-1;-1;-1;;Northampton
+16537;17405;;-1;-1;-1;-1;-1;AMERICA_BORDER;America Border
 -1;-1;;-1;-1;-1;-1;-1;-1
