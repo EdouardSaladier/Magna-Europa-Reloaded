@@ -2,11 +2,11 @@
 state={
 	id=769
 	name="STATE_769"
-	provinces={
-		141 6153 14325 14338 
-	}
-	history = {
-		victory_points = { 14325 10 }
+
+	history={
+		victory_points = {
+			14325 10 
+		}
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = CRI
@@ -14,11 +14,20 @@ state={
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
-			14325 = { naval_base = 1 }
+			14325 = {
+				naval_base = 1
+
+			}
+
 		}
+
+	}
+
+	provinces={
+		141 6153 14325 14338 16299 
 	}
 	manpower=226660
-	state_category=large_town
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
 }

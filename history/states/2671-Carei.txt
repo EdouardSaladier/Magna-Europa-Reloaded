@@ -1,20 +1,27 @@
+
 state={
 	id=2671
 	name="STATE_2671"
-	provinces={
-		2562 5152 6942 8432 13697 13698 
-	}
+
 	history={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = TRA
 		buildings = {
 			infrastructure = 2
+
 		}
-       	 victory_points = { 13697 2 }
-    	}	
-	manpower=71967
-	state_category=pastoral
+		victory_points = {
+			13697 2 
+		}
+
+	}
+
+	provinces={
+		6942 8432 13697 
+	}
+	manpower=59967
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

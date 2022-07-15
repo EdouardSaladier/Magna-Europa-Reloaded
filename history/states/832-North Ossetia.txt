@@ -2,20 +2,28 @@
 state={
 	id=832
 	name="STATE_832"
-	history = {
-		victory_points = { 8187 20 }
-		victory_points = { 14707 2 }
+
+	history={
+		victory_points = {
+			8187 20 
+		}
+		victory_points = {
+			14707 2 
+		}
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = NOA
 		add_core_of = MOU
+
 	}
+
 	provinces={
-		6685 7698 8187 8708 14707 14739 14779 
+		6685 7698 8187 8708 14707 14739 14779 18340 
 	}
 	manpower=413284
 	buildings_max_level_factor=1.000

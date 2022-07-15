@@ -2,18 +2,22 @@
 state={
 	id=726
 	name="STATE_726"
-	history = {
+
+	history={
 		owner = HUN
 		add_core_of = HUN
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = SBB
+
 	}
+
 	provinces={
-		14080 14092 20093 
+		14080 14092 18337 
 	}
-	manpower=144693
+	manpower=113693
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

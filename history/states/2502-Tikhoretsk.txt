@@ -2,22 +2,30 @@
 state={
 	id=2502
 	name="STATE_2502"
-	provinces={
-		186 468 1522 1849 5417 7412 7585 8843 14069 14086 14114 16067 
-	}
-	history = {
-		victory_points = { 5417 5 }
-		victory_points = { 14069 2 }
+
+	history={
+		victory_points = {
+			5417 5 
+		}
+		victory_points = {
+			14069 2 
+		}
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = KUB
+
 	}
-	manpower=115930
-	state_category=rural
+
+	provinces={
+		186 468 1522 5417 7412 7585 8843 14069 14114 16067 
+	}
+	manpower=106930
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

@@ -1,24 +1,29 @@
+
 state={
 	id=1821
 	name="STATE_1821"
-	provinces={
-		153 2624 3164 3341 4997 6439 6647 8165 13886 13941 14003 14011 14055 14059 20091 
-	}
-	history = {
+
+	history={
 		owner = HUN
 		add_core_of = HUN
 		buildings = {
 			infrastructure = 3
+
 		}
-        victory_points = {
-            20091 10
-        }
 		victory_points = {
-            4997 2
-        }
-    }
+			20091 10 
+		}
+		victory_points = {
+			4997 2 
+		}
+
+	}
+
+	provinces={
+		153 2624 3164 3341 4997 6439 6647 8165 13886 13941 14003 14011 14055 20091 
+	}
 	manpower=308654
 	buildings_max_level_factor=1.000
-	state_category = city
+	state_category=city
 	local_supplies=0.000
 }

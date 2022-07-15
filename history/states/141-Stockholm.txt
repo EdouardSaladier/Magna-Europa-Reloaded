@@ -2,20 +2,29 @@
 state={
 	id=141
 	name="STATE_141"
-	history = {
+
+	history={
 		owner = SWE
 		add_core_of = SWE
 		buildings = {
 			infrastructure = 4
-			19542 = { naval_base = 6 }
+			19542 = {
+				naval_base = 6
+
+			}
+
 		}
-		victory_points = { 19542 80 }
+		victory_points = {
+			19542 80 
+		}
+
 	}
+
 	provinces={
-		784 2616 3166 5580 10011 10019 10030 10051 10058 18665 18783 19541 19542 19601 
+		784 2616 3166 5580 10011 10019 10030 10051 10058 18665 19541 19542 19601 
 	}
 	manpower=805500
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
-	state_category = large_city
 }

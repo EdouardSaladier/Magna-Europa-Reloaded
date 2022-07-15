@@ -1,0 +1,20 @@
+state={
+	id=2860
+	name="STATE_2860"
+	provinces={
+		20403 
+	}
+	history={
+		owner = ROM
+		add_core_of = ROM
+		add_core_of = TRA
+		buildings = {
+			infrastructure = 2
+
+		}
+	}
+	manpower=4398
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

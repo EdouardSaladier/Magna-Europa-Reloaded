@@ -1,0 +1,22 @@
+state={
+	id=2862
+	name="STATE_2862"
+	provinces={
+		8797 
+	}
+	history={
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = RUS
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = KUB
+
+	}
+	manpower=1938
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,25 +1,30 @@
+
 state={
 	id=1437
 	name="STATE_1437"
-	provinces={
-		1014 6411 13354 20070 20074 
-	}
+
 	history={
 		owner = CZE
 		add_core_of = CZE
 		add_core_of = SLO
 		buildings = {
 			infrastructure = 4
+
 		}
-        victory_points = {
-            20070 20
-        }
 		victory_points = {
-            13354 5
-        }
-    }
+			20070 20 
+		}
+		victory_points = {
+			13354 5 
+		}
+
+	}
+
+	provinces={
+		1014 6411 13354 16767 20070 20074 
+	}
 	manpower=380125
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

@@ -1,0 +1,29 @@
+
+state={
+	id=2866
+	name="STATE_2866"
+
+	history={
+		victory_points = {
+			14264 2 
+		}
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = RUS
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = STV
+		add_core_of = KUB
+
+	}
+
+	provinces={
+		14264 14313 14333 14385 
+	}
+	manpower=23802
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

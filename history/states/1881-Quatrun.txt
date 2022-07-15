@@ -2,19 +2,23 @@
 state={
 	id=1881
 	name="STATE_1881"
+
 	history={
 		owner = ITA
 		add_core_of = LBA
 		buildings = {
 			infrastructure = 0
+
 		}
+
 	}
+
 	provinces={
 		2184 
 	}
 	manpower=4280
-	state_category=wasteland
 	impassable=yes
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=0.000
 }

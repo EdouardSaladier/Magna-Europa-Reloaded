@@ -2,18 +2,22 @@
 state={
 	id=662
 	name="STATE_662"
-	history = {
+
+	history={
 		owner = HUN
 		add_core_of = HUN
 		buildings = {
 			infrastructure = 2
+
 		}
 		victory_points = {
-            5120 2
-        }
+			5120 2 
+		}
+
 	}
+
 	provinces={
-		5120 8839 13696 13913 
+		5120 8839 13696 13913 17640 
 	}
 	manpower=134035
 	buildings_max_level_factor=1.000

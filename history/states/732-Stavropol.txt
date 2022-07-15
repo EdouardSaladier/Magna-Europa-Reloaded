@@ -2,24 +2,33 @@
 state={
 	id=732
 	name="STATE_732"
-	provinces={
-		175 217 1023 2537 7091 7658 8573 8740 9468 14171 14264 14311 14313 14333 14348 14355 14385 16026 
-	}
-	history = {
-		victory_points = { 8573 20 }
-		victory_points = { 14311 2 }
-		victory_points = { 14264 2 }
-		victory_points = { 7091 2 }
+
+	history={
+		victory_points = {
+			8573 20 
+		}
+		victory_points = {
+			14311 2 
+		}
+		victory_points = {
+			7091 2 
+		}
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = STV
 		add_core_of = KUB
+
 	}
-	manpower=595975
+
+	provinces={
+		175 217 1023 2537 7091 7658 8573 8740 9468 14171 14311 14348 14355 14399 16026 17729 
+	}
+	manpower=572975
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

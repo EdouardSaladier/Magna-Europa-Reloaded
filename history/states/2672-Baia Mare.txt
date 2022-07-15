@@ -9,6 +9,7 @@ state={
 		add_core_of = TRA
 		buildings = {
 			infrastructure = 2
+
 		}
 		victory_points = {
 			20398 10 
@@ -17,9 +18,9 @@ state={
 	}
 
 	provinces={
-		5876 13734 20398 20403 20404 
+		13734 18344 20398 20404 
 	}
-	manpower=123942
+	manpower=119942
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

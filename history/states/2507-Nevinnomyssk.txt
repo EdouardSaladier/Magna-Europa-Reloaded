@@ -2,23 +2,28 @@
 state={
 	id=2507
 	name="STATE_2507"
-	provinces={
-		860 1738 4394 8003 8506 14399 14446 14512 16845 17588 17607 
-	}
-	history = {
-		victory_points = { 17588 10 }
-		victory_points = { 860 2 }
+
+	history={
+		victory_points = {
+			17588 10 
+		}
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = STV
 		add_core_of = KUB
+
 	}
-	manpower=170356
-	state_category=town
+
+	provinces={
+		8003 8506 14446 16897 17588 
+	}
+	manpower=146356
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

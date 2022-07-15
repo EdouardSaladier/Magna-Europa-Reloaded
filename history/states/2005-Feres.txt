@@ -2,6 +2,7 @@
 state={
 	id=2005
 	name="STATE_2005"
+
 	history={
 		owner = GRE
 		add_core_of = GRE
@@ -9,10 +10,13 @@ state={
 		add_core_of = WTH
 		buildings = {
 			infrastructure = 1
+
 		}
+
 	}
+
 	provinces={
-		1094 15895 
+		1094 15895 16499 
 	}
 	manpower=11494
 	buildings_max_level_factor=1.000
