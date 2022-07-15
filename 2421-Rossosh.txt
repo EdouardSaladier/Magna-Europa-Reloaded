@@ -1,0 +1,26 @@
+state={
+	id=2421
+	name="STATE_2421"
+	provinces={
+		2274 3705 3979 4045 6086 6908 7099 7579 7906 8381 8477 9675 12409 12455 12615 12704 12752 12833 
+	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = RUS
+		add_core_of = SLB
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			12615 5
+		}
+		victory_points = {
+			3979 2
+		}
+	}
+	manpower=264047
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

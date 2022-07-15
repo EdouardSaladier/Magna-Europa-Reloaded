@@ -1,0 +1,29 @@
+
+state={
+	id=502
+	name="STATE_502"
+	provinces={
+		13 8117 13138 13179 13271 
+	}
+	history={
+		owner = POL
+		add_core_of = POL
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = GAL
+		add_core_of = WUK
+		add_core_of = UKR
+		add_core_of = PLD
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			13138 2 #Czortków
+		}
+  	}
+	manpower=242200
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = large_town
+}

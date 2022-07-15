@@ -1,0 +1,25 @@
+
+state={
+	id=2510
+	name="STATE_2510"
+
+	history={
+		owner = SOV
+		add_core_of = RUS
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SOV
+		add_core_of = SLB
+		add_core_of = DON
+
+	}
+
+	provinces={
+		2257 5600 7597 9475 13008 
+	}
+	manpower=64022
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

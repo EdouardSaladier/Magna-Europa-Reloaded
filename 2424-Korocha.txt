@@ -1,0 +1,20 @@
+state={
+	id=2424
+	name="STATE_2424"
+	provinces={
+		4653 6542 12442 
+	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = RUS
+		add_core_of = SLB
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	manpower=61522
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
