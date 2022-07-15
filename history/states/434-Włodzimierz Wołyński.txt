@@ -8,16 +8,14 @@ state={
 	history={
 		owner = POL
 		add_core_of = POL
-		buildings = {
-			infrastructure = 3
-		}
 		add_core_of = UKR
+		add_core_of = VLH
 		buildings = {
 			infrastructure = 3
 		}
-        	victory_points = {
-       	    	2165 5
-       		}
+    	victory_points = {
+   	    	2165 5
+   		}
   	}
 	manpower=242500
 	buildings_max_level_factor=1.000

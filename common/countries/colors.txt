@@ -961,6 +961,32 @@ POS = {
 	color_ui = rgb { 117 117 117 }
 }
 
+###Ukrainian Releasables
+VLH = {
+	color = rgb { 190 50 60 }
+	color_ui = rgb { 190 50 60 }
+}
+PLD = {
+	color = rgb { 198 107 67 }
+	color_ui = rgb { 198 107 67 }
+}
+BDZ = {
+	color = rgb { 40 140 100 }
+	color_ui = rgb { 40 140 100 }
+}
+ZAP = {
+	color = rgb { 51 142 184 }
+	color_ui = rgb { 51 142 184 }
+}
+DNB = {
+	color = rgb { 49 76 129 }
+	color_ui = rgb { 49 76 129 }
+}
+SLB = {
+	color = rgb { 32 101 59 }
+	color_ui = rgb { 32 101 59 }
+}
+
 ###Czechoslovak Releasables
 MRV = {
 	color = rgb { 3 106 181 }
@@ -981,8 +1007,8 @@ CRP = {
 
 ###Soviet Releasables
 CRI = {
-	color = rgb { 255 80 80 }
-	color_ui = rgb { 204 0 0 }
+	color = rgb { 221 143 64 }
+	color_ui = rgb { 221 143 64 }
 }
 TSN = {
 	color = rgb { 113 176 170 }
