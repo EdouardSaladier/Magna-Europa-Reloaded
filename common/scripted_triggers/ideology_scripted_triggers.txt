@@ -30,3 +30,8 @@ is_enemy_ideology = {
 		}
 	}
 }
+
+#these ideologies change VP and state names upon occupation, added just in case an ideology rework is made
+occ_change_name = {
+	has_government = fascism
+}

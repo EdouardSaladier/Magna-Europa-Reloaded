@@ -1,0 +1,32 @@
+# These on-actions change state and VP names when Germany captures them.
+
+on_actions = {
+
+	on_state_control_changed = {
+		effect = {
+			#Rivierenland - Flussland
+			if = {
+				limit = {
+					FROM.FROM = { state = 2331 }
+					2331 = { NOT = { has_state_flag = GER_Flussland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				2331 = { set_state_name = "Flussland" }
+				set_province_name = { id = 5357 name = "Nimwegen" }
+				2331 = { set_state_flag = GER_Flussland }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2331 }
+					2331 = { has_state_flag = GER_Flussland }
+					ROOT = { is_german = no }
+				}
+				2331 = { reset_state_name = yes }
+				reset_province_name = 5357
+				2331 = { clr_state_flag = GER_Flussland }
+			}
+		}
+	}
+}
