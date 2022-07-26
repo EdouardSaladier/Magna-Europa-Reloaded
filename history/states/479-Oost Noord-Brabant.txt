@@ -3,7 +3,7 @@ state={
 	id=479
 	name="STATE_479"
 	provinces={
-		1705 3044 8641 11994 12077 12100 12130 12151 
+		8641 11994 12077 12100 12130 12151 
 	}
 	history={
 		owner = HOL
@@ -15,8 +15,8 @@ state={
 			12077 20 #Eindhoven
 		}
 	}
-	manpower=585000
+	manpower=395000
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=city
 	local_supplies=0.000
 }

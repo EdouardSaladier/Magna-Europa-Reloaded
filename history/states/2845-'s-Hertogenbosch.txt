@@ -1,0 +1,22 @@
+state={
+	id=2845
+	name="STATE_2845"
+	provinces={
+		1705 3044 
+	}
+	history = {
+		owner = HOL
+		add_core_of = HOL
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {
+			3044 10 #'s-Hertogenbosch
+		}
+	}
+	
+	manpower=190000
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

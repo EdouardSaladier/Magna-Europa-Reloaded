@@ -1,0 +1,29 @@
+state={
+	id=1324
+	name="STATE_1324"
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = PIC
+		buildings = {
+			infrastructure = 4
+			12325 = { naval_base = 5 }
+		}
+		victory_points = {
+			73 5 #Boulogne-sur-Mer
+		}
+		victory_points = {
+			12325 5 #Calais
+		}
+	}
+
+	provinces={
+		73 6106 12325 
+	}
+
+	manpower=208000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

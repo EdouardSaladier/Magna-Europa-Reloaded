@@ -1,4 +1,28 @@
 # These on-actions change state and VP names when Germany captures them.
+#
+#			if = {
+#				limit = {
+#					FROM.FROM = { state = X }
+#					X = { NOT = { has_state_flag = GER_Name } }
+#					ROOT = { is_german = yes }
+#					ROOT = { occ_change_name = yes }
+#				}
+#				X = { set_state_name = "Name" }
+#				set_province_name = { id = Y name = "Cityname" }
+#				X = { set_state_flag = GER_Name }
+#			}
+#			
+#			if = {
+#				limit = {
+#					FROM.FROM = { state = X }
+#					X = { has_state_flag = GER_Name }
+#					ROOT = { is_german = no }
+#				}
+#				X = { reset_state_name = yes }
+#				reset_province_name = Y
+#				X = { clr_state_flag = GER_Name }
+#			}
+
 
 on_actions = {
 
@@ -16,7 +40,6 @@ on_actions = {
 				set_province_name = { id = 5357 name = "Nimwegen" }
 				2331 = { set_state_flag = GER_Flussland }
 			}
-			
 			if = {
 				limit = {
 					FROM.FROM = { state = 2331 }
@@ -26,6 +49,96 @@ on_actions = {
 				2331 = { reset_state_name = yes }
 				reset_province_name = 5357
 				2331 = { clr_state_flag = GER_Flussland }
+			}
+			
+			#Noord Overmaas - Nord-Maasland
+			if = {
+				limit = {
+					FROM.FROM = { state = 2717 }
+					2717 = { NOT = { has_state_flag = GER_Nordmaasland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				2717 = { set_state_name = "Nord-Maasland" }
+				2717 = { set_state_flag = GER_Nordmaasland }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2717 }
+					2717 = { has_state_flag = GER_Nordmaasland }
+					ROOT = { is_german = no }
+				}
+				2717 = { reset_state_name = yes }
+				2717 = { clr_state_flag = GER_Nordmaasland }
+			}
+			
+			#Zuid Overmaas - Süd-Maasland
+			if = {
+				limit = {
+					FROM.FROM = { state = 2344 }
+					2344 = { NOT = { has_state_flag = GER_Sudmaasland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				2344 = { set_state_name = "Süd-Maasland" }
+				2344 = { set_state_flag = GER_Sudmaasland }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2344 }
+					2344 = { has_state_flag = GER_Sudmaasland }
+					ROOT = { is_german = no }
+				}
+				2344 = { reset_state_name = yes }
+				2344 = { clr_state_flag = GER_Sudmaasland }
+			}
+			
+			#Limburg Voormaas - West-Maasland
+			if = {
+				limit = {
+					FROM.FROM = { state = 432 }
+					432 = { NOT = { has_state_flag = GER_Westmaasland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				432 = { set_state_name = "West-Maasland" }
+				432 = { set_state_flag = GER_Westmaasland }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 432 }
+					432 = { has_state_flag = GER_Westmaasland }
+					ROOT = { is_german = no }
+				}
+				432 = { reset_state_name = yes }
+				432 = { clr_state_flag = GER_Westmaasland }
+			}
+			
+			#Groningen - Gröningen
+			if = {
+				limit = {
+					FROM.FROM = { state = 331 }
+					331 = { NOT = { has_state_flag = GER_Groningen } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				331 = { set_state_name = "Gröningen" }
+				set_province_name = { id = 11312 name = "Gröningen" }
+				331 = { set_state_flag = GER_Groningen }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 331 }
+					331 = { has_state_flag = GER_Groningen }
+					ROOT = { is_german = no }
+				}
+				331 = { reset_state_name = yes }
+				reset_province_name = 11312
+				331 = { clr_state_flag = GER_Groningen }
 			}
 		}
 	}
