@@ -1,0 +1,22 @@
+state={
+	id=2873
+	name="STATE_2873"
+	provinces={
+		21665
+	}
+	history={
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = TCC
+		add_core_of = ARM
+		add_core_of = NGK
+		add_core_of = AZR
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=522
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
