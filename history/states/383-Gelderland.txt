@@ -10,16 +10,18 @@ state={
 			infrastructure = 3
 		}
 		victory_points = {
-			7155 10 
+			7155 10 #Apeldoorn
 		}
-
+		victory_points = {
+			5900 10 #Arnhem
+		}
 	}
 
 	provinces={
 		5188 5900 7155 8855 11709 
 	}
-	manpower=1330100
+	manpower=651750
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category=large_city
 	local_supplies=0.000
 }
