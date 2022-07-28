@@ -9,7 +9,38 @@ on_actions = {
 					OR = {
 						has_cosmetic_tag = ITA_kingdom
 						has_cosmetic_tag = ITA_RSI
+						has_cosmetic_tag = ITA_neutrality
 					}
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					original_tag = ROM
+					has_government = communism
+					has_cosmetic_tag = ROM_neutrality
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					original_tag = GRE
+					has_government = communism
+					has_cosmetic_tag = GRE_neutrality
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					original_tag = BUL
+					has_government = communism
+					has_cosmetic_tag = BUL_neutrality
 				}
 				drop_cosmetic_tag = yes
 			}
