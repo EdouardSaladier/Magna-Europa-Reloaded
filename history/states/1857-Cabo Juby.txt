@@ -1,7 +1,7 @@
-
 state={
-	id=1317
-	name="STATE_1317"
+	id=1857
+	name="STATE_1857"
+			
 				
 	history = {
 		owner = SPR
@@ -9,11 +9,15 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+	    victory_points = {
+		    2166 2 #Tan-Tan
+			}
 	}
+	
 	provinces={
-		2297 15842 
+		2166 3415 2297 15842 3017 
 	}
-	manpower=5980
+	manpower=27600
 	state_category=wasteland
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

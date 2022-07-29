@@ -1,0 +1,30 @@
+
+state={
+	id=1324
+	name="STATE_1324"
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = ATI
+		buildings = {
+			infrastructure = 4
+
+		}
+		victory_points = {
+			12637 5
+		}
+		victory_points = {
+			1406 2
+		}
+
+	}
+
+	provinces={
+		1406 3542 6129 6200 7440 7539 9257 12528 12597 12617 12637 
+	}
+	manpower=832294
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

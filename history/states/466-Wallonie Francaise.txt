@@ -11,24 +11,18 @@ state={
 			infrastructure = 4
 		}
 		victory_points = {
-			12502 20 #Lille
-		}
-		victory_points = {
 			8296 2 #Valenciennes
 		}
 		victory_points = {
 			6087 2 #Maubeuge
 		}
-		victory_points = {
-			4392 5 #Douai
-		}
 	}
 
 	provinces={
-		4392 5138 6087 6834 8296 9654 12502 12659 19853 
+		5138 6087 8296 9654 12659 
 	}
-	manpower=1617760
+	manpower=580068
+	state_category=large_city
 	buildings_max_level_factor=1.000
-	state_category=metropolis
 	local_supplies=0.000
 }

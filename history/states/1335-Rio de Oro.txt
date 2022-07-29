@@ -5,6 +5,7 @@ state={
 	history={
 		owner = SPR
 		add_core_of = MOR
+		add_core_of = WES
 
 		buildings = {
 			infrastructure = 1
@@ -12,10 +13,10 @@ state={
 	}
 
 	provinces={
-		301 2055 3270 
+		196 517 301 2055 3270 5874 
 	}
 
-	manpower=4225
+	manpower=8225
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000

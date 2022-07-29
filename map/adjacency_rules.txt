@@ -614,3 +614,193 @@ adjacency_rule =
 	icon = 18655
 	offset = { -5 0 0 }
 }
+adjacency_rule =
+{
+	name = "KARELIAN_ISTHMUS"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 9985 9973 18223 17228 3309 10005 19022 17400 7201 }
+	
+	icon = 3309
+	offset = { 0 0 0 }
+}
+adjacency_rule =
+{
+	name = "SVIR_RIVER"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 870 16676 7347 1454 9928 9944 17920 9918 16020 18078 17642 4899 6641 4899 19722 }
+	
+	icon = 9918
+	offset = { 0 0 0 }
+}
+adjacency_rule =
+{
+	name = "VYGOZERO_ONEGA_CANAL"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 2393 9804 18487 16244 1296 }
+	
+	icon = 18487
+	offset = { 0 0 0 }
+}
+adjacency_rule =
+{
+	name = "VYG_RIVER_1"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 2182 4603 }
+	
+	icon = 4603
+	offset = { 0 0 0 }
+}
+adjacency_rule =
+{
+	name = "VYG_RIVER_2"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 19719 4603 17757 2019 2811 }
+	
+	icon = 17757
+	offset = { 0 0 0 }
+}

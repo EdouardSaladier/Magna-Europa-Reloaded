@@ -7,14 +7,14 @@ state={
 		add_core_of = HOL
 		buildings = {
 			infrastructure = 4
-			19870 = { naval_base = 1 }
+			19873 = { naval_base = 1 }
 		}
 		victory_points = {
-			19870 2 #Middelburg
+			19873 2 #Middelburg
 		}
     }
 	provinces={
-		4251 19870 19871 
+		4251 19870 19871 19873 
 	}
 	manpower=168488
 	buildings_max_level_factor=1.000
