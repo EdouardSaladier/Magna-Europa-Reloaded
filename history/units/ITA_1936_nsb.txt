@@ -444,9 +444,9 @@ units = {
 	division = { # 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 21079
+			name_order = 32
 		} #  "2a Divisione Coloniale 'Eritrea'" 
-		location = 2072 
+		location = 21079 
 		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
 	} 
