@@ -8,6 +8,7 @@ state={
 		add_core_of = PUG
 		buildings = {
 			infrastructure = 3
+			air_base = 4
 			15006 = { naval_base = 1 }
 		}
 		victory_points = { 15006 20 }
