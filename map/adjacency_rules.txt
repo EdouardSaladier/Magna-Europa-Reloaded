@@ -685,7 +685,7 @@ adjacency_rule =
 		trade = yes
 	}
 	
-	required_provinces = { 870 16676 7347 1454 9928 9944 17920 9918 16020 18078 17642 4899 6641 4899 19722 }
+	required_provinces = { 870 16676 7347 1454 9928 9944 17920 9918 16020 18078 17642 6641 4899 19722 }
 	
 	icon = 9918
 	offset = { 0 0 0 }
@@ -730,7 +730,7 @@ adjacency_rule =
 }
 adjacency_rule =
 {
-	name = "VYG_RIVER_1"
+	name = "VYG_RIVER"
 
 	contested =
 	{
@@ -761,46 +761,8 @@ adjacency_rule =
 		trade = yes
 	}
 	
-	required_provinces = { 2182 4603 }
+	required_provinces = { 19719 2182 4603 17757 2019 2811 }
 	
-	icon = 4603
-	offset = { 0 0 0 }
-}
-adjacency_rule =
-{
-	name = "VYG_RIVER_2"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	
-	required_provinces = { 19719 4603 17757 2019 2811 }
-	
-	icon = 17757
+	icon = 18520
 	offset = { 0 0 0 }
 }
