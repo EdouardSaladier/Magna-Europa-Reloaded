@@ -1,5 +1,12 @@
 ﻿capital = 124
-
+oob = "NOR_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "NOR_1936_naval_mtg"
+	else = {
+		set_naval_oob = "NOR_1936_naval_legacy"
+	}
+}
 recruit_character = NOR_johan_nygaardsvold
 recruit_character = NOR_vidkun_quisling
 recruit_character = NOR_johan_ludwig_mowinckel
