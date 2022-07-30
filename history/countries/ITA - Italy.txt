@@ -167,12 +167,12 @@ if = {
 	}
 	set_naval_oob = "ITA_1936_naval_mtg"
 }
-#if = {
-#	limit = {
-#		has_dlc = "Man the Guns"
-#	}
-#	add_ideas = MTG_naval_treaty_cheating
-#}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	add_ideas = MTG_naval_treaty_cheating
+}
 set_politics = {
 	ruling_party = fascism
 	last_election = "1934.3.26"
