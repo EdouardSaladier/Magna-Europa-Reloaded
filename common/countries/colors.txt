@@ -711,7 +711,7 @@ WBS = {
 }
 
 ###German Releasables
-PRS = {
+PRE = {
 	color = rgb { 48 81 129 }
 	color_ui = rgb { 48 81 129 }
 }
@@ -920,7 +920,7 @@ SSD = {
 }
 
 ###Polish Releasables
-PRS = {
+PRE = {
 	color = rgb { 48 81 129 }
 	color_ui = rgb { 48 81 129 }
 }
@@ -959,10 +959,6 @@ CLT = {
 POM = {
 	color = rgb { 127 87 143 }
 	color_ui = rgb { 127 87 143 }
-}
-POS = {
-	color = rgb { 117 117 117 }
-	color_ui = rgb { 117 117 117 }
 }
 WKP = {
 	color = rgb { 140 13 13 }

@@ -8,13 +8,14 @@ state={
 	history={
 		owner = POL
 		add_core_of = POL
+		add_core_of = WKP
         victory_points = {
             1781 5 #Ostrów Wielkopolski
         }
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = POS
+		
   	}
 	manpower=354000
 	buildings_max_level_factor=1.000

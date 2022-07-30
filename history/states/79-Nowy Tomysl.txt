@@ -8,13 +8,14 @@ state={
 	history={
 		owner = POL
 		add_core_of = POL
+		add_core_of = WKP
 		victory_points = {
 			11715 1 #Nowy Tomyśl
 		}
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = POS
+		
   	}
 	manpower=277200
 	buildings_max_level_factor=1.000
