@@ -35,7 +35,7 @@ BAY_INF_01 =
 {
 	name = "Infantry Divisions"
 
-	for_countries = { BVR }
+	for_countries = { BAY }
 
 	can_use = { always = yes }
 
@@ -107,7 +107,7 @@ BAY_CAV_01 =
 {
 	name = "Cavalry Divisions"
 
-	for_countries = { BVR }
+	for_countries = { BAY }
 
 	can_use = { always = yes }
 
@@ -149,7 +149,7 @@ BAY_MOT_01 =
 {
 	name = "Motorised Divisions"
 
-	for_countries = { BVR }
+	for_countries = { BAY }
 
 	can_use = { always = yes }
 
@@ -221,7 +221,7 @@ BAY_ARM_01 =
 {
 	name = "Armored Divisions"
 
-	for_countries = { BVR }
+	for_countries = { BAY }
 
 	can_use = { always = yes }
 
@@ -273,7 +273,7 @@ BAY_MEC_01 =
 {
 	name = "Mechanized Divisions"
 
-	for_countries = { BVR }
+	for_countries = { BAY }
 
 	can_use = { always = yes }
 
@@ -345,7 +345,7 @@ BAY_GAR_01 =
 {
 	name = "Garrison Divisions"
 
-	for_countries = { BVR }
+	for_countries = { BAY }
 
 	can_use = { always = yes }
 
@@ -420,7 +420,7 @@ BAY_MAR_01 =
 {
 	name = "Marine Divisions"
 
-	for_countries = { BVR }
+	for_countries = { BAY }
 
 	can_use = { always = yes }
 
@@ -453,7 +453,7 @@ BAY_MTN_01 =
 {
 	name = "Mountain Divisions"
 
-	for_countries = { BVR }
+	for_countries = { BAY }
 
 	can_use = { always = yes }
 
@@ -509,7 +509,7 @@ BAY_PAR_01 =
 {
 	name = "Paratrooper Divisions"
 
-	for_countries = { BVR }
+	for_countries = { BAY }
 
 	can_use = { always = yes }
 
