@@ -9,10 +9,11 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = PRS
+		add_core_of = PRE
 		add_core_of = WSP
 		add_core_of = BRN
-		add_core_of = POS
+		
+		add_core_of = WKP
 	}
 
 	provinces={

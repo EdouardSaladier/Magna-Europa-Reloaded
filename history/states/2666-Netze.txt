@@ -10,10 +10,11 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = PRS
+		add_core_of = PRE
 		add_core_of = PMR
 		add_core_of = WPR
 		add_core_of = WSP
+		add_core_of = WKP
 	}
 	manpower=22863
 	state_category=pastoral
