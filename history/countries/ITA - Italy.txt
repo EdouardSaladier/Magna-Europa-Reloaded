@@ -16,10 +16,18 @@ if = {
 }
 starting_train_buffer = 1.5
 
+set_cosmetic_tag = ITA_neutrality
 set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.55
-set_cosmetic_tag = ITA_neutrality
+add_ideas = {
+	victor_emmanuel
+	vittoria_mutilata
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+}
+
 give_guarantee = ALB
 give_guarantee = SMR
 give_guarantee = VAT
@@ -165,13 +173,6 @@ if = {
 #	}
 #	add_ideas = MTG_naval_treaty_cheating
 #}
-add_ideas = {
-	#victor_emmanuel
-	#vittoria_mutilata
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-}
 set_politics = {
 	ruling_party = fascism
 	last_election = "1934.3.26"

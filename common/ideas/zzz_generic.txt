@@ -330,6 +330,38 @@ ideas = {
 			}
 		}
 		
+		soviet_german_friendship = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					AND = {
+						tag = GER
+						has_government = fascism
+						SOV = {
+							has_government = communism
+						}
+					}
+					AND = {
+						tag = SOV
+						has_government = communism
+						GER = {
+							has_government = fascism
+						}
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_acceptance = 100
+				fascism_acceptance = 100
+			}
+		}
+		
 		communist_pressure = {
 			
 			
@@ -1056,6 +1088,106 @@ ideas = {
 				army_core_attack_factor = 0.25 
 			}
 		}	
+
+		idea_weapons_for_the_resistance = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+			
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.1 
+				resistance_damage_to_garrison_on_our_occupied_states = 0.25 
+			}
+		}	
+		MTG_naval_treaty_adherent = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = MTG_naval_treaty_adherent
+			
+			modifier = {
+				production_cost_max_ship_hull_cruiser = 6000
+				production_cost_max_ship_hull_heavy = 11000
+				production_cost_max_ship_hull_carrier = 10000
+			}
+		}
+		MTG_naval_treaty_adherent_reduced = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = MTG_naval_treaty_adherent_reduced
+			
+			modifier = {
+				production_cost_max_ship_hull_cruiser = 7000
+				production_cost_max_ship_hull_heavy = 13000
+				production_cost_max_ship_hull_carrier = 12000
+			}
+		}
+		MTG_naval_treaty_cheating = {
+			name = MTG_naval_treaty_adherent
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = MTG_naval_treaty_adherent
+			
+			modifier = {
+				production_cost_max_ship_hull_cruiser = 6500
+				production_cost_max_ship_hull_heavy = 12000
+				production_cost_max_ship_hull_carrier = 11000
+			}
+		}
+		MTG_naval_treaty_cheating_reduced = {
+			name = MTG_naval_treaty_adherent_reduced
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = MTG_naval_treaty_adherent_reduced
+			
+			modifier = {
+				production_cost_max_ship_hull_cruiser = 8000
+				production_cost_max_ship_hull_heavy = 15000
+				production_cost_max_ship_hull_carrier = 13000
+			}
+		}
 	}
 
 	# TECHNOLOGY
@@ -1068,8 +1200,21 @@ ideas = {
 			picture = generic_tank_manufacturer_1
 			
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = BEL tag = CZE } }
 				NOT = {
 					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						tag = CAN
+						has_dlc = "Together for Victory"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = BUL tag = GRE tag = TUR }
+						has_dlc = "Battle for the Bosporus"
+					}
 				}
 			}
 			
@@ -1093,8 +1238,33 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = SWE tag = HUN tag = CZE } }
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						tag = CAN
+						has_dlc = "Together for Victory"
+					}
+				}
+				NOT = {
+					AND = {
+						tag = HOL
+						has_dlc = "Man the Guns"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
+						has_dlc = "La Resistance"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = BUL tag = GRE tag = TUR }
+						has_dlc = "Battle for the Bosporus"
+					}
 				}
 			}
 			
@@ -1118,8 +1288,33 @@ ideas = {
 			picture = generic_air_manufacturer_1
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
+				}
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { tag = ROM } NOT = { tag = YUG }
+				}
+				NOT = {
+					AND = {
+						tag = HOL
+						has_dlc = "Man the Guns"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR}
+						has_dlc = "La Resistance"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = BUL tag = GRE tag = TUR }
+						has_dlc = "Battle for the Bosporus"
+					}
 				}
 			}
 			
@@ -1138,8 +1333,33 @@ ideas = {
 			picture = generic_air_manufacturer_3
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = ROM } }
 				NOT = {
 					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
+				}
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { tag = YUG }
+				}
+				NOT = {
+					AND = {
+						tag = HOL
+						has_dlc = "Man the Guns"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
+						has_dlc = "La Resistance"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = BUL tag = GRE tag = TUR }
+						has_dlc = "Battle for the Bosporus"
+					}
 				}
 			}
 			
@@ -1158,8 +1378,33 @@ ideas = {
 			picture = generic_air_manufacturer_2
 			
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = CAN tag = ROM } }
 				NOT = {
 					has_available_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
+				}
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { tag = YUG }
+				}
+				NOT = {
+					AND = {
+						tag = HOL
+						has_dlc = "Man the Guns"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
+						has_dlc = "La Resistance"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = BUL tag = GRE tag = TUR }
+						has_dlc = "Battle for the Bosporus"
+					}
 				}
 			}
 			
@@ -1178,8 +1423,27 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = CAN tag = ROM tag = YUG } }
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						tag = HOL
+						has_dlc = "Man the Guns"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
+						has_dlc = "La Resistance"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = BUL tag = GRE tag = TUR }
+						has_dlc = "Battle for the Bosporus"
+					}
 				}
 			}
 			
@@ -1201,8 +1465,27 @@ ideas = {
 			picture = generic_industrial_concern_1
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = HUN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
+				}
+				NOT = {
+					AND = {
+						tag = HOL
+						has_dlc = "Man the Guns"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
+						has_dlc = "La Resistance"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = BUL tag = GRE tag = TUR }
+						has_dlc = "Battle for the Bosporus"
+					}
 				}
 			}
 			
@@ -1221,8 +1504,27 @@ ideas = {
 			picture = generic_electronics_concern_1
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
+				}
+				NOT = {
+					AND = {
+						tag = HOL
+						has_dlc = "Man the Guns"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
+						has_dlc = "La Resistance"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = BUL tag = GRE tag = TUR }
+						has_dlc = "Battle for the Bosporus"
+					}
 				}
 			}
 			
@@ -1246,8 +1548,27 @@ ideas = {
 			picture = generic_motorized_equipment_manufacturer_3
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = motorized_equipment_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						tag = HOL
+						has_dlc = "Man the Guns"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
+						has_dlc = "La Resistance"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = BUL tag = GRE tag = TUR }
+						has_dlc = "Battle for the Bosporus"
+					}
 				}
 			}
 			
@@ -1266,8 +1587,27 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_2
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = HUN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						tag = HOL
+						has_dlc = "Man the Guns"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
+						has_dlc = "La Resistance"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = BUL tag = GRE tag = TUR }
+						has_dlc = "Battle for the Bosporus"
+					}
 				}
 			}
 			
@@ -1286,8 +1626,27 @@ ideas = {
 			picture = generic_artillery_manufacturer_2
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						tag = HOL
+						has_dlc = "Man the Guns"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
+						has_dlc = "La Resistance"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = BUL tag = GRE tag = TUR }
+						has_dlc = "Battle for the Bosporus"
+					}
 				}
 			}
 			
