@@ -35,7 +35,7 @@ SHL_INF_01 =
 {
 	name = "Infantry Divisions"
 
-	for_countries = { SLH SLW HLS }
+	for_countries = { SHL SLW HLS }
 
 	can_use = { always = yes }
 
@@ -107,7 +107,7 @@ SHL_CAV_01 =
 {
 	name = "Cavalry Divisions"
 
-	for_countries = { SLH SLW HLS }
+	for_countries = { SHL SLW HLS }
 
 	can_use = { always = yes }
 
@@ -149,7 +149,7 @@ SHL_MOT_01 =
 {
 	name = "Motorised Divisions"
 
-	for_countries = { SLH SLW HLS }
+	for_countries = { SHL SLW HLS }
 
 	can_use = { always = yes }
 
@@ -221,7 +221,7 @@ SHL_ARM_01 =
 {
 	name = "Armored Divisions"
 
-	for_countries = { SLH SLW HLS }
+	for_countries = { SHL SLW HLS }
 
 	can_use = { always = yes }
 
@@ -273,7 +273,7 @@ SHL_MEC_01 =
 {
 	name = "Mechanized Divisions"
 
-	for_countries = { SLH SLW HLS }
+	for_countries = { SHL SLW HLS }
 
 	can_use = { always = yes }
 
@@ -345,7 +345,7 @@ SHL_GAR_01 =
 {
 	name = "Garrison Divisions"
 
-	for_countries = { SLH SLW HLS }
+	for_countries = { SHL SLW HLS }
 
 	can_use = { always = yes }
 
@@ -420,7 +420,7 @@ SHL_MAR_01 =
 {
 	name = "Marine Divisions"
 
-	for_countries = { SLH SLW HLS }
+	for_countries = { SHL SLW HLS }
 
 	can_use = { always = yes }
 
@@ -453,7 +453,7 @@ SHL_MTN_01 =
 {
 	name = "Mountain Divisions"
 
-	for_countries = { SLH SLW HLS }
+	for_countries = { SHL SLW HLS }
 
 	can_use = { always = yes }
 
@@ -509,7 +509,7 @@ SHL_PAR_01 =
 {
 	name = "Paratrooper Divisions"
 
-	for_countries = { SLH SLW HLS }
+	for_countries = { SHL SLW HLS }
 
 	can_use = { always = yes }
 
