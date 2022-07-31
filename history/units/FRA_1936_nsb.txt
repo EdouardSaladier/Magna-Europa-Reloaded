@@ -959,7 +959,7 @@ units = {
 ### Air Wings
 air_wings = {
 	# Z.d'Op. Aériennes Nord -- Lille
-	29 = { 
+	1342 = { 
 		# Groupement de Chasse 21 
 		# Groupement de Chasse 23
 		fighter_equipment_0 = {
@@ -975,7 +975,7 @@ air_wings = {
 	}
 
 	# Z.d'Op. Aériennes Est -- Reims
-	18 = {
+	552 = {
 		# Groupement de Chasse 22
 		fighter_equipment_0 = {
 			owner = "FRA" 
@@ -984,7 +984,7 @@ air_wings = {
 	}
 
 	# Z.d'Op. Aériennes du Alps -- Marseille
-	21 = {
+	824 = {
 		# Groupement de Chasse d'Alps
 		fighter_equipment_0 = {
 			owner = "FRA" 
@@ -1005,7 +1005,7 @@ air_wings = {
 	}
 
 	# Z.d'Op. Aériennes Africain -- Tunis
-	458 = {
+	1109 = {
 		# Groupement de Chasse du Nord-Africain
 		fighter_equipment_0 = {
 			owner = "FRA" 
@@ -1019,7 +1019,7 @@ air_wings = {
 	}
 
 	# Aeronautique Navale -- Cherbourg
-	15 = {
+	534 = {
 		# Flotille F1
 		nav_bomber_equipment_1 = {
 			owner = "FRA" 
