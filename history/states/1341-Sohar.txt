@@ -7,6 +7,8 @@ state={
 		add_core_of = OMA
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
 			18230 = { naval_base = 3 }
 		}
 		victory_points = { 18230 10 }
