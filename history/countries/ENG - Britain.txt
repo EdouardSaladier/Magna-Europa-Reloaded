@@ -173,6 +173,7 @@ set_convoys = 800
 #		autonomous_state = autonomy_supervised_state
 #	}
 #}
+set_subject_cosmetic_tags = yes
 if = {
 	limit = { has_dlc = "Together for Victory" }
 	set_autonomy = {
