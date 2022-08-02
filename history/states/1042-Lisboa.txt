@@ -10,6 +10,9 @@ state={
 		add_core_of = POR
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 2
 			19738 = { naval_base = 8 }
 		}
         victory_points = {

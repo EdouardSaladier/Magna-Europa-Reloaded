@@ -7,6 +7,8 @@ state={
 		add_core_of = OMA
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
 			18230 = { naval_base = 3 }
 		}
 		victory_points = { 18230 10 }
@@ -15,7 +17,7 @@ state={
 		6693 6777 7611 18229 18230 
 	}
 	manpower=73800
-	state_category=pastoral
+	state_category=rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
