@@ -1,5 +1,12 @@
 ﻿capital = 1042
-oob = "standard_templates"
+oob = "POR_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "POR_1936_naval_mtg"
+	else = {
+		set_naval_oob = "POR_1936_naval_legacy"
+	}
+}
 
 set_research_slots = 3
 
@@ -77,6 +84,7 @@ if = {
 #	}
 	
 }
+
 
 
 set_convoys = 100
