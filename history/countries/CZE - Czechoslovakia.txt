@@ -1,6 +1,19 @@
 ﻿capital = 513
 
-oob = ""
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "CZE_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "CZE_1936_nsb"
+}
 
 set_technology = {
 	infantry_weapons = 1
@@ -91,8 +104,8 @@ if = {
 		has_dlc = "Death or Dishonor"
 	}
 	add_ideas = {
-	#	CZE_skoda_works
-	#	CZE_divided_nation
+		CZE_skoda_works
+		CZE_divided_nation
 	}
 	give_guarantee = YUG
 	give_guarantee = ROM
@@ -103,7 +116,7 @@ if = {
 		NOT = { has_dlc = "Death or Dishonor" }
 	}
 	add_ideas = {
-	#	CZE_fortification_focus
+		CZE_fortification_focus
 	}
 }
 
