@@ -1,7 +1,14 @@
 ﻿capital = 951
-oob = "standard_templates"
+oob = "SPR_1936"
 set_research_slots = 3
 give_guarantee = ADR
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SPR_1936_naval_mtg"
+	else = {
+		set_naval_oob = "SPR_1936_naval_legacy"
+	}
+}
 
 if = {
 	limit = {
