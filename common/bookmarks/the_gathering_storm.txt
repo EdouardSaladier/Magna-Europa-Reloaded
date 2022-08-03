@@ -8,8 +8,21 @@ bookmarks = {
 		default = yes
 		
 		"FRA"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
+			available = { NOT = { has_dlc = "La Resistance" } }
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+			}
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "La Resistance" }
 			ideas = {
 				FRA_victors_of_wwi
 				FRA_disjointed_government
@@ -20,7 +33,7 @@ bookmarks = {
 		}
 		
 		"USA"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				home_of_the_free
@@ -34,6 +47,20 @@ bookmarks = {
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
+			available = { has_dlc = "Man the Guns" }
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
+			}
+		}
+		
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { NOT = { has_dlc = "Man the Guns" } }
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
@@ -44,8 +71,22 @@ bookmarks = {
 		}
 		
 		"GER"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
+			available = { has_dlc = "Waking the Tiger" }
+			ideas = {
+				sour_loser
+				general_staff
+				GER_mefo_bills_1
+			}
+			focuses = {
+			}
+		}
+		
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
 				sour_loser
 				general_staff
@@ -56,7 +97,7 @@ bookmarks = {
 		}
 		
 		"ITA"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				vittoria_mutilata
@@ -65,11 +106,12 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		
+
 		"POL"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = "POL_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				uncontrolled_exports
 				POL_april_constitution_1
 				POL_looming_peasants_strike
 			}
@@ -78,7 +120,7 @@ bookmarks = {
 		}
 		
 		"SOV"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
 				trotskyite_plot_nsb
@@ -94,6 +136,19 @@ bookmarks = {
 		}
 		
 		# minors from DLC ####
+		
+		"CAN"={
+			minor = yes
+			history = "CAN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+			}
+			focuses = {
+			}
+		}
+				
 		"CZE"={
 			minor = yes
 			history = "CZE_GATHERING_STORM_DESC"
