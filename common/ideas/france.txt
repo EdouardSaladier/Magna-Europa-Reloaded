@@ -1131,9 +1131,32 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.8
 				stability_factor = -0.10
-				surrender_limit = -0.5
+				surrender_limit = -0.25
 			}
 		}
+
+		FRA_they_shall_not_pass = {
+			
+			allowed = {
+				original_tag = FRA
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.10
+				dig_in_speed_factor = 0.05
+			}
+		}
+	
 
 		FRA_the_young_school = {
 			
