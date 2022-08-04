@@ -1,4 +1,362 @@
 ﻿
+####
+#### NO STEP BACK
+####
+
+
+#You don't want Russian party names? Just remove these lines
+set_party_name = {
+	ideology = communism
+	long_name = SOV_communism_party_russian_long
+	name = SOV_communism_party_russian
+}
+set_party_name = {
+	ideology = fascism
+	long_name = SOV_fascism_party_russian_long
+	name = SOV_fascism_party_russian
+}
+
+#COUNTRY LEADERS
+recruit_character = SOV_iosif_stalin
+recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	recruit_character = SOV_provisional_government # United Exiles
+	set_country_flag = vlasov_owner_flag
+}
+
+#POLITICAL ADVISORS
+recruit_character = SOV_mikhail_kalinin
+recruit_character = SOV_nikita_khrushchyov
+recruit_character = SOV_nikolay_voznesensky
+recruit_character = SOV_lazar_kaganovich
+recruit_character = SOV_genrikh_yagoda
+recruit_character = SOV_nikolay_yezhov
+recruit_character = SOV_lavrenty_beriya
+recruit_character = SOV_vsevolod_merkulov
+recruit_character = SOV_vyacheslav_molotov
+recruit_character = SOV_maksim_litvinov
+
+recruit_character = SOV_lev_trotsky
+recruit_character = SOV_ivan_smirnov
+recruit_character = SOV_ivar_smilga
+recruit_character = SOV_karl_radek
+recruit_character = SOV_yevgeny_preobrazhensky
+recruit_character = SOV_aleksandr_shlyapnikov
+recruit_character = SOV_nikolay_bukharin
+recruit_character = SOV_aleksey_rykov
+recruit_character = SOV_mikhail_tomsky
+recruit_character = SOV_grigory_sokolnikov
+recruit_character = SOV_grigory_zinovyev
+recruit_character = SOV_lev_kamenev
+recruit_character = SOV_martemyan_ryutin
+recruit_character = SOV_patriarch_sergy
+recruit_character = SOV_aleksandr_kerensky
+recruit_character = SOV_konstantin_rodzayevsky
+
+
+recruit_character = SOV_aleksandr_vasilevsky
+recruit_character = SOV_aleksandr_golovanov
+recruit_character = SOV_aleksandr_gorbatov
+recruit_character = SOV_aleksandr_novikov
+recruit_character = SOV_aleksandr_yegorov
+recruit_character = SOV_andrey_grechko
+recruit_character = SOV_andrey_vlasov
+recruit_character = SOV_andrey_yeryomenko
+recruit_character = SOV_arseny_golovko
+recruit_character = SOV_boris_shaposhnikov
+recruit_character = SOV_dmitry_lelyushenko
+recruit_character = SOV_filipp_golikov
+recruit_character = SOV_filipp_oktyabrsky
+
+recruit_character = SOV_georgy_zakharov
+recruit_character = SOV_georgy_zhukov
+recruit_character = SOV_gordey_levchenko
+recruit_character = SOV_grigory_kulik
+recruit_character = SOV_igor_kurchatov
+recruit_character = SOV_issa_pliyev
+recruit_character = SOV_ivan_chernyakhovsky
+recruit_character = SOV_ivan_fedyuninsky
+recruit_character = SOV_ivan_konev
+recruit_character = SOV_ivan_yumashev
+recruit_character = SOV_kirill_meretskov
+recruit_character = SOV_kirill_moskalenko
+recruit_character = SOV_kliment_voroshilov
+recruit_character = SOV_konstantin_rokossovsky
+recruit_character = SOV_konstantin_vershinin
+recruit_character = SOV_kuzma_galitsky
+recruit_character = SOV_leonid_govorov
+recruit_character = SOV_maksim_purkayev
+recruit_character = SOV_markian_popov
+recruit_character = SOV_maks_reyter
+recruit_character = SOV_mikhail_frinovsky
+
+recruit_character = SOV_mikhail_tukhachevsky
+recruit_character = SOV_nikandr_chibisov
+
+recruit_character = SOV_nikolay_berzarin
+recruit_character = SOV_nikolay_vatutin
+
+recruit_character = SOV_nikolay_kuznetsov
+
+recruit_character = SOV_pavel_rychagov
+recruit_character = SOV_pavel_zhigarev
+recruit_character = SOV_pyotr_smirnov
+recruit_character = SOV_rodion_malinovsky
+recruit_character = SOV_semyon_budyonny
+recruit_character = SOV_semyon_timoshenko
+recruit_character = SOV_sergey_khudyakov
+recruit_character = SOV_sergey_korolyov
+recruit_character = SOV_sergey_rudenko
+recruit_character = SOV_sergey_gorshkov
+recruit_character = SOV_stepan_krasovsky
+recruit_character = SOV_vasily_blyukher
+recruit_character = SOV_vasily_chuykov
+recruit_character = SOV_vasily_kuznetsov
+recruit_character = SOV_vladimir_kasatonov
+recruit_character = SOV_vladimir_tributs
+
+recruit_character = SOV_yakov_cherevichenko
+recruit_character = SOV_yakov_smushkevich
+
+recruit_character = SOV_vitaly_primakov
+#Not available at game start
+recruit_character = SOV_vasily_korzh
+recruit_character = SOV_sidor_kovpak
+recruit_character = SOV_lev_dovator
+recruit_character = SOV_pavel_rybalko
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	recruit_character = SOV_anastasy_vonsyatsky
+	# recruit_character = SOV_grigory_semyonov # starts as an advisor to Puyi
+	recruit_character = SOV_metropolitan_anastasy
+	recruit_character = SOV_metropolitan_nikolay
+	recruit_character = SOV_nikolay_ustryalov
+	recruit_character = SOV_aleksandr_kazembek
+	recruit_character = SOV_metropolitan_aleksy
+	recruit_character = SOV_metropolitan_meletius
+	recruit_character = SOV_aleksandr_prokofyev_seversky
+	recruit_character = SOV_vyacheslav_tkachyov
+	recruit_character = SOV_yan_nagursky
+	recruit_character = SOV_vasily_yanchenko
+	recruit_character = SOV_tsar_vladimir_kirillovich
+
+	recruit_character = SOV_pyotr_krasnov
+	recruit_character = SOV_konstantin_nechayev
+	recruit_character = SOV_aleksandr_rodzyanko
+	recruit_character = SOV_vladimir_kosmin
+	recruit_character = SOV_andrey_shkuro
+	recruit_character = SOV_anton_denikin
+}
+
+
+#Initialize character flags Part I (aka who's safe)
+SOV_mikhail_kalinin = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_nikita_khrushchyov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_lazar_kaganovich = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_genrikh_yagoda = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_nikolay_yezhov = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_lavrenty_beriya = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event. Beriya will always be safe.
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_vsevolod_merkulov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_vyacheslav_molotov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_konstantin_rodzayevsky = { #Not in the country
+	set_character_flag = SOV_exiled_flag
+}
+SOV_aleksandr_kerensky = { #Not in the country
+	set_character_flag = SOV_exiled_flag
+}
+SOV_lev_trotsky = { #Not in the country
+	set_character_flag = SOV_exiled_flag
+}
+SOV_patriarch_sergy = { #Priests are not political enemies at this point
+	set_character_flag = SOV_safe_from_purge_flag
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	SOV_metropolitan_anastasy = { #Priests are not political enemies at this point
+		set_character_flag = SOV_safe_from_purge_flag
+	}
+	SOV_metropolitan_nikolay = { #Priests are not political enemies at this point
+		set_character_flag = SOV_safe_from_purge_flag
+	}
+	SOV_metropolitan_aleksy = { #Priests are not political enemies at this point
+		set_character_flag = SOV_safe_from_purge_flag
+	}
+	SOV_metropolitan_meletius = { #Priests are not political enemies at this point (Also exiled)
+		set_character_flag = SOV_safe_from_purge_flag
+	}
+	SOV_anastasy_vonsyatsky = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+	}
+	SOV_aleksandr_kazembek = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+	}
+	SOV_aleksandr_prokofyev_seversky = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+	}
+	SOV_vyacheslav_tkachyov = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+	}
+	SOV_yan_nagursky = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+	}
+	SOV_vasily_yanchenko = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+	}
+	SOV_anton_denikin = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+		set_character_flag = SOV_exiled_army_leader
+	}
+	SOV_pyotr_krasnov = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+		set_character_flag = SOV_exiled_army_leader
+	}
+	SOV_konstantin_nechayev = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+		set_character_flag = SOV_exiled_army_leader
+	}
+	SOV_vladimir_kosmin = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+		set_character_flag = SOV_exiled_army_leader
+	}
+	SOV_aleksandr_rodzyanko = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+		set_character_flag = SOV_exiled_army_leader
+	}
+	SOV_andrey_shkuro = { #Not in the country
+		set_character_flag = SOV_exiled_flag
+		set_character_flag = SOV_exiled_army_leader
+	}
+	
+	
+}
+
+
+#Initialize character flags Part II (aka who's what)
+SOV_lev_trotsky = {
+	set_character_flag = SOV_aligned_left_opposition_flag #Probably not needed, but just in case ;)
+}
+SOV_ivan_smirnov = {
+	set_character_flag = SOV_aligned_left_opposition_flag
+}
+SOV_ivar_smilga = {
+	set_character_flag = SOV_aligned_left_opposition_flag
+}
+SOV_karl_radek = {
+	set_character_flag = SOV_aligned_left_opposition_flag
+}
+SOV_yevgeny_preobrazhensky = {
+	set_character_flag = SOV_aligned_left_opposition_flag
+}
+SOV_aleksandr_shlyapnikov = {
+	set_character_flag = SOV_aligned_left_opposition_flag
+}
+SOV_nikolay_bukharin = {
+	set_character_flag = SOV_aligned_right_opposition_flag
+}
+SOV_aleksey_rykov = {
+	set_character_flag = SOV_aligned_right_opposition_flag
+}
+SOV_mikhail_tomsky = {
+	set_character_flag = SOV_aligned_right_opposition_flag
+}
+SOV_grigory_sokolnikov = {
+	set_character_flag = SOV_aligned_right_opposition_flag
+}
+#SOV_grigory_zinovyev -> Will be aligned with either left or right opposition via focus
+#SOV_lev_kamenev -> Will be aligned with either left or right opposition via focus
+#SOV_martemyan_ryutin -> Will be aligned with either left or right opposition via focus
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	SOV_anastasy_vonsyatsky = {
+		set_character_flag = SOV_aligned_the_exiles_flag
+		set_character_flag = SOV_exiled_flag
+	}
+	 
+	SOV_nikolay_ustryalov = {
+		set_character_flag = SOV_aligned_the_exiles_flag
+	}
+	SOV_aleksandr_kazembek = {
+		set_character_flag = SOV_aligned_the_exiles_flag
+	}
+	SOV_aleksandr_prokofyev_seversky = {
+		set_character_flag = SOV_aligned_the_exiles_flag
+		set_character_flag = SOV_exiled_military_advisor_flag
+	}
+	SOV_vyacheslav_tkachyov = {
+		set_character_flag = SOV_aligned_the_exiles_flag
+		set_character_flag = SOV_exiled_military_advisor_flag
+	}
+	SOV_yan_nagursky = {
+		set_character_flag = SOV_aligned_the_exiles_flag
+		set_character_flag = SOV_exiled_military_advisor_flag
+	}
+	SOV_vasily_yanchenko = {
+		set_character_flag = SOV_aligned_the_exiles_flag
+		set_character_flag = SOV_exiled_military_advisor_flag
+	}
+}
+
+#Initialize character flags Part III (aka who's in prison)
+SOV_ivan_smirnov = {
+	set_character_flag = SOV_imprisoned_flag
+}
+SOV_ivar_smilga = {
+	set_character_flag = SOV_imprisoned_flag
+}
+SOV_aleksandr_shlyapnikov = {
+	set_character_flag = SOV_imprisoned_flag
+}
+SOV_grigory_zinovyev = {
+	set_character_flag = SOV_imprisoned_flag
+}
+SOV_lev_kamenev = {
+	set_character_flag = SOV_imprisoned_flag
+}
+SOV_martemyan_ryutin = {
+	set_character_flag = SOV_imprisoned_flag
+}
+add_dynamic_modifier = { modifier = SOV_second_five_year_plan_dynamic_modifier }
+
+add_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier }
+
+add_dynamic_modifier = { modifier = SOV_the_red_army_dynamic_modifier }
+
+#Add synthetic refineries tech
+set_technology = {
+	synth_oil_experiments = 1
+}
+
+
+####
+#### VANILLA ####
+####
+
 capital = 229
 
 starting_train_buffer = 3.0
@@ -156,35 +514,25 @@ if = {
 
 if = {
 	limit = {
-		has_dlc = "La Resistance"
+		NOT = {
+			has_dlc = "No Step Back"
+		}
 	}
-	create_operative_leader = {
-		name = "Alexander Radó"
-		GFX = GFX_portrait_alexander_rado
-		#traits = { operative_natural_orator }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { SOV HUN }
+#	set_oob = "SOV_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
 	}
-
-	create_operative_leader = {
-		name = "Kim Philby"
-		GFX = GFX_portrait_kim_philby
-		#traits = { operative_double_agent operative_infiltrator }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { SOV ENG }
-	}
-	create_operative_leader = {
-		name = "Richard Sorge"
-		GFX = GFX_portrait_richard_sorge
-		#traits = { operative_well_groomed }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { SOV GER }
+#	set_oob = "SOV_1936_nsb"
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+#		set_naval_oob = "SOV_1936_naval_mtg"
+	else = {
+#		set_naval_oob = "SOV_1936_naval_legacy"
 	}
 }
-
 
 set_research_slots = 3
 set_stability = 0.5
@@ -278,6 +626,61 @@ if = {
 	}
 }
 
+set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
+
+add_ideas = {	
+	home_of_revolution
+	trotskyite_plot_nsb
+	SOV_politicized_military
+
+	SOV_genrikh_yagoda #NKVD Chief (political advisor)
+}
+
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	fascism = 2
+	communism = 88
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Alexander Radó"
+		GFX = GFX_portrait_alexander_rado
+		traits = { operative_natural_orator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SOV HUN }
+	}
+
+	create_operative_leader = {
+		name = "Kim Philby"
+		GFX = GFX_portrait_kim_philby
+		traits = { operative_double_agent operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SOV ENG }
+	}
+	create_operative_leader = {
+		name = "Richard Sorge"
+		GFX = GFX_portrait_richard_sorge
+		traits = { operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SOV GER }
+	}
+}
+
 
 ### VARIANTS ###
 # 1936 Start #
@@ -287,12 +690,31 @@ if = {
 		has_dlc = "No Step Back"
 	}
 	create_equipment_variant = {
-		name = "T-27"
+		name = "T-18"
 		type = light_tank_chassis_0
 		parent_version = 0
 		modules = {
 			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_fixed_superstructure_turret
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 0
+			tank_nsb_armor_upgrade = 1
+		}
+		obsolete = yes
+		icon = "GFX_gwtank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "T-37"
+		type = light_tank_chassis_0
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
@@ -306,9 +728,186 @@ if = {
 	}
 
 	create_equipment_variant = {
-		name = "T-26TU mod. 1933"
+		name = "T-27"
+		type = light_tank_chassis_0
+		parent_version = 2
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_fixed_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 1
+		}
+		obsolete = yes
+		icon = "GFX_gwtank_medium"
+	}
+
+	create_equipment_variant = {
+		name = "T-26TT mod. 1931"
 		type = light_tank_chassis_1
 		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_hmg
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 1
+		}
+		obsolete = yes
+		icon = "GFX_SOV_basic_light_tank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "T-26TT mod. 1932"
+		type = light_tank_chassis_1
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_hmg
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+		obsolete = yes
+		icon = "GFX_SOV_basic_light_tank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "T-26TT mod. 1933"
+		type = light_tank_chassis_1
+		parent_version = 2
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_hmg
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+		obsolete = yes
+		icon = "GFX_SOV_basic_light_tank_medium"
+	}
+
+	create_equipment_variant = {
+		name = "T-26TU mod. 1933"
+		type = light_tank_chassis_1
+		parent_version = 3
+		modules = {
+			main_armament_slot = tank_small_cannon_2
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+		obsolete = yes
+		icon = "GFX_SOV_basic_light_tank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "BT-2"
+		type = light_tank_chassis_1
+		parent_version = 4
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 7
+			tank_nsb_armor_upgrade = 1
+		}
+		obsolete = yes
+		icon = "GFX_SOV_improved_light_tank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "BT-3"
+		type = light_tank_chassis_1
+		parent_version = 5
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 7
+			tank_nsb_armor_upgrade = 1
+		}
+		obsolete = yes
+		icon = "GFX_SOV_improved_light_tank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "T-26TU mod. 1934"
+		type = light_tank_chassis_1
+		parent_version = 6
+		modules = {
+			main_armament_slot = tank_small_cannon_2
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 4
+		}
+		icon = "GFX_SOV_basic_light_tank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "BT-4"
+		type = light_tank_chassis_1
+		parent_version = 7
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 7
+			tank_nsb_armor_upgrade = 1
+		}
+		obsolete = yes
+		icon = "GFX_SOV_improved_light_tank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "T-26TU mod. 1935"
+		type = light_tank_chassis_1
+		parent_version = 8
 		modules = {
 			main_armament_slot = tank_small_cannon_2
 			turret_type_slot = tank_light_two_man_tank_turret
@@ -316,23 +915,27 @@ if = {
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = additional_machine_guns
+			special_type_slot_3 = additional_machine_guns
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 2
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 4
 		}
 		icon = "GFX_SOV_basic_light_tank_medium"
 	}
+	
 	create_equipment_variant = {
 		name = "BT-5"
 		type = light_tank_chassis_1
-		parent_version = 1
+		parent_version = 9
 		modules = {
 			main_armament_slot = tank_small_cannon_2
 			turret_type_slot = tank_light_one_man_tank_turret
 			suspension_type_slot = tank_christie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
 		}
 		upgrades = {
 			tank_nsb_engine_upgrade = 8
@@ -340,6 +943,26 @@ if = {
 		}
 		icon = "GFX_SOV_improved_light_tank_medium"
 	}
+	
+	create_equipment_variant = {
+		name = "BT-6"
+		type = light_tank_chassis_1
+		parent_version = 10
+		modules = {
+			main_armament_slot = tank_small_cannon_2
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 8
+			tank_nsb_armor_upgrade = 1
+		}
+		icon = "GFX_SOV_improved_light_tank_medium"
+	}
+	
 	create_equipment_variant = {
 		name = "BT-7"
 		type = light_tank_chassis_2
@@ -350,6 +973,8 @@ if = {
 			suspension_type_slot = tank_christie_suspension
 			armor_type_slot = tank_welded_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+			special_type_slot_2 = additional_machine_guns
 		}
 		upgrades = {
 			tank_nsb_engine_upgrade = 10
@@ -368,6 +993,27 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_hmg
+			special_type_slot_2 = secondary_turret_hmg
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 3
+			tank_nsb_engine_upgrade = 10
+		}
+		obsolete = yes
+		icon = "GFX_SOV_basic_heavy_tank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "T-28A"
+		type = medium_tank_chassis_0
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = tank_radio_1
 			special_type_slot_2 = secondary_turret_hmg
 			special_type_slot_3 = secondary_turret_hmg
@@ -378,6 +1024,7 @@ if = {
 		}
 		icon = "GFX_SOV_basic_heavy_tank_medium"
 	}
+	
 	create_equipment_variant = {
 		name = "T-35"
 		type = heavy_tank_chassis_0
@@ -388,9 +1035,31 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_hmg
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = secondary_turret_small_cannon
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 3
+			tank_nsb_engine_upgrade = 10
+		}
+		obsolete = yes
+		icon = "GFX_SOV_basic_heavy_tank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "T-35A"
+		type = heavy_tank_chassis_0
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = tank_radio_1
 			special_type_slot_2 = secondary_turret_hmg
-			special_type_slot_3 = secondary_turret_hmg
+			special_type_slot_3 = secondary_turret_small_cannon
 			special_type_slot_4 = secondary_turret_small_cannon
 		}
 		upgrades = {
@@ -432,6 +1101,234 @@ if = {
 			destroyer_engine_upgrade = 3
 			ship_ASW_upgrade = 3
 			ship_anti_air_upgrade = 3
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {			
+		name = "AG Class"
+		type = ship_hull_submarine_1
+		name_group = SOV_SS_SHCHUKA
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Series I Debakrist"			# represents Debakrist, B class, L-55 sub
+		type = ship_hull_submarine_1
+		name_group = SOV_SS_SHCHUKA
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Series II Leninets"				# represents Leninets series II, XI
+		type = ship_hull_submarine_2
+		name_group = SOV_SS_LENINETS
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+	create_equipment_variant = {
+		name = "Series V Shchuka"				# represents Shchuka series III, V, V-bis, V-bis-2
+		type = ship_hull_submarine_1
+		name_group = SOV_SS_SHCHUKA
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Series IX Srednyaya"				# 'Stalinets', series IX, IX-bis, IX-bis-2 and P-class
+		type = ship_hull_submarine_2
+		name_group = SOV_SS_STALINETS
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Series X Shchuka"				
+		type = ship_hull_submarine_1
+		name_group = SOV_SS_SHCHUKA
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Orfey Class"						# represents Yakov Sverdlov, Frunze, and Orfey classes
+		type = ship_hull_light_1
+		name_group = SOV_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Fidonisi Class"						# represents Fidonisi and Izyaslav classes
+		type = ship_hull_light_1
+		name_group = SOV_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Leningrad & Minsk Class"				
+		type = ship_hull_light_2
+		name_group = SOV_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Bug Class"					# minelayer
+		type = ship_hull_light_1
+		name_group = SOV_MINELAYERS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Komintern Class"
+		type = ship_hull_cruiser_1
+		name_group = SOV_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Chervona Ukraina Class"
+		type = ship_hull_cruiser_1
+		name_group = SOV_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Marti Class"
+		type = ship_hull_cruiser_1				# minelayer
+		name_group = SOV_MINELAYERS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+	# Heavy Cruisers #
+		create_equipment_variant = {
+			name = "Kirov Class"
+			type = ship_hull_cruiser_1
+			name_group = SOV_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = ship_medium_battery_1
+			}
+		}
+	# Battleships #
+	create_equipment_variant = {
+		name = "Marat Class"					
+		type = ship_hull_heavy_1
+		name_group = SOV_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
 		}
 	}
 }

@@ -1,5 +1,14 @@
 ﻿capital = 508
 
+give_guarantee = FRA
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	#	set_naval_oob = "POL_1936_naval_mtg"
+	else = {
+	#	set_naval_oob = "POL_1936_naval_legacy"
+	}
+}
+
 set_research_slots = 3
 give_guarantee = DNZ
 # Starting tech
@@ -36,6 +45,7 @@ if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
 	}
+#	set_oob = "POL_1936"
 	set_technology = {
 		gwtank = 1
 	}
@@ -44,8 +54,10 @@ if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
+#	set_oob = "POL_1936_nsb"
 	set_technology = {
 		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
 	}
 }
 if = {
@@ -55,6 +67,37 @@ if = {
 		early_submarine = 1	
 	}
 }
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Poland: United and Ready"
+	}
+	add_ideas = {
+		POL_april_constitution_1
+		POL_looming_peasants_strike
+		POL_sanation_left_opposition_1
+		POL_sanation_right_opposition_1
+		POL_economic_depression
+	}
+}
+
+
+#85 = {
+#	add_dynamic_modifier = { modifier = international_city }
+#}
 
 
 set_convoys = 10
@@ -166,7 +209,7 @@ if = {
 	create_operative_leader = {
 		name = "Krystyna Skarbek"
 		GFX = GFX_portrait_krystyna_skarbek
-	#	traits = { operative_commando operative_seducer }
+		traits = { operative_commando operative_seducer }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
@@ -193,7 +236,7 @@ if = {
 	}
 	create_equipment_variant = {
 		name = "TKS"
-		type = light_tank_chassis_0
+		type = light_tank_chassis_1
 		parent_version = 0
 		modules = {
 			main_armament_slot = tank_heavy_machine_gun
@@ -209,10 +252,88 @@ if = {
 		obsolete = yes #used for oob
 		icon = "GFX_POL_basic_light_tank"
 	}
+	
+	create_equipment_variant = {
+		name = "TKS-Solothurn"
+		type = light_tank_chassis_1
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_auto_cannon
+			turret_type_slot = tank_light_fixed_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 1
+			tank_nsb_engine_upgrade = 1
+		}
+		obsolete = yes 
+		icon = "GFX_POL_basic_light_tank"
+	}
+	
+	create_equipment_variant = {
+		name = "TKW"
+		type = light_tank_chassis_1
+		parent_version = 2
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = extra_ammo_storage
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 1
+			tank_nsb_engine_upgrade = 1
+		}
+		obsolete = yes #used for oob
+		icon = "GFX_POL_basic_light_tank"
+	}
+	
+	create_equipment_variant = {
+		name = "TKD"
+		type = light_tank_chassis_1
+		parent_version = 3
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_fixed_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 1
+			tank_nsb_engine_upgrade = 1
+		}
+		obsolete = yes 
+		icon = "GFX_POL_basic_light_tank"
+	}
+	
+	create_equipment_variant = {
+		name = "4TP"
+		type = light_tank_chassis_1
+		parent_version = 4
+		modules = {
+			main_armament_slot = tank_auto_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 1
+			tank_nsb_engine_upgrade = 2
+		}
+		obsolete = yes 
+		icon = "GFX_POL_basic_light_tank"
+	}
+	
 	create_equipment_variant = {
 		name = "7TP dw"
-		type = light_tank_chassis_0
-		parent_version = 1
+		type = light_tank_chassis_1
+		parent_version = 5
 		modules = {
 			main_armament_slot = tank_heavy_machine_gun
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -222,25 +343,25 @@ if = {
 			special_type_slot_1 = secondary_turret_hmg
 		}
 		upgrades = {
-			tank_nsb_armor_upgrade = 2
+			tank_nsb_armor_upgrade = 4
 			tank_nsb_engine_upgrade = 2
 		}
 		icon = "GFX_POL_imp_light_tank"
 	}
 	create_equipment_variant = {
 		name = "7TP jw"
-		type = light_tank_chassis_0
-		parent_version = 2
+		type = light_tank_chassis_1
+		parent_version = 6
 		modules = {
 			main_armament_slot = tank_high_velocity_cannon
 			turret_type_slot = tank_light_two_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_diesel_engine
-			special_type_slot_1 = empty
+			special_type_slot_1 = tank_radio_1
 		}
 		upgrades = {
-			tank_nsb_armor_upgrade = 2
+			tank_nsb_armor_upgrade = 4
 			tank_nsb_engine_upgrade = 2
 		}
 		icon = "GFX_POL_imp_light_tank"
@@ -254,4 +375,36 @@ if = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Wilk Class"				
+		type = ship_hull_submarine_2
+		name_group = POL_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Wicher Class"				
+		type = ship_hull_light_1
+		name_group = POL_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
 }
