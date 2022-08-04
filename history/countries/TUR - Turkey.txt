@@ -1,7 +1,37 @@
 ﻿capital = 979
 
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+#	set_oob = "TUR_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+#	set_oob = "TUR_1936_nsb"
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "TUR_1936_naval_mtg"
+	else = {
+		set_naval_oob = "TUR_1936_naval_legacy"
+	}
+}
 
-# Starting tech
+###################
+#### 3D MODELS ####
+###################
+
+#Cosmetic tags used (3D models will look for these cosmetic tags when hooking themselves):
+#TUR_communism
+#TUR_democratic
+#TUR_fascism
+#TUR_neutrality
+set_cosmetic_tag = TUR_neutrality
 
 set_research_slots = 3
 
@@ -74,10 +104,10 @@ if = {
 			limited_conscription
 			export_focus
 			civilian_economy
-		#	TUR_kemalist_army_officers_limited_power_loyal
-		#	TUR_sectarian_woes
-		#	TUR_disorganised_armed_forces
-		#	TUR_debt_council
+			TUR_kemalist_army_officers_limited_power_loyal
+			TUR_sectarian_woes
+			TUR_disorganised_armed_forces
+			TUR_debt_council
 		}
 	}
 
@@ -104,7 +134,6 @@ set_popularities = {
 set_convoys = 20
 set_stability = 0.5
 set_war_support = 0.3
-
 
 if = {
 	limit = { has_dlc = "Battle for the Bosporus" }
@@ -210,7 +239,7 @@ if = {
 	create_operative_leader = {
 		name = "Ruzi Nazar"
 		GFX = "GFX_portrait_tur_ruzi_nazar"
-	#	traits = { operative_tough operative_commando }
+		traits = { operative_tough operative_commando }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = no
@@ -366,5 +395,3 @@ if = {
 		}
 	}
 }
-
-
