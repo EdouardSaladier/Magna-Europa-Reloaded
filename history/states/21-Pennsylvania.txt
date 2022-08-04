@@ -5,11 +5,13 @@ state={
 	provinces={
 		1998 9683 19356 19357 19360 
 	}
+	resources = { steel = 79 }
 	history = {
 		owner = USA
 		add_core_of = USA
 		buildings = {
 			infrastructure = 4
+			dockyard = 7
 		}
         victory_points = {
             19360 80 

@@ -5,11 +5,15 @@ state={
 	provinces={
 		1589 9143 9177 9590 9679 9680 9681 9682 18618 18673 18790 19343 19349 19355 19363 19364 
 	}
+	resources = { steel = 23 }
 	history = {
 		owner = USA
 		add_core_of = USA
 		buildings = {
 			infrastructure = 4
+			dockyard = 3
+			industrial_complex = 5
+			arms_factory = 2
 			19343 = {
 				naval_base = 6
 			}

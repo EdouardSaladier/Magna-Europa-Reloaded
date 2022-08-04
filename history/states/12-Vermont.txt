@@ -2,6 +2,7 @@
 state={
 	id=12
 	name="STATE_12"
+	resources = { steel = 22 }
 	history = {
 		owner = USA
 		add_core_of = USA

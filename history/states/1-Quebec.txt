@@ -3,10 +3,13 @@ state={
 	id=1
 	name="STATE_1"
 	
+	resources = { aluminium = 5 }
 	history={
 		owner = CAN
 		buildings = {
 			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 1
 			19370 = {
 				naval_base = 6
 			}
