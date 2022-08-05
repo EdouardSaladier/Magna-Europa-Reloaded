@@ -1,5 +1,6 @@
-﻿
-capital = 242
+﻿capital = 242
+
+oob = "LIT_1936"
 
 set_research_slots = 3
 
@@ -9,10 +10,10 @@ if = {
 	}
 	add_ideas = {
 		limited_conscription
-#		LIT_iron_wolf_idea_bad_1
-#		LIT_agrarian_society
-#		LIT_military_idea_1
-#		LIT_seimas_idea_1
+		LIT_iron_wolf_idea_bad_1
+		LIT_agrarian_society
+		LIT_military_idea_1
+		LIT_seimas_idea_1
 	}
 }
 

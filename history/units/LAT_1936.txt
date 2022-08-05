@@ -1,0 +1,188 @@
+﻿division_template = {
+	name = "Kajnieku Divizija"		# Infantry Division
+	division_names_group = LAT_INF_01
+	# Note: Divisions were nowhere near full strength until mobilized
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Artilerijas Pulks"			# Artillery Division
+	division_names_group = LAT_INF_01
+	# Note: Divisions were nowhere near full strength until mobilized
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Aizsargi"			# Border guard
+	division_names_group = LAT_INF_01
+	# Note: Divisions were nowhere near full strength until mobilized
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+	priority = 0
+}
+
+units = {
+	######## LAND OOB ########
+	##### Latvijas Augstas Komandu #####
+	division = { # "1. Kurzemes Divizija"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 19998
+		division_template = "Kajnieku Divizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+
+	}
+	division = { # "2. Vidzemes Divizija"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 19961
+		division_template = "Kajnieku Divizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+
+	}
+	division = { # "3. Zemgales Divizija"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9660
+		division_template = "Kajnieku Divizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+
+	}
+	division = { # "4. Latgales Divizija"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 10434
+		division_template = "Kajnieku Divizija"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+
+	}
+	
+	division = { # "District Kurzeme"
+		name = "Kurzemes Pulks"
+		location = 19959
+		division_template = "Aizsargi"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = { # "District Vidzemes"
+		name = "Vidzemes Pulks"
+		location = 19995
+		division_template = "Aizsargi"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = { # "District Latgales"
+		name = "Latgales Pulks"
+		location = 9660
+		division_template = "Aizsargi"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = { # "District Zemgales"
+		name = "Zemgales Pulks"
+		location = 2763
+		division_template = "Aizsargi"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = { # "District Riga"
+		name = "Rīgas Pulks"
+		location = 19998
+		division_template = "Aizsargi"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = { # "Artillery Division"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 19961
+		division_template = "Artilerijas Pulks"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+
+	}
+}
+
+air_wings = {
+	### Latvijas Gaisa Speki
+	2772 = {
+		# Aviacijas Pulka -- Bristol Bulldogs
+		fighter_equipment_0 =  {
+			owner = "LAT" 
+			amount = 12
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "LAT"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 100
+	}
+}
