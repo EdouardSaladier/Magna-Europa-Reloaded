@@ -2,11 +2,13 @@
 state={
 	id=1097
 	name="STATE_1097"
+	resources = { chromium = 42 }
 	history = {
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
 			15485 = { naval_base = 4 }
 		}
 		victory_points = { 15485 20 }

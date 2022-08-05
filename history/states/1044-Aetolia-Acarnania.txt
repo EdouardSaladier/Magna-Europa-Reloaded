@@ -2,6 +2,7 @@
 state={
 	id=1044
 	name="STATE_1044"
+	resources = { steel = 24 }
 	history={
 		owner = GRE
 		add_core_of = GRE

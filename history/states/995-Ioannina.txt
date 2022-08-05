@@ -5,10 +5,12 @@ state={
 	provinces={
 		597 15153 15187 15193 20255 20329 20335 
 	}
+	resources = { chromium = 24 }
 	history={
 		owner = GRE
 		add_core_of = GRE
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 2
 		}
 	

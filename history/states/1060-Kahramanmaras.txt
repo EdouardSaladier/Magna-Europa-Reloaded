@@ -2,6 +2,7 @@
 state={
 	id=1060
 	name="STATE_1060"
+	resources = { chromium = 34 }
 	history = {
 		owner = TUR
 		add_core_of = TUR

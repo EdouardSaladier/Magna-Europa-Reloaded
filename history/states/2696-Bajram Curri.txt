@@ -3,6 +3,7 @@ state={
 	id=2696
 	name="STATE_2696"
 
+	resources = { chromium = 3 }
 	history={
 		owner = ALB
 		add_core_of = ALB

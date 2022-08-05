@@ -2,12 +2,14 @@
 state={
 	id=737
 	name="STATE_737"
+	resources = { steel = 4 }
 	history = {
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = TRA
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 		}
 		victory_points = { 14237 20 }
 	}

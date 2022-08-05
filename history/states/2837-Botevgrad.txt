@@ -4,11 +4,13 @@ state={
 	provinces={
 		3778 7095 20379 
 	}
+	resources = { aluminium = 4 }
 	history={
 		owner = BUL
 		add_core_of = BUL
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 		}
 		victory_points = {
 			3778 2 

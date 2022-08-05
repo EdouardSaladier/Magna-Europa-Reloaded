@@ -8,13 +8,10 @@ state={
 		add_core_of = ROM
 		add_core_of = UKR
 		add_core_of = BDZ
-		buildings = {
-			infrastructure = 3
-
-		}
 		add_core_of = MOL
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			dockyard = 1
 			924 = {
 				naval_base = 3
 

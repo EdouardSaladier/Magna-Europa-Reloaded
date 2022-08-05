@@ -3,6 +3,7 @@ state={
 	id=929
 	name="STATE_929"
 
+	resources = { chromium = 13 }
 	history={
 		owner = GRE
 		add_core_of = GRE

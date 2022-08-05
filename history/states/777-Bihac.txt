@@ -3,6 +3,7 @@ state={
 	id=777
 	name="STATE_777"
 
+	resources = { aluminium = 11 }
 	history={
 		owner = YUG
 		add_core_of = BOS
