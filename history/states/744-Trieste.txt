@@ -8,6 +8,8 @@ state={
 		add_core_of = TST
 		buildings = {
 			infrastructure = 3
+			dockyard = 1
+			arms_factory = 1
 			7575 = { naval_base = 5 }
 		}
 		victory_points = { 7575 20 }
