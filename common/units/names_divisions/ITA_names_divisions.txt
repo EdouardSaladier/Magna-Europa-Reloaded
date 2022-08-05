@@ -157,6 +157,31 @@ ITA_INF_02 = {
 		13 = { "%da Divisione CC.NN. 'Biscaccianti'" } 
 		14 = { "%da Divisione CC.NN. 'M'" } 
 	} 
+}
+
+ITA_INF_03 = {
+	name = "Bersaglieri Brigade"
+	
+	for_countries = { ITA }
+	
+	can_use = { always = yes }
+	
+	division_types = { "infantry" }
+	
+	fallback_name = "%da Brigata Bersaglieri" 
+} 
+
+ITA_INF_04 = {
+	name = "Bersaglieri Regiment"
+	
+	for_countries = { ITA }
+	
+	can_use = { always = yes }
+	
+	division_types = { "infantry" }
+	link_numbering_with = { ITA_INF_03 } 
+	
+	fallback_name = "%d° Reggimento Bersaglieri" 
 } 
 
 ITA_COL_01 = { 
@@ -253,28 +278,43 @@ ITA_CAV_01 = {
 	} 
 } 
 
-ITA_CAV_02 = { 
-	name = "Cavalry Division" 
-
-	for_countries = { ITA } 
-
+ITA_CAV_02 = {
+	name = "Cavalry Division"
+	
+	for_countries = { ITA }
+	
 	can_use = { always = yes } 
-
-	division_types = { "cavalry" } 
-
+	
+	division_types = { "cavalry" }
+	
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { ITA_CAV_02 } 
-
-	fallback_name = "%da Divisione Celere" 
-
+	link_numbering_with = { ITA_CAV_01 } 
+	
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered = { 
-		1 = { "%da Divisione Celere 'Eugenio di Savoia'" } 							# Created in '34
-		2 = { "%da Divisione Celere 'Emanuele Filiberto'" } 						# Created in '34
-		3 = { "%da Divisione Celere 'Principe Amedeo'" } 							# Created in '34
-	} 
-} 
+		1 = { "%da Divisione 'Nizza Cavalleria'" } 
+		2 = { "%da Divisione 'Piemonte Cavalleria'" } 
+		3 = { "%da Divisione 'Savoia Cavalleria'" } 
+		4 = { "%da Divisione 'Genova Cavalleria'" } 
+		5 = { "%da Divisione 'Lancieri di Novara'" } 
+		6 = { "%da Divisione 'Lancieri di Aosta'" } 
+		8 = { "%da Divisione 'Lancieri di Montebello'" } 
+		13 = { "%da Divisione 'Cavalleggeri di Monferrato'" } 
+		15 = { "%da Divisione 'Cavalleggeri di Lodi'" } 
+		19 = { "%da Divisione 'Cavalleggeri Guide'" } 
+		7 = { "%da Divisione di Cavalleria" } 										# Filler divisions (7, 9 - 12, 14, 16- 18, 20) start here
+		9 = { "%da Divisione di Cavalleria" } 
+		10 = { "%da Divisione di Cavalleria" } 
+		11 = { "%da Divisione di Cavalleria" } 
+		12 = { "%da Divisione di Cavalleria" } 
+		14 = { "%da Divisione di Cavalleria" } 
+		16 = { "%da Divisione di Cavalleria" } 
+		17 = { "%da Divisione di Cavalleria" } 
+		18 = { "%da Divisione di Cavalleria" } 
+		20 = { "%da Divisione di Cavalleria" } 
+	}
+}
 
 ITA_MOT_01 = { 
 	name = "Motorized Division" 
@@ -324,6 +364,19 @@ ITA_MOT_01 = {
 	} 
 } 
 
+ITA_MOT_02 = {
+	name = "Motorized Bersaglieri Brigade"
+	
+	for_countries = { ITA }
+	
+	can_use = { always = yes }
+	
+	division_types = { "motorized" }
+	link_numbering_with = { ITA_INF_03 } 
+	
+	fallback_name = "%da Brigata Bersaglieri Motorizzata" 
+} 
+
 ITA_MEC_01 = { 
 	name = "Mechanized Division" 
 
@@ -357,6 +410,19 @@ ITA_MEC_01 = {
 		129 = { "%da Divisione Meccanizzata" } 
 		130 = { "%da Divisione Meccanizzata" } 
 	} 
+} 
+
+ITA_MEC_02 = {
+	name = "Mechanized Bersaglieri Brigade"
+	
+	for_countries = { ITA }
+	
+	can_use = { always = yes }
+	
+	division_types = { "mechanized" }
+	link_numbering_with = { ITA_INF_03 } 
+	
+	fallback_name = "%da Brigata Bersaglieri Meccanizzata" 
 } 
 
 ITA_ARM_01 = { 
@@ -396,6 +462,29 @@ ITA_ARM_01 = {
 		148 = { "%da Divisione Corazzata" } 
 		149 = { "%da Divisione Corazzata" } 
 		150 = { "%da Divisione Corazzata" } 
+	} 
+} 
+
+ITA_CAV_02 = { 
+	name = "Celere Division" 
+
+	for_countries = { ITA } 
+
+	can_use = { always = yes } 
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ITA_CAV_02 } 
+
+	fallback_name = "%da Divisione Celere" 
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%da Divisione Celere 'Eugenio di Savoia'" } 							# Created in '34
+		2 = { "%da Divisione Celere 'Emanuele Filiberto'" } 						# Created in '34
+		3 = { "%da Divisione Celere 'Principe Amedeo'" } 							# Created in '34
 	} 
 } 
 
@@ -466,7 +555,7 @@ ITA_PAR_01 = {
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered = { 
-		80 = { "%da Divisione di Fanteria 'La Spezia'" } 						# Created in '41
+		80 = { "%da Divisione Aviotrasportabile 'La Spezia'" } 						# Created in '41
 		185 = { "%da Divisione Paracadutisti 'Folgore'" } 							# Created in '42
 		184 = { "%da Divisione Paracadutisti 'Nembo'" } 							# Created in '42
 		183 = { "%da Divisione Paracadutisti 'Ciclone'" } 							# Created in '43
@@ -529,6 +618,56 @@ ITA_GAR_01 = {
 		229 = { "%da Divisione Costiera" } 
 	} 
 } 
+
+ITA_GAR_02 = {
+	name = "Border Guard Brigade"
+	for_countries = { ITA } 
+
+	can_use = { always = yes } 
+
+	division_types = { "infantry" } 
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { ITA_INF_01 } 
+
+	fallback_name = "%d° Reggimento di Guardia alla Frontiera" 
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		201 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '41
+		202 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '41
+		204 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '41
+		205 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '41
+		206 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '41
+		207 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '41
+		208 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '41
+		211 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '41
+		212 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '41
+		213 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '41
+		214 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '42
+		216 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '42
+		220 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '42
+		221 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '42
+		222 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '42
+		203 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '43
+		209 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '43
+		210 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '43
+		215 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '43
+		223 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '43
+		224 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '43
+		225 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '43
+		226 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '43
+		227 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '43
+		228 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '43
+		230 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '43
+		231 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Created in '43
+		217 = { "%d° Reggimento di Guardia alla Frontiera" } 											# Filler divisions (217 - 219, 229) start here
+		218 = { "%d° Reggimento di Guardia alla Frontiera" } 
+		219 = { "%d° Reggimento di Guardia alla Frontiera" } 
+		229 = { "%d° Reggimento di Guardia alla Frontiera" } 
+	} 
+}
 
 
 ###Italian culture names start here
@@ -639,6 +778,24 @@ ITAL_GAR_01 = {
 	fallback_name = "%da Divisione Costiera" 
 }
 
+ITAL_GAR_02 = { 
+	name = "Border Guard Division" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	} 
+
+	division_types = { "infantry" } 
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { ITAL_INF_01 } 
+
+	fallback_name = "%da Divisione di Guardia alla Frontiera" 
+}
+
 ITAL_CAV_01 = { 
 	name = "Cavalry Regiment" 
 
@@ -655,6 +812,24 @@ ITAL_CAV_01 = {
 	#link_numbering_with = { ITA_CAV_01 } 
 
 	fallback_name = "%d° Reggimento di Cavalleria" 
+}
+
+ITAL_CAV_02 = { 
+	name = "Cavalry Division" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	} 
+
+	division_types = { "cavalry" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ITA_CAV_01 } 
+
+	fallback_name = "%da Divisione di Cavalleria" 
 }
 
 ITAL_MOT_01 = { 
@@ -707,4 +882,22 @@ ITAL_ARM_01 = {
 	link_numbering_with = { ITAL_INF_01 } 
 
 	fallback_name = "%da Divisione Corazzata" 
+}
+
+ITAL_ARM_02 = { 
+	name = "Armored Brigade" 
+
+	for_countries = { } 
+
+	can_use = {
+		is_italian = yes
+		NOT = { original_tag = ITA }
+	} 
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" } 
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { ITAL_INF_01 } 
+
+	fallback_name = "%da Brigata Corazzata" 
 }

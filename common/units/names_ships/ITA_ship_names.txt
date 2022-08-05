@@ -8,7 +8,7 @@ ITA_DD_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_light destroyer }
 
-	prefix = "RCT " # Regio Cacciatorpediniere (this group includes also torpedo boats classified as RT - Regio Torpediniere)
+#	prefix = "RCT " # Regio Cacciatorpediniere (this group includes also torpedo boats classified as RT - Regio Torpediniere)
 	fallback_name = "Cacciatorpediniere %s"
 
 	unique = {
@@ -46,18 +46,18 @@ ITA_CL_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
 
-	prefix = "RI " # Regio Incrociatore
+#	prefix = "RI " # Regio Incrociatore
 	fallback_name = "Incrociatore leggero %s"
 
 	unique = {
 		# Current models (2 Duca d'Aosta class, 2 Duca degli Abruzzi class, 4/12 Capitani Romani class)
 		"Emanuele Filiberto Duca d'Aosta" "Eugenio di Savoia" "Duca degli Abruzzi" "Giuseppe Garibaldi" "Attilio Regolo" "Scipione Africano" "Giulio Germanico" "Pompeo Magno"
-		# Canceled/Not completed/Reconstructed (8/12 Capitani Romani class, 1/2 San Giorgio class, 2 Etna class, 2 Costanzo Ciano class)
-		"Lucio Cornelio Silla" "Caio Mario" "Ottaviano Augusto" "Ulpio Traiano" "Claudio Druso" "Claudio Tiberio" "Vipsanio Agrippa" "Paolo Emilio" "San Marco" "Etna" "Vesuvio" "Costanzo Ciano" "Venezia"
+		# Canceled/Not completed/Reconstructed (8/12 Capitani Romani class, 2 Etna class, 2 Costanzo Ciano class)
+		"Lucio Cornelio Silla" "Caio Mario" "Ottaviano Augusto" "Ulpio Traiano" "Claudio Druso" "Claudio Tiberio" "Vipsanio Agrippa" "Paolo Emilio" "Etna" "Vesuvio" "Costanzo Ciano" "Luigi Rizzo"
 		# Older models (SMS Pillau, SMS Strassburg, 4 Giussano class, 2 Cadorna class, 2 Montecuccoli class)
 		"Bari" "Taranto" "Alberto da Giussano" "Alberico da Barbiano" "Bartolomeo Colleoni" "Giovanni dalle Bande Nere" "Luigi Cadorna" "Armando Diaz" "Raimondo Montecuccoli" "Muzio Attendolo"
-		# Fictional names start here (2 WWI Basilicata class, 7 pre-WWI Regioni class, 6 WWI Esploratori class)
-		"Basilicata" "Campania" "Lombardia" "Calabria" "Elba" "Etruria" "Liguria" "Puglia" "Umbria" "Quarto" "Nino Bixio" "Marsala" "Libia" "Ancona" "Brindisi"
+		# Fictional names start here (2 WWI Basilicata class, 7 pre-WWI Regioni class, 8 WWI Esploratori class)
+		"Basilicata" "Campania" "Lombardia" "Calabria" "Elba" "Etruria" "Liguria" "Puglia" "Umbria" "Agordat" "Coatit" "Quarto" "Nino Bixio" "Marsala" "Libia" "Ancona" "Brindisi" "Venezia"
 	}
 }
 
@@ -70,16 +70,16 @@ ITA_CA_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
 
-	prefix = "RI " # Regio Incrociatore
+#	prefix = "RI " # Regio Incrociatore
 	fallback_name = "Incrociatore pesante %s"
 
 	unique = {
 		# Current models (2 Trento class, 4 Zara class, 1 Bolzano class)
 		"Trento" "Trieste" "Zara" "Fiume" "Gorizia" "Pola" "Bolzano"
 		# Older models (1/2 WWI San Giorgio class)
-		"San Giorgio"
+		"San Giorgio" "San Marco"
 		# Fictional names start here (2/3 WWI Vettor Pisani class, 2/3 WWI Giuseppe Garibaldi class, 2 WWI Pisa class)
-		"Carlo Alberto" "Marco Polo" "Varese" "Francesco Ferruccio" "Pisa" "Amalfi"
+		"Carlo Alberto" "Marco Polo" "Varese" "Francesco Ferruccio" "Pisa" "Amalfi" "Noli" "Gradisca" "Caporetto" "Capodistria" "Parenzo" "Abbazia" "Lagosta" "Pelagosa" "Cherso" "Pirano"
 	}
 }
 
@@ -92,7 +92,7 @@ ITA_MINELAYERS_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
 
-	prefix = "RN "
+#	prefix = "RN "
 	fallback_name = "Posamine %s"
 
 	unique = {
@@ -112,16 +112,18 @@ ITA_BB_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
 
-	prefix = "RN " # Regia Nave
+#	prefix = "RN " # Regia Nave
 	fallback_name = "Corazzata %s"
 
 	unique = {
 		# Current models (2 Conte di Cavour class, 3/4 Littorio class)
 		"Conte di Cavour" "Giulio Cesare" "Littorio" "Vittorio Veneto" "Roma"
-		# Canceled/Not completed/Reconstructed (2 Caio Duilio class, 1 Littorio class, 1 Italia class)
-		"Caio Duilio" "Andrea Doria" "Impero" "Italia"
-		# Fictional names start here (1 WWI Dante Alighieri class, 2 WWI Regina Elena class)
-		"Dante Alighieri" "Regina Elena" "Vittorio Emanuele"
+		# Canceled/Not completed/Reconstructed (2 Caio Duilio class, 1 Littorio class, 1 Italia class 4 Francesco Caracciolo class)
+		"Caio Duilio" "Andrea Doria" "Impero" "Italia" "Francesco Caracciolo" "Cristoforo Colombo" "Francesco Morosini" "Federico Orsini"
+		# Fictional names start here (1 WWI Dante Alighieri class, 2 WWI Regina Elena class 1/2 pre-WWI Regina Margherita class, 2 pre-WWI Emanuele Filiberto class,
+		# 1 pre-WWI Re Umberto class, 1/2 pre-WWI Caio Duilio, 1/2 pre-WWI Ruggiero di Lauria class, 1/2 pre-WWI Principe Amedeo class)
+		"Dante Alighieri" "Regina Elena" "Vittorio Emanuele" "Europa" "Regina Margherita" "Emanuele Filiberto"
+		"Ammiraglio di Saint Bon" "Re Umberto" "Enrico Dandolo" "Ruggiero di Lauria" "Principe Amedeo"
 	}
 }
 
@@ -134,15 +136,12 @@ ITA_BC_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
 
-	prefix = "RI " # Regio Incrociatore
+#	prefix = "RI " # Regio Incrociatore
 	fallback_name = "Incrociatore da battaglia %s"
 
 	unique = {
-		# Canceled/Not completed (3/4 Francesco Caracciolo class)
-		"Francesco Caracciolo" "Cristoforo Colombo" "Francesco Morosini"
-		# Fictional names start here (1/2 pre-WWI Regina Margherita class, 2 pre-WWI Emanuele Filiberto class, 1 pre-WWI Re Umberto class, 1/2 pre-WWI Caio Duilio, 1/2 pre-WWI Ruggiero di Lauria class,
-		# 1/2 pre-WWI Principe Amedeo class)
-		"Regina Margherita" "Emanuele Filiberto" "Ammiraglio di Saint Bon" "Re Umberto" "Enrico Dandolo" "Ruggiero di Lauria" "Principe Amedeo"
+		# Fictional names start here
+		"Venezia" "Pisa" "Amalfi" "Genova" "Noli" "Ancona" "Ragusa" "Gaeta"
 	}
 }
 
@@ -155,14 +154,14 @@ ITA_CV_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
 
-	prefix = "RN " # Regia Nave
+#	prefix = "RN " # Regia Nave
 	fallback_name = "Portaerei %s"
 
 	unique = {
 		# Canceled/Not completed/Reconstructed (1 Aquila class, 1 Sparviero class)
 		"Aquila" "Sparviero"
-		# Fictional names start here (4 fictional, 1 pre-WWI Europa class, 1 WWI Giuseppe Miraglia class)
-		"Falco" "Nibbio" "Grifone" "Astore" "Europa" "Giuseppe Miraglia"
+		# Fictional names start here
+		"Falco" "Nibbio" "Poiana" "Grifone" "Smeriglio" "Astore" "Girfalco" "Gheppio" "Lodolaio" "Avvoltoio" "Gipeto" "Serpentario" "Condor"
 	}
 }
 
@@ -175,7 +174,7 @@ ITA_SS_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
 
-	prefix = "RSmg " # Regio Sommergibile
+#	prefix = "RSmg " # Regio Sommergibile
 	fallback_name = "Sommergibile %s"
 
 	unique = {
@@ -201,6 +200,21 @@ ITA_SS_HISTORICAL = {
 	}
 }
 
+#ITA_SS_MINELAYER_HISTORICAL = {
+#	name = NAME_THEME_HISTORICAL_MINELAYERS
+#	
+#	for_countries = { ITA }
+#	
+#	type = ship
+#	ship_types = { submarine ship_hull_submarine }
+#	
+#	#prefix = "RSmg " #Regio Sommergibile
+#	
+#	unique = {
+#	
+#	}
+#}
+
 
 ### THEME: ITALIAN REGIONS ###
 ITA_REGIONS = {
@@ -210,10 +224,10 @@ ITA_REGIONS = {
 
 	type = ship
 
-	prefix = "RN " # Regia Nave
+#	prefix = "RN " # Regia Nave
 	unique = {
-		"Sardegna" "Sicilia" "Lucania" "Abruzzi" "Lazio" "Marche" "Toscana" "Emilia" "Piemonte" "Venezia Tridentina" "Venezia Euganea" "Venezia Giulia" "Dalmatia"
-		# "Calabria" "Basilicata" "Puglia" "Campania" "Umbria" "Etruria" "Liguria" "Lombardia" "Zara"
+		"Sardegna" "Sicilia" "Lucania" "Abruzzi" "Lazio" "Marche" "Toscana" "Emilia" "Piemonte" "Venezia Tridentina" "Venezia Euganea" "Venezia Giulia" "Dalmazia"
+		"Calabria" "Puglia" "Campania" "Umbria" "Etruria" "Liguria" "Lombardia" "Liburnia"
 	}
 }
 
@@ -225,12 +239,12 @@ ITA_CITIES = {
 
 	type = ship
 
-	prefix = "RN " # Regia Nave
+#	prefix = "RN " # Regia Nave
 	unique = {
 		"Milano" "Torino" "Napoli" "Palermo" "Firenze" "Genova" "Bologna" "Catania" "Padova" "Verona" "Brescia" "Treviso" "Parma" "Prato" "Modena" "Reggio Calabria" "Reggio Emilia" "Perugia" "Ravenna" "Livorno"
 		"Cagliari" "Foggia" "Rimini" "Salerno" "Ferrara" "Sassari" "Monza" "Vicenza" "Como" "Siracusa" "Bergamo" "Pescara" "Forlì" "Lecce" "Trapani" "Mantova" "L'Aquila" "Siena" "La Spezia" "Pavia" "Terni"
 		"Novara" "Piacenza" "Udine" "Arezzo" "Cesena" "Pesaro" "Alessandria" "Pistoia" "Catanzaro" "Lucca" "Asti" "Gela" "Cremona" "Viterbo" "Cosenza" "Savona"
-		# "Roma" "Venezia" "Bari" "Trieste" "Taranto" "Bolzano" "Trento" "Ancona" "Fiume" "Gorizia" "Pola" "Pisa" "Brindisi" "Varese"
+		"Roma" "Venezia" "Bari" "Trieste" "Taranto" "Bolzano" "Trento" "Ancona" "Fiume" "Gorizia" "Pola" "Pisa" "Brindisi" "Varese"
 	}
 }
 
@@ -242,10 +256,21 @@ ITA_COLONIES = {
 
 	type = ship
 
-	prefix = "RN " # Regia Nave
+#	prefix = "RN " # Regia Nave
 	unique = {
 		"Egeo" "Rodi" "Tripoli" "Tobruk" "Bengasi" "Mogadiscio" "Massawa" "Somalia" "Eritrea" "Abissinia" "Addis Abeba"
-		# "Libia"
+		"Libia" "Derna" "Fezzan" "Tigré" "Afar" "Amba Alagi"
+	}
+}
+
+## THEME: ROMAN EMPEROR NAMES ###
+ITA_EMPERORS = {
+	name = NAME_THEME_EMPERORS
+	
+	for_countries = { ITA }
+	
+	unique = {
+		"Ottaviano Augusto" "Tiberio" "Caligola" "Claudio" "Flavio Vespasiano" "Tito" "Domiziano" "Galba" "Traiano" "Adriano" "Antonino Pio" "Marco Aurelio" "Lucio Vero" "Settimio Severo" "Aureliano" "Diocleziano" "Costantino" "Teodosio" "Maggioriano" "Giustiniano"
 	}
 }
 
@@ -257,9 +282,39 @@ ITA_MYTHOLOGY = {
 
 	type = ship
 
-	prefix = "RN " # Regia Nave
+#	prefix = "RN " # Regia Nave
 	unique = {
 		"Venere" "Apollo" "Marte" "Minerva" "Cerere" "Dioniso" "Plutone" "Vulcano" "Giunone" "Vesta" "Nettuno" "Giove" "Saturno" "Urano" "Prometeo" "Proteo" "Aurora" "Atlante" "Scilla" "Cariddi" "Ippocampo"
-		# "Mercurio"
+		"Mercurio"
     }
+}
+
+## THEME: ITALIAN MYTHOLOGICAL NAMES (LATIN) ###
+ITA_MYTHOLOGY_LATIN = {
+	name = NAME_THEME_MYTHOLOGY_LATIN
+
+	for_countries = { ITA }
+
+	type = ship
+
+	#prefix = "RN " # Regia Nave
+	unique = {
+		"Venus" "Apollo" "Mars" "Minerva" "Ceres" "Dionysus" "Pluto" "Vulcanus" "Juno" "Vesta" "Neptunus" "Jupiter" "Saturnus" "Uranus" "Prometheus" "Proteus" "Aurora" "Atlas" "Scylla" "Charybdis" "Hippocampus"
+		"Mercurius"
+    }
+}
+
+##THEME: BIRDS OF PREY ###
+ITA_RAPTORS = {
+	name = NAME_THEME_RAPTORS
+	
+	for_countries = { ITA }
+	
+	type = ship
+	
+	#prefix = "RN " # Regia Nave
+	unique = {
+		"Aquila" "Sparviero" "Falco" "Nibbio" "Poiana" "Grifone" "Smeriglio" "Astore"
+		"Girfalco" "Gheppio" "Lodolaio" "Avvoltoio" "Gipeto" "Serpentario" "Condor" "Capovaccaio" "Lanario" "Grillaio" "Biancone" "Albanella"
+	}
 }
