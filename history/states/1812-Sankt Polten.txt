@@ -4,6 +4,7 @@ state={
 	history={
 		owner = AUS
 		add_core_of = AUS
+		victory_points = { 13425 5 }
 		buildings = {
 			infrastructure = 3
 		}
@@ -11,8 +12,8 @@ state={
 	provinces={
 		13381 13425 13443 13497 13573 20840 
 	}
-	manpower=158711
+	manpower=209140
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = town
+	state_category = large_town
 }
