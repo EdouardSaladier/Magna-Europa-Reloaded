@@ -50,6 +50,8 @@ autonomous_state = {
 	local_building_slots_factor = -0.25
 	state_resources_factor = -0.25
 	state_production_speed_buildings_factor = -0.25
+	resistance_growth = -0.1
+	compliance_growth = 0.15
 }
 
 semi_autonomous_state = {
@@ -60,6 +62,8 @@ semi_autonomous_state = {
 	local_building_slots_factor = -0.25
 	state_resources_factor = -0.25
 	state_production_speed_buildings_factor = -0.25
+	resistance_growth = -0.05
+	compliance_growth = 0.1
 }
 
 kurdish_agitation = {
