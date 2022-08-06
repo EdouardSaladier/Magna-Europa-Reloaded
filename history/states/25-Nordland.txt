@@ -2,7 +2,10 @@
 state={
 	id=25
 	name="STATE_25"
-
+	resources={
+	 steel=13.000
+	 tungsten =22.000
+	}
 	history={
 		owner = NOR
 		add_core_of = NOR

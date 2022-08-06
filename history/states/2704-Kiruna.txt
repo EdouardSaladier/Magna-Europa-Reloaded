@@ -2,7 +2,11 @@
 state={
 	id=2704
 	name="STATE_2704"
-
+	resources={
+		steel=50.000
+		tungsten=40.000
+		chromium=25.000
+	}
 	history={
 		owner = SWE
 		add_core_of = SWE

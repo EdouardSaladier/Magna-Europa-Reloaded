@@ -2,7 +2,10 @@
 state={
 	id=136
 	name="STATE_136"
-
+	resources={
+		steel=24.000
+		aluminium=2.000
+	}
 	history={
 		owner = SWE
 		add_core_of = SWE

@@ -2,7 +2,10 @@
 state={
 	id=14
 	name="STATE_14"
-
+	resources={
+		steel=7.000
+		chromium=2.000
+	}
 	history={
 		owner = FIN
 		add_core_of = FIN
