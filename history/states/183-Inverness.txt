@@ -3,11 +3,13 @@ state={
 	id=183
 	name="STATE_183"
 
+	resources = { aluminium = 15 }
 	history={
 		owner = ENG
 		add_core_of = ENG
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 1
 			10284 = {
 				naval_base = 2
 

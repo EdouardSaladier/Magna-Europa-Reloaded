@@ -5,11 +5,13 @@ state={
 	provinces={
 		1242 11298 11306 19391 
 	}
+	resources = { steel = 4 }
 	history={
 		owner = IRE
 		add_core_of = IRE
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 3
 			19391 = { naval_base = 6 }
 		}
 	

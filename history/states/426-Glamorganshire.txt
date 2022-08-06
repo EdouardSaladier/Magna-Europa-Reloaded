@@ -5,11 +5,13 @@ state={
 	provinces={
 		3537 8350 8936 11981 11993 12037 12091 12116 19411 
 	}
+	resources = { steel = 21 }
 	history={
 		owner = ENG
 		add_core_of = ENG
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 1
 			12091 = { naval_base = 3 }
 			19411 = { naval_base = 1 }
 		}

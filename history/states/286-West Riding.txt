@@ -5,6 +5,7 @@ state={
 	provinces={
 		271 554 2993 3234 3689 4633 6921 7532 8333 8633 9153 11002 11073 11074 11101 11110 11117 11146 11147 11176 11177 11206 11223 11231 11236 11276 19417 
 	}
+	resources = { steel = 153 }
 	history={
 		owner = ENG
 		add_core_of = ENG
@@ -12,6 +13,8 @@ state={
 		add_core_of = NRT
 		buildings = {
 			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
 		}
 	
         victory_points = {

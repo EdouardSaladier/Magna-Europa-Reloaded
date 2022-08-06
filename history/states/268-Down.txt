@@ -5,11 +5,14 @@ state={
 	provinces={
 		5859 7130 9360 10884 10985 19310 
 	}
+	resources = { aluminium = 4 }
 	history={
 		owner = ENG
 		add_core_of = ENG
 		buildings = {
 			infrastructure = 3
+			dockyard = 1
+			industrial_complex = 1
 		}
 		add_core_of = NIR
 		add_core_of = IRE
