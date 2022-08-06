@@ -2,20 +2,26 @@
 state={
 	id=779
 	name="STATE_779"
-	history = {
+
+	history={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = BLG
 		buildings = {
 			infrastructure = 4
+
 		}
-		victory_points = { 20023 30 }
+		victory_points = {
+			20023 30 
+		}
+
 	}
+
 	provinces={
-		5739 6879 8958 14482 14488 14549 20023 
+		5739 8958 14482 14488 14549 20023 
 	}
-	manpower=714700
-	state_category=large_city
+	manpower=653169
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
 }

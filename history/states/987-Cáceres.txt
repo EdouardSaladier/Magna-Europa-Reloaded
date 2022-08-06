@@ -2,9 +2,7 @@
 state={
 	id=987
 	name="STATE_987"
-	provinces={
-		670 2304 3325 5450 5493 6471 9596 15175 15191 15230 15260 15280 19746 19784 19799 
-	}
+
 	history={
 		owner = SPR
 		add_core_of = EXT
@@ -13,15 +11,20 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 		}
-        victory_points = {
-            19746 5 #Cáceres
-        }
-        victory_points = {
-            15175 2 #Plasencia
-        }
-    }
+		victory_points = {
+			19746 5 
+		}
+		victory_points = {
+			15175 2 
+		}
+
+	}
+
+	provinces={
+		670 2304 3325 5450 5493 6471 9596 15175 15191 15230 15280 19746 19784 19799 
+	}
 	manpower=466700
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }
