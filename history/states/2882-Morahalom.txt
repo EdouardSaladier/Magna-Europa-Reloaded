@@ -1,8 +1,9 @@
-
 state={
-	id=726
-	name="STATE_726"
-
+	id=2882
+	name="STATE_2882"
+	provinces={
+		14080 
+	}
 	history={
 		owner = HUN
 		add_core_of = HUN
@@ -13,12 +14,8 @@ state={
 		add_core_of = SBB
 
 	}
-
-	provinces={
-		14092 18337 
-	}
-	manpower=108693
+	manpower=5034
+	state_category=enclave
 	buildings_max_level_factor=1.000
-	state_category=rural
 	local_supplies=0.000
 }

@@ -1,8 +1,10 @@
 
 state={
-	id=1084
-	name="STATE_1084"
-
+	id=2878
+	name="STATE_2878"
+	provinces={
+		21368 21373 
+	}
 	history={
 		owner = TUR
 		add_core_of = TUR
@@ -12,12 +14,8 @@ state={
 		}
 
 	}
-
-	provinces={
-		4214 8230 9608 21364 
-	}
-	manpower=105915
+	manpower=8803
+	state_category=pastoral
 	buildings_max_level_factor=1.000
-	state_category=rural
 	local_supplies=0.000
 }

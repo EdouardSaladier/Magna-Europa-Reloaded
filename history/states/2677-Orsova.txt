@@ -1,21 +1,30 @@
+
 state={
 	id=2677
 	name="STATE_2677"
-	provinces={
-		2556 8645 9473 14287 14335 14382 
+	resources={
+		aluminium=8.000
 	}
-	resources = { aluminium = 8 }
+
 	history={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = BNT
 		buildings = {
 			infrastructure = 2
+
 		}
-		victory_points = { 8645 2 }
+		victory_points = {
+			8645 2 
+		}
+
+	}
+
+	provinces={
+		8645 8987 9473 14287 14335 14382 
 	}
 	manpower=101094
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }
