@@ -2,21 +2,29 @@
 state={
 	id=1094
 	name="STATE_1094"
-	history = {
+
+	history={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
 			infrastructure = 2
-			7644 = { naval_base = 1 }
+			7644 = {
+				naval_base = 1
+
+			}
+
 		}
-		victory_points = { 7644 2 }
-		
+		victory_points = {
+			7644 2 
+		}
+
 	}
+
 	provinces={
-		7644 8267 15525 21353 21354 21357 21359 
+		7644 21357 21359 
 	}
-	manpower=56957
-	state_category=pastoral
+	manpower=44157
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

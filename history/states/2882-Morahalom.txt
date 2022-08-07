@@ -1,0 +1,21 @@
+state={
+	id=2882
+	name="STATE_2882"
+	provinces={
+		14080 
+	}
+	history={
+		owner = HUN
+		add_core_of = HUN
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SBB
+
+	}
+	manpower=5034
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -2,19 +2,22 @@
 state={
 	id=1084
 	name="STATE_1084"
-	history = {
+
+	history={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
 			infrastructure = 2
+
 		}
-		
+
 	}
+
 	provinces={
-		4214 8230 9608 21364 21368 21373 
+		4214 8230 9608 21364 
 	}
-	manpower=113915
-	state_category=rural
+	manpower=105915
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

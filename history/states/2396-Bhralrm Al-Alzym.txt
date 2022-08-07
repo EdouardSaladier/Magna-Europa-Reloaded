@@ -10,12 +10,13 @@ state={
 			infrastructure = 0
 
 		}
+
 	}
-	impassable=yes
 
 	provinces={
-		2417 4371 
+		2417 
 	}
+	impassable=yes
 	manpower=10
 	buildings_max_level_factor=1.000
 	state_category=wasteland
