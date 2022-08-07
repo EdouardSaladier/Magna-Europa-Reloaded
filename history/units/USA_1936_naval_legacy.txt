@@ -1,0 +1,202 @@
+﻿units= {
+
+	##### ATLANTIC FLEET #####
+	fleet = {
+		name = "Atlantic Fleet"			
+		naval_base = 3033 # Norfolk
+		# Independent Squadron #
+		task_force = {					
+			name = "Destroyer Squadron 12"				
+			location = 19343 # New York
+			### Destroyer Squadron 12 ###
+			ship = { name = "USS Gilmer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			# 21st Destroyer Division				
+			ship = { name = "USS Du Pont" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Bernadou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Ellis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Cole" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			# 27th Destroyer Division				
+			ship = { name = "USS Tarbell" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Upshur" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Greer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}					
+		# ATLANTIC SUBMARINES #
+		task_force = {					
+			name = "2nd Submarine Squadron"		
+			location = 1363 # New London, CT
+			# 1st Experimental Division			
+			ship = { name = "USS S-20" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-22" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			# 4th Submarine Division			
+			ship = { name = "USS R-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS R-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS R-10" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS R-11" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS R-13" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS R-14" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			# 8th Submarine Division			
+			ship = { name = "USS S-21" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-24" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-25" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-26" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-29" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-30" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		}	
+		# ATLANTIC RESERVES #
+		task_force = {					
+			name = "Atlantic Reserve Destroyers"		# Decommissioned ships docked in Philadelphia					
+			location = 19360 # Philadelphia
+			ship = { name = "USS Allen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }	
+			ship = { name = "USS Colhoun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Gregory" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Little" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS McKean" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Stringham" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Clemson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Goldsborough" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS McFarland" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Osmond Ingram" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Belknap" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Gillis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Hulbert" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS Noa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS William B Preston" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}					
+		task_force = {					
+			name = "Atlantic Reserve Submarines"		# Decommissioned ships docked in Philadelphia	
+			location = 19360 # Philadelphia
+			ship = { name = "USS O-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS O-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS O-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS O-6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS O-7" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS O-8" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS O-9" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS O-10" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS R-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS R-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS R-5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS R-6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS R-7" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS R-9" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-11" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-12" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-13" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-14" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-15" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-16" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-17" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-48" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS R-20" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-11" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-12" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-13" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-14" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-15" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-16" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-17" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS S-48" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		}					
+	}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Under Construction Notes ###
+	# DD: Mahan class (x13) ("USS Porter" "USS Phelps" "USS Clark" "USS Moffett" "USS Mahan" "USS Cummings" "USS Flusser" "USS Case" "USS Conyngham" "USS Cassin" "USS Shaw" "USS Cushing" "USS Perkins")
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "USA"
+			version_name = "Farragut Class"
+		}
+		requested_factories = 2
+		progress = 0.80
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "USA"
+			version_name = "Farragut Class"
+		}
+		requested_factories = 2
+		progress = 0.70
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "USA"
+			version_name = "Farragut Class"
+		}
+		requested_factories = 2
+		progress = 0.60
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "USA"
+			version_name = "Farragut Class"
+		}
+		requested_factories = 2
+		progress = 0.50
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "USA"
+			version_name = "Farragut Class"
+		}
+		requested_factories = 2
+		progress = 0.40
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "USA"
+			version_name = "Farragut Class"
+		}
+		requested_factories = 2
+		progress = 0.30
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "USA"
+			version_name = "Farragut Class"
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+	}
+	# SS: Porpoise class (x1) ("USS Tarpon")
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.50
+		amount = 1
+	}
+	# CA: Quincy (New Orleans class, Comm. 9-Jun, 1936)
+	add_equipment_production = {
+		equipment = {
+			type = heavy_cruiser_1
+			creator = "USA"
+			version_name = "Portland Class"
+		}
+		requested_factories = 2
+		progress = 0.85
+		amount = 1
+	}
+}
+
+#####################
