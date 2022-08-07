@@ -1,0 +1,152 @@
+#			if = {
+#				limit = {
+#					FROM.FROM = { state = X }
+#					X = { NOT = { has_state_flag = TAG_Name } }
+#					ROOT = { is_trigger = yes }
+#				}
+#				X = { set_state_name = "Name" }
+#				set_province_name = { id = Y name = "Cityname" }
+#				X = { set_state_flag = TAG_Name }
+#			}
+#			
+#			if = {
+#				limit = {
+#					FROM.FROM = { state = X }
+#					X = { has_state_flag = TAG_Name }
+#					ROOT = { is_trigger = no }
+#				}
+#				X = { reset_state_name = yes }
+#				reset_province_name = Y
+#				X = { clr_state_flag = TAG_Name }
+#			}
+
+
+on_actions = {
+
+	on_state_control_changed = {
+		effect = {
+		#CATALAN STATES
+			#Roussillon
+			if = {
+				limit = {
+					FROM.FROM = { state = 871 }
+					871 = { NOT = { has_state_flag = CAT_Rosello } }
+					ROOT = { is_catalan = yes }
+				}
+				871 = { set_state_name = "Roselló" set_state_flag = CAT_Rosello }
+				set_province_name = { id = 19762 name = "Perpinyà" }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 871 }
+					871 = { has_state_flag = CAT_Rosello }
+					ROOT = { is_catalan = no }
+				}
+				871 = { reset_state_name = yes clr_state_flag = CAT_Rosello }
+				reset_province_name = 19762
+			}
+			#Castellon
+			if = {
+				limit = {
+					FROM.FROM = { state = 974 }
+					974 = { NOT = { has_state_flag = CAT_Castello } }
+					ROOT = { is_catalan = yes }
+				}
+				974 = { set_state_name = "Castelló" set_state_flag = CAT_Castello }
+				set_province_name = { id = 15192 name = "Castelló de la Plana" }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 974 }
+					974 = { has_state_flag = CAT_Castello }
+					ROOT = { is_catalan = no }
+				}
+				974 = { reset_state_name = yes clr_state_flag = CAT_Castello }
+				reset_province_name = 15192
+			}
+			#Alicante
+			if = {
+				limit = {
+					FROM.FROM = { state = 1056 }
+					1056 = { NOT = { has_state_flag = CAT_Baleares } }
+					ROOT = { is_catalan = yes }
+				}
+				1056 = { set_state_name = "Alacant" set_state_flag = CAT_Baleares }
+				set_province_name = { id = 19780 name = "Alacant" }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1056 }
+					1056 = { has_state_flag = CAT_Baleares }
+					ROOT = { is_catalan = no }
+				}
+				1056 = { reset_state_name = yes clr_state_flag = CAT_Baleares }
+				reset_province_name = 19780
+			}
+			#Balearics
+			if = {
+				limit = {
+					FROM.FROM = { state = 1016 }
+					1016 = { NOT = { has_state_flag = CAT_Baleares } }
+					ROOT = { is_catalan = yes }
+				}
+				1016 = { set_state_name = "Illes Balears" set_state_flag = CAT_Baleares }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1016 }
+					1016 = { has_state_flag = CAT_Baleares }
+					ROOT = { is_catalan = no }
+				}
+				1016 = { reset_state_name = yes clr_state_flag = CAT_Baleares }
+			}
+			#Lleida
+			if = {
+				limit = {
+					FROM.FROM = { state = 875 }
+					875 = { NOT = { has_state_flag = CAT_Lleida } }
+					ROOT = { is_catalan = yes }
+				}
+				875 = { set_state_flag = CAT_Lleida }
+				set_province_name = { id = 19759 name = "Lleida" }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 875 }
+					875 = { has_state_flag = CAT_Lleida }
+					ROOT = { is_catalan = no }
+				}
+				875 = { clr_state_flag = CAT_Lleida }
+				reset_province_name = 19759
+			}
+			
+		#BASQUE STATES
+			#Navarra
+			if = {
+				limit = {
+					FROM.FROM = { state = 854 }
+					854 = { NOT = { has_state_flag = NAV_Navarra } }
+					ROOT = { original_tag = NAV }
+				}
+				854 = { set_state_name = "Iruña" }
+				set_province_name = { id = 3956 name = "Iruña" }
+				854 = { set_state_flag = NAV_Navarra }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 854 }
+					854 = { has_state_flag = NAV_Navarra }
+					ROOT = { original_tag = NAV }
+				}
+				854 = { reset_state_name = yes }
+				reset_province_name = 3956
+				854 = { clr_state_flag = NAV_Navarra }
+			}
+			#Vitoria
+			#Bilbao
+			#Biscay
+			#Labourd et Basse Navarre
+			#Soule
+		}
+	}
+}
