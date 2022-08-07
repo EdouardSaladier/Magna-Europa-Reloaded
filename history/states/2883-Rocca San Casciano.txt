@@ -1,0 +1,25 @@
+
+state={
+	id=2883
+	name="STATE_2883"
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = RMG
+		add_claim_by = TUS
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		8498 19168 
+	}
+	manpower=63995
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

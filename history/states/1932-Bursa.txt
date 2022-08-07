@@ -1,7 +1,9 @@
+
 state={
 	id=1932
 	name="STATE_1932"
-	history = {
+
+	history={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
@@ -9,13 +11,17 @@ state={
 			industrial_complex = 1
 			dockyard = 1
 		}
-		victory_points = { 7179 40 }
+		victory_points = {
+			7179 40 
+		}
+
 	}
+
 	provinces={
-		1385 3306 7179 15119 15128 15180 19168 19169 21435 21436 21442 21444 21448 21450 21555 
+		1385 3306 7179 15119 15128 15180 19169 21435 21436 21442 21444 21448 21450 21555 
 	}
 	manpower=407250
-	state_category=city
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
 }

@@ -9,17 +9,18 @@ state={
 		add_core_of = PRM
 		buildings = {
 			infrastructure = 4
+
 		}
 		victory_points = {
-			14456 20
+			14456 20 
 		}
 
 	}
 
 	provinces={
-		3691 4512 14456 14460 14491 14497 
+		3691 4512 14456 14460 14491 
 	}
-	manpower=381800
+	manpower=337899
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

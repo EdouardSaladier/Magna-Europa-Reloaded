@@ -9,21 +9,22 @@ state={
 		add_core_of = RMG
 		buildings = {
 			infrastructure = 4
+
 		}
 		victory_points = {
-			5932 10
+			5932 10 
 		}
 		victory_points = {
-			14583 10
+			14583 10 
 		}
 
 	}
 
 	provinces={
-		5932 8498 14583 
+		5932 14583 20309 
 	}
-	manpower=272359
+	manpower=208364
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_town
 	local_supplies=0.000
 }
