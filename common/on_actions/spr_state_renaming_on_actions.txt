@@ -68,20 +68,22 @@ on_actions = {
 			if = {
 				limit = {
 					FROM.FROM = { state = 1056 }
-					1056 = { NOT = { has_state_flag = CAT_Baleares } }
+					1056 = { NOT = { has_state_flag = CAT_Alicante } }
 					ROOT = { is_catalan = yes }
 				}
-				1056 = { set_state_name = "Alacant" set_state_flag = CAT_Baleares }
+				1056 = { set_state_name = "Alacant" set_state_flag = CAT_Alicante }
 				set_province_name = { id = 19780 name = "Alacant" }
+				set_province_name = { id = 5529 name = "Elx" }
 			}
 			if = {
 				limit = {
 					FROM.FROM = { state = 1056 }
-					1056 = { has_state_flag = CAT_Baleares }
+					1056 = { has_state_flag = CAT_Alicante }
 					ROOT = { is_catalan = no }
 				}
-				1056 = { reset_state_name = yes clr_state_flag = CAT_Baleares }
+				1056 = { reset_state_name = yes clr_state_flag = CAT_Alicante }
 				reset_province_name = 19780
+				reset_province_name = 5529
 			}
 			#Balearics
 			if = {
@@ -91,6 +93,8 @@ on_actions = {
 					ROOT = { is_catalan = yes }
 				}
 				1016 = { set_state_name = "Illes Balears" set_state_flag = CAT_Baleares }
+				set_province_name = { id = 19805 name = "Maó" }
+				set_province_name = { id = 19804 name = "Eivissa" }
 			}
 			if = {
 				limit = {
@@ -99,6 +103,8 @@ on_actions = {
 					ROOT = { is_catalan = no }
 				}
 				1016 = { reset_state_name = yes clr_state_flag = CAT_Baleares }
+				reset_province_name = 19805
+				reset_province_name = 19804
 			}
 			#Lleida
 			if = {
@@ -119,6 +125,27 @@ on_actions = {
 				875 = { clr_state_flag = CAT_Lleida }
 				reset_province_name = 19759
 			}
+			#Valencia
+			if = {
+				limit = {
+					FROM.FROM = { state = 1007 }
+					1007 = { NOT = { has_state_flag = CAT_Valencia } }
+					ROOT = { is_catalan = yes }
+				}
+				1007 = { set_state_flag = CAT_Valencia }
+				set_province_name = { id = 15247 name = "València" }
+				set_province_name = { id = 6199 name = "Gandia" }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1007 }
+					1007 = { has_state_flag = CAT_Valencia }
+					ROOT = { is_catalan = no }
+				}
+				1007 = { clr_state_flag = CAT_Valencia }
+				reset_province_name = 15247
+				reset_province_name = 6199
+			}
 			
 		#BASQUE STATES
 			#Navarra
@@ -136,17 +163,115 @@ on_actions = {
 				limit = {
 					FROM.FROM = { state = 854 }
 					854 = { has_state_flag = NAV_Navarra }
-					ROOT = { original_tag = NAV }
+					ROOT = { NOT = { original_tag = NAV } }
 				}
 				854 = { reset_state_name = yes }
 				reset_province_name = 3956
 				854 = { clr_state_flag = NAV_Navarra }
 			}
-			#Vitoria
-			#Bilbao
+			#Alava
+			if = {
+				limit = {
+					FROM.FROM = { state = 860 }
+					860 = { NOT = { has_state_flag = NAV_Alava } }
+					ROOT = { original_tag = NAV }
+				}
+				860 = { set_state_name = "Araba" }
+				set_province_name = { id = 19756 name = "Gasteiz" }
+				860 = { set_state_flag = NAV_Alava }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 860 }
+					860 = { has_state_flag = NAV_Alava }
+					ROOT = { NOT = { original_tag = NAV } }
+				}
+				860 = { reset_state_name = yes }
+				reset_province_name = 19756
+				860 = { clr_state_flag = NAV_Alava }
+			}
+			#Guipuzcoa
+			if = {
+				limit = {
+					FROM.FROM = { state = 851 }
+					851 = { NOT = { has_state_flag = NAV_Guipuzcoa } }
+					ROOT = { original_tag = NAV }
+				}
+				851 = { set_state_name = "Gipuzkoa" }
+				set_province_name = { id = 19757 name = "Donostia" }
+				851 = { set_state_flag = NAV_Guipuzcoa }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 851 }
+					851 = { has_state_flag = NAV_Guipuzcoa }
+					ROOT = { NOT = { original_tag = NAV } }
+				}
+				851 = { reset_state_name = yes }
+				reset_province_name = 19757
+				851 = { clr_state_flag = NAV_Guipuzcoa }
+			}
 			#Biscay
-			#Labourd et Basse Navarre
-			#Soule
+			if = {
+				limit = {
+					FROM.FROM = { state = 849 }
+					849 = { NOT = { has_state_flag = NAV_Vizcaya } }
+					ROOT = { original_tag = NAV }
+				}
+				849 = { set_state_name = "Bizkaia" }
+				set_province_name = { id = 750 name = "Bilbo" }
+				849 = { set_state_flag = NAV_Vizcaya }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 849 }
+					849 = { has_state_flag = NAV_Vizcaya }
+					ROOT = { NOT = { original_tag = NAV } }
+				}
+				849 = { reset_state_name = yes }
+				reset_province_name = 750
+				849 = { clr_state_flag = NAV_Vizcaya }
+			}
+			#Labourd et Basse Navarre - Lapurdi eta Nafarroa Beherea
+			if = {
+				limit = {
+					FROM.FROM = { state = 845 }
+					845 = { NOT = { has_state_flag = NAV_Bayonne } }
+					ROOT = { original_tag = NAV }
+				}
+				845 = { set_state_name = "Lapurdi eta Nafarroa Beherea" }
+				set_province_name = { id = 5987 name = "Baiona" }
+				845 = { set_state_flag = NAV_Bayonne }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 845 }
+					845 = { has_state_flag = NAV_Bayonne }
+					ROOT = { NOT = { original_tag = NAV } }
+				}
+				845 = { reset_state_name = yes }
+				reset_province_name = 5987
+				845 = { clr_state_flag = NAV_Bayonne }
+			}
+			#Soule - Zuberoa
+			if = {
+				limit = {
+					FROM.FROM = { state = 852 }
+					852 = { NOT = { has_state_flag = NAV_Soule } }
+					ROOT = { original_tag = NAV }
+				}
+				852 = { set_state_name = "Zuberoa" }
+				852 = { set_state_flag = NAV_Soule }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 852 }
+					852 = { has_state_flag = NAV_Soule }
+					ROOT = { NOT = { original_tag = NAV } }
+				}
+				852 = { reset_state_name = yes }
+				852 = { clr_state_flag = NAV_Soule }
+			}
 		}
 	}
 }
