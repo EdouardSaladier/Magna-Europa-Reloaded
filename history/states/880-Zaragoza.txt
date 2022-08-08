@@ -2,7 +2,7 @@
 state={
 	id=880
 	name="STATE_880"
-
+    resources = { steel = 15.000 }
 	history={
 		owner = SPR
 		add_core_of = ARA

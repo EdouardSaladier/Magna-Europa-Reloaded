@@ -2,8 +2,7 @@
 state={
 	id=1189
 	name="STATE_1189"
-			
-				
+	resources = { steel = 23 }
 	history = {
 		owner = SPR
 		add_core_of = RIF
