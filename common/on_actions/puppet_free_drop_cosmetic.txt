@@ -1,0 +1,74 @@
+on_actions = {
+	on_subject_free = {
+		effect = {
+			#French puppets
+			if = {
+				limit = { ROOT = { original_tag = MRT } }
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = { ROOT = { original_tag = MOR } }
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = { ROOT = { original_tag = TUN } }
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = { ROOT = { original_tag = SYR } }
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = { ROOT = { original_tag = LEB } }
+				drop_cosmetic_tag = yes
+			}
+			#British puppets
+			if = {
+				limit = { ROOT = { original_tag = PAL } }
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = { ROOT = { original_tag = JOR } }
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = { ROOT = { original_tag = KUW } }
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = { ROOT = { original_tag = UAE } }
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = { ROOT = { original_tag = QAT } }
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = { ROOT = { original_tag = BHR } }
+				drop_cosmetic_tag = yes
+			}
+			#Italian puppets
+			if = {
+				limit = { ROOT = { original_tag = MNT } }
+				drop_cosmetic_tag = yes
+			}
+			#German puppets
+			if = {
+				limit = { ROOT = { original_tag = BNT } }
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = { ROOT = { original_tag = POL has_cosmetic_tag = POL_GENERAL_GOUVERNEMENT } }
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = { ROOT = { original_tag = OZAV } }
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = { ROOT = { original_tag = OZAK } }
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+}
