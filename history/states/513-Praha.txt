@@ -5,11 +5,14 @@ state={
 	provinces={
 		4243 12646 12689 20056 
 	}
+	resources = { steel = 11 }
 	history={
 		owner = CZE
 		add_core_of = CZE
 		add_core_of = BOH
 		buildings = {
+			industrial_complex = 1
+			arms_factory = 3
 			infrastructure = 4
 		}
         victory_points = {

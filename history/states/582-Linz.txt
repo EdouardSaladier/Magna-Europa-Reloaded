@@ -5,11 +5,13 @@ state={
 	provinces={
 		4309 8341 13396 13435 13496 20827 
 	}
+	resources = { steel = 10 }
 	history={
 		owner = AUS
 		add_core_of = AUS
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 2
 		}
         victory_points = {
             13396 20 #Linz

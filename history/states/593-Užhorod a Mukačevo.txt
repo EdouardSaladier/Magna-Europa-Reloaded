@@ -12,13 +12,10 @@ state={
 		add_core_of = WUK
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 		}
 		add_core_of = SLO
 		add_core_of = CRP
-		buildings = {
-			infrastructure = 3
-		}
-	
         victory_points = {
             13287 10
         }

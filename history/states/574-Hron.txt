@@ -5,12 +5,14 @@ state={
 	provinces={
 		109 1652 3029 3116 4670 5091 5306 5867 8677 13193 13218 13248 13333 13370 20078 20079 
 	}
+	resources = { tungsten = 2 }
 	history={
 		owner = CZE
 		add_core_of = CZE
 		add_core_of = SLO
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
 		}
 	
         victory_points = {
