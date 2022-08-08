@@ -2,7 +2,7 @@
 state={
 	id=2396
 	name="STATE_2396"
-	impassable=yes
+
 	history={
 		owner = ITA
 		add_core_of = LBA
@@ -12,9 +12,9 @@ state={
 		}
 
 	}
-
+	impassable = yes
 	provinces={
-		2417 4371 
+		2417 
 	}
 	manpower=10
 	buildings_max_level_factor=1.000
