@@ -5,7 +5,6 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 }
-set_cosmetic_tag = LBA_IT
 set_politics = {
 	ruling_party = fascism
 	last_election = "1934.3.26"
@@ -25,16 +24,6 @@ create_country_leader = {
 	desc = ""
 	picture = GFX_portrait_Bashir_es_Sadawi
 	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Italo Balbo"
-	desc = ""
-	picture = GFX_portrait_ITA_italo_balbo
-	ideology = fascism_ideology
 	traits = {
 		#
 	}
