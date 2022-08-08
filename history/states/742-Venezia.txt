@@ -2,12 +2,16 @@
 state={
 	id=742
 	name="STATE_742"
+	resources={
+		steel = 5
+	}
 	history = {
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = VNT
 		buildings = {
 			infrastructure = 4
+			synthetic_refinery = 1
 			dockyard = 1
 			20051 = { naval_base = 6 }
 			547 = { naval_base = 5 }

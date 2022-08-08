@@ -2,6 +2,13 @@
 state={
 	id=718
 	name="STATE_718"
+	
+	resources={
+		steel=5
+		aluminium=3
+		chromium=2
+		tungsten=1
+	}
 
 	history={
 		owner = ITA

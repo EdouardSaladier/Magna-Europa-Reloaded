@@ -2,12 +2,16 @@
 state={
 	id=1374
 	name="STATE_1374"
+	resources={
+		oil = 1
+	}
 
 	history={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = PRM
 		buildings = {
+			synthetic_refinery = 1
 			infrastructure = 4
 			air_base = 2
 		}

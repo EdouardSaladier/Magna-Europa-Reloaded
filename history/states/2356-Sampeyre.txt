@@ -1,6 +1,9 @@
 state={
 	id=2356
 	name="STATE_2356"
+	resources={
+		aluminium=3
+	}
 	history = {
 		owner = ITA
 		add_core_of = ITA

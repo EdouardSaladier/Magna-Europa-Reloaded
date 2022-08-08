@@ -2,6 +2,9 @@
 state={
 	id=912
 	name="STATE_912"
+	resources={
+		aluminium = 5
+	}
 	history = {
 		owner = ITA
 		add_core_of = ITA
@@ -9,6 +12,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			air_base = 4
+			synthetic_refinery = 1
 			15006 = { naval_base = 1 }
 		}
 		victory_points = { 15006 20 }

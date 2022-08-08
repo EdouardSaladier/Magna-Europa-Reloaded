@@ -2,6 +2,10 @@
 state={
 	id=1386
 	name="STATE_1386"
+	
+	resources={
+		steel = 6
+	}
 
 	history={
 		owner = ITA
@@ -10,6 +14,7 @@ state={
 		buildings = {
 			infrastructure = 4
 			dockyard = 1
+			synthetic_refinery = 1
 			14681 = { naval_base = 5 }
 			14733 = { naval_base = 1 }
 		}
