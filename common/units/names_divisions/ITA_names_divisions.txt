@@ -620,7 +620,7 @@ ITA_GAR_01 = {
 } 
 
 ITA_GAR_02 = {
-	name = "Border Guard Brigade"
+	name = "Border Guard Regiment"
 	for_countries = { ITA } 
 
 	can_use = { always = yes } 
@@ -725,7 +725,7 @@ ITAL_MNT_01 = {
 }
 
 ITAL_MAR_01 = { 
-	name = "Marine Regiment" 
+	name = "Marine Brigade" 
 
 	for_countries = { } 
 
@@ -739,7 +739,7 @@ ITAL_MAR_01 = {
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { ITA_MAR_01 } 
 
-	fallback_name = "%d° Reggimento da Sbarco" 
+	fallback_name = "%da Brigata Marina" 
 }
 
 ITAL_COL_01 = { 
