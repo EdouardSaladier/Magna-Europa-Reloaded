@@ -1,0 +1,24 @@
+
+state={
+	id=2887
+	name="STATE_2887"
+
+	history={
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = RUS
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		2149 2769 3388 3479 3775 3925 3937 6616 8630 10109 10141 10147 10178 10200 10206 18537 18626 18667 18691 18739 18774 18814 18820 18838 18929 18996 
+	}
+	manpower=26072
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}
