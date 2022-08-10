@@ -18,6 +18,10 @@ state={
 		add_core_of = PRE
 		add_core_of = SIL
     }
+	resources={
+		steel=36
+		aluminium=18
+	}
 	manpower=780140
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

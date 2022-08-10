@@ -18,6 +18,10 @@ state={
 		add_core_of = SIL
 		add_core_of = UPS
     }
+	resources={
+		steel=10
+		aluminium=2
+	}
 	manpower=288805
 	buildings_max_level_factor=1.000
 	state_category=city

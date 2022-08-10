@@ -18,6 +18,9 @@ state={
 		add_core_of = PRE
 		add_core_of = POM
     }
+	resources={
+		steel=3
+	}
 	manpower=155622
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

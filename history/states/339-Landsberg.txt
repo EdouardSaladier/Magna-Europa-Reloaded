@@ -17,6 +17,9 @@ state={
 		add_core_of = PRE
 		add_core_of = BRN
     }
+	resources={
+		aluminium=24
+	}
 	manpower=243619
 	buildings_max_level_factor=1.000
 	state_category=large_town
