@@ -23,23 +23,23 @@ set_technology = {
 set_convoys = 10
 add_ideas = { neutrality_idea civilian_economy }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	election_frequency = 72
+	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 75
-	fascism = 10
-	communism = 0
-	neutrality = 15
+	democratic = 15
+	fascism = 75
+	communism = 5
+	neutrality = 5
 }
 
 create_country_leader = {
 	name = "Grand Council"
 	desc = ""
-	picture = "gfx/leaders/Europe/portrait_europe_generic_1.dds"
+	picture = "gfx/leaders/SMR/Portrait_San_Marino_Grand_council.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
@@ -47,11 +47,31 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Giuliano Gozi"
+	name = "Grand Council"
 	desc = ""
-	picture = "gfx/leaders/Europe/portrait_europe_generic_1.dds"
+	picture = "gfx/leaders/SMR/Portrait_San_Marino_Grand_council.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Grand Council"
+	desc = ""
+	picture = "gfx/leaders/SMR/Portrait_San_Marino_Grand_council.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Grand Council"
+	desc = ""
+	picture = "gfx/leaders/SMR/Portrait_San_Marino_Grand_council.dds"
+	expire = "1965.1.1"
+	ideology = marxism
 	traits = {
 	}
 }

@@ -1,0 +1,30 @@
+﻿###########################
+# Credits
+###########################
+
+add_namespace = credits
+
+country_event = {
+	id = credits.1
+	title = credits.1.t
+	desc = credits.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = credits.1.a
+		country_event = { id = credits.2 }
+	}
+}
+
+country_event = {
+	id = credits.2
+	title = credits.2.t
+	desc = credits.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = credits.2.a
+	}
+}
