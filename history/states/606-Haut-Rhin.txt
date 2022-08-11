@@ -2,7 +2,9 @@
 state={
 	id=606
 	name="STATE_606"
-
+	resources={
+		steel=50.000
+	}
 	history={
 		owner = FRA
 		add_core_of = FRA
