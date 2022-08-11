@@ -35,3 +35,14 @@ set_popularities = {
 	communism = 0
 	neutrality = 75
 }
+create_country_leader = {
+	name = "Pietro Ferdinando d'Asburgo-Lorena"
+	desc = ""
+	picture = "gfx/leaders/TUS/Portrait_TUS_Pietro_Ferdinando.png"
+	expire = "1960.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
