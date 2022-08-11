@@ -7,9 +7,15 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
-		victory_points = { 10482 80 }
-		victory_points = { 3693 20 }
-		victory_points = { 7983 5 }
+		victory_points = {
+			10482 80 
+		}
+		victory_points = {
+			3693 20 
+		}
+		victory_points = {
+			7983 5 
+		}
 		buildings = {
 			infrastructure = 3
 
@@ -18,7 +24,7 @@ state={
 	}
 
 	provinces={
-		1836 2508 3257 3521 3693 3855 4893 7303 7983 9105 10393 10402 10449 10458 10482 10488 10495 10496 10522 10557 10558 16861 16987 17774 18140 
+		2508 3257 3693 4893 7303 7983 9105 10402 10458 10482 10495 10557 10558 16861 16987 17774 18140 
 	}
 	manpower=1727392
 	buildings_max_level_factor=1.000
