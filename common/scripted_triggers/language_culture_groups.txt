@@ -6,6 +6,15 @@ is_tuscan = {
 		#Siena
 	}
 }
+is_emilian = {
+	OR = {
+		original_tag = MCR
+		original_tag = MDN
+		original_tag = BLG
+		original_tag = FRR
+		original_tag = PRM
+	}
+}
 is_northern_italian = {
 	OR = {
 		original_tag = PIE
@@ -13,12 +22,7 @@ is_northern_italian = {
 		original_tag = PAV
 		original_tag = MTV
 		original_tag = LIG
-		original_tag = PRM
-		original_tag = MCR
-		original_tag = MDN
-		original_tag = BLG
-		original_tag = RMN
-		original_tag = FRR
+		original_tag = RMG
 		original_tag = VNT
 		original_tag = SMR
 	}
@@ -81,11 +85,20 @@ is_d_oil = {
 		original_tag = WLN
 	}
 }
+
+is_arpitan = {
+	OR = {
+		original_tag = AOS
+		original_tag = VLS
+		original_tag = ARP
+		original_tag = RMD
+		original_tag = SAV
+	}
+}
 is_french = { 
 	OR = {
 		is_d_oil = yes
 		is_occitan = yes
-		original_tag = SAV
 	}
 }
 
@@ -142,6 +155,22 @@ is_iberian = {
 	}
 }
 
+is_austrian = {
+	OR = {
+		original_tag = AUS
+		original_tag = STR
+		original_tag = TIR
+		original_tag = KRT
+		original_tag = BUR
+		original_tag = SLZ
+	}
+}
+
+is_swiss = {
+		original_tag = VOR
+		original_tag = LIE
+}
+
 is_high_german = {
 	OR = {
 		original_tag = BVR
@@ -149,16 +178,9 @@ is_high_german = {
 		original_tag = WRT
 		original_tag = BDN
 		original_tag = HOZ
-		original_tag = SWI
-		original_tag = AUS
-		original_tag = VOR
-		original_tag = STR
-		original_tag = TIR
-		original_tag = KRT
-		original_tag = BUR
-		original_tag = SLZ
-		original_tag = LIE
 		original_tag = ALS
+		is_austrian = yes
+		is_swiss = yes
 	}
 }
 is_thuringian = {

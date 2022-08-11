@@ -1,0 +1,1035 @@
+#			if = {
+#				limit = {
+#					FROM.FROM = { state = X }
+#					X = { NOT = { has_state_flag = TAG_Name } }
+#					ROOT = { is_trigger = yes }
+#				}
+#				X = { set_state_name = "Name" }
+#				set_province_name = { id = Y name = "Cityname" }
+#				X = { set_state_flag = TAG_Name }
+#			}
+#			
+#			if = {
+#				limit = {
+#					FROM.FROM = { state = X }
+#					X = { has_state_flag = TAG_Name }
+#					ROOT = { is_trigger = no }
+#				}
+#				X = { reset_state_name = yes }
+#				reset_province_name = Y
+#				X = { clr_state_flag = TAG_Name }
+#			}
+#
+#
+on_actions = {
+
+	on_state_control_changed = {
+		#Occitan States
+		effect = {
+			#Tenda
+			if = {
+			}
+			#Sampeyre
+			if = {
+			}
+			#Valle Stretta
+			if = {
+			}
+		}
+		#Arpitan States
+		effect = {
+			#Moncenisio
+			if = {
+				limit = {
+					FROM.FROM = { state = 1984 NOT = { has_state_flag = ARP_name } }
+					ROOT = { is_arpitan = yes }
+				}
+				FROM.FROM = { set_state_flag = ARP_name set_state_name = "Col du Mont-Cenis" }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1984 has_state_flag = ARP_name }
+					ROOT = { is_arpitan = no }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = ARP_name }
+			}
+			#Locana
+			if = {
+				limit = {
+					FROM.FROM = { state = 2358 NOT = { has_state_flag = ARP_name } }
+					ROOT = { is_arpitan = yes }
+				}
+				FROM.FROM = { set_state_flag = ARP_name set_state_name = "Lukënna" set_province_name = { id = 20006 name = "Lukënna" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2358 has_state_flag = ARP_name }
+					ROOT = { is_arpitan = no }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = ARP_name }
+				reset_province_name = 20006
+			}
+			#Aosta
+			if = {
+				limit = {
+					FROM.FROM = { state = 745 NOT = { has_state_flag = ARP_name } }
+					ROOT = { is_arpitan = yes }
+				}
+				FROM.FROM = { set_state_flag = ARP_name set_state_name = "Aoûta" set_province_name = { id = 16144 name = "Aoûta" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 745 has_state_flag = ARP_name }
+					ROOT = { is_arpitan = no }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = ARP_name }
+				reset_province_name = 16144
+			}
+		}
+		#Tyrolean States
+		#Fiuman States
+		#Triestine States
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 762 NOT = { has_state_flag = TST_name } }
+					ROOT = { original_tag = TST }
+				}
+				FROM.FROM = { set_state_flag = TST_name set_state_name = "Puola" set_province_name = { id = 5331 name = "Puola" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 762 has_state_flag = TST_name }
+					ROOT = { NOT = { original_tag = TST } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = TST_name }
+				reset_province_name = 5331
+			}
+		}
+		#Piedmontese States
+		effect = {
+			if = {}
+		}
+		#Lombard States
+		effect = {
+			if = {}
+		}
+		#Venetian States
+		effect = {
+			if = {}
+		}
+		#Friulian States
+		effect = {
+			#Gorizia - Trieste
+			if = {
+				limit = {
+					FROM.FROM = { state = 1533 NOT = { has_state_flag = TST_name } }
+					ROOT = { original_tag = TST }
+				}
+				FROM.FROM = { set_state_flag = TST_name set_state_name = "Guriza" set_province_name = { id = 20482 name = "Guriza" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1533 has_state_flag = TST_name }
+					ROOT = { NOT = { original_tag = TST } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = TST_name }
+				reset_province_name = 20482
+			}
+			#Gorizia - Friuli
+			if = {
+				limit = {
+					FROM.FROM = { state = 1533 NOT = { has_state_flag = FRI_name } }
+					ROOT = { original_tag = FRI }
+				}
+				FROM.FROM = { set_state_flag = FRI_name set_state_name = "Gurize" set_province_name = { id = 20482 name = "Gurize" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1533 has_state_flag = FRI_name }
+					ROOT = { NOT = { original_tag = FRI } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = FRI_name }
+				reset_province_name = 20482
+			}
+			#Tolmezzo
+			if = {
+				limit = {
+					FROM.FROM = { state = 2850 NOT = { has_state_flag = FRI_name } }
+					ROOT = { original_tag = FRI }
+				}
+				FROM.FROM = { set_state_flag = FRI_name set_state_name = "Tumieç" set_province_name = { id = 5779 name = "Tumieç" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2850 has_state_flag = FRI_name }
+					ROOT = { NOT = { original_tag = FRI } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = FRI_name }
+				reset_province_name = 5779
+			}
+			#Pordenone
+			if = {
+				limit = {
+					FROM.FROM = { state = 1424 NOT = { has_state_flag = FRI_name } }
+					ROOT = { original_tag = FRI }
+				}
+				FROM.FROM = { set_state_flag = FRI_name set_state_name = "Pordenon" set_province_name = { id = 5701 name = "Pordenon" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1424 has_state_flag = FRI_name }
+					ROOT = { NOT = { original_tag = FRI } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = FRI_name }
+				reset_province_name = 5701
+			}
+			#Udine
+			if = {
+				limit = {
+					FROM.FROM = { state = 706 NOT = { has_state_flag = FRI_name } }
+					ROOT = { original_tag = FRI }
+				}
+				FROM.FROM = { set_state_flag = FRI_name set_state_name = "Udin" set_province_name = { id = 20015 name = "Udin" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 706 has_state_flag = FRI_name }
+					ROOT = { NOT = { original_tag = FRI } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = FRI_name }
+				reset_province_name = 20015
+			}
+		}
+		#Ligurian States
+		effect = {
+			#La Spezia
+			if = {
+				limit = {
+					FROM.FROM = { state = 1368 NOT = { has_state_flag = LIG_name } }
+					ROOT = { original_tag = LIG }
+				}
+				FROM.FROM = { set_state_flag = LIG_name set_state_name = "Spèza" set_province_name = { id = 14571 name = "Spèza" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1368 has_state_flag = LIG_name }
+					ROOT = { NOT = { original_tag = LIG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = LIG_name }
+				reset_province_name = 14571
+			}
+			#Genova
+			if = {
+				limit = {
+					FROM.FROM = { state = 798 NOT = { has_state_flag = LIG_name } }
+					ROOT = { original_tag = LIG }
+				}
+				FROM.FROM = { set_state_flag = LIG_name set_state_name = "Zena" set_province_name = { id = 20022 name = "Zena" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 798 has_state_flag = LIG_name }
+					ROOT = { NOT = { original_tag = LIG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = LIG_name }
+				reset_province_name = 20022
+			}
+			#Savona
+			if = {
+				limit = {
+					FROM.FROM = { state = 1367 NOT = { has_state_flag = LIG_name } }
+					ROOT = { original_tag = LIG }
+				}
+				FROM.FROM = { set_state_flag = LIG_name set_state_name = "Saña" set_province_name = { id = 20021 name = "Saña" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1367 has_state_flag = LIG_name }
+					ROOT = { NOT = { original_tag = LIG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = LIG_name }
+				reset_province_name = 20021
+			}
+			#Imperia
+			if = {
+				limit = {
+					FROM.FROM = { state = 1366 NOT = { has_state_flag = LIG_name } }
+					ROOT = { original_tag = LIG }
+				}
+				FROM.FROM = { set_state_flag = LIG_name set_state_name = "Impêia" set_province_name = { id = 19860 name = "Impêia" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1366 has_state_flag = LIG_name }
+					ROOT = { NOT = { original_tag = LIG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = LIG_name }
+				reset_province_name = 19860
+			}
+		}
+		#Emilian States
+		effect = {
+			#Pontremoli
+			if = {
+				limit = {
+					FROM.FROM = { state = 2558 NOT = { has_state_flag = EMI_name } }
+					ROOT = { is_emilian = yes }
+				}
+				FROM.FROM = { set_state_flag = EMI_name set_state_name = "Puntrémal" }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2558 has_state_flag = EMI_name }
+					ROOT = { is_emilian = no }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = EMI_name }
+			}
+			#Massa and Carrara
+			if = {
+				limit = {
+					FROM.FROM = { state = 1381 NOT = { has_state_flag = EMI_name } }
+					ROOT = { is_emilian = yes }
+				}
+				FROM.FROM = { set_state_flag = EMI_name set_state_name = "Massa e Carara" set_province_name = { id = 14595 name = "Carara" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1381 has_state_flag = EMI_name }
+					ROOT = { is_emilian = no }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = EMI_name }
+				reset_province_name = 14595
+			}
+			#Piacenza
+			if = {
+				limit = {
+					FROM.FROM = { state = 1374 NOT = { has_state_flag = EMI_name } }
+					ROOT = { is_emilian = yes }
+				}
+				FROM.FROM = { set_state_flag = EMI_name set_state_name = "Piaśeinsa" set_province_name = { id = 14388 name = "Piaśeinsa" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1374 has_state_flag = EMI_name }
+					ROOT = { is_emilian = no }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = EMI_name }
+				reset_province_name = 14388
+			}
+			#Parma
+			if = {
+				limit = {
+					FROM.FROM = { state = 1375 NOT = { has_state_flag = EMI_name } }
+					ROOT = { is_emilian = yes }
+				}
+				FROM.FROM = { set_state_flag = EMI_name set_state_name = "Pärma" set_province_name = { id = 14456 name = "Pärma" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1375 has_state_flag = EMI_name }
+					ROOT = { is_emilian = no }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = EMI_name }
+				reset_province_name = 14456
+			}
+			#Reggio Emilia
+			if = {
+				limit = {
+					FROM.FROM = { state = 1376 NOT = { has_state_flag = EMI_name } }
+					ROOT = { is_emilian = yes }
+				}
+				FROM.FROM = { set_state_flag = EMI_name set_state_name = "Rèz" set_province_name = { id = 9013 name = "Rèz" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1376 has_state_flag = EMI_name }
+					ROOT = { is_emilian = no }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = EMI_name }
+				reset_province_name = 9013
+			}
+			#Modena
+			if = {
+				limit = {
+					FROM.FROM = { state = 1377 NOT = { has_state_flag = EMI_name } }
+					ROOT = { is_emilian = yes }
+				}
+				FROM.FROM = { set_state_flag = EMI_name set_state_name = "Mòdna" set_province_name = { id = 5299 name = "Mòdna" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1377 has_state_flag = EMI_name }
+					ROOT = { is_emilian = no }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = EMI_name }
+				reset_province_name = 5299
+			}
+			#Ferrara
+			if = {
+				limit = {
+					FROM.FROM = { state = 1378 NOT = { has_state_flag = EMI_name } }
+					ROOT = { is_emilian = yes }
+				}
+				FROM.FROM = { set_state_flag = EMI_name set_state_name = "Fràra" set_province_name = { id = 14450 name = "Fràra" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1378 has_state_flag = EMI_name }
+					ROOT = { is_emilian = no }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = EMI_name }
+				reset_province_name = 14450
+			}
+			#Bologna
+			if = {
+				limit = {
+					FROM.FROM = { state = 779 NOT = { has_state_flag = EMI_name } }
+					ROOT = { is_emilian = yes }
+				}
+				FROM.FROM = { set_state_flag = EMI_name set_state_name = "Bulåggna" set_province_name = { id = 20023 name = "Bulåggna" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 779 has_state_flag = EMI_name }
+					ROOT = { is_emilian = no }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = EMI_name }
+				reset_province_name = 20023
+			}
+		}
+		#Romagnol States
+		effect = {
+			#Rocca San Casciano
+			if = {
+				limit = {
+					FROM.FROM = { state = 2883 NOT = { has_state_flag = RMG_name } }
+					ROOT = { original_tag = RMG }
+				}
+				FROM.FROM = { set_state_flag = RMG_name set_state_name = "La Ròca" }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2883 has_state_flag = RMG_name }
+					ROOT = { NOT = { original_tag = RMG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = RMG_name }
+			}
+			#Imola
+			if = {
+				limit = {
+					FROM.FROM = { state = 2876 NOT = { has_state_flag = RMG_name } }
+					ROOT = { original_tag = RMG }
+				}
+				FROM.FROM = { set_state_flag = RMG_name set_state_name = "Jomla" }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2876 has_state_flag = RMG_name }
+					ROOT = { NOT = { original_tag = RMG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = RMG_name }
+			}
+			#Ravenna
+			if = {
+				limit = {
+					FROM.FROM = { state = 1379 NOT = { has_state_flag = RMG_name } }
+					ROOT = { original_tag = RMG }
+				}
+				FROM.FROM = { set_state_flag = RMG_name set_state_name = "Ravèna" set_province_name = { id = 9629 name = "Ravèna" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1379 has_state_flag = RMG_name }
+					ROOT = { NOT = { original_tag = RMG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = RMG_name }
+				reset_province_name = 9629
+			}
+			#Forlì
+			if = {
+				limit = {
+					FROM.FROM = { state = 1380 NOT = { has_state_flag = RMG_name } }
+					ROOT = { original_tag = RMG }
+				}
+				FROM.FROM = { set_state_flag = RMG_name set_state_name = "Furlè" set_province_name = { id = 5932 name = "Furlè" } set_province_name = { id = 14583 name = "Cisèna" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1380 has_state_flag = RMG_name }
+					ROOT = { NOT = { original_tag = RMG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = RMG_name }
+				reset_province_name = 5932
+				reset_province_name = 14583
+			}
+			#Rimini
+			if = {
+				limit = {
+					FROM.FROM = { state = 2605 NOT = { has_state_flag = RMG_name } }
+					ROOT = { original_tag = RMG }
+				}
+				FROM.FROM = { set_state_flag = RMG_name set_state_name = "Rémin" set_province_name = { id = 14579 name = "Rémin" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2605 has_state_flag = RMG_name }
+					ROOT = { NOT = { original_tag = RMG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = RMG_name }
+				reset_province_name = 14579
+			}
+		}
+		#Marchigian States
+		effect = {
+			#Pesaro e Urbino
+			if = {
+				limit = {
+					FROM.FROM = { state = 1389 NOT = { has_state_flag = MAR_name } }
+					ROOT = { original_tag = MAR }
+				}
+				FROM.FROM = { set_state_flag = MAR_name set_state_name = "Pès're e Urbìn" set_province_name = { id = 14629 name = "Pès're" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1389 has_state_flag = MAR_name }
+					ROOT = { NOT = { original_tag = MAR } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = MAR_name }
+				reset_province_name = 14629
+			}
+			#Rieti
+			if = {
+				limit = {
+					FROM.FROM = { state = 1391 NOT = { has_state_flag = MAR_name } }
+					ROOT = { original_tag = MAR }
+				}
+				FROM.FROM = { set_state_flag = MAR_name set_state_name = "Ašculë" set_province_name = { id = 14772 name = "Ašculë" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1391 has_state_flag = MAR_name }
+					ROOT = { NOT = { original_tag = MAR } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = MAR_name }
+				reset_province_name = 14772
+			}
+		}
+		#Lazial States
+		effect = {
+			#Rieti
+			if = {
+				limit = {
+					FROM.FROM = { state = 1394 NOT = { has_state_flag = UMB_name } }
+					ROOT = { OR = { original_tag = LAZ original_tag = UMB } }
+				}
+				FROM.FROM = { set_state_flag = LAZ_name set_state_name = "Riète" set_province_name = { id = 18573 name = "Riète" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1394 has_state_flag = LAZ_name }
+					ROOT = { NOT = { OR = { original_tag = LAZ original_tag = UMB } } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = LAZ_name }
+				reset_province_name = 18573
+			}
+			#Frosinone
+			if = {
+				limit = {
+					FROM.FROM = { state = 1395 NOT = { has_state_flag = LAZ_name } }
+					ROOT = { original_tag = LAZ }
+				}
+				FROM.FROM = { set_state_flag = LAZ_name set_state_name = "Frusenone" set_province_name = { id = 7740 name = "Frusenone" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1395 has_state_flag = LAZ_name }
+					ROOT = { NOT = { original_tag = LAZ } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = LAZ_name }
+				reset_province_name = 7740
+			}
+			#Viterbo
+			if = {
+				limit = {
+					FROM.FROM = { state = 1393 NOT = { has_state_flag = LAZ_name } }
+					ROOT = { original_tag = LAZ }
+				}
+				FROM.FROM = { set_state_flag = LAZ_name set_state_name = "Vetèrbe" set_province_name = { id = 9397 name = "Vetèrbe" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1393 has_state_flag = LAZ_name }
+					ROOT = { NOT = { original_tag = LAZ } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = LAZ_name }
+				reset_province_name = 9397
+			}
+		}
+		#Campanian States
+		effect = {
+			#Salerno
+			if = {
+				limit = {
+					FROM.FROM = { state = 1402 NOT = { has_state_flag = NAP_name } }
+					ROOT = { original_tag = NAP }
+				}
+				FROM.FROM = { set_state_flag = NAP_name set_state_name = "Saliérnë" set_province_name = { id = 15109 name = "Saliérnë" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1402 has_state_flag = NAP_name }
+					ROOT = { NOT = { original_tag = NAP } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = NAP_name }
+				reset_province_name = 15109
+			}
+			#Naples
+			if = {
+				limit = {
+					FROM.FROM = { state = 934 NOT = { has_state_flag = NAP_name } }
+					ROOT = { original_tag = NAP }
+				}
+				FROM.FROM = { set_state_flag = NAP_name set_state_name = "Napule" set_province_name = { id = 20008 name = "Napule" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 934 has_state_flag = NAP_name }
+					ROOT = { NOT = { original_tag = NAP } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = NAP_name }
+				reset_province_name = 20008
+			}
+			#Avellino
+			if = {
+				limit = {
+					FROM.FROM = { state = 1401 NOT = { has_state_flag = NAP_name } }
+					ROOT = { original_tag = NAP }
+				}
+				FROM.FROM = { set_state_flag = NAP_name set_state_name = "Avell'ino" set_province_name = { id = 4116 name = "Avell'ino" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1401 has_state_flag = NAP_name }
+					ROOT = { NOT = { original_tag = NAP } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = NAP_name }
+				reset_province_name = 416
+			}
+			#Benevento
+			if = {
+				limit = {
+					FROM.FROM = { state = 1400 NOT = { has_state_flag = NAP_name } }
+					ROOT = { original_tag = NAP }
+				}
+				FROM.FROM = { set_state_flag = NAP_name set_state_name = "Beneviénte" set_province_name = { id = 15008 name = "Beneviénte" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1400 has_state_flag = NAP_name }
+					ROOT = { NOT = { original_tag = NAP } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = NAP_name }
+				reset_province_name = 15008
+			}
+			#Gaeta
+			if = {
+				limit = {
+					FROM.FROM = { state = 920 NOT = { has_state_flag = NAP_name } }
+					ROOT = { original_tag = NAP }
+				}
+				FROM.FROM = { set_state_flag = NAP_name set_state_name = "Gaieta" set_province_name = { id = 8177 name = "Gaieta" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 920 has_state_flag = NAP_name }
+					ROOT = { NOT = { original_tag = NAP } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = NAP_name }
+				reset_province_name = 8177
+			}
+		}
+		#Abruzzese and Molisan States
+		effect = {
+			#Teramo
+			if = {
+				limit = {
+					FROM.FROM = { state = 1397 NOT = { has_state_flag = ABR_name } }
+					ROOT = { original_tag = ABR }
+				}
+				FROM.FROM = { set_state_flag = ABR_name set_state_name = "Tèreme" set_province_name = { id = 7237 name = "Tèreme" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1397 has_state_flag = ABR_name }
+					ROOT = { NOT = { original_tag = ABR } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = ABR_name }
+				reset_province_name = 7237
+			}
+			#Pescara
+			if = {
+				limit = {
+					FROM.FROM = { state = 1398 NOT = { has_state_flag = ABR_name } }
+					ROOT = { original_tag = ABR }
+				}
+				FROM.FROM = { set_state_flag = ABR_name set_state_name = "Pëscàrë" set_province_name = { id = 14836 name = "Pëscàrë" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1398 has_state_flag = ABR_name }
+					ROOT = { NOT = { original_tag = ABR } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = ABR_name }
+				reset_province_name = 14836
+			}
+			#Chieti
+			if = {
+				limit = {
+					FROM.FROM = { state = 1399 NOT = { has_state_flag = ABR_name } }
+					ROOT = { original_tag = ABR }
+				}
+				FROM.FROM = { set_state_flag = ABR_name set_state_name = "Chjïétë" set_province_name = { id = 3976 name = "Chjïétë" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1399 has_state_flag = ABR_name }
+					ROOT = { NOT = { original_tag = ABR } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = ABR_name }
+				reset_province_name = 3976
+			}
+			#Isernia
+			if = {
+				limit = {
+					FROM.FROM = { state = 2848 NOT = { has_state_flag = MLS_name } }
+					ROOT = { original_tag = MLS }
+				}
+				FROM.FROM = { set_state_flag = MLS_name set_state_name = "Sèrnia" set_province_name = { id = 5885 name = "Sèrnia" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2848 has_state_flag = MLS_name }
+					ROOT = { NOT = { original_tag = MLS } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = MLS_name }
+				reset_province_name = 5885
+			}
+			#Campobasso
+			if = {
+				limit = {
+					FROM.FROM = { state = 908 NOT = { has_state_flag = MLS_name } }
+					ROOT = { original_tag = MLS }
+				}
+				FROM.FROM = { set_state_flag = MLS_name set_state_name = "Campuasce" set_province_name = { id = 20031 name = "Campuasce" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 908 has_state_flag = MLS_name }
+					ROOT = { NOT = { original_tag = MLS } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = MLS_name }
+				reset_province_name = 20031
+			}
+		}
+		#Apulian States
+		effect = {
+			#Lecce
+			if = {
+				limit = {
+					FROM.FROM = { state = 1407 NOT = { has_state_flag = PUG_name } }
+					ROOT = { original_tag = PUG }
+				}
+				FROM.FROM = { set_state_flag = PUG_name set_state_name = "Lécce" set_province_name = { id = 20007 name = "Lécce" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1407 has_state_flag = PUG_name }
+					ROOT = { NOT = { original_tag = PUG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = PUG_name }
+				reset_province_name = 20007
+			}
+			#Brindisi
+			if = {
+				limit = {
+					FROM.FROM = { state = 1406 NOT = { has_state_flag = PUG_name } }
+					ROOT = { original_tag = PUG }
+				}
+				FROM.FROM = { set_state_flag = PUG_name set_state_name = "Brinnisi" set_province_name = { id = 15087 name = "Brinnisi" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1406 has_state_flag = PUG_name }
+					ROOT = { NOT = { original_tag = PUG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = PUG_name }
+				reset_province_name = 15087
+			}
+			#Taranto
+			if = {
+				limit = {
+					FROM.FROM = { state = 1405 NOT = { has_state_flag = PUG_name } }
+					ROOT = { original_tag = PUG }
+				}
+				FROM.FROM = { set_state_flag = PUG_name set_state_name = "Tarde" set_province_name = { id = 15118 name = "Tarde" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1405 has_state_flag = PUG_name }
+					ROOT = { NOT = { original_tag = PUG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = PUG_name }
+				reset_province_name = 15118
+			}
+			#Bari
+			if = {
+				limit = {
+					FROM.FROM = { state = 912 NOT = { has_state_flag = PUG_name } }
+					ROOT = { original_tag = PUG }
+				}
+				FROM.FROM = { set_state_flag = PUG_name set_state_name = "Bare" set_province_name = { id = 15006 name = "Bare" } set_province_name = { id = 6160 name = "Àndrie" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 912 has_state_flag = PUG_name }
+					ROOT = { NOT = { original_tag = PUG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = PUG_name }
+				reset_province_name = 15006
+				reset_province_name = 6160
+			}
+			#Foggia
+			if = {
+				limit = {
+					FROM.FROM = { state = 1404 NOT = { has_state_flag = PUG_name } }
+					ROOT = { original_tag = PUG }
+				}
+				FROM.FROM = { set_state_flag = PUG_name set_state_name = "Fògge" set_province_name = { id = 1980 name = "Fògge" } set_province_name = { id = 14922 name = "Mambredònie" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1404 has_state_flag = PUG_name }
+					ROOT = { NOT = { original_tag = PUG } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = PUG_name }
+				reset_province_name = 1980
+				reset_province_name = 14922
+			}
+		}
+		#Sardinian States
+		effect = {
+			#Sassari
+			if = {
+				limit = {
+					FROM.FROM = { state = 1421 NOT = { has_state_flag = SRD_name } }
+					ROOT = { original_tag = SRD }
+				}
+				FROM.FROM = { set_state_flag = SRD_name set_province_name = { id = 7275 name = "Terranoa" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1421 has_state_flag = SRD_name }
+					ROOT = { NOT = { original_tag = SRD } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SRD_name }
+				reset_province_name = 7275
+			}
+			#Nuoro
+			if = {
+				limit = {
+					FROM.FROM = { state = 1420 NOT = { has_state_flag = SRD_name } }
+					ROOT = { original_tag = SRD }
+				}
+				FROM.FROM = { set_state_flag = SRD_name set_state_name = "Nùgoro" set_province_name = { id = 2660 name = "Nùgoro" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1420 has_state_flag = SRD_name }
+					ROOT = { NOT = { original_tag = SRD } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SRD_name }
+				reset_province_name = 2660
+			}
+			#Cagliari
+			if = {
+				limit = {
+					FROM.FROM = { state = 944 NOT = { has_state_flag = SRD_name } }
+					ROOT = { original_tag = SRD }
+				}
+				FROM.FROM = { set_state_flag = SRD_name set_state_name = "Casteddu" set_province_name = { id = 20034 name = "Casteddu" } set_province_name = { id = 20496 name = "Aristanis" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 944 has_state_flag = SRD_name }
+					ROOT = { NOT = { original_tag = SRD } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SRD_name }
+				reset_province_name = 20034
+				reset_province_name = 20496
+			}
+		}
+		#Sicilian States
+		effect = {
+			#Palermo
+			if = {
+				limit = {
+					FROM.FROM = { state = 1075 NOT = { has_state_flag = SIC_name } }
+					ROOT = { original_tag = SIC }
+				}
+				FROM.FROM = { set_state_flag = SIC_name set_state_name = "Palermu" set_province_name = { id = 15356 name = "Palermu" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1075 has_state_flag = SIC_name }
+					ROOT = { NOT = { original_tag = SIC } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SIC_name }
+				reset_province_name = 15356
+			}
+			#Trapani
+			if = {
+				limit = {
+					FROM.FROM = { state = 1412 NOT = { has_state_flag = SIC_name } }
+					ROOT = { original_tag = SIC }
+				}
+				FROM.FROM = { set_state_flag = SIC_name set_state_name = "Tràpani" set_province_name = { id = 7121 name = "Tràpani" } }				
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1412 has_state_flag = SIC_name }
+					ROOT = { NOT = { original_tag = SIC } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SIC_name }
+				reset_province_name = 7121
+				
+			}
+			#Agrigento
+			if = {
+				limit = {
+					FROM.FROM = { state = 1413 NOT = { has_state_flag = SIC_name } }
+					ROOT = { original_tag = SIC }
+				}
+				FROM.FROM = { set_state_flag = SIC_name set_state_name = "Giurgenti" set_province_name = { id = 2068 name = "Giurgenti" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1413 has_state_flag = SIC_name }
+					ROOT = { NOT = { original_tag = SIC } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SIC_name }
+				reset_province_name = 2068
+			}
+			#Caltanissetta
+			if = {
+				limit = {
+					FROM.FROM = { state = 1417 NOT = { has_state_flag = SIC_name } }
+					ROOT = { original_tag = SIC }
+				}
+				FROM.FROM = { set_state_flag = SIC_name set_state_name = "Cartanissètta" set_province_name = { id = 15438 name = "Cartanissètta" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1417 has_state_flag = SIC_name }
+					ROOT = { NOT = { original_tag = SIC } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SIC_name }
+				reset_province_name = 15438
+			}
+			#Enna
+			if = {
+				limit = {
+					FROM.FROM = { state = 1416 NOT = { has_state_flag = SIC_name } }
+					ROOT = { original_tag = SIC }
+				}
+				FROM.FROM = { set_state_flag = SIC_name set_state_name = "Castruggiuvanni" set_province_name = { id = 15418 name = "Castruggiuvanni" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1416 has_state_flag = SIC_name }
+					ROOT = { NOT = { original_tag = SIC } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SIC_name }
+				reset_province_name = 15418
+			}
+			#Ragusa
+			if = {
+				limit = {
+					FROM.FROM = { state = 1419 NOT = { has_state_flag = SIC_name } }
+					ROOT = { original_tag = SIC }
+				}
+				FROM.FROM = { set_state_flag = SIC_name set_state_name = "Raùsa" set_province_name = { id = 5843 name = "Raùsa" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1419 has_state_flag = SIC_name }
+					ROOT = { NOT = { original_tag = SIC } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SIC_name }
+				reset_province_name = 5843
+			}
+			#Siracusa
+			if = {
+				limit = {
+					FROM.FROM = { state = 1418 NOT = { has_state_flag = SIC_name } }
+					ROOT = { original_tag = SIC }
+				}
+				FROM.FROM = { set_state_flag = SIC_name set_state_name = "Sarausa" set_province_name = { id = 5351 name = "Sarausa" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1413 has_state_flag = SIC_name }
+					ROOT = { NOT = { original_tag = SIC } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SIC_name }
+				reset_province_name = 5351
+			}
+			#Messina
+			if = {
+				limit = {
+					FROM.FROM = { state = 1414 NOT = { has_state_flag = SIC_name } }
+					ROOT = { original_tag = SIC }
+				}
+				FROM.FROM = { set_state_flag = SIC_name set_state_name = "Missina" set_province_name = { id = 15350 name = "Missina" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1414 has_state_flag = SIC_name }
+					ROOT = { NOT = { original_tag = SIC } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SIC_name }
+				reset_province_name = 15350
+			}
+			#Pantelleria
+			if = {
+				limit = {
+					FROM.FROM = { state = 1620 NOT = { has_state_flag = SIC_name } }
+					ROOT = { original_tag = SIC }
+				}
+				FROM.FROM = { set_state_flag = SIC_name set_state_name = "Pantiddharìa" }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1620 has_state_flag = SIC_name }
+					ROOT = { NOT = { original_tag = SIC } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SIC_name }
+			}
+			#Lampedusa
+			if = {
+				limit = {
+					FROM.FROM = { state = 1621 NOT = { has_state_flag = SIC_name } }
+					ROOT = { original_tag = SIC }
+				}
+				FROM.FROM = { set_state_flag = SIC_name set_state_name = "Lampidusa" }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1621 has_state_flag = SIC_name }
+					ROOT = { NOT = { original_tag = SIC } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SIC_name }
+			}
+		}
+	}
+}
