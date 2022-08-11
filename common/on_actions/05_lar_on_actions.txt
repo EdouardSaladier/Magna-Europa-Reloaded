@@ -197,18 +197,18 @@ on_actions = {
 				limit = {
 					ROOT = { has_country_flag = just_freed_operative_flag }
 				}
-				every_operative = {
-					if = {
-						limit = {
-							NOT = { has_trait = operative_escape_artist }
-						}
-						random_list = {
-							15 = { add_unit_leader_trait = operative_escape_artist }
-							85 = {}
-						}
-					}
-				}
-				ROOT = { clr_country_flag = just_freed_operative_flag }
+			#	every_operative = {
+			#		if = {
+			#			limit = {
+			#				NOT = { has_trait = operative_escape_artist }
+			#			}
+			#			random_list = {
+			#				15 = { add_unit_leader_trait = operative_escape_artist }
+			#				85 = {}
+			#			}
+			#		}
+			#	}
+			#	ROOT = { clr_country_flag = just_freed_operative_flag }
 			}
 			every_operative = { #add target nationality if linguist
 				if = {
