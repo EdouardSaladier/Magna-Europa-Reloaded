@@ -1338,6 +1338,22 @@ on_actions = {
 		}
 		#Sardinian States
 		effect = {
+			#Alghero
+			if = {
+				limit = {
+					FROM.FROM = { state = 2894 NOT = { has_state_flag = SRD_name } }
+					ROOT = { original_tag = SRD }
+				}
+				FROM.FROM = { set_state_flag = SRD_name set_state_name = "L'Aliera" set_province_name = { id = 19084 name = "L'Aliera" } }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2894 has_state_flag = SRD_name }
+					ROOT = { NOT = { original_tag = SRD } }
+				}
+				FROM.FROM = { reset_state_name = yes clr_state_flag = SRD_name }
+				reset_province_name = 19084
+			}
 			#Sassari
 			if = {
 				limit = {
@@ -1351,7 +1367,7 @@ on_actions = {
 					FROM.FROM = { state = 1421 has_state_flag = SRD_name }
 					ROOT = { NOT = { original_tag = SRD } }
 				}
-				FROM.FROM = { reset_state_name = yes clr_state_flag = SRD_name }
+				FROM.FROM = { clr_state_flag = SRD_name }
 				reset_province_name = 7275
 			}
 			#Nuoro
