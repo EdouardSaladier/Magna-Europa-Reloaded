@@ -1,0 +1,26 @@
+state={
+	id=2894
+	name="STATE_2894"
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = SRD
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			19084 1 
+		}
+
+	}
+
+	provinces={
+		19084 
+	}
+	manpower=15998
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}
