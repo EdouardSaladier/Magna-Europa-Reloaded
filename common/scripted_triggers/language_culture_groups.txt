@@ -236,3 +236,9 @@ is_german = {
 		original_tag = GER
 	}
 }
+is_hungarian = {
+	OR = {
+		original_tag = HUN
+		original_tag = SZE
+	}
+}
