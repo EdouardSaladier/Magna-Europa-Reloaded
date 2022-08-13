@@ -2,21 +2,25 @@
 state={
 	id=1973
 	name="STATE_1973"
-	provinces={
-		1945 6105 
-	}
-	history = {
+
+	history={
 		owner = YUG
 		add_core_of = MAC
 		buildings = {
 			infrastructure = 1
+
 		}
 		victory_points = {
-			1945 2 #Gevgelija
+			1945 2 
 		}
 		add_core_of = YUG
+
 	}
-	manpower=65685
+
+	provinces={
+		1945 
+	}
+	manpower=60674
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

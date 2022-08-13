@@ -1,0 +1,24 @@
+
+state={
+	id=2899
+	name="STATE_2899"
+
+	history={
+		owner = YUG
+		add_core_of = YUG
+		add_core_of = MAC
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		14891 14912 17543 
+	}
+	manpower=33809
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}
