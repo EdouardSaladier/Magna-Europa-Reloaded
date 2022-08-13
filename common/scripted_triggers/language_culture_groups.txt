@@ -15,6 +15,19 @@ is_emilian = {
 		original_tag = PRM
 	}
 }
+is_lazial = {
+	OR = {
+		original_tag = UMB
+		original_tag = LAZ
+	}
+}
+is_lombard = {
+	OR = {
+		original_tag = LOM
+		original_tag = PAV
+		original_tag = MTV
+	}
+}
 is_northern_italian = {
 	OR = {
 		original_tag = PIE
