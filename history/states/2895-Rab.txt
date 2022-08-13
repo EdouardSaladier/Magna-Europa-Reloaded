@@ -1,0 +1,22 @@
+state={
+	id=2895
+	name="STATE_2895"
+	provinces={
+		20128 
+	}
+	history={
+		owner = YUG
+		add_core_of = YUG
+		add_core_of = CRO
+		add_core_of = FIU
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+	manpower=5302
+	state_category=small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
