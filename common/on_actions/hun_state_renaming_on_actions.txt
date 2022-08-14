@@ -577,6 +577,36 @@ on_actions = {
 				reset_province_name = 13354
 				1437 = { clr_state_flag = HUN_Pozsony }
 			}
+		   if = {
+				limit = {
+					FROM.FROM = { state = 1608 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_hungarian = yes
+						}
+					}
+					set_province_name = {
+						id = 8775
+						name = "Nagyszőlős"
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					set_province_name = {
+						id = 8775
+						name = "CULTURE2STATE"
+					}
+				}
+				else = {
+					reset_province_name = 8775
+				}
+			}
 			#Poland
 			
 			if = {
