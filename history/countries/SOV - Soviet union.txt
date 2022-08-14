@@ -362,6 +362,8 @@ capital = 229
 starting_train_buffer = 3.0
 set_convoys = 50
 
+create_faction = "Communist International"
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1933.7.1"
