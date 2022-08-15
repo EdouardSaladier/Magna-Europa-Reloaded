@@ -13,12 +13,7 @@ is_emilian = {
 		original_tag = BLG
 		original_tag = FRR
 		original_tag = PRM
-	}
-}
-is_lazial = {
-	OR = {
-		original_tag = UMB
-		original_tag = LAZ
+		original_tag = MTV
 	}
 }
 is_lombard = {
@@ -180,6 +175,7 @@ is_austrian = {
 }
 
 is_swiss = {
+		original_tag = SWI
 		original_tag = VOR
 		original_tag = LIE
 }
@@ -253,5 +249,36 @@ is_hungarian = {
 	OR = {
 		original_tag = HUN
 		original_tag = SZE
+	}
+}
+is_serbocroatian = {
+	OR = {
+		original_tag = SER
+		original_tag = CRO
+		original_tag = BOS
+		original_tag = HRZ
+		original_tag = MNT
+		original_tag = VJV
+		original_tag = DLM
+		original_tag = KRJ
+		original_tag = WBS
+		original_tag = SRP
+		original_tag = HZB
+		original_tag = SDZ
+	}
+}
+is_bulgaromacedonian = {
+	OR = {
+		original_tag = BUL
+		original_tag = MAC
+		original_tag = RUM
+	}
+}
+is_yugoslav = {
+	OR = {
+		is_serbocroatian = yes
+		is_bulgaromacedonian = yes
+		original_tag = SLV
+		original_tag = YUG
 	}
 }

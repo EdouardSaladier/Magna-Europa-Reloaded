@@ -1,0 +1,59 @@
+# These on-actions change French state and VP names when other countries capture them.
+
+on_actions = {
+
+	on_state_control_changed = {
+		#Corsica
+		effect = {
+			#Corse du Sud
+            if = {
+                limit = { FROM.FROM = { state = 866 } }
+				if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+							NOT = { original_tag = COR }
+						}
+					}
+					FROM.FROM = { set_state_name = "Ajaccio" }
+					set_province_name = { id = 8443 name = "Ajaccio" }
+				}
+				else_if = {
+					limit = {
+						ROOT = { original_tag = COR }
+					}
+					FROM.FROM = { set_state_name = "Pumonti" }
+					set_province_name = { id = 8443 name = "Ajacciu" }
+					
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 8443
+				}
+			}
+			#Haute Corse
+            if = {
+                limit = { FROM.FROM = { state = 1422 } }
+				if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+							NOT = { original_tag = COR }
+						}
+					}
+					FROM.FROM = { set_state_name = "Bastia" }
+				}
+				else_if = {
+					limit = {
+						ROOT = { original_tag = COR }
+					}
+					FROM.FROM = { set_state_name = "Cismonte" }
+					
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+		}
+	}
+}
