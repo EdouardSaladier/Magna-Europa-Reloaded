@@ -22,6 +22,17 @@ set_technology = {
 
 set_convoys = 10
 
+create_country_leader = {
+	name = "Roberto d'Asburgo-Este"
+	desc = ""
+	picture = "gfx/leaders/MDN/Portrait_MDN_Robert_Habsburg.png"
+	expire = "1960.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
