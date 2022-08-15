@@ -2,8 +2,25 @@ is_tuscan = {
 	OR = {
 		original_tag = TUS
 		original_tag = LCC
-		#Pisa
-		#Siena
+		original_tag = SNA
+		original_tag = PIS
+	}
+}
+is_emilian = {
+	OR = {
+		original_tag = MCR
+		original_tag = MDN
+		original_tag = BLG
+		original_tag = FRR
+		original_tag = PRM
+		original_tag = MTV
+	}
+}
+is_lombard = {
+	OR = {
+		original_tag = LOM
+		original_tag = PAV
+		original_tag = MTV
 	}
 }
 is_northern_italian = {
@@ -13,12 +30,7 @@ is_northern_italian = {
 		original_tag = PAV
 		original_tag = MTV
 		original_tag = LIG
-		original_tag = PRM
-		original_tag = MCR
-		original_tag = MDN
-		original_tag = BLG
-		original_tag = RMN
-		original_tag = FRR
+		original_tag = RMG
 		original_tag = VNT
 		original_tag = SMR
 	}
@@ -48,6 +60,7 @@ is_italian = {
 		is_northern_italian = yes
 		is_central_italian = yes
 		is_southern_italian = yes
+		original_tag = ITA
 		original_tag = SIC
 		original_tag = SRD
 		original_tag = TST
@@ -81,11 +94,20 @@ is_d_oil = {
 		original_tag = WLN
 	}
 }
+
+is_arpitan = {
+	OR = {
+		original_tag = AOS
+		original_tag = VLS
+		original_tag = ARP
+		original_tag = RMD
+		original_tag = SAV
+	}
+}
 is_french = { 
 	OR = {
 		is_d_oil = yes
 		is_occitan = yes
-		original_tag = SAV
 	}
 }
 
@@ -142,6 +164,23 @@ is_iberian = {
 	}
 }
 
+is_austrian = {
+	OR = {
+		original_tag = AUS
+		original_tag = STR
+		original_tag = TIR
+		original_tag = KRT
+		original_tag = BUR
+		original_tag = SLZ
+	}
+}
+
+is_swiss = {
+		original_tag = SWI
+		original_tag = VOR
+		original_tag = LIE
+}
+
 is_high_german = {
 	OR = {
 		original_tag = BVR
@@ -149,16 +188,9 @@ is_high_german = {
 		original_tag = WRT
 		original_tag = BDN
 		original_tag = HOZ
-		original_tag = SWI
-		original_tag = AUS
-		original_tag = VOR
-		original_tag = STR
-		original_tag = TIR
-		original_tag = KRT
-		original_tag = BUR
-		original_tag = SLZ
-		original_tag = LIE
 		original_tag = ALS
+		is_austrian = yes
+		is_swiss = yes
 	}
 }
 is_thuringian = {
@@ -212,5 +244,42 @@ is_german = {
 		is_middle_german = yes
 		is_low_german = yes
 		original_tag = GER
+	}
+}
+is_hungarian = {
+	OR = {
+		original_tag = HUN
+		original_tag = SZE
+	}
+}
+is_serbocroatian = {
+	OR = {
+		original_tag = SER
+		original_tag = CRO
+		original_tag = BOS
+		original_tag = HRZ
+		original_tag = MNT
+		original_tag = VJV
+		original_tag = DLM
+		original_tag = KRJ
+		original_tag = WBS
+		original_tag = SRP
+		original_tag = HZB
+		original_tag = SDZ
+	}
+}
+is_bulgaromacedonian = {
+	OR = {
+		original_tag = BUL
+		original_tag = MAC
+		original_tag = RUM
+	}
+}
+is_yugoslav = {
+	OR = {
+		is_serbocroatian = yes
+		is_bulgaromacedonian = yes
+		original_tag = SLV
+		original_tag = YUG
 	}
 }
