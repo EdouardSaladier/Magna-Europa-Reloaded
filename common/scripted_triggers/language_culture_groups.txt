@@ -2,8 +2,25 @@ is_tuscan = {
 	OR = {
 		original_tag = TUS
 		original_tag = LCC
-		#Pisa
-		#Siena
+		original_tag = SNA
+		original_tag = PIS
+	}
+}
+is_emilian = {
+	OR = {
+		original_tag = MCR
+		original_tag = MDN
+		original_tag = BLG
+		original_tag = FRR
+		original_tag = PRM
+		original_tag = MTV
+	}
+}
+is_lombard = {
+	OR = {
+		original_tag = LOM
+		original_tag = PAV
+		original_tag = MTV
 	}
 }
 is_emilian = {
