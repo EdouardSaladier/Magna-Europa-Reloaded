@@ -1557,7 +1557,9 @@ on_actions = {
 				}
 			}
 			#Rieti
-				else_if = {
+			if = {
+				limit = { FROM.FROM = { state = 1394 } }
+				if = {
 					limit = {
 						ROOT = {
 							is_central_italian = yes
@@ -1576,8 +1578,6 @@ on_actions = {
 				}
 			}
 		#Lazial States
-		
-
 			#Frosinone
 		   if = {
 				limit = {
@@ -2039,6 +2039,7 @@ on_actions = {
 					}
 				}
 				else = {
+					FROM.FROM = { reset_state_name = yes }
 					reset_province_name = 7275
 				}
 			}
