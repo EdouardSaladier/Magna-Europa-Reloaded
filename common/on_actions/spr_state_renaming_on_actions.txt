@@ -38,7 +38,7 @@ on_actions = {
 			if = {
 				limit = { FROM.FROM = { state = 1016 } }
 				if = {
-					limit = { ROOT = is_catalan = yes }
+					limit = { ROOT = { is_catalan = yes } }
 					FROM.FROM = { set_state_name = "Illes Balears" }
 					set_province_name = { id = 19805 name = "Maó" }
 					set_province_name = { id = 19804 name = "Eivissa" }
