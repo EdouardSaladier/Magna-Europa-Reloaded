@@ -9,6 +9,7 @@ state={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = WLC
+		add_core_of = DOB
 		buildings = { infrastructure = 2 }
 	}
 	state_category = rural
