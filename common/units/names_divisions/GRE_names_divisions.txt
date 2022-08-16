@@ -34,9 +34,9 @@ GRE_INF_01 =
 {
 	name = "Infantry Division"
 
-	for_countries = { GRE }
+	
 
-	can_use = { always = yes }
+	can_use = { OR = { original_tag = GRE original_tag = SAM original_tag = CRT original_tag = WTH original_tag = NER } }
 
 	division_types = { "infantry" }
 
@@ -86,9 +86,9 @@ GRE_CAV_01 =
 {
 	name = "Cavalry Division"
 
-	for_countries = { GRE }
+	
 
-	can_use = { always = yes }
+	can_use = { OR = { original_tag = GRE original_tag = SAM original_tag = CRT original_tag = WTH original_tag = NER } }
 
 	division_types = { "cavalry" }
 
@@ -118,9 +118,9 @@ GRE_MOT_01 =
 {
 	name = "Motorized Infantry Division"
 
-	for_countries = { GRE }
+	
 
-	can_use = { always = yes }
+	can_use = { OR = { original_tag = GRE original_tag = SAM original_tag = CRT original_tag = WTH original_tag = NER } }
 
 	division_types = { "motorized" }
 
@@ -151,9 +151,9 @@ GRE_MEC_01 =
 {
 	name = "Mechanized Division"
 
-	for_countries = { GRE }
+	
 
-	can_use = { always = yes }
+	can_use = { OR = { original_tag = GRE original_tag = SAM original_tag = CRT original_tag = WTH original_tag = NER } }
 
 	division_types = { "mechanized" }
 
@@ -184,9 +184,9 @@ GRE_ARM_01 =
 {
 	name = "Armored Division"
 
-	for_countries = { GRE }
+	
 
-	can_use = { always = yes }
+	can_use = { OR = { original_tag = GRE original_tag = SAM original_tag = CRT original_tag = WTH original_tag = NER } }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -217,9 +217,9 @@ GRE_PAR_01 =
 {
 	name = "Paratrooper Division"
 
-	for_countries = { GRE }
+	
 
-	can_use = { always = yes }
+	can_use = { OR = { original_tag = GRE original_tag = SAM original_tag = CRT original_tag = WTH original_tag = NER } }
 
 	division_types = { "paratrooper" }
 
@@ -249,9 +249,9 @@ GRE_MAR_01 =
 {
 	name = "Marine Division"
 
-	for_countries = { GRE }
+	
 
-	can_use = { always = yes }
+	can_use = { OR = { original_tag = GRE original_tag = SAM original_tag = CRT original_tag = WTH original_tag = NER } }
 
 	division_types = { "marine" }
 
@@ -281,9 +281,9 @@ GRE_MNT_01 =
 {
 	name = "Mountain Division"
 
-	for_countries = { GRE }
+	
 
-	can_use = { always = yes }
+	can_use = { OR = { original_tag = GRE original_tag = SAM original_tag = CRT original_tag = WTH original_tag = NER } }
 
 	division_types = { "mountaineers" }
 
@@ -333,9 +333,9 @@ GRE_GAR_01 =
 {
 	name = "Garrison Division"
 
-	for_countries = { GRE }
+	
 
-	can_use = { always = yes }
+	can_use = { OR = { original_tag = GRE original_tag = SAM original_tag = CRT original_tag = WTH original_tag = NER } }
 
 	division_types = { "infantry" }
 

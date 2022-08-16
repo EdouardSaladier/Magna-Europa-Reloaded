@@ -400,7 +400,7 @@ ITA_ARM_01 = {
 } 
 
 ITA_MAR_01 = { 
-	name = "Marine Regiment" 
+	name = "Marine Brigade" 
 
 	for_countries = { ITA } 
 
@@ -411,13 +411,13 @@ ITA_MAR_01 = {
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { ITA_MAR_01 } 
 
-	fallback_name = "%d° Reggimento da Sbarco" 
+	fallback_name = "%da Brigata Marina" 
 
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered = { 
-		1 = { "%d° Reggimento da Sbarco 'San Marco'" } 
-		2 = { "%d° Reggimento da Sbarco 'Serenissima'" }							# Fictional divisions start here (1 post WW2 divisions)
+		1 = { "%da Brigata Marina 'San Marco'" } 
+		2 = { "%d° Reggimento Lagunari 'Serenissima'" }							# Fictional divisions start here (1 post WW2 divisions)
 	} 
 } 
 
@@ -586,7 +586,7 @@ ITAL_MNT_01 = {
 }
 
 ITAL_MAR_01 = { 
-	name = "Marine Regiment" 
+	name = "Marine Brigade" 
 
 	for_countries = { } 
 
@@ -600,7 +600,7 @@ ITAL_MAR_01 = {
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { ITA_MAR_01 } 
 
-	fallback_name = "%d° Reggimento da Sbarco" 
+	fallback_name = "%da Brigata Marina" 
 }
 
 ITAL_COL_01 = { 

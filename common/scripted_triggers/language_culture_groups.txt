@@ -25,14 +25,15 @@ is_lombard = {
 }
 is_northern_italian = {
 	OR = {
+		is_emilian = yes
+		is_lombard = yes
 		original_tag = PIE
+		original_tag = VOS
 		original_tag = LOM
-		original_tag = PAV
-		original_tag = MTV
 		original_tag = LIG
 		original_tag = RMG
-		original_tag = VNT
 		original_tag = SMR
+		original_tag = VNT
 	}
 }
 is_central_italian = {
@@ -92,6 +93,7 @@ is_d_oil = {
 		original_tag = BGN
 		original_tag = ORL
 		original_tag = WLN
+		original_tag = ATI
 	}
 }
 
