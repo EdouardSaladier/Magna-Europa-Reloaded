@@ -2,20 +2,24 @@
 state={
 	id=767
 	name="STATE_767"
-	history = {
+
+	history={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = DOB
 		add_core_of = WLC
 		buildings = {
 			infrastructure = 3
+
 		}
 		victory_points = {
-			7492 5
+			7492 5 
 		}
+
 	}
+
 	provinces={
-		827 1576 6664 6730 7492 8586 14324 14369 14403 14415 20417 
+		827 6664 6730 7492 8586 14369 14415 20417 
 	}
 	manpower=192570
 	buildings_max_level_factor=1.000
