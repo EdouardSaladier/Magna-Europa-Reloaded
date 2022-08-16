@@ -1,56 +1,77 @@
-# These on-actions change state and VP names when France captures them.
-#
-#			if = {
-#				limit = {
-#					FROM.FROM = { state = X }
-#					X = { NOT = { has_state_flag = FRA_Name } }
-#					ROOT = { is_french = yes }
-#					ROOT = { occ_change_name = yes }
-#				}
-#				X = { set_state_name = "Name" }
-#				set_province_name = { id = Y name = "Cityname" }
-#				X = { set_state_flag = FRA_Name }
-#			}
-#			
-#			if = {
-#				limit = {
-#					FROM.FROM = { state = X }
-#					X = { has_state_flag = FRA_Name }
-#					ROOT = { is_french = no }
-#				}
-#				X = { reset_state_name = yes }
-#				reset_province_name = Y
-#				X = { clr_state_flag = FRA_Name }
-#			}
-
+# These on-actions change French state and VP names when other countries capture them.
 
 on_actions = {
 
 	on_state_control_changed = {
-		#Germany
 		effect = {
-			#Saarland - Sarre (also democratic)
+			#Roussillon
+			if = {
+				limit = { FROM.FROM = { state = 871 } }
+				if = {
+					limit = { ROOT = { is_catalan = yes } }
+					FROM.FROM = { set_state_name = "Roselló" }
+					set_province_name = { id = 19762 name = "Perpinyà" }
+				}
+				else_if = {
+					limit = { ROOT = { is_spanish = yes is_catalan = no } }
+					FROM.FROM = { set_state_name = "Rosellon" }
+					set_province_name = { id = 19762 name = "Perpiñán" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 19762
+				}
+			}
+		}
+		#Corsica
+		effect = {
+			#Corse du Sud
             if = {
-                limit = {
-                    FROM.FROM = { state = 537 }
-                    537 = { NOT = { has_state_flag = FRA_Sarre } }
-                    ROOT = { is_french = yes }
-                }
-                537 = { set_state_name = "Sarre" }
-                set_province_name = { id = 13047 name = "Sarrebruck" }
-                537 = { set_state_flag = FRA_Sarre }
-            }
-
+                limit = { FROM.FROM = { state = 866 } }
+				if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+							NOT = { original_tag = COR }
+						}
+					}
+					FROM.FROM = { set_state_name = "Ajaccio" }
+					set_province_name = { id = 8443 name = "Ajaccio" }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = COR } }
+					FROM.FROM = { set_state_name = "Pumonti" }
+					set_province_name = { id = 8443 name = "Ajacciu" }
+					
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 8443
+				}
+			}
+			#Haute Corse
             if = {
-                limit = {
-                    FROM.FROM = { state = 537 }
-                    537 = { has_state_flag = FRA_Sarre }
-                    ROOT = { is_french = no }
-                }
-                537 = { reset_state_name = yes }
-                reset_province_name = 13047
-                537 = { clr_state_flag = FRA_Sarre }
-            }
+                limit = { FROM.FROM = { state = 1422 } }
+				if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+							NOT = { original_tag = COR }
+						}
+					}
+					FROM.FROM = { set_state_name = "Bastia" }
+				}
+				else_if = {
+					limit = {
+						ROOT = { original_tag = COR }
+					}
+					FROM.FROM = { set_state_name = "Cismonte" }
+					
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 		}
 	}
 }

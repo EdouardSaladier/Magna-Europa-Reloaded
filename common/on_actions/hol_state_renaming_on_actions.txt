@@ -1,0 +1,420 @@
+
+
+on_actions = {
+
+	on_state_control_changed = {
+		#Netherlands
+		effect = {
+			#Rivierenland - Flussland
+			if = {
+				limit = {
+					FROM.FROM = { state = 2331 }
+					2331 = { NOT = { has_state_flag = GER_Flussland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				2331 = { set_state_name = "Flussland" }
+				set_province_name = { id = 5357 name = "Nimwegen" }
+				2331 = { set_state_flag = GER_Flussland }
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2331 }
+					2331 = { has_state_flag = GER_Flussland }
+					ROOT = { is_german = no }
+				}
+				2331 = { reset_state_name = yes }
+				reset_province_name = 5357
+				2331 = { clr_state_flag = GER_Flussland }
+			}
+			
+			#Noord Overmaas - Nord-Maasland
+			if = {
+				limit = {
+					FROM.FROM = { state = 2717 }
+					2717 = { NOT = { has_state_flag = GER_Nordmaasland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				2717 = { set_state_name = "Nord-Maasland" }
+				2717 = { set_state_flag = GER_Nordmaasland }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2717 }
+					2717 = { has_state_flag = GER_Nordmaasland }
+					ROOT = { is_german = no }
+				}
+				2717 = { reset_state_name = yes }
+				2717 = { clr_state_flag = GER_Nordmaasland }
+			}
+			
+			#Zuid Overmaas - Süd-Maasland
+			if = {
+				limit = {
+					FROM.FROM = { state = 2344 }
+					2344 = { NOT = { has_state_flag = GER_Sudmaasland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				2344 = { set_state_name = "Süd-Maasland" }
+				2344 = { set_state_flag = GER_Sudmaasland }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2344 }
+					2344 = { has_state_flag = GER_Sudmaasland }
+					ROOT = { is_german = no }
+				}
+				2344 = { reset_state_name = yes }
+				2344 = { clr_state_flag = GER_Sudmaasland }
+			}
+			
+			#Limburg Voormaas - West-Maasland
+			if = {
+				limit = {
+					FROM.FROM = { state = 432 }
+					432 = { NOT = { has_state_flag = GER_Westmaasland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				432 = { set_state_name = "West-Maasland" }
+				432 = { set_state_flag = GER_Westmaasland }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 432 }
+					432 = { has_state_flag = GER_Westmaasland }
+					ROOT = { is_german = no }
+				}
+				432 = { reset_state_name = yes }
+				432 = { clr_state_flag = GER_Westmaasland }
+			}
+			
+			#Groningen - Gröningen
+			if = {
+				limit = {
+					FROM.FROM = { state = 331 }
+					331 = { NOT = { has_state_flag = GER_Groningen } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				331 = { set_state_name = "Gröningen" }
+				set_province_name = { id = 11312 name = "Gröningen" }
+				331 = { set_state_flag = GER_Groningen }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 331 }
+					331 = { has_state_flag = GER_Groningen }
+					ROOT = { is_german = no }
+				}
+				331 = { reset_state_name = yes }
+				reset_province_name = 11312
+				331 = { clr_state_flag = GER_Groningen }
+			}
+			
+			#Achterhoek - Hinterecke
+			if = {
+				limit = {
+					FROM.FROM = { state = 1317 }
+					1317 = { NOT = { has_state_flag = GER_Hinterecke } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				1317 = { set_state_name = "Hinterecke" }
+				1317 = { set_state_flag = GER_Hinterecke }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 1317 }
+					1317 = { has_state_flag = GER_Hinterecke }
+					ROOT = { is_german = no }
+				}
+				1317 = { reset_state_name = yes }
+				1317 = { clr_state_flag = GER_Hinterecke }
+			}
+			
+			#Overijssel - Oberyssel
+			if = {
+				limit = {
+					FROM.FROM = { state = 364 }
+					364 = { NOT = { has_state_flag = GER_Oberyssel } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				364 = { set_state_name = "Oberyssel" }
+				364 = { set_state_flag = GER_Oberyssel }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 364 }
+					364 = { has_state_flag = GER_Oberyssel }
+					ROOT = { is_german = no }
+				}
+				364 = { reset_state_name = yes }
+				364 = { clr_state_flag = GER_Oberyssel }
+			}
+			
+			#Friesland
+			if = {
+				limit = {
+					FROM.FROM = { state = 336 }
+					336 = { NOT = { has_state_flag = GER_Friesland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				set_province_name = { id = 11351 name = "Löwert" }
+				set_province_name = { id = 7212 name = "Snits" }
+				336 = { set_state_flag = GER_Friesland }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 336 }
+					336 = { has_state_flag = GER_Friesland }
+					ROOT = { is_german = no }
+				}
+				reset_province_name = 11351
+				reset_province_name = 7212
+				336 = { clr_state_flag = GER_Friesland }
+			}
+			
+			#Gelderland
+			if = {
+				limit = {
+					FROM.FROM = { state = 383 }
+					383 = { NOT = { has_state_flag = GER_Gelderland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				set_province_name = { id = 7155 name = "Apeldorn" }
+				set_province_name = { id = 5900 name = "Arnheim" }
+				383 = { set_state_flag = GER_Gelderland }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 383 }
+					383 = { has_state_flag = GER_Gelderland }
+					ROOT = { is_german = no }
+				}
+				reset_province_name = 7155
+				reset_province_name = 5900
+				383 = { clr_state_flag = GER_Gelderland }
+			}
+			
+			#Utrecht
+			if = {
+				limit = {
+					FROM.FROM = { state = 399 }
+					399 = { NOT = { has_state_flag = GER_Utrecht } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				set_province_name = { id = 11866 name = "Neuegein" }
+				399 = { set_state_flag = GER_Utrecht }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 399 }
+					399 = { has_state_flag = GER_Utrecht }
+					ROOT = { is_german = no }
+				}
+				reset_province_name = 11866
+				399 = { clr_state_flag = GER_Utrecht }
+			}
+			
+			#Noord-Holland - Nordholland
+			if = {
+				limit = {
+					FROM.FROM = { state = 358 }
+					358 = { NOT = { has_state_flag = GER_Nordholland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				358 = { set_state_name = "Nordholland" }
+				set_province_name = { id = 7784 name = "Alkmar" }
+				358 = { set_state_flag = GER_Nordholland }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 358 }
+					358 = { has_state_flag = GER_Nordholland }
+					ROOT = { is_german = no }
+				}
+				358 = { reset_state_name = yes }
+				reset_province_name = 7784
+				358 = { clr_state_flag = GER_Nordholland }
+			}
+			
+			#Zuid-Holland - Südholland
+			if = {
+				limit = {
+					FROM.FROM = { state = 402 }
+					402 = { NOT = { has_state_flag = GER_Sudholland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				402 = { set_state_name = "Südholland" }
+				set_province_name = { id = 1809 name = "Der Haag" }
+				402 = { set_state_flag = GER_Sudholland }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 402 }
+					402 = { has_state_flag = GER_Sudholland }
+					ROOT = { is_german = no }
+				}
+				402 = { reset_state_name = yes }
+				reset_province_name = 1809
+				402 = { clr_state_flag = GER_Sudholland }
+			}
+			
+			#Onderrijnmond - Niederrheinmündung
+			if = {
+				limit = {
+					FROM.FROM = { state = 2332 }
+					2332 = { NOT = { has_state_flag = GER_Niederrheinmundung } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				2332 = { set_state_name = "Niederrheinmündung" }
+				2332 = { set_state_flag = GER_Niederrheinmundung }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2332 }
+					2332 = { has_state_flag = GER_Niederrheinmundung }
+					ROOT = { is_german = no }
+				}
+				2332 = { reset_state_name = yes }
+				2332 = { clr_state_flag = GER_Niederrheinmundung }
+			}
+			
+			#Oost Noord-Brabant - Ost Noordbrabant
+			if = {
+				limit = {
+					FROM.FROM = { state = 479 }
+					479 = { NOT = { has_state_flag = GER_Ost_Nordbrabant } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				479 = { set_state_name = "Ost Nordbrabant" }
+				479 = { set_state_flag = GER_Ost_Nordbrabant }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 479 }
+					479 = { has_state_flag = GER_Ost_Nordbrabant }
+					ROOT = { is_german = no }
+				}
+				479 = { reset_state_name = yes }
+				479 = { clr_state_flag = GER_Ost_Nordbrabant }
+			}
+			
+			#'s-Hertogenbosch - Herzogenbusch
+			if = {
+				limit = {
+					FROM.FROM = { state = 2845 }
+					2845 = { NOT = { has_state_flag = GER_Herzogenbusch } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				2845 = { set_state_name = "Herzogenbusch" }
+				set_province_name = { id = 3044 name = "Herzogenbusch" }
+				2845 = { set_state_flag = GER_Herzogenbusch }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2845 }
+					2845 = { has_state_flag = GER_Herzogenbusch }
+					ROOT = { is_german = no }
+				}
+				2845 = { reset_state_name = yes }
+				reset_province_name = 3044
+				2845 = { clr_state_flag = GER_Herzogenbusch }
+			}
+			
+			#West Noord-Brabant - West Nordbrabant
+			if = {
+				limit = {
+					FROM.FROM = { state = 2713 }
+					2713 = { NOT = { has_state_flag = GER_West_Nordbrabant } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				2713 = { set_state_name = "West Nordbrabant" }
+				2713 = { set_state_flag = GER_West_Nordbrabant }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2713 }
+					2713 = { has_state_flag = GER_West_Nordbrabant }
+					ROOT = { is_german = no }
+				}
+				2713 = { reset_state_name = yes }
+				2713 = { clr_state_flag = GER_West_Nordbrabant }
+			}
+			
+			#Zeeland - Seeland (yes I know the literal trasnlation would be Meerland but the wiki page says Seeland so pls dont cry)
+			if = {
+				limit = {
+					FROM.FROM = { state = 451 }
+					451 = { NOT = { has_state_flag = GER_Seeland } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				451 = { set_state_name = "Seeland" }
+				set_province_name = { id = 19873 name = "Mittelburg" }
+				451 = { set_state_flag = GER_Seeland }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 451 }
+					451 = { has_state_flag = GER_Seeland }
+					ROOT = { is_german = no }
+				}
+				451 = { reset_state_name = yes }
+				reset_province_name = 19873
+				451 = { clr_state_flag = GER_Seeland }
+			}
+			
+			#Zeeuws-Vlaanderen - Seeländisches Flandern
+			if = {
+				limit = {
+					FROM.FROM = { state = 1974 }
+					1974 = { NOT = { has_state_flag = GER_Seelandisches_Flandern } }
+					ROOT = { is_german = yes }
+					ROOT = { occ_change_name = yes }
+				}
+				1974 = { set_state_name = "Seeländisches Flandern" }
+				1974 = { set_state_flag = GER_Seelandisches_Flandern }
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 1974 }
+					1974 = { has_state_flag = GER_Seelandisches_Flandern }
+					ROOT = { is_german = no }
+				}
+				1974 = { reset_state_name = yes }
+				1974 = { clr_state_flag = GER_Seelandisches_Flandern }
+			}
+		}
+	}
+}
