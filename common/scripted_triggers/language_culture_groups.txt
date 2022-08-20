@@ -23,23 +23,6 @@ is_lombard = {
 		original_tag = MTV
 	}
 }
-is_emilian = {
-	OR = {
-		original_tag = MCR
-		original_tag = MDN
-		original_tag = BLG
-		original_tag = FRR
-		original_tag = PRM
-		original_tag = MTV
-	}
-}
-is_lombard = {
-	OR = {
-		original_tag = LOM
-		original_tag = PAV
-		original_tag = MTV
-	}
-}
 is_northern_italian = {
 	OR = {
 		is_emilian = yes
@@ -305,5 +288,11 @@ is_yugoslav = {
 is_romanian = {
 	OR = {
 		original_tag = ROM
+		original_tag = MOL
+		original_tag = TRA
+		original_tag = WLC
+		original_tag = DOB
+		original_tag = BUC
+		original_tag = BNT
 	}
 }
