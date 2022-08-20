@@ -305,14 +305,48 @@ on_actions = {
 							is_yugoslav = yes
 						}
 					}
-					FROM.FROM = { set_state_name = "Pula" }
+					FROM.FROM = { set_state_name = "Istra" }
 					set_province_name = {
 						id = 5331
 						name = "Pula"
 					}
 				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Istrien" }
+				}
 				else = {
+					FROM.FROM = { reset_state_name = yes }
 					reset_province_name = 5331
+				}
+			}
+			#Cherso
+		   if = {
+				limit = {
+					FROM.FROM = { state = 1474 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Kersch" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Cres" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
 				}
 			}
 			#Trieste
@@ -358,9 +392,14 @@ on_actions = {
 					set_province_name = { id = 14309 name "Rijeka" }
 				}
 				else_if = {
-					limit = { ROOT = {  original_tag = SLV } }
+					limit = { ROOT = { original_tag = SLV } }
 					FROM.FROM = { set_state_name = "Reka" }
 					set_province_name = { id = 14309 name "Reka" }
+				}
+				else_if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Sankt Veit am Flaum" }
+					set_province_name = { id = 14309 name "Sankt Veit am Flaum" }
 				}
 				else = { FROM.FROM = { reset_state_name = yes } reset_province_name = 14309 }
 			}
