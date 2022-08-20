@@ -39,6 +39,23 @@ on_actions = {
 	on_state_control_changed = {
 		effect = {
 		#Occitan States
+			#Briga e Tenda
+            if = {
+                limit = {
+                    FROM.FROM = { state = 1985 }
+                }
+                if = {
+                    limit = {
+                        ROOT = {
+                            original_tag = FRA
+                        }
+                    }
+                    FROM.FROM = { set_state_name = "Brigue et Tende" }
+                }
+                else = {
+                    FROM.FROM = { reset_state_name = yes }
+                }
+            }
 			#Bardonecchia
             if = {
                 limit = {
@@ -266,7 +283,7 @@ on_actions = {
 				}
 			}
 		#Triestine States
-		
+			#Pola
 		   if = {
 				limit = {
 					FROM.FROM = { state = 762 }
@@ -282,13 +299,218 @@ on_actions = {
 						name = "Puola"
 					}
 				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Pula" }
+					set_province_name = {
+						id = 5331
+						name = "Pula"
+					}
+				}
 				else = {
 					reset_province_name = 5331
 				}
 			}
+			#Trieste
+			if = {
+				limit = {
+					FROM.FROM = { state = 744 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Triest" }
+					set_province_name = {
+						id = 7575
+						name = "Triest"
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Trst" }
+					set_province_name = {
+						id = 7575
+						name = "Trst"
+					}
+				}
+				else = {
+					reset_province_name = 5331
+				}
+			}
+		#Julian March States
+			#Fiume
+			if = {
+				limit = { FROM.FROM = { state = 755 } }
+				if = {
+					limit = { ROOT = { is_yugoslav = yes } }
+					FROM.FROM = { set_state_name = "Rijeka" }
+					set_province_name = { id = 14309 name "Rijeka" }
+				}
+				else_if = {
+					limit = { ROOT = {  original_tag = SLV } }
+					FROM.FROM = { set_state_name = "Reka" }
+					set_province_name = { id = 14309 name "Reka" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } reset_province_name = 14309 }
+			}
+			#Postumia
+			if = {
+				limit = { FROM.FROM = { state = 1485 } }
+				if = {
+					limit = { ROOT = { is_yugoslav = yes } }
+					FROM.FROM = { set_state_name = "Postojna" }
+					set_province_name = { id = 17789 name "Postojna" }
+				}
+				else_if = {
+					limit = { ROOT = {  original_tag = SLV } }
+					FROM.FROM = { set_state_name = "Adelsberg" }
+					set_province_name = { id = 17789 name "Adelsberg" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } reset_province_name = 17789 }
+			}
+			#Bisterza
+			if = {
+				limit = { FROM.FROM = { state = 2900 } }
+				if = {
+					limit = { ROOT = { is_yugoslav = yes } }
+					FROM.FROM = { set_state_name = "Ilirska Bistrica" }
+				}
+				else_if = {
+					limit = { ROOT = {  original_tag = SLV } }
+					FROM.FROM = { set_state_name = "Illyrisch Feistritz" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } }
+			}
+			#Circhina
+			if = {
+				limit = { FROM.FROM = { state = 2901 } }
+				if = {
+					limit = { ROOT = { is_yugoslav = yes } }
+					FROM.FROM = { set_state_name = "Cerkno" }
+				}
+				else_if = {
+					limit = { ROOT = {  original_tag = SLV } }
+					FROM.FROM = { set_state_name = "Kirchheim" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } }
+			}
+			#Canale
+			if = {
+				limit = { FROM.FROM = { state = 720 } }
+				if = {
+					limit = { ROOT = { is_yugoslav = yes } }
+					FROM.FROM = { set_state_name = "Kanal" }
+				}
+				else_if = {
+					limit = { ROOT = {  is_german = yes } }
+					FROM.FROM = { set_state_name = "Kanalburg" }
+				}
+				else_if = {
+					limit = { ROOT = {  OR = { original_tag = FRI original_tag = TST original_tag = FIU } }
+					FROM.FROM = { set_state_name = "Cjanâl" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } }
+			}
+			#Albona
+			if = {
+				limit = { FROM.FROM = { state = 2330 } }
+				if = {
+					limit = { ROOT = {  is_yugoslav = yes } }
+					FROM.FROM = { set_state_name = "Labin" }
+				}
+				else_if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Tüberg" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } }
+			}
+			#Tolmino
+			if = {
+				limit = { FROM.FROM = { state = 1484 } }
+				if = {
+					limit = { ROOT = {  is_yugoslav = yes } }
+					FROM.FROM = { set_state_name = "Tolmin" }
+				}
+				else_if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Tolmein" }
+				}
+				else_if = {
+					limit = { ROOT = {  OR = { original_tag = FRI original_tag = TST original_tag = FIU } }
+					FROM.FROM = { set_state_name = "Tulmin" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } }
+			}
+			#Capodistria
+			if = {
+				limit = { FROM.FROM = { state = 1483 } }
+				if = {
+					limit = { ROOT = {  is_yugoslav = yes NOT = { original_tag = SLV } } }
+					FROM.FROM = { set_state_name = "Kopar" }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = SLV } }
+					FROM.FROM = { set_state_name = "Koper" }
+				}
+				else_if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Gafers" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } }
+			}
+			#Umago
+			if = {
+				limit = { FROM.FROM = { state = 1482 } }
+				if = {
+					limit = { ROOT = {  is_yugoslav = yes } }
+					FROM.FROM = { set_state_name = "Umag" }
+				}
+				else_if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Humag" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } }
+			}
+			#Zara
+			if = {
+				limit = { FROM.FROM = { state = 1476 } }
+				if = {
+					limit = { ROOT = {  is_yugoslav = yes } }
+					FROM.FROM = { set_state_name = "Zadar" }
+					set_province_name = { id = 14584 name = "Zadar" }
+				}
+				else_if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Zára" }
+					set_province_name = { id = 14584 name = "Zára" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } }
+			}
+			#Lagosta
+			if = {
+				limit = { FROM.FROM = { state = 1534 } }
+				if = {
+					limit = { ROOT = {  is_yugoslav = yes } }
+					FROM.FROM = { set_state_name = "Lastovo" }
+				}
+				else_if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Augusta" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } }
+			}
 		#Piedmontese States
-		
-
 			#Sampeyre
 		   if = {
 				limit = {
@@ -297,7 +519,10 @@ on_actions = {
 				if = {
 					limit = {
 						ROOT = {
-							original_tag = PIE
+							OR = {
+								original_tag = PIE
+								is_occitan = yes
+							}
 						}
 					}
 					2356 = { set_state_name = "San Pèire" }
@@ -1328,12 +1553,12 @@ on_actions = {
 					}
 					FROM.FROM = { set_state_name = "Rèz" }
 					set_province_name = {
-						id = 5299
+						id = 9013
 						name = "Rèz"
 					}
 				}
 				else = {
-					reset_province_name = 5299
+					reset_province_name = 9013
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
@@ -1756,6 +1981,31 @@ on_actions = {
 					set_province_name = {
 						id = 7237
 						name = "Tèreme"
+					}
+				}
+				else = {
+					reset_province_name = 7237
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Cittaducale
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2557 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								is_central_italian = yes
+								original_tag = ABR
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Cìeta" }
+					set_province_name = {
+						id = 2001
+						name = "Cìeta"
 					}
 				}
 				else = {

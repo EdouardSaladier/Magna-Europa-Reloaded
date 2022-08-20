@@ -285,3 +285,14 @@ is_yugoslav = {
 		original_tag = YUG
 	}
 }
+is_romanian = {
+	OR = {
+		original_tag = ROM
+		original_tag = MOL
+		original_tag = TRA
+		original_tag = WLC
+		original_tag = DOB
+		original_tag = BUC
+		original_tag = BNT
+	}
+}

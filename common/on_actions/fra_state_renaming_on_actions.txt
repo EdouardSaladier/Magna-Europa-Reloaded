@@ -72,6 +72,59 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
+			#Nice
+            if = {
+                limit = { FROM.FROM = { state = 810 } }
+				if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+							NOT = { original_tag = LIG }
+						}
+					}
+					FROM.FROM = { set_state_name = "Nizza" }
+				}
+				else_if = {
+					limit = {
+						ROOT = { original_tag = LIG }
+					}
+					FROM.FROM = { set_state_name = "Nissa" }
+					
+				}
+				else_if = {
+					limit = {
+						ROOT = { is_occitan = yes }
+					}
+					FROM.FROM = { set_state_name = "Niça" }
+					
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Menton
+            if = {
+                limit = { FROM.FROM = { state = 817 } }
+				if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+							NOT = { original_tag = LIG }
+						}
+					}
+					FROM.FROM = { set_state_name = "Mentone" }
+				}
+				else_if = {
+					limit = {
+						ROOT = { original_tag = LIG }
+					}
+					FROM.FROM = { set_state_name = "Mentàn" }
+					
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 		}
 	}
 }
