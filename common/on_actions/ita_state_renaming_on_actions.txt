@@ -389,12 +389,17 @@ on_actions = {
 				if = {
 					limit = { ROOT = { is_yugoslav = yes } }
 					FROM.FROM = { set_state_name = "Rijeka" }
-					set_province_name = { id = 14309 name "Rijeka" }
+					set_province_name = { id = 14309 name = "Rijeka" }
 				}
 				else_if = {
 					limit = { ROOT = { original_tag = SLV } }
 					FROM.FROM = { set_state_name = "Reka" }
-					set_province_name = { id = 14309 name "Reka" }
+					set_province_name = { id = 14309 name = "Reka" }
+				}
+				else_if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Sankt Veit am Flaum" }
+					set_province_name = { id = 14309 name = "Sankt Veit am Flaum" }
 				}
 				else_if = {
 					limit = { ROOT = { is_german = yes } }
@@ -409,12 +414,12 @@ on_actions = {
 				if = {
 					limit = { ROOT = { is_yugoslav = yes } }
 					FROM.FROM = { set_state_name = "Postojna" }
-					set_province_name = { id = 17789 name "Postojna" }
+					set_province_name = { id = 17789 name = "Postojna" }
 				}
 				else_if = {
 					limit = { ROOT = {  original_tag = SLV } }
 					FROM.FROM = { set_state_name = "Adelsberg" }
-					set_province_name = { id = 17789 name "Adelsberg" }
+					set_province_name = { id = 17789 name = "Adelsberg" }
 				}
 				else = { FROM.FROM = { reset_state_name = yes } reset_province_name = 17789 }
 			}
@@ -456,7 +461,7 @@ on_actions = {
 					FROM.FROM = { set_state_name = "Kanalburg" }
 				}
 				else_if = {
-					limit = { ROOT = {  OR = { original_tag = FRI original_tag = TST original_tag = FIU } }
+					limit = { ROOT = {  OR = { original_tag = FRI original_tag = TST original_tag = FIU } } }
 					FROM.FROM = { set_state_name = "Cjanâl" }
 				}
 				else = { FROM.FROM = { reset_state_name = yes } }
@@ -486,7 +491,7 @@ on_actions = {
 					FROM.FROM = { set_state_name = "Tolmein" }
 				}
 				else_if = {
-					limit = { ROOT = {  OR = { original_tag = FRI original_tag = TST original_tag = FIU } }
+					limit = { ROOT = {  OR = { original_tag = FRI original_tag = TST original_tag = FIU } } }
 					FROM.FROM = { set_state_name = "Tulmin" }
 				}
 				else = { FROM.FROM = { reset_state_name = yes } }
@@ -1165,13 +1170,8 @@ on_actions = {
 						}
 					}
 					2849 = { set_state_name = "Cadober" }
-					set_province_name = {
-						id = 9279
-						name = "Trevìxo"
-					}
 				}
 				else = {
-					reset_province_name = 9279
 					2849 = { reset_state_name = yes }
 				}
 			}
@@ -1259,7 +1259,7 @@ on_actions = {
 							original_tag = FRI
 						}
 					}
-					2850 = { set_state_name = "Cjargne" }
+					FROM.FROM = { set_state_name = "Cjargne" }
 					set_province_name = {
 						id = 5779
 						name = "Tumieç"
@@ -1271,7 +1271,7 @@ on_actions = {
 							is_yugoslav =yes
 						}
 					}
-					#2850 = { set_state_name = "Tolmeč" }
+					FROM.FROM = { set_state_name = "Karnija" }
 					set_province_name = {
 						id = 5779
 						name = "Tolmeč"
@@ -1313,7 +1313,7 @@ on_actions = {
 				else_if = {
 					limit = {
 						ROOT = {
-							is_yugoslav =yes
+							is_yugoslav = yes
 						}
 					}
 					FROM.FROM = { set_state_name = "Trbiž" }
