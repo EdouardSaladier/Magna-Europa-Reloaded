@@ -1,0 +1,24 @@
+state={
+	id=2907
+	name="STATE_2907"
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = FRI
+		add_core_of = SLV
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		10462 19961 
+	}
+	manpower=20889
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

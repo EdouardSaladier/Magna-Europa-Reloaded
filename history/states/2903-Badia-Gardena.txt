@@ -1,0 +1,18 @@
+state={
+	id=2903
+	name="STATE_2903"
+	history = {
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = TIR
+		add_core_of = LDN
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces = { 18619 }
+	manpower=10672
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

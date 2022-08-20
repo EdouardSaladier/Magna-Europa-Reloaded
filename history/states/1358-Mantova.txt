@@ -10,18 +10,19 @@ state={
 		add_core_of = MTV
 		buildings = {
 			infrastructure = 4
+
 		}
 		victory_points = {
-			20013 5
+			20013 5 
 		}
 
 	}
 
 	provinces={
-		3955 9348 18712 20012 20013 
+		3955 18712 20013 
 	}
-	manpower=272898
+	manpower=158779
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=town
 	local_supplies=0.000
 }

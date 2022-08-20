@@ -1,0 +1,24 @@
+state={
+	id=2906
+	name="STATE_2906"
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = LOM
+		add_core_of = MTV
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		9348 20012 
+	}
+	manpower=114096
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

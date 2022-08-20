@@ -214,6 +214,64 @@ on_actions = {
                     2535 = { reset_state_name = yes }
                 }
             }
+			#Badia
+           if = {
+                limit = {
+                    FROM.FROM = { state = 2903 }
+                }
+                if = {
+                    limit = {
+                        ROOT = {
+                            is_german = yes
+							NOT = { original_tag = TIR }
+                        }
+					}
+                    FROM.FROM = { set_state_name = "Abtei-Gröden" }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+							OR = {
+								original_tag = LDN
+								original_tag = TIR
+							}
+						}
+					}
+                    FROM.FROM = { set_state_name = "Badia-Gherdëina" }
+                }
+                else = {
+                    FROM.FROM = { reset_state_name = yes }
+                }
+            }
+			#Fassa
+           if = {
+                limit = {
+                    FROM.FROM = { state = 2904 }
+                }
+                if = {
+                    limit = {
+                        ROOT = {
+                            is_german = yes
+							NOT = { original_tag = TIR }
+                        }
+					}
+                    FROM.FROM = { set_state_name = "Fassatal" }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+							OR = {
+								original_tag = LDN
+								original_tag = TIR
+							}
+						}
+					}
+                    FROM.FROM = { set_state_name = "Val de Fascia" }
+                }
+                else = {
+                    FROM.FROM = { reset_state_name = yes }
+                }
+            }
 			#Bolzano
 		   if = {
 				limit = {
@@ -1102,6 +1160,39 @@ on_actions = {
 					1371 = { reset_state_name = yes }
 				}
 			}
+			#Agordino
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2905 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = VNT
+						}
+					}
+					FROM.FROM = { set_state_name = "Agordin" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							original_tag = LDN
+						}
+					}
+					FROM.FROM = { set_state_name = "Egordin" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Augarten" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 			#Belluno
 		   if = {
 				limit = {
@@ -1304,11 +1395,20 @@ on_actions = {
 						ROOT = {
 							OR = {
 								original_tag = FRI
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Val Cjanâl" }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
 								is_german = yes
 							}
 						}
 					}
-					FROM.FROM = { set_state_name = "Tarvis" }
+					FROM.FROM = { set_state_name = "Kanaltal" }
 				}
 				else_if = {
 					limit = {
@@ -1316,7 +1416,7 @@ on_actions = {
 							is_yugoslav = yes
 						}
 					}
-					FROM.FROM = { set_state_name = "Trbiž" }
+					FROM.FROM = { set_state_name = "Kanalska Dolina" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
