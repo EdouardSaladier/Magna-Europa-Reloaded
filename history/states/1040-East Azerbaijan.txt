@@ -2,20 +2,32 @@
 state={
 	id=1040
 	name="STATE_1040"
-	history = {
+
+	history={
 		owner = PER
 		add_core_of = PER
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = TBZ
-		victory_points = { 9030 40 }
-		victory_points = { 19198 5 }
-		victory_points = { 6956 2 }
-		victory_points = { 15447 2 }
+		victory_points = {
+			9030 40 
+		}
+		victory_points = {
+			19198 5 
+		}
+		victory_points = {
+			6956 2 
+		}
+		victory_points = {
+			15447 2 
+		}
+
 	}
+
 	provinces={
-		1282 1302 1486 2269 2842 3418 3664 4385 4493 4938 5554 5741 6081 6956 7269 7713 7980 9030 9325 15303 15307 15330 15342 15360 15365 15383 15386 15398 15400 15401 15445 15447 15466 17697 18307 19191 19198 19199 
+		1282 1302 1486 2269 2842 3418 3664 4385 4493 4938 5554 5741 6081 6956 7269 7713 7980 9030 9325 15303 15307 15330 15342 15360 15365 15383 15386 15398 15400 15401 15445 15447 15466 17697 18307 19191 19198 
 	}
 	manpower=670431
 	buildings_max_level_factor=1.000
