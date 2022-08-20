@@ -356,6 +356,19 @@ on_actions = {
 						id = 5331
 						name = "Puola"
 					}
+					FROM.FROM = { set_state_name = "Puola" }
+				else_if = {
+					limit = {
+						ROOT = {
+							TAG = SLV
+						}
+					}
+					FROM.FROM = { set_state_name = "Pulj" }
+					set_province_name = {
+						id = 5331
+						name = "Pulj"
+					}
+				}
 				}
 				else_if = {
 					limit = {
@@ -363,7 +376,7 @@ on_actions = {
 							is_yugoslav = yes
 						}
 					}
-					FROM.FROM = { set_state_name = "Istra" }
+					FROM.FROM = { set_state_name = "Pula" }
 					set_province_name = {
 						id = 5331
 						name = "Pula"
@@ -375,7 +388,11 @@ on_actions = {
 							is_german = yes
 						}
 					}
-					FROM.FROM = { set_state_name = "Istrien" }
+					set_province_name = {
+						id = 5331
+						name = "Polei"
+					}
+					FROM.FROM = { set_state_name = "Polei" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
@@ -2688,6 +2705,56 @@ on_actions = {
 						}
 					}
 					FROM.FROM = { set_state_name = "Lampidusa" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#San Pietro al Natisone
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2907 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Sankt Peter der Slawen" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Špeter Slovenov" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Pisino
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2908 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Mitterburg" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Pazin" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
