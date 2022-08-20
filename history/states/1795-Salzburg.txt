@@ -2,20 +2,24 @@
 state={
 	id=1795
 	name="STATE_1795"
-	provinces={
-		13572 13599 20799 20816 20852 
-	}
+
 	history={
 		owner = AUS
 		add_core_of = AUS
 		buildings = {
 			infrastructure = 4
+
 		}
 		add_core_of = SLZ
-        victory_points = {
-            13572 10 #Salzburg
-        }
-    }
+		victory_points = {
+			13572 10 
+		}
+
+	}
+
+	provinces={
+		10462 13572 13599 20799 20816 20852 
+	}
 	manpower=151699
 	buildings_max_level_factor=1.000
 	state_category=town

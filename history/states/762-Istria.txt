@@ -10,7 +10,11 @@ state={
 		add_core_of = TST
 		buildings = {
 			infrastructure = 3
-			5331 = { naval_base = 3 }
+			5331 = {
+				naval_base = 3
+
+			}
+
 		}
 		victory_points = {
 			5331 5 
@@ -19,10 +23,10 @@ state={
 	}
 
 	provinces={
-		5331 7915 14308 14343 14408 
+		5331 7915 14408 
 	}
-	manpower=200001
+	manpower=186073
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category=town
 	local_supplies=0.000
 }

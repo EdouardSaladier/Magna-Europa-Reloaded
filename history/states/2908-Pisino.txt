@@ -1,0 +1,23 @@
+
+state={
+	id=2908
+	name="STATE_2908"
+	provinces={
+		14308 14343 
+	}
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = CRO
+		add_core_of = TST
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+	manpower=13928
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
