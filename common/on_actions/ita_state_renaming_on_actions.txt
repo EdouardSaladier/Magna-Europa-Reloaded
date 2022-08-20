@@ -2304,6 +2304,492 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
+			
+		#Neue Stuff
+			#Tarvisio
+		   if = {
+				limit = {
+					FROM.FROM = { state = 1616 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Tarvis" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Trbiž" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Postumia
+		   if = {
+				limit = {
+					FROM.FROM = { state = 1485 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					set_province_name = {
+						id = 17789
+						name = "Adelsberg"
+					}
+					FROM.FROM = { set_state_name = "Adelsberg" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					set_province_name = {
+						id = 17789
+						name = "Postojna"
+					}
+					FROM.FROM = { set_state_name = "Postojna" }
+				}
+				else = {
+					reset_province_name = 17789
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Circhina
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2901 }
+				}
+				if = {
+					limit  = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Kirchheim" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Cerkno" }
+				}
+				else = {
+					reset_province_name = 15143
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Villa del Noveso
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2900 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Illyrisch Feistritz" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Ilirska Bistrica" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Fiume
+		   if = {
+				limit = {
+					FROM.FROM = { state = 755 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					set_province_name = {
+						id = 14309
+						name = "Sankt Veit am Flaum"
+					}
+					FROM.FROM = { set_state_name = "Sankt Veit am Flaum" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							TAG = SLV
+						}
+					}
+					set_province_name = {
+						id = 14309
+						name = "Reka"
+					}
+					FROM.FROM = { set_state_name = "Reka" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					set_province_name = {
+						id = 14309
+						name = "Rijeka"
+					}
+					FROM.FROM = { set_state_name = "Rijeka" }
+				}
+				else = {
+					reset_province_name = 14309
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Albona
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2330 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Tüberg" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Labin" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Cherso
+		   if = {
+				limit = {
+					FROM.FROM = { state = 1474 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Kersch" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Cres" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Istria
+		   if = {
+				limit = {
+					FROM.FROM = { state = 762 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					set_province_name = {
+						id = 5331
+						name = "Polei"
+					}
+					FROM.FROM = { set_state_name = "Istrien" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					set_province_name = {
+						id = 5331
+						name = "Pula"
+					}
+					FROM.FROM = { set_state_name = "Istra" }
+				}
+				else = {
+					reset_province_name = 5331
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Umago
+		   if = {
+				limit = {
+					FROM.FROM = { state = 1482 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Humag" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Umag" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Trieste
+		   if = {
+				limit = {
+					FROM.FROM = { state = 744 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					set_province_name = {
+						id = 7575
+						name = "Triest"
+					}
+					FROM.FROM = { set_state_name = "Triest" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					set_province_name = {
+						id = 7575
+						name = "Trst"
+					}
+					FROM.FROM = { set_state_name = "Trst" }
+				}
+				else = {
+					reset_province_name = 7575
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Gorizia
+		   if = {
+				limit = {
+					FROM.FROM = { state = 1533 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					set_province_name = {
+						id = 20482
+						name = "Görz"
+					}
+					FROM.FROM = { set_state_name = "Görz" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					set_province_name = {
+						id = 20482
+						name = "Gorica"
+					}
+					FROM.FROM = { set_state_name = "Gorica" }
+				}
+				else = {
+					reset_province_name = 20482
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Udine
+		   if = {
+				limit = {
+					FROM.FROM = { state = 706 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					set_province_name = {
+						id = 20015
+						name = "Weiden"
+					}
+					FROM.FROM = { set_state_name = "Weiden" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					set_province_name = {
+						id = 20015
+						name = "Vidan"
+					}
+					FROM.FROM = { set_state_name = "Vidan" }
+				}
+				else = {
+					reset_province_name = 20015
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Carnia
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2850 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					set_province_name = {
+						id = 5779
+						name = "Schönfeld"
+					}
+					FROM.FROM = { set_state_name = "Karnien" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					set_province_name = {
+						id = 5779
+						name = "Tolmeč"
+					}
+					FROM.FROM = { set_state_name = "Karnija" }
+				}
+				else = {
+					reset_province_name = 5779
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Capodistria
+		   if = {
+				limit = {
+					FROM.FROM = { state = 1483 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Gafers" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_serbocroatian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Kopar" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Koper" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Tolmino
+		   if = {
+				limit = {
+					FROM.FROM = { state = 1484 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Tolmein" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Tolmin" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Canale
+		   if = {
+				limit = {
+					FROM.FROM = { state = 720 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Kanalburg" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Kanal ob Soči" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 		}
 	}
 }

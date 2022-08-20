@@ -302,3 +302,8 @@ is_yugoslav = {
 		original_tag = YUG
 	}
 }
+is_romanian = {
+	OR = {
+		original_tag = ROM
+	}
+}
