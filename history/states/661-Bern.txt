@@ -2,6 +2,9 @@
 state={
 	id=661
 	name="STATE_661"
+	resources={
+		aluminium=18.000
+	}
 	provinces={
 		6433 6540 9078 20097 20109 
 	}
@@ -10,6 +13,8 @@ state={
 		add_core_of = SWI
 		buildings = {
 			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 1
 		}
         victory_points = {
             20097 10 #Bern
