@@ -215,7 +215,15 @@ if = {
 		target = EGY
 		autonomous_state = autonomy_dominion
 	}
-	else = { puppet = EGY }
+	set_autonomy = {
+		target = JER
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = GUE
+		autonomous_state = autonomy_dominion
+	}
+	else = { puppet = EGY puppet = JER puppet = GUE }
 }
 
 # Starting tech

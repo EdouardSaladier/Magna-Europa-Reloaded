@@ -39,7 +39,7 @@ BRENGL_INF_01 =
 {
 	name = "Infantry Division"
 
-	for_countries = { CYP MLT NIR SCO WLS } 
+	for_countries = { CYP MLT NIR SCO WLS JER GUE } 
 
 	can_use = { always = yes }
 
@@ -84,7 +84,7 @@ BRENGL_INFB_01 =
 {
 	name = "Infantry Brigade"
 
-	for_countries = { CYP MLT NIR SCO WLS } 
+	for_countries = { CYP MLT NIR SCO WLS JER GUE } 
 
 	can_use = { always = yes }
 
@@ -129,7 +129,7 @@ BRENGL_CAV_01 =
 {
 	name = "Cavalry Division"
 
-	for_countries = { CYP MLT NIR SCO WLS } 
+	for_countries = { CYP MLT NIR SCO WLS JER GUE } 
 
 	can_use = { always = yes }
 
@@ -161,7 +161,7 @@ BRENGL_CAV_02 =
 {
 	name = "Cavalry Brigade"
 
-	for_countries = { CYP MLT NIR SCO WLS } 
+	for_countries = { CYP MLT NIR SCO WLS JER GUE } 
 
 	can_use = { always = yes }
 
@@ -193,7 +193,7 @@ BRENGL_MOT_01 =
 {
 	name = "Motorised Division"
 
-	for_countries = { CYP MLT NIR SCO WLS } 
+	for_countries = { CYP MLT NIR SCO WLS JER GUE } 
 
 	can_use = { always = yes }
 
@@ -225,7 +225,7 @@ BRENGL_MEC_01 =
 {
 	name = "Mechanised Division"
 
-	for_countries = { CYP MLT NIR SCO WLS } 
+	for_countries = { CYP MLT NIR SCO WLS JER GUE } 
 
 	can_use = { always = yes }
 
@@ -257,7 +257,7 @@ BRENGL_ARM_01 =
 {
 	name = "Armoured Division"
 
-	for_countries = { CYP MLT NIR SCO WLS } 
+	for_countries = { CYP MLT NIR SCO WLS JER GUE } 
 
 	can_use = { always = yes }
 
@@ -289,7 +289,7 @@ BRENGL_ARM_02 =
 {
 	name = "Tank Brigade"
 
-	for_countries = { CYP MLT NIR SCO WLS } 
+	for_countries = { CYP MLT NIR SCO WLS JER GUE } 
 
 	can_use = { always = yes }
 
@@ -321,7 +321,7 @@ BRENGL_PAR_01 =
 {
 	name = "Airborne Division"
 
-	for_countries = { CYP MLT NIR SCO WLS } 
+	for_countries = { CYP MLT NIR SCO WLS JER GUE } 
 
 	can_use = { always = yes }
 
@@ -353,7 +353,7 @@ BRENGL_MAR_01 =
 {
 	name = "Marine Division"
 
-	for_countries = { CYP MLT NIR SCO WLS } 
+	for_countries = { CYP MLT NIR SCO WLS JER GUE } 
 
 	can_use = { always = yes }
 
@@ -385,7 +385,7 @@ BRENGL_MNT_01 =
 {
 	name = "Mountain Division"
 
-	for_countries = { CYP MLT NIR SCO WLS } 
+	for_countries = { CYP MLT NIR SCO WLS JER GUE } 
 
 	can_use = { always = yes }
 
@@ -417,7 +417,7 @@ BRENGL_GAR_01 =
 {
 	name = "Garrison Division"
 
-	for_countries = { CYP MLT NIR SCO WLS } 
+	for_countries = { CYP MLT NIR SCO WLS JER GUE } 
 
 	can_use = { always = yes }
 
