@@ -1,6 +1,6 @@
 capital = 2744
 
-set_research_slots = 3
+set_research_slots = 1
 
 # Starting tech
 set_technology = {
@@ -69,7 +69,7 @@ if = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = communism
 	last_election = "1932.5.21"
 	election_frequency = 48
 	elections_allowed = no
@@ -77,6 +77,6 @@ set_politics = {
 set_popularities = {
 	democratic = 20
 	fascism = 20
-	communism = 20
-	neutrality = 40
+	communism = 40
+	neutrality = 20
 }

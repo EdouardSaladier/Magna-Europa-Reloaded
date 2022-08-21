@@ -121,6 +121,10 @@ ALB = {
 	color = rgb { 143 43 53 }
 	color_ui = rgb { 143 43 53 }
 }
+CAB = {
+	color = rgb { 206 71 24 }
+	color_ui = rgb { 206 71 24 }
+}
 NER = {
 	color = rgb { 79 67 113 }
 	color_ui = rgb { 79 67 113 }
@@ -293,6 +297,14 @@ SBB = {
 GAG = {
     color = rgb { 122 180 228 }
     color_ui = rgb { 122 180 228 }
+}
+NVR = {
+    color = rgb { 255 206 41 }
+    color_ui = rgb { 255 206 41 }
+}
+SOC = {
+    color = rgb { 218 37 29 }
+    color_ui = rgb { 218 37 29 }
 }
 
 ###North Africa
@@ -1093,6 +1105,14 @@ NEN = {
 KKP = {
 	color = rgb { 255 128 0 }
 	color_ui = rgb { 255 128 0 }
+}
+ODS = {
+	color = rgb { 221 0 0 }
+	color_ui = rgb { 221 0 0 }
+}
+DKR = {
+	color = rgb { 221 0 0 }
+	color_ui = rgb { 221 0 0 }
 }
 
 ###Soviet Releasables - Caucasus
