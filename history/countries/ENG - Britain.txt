@@ -204,19 +204,6 @@ if = {
 		target = KUW
 		autonomous_state = autonomy_colony
 	}
-	else = {
-		puppet = MLT
-		puppet = PAL
-		puppet = JOR
-		puppet = UAE
-		puppet = QAT
-		puppet = BHR
-		puppet = KUW
-	}
-}
-set_subject_cosmetic_tags = yes
-if = {
-	limit = { has_dlc = "Together for Victory" }
 	set_autonomy = {
 		target = CAN
 		autonomous_state = autonomy_dominion
@@ -225,14 +212,27 @@ if = {
 		target = EGY
 		autonomous_state = autonomy_dominion
 	}
-	else = { puppet = EGY }
-}
-
-
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
+	set_autonomy = {
+		target = JER
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = GUE
+		autonomous_state = autonomy_dominion
+	}
 	add_to_tech_sharing_group = commonwealth_research
+	else = {
+		puppet = MLT
+		puppet = PAL
+		puppet = JOR
+		puppet = UAE
+		puppet = QAT
+		puppet = BHR
+		puppet = KUW
+		puppet = EGY
+		puppet = JER
+		puppet = GUE
+	}
 }
 
 1939.1.1 = {
