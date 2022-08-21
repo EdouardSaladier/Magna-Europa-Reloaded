@@ -1652,6 +1652,14 @@ on_actions = {
 					}
 					FROM.FROM = { set_state_name = "Czirkwenicza" }
 				}
+				if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Cirquenizza" }
+				}
 				else = {
 					reset_province_name = 17762
 				}
