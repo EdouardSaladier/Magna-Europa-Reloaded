@@ -2760,6 +2760,31 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
+			#Cividale del Friuli
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2910 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Östrich" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_yugoslav = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Čedad" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 		}
 	}
 }
