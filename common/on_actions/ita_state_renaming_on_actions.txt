@@ -188,8 +188,18 @@ on_actions = {
 					}
                     2536 = { set_state_name = "Anpezo" }
 				}
+				else_if = {
+					limit = {
+						ROOT = { original_tag = LDN }
+					}
+					FROM.FROM = { set_state_name = "Anpezo" }
+					set_province_name = { id = "19098" name = "Anpezo" }
+					set_victory_points = { province = 19098 value = 1 }
+				}
                 else = {
                     2536 = { reset_state_name = yes }
+					reset_province_name = 19098
+					set_victory_points = { province = 19098 value = 0 }	
                 }
             }
 			#Merano
