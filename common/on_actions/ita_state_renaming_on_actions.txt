@@ -503,16 +503,16 @@ on_actions = {
 				}
 				else = { FROM.FROM = { reset_state_name = yes } reset_province_name = 17789 }
 			}
-			#Bisterza
+			#Catelnuovo d'Istria
 			if = {
 				limit = { FROM.FROM = { state = 2900 } }
 				if = {
 					limit = { ROOT = { is_yugoslav = yes } }
-					FROM.FROM = { set_state_name = "Ilirska Bistrica" }
+					FROM.FROM = { set_state_name = "Podgrad" }
 				}
 				else_if = {
-					limit = { ROOT = {  original_tag = SLV } }
-					FROM.FROM = { set_state_name = "Illyrisch Feistritz" }
+					limit = { ROOT = {  is_german = yes } }
+					FROM.FROM = { set_state_name = "Neuhaus" }
 				}
 				else = { FROM.FROM = { reset_state_name = yes } }
 			}
@@ -2781,6 +2781,14 @@ on_actions = {
 					}
 					FROM.FROM = { set_state_name = "Špeter Slovenov" }
 				}
+				else_if = {
+					limit = {
+						ROOT = {
+							original_tag = FRI
+						}
+					}
+					FROM.FROM = { set_state_name = "San Pieri dai Sclavons" }
+				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
 				}
@@ -2830,6 +2838,14 @@ on_actions = {
 						}
 					}
 					FROM.FROM = { set_state_name = "Čedad" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							original_tag = FRI
+						}
+					}
+					FROM.FROM = { set_state_name = "Cividât" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
