@@ -9,13 +9,17 @@ state={
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = KAR
-		victory_points = { 1307 2 }
+		victory_points = {
+			1307 2 
+		}
+
 	}
 
 	provinces={
-		1247 1307 3695 4833 9834 15962 16469 17730 17927 18529 18577 18599 18629 18743 18936 18938 19718 
+		1247 1307 3695 4833 9834 15962 16469 17730 17927 18577 18599 18629 18743 18938 19718 
 	}
 	manpower=24000
 	buildings_max_level_factor=1.000

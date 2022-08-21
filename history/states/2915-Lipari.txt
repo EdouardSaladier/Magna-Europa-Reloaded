@@ -1,0 +1,25 @@
+state={
+	id=2915
+	name="STATE_2915"
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = SIC
+		buildings = {
+			infrastructure = 2
+			20540 = {
+				naval_base = 1
+
+			}
+		}
+
+	}
+	provinces={
+		20540 
+	}
+	manpower=17697
+	state_category=tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

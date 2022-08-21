@@ -2720,6 +2720,51 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
+			#Pelagosa
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2913 }
+				}
+				if = {
+					limit = {
+						ROOT = { is_yugoslav = yes }
+					}
+					FROM.FROM = { set_state_name = "Palagruža" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Saseno
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2914 }
+				}
+				if = {
+					limit = {
+						ROOT = { original_tag = ALB }
+					}
+					FROM.FROM = { set_state_name = "Sazan" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Isole Eolie
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2915 }
+				}
+				if = {
+					limit = {
+						ROOT = { original_tag = SIC }
+					}
+					FROM.FROM = { set_state_name = "Ìsuli Eoli" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 			#San Pietro al Natisone
 		   if = {
 				limit = {

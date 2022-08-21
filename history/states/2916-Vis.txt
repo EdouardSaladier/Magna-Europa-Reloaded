@@ -1,0 +1,27 @@
+state={
+	id=2916
+	name="STATE_2916"
+
+	history={
+		owner = YUG
+		add_core_of = YUG
+		add_core_of = CRO
+		buildings = {
+			infrastructure = 1
+			20141 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = DLM
+
+	}
+	provinces={
+		20141 
+	}
+	manpower=432
+	state_category=tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
