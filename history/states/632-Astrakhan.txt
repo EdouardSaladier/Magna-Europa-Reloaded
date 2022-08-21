@@ -2,6 +2,9 @@
 state={
 	id=632
 	name="STATE_632"
+	resources={
+		chromium=12.000
+	}
 	provinces={
 		4088 4390 4433 5251 5547 7140 14053 14104 14168 
 	}
@@ -14,6 +17,7 @@ state={
 			infrastructure = 3
 			4433 = { naval_base = 4 }
 			air_base = 3
+			industrial_complex = 2
 		}
 		add_core_of = AKN
 		add_core_of = DON

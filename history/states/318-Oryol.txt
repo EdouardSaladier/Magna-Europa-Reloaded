@@ -2,7 +2,9 @@
 state={
 	id=318
 	name="STATE_318"
-
+	resources={
+		chromium=8.000
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -10,6 +12,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			air_base = 3
+			industrial_complex = 1
 		}
 		victory_points = {
 			2538 20

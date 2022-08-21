@@ -1,6 +1,9 @@
 state={
 	id=2292
 	name="STATE_2292"
+	resources={
+		oil=70.000
+	}
 	history = {
 		victory_points = { 18947 80 }
 		owner = SOV
@@ -11,6 +14,7 @@ state={
 			infrastructure = 2
 			air_base = 5
 			18947 = { naval_base = 4 }
+			industrial_complex = 1
 		}
 	}
 	provinces={

@@ -2,6 +2,9 @@
 state={
 	id=497
 	name="STATE_497"
+	resources={
+		steel=33.000
+	}
 	provinces={
 		3002 4630 7398 12683 12724 12795 12850 
 	}
@@ -13,6 +16,7 @@ state={
 		add_core_of = SLB
 		buildings = {
 			infrastructure = 3
+			arms_factory = 1
 		}
 	}
 	manpower=1745734

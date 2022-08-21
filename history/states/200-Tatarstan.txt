@@ -2,6 +2,9 @@
 state={
 	id=200
 	name="STATE_200"
+	resources={
+		steel=25.000
+	}
 	provinces={
 		48 2125 3719 6030 7806 8057 9537 10477 10605 
 	}
@@ -11,6 +14,7 @@ state={
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
+			arms_factory = 1
 		}
 		add_core_of = TAT
 		victory_points = {

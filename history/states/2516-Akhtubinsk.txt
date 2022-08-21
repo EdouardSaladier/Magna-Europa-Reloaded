@@ -2,7 +2,9 @@
 state={
 	id=2516
 	name="STATE_2516"
-
+	resources={
+		tungsten=4.000
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

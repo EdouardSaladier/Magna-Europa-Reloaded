@@ -2,6 +2,9 @@
 state={
 	id=696
 	name="STATE_696"
+	resources={
+		oil=12.000
+	}
 	provinces={
 		3328 4694 9083 14304 14341 14347 14386 
 	}
@@ -13,6 +16,7 @@ state={
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 		}
 		add_core_of = KUB
 	}

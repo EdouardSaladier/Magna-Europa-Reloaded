@@ -2,6 +2,9 @@
 state={
 	id=2079
 	name="STATE_2079"
+	resources={
+		oil=4.000
+	}
 	provinces={
 		1680 1724 2097 2669 13368 13406 
 	}
@@ -14,6 +17,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			air_base = 4
+			industrial_complex = 1
 		}
 	}
 	manpower=1159302

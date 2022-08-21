@@ -2,6 +2,9 @@
 state={
 	id=784
 	name="STATE_784"
+	resources={
+		oil=10.000
+	}
 	history = {
 		owner = SOV
 		add_core_of = SOV
