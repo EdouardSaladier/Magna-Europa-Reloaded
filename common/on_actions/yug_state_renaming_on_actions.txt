@@ -1453,7 +1453,7 @@ on_actions = {
 		   if = {
 				limit = { FROM.FROM = { state = 2915 } }
 				if = {
-					limit = { ROOT = { OR = { is_german = yes is_italian = yes } }
+					limit = { ROOT = { OR = { is_german = yes is_italian = yes } } }
 					FROM.FROM = { set_state_name = "Lissa" }
 				}
 				else = {
