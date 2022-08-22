@@ -1,0 +1,22 @@
+state={
+	id=2920
+	name="STATE_2920"
+	history = {
+		owner = FRA
+		#add_core_of=SPM
+		victory_points = { 19107 1 }
+		buildings = {
+			infrastructure = 2
+			19107 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		19107 
+	}
+	manpower=4700
+	state_category=tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
