@@ -1,21 +1,28 @@
+
 state={
 	id=2294
 	name="STATE_2294"
-	history = {
-		victory_points = { 5442 5 }
+
+	history={
+		victory_points = {
+			5442 5 
+		}
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = TCC
 		add_core_of = AZR
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
+
 	provinces={
-		2472 5442 6545 7722 8322 15152 18741 
+		5442 8322 15152 18741 
 	}
 	manpower=160416
-	state_category=town
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }
