@@ -1,0 +1,19 @@
+
+state={
+	id=2918
+	name="STATE_2918"
+	provinces={
+		2472 6545 7722 
+	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = AZR
+		add_core_of = TCC
+		buildings = { infrastructure = 1 }
+	}
+	state_category = rural
+	manpower=118923
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
