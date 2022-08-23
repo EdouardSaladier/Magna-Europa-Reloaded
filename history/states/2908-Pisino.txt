@@ -2,9 +2,7 @@
 state={
 	id=2908
 	name="STATE_2908"
-	provinces={
-		14308 14343 
-	}
+
 	history={
 		owner = ITA
 		add_core_of = ITA
@@ -16,8 +14,12 @@ state={
 		}
 
 	}
-	manpower=50514
-	state_category=pastoral
+
+	provinces={
+		14308 14343 14357 
+	}
+	manpower=83457
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

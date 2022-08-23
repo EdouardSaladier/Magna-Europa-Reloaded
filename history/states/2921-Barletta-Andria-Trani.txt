@@ -1,0 +1,25 @@
+state={
+	id=2921
+	name="STATE_2921"
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = PUG
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			6160 5 
+		}
+
+	}
+	provinces={
+		2460 6160 15009 19500 
+	}
+	manpower=267865
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
