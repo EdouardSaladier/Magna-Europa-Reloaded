@@ -11,6 +11,8 @@ state={
 		add_core_of = PIE
 		buildings = {
 			infrastructure = 4
+			830 = { bunker = 1 }
+			20048 = { bunker = 1 }
 		}
 		victory_points = {
 			830 2
