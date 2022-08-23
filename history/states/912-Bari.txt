@@ -2,22 +2,30 @@
 state={
 	id=912
 	name="STATE_912"
-	history = {
+
+	history={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = PUG
 		buildings = {
 			infrastructure = 3
-			15006 = { naval_base = 1 }
+			15006 = {
+				naval_base = 1
+
+			}
+
 		}
-		victory_points = { 15006 20 }
-		victory_points = { 6160 5 }
+		victory_points = {
+			15006 20 
+		}
+
 	}
+
 	provinces={
-		2460 4508 4800 6160 9095 15006 15009 15014 15026 15041 
+		4508 4800 9095 15006 15014 15026 15041 
 	}
-	manpower=1010900
-	state_category=metropolis
+	manpower=778113
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
 }
