@@ -11,7 +11,16 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-
+			17872 = {
+				bunker = 10
+			}
+			13538 = {
+				bunker = 10
+			}
+			17071 = {
+				bunker = 10
+			}
+			
 		}
 		add_core_of = ALS
 		victory_points = {

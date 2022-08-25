@@ -11,7 +11,26 @@ state={
 		buildings = {
 			infrastructure = 4
 			air_base = 5
-
+			anti_air_building = 2
+			20489 = {
+				bunker = 10
+			}
+			8538 = {
+				bunker = 10
+			}
+			13296 = {
+				bunker = 10
+			}
+			9043 = {
+				bunker = 10
+			}
+			13170 = {
+				bunker = 10
+			}
+			5735 = {
+				bunker = 10
+			}
+			
 		}
 		add_core_of = ALS
 		victory_points = {
