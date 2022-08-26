@@ -124,6 +124,364 @@ ROOT_inherit_current_scope_wars_effect = {
 	}
 }
 
+# Add AI strategies in case of Central European Alliance
+GER_democratic_nations_ai_strategies = {
+	# Reduce Contain against SOV
+	add_ai_strategy = {
+		type = contain
+		id = "SOV"
+		value = -800
+	}
+	add_ai_strategy = {
+		type = contain
+		id = "ITA"
+		value = -800
+	}
+	# Poland
+	add_ai_strategy = {
+		type = protect
+		id = "POL"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = ignore
+		id = "POL"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "POL"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "POL"
+		value = -200
+	}
+	# Finland
+	add_ai_strategy = {
+		type = protect
+		id = "FIN"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = ignore
+		id = "FIN"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "FIN"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "FIN"
+		value = -200
+	}
+	# Estonia
+	add_ai_strategy = {
+		type = protect
+		id = "EST"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = ignore
+		id = "EST"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "EST"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "EST"
+		value = -200
+	}
+	# Latvia
+	add_ai_strategy = {
+		type = protect
+		id = "LAT"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = ignore
+		id = "LAT"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "LAT"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "LAT"
+		value = -200
+	}
+	# Lithuania
+	add_ai_strategy = {
+		type = protect
+		id = "LIT"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = ignore
+		id = "LIT"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "LIT"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "LIT"
+		value = -200
+	}
+	# Romania
+	add_ai_strategy = {
+		type = protect
+		id = "ROM"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = ignore
+		id = "ROM"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "ROM"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "ROM"
+		value = -200
+	}
+	# Norway
+	add_ai_strategy = {
+		type = ignore
+		id = "NOR"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = protect
+		id = "NOR"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "NOR"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "NOR"
+		value = -200
+	}
+	# Sweden
+	add_ai_strategy = {
+		type = ignore
+		id = "SWE"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = protect
+		id = "SWE"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "SWE"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "SWE"
+		value = -200
+	}
+	# Denmark
+	add_ai_strategy = {
+		type = ignore
+		id = "DEN"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = protect
+		id = "DEN"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "DEN"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "DEN"
+		value = -200
+	}
+	# Netherlands
+	add_ai_strategy = {
+		type = ignore
+		id = "HOL"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = protect
+		id = "HOL"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "HOL"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "HOL"
+		value = -200
+	}
+	# Belgium
+	add_ai_strategy = {
+		type = ignore
+		id = "BEL"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = protect
+		id = "BEL"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "BEL"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "BEL"
+		value = -200
+	}
+	# Luxemburg
+	add_ai_strategy = {
+		type = ignore
+		id = "LUX"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = protect
+		id = "LUX"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "LUX"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "LUX"
+		value = -200
+	}
+	# Austria
+	add_ai_strategy = {
+		type = ignore
+		id = "AUS"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = protect
+		id = "AUS"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "AUS"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "AUS"
+		value = -200
+	}
+	# Hungary
+	add_ai_strategy = {
+		type = ignore
+		id = "HUN"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = protect
+		id = "HUN"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "HUN"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "HUN"
+		value = -200
+	}
+	# Czechoslovakia
+	add_ai_strategy = {
+		type = ignore
+		id = "CZE"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = protect
+		id = "CZE"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "CZE"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "CZE"
+		value = -200
+	}
+	# Yugoslavia
+	add_ai_strategy = {
+		type = ignore
+		id = "YUG"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = protect
+		id = "YUG"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = befriend
+		id = "YUG"
+		value = -200
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = "YUG"
+		value = -200
+	}
+}
+
+print_variable_log_effect = {
+	print_variables = {
+		file = variables_yug
+		append = yes
+	}
+}
+
 get_best_alliance_match_democratic_effect = { #arguably a trigger, but it does stuff so we keep it in here. If this is your first time seeing this, welcome to my personal hell.
 	if = {
 		limit = {
@@ -285,6 +643,179 @@ get_best_alliance_match_communism_effect = { #arguably a trigger, but it does st
 	}
 }
 
+remove_naval_treaty_effect = {
+	if = {
+		limit = {
+			has_idea = MTG_naval_treaty_adherent
+		}
+		remove_ideas = MTG_naval_treaty_adherent
+	}
+	else_if = {
+		limit = {
+			has_idea = MTG_naval_treaty_cheating
+		}
+		remove_ideas = MTG_naval_treaty_cheating
+	}
+	else_if = {
+		limit = {
+			has_idea = MTG_naval_treaty_adherent_reduced
+		}
+		remove_ideas = MTG_naval_treaty_adherent_reduced
+	}
+	else_if = {
+		limit = {
+			has_idea = MTG_naval_treaty_cheating_reduced
+		}
+		remove_ideas = MTG_naval_treaty_cheating_reduced
+	}
+	set_country_flag = MTG_naval_treaty_abandoned
+}
+
+civil_war_anti_exploiter_punitive_action = {
+	# Anti-exploiter punitive brigades! BET YA DIDN'T SEE THAT COMING DID YA?!
+	if = {
+		limit = {
+			has_army_size = {
+			    size < 1
+			}
+		}
+		division_template = {
+			name = "Anti-Exploit Punitive Brigade"
+			priority = 1
+			division_names_group = ENG_MAR_01
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+
+		   	   	infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+
+		   	   	infantry = { x = 2 y = 0 }
+				artillery_brigade = { x = 2 y = 1 }
+				artillery_brigade = { x = 2 y = 2 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }
+			}
+		}
+		random_state = {
+			limit = {
+				is_capital = yes
+				is_fully_controlled_by = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+		random_state = {
+			limit = {
+				is_in_home_area = yes
+				is_fully_controlled_by = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+		random_state = {
+			limit = {
+				is_in_home_area = yes
+				is_fully_controlled_by = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+		random_state = {
+			limit = {
+				is_in_home_area = yes
+				is_fully_controlled_by = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+		random_state = {
+			limit = {
+				is_in_home_area = yes
+				is_fully_controlled_by = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+	}
+}
+
 clear_sabotaged_resources_if_necesary = {
 	if = {
 		limit = {
@@ -375,6 +906,26 @@ instantiate_collaboration_government = {
 	}
 }
 
+abandon_colony_tag = {
+	if = {
+		limit = {
+			is_subject = yes
+		}
+		if = {
+			limit = {
+				original_tag = CAN
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Together for Victory" } }
+				set_cosmetic_tag = CAN_ALY
+			}
+			else = {
+				set_cosmetic_tag = CAN_UK
+			}
+		}
+	}
+}
+
 upgrade_economy_law = {
 	if = {
 		limit = {
@@ -405,16 +956,59 @@ upgrade_economy_law = {
 	}
 }
 
+join_allies_effect = {
+	if = {
+		limit = {
+			ENG = {
+				is_faction_leader = yes
+				has_government = democratic
+				not = { has_war_with = ROOT }
+			}
+		}
+		ENG = { country_event = generic.2 }
+	}
+	else = {
+		get_best_alliance_match_democratic_effect = yes
+		var:best_leader = {
+			country_event = generic.2
+		}
+	}
+}
+
 #Should remove any and all fascist foreign influence, to be updated
 remove_fascist_spirits_effect = {
 	if = {
 		limit = { has_idea = fascist_influence }
 		remove_ideas = fascist_influence
 	}
+	if = {
+		limit = { has_idea = american_influence_drift_fascism }
+		remove_ideas = american_influence_drift_fascism
+	}
+	if = {
+		limit = { has_idea = GER_align_hungary }
+		remove_ideas = GER_align_hungary
+	}
+	if = {
+		limit = { has_idea = GER_align_romania }
+		remove_ideas = GER_align_romania
+	}
 }
 
 #Should remove any and all communist foreign influence
 remove_communist_spirits_effect = {
+	if = {
+		limit = { has_idea = american_influence_drift_communism }
+		remove_ideas = american_influence_drift_communism
+	}
+	if = {
+		limit = { has_idea = comintern_influence }
+		remove_ideas = comintern_influence
+	}
+	if = {
+		limit = { has_idea = pan_slavic_propaganda }
+		remove_ideas = pan_slavic_propaganda
+	}
 	if = {
 		limit = { has_idea = agitated_peasants }
 		remove_ideas = agitated_peasants
@@ -422,6 +1016,14 @@ remove_communist_spirits_effect = {
 	if = {
 		limit = { has_idea = armed_communist_militants }
 		remove_ideas = armed_communist_militants
+	}
+	if = {
+		limit = { has_idea = BALTIC_communist_propaganda }
+		remove_ideas = BALTIC_communist_propaganda
+	}
+	if = { 
+		limit = { has_idea = BALTIC_communist_militancy }
+		remove_ideas = BALTIC_communist_militancy
 	}
 }
 
@@ -823,56 +1425,3 @@ on_daily = {
 #on_daily_USA = {
 #	# you can specify an on daily action for a specific country
 #}
-
-set_subject_cosmetic_tags = {
-	every_country = {
-		limit = {
-			OR = {
-				is_subject_of = ENG
-				is_subject_of = FRA
-			}
-		}
-		if = {
-			limit = {
-				tag = UAE
-				is_subject_of = ENG
-			}
-			set_cosmetic_tag = UAE_UK
-		}
-		if = {
-			limit = {
-				tag = BHR
-				is_subject_of = ENG
-			}
-			set_cosmetic_tag = BHR_UK
-		}
-		if = {
-			limit = {
-				tag = QAT
-				is_subject_of = ENG
-			}
-			set_cosmetic_tag = QAT_UK
-		}
-		if = {
-			limit = {
-				tag = KUW
-				is_subject_of = ENG
-			}
-			set_cosmetic_tag = KUW_UK
-		}
-		if = {
-			limit = {
-				tag = TUN
-				is_subject_of = FRA
-			}
-			set_cosmetic_tag = TUN_FR
-		}
-		if = {
-			limit = {
-				tag = MOR
-				is_subject_of = FRA
-			}
-			set_cosmetic_tag = MOR_FR
-		}
-	}
-}
