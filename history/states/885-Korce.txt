@@ -2,9 +2,7 @@
 state={
 	id=885
 	name="STATE_885"
-	provinces={
-		15042 15056 15071 15094 
-	}
+
 	history={
 		owner = ALB
 		add_core_of = ALB
@@ -12,11 +10,17 @@ state={
 		add_claim_by = GRE
 		buildings = {
 			infrastructure = 1
+
 		}
-        victory_points = {
-            15094 5
-        }
-    }
+		victory_points = {
+			15094 5 
+		}
+
+	}
+
+	provinces={
+		15042 15056 15071 15094 18013 
+	}
 	manpower=159336
 	buildings_max_level_factor=1.000
 	state_category=rural
