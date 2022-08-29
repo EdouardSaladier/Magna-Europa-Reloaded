@@ -2,9 +2,7 @@
 state={
 	id=1981
 	name="STATE_1981"
-	provinces={
-		246 2388 3409 3781 5243 8127 8534 11613 11747 11801 11837 
-	}
+
 	history={
 		owner = POL
 		add_core_of = POL
@@ -14,12 +12,17 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 		}
-        victory_points = {
-            5243 5
-        }
-  	}
+		victory_points = {
+			5243 5 
+		}
+
+	}
+
+	provinces={
+		246 2388 3409 3781 5243 8127 8534 11747 11801 11837 
+	}
 	manpower=1150472
-	state_category=metropolis
 	buildings_max_level_factor=1.000
+	state_category=metropolis
 	local_supplies=0.000
 }
