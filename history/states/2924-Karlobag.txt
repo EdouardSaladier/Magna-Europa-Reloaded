@@ -1,0 +1,18 @@
+
+state={
+	id=2924
+	name="STATE_2924"
+	provinces={
+		14458 20125 
+	}
+	history = {
+		owner = YUG
+		add_core_of = CRO
+		add_core_of = YUG
+		buildings = { infrastructure = 1 }
+	}
+	state_category = pastoral
+	manpower=3782
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
