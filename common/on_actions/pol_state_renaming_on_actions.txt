@@ -1,0 +1,24 @@
+
+on_actions = {
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = { FROM.FROM = { state = 1975 } }
+				if  ={
+					limit = {
+						ROOT = {
+							original_tag = TSS
+						}
+					}
+					set_province_name = { id = 12829 name = "Cieszyn" }
+					set_victory_points = { province = 12829 value = 6 }
+				}
+				else = {
+					reset_province_name = 12829
+					set_victory_points = { province = 12829 value = 0 }
+				}
+			}
+		}
+	}
+}
