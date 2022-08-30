@@ -607,6 +607,42 @@ on_actions = {
 					reset_province_name = 8775
 				}
 			}
+			
+			
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2930 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_hungarian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Csap" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2929 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_hungarian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Nagy Berezny" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			
 			#Poland
 			
 			if = {
