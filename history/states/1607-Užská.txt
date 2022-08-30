@@ -1,25 +1,31 @@
+
 state={
 	id=1607
 	name="STATE_1607"
+
 	history={
 		owner = CZE
 		add_core_of = CZE
 		add_core_of = SLO
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = WUK
 		add_core_of = CRP
+
 	}
+
 	provinces={
-		3497 13161 13178 13224 
+		13178 13224 
 	}
-	manpower=63011
+	manpower=55011
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
 	state_category=pastoral
+	local_supplies=0.000
 }

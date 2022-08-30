@@ -2,20 +2,24 @@
 state={
 	id=509
 	name="STATE_509"
-	provinces={
-		7368 12676 12793 12840 12871 
-	}
+
 	history={
 		owner = POL
 		add_core_of = POL
 		add_core_of = MLP
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = GAL
-  	}
-	manpower=323146
+
+	}
+
+	provinces={
+		7368 12793 12840 12871 
+	}
+	manpower=294146
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_town
 	local_supplies=0.000
 }

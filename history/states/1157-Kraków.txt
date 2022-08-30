@@ -16,12 +16,17 @@ state={
 		}
 		add_core_of = GAL
 		add_core_of = MLP
-        victory_points = {
-            6862 40 #Kraków
-        }
-  	}
-	manpower=406800
+		victory_points = {
+			6862 40 
+		}
+
+	}
+
+	provinces={
+		3082 5046 6862 
+	}
+	manpower=326800
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = city
 }
