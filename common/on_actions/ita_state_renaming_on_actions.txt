@@ -193,7 +193,7 @@ on_actions = {
 						ROOT = { original_tag = LDN }
 					}
 					FROM.FROM = { set_state_name = "Anpezo" }
-					set_province_name = { id = "19098" name = "Anpezo" }
+					set_province_name = { id = 19098 name = "Anpezo" }
 					set_victory_points = { province = 19098 value = 1 }
 				}
                 else = {
