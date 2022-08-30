@@ -1,0 +1,22 @@
+
+state={
+	id=2931
+	name="STATE_2931"
+	provinces={
+		12739 12743 
+	}
+	history={
+		owner = POL
+		add_core_of = POL
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = GAL
+		add_core_of = MLP
+	}
+	manpower=80217
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

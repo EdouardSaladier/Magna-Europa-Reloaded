@@ -1,0 +1,22 @@
+state={
+	id=2932
+	name="STATE_2932"
+	provinces={
+		12676 
+	}
+	history={
+		owner = POL
+		add_core_of = POL
+		add_core_of = MLP
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = GAL
+
+	}
+	manpower=29383
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
