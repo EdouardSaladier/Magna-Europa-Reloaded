@@ -674,12 +674,9 @@ ITA_GAR_02 = {
 ITAL_INF_01 = {
 	name = "Infantry Division" 
 
-	for_countries = { } 
+	for_countries = { TUS LCC SNA PIS MCR MDN BLG FRR PRM MTV LOM PIE VOS LOM LIG RMG SMR VNT LAZ VAT UMB MAR COR ABR MLS NAP PUG LUC CAL SIC SRD TST FRI FIU } 
 
-	can_use = {
-		is_italian = yes
-		NOT = { original_tag = ITA }
-	} 
+	can_use = { always = yes }
 
 	division_types = { "infantry" } 
 
@@ -691,12 +688,9 @@ ITAL_INF_01 = {
 ITAL_PAR_01 = { 
 	name = "Paratrooper Division" 
 
-	for_countries = { } 
+	for_countries = { TUS LCC SNA PIS MCR MDN BLG FRR PRM MTV LOM PIE VOS LOM LIG RMG SMR VNT LAZ VAT UMB MAR COR ABR MLS NAP PUG LUC CAL SIC SRD TST FRI FIU } 
 
-	can_use = {
-		is_italian = yes
-		NOT = { original_tag = ITA }
-	} 
+	can_use = { always = yes }
 
 	division_types = { "paratrooper" } 
 
@@ -709,12 +703,9 @@ ITAL_PAR_01 = {
 ITAL_MNT_01 = { 
 	name = "Mountain Division" 
 
-	for_countries = { } 
+	for_countries = { TUS LCC SNA PIS MCR MDN BLG FRR PRM MTV LOM PIE VOS LOM LIG RMG SMR VNT LAZ VAT UMB MAR COR ABR MLS NAP PUG LUC CAL SIC SRD TST FRI FIU } 
 
-	can_use = {
-		is_italian = yes
-		NOT = { original_tag = ITA }
-	} 
+	can_use = { always = yes }
 
 	division_types = { "mountaineers" } 
 
@@ -727,12 +718,9 @@ ITAL_MNT_01 = {
 ITAL_MAR_01 = { 
 	name = "Marine Brigade" 
 
-	for_countries = { } 
+	for_countries = { TUS LCC SNA PIS MCR MDN BLG FRR PRM MTV LOM PIE VOS LOM LIG RMG SMR VNT LAZ VAT UMB MAR COR ABR MLS NAP PUG LUC CAL SIC SRD TST FRI FIU } 
 
-	can_use = {
-		is_italian = yes
-		NOT = { original_tag = ITA }
-	} 
+	can_use = { always = yes }
 
 	division_types = { "marine" } 
 
@@ -745,12 +733,9 @@ ITAL_MAR_01 = {
 ITAL_COL_01 = { 
 	name = "Colonial Division" 
 
-	for_countries = { } 
+	for_countries = { TUS LCC SNA PIS MCR MDN BLG FRR PRM MTV LOM PIE VOS LOM LIG RMG SMR VNT LAZ VAT UMB MAR COR ABR MLS NAP PUG LUC CAL SIC SRD TST FRI FIU } 
 
-	can_use = {
-		is_italian = yes
-		NOT = { original_tag = ITA }
-	} 
+	can_use = { always = yes }
 
 	division_types = { "infantry" } 
 
@@ -763,12 +748,9 @@ ITAL_COL_01 = {
 ITAL_GAR_01 = { 
 	name = "Garrison Division" 
 
-	for_countries = { } 
+	for_countries = { TUS LCC SNA PIS MCR MDN BLG FRR PRM MTV LOM PIE VOS LOM LIG RMG SMR VNT LAZ VAT UMB MAR COR ABR MLS NAP PUG LUC CAL SIC SRD TST FRI FIU } 
 
-	can_use = {
-		is_italian = yes
-		NOT = { original_tag = ITA }
-	} 
+	can_use = { always = yes }
 
 	division_types = { "infantry" } 
 
@@ -799,12 +781,9 @@ ITAL_GAR_02 = {
 ITAL_CAV_01 = { 
 	name = "Cavalry Regiment" 
 
-	for_countries = { } 
+	for_countries = { TUS LCC SNA PIS MCR MDN BLG FRR PRM MTV LOM PIE VOS LOM LIG RMG SMR VNT LAZ VAT UMB MAR COR ABR MLS NAP PUG LUC CAL SIC SRD TST FRI FIU } 
 
-	can_use = {
-		is_italian = yes
-		NOT = { original_tag = ITA }
-	} 
+	can_use = { always = yes }
 
 	division_types = { "cavalry" } 
 
@@ -835,12 +814,9 @@ ITAL_CAV_02 = {
 ITAL_MOT_01 = { 
 	name = "Motorized Division" 
 
-	for_countries = { } 
+	for_countries = { TUS LCC SNA PIS MCR MDN BLG FRR PRM MTV LOM PIE VOS LOM LIG RMG SMR VNT LAZ VAT UMB MAR COR ABR MLS NAP PUG LUC CAL SIC SRD TST FRI FIU } 
 
-	can_use = {
-		is_italian = yes
-		NOT = { original_tag = ITA }
-	}
+	can_use = { always = yes }
 	division_types = { "motorized" } 
 
 	# Number reservation system will tie to another group.
@@ -852,12 +828,9 @@ ITAL_MOT_01 = {
 ITAL_MEC_01 = { 
 	name = "Mechanized Division" 
 
-	for_countries = { } 
+	for_countries = { TUS LCC SNA PIS MCR MDN BLG FRR PRM MTV LOM PIE VOS LOM LIG RMG SMR VNT LAZ VAT UMB MAR COR ABR MLS NAP PUG LUC CAL SIC SRD TST FRI FIU } 
 
-	can_use = {
-		is_italian = yes
-		NOT = { original_tag = ITA }
-	}
+	can_use = { always = yes }
 	division_types = { "mechanized" } 
 
 	# Number reservation system will tie to another group.
@@ -869,12 +842,9 @@ ITAL_MEC_01 = {
 ITAL_ARM_01 = { 
 	name = "Armored Division" 
 
-	for_countries = { } 
+	for_countries = { TUS LCC SNA PIS MCR MDN BLG FRR PRM MTV LOM PIE VOS LOM LIG RMG SMR VNT LAZ VAT UMB MAR COR ABR MLS NAP PUG LUC CAL SIC SRD TST FRI FIU } 
 
-	can_use = {
-		is_italian = yes
-		NOT = { original_tag = ITA }
-	} 
+	can_use = { always = yes }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" } 
 
