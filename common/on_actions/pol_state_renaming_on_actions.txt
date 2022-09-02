@@ -8,15 +8,17 @@ on_actions = {
 				if  ={
 					limit = {
 						ROOT = {
-							original_tag = TSS
+							original_tag = CSN
 						}
 					}
+					FROM.FROM = { set_state_flag = cieszyn_independent_flag }
 					set_province_name = { id = 12829 name = "Cieszyn" }
 					set_victory_points = { province = 12829 value = 6 }
 				}
 				else = {
 					reset_province_name = 12829
 					set_victory_points = { province = 12829 value = 0 }
+					FROM.FROM = { clr_state_flag = cieszyn_independent_flag }
 				}
 			}
 		}
