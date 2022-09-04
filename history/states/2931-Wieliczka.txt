@@ -2,9 +2,7 @@
 state={
 	id=2931
 	name="STATE_2931"
-	provinces={
-		12739 12743 
-	}
+
 	history={
 		owner = POL
 		add_core_of = POL
@@ -14,9 +12,14 @@ state={
 		}
 		add_core_of = GAL
 		add_core_of = MLP
+
+	}
+
+	provinces={
+		12739 12743 
 	}
 	manpower=80217
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }
