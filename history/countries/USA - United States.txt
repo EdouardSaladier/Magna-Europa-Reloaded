@@ -1,14 +1,14 @@
 ﻿capital = 26
 
-#oob = "USA_1936"
+oob = "USA_1936"
 
 starting_train_buffer = 5
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-#		set_naval_oob = "USA_1936_naval_mtg"
+		set_naval_oob = "USA_1936_naval_mtg"
 	else = {
-#		set_naval_oob = "USA_1936_naval_legacy"
+		set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
 
