@@ -397,6 +397,9 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = { SLV = { exists = no } }
+					SLV = {
+						remove_state_core = 2825
+					}
 					release_puppet = SLV 
 					set_autonomy = { target = SLV autonomy_state = autonomy_integrated_puppet }
 					SLV = { save_event_target_as = released_nation_target }
@@ -474,12 +477,10 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
 				controls_state = 1563
 				controls_state = 1481
 				controls_state = 1464
 				controls_state = 721
-			}
 		}
 
 		bypass = {
@@ -506,14 +507,28 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = { CRO = { exists = no } }
+					CRO = {
+						add_state_core = 1470
+						add_state_core = 2825
+						add_state_core = 1502
+						add_state_core = 2820
+						add_state_core = 2815
+						add_state_core = 1501
+						add_state_core = 813
+						add_state_core = 1500
+						add_state_core = 1498
+						add_state_core = 2821
+						add_state_core = 2822
+						add_state_core = 2823
+						add_state_core = 1496
+						add_state_core = 2824
+						remove_state_core = 2555
+						remove_state_core = 1503
+						remove_state_core = 1472
+					}
 					release_puppet = CRO
 					set_autonomy = { target = CRO autonomy_state = autonomy_integrated_puppet }
 					CRO = { save_event_target_as = released_nation_target }
-					CRO = {
-						transfer_state = 1470
-						transfer_state = 775
-						transfer_state = 2555
-					}
 				}
 				else = {
 					create_dynamic_country = {
@@ -637,17 +652,24 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = { DLM = { exists = no } }
+					DLM = {
+						add_state_core = 813
+						add_state_core = 1500
+						add_state_core = 1501
+						remove_state_core = 2895
+						remove_state_core = 1998
+						remove_state_core = 2797
+						remove_state_core = 884
+						remove_state_core = 1990
+						remove_state_core = 1481
+						remove_state_core = 1502
+						remove_state_core = 2241
+						remove_state_core = 2897
+						remove_state_core = 1480
+					}
 					release_puppet = DLM 
 					set_autonomy = { target = DLM autonomy_state = autonomy_integrated_puppet }
 					DLM = { save_event_target_as = released_nation_target }
-					DLM = {
-						transfer_state = 2829
-						transfer_state = 1478
-						transfer_state = 1477
-						transfer_state = 754
-						transfer_state = 1473
-						transfer_state = 2651
-					}
 				}
 				else = {
 					create_dynamic_country = {
@@ -712,14 +734,20 @@ focus_tree = {
 				}
 				if = {
 					limit = { CRO = { exists = no } }
+					CRO = {
+						add_state_core = 2825
+						remove_state_core = 1472
+						remove_state_core = 1503
+						remove_state_core = 1480
+						remove_state_core = 2897
+						remove_state_core = 2241
+						remove_state_core = 1990
+						remove_state_core = 1481
+					}
 					release_puppet = CRO 
+					CRO = { set_cosmetic_tag = CRO_neutrality_sava}
 					set_autonomy = { target = CRO autonomy_state = autonomy_integrated_puppet }
 					CRO = { save_event_target_as = released_nation_target }
-					CRO = {
-						transfer_state = 1470
-						transfer_state = 775
-						transfer_state = 2555
-					}
 				}
 				else = {
 					create_dynamic_country = {
@@ -779,47 +807,6 @@ focus_tree = {
 						}
 					}
 				}
-			}
-			
-			hidden_effect = {
-				create_dynamic_country = {
-					original_tag = CRO
-					
-					set_cosmetic_tag = dalmatia
-					transfer_state = 103
-					PREV = {
-						puppet = PREV
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
-					}
-					division_template = {
-						name = "Yugoslavian Division"
-						priority = 1
-						division_names_group = YUG_INF_01
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-				
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-				
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-						}
-					}
-					random_owned_controlled_state = {
-						limit = { PREV = { has_full_control_of_state = PREV } }
-						create_unit = {
-							division = "name = \"Dalmatian Division\" division_template = \"Yugoslavian Division\" start_experience_factor = 0.9" 
-							owner = PREV
-						}
-					}
-				}
-				
 			}
 		}
 	}
