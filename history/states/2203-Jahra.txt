@@ -2,18 +2,22 @@
 state={
 	id=2203
 	name="STATE_2203"
-	history = {
+
+	history={
 		owner = KUW
 		add_core_of = KUW
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
+
 	provinces={
-		19152 19163 19165 19166 
+		19163 19165 19166 
 	}
-	manpower=22800
-	state_category=pastoral
+	manpower=22590
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

@@ -2,18 +2,22 @@
 state={
 	id=2300
 	name="STATE_2300"
-	history = {
+
+	history={
 		owner = OMA
 		add_core_of = OMA
 		buildings = {
 			infrastructure = 1
+
 		}
+
 	}
+
 	provinces={
 		16226 17910 
 	}
-	manpower=6150
-	state_category=wasteland
+	manpower=4150
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=0.000
 }
