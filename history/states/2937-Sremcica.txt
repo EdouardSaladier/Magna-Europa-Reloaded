@@ -1,0 +1,27 @@
+
+state={
+	id=2937
+	name="STATE_2937"
+
+	history={
+		owner = YUG
+		add_core_of = YUG
+		add_core_of = SER
+		buildings = {
+			infrastructure = 4
+
+		}
+		victory_points = {
+			20200 5 
+		}
+
+	}
+
+	provinces={
+		6031 14487 14502 14509 14541 14561 14564 17669 20200 
+	}
+	manpower=62048
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

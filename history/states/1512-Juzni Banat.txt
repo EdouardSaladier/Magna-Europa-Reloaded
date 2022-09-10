@@ -1,0 +1,29 @@
+
+state={
+	id=1512
+	name="STATE_1512"
+
+	history={
+		owner = YUG
+		add_core_of = YUG
+		add_core_of = VJV
+		add_core_of = SER
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = BNT
+		victory_points = {
+			14354 2 
+		}
+
+	}
+
+	provinces={
+		4534 6321 14354 18118 20244 20245 
+	}
+	manpower=156186
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

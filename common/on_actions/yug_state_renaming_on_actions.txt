@@ -276,10 +276,6 @@ on_actions = {
 						}
 					}
 					set_province_name = {
-						id = 8544
-						name = "Pancsova"
-					}
-					set_province_name = {
 						id = 14354
 						name = "Versec"
 					}
@@ -290,10 +286,6 @@ on_actions = {
 						ROOT = {
 							is_german = yes
 						}
-					}
-					set_province_name = {
-						id = 8544
-						name = "Pantschowa"
 					}
 					set_province_name = {
 						id = 14354
@@ -308,10 +300,6 @@ on_actions = {
 						}
 					}
 					set_province_name = {
-						id = 8544
-						name = "Panciova"
-					}
-					set_province_name = {
 						id = 14354
 						name = "Vârșeț"
 					}
@@ -320,6 +308,52 @@ on_actions = {
 				else = {
 					reset_province_name = 8544
 					reset_province_name = 14354
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Pancevo
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2933 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_hungarian = yes
+						}
+					}
+					set_province_name = {
+						id = 8544
+						name = "Pancsova"
+					}
+					FROM.FROM = { set_state_name = "Pancsova" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					set_province_name = {
+						id = 8544
+						name = "Pantschowa"
+					}
+					FROM.FROM = { set_state_name = "Pantschowa" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_romanian = yes
+						}
+					}
+					set_province_name = {
+						id = 8544
+						name = "Panciova"
+					}
+					FROM.FROM = { set_state_name = "Panciova" }
+				}
+				else = {
+					reset_province_name = 8544
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
