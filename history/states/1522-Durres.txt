@@ -1,23 +1,31 @@
+
 state={
 	id=1522
 	name="STATE_1522"
-	provinces={
-		6260 6699 20218 
-	}
+
 	history={
 		owner = ALB
 		add_core_of = ALB
 		add_core_of = CAB
 		buildings = {
 			infrastructure = 2
-			20218 = { naval_base = 1 }
+			20218 = {
+				naval_base = 1
+
+			}
+
 		}
-        victory_points = {
-            20218 10
-        }
-    }
+		victory_points = {
+			20218 10 
+		}
+
+	}
+
+	provinces={
+		6260 6699 20218 
+	}
 	manpower=84609
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }
