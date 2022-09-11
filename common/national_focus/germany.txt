@@ -2400,13 +2400,13 @@ focus_tree = {
 						any_owned_state = {
 							air_base > 3
 							air_base < 9
+							has_state_category = wasteland
+							has_state_category = enclave
+							has_state_category = tiny_island
+							has_state_category = small_island
+							has_state_category = pastoral
+							has_state_category = rural
 						} 
-						has_state_category = wasteland
-						has_state_category = enclave
-						has_state_category = tiny_island
-						has_state_category = small_island
-						has_state_category = pastoral
-						has_state_category = rural
 					}
 				}
 				random_owned_controlled_state = {
@@ -3813,24 +3813,19 @@ focus_tree = {
 					country_event = { id = germany.126 days = 1 }
 				}
 			}
-			if = {
-				limit = {
-					every_state = {
-						limit = { is_core_of = AUS }
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
+			every_state = {
+				limit = { 
+					is_core_of = AUS 
+					owner = {
+						NOT = {
+							tag = AUS
+						}
+						NOT = {
+							is_in_faction_with = ROOT
 						}
 					}
 				}
-				every_state = {
-					limit = { is_core_of = AUS }
-					add_core_of = GER
-				}
+				add_core_of = GER
 			}
 		}
 	}
@@ -6104,17 +6099,17 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = GER_improve_national_spirit_tooltip
 				OR = {
-					GER = { controls_state = 126 }
+					GER = { controls_state = 2475 }
 					any_other_country = {
 						is_in_faction_with = GER
-						controls_state = 126
+						controls_state = 2475
 					}
 				}
 				OR = {
-					GER = { controls_state = 16 }
+					GER = { controls_state = 571 }
 					any_other_country = {
 						is_in_faction_with = GER
-						controls_state = 16
+						controls_state = 571
 					}
 				}
 			}
@@ -6122,13 +6117,13 @@ focus_tree = {
 		cancel = {
 			AND = {
 				has_war = no
-				126 = {
+				2475 = {
 					owner = {
 						NOT = { tag = GER }
 						NOT = { is_in_faction_with = GER }
 					}
 				}
-				16 = {
+				571 = {
 					owner = {
 						NOT = { tag = GER }
 						NOT = { is_in_faction_with = GER }
@@ -6518,10 +6513,10 @@ focus_tree = {
 			is_subject = no
 			GRE = { 
 				has_war = no 
-				owns_state = 731
-				owns_state = 186
-				owns_state = 185
-				owns_state = 47 
+				owns_state = 941
+				owns_state = 995
+				owns_state = 1539
+				owns_state = 2003
 			}
 		}
 		x = 0
@@ -6592,9 +6587,9 @@ focus_tree = {
 				limit = {
 					GRE = {
 						OR = {
-							owns_state = 185
-							owns_state = 186
-							owns_state = 47
+							owns_state = 995
+							owns_state = 1539
+							owns_state = 2003
 						} 
 					}
 					ITA = {
@@ -6612,7 +6607,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					GRE = { owns_state = 184 }
+					GRE = { owns_state = 1549 }
 					BUL = {
 						NOT = { has_war_with = GRE }
 						country_exists = BUL
@@ -6747,8 +6742,56 @@ focus_tree = {
 			effect_tooltip = {
 				GER_remove_mefo_bills = yes
 			}
-			42 = { set_demilitarized_zone = no }
-			51 = { set_demilitarized_zone = no }
+			custom_effect_tooltip = mer_GER_rhineland_remilitarized_states_tt
+			hidden_effect = {
+				1763 = { set_demilitarized_zone = no }
+				589 = { set_demilitarized_zone = no }
+				1766 = { set_demilitarized_zone = no }
+				1764 = { set_demilitarized_zone = no }
+				2583 = { set_demilitarized_zone = no }
+				556 = { set_demilitarized_zone = no }
+				1765 = { set_demilitarized_zone = no }
+				1747 = { set_demilitarized_zone = no }
+				516 = { set_demilitarized_zone = no }
+				1744 = { set_demilitarized_zone = no }
+				1746 = { set_demilitarized_zone = no }
+				2580 = { set_demilitarized_zone = no }
+				474 = { set_demilitarized_zone = no }
+				1745 = { set_demilitarized_zone = no }
+				483 = { set_demilitarized_zone = no }
+				475 = { set_demilitarized_zone = no }
+				465 = { set_demilitarized_zone = no }
+				431 = { set_demilitarized_zone = no }
+				2584 = { set_demilitarized_zone = no }
+				1749 = { set_demilitarized_zone = no }
+				424 = { set_demilitarized_zone = no }
+				1730 = { set_demilitarized_zone = no }
+				1748 = { set_demilitarized_zone = no }
+				423 = { set_demilitarized_zone = no }
+				1750 = { set_demilitarized_zone = no }
+				2718 = { set_demilitarized_zone = no }
+				2338 = { set_demilitarized_zone = no }
+				1751 = { set_demilitarized_zone = no }
+				460 = { set_demilitarized_zone = no }
+				2339 = { set_demilitarized_zone = no }
+				477 = { set_demilitarized_zone = no }
+				469 = { set_demilitarized_zone = no }
+				503 = { set_demilitarized_zone = no }
+				1752 = { set_demilitarized_zone = no }
+				488 = { set_demilitarized_zone = no }
+				1753 = { set_demilitarized_zone = no }
+				2337 = { set_demilitarized_zone = no }
+				537 = { set_demilitarized_zone = no }
+				2343 = { set_demilitarized_zone = no }
+				1758 = { set_demilitarized_zone = no }
+				1760 = { set_demilitarized_zone = no }
+				506 = { set_demilitarized_zone = no }
+				1756 = { set_demilitarized_zone = no }
+				521 = { set_demilitarized_zone = no }
+				1757 = { set_demilitarized_zone = no }
+				524 = { set_demilitarized_zone = no }
+				2340 = { set_demilitarized_zone = no }
+			}
 			add_political_power = 120
 			add_named_threat = { threat = 5 name = GER_oppose_hitler }
 			country_event = { id = wtt_germany.1 }

@@ -21,23 +21,12 @@ country_event = {
 
 	option = {
 		name = germany.4.a
-		4 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
+		every_state = {
+			limit = { 
+				is_core_of = AUS 
+				owner = { tag = AUS }
 			}
-		}
-		152 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
-			}
-		}
-		153 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
-			}
+			add_core_of = GER
 		}
 		AUS = {
 			every_unit_leader = {
@@ -206,173 +195,138 @@ country_event = {
 		custom_effect_tooltip = germany.11.a.tt
 		if = {
 			limit = {
-				NOT = { owns_state = 146 }
+				NOT = { owns_state = 77 }
 			}
-			add_state_claim = 146 #KARELIA (FIN)
+			add_state_claim = 77 #KARELIA (FIN)
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { owns_state = 113 }
+				}
+				add_state_claim = 113
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 2783 }
+				}
+				add_state_claim = 2783
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 100 }
+				}
+				add_state_claim = 100
+			}
 		}
 		if = {
 			limit = {
-				NOT = { owns_state = 147 }
+				NOT = { owns_state = 33 }
 			}
-			add_state_claim = 147 #SALLA (FIN)
+			add_state_claim = 33 #SALLA (FIN)
 		}
 		if = {
 			limit = {
-				NOT = { owns_state = 722 }
+				NOT = { owns_state = 2786 }
 			}
-			add_state_claim = 722 #PETSAMO (FIN)
+			add_state_claim = 2786 #SALLA (FIN)
 		}
 		if = {
 			limit = {
-				NOT = { owns_state = 13 }
+				NOT = { owns_state = 17 }
 			}
-			add_state_claim = 13 #PÄRNU (EST)
+			add_state_claim = 17 #PETSAMO (FIN)
 		}
-		if = {
-			limit = {
-				NOT = { owns_state = 191 }
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { owns_state = 22 }
+				}
+				add_state_claim = 22 
 			}
-			add_state_claim = 191 #TARTU (EST)
 		}
-		if = {
-			limit = {
-				NOT = { owns_state = 811 }
+		custom_effect_tooltip = mer_claims_on_estonia
+		hidden_effect = {
+			every_state = {
+				limit = { 
+					is_core_of = EST
+					NOT = {
+						is_core_of = FIN
+						is_core_of = LAT
+						is_core_of = LIT
+						is_core_of = SOV
+					}
+				}
+				add_claim_by = SOV
 			}
-			add_state_claim = 811 #SAAREMAA (EST)
 		}
-		if = {
-			limit = {
-				NOT = { owns_state = 813 }
+		custom_effect_tooltip = mer_claims_on_latvia
+		hidden_effect = {
+			every_state = {
+				limit = { 
+					is_core_of = LAT
+					NOT = {
+						is_core_of = FIN
+						is_core_of = EST
+						is_core_of = LIT
+						is_core_of = SOV
+					}
+				}
+				add_claim_by = SOV
 			}
-			add_state_claim = 813 #VIRUMAA (EST)
 		}
-		if = {
-			limit = {
-				NOT = { owns_state = 812 }
+		custom_effect_tooltip = mer_claims_on_lithuania
+		hidden_effect = {
+			SOV = {
+				add_state_claim = 2371
+				add_state_claim = 208
+				add_state_claim = 101
+				add_state_claim = 205
+				add_state_claim = 107
+				add_state_claim = 206
+				add_state_claim = 1246
+				add_state_claim = 238
+				add_state_claim = 1104
+				add_state_claim = 1178
+				add_state_claim = 259
+				add_state_claim = 242
+				add_state_claim = 1339
+				add_state_claim = 207
+				add_state_claim = 1280
+				add_state_claim = 1296
+				add_state_claim = 225
+				add_state_claim = 244
+				add_state_claim = 275
+				add_state_claim = 274
+				add_state_claim = 1309
+				add_state_claim = 294
+				add_state_claim = 1304
+				add_state_claim = 1135
+				add_state_claim = 241
+				add_state_claim = 1329
+				add_state_claim = 236
 			}
-			add_state_claim = 812 #TALLIN (EST)
 		}
-		if = {
-			limit = {
-				NOT = { owns_state = 12 }
+		custom_effect_tooltip = mer_claims_on_belarussian_poland
+		hidden_effect = {
+			every_state = {
+				limit = { 
+					is_core_of = BLR
+					is_owned_by = POL
+				}
+				add_claim_by = SOV
 			}
-			add_state_claim = 12 #VIDZEME (LAT)
 		}
-		if = {
-			limit = {
-				NOT = { owns_state = 190 }
+		custom_effect_tooltip = mer_claims_on_ukrainian_poland
+		hidden_effect = {
+			every_state = {
+				limit = { 
+					is_core_of = UKR
+					is_owned_by = POL
+				}
+				add_claim_by = SOV
 			}
-			add_state_claim = 190 #KURZEME (LAT)
 		}
-		if = {
-			limit = {
-				NOT = { owns_state = 808 }
-			}
-			add_state_claim = 808 #RIGA (LAT)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 809 }
-			}
-			add_state_claim = 809 #ZEMGALE (LAT)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 810 }
-			}
-			add_state_claim = 810 #LATGALE (LAT)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 11 }
-			}
-			add_state_claim = 11 #KAUNAS (LIT)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 784 }
-			}
-			add_state_claim = 784 #WILNO (LIT)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 189 }
-			}
-			add_state_claim = 189 #ZEMAITIJA (LIT)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 814 }
-			}
-			add_state_claim = 814 #SUDUVA (LIT)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 815 }
-			}
-			add_state_claim = 815 #AUKSTAITIJA (LIT)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 89 }
-			}
-			add_state_claim = 89 #STANISLAWOW (POL)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 91 }
-			}
-			add_state_claim = 91 #LWOW (POL)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 93 }
-			}
-			add_state_claim = 93 #WOLYN (POL)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 94 }
-			}
-			add_state_claim = 94 #POLESIE (POL)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 95 }
-			}
-			add_state_claim = 95 #NOWOGRODEK (POL)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 96 }
-			}
-			add_state_claim = 96 #WILEJKA (POL)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 97 }
-			}
-			add_state_claim = 97 #BIALYSTOK (POL)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 78 }
-			}
-			add_state_claim = 78 #BESSARABIA (ROM)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 80 }
-			}
-			add_state_claim = 80 #BUCOVINA (ROM)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 766 }
-			}
-			add_state_claim = 766 #SOUTHERN BESSARABIA (ROM)
-		}
-
 		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } }
 		GER = {
 			country_event = { days = 1 id = germany.12 }
@@ -477,83 +431,87 @@ country_event = {
 		OR = {
 			AND = {
 				OR = {
-					owns_state = 96
+					all_state = {
+						is_core_of = POL
+						OR = {
+							is_core_of = BLR
+							is_core_of = UKR
+						}
+						is_owned_by = GER
+					}
 					any_other_country = {
 						is_in_faction_with = GER
 						GER = {
 							is_faction_leader = yes
 						}
-						owns_state = 96
+						all_state = {
+							is_core_of = POL
+							OR = {
+								is_core_of = BLR
+								is_core_of = UKR
+							}
+							is_owned_by = PREV
+						}
 					}
 				}
 				OR = {
-					owns_state = 95
+					owns_state = 294
 					any_other_country = {
 						is_in_faction_with = GER
 						GER = {
 							is_faction_leader = yes
 						}
-						owns_state = 95
+						owns_state = 294
 					}
 				}
 				OR = {
-					owns_state = 94
+					owns_state = 1304
 					any_other_country = {
 						is_in_faction_with = GER
 						GER = {
 							is_faction_leader = yes
 						}
-						owns_state = 94
+						owns_state = 1304
 					}
 				}
 				OR = {
-					owns_state = 93
+					owns_state = 1135
 					any_other_country = {
 						is_in_faction_with = GER
 						GER = {
 							is_faction_leader = yes
 						}
-						owns_state = 93
+						owns_state = 1135
 					}
 				}
 				OR = {
-					owns_state = 91
+					owns_state = 241
 					any_other_country = {
 						is_in_faction_with = GER
 						GER = {
 							is_faction_leader = yes
 						}
-						owns_state = 91
+						owns_state = 241
 					}
 				}
 				OR = {
-					owns_state = 97
+					owns_state = 1329
 					any_other_country = {
 						is_in_faction_with = GER
 						GER = {
 							is_faction_leader = yes
 						}
-						owns_state = 97
+						owns_state = 1329
 					}
 				}
 				OR = {
-					owns_state = 89
+					owns_state = 236
 					any_other_country = {
 						is_in_faction_with = GER
 						GER = {
 							is_faction_leader = yes
 						}
-						owns_state = 89
-					}
-				}
-				OR = {
-					owns_state = 784
-					any_other_country = {
-						is_in_faction_with = GER
-						GER = {
-							is_faction_leader = yes
-						}
-						owns_state = 784
+						owns_state = 236
 					}
 				}
 			}
@@ -561,83 +519,87 @@ country_event = {
 				POL = { has_capitulated = yes }
 				AND = {
 					OR = {
-						controls_state = 96
+						all_state = {
+							is_owned_by = POL
+							OR = {
+								is_core_of = BLR
+								is_core_of = UKR
+							}
+							is_controlled_by = GER
+						}
 						any_other_country = {
 							is_in_faction_with = GER
 							GER = {
 								is_faction_leader = yes
 							}
-							controls_state = 96
+							all_state = {
+								is_owned_by = POL
+								OR = {
+									is_core_of = BLR
+									is_core_of = UKR
+								}
+								is_controlled_by = PREV
+							}
 						}
 					}
 					OR = {
-						controls_state = 95
+						controls_state = 294
 						any_other_country = {
 							is_in_faction_with = GER
 							GER = {
 								is_faction_leader = yes
 							}
-							controls_state = 95
+							controls_state = 294
 						}
 					}
 					OR = {
-						controls_state = 94
+						controls_state = 1304
 						any_other_country = {
 							is_in_faction_with = GER
 							GER = {
 								is_faction_leader = yes
 							}
-							controls_state = 94
+							controls_state = 1304
 						}
 					}
 					OR = {
-						controls_state = 93
+						controls_state = 1135
 						any_other_country = {
 							is_in_faction_with = GER
 							GER = {
 								is_faction_leader = yes
 							}
-							controls_state = 93
+							controls_state = 1135
 						}
 					}
 					OR = {
-						controls_state = 91
+						controls_state = 241
 						any_other_country = {
 							is_in_faction_with = GER
 							GER = {
 								is_faction_leader = yes
 							}
-							controls_state = 91
+							controls_state = 241
 						}
 					}
 					OR = {
-						controls_state = 97
+						controls_state = 1329
 						any_other_country = {
 							is_in_faction_with = GER
 							GER = {
 								is_faction_leader = yes
 							}
-							controls_state = 97
+							controls_state = 1329
 						}
 					}
 					OR = {
-						controls_state = 89
+						controls_state = 236
 						any_other_country = {
 							is_in_faction_with = GER
 							GER = {
 								is_faction_leader = yes
 							}
-							controls_state = 89
-						}
-					}
-					OR = {
-						controls_state = 784
-						any_other_country = {
-							is_in_faction_with = GER
-							GER = {
-								is_faction_leader = yes
-							}
-							controls_state = 784
+							controls_state = 236
 						}
 					}
 				}
@@ -671,14 +633,24 @@ country_event = {
 					NOT = { is_subject_of = GER }
 					NOT = { tag = SOU }
 					OR = {
-						controls_state = 96
-						controls_state = 95
-						controls_state = 94
-						controls_state = 93
-						controls_state = 91
-						controls_state = 97
-						controls_state = 89
-						controls_state = 784
+						all_state = {
+							is_core_of = POL
+							is_core_of = BLR
+							is_core_of = UKR
+							is_controlled_by = PREV
+						}
+						all_state = {
+							is_core_of = POL
+							is_core_of = BLR
+							is_core_of = UKR
+							is_controlled_by = PREV
+						}
+						controls_state = 294
+						controls_state = 1304
+						controls_state = 1135
+						controls_state = 241
+						controls_state = 1329
+						controls_state = 236
 					}
 				}
 			}
@@ -688,14 +660,24 @@ country_event = {
 					NOT = { is_subject_of = GER }
 					NOT = { tag = SOU }
 					OR = {
-						controls_state = 96
-						controls_state = 95
-						controls_state = 94
-						controls_state = 93
-						controls_state = 91
-						controls_state = 97
-						controls_state = 89
-						controls_state = 784
+						all_state = {
+							is_core_of = POL
+							is_core_of = BLR
+							is_core_of = UKR
+							is_controlled_by = PREV
+						}
+						all_state = {
+							is_core_of = POL
+							is_core_of = BLR
+							is_core_of = UKR
+							is_controlled_by = PREV
+						}
+						controls_state = 294
+						controls_state = 1304
+						controls_state = 1135
+						controls_state = 241
+						controls_state = 1329
+						controls_state = 236
 					}
 				}
 				if = {
@@ -742,171 +724,153 @@ country_event = {
 		SOU = {
 			if = {
 				limit = {
-					NOT = { owns_state = 146 }
+					NOT = { owns_state = 77 }
 				}
-				add_state_claim = 146 #KARELIA (FIN)
+				add_state_claim = 77 #KARELIA (FIN)
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { owns_state = 113 }
+					}
+					add_state_claim = 113
+				}
+				if = {
+					limit = {
+						NOT = { owns_state = 2783 }
+					}
+					add_state_claim = 2783
+				}
+				if = {
+					limit = {
+						NOT = { owns_state = 100 }
+					}
+					add_state_claim = 100
+				}
 			}
 			if = {
 				limit = {
-					NOT = { owns_state = 147 }
+					NOT = { owns_state = 33 }
 				}
-				add_state_claim = 147 #SALLA (FIN)
+				add_state_claim = 33 #SALLA (FIN)
 			}
 			if = {
 				limit = {
-					NOT = { owns_state = 722 }
+					NOT = { owns_state = 2786 }
 				}
-				add_state_claim = 722 #PETSAMO (FIN)
+				add_state_claim = 2786 #SALLA (FIN)
 			}
 			if = {
 				limit = {
-					NOT = { owns_state = 13 }
+					NOT = { owns_state = 17 }
 				}
-				add_state_claim = 13 #PÄRNU (EST)
+				add_state_claim = 17 #PETSAMO (FIN)
 			}
-			if = {
-				limit = {
-					NOT = { owns_state = 191 }
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { owns_state = 22 }
+					}
+					add_state_claim = 22 
 				}
-				add_state_claim = 191 #TARTU (EST)
 			}
-			if = {
-				limit = {
-					NOT = { owns_state = 811 }
+			custom_effect_tooltip = mer_claims_on_estonia
+			hidden_effect = {
+				every_state = {
+					limit = { 
+						is_core_of = EST
+						NOT = {
+							is_core_of = FIN
+							is_core_of = LAT
+							is_core_of = LIT
+							is_core_of = SOV
+						}
+					}
+					add_claim_by = SOV
 				}
-				add_state_claim = 811 #SAAREMAA (EST)
 			}
-			if = {
-				limit = {
-					NOT = { owns_state = 813 }
+			custom_effect_tooltip = mer_claims_on_latvia
+			hidden_effect = {
+				every_state = {
+					limit = { 
+						is_core_of = LAT
+						NOT = {
+							is_core_of = FIN
+							is_core_of = EST
+							is_core_of = LIT
+							is_core_of = SOV
+						}
+					}
+					add_claim_by = SOV
 				}
-				add_state_claim = 813 #VIRUMAA (EST)
 			}
-			if = {
-				limit = {
-					NOT = { owns_state = 812 }
+			custom_effect_tooltip = mer_claims_on_lithuania
+			hidden_effect = {
+				SOV = {
+					add_state_claim = 2371
+					add_state_claim = 208
+					add_state_claim = 101
+					add_state_claim = 205
+					add_state_claim = 107
+					add_state_claim = 206
+					add_state_claim = 1246
+					add_state_claim = 238
+					add_state_claim = 1104
+					add_state_claim = 1178
+					add_state_claim = 259
+					add_state_claim = 242
+					add_state_claim = 1339
+					add_state_claim = 207
+					add_state_claim = 1280
+					add_state_claim = 1296
+					add_state_claim = 225
+					add_state_claim = 244
+					add_state_claim = 275
+					add_state_claim = 274
+					add_state_claim = 1309
+					add_state_claim = 294
+					add_state_claim = 1304
+					add_state_claim = 1135
+					add_state_claim = 241
+					add_state_claim = 1329
+					add_state_claim = 236
 				}
-				add_state_claim = 812 #TALLIN (EST)
 			}
-			if = {
-				limit = {
-					NOT = { owns_state = 12 }
+			custom_effect_tooltip = mer_claims_on_belarussian_poland
+			hidden_effect = {
+				every_state = {
+					limit = { 
+						is_core_of = BLR
+						is_owned_by = POL
+					}
+					add_claim_by = SOV
 				}
-				add_state_claim = 12 #VIDZEME (LAT)
 			}
-			if = {
-				limit = {
-					NOT = { owns_state = 190 }
+			custom_effect_tooltip = mer_claims_on_ukrainian_poland
+			hidden_effect = {
+				every_state = {
+					limit = { 
+						is_core_of = UKR
+						is_owned_by = POL
+					}
+					add_claim_by = SOV
 				}
-				add_state_claim = 190 #KURZEME (LAT)
 			}
-			if = {
-				limit = {
-					NOT = { owns_state = 808 }
-				}
-				add_state_claim = 808 #RIGA (LAT)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 809 }
-				}
-				add_state_claim = 809 #ZEMGALE (LAT)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 810 }
-				}
-				add_state_claim = 810 #LATGALE (LAT)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 11 }
-				}
-				add_state_claim = 11 #KAUNAS (LIT)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 784 }
-				}
-				add_state_claim = 784 #WILNO (LIT)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 189 }
-				}
-				add_state_claim = 189 #ZEMAITIJA (LIT)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 814 }
-				}
-				add_state_claim = 814 #SUDUVA (LIT)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 815 }
-				}
-				add_state_claim = 815 #AUKSTAITIJA (LIT)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 89 }
-				}
-				add_state_claim = 89 #STANISLAWOW (POL)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 91 }
-				}
-				add_state_claim = 91 #LWOW (POL)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 93 }
-				}
-				add_state_claim = 93 #WOLYN (POL)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 94 }
-				}
-				add_state_claim = 94 #POLESIE (POL)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 95 }
-				}
-				add_state_claim = 95 #NOWOGRODEK (POL)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 96 }
-				}
-				add_state_claim = 96 #WILEJKA (POL)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 97 }
-				}
-				add_state_claim = 97 #BIALYSTOK (POL)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 78 }
-				}
-				add_state_claim = 78 #BESSARABIA (ROM)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 80 }
-				}
-				add_state_claim = 80 #BUCOVINA (ROM)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 766 }
-				}
-				add_state_claim = 766 #SOUTHERN BESSARABIA (ROM)
+			custom_effect_tooltip = mer_claims_on_besserabia
+			hidden_effect = {
+				add_state_claim = 590
+				add_state_claim = 1600
+				add_state_claim = 1599
+				add_state_claim = 592
+				add_state_claim = 600
+				add_state_claim = 1606
+				add_state_claim = 1605
+				add_state_claim = 1604
+				add_state_claim = 1603
+				add_state_claim = 2744
+				add_state_claim = 2745
+				add_state_claim = 1601
+				add_state_claim = 794
 			}
 			effect_tooltip = {
 				create_wargoal = {
@@ -1414,8 +1378,8 @@ country_event = {
 		if = {
 			limit = {
 				SOU = {
-					controls_state = 93
-					controls_state = 94
+					controls_state = 671
+					controls_state = 1163
 				}
 			}
 			hidden_effect = {
@@ -1471,9 +1435,10 @@ country_event = {
 	option = { # Give Hungary all of Transylvania
 		trigger = {
 			ROM = {
-				controls_state = 77
-				controls_state = 83
-				controls_state = 84
+				all_state = {
+					region = 12 #transylvania strat region
+					is_controlled_by = ROM
+				}
 			}
 		}
 		name = germany.20.b
@@ -1528,7 +1493,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = ROM
-			generator = { 76 }
+			generator = { 665 }
 		}
 	}
 }
@@ -1545,8 +1510,8 @@ country_event = {
 	option = {
 		name = germany.22.a
 		GER = {
-			transfer_state = 188
-			add_state_core = 188
+			transfer_state = 227
+			add_state_core = 227
 		}
 		hidden_effect = {
 			country_event = { days = 1 id = news.19 }
@@ -1568,7 +1533,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = LIT
-			generator = { 188 }
+			generator = { 227 }
 		}
 		hidden_effect = {
 			country_event = { days = 1 id = news.20 }
@@ -1839,13 +1804,48 @@ country_event = {
 
 	option = {
 		name = germany.29.a
-		add_state_claim = 4
-		add_state_claim = 152
-		add_state_claim = 153
+		custom_effect_tooltip = mer_GER_claims_on_austria
+		hidden_effect = {
+			add_state_claim = 1792
+			add_state_claim = 1793
+			add_state_claim = 1794
+			add_state_claim = 1795
+			add_state_claim = 1796
+			add_state_claim = 1797
+			add_state_claim = 1798
+			add_state_claim = 1799
+			add_state_claim = 1800
+			add_state_claim = 1801
+			add_state_claim = 1802
+			add_state_claim = 1803
+			add_state_claim = 1804
+			add_state_claim = 1805
+			add_state_claim = 1806
+			add_state_claim = 1807
+			add_state_claim = 1808
+			add_state_claim = 1809
+			add_state_claim = 1810
+			add_state_claim = 1811
+			add_state_claim = 1812
+			add_state_claim = 1813
+			add_state_claim = 1814
+			add_state_claim = 1815
+			add_state_claim = 1816
+			add_state_claim = 1817
+			add_state_claim = 1818
+			add_state_claim = 568
+			add_state_claim = 582
+			add_state_claim = 621
+			add_state_claim = 625
+			add_state_claim = 635
+			add_state_claim = 644
+			add_state_claim = 654
+			add_state_claim = 679
+			add_state_claim = 681
+		}
 		create_wargoal = {
-			type = take_state_focus
+			type = annex_everything
 			target = AUS
-			generator = { 4 152 153 }
 		}
 	}
 }
