@@ -2,21 +2,25 @@
 state={
 	id=1546
 	name="STATE_1546"
+
 	history={
 		owner = GRE
 		add_core_of = GRE
 		add_claim_by = BUL
 		buildings = {
 			infrastructure = 2
+
 		}
 		victory_points = {
-			5637 2 #Kilkís
+			5637 2 
 		}
+
 	}
+
 	provinces={
-		5567 5637 20344 20346 
+		5567 5637 20344 
 	}
-	manpower=56341
+	manpower=53441
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000
