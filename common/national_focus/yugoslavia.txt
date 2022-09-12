@@ -384,15 +384,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		
 		completion_reward = {
-			remove_ideas = YUG_idea_slovene_nationalism
 			
 			#tooltip
 			effect_tooltip ={
-				release_puppet = SLV
+				custom_effect_tooltip = release_drava
 				SLV = {
 					custom_effect_tooltip = create_two_units_tt
 				}
 			}
+			remove_ideas = YUG_idea_slovene_nationalism
 			
 			hidden_effect = {
 				if = {
@@ -493,15 +493,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		
 		completion_reward = {
-			remove_ideas = YUG_idea_croatian_opposition
 			
 			#tooltip
+			custom_effect_tooltip = release_united_croatia
 			effect_tooltip ={
-				release_puppet = CRO
 				CRO = {
 					custom_effect_tooltip = create_four_units_tt
 				}
 			}
+			remove_ideas = YUG_idea_croatian_opposition
 			
 			#actual effect
 			hidden_effect = {
@@ -511,7 +511,6 @@ focus_tree = {
 						add_state_core = 1470
 						add_state_core = 2825
 						add_state_core = 1502
-						add_state_core = 2820
 						add_state_core = 2815
 						add_state_core = 1501
 						add_state_core = 813
@@ -624,7 +623,7 @@ focus_tree = {
 
 		available = {
 			controls_state = 1563
-			controls_state = 1481
+			controls_state = 813
 			controls_state = 1464
 			controls_state = 721
 		}
@@ -637,15 +636,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			remove_ideas = YUG_idea_croatian_opposition
-			
 			#tooltip
+			custom_effect_tooltip = release_sava_littoral
 			effect_tooltip ={
-				release_puppet = CRO
 				CRO = {
 					custom_effect_tooltip = create_two_units_tt
 				}
 			}
+			remove_ideas = YUG_idea_croatian_opposition
 			custom_effect_tooltip = release_dalmatia_tt
 			custom_effect_tooltip = release_dalmatia_units_tt
 			
@@ -812,15 +810,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = YUG_safeguard_bosnia
+		id = YUG_release_vrbas
 		icon = GFX_focus_YUG_safeguard_bosnia
 		prerequisite = { focus = YUG_united_autonomous_croatia focus = YUG_devolved_croatia }
-		mutually_exclusive = { focus = YUG_divide_bosnia }
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = YUG_devolved_croatia
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -828,7 +825,7 @@ focus_tree = {
 
 		available = {
 			controls_state = 1494
-			controls_state = 1499
+			controls_state = 777
 		}
 
 		bypass = {
@@ -843,7 +840,7 @@ focus_tree = {
 		
 			#tooltip
 			effect_tooltip ={
-				release_puppet = BOS
+				custom_effect_tooltip = release_vrbas
 				BOS = {
 					custom_effect_tooltip = create_three_units_tt
 				}
@@ -852,6 +849,35 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = { BOS = { exists = no } }
+					BOS = {
+						add_state_core = 1503
+						remove_state_core = 1502
+						remove_state_core = 2815
+						remove_state_core = 2820
+						remove_state_core = 835
+						remove_state_core = 1495
+						remove_state_core = 782
+						remove_state_core = 2812
+						remove_state_core = 2811
+						remove_state_core = 1499
+						remove_state_core = 2814
+						remove_state_core = 2813
+						remove_state_core = 1497
+						remove_state_core = 1498
+						remove_state_core = 792
+						remove_state_core = 2824
+						remove_state_core = 1496
+						remove_state_core = 2823
+						remove_state_core = 2821
+						remove_state_core = 1501
+						remove_state_core = 813
+						remove_state_core = 1500
+					}
+					if = {
+						limit = { CRO = { owns_state = 1498 } }
+						remove_state_core = 1498
+						remove_state_core = 2822
+					}
 					release_puppet = BOS 
 					set_autonomy = { target = BOS autonomy_state = autonomy_integrated_puppet }
 					BOS = { save_event_target_as = released_nation_target }
@@ -921,22 +947,21 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = YUG_divide_bosnia
+		id = YUG_release_drina
 		icon = GFX_focus_YUG_divide_bosnia
 		prerequisite = { focus = YUG_united_autonomous_croatia focus = YUG_devolved_croatia }
-		mutually_exclusive = { focus = YUG_safeguard_bosnia }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = YUG_united_autonomous_croatia
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
 		}
 
 		available = {
-			controls_state = 1494
+			controls_state = 1995
 			controls_state = 1499
 		}
 
@@ -949,19 +974,48 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			release_puppet = HRZ 
+			custom_effect_tooltip = release_drina
 			set_autonomy = { target = HRZ autonomy_state = autonomy_integrated_puppet }
 			HRZ = { custom_effect_tooltip = create_one_units_tt }
 			
-			effect_tooltip ={
-				release_puppet = BOS
-				BOS = {
-					set_cosmetic_tag = BOS_without_HRZ
-					custom_effect_tooltip = create_one_units_tt
-				}
-			}
-			
 			hidden_effect = {
+				HRZ = {
+					add_state_core = 1499
+					add_state_core = 792
+					add_state_core = 1497
+					add_state_core = 2813
+					add_state_core = 2814
+					add_state_core = 2811
+					add_state_core = 2803
+					add_state_core = 1506
+					add_state_core = 1505
+					add_state_core = 2810
+					add_state_core = 1504
+					add_state_core = 1995
+					add_state_core = 834
+					add_state_core = 2824
+					add_state_core = 1496
+					add_state_core = 2823
+					add_state_core = 2821
+					remove_state_core = 1502
+					remove_state_core = 2815
+					remove_state_core = 2820
+					remove_state_core = 835
+					remove_state_core = 1495
+					remove_state_core = 782
+					remove_state_core = 2812
+					remove_state_core = 813
+					remove_state_core = 1500
+				}
+				if = {
+					limit = { CRO = { owns_state = 1498 } }
+					remove_state_core = 1498
+					remove_state_core = 2821
+					remove_state_core = 2823
+					remove_state_core = 1496
+					remove_state_core = 2824
+				}
+				release_puppet = HRZ
 				HRZ = { save_event_target_as = released_nation_target }
 				event_target:released_nation_target = {
 					division_template = {
@@ -988,59 +1042,6 @@ focus_tree = {
 						limit = { PREV = { has_full_control_of_state = PREV } }
 						create_unit = {
 							division = "name = \"Herzegovinan Division\" division_template = \"Yugoslavian Division\" start_experience_factor = 0.9" 
-							owner = PREV
-						}
-					}
-				}
-				if = {
-					limit = { BOS = { exists = no } }
-					release_puppet = BOS 
-					set_autonomy = { target = BOS autonomy_state = autonomy_integrated_puppet }
-					BOS = { save_event_target_as = released_nation_target }
-				}
-				else = {
-					create_dynamic_country = {
-						original_tag = BOS
-						
-						save_event_target_as = released_nation_target
-						PREV = {
-							every_owned_state = {
-								limit = { is_core_of = BOS }
-								PREV.PREV = { transfer_state = PREV }
-							}
-						}
-						PREV = {
-							puppet = PREV
-							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
-						}
-					}
-				}
-				event_target:released_nation_target = {
-					set_cosmetic_tag = BOS_without_HRZ
-					division_template = {
-						name = "Yugoslavian Division"
-						priority = 1
-						division_names_group = YUG_INF_01
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-				
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-				
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-						}
-					}
-					random_owned_controlled_state = {
-						limit = { PREV = { has_full_control_of_state = PREV } }
-						create_unit = {
-							division = "name = \"Bosnian Division\" division_template = \"Yugoslavian Division\" start_experience_factor = 0.9" 
 							owner = PREV
 						}
 					}
@@ -1208,11 +1209,12 @@ focus_tree = {
 		id = YUG_banat_for_support
 		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = YUG_dissolve_serbia }
-		prerequisite = { focus = YUG_safeguard_bosnia focus = YUG_divide_bosnia }
+		prerequisite = { focus = YUG_release_vrbas }
+		prerequisite = { focus = YUG_release_drina }
 		mutually_exclusive = { focus = YUG_autonomous_transylvania focus = YUG_fortify_banat }
 		x = 0
 		y = 1
-		relative_position_id = YUG_safeguard_bosnia
+		relative_position_id = YUG_release_drina
 
 		cost = 5
 
@@ -1302,11 +1304,12 @@ focus_tree = {
 		id = YUG_autonomous_transylvania
 		icon = GFX_focus_YUG_autonomous_transylvania
 		prerequisite = { focus = YUG_dissolve_serbia }
-		prerequisite = { focus = YUG_safeguard_bosnia focus = YUG_divide_bosnia }
+		prerequisite = { focus = YUG_release_vrbas }
+		prerequisite = { focus = YUG_release_drina }
 		mutually_exclusive = { focus = YUG_banat_for_support focus = YUG_fortify_banat }
 		x = 2
 		y = 1
-		relative_position_id = YUG_safeguard_bosnia
+		relative_position_id = YUG_release_drina
 
 		cost = 5
 
@@ -1558,11 +1561,12 @@ focus_tree = {
 		id = YUG_fortify_banat
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = YUG_dissolve_serbia }
-		prerequisite = { focus = YUG_safeguard_bosnia focus = YUG_divide_bosnia }
+		prerequisite = { focus = YUG_release_vrbas }
+		prerequisite = { focus = YUG_release_drina }
 		mutually_exclusive = { focus = YUG_autonomous_transylvania focus = YUG_banat_for_support }
-		x = -2
+		x = 0
 		y = 1
-		relative_position_id = YUG_safeguard_bosnia
+		relative_position_id = YUG_release_vrbas
 
 		cost = 5
 
@@ -2270,6 +2274,9 @@ focus_tree = {
 				transfer_state = 1531
 				transfer_state = 1973
 				transfer_state = 1532
+				transfer_state = 2898
+				transfer_state = 2899
+				transfer_state = 888
 			}
 			1530 = { remove_core_of = ROOT } 
 			1529 = { remove_core_of = ROOT } 
