@@ -1,5 +1,5 @@
 ﻿l_english:
- mer_GER_rhineland_remilitarized_states_tt:0 "§YBaden§!, §YWestern Württemberg§!, §YHesse§!, and the §YRhineland§! will no longer be a demilitarized zone."
+ mer_GER_rhineland_remilitarized_states_tt:0 "§YBaden§!, §YWestern Württemberg§!, §YHesse§!, and the §YRhineland§! will no longer be demilitarized zones."
  mer_GER_rhineland_bypass:0 "§YRhineland§!: Rhineland is not demilitarized."
  mer_GER_autobahn_brandenburg_trigger_tt:0 "Has full control of §YBerlin§! and its §YSurrounding States§!."
  mer_GER_autobahn_hannover_trigger_tt:0 "Has full control of §YHannover§!, §YFallingbostel§!, §YHarburg§!, §YHamburg§!, §YBremervürde§!, and §YBremen§!."
@@ -8,8 +8,8 @@
  mer_GER_claims_on_danzig_corridor_tt:0 "§YWest Prussia§! Claim gained by §Y[GER.GetFlag][GER.GetName]§!."
  mer_GER_claims_on_poznan_tt:0 "§YPosen§! Claim gained by §Y[GER.GetFlag][GER.GetName]§!."
  mer_GER_claims_on_katowice_tt:0 "§YKattowitz§! Claim gained by §Y[GER.GetFlag][GER.GetName]§!."
- mer_GER_danzig_or_war_poland_owns_controls_danzig_tt:0 "§YWest Prussia§!:\n   Owner: Original country is @$POL$$COUNTRY|H$\n   Controller: Original country is @$POL$$COUNTRY|H$"
- mer_GER_danzig_or_war_not_poland_owns_controls_danzig_tt:0 "§YWest Prussia§!:\n   Owner: Original country is not @$POL$$COUNTRY|H$\n   Controller: Original country is not @$POL$$COUNTRY|H$"
+ mer_GER_danzig_or_war_poland_owns_controls_danzig_tt:0 "§YWest Prussia§!:\n   Owner: Original country is §Y[POL.GetFlag][POL.GetName]§!\n   Controller: Original country is §Y[POL.GetFlag][POL.GetName]§!"
+ mer_GER_danzig_or_war_not_poland_owns_controls_danzig_tt:0 "§YWest Prussia§!:\n   Owner: Original country is not §Y[POL.GetFlag][POL.GetName]§!\n   Controller: Original country is not §Y[POL.GetFlag][POL.GetName]§!"
  mer_GER_danzig_or_war_approved_transfer_tt:0 "Becomes owner and controller of §YWest Prussia§!.\nGains cores on §YWest Prussia§!.\nLoses claim on §YPoznań§!.\nLoses claim on §YKatowice§!."
  mer_GER_reintegrate_luxemburg_and_alsace_lorraine_controls_alslor_tt:0 "Has full control of §YElsass-Lothringen§!"
  mer_GER_reintegrate_luxemburg_and_alsace_lorraine_controls_lux_tt:0 "Has full control of §YLuxemberg§!"
@@ -20,6 +20,7 @@
  mer_GER_claims_on_austria:0 "Gains claims on §YAustria§!."
  mer_GER_demand_sudetenland_claim_west:0 "Gains claims on §YWestern Sudetenland§!."
  mer_GER_carte_blanche_for_alsace_and_french_colonies_tt:0 "Gains claims on §YElsass-Lothringen§!."
+ mer_GER_see_to_the_eastern_front_tt:0 "§YEast Prussia§!:\n   Add 2 §YLand Forts§! in each province on the eastern border.\n   Add 3 §YLand Forts§! in each §YVictory Point§! near the eastern border."
 
  mer_claims_on_estonia:0 "Gain claims on §YEstonia§!."
  mer_claims_on_latvia:0 "Gain claims on §YLatvia§!."

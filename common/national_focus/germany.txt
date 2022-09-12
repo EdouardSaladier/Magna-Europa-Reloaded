@@ -1209,6 +1209,7 @@ focus_tree = {
 					}
 					NOT = { # keeps things a lil more in line with the state development, who wants to build a factory in a backwater
 						has_state_category = wasteland
+						has_state_category = enclave
 						has_state_category = tiny_island
 						has_state_category = small_island
 						has_state_category = pastoral
@@ -1817,21 +1818,14 @@ focus_tree = {
 						size > 1
 						include_locked = yes
 					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_german_war_economy
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
+					NOT = {
+						has_state_category = wasteland
+						has_state_category = enclave
+						has_state_category = tiny_island
+						has_state_category = small_island
+						has_state_category = pastoral
+						has_state_category = rural
+						has_state_category = town #somewhat more scrutiny to let cities have more industrial prowess
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -1848,6 +1842,40 @@ focus_tree = {
 						building = arms_factory
 						size > 1
 						include_locked = yes
+					}
+					NOT = {
+						has_state_category = wasteland
+						has_state_category = enclave
+						has_state_category = tiny_island
+						has_state_category = small_island
+						has_state_category = pastoral
+						has_state_category = rural
+						has_state_category = town
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					NOT = {
+						has_state_category = wasteland
+						has_state_category = enclave
+						has_state_category = tiny_island
+						has_state_category = small_island
+						has_state_category = pastoral
+						has_state_category = rural
+						has_state_category = town
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -3853,7 +3881,7 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			188 = { add_claim_by = GER } # memel 
+			227 = { add_claim_by = GER } # memel 
 			280 = { add_claim_by = GER } # danzig
 			hidden_effect = { 2729 = { add_claim_by = GER } } #other danzig state, tooltip unnecessary
 			# 807 = { add_claim_by = GER } # danzig corridor
@@ -8076,6 +8104,12 @@ focus_tree = {
 				has_full_control_of_state = 2608
 				has_full_control_of_state = 547
 			}
+			custom_trigger_tooltip = {
+				tooltip = mer_GER_reintegrate_luxemburg_and_alsace_lorraine_controls_lux_tt
+				has_full_control_of_state = 512
+				has_full_control_of_state = 427
+				has_full_control_of_state = 404
+			}
 			OR = {
 				FRA = { has_capitulated = yes }
 				FRA = { is_subject_of = GER }
@@ -8096,6 +8130,15 @@ focus_tree = {
 					owns_state = 512
 					owns_state = 427
 					owns_state = 404
+				}
+			}
+			OR = {
+				LUX = { has_capitulated = yes }
+				NOT = {
+					any_country = {
+						original_tag = LUX
+						exists = yes
+					}
 				}
 			}
 		}
@@ -8151,6 +8194,9 @@ focus_tree = {
 			FRA = {
 				country_event = { id = wtt_germany.63 }
 			}
+			LUX = {
+				country_event = { id = wtt_germany.64 }
+			}
 		}
 	}
 
@@ -8160,7 +8206,7 @@ focus_tree = {
 		prerequisite = { focus = GER_return_of_the_kaiser }
 		available = { 
 			is_subject = no
-			has_full_control_of_state = 5
+			has_full_control_of_state = 252
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -8172,38 +8218,56 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			188 = { add_claim_by = GER }
+			227 = { add_claim_by = GER }
 			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
 			random_other_country = {
 				limit = {
-					owns_state = 188
-					controls_state = 188 
+					owns_state = 227
+					controls_state = 227 
 				}
 				country_event = { id = baltic.4 }
 			}
+			custom_effect_tooltip = mer_GER_see_to_the_eastern_front_tt
 			if = {
 				limit = {
-					has_full_control_of_state = 5
+					has_full_control_of_state = 1612
 				}
-				5 = {
-					custom_effect_tooltip = GER_see_to_the_eastern_front_tt
+				1612 = {
 					hidden_effect = {
 						add_building_construction = {
 							type = bunker
-							level = 2
-							province = 9327
+							level = 3
+							province = 11094
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
 							level = 2
-							province = 11386
+							province = 7262
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
 							level = 2
-							province = 9372
+							province = 20479
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11162
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 2488
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 20476
 							instant_build = yes
 						}
 					}
@@ -8211,33 +8275,110 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_full_control_of_state = 763
+					has_full_control_of_state = 1613
 				}
-				763 = {
-					custom_effect_tooltip = GER_see_to_the_eastern_front_tt2
+				1613 = {
 					hidden_effect = {
 						add_building_construction = {
 							type = bunker
 							level = 2
-							province = 11265
+							province = 10939
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 1615
+				}
+				1615 = {
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7926
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 2335
+				}
+				2335 = {
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 2882
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 10853
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 1614
+				}
+				1614 = {
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 10752
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
 							level = 2
-							province = 348
+							province = 7485
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
 							level = 2
-							province = 281
+							province = 20459
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
 							level = 2
-							province = 3384
+							province = 1120
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7828
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 252
+				}
+				252 = {
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 19933
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 19906
 							instant_build = yes
 						}
 					}
@@ -8268,10 +8409,37 @@ focus_tree = {
 				}
 				POL = { exists = no }
 				AND = {
-					owns_state = 85
-					owns_state = 86
-					owns_state = 762
-					owns_state = 807
+					# danzig
+					owns_state = 280
+					hidden_trigger = {
+						owns_state = 2729
+					}
+					# 807 # danzig corridor
+					owns_state = 267
+					hidden_trigger = {
+						owns_state = 287
+						owns_state = 310
+						owns_state = 2567
+						owns_state = 546
+						owns_state = 2341
+						owns_state = 264
+					}
+					# 86 # poznan
+					owns_state = 122
+					hidden_trigger = {
+						owns_state = 80
+						owns_state = 335
+						owns_state = 243
+						owns_state = 79
+						owns_state = 99
+						owns_state = 82
+						owns_state = 549
+					}
+					owns_state = 481
+					hidden_trigger = {
+						owns_state = 2329
+						owns_state = 2262
+					}
 				}
 			}
 		}
