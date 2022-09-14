@@ -21,6 +21,13 @@
  mer_GER_demand_sudetenland_claim_west:0 "Gains claims on §YWestern Sudetenland§!."
  mer_GER_carte_blanche_for_alsace_and_french_colonies_tt:0 "Gains claims on §YElsass-Lothringen§!."
  mer_GER_see_to_the_eastern_front_tt:0 "§YEast Prussia§!:\n   Add 2 §YLand Forts§! in each province on the eastern border.\n   Add 3 §YLand Forts§! in each §YVictory Point§! near the eastern border."
+ mer_GER_west_wall_baden_tt:0 "Controls §YBaden's§! states on the French border"
+ mer_GER_west_wall_bavarian_palatinate_tt:0 "Controls the §YBavarian Palatinate's§! states on the French border"
+ mer_GER_west_wall_forts_baden_tt:0 "§YBaden§!:\n   Add 2 §YLand Forts§! in each province on the French border in fully controlled states."
+ mer_GER_west_wall_forts_bavarian_palatinate_tt:0 "§YBavarian Palatinate§!:\n   Add 2 §YLand Forts§! in each province on the French border in fully controlled states."
+ mer_GER_west_wall_forts_saarland_tt:0 "Add 2 §YLand Forts§! in each province on the French border."
+ mer_GER_extend_the_west_wall_rhineland_tt:0 "Has control of the §YRhineland's§! states on the western border"
+ mer_GER_extend_the_west_wall_rhineland_forts_tt:0 "§YRhineland§!:\n   Add 2 §YLand Forts§! in each province on the western border."
 
  mer_claims_on_estonia:0 "Gain claims on §YEstonia§!."
  mer_claims_on_latvia:0 "Gain claims on §YLatvia§!."
@@ -28,3 +35,6 @@
  mer_claims_on_belarussian_poland:0 "Gain claims on §YBelarussian Poland§!."
  mer_claims_on_ukrainian_poland:0 "Gain claims on §YUkrainian Poland§!"
  mer_claims_on_besserabia:0 "Gain claims on §YBesserabia§!"
+
+ GER_extend_the_west_wall:0 "Extend the Westwall"
+ GER_extend_the_west_wall_desc:0 "While the French border has been fortified, we must be prepared for a possible invasion of the Rhineland through the Low Countries. The Westwall shall be extended further north, towards Kleve, to free up even more divisions to participate in any potential eastern campaigns."

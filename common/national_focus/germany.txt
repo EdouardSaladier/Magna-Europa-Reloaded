@@ -47,88 +47,429 @@ focus_tree = {
 		id = GER_west_wall
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = GER_four_year_plan }
-		x = -5
+		x = -4
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 10
 		ai_will_do = {
 			factor = 8
 		}
+
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_west_wall_baden_tt
+					OR = {
+						has_full_control_of_state = 1763
+						has_full_control_of_state = 589
+						has_full_control_of_state = 1764
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_west_wall_bavarian_palatinate_tt
+					AND = {
+						has_full_control_of_state = 2340
+						has_full_control_of_state = 524
+					}
+				}
+				controls_state = 537
+			}
+		}
 			
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = todt
-			50 = {
+			if = {
+				limit = {
+					OR = {
+						has_full_control_of_state = 1763
+						has_full_control_of_state = 589
+						has_full_control_of_state = 1764
+					}
+				}
+				custom_effect_tooltip = mer_GER_west_wall_forts_baden_tt
+			}
+			1763 = {
 				if = {
-					limit = { is_controlled_by = ROOT }
-					custom_effect_tooltip = GER_west_wall_forts
+					limit = { is_fully_controlled_by = ROOT }
 					hidden_effect = {
 						add_building_construction = {
 							type = bunker
-							level = 3
-							province = 11640
+							level = 2
+							province = 9224
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 3
-							province = 6712
+							level = 2
+							province = 13567
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 3
-							province = 6542
+							level = 2
+							province = 7417
+							instant_build = yes
+						}
+					}
+				}
+			}
+			589 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9285
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 3
-							province = 3530
+							level = 2
+							province = 9047
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13297
+							instant_build = yes
+						}
+					}
+				}
+			}
+			1764 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13230
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13237
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13171
 							instant_build = yes
 						}
 					}
 				}
 			}
 			if = {
-				limit = { 42 = { is_demilitarized_zone = yes } }
-				custom_effect_tooltip = GER_west_wall_tt
+				limit = {
+					OR = {
+						has_full_control_of_state = 2340
+						has_full_control_of_state = 524
+					}
+				}
+				custom_effect_tooltip = mer_GER_west_wall_forts_bavarian_palatinate_tt
 			}
-			42 = {
-				custom_effect_tooltip = GER_west_wall_forts
-			}
-			hidden_effect = {
-				42 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
+			2340 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
 						add_building_construction = {
 							type = bunker
-							level = 3
-							province = 3558
-							instant_build = yes
-						}
-						
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 563
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 11531
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 9575
+							level = 2
+							province = 13106
 							instant_build = yes
 						}
 					}
 				}
-			}			
+			}
+			524 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 20724
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13035
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13073
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9577
+							instant_build = yes
+						}
+					}
+				}
+			}
+			537 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					custom_effect_tooltip = mer_GER_west_wall_forts_saarland_tt
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12993
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13047
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9312
+							instant_build = yes
+						}
+					}
+				}
+			}
+			2337 = { #hidden due to being part of rhineland
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 8803
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_extend_the_west_wall
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = GER_west_wall }
+		x = 1
+		y = 2
+		relative_position_id = GER_west_wall
+		cost = 5
+		ai_will_do = {
+			factor = 6
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = mer_GER_extend_the_west_wall_rhineland_tt
+				OR = {
+					has_full_control_of_state = 1753
+					has_full_control_of_state = 503
+					has_full_control_of_state = 477
+					has_full_control_of_state = 2339
+					has_full_control_of_state = 460
+					has_full_control_of_state = 2718
+					has_full_control_of_state = 2338
+					has_full_control_of_state = 1750
+					has_full_control_of_state = 423
+				}
+			}
+		}
+			
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_full_control_of_state = 1753
+						has_full_control_of_state = 503
+						has_full_control_of_state = 477
+						has_full_control_of_state = 2339
+						has_full_control_of_state = 460
+						has_full_control_of_state = 2718
+						has_full_control_of_state = 2338
+						has_full_control_of_state = 1750
+						has_full_control_of_state = 423
+					}
+				}
+				custom_effect_tooltip = mer_GER_extend_the_west_wall_rhineland_forts_tt
+			}
+			1753 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 5991
+							instant_build = yes
+						}
+					}
+				}
+			}
+			503 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 5396
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 6559
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12778
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 5691
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 6311
+							instant_build = yes
+						}
+					}
+				}
+			}
+			477 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12523
+							instant_build = yes
+						}
+					}
+				}
+			}
+			2339 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 5406
+							instant_build = yes
+						}
+					}
+				}
+			}
+			460 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12400
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12390
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 1259
+							instant_build = yes
+						}
+					}
+				}
+			}
+			2718 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12306
+							instant_build = yes
+						}
+					}
+				}
+			}
+			2338 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7002
+							instant_build = yes
+						}
+					}
+				}
+			}
+			1750 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 8475
+							instant_build = yes
+						}
+					}
+				}
+			}
+			423 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11955
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12019
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9187
+							instant_build = yes
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -160,7 +501,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = yes
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = GER_west_wall
 		cost = 10
@@ -790,7 +1131,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GER_west_wall
 		cost = 10
