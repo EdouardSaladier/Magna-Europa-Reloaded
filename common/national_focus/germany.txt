@@ -56,6 +56,10 @@ focus_tree = {
 		}
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = mer_GER_rhineland_bypass
+				537 = { is_demilitarized_zone = no } #closest state to french border with most industrial power
+			}
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = mer_GER_west_wall_baden_tt
@@ -4988,7 +4992,7 @@ focus_tree = {
 					}
 					CZE = { NOT = { is_in_faction_with = GER } }
 					CZE = { NOT = { has_war_with = ENG } }
-					CZE = { controls_state = 69 }
+					CZE = { controls_state = 473 }
 					OR = {
 						HUN = {
 							NOT = {
@@ -5058,7 +5062,7 @@ focus_tree = {
 						}
 					}
 				}
-				69 = { #This technically allows nations who are in a war with CZE to give away their land... diplomacy never looked so real.
+				473 = { #This technically allows nations who are in a war with CZE to give away their land... diplomacy never looked so real.
 					controller = {
 						country_event = { id = germany.1041 days = 2 random_days = 10 }
 					}
@@ -5075,8 +5079,34 @@ focus_tree = {
 		bypass = {
 			OR = {
 				AND = {
-					NOT = { CZE = { controls_state = 664 } }
-					NOT = { owns_state = 664 }
+					NOT = { 
+						CZE = { 
+							custom_trigger_tooltip = {
+								tooltip = mer_GER_first_vienna_award_controls_southern_slovakia
+								controls_state = 610
+								controls_state = 580
+								controls_state = 1439
+								controls_state = 1438
+								controls_state = 1442
+								controls_state = 2930
+								controls_state = 593
+								controls_state = 2246
+							}
+						} 
+					}
+					NOT = { 
+						custom_trigger_tooltip = {
+							tooltip = mer_GER_first_vienna_award_owns_southern_slovakia
+							owns_state = 610
+							owns_state = 580
+							owns_state = 1439
+							owns_state = 1438
+							owns_state = 1442
+							owns_state = 2930
+							owns_state = 593
+							owns_state = 2246
+						}
+					}
 				}
 				HUN = { is_friend_or_potential_friend_of_GER = no }
 				CZE = { is_puppet_of = GER }

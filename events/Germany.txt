@@ -2049,7 +2049,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = CZE
-					generator = { 69 }
+					generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 }
 				}
 			}
 		}
@@ -2253,7 +2253,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = CZE
-					generator = { 69 }
+					generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 }
 				}
 			}
 		}
@@ -2415,7 +2415,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = CZE
-					generator = { 69 }
+					generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 }
 				}
 			}
 		}
@@ -2483,7 +2483,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = CZE
-					generator = { 69 }
+					generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 }
 				}
 			}
 		}
@@ -2523,7 +2523,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = CZE
-					generator = { 69 }
+					generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 }
 				}
 			}
 		}
@@ -2546,7 +2546,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = CZE
-					generator = { 69 }
+					generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 }
 				}
 			}
 		}
@@ -2647,7 +2647,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = CZE
-					generator = { 69 74 }
+					generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 504 499 1428 507 1977 }
 				}
 			}
 		}
@@ -2668,7 +2668,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = CZE
-			generator = { 69 74 }
+			generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 504 499 1428 507 1977 }
 		}
 		add_state_claim = 69
 		add_state_claim = 74
@@ -2693,7 +2693,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = CZE
-			generator = { 69 74 }
+			generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 504 499 1428 507 1977 }
 		}
 		add_state_claim = 69
 		add_state_claim = 74
@@ -2717,10 +2717,26 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = CZE
-			generator = { 69 74 }
+			generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 504 499 1428 507 1977 }
 		}
-		add_state_claim = 69
-		add_state_claim = 74
+		custom_effect_tooltip = mer_GER_claim_all_of_sudetenland
+		hidden_effect = {
+			add_state_claim = 1433
+			add_state_claim = 1432
+			add_state_claim = 1431
+			add_state_claim = 1430
+			add_state_claim = 522
+			add_state_claim = 498
+			add_state_claim = 1434
+			add_state_claim = 471
+			add_state_claim = 473
+			add_state_claim = 1435
+			add_state_claim = 504
+			add_state_claim = 499
+			add_state_claim = 1428
+			add_state_claim = 507
+			add_state_claim = 1977
+		}
 		if = {
 			limit = {
 				CZE = {
@@ -2746,10 +2762,40 @@ country_event = {
 
 	option = {
 		name = germany.50.a
-		69 = { add_core_of = GER }
-		GER = { transfer_state = 69 }
-		74 = { add_core_of = GER }
-		GER = { transfer_state = 74 }
+		custom_effect_tooltip = mer_GER_core_all_of_sudetenland
+		custom_effect_tooltip = mer_GER_transfer_all_of_sudetenland
+		hidden_effect = {
+			add_state_core = 1433
+			add_state_core = 1432
+			add_state_core = 1431
+			add_state_core = 1430
+			add_state_core = 522
+			add_state_core = 498
+			add_state_core = 1434
+			add_state_core = 471
+			add_state_core = 473
+			add_state_core = 1435
+			add_state_core = 504
+			add_state_core = 499
+			add_state_core = 1428
+			add_state_core = 507
+			add_state_core = 1977
+			transfer_state = 1433
+			transfer_state = 1432
+			transfer_state = 1431
+			transfer_state = 1430
+			transfer_state = 522
+			transfer_state = 498
+			transfer_state = 1434
+			transfer_state = 471
+			transfer_state = 473
+			transfer_state = 1435
+			transfer_state = 504
+			transfer_state = 499
+			transfer_state = 1428
+			transfer_state = 507
+			transfer_state = 1977
+		}
 		set_country_flag = sudetenland_acquired
 		add_war_support = 0.1
 		add_stability = 0.05
@@ -2759,7 +2805,13 @@ country_event = {
 		}
 		if = {
 			limit = {
-				88 = { is_owned_by = POL }
+				OR = {
+					1975 = { is_owned_by = POL }
+					2329 = { is_owned_by = POL }
+				}
+				NOT = {
+					526 = { is_owned_by = POL }
+				}
 			}
 			POL = {
 				country_event = { hours = 6 id = germany.52 }
@@ -2797,7 +2849,19 @@ country_event = {
 
 	option = {
 		name = germany.51.a
-		HUN = { transfer_state = 664 }
+		HUN = {
+			custom_effect_tooltip = mer_first_vienna_award_transfer_southern_slovakia
+			hidden_effect = {
+				transfer_state = 610
+				transfer_state = 580
+				transfer_state = 1439
+				transfer_state = 1438
+				transfer_state = 1442
+				transfer_state = 2930
+				transfer_state = 593
+				transfer_state = 2246
+			}
+		}
 	}
 }
 
@@ -2812,8 +2876,8 @@ country_event = {
 
 	option = {
 		name = germany.52.a
-		72 = { add_core_of = POL }
-		POL = { transfer_state = 72 }
+		526 = { add_core_of = POL }
+		POL = { transfer_state = 526 }
 	}
 }
 
@@ -2999,21 +3063,130 @@ country_event = {
 
 	option = {
 		name = germany.54.a
-		if = {
-			limit = {
-				75 = {
-					is_owned_and_controlled_by = CZE
+		custom_effect_tooltip = mer_GER_claim_bohemia_and_moravia
+		hidden_effect = {
+			#bohemia
+			if = {
+				limit = {
+					1425 = {
+						is_owned_and_controlled_by = CZE
+					}
 				}
+				add_state_claim = 1425
 			}
-			add_state_claim = 75
-		}
-		if = {
-			limit = {
-				9 = {
-					is_owned_and_controlled_by = CZE
+			if = {
+				limit = {
+					539 = {
+						is_owned_and_controlled_by = CZE
+					}
 				}
+				add_state_claim = 539
 			}
-			add_state_claim = 9
+			if = {
+				limit = {
+					523 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 523
+			}
+			if = {
+				limit = {
+					1426 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 1426
+			}
+			if = {
+				limit = {
+					489 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 489
+			}
+			if = {
+				limit = {
+					513 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 513
+			}
+			if = {
+				limit = {
+					1427 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 1427
+			}
+			if = {
+				limit = {
+					529 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 529
+			}
+			if = {
+				limit = {
+					514 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 514
+			}
+			if = {
+				limit = {
+					486 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 486
+			}
+			#moravia
+			if = {
+				limit = {
+					535 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 535
+			}
+			if = {
+				limit = {
+					536 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 536
+			}
+			if = {
+				limit = {
+					532 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 532
+			}
+			if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 528
+			}
+			if = {
+				limit = {
+					1429 = {
+						is_owned_and_controlled_by = CZE
+					}
+				}
+				add_state_claim = 1429
+			}
 		}
 		create_wargoal = {
 			type = annex_everything
@@ -3041,72 +3214,345 @@ country_event = {
 	option = {
 		name = germany.55.a
 		ai_chance = { factor = 80 }
-		if = {
-			limit = {
-				70 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
+		custom_effect_tooltip = mer_release_slovakia
+		hidden_effect = {
+			if = {
+				limit = {
+					1437 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
 					}
 				}
+				SLO = { transfer_state = 1437 }
 			}
-			SLO = { transfer_state = 70 }
+			if = {
+				limit = {
+					591 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 591 }
+			}
+			if = {
+				limit = {
+					555 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 555 }
+			}
+			if = {
+				limit = {
+					2662 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 2662 }
+			}
+			if = {
+				limit = {
+					586 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 586 }
+			}
+			if = {
+				limit = {
+					2663 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 2663 }
+			}
+			if = {
+				limit = {
+					577 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 577 }
+			}
+			if = {
+				limit = {
+					541 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 541 }
+			}
+			if = {
+				limit = {
+					574 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 574 }
+			}
+			if = {
+				limit = {
+					2660 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 2660 }
+			}
+			if = {
+				limit = {
+					2661 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 2661 }
+			}
+			if = {
+				limit = {
+					569 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 569 }
+			}
+			if = {
+				limit = {
+					550 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 550 }
+			}
+			if = {
+				limit = {
+					2313 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 2313 }
+			}
 		}
 		if = {
 			limit = {
-				71 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
-					}
-				}
-			}
-			SLO = { transfer_state = 71 }
-		}
-		if = {
-			limit = {
-				154 = { is_owned_by = HUN }
+				593 = { is_owned_by = HUN }
 				HUN = {
 					is_friend_or_potential_friend_of_GER = yes
 				}
-				73 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
+				AND = {
+					562 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+					2929 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+					1607 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+					1608 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+					2247 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+					564 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
 					}
 				}
 				country_exists = HUN
 			}
-			HUN = { transfer_state = 73 }
+			HUN = {
+				custom_effect_tooltip = mer_transfer_transcarpathia
+				hidden_effect = {
+					transfer_state = 562
+					transfer_state = 2929
+					transfer_state = 1607
+					transfer_state = 1608
+					transfer_state = 2247
+					transfer_state = 564
+				}
+			}
 		}
 
 
 		if = {
 			limit = {
 				OR = {
-					NOT = { 154 = { is_owned_by = HUN } }
+					NOT = { 593 = { is_owned_by = HUN } }
 					HUN = { is_friend_or_potential_friend_of_GER = no }
 				}
-				73 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
+				AND = {
+					562 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+					2929 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+					1607 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+					1608 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+					2247 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+					564 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
 					}
 				}
 			}
-			SLO = { transfer_state = 73 }
+			SLO = {
+				custom_effect_tooltip = mer_transfer_transcarpathia
+				hidden_effect = {
+					transfer_state = 562
+					transfer_state = 2929
+					transfer_state = 1607
+					transfer_state = 1608
+					transfer_state = 2247
+					transfer_state = 564
+				}
+			}
 		}
 
 		if = {
 			limit = {
-				664 = {
+				610 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+				580 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+				1439 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+				1438 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+				1442 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+				2930 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+				593 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+				2246 = {
 					OR = {
 						is_owned_by = CZE
 						is_owned_by = GER
 					}
 				}
 			}
-			SLO = { transfer_state = 664 }
+			SLO = {
+				custom_effect_tooltip = mer_first_vienna_award_transfer_southern_slovakia
+				hidden_effect = {
+					transfer_state = 610
+					transfer_state = 580
+					transfer_state = 1439
+					transfer_state = 1438
+					transfer_state = 1442
+					transfer_state = 2930
+					transfer_state = 593
+					transfer_state = 2246
+				}
+			}
 		}
 		if = {
 			limit = { country_exists = CZE }
@@ -3126,7 +3572,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				72 = {
+				526 = {
 					OR = {
 						is_owned_by = CZE
 						is_owned_by = GER
@@ -3134,14 +3580,14 @@ country_event = {
 				}
 				country_exists = POL
 			}
-			POL = { transfer_state = 72 } # Give Poland Zaolzie
+			POL = { transfer_state = 526 } # Give Poland Zaolzie
 		}
 
 		every_state = {
 			limit = {
 				is_core_of = CZE
 				NOT = { is_core_of = SLO }
-				NOT = { state = 72 }
+				NOT = { state = 526 }
 			}
 			add_claim_by = GER
 		}
@@ -3190,7 +3636,7 @@ country_event = {
 		add_war_support = 0.1
 		if = {
 			limit = {
-				72 = {
+				526 = {
 					OR = {
 						is_owned_by = CZE
 						is_owned_by = GER
@@ -3198,7 +3644,7 @@ country_event = {
 				}
 				country_exists = POL
 			}
-			POL = { transfer_state = 72 } # Give Poland Zaolzie
+			POL = { transfer_state = 526 } # Give Poland Zaolzie
 		}
 		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
@@ -3270,9 +3716,30 @@ country_event = {
 	option = {
 		name = germany.56.a
 		ai_chance = { factor = 100 }
-		transfer_state = 70
-		transfer_state = 71
-		transfer_state = 73
+		custom_effect_tooltip = mer_transfer_slovakia
+		custom_effect_tooltip = mer_transfer_transcarpathia
+		hidden_effect = {
+			transfer_state = 1437
+			transfer_state = 591
+			transfer_state = 555
+			transfer_state = 2662
+			transfer_state = 586
+			transfer_state = 2663
+			transfer_state = 577
+			transfer_state = 541
+			transfer_state = 574
+			transfer_state = 2660
+			transfer_state = 2661
+			transfer_state = 569
+			transfer_state = 550
+			transfer_state = 2313
+			transfer_state = 562
+			transfer_state = 2929
+			transfer_state = 1607
+			transfer_state = 1608
+			transfer_state = 2247
+			transfer_state = 564
+		}
 		hidden_effect = {
 			GER = {
 				annex_country = { target = CZE }
@@ -3315,62 +3782,206 @@ country_event = {
 		name = germany.57.a
 		add_political_power = -20
 		ai_chance = { factor = 60 }
-		if = {
-			limit = {
-				70 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
+		custom_effect_tooltip = mer_release_slovakia
+		hidden_effect = {
+			if = {
+				limit = {
+					1437 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
 					}
 				}
+				SLO = { transfer_state = 1437 }
 			}
-			SLO = { transfer_state = 70 }
+			if = {
+				limit = {
+					591 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 591 }
+			}
+			if = {
+				limit = {
+					555 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 555 }
+			}
+			if = {
+				limit = {
+					2662 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 2662 }
+			}
+			if = {
+				limit = {
+					586 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 586 }
+			}
+			if = {
+				limit = {
+					2663 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 2663 }
+			}
+			if = {
+				limit = {
+					577 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 577 }
+			}
+			if = {
+				limit = {
+					541 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 541 }
+			}
+			if = {
+				limit = {
+					574 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 574 }
+			}
+			if = {
+				limit = {
+					2660 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 2660 }
+			}
+			if = {
+				limit = {
+					2661 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 2661 }
+			}
+			if = {
+				limit = {
+					569 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 569 }
+			}
+			if = {
+				limit = {
+					550 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 550 }
+			}
+			if = {
+				limit = {
+					2313 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 2313 }
+			}
 		}
 		if = {
 			limit = {
-				71 = {
+				1442 = {
 					OR = {
 						is_owned_by = CZE
 						is_owned_by = GER
 					}
 				}
 			}
-			SLO = { transfer_state = 71 }
+			SLO = {
+				custom_effect_tooltip = mer_first_vienna_award_transfer_southern_slovakia
+				hidden_effect = {
+					transfer_state = 610
+					transfer_state = 580
+					transfer_state = 1439
+					transfer_state = 1438
+					transfer_state = 1442
+					transfer_state = 2930
+					transfer_state = 593
+					transfer_state = 2246
+				}
+			}
 		}
 		if = {
 			limit = {
-				154 = { is_owned_by = HUN }
-				73 = {
+				564 = {
 					OR = {
 						is_owned_by = CZE
 						is_owned_by = GER
 					}
 				}
 			}
-			HUN = { transfer_state = 73 }
-		}
-		if = {
-			limit = {
-				NOT = { 154 = { is_owned_by = HUN } }
-				73 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
-					}
+			SLO = {
+				custom_effect_tooltip = mer_transfer_transcarpathia
+				hidden_effect = {
+					transfer_state = 562
+					transfer_state = 2929
+					transfer_state = 1607
+					transfer_state = 1608
+					transfer_state = 2247
+					transfer_state = 564
 				}
 			}
-			SLO = { transfer_state = 73 }
-		}
-		if = {
-			limit = {
-				664 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
-					}
-				}
-			}
-			SLO = { transfer_state = 664 }
 		}
 		if = {
 			limit = { country_exists = CZE }
@@ -3386,14 +3997,14 @@ country_event = {
 		}
 		if = {
 			limit = {
-				72 = {
+				526 = {
 					OR = {
 						is_owned_by = CZE
 						is_owned_by = GER
 					}
 				}
 			}
-			POL = { transfer_state = 72 } # Give Poland Zaolzie
+			POL = { transfer_state = 526 } # Give Poland Zaolzie
 		}
 		hidden_effect = {
 			country_event = { hours = 6 id = news.60 }
@@ -3824,8 +4435,56 @@ country_event = {
 			news_event = { hours = 6 id = news.151 }
 		}
 		set_country_flag = GER_rhineland_backed_down
-		42 = { set_demilitarized_zone = yes }
-		51 = { set_demilitarized_zone = yes }
+		custom_effect_tooltip = mer_GER_rhineland_demilitarized_states_tt
+		hidden_effect = { 
+			1763 = { set_demilitarized_zone = yes }
+			589 = { set_demilitarized_zone = yes }
+			1766 = { set_demilitarized_zone = yes }
+			1764 = { set_demilitarized_zone = yes }
+			2583 = { set_demilitarized_zone = yes }
+			556 = { set_demilitarized_zone = yes }
+			1765 = { set_demilitarized_zone = yes }
+			1747 = { set_demilitarized_zone = yes }
+			516 = { set_demilitarized_zone = yes }
+			1744 = { set_demilitarized_zone = yes }
+			1746 = { set_demilitarized_zone = yes }
+			2580 = { set_demilitarized_zone = yes }
+			474 = { set_demilitarized_zone = yes }
+			1745 = { set_demilitarized_zone = yes }
+			483 = { set_demilitarized_zone = yes }
+			475 = { set_demilitarized_zone = yes }
+			465 = { set_demilitarized_zone = yes }
+			431 = { set_demilitarized_zone = yes }
+			2584 = { set_demilitarized_zone = yes }
+			1749 = { set_demilitarized_zone = yes }
+			424 = { set_demilitarized_zone = yes }
+			1730 = { set_demilitarized_zone = yes }
+			1748 = { set_demilitarized_zone = yes }
+			423 = { set_demilitarized_zone = yes }
+			1750 = { set_demilitarized_zone = yes }
+			2718 = { set_demilitarized_zone = yes }
+			2338 = { set_demilitarized_zone = yes }
+			1751 = { set_demilitarized_zone = yes }
+			460 = { set_demilitarized_zone = yes }
+			2339 = { set_demilitarized_zone = yes }
+			477 = { set_demilitarized_zone = yes }
+			469 = { set_demilitarized_zone = yes }
+			503 = { set_demilitarized_zone = yes }
+			1752 = { set_demilitarized_zone = yes }
+			488 = { set_demilitarized_zone = yes }
+			1753 = { set_demilitarized_zone = yes }
+			2337 = { set_demilitarized_zone = yes }
+			537 = { set_demilitarized_zone = yes }
+			2343 = { set_demilitarized_zone = yes }
+			1758 = { set_demilitarized_zone = yes }
+			1760 = { set_demilitarized_zone = yes }
+			506 = { set_demilitarized_zone = yes }
+			1756 = { set_demilitarized_zone = yes }
+			521 = { set_demilitarized_zone = yes }
+			1757 = { set_demilitarized_zone = yes }
+			524 = { set_demilitarized_zone = yes }
+			2340 = { set_demilitarized_zone = yes }
+		}
 		add_timed_idea = {
 			idea = rhineland_challenge_met
 			days = 183
@@ -3861,7 +4520,7 @@ country_event = {
 			declare_war_on = {
 				target = GER
 				type = take_state_focus
-				generator = { 42 51 }
+				generator = { 537 }
 			}
 			country_event = germany.92
 			if = {
@@ -3897,8 +4556,56 @@ country_event = {
 		}
 		set_country_flag = GER_rhineland_backed_down
 		add_war_support = -0.2 #That was scary for a moment there!
-		42 = { set_demilitarized_zone = yes }
-		51 = { set_demilitarized_zone = yes }
+		custom_effect_tooltip = mer_GER_rhineland_demilitarized_states_tt
+		hidden_effect = { 
+			1763 = { set_demilitarized_zone = yes }
+			589 = { set_demilitarized_zone = yes }
+			1766 = { set_demilitarized_zone = yes }
+			1764 = { set_demilitarized_zone = yes }
+			2583 = { set_demilitarized_zone = yes }
+			556 = { set_demilitarized_zone = yes }
+			1765 = { set_demilitarized_zone = yes }
+			1747 = { set_demilitarized_zone = yes }
+			516 = { set_demilitarized_zone = yes }
+			1744 = { set_demilitarized_zone = yes }
+			1746 = { set_demilitarized_zone = yes }
+			2580 = { set_demilitarized_zone = yes }
+			474 = { set_demilitarized_zone = yes }
+			1745 = { set_demilitarized_zone = yes }
+			483 = { set_demilitarized_zone = yes }
+			475 = { set_demilitarized_zone = yes }
+			465 = { set_demilitarized_zone = yes }
+			431 = { set_demilitarized_zone = yes }
+			2584 = { set_demilitarized_zone = yes }
+			1749 = { set_demilitarized_zone = yes }
+			424 = { set_demilitarized_zone = yes }
+			1730 = { set_demilitarized_zone = yes }
+			1748 = { set_demilitarized_zone = yes }
+			423 = { set_demilitarized_zone = yes }
+			1750 = { set_demilitarized_zone = yes }
+			2718 = { set_demilitarized_zone = yes }
+			2338 = { set_demilitarized_zone = yes }
+			1751 = { set_demilitarized_zone = yes }
+			460 = { set_demilitarized_zone = yes }
+			2339 = { set_demilitarized_zone = yes }
+			477 = { set_demilitarized_zone = yes }
+			469 = { set_demilitarized_zone = yes }
+			503 = { set_demilitarized_zone = yes }
+			1752 = { set_demilitarized_zone = yes }
+			488 = { set_demilitarized_zone = yes }
+			1753 = { set_demilitarized_zone = yes }
+			2337 = { set_demilitarized_zone = yes }
+			537 = { set_demilitarized_zone = yes }
+			2343 = { set_demilitarized_zone = yes }
+			1758 = { set_demilitarized_zone = yes }
+			1760 = { set_demilitarized_zone = yes }
+			506 = { set_demilitarized_zone = yes }
+			1756 = { set_demilitarized_zone = yes }
+			521 = { set_demilitarized_zone = yes }
+			1757 = { set_demilitarized_zone = yes }
+			524 = { set_demilitarized_zone = yes }
+			2340 = { set_demilitarized_zone = yes }
+		}
 		add_timed_idea = {
 			idea = rhineland_challenge_met
 			days = 183
@@ -4397,9 +5104,35 @@ country_event = {
 		}
 		GER = { puppet = TUR }
 		SOV = {
-			transfer_state = 354
-			transfer_state = 353
-			transfer_state = 352
+			custom_effect_tooltip = mer_SOV_transfer_eastern_turkey
+			hidden_effect = {
+				transfer_state = 955
+				transfer_state = 964
+				transfer_state = 2268
+				transfer_state = 975
+				transfer_state = 958
+				transfer_state = 2255
+				transfer_state = 1027
+				transfer_state = 984
+				transfer_state = 973
+				transfer_state = 949
+				transfer_state = 2256
+				transfer_state = 953
+				transfer_state = 1958
+				transfer_state = 1018
+				transfer_state = 1013
+				transfer_state = 1001
+				transfer_state = 1004
+				transfer_state = 1033
+				transfer_state = 1051
+				transfer_state = 1039
+				transfer_state = 938
+				transfer_state = 1961
+				transfer_state = 965
+				transfer_state = 971
+				transfer_state = 933
+				transfer_state = 925
+			}
 		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.201 }
@@ -4509,28 +5242,33 @@ country_event = {
 
 		GER = { country_event = { id = germany.81 days = 1 } }
 		effect_tooltip = {
+			custom_effect_tooltip = mer_transfer_slovakia
 			if = {
-				limit = { SLO = { exists = yes } }
-				annex_country = { target = SLO }
+				limit = {
+					1442 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = {
+					custom_effect_tooltip = mer_first_vienna_award_transfer_southern_slovakia
+				}
 			}
 			if = {
-				limit = { GER = { owns_state = 70 } }
-				transfer_state = 70
+				limit = {
+					564 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				custom_effect_tooltip = mer_transfer_transcarpathia
 			}
-			if = {
-				limit = { GER = { owns_state = 71 } }
-				transfer_state = 71
-			}
-			if = {
-				limit = { GER = { owns_state = 73 } }
-				transfer_state = 73
-			}
-			if = {
-				limit = { GER = { owns_state = 664 } }
-				transfer_state = 664
-			}
-			GER = { transfer_state = 85 }
-			GER = { transfer_state = 807 }
+			280 = { transfer_state = GER } # danzig
+			custom_effect_tooltip = mer_GER_claims_on_danzig_corridor_tt
 		}
 	}
 
@@ -4569,7 +5307,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = POL
-					generator = { 85 }
+					generator = { 287 310 2567 546 2341 264 267 }
 				}
 			}
 		}
@@ -4591,24 +5329,171 @@ country_event = {
 			limit = { SLO = { exists = yes } }
 			POL = { annex_country = { target = SLO } }
 		}
-		if = {
-			limit = { owns_state = 70 }
-			POL = { transfer_state = 70 }
+		custom_effect_tooltip = mer_release_slovakia
+		hidden_effect = {
+			if = {
+				limit = {
+					1437 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 1437 }
+			}
+			if = {
+				limit = {
+					591 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 591 }
+			}
+			if = {
+				limit = {
+					555 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 555 }
+			}
+			if = {
+				limit = {
+					2662 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 2662 }
+			}
+			if = {
+				limit = {
+					586 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 586 }
+			}
+			if = {
+				limit = {
+					2663 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 2663 }
+			}
+			if = {
+				limit = {
+					577 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 577 }
+			}
+			if = {
+				limit = {
+					541 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 541 }
+			}
+			if = {
+				limit = {
+					574 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 574 }
+			}
+			if = {
+				limit = {
+					2660 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 2660 }
+			}
+			if = {
+				limit = {
+					2661 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 2661 }
+			}
+			if = {
+				limit = {
+					569 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 569 }
+			}
+			if = {
+				limit = {
+					550 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 550 }
+			}
+			if = {
+				limit = {
+					2313 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 2313 }
+			}
 		}
 		if = {
-			limit = { owns_state = 71 }
-			POL = { transfer_state = 71 }
+			limit = {
+				1442 = {
+					is_owned_by = GER
+				}
+			}
+			POL = {
+				custom_effect_tooltip = mer_first_vienna_award_transfer_southern_slovakia
+				hidden_effect = {
+					transfer_state = 610
+					transfer_state = 580
+					transfer_state = 1439
+					transfer_state = 1438
+					transfer_state = 1442
+					transfer_state = 2930
+					transfer_state = 593
+					transfer_state = 2246
+				}
+			}
 		}
 		if = {
-			limit = { owns_state = 73 }
-			POL = { transfer_state = 73 }
+			limit = {
+				564 = {
+					is_owned_by = GER
+				}
+			}
+			POL = {
+				custom_effect_tooltip = mer_transfer_transcarpathia
+				hidden_effect = {
+					transfer_state = 562
+					transfer_state = 2929
+					transfer_state = 1607
+					transfer_state = 1608
+					transfer_state = 2247
+					transfer_state = 564
+				}
+			}
 		}
-		if = {
-			limit = { owns_state = 664 }
-			POL = { transfer_state = 664 }
+		280 = { transfer_state = GER } # danzig
+		hidden_effect = { 2729 = { transfer_state = GER } } #other danzig state, tooltip unnecessary
+		custom_effect_tooltip = mer_GER_claims_on_danzig_corridor_tt
+		hidden_effect = {
+			287 = { transfer_state = GER }
+			310 = { transfer_state = GER }
+			2567 = { transfer_state = GER }
+			546 = { transfer_state = GER }
+			2341 = { transfer_state = GER }
+			264 = { transfer_state = GER }
+			267 = { transfer_state = GER }
 		}
-		transfer_state = 85
-		transfer_state = 807
 		if = {
 			limit = {
 				ENG = {
@@ -4655,7 +5540,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = POL
-			generator = { 85 }
+			generator = { 287 310 2567 546 2341 264 267 }
 		}
 	}
 }
@@ -4925,7 +5810,7 @@ country_event = {
 				declare_war_on = {
 					target = POL
 					type = take_state
-					generator = { 85 }
+					generator = { 287 310 2567 546 2341 264 267 }
 				}
 			}
 		}
@@ -5057,11 +5942,19 @@ country_event = {
 		}
 		create_wargoal = {
 			type = take_state
-			generator = { 85 807 }
+			generator = { 287 310 2567 546 2341 264 267 }
 			target = POL
 		}
-		add_state_core = 85
-		add_state_core = 807
+		custom_effect_tooltip = mer_GER_danzig_or_war_cores_on_west_prussia
+		hidden_effect = {
+			add_state_core = 287
+			add_state_core = 310
+			add_state_core = 2567
+			add_state_core = 546
+			add_state_core = 2341
+			add_state_core = 264
+			add_state_core = 267
+		}
 		if = {
 			limit = {
 				ENG = {
@@ -5212,7 +6105,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = SOV
-			generator = { 219 217 } # Moscow and Stalingrad
+			generator = { 229 457 } # Moscow and Stalingrad
 		}
 	}
 }
@@ -5290,7 +6183,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = YUG
-			generator = { 102 }
+			generator = { 714 2784 1490 703 695 1488 1489 743 1486 2825 1487 2861 }
 		}
 		hidden_effect = {
 			news_event = { id = news.164 hours = 6 }
@@ -5310,7 +6203,37 @@ country_event = {
 
 	option = {
 		name = germany.94.a
-		GER = { transfer_state = 102 }
+		GER = {
+			custom_effect_tooltip = mer_transfer_slovenia
+			hidden_effect = {
+				transfer_state = 714
+				transfer_state = 2784
+				transfer_state = 1490
+				transfer_state = 703
+				transfer_state = 1488
+				transfer_state = 1489
+				transfer_state = 743
+				transfer_state = 1486
+				transfer_state = 2825
+				transfer_state = 1487
+				transfer_state = 2861
+			}
+		}
+		if = {
+			limit = {
+				676 = { is_owned_by = HUN }
+				HUN = {
+					is_friend_or_potential_friend_of_GER = yes
+				}
+			}
+			HUN = {
+				transfer_state = 695
+				transfer_state = 712
+			}
+		}
+		else = {
+			hidden_effect = { GER = { transfer_state = 695 } }
+		}
 		set_country_flag = slovenia_acquired
 		hidden_effect = {
 			news_event = { id = news.163 hours = 6 }
@@ -5331,19 +6254,18 @@ country_event = {
 		name = germany.95.a
 		if = {
 			limit = {
-				YUG = { owns_state = 102 }
+				YUG = { owns_state = 743 }
 			}
 			create_wargoal = {
 				type = take_state_focus
 				target = YUG
-				generator = { 102 }
+				generator = { 714 2784 1490 703 695 1488 1489 743 1486 2825 1487 2861 }
 			}
 		}
 		else = {
 			create_wargoal = {
-				type = take_state_focus
+				type = annex_everything
 				target = SLV
-				generator = { 102 }
 			}
 		}
 		hidden_effect = {
@@ -5366,7 +6288,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = YUG
-			generator = { 102 }
+			generator = { 714 2784 1490 703 695 1488 1489 743 1486 2825 1487 2861 }
 		}
 		hidden_effect = {
 			news_event = { id = news.167 hours = 6 }
@@ -5388,7 +6310,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = YUG
-			generator = { 102 }
+			generator = { 714 2784 1490 703 695 1488 1489 743 1486 2825 1487 2861 }
 		}
 		hidden_effect = {
 			news_event = { id = news.165 hours = 6 }
@@ -6742,14 +7664,13 @@ country_event = {
 			remove_from_faction = CZE #kicked from faction
 		}
 
+		custom_effect_tooltip = mer_GER_claim_all_of_sudetenland
 		effect_tooltip = {
 			GER = {
-				add_state_claim = 69
-				add_state_claim = 74
 				create_wargoal = {
 					type = take_state_focus
 					target = CZE
-					generator = { 69 74 }
+					generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 504 499 1428 507 1977 }
 				}
 			}
 		}
@@ -6813,11 +7734,8 @@ country_event = {
 				}
 			}
 		}
-		effect_tooltip = {
-			GER = {
-				transfer_state = 69
-				transfer_state = 74
-			}
+		GER = {
+			custom_effect_tooltip = mer_GER_transfer_all_of_sudetenland
 		}
 		hidden_effect = {
 			GER = {
@@ -6841,8 +7759,24 @@ country_event = {
 
 	option = {
 		name = germany.123.a
-		add_state_claim = 69
-		add_state_claim = 74
+		custom_effect_tooltip = mer_GER_claim_all_of_sudetenland
+		hidden_effect = {
+			add_state_claim = 1433
+			add_state_claim = 1432
+			add_state_claim = 1431
+			add_state_claim = 1430
+			add_state_claim = 522
+			add_state_claim = 498
+			add_state_claim = 1434
+			add_state_claim = 471
+			add_state_claim = 473
+			add_state_claim = 1435
+			add_state_claim = 504
+			add_state_claim = 499
+			add_state_claim = 1428
+			add_state_claim = 507
+			add_state_claim = 1977
+		}
 		if = {
 			limit = {
 				CZE = { is_subject_of = FROM }
@@ -6860,7 +7794,7 @@ country_event = {
 					create_wargoal = {
 						type = take_state_focus
 						target = PREV
-						generator = { 69 74 }
+						generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 504 499 1428 507 1977 }
 					}
 				}
 			}
@@ -6880,10 +7814,40 @@ country_event = {
 
 	option = {
 		name = germany.124.a
-		add_state_core = 69
-		transfer_state = 69
-		add_state_core = 74
-		transfer_state = 74
+		custom_effect_tooltip = mer_GER_core_all_of_sudetenland
+		custom_effect_tooltip = mer_GER_transfer_all_of_sudetenland
+		hidden_effect = {
+			add_state_core = 1433
+			add_state_core = 1432
+			add_state_core = 1431
+			add_state_core = 1430
+			add_state_core = 522
+			add_state_core = 498
+			add_state_core = 1434
+			add_state_core = 471
+			add_state_core = 473
+			add_state_core = 1435
+			add_state_core = 504
+			add_state_core = 499
+			add_state_core = 1428
+			add_state_core = 507
+			add_state_core = 1977
+			transfer_state = 1433
+			transfer_state = 1432
+			transfer_state = 1431
+			transfer_state = 1430
+			transfer_state = 522
+			transfer_state = 498
+			transfer_state = 1434
+			transfer_state = 471
+			transfer_state = 473
+			transfer_state = 1435
+			transfer_state = 504
+			transfer_state = 499
+			transfer_state = 1428
+			transfer_state = 507
+			transfer_state = 1977
+		}
 	}
 }
 
@@ -7033,8 +7997,8 @@ country_event = {
 		tag = GER
 		GER = {
 			has_government = fascism
-			owns_state = 217
-			owns_state = 195
+			owns_state = 457
+			owns_state = 119
 		}
 	}
 
@@ -7043,8 +8007,8 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		set_province_name = { id = 3529 name = "Hindenburg"}
-		set_province_name = { id = 3151 name = "Ludendorff"}
+		set_province_name = { id = 13216 name = "Paulusburg" } # went with TNO names, originally Hindenburg
+		set_province_name = { id = 9985 name = "Sankt Peterburg" } #originally Ludendorff
 		set_global_flag = GER_cities_renamed
 	}
 
@@ -7087,8 +8051,8 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		reset_province_name = 3529
-		reset_province_name = 3151
+		reset_province_name = 13216
+		reset_province_name = 9985
 		clr_global_flag = GER_cities_renamed
 		clr_global_flag = ROM_king_is_silly
 	}
@@ -7139,11 +8103,8 @@ country_event = { #Hand over sudetenland even if we're not czech
 		ai_chance = {
 			base = 50
 		}
-		effect_tooltip = {
-			GER = {
-				transfer_state = 69
-				transfer_state = 74
-			}
+		GER = {
+			custom_effect_tooltip = mer_GER_transfer_all_of_sudetenland
 		}
 		hidden_effect = {
 			GER = {
@@ -7161,7 +8122,7 @@ country_event = { #Hand over sudetenland even if we're not czech
 					type = take_state_focus
 					target = PREV
 					expire = 0
-					generator = { 69 }
+					generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 }
 				}
 			}
 		}
@@ -7191,11 +8152,36 @@ country_event = { #Handed Over
 
 	option = { #SURE
 		name = germany.1042.a
-		69 = {
-			controller = {
-				GER = {
-					transfer_state = 69
-					transfer_state = 74
+		custom_effect_tooltip = mer_GER_transfer_west_sudetenland
+		hidden_effect = {
+			473 = {
+				controller = {
+					GER = {
+						transfer_state = 473
+						transfer_state = 1433
+						transfer_state = 1432
+						transfer_state = 1431
+						transfer_state = 1430
+						transfer_state = 522
+						transfer_state = 498
+						transfer_state = 1434
+						transfer_state = 471
+						transfer_state = 1435
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = mer_GER_transfer_east_sudetenland
+		hidden_effect = {
+			507 = {
+				controller = {
+					GER = {
+						transfer_state = 507
+						transfer_state = 504
+						transfer_state = 499
+						transfer_state = 1428
+						transfer_state = 1977
+					}
 				}
 			}
 		}
@@ -7216,7 +8202,7 @@ country_event = { #Handed Over.. NOT
 			type = take_state_focus
 			target = FROM
 			expire = 0
-			generator = { 69 }
+			generator = { 1433 1432 1431 1430 522 498 1434 471 473 1435 }
 		}
 	}
 }
