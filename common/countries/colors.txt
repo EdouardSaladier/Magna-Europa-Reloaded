@@ -972,6 +972,10 @@ LEM = {
 	color = rgb { 82 163 131 }
 	color_ui = rgb { 82 163 131 }
 }
+KMC = {
+	color = rgb { 0 147 216 }
+	color_ui = rgb { 0 147 216 }
+}
 WUK = {
 	color = rgb { 111 75 149 }
 	color_ui = rgb { 111 75 149 }
@@ -1078,13 +1082,17 @@ MRD = {
 	color = rgb { 169 179 43 }
 	color_ui = rgb { 169 179 43 }
 }
-STV = {
-	color = rgb { 222 157 16 }
-	color_ui = rgb { 222 157 16 }
-}
 KUB = {
 	color = rgb { 195 59 129 }
 	color_ui = rgb { 195 59 129 }
+}
+VRS = {
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 255 204 0 }
+}
+TRK = {
+	color = rgb { 213 69 60 }
+	color_ui = rgb { 213 69 60 }
 }
 KAZ = {
 	color = rgb { 102 168 204 }
