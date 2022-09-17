@@ -403,7 +403,6 @@ if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	
 	create_equipment_variant = {
 		name = "Renault UE"
 		type = light_tank_chassis_0
@@ -532,7 +531,6 @@ if = {
 		}
 		icon = "GFX_FRA_basic_light_tank_medium"
 	}
-	
 	create_equipment_variant = {
 		name = "R-35" 
 		type = light_tank_chassis_1
