@@ -487,21 +487,75 @@ focus_tree = {
 				NOT = { country_exists = FRA }
 			}
 			OR = {
-				has_full_control_of_state = 19
-				has_full_control_of_state = 23
-				has_full_control_of_state = 30
-				has_full_control_of_state = 14
-				has_full_control_of_state = 15
-				has_full_control_of_state = 29
-				has_full_control_of_state = 6
-				has_full_control_of_state = 7
-				has_full_control_of_state = 36
-				has_full_control_of_state = 99
-				has_full_control_of_state = 110
-				has_full_control_of_state = 142
-				has_full_control_of_state = 143
-				has_full_control_of_state = 144
-				has_full_control_of_state = 785
+				# french atlantic coast
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_atlantikwall_controls_french_coast
+					has_full_control_of_state = 845
+					has_full_control_of_state = 803
+					has_full_control_of_state = 760
+					has_full_control_of_state = 725
+					has_full_control_of_state = 684
+					has_full_control_of_state = 634
+					has_full_control_of_state = 615
+					has_full_control_of_state = 583
+					has_full_control_of_state = 578
+					has_full_control_of_state = 587
+					has_full_control_of_state = 534
+					has_full_control_of_state = 551
+					has_full_control_of_state = 517
+					has_full_control_of_state = 505
+					has_full_control_of_state = 448
+					has_full_control_of_state = 2874
+					has_full_control_of_state = 472
+					has_full_control_of_state = 2333
+				}
+				# belgian coast
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_atlantikwall_controls_belgian_coast
+					has_full_control_of_state = 454
+					has_full_control_of_state = 455
+				}
+				# western dutch coast
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_atlantikwall_controls_western_dutch_coast
+					has_full_control_of_state = 1974
+					has_full_control_of_state = 451
+					has_full_control_of_state = 2332
+					has_full_control_of_state = 402
+					has_full_control_of_state = 358
+				}
+				# danish atlantic coast
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_atlantikwall_controls_danish_atlantic_coast
+					has_full_control_of_state = 246
+					has_full_control_of_state = 228
+					has_full_control_of_state = 197
+					has_full_control_of_state = 181
+					has_full_control_of_state = 144
+					has_full_control_of_state = 140
+				}
+				# norwegian coast
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_atlantikwall_controls_norwegian_coast
+					has_full_control_of_state = 124
+					has_full_control_of_state = 106
+					has_full_control_of_state = 131
+					has_full_control_of_state = 123
+					has_full_control_of_state = 132
+					has_full_control_of_state = 147
+					has_full_control_of_state = 128
+					has_full_control_of_state = 111
+					has_full_control_of_state = 92
+					has_full_control_of_state = 75
+					has_full_control_of_state = 71
+					has_full_control_of_state = 53
+					has_full_control_of_state = 25
+					has_full_control_of_state = 2703
+					has_full_control_of_state = 2700
+					has_full_control_of_state = 13
+					has_full_control_of_state = 4
+					has_full_control_of_state = 2701
+				}
 			}
 		}
 		cancel_if_invalid = yes
@@ -515,8 +569,8 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = GER_atlantikwall_idea
-			custom_effect_tooltip = atlantikwall_tooltip
-			custom_effect_tooltip = atlantikwall_tooltip_2
+			custom_effect_tooltip = mer_atlantikwall_tooltip
+			custom_effect_tooltip = mer_atlantikwall_tooltip_2
 			hidden_effect = {
 				if = {
 					limit = {
@@ -525,214 +579,10 @@ focus_tree = {
 								tag = GER
 								is_in_faction_with = GER
 							}
-							has_full_control_of_state = 19
+							has_full_control_of_state = 845
 						}
 					}
-					19 = {
-						#Fortify naval bases
-						add_building_construction = {
-							type = coastal_bunker
-							province = {
-								all_provinces = yes
-								limit_to_naval_base = yes
-							}
-							level = 2
-							instant_build = yes
-						}
-						add_building_construction = {
-            	    	    type = coastal_bunker
-            	    	    province = {
-            	    	        all_provinces = yes
-            	    	        limit_to_coastal = yes
-            	    	    }
-            	    	    level = 1
-            	    	    instant_build = yes
-            	    	}
-					}
-				}
-				if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = GER
-								is_in_faction_with = GER
-							}
-							has_full_control_of_state = 23
-						}
-					}
-					23 = {
-						#Fortify naval bases
-						add_building_construction = {
-							type = coastal_bunker
-							province = {
-								all_provinces = yes
-								limit_to_naval_base = yes
-							}
-							level = 2
-							instant_build = yes
-						}
-						add_building_construction = {
-            	    	    type = coastal_bunker
-            	    	    province = {
-            	    	        all_provinces = yes
-            	    	        limit_to_coastal = yes
-            	    	    }
-            	    	    level = 1
-            	    	    instant_build = yes
-            	    	}
-					}
-				}
-				if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = GER
-								is_in_faction_with = GER
-							}
-							has_full_control_of_state = 30
-						}
-					}
-					30 = {
-						#Fortify naval bases
-						add_building_construction = {
-							type = coastal_bunker
-							province = {
-								all_provinces = yes
-								limit_to_naval_base = yes
-							}
-							level = 2
-							instant_build = yes
-						}
-						add_building_construction = {
-            	    	    type = coastal_bunker
-            	    	    province = {
-            	    	        all_provinces = yes
-            	    	        limit_to_coastal = yes
-            	    	    }
-            	    	    level = 1
-            	    	    instant_build = yes
-            	    	}
-					}
-				}
-				if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = GER
-								is_in_faction_with = GER
-							}
-							has_full_control_of_state = 14
-						}
-					}
-					14 = {
-						#Fortify naval bases
-						add_building_construction = {
-							type = coastal_bunker
-							province = {
-								all_provinces = yes
-								limit_to_naval_base = yes
-							}
-							level = 2
-							instant_build = yes
-						}
-						add_building_construction = {
-            	    	    type = coastal_bunker
-            	    	    province = {
-            	    	        all_provinces = yes
-            	    	        limit_to_coastal = yes
-            	    	    }
-            	    	    level = 1
-            	    	    instant_build = yes
-            	    	}
-					}
-				}
-				if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = GER
-								is_in_faction_with = GER
-							}
-							has_full_control_of_state = 15
-						}
-					}
-					15 = {
-						#Fortify naval bases a bit extra close to Calais
-						add_building_construction = {
-							type = coastal_bunker
-							province = {
-								all_provinces = yes
-								limit_to_naval_base = yes
-							}
-							level = 3
-							instant_build = yes
-						}
-						add_building_construction = {
-            	    	    type = coastal_bunker
-            	    	    province = {
-            	    	        all_provinces = yes
-            	    	        limit_to_coastal = yes
-            	    	    }
-            	    	    level = 1
-            	    	    instant_build = yes
-            	    	}
-					}
-				}
-				if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = GER
-								is_in_faction_with = GER
-							}
-							has_full_control_of_state = 29
-						}
-					}
-					29 = {
-						#Fortify naval bases
-						add_building_construction = {
-							type = coastal_bunker
-							province = {
-								all_provinces = yes
-								limit_to_naval_base = yes
-							}
-							level = 2
-							instant_build = yes
-						}
-	
-						#Bonus Fortifications on Calais coastline
-						add_building_construction = {
-            	    	    type = coastal_bunker
-            	    	    province = {
-            	    	        all_provinces = yes
-            	    	        limit_to_coastal = yes
-            	    	    }
-            	    	    level = 2
-            	    	    instant_build = yes
-            	    	}
-            	    	#Biggest fortifications on Calais itself
-						add_building_construction = {
-            	    	    type = coastal_bunker
-            	    	    province = {
-            	    	        all_provinces = yes
-            	    	        limit_to_victory_point = yes
-            	    	    }
-            	    	    level = 3
-            	    	    instant_build = yes
-            	    	}
-					}
-				}
-				if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = GER
-								is_in_faction_with = GER
-							}
-							has_full_control_of_state = 6
-						}
-					}
-					6 = {
+					845 = {
 						#Fortify naval bases
 						add_building_construction = {
 							type = coastal_bunker
@@ -761,42 +611,10 @@ focus_tree = {
 								tag = GER
 								is_in_faction_with = GER
 							}
-							has_full_control_of_state = 7
+							has_full_control_of_state = 803
 						}
 					}
-					7 = {
-						#Fortify naval bases a bit extra close to Calais
-						add_building_construction = {
-							type = coastal_bunker
-							province = {
-								all_provinces = yes
-								limit_to_naval_base = yes
-							}
-							level = 3
-							instant_build = yes
-						}
-						add_building_construction = {
-            	    	    type = coastal_bunker
-            	    	    province = {
-            	    	        all_provinces = yes
-            	    	        limit_to_coastal = yes
-            	    	    }
-            	    	    level = 1
-            	    	    instant_build = yes
-            	    	}
-					}
-				}	
-				if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = GER
-								is_in_faction_with = GER
-							}
-							has_full_control_of_state = 36
-						}
-					}	
-					36 = {
+					803 = {
 						#Fortify naval bases
 						add_building_construction = {
 							type = coastal_bunker
@@ -825,10 +643,10 @@ focus_tree = {
 								tag = GER
 								is_in_faction_with = GER
 							}
-							has_full_control_of_state = 56
+							has_full_control_of_state = 760
 						}
-					}		
-					56 = {
+					}
+					760 = {
 						#Fortify naval bases
 						add_building_construction = {
 							type = coastal_bunker
@@ -857,10 +675,10 @@ focus_tree = {
 								tag = GER
 								is_in_faction_with = GER
 							}
-							has_full_control_of_state = 59
+							has_full_control_of_state = 725
 						}
-					}		
-					59 = {
+					}
+					725 = {
 						#Fortify naval bases
 						add_building_construction = {
 							type = coastal_bunker
@@ -889,10 +707,10 @@ focus_tree = {
 								tag = GER
 								is_in_faction_with = GER
 							}
-							has_full_control_of_state = 58
+							has_full_control_of_state = 684
 						}
-					}		
-					58 = {
+					}
+					684 = {
 						#Fortify naval bases
 						add_building_construction = {
 							type = coastal_bunker
@@ -921,10 +739,10 @@ focus_tree = {
 								tag = GER
 								is_in_faction_with = GER
 							}
-							has_full_control_of_state = 99
+							has_full_control_of_state = 634
 						}
-					}		
-					99 = {
+					}
+					634 = {
 						#Fortify naval bases
 						add_building_construction = {
 							type = coastal_bunker
@@ -953,10 +771,10 @@ focus_tree = {
 								tag = GER
 								is_in_faction_with = GER
 							}
-							has_full_control_of_state = 110
+							has_full_control_of_state = 615
 						}
-					}		
-					110 = {
+					}
+					615 = {
 						#Fortify naval bases
 						add_building_construction = {
 							type = coastal_bunker
@@ -985,10 +803,10 @@ focus_tree = {
 								tag = GER
 								is_in_faction_with = GER
 							}
-							has_full_control_of_state = 142
+							has_full_control_of_state = 583
 						}
-					}		
-					142 = {
+					}
+					583 = {
 						#Fortify naval bases
 						add_building_construction = {
 							type = coastal_bunker
@@ -1017,10 +835,650 @@ focus_tree = {
 								tag = GER
 								is_in_faction_with = GER
 							}
-							has_full_control_of_state = 143
+							has_full_control_of_state = 578
 						}
-					}		
-					143 = {
+					}
+					578 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 587
+						}
+					}
+					587 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 534
+						}
+					}
+					534 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 551
+						}
+					}
+					551 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 517
+						}
+					}
+					517 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 505
+						}
+					}
+					505 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 448
+						}
+					}
+					448 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 2874
+						}
+					}
+					2874 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 472
+						}
+					}
+					472 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 3 #largest on calais
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 2333
+						}
+					}
+					2333 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 454
+						}
+					}
+					454 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 455
+						}
+					}
+					455 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 1974
+						}
+					}
+					1974 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 451
+						}
+					}
+					451 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 2332
+						}
+					}
+					2332 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 402
+						}
+					}
+					402 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 358
+						}
+					}
+					358 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 246
+						}
+					}
+					246 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 228
+						}
+					}
+					228 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 197
+						}
+					}
+					197 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 181
+						}
+					}
+					181 = {
 						#Fortify naval bases
 						add_building_construction = {
 							type = coastal_bunker
@@ -1051,7 +1509,7 @@ focus_tree = {
 							}
 							has_full_control_of_state = 144
 						}
-					}		
+					}
 					144 = {
 						#Fortify naval bases
 						add_building_construction = {
@@ -1081,10 +1539,10 @@ focus_tree = {
 								tag = GER
 								is_in_faction_with = GER
 							}
-							has_full_control_of_state = 785
+							has_full_control_of_state = 140
 						}
 					}
-					785 = {
+					140 = {
 						#Fortify naval bases
 						add_building_construction = {
 							type = coastal_bunker
@@ -1105,7 +1563,583 @@ focus_tree = {
             	    	    instant_build = yes
             	    	}
 					}
-				}	
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 124
+						}
+					}
+					124 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 106
+						}
+					}
+					106 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 131
+						}
+					}
+					131 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 123
+						}
+					}
+					123 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 132
+						}
+					}
+					132 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 147
+						}
+					}
+					147 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 128
+						}
+					}
+					128 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 111
+						}
+					}
+					111 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 92
+						}
+					}
+					92 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 75
+						}
+					}
+					75 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 71
+						}
+					}
+					71 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 53
+						}
+					}
+					53 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 25
+						}
+					}
+					25 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 2703
+						}
+					}
+					2703 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 2700
+						}
+					}
+					2700 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 13
+						}
+					}
+					13 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 4
+						}
+					}
+					4 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 2701
+						}
+					}
+					2701 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
 			}
 		}
 	}
