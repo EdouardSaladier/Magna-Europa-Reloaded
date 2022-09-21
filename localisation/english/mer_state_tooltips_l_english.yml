@@ -29,7 +29,7 @@
  mer_GER_west_wall_forts_bavarian_palatinate_tt:0 "§YBavarian Palatinate§!:\n   Add 2 §YLand Forts§! in each province on the French border in fully controlled states."
  mer_GER_west_wall_forts_saarland_tt:0 "Add 2 §YLand Forts§! in each province on the French border."
  mer_GER_extend_the_west_wall_rhineland_tt:0 "Has control of the §YRhineland's§! states on the western border"
- mer_GER_extend_the_west_wall_rhineland_forts_tt:0 "§YRhineland§!:\n   Add 2 §YLand Forts§! in each province on the western border."
+ mer_GER_extend_the_west_wall_rhineland_forts_tt:0 "§YRhineland§!:\n   Add 2 §YLand Forts§! in each province on the Luxembourgish border.\n   Add 2 §YLand Forts§! in each province on the Belgian border.\n   Add 2 §YLand Forts§! in each province on the Dutch border."
  mer_GER_first_vienna_award_controls_southern_slovakia:0 "Controls §YSouthern Slovakia§!"
  mer_GER_first_vienna_award_owns_southern_slovakia:0 "Owns §YSouthern Slovakia§!"
  mer_GER_claim_all_of_sudetenland:0 "Gains claims on the §YWestern Sudetenland§!.\nGains claims on the §YEastern Sudetenland§!."
@@ -46,6 +46,9 @@
  mer_GER_atlantikwall_controls_norwegian_coast:0 "Has full control of the §YNorwegian Coast§!"
  mer_atlantikwall_tooltip:0 "Place §YCoastal Forts§! in each of the following Atlantic coasts that are fully controlled by you:"
  mer_atlantikwall_tooltip_2:0 "§YFrench Atlantic Coast§!\n§YBelgian Coast§!\n§YDutch Coast§!\n§YDanish Atlantic Coast§!\n§YNorwegian Coast§!"
+ mer_GER_ostwall_control_west_side:0 "Has full control of at least one state that follows the Dnieper"
+ mer_GER_ostwall_forts:0 "Place §YLand Forts§! along the Dnieper river to the Baltic, in states that follow the Dnieper that are fully controlled by your faction."
+ mer_GER_ostwall_mius_front:0 "If we fully control §YTaganrog§! and §YChystiakove§!:\n   Add 15 §YLand Forts§! along the Mius."
 
  mer_claims_on_estonia:0 "Gain claims on §YEstonia§!."
  mer_claims_on_latvia:0 "Gain claims on §YLatvia§!."

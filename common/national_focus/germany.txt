@@ -2154,18 +2154,43 @@ focus_tree = {
 					tag = GER
 					is_in_faction_with = GER
 				}
-				OR = {
-					has_full_control_of_state = 191
-					has_full_control_of_state = 209
-					has_full_control_of_state = 210
-					has_full_control_of_state = 207
-					has_full_control_of_state = 206
-					has_full_control_of_state = 204
-					has_full_control_of_state = 194
-					has_full_control_of_state = 202
-					has_full_control_of_state = 203
-					has_full_control_of_state = 226
-					has_full_control_of_state = 200
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_ostwall_control_west_side
+					OR = {
+						has_full_control_of_state = 134 # 20004 4673
+						has_full_control_of_state = 151 # 16625 4465
+						has_full_control_of_state = 2441 # 17338
+						has_full_control_of_state = 2436 # 753 16250 16998 17333
+						has_full_control_of_state = 2181 # 5792
+						has_full_control_of_state = 2177 # 629 6121 10582 
+						has_full_control_of_state = 215 # 10652 514 352 
+						has_full_control_of_state = 2168 # 10730 10750 10757 
+						has_full_control_of_state = 2164 # 8856
+						has_full_control_of_state = 2163 # 8109 10852
+						has_full_control_of_state = 2160 # 9021 11061 11163 
+						has_full_control_of_state = 278 # 11152
+						has_full_control_of_state = 2156 # 9227 7242 
+						has_full_control_of_state = 2157 # 5955 812 7815 
+						has_full_control_of_state = 340 # 7876
+						has_full_control_of_state = 2137 # 9085 
+						has_full_control_of_state = 2743 # 2337 3749
+						has_full_control_of_state = 2140 # 1487 80 20874
+						has_full_control_of_state = 2132 # 3731
+						has_full_control_of_state = 2068 # 9243
+						has_full_control_of_state = 2055 # 2965 12357 12436
+						has_full_control_of_state = 2081 # 13272 2025
+						has_full_control_of_state = 2058 # 8436 12745 8363
+						has_full_control_of_state = 2067 # 2357 12874 8291 12949 9329 13063 7385
+						has_full_control_of_state = 2684 # 2457
+						has_full_control_of_state = 2074 # 13147
+						has_full_control_of_state = 559 # 13195
+						has_full_control_of_state = 2076 # 1147 13290 8675
+						has_full_control_of_state = 2079 # 13368 13406 2097 2669 
+						has_full_control_of_state = 2078 # 13575 8481 
+						has_full_control_of_state = 623 # 3340 3684
+						has_full_control_of_state = 2091 # 8669 1707
+						has_full_control_of_state = 2090 # 6669 6360 13915
+					}
 				}
 			}
 		}
@@ -2179,8 +2204,8 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = GER_ostwall_idea
-			custom_effect_tooltip = GER_ostwall_forts
-			custom_effect_tooltip = GER_ostwall_forts_2
+			custom_effect_tooltip = mer_GER_ostwall_forts
+			#custom_effect_tooltip = GER_ostwall_forts_2 # unneeded
 			if = {
 				limit = { 
 					any_country = {
@@ -2188,15 +2213,21 @@ focus_tree = {
 							tag = GER
 							is_in_faction_with = GER
 						}
-						has_full_control_of_state = 191 
+						has_full_control_of_state = 134 
 					}
 				}
 				hidden_effect = {
-					191 = {
+					134 = {
 						add_building_construction = {
 							type = bunker
-							level = 2
-							province = 4640
+							level = 1
+							province = 20004
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 4673
 							instant_build = yes
 						}
 					}
@@ -2209,21 +2240,21 @@ focus_tree = {
 							tag = GER
 							is_in_faction_with = GER
 						}
-						has_full_control_of_state = 209
+						has_full_control_of_state = 151
 					}
 				}
 				hidden_effect = {
-					209 = {
+					151 = {
 						add_building_construction = {
 							type = bunker
 							level = 1
-							province = 415
+							province = 16625
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
 							level = 1
-							province = 3310
+							province = 4465
 							instant_build = yes
 						}
 					}
@@ -2236,27 +2267,15 @@ focus_tree = {
 							tag = GER
 							is_in_faction_with = GER
 						}
-						has_full_control_of_state = 210 
+						has_full_control_of_state = 2441
 					}
 				}
 				hidden_effect = {
-					210 = {
+					2441 = {
 						add_building_construction = {
 							type = bunker
 							level = 1
-							province = 3333
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 11259
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 9386
+							province = 17338
 							instant_build = yes
 						}
 					}
@@ -2269,252 +2288,908 @@ focus_tree = {
 							tag = GER
 							is_in_faction_with = GER
 						}
-						has_full_control_of_state = 207 
+						has_full_control_of_state = 2436
 					}
 				}
 				hidden_effect = {
-					207 = {
+					2436 = {
 						add_building_construction = {
 							type = bunker
 							level = 1
-							province = 323
+							province = 753
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 16250
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 16998
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 17333
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2181
+					}
+				}
+				hidden_effect = {
+					2181 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 5792
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2177
+					}
+				}
+				hidden_effect = {
+					2177 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 629
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6121
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 10582
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 215
+					}
+				}
+				hidden_effect = {
+					215 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 10652
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 514
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 352
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2168
+					}
+				}
+				hidden_effect = {
+					2168 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 10730
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 10750
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 10757
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2164
+					}
+				}
+				hidden_effect = {
+					2164 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 8856
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2163
+					}
+				}
+				hidden_effect = {
+					2163 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 8109
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 10852
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2160
+					}
+				}
+				hidden_effect = {
+					2160 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9021
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11061
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11163
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 278
+					}
+				}
+				hidden_effect = {
+					278 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11152
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2156
+					}
+				}
+				hidden_effect = {
+					2156 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9227
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 7242
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2157
+					}
+				}
+				hidden_effect = {
+					2157 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 5955
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 812
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 7815
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 340
+					}
+				}
+				hidden_effect = {
+					340 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 7876
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2137
+					}
+				}
+				hidden_effect = {
+					2137 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9085
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2743
+					}
+				}
+				hidden_effect = {
+					2743 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 2337
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3749
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2140
+					}
+				}
+				hidden_effect = {
+					2140 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 1487
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 80
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 20874
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2132
+					}
+				}
+				hidden_effect = {
+					2132 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3731
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2068
+					}
+				}
+				hidden_effect = {
+					2068 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9243
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2055
+					}
+				}
+				hidden_effect = {
+					2055 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9243
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12357
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12436
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2081
+					}
+				}
+				hidden_effect = {
+					2081 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 13272
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 2025
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2058
+					}
+				}
+				hidden_effect = {
+					2058 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 8436
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12745
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 8363
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2067
+					}
+				}
+				hidden_effect = {
+					2067 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 2357
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12874
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 8291
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12949
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9329
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 13063
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 7385
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2684
+					}
+				}
+				hidden_effect = {
+					2684 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 2457
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2074
+					}
+				}
+				hidden_effect = {
+					2074 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 13147
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 559
+					}
+				}
+				hidden_effect = {
+					559 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 13195
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2076
+					}
+				}
+				hidden_effect = {
+					2076 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 1147
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 13290
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 8675
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2079
+					}
+				}
+				hidden_effect = {
+					2079 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 13368
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 13406
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 2097
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 2669
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2078
+					}
+				}
+				hidden_effect = {
+					2078 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 13575
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 8481
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 623
+					}
+				}
+				hidden_effect = {
+					623 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3340
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3684
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2091
+					}
+				}
+				hidden_effect = {
+					2091 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 8669
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 1707
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2091
+					}
+				}
+				hidden_effect = {
+					2091 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6669
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6360
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 13915
+							instant_build = yes
+						}
+					}
+				}
+			}
+			# Mius-Front 
+			custom_effect_tooltip = mer_GER_ostwall_mius_front
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 2082
+						has_full_control_of_state = 2310
+					}
+				}
+				hidden_effect = {
+					2082 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3298
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
 							level = 3
-							province = 11241
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 11220
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 3331
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 206 
-					}
-				}
-				hidden_effect = {
-					206 = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 9289
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 3378
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 204 
-					}
-				}
-				hidden_effect = {
-					204 = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 6373
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 194 
-					}
-				}
-				hidden_effect = {
-					194 = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 6319
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 9249
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 3507
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 202 
-					}
-				}
-				hidden_effect = {
-					202 = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 9568
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 3543
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 5
-							province = 525
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 3494
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 203 
-					}
-				}
-				hidden_effect = {
-					203 = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 11454
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 488
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 3468
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 6478
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 226 
-					}
-				}
-				hidden_effect = {
-					226 = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 9433
+							province = 1722
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
 							level = 3
-							province = 11437
+							province = 7704
 							instant_build = yes
 						}
 					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 200 
-					}
-				}
-				hidden_effect = {
-					200 = {
+					2310 = {
 						add_building_construction = {
 							type = bunker
 							level = 3
-							province = 11405
+							province = 13565
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 1
-							province = 6596
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 11700
+							level = 3
+							province = 1504
 							instant_build = yes
 						}
 					}
