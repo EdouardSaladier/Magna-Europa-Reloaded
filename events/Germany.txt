@@ -6228,7 +6228,6 @@ country_event = {
 			}
 			HUN = {
 				transfer_state = 695
-				transfer_state = 712
 			}
 		}
 		else = {
@@ -6352,9 +6351,9 @@ country_event = {
 		trigger = {
 			YUG = {
 				OR = {
-					owns_state = 103
-					owns_state = 104
-					owns_state = 109
+					owns_state = 1499
+					owns_state = 1563
+					owns_state = 1464
 				}
 			}
 		}
@@ -6364,19 +6363,13 @@ country_event = {
 		effect_tooltip = {
 			add_political_power = -25
 			add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
-			CRO = {
-				if = {
-					limit = { YUG = { owns_state = 103 } }
-					transfer_state = 103
-				}
-				if = {
-					limit = { YUG = { owns_state = 104 } }
-					transfer_state = 104
-				}
-				if = {
-					limit = { YUG = { owns_state = 109 } }
-					transfer_state = 109
-				}
+			every_state = {
+				limit = { 
+					OR = {
+						is_core_of = CRO
+						is_core_of = BOS
+					}
+					transfer_state_to = CRO
 			}
 			puppet = CRO
 			annex_country = { target = YUG transfer_troops = no }
@@ -6395,20 +6388,13 @@ country_event = {
 		custom_effect_tooltip = germany.98_tt
 		effect_tooltip = {
 			add_named_threat = { threat = 2 name = GER_fate_of_yugoslavia }
-
-			CRO = {
-				if = {
-					limit = { YUG = { owns_state = 103 } }
-					transfer_state = 103
-				}
-				if = {
-					limit = { YUG = { owns_state = 104 } }
-					transfer_state = 104
-				}
-				if = {
-					limit = { YUG = { owns_state = 109 } }
-					transfer_state = 109
-				}
+			every_state = {
+				limit = { 
+					OR = {
+						is_core_of = CRO
+						is_core_of = BOS
+					}
+					transfer_state_to = CRO
 			}
 			puppet = CRO
 			puppet = YUG
@@ -6531,7 +6517,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				731 = {
+				941 = {
 					any_neighbor_state = { is_owned_by = GER }
 					is_owned_by = GRE
 				}
@@ -6540,7 +6526,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				185 = {
+				1548 = {
 					any_neighbor_state = { is_owned_by = GER }
 					is_owned_by = GRE
 				}
@@ -6549,7 +6535,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				47 = {
+				2003 = {
 					any_neighbor_state = { is_owned_by = GER }
 					is_owned_by = GRE
 				}
@@ -6567,14 +6553,14 @@ country_event = {
 				limit = {
 					has_global_flag = GER_second_ljubljana_award_GER_731
 				}
-				GER = { transfer_state = 731 }
+				GER = { transfer_state = 941 }
 			}
 			if = {
 				limit = {
 					has_global_flag = GER_second_ljubljana_award_GER_185
 					NOT = { has_global_flag = GER_second_ljubljana_award_GER_731 }
 				}
-				GER = { transfer_state = 185 }
+				GER = { transfer_state = 1548 }
 			}
 			if = {
 				limit = {
@@ -6582,7 +6568,7 @@ country_event = {
 					NOT = { has_global_flag = GER_second_ljubljana_award_GER_731 }
 					NOT = { has_global_flag = GER_second_ljubljana_award_GER_185 }
 				}
-				GER = { transfer_state = 47 }
+				GER = { transfer_state = 2003 }
 			}
 		}
 	}

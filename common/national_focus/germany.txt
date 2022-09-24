@@ -8337,8 +8337,8 @@ focus_tree = {
 					country_exists = YUG
 					NOT = { has_war_with = YUG }
 					OR = {
-						owns_state = 102
-						102 = { owner = { is_subject_of = YUG } }
+						owns_state = 743
+						743 = { owner = { is_subject_of = YUG } }
 					}
 				}
 				custom_trigger_tooltip = {
@@ -8346,36 +8346,36 @@ focus_tree = {
 					AND = {
 						NOT = { country_exists = YUG }
 						OR = {
-							owns_state = 102
-							102 = { owner = { is_subject_of = YUG } }
+							owns_state = 743
+							743 = { owner = { is_subject_of = YUG } }
 						}
 						OR = {
-							owns_state = 45
-							45 = { owner = { is_subject_of = YUG } }
+							owns_state = 1514
+							1514 = { owner = { is_subject_of = YUG } }
 						}
 						OR = { #Macedonia
-							owns_state = 106
-							106 = { owner = { is_subject_of = YUG } }
+							owns_state = 1529
+							1529 = { owner = { is_subject_of = YUG } }
 						}
 						OR = { #New Southern Serbia state
-							owns_state = 803
-							803 = { owner = { is_subject_of = YUG } }
+							owns_state = 846
+							846 = { owner = { is_subject_of = YUG } }
 						}
 						OR = { #Herzegovina
-							owns_state = 803
-							804 = { owner = { is_subject_of = YUG } }
+							owns_state = 1499
+							1499 = { owner = { is_subject_of = YUG } }
 						}
 						OR = { #Kosovo
-							owns_state = 803
-							802 = { owner = { is_subject_of = YUG } }
+							owns_state = 858
+							858 = { owner = { is_subject_of = YUG } }
 						}
 						OR = {
-							owns_state = 103
-							103 = { owner = { is_subject_of = YUG } }
+							owns_state = 1563
+							1563 = { owner = { is_subject_of = YUG } }
 						}
 						OR = {
-							owns_state = 105
-							105 = { owner = { is_subject_of = YUG } }
+							owns_state = 881
+							881 = { owner = { is_subject_of = YUG } }
 						}
 					}
 				}
@@ -8399,14 +8399,14 @@ focus_tree = {
 				NOT = {
 					OR = {
 						YUG = {
-							owns_state = 45
+							owns_state = 1514
 						}
-						45 = { owner = { is_subject_of = YUG } }
+						1514 = { owner = { is_subject_of = YUG } }
 						
 						YUG = {
-							owns_state = 106
+							owns_state = 1529
 						}
-						106 = { owner = { is_subject_of = YUG } }
+						1529 = { owner = { is_subject_of = YUG } }
 					}
 				}
 				AND = {
@@ -8436,8 +8436,8 @@ focus_tree = {
 					if = {
 						limit = { 
 							OR = {
-								45 = { is_owned_by = YUG }
-								45 = { is_owned_by = GER }
+								1514 = { is_owned_by = YUG }
+								1514 = { is_owned_by = GER }
 							}
 						}
 						HUN = {
@@ -8451,13 +8451,13 @@ focus_tree = {
 					if = {
 						limit = {
 								OR = {
-									45 = { is_owned_by = YUG }
-									45 = { is_owned_by = GER }
+									1514 = { is_owned_by = YUG }
+									1514 = { is_owned_by = GER }
 								}
 						}
 						HUN = {
 							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-							transfer_state = 45
+							transfer_state = 1514
 						}
 					}
 				}
@@ -8480,10 +8480,10 @@ focus_tree = {
 					if = {
 						limit = {
 							OR = {
-								106 = { is_owned_by = YUG }
-								106 = { is_owned_by = GER }
-								803 = { is_owned_by = YUG }
-								803 = { is_owned_by = GER }
+								1529 = { is_owned_by = YUG }
+								1529 = { is_owned_by = GER }
+								846 = { is_owned_by = YUG }
+								846 = { is_owned_by = GER }
 							}
 						}
 						BUL = { 
@@ -8497,27 +8497,27 @@ focus_tree = {
 					if = {
 						limit = {
 							OR = {
-								106 = { is_owned_by = YUG }
-								106 = { is_owned_by = GER }
-								803 = { is_owned_by = YUG }
-								803 = { is_owned_by = GER }
+								1529 = { is_owned_by = YUG }
+								1529 = { is_owned_by = GER }
+								846 = { is_owned_by = YUG }
+								846 = { is_owned_by = GER }
 							}
 						}
 						BUL = {
 							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
 							if = {
 								limit = {
-									106 = { is_owned_by = YUG }
-									106 = { is_owned_by = GER }
+									1529 = { is_owned_by = YUG }
+									1529 = { is_owned_by = GER }
 								}
-								transfer_state = 106
+								transfer_state = 1529
 							}
 							if = {
 								limit = {
-									803 = { is_owned_by = YUG }
-									803 = { is_owned_by = GER }
+									846 = { is_owned_by = YUG }
+									846 = { is_owned_by = GER }
 								}
-								transfer_state = 803
+								transfer_state = 846
 							}
 						}
 					}
@@ -8535,7 +8535,7 @@ focus_tree = {
 					ITA = {
 						OR = {
 							has_completed_focus = ITA_slovenia_dalmatia_claims
-							owns_state = 44
+							owns_state = 1521
 						}
 						is_friend_or_potential_friend_of_GER = yes
 						NOT = { is_in_faction_with = YUG }
@@ -8552,15 +8552,15 @@ focus_tree = {
 						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
 						if = {
 							limit = { has_completed_focus = ITA_slovenia_dalmatia_claims }
-							transfer_state = 103
+							transfer_state = 1476
 						}
 						if = {
-							limit = { owns_state = 44 }
-							transfer_state = 105
+							limit = { owns_state = 1521 }
+							transfer_state = 881
 						}
 						if = {
-							limit = { owns_state = 44 }
-							transfer_state = 802
+							limit = { owns_state = 1521 }
+							transfer_state = 858
 						}
 					}
 				}
