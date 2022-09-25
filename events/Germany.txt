@@ -6369,7 +6369,8 @@ country_event = {
 						is_core_of = CRO
 						is_core_of = BOS
 					}
-					transfer_state_to = CRO
+				}
+				transfer_state_to = CRO
 			}
 			puppet = CRO
 			annex_country = { target = YUG transfer_troops = no }
@@ -6394,7 +6395,8 @@ country_event = {
 						is_core_of = CRO
 						is_core_of = BOS
 					}
-					transfer_state_to = CRO
+				}
+				transfer_state_to = CRO
 			}
 			puppet = CRO
 			puppet = YUG

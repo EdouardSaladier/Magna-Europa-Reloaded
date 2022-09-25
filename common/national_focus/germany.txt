@@ -6972,9 +6972,9 @@ focus_tree = {
 						ROM = {
 							OR = {
 								AND = {
-									NOT = { controls_state = 76 }
-									NOT = { controls_state = 83 }
-									NOT = { controls_state = 84 }
+									NOT = { controls_state = 665 }
+									NOT = { controls_state = 664 }
+									NOT = { controls_state = 737 }
 								}
 								has_war_with = HUN
 								AND = {
@@ -6988,7 +6988,10 @@ focus_tree = {
 						BUL = { is_friend_or_potential_friend_of_GER = no }
 						ROM = {
 							OR = {
-								NOT = { controls_state = 77 }
+								AND = {
+									NOT = { controls_state = 1579 }
+									NOT = { controls_state = 818 }
+								}
 								has_war_with = BUL					
 							}
 						}					
@@ -7008,7 +7011,7 @@ focus_tree = {
 						is_friend_or_potential_friend_of_GER = yes
 					}
 					ROM = {
-						controls_state = 76
+						controls_state = 665
 						NOT = { has_war_with = HUN }
 					}
 				}
