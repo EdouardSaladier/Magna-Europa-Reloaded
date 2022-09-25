@@ -1,0 +1,19 @@
+state={
+	id=2946
+	name="STATE_2946"
+	provinces={
+		19647 
+	}
+	history = {
+		owner = GER
+		add_core_of = GER
+		add_core_of = PRE
+		add_core_of = SHL
+		add_core_of = HLS
+		buildings = { infrastructure = 2 }
+	}
+	state_category = pastoral
+	manpower=7825
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

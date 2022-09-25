@@ -1,0 +1,18 @@
+state={
+	id=2945
+	name="STATE_2945"
+	provinces={
+		19880 
+	}
+	history = {
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = TUS
+		add_core_of = PIS
+		buildings = { infrastructure = 1 }
+	}
+	state_category = pastoral
+	manpower=22671
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
