@@ -14,13 +14,13 @@ country_event = {
 		name = wtt_germany.1.a
 		hidden_effect = {
 
-			set_capital = { state = 55 }
+			set_capital = { state = 1746 }
 			start_civil_war = {
 				ruling_party = neutrality
 				ideology = fascism
 				size = 0.5
-				capital = 64
-				states = { 64 61 52 53 54 60 65 66 67 68 62 63 5 }
+				capital = 1650
+				states = { 1650 1704 1759 289 1700 1637 1691 1694 2551 1693 1695 1696 1680 2528 1685 1679 440 1681 1686 1689 1688 1774 1775 533 545 1768 1769 581 2549 1654 1655 2667 1656 1657 1659 2664 1658 461 1662 1653 425 252 2484 1614 2335 2334 1615 282 1613 1635 554 1788 576 1791 567 1781 }
 			}
 			set_party_name = { ideology = neutrality long_name = GER_neutrality_party_civil_war name = GER_neutrality_party_civil_war }
 			load_oob = "GER_German_Civil_War_neutrality"
@@ -141,14 +141,14 @@ country_event = {
 		add_manpower = 40000
 		if = {
 			limit = {
-				controls_state = 165
+				controls_state = 896
 			}
 			load_oob = "SPR_German_Expatriates_Barcelona" #spawn units in Barcelona
 		}
 		if = {
 			limit = {
-				controls_state = 41
-				NOT = { controls_state = 165 }
+				controls_state = 951
+				NOT = { controls_state = 896 }
 			}
 			load_oob = "SPR_German_Expatriates_Madrid" #spawn units in Madrid
 		}
@@ -514,10 +514,7 @@ country_event = {
 			factor = 50
 		}
 		effect_tooltip = {
-			GER = { transfer_state = 85 }
-			GER = { transfer_state = 807 }
-			GER = { transfer_state = 86 }
-			GER = { transfer_state = 762 }
+			GER = { custom_effect_tooltip = mer_GER_transfer_polish_states }
 			GER = { add_ideas = anti_soviet_pact }
 			add_ideas = anti_soviet_pact
 			add_opinion_modifier = { target = GER modifier = danzig_for_guarantees }
@@ -568,16 +565,49 @@ country_event = {
 	# Great
 	option = {
 		name = wtt_germany.15.a
-		transfer_state = 85
-		transfer_state = 807
-		transfer_state = 86
-		transfer_state = 762
-		add_state_core = 85
-		add_state_core = 86
-		add_state_core = 762
-		86 = { set_state_name = "Posen" }
-		set_province_name = { id = 6558 name = "Posen" }
-		762 = { set_state_name = "Kattowitz" }
+		custom_effect_tooltip = mer_GER_transfer_polish_states
+		custom_effect_tooltip = mer_GER_core_polish_states
+		hidden_effect = {
+			# west prussia
+			transfer_state = 287
+			transfer_state = 310
+			transfer_state = 2567
+			transfer_state = 546
+			transfer_state = 2341
+			transfer_state = 264
+			transfer_state = 267
+			add_state_core = 287
+			add_state_core = 310
+			add_state_core = 2567
+			add_state_core = 546
+			add_state_core = 2341
+			add_state_core = 264
+			add_state_core = 267
+			# posnan
+			transfer_state = 80
+			transfer_state = 335
+			transfer_state = 243
+			transfer_state = 79
+			transfer_state = 122
+			transfer_state = 99
+			transfer_state = 82
+			transfer_state = 549
+			add_state_core = 80
+			add_state_core = 335
+			add_state_core = 243
+			add_state_core = 79
+			add_state_core = 122
+			add_state_core = 99
+			add_state_core = 82
+			add_state_core = 549
+			# katowice
+			transfer_state = 2329
+			transfer_state = 481
+			transfer_state = 2262
+			add_state_core = 2329
+			add_state_core = 481
+			add_state_core = 2262
+		}
 		add_ideas = anti_soviet_pact
 		POL = { 
 			add_ideas = anti_soviet_pact
@@ -624,9 +654,30 @@ country_event = {
 	# We will never let go of our claims!
 	option = {
 		name = wtt_germany.16.a
-		add_state_claim = 85
-		add_state_claim = 86
-		add_state_claim = 762
+		custom_effect_tooltip = mer_GER_claim_polish_states
+		hidden_effect = {
+			# west prussia
+			add_state_claim = 287
+			add_state_claim = 310
+			add_state_claim = 2567
+			add_state_claim = 546
+			add_state_claim = 2341
+			add_state_claim = 264
+			add_state_claim = 267
+			# posnan
+			add_state_claim = 80
+			add_state_claim = 335
+			add_state_claim = 243
+			add_state_claim = 79
+			add_state_claim = 122
+			add_state_claim = 99
+			add_state_claim = 82
+			add_state_claim = 549
+			# katowice
+			add_state_claim = 2329
+			add_state_claim = 481
+			add_state_claim = 2262
+		}
 	}
 
 	# Give it up
@@ -769,22 +820,100 @@ country_event = {
 		add_named_threat = { threat = 5 name = GER_soviet_reiterated_claims }
 		add_timed_idea = { idea = GER_soviet_protect_our_sphere days = 365 }
 		add_political_power = 100
-		add_state_claim = 722
-		add_state_claim = 147
-		add_state_claim = 146
-		add_state_claim = 13
-		add_state_claim = 191
-		add_state_claim = 12
-		add_state_claim = 190
-		add_state_claim = 11
-		add_state_claim = 189
-		add_state_claim = 96
-		add_state_claim = 95
-		add_state_claim = 94
-		add_state_claim = 93
-		add_state_claim = 91
-		add_state_claim = 89
-		add_state_claim = 78
+		add_state_claim = 77
+		add_state_claim = 33
+		add_state_claim = 2786
+		add_state_claim = 17
+		custom_effect_tooltip = mer_claims_on_estonia
+		custom_effect_tooltip = mer_claims_on_latvia
+		custom_effect_tooltip = mer_claims_on_lithuania
+		custom_effect_tooltip = mer_claims_on_belarussian_poland
+		custom_effect_tooltip = mer_claims_on_ukrainian_poland
+		custom_effect_tooltip = mer_claims_on_besserabia
+		hidden_effect = {
+			add_state_claim = 113
+			add_state_claim = 2783
+			add_state_claim = 100
+			add_state_claim = 22
+			every_state = {
+				limit = { 
+					is_core_of = EST
+					NOT = {
+						is_core_of = FIN
+						is_core_of = LAT
+						is_core_of = LIT
+						is_core_of = SOV
+					}
+				}
+				add_claim_by = SOV
+			}
+			every_state = {
+				limit = { 
+					is_core_of = LAT
+					NOT = {
+						is_core_of = FIN
+						is_core_of = EST
+						is_core_of = LIT
+						is_core_of = SOV
+					}
+				}
+				add_claim_by = SOV
+			}
+			add_state_claim = 2371
+			add_state_claim = 208
+			add_state_claim = 101
+			add_state_claim = 205
+			add_state_claim = 107
+			add_state_claim = 206
+			add_state_claim = 1246
+			add_state_claim = 238
+			add_state_claim = 1104
+			add_state_claim = 1178
+			add_state_claim = 259
+			add_state_claim = 242
+			add_state_claim = 1339
+			add_state_claim = 207
+			add_state_claim = 1280
+			add_state_claim = 1296
+			add_state_claim = 225
+			add_state_claim = 244
+			add_state_claim = 275
+			add_state_claim = 274
+			add_state_claim = 1309
+			add_state_claim = 294
+			add_state_claim = 1304
+			add_state_claim = 1135
+			add_state_claim = 241
+			add_state_claim = 1329
+			add_state_claim = 236
+			every_state = {
+				limit = { 
+					is_core_of = BLR
+					is_owned_by = POL
+				}
+				add_claim_by = SOV
+			}
+			every_state = {
+				limit = { 
+					is_core_of = UKR
+					is_owned_by = POL
+				}
+				add_claim_by = SOV
+			}
+			add_state_claim = 590
+			add_state_claim = 1600
+			add_state_claim = 1599
+			add_state_claim = 592
+			add_state_claim = 600
+			add_state_claim = 1606
+			add_state_claim = 1605
+			add_state_claim = 1604
+			add_state_claim = 1603
+			add_state_claim = 2744
+			add_state_claim = 2745
+			add_state_claim = 1601
+			add_state_claim = 794
+		}
 		hidden_effect = { news_event = { id = wtt_news.10 hours = 6 } }
 	}
 
@@ -1729,7 +1858,7 @@ country_event = {
 
 #China
 
-# Germans demand return of Tsingtao
+# Germans demand return of Tsingtao # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.38
 	title = wtt_germany.38.t
@@ -1788,7 +1917,7 @@ country_event = {
 	}
 }
 
-# China demands continued support of Von Falkenhausen in return
+# China demands continued support of Von Falkenhausen in return # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.39
 	title = wtt_germany.39.t
@@ -1814,7 +1943,7 @@ country_event = {
 	}
 }
 
-# German notification event that China rejected request
+# German notification event that China rejected request # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.40
 	title = wtt_germany.40.t
@@ -1830,7 +1959,7 @@ country_event = {
 	}
 }
 
-# Chinese notification event that Germany accepted offer
+# Chinese notification event that Germany accepted offer # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.41
 	title = wtt_germany.41.t
@@ -1846,7 +1975,7 @@ country_event = {
 	}
 }
 
-# Chinese notification event that Germany rejected offer
+# Chinese notification event that Germany rejected offer # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.42
 	title = wtt_germany.42.t
@@ -1863,7 +1992,7 @@ country_event = {
 
 # Japan 
 
-# Germans demand return of Tsingtao
+# Germans demand return of Tsingtao # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.43
 	title = wtt_germany.43.t
@@ -1921,7 +2050,7 @@ country_event = {
 	}
 }
 
-# Japan demands withdraw support of Von Falkenhausen in return
+# Japan demands withdraw support of Von Falkenhausen in return # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.44
 	title = wtt_germany.44.t
@@ -1962,7 +2091,7 @@ country_event = {
 	}
 }
 
-# German notification event that Japan rejected request
+# German notification event that Japan rejected request # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.45
 	title = wtt_germany.40.t
@@ -1978,7 +2107,7 @@ country_event = {
 	}
 }
 
-# Japanese notification event that Germany accepted offer
+# Japanese notification event that Germany accepted offer # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.46
 	title = wtt_germany.41.t
@@ -1994,7 +2123,7 @@ country_event = {
 	}
 }
 
-# Japanese notification event that Germany rejected offer
+# Japanese notification event that Germany rejected offer # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.47
 	title = wtt_germany.42.t
@@ -2009,7 +2138,7 @@ country_event = {
 	}
 }
 
-# German notification event that China/Japan acceded to demands
+# German notification event that China/Japan acceded to demands # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.48
 	title = wtt_germany.48.t
@@ -2486,23 +2615,12 @@ country_event = {
 	# Excellent
 	option = {
 		name = wtt_germany.55.a
-		4 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
+		every_state = {
+			limit = { 
+				is_core_of = AUS 
+				owner = { tag = AUS }
 			}
-		}
-		152 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
-			}
-		}
-		153 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
-			}
+			add_core_of = GER
 		}
 		AUS = {
 			every_unit_leader = {
@@ -2523,10 +2641,10 @@ country_event = {
 
 	trigger = {
 		tag = POL
-		has_full_control_of_state = 85
-		has_full_control_of_state = 86
-		owns_state = 85
-		owns_state = 86
+		has_full_control_of_state = 280
+		has_full_control_of_state = 122
+		owns_state = 280
+		owns_state = 122
 		has_idea = GER_the_great_red_menace
 		surrender_progress > 0.3
 		has_defensive_war_with = SOV
@@ -2575,12 +2693,12 @@ country_event = {
 		ai_chance = {
 			factor = 90
 		}
-		transfer_state = 85
-		transfer_state = 86
-		add_state_core = 85
-		add_state_core = 86
-		85 = { add_claim_by = SOV }
-		86 = { add_claim_by = SOV }
+		transfer_state = 280
+		transfer_state = 122
+		add_state_core = 280
+		add_state_core = 122
+		280 = { add_claim_by = SOV }
+		122 = { add_claim_by = SOV }
 		POL = { country_event = { id = wtt_germany.59 } }
 	}
 
@@ -2840,8 +2958,7 @@ country_event = {
 		name = wtt_germany.63.a
 		effect_tooltip = {
 			GER = {
-				add_state_core = 8
-				add_state_core = 28
+				custom_effect_tooltip = mer_GER_reintegrate_luxemburg_and_alsace_lorraine_core_tt
 			}
 		}
 	}
@@ -2860,8 +2977,7 @@ country_event = {
 		name = wtt_germany.64.a
 		effect_tooltip = {
 			GER = {
-				add_state_core = 8
-				add_state_core = 28
+				custom_effect_tooltip = mer_GER_reintegrate_luxemburg_and_alsace_lorraine_core_tt
 			}
 		}
 	}
@@ -3095,18 +3211,18 @@ country_event = {
 			CZE = { ROOT_inherit_current_scope_wars_effect = yes }
 			annex_country = { target = HUN transfer_troops = yes }
 			annex_country = { target = CZE transfer_troops = yes }
-			154 = { add_core_of = ROOT }
-			155 = { add_core_of = ROOT }
-			43 = { add_core_of = ROOT }
-			69 = { add_core_of = ROOT }
-			9 = { add_core_of = ROOT }
-			75 = { add_core_of = ROOT }
-			74 = { add_core_of = ROOT }
-			72 = { add_core_of = ROOT }
-			70 = { add_core_of = ROOT }
-			664 = { add_core_of = ROOT }
-			71 = { add_core_of = ROOT }
-			73 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					is_core_of = CZE
+				}
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = {
+					is_core_of = HUN
+				}
+				add_core_of = ROOT
+			}
 			GER = { add_to_faction = AUS }
 		}
 		if = {
@@ -3117,18 +3233,18 @@ country_event = {
 			CZE = { ROOT_inherit_current_scope_wars_effect = yes }
 			annex_country = { target = AUS transfer_troops = yes }
 			annex_country = { target = CZE transfer_troops = yes }
-			152 = { add_core_of = ROOT }
-			153 = { add_core_of = ROOT }
-			4 = { add_core_of = ROOT }
-			69 = { add_core_of = ROOT }
-			9 = { add_core_of = ROOT }
-			75 = { add_core_of = ROOT }
-			74 = { add_core_of = ROOT }
-			72 = { add_core_of = ROOT }
-			70 = { add_core_of = ROOT }
-			664 = { add_core_of = ROOT }
-			71 = { add_core_of = ROOT }
-			73 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					is_core_of = CZE
+				}
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = {
+					is_core_of = AUS
+				}
+				add_core_of = ROOT
+			}
 			GER = { add_to_faction = HUN }
 		}
 		if = {
@@ -3139,12 +3255,18 @@ country_event = {
 			AUS = { ROOT_inherit_current_scope_wars_effect = yes }
 			annex_country = { target = HUN transfer_troops = yes }
 			annex_country = { target = AUS transfer_troops = yes }
-			152 = { add_core_of = ROOT }
-			153 = { add_core_of = ROOT }
-			4 = { add_core_of = ROOT }
-			154 = { add_core_of = ROOT }
-			155 = { add_core_of = ROOT }
-			43 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					is_core_of = AUS
+				}
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = {
+					is_core_of = HUN
+				}
+				add_core_of = ROOT
+			}
 			GER = { add_to_faction = CZE }
 		}
 		set_cosmetic_tag = HUN_EMPIRE
@@ -3186,6 +3308,14 @@ country_event = {
 							include_locked = yes
 						}
 						NOT = { has_state_flag = GER_integrate_war_economies }
+						NOT = { 
+							has_state_category = wasteland
+							has_state_category = enclave
+							has_state_category = tiny_island
+							has_state_category = small_island
+							has_state_category = pastoral
+							has_state_category = rural
+						}
 					}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -3203,6 +3333,14 @@ country_event = {
 							include_locked = yes
 						}
 						NOT = { has_state_flag = GER_integrate_war_economies }
+						NOT = { 
+							has_state_category = wasteland
+							has_state_category = enclave
+							has_state_category = tiny_island
+							has_state_category = small_island
+							has_state_category = pastoral
+							has_state_category = rural
+						}
 					}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -3220,6 +3358,14 @@ country_event = {
 						size > 1
 						include_locked = yes
 					}
+					NOT = { 
+						has_state_category = wasteland
+						has_state_category = enclave
+						has_state_category = tiny_island
+						has_state_category = small_island
+						has_state_category = pastoral
+						has_state_category = rural
+					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -3235,6 +3381,14 @@ country_event = {
 						building = arms_factory
 						size > 1
 						include_locked = yes
+					}
+					NOT = { 
+						has_state_category = wasteland
+						has_state_category = enclave
+						has_state_category = tiny_island
+						has_state_category = small_island
+						has_state_category = pastoral
+						has_state_category = rural
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -3311,6 +3465,14 @@ country_event = {
 					include_locked = yes
 				}
 				NOT = { has_state_flag = GER_integrate_war_economies }
+				NOT = { 
+					has_state_category = wasteland
+					has_state_category = enclave
+					has_state_category = tiny_island
+					has_state_category = small_island
+					has_state_category = pastoral
+					has_state_category = rural
+				}
 			}
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -3328,6 +3490,14 @@ country_event = {
 					include_locked = yes
 				}
 				NOT = { has_state_flag = GER_integrate_war_economies }
+				NOT = { 
+					has_state_category = wasteland
+					has_state_category = enclave
+					has_state_category = tiny_island
+					has_state_category = small_island
+					has_state_category = pastoral
+					has_state_category = rural
+				}
 			}
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -3345,6 +3515,14 @@ country_event = {
 						size > 1
 						include_locked = yes
 					}
+					NOT = { 
+						has_state_category = wasteland
+						has_state_category = enclave
+						has_state_category = tiny_island
+						has_state_category = small_island
+						has_state_category = pastoral
+						has_state_category = rural
+					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -3360,6 +3538,14 @@ country_event = {
 						building = arms_factory
 						size > 1
 						include_locked = yes
+					}
+					NOT = { 
+						has_state_category = wasteland
+						has_state_category = enclave
+						has_state_category = tiny_island
+						has_state_category = small_island
+						has_state_category = pastoral
+						has_state_category = rural
 					}
 				}
 				add_extra_state_shared_building_slots = 2
