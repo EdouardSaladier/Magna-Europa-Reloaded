@@ -4488,7 +4488,7 @@ focus_tree = {
 							has_state_category = small_island
 							has_state_category = pastoral
 							has_state_category = rural
-						} 
+						}
 					}
 				}
 				random_owned_controlled_state = {
@@ -4497,7 +4497,7 @@ focus_tree = {
 							building = air_base
 							size > 5
 						}
-						NOT = { 
+						NOT = {
 							has_state_category = wasteland
 							has_state_category = enclave
 							has_state_category = tiny_island
@@ -4519,7 +4519,7 @@ focus_tree = {
 				limit = {
 					air_base > 3
 					air_base < 9
-					NOT = { 
+					NOT = {
 						has_state_category = wasteland
 						has_state_category = enclave
 						has_state_category = tiny_island
@@ -4539,7 +4539,7 @@ focus_tree = {
 				limit = {
 					air_base > 3
 					air_base < 9
-					NOT = { 
+					NOT = {
 						has_state_category = wasteland
 						has_state_category = enclave
 						has_state_category = tiny_island
@@ -4559,7 +4559,7 @@ focus_tree = {
 				limit = {
 					air_base > 2
 					air_base < 9
-					NOT = { 
+					NOT = {
 						has_state_category = wasteland
 						has_state_category = enclave
 						has_state_category = tiny_island
@@ -4577,6 +4577,8 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ritter_von_greim
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = hugo_sperrle
 		}
 	}
 
@@ -6274,19 +6276,37 @@ focus_tree = {
 
 		bypass = {
 			AND = {
-				OR = {
-					DEN = { 
-						is_in_faction_with = GER 
-						NOT = { country_exists = DEN }
+				DEN = { 
+					OR = {
+						is_in_faction_with = ROOT
+						exists = no
+					}
+				}
+				NOR = { 
+					OR = {
+						is_in_faction_with = ROOT
+						exists = no
 					}
 				}
 			}
 		}
-		
+
 		available = {
-			POL = {
-				#NOT = { controls_state = 280 } # ingame status of danzig? what will relationship to poland be?
-				NOT = { controls_state = 508 }
+			508 = {
+				controller = {
+					OR = {
+						is_in_faction_with = ROOT
+						original_tag = GER
+					}
+				}
+			}
+			280 = {
+				controller = {
+					OR = {
+						is_in_faction_with = ROOT
+						original_tag = GER
+					}
+				}
 			}
 			OR = { 
 				has_war_with = ENG
@@ -11308,10 +11328,10 @@ focus_tree = {
 							has_government = communism
 							has_government = fascism
 						}
+						is_in_faction = no
+						exists = yes
+						is_subject = no
 					}
-					is_in_faction = no
-					exists = yes
-					is_subject = no
 				}
 				ROM = {
 					country_event = { id = generic.5 }
