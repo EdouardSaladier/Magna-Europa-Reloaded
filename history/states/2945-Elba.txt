@@ -9,10 +9,10 @@ state={
 		add_core_of = ITA
 		add_core_of = TUS
 		add_core_of = PIS
-		buildings = { infrastructure = 1 }
+		buildings = { infrastructure = 3 }
 	}
-	state_category = pastoral
-	manpower=22671
+	state_category = small_island
+	manpower=30184
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
