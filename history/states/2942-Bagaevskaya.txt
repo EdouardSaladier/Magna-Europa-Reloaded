@@ -1,0 +1,19 @@
+
+state={
+	id=2942
+	name="STATE_2942"
+	provinces={
+		9054 13807 
+	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = RUS
+		add_core_of = DON
+		buildings = { infrastructure = 1 }
+	}
+	state_category = pastoral
+	manpower=11277
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
