@@ -51,15 +51,15 @@ set_technology = {
 	#basic_heavy_tank = 1  # PLACEHOLDER
 	#basic_medium_tank = 1 # PLACEHOLDER
 #	early_fighter = 1
-	cv_early_fighter = 1
-	fighter1 = 1
+#	cv_early_fighter = 1
+#	fighter1 = 1
 #	early_bomber = 1
-	tactical_bomber1 = 1
-	tactical_bomber2 = 1
+#	tactical_bomber1 = 1
+#	tactical_bomber2 = 1
 #	naval_bomber1 = 1
-	cv_naval_bomber1 = 1
+#	cv_naval_bomber1 = 1
 #	CAS1 = 1
-	cv_CAS1 = 1
+#	cv_CAS1 = 1
 	trench_warfare = 1
 	fleet_in_being = 1
 	fuel_silos = 1
@@ -150,11 +150,57 @@ if = {
 	}
 	set_naval_oob = "ITA_1936_naval_mtg"
 }
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "ITA_1936_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			engines_1 = 1
+			engines_2 = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_small_airframe = 1
+			basic_medium_airframe = 1
+		}
+	else = {
+		set_air_oob = "ITA_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			naval_bomber1 = 1
+			CAS1 = 1
+		}
+	}
+}
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
 	add_ideas = MTG_naval_treaty_cheating
+}
+
+
+### STOCKPILE ###
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 150
+}
+add_equipment_to_stockpile = {
+	type = gw_armored_car_equipment
+	amount = 150
+}
+add_equipment_to_stockpile = {
+	type = light_tank_chassis_0
+	amount = 150
+	variant_name = "Fiat 3000"
+}
+add_equipment_to_stockpile = {
+	type = light_tank_chassis_0
+	amount = 40
+	variant_name = "Fiat 3000B"
 }
 set_politics = {
 	ruling_party = fascism
@@ -232,6 +278,86 @@ if = {
 
 ### VARIANTS ###
 # 1936 Start #
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	create_equipment_variant = {
+		name = "CR.32" #
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Ca.111" #
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+		icon = "GFX_ITA_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Ca.101" #
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_1_3x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		obsolete = yes
+		icon = "GFX_ITA_early_bomber_old_medium"
+	}
+	create_equipment_variant = {
+		name = "Ca.133" #
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
+			engine_type_slot = engine_1_3x
+			special_type_slot_1 = lmg_defense_turret_2x
+		}
+		obsolete = yes
+		icon = "GFX_ITA_early_bomber_old_medium"
+	}
+	create_equipment_variant = {
+		name = "SM.81" #
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+			engine_type_slot = engine_1_3x
+			special_type_slot_1 = lmg_defense_turret_2x
+		}
+		icon = "GFX_ITA_early_bomber_medium"
+	}
+	create_equipment_variant = {
+		name = "SM.79" #
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+			engine_type_slot = engine_2_3x
+			special_type_slot_1 = lmg_defense_turret_2x
+		}
+		icon = "GFX_ITA_naval_bomber1_medium"
+	}
+	create_equipment_variant = {
+		name = "Ba.65" #
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_ITA_CAS1_medium"
+	}
+
+}
 if = {
 	limit = {
 		has_dlc = "No Step Back"

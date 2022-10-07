@@ -1,0 +1,667 @@
+﻿division_template = {
+	name = "Dywizja Piechoty"		
+	division_names_group = POL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Dywizja Piechoty Górskiej"
+	division_names_group = POL_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }	
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brygada Kawalerii" 
+	division_names_group = POL_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }     
+	}
+}
+
+division_template = {
+	name = "Brygada Pancerna" 
+	division_names_group = POL_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	######## Sztab Generalny Wojska Polskiego ########
+	### Armia Pomorze ###	
+	division= {	# "4 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10923
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "15 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 19922
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "16 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 10920
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+
+	### Armia Poznan ###	
+	division= {	# "14 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 4870
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "17 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 11375
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "25 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 7764
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "Podolska B.K."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 106
+		}
+		location = 8903
+		division_template = "Brygada Kawalerii" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "Wielkopolska B.K."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 109
+		}
+		location = 9585
+		division_template = "Brygada Kawalerii" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	### Armia Lódz ###	
+	division= {	# "2 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 19908
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "7 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 8862
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "10 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9574
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "Kresowa B.K."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location = 12429
+		division_template = "Brygada Kawalerii" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "Wolynska B.K."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 111
+		}
+		location = 12093
+		division_template = "Brygada Kawalerii" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	### Armia Kraków ###	
+	division= {	# "6 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 6862
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "21 Dywizja Piechoty Górskiej"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 12458
+		division_template = "Dywizja Piechoty Górskiej"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "23 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 5322
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "Krakowska B.K."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location = 6862
+		division_template = "Brygada Kawalerii" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	### Armia Modlin ###	
+	division= {	# "8 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 11800
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "26 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 5243
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "28 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 775
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "Nowogródzka B.K."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 104
+		}
+		location = 11767
+		division_template = "Brygada Kawalerii" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "Mazowiecka B.K."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
+		location = 11900
+		division_template = "Brygada Kawalerii" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	### Armia Wilno ###	
+	division= {	# "1 DP Legionów im. Pilsudskiego"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 19927
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "19 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 19941
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "20 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 20002
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "Wilenska B.K."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 110
+		}
+		location = 10736
+		division_template = "Brygada Kawalerii" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	### Armia Wolyn ###	
+	division= {	# "3 Dywizja Piechoty Legionów"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6917
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "11 Karpacka Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 6615
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "12 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 12912
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "24 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 8657
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	## GO Lublin ##	
+	division= {	# "9 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 19913
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "30 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 19913
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	## SGO Narew ##	
+	division= {	# "18 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 2542
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "29 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 2542
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "Suwalska B.K."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 108
+		}
+		location = 11514
+		division_template = "Brygada Kawalerii" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "Pomorska B.K."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 107
+		}
+		location = 11514
+		division_template = "Brygada Kawalerii" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	## SGO Polesie ##	
+	division= {	# "13 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 8988
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "27 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 11775
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	## SGO Lwów ##	
+	division= {	# "5 Dywizja Piechoty"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 249
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "22 Dywizja Piechoty Górskiej"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 249
+		division_template = "Dywizja Piechoty Górskiej"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	
+	division= {	# "1 Brigada Pancerna"
+		name = "1 Brigada Pancerna"
+		location = 249
+		division_template = "Brygada Pancerna" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "POL" version_name = "TKS" } }
+	}
+	
+	division= {	# "2 Brigada Pancerna"
+		name = "2 Brigada Pancerna"
+		location = 249
+		division_template = "Brygada Pancerna" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "POL" version_name = "TKS" } }
+	}
+
+	division= {	# "3 Brigada Pancerna"
+		name = "3 Brigada Pancerna"
+		location = 249
+		division_template = "Brygada Pancerna" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.0
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA" version_name = "FT mod. 31" } }
+	}	
+	
+	division= {	# "4 Brigada Pancerna"
+		name = "4 Brigada Pancerna"
+		location = 249
+		division_template = "Brygada Pancerna" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.0
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "POL" version_name = "7TP dw" amount = 22 } }
+	}		
+	
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "POL"
+		}
+		requested_factories = 2
+		progress = 0.20
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "POL"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 100
+	}
+}
+
+
+	#########################
+	##   ADDING EQUIPMENT  ##
+	#########################
+	
+instant_effect = {	
+
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		producer = "POL"
+		variant_name = "TKS"
+		amount = 55
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		producer = "POL"
+		variant_name = "TKS-Solothurn"
+		amount = 1
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		producer = "POL"
+		variant_name = "TKW"
+		amount = 1
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		producer = "POL"
+		variant_name = "TKD"
+		amount = 4
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_1
+		producer = "POL"
+		variant_name = "4TP"
+		amount = 1
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_0
+		producer = "ENG"
+		variant_name = "Vickers 6 ton A"
+		amount = 16
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_0
+		producer = "ENG"
+		variant_name = "Vickers 6 ton B"
+		amount = 22
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_0
+		producer = "FRA"
+		variant_name = "FT mod. 31"
+		amount = 54
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_0
+		producer = "FRA"
+		variant_name = "FT Char Cannon"
+		amount = 61
+	}
+	
+}	
