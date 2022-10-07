@@ -1,0 +1,29 @@
+state={
+	id=2953
+	name="STATE_2953"
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = VNT
+		buildings = {
+			infrastructure = 4
+			547 = {
+				naval_base = 5
+
+			}
+
+		}
+		victory_points = {
+			547 10
+		}
+
+	}
+	provinces={
+		547 14252 14271 20052 
+	}
+	manpower=311650
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

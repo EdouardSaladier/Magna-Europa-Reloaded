@@ -2,24 +2,29 @@
 state={
 	id=1552
 	name="STATE_1552"
+
 	history={
 		owner = GRE
 		add_core_of = GRE
 		buildings = {
 			infrastructure = 2
-			20292 = { naval_base = 1 }
-			20290 = { naval_base = 1 }
-			20289 = { naval_base = 1 }
+			20292 = {
+				naval_base = 1
+
+			}
+
 		}
 		victory_points = {
-			20292 2 #Mytilíni
+			20292 2 
 		}
+
 	}
+
 	provinces={
-		20289 20290 20291 20292 
+		20291 20292 
 	}
-	manpower=69033
-	state_category=small_island
+	manpower=48033
 	buildings_max_level_factor=1.000
+	state_category=small_island
 	local_supplies=0.000
 }

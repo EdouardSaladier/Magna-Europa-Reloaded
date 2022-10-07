@@ -1,0 +1,23 @@
+state={
+	id=2951
+	name="STATE_2951"
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = VNT
+		add_core_of = FRI
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+	provinces={
+		9040 
+	}
+	manpower=79324
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

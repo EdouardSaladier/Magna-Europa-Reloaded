@@ -458,6 +458,12 @@ highered_armored_production = {
 
 slightly_naval_focused_nation = {
 	enable = {
+		OR = {
+			tag = USA
+			tag = ENG
+			tag = FRA
+			tag = ITA
+		}
 	}
 
 	ai_strategy = {

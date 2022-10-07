@@ -2798,7 +2798,7 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
-			#Pisino
+			#Albona
 		   if = {
 				limit = {
 					FROM.FROM = { state = 2908 }
@@ -2806,18 +2806,13 @@ on_actions = {
 				if = {
 					limit = {
 						ROOT = {
-							is_german = yes
+							OR = {
+								is_yugoslav = yes
+								is_german = yes
+							}
 						}
 					}
-					FROM.FROM = { set_state_name = "Mitterburg" }
-				}
-				else_if = {
-					limit = {
-						ROOT = {
-							is_yugoslav = yes
-						}
-					}
-					FROM.FROM = { set_state_name = "Pazin" }
+					FROM.FROM = { set_state_name = "Labin" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }

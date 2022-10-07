@@ -1,0 +1,15 @@
+is_major_naval = {
+	OR = {
+		original_tag = ITA
+		original_tag = USA
+		original_tag = ENG
+		original_tag = FRA
+	}
+}
+
+ITA_is_italian_tag_for_music = {
+	OR = {
+		original_tag = ITA
+		#more Italian tags to be added
+	}
+}
