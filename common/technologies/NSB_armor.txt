@@ -180,7 +180,7 @@ technologies = {
 				if = { #Italian templates
 					limit = {
 						original_tag = ITA
-						has_completed_focus = ITA_italian_tankettes
+					#	has_completed_focus = ITA_italian_tankettes
 					}
 					ITA_add_improved_light_tank_templates = yes
 				}
@@ -295,7 +295,7 @@ technologies = {
 			if = { #Italian templates
 				limit = {
 					original_tag = ITA
-					has_completed_focus = ITA_italian_tankettes
+				#	has_completed_focus = ITA_italian_tankettes
 				}
 				ITA_add_improved_light_tank_templates = yes
 			}
@@ -595,8 +595,8 @@ technologies = {
 				limit = {
 					original_tag = ITA
 					OR = {
-						has_completed_focus = ITA_end_fiat_ansaldo_duopoly
-						has_completed_focus = ITA_modernize_ansaldo_facilities
+					#	has_completed_focus = ITA_end_fiat_ansaldo_duopoly
+					#	has_completed_focus = ITA_modernize_ansaldo_facilities
 					}
 				}
 				ITA_add_improved_medium_tank_templates = yes
@@ -672,7 +672,7 @@ technologies = {
 			if = { #Italian templates
 				limit = {
 					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
+				#	has_completed_focus = ITA_ferrea_mole_ferreo_cuore
 				}
 				ITA_add_advanced_medium_tank_templates = yes
 			}
@@ -862,8 +862,8 @@ technologies = {
 				limit = {
 					original_tag = ITA
 					OR = {
-						has_completed_focus = ITA_end_fiat_ansaldo_duopoly
-						has_completed_focus = ITA_modernize_ansaldo_facilities
+					#	has_completed_focus = ITA_end_fiat_ansaldo_duopoly
+					#	has_completed_focus = ITA_modernize_ansaldo_facilities
 					}
 				}
 				ITA_add_improved_heavy_tank_templates = yes
@@ -921,7 +921,7 @@ technologies = {
 			if = { #Italian templates
 				limit = {
 					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
+				#	has_completed_focus = ITA_ferrea_mole_ferreo_cuore
 				}
 				ITA_add_advanced_heavy_tank_templates = yes
 			}
@@ -983,19 +983,19 @@ technologies = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = ITA_capo_supremo
+					#	has_completed_focus = ITA_capo_supremo
 					}
 					ITA_add_il_duce_sh_tank_template_and_production = yes
 				}
 				else_if = {
 					limit = {
-						has_completed_focus = ITA_modern_musculus
+					#	has_completed_focus = ITA_modern_musculus
 					}
 					ITA_add_modern_musculus_sh_tank_template_and_production = yes
 				}
 				else_if = {
 					limit = {
-						has_completed_focus = ITA_a_time_for_war
+					#	has_completed_focus = ITA_a_time_for_war
 					}
 					ITA_add_hand_of_god_sh_tank_template_and_production = yes
 				}
