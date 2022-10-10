@@ -226,6 +226,18 @@ instant_effect = {
 		progress = 0.25
 		amount = 4
 	}
+	# CV: Graf Zeppelin (x1)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_carrier_1
+			creator = "GER"
+			version_name = "Graf Zeppelin Class"
+		}
+		name = "Graf Zeppelin"
+		requested_factories = 1
+		progress = 0.1
+		amount = 1
+	}
 }
 
 #####################

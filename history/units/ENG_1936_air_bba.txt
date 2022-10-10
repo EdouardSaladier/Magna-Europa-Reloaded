@@ -176,12 +176,6 @@ air_wings = {
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 version_name = "Blackburn Shark" }
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 4 version_name = "Blackburn Shark" } #historical 36
 	}
-	"HMS Eagle"  = {
-		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 10 version_name = "Hawker Nimrod" }
-		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 8 version_name = "Hawker Nimrod" }
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 version_name = "Blackburn Shark" }
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 8 version_name = "Blackburn Shark" }
-	}
 }
 
 	#########################
