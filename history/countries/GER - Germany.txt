@@ -741,7 +741,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = carrier_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
-			front_1_custom_slot = ship_deck_space
+			front_1_custom_slot = empty
 		}
 	}
 }
@@ -922,7 +922,6 @@ if = {
 			engine_type_slot = engine_1_1x
 			fixed_auxiliary_weapon_slot_1 = recon_camera
 			special_type_slot_1 = lmg_defense_turret
-			special_type_slot_2 = floats
 		}
 	}
 }
