@@ -45,3 +45,7 @@ NDefines.NGraphics.SHIPS_DISTANCE_CUTOFF = 360
 NDefines.NGraphics.MAP_ICONS_GROUP_CAM_DISTANCE = 145.0 -- camera distance at which the icons begin to group up
 NDefines.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 270.0 -- Camera distance at which the icons begin to group up on state level
 NDefines.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 525 -- second camera distance at which the icons begin to group up
+
+NDefines.NMapMode.MAP_MODE_MANPOWER_RANGE_MAX = 5000000
+NDefines.NMapMode.MAP_MODE_MANPOWER_RANGE_COLOR_FROM = { 0.2, 0.2, 0.7, 0.5 }
+NDefines.NMapMode.MAP_MODE_MANPOWER_RANGE_COLOR_TO = { 1, 0.125, 0.0, 0.75 }
