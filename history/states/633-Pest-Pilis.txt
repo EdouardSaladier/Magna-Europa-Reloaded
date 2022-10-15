@@ -3,23 +3,24 @@ state={
 	id=633
 	name="STATE_633"
 
-	history = {
+	history={
 		owner = HUN
 		add_core_of = HUN
 		buildings = {
 			infrastructure = 4
+
 		}
 		victory_points = {
-			20863 80 
+			18280 80 
 		}
 
 	}
 
 	provinces={
-		619 3102 6226 6626 8002 9578 13631 13671 13809 18280 20863 
+		619 6226 6626 8002 13631 13809 18280 
 	}
-	manpower=2267608
+	manpower=1778823
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=metropolis
 	local_supplies=0.000
 }
