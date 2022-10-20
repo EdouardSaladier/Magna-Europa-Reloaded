@@ -16,13 +16,39 @@ division_template = {
 		infantry = { x = 2 y = 0 } 
 		infantry = { x = 2 y = 1 } 
 		infantry = { x = 2 y = 2 } 
+		artillery_brigade = { x= 3 y = 0 }
+		artillery_brigade = { x= 3 y = 1 }
 	} 
 	support = { 
 		engineer = { x = 0 y = 0 } 
 		anti_air = { x = 0 y = 1 } 
-		artillery = { x = 0 y = 2 } 
 	} 
 } 
+
+division_template = { #Blackshirts
+	name = "Camicie Nere" 
+	division_names_group = ITA_INF_02
+	template_counter = 68
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 12 #WARNING THIS VALUE NEEDS TOP MATCH THE value in var ITA_militias_cap set in history file
+
+	# Represents nearly all infantry divisions
+	# In later years, CC.NN. Brigade added to INF Division (1x2 MIL/INF regiments)
+	# Also represent semi-mountain divisions (1st, 2nd, 3rd, 4th, 6th Divisions)
+	regiments = { 
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+						   
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+	}
+	support = { 
+		engineer = { x = 0 y = 0 }
+	}
+}
 
 division_template = { 
 	name = "Divisione Alpina" 
@@ -32,9 +58,11 @@ division_template = {
 		mountaineers = { x = 0 y = 0 } 												# (elite) Alpini Regiment
 		mountaineers = { x = 0 y = 1 } 
 		mountaineers = { x = 0 y = 2 } 
+		mountaineers = { x = 0 y = 3 } 
 		mountaineers = { x = 1 y = 0 } 
 		mountaineers = { x = 1 y = 1 } 
 		mountaineers = { x = 1 y = 2 } 
+		mountaineers = { x = 1 y = 3 } 
 	} 
 	support = { 
 		engineer = { x = 0 y = 0 } 
@@ -42,23 +70,6 @@ division_template = {
 	} 
 
 	priority = 2 
-} 
-
-division_template = { 
-	name = "Divisione Coloniale" 
-	division_names_group = ITA_COL_01 
-
-	# Represents lesser-equipped colonial units
-	regiments = { 
-		infantry = { x = 0 y = 0 } 
-		infantry = { x = 0 y = 1 } 
-		infantry = { x = 0 y = 2 } 
-		infantry = { x = 1 y = 0 } 
-		infantry = { x = 1 y = 1 } 
-		infantry = { x = 1 y = 2 } 
-	} 
-
-	priority = 0 
 } 
 
 division_template = { 
@@ -105,7 +116,90 @@ division_template = {
 		artillery = { x = 0 y = 0} 
 	}
 	priority = 2 
-} 
+}  
+
+
+#############################
+###### ASCARI INFANTRY ######
+#############################
+
+### GENERIC ASCARI TEMPLATES ### (Eritrean Model)
+
+division_template = { 
+	name = "Divisione Coloniale" 
+	division_names_group = ITA_COL_01
+	override_model = ITA_infantry_alt_1_entity
+	template_counter = 67
+	#is_locked = yes
+
+	# Represents lesser-equipped colonial units
+	regiments = { 
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+
+	priority = 0 
+}
+
+
+### LIBYAN ASCARI TEMPLATES ###
+
+division_template = { 
+	name = "Divisione Ascari Libica" 
+	division_names_group = ITA_COL_01
+	override_model = ITA_infantry_alt_2_entity
+	template_counter = 67
+	#is_locked = yes
+	obsolete = yes
+
+	# Represents lesser-equipped colonial units
+	regiments = { 
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+
+	priority = 0 
+}
+
+
+### LIBYAN IRREGULAR INFANTRY ###
+
+division_template = {
+	name = "Banda Irregolare Libica"		
+	division_names_group = ITA_COL_02
+	override_model = ITA_irregular_infantry_alt_0_entity
+	template_counter = 66
+	obsolete = yes
+	is_locked = yes
+	# Note: Represents irregular infantry from the colonies (daskalian, dubats and other "bands")
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+	}
+	priority = 0 
+}
+
+division_template = {
+	name = "Truppe Irregolari a Cavallo"		
+	division_names_group = ITA_CAV_05
+	override_model = ITA_cavalry_alt_3_entity
+	template_counter = 5
+	is_locked = yes
+	# Note: Represents irregular cavalry from the colonies (daskalian, dubats and other "bands")
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		#cavalry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
 
 
 ####### OOB #######
@@ -576,14 +670,14 @@ instant_effect = {
 		type = light_tank_chassis_0
 		producer = "ITA"
 		variant_name = "Fiat 3000/21"
-		amount = 50
+		amount = 150
 	}
 	
 	add_equipment_to_stockpile = {
 		type = light_tank_chassis_0
 		producer = "ITA"
 		variant_name = "Fiat 3000/30"
-		amount = 25
+		amount = 40
 	}
 
 	add_equipment_to_stockpile = {
