@@ -210,7 +210,7 @@ add_equipment_to_stockpile = {
 	amount = 150
 }
 if = {
-	limit = { has_dlc =  }
+	limit = { has_dlc = "La Resistance" }
 	add_equipment_to_stockpile = {
 		type = gw_armored_car_equipment
 		amount = 150
