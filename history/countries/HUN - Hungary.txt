@@ -1,11 +1,11 @@
 ﻿capital = 633
 
-#oob = "HUN_1936"
-
 set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.6
-
+add_ideas = {
+	disarmed_nation
+}
 
 # Starting tech
 set_technology = {
@@ -19,17 +19,6 @@ set_technology = {
 #	CAS1 = 1
 	fuel_silos = 1
 	basic_train = 1
-}
-
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	give_guarantee = AUS
-	add_ideas = {
-		disarmed_nation
-	#	HUN_treaty_of_triannon
-	}
 }
 
 if = {
@@ -57,30 +46,10 @@ if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
 	}
-	give_guarantee = AUS
 	add_ideas = {
 		disarmed_nation
-	#	HUN_treaty_of_triannon
 	}
 }
-
-#if = {
-#	limit = {
-#		has_dlc = Battle for the Bosporus
-#	}
-#	add_opinion_modifier = { 
-#		target = CZE
-#		modifier = BFTB_incongruous_neighbors
-#	}
-#	add_opinion_modifier = { 
-#		target = ROM
-#		modifier = BFTB_incongruous_neighbors
-#	}
-#	add_opinion_modifier = { 
-#		target = YUG
-#		modifier = BFTB_incongruous_neighbors
-#	}
-#}
 
 #Start Horty as neutral if DOD
 recruit_character = HUN_miklos_horthy

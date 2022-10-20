@@ -1,5 +1,23 @@
 ﻿capital = 358
 
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			early_bombs = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+		}
+	}
+}
+
 set_research_slots = 3
 set_stability = 0.75
 set_war_support = 0
@@ -12,8 +30,6 @@ set_technology = {
 	tech_recon = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-#	early_fighter = 1
-#	early_bomber = 1
 	fuel_silos = 1
 	fuel_refining = 1
 	marines = 1
@@ -52,28 +68,11 @@ if = {
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		coastal_defense_ships = 1
 		mtg_transport = 1
 	}
 }
-
-#add_ideas = {
-#	HOL_wilhelmina
-#}
-#
-#if = {
-#	limit = {
-#		has_dlc = "Man the Guns"
-#	}
-#	add_ideas = {
-#		HOL_aloof_neutrality
-#		HOL_shell_shocked_spectator_5
-#		HOL_de_crisisjaren_5
-#		HOL_weak_government
-#	}
-#}
 
 recruit_character = HOL_hendrikus_colijn
 recruit_character = HOL_anton_mussert
@@ -127,6 +126,32 @@ set_stability = 0.75
 
 ### VARIANTS ###
 # 1936 Start #
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "Fokker C.X" #also represents Fokker C.V
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Fokker T.IV"
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = flying_boat_medium
+		}
+	}
+}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
@@ -285,4 +310,3 @@ if = {
 		}
 	}
 }
-

@@ -1,6 +1,13 @@
 ﻿capital = 315
 
-set_research_slots = 3
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+
+		}
+	}
 
 recruit_character = DEN_thorvald_stauning
 recruit_character = DEN_frits_clausen
@@ -35,8 +42,6 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-#	early_fighter = 1
-	cv_early_fighter = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -56,14 +61,12 @@ if = {
 		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
-		basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_torpedo = 1
 		coastal_defense_ships = 1
 		mtg_transport = 1
 	}
 }
-
 
 if = {
 	limit = { has_dlc = "No Step Back" }
@@ -72,20 +75,28 @@ if = {
 		autonomy_state = autonomy_personal_union
 	}
 	else_if = {
-		limit = { has_dlc = "Together for Victory" }
+		limit = { OR = { has_dlc = "Together for Victory" has_dlc = "Man the Guns" } }
 		set_autonomy = {
 			target = ICE
 			autonomy_state = autonomy_dominion
 		}
-		else_if = {
-			limit = { has_dlc = "Man the Guns" }
-			set_autonomy = {
-				target = ICE
-				autonomy_state = autonomy_supervised_state
-			}
-		}
 	}
+	else = { annex_country = { target = ICE } }
 }
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.22"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 97
+	fascism = 1
+	communism = 2
+}
+
+set_convoys = 40
 
 if = {
 	limit = {
@@ -114,14 +125,9 @@ if = {
 		not = { has_dlc = "Man the Guns" }
 	}
 	set_technology = {
-		early_submarine = 1
 		basic_submarine = 1
-		early_destroyer = 1
 		early_light_cruiser = 1
-		early_heavy_cruiser = 1
 		early_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
 	}
 }
 if = {
@@ -129,31 +135,10 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
-		mtg_transport = 1
-		basic_battery = 1
-		basic_torpedo = 1
 	}
 }
-
-
-set_politics = {
-	ruling_party = democratic
-	last_election = "1935.10.22"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	democratic = 97
-	fascism = 1
-	communism = 2
-}
-
-set_convoys = 40
 
 ### VARIANTS ###
 # 1936 Start #
@@ -214,5 +199,3 @@ if = {
 		}
 	}
 }
-
-

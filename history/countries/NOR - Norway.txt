@@ -1,5 +1,16 @@
 ﻿capital = 124
 
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	else = {
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+
+		}
+	}
+}
+
 recruit_character = NOR_johan_nygaardsvold
 recruit_character = NOR_vidkun_quisling
 recruit_character = NOR_johan_ludwig_mowinckel
@@ -40,8 +51,6 @@ set_technology = {
 	interwar_antiair = 1
 	tech_support = 1		
 	tech_engineers = 1
-#	early_fighter = 1
-#	early_bomber = 1
 	tech_recon = 1
 	basic_train = 1
 }
@@ -63,7 +72,6 @@ if = {
 		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
-		basic_secondary_battery = 1
 		basic_torpedo = 1
 		coastal_defense_ships = 1
 	}

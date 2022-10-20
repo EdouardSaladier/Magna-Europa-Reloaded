@@ -27,11 +27,8 @@ recruit_character = FIN_ake_henrik_gartz
 
 
 add_ideas = {
-	extensive_conscription
+	limited_conscription
 }
-#add_ideas = {
-#	sisu
-#}
 
 set_technology = {
 	infantry_weapons = 1
@@ -59,7 +56,6 @@ if = {
 		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
-		basic_secondary_battery = 1
 		coastal_defense_ships = 1
 	}
 }
@@ -130,6 +126,3 @@ if = {
 		}
 	}
 }
-
-
-

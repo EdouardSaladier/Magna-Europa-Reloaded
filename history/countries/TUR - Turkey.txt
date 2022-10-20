@@ -1,5 +1,15 @@
 ﻿capital = 979
 
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	else = {
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
 
 # Starting tech
 
@@ -13,9 +23,6 @@ set_technology = {
 	tech_support = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-#	early_fighter = 1
-#	early_bomber = 1
-#	CAS1 = 1
 	basic_train = 1
 }
 if = {
@@ -60,35 +67,16 @@ if = {
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_battery = 1
-		basic_secondary_battery = 1
 		basic_torpedo = 1
 		coastal_defense_ships = 1
 		mtg_transport = 1
 	}
 }
 
-1936.1.1 = {
-	if = { 
-		limit = { has_dlc = "Battle for the Bosporus" }	
-		add_ideas = {
-			limited_conscription
-			export_focus
-			civilian_economy
-		#	TUR_kemalist_army_officers_limited_power_loyal
-		#	TUR_sectarian_woes
-		#	TUR_disorganised_armed_forces
-		#	TUR_debt_council
-		}
-	}
-
-	if = { 
-		limit = { NOT = { has_dlc = "Battle for the Bosporus" }	}
-		add_ideas = {
-			limited_conscription
-			export_focus
-			civilian_economy
-		}
-	}
+add_ideas = {
+	limited_conscription
+	export_focus
+	civilian_economy
 }
 
 set_politics = {
@@ -104,7 +92,6 @@ set_popularities = {
 set_convoys = 20
 set_stability = 0.5
 set_war_support = 0.3
-
 
 if = {
 	limit = { has_dlc = "Battle for the Bosporus" }
@@ -210,7 +197,7 @@ if = {
 	create_operative_leader = {
 		name = "Ruzi Nazar"
 		GFX = "GFX_portrait_tur_ruzi_nazar"
-	#	traits = { operative_tough operative_commando }
+		traits = { operative_tough operative_commando }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = no
@@ -366,5 +353,3 @@ if = {
 		}
 	}
 }
-
-
