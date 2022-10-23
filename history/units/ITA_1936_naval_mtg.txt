@@ -16,15 +16,15 @@ units= {
 			ship = { name = "Gorizia" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
 			ship = { name = "Fiume" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
 			# IV Divisione Incrociatori
-			ship = { name = "Luigi Cadorna" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
-			ship = { name = "Armando Diaz" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
-			ship = { name = "Alberico da Barbiano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
-			ship = { name = "Alberto da Giussano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
+			ship = { name = "Luigi Cadorna" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Di Giussano/Cadorna Class" } } } 
+			ship = { name = "Armando Diaz" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Di Giussano/Cadorna Class" } } } 
+			ship = { name = "Alberico da Barbiano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Di Giussano/Cadorna Class" } } } 
+			ship = { name = "Alberto da Giussano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Di Giussano/Cadorna Class" } } } 
 			# Gruppo Incrociatori (Obsoleti)
 			ship = { name = "San Giorgio" definition = heavy_cruiser equipment = { ship_hull_cruiser_1= { amount = 1 owner = ITA version_name = "San Giorgio Class" } } } 
-			ship = { name = "San Marco" definition = heavy_cruiser equipment = { ship_hull_cruiser_1= { amount = 1 owner = ITA version_name = "San Giorgio Class" } } } 
 			ship = { name = "Taranto" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Taranto Class" } } } 
 			ship = { name = "Bari" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Taranto Class" } } }	
+			ship = { name = "Ancona" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Ancona" } } }	
 			ship = { name = "Giuseppe Miraglia" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giuseppe Miraglia Class" } } }	
 			# Gruppo Esploratori Leggeri (Obsoleti)
 			ship = { name = "Carlo Mirabello" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Mirabello/Leone Class" } } } 
@@ -93,8 +93,8 @@ units= {
 			# Comando di Squadra
 			ship = { name = "Pola" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
 			# II Divisione Incrociatori
-			ship = { name = "Giovanni dalle Bande Nere" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
-			ship = { name = "Bartolomeo Colleoni" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
+			ship = { name = "Giovanni dalle Bande Nere" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Di Giussano/Cadorna Class" } } } 
+			ship = { name = "Bartolomeo Colleoni" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Di Giussano/Cadorna Class" } } } 
 			# III Divisione Incrociatori
 			ship = { name = "Bolzano" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Bolzano Class" } } } 
 			ship = { name = "Trento" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Trento Class" } } } 
@@ -251,9 +251,11 @@ units= {
 			# IV Squadriglia Cacciatorpediniere
 			ship = { name = "Francesco Crispi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Sella Class" } } } 
 			ship = { name = "Quintino Sella" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Sella Class" } } } 
+			ship = { name = "Alessandro Poerio" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Aquila/Poerio Class" } } } 
 			# VIII Squadriglia Torpediniere
 			ship = { name = "Astore" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Spica Class" } } } 
 			ship = { name = "Spica" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Spica Class" } } } 
+			ship = { name = "Guglielmo Pepe" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Aquila/Poerio Class" } } } 
 		} 
 		task_force = { 
 			name = "VI Gruppo Sommergibili"	
@@ -297,6 +299,7 @@ units= {
 		task_force = { 
 			name = "Squadra di Mar Rosso" 
 			location = 20317 #Dodecanese
+			ship = { name = "Quarto" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Quarto" } } } 
 			# III Squadriglia Cacciatorpediniere
 			ship = { name = "Francesco Nullo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Sella Class" } } } 
 			ship = { name = "Nazario Sauro" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Sella Class" } } } 
