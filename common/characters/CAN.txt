@@ -1,11 +1,7 @@
 characters={
 	CAN_mackenzie_king={
 		name=CAN_mackenzie_king
-		portraits={
-			civilian={
-				large=GFX_portrait_CAN_mackenzie_king
-			}
-		}
+		portraits={ civilian={ large=GFX_portrait_CAN_mackenzie_king } }
 		country_leader={
 			ideology=liberalism
 			expire="1965.1.1.1"
@@ -15,11 +11,7 @@ characters={
 
 	CAN_adrien_arcand={
 		name=CAN_adrien_arcand
-		portraits={
-			civilian={
-				large="GFX_CAN_adrien_arcand"
-			}
-		}
+		portraits={ civilian={ large="GFX_CAN_adrien_arcand" } }
 		country_leader={
 			ideology=nazism
 			expire="1965.1.1.1"
@@ -29,11 +21,7 @@ characters={
 
 	CAN_tim_buck={
 		name=CAN_tim_buck
-		portraits={
-			civilian={
-				large=GFX_portrait_CAN_tim_buck
-			}
-		}
+		portraits={ civilian={ large=GFX_portrait_CAN_tim_buck } }
 		country_leader={
 			ideology=marxism
 			expire="1965.1.1.1"
@@ -43,11 +31,7 @@ characters={
 
 	CAN_j_s_woodsworth={
 		name=CAN_j_s_woodsworth
-		portraits={
-			civilian={
-				large=GFX_portrait_CAN_j_s_woodsworth
-			}
-		}
+		portraits={ civilian={ large=GFX_portrait_CAN_j_s_woodsworth } }
 		country_leader={
 			ideology=centrism
 			expire="1965.1.1.1"
@@ -203,317 +187,194 @@ characters={
 		}
 	}
 
-
 	### THEORISTS ###
 
 	CAN_kenneth_stuart={
 		name=CAN_kenneth_stuart
-		portraits={
-			army={
-				small="GFX_idea_CAN_kenneth_stuart" #small="GFX_idea_generic_army_europe_1"
-			}
-		}
+		portraits={ army={ small="GFX_idea_CAN_kenneth_stuart" } }
 		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = CAN_kenneth_stuart
-			ledger = army
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				military_theorist
-			}
+			cost=100
+			slot=theorist
+			idea_token=CAN_kenneth_stuart
+			ledger=army
+			allowed={ original_tag=CAN }
+			traits={ military_theorist }
 		}
 	}
 
 	CAN_george_volkoff={
 		name=CAN_george_volkoff
-		portraits={
-			army={
-				small="GFX_idea_CAN_george_volkoff" #small="GFX_idea_generic_political_advisor_europe_2"
-			}
-		}
+		portraits={ army={ small="GFX_idea_CAN_george_volkoff" } }
 		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = CAN_george_volkoff
-			ledger = army
-			allowed = {
-				original_tag = CAN
-				has_dlc = "Together for Victory"
+			cost=100
+			slot=theorist
+			idea_token=CAN_george_volkoff
+			ledger=army
+			allowed={
+				original_tag=CAN
+				has_dlc= "Together for Victory"
 			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
+			research_bonus={ nuclear=0.150 }
+			traits={ nuclear_scientist }
 		}
 	}
 
 	CAN_robert_leckie={
 		name=CAN_robert_leckie
-		portraits={
-			army={
-				small="GFX_idea_CAN_robert_leckie" #small="GFX_idea_generic_air_europe_2"
-			}
-		}
+		portraits={ army={ small="GFX_idea_CAN_robert_leckie" } }
 		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = CAN_robert_leckie
-			ledger = air
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				air_warfare_theorist
-			}
+			cost=100
+			slot=theorist
+			idea_token=CAN_robert_leckie
+			ledger=air
+			allowed={ original_tag=CAN }
+			traits={ air_warfare_theorist }
 		}
 	}
-
 
 	### ARMY CHIEFS ###
 
 	CAN_harry_crerar={
 		name=CAN_harry_crerar
-		portraits={
-			army={
-				small="GFX_idea_CAN_harry_crerar" #small="GFX_idea_generic_army_europe_4"
-			}
-		}
+		portraits={ army={ small="GFX_idea_CAN_harry_crerar" } }
 		advisor={	
-			slot = army_chief
-			idea_token = CAN_harry_crerar
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				army_chief_old_guard
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
+			slot=army_chief
+			idea_token=CAN_harry_crerar
+			allowed={ original_tag=CAN }
+			traits={ army_chief_old_guard }
+			ai_will_do={ factor=1.000 }
 		}
 	}
 
 	CAN_andrew_mcnaughton={
 		name=CAN_andrew_mcnaughton
-		portraits={
-			army={
-				small="GFX_idea_CAN_andrew_mcnaughton" #small="GFX_idea_generic_army_europe_3"
-			}
-		}
+		portraits={ army={ small="GFX_idea_CAN_andrew_mcnaughton" } }
 		advisor={
-			slot = army_chief
-			idea_token = CAN_andrew_mcnaughton
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
+			slot=army_chief
+			idea_token=CAN_andrew_mcnaughton
+			allowed={ original_tag=CAN }
+			traits={ army_chief_offensive_2 }
+			cost=100
+			ai_will_do={ factor=1.000 }
+		}
 	}
 
 	CAN_george_pearkes={
 		name=CAN_george_pearkes
-		portraits={
-			army={
-				small="GFX_idea_CAN_george_pearkes" #small="GFX_idea_generic_army_europe_3"
-			}
-		}
+		portraits={ army={ small="GFX_idea_CAN_george_pearkes" } }
 		advisor={
-			slot = army_chief
-			idea_token = CAN_george_pearkes
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				army_chief_defensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			slot=army_chief
+			idea_token=CAN_george_pearkes
+			allowed={ original_tag=CAN }
+			traits={ army_chief_defensive_2 }
+			cost=100
+			ai_will_do={ factor=1.000 }
 		}
 	}
-
 
 	### NAVY CHIEFS ###
 
 	CAN_percy_nelles={
 		name=CAN_percy_nelles
-		portraits={
-			army={
-				small="GFX_idea_CAN_percy_nelles" #small="GFX_idea_generic_navy_europe_3"
-			}
-		}
+		portraits={ army={ small="GFX_idea_CAN_percy_nelles" } }
 		advisor={
-			slot = navy_chief
-			idea_token = CAN_percy_nelles
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				navy_chief_decisive_battle_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			slot=navy_chief
+			idea_token=CAN_percy_nelles
+			allowed={ original_tag=CAN }
+			traits={ navy_chief_decisive_battle_2 }
+			cost=100
+			ai_will_do={ factor=1.000 }
 		}
 	}
 
 	CAN_alasdair_murray={
 		name=CAN_alasdair_murray
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_1"
-			}
-		}
+		portraits={ army={ small="GFX_idea_generic_navy_europe_1" } }
 		advisor={
-			slot = navy_chief
-			idea_token = CAN_alasdair_murray
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				navy_chief_commerce_raiding_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			slot=navy_chief
+			idea_token=CAN_alasdair_murray
+			allowed={ original_tag=CAN }
+			traits={ navy_chief_commerce_raiding_2 }
+			cost=100
+			ai_will_do={ factor=1.000 }
 		}
 	}
 
 	CAN_george_jones={
 		name=CAN_george_jones
-		portraits={
-			army={
-				small="GFX_idea_CAN_george_jones" #small="GFX_idea_generic_navy_europe_1"
-			}
-		}
+		portraits={ army={ small="GFX_idea_CAN_george_jones" } }
 		advisor={
-			slot = navy_chief
-			idea_token = CAN_george_jones
-			allowed = {
-				original_tag = CAN
-				has_dlc = "Together for Victory"
+			slot=high_command
+			idea_token=CAN_george_jones
+			allowed={
+				original_tag=CAN
+				has_dlc= "Together for Victory"
 			}
-			traits = {
-				navy_anti_submarine_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			traits={ navy_anti_submarine_2 }
+			cost=100
+			ai_will_do={ factor=1.000 }
 		}
 	}
-
 
 	### AIR CHIEFS ###
 
 	CAN_lloyd_samuel_breadner={
 		name=CAN_lloyd_samuel_breadner
-		portraits={
-			army={
-				small="GFX_idea_CAN_lloyd_samuel_breadner" #small="GFX_idea_generic_air_europe_2"
-			}
-		}
+		portraits={ army={ small="GFX_idea_CAN_lloyd_samuel_breadner" } }
 		advisor={
-			slot = air_chief
-			idea_token = CAN_lloyd_samuel_breadner
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				air_air_superiority_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			slot=high_command
+			idea_token=CAN_lloyd_samuel_breadner
+			allowed={ original_tag=CAN }
+			traits={ air_air_superiority_2 }
+			cost=100
+			ai_will_do={ factor=1.000 }
 		}
 	}
 
 	CAN_george_croil={
 		name=CAN_george_croil
-		portraits={
-			army={
-				small="GFX_idea_CAN_george_croil" #small="GFX_idea_generic_air_europe_1"
-			}
-		}
+		portraits={ army={ small="GFX_idea_CAN_george_croil" } }
 		advisor={
-			slot = air_chief
-			idea_token = CAN_george_croil
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				air_chief_safety_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			slot=air_chief
+			idea_token=CAN_george_croil
+			allowed={ original_tag=CAN }
+			traits={ air_chief_safety_2 }
+			cost=100
+			ai_will_do={ factor=1.000 }
 		}
 	}
 
 	CAN_harold_edwards={
 		name=CAN_harold_edwards
-		portraits={
-			army={
-				small="GFX_idea_CAN_harold_edwards" #small="GFX_idea_generic_air_europe_3"
-			}
-		}
+		portraits={ army={ small="GFX_idea_CAN_harold_edwards" } }
 		advisor={
-			slot = air_chief
-			idea_token = CAN_harold_edwards
-			allowed = {
-				original_tag = CAN
-				has_dlc = "Together for Victory"
+			slot=air_chief
+			idea_token=CAN_harold_edwards
+			allowed={
+				original_tag=CAN
+				has_dlc= "Together for Victory"
 			}
-			traits = {
-				air_chief_reform_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			traits={ air_chief_reform_2 }
+			cost=100
+			ai_will_do={ factor=1.000 }
 		}
 	}
 
 	CAN_raymond_collishaw={
 		name=CAN_raymond_collishaw
-		portraits={
-			army={
-				small="GFX_idea_CAN_raymond_collishaw" #small="GFX_idea_generic_air_europe_3"
-			}
-		}
+		portraits={ army={ small="GFX_idea_CAN_raymond_collishaw" } }
 		advisor={
-			slot = air_chief
-			idea_token = CAN_raymond_collishaw
-			allowed = {
-				original_tag = CAN
-				has_dlc = "Together for Victory"
+			slot=air_chief
+			idea_token=CAN_raymond_collishaw
+			allowed={
+				original_tag=CAN
+				has_dlc= "Together for Victory"
 			}
-			traits = {
-				air_air_combat_training_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			traits={ air_chief_safety_2 }
+			cost=100
+			ai_will_do={ factor=1.000 }
 		}
 	}
-
 
 	### MILITARY HIGH COMMAND ###
 
@@ -634,7 +495,7 @@ characters={
 					limit = {
 						has_dlc = "Together for Victory"
 					}
-				#	has_completed_focus = CAN_swastika_clubs 
+					has_completed_focus = CAN_swastika_clubs 
 				}
 				if = {
 					limit = {
@@ -678,8 +539,8 @@ characters={
 						has_dlc = "Together for Victory"
 					}
 					OR = {
-					#	has_completed_focus = CAN_strengthen_the_commonwealth_ties 
-					#	has_completed_focus = CAN_permanent_joint_defense_board 
+						has_completed_focus = CAN_strengthen_the_commonwealth_ties 
+						has_completed_focus = CAN_permanent_joint_defense_board 
 					}
 				}
 				if = {
@@ -723,7 +584,7 @@ characters={
 					limit = {
 						has_dlc = "Together for Victory"
 					}
-				#	has_completed_focus = CAN_burn_the_royal_portraits 
+					has_completed_focus = CAN_burn_the_royal_portraits 
 				}
 				if = {
 					limit = {
@@ -860,7 +721,7 @@ characters={
 				has_dlc = "Together for Victory"
 			}
 			available = {
-			#	has_completed_focus = CAN_forced_quebec_conscription 
+				has_completed_focus = CAN_forced_quebec_conscription 
 			}
 			traits = {
 				compassionate_gentleman 
@@ -884,7 +745,7 @@ characters={
 				has_dlc = "Together for Victory"
 			}
 			available = {
-			#	has_completed_focus = CAN_crown_corporations 
+				has_completed_focus = CAN_crown_corporations 
 			}
 			traits = {
 				captain_of_industry 
