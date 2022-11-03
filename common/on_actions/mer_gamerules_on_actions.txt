@@ -1,0 +1,53 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = sov_fragmentation_status
+						option = SOV_FRAGMENTED
+					}
+				}
+				SOV = {
+					release = BLR
+					release = UKR
+					release = TCC
+					release = KAZ
+					release = UZB
+					release = TMS
+				}
+				SOV = {
+					set_autonomy = { target = BLR autonomy_state = autonomy_integrated_puppet }
+					set_autonomy = { target = UKR autonomy_state = autonomy_integrated_puppet }
+					set_autonomy = { target = TCC autonomy_state = autonomy_integrated_puppet }
+					set_autonomy = { target = KAZ autonomy_state = autonomy_integrated_puppet }
+					set_autonomy = { target = UZB autonomy_state = autonomy_integrated_puppet }
+					set_autonomy = { target = TMS autonomy_state = autonomy_integrated_puppet }
+					
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = sov_fragmentation_status
+						option = SOV_UTTERLY_FRAGMENTED
+					}
+				}
+				SOV = {
+					release = BLR
+					release = UKR
+					release = TCC
+					release = KAZ
+					release = UZB
+					release = TMS
+				}
+				every_state = {
+					limit = {
+						is_core_of = RUS
+					}
+					transfer_state_to = SOV
+				}
+			}
+		}
+	}
+}
