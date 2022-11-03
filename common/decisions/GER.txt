@@ -468,7 +468,7 @@ GER_reichskommissariats = {
 		}
 
 		visible = {
-		#	has_completed_focus = GER_form_the_reichskommissariats
+			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 		}
 
@@ -1815,7 +1815,7 @@ GER_ordenstaats = {
 		}
 
 		visible = {
-			#has_completed_focus = GER_form_the_reichskommissariats
+			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			NOT = {
 				BGN = {
@@ -1996,7 +1996,7 @@ GER_ordenstaats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			#has_completed_focus = GER_form_the_reichskommissariats
+			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			controls_state = 1513
 			controls_state = 738
@@ -2014,7 +2014,7 @@ GER_ordenstaats = {
 		}
 
 		visible = {
-			#has_completed_focus = GER_form_the_reichskommissariats
+			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			NOT = {
 				BNT = {
@@ -2077,7 +2077,7 @@ GER_ordenstaats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			#has_completed_focus = GER_form_the_reichskommissariats
+			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			LOM = {
 				all_core_state = {
@@ -2182,7 +2182,7 @@ GER_ordenstaats = {
 		}
 
 		visible = {
-			#has_completed_focus = GER_form_the_reichskommissariats
+			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			NOT = {
 				LOM = {

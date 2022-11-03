@@ -59,39 +59,39 @@ if = {
 
 if = {
 	limit = { has_dlc = "La Resistance" }	
-	#add_ideas = POR_unreliable_army
-	#add_ideas = POR_unstable_republic
+	add_ideas = POR_unreliable_army
+	add_ideas = POR_unstable_republic
 	set_stability = 0.60
 	set_war_support = 0.15	
 	set_research_slots = 2
 
-#	ENG = {
-#		add_opinion_modifier = {
-#			target = POR 
-#			modifier  = POR_anglo_portuguese_alliance
-#		}
-#	}
+	ENG = {
+		add_opinion_modifier = {
+			target = POR 
+			modifier  = POR_anglo_portuguese_alliance
+		}
+	}
 
-#	POR = {
-#		add_opinion_modifier = {
-#			target = ENG 
-#			modifier  = POR_anglo_portuguese_alliance
-#		}
-#	}
+	POR = {
+		add_opinion_modifier = {
+			target = ENG 
+			modifier  = POR_anglo_portuguese_alliance
+		}
+	}
 
-#	GER = {
-#		add_opinion_modifier = {
-#			target = POR
-#			modifier = fascism_leanings_good
-#		}
-#	}
+	GER = {
+		add_opinion_modifier = {
+			target = POR
+			modifier = fascism_leanings_good
+		}
+	}
 
-#	ITA = {
-#		add_opinion_modifier = {
-#			target = POR
-#			modifier = fascism_leanings_good
-#		}
-#	}
+	ITA = {
+		add_opinion_modifier = {
+			target = POR
+			modifier = fascism_leanings_good
+		}
+	}
 	
 }
 
