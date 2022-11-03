@@ -36,6 +36,29 @@ is_northern_italian = {
 		original_tag = VNT
 	}
 }
+is_northern_italian_core = {
+	OR = {
+		is_core_of = MCR
+		is_core_of = MDN
+		is_core_of = BLG
+		is_core_of = FRR
+		is_core_of = PRM
+		is_core_of = MTV
+		is_core_of = LOM
+		is_core_of = PAV
+		is_core_of = MTV
+		is_core_of = PIE
+		is_core_of = VOS
+		is_core_of = LOM
+		is_core_of = LIG
+		is_core_of = RMG
+		is_core_of = SMR
+		is_core_of = VNT
+		is_core_of = FRI
+		is_core_of = AOS
+		is_core_of = TST
+	}
+}
 is_central_italian = {
 	OR = {
 		is_tuscan = yes
@@ -46,6 +69,7 @@ is_central_italian = {
 		original_tag = COR
 	}
 }
+
 is_southern_italian = {
 	OR = {
 		original_tag = ABR
@@ -54,6 +78,17 @@ is_southern_italian = {
 		original_tag = PUG
 		original_tag = LUC
 		original_tag = CAL
+	}
+}
+is_southern_italian_core = {
+	OR = {
+		is_core_of = ABR
+		is_core_of = MLS
+		is_core_of = NAP
+		is_core_of = PUG
+		is_core_of = LUC
+		is_core_of = CAL
+		is_core_of = SIC
 	}
 }
 is_italian = {
