@@ -300,3 +300,120 @@ has_any_occupation_cost_trigger = {
 is_vichy_france = {
 	has_country_flag = vichy_france	
 }
+is_alsace_lorraine = {
+	OR = {
+		state = 606
+		state = 2746
+		state = 566
+		state = 547
+		state = 2608
+		state = 2747
+	}
+}
+is_vichy_state = {
+	OR = {
+		state = 852
+		state = 840
+		state = 812
+		state = 585
+		state = 838
+		state = 828
+		state = 819
+		state = 855
+		state = 850
+		state = 871
+		state = 822
+		state = 814
+		state = 809
+		state = 795
+		state = 640
+		state = 753
+		state = 783
+		state = 787
+		state = 540
+		state = 740
+		state = 666
+		state = 670
+		state = 717
+		state = 751
+		state = 766
+		state = 786
+		state = 672
+		state = 699
+		state = 731
+		state = 807
+		state = 729
+		state = 728
+		state = 691
+		state = 772
+		state = 824
+		state = 808
+		state = 773
+		state = 2544
+		state = 747
+		state = 715
+		state = 2614
+		state = 688
+		state = 749
+		state = 780
+		state = 799
+		state = 829
+		state = 825
+		state = 2855
+		state = 2854
+		state = 2852
+		state = 2853
+		state = 746
+		state = 719
+		state = 2851
+		state = 770
+		state = 723
+	}
+}
+is_ita_occupation_zone = {
+	OR = {
+		state = 750
+		state = 771
+		state = 842
+		state = 810
+		state = 817
+	}
+}
+is_ita_occupation_zone_2 = {
+	OR = {
+		state = 825
+		state = 2855
+		state = 2854
+		state = 2852
+		state = 2851
+		state = 719
+		state = 746
+	}
+}
+is_ita_occupation_zone_3 = {
+	OR = {
+		state = 2853
+		state = 749
+		state = 780
+		state = 799
+		state = 829
+	}
+}
+is_ita_occupation_zone_4 = {
+	OR = {
+		state = 2544
+		state = 733
+		state = 780
+		state = 808
+		state = 824
+	}
+}
+is_ger_occupation_zone = {
+	is_core_of = FRA
+	NOT = {
+		is_ita_occupation_zone = yes
+		is_vichy_state = yes
+		is_core_of = COR
+		is_core_of = ALG
+	}
+}

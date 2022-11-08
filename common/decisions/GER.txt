@@ -501,7 +501,7 @@ GER_reichskommissariats = {
 				}
 				NOR = {
 					every_controlled_state = {
-						transfer_state_to_to = RKG
+						transfer_state_to = RKG
 					}
 				}
 			}
@@ -581,7 +581,10 @@ GER_reichskommissariats = {
 				}
 				else = {
 					RKN = {
-						declare_war_on = HOL
+						declare_war_on = {
+							target = HOL
+							type = annex_everything
+						}
 					}
 				}
 		}
@@ -656,7 +659,12 @@ GER_reichskommissariats = {
 						traits = {
 						}
 					}
-					declare_war_on = BEL
+					RKN = {
+						declare_war_on = {
+							target = BEL
+							type = annex_everything
+						}
+					}
 					transfer_state = 2368
 				}
 				set_autonomy = { target = RKB autonomy_state = autonomy_integrated_puppet }
@@ -675,8 +683,14 @@ GER_reichskommissariats = {
 				}
 				else = {
 					RKB = {
-						declare_war_on = BEL
-						declare_war_on = FRA
+						declare_war_on = {
+							target = BEL
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = FRA
+							type = annex_everything
+						}
 					}
 				}
 			
@@ -816,7 +830,10 @@ GER_reichskommissariats = {
 					}
 				}
 				else = {
-					declare_war_on = SOV
+					declare_war_on = {
+							target = SOV
+							type = annex_everything
+						}
 				}
 			}
 		}
@@ -884,7 +901,10 @@ GER_reichskommissariats = {
 					traits = {
 					}
 				}
-				declare_war_on = SOV
+				declare_war_on = {
+							target = SOV
+							type = annex_everything
+						}
 				transfer_state = 2081
 			}
 			if = {
@@ -902,7 +922,12 @@ GER_reichskommissariats = {
 					}
 				}
 				else = {
-					declare_war_on = SOV
+					RKU = {
+						declare_war_on = {
+							target = SOV
+							type = annex_everything
+						}
+					}
 				}
 			}
 		}
