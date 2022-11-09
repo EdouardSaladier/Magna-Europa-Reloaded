@@ -1,0 +1,109 @@
+is_yalta_polish_state = {
+	OR = {
+		AND = {
+		is_core_of = SIL
+			NOT = {
+				state = 2262
+				state = 481
+				state = 2329
+				state = 1977
+				state = 1428
+				state = 526
+				state = 1975
+				state = 441
+			}
+		}
+		AND  = {
+		is_core_of = POM
+			NOT = {
+				state = 281
+				state = 1635
+				state = 1634
+				state = 1633
+				state = 1632
+			}
+		}
+			
+		state = 1980
+		state = 1646
+		state = 2595
+		state = 1647
+		state = 1648
+		state = 339
+		state = 1649
+		state = 282
+		state = 1613
+		state = 2483
+		state = 1611
+		state = 1612
+		state = 2690
+		state = 2689
+		state = 4497
+		state = 1609
+		state = 2691
+		state = 2342
+		state = 1610
+	}
+}
+is_southern_slovakia = {
+	OR = {
+		state = 593
+		state = 2246
+		state = 2930
+		state = 1442
+		state = 1438
+		state = 1439
+		state = 580
+		state = 610
+	
+	}
+}
+is_north_transylvania = {
+	OR = {
+		is_core_of = SZE
+		
+		state = 649
+		state = 1582
+		state = 2680
+		state = 628
+		state = 2672
+		state = 2675
+		state = 622
+		state = 2671
+		state = 664
+		state = 2859
+		state = 639
+		state = 2860
+		state = 2673
+		state = 2860
+		state = 665
+		state = 2676
+		
+	}
+}
+is_polish_ostprusen = {
+	OR = {
+		state = 282
+		state = 1613
+		state = 2483
+		state = 1611
+		state = 1612
+		state = 2690
+		state = 2689
+		state = 4497
+		state = 1609
+		state = 2691
+		state = 2342
+	}
+}
+is_transylvania_proper = {
+	OR = {
+		is_core_of = TRA
+		AND = {
+			is_core_of = BNT
+			NOT = {
+				is_core_of = SER
+			}
+		}
+	}
+}
