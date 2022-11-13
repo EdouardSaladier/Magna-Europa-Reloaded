@@ -59,7 +59,7 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
-			OWNER = { NOT = { } }
+			OWNER = { NOT = { has_completed_focus = SPA_cultivate_fanaticism } }
 		}
 		
 		cost = 0.22
