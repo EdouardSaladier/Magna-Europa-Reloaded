@@ -10,6 +10,7 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
+			OWNER = { if = { limit = { has_dlc = "Waking the Tiger" } } }
 		}
 		
 		ai_will_do = {
@@ -58,6 +59,7 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
+			OWNER = { NOT = { } }
 		}
 		
 		cost = 0.22
@@ -80,9 +82,7 @@ ability = {
 		ai_will_do = {
 			factor = -1
 			modifier = {
-				FROM = {
-					has_war_support > 0.4
-				}
+				FROM = { has_war_support > 0.4 }
 				
 				check_variable = { num_units_defensive_combats > 6 }
 				
@@ -103,24 +103,18 @@ ability = {
 		
 		type = army_leader
 		
-		allowed = {
-			is_border_war = no
-		}
+		allowed = { is_border_war = no }
 		
 		cost = 0.12
 		duration = 168
 		
-		unit_modifiers = {
-			planning_speed = 4.0
-		}
+		unit_modifiers = { planning_speed = 4.0 }
 		
 		
 		ai_will_do = {
 			factor = -1
 			modifier = {
-				FROM = {
-					command_power > 2.0
-				}
+				FROM = { command_power > 2.0 }
 				check_variable = { num_units > 6 }
 				check_variable = { unit_ratio_ready_for_plan > 0.55 }
 				check_variable = { avg_unit_planning_ratio < 0.4 }
@@ -143,9 +137,7 @@ ability = {
 		}
 		
 		unit_modifiers = {
-			fort = {
-				attack = 0.2
-			}
+			fort = { attack = 0.2 }
 			fortification_damage = 2.0
 			fortification_collateral_chance = 2.0
 		}
@@ -156,9 +148,7 @@ ability = {
 		ai_will_do = {
 			factor = -1
 			modifier = {
-				FROM = {
-					command_power > 1.5
-				}
+				FROM = { command_power > 1.5 }
 				
 				set_temp_variable = { temp = num_units_offensive_combats }
 				check_variable = { temp > 6 }
@@ -202,9 +192,7 @@ ability = {
 			is_border_war = no
 		}
 		
-		unit_modifiers = {
-			naval_invasion_prep_speed = 0.5
-		}
+		unit_modifiers = { naval_invasion_prep_speed = 0.5 }
 		
 		cost = 0.1
 		duration = 168
@@ -256,9 +244,7 @@ ability = {
 		ai_will_do = {
 			factor = -1
 			modifier = {
-				FROM = {
-					command_power > 2.0
-				}
+				FROM = { command_power > 2.0 }
 				check_variable = { num_units_crossing_river > 5 }
 				
 				add = 2
@@ -277,13 +263,9 @@ ability = {
 			is_border_war = no
 		}
 		
-		unit_modifiers = {
-			no_supply_grace = 168
-		}
+		unit_modifiers = { no_supply_grace = 168 }
 		
-		one_time_effect = {
-			supply_units = 168
-		}
+		one_time_effect = { supply_units = 168 }
 		
 		cost = 0.2
 		duration = 168
@@ -301,9 +283,7 @@ ability = {
 			is_border_war = no
 		}
 		
-		unit_modifiers = {
-			acclimatization_cold_climate_gain_factor = 0.5
-		}
+		unit_modifiers = { acclimatization_cold_climate_gain_factor = 0.5 }
 		
 		cost = 0.1
 		duration = 168
@@ -312,9 +292,7 @@ ability = {
 		ai_will_do = {
 			factor = -1
 			modifier = {
-				FROM = {
-					command_power > 2.0
-				}
+				FROM = { command_power > 2.0 }
 				check_variable = { num_units_on_climate@cold_climate > 8 }
 				set_temp_variable = { temp = avg_units_acclimation@cold_climate }
 				divide_temp_variable = { temp =  num_units }
