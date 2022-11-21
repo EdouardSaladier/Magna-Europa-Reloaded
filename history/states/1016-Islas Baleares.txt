@@ -2,29 +2,28 @@
 state={
 	id=1016
 	name="STATE_1016"
-	provinces={
-		1711 4335 7251 15241 19804 19805 20538 
-	}
+
 	history={
 		owner = SPR
 		add_core_of = BAL
 		add_core_of = SPR
 		buildings = {
 			infrastructure = 3
-			15241 = { naval_base = 2 }
-			19805 = { naval_base = 1 }
-			19804 = { naval_base = 1 }
+			15241 = {
+				naval_base = 2
+
+			}
+
 		}
-        victory_points = {
-            15241 20 #Palma
-        }
-        victory_points = {
-            19805 2 #Mahón
-        }
-        victory_points = {
-            19804 2 #Ibiza
-        }
-    }
+		victory_points = {
+			15241 20 
+		}
+
+	}
+
+	provinces={
+		1711 4335 7251 15241 
+	}
 	manpower=376700
 	buildings_max_level_factor=1.000
 	state_category=city

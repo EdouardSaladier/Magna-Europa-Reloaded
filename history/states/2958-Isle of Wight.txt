@@ -1,0 +1,19 @@
+state={
+	id=2958
+	name="Isle of Wight"
+	provinces={
+		19457 
+	}
+	history = {
+		owner = ENG
+		add_core_of = ENG
+		add_core_of = SSX
+		buildings = {
+			infrastructure = 2 
+		}
+	}
+	state_category = small_island
+	manpower=103998
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

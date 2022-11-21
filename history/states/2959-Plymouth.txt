@@ -1,0 +1,21 @@
+state={
+	id=2959
+	name="Plymouth"
+	provinces={
+		5768 
+	}
+	history={
+		owner = ENG
+		add_core_of = ENG
+		add_core_of = WSX
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+	state_category = city
+	manpower=211368
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
