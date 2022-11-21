@@ -88,6 +88,10 @@ country_event = {
 				every_state = {
 					limit = {
 						is_core_of = MAC
+						OR = {
+							is_owned_by = YUG
+							is_owned_by = GER
+						}
 					}
 					transfer_state_to = BUL
 				}
@@ -99,6 +103,7 @@ country_event = {
 				transfer_state = 1971
 				transfer_state = 1972
 				transfer_state = 846
+				transfer_state = 1970
 			}
 		}
 	}
