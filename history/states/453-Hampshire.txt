@@ -1,0 +1,31 @@
+
+state={
+	id=453
+	name="STATE_453"
+
+	history={
+		owner = ENG
+		add_core_of = ENG
+		add_core_of = SSX
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			8810 = { naval_base = 10 }
+		}
+		victory_points = {
+			1501 20 
+		}
+		victory_points = {
+			8810 10 
+		}
+
+	}
+
+	provinces={
+		1458 1501 5597 7291 8810 12175 12233 12276 12305 12310 12344 12382 
+	}
+	manpower=1080900
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}
