@@ -2333,7 +2333,7 @@
 
 		available = {
 			ENG = { has_government = ROOT }
-			#is_in_tech_sharing_group = commonwealth_research
+			is_in_tech_sharing_group = commonwealth_research
 		}
 		
 		bypass = {
@@ -2499,7 +2499,7 @@
 
 		available = {
 			is_in_faction_with = ENG
-			#is_in_tech_sharing_group = commonwealth_research
+			is_in_tech_sharing_group = commonwealth_research
 		}
 		
 		bypass = {
