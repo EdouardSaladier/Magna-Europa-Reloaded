@@ -107,3 +107,42 @@ is_transylvania_proper = {
 		}
 	}
 }
+is_western_rhine = {
+	OR = {
+		AND = {
+			is_core_of = RHN
+			NOT = {
+				state = 2573
+				state = 2578
+				state = 475
+				state = 465
+				state = 431
+				state = 1749
+				state = 1748
+				state = 2719
+			}	
+		}
+		state = 1758
+		state = 537
+		state = 521
+		state = 1756
+		state = 1757
+		state = 2340
+		state = 524
+	}
+}
+is_southern_netherlands = {
+	OR = {
+		state = 2344
+		state = 2717
+		state = 2331
+		state = 2332
+		state = 2875
+		state = 451
+		state = 1974
+		state = 2713
+		state = 479
+		state = 2845
+		state = 432
+	}
+}

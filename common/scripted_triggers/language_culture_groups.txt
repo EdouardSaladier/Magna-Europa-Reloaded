@@ -333,3 +333,30 @@ is_romanian = {
 		original_tag = BNT
 	}
 }
+is_greek = {
+	OR = {
+		original_tag = GRE
+		original_tag = CYP
+		original_tag = SAM
+		original_tag = ICA
+		original_tag = CRT
+		original_tag = MMA
+		original_tag = NER
+	}
+}
+is_albanian = {
+	OR = {
+		original_tag = ALB
+		original_tag = CAB
+		original_tag = KOS
+	}
+}
+is_balkan = {
+	OR = {
+		is_romanian = yes
+		is_yugoslav = yes
+		is_hungarian = yes
+		is_albanian = yes
+		is_greek = yes
+	}
+}
