@@ -146,3 +146,32 @@ is_southern_netherlands = {
 		state = 432
 	}
 }
+is_greek_anatolia = {
+	OR = {
+		state = 945
+		state = 2771
+		state = 1939
+		state = 948
+		state = 1940
+		state = 1932
+		state = 981
+		state = 1931
+		state = 2767
+		state = 2768
+		state = 991
+		state = 988
+		state = 2769
+		state = 1935
+		state = 1937
+		state = 1050
+		state = 1032
+		state = 1936
+		state = 1081
+		state = 1941
+		state = 1084
+		state = 2878
+		state = 1942
+		state = 2879
+		state = 1094
+	}
+}
