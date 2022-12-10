@@ -45,7 +45,6 @@ create_country_leader = {
 	traits = {
 	}
 }
-
 create_country_leader = {
 	name = "Grand Council"
 	desc = ""
@@ -75,3 +74,13 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+#create_country_leader = {
+#	name = "Giuliano Gozi"
+#	desc = ""
+#	picture = "gfx/leaders/Europe/portrait_europe_generic_1.dds"
+#	expire = "1965.1.1"
+#	ideology = fascism_ideology
+#	traits = {
+#	}
+#}

@@ -20,17 +20,17 @@ set_technology = {
 }
 add_ideas = { neutrality_idea civilian_economy }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 75
+	democratic = 15
 	fascism = 10
 	communism = 0
-	neutrality = 15
+	neutrality = 75
 }
 
 create_country_leader = {
@@ -38,7 +38,16 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ADR/Portrait_Andorra_General_council.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = oligarchism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "General Council"
+	desc = ""
+	picture = "gfx/leaders/Europe/portrait_europe_generic_1.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
 	}
 }
