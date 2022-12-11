@@ -1,8 +1,11 @@
 ﻿
-capital = 242
+capital = 241
+set_capital = {
+	state = 242
+	remember_old_capital = yes
+}
 
 set_research_slots = 3
-
 if = {
 	limit = {
 		has_DLC = "No Step Back"
