@@ -1,4 +1,7 @@
-﻿capital = 242
+capital = 241
+set_capital = {
+	state = 242
+	remember_old_capital = yes
 
 oob = "LIT_1936"
 if = {
@@ -13,7 +16,6 @@ if = {
 }
 
 set_research_slots = 3
-
 if = {
 	limit = {
 		has_DLC = "No Step Back"
