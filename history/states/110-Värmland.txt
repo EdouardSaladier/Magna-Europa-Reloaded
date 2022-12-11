@@ -2,17 +2,22 @@
 state={
 	id=110
 	name="STATE_110"
-	history = {
+
+	history={
 		owner = SWE
 		add_core_of = SWE
 		buildings = {
 			infrastructure = 2
 			air_base = 1
 		}
-		victory_points = { 19532 5 }
+		victory_points = {
+			19532 5 
+		}
+
 	}
+
 	provinces={
-		338 842 1517 1798 2063 2607 3584 3692 4224 5304 5501 8008 8243 9096 9470 9938 9961 10017 10068 10074 19058 19062 19069 19297 19532 19543 19595 
+		338 842 1517 1798 2063 2607 3584 3692 4224 5304 5501 8008 8243 9096 9470 9938 9961 10017 10068 10074 19058 19069 19297 19532 19543 19595 
 	}
 	manpower=273300
 	buildings_max_level_factor=1.000

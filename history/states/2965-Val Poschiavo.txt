@@ -1,0 +1,21 @@
+state={
+	id=2965
+	name="STATE_2965"
+	history={
+		owner = SWI
+		add_core_of = SWI
+		add_core_of = GRS
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	provinces={
+		14078 
+	}
+	manpower=5237
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

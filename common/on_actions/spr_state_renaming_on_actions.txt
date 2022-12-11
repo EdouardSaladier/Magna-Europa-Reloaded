@@ -34,18 +34,29 @@ on_actions = {
 					reset_province_name = 5529
 				}
 			}
-			#Balearics
+			#Mallorca
 			if = {
 				limit = { FROM.FROM = { state = 1016 } }
 				if = {
 					limit = { ROOT = { is_catalan = yes } }
-					FROM.FROM = { set_state_name = "Illes Balears" }
+					#FROM.FROM = { set_state_name = "Illes Balears" }
 					set_province_name = { id = 19805 name = "Maó" }
-					set_province_name = { id = 19804 name = "Eivissa" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
 					reset_province_name = 19805
+				}
+			}
+			#Islas Pitiusas
+			if = {
+				limit = { FROM.FROM = { state = 2963 } }
+				if = {
+					limit = { ROOT = { is_catalan = yes } }
+					FROM.FROM = { set_state_name = "Illes Pitiüses" }
+					set_province_name = { id = 19804 name = "Eivissa" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
 					reset_province_name = 19804
 				}
 			}
@@ -57,6 +68,22 @@ on_actions = {
 					set_province_name = { id = 19759 name = "Lleida" }
 				}
 				else = { reset_province_name = 19759 }
+			}
+			#Val d'Aran
+			if = {
+				limit = { FROM.FROM = { state = 2966 } }
+				if = {
+					FROM.FROM = { set_state_name = "Vall d'Aran" }
+					limit = { ROOT = { is_catalan = yes } }
+					set_province_name = { id = 19806 name = "Viella i Mitjaran" }
+				}
+				else_if = {
+					FROM.FROM = { set_state_name = "Val d'Aran" }
+					limit = { ROOT = { is_occitan = yes } }
+					set_province_name = { id = 19806 name = "Vielha e Mijaran" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } reset_province_name = 19806 }
+			}
 			#Valencia
 			if = {
 				limit = { FROM.FROM = { state = 1007 } }

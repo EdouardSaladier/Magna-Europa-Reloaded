@@ -2,22 +2,26 @@
 state={
 	id=1420
 	name="STATE_1420"
-	history = {
+
+	history={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = SRD
 		buildings = {
 			infrastructure = 2
+
 		}
 		victory_points = {
-			2660 2
+			2660 2 
 		}
+
 	}
+
 	provinces={
-		2660 2790 4139 6055 6905 20499 
+		2660 2790 6905 18710 18978 
 	}
-	manpower=224600
+	manpower=180024
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category=town
 	local_supplies=0.000
 }

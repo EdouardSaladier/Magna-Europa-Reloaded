@@ -1,19 +1,24 @@
+
 state={
 	id=1447
 	name="STATE_1447"
+
 	history={
 		owner = SWI
 		add_core_of = SWI
 		add_core_of = GRS
 		buildings = {
 			infrastructure = 1
+
 		}
+
 	}
+
 	provinces={
-		8943 13897 13967 14078 20108 
+		6668 6704 8943 13897 13966 13967 14017 18974 18988 19000 20108 
 	}
-	manpower=50426
-	state_category=pastoral
+	manpower=43553
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

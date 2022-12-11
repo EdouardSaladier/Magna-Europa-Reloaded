@@ -14,13 +14,15 @@ state={
 			industrial_complex = 1
 		}
 		victory_points = {
-            6704 2 #Chur
-        }
+			18957 2 
+		}
+
 	}
+
 	provinces={
-		910 2119 4479 6668 6704 13861 13966 14017 
+		910 2119 4479 13861 18957 18971 19062 
 	}
-	manpower=70821
+	manpower=70234
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000
