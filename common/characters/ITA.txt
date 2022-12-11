@@ -163,6 +163,32 @@ characters={
 		}
 	}
 
+	ITA_prince_umberto = {
+		name = ITA_prince_umberto
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_prince_umberto_small
+				large = "gfx/leaders/ITA/Portrait_ITA_Umberto_General.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		corps_commander = {
+			traits = { career_officer politically_connected inspirational_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { NOT = { has_government = communism } }
+		}
+	}
+
 	ITA_giovanni_messe={
 		name=ITA_giovanni_messe
 		portraits={

@@ -160,7 +160,6 @@ set_popularities = {
 
 recruit_character = ITA_benito_mussolini
 recruit_character = ITA_grand_council
-recruit_character = ITA_vittorio_emanuele_iii
 recruit_character = ITA_ferruccio_parri
 recruit_character = ITA_palmiro_togliatti
 recruit_character = ITA_rodolfo_graziani
@@ -274,6 +273,8 @@ recruit_character = ITA_haile_selassie_gugsa_doppleganger
 recruit_character = ITA_abba_jofir_doppleganger
 recruit_character = ITA_hailu_tekle_haymanot_doppleganger
 recruit_character = ITA_seyoum_mengesha_doppleganger
+
+recruit_character = ITA_vittorio_emanuele_iii
 
 if = {
 	limit = {
