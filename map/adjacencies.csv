@@ -263,10 +263,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14026;14063;impassable;-1;-1;-1;-1;-1;;Moesa-Ticino
 7837;14063;impassable;-1;-1;-1;-1;-1;;Como-Moesa
 3836;14063;impassable;-1;-1;-1;-1;-1;;Sondrio-Moesa
-3836;910;impassable;-1;-1;-1;-1;-1;;Sondrio-Graubunden
 3836;14017;impassable;-1;-1;-1;-1;-1;;Sondrio-Graubunden
+3836;19062;impassable;-1;-1;-1;-1;-1;;Sondrio-Graubunden
+3836;18855;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
 8943;20055;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
 14078;20055;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
+18855;20055;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
 8943;6257;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
 16159;8943;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
 16159;20108;impassable;-1;-1;-1;-1;-1;;Sondrio-Grischun
@@ -274,9 +276,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4920;9388;impassable;-1;-1;-1;-1;-1;;Sondrio-Bergamo
 6412;9432;impassable;-1;-1;-1;-1;-1;;Lecco-Bergamo
 8943;14017;impassable;-1;-1;-1;-1;-1;;Grischun-Graubunden
+18855;14017;impassable;-1;-1;-1;-1;-1;;Grischun-Graubunden
 6668;4744;impassable;-1;-1;-1;-1;-1;;Glarus-Graubunden
 2119;4744;impassable;-1;-1;-1;-1;-1;;Glarus-Graubunden
 2119;13884;impassable;-1;-1;-1;-1;-1;;St Gallen-Graubunden
+18974;13884;impassable;-1;-1;-1;-1;-1;;St Gallen-Graubunden
 13861;13828;impassable;-1;-1;-1;-1;-1;;Vorarlberg-Graubunden
 4479;13828;impassable;-1;-1;-1;-1;-1;;Vorarlberg-Graubunden
 20108;13828;impassable;-1;-1;-1;-1;-1;;Vorarlberg-Grischun
@@ -389,7 +393,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7624;6873;impassable;-1;-1;-1;-1;-1;;Hautes Pyrenees-Huesca
 7624;485;impassable;-1;-1;-1;-1;-1;;Hautes Pyrenees-Huesca
 3170;485;impassable;-1;-1;-1;-1;-1;;Haute Garonne-Huesca
-3170;19806;impassable;-1;-1;-1;-1;-1;;Haute Garonne-Lleida
+485;19806;impassable;-1;-1;-1;-1;-1;;Huesca-Lleida
 6233;19806;impassable;-1;-1;-1;-1;-1;;Ariège-Lleida
 6233;4544;impassable;-1;-1;-1;-1;-1;;Ariège-Lleida
 8650;4544;impassable;-1;-1;-1;-1;-1;;Ariège-Lleida

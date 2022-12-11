@@ -2,24 +2,30 @@
 state={
 	id=944
 	name="STATE_944"
-	history = {
+
+	history={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = SRD
 		buildings = {
 			infrastructure = 3
-			20034 = { naval_base = 3 }
+			20034 = {
+				naval_base = 3
+
+			}
+
 		}
-		victory_points = { 20034 5 }
 		victory_points = {
-			20496 2
+			20034 5 
 		}
+
 	}
+
 	provinces={
-		3180 7969 8141 8344 9613 15156 15239 15249 20034 20496 
+		3180 7969 8141 8344 9613 15239 15249 20034 
 	}
-	manpower=507200
+	manpower=362240
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=city
 	local_supplies=0.000
 }
