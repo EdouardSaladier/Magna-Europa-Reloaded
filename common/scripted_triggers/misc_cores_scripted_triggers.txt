@@ -175,3 +175,39 @@ is_greek_anatolia = {
 		state = 1094
 	}
 }
+is_east_prussia = {
+	OR = {
+		AND = {
+			is_core_of = ESP
+			NOT = {
+				state = 227
+			}
+		}
+		state = 2342
+		state = 2691
+		state = 1609
+	}
+}
+is_polish_german_empire = {
+	OR = {
+		AND = {
+			is_core_of = POL
+			is_core_of = WPR
+		}
+		AND = {
+			is_core_of = POL
+			is_core_of = WKP
+			NOT = {
+				state = 656
+				state = 612
+				state = 594
+				state = 693
+				state = 687
+			}	
+		}
+		is_core_of = DNZ
+		state = 2329
+		state = 481
+		state = 2262
+	}
+}
