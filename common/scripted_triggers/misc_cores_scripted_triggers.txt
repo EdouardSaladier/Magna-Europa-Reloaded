@@ -211,3 +211,13 @@ is_polish_german_empire = {
 		state = 2262
 	}
 }
+is_vilnius = {
+	OR = {
+		state = 294
+		state = 1304
+		state = 1135
+		state = 241
+		state = 1329
+		state = 236
+	}
+}
