@@ -221,3 +221,17 @@ is_vilnius = {
 		state = 236
 	}
 }
+is_agean_islands = {
+	OR = {
+		state = 2839
+		state = 1553
+		state = 1556
+		state = 1552
+		state = 2950
+		state = 1555
+		state = 2949
+		state = 2564
+		state = 2756
+		state = 2004
+	}
+}

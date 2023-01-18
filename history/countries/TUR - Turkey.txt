@@ -112,6 +112,117 @@ if = {
 1936.1.1 = {
 	if = { 
 		limit = { has_dlc = "Battle for the Bosporus" }	
+		set_variable = { var = TUR_kemalist_power_variable value = 5 }
+		350 = {
+			add_dynamic_modifier = { modifier = kurdish_agitation }
+		}
+		352 = {
+			add_dynamic_modifier = { modifier = kurdish_separatism }
+		}
+		800 = {
+			add_dynamic_modifier = { modifier = kurdish_separatism }
+		}
+		353 = {
+			add_dynamic_modifier = { modifier = kurdish_agitation }
+		}
+		798 = {
+			add_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		349 = {
+			add_dynamic_modifier = { modifier = islamist_sedition }
+		}
+		348 = {
+			add_dynamic_modifier = { modifier = islamist_sedition }
+		}
+		345 = {
+			add_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		344 = {
+			add_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		355 = {
+			add_dynamic_modifier = { modifier = islamist_sedition }
+		}
+		356 = {
+			add_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		every_state = {
+			limit = {
+				OR = {
+					AND = {
+						is_core_of = THR
+						is_core_of = TUR
+					}
+					is_core_of = LZS
+					state = 1939
+					state = 2771
+					state = 945
+					state = 1940
+					state = 1932
+					state = 1931
+					state = 988
+					state = 2768
+					state = 991
+					state = 2769
+					state = 1935
+					state = 1032
+					state = 1937
+					state = 1050
+					state = 1941
+					state = 1081
+					state = 1936
+					state = 2878
+					state = 1084
+					state = 1942
+					state = 1094
+					state = 2879
+					state = 958
+				}
+			}
+			add_dynamic_modifier = { modifier = kemalist_loyalties }
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 909
+					state = 1943
+					state = 1093
+					state = 1954
+					state = 1098
+					state = 1066
+					state = 1095
+					state = 1955
+					state = 1956
+					state = 1060
+					state = 1049
+					state = 1065
+					state = 963
+					state = 970
+					state = 1003
+					state = 942
+				}
+			}
+			add_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		every_state = {
+			limit = {
+				OR = {
+					AND = {
+						is_core_of = PON
+						NOT = {
+							state = 970
+							state = 963
+							state = 958
+						}
+					}
+					state = 1011
+					state = 2257
+					state = 1036
+					state = 1048
+				}
+			}
+			add_dynamic_modifier = { modifier = islamist_sedition }
+		}		
 		add_ideas = {
 			limited_conscription
 			export_focus
@@ -121,7 +232,52 @@ if = {
 			TUR_disorganised_armed_forces
 			TUR_debt_council
 		}
-	}
+		every_state = {
+			limit = {
+				is_core_of = KUR
+			}
+			start_resistance = yes
+			set_compliance = 10
+			set_resistance = 15
+			set_garrison_strength = 0.75
+			add_dynamic_modifier = { modifier = kurdish_agitation }
+		}
+		set_variable = { var = TUR_kemalist_officers_loyalty value = 1 }
+		every_owned_state = {
+			limit = {
+				NOT = {
+					OR = {
+						has_dynamic_modifier = { modifier = islamist_opposition }
+						has_dynamic_modifier = { modifier = islamist_sedition }
+						has_dynamic_modifier = { modifier = kemalist_loyalties }
+						has_dynamic_modifier = { modifier = kurdish_agitation }
+						has_dynamic_modifier = { modifier = kurdish_separatism }
+					}
+				}
+			}
+			set_state_flag = TUR_ideological_battleground_state
+		}
+	
+		add_opinion_modifier = { 
+			target = GRE
+			modifier = BFTB_balkan_pact_ally
+		}
+		add_opinion_modifier = { 
+			target = ROM
+			modifier = BFTB_balkan_pact_ally
+		}
+		add_opinion_modifier = { 
+			target = YUG
+			modifier = BFTB_balkan_pact_ally
+		}
+		add_opinion_modifier = { 
+			target = BUL
+			modifier = BFTB_balkan_pact_enemy
+		}
+		add_opinion_modifier = { 
+			target = HUN
+			modifier = BFTB_balkan_pact_enemy
+		}	}
 
 	if = { 
 		limit = { NOT = { has_dlc = "Battle for the Bosporus" }	}
