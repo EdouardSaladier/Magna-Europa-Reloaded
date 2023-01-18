@@ -10,16 +10,19 @@ state={
 		add_core_of = ARP
 		buildings = {
 			infrastructure = 2
+
 		}
-	
 		victory_points = {
-			13984 10 #Lausanne
+			13984 10 
+		}
+		victory_points = {
+			20103 2 
 		}
 
 	}
 
 	provinces={
-		2881 3678 6743 13984 14049 19113 20112 20115 
+		2881 3678 6743 13984 14049 19113 20103 20112 20115 
 	}
 	manpower=271634
 	buildings_max_level_factor=1.000
