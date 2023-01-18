@@ -70,7 +70,7 @@ characters={
 			available = {
 				if = {
 					limit = { has_DLC = "No Step Back" }
-				#	has_completed_focus = BALTIC_restore_workers_republic
+					has_completed_focus = BALTIC_restore_workers_republic
 				}
 			}
 			traits = {
@@ -107,7 +107,7 @@ characters={
 			available = {
 				IF = { 
 					limit = { has_dlc = "No Step Back" }
-				#	has_completed_focus = EST_establish_the_rahvuskogu 
+					has_completed_focus = EST_establish_the_rahvuskogu 
 				}
 			}
 			traits = {
@@ -155,7 +155,7 @@ characters={
 			available = {
 				IF = { 
 					limit = { has_dlc = "No Step Back" }
-				#	has_completed_focus = EST_rally_the_nation 
+					has_completed_focus = EST_rally_the_nation 
 				}
 			}
 			traits = {
@@ -606,7 +606,7 @@ characters={
 					has_dlc = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = BALTIC_revolutionary_cabinet 
+				has_completed_focus = BALTIC_revolutionary_cabinet 
 			}
 			traits = {
 				revolutionary_poet 
@@ -648,7 +648,7 @@ characters={
 					has_dlc = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = EST_veterans_government 
+				has_completed_focus = EST_veterans_government 
 			}
 			traits = {
 				veteran_anti_bolshevik 
@@ -671,7 +671,7 @@ characters={
 				has_dlc = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = BALTIC_revolutionary_cabinet 
+				has_completed_focus = BALTIC_revolutionary_cabinet 
 			}
 			traits = {
 				socialist_justice 
@@ -694,7 +694,7 @@ characters={
 					has_dlc = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = BALTIC_revolutionary_cabinet 
+				has_completed_focus = BALTIC_revolutionary_cabinet 
 			}
 			traits = {
 				patriotic_socialist 
@@ -717,7 +717,7 @@ characters={
 				has_dlc = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = EST_veterans_government 
+				has_completed_focus = EST_veterans_government 
 			}
 			traits = {
 				vapsid_economist 
@@ -740,7 +740,7 @@ characters={
 				has_dlc = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = EST_veterans_government 
+				has_completed_focus = EST_veterans_government 
 			}
 			traits = {
 				subservient_ultranationalist 

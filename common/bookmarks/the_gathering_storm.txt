@@ -17,6 +17,9 @@ bookmarks = {
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
+				FRA_form_the_popular_front
+				FRA_revive_the_national_bloc
+				FRA_france_leads
 			}
 		}
 		"FRA"={
@@ -29,6 +32,9 @@ bookmarks = {
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
+				FRA_invite_communist_ministers
+				FRA_utilize_the_leagues
+				FRA_je_suis_la_deluge
 			}
 		}
 		
@@ -41,6 +47,9 @@ bookmarks = {
 				undisturbed_isolation
 			}
 			focuses = {
+				USA_war_plan_black
+				USA_limited_intervention
+				USA_reestablish_the_gold_standard
 			}
 		}
 		
@@ -54,6 +63,9 @@ bookmarks = {
 				george_v
 			}
 			focuses = {
+				ENG_imperial_federation
+				ENG_the_kings_party
+				ENG_organize_the_blackshirts
 			}
 		}
 		
@@ -67,6 +79,9 @@ bookmarks = {
 				george_v
 			}
 			focuses = {
+				tizard_mission_focus
+				ENG_war_with_germany
+				ENG_war_with_italy
 			}
 		}
 		
@@ -80,6 +95,9 @@ bookmarks = {
 				GER_mefo_bills_1
 			}
 			focuses = {
+				GER_anschluss
+				GER_danzig_or_war
+				GER_revive_the_kaiserreich
 			}
 		}
 		
@@ -93,18 +111,41 @@ bookmarks = {
 				GER_mefo_bills_1
 			}
 			focuses = {
+				GER_anschluss
+				GER_danzig_or_war
+				GER_ussr_war_goal
 			}
 		}
 		
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
+			available = { has_dlc = "By Blood Alone" }
 			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
-			}
+				vittorio_emanuele
+				ITA_iri_fake_ns
+				ITA_re_fake_ns
+			}	
 			focuses = {
-			}
+				ITA_comandante_diavolo
+				ITA_il_sol_dell_avvenire
+				ITA_a_colonial_empire
+			}		
+		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { NOT = { has_dlc = "By Blood Alone" } }
+			ideas = {
+				vittorio_emanuele
+				ITA_iri_fake_ns
+				ITA_re_fake_ns
+			}	
+			focuses = {
+				ITA_comandante_diavolo
+				ITA_to_live_as_a_lion
+				ITA_a_colonial_empire
+			}		
 		}
 
 		"POL"={
@@ -115,18 +156,41 @@ bookmarks = {
 				POL_looming_peasants_strike
 			}
 			focuses = {
+				POL_complete_april_constitution
+				POL_clamp_down_on_danzig
+				POL_the_between_the_seas_concept
 			}
 		}
 		
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
+			available = { has_dlc = "No Step Back" }
 			ideas = {
 				trotskyite_plot_nsb
 				SOV_second_five_year_plan_fake_1936_ns
 				SOV_politicized_military
 			}
 			focuses = {
+		#		SOV_behead_the_snake
+		#		SOV_the_supreme_soviet
+		#		SOV_reconvene_the_zemsky_sobor
+			}
+		}
+		
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			available = { NOT = { has_dlc = "No Step Back" } }
+			ideas = {
+				trotskyite_plot_nsb
+				SOV_second_five_year_plan_fake_1936_ns
+				SOV_politicized_military
+			}
+			focuses = {
+		#		SOV_behead_the_snake
+		#		SOV_father_of_nations
+		#		SOV_the_supreme_soviet
 			}
 		}
 
@@ -145,6 +209,9 @@ bookmarks = {
 				CAN_conscription_crisis
 			}
 			focuses = {
+				CAN_skewer_the_eagle
+				CAN_north_american_alliance
+				CAN_join_comintern
 			}
 		}
 				
@@ -157,9 +224,9 @@ bookmarks = {
 				CZE_divided_nation
 			}
 			focuses = {
-		#		CZE_sudeten_1
-		#		CZE_industrial_legacy
-		#		CZE_military_research_institute
+				CZE_sudeten_1
+				CZE_industrial_legacy
+				CZE_military_research_institute
 			}
 		}
 
@@ -171,9 +238,9 @@ bookmarks = {
 				HUN_treaty_of_triannon
 			}
 			focuses = {
-		#		HUN_proclaim_the_restoration_of_austria_hungary
-		#		HUN_secret_rearmament
-		#		HUN_renounce_the_treaty_of_trianon
+				HUN_proclaim_the_restoration_of_austria_hungary
+				HUN_secret_rearmament
+				HUN_renounce_the_treaty_of_trianon
 			}
 		}
 
@@ -186,9 +253,9 @@ bookmarks = {
 				neutrality_idea
 			}
 			focuses = {
-		#		ROM_balkans_dominance
-		#		ROM_institute_royal_dictatorship
-		#		ROM_preserve_greater_romania
+				ROM_balkans_dominance
+				ROM_institute_royal_dictatorship
+				ROM_preserve_greater_romania
 			}
 		}
 		
@@ -218,9 +285,9 @@ bookmarks = {
 				HOL_de_crisisjaren_5
 			}
 			focuses = {
-		#		HOL_continue_the_war_in_batavia
-		#		HOL_liberation
-		#		HOL_prepare_the_inundation_lines
+				HOL_continue_the_war_in_batavia
+				HOL_liberation
+				HOL_prepare_the_inundation_lines
 			}
 		}
 
@@ -234,9 +301,9 @@ bookmarks = {
 				SPR_political_violence
 			}
 			focuses = {
-		#		SPA_caudillo_of_spain
-		#		SPA_no_compromise_on_carlist_ideals
-		#		SPR_anarchism_knows_no_borders
+				SPA_caudillo_of_spain
+				SPA_no_compromise_on_carlist_ideals
+				SPR_anarchism_knows_no_borders
 			}
 		}
 
@@ -249,9 +316,9 @@ bookmarks = {
 				POR_unreliable_army
 			}
 			focuses = {
-		#		POR_estado_novo
-		#		POR_workers_of_iberia_unite
-		#		POR_luso_tropicalism
+				POR_estado_novo
+				POR_workers_of_iberia_unite
+				POR_luso_tropicalism
 			}
 		}
 
@@ -281,9 +348,9 @@ bookmarks = {
 				GRE_political_instability_dummy
 			}
 			focuses = {
-		#		GRE_metaxism_focus
-		#		GRE_resurrecting_the_megali_idea
-		#		GRE_stage_an_incident_in_the_bosporus
+				GRE_metaxism_focus
+				GRE_resurrecting_the_megali_idea
+				GRE_stage_an_incident_in_the_bosporus
 			}
 		}
 
@@ -297,9 +364,9 @@ bookmarks = {
 				TUR_debt_council
 			}
 			focuses = {
-		#		TUR_ratify_the_six_arrows
-		#		TUR_reaffirm_the_balkan_pact
-		#		TUR_pivot_to_the_past
+				TUR_ratify_the_six_arrows
+				TUR_reaffirm_the_balkan_pact
+				TUR_pivot_to_the_past
 			}
 		}
 		
@@ -313,9 +380,9 @@ bookmarks = {
 				LIT_iron_wolf_idea_bad_1
 			}
 			focuses = {
-		#		LIT_free_voldemares
-		#		LIT_a_king_for_our_people
-		#		LIT_reminder_of_true_enemy
+				LIT_free_voldemares
+				LIT_a_king_for_our_people
+				LIT_reminder_of_true_enemy
 			}
 		}
 		
@@ -343,9 +410,24 @@ bookmarks = {
 				democratic_opposition
 			}
 			focuses = {
-		#		EST_era_of_silence
-		#		EST_fight_the_vaps
-		#		EST_unite_our_nations
+				EST_era_of_silence
+				EST_fight_the_vaps
+				EST_unite_our_nations
+			}
+		}
+		
+		"SWI"={
+			minor = yes
+			history = "SWI_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+			#	SWI_swiss_neutrality
+			#	SWI_foreign_fascist_propaganda
+			}
+			focuses = {
+			#	EST_era_of_silence
+			#	EST_fight_the_vaps
+			#	EST_unite_our_nations
 			}
 		}
 

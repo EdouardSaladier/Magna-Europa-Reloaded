@@ -59,6 +59,16 @@ IF = {
 	recruit_character = EST_otto_heinze
 }
 
+set_variable = {
+	var = vaps_days_var
+	value = 80
+}
+
+set_variable = {
+	var = vaps_crackdown_var
+	value = 360
+}
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
