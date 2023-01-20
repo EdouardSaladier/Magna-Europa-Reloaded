@@ -112,10 +112,22 @@ if = {
 }
 
 
-#85 = {
+#280 = {
 #	add_dynamic_modifier = { modifier = international_city }
 #}
-
+#2729 = {
+#	add_dynamic_modifier = { modifier = international_city }
+#}
+every_state = {
+	limit = {
+		is_core_of = POL
+		OR = {
+			is_core_of = BLR
+			is_core_of = UKR
+		}
+	}
+	set_state_flag = SOV_POL_STATE
+}
 
 set_convoys = 10
 

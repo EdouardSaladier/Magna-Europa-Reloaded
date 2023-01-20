@@ -235,3 +235,46 @@ is_agean_islands = {
 		state = 2004
 	}
 }
+is_bessarabia = {
+	OR = {
+		state = 1601
+		state = 794
+		state = 1602
+		state = 2744
+		state = 2745
+		state = 1603
+		state = 1604
+		state = 1605
+		state = 600
+		state = 592
+		state = 1606
+	}
+}
+is_east_poland = {
+	OR = {
+		has_state_flag = SOV_POL_STATE
+		is_vilnius = yes
+	}
+}
+is_west_poland = {
+	is_core_of = POL
+	is_east_poland = no
+	is_yalta_polish_state = no
+}
+is_german_mr = {
+	is_west_poland = yes
+	NOT = {
+		OR = {
+			state = 2522
+			state = 306
+			state = 2026
+			state = 1287
+			state = 312
+			state = 2485
+			state = 319
+			state = 501
+			state = 1258
+			state = 2345
+		}
+	}
+}
