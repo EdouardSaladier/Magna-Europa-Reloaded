@@ -15158,6 +15158,7 @@ ai_will_do = {
 		id = SOV_request_imperial_protection 
 		icon = GFX_focus_jap_showa_restoration
 		prerequisite = { focus = SOV_call_for_aid }
+		allow_branch = { has_global_flag = NEVER }
 		x = 0
 		y = 1
 		relative_position_id = SOV_call_for_aid
@@ -16172,7 +16173,7 @@ ai_will_do = {
 
 			random_country = {
 	 		 	limit = {
-	     			 owns_state = 2
+	     			 owns_state = 876
 	  				}
 
 				 SOV = {
@@ -16180,14 +16181,14 @@ ai_will_do = {
 					create_wargoal = {
 					    type = take_state_focus
 					    target = PREV
-					    generator = { 2 }
+					    generator = { 876 }
 	  				}
     			}
     		}
 
 			random_country = {
 	 		 	limit = {
-	     			 owns_state = 454
+	     			 owns_state = 1092
 	  				}
 
 				 SOV = {
@@ -16195,13 +16196,13 @@ ai_will_do = {
 					create_wargoal = {
 					    type = take_state_focus
 					    target = PREV
-					    generator = { 454 }
+					    generator = { 1092 }
 	  				}
     			}
     		}
  			random_country = {
 	 		 	limit = {
-	     			 owns_state = 797
+	     			 owns_state = 932
 	  				}
 
 				 SOV = {
@@ -16209,13 +16210,25 @@ ai_will_do = {
 					create_wargoal = {
 					    type = take_state_focus
 					    target = PREV
-					    generator = { 797 }
+					    generator = { 932 }
 	  				}
     			}
-    		}   			
-    		add_state_claim = 2
-   			add_state_claim = 797
-   			add_state_claim = 454
+    		}
+    		PAL = {
+    			every_core_state = {
+    				add_claim_by = SOV
+    			}
+    		}
+    		LAZ = {
+    			every_core_state = {
+    				add_claim_by = SOV
+    			}
+    		}
+    		add_state_claim = 2616
+    		add_state_claim = 2770
+    		add_state_claim = 932
+    		add_state_claim = 945
+    		add_state_claim = 2771
 		}
 	}
 
@@ -16262,6 +16275,7 @@ ai_will_do = {
 		id = SOV_vengeance_for_the_yoke
 		icon = GFX_focus_generic_attack_mongolia
 		prerequisite = { focus = SOV_romanov_reconstruction focus = SOV_dismantle_the_zemsky_sobor }
+		allow_branch = { has_global_flag = NEVER}
 		x = -3
 		y = 1
 		relative_position_id = SOV_dismantle_the_zemsky_sobor
@@ -16301,14 +16315,14 @@ ai_will_do = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		available = {
-			has_full_control_of_state = 213
-			has_full_control_of_state = 214
-			has_full_control_of_state = 208
+			has_full_control_of_state = 2422
+			has_full_control_of_state = 19
+			has_full_control_of_state = 41
 		}
 
 		completion_reward = {
 			# Murmansk
-			213 = {
+			19 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -16338,7 +16352,7 @@ ai_will_do = {
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 3134
+					province = 19709
 					instant_build = yes
 				}
 				if = {
@@ -16378,7 +16392,7 @@ ai_will_do = {
 				}
 			}
 			# Onega
-			215 = {
+			2458 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -16394,7 +16408,7 @@ ai_will_do = {
 				}
 			}
 			# Olonets
-			216 = {
+			57 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -16410,7 +16424,7 @@ ai_will_do = {
 				}
 			}
 			# Arkhangelsk
-			214 = {
+			41 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -16441,25 +16455,28 @@ ai_will_do = {
 				}
 			}
 			#Supply Hub in Luga
-			208 = {
+			2422 = {
 				add_building_construction = {
 					type = supply_node
 					level = 1
-					province = 181
+					province = 18289
 					instant_build = yes
 				}
 			}
 			#Volkhov-Murmansk
 			build_railway = {
-				path = { 3134 11117 9201 6181 3121 9162 3008 86 3189 9159 94 6021 11175 155 11092 3033 9118 11159 90 6057 11153 11059 70 }
+				start_province = 16915
+				target_province = 19708
 			}
 			#Leningrad-Volkhov
 			build_railway = {
-				path = { 9197 11068 }
+				start_province = 16915
+				target_province = 9985
 			}
 			#Vologda-Arkhangelsk
 			build_railway = {
-				path = { 9131 9199 75 72 9130 3130 11171 312 3338 }
+				start_province = 3070
+				target_province = 18924
 			}
 		}
 	}
@@ -16788,127 +16805,16 @@ ai_will_do = {
 	  				}
 	  			}
     		}
-    		every_country = {
+    		every_state = {
     			limit = {
-    				NOT = {
-    					tag = POL
-	     				tag = BUL
-	     				tag = YUG
-	     				tag = CZE
-	     				tag = ROOT
-    				}
     				OR = {
-    					controls_state = 9
-						controls_state = 69
-						controls_state = 70
-						controls_state = 71
-						controls_state = 72
-						controls_state = 73
-						controls_state = 74
-						controls_state = 75
-						controls_state = 664
-						controls_state = 48
-						controls_state = 211
-						controls_state = 212
-						controls_state = 801
-						controls_state = 97
-						controls_state = 85
-						controls_state = 762
-						controls_state = 90
-						controls_state = 88
-						controls_state = 92
-						controls_state = 91
-						controls_state = 95
-						controls_state = 94
-						controls_state = 86
-						controls_state = 98
-						controls_state = 89
-						controls_state = 10
-						controls_state = 96
-						controls_state = 784
-						controls_state = 93
-						controls_state = 87
-						controls_state = 104
-						controls_state = 109
-						controls_state = 103
-						controls_state = 804
-						controls_state = 802
-						controls_state = 106
-						controls_state = 105
-						controls_state = 108
-						controls_state = 107
-						controls_state = 102
-						controls_state = 853
-						controls_state = 803
-						controls_state = 45
-						controls_state = 764
-						controls_state = 736
-						controls_state = 852
-						controls_state = 163
-					}
+    					is_core_of = POL
+    					is_core_of = YUG
+    					is_core_of = BUL
+    					is_core_of = CZE
+    				}
     			}
-    			every_state = {
-					limit = { 
-						OR = {
-							state = 9
-							state = 69
-							state = 70
-							state = 71
-							state = 72
-							state = 73
-							state = 74
-							state = 75
-							state = 664
-							state = 48
-							state = 211
-							state = 212
-							state = 801
-							state = 97
-							state = 85
-							state = 762
-							state = 90
-							state = 88
-							state = 92
-							state = 91
-							state = 95
-							state = 94
-							state = 86
-							state = 98
-							state = 89
-							state = 10
-							state = 96
-							state = 784
-							state = 93
-							state = 87
-							state = 104
-							state = 109
-							state = 103
-							state = 804
-							state = 802
-							state = 106
-							state = 105
-							state = 108
-							state = 107
-							state = 102
-							state = 853
-							state = 803
-							state = 45
-							state = 764
-							state = 736
-							state = 852
-							state = 163
-						}
-					}
-					ROOT = { add_state_claim = PREV } 
-				}
-#				Changed the outcome from getting war goals to getting claims. 
-#    			ROOT = {
-#    				create_wargoal = {
-#					    type = take_state_focus
-#					    generator = { 9 69 70 71 72 73 74 75 664 48 211 212 801 97 85 762 90 88 92 91 95 94 86 98 89 10 96 784 93 87 104 109 103 804 802 106 105 108 107 102 853 803 #45 764 736 852 163 }
-#					    target = PREV
-#					}
-#				}
+    			add_claim_by = SOV
     		}
 		}
 	}
@@ -16944,6 +16850,7 @@ ai_will_do = {
 		id = SOV_pacify_the_rim
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = SOV_dismantle_the_zemsky_sobor focus = SOV_romanov_reconstruction }
+		allow_branch = { has_global_flag = NEVER }
 		x = -1
 		y = 1
 		relative_position_id = SOV_dismantle_the_zemsky_sobor
@@ -17057,7 +16964,6 @@ ai_will_do = {
 	focus = {
 		id = SOV_eastern_expansion
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = SOV_pacify_the_rim }
 		prerequisite = { focus = SOV_dismantle_the_zemsky_sobor }
 		x = 5
 		y = 1
@@ -17076,11 +16982,8 @@ ai_will_do = {
 			every_owned_state = {
 				limit = {
 					OR = {
-						state = 822
-						state = 875
-						state = 562
-						state = 874
-						state = 637
+						state = 632
+						state = 2292
 					}
 					free_building_slots = {
 						building = infrastructure
@@ -17093,7 +16996,7 @@ ai_will_do = {
 					instant_build = yes
 				}
 			}
-			637 = {
+			632 = {
 				if = {
 					limit = {
 						air_base < 8
@@ -17108,7 +17011,7 @@ ai_will_do = {
 					type = naval_base
 					level = 3
 					instant_build = yes
-					province = 4728
+					province = 4433
 				}
 				add_building_construction = {
 					type = anti_air_building
@@ -17116,12 +17019,12 @@ ai_will_do = {
 					instant_build = yes
 				}
 			}
-			408 = {
+			2292 = {
 				add_building_construction = {
 					type = naval_base
 					level = 2
 					instant_build = yes
-					province = 957
+					province = 18947
 				}
 			}
 		}
@@ -17131,6 +17034,7 @@ ai_will_do = {
 		id = SOV_intervention_in_the_americas
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		prerequisite = { focus = SOV_eastern_expansion }
+		allow_branch = { has_global_flag = NEVER}
 		x = 1
 		y = 1
 		relative_position_id = SOV_eastern_expansion
@@ -17251,12 +17155,11 @@ ai_will_do = {
 		y = 1
 		relative_position_id = SOV_eastern_expansion
 		mutually_exclusive = { focus = SOV_intervention_in_the_americas }
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 
-		will_lead_to_war_with = AFG
 		will_lead_to_war_with = PER
 
 		available_if_capitulated = no
@@ -17268,10 +17171,6 @@ ai_will_do = {
 		}
 
 		completion_reward = {
-			create_wargoal = { 
-				type = annex_everything
-				target = AFG
-			}
 			create_wargoal = { 
 				type = annex_everything
 				target = PER
@@ -17294,8 +17193,6 @@ ai_will_do = {
 		will_lead_to_war_with = IRQ
 		will_lead_to_war_with = TUR
 		will_lead_to_war_with = FRA
-		will_lead_to_war_with = RAJ
-		will_lead_to_war_with = PAK
 
 		available_if_capitulated = no
 		
@@ -17325,19 +17222,6 @@ ai_will_do = {
 				type = take_state_focus 
 				target = FRA
 				generator = { 553 554 677 680 799 }
-			}
-			if = {
-				limit = {
-					country_exists = PAK
-				}
-				create_wargoal = { 
-					type = annex_everything
-					target = PAK
-				}
-			}
-			create_wargoal = { 
-				type = annex_everything
-				target = RAJ
 			}
 		}
 	}
@@ -17599,7 +17483,7 @@ ai_will_do = {
 	focus = {
 		id = SOV_the_berlin_moscow_axis
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = SOV_pacify_the_rim }
+		prerequisite = { focus = SOV_dismantle_the_zemsky_sobor }
 		x = 2
 		y = 1
 		relative_position_id = SOV_pacify_the_rim
@@ -17636,6 +17520,7 @@ ai_will_do = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = SOV_the_berlin_moscow_axis }
 		mutually_exclusive = { focus = SOV_memories_of_1905 }
+		allow_branch = { has_global_flag = NEVER }
 		x = 0
 		y = 1
 		relative_position_id = SOV_the_berlin_moscow_axis
