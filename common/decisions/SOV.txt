@@ -14878,35 +14878,35 @@ SOV_soviet_civil_war_dec_cat = {
 		}
 
 		targets = {
-			state = 405  # Tashkent
+			state = 1006  # Tashkent
 		}
 		target_trigger = {
-			FROM = { state = 405 }
+			FROM = { state = 1006 }
 		}
 		icon = {
 			key = SOV_place_hq
 			trigger = {
-				405  = { NOT = { has_state_flag = SOV_hq_state_selected } }
+				1006  = { NOT = { has_state_flag = SOV_hq_state_selected } }
 			}
 		}
 		icon = {
 			key = SOV_place_hq_left_opposition
 			trigger = {
-				405 = { has_state_flag = SOV_hq_state_selected }
+				1006 = { has_state_flag = SOV_hq_state_selected }
 				SOV_is_left_opposition = yes
 			}
 		}
 		icon = {
 			key = SOV_place_hq_right_opposition
 			trigger = {
-				405 = { has_state_flag = SOV_hq_state_selected }
+				1006 = { has_state_flag = SOV_hq_state_selected }
 				SOV_is_right_opposition = yes
 			}
 		}
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				405 = { has_state_flag = SOV_hq_state_selected }
+				1006 = { has_state_flag = SOV_hq_state_selected }
 				SOV_is_exiles = yes
 			}
 		}
@@ -14918,7 +14918,7 @@ SOV_soviet_civil_war_dec_cat = {
 
 		visible = {
 			SOV_display_civil_war_start_state = yes
-			405 = { is_owned_by = ROOT }
+			1006 = { is_owned_by = ROOT }
 		}
 
 		cost = 15
@@ -14951,35 +14951,35 @@ SOV_soviet_civil_war_dec_cat = {
 		}
 
 		targets = {
-			state = 651  # Ufa
+			state = 201  # Ufa
 		}
 		target_trigger = {
-			FROM = { state = 651 }
+			FROM = { state = 201 }
 		}
 		icon = {
 			key = SOV_place_hq
 			trigger = {
-				651  = { NOT = { has_state_flag = SOV_hq_state_selected } }
+				201  = { NOT = { has_state_flag = SOV_hq_state_selected } }
 			}
 		}
 		icon = {
 			key = SOV_place_hq_left_opposition
 			trigger = {
-				651 = { has_state_flag = SOV_hq_state_selected }
+				201 = { has_state_flag = SOV_hq_state_selected }
 				SOV_is_left_opposition = yes
 			}
 		}
 		icon = {
 			key = SOV_place_hq_right_opposition
 			trigger = {
-				651 = { has_state_flag = SOV_hq_state_selected }
+				201 = { has_state_flag = SOV_hq_state_selected }
 				SOV_is_right_opposition = yes
 			}
 		}
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				651 = { has_state_flag = SOV_hq_state_selected }
+				201 = { has_state_flag = SOV_hq_state_selected }
 				SOV_is_exiles = yes
 			}
 		}
@@ -14991,7 +14991,7 @@ SOV_soviet_civil_war_dec_cat = {
 
 		visible = {
 			SOV_display_civil_war_start_state = yes
-			651 = { is_owned_by = ROOT }
+			201 = { is_owned_by = ROOT }
 		}
 
 		cost = 10
@@ -15024,35 +15024,35 @@ SOV_soviet_civil_war_dec_cat = {
 		}
 
 		targets = {
-			state = 563  # Chita
+			state = 41  # Chita
 		}
 		target_trigger = {
-			FROM = { state = 563  }
+			FROM = { state = 41  }
 		}
 		icon = {
 			key = SOV_place_hq
 			trigger = {
-				563 = { NOT = { has_state_flag = SOV_hq_state_selected } }
+				41 = { NOT = { has_state_flag = SOV_hq_state_selected } }
 			}
 		}
 		icon = {
 			key = SOV_place_hq_left_opposition
 			trigger = {
-				563 = { has_state_flag = SOV_hq_state_selected }
+				41 = { has_state_flag = SOV_hq_state_selected }
 				SOV_is_left_opposition = yes
 			}
 		}
 		icon = {
 			key = SOV_place_hq_right_opposition
 			trigger = {
-				563 = { has_state_flag = SOV_hq_state_selected }
+				41 = { has_state_flag = SOV_hq_state_selected }
 				SOV_is_right_opposition = yes
 			}
 		}
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				563 = { has_state_flag = SOV_hq_state_selected }
+				41 = { has_state_flag = SOV_hq_state_selected }
 				SOV_is_exiles = yes
 			}
 		}
@@ -15064,7 +15064,7 @@ SOV_soviet_civil_war_dec_cat = {
 
 		visible = {
 			SOV_display_civil_war_start_state = yes
-			563 = { is_owned_by = ROOT }
+			41 = { is_owned_by = ROOT }
 		}
 
 		cost = 10
@@ -15097,35 +15097,35 @@ SOV_soviet_civil_war_dec_cat = {
 		}
 
 		targets = {
-			state = 566  # Chita
+			state = 19  # Chita
 		}
 		target_trigger = {
-			FROM = { state = 566  }
+			FROM = { state = 19  }
 		}
 		icon = {
 			key = SOV_place_hq
 			trigger = {
-				566 = { NOT = { has_state_flag = SOV_hq_state_selected } }
+				19 = { NOT = { has_state_flag = SOV_hq_state_selected } }
 			}
 		}
 		icon = {
 			key = SOV_place_hq_left_opposition
 			trigger = {
-				566 = { has_state_flag = SOV_hq_state_selected }
+				19 = { has_state_flag = SOV_hq_state_selected }
 				SOV_is_left_opposition = yes
 			}
 		}
 		icon = {
 			key = SOV_place_hq_right_opposition
 			trigger = {
-				566 = { has_state_flag = SOV_hq_state_selected }
+				19 = { has_state_flag = SOV_hq_state_selected }
 				SOV_is_right_opposition = yes
 			}
 		}
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				566 = { has_state_flag = SOV_hq_state_selected }
+				19 = { has_state_flag = SOV_hq_state_selected }
 				SOV_is_exiles = yes
 			}
 		}
@@ -15137,7 +15137,7 @@ SOV_soviet_civil_war_dec_cat = {
 
 		visible = {
 			SOV_display_civil_war_start_state = yes
-			566 = { is_owned_by = ROOT }
+			19 = { is_owned_by = ROOT }
 			has_game_rule = { rule = sov_fragmentation_status option = SOV_UTTERLY_FRAGMENTED }
 		}
 
@@ -15161,7 +15161,7 @@ SOV_soviet_civil_war_dec_cat = {
 	}
 
 
-	##### SIBERIAN STATES
+	##### CAUCUSUS ACTUALLY THE NORTH
 	SOV_align_states_siberia_csw = {
 		name = SOV_planning_uprising_in_siberia
 		state_target = yes
@@ -15270,17 +15270,17 @@ SOV_soviet_civil_war_dec_cat = {
 		target_trigger = {
 			FROM = {
 				OR = {
+					region = 143
+					region = 212
+					region = 145
+					region = 144 
+					region = 114 
+					region = 115
+					region = 113
 					region = 147
-					region = 263
-					region = 151
-					region = 261 
-					region = 262 
-					region = 149
-					region = 256
-					region = 257
-					region = 258
-					region = 259
-					region = 260
+					region = 146
+					region = 213
+					region = 218
 				}
 			}
 		}
@@ -15323,7 +15323,7 @@ SOV_soviet_civil_war_dec_cat = {
 	}
 
 
-	### The Far East
+	### Central Asia
 	SOV_align_states_far_east_csw = {
 		name = SOV_planning_uprising_in_far_east
 		state_target = yes
@@ -15391,8 +15391,7 @@ SOV_soviet_civil_war_dec_cat = {
 		target_trigger = {
 			FROM = {
 				OR = {
-					region = 148
-					region = 255
+					AAAAAAAAAAAAAAAAAAAA
 				}
 			}
 		}
@@ -15529,10 +15528,17 @@ SOV_soviet_civil_war_dec_cat = {
 		target_trigger = {
 			FROM = {
 				OR = {
-					region = 12
-					region = 150
-					region = 264
-					region = 265
+					region = 143
+					region = 212
+					region = 145
+					region = 144 
+					region = 114 
+					region = 115
+					region = 113
+					region = 147
+					region = 146
+					region = 213
+					region = 218
 				}
 				is_owned_by = ROOT
 				is_controlled_by = ROOT
@@ -15660,7 +15666,17 @@ SOV_soviet_civil_war_dec_cat = {
 
 		target_trigger = {
 			FROM = {
-				region = 130
+				OR = {
+					region = 97
+					region = 99
+					region = 101
+					region = 106
+					region = 78
+					region = 100
+					region = 105
+					region = 104
+					region = 79
+				}
 				is_owned_by = ROOT
 				is_controlled_by = ROOT
 			}
@@ -15794,11 +15810,18 @@ SOV_soviet_civil_war_dec_cat = {
 		target_trigger = {
 			FROM = {
 				OR = {
-					region = 136
-					region = 267
-					region = 268
-					region = 269
-					region = 270
+					region = 229
+					region = 228
+					region = 221
+					region = 216
+					region = 215
+					region = 152
+					region = 214
+					region = 217
+					region = 154
+					region = 155
+					region = 151
+					region = 139
 				}
 				is_owned_by = ROOT
 				is_controlled_by = ROOT
@@ -17918,7 +17941,7 @@ SOV_panslavic_nationalism = {
 
 		complete_effect = {
 			set_cosmetic_tag = SOV_PANSLAVIC
-			news_event = { id = nsb_news.405 hours = 12 }
+			news_event = { id = nsb_news.1006 hours = 12 }
 		}
 	}
 }

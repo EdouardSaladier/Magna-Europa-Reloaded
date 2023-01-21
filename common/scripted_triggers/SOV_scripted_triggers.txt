@@ -825,33 +825,26 @@ SOV_is_military_offensive_main_objective = {
 
 SOV_is_industrial_relocation_destiny_state = {
 	OR = {
-		state = 573 #Zlatoust
-		state = 653 #Sverdlovsk
-		state = 651 #Ufa
-		state = 572 #Chelyabinsk
-		state = 582 #Magnitogorsk
-		state = 398 #Perm
-		state = 652 #Orenburg
+		state = 2380 #Brezniki
+		state = 175 #Sverdlovsk
+		state = 201 #Ufa
+		state = 97 #Molotov
+		state = 464 #Aqtobe
+		state = 285 #Chkalov
+		state = 2386 #Sterlitamak
 	}
 }
 
 SOV_is_industrial_relocation_destiny_fallback_state = {
 	OR = {
 		#Central Asia + KAZAKHSTAN
-		state = 405 #Tashkent
-		state = 586 #Alma-Ata
-		state = 830 #Bukhara
+		state = 2762 #Nukus
+		state = 1006 #Ashgabat
+		state = 430 #Uralsk
 		#Volga Region
-		state = 249 #Kazan
-		state = 251 #Kuybyshev
-		state = 400 #Kirov
-		#Western/Eastern Siberia
-		state = 587 #Kostanay
-		state = 571 #Omsk
-		state = 570 #Novosibirsk
-		state = 569 #Kemerovo
-		state = 568 #Krasnoyarsk
-		state = 40 #Altai Krai
+		state = 200 #Kazan
+		state = 270 #Kuybyshev
+		state = 108 #Kirov
 	}
 }
 
