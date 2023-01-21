@@ -6229,13 +6229,6 @@ focus_tree = {
 				limit = { has_dlc = "No Step Back"}
 				mark_focus_tree_layout_dirty = yes
 			}
-			every_state = {
-				limit = {
-					is_core_of = POL
-					is_german_mr = no
-				}
-				transfer_state_to = SOV
-			}
 		}
 	}
 
