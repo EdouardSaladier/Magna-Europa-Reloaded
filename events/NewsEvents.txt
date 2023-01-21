@@ -3781,10 +3781,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		685 = { is_controlled_by = JAP }
-		685 = { is_owned_by = USA }
-		JAP = { has_war_with = USA }
-		NOT = { has_global_flag = fall_of_panama }
+		always = no
 	}
 	
 	immediate = {
