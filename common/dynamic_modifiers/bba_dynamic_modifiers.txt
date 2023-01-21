@@ -1772,7 +1772,7 @@ ITA_anti_colonialism_sentiment = {
 }
 
 ITA_mafia_on_the_rise_no_lar = {
-	enable = { always = yes }
+	enable = { always = no} #TEMPORARILY DISABLED
 	remove_trigger = { # ROOT refers to the state on which the modifier is added
 		ROOT = {
 			is_controlled_by = ITA
@@ -1790,7 +1790,7 @@ ITA_mafia_on_the_rise_no_lar = {
 }
 
 ITA_mafia_on_the_rise = {
-	enable = { always = yes }
+	enable = { always = no } #TEMPORARILY DISABLED
 	remove_trigger = { # ROOT refers to the state on which the modifier is added
 		ROOT = {
 			is_controlled_by = ITA
