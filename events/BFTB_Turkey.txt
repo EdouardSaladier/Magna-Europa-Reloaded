@@ -1362,7 +1362,7 @@ country_event = {
 			}
 		}
 		effect_tooltip = {
-			TUR = { transfer_state = 799 }
+			TUR = { transfer_state = 1123 }
 		}
 		hidden_effect = {
 			TUR = { 
@@ -1400,7 +1400,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.26.a #the Motherland protects you now
 		add_political_power = 120
-		transfer_state = 799
+		transfer_state = 1123
 	}
 }
 
@@ -1416,7 +1416,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.27.a #the French have made enemies of Turks everywhere!
 		add_war_support = 0.1
-		add_state_claim = 799
+		add_state_claim = 1123
 	}
 }
 
@@ -1432,7 +1432,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.60.a #we must give in
 		effect_tooltip = {
-			TUR = { transfer_state = 799 }
+			TUR = { transfer_state = 1123 }
 		}
 		hidden_effect = {
 			TUR = { 
@@ -1470,7 +1470,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.61.a #the Motherland protects you now
 		add_political_power = 120
-		transfer_state = 799
+		transfer_state = 1123
 	}
 }
 
@@ -1486,10 +1486,10 @@ country_event = {
 	option = {
 		name = bftb_turkey.62.a #war it is
 		add_war_support = 0.15
-		add_state_claim = 799
+		add_state_claim = 1123
 		if = {
 			limit = {
-				SYR = { owns_state = 799 }
+				SYR = { owns_state = 1123 }
 			}
 			create_wargoal = {
 				type = take_claimed_state
@@ -4098,9 +4098,9 @@ country_event = {
 		}
 		if = {
 			limit = {
-				ROOT = { controls_state = 799 }
+				ROOT = { controls_state = 1123 }
 			}
-			TUR = { transfer_state = 799 }
+			TUR = { transfer_state = 1123 }
 		}
 	}
 	option = {
@@ -4126,9 +4126,9 @@ country_event = {
 		add_state_claim = 680
 		if = {
 			limit = {
-				ROOT = { NOT = { controls_state = 799 } }
+				ROOT = { NOT = { controls_state = 1123 } }
 			}
-			add_state_claim = 799
+			add_state_claim = 1123
 		}
 		create_wargoal = {
 			target = FROM
