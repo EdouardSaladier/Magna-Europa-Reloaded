@@ -1717,7 +1717,7 @@ focus_tree = {
 		}
 
 		available = {
-			ROOT = { has_full_control_of_state = 43 }
+			ROOT = { has_full_control_of_state = 722 }
 		}
 
 		bypass = {
@@ -1731,7 +1731,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			43 = {
+			722 = {
 				add_resource = {
 					type = aluminium
 					amount = 16

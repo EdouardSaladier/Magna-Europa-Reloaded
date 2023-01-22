@@ -1033,9 +1033,13 @@
 		cost = 10
 
 		available = {
-			18 = { is_controlled_by = ROOT }
-			29 = { is_controlled_by = ROOT }
-			785 = { is_controlled_by = ROOT }
+			2333 = { is_controlled_by = ROOT }
+			1342 = { is_controlled_by = ROOT }
+			466 = { is_controlled_by = ROOT }
+			525 = { is_controlled_by = ROOT }
+			515 = { is_controlled_by = ROOT }
+			544 = { is_controlled_by = ROOT }
+			
 			has_idea = FRA_protected_by_the_maginot_line
 		}
 		completion_reward = {
@@ -4454,8 +4458,8 @@
 				exists = yes
 			}
 			ITA = {
-				owns_state = 550
-				owns_state = 559
+				owns_state = 1241
+				owns_state = 1421
 			}
 			has_country_flag = lar_france_stresa_front_italy_agreed
 		}
