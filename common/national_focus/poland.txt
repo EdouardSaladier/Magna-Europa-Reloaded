@@ -446,7 +446,7 @@ focus_tree = {
 
 		available = {
 			
-			762 = {
+			481 = {
 				owns_or_subject_of = yes
 				controller = {
 					tag = PREV.OWNER
@@ -465,12 +465,12 @@ focus_tree = {
 			add_resource = {
 				type = steel
 				amount = 24
-				state = 762
+				state = 481
 			}
 			add_resource = {
 				type = aluminium
 				amount = 12
-				state = 762
+				state = 481
 			}
 		}
 	}
@@ -3674,7 +3674,7 @@ focus_tree = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 88 }
+				prioritize = { 1975 }
 				limit = { PREV = { has_full_control_of_state = PREV } }
 				create_unit = {
 					division = "name = \"Dywizja Karpaty\" division_template = \"Dywizja Karpacka\" start_experience_factor = 1.0" 
@@ -3746,7 +3746,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 						type = bunker
-						level = 1
+						level = 2
 						instant_build = yes
 						province = {
 							all_provinces = yes
@@ -10440,9 +10440,9 @@ focus_tree = {
 		}
 		
 		available = {
-			controls_state = 518
+			controls_state = 511
 			controls_state = 318
-			controls_state = 2168
+			controls_state = 2685
 			controls_state = 252
 		}
 
@@ -10464,6 +10464,10 @@ focus_tree = {
 							}
 						}
 						state = 2423
+						state = 2178
+						state = 2177
+						state = 2180
+						state = 2685
 						state = 2424
 						state = 450
 						state = 2426
@@ -14925,11 +14929,8 @@ focus_tree = {
 			OR = {
 				DNZ = {
 					all_core_state = {
-						is_owned_by = POL
+						is_owned_by = DNZ
 					}
-				}
-				DNZ = {
-					is_subject_of = POL
 				}
 			}
 		}
@@ -14941,11 +14942,8 @@ focus_tree = {
 				}
 				DNZ = {
 					all_core_state = {
-						NOT = { is_owned_by = POL }
+						NOT = { is_owned_by = DNZ }
 					}
-				}
-				DNZ = {
-					NOT = { is_subject_of = POL }
 				}
 			}
 			has_civil_war = no
@@ -14968,12 +14966,7 @@ focus_tree = {
 						state = 280
 					}
 				}
-				remove_dynamic_modifier = {
-					modifier = international_city
-				}
-				add_dynamic_modifier = {
-					modifier = international_city_2
-				}
+				set_demilitarized_zone = yes
 				force_enable_resistance = { 
 					clear = no
 					occupier = POL
@@ -15099,9 +15092,9 @@ focus_tree = {
 		}
 		
 		available = {
-			owns_state = 85
-			controls_state = 85
-			85 = {
+			owns_state = 280
+			controls_state = 280
+			280 = {
 				OR = {
 					AND = {
 						compliance > 80
@@ -15137,7 +15130,7 @@ focus_tree = {
 				set_state_name = "Gdańsk"
 			}
 			set_province_name = {
-				id = 362
+				id = 10923
 				name = "Gdańsk"
 			}
 		}
@@ -15313,8 +15306,8 @@ focus_tree = {
 		}
 		
 		bypass = {
-			85 = { controls_or_subject_of = no }
-			807 = { controls_or_subject_of = no }
+			280 = { controls_or_subject_of = no }
+			267 = { controls_or_subject_of = no }
 		}
 
 		available_if_capitulated = yes
@@ -15322,7 +15315,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_completed_focus = POL_clamp_down_on_danzig
-					controls_state = 85
+					controls_state = 280
 				}
 				build_railway = {
 					#level = 3
@@ -15331,7 +15324,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					controls_state = 807
+					controls_state = 267
 				}
 				build_railway = {
 					#level = 3
@@ -15340,7 +15333,7 @@ focus_tree = {
 			}
 
 			random_owned_controlled_state = {
-				prioritize = { 85 }
+				prioritize = { 280 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex

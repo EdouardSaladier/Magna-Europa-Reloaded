@@ -187,6 +187,16 @@ country_event = {
 			}
 			transfer_state_to = ROOT
 		}
+		
+		if = {
+			limit = {
+				controls_state = 1143
+			}
+			transfer_state = 1599
+			transfer_state = 590
+			transfer_state = 1600
+		}
+		
 		hidden_effect = {
 			SOV = {
 				country_event = { days = 1 id = news.10 }

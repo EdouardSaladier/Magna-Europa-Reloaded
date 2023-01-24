@@ -15891,15 +15891,15 @@ ai_will_do = {
 		completion_reward = {
 			if = {
 				limit = {
-					195 = {
+					119 = {
 						is_capital = no
 					}
 				}
 				set_capital = {
-					state = 195
+					state = 119
 				}
 			}
-			195 = {
+			119 = {
 				if = {
 					limit = {
 						free_building_slots = {
