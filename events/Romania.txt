@@ -120,7 +120,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state
 					target = ROM
-					generator = { 665 }
+					generator = { 665 1586 }
 				}
 			}
 		}
