@@ -3370,6 +3370,17 @@ country_event = {
 				}
 				SLO = { transfer_state = 2313 }
 			}
+			if = {
+				limit = {
+					562 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 562 }
+			}
 		}
 		if = {
 			limit = {
@@ -3378,12 +3389,6 @@ country_event = {
 					is_friend_or_potential_friend_of_GER = yes
 				}
 				AND = {
-					562 = {
-						OR = {
-							is_owned_by = CZE
-							is_owned_by = GER
-						}
-					}
 					2929 = {
 						OR = {
 							is_owned_by = CZE
@@ -3420,7 +3425,6 @@ country_event = {
 			HUN = {
 				custom_effect_tooltip = mer_transfer_transcarpathia
 				hidden_effect = {
-					transfer_state = 562
 					transfer_state = 2929
 					transfer_state = 1607
 					transfer_state = 1608
@@ -3438,12 +3442,6 @@ country_event = {
 					HUN = { is_friend_or_potential_friend_of_GER = no }
 				}
 				AND = {
-					562 = {
-						OR = {
-							is_owned_by = CZE
-							is_owned_by = GER
-						}
-					}
 					2929 = {
 						OR = {
 							is_owned_by = CZE
@@ -3479,7 +3477,6 @@ country_event = {
 			SLO = {
 				custom_effect_tooltip = mer_transfer_transcarpathia
 				hidden_effect = {
-					transfer_state = 562
 					transfer_state = 2929
 					transfer_state = 1607
 					transfer_state = 1608

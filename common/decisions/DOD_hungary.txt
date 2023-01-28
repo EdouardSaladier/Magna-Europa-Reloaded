@@ -94,6 +94,34 @@ political_actions = {
 			}
 		}
 	}
+	HUN_sieze_szobranc = {
+		available = {
+			SLO = { 
+				exists = yes 
+				is_subject_of = GER
+				owns_state = 562
+			}
+		}
+		allowed = {
+			original_tag = HUN
+		}
+		visible = {
+			GER = { has_completed_focus = GER_end_of_czechoslovakia }
+			has_completed_focus = HUN_reaffirm_territorial_claims
+			NOT = {
+				owns_state = 562
+			}
+			
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 9
+		complete_effect = {
+			transfer_state = 562
+		}
+	}
 }
 
 economy_decisions = {
