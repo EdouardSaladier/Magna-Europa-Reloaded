@@ -11516,12 +11516,12 @@ SOV_great_patriotic_war = {
 				add = 15
 				FROM = {
 					OR = {
-						state = 219 #MOSCOW
-						state = 195 #LENINGRAD
-						state = 217 #STALINGRAD
-						state = 137 #SEVASTOPOL
-						state = 206 #MINSK
-						state = 202 #KIEV
+						state = 229 #MOSCOW
+						state = 119 #LENINGRAD
+						state = 457 #STALINGRAD
+						state = 2044 #SEVASTOPOL
+						state = 2135 #MINSK
+						state = 2081 #KIEV
 					}
 				}
 				#ROOT = { manpower_per_military_factory > 15000 } #Don't waste if we need better manpower laws
@@ -11631,12 +11631,12 @@ SOV_great_patriotic_war = {
 				add = 15
 				FROM = {
 					OR = {
-						state = 219 #MOSCOW
-						state = 195 #LENINGRAD
-						state = 217 #STALINGRAD
-						state = 137 #SEVASTOPOL
-						state = 206 #MINSK
-						state = 202 #KIEV
+						state = 229 #MOSCOW
+						state = 119 #LENINGRAD
+						state = 457 #STALINGRAD
+						state = 2044 #SEVASTOPOL
+						state = 2135 #MINSK
+						state = 2081 #KIEV
 					}
 				}
 				#ROOT = { manpower_per_military_factory > 15000 } #Don't waste if we need better manpower laws
