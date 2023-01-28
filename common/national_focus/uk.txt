@@ -7428,61 +7428,67 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
 		completion_reward = {
 			add_war_support = 0.05
-			# Ipswich
-			125 = {
+			# Suffolk
+			386 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
-					#Plymouth
+					#Ipswich
 					add_building_construction = {
 						type = coastal_bunker
 						level = 2
-						province = 271
+						province = 6529
 						instant_build = yes
 					}
 				}
 			}
-			# Greater London Area
-			126 = {
+			# Essex
+			413 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					#London
 					add_building_construction = {
 						type = coastal_bunker
 						level = 2
-						province = 11374
+						province = 12032
 						instant_build = yes
 					}
 				}
 			}
-			# Sussex
-			127 = {
+			# Kent
+			446 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					#Dover
 					add_building_construction = {
 						type = coastal_bunker
 						level = 2
-						province = 3501
-						instant_build = yes
-					}
-					#Portsmouth
-					add_building_construction = {
-						type = coastal_bunker
-						level = 2
-						province = 9458
+						province = 12192
 						instant_build = yes
 					}
 				}								
 			}
-			# Cornwall
-			123 = {
+			# Hampshire
+			453 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					#Portsmouth
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 1501
+						instant_build = yes
+					}
+				}								
+			}
+			# Plymouth
+			2959 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					#Plymouth
 					add_building_construction = {
 						type = coastal_bunker
 						level = 2
-						province = 540
+						province = 5768
 						instant_build = yes
 					}
 				}
