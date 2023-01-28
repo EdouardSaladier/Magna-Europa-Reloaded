@@ -48,7 +48,7 @@ units= {
 		# ATLANTIC RESERVES #
 		task_force = {					
 			name = "Atlantic Reserve Destroyers"		# Decommissioned ships docked in Philadelphia					
-			location = 19360 # Philadelphia
+			location = 19350 # Philadelphia
 			ship = { name = "USS Allen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }	
 			ship = { name = "USS Colhoun" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
 			ship = { name = "USS Gregory" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
@@ -67,7 +67,7 @@ units= {
 		}					
 		task_force = {					
 			name = "Atlantic Reserve Submarines"		# Decommissioned ships docked in Philadelphia	
-			location = 19360 # Philadelphia
+			location = 19350 # Philadelphia
 			ship = { name = "USS O-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "O/R/S Class" } } }
 			ship = { name = "USS O-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "O/R/S Class" } } }
 			ship = { name = "USS O-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "O/R/S Class" } } }
