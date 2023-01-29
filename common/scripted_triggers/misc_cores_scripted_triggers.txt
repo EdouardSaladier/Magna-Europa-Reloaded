@@ -278,3 +278,21 @@ is_german_mr = {
 		}
 	}
 }
+is_transnistria = {
+	OR = {
+		state = 618
+		state = 2063
+		state = 613
+		state = 2047
+		state = 2045
+		state = 2046
+		is_core_of = TSN
+		state = 2061
+		state = 2683
+		state = 2050
+		state = 565
+		state = 2051
+		state = 2052
+		state = 2039
+	}
+}
