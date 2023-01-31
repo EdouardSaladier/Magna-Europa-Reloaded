@@ -248,7 +248,7 @@ country_event = {
 		571 = { is_controlled_by = GER }
 		is_in_faction_with = ENG
 		ENG = { has_war_with = GER }
-		surrender_progress > 0.4
+		surrender_progress > 0.5
 		GER = {
 			OR = {
 				is_faction_leader = yes
@@ -511,12 +511,23 @@ country_event = {
 			}
 			set_state_controller_to = MVF
 			GER = {
-				puppet = MVF
+				set_autonomy = { target = MVF autonomy_state = autonomy_integrated_puppet }
+			}
+			every_state = {
+				limit = {
+					is_core_of = FRA
+					is_alsace_lorraine = no
+				}
+				add_claim_by = MVF
 			}
 		}
+		
+			
 		every_state = {
 			limit = {
-				is_alsace_lorraine = yes
+				OR = {
+					is_alsace_lorraine = yes
+				}
 				owner = { original_tag = FRA }
 			}
 			transfer_state_to = GER
@@ -528,7 +539,7 @@ country_event = {
 				is_controlled_by = ITA
 				owner = { original_tag = FRA }
 			}
-			transfer_state_to = ITA
+			set_state_controller_to = ITA
 		}
 		if = { #PART 2
 			limit = {
@@ -629,149 +640,42 @@ country_event = {
 				transfer_state = 871
 			}
 		}
-		FRA = {
-			set_capital = { state = 539 }
-
-			hidden_effect = {
+		create_dynamic_country = {
+				original_tag = FRA
+				save_event_target_as = vichy_france
+				set_country_flag = vichy_france
+				every_state = { #transfer French colonial empire
+					limit = {
+						is_controlled_by = FRA
+						is_owned_by = FRA
+						OR = {
+							is_on_continent = africa
+							is_core_of = LEB
+							is_core_of = SYR
+						}
+					}
+					event_target:vichy_france = { transfer_state = PREV }
+				}
 				every_state = {
-					limit = {
-						is_vichy_state = yes
-					}
-					transfer_state_to = PREV
-				}
-				#tunisia
-				if = {
-					limit = {
-						458 = {
-							owner = { original_tag = FRA }
-							controller = { 
-								original_tag = FRA
-							}
+					limit = { #set up Vichy continental holdings
+						OR = {
+							is_vichy_state = yes
+							is_ita_occupation_zone = yes
 						}
-					}
-					set_state_controller = 458
-				}
-
-				#syria
-				if = {
-					limit = {
-						677 = {
-							owner = { original_tag = FRA }
-							controller = { 
-								original_tag = FRA
-							}
-						}
-					}
-					set_state_controller = 677
-				}
-				if = {
-					limit = {
-						680 = {
-							owner = { original_tag = FRA }
-							controller = { 
-								original_tag = FRA
-							}
-						}
-					}
-					set_state_controller = 680
-				}
-				if = {
-					limit = {
-						554 = {
-							owner = { original_tag = FRA }
-							controller = { 
-								original_tag = FRA
-							}
-						}
-					}
-					set_state_controller = 554 
-				}
-
-				if = {
-					limit = {
-						1 = {
-							owner = { original_tag = FRA }
-						}
-					}
-					set_state_controller = 1
-				}
-				if = {
-					limit = {
-						32 = {
-							owner = { original_tag = FRA }
-						}
-					}
-					set_state_controller = 32
-				}
-				if = {
-					limit = {
-						735 = {
-							owner = { original_tag = FRA }
-						}
-					}
-					set_state_controller = 735
-				}
-				if = {
-					limit = {
-						21 = {
-							owner = { original_tag = FRA }
-						}
-					}
-					set_state_controller = 21
-				}
-				if = {
-					limit = {
-						851 = {
-							owner = { original_tag = FRA }
-						}
-					}
-					set_state_controller = 851
-				}
-				if = {
-					limit = {
-						31 = {
-							owner = { original_tag = FRA }
-						}
-					}
-					set_state_controller = 31
-				}
-			}
-			start_civil_war = {
-				ideology = fascism
-				size = 0.9
-				capital = 26
-				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 776 777 778 779 780 781 782 786 851 }
-				states_filter = {
-					owner = { original_tag = FRA }
-					OR = {		
-						# lets not involve syria or tunisia in civil war flip if occupied by other party
-						AND = {
+						CONTROLLER = { 
 							OR = {
-								state = 554
-								state = 680
-								state = 677
-								state = 458
-							}
-							controller = { # FRA not controller
 								original_tag = FRA
-							}
-						}
-						NOT = {
-							OR = {
-								state = 554
-								state = 680
-								state = 677
-								state = 458
-							}				
-						}
-					}			
+								has_war_with = FRA
+							} 
+						} #failsafe for weird shit (tm)
+					}
+					add_core_of = PREV
+					event_target:vichy_france = { transfer_state = PREV }
 				}
-			}
-		}
-		random_other_country = {
-			limit = { original_tag = FRA has_government = fascism }
-			ROOT = { puppet = PREV }
-			set_capital = { state = 26 }
+				GER = {
+					set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+				}
+			set_capital = { state = 699 }
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
@@ -787,17 +691,12 @@ country_event = {
 				}
 				set_nationality = FRA
 			}
-			
-			set_country_flag = vichy_france
-			save_event_target_as = vichy_france
-
 			FRA = { #Move Petain to Vichy
 				set_nationality = {
 					target_country = PREV
 					character = FRA_philippe_petain
 				}
 			}
-
 			add_country_leader_role = {
 				character = FRA_philippe_petain
 				country_leader = {
@@ -811,6 +710,28 @@ country_event = {
 			if = {
 				limit = { FRA = { has_country_flag = become_vichy } }
 				change_tag_from = FRA
+			}
+			
+		}
+		if = {
+			limit = {
+				GER = {
+					has_war_with = FRA
+				}
+			}
+			MVF = {
+				declare_war_on = {
+					target = FRA
+					type = civil_war
+				}	
+				
+			}
+			else = {
+				MVF = {
+					every_controlled_state = {
+						transfer_state_to = MVF
+					}
+				}
 			}
 		}
 		country_event = { hours = 6 id = news.34 }
