@@ -306,23 +306,12 @@ country_event = {
 				add_state_claim = 1329
 				add_state_claim = 236
 			}
-		}
-		custom_effect_tooltip = mer_claims_on_belarussian_poland
-		hidden_effect = {
-			every_state = {
-				limit = { 
-					is_core_of = BLR
-					is_owned_by = POL
-				}
-				add_claim_by = SOV
-			}
-		}
+		}stom_effect_tooltip = mer_claims_on_belarussian_poland
 		custom_effect_tooltip = mer_claims_on_ukrainian_poland
 		hidden_effect = {
 			every_state = {
 				limit = { 
-					is_core_of = UKR
-					is_owned_by = POL
+					is_soviet_mr = yes
 				}
 				add_claim_by = SOV
 			}
@@ -430,180 +419,44 @@ country_event = {
 		NOT =  { has_war_with = SOU }
 		OR = {
 			AND = {
-				OR = {
-					all_state = {
-						is_core_of = POL
-						OR = {
-							is_core_of = BLR
-							is_core_of = UKR
-						}
-						is_owned_by = GER
-					}
-					any_other_country = {
-						is_in_faction_with = GER
-						GER = {
-							is_faction_leader = yes
-						}
-						all_state = {
-							is_core_of = POL
-							OR = {
-								is_core_of = BLR
-								is_core_of = UKR
-							}
-							is_owned_by = PREV
-						}
-					}
-				}
-				OR = {
-					owns_state = 294
-					any_other_country = {
-						is_in_faction_with = GER
-						GER = {
-							is_faction_leader = yes
-						}
-						owns_state = 294
-					}
-				}
-				OR = {
-					owns_state = 1304
-					any_other_country = {
-						is_in_faction_with = GER
-						GER = {
-							is_faction_leader = yes
-						}
-						owns_state = 1304
-					}
-				}
-				OR = {
-					owns_state = 1135
-					any_other_country = {
-						is_in_faction_with = GER
-						GER = {
-							is_faction_leader = yes
-						}
-						owns_state = 1135
-					}
-				}
-				OR = {
-					owns_state = 241
-					any_other_country = {
-						is_in_faction_with = GER
-						GER = {
-							is_faction_leader = yes
-						}
-						owns_state = 241
-					}
-				}
-				OR = {
-					owns_state = 1329
-					any_other_country = {
-						is_in_faction_with = GER
-						GER = {
-							is_faction_leader = yes
-						}
-						owns_state = 1329
-					}
-				}
-				OR = {
-					owns_state = 236
-					any_other_country = {
-						is_in_faction_with = GER
-						GER = {
-							is_faction_leader = yes
-						}
-						owns_state = 236
-					}
-				}
-			}
-			AND = {
 				POL = { has_capitulated = yes }
-				AND = {
-					OR = {
-						all_state = {
-							is_owned_by = POL
+				POL = {
+					all_core_state = {
+						if = {
+							limit = {
+								is_soviet_mr = yes
+							}
 							OR = {
-								is_core_of = BLR
-								is_core_of = UKR
-							}
-							is_controlled_by = GER
-						}
-						any_other_country = {
-							is_in_faction_with = GER
-							GER = {
-								is_faction_leader = yes
-							}
-							all_state = {
-								is_owned_by = POL
-								OR = {
-									is_core_of = BLR
-									is_core_of = UKR
+								is_controlled_by = GER
+								controller = {
+									is_in_faction_with = GER
+									GER = {
+										is_faction_leader = yes
+									}
 								}
-								is_controlled_by = PREV
 							}
-						}
-					}
-					OR = {
-						controls_state = 294
-						any_other_country = {
-							is_in_faction_with = GER
-							GER = {
-								is_faction_leader = yes
-							}
-							controls_state = 294
-						}
-					}
-					OR = {
-						controls_state = 1304
-						any_other_country = {
-							is_in_faction_with = GER
-							GER = {
-								is_faction_leader = yes
-							}
-							controls_state = 1304
-						}
-					}
-					OR = {
-						controls_state = 1135
-						any_other_country = {
-							is_in_faction_with = GER
-							GER = {
-								is_faction_leader = yes
-							}
-							controls_state = 1135
-						}
-					}
-					OR = {
-						controls_state = 241
-						any_other_country = {
-							is_in_faction_with = GER
-							GER = {
-								is_faction_leader = yes
-							}
-							controls_state = 241
-						}
-					}
-					OR = {
-						controls_state = 1329
-						any_other_country = {
-							is_in_faction_with = GER
-							GER = {
-								is_faction_leader = yes
-							}
-							controls_state = 1329
-						}
-					}
-					OR = {
-						controls_state = 236
-						any_other_country = {
-							is_in_faction_with = GER
-							GER = {
-								is_faction_leader = yes
-							}
-							controls_state = 236
 						}
 					}
 				}
 			}
+			POL = {
+					all_core_state = {
+						if = {
+							limit = {
+								is_soviet_mr = yes
+							}
+							OR = {
+								is_owned_by = GER
+								owner = {
+									is_in_faction_with = GER
+									GER = {
+										is_faction_leader = yes
+									}
+								}
+							}
+						}
+					}
+				}
 		}
 	}
 

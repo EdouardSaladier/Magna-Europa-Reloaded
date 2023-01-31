@@ -278,6 +278,21 @@ is_german_mr = {
 		}
 	}
 }
+is_soviet_mr = {
+	OR = {
+		has_state_flag = SOV_POL_STATE
+		state = 2522
+		state = 306
+		state = 2026
+		state = 1287
+		state = 312
+		state = 2485
+		state = 319
+		state = 501
+		state = 1258
+		state = 2345
+	}
+}
 is_transnistria = {
 	OR = {
 		state = 618
