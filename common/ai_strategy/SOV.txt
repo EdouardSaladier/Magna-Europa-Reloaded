@@ -284,7 +284,7 @@ claims_on_finland = {
 	enable = {
 		has_completed_focus = SOV_secure_leningrad
 		country_exists = FIN
-		NOT = { controls_state = 146 } #Karelija
+		NOT = { controls_state = 77 } #Karelija
 		date > 1940.8.1
 	}
 	abort = {
@@ -295,7 +295,7 @@ claims_on_finland = {
 			FIN = {
 				has_government = ROOT
 			}
-			controls_state = 146 #Karelija
+			controls_state = 77 #Karelija
 		}
 	}
 
@@ -1044,19 +1044,20 @@ SOV_scorched_earth_german_front_baltics = {
 		}
 		count_triggers = {
 			amount = 4 #if 4 baltic states are owned by an enemy, burn the rest of the Baltics
-			814 = { CONTROLLER = { has_war_with = SOV } }
-			11 = { CONTROLLER = { has_war_with = SOV } }
-			189 = { CONTROLLER = { has_war_with = SOV } }
-			815 = { CONTROLLER = { has_war_with = SOV } }
-			190 = { CONTROLLER = { has_war_with = SOV } }
-			809 = { CONTROLLER = { has_war_with = SOV } }
-			810 = { CONTROLLER = { has_war_with = SOV } }
-			808 = { CONTROLLER = { has_war_with = SOV } }
-			811 = { CONTROLLER = { has_war_with = SOV } }
-			13 = { CONTROLLER = { has_war_with = SOV } }
-			812 = { CONTROLLER = { has_war_with = SOV } }
-			813 = { CONTROLLER = { has_war_with = SOV } }
+			242 = { CONTROLLER = { has_war_with = SOV } }
+			227 = { CONTROLLER = { has_war_with = SOV } }
+			206 = { CONTROLLER = { has_war_with = SOV } }
+			259 = { CONTROLLER = { has_war_with = SOV } }
+			172 = { CONTROLLER = { has_war_with = SOV } }
+			174 = { CONTROLLER = { has_war_with = SOV } }
+			185 = { CONTROLLER = { has_war_with = SOV } }
+			1348 = { CONTROLLER = { has_war_with = SOV } }
+			133 = { CONTROLLER = { has_war_with = SOV } }
+			155 = { CONTROLLER = { has_war_with = SOV } }
+			152 = { CONTROLLER = { has_war_with = SOV } }
+			137 = { CONTROLLER = { has_war_with = SOV } }
 			191 = { CONTROLLER = { has_war_with = SOV } }
+			207 = { CONTROLLER = { has_war_with = SOV } }
 		}
 	}
 
@@ -1115,7 +1116,6 @@ SOV_scorched_earth_german_front_Poland = {
 			93 = { CONTROLLER = { has_war_with = SOV } }
 			91 = { CONTROLLER = { has_war_with = SOV } }
 			89 = { CONTROLLER = { has_war_with = SOV } }
-
 		}
 	}
 

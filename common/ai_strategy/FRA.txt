@@ -391,7 +391,7 @@ FRA_antagonize_vichy = {
 		has_focus_tree = vichy_french_focus
 		OR = {
 			date > 1942.6.1
-			448 = {
+			699 = {
 				CONTROLLER = {
 					is_in_faction_with = FRA
 				}

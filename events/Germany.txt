@@ -467,6 +467,32 @@ country_event = {
 					}
 				}
 			}
+			AND = {
+				POL = { has_capitulated = yes }
+				custom_trigger_tooltip = {
+					tooltip =  "Soviet Molotov-Ribbentrop States are controlled by Germany or its allies or Russia"
+					POL = {
+						all_core_state = {
+							if = {
+								limit = {
+									is_soviet_mr = yes
+								}
+								OR = {
+									is_controlled_by = GER
+									controller = {
+										is_in_faction_with = GER
+										GER = {
+											is_faction_leader = yes
+										}
+									}
+									is_controlled_by = SOV
+								}
+								
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 

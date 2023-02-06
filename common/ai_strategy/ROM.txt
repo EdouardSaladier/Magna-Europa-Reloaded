@@ -57,7 +57,7 @@ ROM_highway_to_the_danger_zone_78 = { # bessarabia
 	enable = {
 		has_war = no
 		date > 1938.1.1
-		78 = {
+		1604 = {
 			is_controlled_by = ROM
 			infrastructure < 4
 		}
@@ -68,7 +68,7 @@ ROM_highway_to_the_danger_zone_78 = { # bessarabia
 	ai_strategy = {
 		type = build_building
 		id = infrastructure
-		target = 78
+		target = 1604
 		value = 1
 	}	
 }
@@ -80,13 +80,13 @@ ROM_highway_to_the_danger_zone_766 = { # s. bessarabia
 	enable = {
 		has_war = no
 		date > 1938.1.1
-		78 = {
+		1604 = {
 			OR = {
 				NOT = { is_controlled_by = ROM }
 				infrastructure > 3
 			}
 		}
-		766 = {
+		1601 = {
 			is_controlled_by = ROM
 			infrastructure < 4
 		}
@@ -97,7 +97,7 @@ ROM_highway_to_the_danger_zone_766 = { # s. bessarabia
 	ai_strategy = {
 		type = build_building
 		id = infrastructure
-		target = 766
+		target = 1601
 		value = 1
 	}	
 }
@@ -109,19 +109,19 @@ ROM_highway_to_the_danger_zone_79 = { # Moldova
 	enable = {
 		has_war = no
 		date > 1938.1.1
-		78 = {
+		1604 = {
 			OR = {
 				NOT = { is_controlled_by = ROM }
 				infrastructure > 3
 			}
 		}
-		766 = {
+		1601 = {
 			OR = {
 				NOT = { is_controlled_by = ROM }
 				infrastructure > 3
 			}
 		}
-		79 = {
+		1594 = {
 			is_controlled_by = ROM
 			infrastructure < 4
 		}
@@ -132,7 +132,7 @@ ROM_highway_to_the_danger_zone_79 = { # Moldova
 	ai_strategy = {
 		type = build_building
 		id = infrastructure
-		target = 79
+		target = 1594
 		value = 1
 	}	
 }

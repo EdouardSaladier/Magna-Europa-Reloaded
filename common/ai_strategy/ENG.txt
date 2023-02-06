@@ -940,7 +940,7 @@ ENG_the_channel_is_dangerous = {
 
 	ai_strategy = {
 		type = naval_avoid_region
-		id = 18 #english channel
+		id = 209 #english channel
 		value = 75
 	}
 }
@@ -954,17 +954,22 @@ ENG_baltic_is_a_trap = {
 
 	ai_strategy = {
 		type = naval_avoid_region
-		id = 9 #northern baltic
+		id = 161 #northern baltic
 		value = 100
 	}
 	ai_strategy = {
 		type = naval_avoid_region
-		id = 206 #central baltic
+		id = 166 #central baltic
 		value = 100
 	}
 	ai_strategy = {
 		type = naval_avoid_region
-		id = 207 #danish belts
+		id = 167 #danish belts
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 165 #swedish coast
 		value = 100
 	}
 }
@@ -1421,21 +1426,21 @@ ENG_Defends_Mediterranean = {
 	# Alexandria
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
-		id = 447
+		id = 1895
 		value = 10
 	}
 
 	# Gibraltar
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
-		id = 118
+		id = 882
 		value = 4
 	}
 
 	# Malta
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
-		id = 116
+		id = 1622
 		value = 4
 	}
 }
@@ -1510,9 +1515,9 @@ ENG_unit_buffer_for_african_defense = {
 
 		# states to put garrison orders (if no state is friendly, strat is invalid)
 		states = {
-			446
-			447
-			452
+			1285
+			1299
+			1278
 		}
 
 		area = suez
@@ -1837,12 +1842,22 @@ COMMONWEALTH_disregard_france_a_bit = {
 	}
 	ai_strategy = {
 		type = strategic_air_importance
-		id = 19 #Strategic Region ID - Northern France
+		id = 89 #Strategic Region ID - Northern France
 		value = -30000 #value of stocked main front in active combat is usually around 35,000
 	}
 	ai_strategy = {
 		type = strategic_air_importance
-		id = 5 #Strategic Region ID - benelux
+		id = 88 #Strategic Region ID - Alsace
+		value = -30000 #value of stocked main front in active combat is usually around 35,000
+	}
+	ai_strategy = {
+		type = strategic_air_importance
+		id = 4 #Strategic Region ID - HOL
+		value = -30000 #value of stocked main front in active combat is usually around 35,000
+	}
+	ai_strategy = {
+		type = strategic_air_importance
+		id = 5 #Strategic Region ID - BEL
 		value = -30000 #value of stocked main front in active combat is usually around 35,000
 	}
 }
@@ -1864,12 +1879,22 @@ ENG_disregard_france_a_bit = {
 	}
 	ai_strategy = {
 		type = strategic_air_importance
-		id = 19 #Strategic Region ID - Northern France
+		id = 89 #Strategic Region ID - Northern France
 		value = -20000 #value of stocked main front in active combat is usually around 35,000
 	}
 	ai_strategy = {
 		type = strategic_air_importance
-		id = 5 #Strategic Region ID - benelux
+		id = 88 #Strategic Region ID - Alsace
+		value = -20000 #value of stocked main front in active combat is usually around 35,000
+	}
+	ai_strategy = {
+		type = strategic_air_importance
+		id = 4 #Strategic Region ID - HOL
+		value = -20000 #value of stocked main front in active combat is usually around 35,000
+	}
+	ai_strategy = {
+		type = strategic_air_importance
+		id = 5 #Strategic Region ID - BEL
 		value = -20000 #value of stocked main front in active combat is usually around 35,000
 	}
 }

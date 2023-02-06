@@ -83,14 +83,14 @@ FIN_antagonize_soviets = {
 	enable = {
 		tag = FIN
 		is_historical_focus_on = yes
-		SOV = { owns_state = 146 } #Karjala
+		SOV = { owns_state = 77 } #Karjala
 	}
 
 	abort = {
 		OR = {
 			AND = { #We have Karjala back
 				NOT = { has_war_with = SOV }
-				owns_state = 146 #Karjala
+				owns_state = 77 #Karjala
 			}
 			is_subject = yes
 			has_non_aggression_pact_with = SOV

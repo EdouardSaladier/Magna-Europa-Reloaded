@@ -251,8 +251,14 @@ ita_shore_up_against_france = {
 		type = front_unit_request
 
 		# savoy piedmont
-		state = 158
-		state = 735
+		state = 1985
+		state = 1366
+		state = 2356
+		state = 2357
+		state = 1983
+		state = 2358
+		state = 1984
+		state = 745
 
 		value = 10
 	}
@@ -894,21 +900,21 @@ ITA_hold_africa = {
 	# Tripoli
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
-		id = 448
+		id = 1241
 		value = 2
 	}
 
 	# Benghasi
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
-		id = 450
+		id = 1251
 		value = 2
 	}
 
 	# Alexandria
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
-		id = 447
+		id = 1895
 		value = 2
 	}
 }
@@ -1330,14 +1336,20 @@ ITA_invasion_buffer = {
 	ai_strategy = {
 		type = put_unit_buffers
 		states = {
-			156
-			117
-			849
-			157
-			2
-			162
-			161
-			### Oh no we forgot sicily! What could possibly go wrong.
+			all_state = {
+				OR = {
+					is_core_of = NAP
+					is_core_of = CAL
+					is_core_of = PUG
+					is_core_of = LUC
+					is_core_of = ABR
+					is_core_of = MLS
+					is_core_of = LAZ
+					### Oh no we forgot sicily! What could possibly go wrong.
+				}
+				is_coastal = yes
+			}
+			
 		}
 		ratio = 0.20
 		area = italy
