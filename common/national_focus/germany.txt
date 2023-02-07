@@ -5230,6 +5230,7 @@ focus_tree = {
 				1757 = { is_demilitarized_zone = no }
 				524 = { is_demilitarized_zone = no }
 				2340 = { is_demilitarized_zone = no }
+				2719 = { is_demilitarized_zone = no }
 			}
 		}
 		ai_will_do = {
@@ -5286,7 +5287,8 @@ focus_tree = {
 				1757 = { set_demilitarized_zone = no }
 				524 = { set_demilitarized_zone = no }
 				2340 = { set_demilitarized_zone = no }
-			}	#AHHHHHHH it wasn't that bad, consider using the nudger for help
+				2719 = { set_demilitarized_zone = no }
+			}	#AHHHHHHH it wasn't that bad, consider using the nudger for help #shouldve done is_demilitarized_zone and every_state scope lmao
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
 			army_experience = 5

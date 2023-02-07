@@ -503,23 +503,52 @@ country_event = {
 			set_cosmetic_tag = FRA_FREE
 		}
 		# German Occupation Zone
+		570 = { transfer_state_to = MVF }
+		every_state = {
+			limit = {
+				is_core_of = FRA
+				is_alsace_lorraine = no
+			}
+			add_claim_by = MVF
+		}
+		if = {
+			limit = {
+				GER = {
+					has_war_with = FRA
+				}
+			}
+			MVF = {
+				declare_war_on = {
+					target = FRA
+					type = civil_war
+				}	
+				
+			}
+		}
 		every_state = {
 			limit = {
 				is_ger_occupation_zone = yes
 				is_alsace_lorraine = no
-				owner = { original_tag = FRA }
+				owner = { tag = FRA }
 			}
-			set_state_controller_to = MVF
+			transfer_state_to = MVF
 			GER = {
 				set_autonomy = { target = MVF autonomy_state = autonomy_integrated_puppet }
 			}
-			every_state = {
-				limit = {
-					is_core_of = FRA
-					is_alsace_lorraine = no
+			
+		}
+		if = {
+			limit = {
+				GER = {
+					NOT = { has_war_with = FRA }
 				}
-				add_claim_by = MVF
 			}
+			MVF = {
+				every_controlled_state = {
+					transfer_state_to = MVF
+				}
+			}
+			
 		}
 		
 			
@@ -712,27 +741,6 @@ country_event = {
 				change_tag_from = FRA
 			}
 			
-		}
-		if = {
-			limit = {
-				GER = {
-					has_war_with = FRA
-				}
-			}
-			MVF = {
-				declare_war_on = {
-					target = FRA
-					type = civil_war
-				}	
-				
-			}
-			else = {
-				MVF = {
-					every_controlled_state = {
-						transfer_state_to = MVF
-					}
-				}
-			}
 		}
 		country_event = { hours = 6 id = news.34 }
 		hidden_effect =  {
