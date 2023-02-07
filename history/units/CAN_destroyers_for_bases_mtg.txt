@@ -3,10 +3,10 @@
 units = {
 	fleet = {
 		name = "American Destroyer Squadron"			
-		naval_base = 7361 # Halifax
+		naval_base = 19376 # Halifax
 		task_force = {					
 			name = "American Destroyer Flotilla 4"
-			location = 7361 # Halifax
+			location = 19376 # Halifax
 			ship = { name = "HMCS St. Clair" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Williams	
 			ship = { name = "HMCS Niagara" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Thatcher	
 			ship = { name = "HMCS Hamilton" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Kalk	
