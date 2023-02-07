@@ -492,7 +492,7 @@ country_event = {
 	option = { # Agree
 		name = france.14.a
 		ai_chance = {
-			factor = 50
+			factor = 100000
 		}
 		trigger = {
 			has_government = fascism
