@@ -14,7 +14,7 @@ characters={
 			idea_token = ENG_winston_churchill
 			available  = {
 				has_government  = neutrality 
-				#has_completed_focus  = ENG_the_kings_party 
+				has_completed_focus  = ENG_the_kings_party 
 				if  = {
 					limit  = {
 						has_dlc = "Man the Guns"
@@ -76,7 +76,7 @@ characters={
 			idea_token = ENG_oswald_mosley
 			available  = {
 				has_government  = neutrality 
-				#has_completed_focus  = ENG_the_kings_party 
+				has_completed_focus  = ENG_the_kings_party 
 			}
 			allowed  = {
 				original_tag  = ENG
@@ -200,7 +200,7 @@ characters={
 			}
 			available = {
 				NOT = {
-					#has_completed_focus = ENG_eliminate_the_upper_class
+					has_completed_focus = ENG_eliminate_the_upper_class
 				}
 			}
 			traits = {
@@ -243,7 +243,7 @@ characters={
 			}
 			available = {
 				NOT = {
-					#has_completed_focus = ENG_eliminate_the_upper_class
+					has_completed_focus = ENG_eliminate_the_upper_class
 				}
 			}
 			
@@ -431,7 +431,7 @@ characters={
 			}
 			available = {
 				NOT = {
-					#has_completed_focus = ENG_eliminate_the_upper_class
+					has_completed_focus = ENG_eliminate_the_upper_class
 				}
 			}
 			traits = {
@@ -569,7 +569,7 @@ characters={
 			}
 			available = {
 				NOT = {
-					#has_completed_focus = ENG_eliminate_the_upper_class
+					has_completed_focus = ENG_eliminate_the_upper_class
 				}
 			}
 			traits = {
@@ -725,7 +725,7 @@ characters={
 			}
 			available = {
 				NOT = {
-					#has_completed_focus = ENG_eliminate_the_upper_class
+					has_completed_focus = ENG_eliminate_the_upper_class
 				}
 			}
 			traits = {
@@ -1011,10 +1011,10 @@ characters={
 			idea_token = ENG_raymond_briggs
 			ledger = army
 			visible = {
-				#has_completed_focus = ENG_eliminate_the_upper_class
+				has_completed_focus = ENG_eliminate_the_upper_class
 			}
 			available = {
-				#has_completed_focus = ENG_eliminate_the_upper_class
+				has_completed_focus = ENG_eliminate_the_upper_class
 			}
 			allowed = {
 				original_tag = ENG
@@ -1042,7 +1042,7 @@ characters={
 			}
 			available = {
 				NOT = {
-					#has_completed_focus = ENG_eliminate_the_upper_class
+					has_completed_focus = ENG_eliminate_the_upper_class
 				}
 			}
 			
@@ -1235,7 +1235,9 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
-			
+			research_bonus = {
+				nuclear = 0.2
+			}
 			traits = {
 				nuclear_enthusiast
 			}
@@ -1515,7 +1517,7 @@ characters={
 			}
 			available = {
 				NOT = {
-					#has_completed_focus = ENG_eliminate_the_upper_class
+					has_completed_focus = ENG_eliminate_the_upper_class
 				}
 			}
 			traits = {
@@ -1564,7 +1566,7 @@ characters={
 			idea_token = ENG_david_stirling
 			ledger = army
 			available = {
-				#has_completed_focus = ENG_special_air_service
+				has_completed_focus = ENG_special_air_service
 			}
 			allowed = {
 				original_tag = ENG
@@ -1604,7 +1606,7 @@ characters={
 						has_dlc = "Man the Guns"
 					}
 					NOT = {
-						#has_completed_focus  = ENG_a_change_in_course 
+						has_completed_focus  = ENG_a_change_in_course 
 					}
 				}
 				if  = {
@@ -1692,7 +1694,7 @@ characters={
 						has_dlc = "Man the Guns"
 					}
 					NOT = {
-						#has_completed_focus  = ENG_no_further_appeasement 
+						has_completed_focus  = ENG_no_further_appeasement 
 					}
 					has_government  = democratic 
 				}
@@ -1873,14 +1875,38 @@ characters={
 				has_government  = communism 
 			}
 			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
+				OR = {
+					AND = {
+						original_tag  = ENG
+						has_dlc = "Man the Guns"
+					}
+					AND = {
+						original_tag = ETH
+						has_dlc = "By Blood Alone"
+					}
+				}
+				
 			}
 			traits  = {
 				red_suffragette 
 			}
 			ai_will_do  = {
 				factor  = 1.000
+			}
+			on_add = {
+				owner = {
+					IF = {
+						limit = {
+							has_power_balance = {
+								id = ETH_centralization_balance
+							}
+						}
+						
+						hidden_effect = {
+							ETH_BOP_decentralization_large_effect = yes
+						}
+					}				
+				}
 			}
 		}
 	}
@@ -1897,7 +1923,7 @@ characters={
 			idea_token = ENG_david_lloyd_george
 			available  = {
 				has_government  = neutrality 
-				#has_completed_focus  = ENG_the_kings_party 
+				has_completed_focus  = ENG_the_kings_party 
 			}
 			allowed  = {
 				original_tag  = ENG
@@ -2192,7 +2218,7 @@ characters={
 			idea_token = ENG_corgis_1
 			available  = {
 				has_government  = neutrality 
-				#has_completed_focus  = ENG_the_kings_party 
+				has_completed_focus  = ENG_the_kings_party 
 				has_country_leader  = {
 					name = "Elizabeth II"
 					ruling_only  = yes 
@@ -2229,7 +2255,7 @@ characters={
 			idea_token = ENG_corgis_2
 			available  = {
 				has_government  = neutrality 
-				#has_completed_focus  = ENG_the_kings_party 
+				has_completed_focus  = ENG_the_kings_party 
 				has_country_leader  = {
 					name = "Elizabeth II"
 					ruling_only  = yes 
@@ -2266,7 +2292,7 @@ characters={
 			idea_token = ENG_corgis_3
 			available  = {
 				has_government  = neutrality 
-				#has_completed_focus  = ENG_the_kings_party 
+				has_completed_focus  = ENG_the_kings_party 
 				has_country_leader  = {
 					name = "Elizabeth II"
 					ruling_only  = yes 

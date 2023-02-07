@@ -64,7 +64,7 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					#has_completed_focus  = USA_suspend_the_presecution 
+					has_completed_focus  = USA_suspend_the_presecution 
 					NOT  = {
 						focus_progress  = {
 							focus  = USA_neutrality_act 
@@ -365,7 +365,7 @@ characters={
 				original_tag = USA
 			}
 			available = {
-				#has_completed_focus = USA_war_plans_division
+				has_completed_focus = USA_war_plans_division
 			}
 			traits = {
 				army_chief_planning_2
@@ -709,7 +709,7 @@ characters={
 			planning_skill = 3
 			logistics_skill = 3
 			visible = { 
-				#has_completed_focus = USA_intervention_in_asia 
+				has_completed_focus = USA_intervention_in_asia 
 			}
 		}
 	}
@@ -941,7 +941,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ career_officer }
+			traits={ navy_career_officer }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -1204,15 +1204,19 @@ characters={
 			army={
 				small=GFX_portrait_USA_charles_lindbergh_small
 			}
+			civilian={
+				large = GFX_portrait_USA_charles_lindbergh
+			}
 		}
+
 		advisor={
-			slot = air_chief
+			slot = high_command
 			idea_token = USA_charles_lindbergh
 			allowed = {
 				original_tag = USA
 			}
 			available = {
-				#has_completed_focus = USA_send_lindbergh_to_germany
+				has_completed_focus = USA_send_lindbergh_to_germany
 			}
 			visible = {
 				has_dlc = "Man the Guns"
@@ -1369,7 +1373,7 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					#has_completed_focus  = USA_reach_out_to_the_ware_group 
+					has_completed_focus  = USA_reach_out_to_the_ware_group 
 				}
 				NOT  = {
 					has_idea  = USA_henry_morgenthau 
@@ -1411,7 +1415,7 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					#has_completed_focus  = USA_reach_out_to_the_ware_group 
+					has_completed_focus  = USA_reach_out_to_the_ware_group 
 				}
 			}
 			visible  = {
@@ -1450,7 +1454,7 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					#has_completed_focus  = USA_reach_out_to_the_ware_group 
+					has_completed_focus  = USA_reach_out_to_the_ware_group 
 				}
 			}
 			visible  = {
@@ -1489,7 +1493,7 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					#has_completed_focus  = USA_america_first 
+					has_completed_focus  = USA_america_first 
 				}
 			}
 			visible  = {
@@ -1530,7 +1534,7 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					#has_completed_focus  = USA_america_first 
+					has_completed_focus  = USA_america_first 
 				}
 			}
 			visible  = {
@@ -1608,7 +1612,7 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					#has_completed_focus  = USA_america_first 
+					has_completed_focus  = USA_america_first 
 					NOT  = {
 						focus_progress  = {
 							focus  = USA_neutrality_act 
@@ -1693,7 +1697,7 @@ characters={
 				original_tag  = USA
 			}
 			available  = {
-				#has_completed_focus  = USA_empower_the_huac 
+				has_completed_focus  = USA_empower_the_huac 
 			}
 			traits  = {
 				anti_communist_crusader 

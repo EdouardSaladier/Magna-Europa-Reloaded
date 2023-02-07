@@ -528,7 +528,7 @@ characters={
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-				#	has_completed_focus = ROM_appoint_soviet_friendly_government 
+					has_completed_focus = ROM_appoint_soviet_friendly_government 
 				}
 				if = {
 					limit = {
@@ -624,7 +624,7 @@ characters={
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-				#	has_completed_focus = ROM_appoint_german_friendly_government 
+					has_completed_focus = ROM_appoint_german_friendly_government 
 				}
 				if = {
 					limit = {

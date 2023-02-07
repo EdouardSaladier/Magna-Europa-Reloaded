@@ -62,8 +62,8 @@ characters={
 			}
 			available  = {
 				or  = {
-					#has_completed_focus  = FRA_leftist_rhetoric 
-					#has_completed_focus  = FRA_invite_communist_ministers 
+					has_completed_focus  = FRA_leftist_rhetoric 
+					has_completed_focus  = FRA_invite_communist_ministers 
 				}
 				not  = {
 					has_country_leader  = {
@@ -89,7 +89,7 @@ characters={
 				}
 			}
 			on_add  = {
-				#FRA_right_wing_riot_effect = yes 
+				FRA_right_wing_riot_effect = yes 
 			}
 			ai_will_do  = {
 				factor  = 0.000
@@ -186,7 +186,7 @@ characters={
 				original_tag = FRA
 			}
 			available = {
-				#has_completed_focus = FRA_aggressive_focus
+				has_completed_focus = FRA_aggressive_focus
 			}
 			cost = 100.000
 			traits = {
@@ -226,7 +226,7 @@ characters={
 				original_tag = FRA
 			}
 			available = {
-				#has_completed_focus = FRA_defensive_focus
+				has_completed_focus = FRA_defensive_focus
 			}
 			cost = 100.000
 			traits = {
@@ -323,7 +323,7 @@ characters={
 				original_tag = FRA
 			}
 			available = {
-				#has_completed_focus = FRA_battle_of_maneuver
+				has_completed_focus = FRA_battle_of_maneuver
 			}
 			
 			traits = {
@@ -1163,8 +1163,8 @@ characters={
 			}
 			available  = {
 				or  = {
-					#has_completed_focus  = FRA_right_wing_rhetoric 
-					#has_completed_focus  = FRA_utilize_the_leagues 
+					has_completed_focus  = FRA_right_wing_rhetoric 
+					has_completed_focus  = FRA_utilize_the_leagues 
 					has_focus_tree  = vichy_french_focus
 				}
 				if  = {
@@ -1188,10 +1188,12 @@ characters={
 				if  = {
 					limit  = {
 						not  = {
-							tag  = VIC 
+							owner = { tag = VIC }
 						}
 					}
-					country_event  = lar_france_political_violence.2
+					owner = {
+						country_event  = lar_france_political_violence.2
+					}
 				}
 			}
 			ai_will_do  = {
@@ -1214,7 +1216,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				#has_completed_focus  = FRA_confirm_eastern_commitments 
+				has_completed_focus  = FRA_confirm_eastern_commitments 
 				has_government  = democratic 
 			}
 			cost  = 75.000
@@ -1243,7 +1245,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				#has_completed_focus  = FRA_buy_time 
+				has_completed_focus  = FRA_buy_time 
 				has_government  = democratic 
 			}
 			cost  = 75.000
@@ -1272,7 +1274,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				#has_completed_focus  = FRA_integralism 
+				has_completed_focus  = FRA_integralism 
 				or  = {
 					has_government  = fascism 
 					has_government  = neutrality 
@@ -1310,7 +1312,7 @@ characters={
 				has_dlc = "La Resistance"
 			}
 			available  = {
-				#has_completed_focus  = FRA_national_regeneration 
+				has_completed_focus  = FRA_national_regeneration 
 				has_government  = fascism 
 			}
 			cost  = 75.000
@@ -1444,7 +1446,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				#has_completed_focus  = FRA_form_the_popular_front 
+				has_completed_focus  = FRA_form_the_popular_front 
 			}
 			traits  = {
 				financial_expert 
@@ -1473,7 +1475,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				#has_completed_focus  = FRA_form_the_popular_front 
+				has_completed_focus  = FRA_form_the_popular_front 
 			}
 			traits  = {
 				compassionate_gentleman 

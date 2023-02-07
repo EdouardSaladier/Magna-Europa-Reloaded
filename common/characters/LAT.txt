@@ -17,7 +17,7 @@ characters={
 				has_dlc = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = LAT_military_dictatorship 
+				has_completed_focus = LAT_military_dictatorship 
 			}
 			traits = {
 				married_to_latvia 
@@ -58,7 +58,7 @@ characters={
 					not = {
 						has_government = fascism 
 					}
-				#	has_completed_focus = LAT_lift_ban_on_perkonkrusts 
+					has_completed_focus = LAT_lift_ban_on_perkonkrusts 
 				}
 				traits = {
 					hardline_latvian_nationalist 
@@ -128,7 +128,7 @@ characters={
 				has_dlc = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = LAT_renew_kviesis_term 
+				has_completed_focus = LAT_renew_kviesis_term 
 			}
 			traits = {
 				subservient_democrat
@@ -164,7 +164,7 @@ characters={
 			available = {
 				IF = {
 					limit = { has_dlc = "No Step Back" }
-				#	has_completed_focus = LAT_renew_kviesis_term 
+					has_completed_focus = LAT_renew_kviesis_term 
 				}
 			}
 			traits = {
@@ -212,7 +212,7 @@ characters={
 			available = {
 				if = {
 					limit = { has_DLC = "No Step Back" }
-				#	has_completed_focus = BALTIC_restore_workers_republic
+					has_completed_focus = BALTIC_restore_workers_republic
 				}
 			}
 			traits = {
@@ -250,7 +250,7 @@ characters={
 				has_DLC = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = LAT_martial_prime_minister 
+				has_completed_focus = LAT_martial_prime_minister 
 			}
 			traits = {
 				veteran_minister 
@@ -797,7 +797,7 @@ characters={
 				has_DLC = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = BALTIC_revolutionary_cabinet 
+				has_completed_focus = BALTIC_revolutionary_cabinet 
 			}
 			traits = {
 				revolutionary_poet 
@@ -821,7 +821,7 @@ characters={
 				has_dlc = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = BALTIC_revolutionary_cabinet 
+				has_completed_focus = BALTIC_revolutionary_cabinet 
 			}
 			traits = {
 				socialist_justice 
@@ -844,10 +844,10 @@ characters={
 				has_dlc = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = BALTIC_revolutionary_cabinet 
+				has_completed_focus = BALTIC_revolutionary_cabinet 
 			}
 			traits = {
-				marxist_fundementalist 
+				marxist_fundamentalist 
 			}
 		}
 	}
@@ -867,7 +867,7 @@ characters={
 				has_dlc = "No Step Back"
 			}
 			available = {
-			#	has_completed_focus = BALTIC_revolutionary_cabinet 
+				has_completed_focus = BALTIC_revolutionary_cabinet 
 			}
 			traits = {
 				patriotic_socialist 
