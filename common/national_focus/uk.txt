@@ -3997,14 +3997,14 @@ focus_tree = {
 			if = {
 				limit = {
 					has_dlc = "Together for Victory"
-					MAL = {
+					MLT = {
 						is_subject_of = ENG
 						NOT = { has_autonomy_state = autonomy_dominion }
 					}
 				}
-				set_autonomy = { target = MAL autonomy_state = autonomy_dominion }
+				set_autonomy = { target = MLT autonomy_state = autonomy_dominion }
 			}
-			MAL = {
+			MLT = {
 				drop_cosmetic_tag = yes
 				retire_country_leader = yes
 			}
@@ -4144,11 +4144,7 @@ focus_tree = {
 					NOT = {
 						OR = {
 							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-							tag = NZL
-							tag = MAL
+							tag = MLT
 						}
 					}
 					OR = {
@@ -4187,11 +4183,7 @@ focus_tree = {
 					NOT = {
 						OR = {
 							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-							tag = NZL
-							tag = MAL
+							tag = MLT
 						}
 					}
 					NOT = {
@@ -4229,10 +4221,6 @@ focus_tree = {
 			if = {
 				limit = {
 					NOT = { is_in_faction_with = CAN }
-					NOT = { is_in_faction_with = SAF }
-					NOT = { is_in_faction_with = RAJ }
-					NOT = { is_in_faction_with = AST }
-					NOT = { is_in_faction_with = NZL }
 				}
 				remove_from_tech_sharing_group = commonwealth_research
 			}
@@ -4251,68 +4239,8 @@ focus_tree = {
 				}
 				else_if = {
 					limit = {
-						AST = {
-							has_war_together_with = ENG
-							has_country_flag = ENG_decolonization_left_faction
-						}
-					}
-					AST = { create_faction = ENG_coalition_of_free_commonwealth_states }
-				}
-				else_if = {
-					limit = {
-						RAJ = {
-							has_war_together_with = ENG
-							has_country_flag = ENG_decolonization_left_faction
-						}
-					}
-					RAJ = { create_faction = ENG_coalition_of_free_commonwealth_states }
-				}
-				else_if = {
-					limit = {
-						SAF = {
-							has_war_together_with = ENG
-							has_country_flag = ENG_decolonization_left_faction
-						}
-					}
-					SAF = { create_faction = ENG_coalition_of_free_commonwealth_states }
-				}
-				else_if = {
-					limit = {
-						NZL = {
-							has_war_together_with = ENG
-							has_country_flag = ENG_decolonization_left_faction
-						}
-					}
-					NZL = { create_faction = ENG_coalition_of_free_commonwealth_states }
-				}
-				else_if = {
-					limit = {
 						NOT = {
 							CAN = {
-								has_war_together_with = ENG
-								has_country_flag = ENG_decolonization_left_faction
-							}
-						}
-						NOT = {
-							AST = {
-								has_war_together_with = ENG
-								has_country_flag = ENG_decolonization_left_faction
-							}
-						}
-						NOT = {
-							RAJ = {
-								has_war_together_with = ENG
-								has_country_flag = ENG_decolonization_left_faction
-							}
-						}
-						NOT = {
-							SAF = {
-								has_war_together_with = ENG
-								has_country_flag = ENG_decolonization_left_faction
-							}
-						}
-						NOT = {
-							NZL = {
 								has_war_together_with = ENG
 								has_country_flag = ENG_decolonization_left_faction
 							}
@@ -4323,10 +4251,6 @@ focus_tree = {
 							NOT = {
 								OR = {
 									tag = CAN
-									tag = SAF
-									tag = RAJ
-									tag = AST
-									tag = NZL
 								}
 							}
 							has_country_flag = ENG_decolonization_left_faction
@@ -5070,23 +4994,7 @@ focus_tree = {
 		available = {
 			OR = {
 				any_country = {
-					original_tag = NZL
-					is_in_faction_with = ROOT
-				}
-				any_country = {
-					original_tag = SAF
-					is_in_faction_with = ROOT
-				}
-				any_country = {
-					original_tag = RAJ
-					is_in_faction_with = ROOT
-				}
-				any_country = {
-					original_tag = AST
-					is_in_faction_with = ROOT
-				}
-				any_country = {
-					original_tag = NZL
+					original_tag = CAN
 					is_in_faction_with = ROOT
 				}
 			}
@@ -5095,27 +5003,11 @@ focus_tree = {
 			CAN = {
 				exists = no
 			}
-			SAF = {
-				exists = no
-			}
-			RAJ = {
-				exists = no
-			}
-			AST = {
-				exists = no
-			}
-			NZL = {
-				exists = no
-			}
 			NOT = {
 				any_state = {
 					OR = {
 						is_core_of = ENG
 						is_core_of = CAN
-						is_core_of = SAF
-						is_core_of = AST
-						is_core_of = NZL
-						is_core_of = RAJ
 					}
 					NOT = { state = 320 }
 					NOT = { state = 321 }
@@ -5137,34 +5029,6 @@ focus_tree = {
 			random_country = {
 				limit = {
 					original_tag = CAN
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-			random_country = {
-				limit = {
-					original_tag = AST
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-			random_country = {
-				limit = {
-					original_tag = RAJ
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-			random_country = {
-				limit = {
-					original_tag = NZL
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-			random_country = {
-				limit = {
-					original_tag = SAF
 					is_in_faction_with = ROOT
 				}
 				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
@@ -5200,7 +5064,6 @@ focus_tree = {
 			every_country = {
 				limit = {
 					is_subject_of = ROOT
-					NOT = { original_tag = SAF }
 				}
 				add_ideas = ENG_british_commonwealth_air_training_plan
 			}
@@ -6777,13 +6640,13 @@ focus_tree = {
 				}
 				add_core_of = ENG
 			}
-			MAL = {
+			MLT = {
 				every_unit_leader = {
 					set_nationality = ENG
 				}
 			}
 			annex_country = {
-			    target = MAL
+			    target = MLT
 			    transfer_troops = yes
 			}
 		}
@@ -6864,34 +6727,8 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
-			# Singapore
-			336 = {
-				if = {
-					limit = {
-						OR = {
-							is_controlled_by = ROOT
-							AND = {
-								is_controlled_by = MAL
-								MAL = { is_in_faction_with = ROOT }
-							}
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					# Singapore
-					add_building_construction = {
-						type = naval_base
-						level = 2
-						province = 12299
-						instant_build = yes
-					}
-				}								
-			}
-			# Egypt
-			446 = {
+			# Suez
+			1285 = {
 				if = {
 					limit = {
 						OR = {
@@ -6909,7 +6746,7 @@ focus_tree = {
 					}
 				}								
 			}
-			447 = {
+			1895 = {
 				if = {
 					limit = {
 						OR = {
@@ -6924,13 +6761,13 @@ focus_tree = {
 					add_building_construction = {
 						type = naval_base
 						level = 2
-						province = 4076
+						province = 21189
 						instant_build = yes
 					}
 				}								
 			}
 			# Nova Scotia
-			464 = {
+			8 = {
 				if = {
 					limit = {
 						OR = {
@@ -6950,20 +6787,20 @@ focus_tree = {
 					add_building_construction = {
 						type = naval_base
 						level = 2
-						province = 7361
+						province = 19376
 						instant_build = yes
 					}
 				}								
 			}
 			# Malta
-			116 = {
+			1622 = {
 				if = {
 					limit = {
 						OR = {
 							is_controlled_by = ROOT
 							AND = {
-								is_controlled_by = MAL
-								MAL = { is_in_faction_with = ROOT }
+								is_controlled_by = MLT
+								MLT = { is_in_faction_with = ROOT }
 							}
 						}
 					}
@@ -6975,7 +6812,7 @@ focus_tree = {
 				}								
 			}
 			# Gibraltar
-			118 = {
+			882 = {
 				if = {
 					limit = {
 						is_controlled_by = ROOT
@@ -6983,7 +6820,7 @@ focus_tree = {
 					add_building_construction = {
 						type = bunker
 						level = 1
-						province = 4135
+						province = 19769
 						instant_build = yes
 					}
 				}								
@@ -9427,9 +9264,6 @@ focus_tree = {
 			is_subject = no
 			OR = {
 				country_exists = CAN
-				country_exists = SAF
-				country_exists = AST
-				country_exists = NZL
 			}
 		}
 		bypass = {
@@ -9442,33 +9276,9 @@ focus_tree = {
 							has_country_flag = britain_enforced_our_loyalty
 						}
 					}
-					is_in_faction_with = SAF
-					SAF = {
-						OR = {
-							has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
-							has_country_flag = britain_enforced_our_loyalty
-						}
-					}
-					is_in_faction_with = AST
-					AST = {
-						OR = {
-							has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
-							has_country_flag = britain_enforced_our_loyalty
-						}
-					}
-					is_in_faction_with = NZL
-					NZL = {
-						OR = {
-							has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
-							has_country_flag = britain_enforced_our_loyalty
-						}
-					}
 				}
 				NOT = {
 					country_exists = CAN
-					country_exists = SAF
-					country_exists = AST
-					country_exists = NZL
 				}
 				has_completed_focus = ENG_towards_dominion_independence
 			}
