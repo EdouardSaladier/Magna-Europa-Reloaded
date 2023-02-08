@@ -1,6 +1,9 @@
 state={
 	id=1340
 	name="STATE_1340"
+	resources={
+		rubber=10
+	}
 	history = {
 		owner = MRT
 		add_core_of = MRT
