@@ -10,10 +10,13 @@ state={
 		add_core_of = GRE
 		buildings = {
 			infrastructure = 2
+			air_base = 1
 		}
 		victory_points = { 13309 5 }
 	}
-	resources = { chromium = 5 }
+	resources = {
+		chromium=3 # was: 4
+	}
 	provinces={
 		6903 13309 15113 
 	}

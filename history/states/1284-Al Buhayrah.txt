@@ -3,12 +3,15 @@ state={
 	id=1284
 	name="STATE_1284"
 				
-	resources = { oil = 1 }
+	resources={
+		oil=1 # was: 2
+	}
 	history = {
 		owner = EGY
 		add_core_of = EGY
 		buildings = {
 			infrastructure = 3
+			air_base = 6
 		}
 	    victory_points = {
 		    5075 10 #Damanhur
