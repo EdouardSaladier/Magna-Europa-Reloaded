@@ -550,6 +550,7 @@ country_event = {
 			MR_pact_transfer_state_effect = yes
 			SOU = { country_event = { id = germany.15 hours = 3 } }
 		}
+		set_global_flag = mr_honoured
 	}
 	option = {
 		name = germany.14.b
