@@ -824,14 +824,14 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			801 = {
+			1566 = {
 				is_owned_by = BUL
 			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			801 = {
+			1566 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -910,14 +910,14 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			212 = {
+			877 = {
 				is_owned_by = BUL
 			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			212 = {
+			877 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -946,14 +946,14 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			212 = {
+			877 = {
 				is_owned_by = BUL
 			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			212 = {
+			877 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1419,14 +1419,14 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			211 = {
+			1580 = {
 				is_owned_by = BUL
 			}
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			211 = {
+			1580 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -1448,11 +1448,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					77 = {
+					868 = {
 						is_owned_by = BUL
 					}
 				}
-				77 = {
+				868 = {
 					add_building_construction = {
 						type = bunker
 						level = 2
@@ -1567,28 +1567,28 @@ focus_tree = {
 			OR = {
 				AND = {
 					BUL = {
-						has_full_control_of_state = 341 #EDIRNE
-						has_full_control_of_state = 797 #ISTANBUL
+						has_full_control_of_state = 1934 #EDIRNE
+						has_full_control_of_state = 932 #ISTANBUL
 					}
 				}
 				AND = {
 					is_faction_leader = yes
 					any_country = {
 						is_in_faction_with = ROOT
-						has_full_control_of_state = 341 #EDIRNE
-						has_full_control_of_state = 797 #ISTANBUL
+						has_full_control_of_state = 1934 #EDIRNE
+						has_full_control_of_state = 932 #ISTANBUL
 					}
 				}
 				any_country = {
 					is_subject_of = ROOT
-					has_full_control_of_state = 341 #EDIRNE
-					has_full_control_of_state = 797 #ISTANBUL
+					has_full_control_of_state = 1934 #EDIRNE
+					has_full_control_of_state = 932 #ISTANBUL
 				}
 			}
 		}
 		
 		completion_reward = {
-			797 = {
+			932 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -1626,7 +1626,7 @@ focus_tree = {
 					}
 				}
 			}
-			341 = {
+			1934 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -1642,20 +1642,20 @@ focus_tree = {
 					type = bunker
 					level = 2
 					instant_build = yes
-					province = 11842
+					province = 21445
 				}
 				#Fortifications in Edirne's Naval Base
 				add_building_construction = {
 					type = bunker
 					level = 2
 					instant_build = yes
-					province = 849
+					province = 21437
 				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 2
 					instant_build = yes
-					province = 849
+					province = 15016
 				}
 			}
 			add_timed_idea = {
@@ -1669,8 +1669,8 @@ focus_tree = {
 							is_in_faction_with = ROOT
 							is_subject_of = ROOT
 						}			
-						has_full_control_of_state = 341 #EDIRNE
-						has_full_control_of_state = 797 #ISTANBUL
+						has_full_control_of_state = 1934 #EDIRNE
+						has_full_control_of_state = 932 #ISTANBUL
 					}
 				}
 				random_country = {
@@ -1679,8 +1679,8 @@ focus_tree = {
 							is_in_faction_with = ROOT
 							is_subject_of = ROOT
 						}	
-						has_full_control_of_state = 341 #EDIRNE
-						has_full_control_of_state = 797 #ISTANBUL
+						has_full_control_of_state = 1934 #EDIRNE
+						has_full_control_of_state = 932 #ISTANBUL
 					}
 					add_timed_idea = {
 						idea = BUL_supremacy_on_the_bosporus
@@ -2104,12 +2104,12 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			controls_state = 211
+			controls_state = 1580
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			211 = {
+			1580 = {
 				add_building_construction = {
 					type = dockyard
 					level = 2
@@ -2173,13 +2173,13 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			controls_state = 211
+			controls_state = 1580
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			navy_experience = 15
-			211 = {
+			1580 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -2190,7 +2190,7 @@ focus_tree = {
 					type = naval_base
 					level = 2
 					instant_build = yes
-					province = 9783
+					province = 14710
 				}
 			}
 			custom_effect_tooltip = available_designer
@@ -2209,13 +2209,13 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			controls_state = 211
+			controls_state = 868
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			navy_experience = 15
-			211 = {
+			868 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
