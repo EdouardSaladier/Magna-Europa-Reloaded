@@ -2072,17 +2072,20 @@ country_event = {
 			}
 		}
 		effect_tooltip = {
-			IF = {
-				limit = { 455 = { is_owned_by = ROOT } }
-				TUR = { transfer_state = 455 }
-			}
-			IF = {
-				limit = { 454 = { is_owned_by = ROOT } }
-				TUR = { transfer_state = 454 }
-			}
-			IF = {
-				limit = { 453 = { is_owned_by = ROOT } }
-				TUR = { transfer_state = 453 }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = PAL
+						is_core_of = JOR
+						state = 1286
+						state = 1303
+					}
+					OR = {
+						is_owned_by = ENG
+						owner = { is_subject_of = ENG }
+					}
+				}
+				transfer_state_to = TUR
 			}
 		}
 		hidden_effect = {
@@ -2097,7 +2100,7 @@ country_event = {
 		ai_chance = {
 			base = 5
 			modifier = { # More sceptical if already promised to Ethiopia
-				454 = {
+				1902 = {
 					is_in_array = { ETH.ETH_promised_states_array = THIS }
 				}
 				factor = 4
@@ -2120,24 +2123,21 @@ country_event = {
 	
 	option = {
 		name = bftb_turkey.45.a #we will not let them down
-		IF = {
-			limit = {
-				455 = { is_owned_by = FROM }
+		every_state = {
+				limit = {
+					OR = {
+						is_core_of = PAL
+						is_core_of = JOR
+						state = 1286
+						state = 1303
+					}
+					OR = {
+						is_owned_by = ENG
+						owner = { is_subject_of = ENG }
+					}
+				}
+				transfer_state_to = TUR
 			}
-			transfer_state = 455
-		}
-		IF = {
-			limit = {
-				454 = { is_owned_by = FROM }
-			}
-			transfer_state = 454
-		}
-		IF = {
-			limit = {
-				453 = { is_owned_by = FROM }
-			}
-			transfer_state = 453
-		}
 		custom_effect_tooltip = TUR_unlock_camelry_effect_tt
 		hidden_effect = { set_technology = { camelry = 1 } } 
 	}
@@ -2158,9 +2158,21 @@ country_event = {
 
 	option = {
 		name = bftb_turkey.46.b #then we escalate!
-		add_state_claim = 455
-		add_state_claim = 454
-		add_state_claim = 453
+		every_state = {
+				limit = {
+					OR = {
+						is_core_of = PAL
+						is_core_of = JOR
+						state = 1286
+						state = 1303
+					}
+					OR = {
+						is_owned_by = ENG
+						owner = { is_subject_of = ENG }
+					}
+				}
+				add_claim_by = TUR
+			}
 		add_stability = -0.15
 	}
 }
