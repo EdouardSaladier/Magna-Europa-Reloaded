@@ -1239,3 +1239,18 @@ USA_start_buffering_in_australia = {
 		value = 10
 	}
 }
+USA_buff_pls = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+	}
+
+	abort = {
+	}
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 800
+	}
+}

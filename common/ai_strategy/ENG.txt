@@ -1925,3 +1925,18 @@ ENG_dont_kick_russia_out_from_triple_entente_due_to_gobbling_up_breakaway_states
 			value = 200
 		}
 }
+ENG_buff_pls = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+	}
+
+	abort = {
+	}
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 400
+	}
+}
