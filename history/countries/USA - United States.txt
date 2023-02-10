@@ -41,6 +41,8 @@ set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
 add_command_power = 20
+add_offsite_building = { type = industrial_complex level =  101 }
+add_offsite_building = { type = arms_factory level =  7 }
 
 # Starting tech
 set_technology = {
