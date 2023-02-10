@@ -113,39 +113,6 @@ if = {
 	if = { 
 		limit = { has_dlc = "Battle for the Bosporus" }	
 		set_variable = { var = TUR_kemalist_power_variable value = 5 }
-		350 = {
-			add_dynamic_modifier = { modifier = kurdish_agitation }
-		}
-		352 = {
-			add_dynamic_modifier = { modifier = kurdish_separatism }
-		}
-		800 = {
-			add_dynamic_modifier = { modifier = kurdish_separatism }
-		}
-		353 = {
-			add_dynamic_modifier = { modifier = kurdish_agitation }
-		}
-		798 = {
-			add_dynamic_modifier = { modifier = islamist_opposition }
-		}
-		349 = {
-			add_dynamic_modifier = { modifier = islamist_sedition }
-		}
-		348 = {
-			add_dynamic_modifier = { modifier = islamist_sedition }
-		}
-		345 = {
-			add_dynamic_modifier = { modifier = islamist_opposition }
-		}
-		344 = {
-			add_dynamic_modifier = { modifier = islamist_opposition }
-		}
-		355 = {
-			add_dynamic_modifier = { modifier = islamist_sedition }
-		}
-		356 = {
-			add_dynamic_modifier = { modifier = islamist_opposition }
-		}
 		every_state = {
 			limit = {
 				OR = {
@@ -235,6 +202,7 @@ if = {
 		every_state = {
 			limit = {
 				is_core_of = KUR
+				is_owned_by = TUR
 			}
 			start_resistance = yes
 			set_compliance = 10
