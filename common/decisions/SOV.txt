@@ -11558,13 +11558,13 @@ SOV_great_patriotic_war = {
 		visible = {
 			any_enemy_country = { SOV_is_major_not_original_sov = yes }
 			NOT = { has_country_flag = SOV_order_227_flag }
-			FROM = {
-				is_controlled_by = ROOT
-				any_neighbor_state = {
-					controller = { has_war_with = ROOT }
-				}
-			}
-			
+			#FROM = {
+			#	is_controlled_by = ROOT
+			#	any_neighbor_state = {
+			#		controller = { has_war_with = ROOT }
+			#	}
+			#}
+			always = no #bugged af
 		}
 
 		ai_hint_pp_cost = 25
@@ -11623,6 +11623,7 @@ SOV_great_patriotic_war = {
 					has_state_category = megalopolis
 					has_state_category = metropolis
 				}
+			
 			}
 		}
 
@@ -11658,13 +11659,13 @@ SOV_great_patriotic_war = {
 			has_completed_focus = SOV_desperate_measures
 			any_enemy_country = { SOV_is_major_not_original_sov = yes }
 			NOT = { has_country_flag = SOV_order_227_flag }
-			FROM = {
-				is_controlled_by = ROOT
-				any_neighbor_state = {
-					controller = { has_war_with = ROOT }
-				}
-			}
-			
+			#FROM = {
+			#	is_controlled_by = ROOT
+			#	any_neighbor_state = {
+			#		controller = { has_war_with = ROOT }
+			#	}
+			#}
+			always = no #bugged af
 		}
 
 		ai_hint_pp_cost = 25

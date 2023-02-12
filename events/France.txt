@@ -257,43 +257,41 @@ country_event = {
 		}
 		has_civil_war = no
 		#Don't fire if France has pushed pretty far into ITA or GER
-		NOT = {
-			any_state = {
-				is_on_continent = europe
-				NOT = { state = 718 }
-				NOT = { state = 944 }
-				NOT = { state = 521 }
-				NOT = { state = 1771 }
-				is_controlled_by = ROOT
-				OR = {
-					is_owned_by = GER
-					AND = {
-						FRA = { has_War_with = ITA }
-						is_owned_by = ITA
-					}
+		
+			
+				1745 = {
+					NOT = { is_controlled_by = FRA }
+				}
+			
+			if = {
+				limit = {
+					FRA = { has_war_with = ITA }
+				}
+				718 = {
+					NOT = { is_controlled_by = FRA }
 				}
 			}
-		}		
+				
 
 		#Don't fire if any states in France are controlled by a different human player
-		NOT = {
-			any_country = {
-				is_ai = no
-				NOT = { tag = GER }
-				NOT = { is_in_faction_with = GER }
-				has_war_with = ROOT
-	 			any_state = {
-					is_on_continent = europe
-					NOT = { state = 866 }
-					NOT = { state = 810 }
-					NOT = { state = 824 }
-					NOT = { state = 829 }
-					NOT = { state = 828 }
-					is_owned_by = ROOT
-					is_controlled_by = PREV
-				}
-			}
-		}
+		#NOT = {
+		#	any_country = {
+		#		is_ai = no
+		#		NOT = { tag = GER }
+		#		NOT = { is_in_faction_with = GER }
+		#		has_war_with = ROOT
+	 	#		any_state = {
+		#			is_on_continent = europe
+		#			NOT = { state = 866 }
+		#			NOT = { state = 810 }
+		#			NOT = { state = 824 }
+		#			NOT = { state = 829 }
+		#			NOT = { state = 828 }
+		#			is_owned_by = ROOT
+		#			is_controlled_by = PREV
+		#		}
+		#	}
+		#}
 	}
 	mean_time_to_happen = { days = 2 }
 	immediate = {
@@ -502,6 +500,126 @@ country_event = {
 		FRA = {
 			set_cosmetic_tag = FRA_FREE
 		}
+		
+		
+			
+		every_state = {
+			limit = {
+				OR = {
+					is_alsace_lorraine = yes
+				}
+				owner = { original_tag = FRA }
+			}
+			transfer_state_to = GER
+		}
+		# Italian Occupation Zone PART 1
+		every_state = {
+			limit = {
+				is_ita_occupation_zone = yes
+				is_controlled_by = ITA
+				owner = { tag = FRA }
+			}
+			transfer_state_to = ITA
+		}
+		if = { #PART 2
+			limit = {
+				any_state = {
+					is_ita_occupation_zone = yes
+					NOT = {
+						is_owned_by = ITA
+					}
+				}
+			}
+			else = {
+				every_state = {
+					limit = {
+						is_ita_occupation_zone_2 = yes
+						is_controlled_by = ITA
+						owner = { tag = FRA }
+					}
+					transfer_state_to = ITA
+				}
+			}
+		}
+		if = { #PART 3
+			limit = {
+				any_state = {
+					is_ita_occupation_zone_2 = yes	
+					NOT = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+			else = {
+				every_state = {
+					limit = {
+						is_ita_occupation_zone_3 = yes
+						is_controlled_by = ITA
+						owner = { tag = FRA }
+					}
+					transfer_state_to = ITA
+				}
+			}
+		}
+		if = { #PART 4
+			limit = {
+				any_state = {
+					is_ita_occupation_zone_3 = yes	
+					NOT = {
+						is_controlled_by = ITA
+					}
+				}
+			}
+			else = {
+				every_state = {
+					limit = {
+						is_ita_occupation_zone_4 = yes
+						is_controlled_by = ITA
+						owner = { tag = FRA }
+					}
+					transfer_state_to = ITA
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					866 = { #Corsica
+						owner = { original_tag = FRA }
+						is_controlled_by = ITA
+					}
+				}
+			}
+			ITA = { transfer_state = 866 }
+		}
+		if = {
+			limit = {
+				AND = {
+					1422 = { #Savoy
+						owner = { tag = FRA }
+						is_controlled_by = ITA
+					}
+				}
+			}
+			ITA = { transfer_state = 1422 }
+		}
+		
+		#Spanish occupation zone
+		if = {
+			limit = {
+				871 = { #Midi-Pyrinees
+					owner = { original_tag = FRA }
+					controller = { original_tag = SPR }
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_war_with = FRA
+				}
+				transfer_state = 871
+			}
+		}
 		# German Occupation Zone
 		570 = { transfer_state_to = MVF }
 		every_state = {
@@ -559,125 +677,6 @@ country_event = {
 			add_manpower = 300000
 			every_owned_state = {
 				add_compliance  = 30
-			}
-		}
-		
-			
-		every_state = {
-			limit = {
-				OR = {
-					is_alsace_lorraine = yes
-				}
-				owner = { original_tag = FRA }
-			}
-			transfer_state_to = GER
-		}
-		# Italian Occupation Zone PART 1
-		every_state = {
-			limit = {
-				is_ita_occupation_zone = yes
-				is_controlled_by = ITA
-				owner = { original_tag = FRA }
-			}
-			set_state_controller_to = ITA
-		}
-		if = { #PART 2
-			limit = {
-				any_state = {
-					is_ita_occupation_zone = yes
-					NOT = {
-						is_controlled_by = ITA
-					}
-				}
-			}
-			else = {
-				every_state = {
-					limit = {
-						is_ita_occupation_zone_2 = yes
-						is_controlled_by = ITA
-						owner = { original_tag = FRA }
-					}
-					transfer_state_to = ITA
-				}
-			}
-		}
-		if = { #PART 3
-			limit = {
-				any_state = {
-					is_ita_occupation_zone_2 = yes	
-					NOT = {
-						is_controlled_by = ITA
-					}
-				}
-			}
-			else = {
-				every_state = {
-					limit = {
-						is_ita_occupation_zone_3 = yes
-						is_controlled_by = ITA
-						owner = { original_tag = FRA }
-					}
-					transfer_state_to = ITA
-				}
-			}
-		}
-		if = { #PART 4
-			limit = {
-				any_state = {
-					is_ita_occupation_zone_3 = yes	
-					NOT = {
-						is_controlled_by = ITA
-					}
-				}
-			}
-			else = {
-				every_state = {
-					limit = {
-						is_ita_occupation_zone_4 = yes
-						is_controlled_by = ITA
-						owner = { original_tag = FRA }
-					}
-					transfer_state_to = ITA
-				}
-			}
-		}
-		if = {
-			limit = {
-				AND = {
-					866 = { #Corsica
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
-				}
-			}
-			ITA = { transfer_state = 866 }
-		}
-		if = {
-			limit = {
-				AND = {
-					1422 = { #Savoy
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
-				}
-			}
-			ITA = { transfer_state = 1422 }
-		}
-		
-		#Spanish occupation zone
-		if = {
-			limit = {
-				871 = { #Midi-Pyrinees
-					owner = { original_tag = FRA }
-					controller = { original_tag = SPR }
-				}
-			}
-			random_other_country = {
-				limit = {
-					original_tag = SPR
-					has_war_with = FRA
-				}
-				transfer_state = 871
 			}
 		}
 		create_dynamic_country = {
@@ -1099,7 +1098,8 @@ country_event = {
 	option = { # Agree - Fascism - LaR
 		name = france.14.a
 		ai_chance = { 
-			factor = 50 
+			#factor = 50 
+			factor = 0
 		}
 		trigger = {
 			has_government = fascism
