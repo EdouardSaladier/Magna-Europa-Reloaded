@@ -398,7 +398,6 @@ country_event = {
 		create_wargoal = {
 			type = take_claimed_state
 			target = FIN
-			generator = { 146 }
 		}				
 		hidden_effect = {
 			SOV = {
