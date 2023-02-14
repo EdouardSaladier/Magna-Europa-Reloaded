@@ -654,3 +654,21 @@ BUL_cajole_the_brits = {
 		value = 200
 	}
 }
+bul_ignore_gre_claims = {
+	allowed = {
+		original_tag = BUL
+		is_historical_focus_on = yes
+	}
+	enable = {
+		NOT = { has_government = fascism }
+	}
+
+	abort = {
+		has_government = fascism
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = GRE
+		value = 1
+	}
+}
