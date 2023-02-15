@@ -1156,6 +1156,132 @@ GER_reichskommissariats = {
 					}
 		}
 	}
+	GER_generalgouvernement_form = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			OR = {
+				has_completed_focus = GER_danzig_or_war
+				has_completed_focus = GER_form_the_reichskommissariats
+			}
+			has_government = fascism
+			all_state = {
+				if = {
+					limit = {
+						is_ggv_state = yes	
+					}
+					OR = {
+					is_controlled_by = GER
+					controller = { is_subject_of = GER }
+				}
+				}
+				
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				FRA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = GER_danzig_or_war
+				has_completed_focus = GER_form_the_reichskommissariats
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+					limit = {
+						508 = {	
+							owner = {
+								has_war_with = ROOT
+							}
+						}
+					}
+					
+				
+				POL = {
+					every_core_state = {
+							limit = {
+								is_ggv_state = yes
+							}
+							add_claim_by = GGV
+							set_state_controller_to	 = GGV
+							add_compliance = 30
+						}
+						
+					}
+				GGV = {
+					declare_war_on = {
+						target = POL
+						type = civil_war
+					}
+				}	
+				GGV = {
+					set_cosmetic_tag = HOL_reichskommissariat
+					create_country_leader = {
+						name = "Arthur Seyss-Inquart"
+						desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+						picture = GFX_portrait_Arthur_Seyss_Inquart
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+					transfer_state = 1119
+				}
+				set_autonomy = { target = GGV autonomy_state = autonomy_integrated_puppet }
+			}
+				if = {
+					limit = {
+						508 = {	
+							owner = {
+								NOT = { has_war_with = ROOT }
+							}
+						}
+					}
+					every_state = {
+						limit = {
+							is_ggv_state = yes
+							OR = {
+								is_controlled_by = GER
+								owner = {
+									is_subject_of = GER
+								}
+							}
+						}
+						transfer_state_to = GGV
+						add_claim_by = GGV
+						add_compliance = 30
+					}
+					GER = { set_autonomy = { target = GGV autonomy_state = autonomy_integrated_puppet } }
+				}
+				
+					if = {
+						limit = {
+							POL = {
+								exists = yes
+								is_subject_of = GER
+							}
+						}
+						every_state = {
+							limit = {
+								is_owned_by = POL
+							}
+							transfer_state_to = GGV
+						}
+					}
+		}
+	}
 }
 
 political_actions = {
@@ -1523,6 +1649,7 @@ political_actions = {
 			}
 		}
 	}
+	
 }
 
 foreign_politics = {

@@ -517,40 +517,34 @@ country_event = {
 			limit = {
 				is_ita_occupation_zone = yes
 				is_controlled_by = ITA
-				owner = { tag = FRA }
 			}
 			transfer_state_to = ITA
 		}
 		if = { #PART 2
 			limit = {
-				any_state = {
+				all_state = {
 					is_ita_occupation_zone = yes
-					NOT = {
-						is_owned_by = ITA
-					}
+					is_owned_by = ITA
 				}
 			}
-			else = {
-				every_state = {
-					limit = {
-						is_ita_occupation_zone_2 = yes
-						is_controlled_by = ITA
-						owner = { tag = FRA }
-					}
-					transfer_state_to = ITA
+			
+			every_state = {
+				limit = {
+					is_ita_occupation_zone_2 = yes
+					is_controlled_by = ITA
 				}
+				transfer_state_to = ITA
 			}
+			
 		}
 		if = { #PART 3
 			limit = {
-				any_state = {
-					is_ita_occupation_zone_2 = yes	
-					NOT = {
-						is_controlled_by = ITA
-					}
+				all_state = {
+					is_ita_occupation_zone_2 = yes
+					is_controlled_by = ITA
 				}
 			}
-			else = {
+			
 				every_state = {
 					limit = {
 						is_ita_occupation_zone_3 = yes
@@ -559,47 +553,43 @@ country_event = {
 					}
 					transfer_state_to = ITA
 				}
-			}
+			
 		}
 		if = { #PART 4
 			limit = {
-				any_state = {
+				all_state = {
 					is_ita_occupation_zone_3 = yes	
-					NOT = {
-						is_controlled_by = ITA
-					}
+					is_controlled_by = ITA
+					
 				}
 			}
-			else = {
-				every_state = {
-					limit = {
-						is_ita_occupation_zone_4 = yes
-						is_controlled_by = ITA
-						owner = { tag = FRA }
-					}
-					transfer_state_to = ITA
+			
+			every_state = {
+				limit = {
+					is_ita_occupation_zone_4 = yes
+					is_controlled_by = ITA
 				}
+				transfer_state_to = ITA
 			}
+			
 		}
 		if = {
 			limit = {
-				AND = {
+				
 					866 = { #Corsica
-						owner = { original_tag = FRA }
 						is_controlled_by = ITA
 					}
-				}
+				
 			}
 			ITA = { transfer_state = 866 }
 		}
 		if = {
 			limit = {
-				AND = {
+				
 					1422 = { #Savoy
-						owner = { tag = FRA }
 						is_controlled_by = ITA
 					}
-				}
+				
 			}
 			ITA = { transfer_state = 1422 }
 		}
@@ -608,7 +598,6 @@ country_event = {
 		if = {
 			limit = {
 				871 = { #Midi-Pyrinees
-					owner = { original_tag = FRA }
 					controller = { original_tag = SPR }
 				}
 			}

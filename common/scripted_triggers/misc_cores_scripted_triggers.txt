@@ -311,3 +311,31 @@ is_transnistria = {
 		state = 2039
 	}
 }
+is_ggv_state = {
+	OR = {
+		AND = {
+			is_core_of = MLP
+			NOT = {
+				state = 467
+				state = 2932
+				state = 509
+			}
+		}
+		state = 923
+		state = 2318
+		state = 2880
+		state = 46
+		state = 491
+		state = 1002
+		state = 1131
+		state = 982
+		state = 2928
+		state = 351
+		state = 2927
+		state = 1981
+		state = 508
+		state = 370
+		state = 407
+	}
+	
+}
