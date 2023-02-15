@@ -1,7 +1,6 @@
 ﻿capital = 951
 
 oob = "SPR_1936"
-set_research_slots = 3
 give_guarantee = ADR
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -81,16 +80,18 @@ if = {
 	every_owned_state = {
 		limit = {
 			NOT = {
-				state = 177
-				state = 178
-				state = 290
-				state = 699
-				state = 783
-				state = 297
+				state = 2963
+				state = 1016
+				state = 2962
+				is_core_of = RIF
+				is_core_of = WES
+				state = 1976
+				state = 1858
+				state = 1824
 			}
 		}
 		set_variable = { var = SPA_garrison_control value = 1 }
-	#	SPA_garrison_control_cost_calculation = yes
+		SPA_garrison_control_cost_calculation = yes
 	}
 	set_popularities = {
 		democratic = 41
@@ -138,10 +139,10 @@ if = {
 	    set_state_flag = SPR_original_core
 	}
 	add_ideas = {
-	#	SPA_carlism_1
-	#	SPR_military_disloyalty
-	#	SPR_political_violence
-	#	SPR_national_strikes_3
+		SPA_carlism_1
+		SPR_military_disloyalty
+		SPR_political_violence
+		SPR_national_strikes_3
 	}
 	recruit_character = SPR_niceto_alcala_zamora
 	recruit_character = SPR_jose_diaz
@@ -233,15 +234,6 @@ if = {
 	recruit_character = SPA_luis_hernando_de_larramendi
 	recruit_character = SPA_martin_de_riquer
 	recruit_character = SPA_mauricio_de_sivatte
-#	165 = {
-#		add_dynamic_modifier = { modifier = autonomous_state }
-#	}
-#	171 = {
-#		add_dynamic_modifier = { modifier = autonomous_state }
-#	}
-#	792 = {
-#		add_dynamic_modifier = { modifier = autonomous_state }
-#	}
 
 	SPR_enrique_lister = {
 		set_character_flag = SPR_do_not_align_me_flag
@@ -249,8 +241,18 @@ if = {
 	SPR_valentin_gonzalez = {
 		set_character_flag = SPR_do_not_align_me_flag
 	}
+	every_state = {
+		limit = {
+			is_core_of = SPR
+			OR = {
+				is_core_of = CAT
+				is_core_of = GLC
+				is_core_of = NAV
+			}
+		}
+		add_dynamic_modifier = { modifier = autonomous_state }
+	}
 }
-
 
 set_research_slots = 3
 
@@ -318,26 +320,6 @@ set_politics = {
 set_convoys = 150
 set_stability = 0.5
 
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_light_battery = 1
-		}
-	}
 
 if = {
 	limit = {

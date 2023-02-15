@@ -337,5 +337,46 @@ is_ggv_state = {
 		state = 370
 		state = 407
 	}
-	
+}
+is_nationalist_state = {
+	OR = {
+		state = 830
+		state = 833
+		state = 874
+		state = 887
+		state = 2779
+		state = 857
+		state = 898
+		state = 943
+		state = 950
+		state = 926
+		state = 901
+		state = 883
+		state = 859
+		state = 864
+		state = 897
+		state = 1035
+		state = 987
+		state = 854
+		state = 880
+		state = 2327
+		state = 1058
+		state = 1079
+		state = 1078
+		state = 1115
+		state = 1103
+		state = 2778
+	}	
+}
+is_spanish_africa = {
+	OR = {
+		AND = {
+			is_core_of = RIF
+			NOT = {
+				state = 1851
+			}
+		}
+		state = 893
+		state = 1852
+	}
 }
