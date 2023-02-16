@@ -23,6 +23,7 @@ MTG_naval_treaties = {
 				has_government = democratic
 				has_government = neutrality
 			}
+			is_major_naval = yes
 		}
 	
 		complete_effect = {
@@ -119,6 +120,7 @@ MTG_naval_treaties = {
 				has_government = fascism
 				has_government = communism
 			}
+			is_major_naval = yes
 		}
 	
 		complete_effect = {
@@ -295,6 +297,7 @@ MTG_naval_treaties = {
 	
 		visible = {
 			has_naval_treaty_trigger = yes
+			is_major_naval = yes
 		}
 	
 		complete_effect = {
@@ -381,6 +384,7 @@ MTG_naval_treaties = {
 	
 		visible = {
 			has_naval_treaty_trigger = yes
+			is_major_naval = yes
 		}
 	
 		complete_effect = {
@@ -498,6 +502,7 @@ MTG_naval_treaties = {
 	
 		visible = {
 			has_naval_treaty_trigger = yes
+			is_major_naval = yes
 		}
 	
 		complete_effect = {
@@ -549,7 +554,7 @@ MTG_naval_treaties = {
 		days_mission_timeout = 30
 	
 		visible = {
-			
+			is_major_naval = yes
 		}
 		timeout_effect = {
 			every_other_country = {
@@ -645,7 +650,7 @@ MTG_naval_treaties = {
 		days_mission_timeout = 30
 	
 		visible = {
-			
+			is_major_naval = yes
 		}
 		timeout_effect = {
 			add_stability = -0.1
@@ -655,11 +660,13 @@ MTG_naval_treaties = {
 			
 		}
 	}
+	
 	MTG_treaty_renew_mission = {
 
 		icon = generic_naval	
 		
 		available = {
+			always = no
 			hidden_trigger = {
 				always = no
 			}
@@ -667,12 +674,14 @@ MTG_naval_treaties = {
 		days_mission_timeout = 120
 		
 		activation = {
+			always = no
 			has_naval_treaty_trigger = yes
 			has_global_flag = MTG_second_london_conference
 		}
 
 		visible = {
-			has_naval_treaty_trigger = yes
+			is_major_naval = yes
+			always = no
 		}
 		timeout_effect = {
 			clr_global_flag = MTG_second_london_conference 
@@ -695,6 +704,7 @@ MTG_naval_treaties = {
 		days_mission_timeout = 365
 	
 		visible = {
+			is_major_naval = yes
 			has_naval_treaty_trigger = yes
 		}
 		timeout_effect = {

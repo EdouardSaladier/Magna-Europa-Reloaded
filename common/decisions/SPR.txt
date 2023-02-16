@@ -10634,12 +10634,23 @@ SPR_civil_war_offensives = {
 		available = {
 			NOT = { has_full_control_of_state = 896 }
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			896 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				875 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				2328 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
+						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
 					}
 				}
 			}
@@ -10733,7 +10744,7 @@ SPR_civil_war_offensives = {
 				tag = SPD
 			}
 			modifier = {
-				factor = 10
+				factor = 100
 				OR = {
 					tag = SPA
 					tag = SPB
@@ -11992,7 +12003,7 @@ SPR_civil_war_offensives = {
 		}
 
 		ai_will_do = {
-			base = 0.1
+			base = 2
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 1083
