@@ -194,6 +194,12 @@ is_spanish_colony_groups = {
 		is_balearic_group = yes
 	}
 }
+is_spanish_actual_colony_groups = {
+	OR = {
+		is_spanish_sahara_group = yes
+		is_spanish_morocco_group = yes
+	}
+}
 is_anarchist_group = {
 	OR = {
 		is_east_aragon_group = yes

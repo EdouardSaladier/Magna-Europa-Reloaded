@@ -129,12 +129,7 @@ focus_tree = {
 			hidden_effect = {
 				every_owned_state = {
 					limit = {
-						NOT = {
-							state = 290
-							state = 699
-							state = 783
-							state = 297
-						}
+						is_spanish_actual_colony_groups = no
 					}
 					SPA_garrison_control_cost_calculation = yes
 				}
@@ -254,13 +249,13 @@ focus_tree = {
 					limit = {
 						check_variable = { var = SPA_garrison_control value = 1 compare = equals }
 						OR = {
-							state = 171
-							state = 174
-							state = 788
-							state = 791
-							state = 176
-							state = 166
-							state = 172
+							is_galicia_group = yes
+							is_leon_group = yes
+							is_valladolid_group = yes
+							is_salamanca_group = yes
+							is_burgos_group = yes
+							is_west_aragon_group = yes
+							is_navarra_group = yes
 						}
 					}
 					set_state_flag = SPA_northern_garrisons_state_flag
@@ -273,13 +268,13 @@ focus_tree = {
 					limit = {
 						check_variable = { var = SPA_garrison_control value = 2 compare = equals }
 						OR = {
-							state = 171
-							state = 174
-							state = 788
-							state = 791
-							state = 176
-							state = 166
-							state = 172
+							is_galicia_group = yes
+							is_leon_group = yes
+							is_valladolid_group = yes
+							is_salamanca_group = yes
+							is_burgos_group = yes
+							is_west_aragon_group = yes
+							is_navarra_group = yes
 						}
 					}
 					set_state_flag = SPA_northern_garrisons_state_flag
@@ -292,13 +287,13 @@ focus_tree = {
 					limit = {
 						check_variable = { var = SPA_garrison_control value = 3 compare = equals }
 						OR = {
-							state = 171
-							state = 174
-							state = 788
-							state = 791
-							state = 176
-							state = 166
-							state = 172
+							is_galicia_group = yes
+							is_leon_group = yes
+							is_valladolid_group = yes
+							is_salamanca_group = yes
+							is_burgos_group = yes
+							is_west_aragon_group = yes
+							is_navarra_group = yes
 						}
 					}
 					set_state_flag = SPA_northern_garrisons_state_flag
@@ -433,12 +428,7 @@ focus_tree = {
 			hidden_effect = {
 				every_owned_state = {
 					limit = {
-						NOT = {
-							state = 290
-							state = 699
-							state = 783
-							state = 297
-						}
+						is_spanish_actual_colony_groups = no
 					}
 					SPR_garrison_control_cost_calculation = yes
 				}
@@ -1446,11 +1436,17 @@ focus_tree = {
 	focus = {
 		id = SPA_prepare_the_pyrenees_defenses
 		available = {
-			has_full_control_of_state = 792
-			has_full_control_of_state = 172
-			has_full_control_of_state = 166
-			has_full_control_of_state = 794
-			has_full_control_of_state = 165
+			all_state = {
+				if = {
+					limit = {
+						is_core_of = ROOT
+						any_neighbor_state = {
+							is_core_of = FRA
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 		}
 		bypass = {
 		}
@@ -1467,56 +1463,18 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SPA_prepare_the_pyrenees_defenses_tt
 			hidden_effect = {
-				792 = {
-					add_building_construction = {
-						type = bunker
-						province = {
-							id = 6756
+				every_state = {
+					limit = {
+						is_core_of = SPR
+						any_neighbor_state = {
+							is_core_of = FRA
 						}
-						level = 2
-						instant_build = yes
 					}
-				}
-				172 = {
 					add_building_construction = {
 						type = bunker
 						province = {
-							id = 3737
-							id = 3931
-						}
-						level = 2
-						instant_build = yes
-					}
-				}
-				166 = {
-					add_building_construction = {
-						type = bunker
-						province = {
-							id = 11838
-						}
-						level = 2
-						instant_build = yes
-					}
-				}
-				794 = {
-					add_building_construction = {
-						type = bunker
-						province = {
-							id = 915
-							id = 899
-						}
-						level = 2
-						instant_build = yes
-					}
-				}
-				165 = {
-					add_building_construction = {
-						type = bunker
-						province = {
-							id = 3899
-							id = 3898
-							id = 11779
-							id = 9824
+							all_provinces = yes
+							limit_to_border = yes
 						}
 						level = 2
 						instant_build = yes
@@ -1750,9 +1708,10 @@ focus_tree = {
 			every_owned_state = {
 				limit = {
 					OR = {
-						state = 165
-						state = 171
-						state = 792
+						is_catalonia_group = yes
+						is_galicia_group = yes
+						is_navarra_group = yes
+						is_pais_group = yes
 					}
 				}
 				remove_dynamic_modifier = { modifier = autonomous_state }
@@ -2032,7 +1991,7 @@ focus_tree = {
 					}
 				}
 				AND = {
-					ENG = { owns_state = 118 }
+					ENG = { owns_state = 882 }
 					NOT = { is_in_faction_with = ENG }
 				}
 			}
@@ -2068,13 +2027,13 @@ focus_tree = {
 			if = {
 				limit = {
 					ENG = {
-						owns_state = 118
+						owns_state = 882
 					}
 				}
 				create_wargoal = {
 					type = take_state_focus
 					target = ENG
-					generator = { 118 }
+					generator = { 882 }
 					expire = 0
 				}
 			}
@@ -2207,26 +2166,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_state_claim = 1
-			add_state_claim = 116
-			add_state_claim = 182
-			add_state_claim = 183
-			add_state_claim = 114
-			add_state_claim = 115
-			add_state_claim = 156
-			add_state_claim = 849
-			add_state_claim = 117
-			add_state_claim = 448
-			add_state_claim = 449
-			add_state_claim = 450
-			add_state_claim = 451
-			add_state_claim = 661
-			add_state_claim = 662
-			add_state_claim = 663
+			every_state = {
+				limit = {
+					is_southern_italian_core = yes
+				}
+				add_claim_by = ROOT
+			}
 			create_wargoal = {
-				type = take_state_focus
+				type = take_claimed_state
 				target = ITA
-				generator = { 114 115 156 849 117 448 449 450 451 661 662 663 }
 				expire = 0
 			}
 		}
@@ -2252,17 +2200,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_state_claim = 461
-			add_state_claim = 462
-			add_state_claim = 459
-			add_state_claim = 460
-			add_state_claim = 513
-			add_state_claim = 458
-			add_state_claim = 665
+			every_state = {
+				limit = {
+					is_core_of = MOR
+				}
+				add_claim_by = ROOT
+			}
 			create_wargoal = {
-				type = take_state_focus
-				target = FRA
-				generator = { 461 462 459 460 513 458 665 }
+				type = take_claimed_state
+				target = MOR
 				expire = 0
 			}
 		}
@@ -2275,6 +2221,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SPA_the_will_to_empire }
+		allow_branch = { has_global_flag = NEVER }
 		
 		icon = GFX_goal_generic_political_pressure
 		x = 1
@@ -2828,12 +2775,17 @@ focus_tree = {
 	focus = {
 		id = SPA_facilitate_pyrenees_freight_transports
 		available = {
-			has_full_control_of_state = 793
-			has_full_control_of_state = 794
-			has_full_control_of_state = 165
-			has_full_control_of_state = 176
-			has_full_control_of_state = 792
-			has_full_control_of_state = 41
+			all_state = {
+				if = {
+					limit = {
+						is_core_of = ROOT
+						any_neighbor_state = {
+							is_core_of = FRA
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 			any_allied_country = {
 				is_major = yes
 				has_government = fascism
@@ -2854,42 +2806,14 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SPA_facilitate_pyrenees_freight_transports_tt
 			hidden_effect = {
-				793 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
+				every_state = {
+					limit = {
+						is_core_of = ROOT
+						any_neighbor_state = {
+							is_core_of = FRA
+						}
+						is_controlled_by = ROOT
 					}
-				}
-				794 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-				165 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-				176 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-				792 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-				41 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 5
@@ -2898,19 +2822,20 @@ focus_tree = {
 				}
 			}
 			build_railway = { #Madrid - Zaragoza - Pyrinnes
-				path = {
-					3938 9767 6993 9785 11766 813 3816 9813 11821 915
-				}
+				start_province = 15120
+				target_province = 14921
 			}
 			build_railway = { #Zaragoza - Barcelona - French Border
-				path = {
-					3816 3954 13223 6966 6812 9764 854 9824 
-				}
+				start_province = 14921
+				target_province = 14960
 			}
 			build_railway = { #Madrid - Valladolid - Burgos - Bilbao - French Border
-				path = {
-					3938 3794 9800 9846 11825 6936 903 885 11852 13233 740 6756
-				}
+				start_province = 15120
+				target_province = 19753
+			}
+			build_railway = { 
+				start_province = 19753
+				target_province = 750
 			}
 		}
 	}
@@ -2922,12 +2847,11 @@ focus_tree = {
 				is_major = yes
 				has_government = fascism
 			}
-			has_full_control_of_state = 169
-			has_full_control_of_state = 789
-			has_full_control_of_state = 175
-			has_full_control_of_state = 170
-			has_full_control_of_state = 173
-			has_full_control_of_state = 168
+			ROOT = {
+				all_core_state = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 		bypass = {
 		}
@@ -2942,20 +2866,25 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			build_railway = { #Madrid - Crodoba - Sevilla
-				path = {
-					3938 13224 13229 6800 6832 6948 3810 3871 875 1178 7183
-				}
+			build_railway = { #Madrid - Crodoba
+				start_province = 15120
+				target_province = 19772
+			}
+			build_railway = { #Crodoba - Sevilla
+				start_province = 19772
+				target_province = 7546
 			}
 			build_railway = { #Madrid - Granada
-				path = {
-					13229 9778 9828 12083 4095 1176
-				}
+				start_province = 15120
+				target_province = 19777
 			}
-			build_railway = { #Madrid - Murcia - Valencia
-				path = {
-					3938 6914 9757 942 832 9903 1093 10024 4098 9889 6959 6906
-				}
+			build_railway = { #Madrid - Murcia
+				start_province = 15120
+				target_province = 15387
+			}
+			build_railway = { #Murcia - Valencia
+				start_province = 15387
+				target_province = 15247
 			}
 		}
 	}
@@ -3617,11 +3546,18 @@ focus_tree = {
 	focus = {
 		id = SPA_consolidate_the_north
 		available = {
-			controls_state = 166
-			controls_state = 172
-			controls_state = 176
-			controls_state = 792
-			controls_state = 790
+			all_state = {
+				if = {
+					limit = {
+						is_west_aragon_group = yes
+						is_navarra_group = yes
+						is_burgos_group = yes
+						is_pais_group = yes
+						is_asturias_group = yes
+					}
+					is_controlled_by = ROOT
+				}
+			}
 		}
 		bypass = {
 			has_global_flag = scw_over
@@ -3637,10 +3573,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			166 = {
+			837 = {
 				if = {
 					limit = {
-						166 = {
+						837 = {
 							free_building_slots = {
 								building = arms_factory
 								size > 0
@@ -3656,10 +3592,10 @@ focus_tree = {
 					}
 				}
 			}
-			172 = {
+			849 = {
 				if = {
 					limit = {
-						172 = {
+						849 = {
 							free_building_slots = {
 								building = arms_factory
 								size > 0
@@ -3675,10 +3611,10 @@ focus_tree = {
 					}
 				}
 			}
-			176 = {
+			880 = {
 				if = {
 					limit = {
-						176 = {
+						880 = {
 							free_building_slots = {
 								building = arms_factory
 								size > 0
@@ -3694,10 +3630,10 @@ focus_tree = {
 					}
 				}
 			}
-			792 = {
+			854 = {
 				if = {
 					limit = {
-						792 = {
+						854 = {
 							free_building_slots = {
 								building = arms_factory
 								size > 0
@@ -3713,10 +3649,10 @@ focus_tree = {
 					}
 				}
 			}
-			790 = {
+			859 = {
 				if = {
 					limit = {
-						790 = {
+						859 = {
 							free_building_slots = {
 								building = arms_factory
 								size > 0
@@ -4262,7 +4198,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			171 = { #Galicia
+			830 = { #Galicia
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -4271,19 +4207,19 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 758
+					province = 14649
 					instant_build = yes
 				}							
 			}
-			790 = { #Asturias
+			837 = { #Asturias
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 11707
+					province = 14673
 					instant_build = yes
 				}							
 			}
-			792 = { #Basque
+			849 = { #Basque
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -4292,11 +4228,11 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 740
+					province = 750
 					instant_build = yes
 				}							
 			}
-			165 = { #Catalonia
+			896 = { #Catalonia
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -4305,11 +4241,11 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 9764
+					province = 14960
 					instant_build = yes
 				}							
 			}
-			167 = { #Valencia
+			1007 = { #Valencia
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -4318,17 +4254,17 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 6906
+					province = 6199
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 4098
+					province = 6199
 					instant_build = yes
 				}						
 			}
-			168 = { #Murcia
+			1057 = { #Murcia
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -4337,11 +4273,11 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 10024
+					province = 19764
 					instant_build = yes
 				}							
 			}
-			173 = { #Granada
+			1083 = { #Granada
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -4350,17 +4286,17 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 747
+					province = 15496
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 9979
+					province = 15496
 					instant_build = yes
 				}						
 			}
-			169 = { #Sevilla
+			1115 = { #Cadiz
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -4369,36 +4305,36 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 1048
+					province = 19767
 					instant_build = yes
 				}							
 			}
-			41 = { #Madrid
+			951 = { #Madrid
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}							
 			}
-			177 = { #Baleares
+			1016 = { #Baleares
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 9793
+					province = 15241
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 7114
+					province = 15241
 					instant_build = yes
 				}							
 			}
-			178 = { #Canary Islands
+			1858 = { #Canary Islands
 				add_building_construction = {
 					type = naval_base
 					level = 1
-					province = 13071
+					province = 21011
 					instant_build = yes
 				}							
 			}
@@ -4758,9 +4694,10 @@ focus_tree = {
 			every_owned_state = {
 				limit = {
 					OR = {
-						state = 165
-						state = 171
-						state = 792
+						is_catalonia_group = yes
+						is_galicia_group = yes
+						is_navarra_group = yes
+						is_pais_group = yes
 					}
 				}
 				remove_dynamic_modifier = { modifier = autonomous_state }
@@ -5123,18 +5060,15 @@ focus_tree = {
 	focus = {
 		id = SPA_demand_french_north_africa
 		available = {
-			any_country = {
-				original_tag = FRA
-				has_focus_tree = vichy_french_focus
-				owns_state = 461
-				owns_state = 462
-				owns_state = 459
-				owns_state = 460
-				owns_state = 513
-				owns_state = 514
-				owns_state = 458
-				owns_state = 665
-			}
+				ALG = {
+					all_core_state = {
+						OWNER = {
+							original_tag = FRA
+							has_focus_tree = vichy_french_focus
+						}
+					}	
+				}
+			
 		}
 		bypass = {
 		}
@@ -5161,14 +5095,14 @@ focus_tree = {
 				limit = {
 					original_tag = FRA
 					has_focus_tree = vichy_french_focus
-					owns_state = 461
-					owns_state = 462
-					owns_state = 459
-					owns_state = 460
-					owns_state = 513
-					owns_state = 514
-					owns_state = 458
-					owns_state = 665
+					all_core_state = {
+						if = {
+							limit = {
+								is_core_of = ALG
+							}
+							is_owned_by = PREV
+						}
+					}
 				}
 				country_event = { id = lar_spain.39 hours = 6 random_hours = 18 }
 			}
@@ -5263,21 +5197,21 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			171 = { #Galicia
+			830 = { #Galicia
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}						
 			}
-			792 = { #Basque
+			854 = { #Basque
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}						
 			}
-			41 = { #Madrid
+			951 = { #Madrid
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -5339,7 +5273,7 @@ focus_tree = {
 			NOT = {
 				is_in_faction_with = ENG
 				has_war_with = ENG
-				controls_state = 118
+				controls_state = 882
 			}
 		}
 		bypass = {
@@ -5359,7 +5293,7 @@ focus_tree = {
 			create_wargoal = {
 				type = take_state_focus
 				target = ENG
-				generator = { 118 }
+				generator = { 882 }
 				expire = 0
 			}
 		}
@@ -5370,6 +5304,11 @@ focus_tree = {
 		available = {
 		}
 		bypass = {
+			MOR = {
+				all_core_state = {
+					is_owned_by = ROOT
+				}
+			}
 		}
 		prerequisite = { focus = SPA_retake_gibraltar }
 		
@@ -5382,73 +5321,49 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_state_claim = 557
-			add_state_claim = 272
-			add_state_claim = 780
-			add_state_claim = 556
-			add_state_claim = 779
-			add_state_claim = 778
-			add_state_claim = 781
-			add_state_claim = 777
-			add_state_claim = 776
-			add_state_claim = 773
-			add_state_claim = 774
-			add_state_claim = 660
-			add_state_claim = 539
-			add_state_claim = 772
+			every_state = {
+				limit = {
+					is_core_of = MOR
+				}
+				add_claim_by = ROOT
+			}
 			if = {
 				limit = {
-					FRA = {
-						OR = {
-							owns_state = 557
-							owns_state = 272
-							owns_state = 780
-							owns_state = 556
-							owns_state = 779
-							owns_state = 778
-							owns_state = 781
-							owns_state = 777
-							owns_state = 776
-							owns_state = 773
-							owns_state = 774
-							owns_state = 660
-							owns_state = 539
-							owns_state = 772
+					all_state = {
+							if = {
+								limit = {
+									is_core_of = MOR
+									NOT = {
+										is_owned_by = ROOT
+									}
+								}
+								is_owned_by = FRA
+							}
 						}
-					}
 				}
 				create_wargoal = {
-					type = take_state_focus
-					target = FRA
-					generator = { 557 272 780 556 779 778 781 777 776 773 774 660 539 772 }
+					type = take_claimed_state
+					target = MOR
 					expire = 0
 				}
 			}
 			if = {
 				limit = {
-					VIC = {
-						OR = {
-							owns_state = 557
-							owns_state = 272
-							owns_state = 780
-							owns_state = 556
-							owns_state = 779
-							owns_state = 778
-							owns_state = 781
-							owns_state = 777
-							owns_state = 776
-							owns_state = 773
-							owns_state = 774
-							owns_state = 660
-							owns_state = 539
-							owns_state = 772
+					all_state = {
+							if = {
+								limit = {
+									is_core_of = MOR
+									NOT = {
+										is_owned_by = ROOT
+									}
+								}
+								is_owned_by = VIC
+							}
 						}
-					}
 				}
 				create_wargoal = {
-					type = take_state_focus
+					type = take_claimed_state
 					target = VIC
-					generator = { 557 272 780 556 779 778 781 777 776 773 774 660 539 772 }
 					expire = 0
 				}
 			}
@@ -5530,16 +5445,25 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						OR = {
-							controls_state = 172
-							controls_state = 176
-						}
+						all_state = {
+								if = {
+									limit = {
+										OR = {
+											is_navarra_group = yes
+											is_burgos_group = yes
+										}
+									}
+									is_owned_by = ROOT
+								}
+							}
+							
+						
 					}
 					every_state = {
 						limit = {
 							OR = {
-								state = 172
-								state = 176
+								is_navarra_group = yes
+								is_burgos_group = yes
 							}
 							NOT = { has_state_flag = SPA_carlist_cell_flag }
 							is_controlled_by = ROOT
@@ -6201,9 +6125,11 @@ focus_tree = {
 			every_owned_state = {
 				limit = {
 					OR = {
-						state = 165
-						state = 171
-						state = 792
+						is_pais_group = yes
+						is_navarra_group = yes
+						is_galicia_group = yes
+						is_catalonia_group = yes
+						
 					}
 				}
 				remove_dynamic_modifier = { modifier = autonomous_state }
@@ -6335,14 +6261,14 @@ focus_tree = {
 					}
 					is_core_of = ROOT
 					OR = {
-						state = 792
-						state = 166
-						state = 173
-						state = 788
-						state = 791
-						state = 171
-						state = 170
-						state = 41
+						is_pais_group = yes
+						is_west_aragon_group = yes
+						is_granada_group = yes
+						is_salamanca_group = group
+						is_valladolid_group = yes
+						is_galicia_group = yes
+						is_extremadura_group = yes
+						is_madrid_group = yes
 					}
 				}
 				set_state_flag = SPA_encourage_local_mining_1inf
@@ -6361,14 +6287,14 @@ focus_tree = {
 					is_core_of = ROOT
 					NOT = { has_state_flag = SPA_encourage_local_mining_1inf }
 					OR = {
-						state = 792
-						state = 166
-						state = 173
-						state = 788
-						state = 791
-						state = 171
-						state = 170
-						state = 41
+						is_pais_group = yes
+						is_west_aragon_group = yes
+						is_granada_group = yes
+						is_salamanca_group = group
+						is_valladolid_group = yes
+						is_galicia_group = yes
+						is_extremadura_group = yes
+						is_madrid_group = yes
 					}
 				}
 				set_state_flag = SPA_encourage_local_mining_1inf
@@ -7955,11 +7881,7 @@ focus_tree = {
 			}
 			every_owned_state = {
 				limit = {
-					OR = {
-						state = 165
-						state = 171
-						state = 792
-					}
+					has_dynamic_modifier = { modifier = autonomous_state }
 				}
 				remove_dynamic_modifier = { modifier = autonomous_state }
 			}
@@ -7998,11 +7920,11 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			owns_state = 180
-			owns_state = 181
-			owns_state = 112
-			owns_state = 179
-			owns_state = 795
+			POR = {
+				all_core_state = {
+					is_owned_by = ROOT
+				}
+			}
 		}
 
 		will_lead_to_war_with = POR
@@ -8043,11 +7965,11 @@ focus_tree = {
 	focus = {
 		id = SPR_regional_defense_council_of_iberia
 		available = {
-			owns_state = 180
-			owns_state = 181
-			owns_state = 112
-			owns_state = 179
-			owns_state = 795
+			POR = {
+				all_core_state = {
+					is_owned_by = ROOT
+				}
+			}
 		}
 		bypass = {
 		}
@@ -8324,11 +8246,17 @@ focus_tree = {
 	focus = {
 		id = SPR_fortify_the_pyrenees
 		available = {
-			has_full_control_of_state = 792
-			has_full_control_of_state = 172
-			has_full_control_of_state = 166
-			has_full_control_of_state = 794
-			has_full_control_of_state = 165
+			all_state = {
+				if = {
+					limit = {
+						is_core_of = ROOT
+						any_neighbor_state = {
+							is_core_of = FRA
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 		}
 		bypass = {
 		}
@@ -8345,56 +8273,18 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SPR_fortify_the_pyrenees_tt
 			hidden_effect = {
-				792 = {
-					add_building_construction = {
-						type = bunker
-						province = {
-							id = 6756
+				every_state = {
+					limit = {
+						is_core_of = SPR
+						any_neighbor_state = {
+							is_core_of = FRA
 						}
-						level = 3
-						instant_build = yes
 					}
-				}
-				172 = {
 					add_building_construction = {
 						type = bunker
 						province = {
-							id = 3737
-							id = 3931
-						}
-						level = 3
-						instant_build = yes
-					}
-				}
-				166 = {
-					add_building_construction = {
-						type = bunker
-						province = {
-							id = 11838
-						}
-						level = 3
-						instant_build = yes
-					}
-				}
-				794 = {
-					add_building_construction = {
-						type = bunker
-						province = {
-							id = 915
-							id = 899
-						}
-						level = 3
-						instant_build = yes
-					}
-				}
-				165 = {
-					add_building_construction = {
-						type = bunker
-						province = {
-							id = 3899
-							id = 3898
-							id = 11779
-							id = 9824
+							all_provinces = yes
+							limit_to_border = yes
 						}
 						level = 3
 						instant_build = yes
@@ -8407,8 +8297,7 @@ focus_tree = {
 	focus = {
 		id = SPR_fortify_la_linea_de_la_concepcion
 		available = {
-			has_full_control_of_state = 169
-			has_full_control_of_state = 173
+			has_full_control_of_state = 1115
 		}
 		bypass = {
 		}
@@ -8425,24 +8314,13 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SPR_fortify_la_linea_de_la_concepcion_tt
 			hidden_effect = {
-				169 = {
+				1115 = {
 					add_building_construction = {
 						type = bunker
 						province = {
-							id = 13228
-							id = 10094
+							id = 19770
 						}
-						level = 3
-						instant_build = yes
-					}
-				}
-				173 = {
-					add_building_construction = {
-						type = bunker
-						province = {
-							id = 7153
-						}
-						level = 3
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -8478,7 +8356,7 @@ focus_tree = {
 			custom_effect_tooltip = SPR_fortify_the_coastlines_tt_1
 			custom_effect_tooltip = SPR_fortify_the_coastlines_tt_2
 			hidden_effect = {
-				171 = {
+				830 = {
 					add_building_construction = {
 						type = coastal_bunker
 						province = {
@@ -8489,7 +8367,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				790 = {
+				849 = {
 					add_building_construction = {
 						type = coastal_bunker
 						province = {
@@ -8500,7 +8378,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				792 = {
+				837 = {
 					add_building_construction = {
 						type = coastal_bunker
 						province = {
@@ -8861,7 +8739,7 @@ focus_tree = {
 	focus = {
 		id = SPR_strengthen_the_euzko_gudarostea
 		available = {
-			has_full_control_of_state = 792
+			has_full_control_of_state = 849
 			NOT = { has_global_flag = scw_over }
 		}
 		bypass = {
@@ -8890,7 +8768,7 @@ focus_tree = {
 					}
 				}
 				# Basque
-				792 = {
+				849 = {
 					create_unit = {
 						division = "division_template = \"Euzko Gudarosteko Eskuadroia\" start_experience_factor = 0.1" 
 						owner = ROOT
@@ -8923,7 +8801,7 @@ focus_tree = {
 	focus = {
 		id = SPR_fortify_the_iron_ring
 		available = {
-			has_full_control_of_state = 792
+			has_full_control_of_state = 849
 			NOT = { has_global_flag = scw_over }
 		}
 		bypass = {
@@ -8940,7 +8818,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = { idea = SPR_fortify_the_iron_ring days = 730 }
-			792 = {
+			849 = {
 				add_building_construction = {
 					type = bunker
 					province = {
@@ -9345,11 +9223,7 @@ focus_tree = {
 			add_war_support = 0.1
 			every_owned_state = {
 				limit = {
-					OR = {
-						state = 165
-						state = 171
-						state = 792
-					}
+					has_dynamic_modifier = { modifier = autonomous_state }
 				}
 				remove_dynamic_modifier = { modifier = autonomous_state }
 				add_dynamic_modifier = { modifier = semi_autonomous_state }
@@ -9742,11 +9616,7 @@ focus_tree = {
 			add_stability = 0.1
 			every_owned_state = {
 				limit = {
-					OR = {
-						state = 165
-						state = 171
-						state = 792
-					}
+					has_dynamic_modifier = { modifier = autonomous_state }
 				}
 				remove_dynamic_modifier = { modifier = autonomous_state }
 				add_dynamic_modifier = { modifier = semi_autonomous_state }
@@ -10248,11 +10118,7 @@ focus_tree = {
 			}
 			every_owned_state = {
 				limit = {
-					OR = {
-						state = 165
-						state = 171
-						state = 792
-					}
+					has_dynamic_modifier = { modifier = semi_autonomous_state }
 				}
 				remove_dynamic_modifier = { modifier = semi_autonomous_state }
 			}
@@ -10759,9 +10625,9 @@ focus_tree = {
 		available = {
 			is_in_faction_with = SOV
 			SOV = { has_government = communism }
-			has_full_control_of_state = 172
-			has_full_control_of_state = 166
-			has_full_control_of_state = 794
+			has_full_control_of_state = 880
+			has_full_control_of_state = 870
+			has_full_control_of_state = 854
 			NOT = {
 				any_state = {
 					is_core_of = ROOT
@@ -10789,32 +10655,31 @@ focus_tree = {
 			custom_effect_tooltip = SPR_recovering_from_civil_war_focus_tt
 			custom_effect_tooltip = SPA_prepare_the_pyrenees_defenses_tt
 			hidden_effect = {
-				792 = {
+				870 = {
 					add_building_construction = {
 						type = bunker
 						province = {
-							id = 6756
+							id = 19758
 						}
 						level = 2
 						instant_build = yes
 					}
 				}
-				172 = {
+				880 = {
 					add_building_construction = {
 						type = bunker
 						province = {
-							id = 3737
-							id = 3931
+							id = 14921
 						}
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
-				166 = {
+				854 = {
 					add_building_construction = {
 						type = bunker
 						province = {
-							id = 11838
+							id = 3956
 						}
 						level = 2
 						instant_build = yes
@@ -10831,16 +10696,13 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				165 = {
+				849 = {
 					add_building_construction = {
 						type = bunker
 						province = {
-							id = 3899
-							id = 3898
-							id = 11779
-							id = 9824
+							id = 750
 						}
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -10877,11 +10739,7 @@ focus_tree = {
 			}
 			every_owned_state = {
 				limit = {
-					OR = {
-						state = 165
-						state = 171
-						state = 792
-					}
+					has_dynamic_modifier = { modifier = semi_autonomous_state }
 				}
 				remove_dynamic_modifier = { modifier = semi_autonomous_state }
 			}

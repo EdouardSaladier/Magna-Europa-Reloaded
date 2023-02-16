@@ -380,3 +380,40 @@ is_spanish_africa = {
 		state = 1852
 	}
 }
+is_mainland_spain = {
+	OR = {
+		is_core_of = GLC
+		is_core_of = ATR
+		is_core_of = LEO
+		is_core_of = EXT
+		AND = {
+			is_core_of = ADU
+			NOT = {
+				state = 893
+				state = 1852
+			}
+		}
+		AND = {
+			is_core_of = CAT
+			NOT = {
+				state = 871
+			}
+		}
+		AND = {
+			is_core_of = NAV
+			NOT = {
+				state = 845
+				state = 852
+			}
+		}
+		is_core_of = MUR
+		is_core_of = CSM
+		is_core_of = MDR
+		is_core_of = CSV
+		is_core_of = VAL
+		is_core_of = ARA
+		is_core_of = CBR
+		
+		
+	}
+}
