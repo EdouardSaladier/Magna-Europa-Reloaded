@@ -10733,7 +10733,7 @@ SPR_civil_war_offensives = {
 		}
 
 		ai_will_do = {
-			base = 0.1
+			base = 1
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 896
@@ -11115,7 +11115,7 @@ SPR_civil_war_offensives = {
 		}
 
 		ai_will_do = {
-			base = 0.1
+			base = 1
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 940

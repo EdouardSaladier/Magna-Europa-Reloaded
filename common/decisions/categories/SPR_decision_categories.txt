@@ -66,7 +66,7 @@ SPR_civil_war_offensives = {
 	picture = GFX_decision_cat_picture_spr_civil_war_offensives
 
 	on_map_area = {
-		state = 41
+		state = 830
 		name = SPR_civil_war_offensives_map_category_name
 		zoom = 250
 	}
