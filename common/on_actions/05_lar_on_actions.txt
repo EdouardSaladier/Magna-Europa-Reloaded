@@ -699,6 +699,17 @@ on_actions = {
 					}
 				}
 			}
+			every_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = unplanned_offensive
+					}
+				}
+				clr_state_flag = SPR_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
+				}
+			}
 		}
 	}
 

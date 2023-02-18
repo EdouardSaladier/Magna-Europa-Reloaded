@@ -625,3 +625,16 @@ nationalist_spain_allies_nobody_on_historical = {
 		value = -200
 	}
 }
+nat_use_pp_for_decisions = {
+	allowed = {
+		tag = SPA
+	}
+	enable = {
+		SPR_scw_in_progress = yes
+	}
+	ai_strategy = {
+		type = pp_spend_ammount
+		id = decision
+		value = 1000
+	}
+}
