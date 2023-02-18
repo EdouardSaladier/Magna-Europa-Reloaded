@@ -10059,12 +10059,32 @@ SPR_civil_war_offensives = {
 		available = {
 			NOT = { has_full_control_of_state = 849 }
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			849 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				849 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				851 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
+						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				860 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
+						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
 					}
 				}
 			}
@@ -10898,12 +10918,32 @@ SPR_civil_war_offensives = {
 		available = {
 			NOT = { has_full_control_of_state = 951 }
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			951 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				951 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				950 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
+						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				926 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
+						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
 					}
 				}
 			}
@@ -10986,7 +11026,7 @@ SPR_civil_war_offensives = {
 		}
 
 		ai_will_do = {
-			base = 0.1
+			base = 1
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 951
@@ -11156,12 +11196,23 @@ SPR_civil_war_offensives = {
 		available = {
 			NOT = { has_full_control_of_state = 1007 }
 			NOT = { has_active_mission = SPR_preparing_offensive }
-			1007 = {
-				has_state_flag = SPR_unplanned_offensive_flag
-				OR = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
+			OR = {
+				1007 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
 						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
+					}
+				}
+				974 = {
+					has_state_flag = SPR_unplanned_offensive_flag
+					OR = {
+						is_controlled_by = ROOT
+						any_neighbor_state = {
+							is_controlled_by = ROOT
+						}
 					}
 				}
 			}

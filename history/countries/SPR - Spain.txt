@@ -133,8 +133,10 @@ if = {
 		set_variable = { var = spa_civil_war_divisions_counter_var value = 17 }
 		set_variable = { var = spr_civil_war_divisions_counter_var value = 66 }
 	}
-	for_each_scope_loop = {
-	    array = core_states
+	every_state = {
+	    limit = {
+			is_core_of = SPR
+		}
 	    
 	    set_state_flag = SPR_original_core
 	}

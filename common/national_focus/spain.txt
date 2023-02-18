@@ -5609,13 +5609,13 @@ focus_tree = {
 				}
 				clr_country_flag = SPR_preparing_offensive_in_progress_flag
 			}
-			790 = {
-				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_dynamic_modifier = {
-					modifier = unplanned_offensive
+			every_state = {
+				limit = {
+					OR = {
+						is_asturias_group = yes
+						is_pais_group = yes
+					}
 				}
-			}
-			792 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
 				remove_dynamic_modifier = {
 					modifier = unplanned_offensive
