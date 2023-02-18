@@ -1645,41 +1645,14 @@ on_actions = {
 					ROOT = { tag = TUR }
 				}
 				TUR = {
-					350 = {
-						if = {
-							limit = {
-								is_owned_and_controlled_by = TUR
-							}
-							add_dynamic_modifier = { modifier = kurdish_agitation }
+					every_state = {
+						limit = {
+							is_owned_and_controlled_by = TUR
+							is_core_of = ART
 						}
-					}
-
-					353 = {
-						if = {
-							limit = {
-								is_owned_and_controlled_by = TUR
-							}
-							add_dynamic_modifier = { modifier = kurdish_agitation }
-						}
-					}
-
-					352 = {
-
-						if = {
-							limit = {
-								is_owned_and_controlled_by = TUR
-							}
-							add_dynamic_modifier = { modifier = kurdish_separatism }
-						}
-					}
-
-					800 = {
-
-						if = {
-							limit = {
-								is_owned_and_controlled_by = TUR
-							}
-							add_dynamic_modifier = { modifier = kurdish_separatism }
+						random_list = {
+							10 = { add_dynamic_modifier = { modifier = kurdish_separatism } }
+							10 = { add_dynamic_modifier = { modifier = kurdish_agitation } }
 						}
 					}
 				}

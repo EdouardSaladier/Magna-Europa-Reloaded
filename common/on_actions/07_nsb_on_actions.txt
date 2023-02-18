@@ -20,10 +20,12 @@ on_actions = {
 					FROM.FROM = {
 						is_core_of = GER
 						NOT = { #these two cores are given to germany in the Danzig or War event, but the states are not transfered immediately
-							state = 85
-							state = 807
-							state = 8 #Luxembourg & Alsace
-							state = 28
+							AND = {
+								is_core_of = POL
+								is_yalta_polish_state = no
+							}
+							is_core_of = LUX
+							is_alsace_lorraine = yes
 						}
 					}
 					has_global_flag = achievement_france_surrender
@@ -56,9 +58,9 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					FROM.FROM = { state = 85 }
+					FROM.FROM = { state = 280 }
 				}
-				85 = { POL_remove_danzig_effect = yes }
+				280 = { POL_remove_danzig_effect = yes }
 				if = {
 					limit = {
 						ROOT = {
@@ -68,14 +70,14 @@ on_actions = {
 							}
 						}
 					}
-					85 = {
+					280 = {
 						reset_state_name = yes
 					}
 					reset_province_name = 362
 				}
 				if = {
 					limit = { ROOT = { original_tag = POL } }
-					85 = { set_state_name = "Gdańsk" }
+					280 = { set_state_name = "Gdańsk" }
 					set_province_name = {
 						id = 362
 						name = "Gdańsk"
@@ -100,14 +102,14 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					FROM.FROM = { state = 119 }
+					FROM.FROM = { state = 254 }
 				}
 				if = {
 					limit = {
 						ROOT = { original_tag = IRE }
 					}
 					set_province_name = {
-						id = 385
+						id = 254
 						name = "Derry"
 					}
 				}
@@ -115,7 +117,7 @@ on_actions = {
 					limit = {
 						ROOT = { original_tag = ENG }
 					}
-					reset_province_name = 385
+					reset_province_name = 254
 				}
 				if = {
 					limit = {
@@ -124,7 +126,7 @@ on_actions = {
 					random_list = { #Difficult to say if an independent Northern Ireland would call it Derry or Londonderry, let's let the dice gods decide.
 						1 = {
 							set_province_name = {
-								id = 385
+								id = 254
 								name = "Derry"
 							}
 							modifier = {
@@ -133,7 +135,7 @@ on_actions = {
 							}
 						}
 						1 = {
-							reset_province_name = 385
+							reset_province_name = 254
 							modifier = {
 								factor = 0
 								is_subject_of = IRE
@@ -391,36 +393,36 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = LAT
-					808 = { is_capital = no }
-					controls_state = 808
+					172 = { is_capital = no }
+					controls_state = 172
 				}
-				set_capital = { state = 808 }
+				set_capital = { state = 172 }
 			}
 			if = {
 				limit = {
 					original_tag = EST
-					812 = { is_capital = no }
-					controls_state = 812
+					133 = { is_capital = no }
+					controls_state = 133
 				}
-				set_capital = { state = 812 }
+				set_capital = { state = 133 }
 			}
 			if = {
 				limit = {
 					original_tag = LIT
-					11 = { is_capital = no }
-					784 = { is_capital = no }
+					242 = { is_capital = no }
+					241 = { is_capital = no }
 					OR = {
-						controls_state = 11
-						controls_state = 784
+						controls_state = 241
+						controls_state = 242
 					}
 				}
 				if = {
-					limit = { controls_state = 784 }
-					set_capital = { state = 784 }
+					limit = { controls_state = 242 }
+					set_capital = { state = 242 }
 				}
 				if = {
-					limit = { controls_state = 11 }
-					set_capital = { state = 11 }
+					limit = { controls_state = 241 }
+					set_capital = { state = 241 }
 				}
 			}
 			# After Soviet Communist Civil War
@@ -499,7 +501,12 @@ on_actions = {
 						has_completed_focus = POL_ban_the_nazi_party
 					}
 				}
-				85 = {
+				280 = {
+					add_core_of = DNZ
+					set_demilitarized_zone = yes
+					add_dynamic_modifier = { modifier =  international_city }
+				}
+				2729 = {
 					add_core_of = DNZ
 					set_demilitarized_zone = yes
 					add_dynamic_modifier = { modifier =  international_city }
@@ -508,7 +515,23 @@ on_actions = {
 					limit = {
 						has_completed_focus = POL_clamp_down_on_danzig
 					}
-					85 = {
+					280 = {
+						remove_dynamic_modifier = {
+							modifier = international_city
+						}
+						add_dynamic_modifier = {
+							modifier = international_city_2
+						}
+						force_enable_resistance = { 
+							clear = no
+							occupier = POL
+							occupied = DNZ
+						}
+						start_resistance = DNZ
+						set_resistance = 40
+						set_compliance = 30
+					}
+					2729 = {
 						remove_dynamic_modifier = {
 							modifier = international_city
 						}
@@ -2196,11 +2219,11 @@ on_actions = {
 			if = {
 				limit = {
 					FROM.FROM = {
-						state = 217
+						state = 457
 					}
 					tag = GER
 					has_country_flag = achievement_stalingrad_not_taken
-					divisions_in_state = { state = 217 size > 1 } #only happens if Germany has at least one division in the state, because state control changes before on_capitulation fires
+					divisions_in_state = { state = 457 size > 1 } #only happens if Germany has at least one division in the state, because state control changes before on_capitulation fires
 				}
 				clr_country_flag = achievement_stalingrad_not_taken
 			}

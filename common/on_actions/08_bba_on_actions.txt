@@ -55,44 +55,44 @@ on_actions = {
 					limit = {
 						OR = {
 							### Original Members
-							tag = ARG
+							#tag = ARG
 							tag = BEL
-							tag = BOL
+							#tag = BOL
 							tag = ENG
-							tag = AST
+							#tag = AST
 							tag = CAN
-							tag = RAJ
-							tag = NZL
-							tag = SAF
-							tag = CHI
-							tag = COL
-							tag = CUB
+							#tag = RAJ
+							#tag = NZL
+							#tag = SAF
+							#tag = CHI
+							#tag = COL
+							#tag = CUB
 							tag = CZE
 							tag = DEN
 							tag = FRA
 							tag = GRE
-							tag = HAI
+							#tag = HAI
 							tag = ITA
-							tag = LIB
+							#tag = LIB
 							tag = HOL
 							tag = NOR
-							tag = PAN
+							#tag = PAN
 							tag = PER
-							tag = PRU
+							#tag = PRU
 							tag = POL
 							tag = POR
 							tag = ROM
-							tag = SIA
+							#tag = SIA
 							tag = SPR
 							tag = SWE
 							tag = SWI
-							tag = URU
-							tag = VEN
+							#tag = URU
+							#tag = VEN
 							tag = YUG
 							### 1920
 							tag = AUS
 							tag = BUL
-							tag = COS
+							#tag = COS
 							tag = FIN
 							tag = LUX
 							tag = ALB
@@ -104,18 +104,18 @@ on_actions = {
 							tag = HUN
 							### 1923
 							tag = IRE
-							tag = ETH
+							#tag = ETH
 							### 1924
-							tag = DOM
+							#tag = DOM
 							### 1931
-							tag = MEX
+							#tag = MEX
 							### 1932
 							tag = TUR
 							tag = IRQ
 							### 1934
 							tag = SOV
-							tag = AFG
-							tag = ECU
+							#tag = AFG
+							#tag = ECU
 						}
 					}
 					add_ideas = league_of_nations_member_idea
@@ -240,10 +240,10 @@ on_actions = {
 					if = {
 						limit = {
 							capital_scope = {
-								NOT = { state = 2 } #ROME
+								NOT = { state = 876 } #ROME
 							}
 						}
-						set_capital = { state = 2 }
+						set_capital = { state = 876 }
 					}
 				}
 			}
