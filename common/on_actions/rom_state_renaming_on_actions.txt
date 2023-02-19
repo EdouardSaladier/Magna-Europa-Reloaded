@@ -1366,7 +1366,7 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
-		
+			#Bazargic
 			if = {
 				limit = {
 					FROM.FROM = { state = 818 }
@@ -1383,7 +1383,8 @@ on_actions = {
 					reset_province_name = 5762
 				}
 			}
-			else_if = {
+			#Constanta
+			if = {
 				limit = {
 					FROM.FROM = { state = 793 }
 				}
@@ -1399,7 +1400,8 @@ on_actions = {
 					reset_province_name = 14572
 				}
 			}
-			else_if = {
+			#Tulcea
+			if = {
 				limit = {
 					FROM.FROM = { state = 767 }
 				}
