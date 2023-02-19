@@ -609,65 +609,6 @@ country_event = {
 				transfer_state = 871
 			}
 		}
-		# German Occupation Zone
-		570 = { transfer_state_to = MVF }
-		every_state = {
-			limit = {
-				is_core_of = FRA
-				is_alsace_lorraine = no
-			}
-			add_claim_by = MVF
-		}
-		if = {
-			limit = {
-				GER = {
-					has_war_with = FRA
-				}
-			}
-			MVF = {
-				declare_war_on = {
-					target = FRA
-					type = civil_war
-				}	
-				
-			}
-		}
-		every_state = {
-			limit = {
-				is_ger_occupation_zone = yes
-				is_alsace_lorraine = no
-				owner = { tag = FRA }
-			}
-			transfer_state_to = MVF
-			GER = {
-				set_autonomy = { target = MVF autonomy_state = autonomy_integrated_puppet }
-			}
-			
-		}
-		if = {
-			limit = {
-				GER = {
-					NOT = { has_war_with = FRA }
-				}
-			}
-			MVF = {
-				every_controlled_state = {
-					transfer_state_to = MVF
-				}
-			}
-			
-		}
-		MVF = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 300000
-				producer = GER
-			}
-			add_manpower = 300000
-			every_owned_state = {
-				add_compliance  = 30
-			}
-		}
 		create_dynamic_country = {
 				original_tag = FRA
 				save_event_target_as = vichy_france
@@ -699,9 +640,6 @@ country_event = {
 					}
 					add_core_of = PREV
 					event_target:vichy_france = { transfer_state = PREV }
-				}
-				GER = {
-					set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
 				}
 			set_capital = { state = 699 }
 			set_politics = {
@@ -753,7 +691,9 @@ country_event = {
 			factor = 50
 		}
 		trigger = {
-			has_government = neutrality
+			GER = {
+				has_government = neutrality
+			}
 		}
 		#Set same cosmetic tag they would get on capitulation
 		FRA = {
@@ -1129,32 +1069,22 @@ country_event = {
 					limit = {
 						is_controlled_by = FRA
 						is_owned_by = FRA
-						OR = {
-							is_on_continent = africa
-							is_core_of = VIN
-							is_core_of = CAM
-							is_core_of = LAO
-							is_core_of = LEB
-							is_core_of = SYR
-						}
+						is_on_continent = africa
 					}
 					event_target:vichy_france = { transfer_state = PREV }
 				}
+				every_country = {
+					limit = {
+						is_subject_of = FRA
+						capital_scope = {
+							is_on_continent = africa
+						}
+					}
+					event_target:vichy_france = { set_autonomy = { target = PREV autonomy_state = autonomy_dominion } }
+				}
 				every_state = {
 					limit = { #set up Vichy continental holdings
-						OR = {
-							state = 735
-							state = 21
-							state = 851
-							state = 32
-							state = 20
-							state = 26
-							state = 22
-							state = 31
-							state = 25
-							state = 33
-							state = 1
-						}
+						is_vichy_state = yes
 						CONTROLLER = { 
 							OR = {
 								original_tag = FRA
@@ -1175,74 +1105,96 @@ country_event = {
 					add_core_of = PREV
 				}
 				# Italian Occupation Zone PART 1
+		every_state = {
+			limit = {
+				is_ita_occupation_zone = yes
+			}
+			transfer_state_to = ITA
+		}
+		if = { #PART 2
+			limit = {
+				all_state = {
+					if = {
+						limit = {
+							is_ita_occupation_zone = yes	
+						}
+						is_controlled_by = ITA
+					}
+				}
+			}
+			
+			every_state = {
+				limit = {
+					is_ita_occupation_zone_2 = yes
+					is_controlled_by = ITA
+				}
+				transfer_state_to = ITA
+			}
+			
+		}
+		if = { #PART 3
+			limit = {
+				all_state = {
+					if = {
+						limit = {
+							is_ita_occupation_zone_2 = yes	
+						}
+						is_controlled_by = ITA
+					}
+				}
+			}
+			
 				every_state = {
 					limit = {
-						is_ita_occupation_zone = yes
+						is_ita_occupation_zone_3 = yes
 						is_controlled_by = ITA
-						owner = { original_tag = FRA }
+						owner = { tag = FRA }
 					}
 					transfer_state_to = ITA
 				}
-				if = { #PART 2
-					limit = {
-						any_state = {
-							is_ita_occupation_zone = yes
-							NOT = {
-								is_controlled_by = ITA
-							}
-						}
-					}
-					else = {
-						every_state = {
-							limit = {
-								is_ita_occupation_zone_2 = yes
-								is_controlled_by = ITA
-								owner = { original_tag = FRA }
-							}
-							transfer_state_to = ITA
-						}
-					}
-				}
-				if = { #PART 3
-					limit = {
-						any_state = {
-							is_ita_occupation_zone_2 = yes	
-							NOT = {
-								is_controlled_by = ITA
-							}
-						}
-					}
-					else = {
-						every_state = {
-							limit = {
-								is_ita_occupation_zone_3 = yes
-								is_controlled_by = ITA
-								owner = { original_tag = FRA }
-							}
-							transfer_state_to = ITA
-						}
-					}
-				}
-				if = { #PART 4
-					limit = {
-						any_state = {
+			
+		}
+		if = { #PART 4
+			limit = {
+				all_state = {
+					if = {
+						limit = {
 							is_ita_occupation_zone_3 = yes	
-							NOT = {
-								is_controlled_by = ITA
-							}
 						}
-					}
-					else = {
-						every_state = {
-							limit = {
-								is_ita_occupation_zone_4 = yes
-								is_controlled_by = ITA
-								owner = { original_tag = FRA }
-							}
-							transfer_state_to = ITA
-						}
+						is_controlled_by = ITA
 					}
 				}
+			}
+			
+			every_state = {
+				limit = {
+					is_ita_occupation_zone_4 = yes
+					is_controlled_by = ITA
+				}
+				transfer_state_to = ITA
+			}
+			
+		}
+		if = {
+			limit = {
+				
+					866 = { #Corsica
+						is_controlled_by = ITA
+					}
+				
+			}
+			ITA = { transfer_state = 866 }
+		}
+		if = {
+			limit = {
+				
+					1422 = { #Savoy
+						is_controlled_by = ITA
+					}
+				
+			}
+			ITA = { transfer_state = 1422 }
+		}
 				every_owned_state = {
 					limit = {
 						NOT = {
@@ -1339,19 +1291,6 @@ country_event = {
 					}
 					set_nationality = PREV.PREV
 				}
-			}
-		}
-		# German Occupation Zone
-		every_state = {
-			limit = {
-				is_ger_occupation_zone = yes
-				is_alsace_lorraine = no
-				owner = { original_tag = FRA }
-				is_controlled_by = GER
-			}
-			set_state_controller_to = MVF
-			GER = {
-				puppet = MVF
 			}
 		}
 		every_state = {

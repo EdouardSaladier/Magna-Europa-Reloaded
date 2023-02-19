@@ -1271,7 +1271,7 @@ GER_reichskommissariats = {
 							POL = {
 								exists = yes
 								is_subject_of = GER
-							}
+							} 
 						}
 						every_state = {
 							limit = {
@@ -1280,6 +1280,91 @@ GER_reichskommissariats = {
 							transfer_state_to = GGV
 						}
 					}
+		}
+	}
+	GER_occupy_france_north = {
+		icon = ger_reichskommissariats
+
+		available = {
+			OR = {
+				has_completed_focus = GER_around_maginot
+				has_completed_focus = GER_form_the_reichskommissariats
+			}
+			has_government = fascism
+			all_state = {
+				if = {
+					limit = {
+						is_ger_occupation_zone = yes	
+					}
+					OR = {
+					is_controlled_by = GER
+					controller = { is_subject_of = GER }
+				}
+				}
+				
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				FRA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = GER_around_maginot
+				has_completed_focus = GER_form_the_reichskommissariats
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+				FRA = {
+					every_core_state = {
+							limit = {
+								is_ger_occupation_zone = yes
+								is_alsace_lorraine = no
+							}
+							add_claim_by = MVF
+							transfer_state_to = MVF
+							
+						}
+						
+					}
+				MVF = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_1
+						amount = 300000
+						producer = GER
+					}
+					add_manpower = 300000
+					every_owned_state = {
+						add_compliance  = 30
+					}
+				}
+				GER = { set_autonomy = { target = MVF autonomy_state = autonomy_integrated_puppet } }
+				if = {
+						limit = {
+							FRA = {
+								exists = yes
+								is_subject_of = GER
+							}
+						}
+						every_state = {
+							limit = {
+								is_owned_by = FRA
+							}
+							transfer_state_to = MVF
+						}
+					}	
+			
+			
+					
 		}
 	}
 }
