@@ -84,10 +84,6 @@ country_event = {
 					original_tag = GER
 					has_government = fascism
 				}
-				save_event_target_as = fascist_germany_civil_war
-				every_unit_leader = {
-					set_nationality = GER
-				}
 			}
 			GER = {
 				every_unit_leader = {
@@ -124,6 +120,422 @@ country_event = {
 				}
 			}
 		}
+	}
+	option = {
+		name = wtt_germany.1.b
+		
+			delete_units = {
+				division_template = "Infanterie-Division"
+				disband = no
+			}
+			delete_units = {
+				division_template = "Panzer-Division"
+				disband = no
+			}
+			delete_units = {
+				division_template = "Infanterie-Division (mot.)"
+				disband = no
+			}
+			delete_units = {
+				division_template = "Gebirgs-Brigade"
+				disband = no
+			}
+			delete_units = {
+				division_template = "Kavallerie-Brigade"
+				disband = no
+			}
+			delete_units = {
+				division_template = "Neubaufahrzeug Panzer-Division"
+				disband = no
+			}
+		
+		create_dynamic_country = {
+			original_tag = GER
+			save_event_target_as = fascist_germany_civil_war
+			every_unit_leader = {
+				set_nationality = GER
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			promote_character = GER_adolf_hitler
+			every_state = {
+				limit = {
+					is_core_of = GER
+					OR = {
+						is_core_of = SHL
+						is_core_of = HAM
+						is_core_of = LBK
+						is_core_of = MKW
+						is_core_of = MKS
+						is_core_of = POM
+						is_core_of = WSP
+						AND = {
+							is_core_of = HAN
+							NOT = {
+								state = 1714
+								state = 2566
+								state = 400
+								state = 373
+								state = 350
+								state = 2715
+								state = 2714
+								state = 1728
+								state = 1727
+							}
+						}
+						state = 314
+						state = 322
+						state = 1707
+						state = 2572
+						state = 1720
+						AND = {
+							is_core_of = BRW
+							NOT = {
+								state = 1711
+								state = 2551
+							}
+						}
+						AND = {
+							is_core_of = BRN
+							NOT = {
+								state = 1638
+								state = 327
+								state = 1639
+								is_core_of = BRL
+								state = 1644
+								state = 2592
+								state = 365
+							}
+						}
+						state = 1667
+						state = 1668
+						state = 2562
+						state = 1666
+						state = 1665
+						state = 1664
+						state = 2593
+						state = 415
+						state = 1755
+						is_east_prussia = yes
+					}
+				}
+				transfer_state_to = PREV
+			}
+			set_cosmetic_tag = GER_civil_war
+			division_template = {
+						name = "SS-Sturmbrigade"
+						is_locked = yes
+						template_counter = 6
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+						}
+					}
+			every_state = {
+				limit = {
+					is_owned_by = event_target:fascist_germany_civil_war
+					any_neighbor_state = {
+						NOT = {
+							is_owned_by = event_target:fascist_germany_civil_war
+						}
+						owner = {
+							OR = {
+								tag = GER
+								tag = DDR
+							}
+						}
+					}	
+				}
+				create_unit = {
+					division = "division_template = \"SS-Sturmbrigade\" start_experience_factor = 0.1" 
+					owner = event_target:fascist_germany_civil_war
+					allow_spawning_on_enemy_provs = yes
+					count = 4
+				}
+			}
+			add_political_power = 150
+				add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = GER
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = GER
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = GER
+				}
+		}
+		DDR = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = THU
+							AND = {
+								is_core_of = SXP
+							}
+							state = 2533
+							is_core_of = SAX
+							is_core_of = BRL
+							state = 1639
+							state = 1638
+							state = 353
+							state = 1696
+							state = 1711
+							state = 2566
+							state = 327
+							state = 2592
+							state = 1644
+							state = 365
+							state = 441
+							state = 424
+							state = 1749
+							state = 431
+							state = 2584
+							state = 2551
+						}
+					}
+				transfer_state_to = DDR
+			}
+			division_template = {
+						name = "Frontkampferregiment"
+						is_locked = yes
+						template_counter = 6
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+						}
+					}
+			every_state = {
+				limit = {
+					is_owned_by = DDR
+					any_neighbor_state = {
+						NOT = {
+							is_owned_by = DDR
+						}
+						owner = {
+							OR = {
+								original_tag = GER
+								tag = BAY
+							}
+						}
+					}	
+				}
+				create_unit = {
+					division = "division_template = \"Frontkampferregiment\" start_experience_factor = 0.1" 
+					owner = DDR
+					allow_spawning_on_enemy_provs = yes
+					count = 4
+				}
+			}
+			add_political_power = 150
+				add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = GER
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = GER
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = GER
+				}
+		}
+		
+		every_state = {
+			limit = {
+				is_core_of = BAY
+				NOT = {
+					is_core_of = BPA
+				}
+			}
+			transfer_state_to = BAY
+		}
+		division_template = {
+						name = "Infanterie-Division"
+						is_locked = yes
+						template_counter = 6
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+						}
+					}
+			every_state = {
+				limit = {
+					owner = {
+						tag = BAY
+					}
+					any_neighbor_state = {
+						NOT = {
+							owner = {
+								tag = BAY
+							}
+						}
+						owner = {
+							OR = {
+								tag = event_target:fascist_germany_civil_war
+								tag = DDR
+								tag = GER
+							}
+						}
+					}	
+				}
+				create_unit = {
+					division = "division_template = \"Infanterie-Division\" start_experience_factor = 0.1" 
+					owner = BAY
+					allow_spawning_on_enemy_provs = yes
+					count = 3
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = GER
+			}
+			add_core_of = DDR
+		}
+		GER_august_von_mackensen = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						great_war_hero
+					}
+				}
+				promote_leader = yes
+			}
+		}
+		division_template = {
+						name = "Landsturmregiment"
+						is_locked = yes
+						template_counter = 6
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+						}
+					}
+			every_state = {
+				limit = {
+					owner = {
+						tag = GER
+					}
+					any_neighbor_state = {
+						NOT = {
+							owner = {
+								tag = GER
+							}
+						}
+						owner = {
+							OR = {
+								original_tag = GER
+								tag = DDR
+								tag = BAY
+							}
+						}
+					}	
+				}
+				create_unit = {
+					division = "division_template = \"Landsturmregiment\" start_experience_factor = 0.1" 
+					owner = GER
+					allow_spawning_on_enemy_provs = yes
+					count = 3
+				}
+			}
+		set_party_name = { 
+			ideology = neutrality 
+			long_name = GER_neutrality_party_civil_war 	
+			name = GER_neutrality_party_civil_war 
+		}
+		set_politics = {
+			ruling_party = neutrality
+		}
+		GER = {
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 10
+							has_id = 15
+							has_id = 20
+							has_id = 24
+						}
+					}
+					set_nationality = event_target:fascist_germany_civil_war
+				}
+			}
+		hidden_effect = { set_cosmetic_tag = GER_provisional_gvt }
+		set_capital = {
+			 state = 469
+			 remember_old_capital = yes
+		}
+		every_country = {
+			limit = {
+				OR = {
+					original_tag = GER
+					tag = BAY
+					tag = DDR
+				}
+			}
+			declare_war_on = {
+				target = GER
+				type = civil_war
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					original_tag = GER
+					tag = BAY
+					tag = DDR
+				}
+			}
+			declare_war_on = {
+				target = event_target:fascist_germany_civil_war
+				type = civil_war
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					original_tag = GER
+					tag = DDR
+				}
+			}
+			declare_war_on = {
+				target = BAY
+				type = civil_war
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					original_tag = GER
+					tag = BAY
+				}
+			}
+			declare_war_on = {
+				target = DDR
+				type = civil_war
+			}
+		}
+		
 	}
 }
 
