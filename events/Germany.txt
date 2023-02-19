@@ -1008,7 +1008,7 @@ country_event = {
 
 	trigger = {
 		tag = GER
-		CHI = { has_idea = german_advisors }
+		#CHI = { has_idea = german_advisors }
 		has_opinion = { target = CHI value < -20 }
 	}
 
@@ -1049,7 +1049,7 @@ country_event = {
 	}
 
 	immediate = {
-		CHI = { remove_ideas = german_advisors }
+		#CHI = { remove_ideas = german_advisors }
 	}
 
 	option = {

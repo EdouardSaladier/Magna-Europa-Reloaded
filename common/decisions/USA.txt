@@ -2630,26 +2630,27 @@ USA_intervention_mandate = {
 			
 		}
 		visible = {
-			OR = {
-				has_country_flag = USA_china_window
-				OR = {
-					613 = {
-						CONTROLLER = {
-							OR = {
-								original_tag = JAP
-								is_subject_of = JAP
-							}
-						}
-					}
-					event_target:WTT_current_china_leader = {
-						surrender_progress > 0.5
-					}
-				}
-			}
-			has_completed_focus = USA_focus_on_asia
-			not = {
-				has_war_with = JAP
-			}
+			#OR = {
+			#	has_country_flag = USA_china_window
+			#	OR = {
+			#		613 = {
+			#			CONTROLLER = {
+			#				OR = {
+			#					original_tag = JAP
+			#					is_subject_of = JAP
+			#				}
+			#			}
+			#		}
+			#		event_target:WTT_current_china_leader = {
+			#			surrender_progress > 0.5
+			#		}
+			#	}
+			#}
+			#has_completed_focus = USA_focus_on_asia
+			#not = {
+			#	has_war_with = JAP
+			#}
+			has_global_flag = NEVER
 		}
 		fire_only_once = yes
 		cost = 25
