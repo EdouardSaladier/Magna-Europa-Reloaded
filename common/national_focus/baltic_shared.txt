@@ -74,6 +74,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_rejoin_the_railways "
 		every_owned_state = {
 			limit = {
 				is_core_of = ROOT
@@ -129,6 +130,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_axis_investments"
 		add_ideas = BALTIC_axis_investments_idea
 		add_popularity = {
 			ideology = fascism
@@ -299,6 +301,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_german_war_economics"
 		upgrade_economy_law = yes
 		capital_scope = {
 			add_extra_state_shared_building_slots = 2
@@ -376,6 +379,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_autobahn"
 		capital_scope = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -462,6 +466,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_eastwall"
 		if = {
 			limit = { tag = LIT }
 			every_state = {
@@ -633,6 +638,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_balticwall"
 		if = {
 			limit = { tag = LIT }
 			if = {
@@ -732,6 +738,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_german_tank_licences"
 		if = {
 			limit = {
 				GER = {
@@ -819,6 +826,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_german_baltic_industry"
 		swap_ideas = {
 			remove_idea = BALTIC_axis_investments_idea
 			add_idea = BALTIC_axis_investments_idea_1
@@ -860,6 +868,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_request_german_support"
 		if = {
 			limit = {
 				GER = {
@@ -961,6 +970,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_renew_allied_trade"
 		add_ideas = BALTIC_allied_investments_idea
 		## Checking for valid Democractic Countries to increase opinion
 		if = { #Checking for UK 
@@ -1129,6 +1139,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_ford_motors"
 		add_offsite_building = { type = arms_factory level = 1 }
 		if = {
 			limit = {
@@ -1190,6 +1201,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_crossley_motors"
 		add_offsite_building = { type = industrial_complex level = 2 }
 		add_offsite_building = { type = arms_factory level = 3 }
 	}
@@ -1228,6 +1240,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_british_designers"
 		add_offsite_building = { type = industrial_complex level = 1 }
 		add_offsite_building = { type = arms_factory level = 1 }
 		show_ideas_tooltip = BALTIC_RAF
@@ -1271,6 +1284,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_british_aircraft"
 		air_experience = 40
 		## Checking for valid Democractic Countries to get aircraft from
 		if = { #Checking for UK 
@@ -1371,6 +1385,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_allied_shipments"
 		if = { #Checking for UK 
 			limit = {
 				ENG = { 
@@ -1472,6 +1487,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_baltic_fleet"
 		navy_experience = 30
 		random_owned_controlled_state = {
 			limit = { is_coastal = yes }
@@ -1574,6 +1590,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_attract_workers_to_capital"
 		capital_scope = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -1625,6 +1642,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_rebuild_forts"
 		if = {
 			limit = { original_tag = LIT }
 			133 = {
@@ -1688,6 +1706,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_arm_the_nation"
 		random_owned_controlled_state = {
 			limit = {
 				is_core_of = ROOT
@@ -1755,6 +1774,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_RESEARCH }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_unchain_education"
 		add_research_slot = 1
 	}
 }
@@ -1784,6 +1804,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_RESEARCH }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_technology_sharing"
 		if = {
 			limit = {
 				NOT = {
@@ -1834,6 +1855,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_defence_of_our_nation"
 		add_ideas = BALTIC_defending_the_nation
 	}
 }
@@ -1866,6 +1888,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_modernize_industry"
 		if = {
 			limit = { original_tag = LIT }
 			swap_ideas = {
@@ -1951,6 +1974,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_domestic_motors"
 		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
@@ -2011,6 +2035,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_school_of_aviation"
 		air_experience = 25
 		if = {
 			limit = {
@@ -2098,6 +2123,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_RESEARCH }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_original_designs"
 		add_tech_bonus = {
 			name = BALTIC_original_designs
 			bonus = 1.0
@@ -2147,6 +2173,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_arms_industry"
 		random_owned_controlled_state = {
 			limit = {
 				is_core_of = ROOT
@@ -2209,6 +2236,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_natural_resources"
 		if = {
 			limit = { original_tag = LIT }
 			swap_ideas = {
@@ -2265,6 +2293,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_trade_with_neighbors"
 		every_other_country = {
 			limit = {
 				OR = {
@@ -2361,6 +2390,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_invest_in_baltic_trade"
 		random_owned_controlled_state = {
 			limit = {
 				is_coastal = yes
@@ -2480,6 +2510,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_restore_workers_republic"
 		if = {
 			limit = {
 				original_tag = EST
@@ -2549,6 +2580,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_seek_support_of_soviets"
 		swap_ideas = {
 			add_idea = BALTIC_restore_workers_republic_idea_sov_1
 			remove_idea = BALTIC_restore_workers_republic_idea
@@ -2584,6 +2616,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_soviet_equipment"
 		custom_effect_tooltip = soviet_equipment_tt
 	}
 }
@@ -2616,6 +2649,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_soviet_volunteer_forces"
 		custom_effect_tooltip = BALTIC_soviet_volunteers_tt
 		every_owned_state = {
 			limit = {
@@ -2654,6 +2688,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_soviet_military_staff"
 		army_experience = 75
 		if = {
 			limit = { original_tag = LIT }
@@ -2760,6 +2795,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_communist_opposition"
 		swap_ideas = {
 			add_idea = BALTIC_restore_workers_republic_idea_1
 			remove_idea = BALTIC_restore_workers_republic_idea
@@ -2829,6 +2865,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_forment_disloyalty"
 		add_ideas = { BALTIC_disloyal_parliament }
 		custom_effect_tooltip = removed_on_civil_war_tt
 	}
@@ -2862,6 +2899,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_concessions_for_catholics"
 		add_popularity = {
 			ideology = communism
 			popularity = 0.2
@@ -2917,6 +2955,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_secure_military_support"
 		custom_effect_tooltip = BALTIC_military_support_tt
 	}
 }
@@ -2969,6 +3008,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_overthrow_the_government"
 		set_variable = {
 			var = civil_war_size_var
 			value = 1
@@ -3227,6 +3267,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_sieze_the_means_of_production"
 		add_ideas = { baltic_siezed_means_of_production_idea }
 		custom_effect_tooltip = gain_factories_based_on_investments_tt
 		random_owned_controlled_state = {
@@ -3575,6 +3616,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_revolutionary_cabinet"
 		if = {
 			limit = {
 				original_tag = LIT
@@ -3647,6 +3689,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_direct_intervention"
 		SOU = {
 			country_event = {
 				id = BALTIC_events.3
@@ -3684,6 +3727,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_squash_resistance"
 		if = {
 			limit = {
 				NOT = { has_completed_focus = BALTIC_concessions_for_catholics }
@@ -3743,6 +3787,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_STABILITY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_purge_of_our_own"
 		remove_ideas = {
 			BALTIC_popular_resistance
 		}
@@ -3780,6 +3825,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_crush_forest_brothers"
 		custom_effect_tooltip = forest_brothers_crushed_tt
 	}
 }
@@ -3811,6 +3857,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_red_army"
 		division_template = { 
 			name = "Red Riflemen"
 			division_names_group = SOV_INF_01
@@ -3889,6 +3936,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_align_paramilitarists"
 		add_timed_idea = {
 			idea = BALTIC_paramilitaries_aligning
 			days = 120
@@ -3938,6 +3986,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_influence_neighbours"
 		unlock_decision_category_tooltip = convert_neighbours_baltic_cat
 		every_other_country = {
 			limit = {
@@ -4014,6 +4063,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_arm_baltic_reds"
 		add_ideas = BALTIC_international_brigades
 		every_other_country = {
 			limit = {
@@ -4079,6 +4129,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_belarus_ssr"
 		if = {
 			limit = {
 				has_completed_focus = BALTIC_seek_support_of_soviets
@@ -4175,6 +4226,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_end_bourgeouis_dictatorships"
 		if = {
 			limit = {
 				NOT = {
@@ -4305,6 +4357,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_focus_on_the_interior"
 		add_stability = 0.1
 		add_war_support = 0.05
 	}
@@ -4336,6 +4389,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_focus_on_the_interior_2"
 		add_ideas = { BALTIC_anti_german_plans }
 	}
 }
@@ -4368,6 +4422,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_united_baltic_ssr"
 		every_other_country = {
 			limit = {
 				NOT = { tag = ROOT }
@@ -4432,6 +4487,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_western_revolution"
 		add_ideas = { BALTIC_carrying_the_western_revolution }
 	}
 }
@@ -4471,6 +4527,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_finnish_invasion"
 		if = {
 			limit = {
 				OR = {
@@ -4534,6 +4591,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_path_to_the_north_sea"
 		if = {
 			limit = {
 				OR = {
@@ -4598,6 +4656,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_end_swedish_neutrality"
 		if = {
 			limit = {
 				OR = {
@@ -4661,6 +4720,7 @@ shared_focus = {
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_free_the_workers_of_poland"
 		if = {
 			limit = {
 				OR = {

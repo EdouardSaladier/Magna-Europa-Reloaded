@@ -87,6 +87,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER} 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_swiss_guiding_principles"
 			if = {
 				limit = { has_start_date < 1936.01.02 }
 				country_event = { id = BBA_switzerland.1 hours = 6 } 			
@@ -129,6 +130,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY  } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_increase_defense_budget"
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2 
 				add_building_construction = {
@@ -172,6 +174,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_national_defense_fund"
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 3 
 				add_building_construction = {
@@ -222,6 +225,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY  } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_reaffirm_spiritual_defense"
 			SWI_enable_spirit_of_helvetia = yes
 			if = {
 				limit = {
@@ -259,6 +263,7 @@
 		search_filters = {  } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_fortify_border_with_germany"
 			GER = { custom_effect_tooltip = SWI_add_forts_bordering }
 			hidden_effect = {
 				every_owned_state = {
@@ -313,6 +318,7 @@
 		search_filters = {  } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_fortify_border_with_italy"
 			ITA = { custom_effect_tooltip = SWI_add_forts_bordering }
 			hidden_effect = {	
 				every_owned_state = {
@@ -373,6 +379,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_fortify_border_with_france"
 			FRA = { custom_effect_tooltip = SWI_add_forts_bordering }
 			hidden_effect = {
 				every_owned_state = {
@@ -422,6 +429,7 @@
 		search_filters = {  FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_SWI_MILITARY_READINESS} 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_armed_neutrality"
 			SWI_make_helvetia_defensive = yes
 			add_dynamic_modifier = { 
 				modifier = SWI_dormant_citizen_militia
@@ -468,6 +476,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_federal_police"
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -550,7 +559,8 @@
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
-		completion_reward = { 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_spab_counter_intelligence_agency" 
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -610,6 +620,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_crack_down_on_dissent"
 			add_ideas = { SWI_dissent_crackdown_idea }
 			add_popularity = {
 				ideology = democratic 
@@ -648,6 +659,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_military_police"
 			add_tech_bonus = {
 				name = SWI_military_police
 				bonus = 2.0
@@ -692,6 +704,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_expand_federal_police_intelligence"
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -745,6 +758,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_martial_law"
 
 			swap_ideas = {
 				remove_idea = SWI_dissent_crackdown_idea
@@ -793,6 +807,7 @@
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_SWI_MILITARY_READINESS} 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_promote_guisan"
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = SWI_henri_guisan	
 			SWI_max_mr_low_increase = yes
@@ -828,6 +843,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_national_redoubt"
 		
 			add_victory_points = {
 				province = 14088
@@ -987,6 +1003,7 @@
 		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_expedite_mobilization"
 			
 			subtract_from_variable = { 
 				var = SWI_militia_activation_time 
@@ -1027,6 +1044,7 @@
 		search_filters = {  } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_fortify_the_jura"
 			
 			1449 = { #Jura Mountains 
 				add_building_construction = {
@@ -1119,6 +1137,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_rig_infrastructure_to_blow"
 			add_offsite_building = {
 				type = industrial_complex 
 				level = 2 
@@ -1159,6 +1178,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_emergency_industry"
 			add_offsite_building = {
 				type = industrial_complex 
 				level = 3
@@ -1198,6 +1218,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_defend_the_skies"
 
 			add_tech_bonus = {
 				name = SWI_defend_the_skies
@@ -1263,6 +1284,7 @@
 		search_filters = {  } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_attack_from_the_mountains"
 			3 = {
 				add_dynamic_modifier = {
 					modifier = SWI_attack_from_the_mountains 
@@ -1301,6 +1323,7 @@
 		search_filters = {  } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_frontier_defense_plan"
 			army_experience = 50
 			add_command_power = 50
 			add_ideas = { SWI_frontier_defense_plan_idea_1 }
@@ -1345,6 +1368,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_fight_until_death"
 			swap_ideas = {
 				remove_idea = SWI_frontier_defense_plan_idea_1
 				add_idea = SWI_frontier_defense_plan_idea_2
@@ -1392,6 +1416,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_total_defense"
 			swap_ideas = {
 				remove_idea = SWI_frontier_defense_plan_idea_2
 				add_idea = SWI_frontier_defense_plan_idea_3
@@ -1434,6 +1459,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_the_army_position"
 			845 = { # Jura Mountains
 				add_dynamic_modifier = {
 					modifier = SWI_frontier_defense 
@@ -1624,6 +1650,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_prolonged_service"
 			add_to_variable = {
 				var = SWI_citizen_militia_initial_activation_timeout
 				value = 20
@@ -1667,6 +1694,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_enhanced_training"
 			SWI_upgrade_template_and_divisions = yes 
 			SWI_mr_high_increase = yes
 			SWI_max_mr_medium_increase = yes
@@ -1716,6 +1744,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_integrate_refugees_into_the_army"
 			add_manpower = 30000 
 			SWI_add_suspicious_prep_opinion = yes 		
 		}
@@ -1756,6 +1785,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_expanded_military_support"
 			add_manpower = 30000 
 			add_tech_bonus = {
 				name = SWI_expanded_military_support
@@ -1818,6 +1848,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_all_adults_training"
 			swap_ideas = {
 				remove_idea = SWI_citizen_militia_1
 				add_idea = SWI_citizen_militia_2
@@ -1865,6 +1896,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_veteran_sharpshooter_divisions"
 			army_experience = 50
 			division_template = {
 				name = 	"Swiss Veteran Sharpshooters"
@@ -1930,6 +1962,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_anti_tank_divisions"
 			custom_effect_tooltip = SWI_create_anti_tank_template_TT
 			division_template = {
 				name = "Swiss Militia Anti-Tank"
@@ -1997,6 +2030,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_reduce_military_training_age"
 			add_ideas = {
 				SWI_reduced_training_age
 			}
@@ -2040,6 +2074,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_citizen_supply_mandate"
 			every_owned_state = {
 				add_dynamic_modifier = {
 					modifier = SWI_citizen_supply_mandate_mod
@@ -2086,6 +2121,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_prepare_infrastructure_and_industry"
 			1447 = { 
 				if = {
 					limit = {
@@ -2378,6 +2414,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_fortify_ticino"
 			708 = { #Ticino
 				add_building_construction = {
 					type = bunker
@@ -2453,6 +2490,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_fortify_sargans_gotthard_and_st_maurice ###########################################################################"
 			1449 = { #Western Swiss Alps (St Maurice)
 				add_building_construction = {
 					type = bunker
@@ -2621,6 +2659,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_expand_special_forces"
 			add_ideas = { SWI_expanded_special_forces }
 			SWI_add_suspicious_prep_opinion = yes 		
 		}
@@ -2667,6 +2706,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_purchase_german_planes"
 
 			if = {
 				limit = {
@@ -2745,6 +2785,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_ban_the_communist_party"
 			add_ideas = { SWI_communist_party_banned_idea }
 			if = {
 				limit = {
@@ -2817,6 +2858,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_withdraw_from_the_league_of_nations"
 			every_other_country = {
 				limit = {
 					is_league_of_nations_member = yes 
@@ -2878,6 +2920,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_limited_censorship_of_the_press"
 
 			if = {
 				limit = {
@@ -2948,6 +2991,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_tighten_press_censorship"
 
 			if = {
 				limit = {
@@ -3028,6 +3072,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_seek_trade_agreement_with_germany"
 
 			GER = {
 				country_event = {
@@ -3069,6 +3114,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_axis_gold"
 			unlock_decision_tooltip = {
 				decision = SWI_offer_fascist_to_trade_gold
 				show_effect_tooltip  = yes
@@ -3123,6 +3169,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_ban_foreign_nazi_propaganda"
 			add_ideas = { SWI_banned_foreign_nazi_propaganda_idea }
 			if = {
 				limit = {
@@ -3187,6 +3234,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_buero_ha"
 			if = {
 				limit = {
 					has_dlc = "La Resistance" 
@@ -3257,6 +3305,7 @@
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
 		
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_pro_helvetia"
 			
 			add_ideas = { SWI_pro_helvetia_idea }
 			SWI_min_mr_low_reduction = yes
@@ -3294,6 +3343,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_spirit_of_saint_bernard"
 			add_tech_bonus = {
 				name = SWI_spirit_of_saint_bernard
 				uses = 1 
@@ -3349,6 +3399,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_adopt_romansh"
 			add_power_balance_value = {
 				id = SWI_centralization_bop
 				value = 0.1 
@@ -3417,6 +3468,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_patriotic_shooting_clubs"
 			add_manpower = 20000 
 			SWI_max_mr_medium_increase = yes
 			SWI_mr_medium_increase = yes
@@ -3460,6 +3512,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_aktion_nationaler_widerstand"
 			SWI_mr_medium_increase = yes
 			add_ideas = {
 				SWI_aktion_nationaler_widerstand_idea
@@ -3498,6 +3551,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_heer_und_haus"
 			every_owned_state = {
 				limit = {
 					is_core_of = SWI
@@ -3547,6 +3601,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_ortswehren"
 			every_owned_state = {
 				limit = { is_core_of = ROOT }
 				add_dynamic_modifier = {
@@ -3596,6 +3651,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_luftschutz"
 			694 = {
 				if = {
 					limit = {
@@ -3675,6 +3731,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_train_swiss_women"
 			add_ideas = {
 				SWI_swiss_women_in_the_military 
 			}
@@ -3711,6 +3768,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_spirit_of_resistance "
 			add_ideas = { SWI_spirit_of_resistance_idea }
 			if = {
 				limit = {
@@ -3783,6 +3841,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_allied_gold"
 			hidden_effect = {
 				SWI_find_best_democratic_ally = yes
 			}
@@ -3831,6 +3890,7 @@
 		search_filters = {  } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_purchase_american_planes"
 			hidden_effect = {
 				SWI_find_democratic_planes_seller = yes
 			}
@@ -3903,6 +3963,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_ban_national_movement_for_switzerland"
 			if = {
 				limit = {
 					SWI_is_historical_ai = no 
@@ -3996,6 +4057,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_fortify_austrian_border"
 			685 = {
 				add_building_construction = {
 					type = bunker 
@@ -4083,6 +4145,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_seek_allied_trade"
 			SWI_find_best_democratic_ally = yes 
 			var:SWI.SWI_best_dem_ally = {
 				country_event = { id = BBA_switzerland_trade.1 hours = 4 }
@@ -4124,6 +4187,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_case_north"
 			unlock_decision_tooltip = { decision = SWI_case_north_decision show_effect_tooltip = yes}
 			var:SWI_biggest_fascist = {
 				add_opinion_modifier = {
@@ -4168,6 +4232,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_freeze_german_assets"
 			SWI_find_biggest_fascist_neighbor = yes 
 			var:SWI_biggest_fascist = {
 				add_timed_idea = {
@@ -4219,6 +4284,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_fund_resistance_groups"
 			unlock_decision_tooltip = { 
 				decision = SWI_fund_resistance_decision 
 			}
@@ -4262,6 +4328,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_closer_democratic_ties"
 			every_other_country = {
 				limit = {
 					is_major = yes 
@@ -4321,6 +4388,7 @@
 		search_filters = {  } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_connect_to_the_maginot_line"
 			1449 = { # Jura 
 				add_building_construction = {
 					type = bunker 
@@ -4497,6 +4565,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_american_industrial_investments"
 			add_popularity = {
 				ideology = democratic 
 				popularity = 0.05
@@ -4555,6 +4624,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_take_a_stance"
 			add_political_power = 100
 			custom_effect_tooltip = SWI_neutrality_decisions_disabled_TT
 			remove_ideas = { SWI_swiss_neutrality }
@@ -4607,6 +4677,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL}
 		
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_join_france"
 			FRA = {
 				puppet = PREV	
 			}						
@@ -4642,6 +4713,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_the_second_helvetic_republic"
 			FRA = {
 				set_autonomy = {
 					target = SWI
@@ -4683,6 +4755,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_alpine_aspirations"
 			every_state = {
 				limit = {
 					is_alpine_state = yes 
@@ -4758,6 +4831,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_join_the_allies"
 			
 			SWI_find_best_democratic_ally = yes
 			if = {
@@ -4868,6 +4942,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_support_allied_espionage"
 			unlock_decision_tooltip = SWI_offer_intel_support
 		}
 	}	
@@ -4909,6 +4984,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_expand_spy_networks"
 			if = {
 				limit = {
 					has_idea = SWI_buero_ha_idea
@@ -4962,6 +5038,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_share_spy_networks"
 			add_political_power = 100
 			unlock_decision_tooltip = SWI_offer_operative
 			hidden_effect = { 
@@ -5017,6 +5094,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_secret_pact_with_the_allies"
 			SWI_find_best_democratic_ally = yes
 			if = {
 				limit = {
@@ -5081,6 +5159,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_oasis_of_democracy"
 
 			add_political_power = 100
 			add_popularity = {
@@ -5129,6 +5208,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_volunteer_force"
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = { SWI_volunteer_forces_idea }
 		}
@@ -5165,6 +5245,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_export_saboteurs"
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -5205,6 +5286,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_lay_the_groundwork"
 			build_railway = {
 				level = 2 
 				fallback = yes 
@@ -5272,6 +5354,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_arsenal_of_the_alps"
 			694 = { # Eastern Swiss Alps 
 				if = {
 					limit = {
@@ -5357,6 +5440,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_thunder_in_the_valleys"
 			army_experience = 100 
 			add_tech_bonus = {
 				name = SWI_thunder_in_the_valleys
@@ -5398,6 +5482,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_fighting_for_the_hills"
 			army_experience = 100 
 			add_tech_bonus = {
 				name = SWI_fighting_for_the_hills
@@ -5452,6 +5537,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_fly_over_the_mountains"
 			air_experience = 150 
 			add_tech_bonus = {
 				name = SWI_fly_over_the_mountains
@@ -5501,6 +5587,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_weapons_of_democracy"
 			add_research_slot = 1
 			add_tech_bonus = {
 				name = SWI_weapons_of_democracy
@@ -5549,6 +5636,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_jump_into_action"
 			custom_effect_tooltip = SWI_neutrality_decisions_disabled_TT
 			remove_ideas = { SWI_swiss_neutrality }
 			SWI_remove_militia_recruitment_law = yes 
@@ -5600,6 +5688,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_exiled_government"
 			faction_leader = {
 				SWI = {
 					become_exiled_in = {
@@ -5644,6 +5733,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_the_alpine_confederation "
 			SWI_turn_into_alpine = yes
 			if = {
 				limit = {
@@ -5723,6 +5813,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_gotthard_union"
 			SWI_make_helvetia_aggressive = yes
 			set_party_name = {
 				ideology = neutrality 
@@ -5773,6 +5864,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_press_for_vorarlberg"
 			set_country_flag = SWI_requested_vorarlberg
 			add_state_claim = 848
 			848 = {
@@ -5850,6 +5942,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_protect_liechtenstein"
 			add_manpower = 1000
 			add_popularity = {
 				ideology = neutrality 
@@ -5917,6 +6010,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_pre_empt_anschluss"
 			every_state = {
 				limit = {
 					is_core_of = AUS 
@@ -5970,6 +6064,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_demand_italian_alps"
 			hidden_effect = {
 				ITA = {  
 					SWI_demand_alps = yes
@@ -6067,6 +6162,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_demand_french_alps"
 			FRA = {
 				hidden_effect = {
 					SWI_demand_alps = yes
@@ -6140,6 +6236,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_alpine_redoubt"
 			every_owned_state = {
 				limit = {
 					is_alpine_state = yes 
@@ -6204,6 +6301,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_the_alpine_protectorate "
 			custom_effect_tooltip = SWI_neutrality_decisions_disabled_TT
 
 			if = {
@@ -6260,6 +6358,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_bring_democracy_to_germany"
 			GER = {
 				every_owned_state = {
 					limit = {
@@ -6305,6 +6404,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_liberate_italy"
 			ITA = {
 				every_owned_state = {
 					limit = {
@@ -6349,6 +6449,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_take_over_france"
 			FRA = {
 				every_owned_state = {
 					limit = {
@@ -6404,6 +6505,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_the_new_eidgenossenschaft"
 			add_political_power = 150 
 			add_manpower = 10000
 		}
@@ -6441,6 +6543,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_expand_the_confederation"
 			unlock_decision_tooltip = {
 				decision = SWI_influence_future_cantons
 			}
@@ -6477,6 +6580,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_empower_the_council"
 			custom_effect_tooltip = SWI_neutrality_decisions_disabled_TT
 
 			swap_ideas = {
@@ -6517,6 +6621,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_president_for_life"
 			if = {
 				limit = {
 					communism > 0.3
@@ -6566,6 +6671,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_guisans_coup"
 			SWI_henri_guisan = {
 				add_country_leader_role = {
 					promote_leader = yes 
@@ -6612,6 +6718,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_return_to_the_old_switzerland"
 			add_political_power = 150
 			hidden_effect = {
 				promote_character = SWI_federal_assembly
@@ -6685,6 +6792,7 @@
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_SWI_MILITARY_READINESS FOCUS_FILTER_ARMY_XP}
 		
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_switzerland_on_the_offense"
 			army_experience = 50
 			add_command_power = 50
 			SWI_remove_militia_recruitment_law = yes 
@@ -6730,6 +6838,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_neutral_entente"
 			create_faction = SWI_neutral_entente_faction
 			unlock_decision_tooltip =  SWI_invite_to_entente
 		}
@@ -6767,6 +6876,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_plains_warfare"
 			army_experience = 100
 			add_tech_bonus = {
 				name = SWI_plains_warfare
@@ -6825,6 +6935,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_multipurpose_tanks"
 			army_experience = 150 
 			add_tech_bonus = {
 				name = SWI_multipurpose_tanks
@@ -6883,6 +6994,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_rolling_fortresses"
 			army_experience = 100 
 			add_tech_bonus = {
 				name = SWI_rolling_fortresses
@@ -6940,6 +7052,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_extended_supply_lines"
 			add_ideas = { SWI_extended_supply_lines_idea } 
 		}
 	}
@@ -6981,6 +7094,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_a_swiss_navy"
 			navy_experience = 100
 			add_tech_bonus = {
 				name = SWI_a_swiss_navy
@@ -7024,6 +7138,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_buy_foreign_surplus_ships"
 			unlock_decision_tooltip = SWI_buy_ships_from_country
 		}
 	}
@@ -7060,6 +7175,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_swiss_ship_designs"
 			add_tech_bonus = {
 				name = SWI_swiss_ship_designs
 				bonus = 2 
@@ -7102,6 +7218,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_submarine_raiders"
 			navy_experience = 100 
 			add_tech_bonus = {
 				name = SWI_submarine_raiders
@@ -7145,6 +7262,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_floating_fortresses"
 			navy_experience = 100 
 			add_tech_bonus = {
 				name = SWI_floating_fortresses
@@ -7188,6 +7306,7 @@
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_naval_industry"
 			custom_effect_tooltip = SWI_naval_industry_tt
 			hidden_effect = {
 				set_temp_variable = {max_nav_added = 10}
@@ -7249,6 +7368,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_build_naval_bases"
 			custom_effect_tooltip = SWI_build_naval_bases_tt
 			hidden_effect = {
 				set_temp_variable = {max_base_added = 15}
@@ -7310,6 +7430,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_train_navy_staff"
 			navy_experience = 200 
 			random_character = {
 				limit = {
@@ -7393,6 +7514,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_modernize_airforce"
 			add_tech_bonus = {
 				name = SWI_modernize_airforce
 				bonus = 0.75
@@ -7438,6 +7560,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_swiss_airplane_designs"
 			add_tech_bonus = {
 				name = SWI_modernize_airforce
 				bonus = 2
@@ -7491,6 +7614,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_license_axis_plane_designs"
 			random_owned_state = {
 				limit = {
 					free_building_slots = {
@@ -7630,6 +7754,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_airspace_surveillance"
 			add_tech_bonus = {
 				name = SWI_airspace_surveillance
 				bonus = 3
@@ -7682,6 +7807,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_the_national_front"
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SWI_robert_tobler
 			show_ideas_tooltip = SWI_rolf_henne
@@ -7719,6 +7845,7 @@
 		search_filters = {  FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL} 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_panoramaheim_branch"
 			if = {
 				limit = {
 					has_idea = SWI_foreign_fascist_propaganda
@@ -7760,6 +7887,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_infiltrate_federal_police"
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -7843,6 +7971,7 @@
 		search_filters = {  } 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_closer_ties_with_germany"
 			var:SWI.SWI_biggest_fascist = {
 				add_opinion_modifier = {
 					modifier = SWI_close_ties
@@ -7897,6 +8026,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_the_petition_of_the_200"
 			add_stability = -0.1
 			add_war_support = 0.10
 
@@ -7961,6 +8091,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_case_west"
 			if = {
 				limit = {
 					FRA = {
@@ -8024,6 +8155,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_german_industrial_investments"
 			669 = {
 				if = {
 					limit = {
@@ -8114,6 +8246,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_complete_siegfried_line"
 			add_popularity = { 
 				ideology = democratic 
 				popularity = -0.05
@@ -8173,6 +8306,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_military_exercises_with_germany"
 			var:SWI_biggest_fascist = {
 				add_opinion_modifier ={
 					modifier = SWI_military_collaboration
@@ -8232,6 +8366,7 @@
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_abandon_neutrality"
 			custom_effect_tooltip = SWI_neutrality_decisions_disabled_TT
 
 			hidden_effect = {
@@ -8302,6 +8437,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_promote_tobler"
 			add_country_leader_role = {
 				character = SWI_robert_tobler
 				country_leader = {
@@ -8366,6 +8502,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_promote_henne"
 			add_country_leader_role = {
 				character = SWI_rolf_henne
 				country_leader = {
@@ -8432,6 +8569,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_propagandize_swiss_military_tradition"
 			add_war_support = 0.1 
 			add_popularity = {
 				ideology = fascism 
@@ -8473,6 +8611,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_ban_democratic_party"
 			add_ideas = {
 				SWI_democratic_party_banned_idea
 			}
@@ -8508,6 +8647,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_centralize_switzerland"
 			remove_power_balance = {
 				id = SWI_centralization_bop
 			}
@@ -8553,6 +8693,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_german_military_collaboration"
 			var:SWI_biggest_fascist = {
 				add_opinion_modifier = {
 					target = ROOT 
@@ -8606,6 +8747,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_join_the_axis"
 			var:SWI_biggest_fascist = {
 				country_event = { id = generic.2 hours = 4 }
 			}
@@ -8642,6 +8784,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_become_german_puppet  "
 			hidden_effect = { SWI_find_biggest_fascist_neighbor = yes }
 			var:SWI_biggest_fascist = {
 				country_event = { id = BBA_switzerland_fascist.1 hours = 3 }
@@ -8687,6 +8830,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_professionalize_militias"
 			SWI_remove_militia_recruitment_law = yes 
 			SWI_turn_militias_into_regulars = yes
 			country_lock_all_division_template = no
@@ -8727,6 +8871,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_ask_for_vorarlberg"
 			hidden_effect = {
 				SWI_find_biggest_fascist_neighbor = yes 
 			}
@@ -8790,6 +8935,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_request_austrian_occupation"
 			set_variable = {
 				SWI.SWI_requested_territory = AUS
 			}
@@ -8861,6 +9007,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_request_italian_alps_occupation"
 			set_variable = {
 				SWI_requested_territory = ITA
 			}
@@ -8931,6 +9078,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_request_french_alps_occupation"
 			if = {
 				limit = {
 					country_exists = VIC
@@ -9029,6 +9177,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_the_alpine_supremacy"
 			SWI_turn_into_alpine = yes
 		}
 	}
@@ -9067,6 +9216,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_expand_weapons_industry"
 			669 = {
 				add_extra_state_shared_building_slots = 3	
 				if = {
@@ -9211,6 +9361,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_swiss_armored_divisions"
 			if = {
 				limit = {
 					has_idea = SWI_Berna
@@ -9265,6 +9416,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_alpine_specialization"
 			add_tech_bonus = {
 				name = SWI_alpine_specialization
 				bonus = 2.0
@@ -9304,6 +9456,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_tank_development"
 			add_tech_bonus = {
 				name = SWI_tank_development
 				bonus = 0.75
@@ -9343,6 +9496,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_mechanized_support"
 			add_tech_bonus = {
 				name = SWI_mechanized_support
 				bonus = 1
@@ -9394,6 +9548,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_artillery"
 			add_tech_bonus = {
 				name = SWI_artillery
 				bonus = 0.75
@@ -9434,6 +9589,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_industrial_production"
 			swap_ideas = {
 				remove_idea = SWI_rearming_idea_2
 				add_idea = SWI_rearmed_idea_industrial
@@ -9471,6 +9627,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_swiss_heavy_planes"
 			add_tech_bonus = {
 				name = SWI_swiss_heavy_planes
 				bonus = 2.0
@@ -9515,6 +9672,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_air_research"
 			add_tech_bonus = {
 				name = SWI_air_research
 				bonus = 2.0
@@ -9555,6 +9713,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_air_production"
 			add_ideas = { SWI_air_production_ns	}
 		}
 	}
@@ -9592,6 +9751,7 @@
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_mountaneer_paratroopers"
 			hidden_effect = {
 				set_technology = { 
 					SWI_mountaineer_paratroopers_tech = 1

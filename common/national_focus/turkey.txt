@@ -43,6 +43,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_montreux_convention"
 			ENG = { country_event = { id = bftb_turkey.1 } }
 			custom_effect_tooltip = TUR_the_montreux_convention_tt
 		}
@@ -75,6 +76,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_continue_the_policy_of_etatism"
 			add_ideas = TUR_etatism
 			add_ideas = TUR_ismet_inonu
 			custom_effect_tooltip = TUR_sanayiciler_etatism_tt
@@ -102,6 +104,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_fully_integrate_the_is_bank"
 			add_political_power = 120
 			add_ideas = TUR_celal_bayar
 			add_ideas = free_trade
@@ -122,6 +125,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_ratify_the_six_arrows"
 			unlock_decision_category_tooltip = TUR_the_constitutional_arrows_category
 		}
 	}
@@ -141,6 +145,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_privatize_the_anadolu_agency"
 			add_popularity = { 
 				ideology = democratic
 				popularity = 0.07
@@ -164,6 +169,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_lift_the_ban_on_other_political_parties"
 			add_popularity = { 
 				ideology = democratic
 				popularity = 0.1
@@ -190,6 +196,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_holding_our_first_multi_party_election"
 			country_event = { id = bftb_turkey.21 }
 		}
 	}
@@ -209,6 +216,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_democratic_transition_focus"
 			if = {
 				limit = {
 					has_country_leader = {
@@ -279,6 +287,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_expanding_our_armaments"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -332,6 +341,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_KEMALISM FOCUS_FILTER_TUR_TRADITIONALISM }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_permit_regional_elections"
 			custom_effect_tooltip = TUR_unlock_reconciliation_occupation_law_tt
 			custom_effect_tooltip = TUR_unlock_kurdish_integration_decisions_tt
 			effect_tooltip = { TUR_placate_fundamentalist_state_all_targets_effect = yes }
@@ -403,6 +413,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_privatize_our_infrastructure"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -474,6 +485,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_democratic_capstone_focus"
 			if = {
 				limit = {
 					has_country_leader = {
@@ -508,6 +520,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_sanayiciler"
 			custom_effect_tooltip = TUR_sanayiciler_tt
 			unlock_decision_tooltip = TUR_sponsor_petrol_olfisis_formation
 		}
@@ -529,6 +542,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_cooperate_with_the_debt_council"
 			add_political_power = 120
 			if = {
 				limit = { 
@@ -589,6 +603,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_utilize_foreign_capital"
 			add_research_slot = 1
 			unlock_decision_tooltip = TUR_discuss_investment_possibilities_with_FROM
 			custom_effect_tooltip = TUR_foreign_capital_tt
@@ -618,6 +633,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_treaty_of_saadabad"
 			if = {
 				limit = {
 					AFG = { 
@@ -695,6 +711,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_assess_our_future"
 			if = {
 				limit = {
 					has_completed_focus = TUR_revive_turkish_revolutionism
@@ -761,6 +778,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_hatay_issue"
 			if = {
 				limit = {
 					FRA = { owns_state = 799 }
@@ -797,6 +815,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_peace_in_the_world"
 			add_ideas = kemalist_neutrality_idea
 			add_stability = 0.05
 		}
@@ -829,6 +848,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_TUR_TRADITIONALISM }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_peace_at_home"
 			add_stability = 0.1
 			unlock_decision_tooltip = TUR_counter_influence_of_fundamentalists_in_state
 			unlock_decision_tooltip = TUR_offer_conscription_exceptions_to_kurdish_groups
@@ -865,6 +885,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_revive_turkish_revolutionism"
 			add_war_support = 0.05
 			add_stability = -0.05
 			unlock_decision_tooltip = TUR_revolutionism_decision
@@ -885,6 +906,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_TUR_KEMALISM }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_turkish_state_railways"
 			show_ideas_tooltip = tcdd
 			every_owned_state = {
 				limit = { 
@@ -932,6 +954,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TUR_KURDISTAN FOCUS_FILTER_TUR_TRADITIONALISM }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_reinvigorate_turkish_nationalism"
 			if = {
 				limit = {
 					has_idea = TUR_ismet_inonu
@@ -1019,6 +1042,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_second_five_year_plan"
 			if = {
 				limit = {
 					NOT = {
@@ -1120,6 +1144,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_KEMALISM FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_guardians_of_kemalism"
 			add_war_support = 0.05
 			unlock_decision_tooltip = TUR_entrench_kemalism_in_state
 			custom_effect_tooltip = TUR_kemalist_state_targets_tt
@@ -1170,6 +1195,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_sun_language_theory"
 			add_war_support = 0.05
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = TUR_halide_edib_adivar
@@ -1190,6 +1216,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_TRADITIONALISM }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_variant_turkish_tax_focus"
 			if = {
 				limit = { 
 					NOT = { 
@@ -1236,6 +1263,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_KEMALISM FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_turk_ulusu"
 			add_war_support = 0.1
 			every_owned_state = {
 				limit = {
@@ -1265,6 +1293,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_TRADITIONALISM FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_loosen_the_laws_on_secularism"
 			add_stability = -0.05
 			set_temp_variable = { placate_state_1 = -1 }
 			set_temp_variable = { placate_state_2 = -1 }
@@ -1342,6 +1371,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_TRADITIONALISM FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_purify_the_diyanet"
 			effect_tooltip = { TUR_placate_fundamentalist_state_all_targets_effect = yes }
 			custom_effect_tooltip = TUR_kemalist_officers_made_hostile_tt
 			hidden_effect = { 
@@ -1393,6 +1423,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_rehabilitate_the_kadro_movement"
 			set_party_name = { 
 				ideology = communism
 				long_name = TUR_neutrality_party_long
@@ -1430,6 +1461,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_kemalism_and_the_modern_movement"
 			add_war_support = 0.05
 			add_popularity = { 
 				ideology = fascism
@@ -1469,6 +1501,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_integrate_the_fascist_council"
 			
 			set_party_name = { 
 				ideology = fascism
@@ -1517,6 +1550,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_KEMALISM }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_restack_the_officer_corps"
 			custom_effect_tooltip = TUR_restack_the_officer_corps_tt
 			hidden_effect = { 
 				if = {
@@ -1573,6 +1607,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_form_the_redshirts"
 			add_ideas = TUR_the_redshirts
 		}
 	}
@@ -1594,6 +1629,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_TRADITIONALISM FOCUS_FILTER_TUR_KEMALISM }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_fatherland_first"
 			hidden_effect = {
 				if = {
 					limit = {	
@@ -1703,6 +1739,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_TRADITIONALISM FOCUS_FILTER_TUR_KEMALISM }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_pontic_redoubt"
 			354 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -1786,6 +1823,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_abuse_the_office_of_soil_products"
 			49 = {
 				add_extra_state_shared_building_slots = 2
 			}
@@ -1814,6 +1852,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_deal_for_the_oniki_islands"
 			country_event = { id = bftb_turkey.30 }
 		}
 	}
@@ -1833,6 +1872,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_kemalist_socialist_theory"
 			add_popularity = { 
 				ideology = communism
 				popularity = 0.05
@@ -1855,6 +1895,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_intervene_in_the_spanish_civil_war"
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = TUR_turkish_interventionism
 		}
@@ -1874,6 +1915,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_KEMALISM FOCUS_FILTER_TUR_KURDISTAN }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_a_common_destiny_for_all_of_turkey"
 			custom_effect_tooltip = TUR_unlock_kurdish_integration_decisions_tt
 			custom_effect_tooltip = TUR_unlock_reconciliation_occupation_law_tt
 		}
@@ -1893,6 +1935,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_TRADITIONALISM FOCUS_FILTER_TUR_KEMALISM }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_hunt_down_fifth_columnist_islamists"
 			unlock_decision_tooltip = TUR_entrench_kemalism_in_state
 			unlock_decision_tooltip = TUR_hold_a_march_in_state
 		}
@@ -1912,6 +1955,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_patriotism_over_internationalism"
 			add_war_support = 0.05
 			add_political_power = 120
 		}
@@ -1931,6 +1975,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_create_the_turkish_workers_militia"
 			add_ideas = TUR_turkish_workers_militia
 		}
 	}
@@ -1956,6 +2001,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_KURDISTAN FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_halk_ve_devlet"
 			add_stability = 0.1
 			set_politics = {
 				ruling_party = communism
@@ -1999,6 +2045,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_nationalise_all_private_industry"
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = TUR
@@ -2097,6 +2144,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_georgian_manganese_extraction"
 			if = {
 				limit = {
 					GEO = { exists = yes }
@@ -2124,6 +2172,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_salt_the_scars_of_the_great_war"
 			add_war_support = 0.1
 			if = {
 				limit = {
@@ -2211,6 +2260,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_pivot_to_the_past"
 			add_war_support = 0.15
 			add_stability = 0.05
 			add_popularity = {
@@ -2251,6 +2301,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_KEMALISM FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_purge_the_kemalists"
 			add_stability = 0.05
 			custom_effect_tooltip = TUR_kemalists_purged_tt
 			hidden_effect = {
@@ -2284,6 +2335,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_restore_the_divan"
 			add_stability = 0.05
 			add_political_power = 120
 			if = {
@@ -2427,6 +2479,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_rebuilding_our_nation"
 			add_timed_idea = {
 				idea = TUR_rebuilding_our_home
 				days = 180
@@ -2449,6 +2502,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_return_of_the_sultan"
 			news_event = { id = bftb_news.205 }
 		}
 	}
@@ -2477,6 +2531,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_reclaim_macedonia"
 			every_state = {
 				limit = {
 					OR = {
@@ -2540,6 +2595,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_join_the_central_powers"
 			if = {
 				limit = {
 					GER = { 
@@ -2604,6 +2660,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_press_the_austro_hungarian_claim"
 			create_wargoal = {
 				type = take_state_focus
 				target = YUG
@@ -2696,6 +2753,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_aligning_bulgaria"
 			BUL = { country_event = { id = bftb_turkey.97 } }
 		}
 	}
@@ -2713,6 +2771,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_reclaiming_our_lost_empire"
 			if = {
 				limit = {
 					has_country_leader = {
@@ -2767,6 +2826,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_expanding_the_saadabad_pact"
 			if = {
 				limit = {
 					is_in_faction = no
@@ -2850,6 +2910,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_damascus_diktat"
 			677 = {
 				controller = {
 					country_event = { id = bftb_turkey.102 }
@@ -2872,6 +2933,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_supporting_the_east"
 			354 = {
 				add_building_construction = {
 					type = infrastructure
@@ -2930,6 +2992,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_desert_camel_corps"
 			custom_effect_tooltip = TUR_unlock_camelry_effect_tt
 			hidden_effect = { set_technology = { camelry = 1 } } 
 		}
@@ -2970,6 +3033,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_pan_national_association_of_ulemas"
 			if = { 
 				limit = {
 					NOT = { has_completed_focus = TUR_treaty_of_saadabad }
@@ -3097,6 +3161,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_reinstate_the_darulfununu_sahane"
 			add_research_slot = 1
 		}
 	}
@@ -3115,6 +3180,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_imperial_factories"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3152,6 +3218,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_refining_our_strategies"
 			add_doctrine_cost_reduction = {
 				name = TUR_refining_our_strategies
 				cost_reduction = 0.5
@@ -3217,6 +3284,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_red_apples_of_sevres"
 			add_war_support = 0.15
 			create_wargoal = {
 				type = topple_government
@@ -3251,6 +3319,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_realize_the_nightmare_of_meiji"
 			add_tech_bonus = {
 				name = TUR_realize_the_nightmare_of_meiji
 				bonus = 1.0
@@ -3304,6 +3373,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_continue_to_prioritise_balkan_integrity"
 			add_war_support = 0.1
 			add_stability = 0.05
 			every_country = {
@@ -3388,6 +3458,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_reaffirm_the_balkan_pact"
 			set_rule = { can_create_factions = yes }
 			create_faction = TUR_balkan_pact
 			every_country = {
@@ -3437,6 +3508,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_balkan_defense_council"
 			add_ideas = TUR_balkan_defense_council_spirit
 			for_each_scope_loop = {
 				array = faction_members
@@ -3486,6 +3558,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_three_year_industrial_plan"
 			add_timed_idea = {
 				idea = TUR_three_year_plan_balkans
 				days = 1095
@@ -3541,6 +3614,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_united_against_imperialism"
 			add_stability = 0.05
 			hidden_effect = {
 				if = {
@@ -3632,6 +3706,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_create_the_balkan_central_bank"
 			if = {
 				limit = {
 					GRE = { 
@@ -3705,6 +3780,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_treaty_for_prosperity_and_trade"
 			if = { 
 				limit = {
 					NOT = { has_idea = free_trade }
@@ -3796,6 +3872,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_joint_budgets_on_fortifications"
 			add_ideas = TUR_joint_fortification_budget
 			for_each_scope_loop = {
 				array = faction_members
@@ -3846,6 +3923,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_connecting_our_capitals"
 			#Turkey
 			if = {
 				limit = {
@@ -4169,6 +4247,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_fortifying_contentious_areas"
 			342 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -4308,6 +4387,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_integrated_armed_forces"
 			swap_ideas = {
 				remove_idea = TUR_balkan_defense_council_spirit
 				add_idea = TUR_united_balkan_security_forces
@@ -4363,6 +4443,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_balkan_academy_of_science"
 			if = {
 				limit = {
 					GRE = { 
@@ -4443,6 +4524,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_extend_an_olive_branch_to_bulgaria"
 			BUL = { 
 				if = {
 					limit = { ROOT = { is_in_faction = yes } }
@@ -4491,6 +4573,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_preempt_bulgarian_alignment"
 			create_wargoal = {
 				type = topple_government
 				target = BUL
@@ -4540,6 +4623,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_peninsular_network_of_factories"
 			every_country = {
 				limit = {
 					NOT = { original_tag = TUR }
@@ -4753,6 +4837,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_combined_operational_strategies"
 			swap_ideas = {
 				remove_idea = TUR_united_balkan_security_forces
 				add_idea = TUR_the_coordinated_armed_forces_of_the_balkan_pact
@@ -4793,6 +4878,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_edirne_research_exchange"
 			add_research_slot = 1
 		}
 	}
@@ -4813,6 +4899,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_crush_the_warmongers_in_rome"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = ITA
@@ -4837,6 +4924,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_brace_against_the_red_menace"
 			create_wargoal = {
 				type = topple_government
 				target = SOV
@@ -4859,6 +4947,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_reconfigure_our_foreign_policy"
 			add_political_power = 120
 			ROM = {
 				diplomatic_relation = {
@@ -4923,6 +5012,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_anglo_turkish_agreement"
 			ENG = {
 				add_opinion_modifier = {
 					target = TUR
@@ -5002,6 +5092,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_applying_british_oil_embargoes_on_iraq"
 			ENG = {
 				add_opinion_modifier = {
 					target = TUR
@@ -5060,6 +5151,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_host_exiled_scientists"
 			add_ideas = TUR_sheltered_foreign_outcasts
 		}
 	}
@@ -5082,6 +5174,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_chester_concession"
 			USA = { country_event = { id = bftb_turkey.55 } }
 			custom_effect_tooltip = TUR_raise_opinion_of_america_tt
 		}
@@ -5104,6 +5197,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_american_motor_factories"
 			add_tech_bonus = {
 				name = TUR_american_motor_factories
 				bonus = 3.0
@@ -5146,6 +5240,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_bomber_schematics"
 			add_tech_bonus = {
 				name = TUR_bomber_schematics
 				bonus = 1.0
@@ -5192,6 +5287,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_join_the_allies"
 			ENG = {
 				country_event = { id = generic.2 }
 			}
@@ -5211,6 +5307,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_controlling_the_skies_of_europe"
 			add_tech_bonus = {
 				name = TUR_controlling_the_skies_of_europe
 				bonus = 1.0
@@ -5239,6 +5336,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_expanding_our_navy"
 			add_tech_bonus = {
 				name = TUR_expanding_our_navy
 				bonus = 1.5
@@ -5288,6 +5386,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_petra_proposal"
 			ENG = {
 				country_event = { id = bftb_turkey.44 }
 			}
@@ -5309,6 +5408,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_expanded_credit_on_our_debts"
 			if = {
 				limit = {
 					has_idea = TUR_debt_council
@@ -5356,6 +5456,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_partnership_pact_with_bulgaria"
 			effect_tooltip = { 
 				BUL = {
 					country_event = { id = generic.5 }
@@ -5407,6 +5508,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_seizing_the_romanian_oil_fields"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = ROM
@@ -5440,6 +5542,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_securing_iran"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = PER
@@ -5486,6 +5589,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_british_dockyards_in_turkey"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -5557,6 +5661,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_taking_over_defense_of_the_gulf"
 			ENG = {
 				country_event = { id = bftb_turkey.47 }
 			}
@@ -5577,6 +5682,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_TUR_KURDISTAN FOCUS_FILTER_TUR_TRADITIONALISM }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_we_must_not_fall"
 			add_ideas = TUR_victory_at_all_costs
 		}
 	}
@@ -5598,6 +5704,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_german_turkish_friendship_treaty"
 			GER = {
 				add_opinion_modifier = {
 					target = TUR
@@ -5637,6 +5744,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_clodius_agreement"
 			GER = {
 				add_opinion_modifier = {
 					target = TUR
@@ -5690,6 +5798,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_purchase_italian_light_tanks"
 			ITA = {
 				country_event = { id = bftb_turkey.50 }
 			}
@@ -5713,6 +5822,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_approve_the_funkplan"
 			add_ideas = TUR_funkplan
 			GER = { add_stability = 0.1 }
 		}
@@ -5734,6 +5844,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_italo_turkish_naval_academy"
 			show_unit_leaders_tooltip = ITA_ferdinando_umberto_filippo_adalberto
 
 			add_ideas = TUR_the_antalya_naval_academy
@@ -5756,6 +5867,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_invite_german_officers_to_izmir"
 			show_unit_leaders_tooltip = GER_hans_von_luck
 			
 			if = {
@@ -5796,6 +5908,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_mediterranean_entente"
 			set_rule = { can_create_factions = yes }
 			create_faction = TUR_covenant_of_the_mediterranean
 			ITA = { country_event = { id = bftb_turkey.41 } }
@@ -5826,6 +5939,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_join_the_axis"
 			GER = {
 				country_event = { id = generic.2 }
 			}
@@ -5857,6 +5971,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_invite_bulgaria"
 			BUL = {
 				country_event = { id = generic.5 }
 			}
@@ -5882,6 +5997,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_entice_the_greeks"
 			GRE = { 
 				if = {
 					limit = { ROOT = { is_in_faction = yes } }
@@ -5921,6 +6037,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_carve_up_greece"
 			if = { 
 				limit = { 
 					is_in_faction_with = ITA
@@ -5961,6 +6078,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_pressure_portugal_to_join"
 			POR = { 
 				if = {
 					limit = { ROOT = { is_in_faction = yes } }
@@ -5996,6 +6114,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_collaborative_civil_works_programme"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -6096,6 +6215,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_fortifying_the_bosporus"
 			797 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -6164,6 +6284,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_mediterranean_merchant_fleet"
 			add_timed_idea = {
 				days = 360
 				idea = TUR_italo_turkish_merchant_fleet
@@ -6210,6 +6331,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_court_the_spanish"
 			SPA = { 
 				if = {
 					limit = { ROOT = { is_in_faction = yes } }
@@ -6249,6 +6371,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_cleanse_iberia_of_bolshevism"
 			if = {
 				limit = {
 					SPR = { 
@@ -6289,6 +6412,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_end_the_british_hegemony"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = ENG
@@ -6322,6 +6446,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_punish_french_weakness"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = FRA
@@ -6354,6 +6479,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_victory_or_death_against_communism"
 			create_wargoal = {
 				type = topple_government
 				target = SOV
@@ -6376,6 +6502,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_increase_german_military_aid"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -6440,6 +6567,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_cooperative_research_centers"
 			add_research_slot = 1	
 		}
 	}
@@ -6458,6 +6586,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_tuz_golu_training_facility"
 			add_ideas = TUR_tuz_golu_training_facility
 			custom_effect_tooltip = TUR_unlock_camelry_effect_tt
 			hidden_effect = { set_technology = { camelry = 1 } } 
@@ -6478,6 +6607,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_pack_for_a_long_winter"
 			add_ideas = TUR_sub_zero_survival_training
 		}
 	}
@@ -6503,6 +6633,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_support_the_golden_square"
 			IRQ = { country_event = { id = bftb_turkey.67 hours = 8 } }
 		}
 	}
@@ -6534,6 +6665,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_secure_the_iraqi_oil"
 			create_wargoal = {
 				type = annex_everything
 				target = IRQ
@@ -6566,6 +6698,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_rebuke_the_treaty_of_lausanne"
 			add_state_claim = 184
 			add_state_claim = 731
 			add_state_claim = 187
@@ -6603,7 +6736,8 @@ focus_tree = {
 			base = 10
 		}
 
-		completion_reward = { 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_turkish_panzers" 
 			if = {
 				limit = {
 					NOT = {
@@ -6785,6 +6919,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_establish_the_committee_of_pan_turkism"
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = TUR_zeki_velidi_togan
 			add_timed_idea = {
@@ -6813,6 +6948,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_integrate_german_officers_into_the_army"
 			swap_ideas = {
 				remove_idea = TUR_german_advisors
 				add_idea = TUR_integrated_german_officers
@@ -6833,6 +6969,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_restoring_our_nations_pride"
 			add_ideas = TUR_golden_age_of_the_wolf
 		}
 	}
@@ -6865,6 +7002,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_renew_the_turkish_soviet_non_aggression_pact"
 			SOV = { country_event = { id = bftb_turkey.79 } }
 		}
 	}
@@ -6886,6 +7024,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_batumi_accord"
 			354 = {
 				if = {
 					limit = {
@@ -6949,6 +7088,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_provide_refuge_to_the_victims_of_fascism"
 			add_timed_idea = {
 				idea = TUR_refugees_from_the_fascist_menace
 				days = 180
@@ -6978,6 +7118,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_soviet_tank_factories"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -7031,6 +7172,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_dissolve_the_ODPA"
 			if = {
 				limit = {
 					has_idea = TUR_debt_council
@@ -7103,6 +7245,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_adana_to_baku_highway"
 			SOV = {
 				229 = {
 					add_building_construction = {
@@ -7186,6 +7329,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_anti_bolshevik_mediterranean_bloc"
 			SOV = {
 				add_opinion_modifier = {
 					target = TUR
@@ -7230,6 +7374,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_readdress_the_montreux_convention"
 			SOV = {
 				country_event = { id = generic.2 }
 			}
@@ -7250,6 +7395,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_international_of_proletarian_freethinkers"
 			add_research_slot = 1
 		}
 	}
@@ -7268,6 +7414,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_strengthening_our_navies"
 			add_timed_idea = { idea = TUR_construct_a_red_navy days = 480 }
 			every_country = {
 				limit = {
@@ -7309,6 +7456,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_avenge_the_treaty_of_sevres"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = FRA
@@ -7344,6 +7492,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_strike_at_the_fascist_menace"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = ITA
@@ -7364,6 +7513,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_learning_from_the_tripolitanian_war"
 			add_tech_bonus = {
 				name = TUR_learning_from_tripolitania
 				bonus = 1.0
@@ -7405,6 +7555,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_stop_the_stalinist_charade"
 			create_wargoal = {
 				type = annex_everything
 				target = SOV
@@ -7438,6 +7589,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_strike_the_british_imperialists"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = ENG
@@ -7459,6 +7611,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_foreign_brigades_for_the_revolution"
 			add_ideas = TUR_revolutionary_brigades_from_abroad
 		}
 	}
@@ -7478,6 +7631,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_joint_caucasian_turkish_officer_school"
 			add_corps_commander_role = {
 				character = TUR_hazi_aslanov
 				traits = { war_hero inflexible_strategist armor_officer winter_specialist }
@@ -7505,6 +7659,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_arctic_wolves_training_program"
 			add_ideas = TUR_arctic_wolves_training
 		}
 	}
@@ -7523,6 +7678,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_seize_religious_property"
 			798 = { add_extra_state_shared_building_slots = 1 }
 			345 = { add_extra_state_shared_building_slots = 1 }
 			344 = { add_extra_state_shared_building_slots = 1 }
@@ -7551,6 +7707,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_guarding_our_western_frontiers"
 			339 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -7646,6 +7803,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_lift_the_turkiye_komunist_partisis_exile"
 			if = {
 				limit = {
 					has_completed_focus = TUR_readdress_the_montreux_convention
@@ -7682,6 +7840,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_reconciling_kemalism_with_bolshevism"
 			if = {
 				limit = {
 					has_country_leader = {
@@ -7722,6 +7881,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_turkish_tank_project"
 			348 = {
 				if = { 
 					limit = {
@@ -7761,6 +7921,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_taking_responsibility_for_the_air_war"
 			add_doctrine_cost_reduction = {
 				name = TUR_taking_responsibility_for_the_air_war
 				cost_reduction = 0.35
@@ -7784,6 +7945,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_officers_of_the_revolution"
 			add_ideas = TUR_red_officers
 		}
 	}
@@ -7802,6 +7964,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_scrapping_our_debts"
 			add_timed_idea = {
 				idea = TUR_reappropriated_exploitative_finance
 				days = 180
@@ -7824,6 +7987,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_collectivising_our_agriculture"
 			random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
 			random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
 			random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
@@ -7846,6 +8010,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_capitalise_on_rising_kurdish_nationalism"
 			add_state_claim = 680
 			add_state_claim = 676
 			add_state_claim = 291
@@ -7884,6 +8049,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_issue_an_ultimatium_to_the_bulgarians"
 			BUL = { country_event = { id = bftb_turkey.84 } }
 		}
 	}
@@ -7902,6 +8068,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_misak_i_milli"
 			add_stability = -0.15
 			add_war_support = 0.1
 			news_event = { id = bftb_news.208 hours = 6 }
@@ -7934,6 +8101,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_recover_the_kardzhali_vilayet"
 			every_state = {
 				limit = {
 					is_core_of = BUL
@@ -8057,6 +8225,7 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_cypriot_and_oniki_ilhak"
 			every_state = {
 				limit = {
 					OR = {
@@ -8178,6 +8347,7 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_reuniting_thrace_through_force"
 			every_state = {
 				limit = {
 					OR = {
@@ -8314,6 +8484,7 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_rebuke_the_treaty_of_kars"
 			every_state = {
 				limit = {
 					OR = {
@@ -8420,6 +8591,7 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_unite_the_azeri_diaspora"
 			every_state = {
 				limit = {
 					OR = {
@@ -8536,6 +8708,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_konfederasyon"
 			every_state = {
 				limit = {
 					is_core_of = AZR
@@ -8563,6 +8736,7 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_annul_the_ankara_anlasmasi"
 			every_state = {
 				limit = {
 					OR = {
@@ -8714,6 +8888,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_liberate_the_kurdish_diaspora"
 			effect_tooltip = {
 				every_state = {
 					limit = { OR = { is_core_of = KUR is_core_of = RJV} }
@@ -8831,6 +9006,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_turanist_ambition"
 			add_war_support = 0.1
 			add_stability = -0.15
 			if = {
@@ -8859,6 +9035,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_subdue_the_magyars"
 			
 				every_state = { 
 					limit = { 
@@ -8900,6 +9077,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_cin_turkleri"
 			every_state = {
 				limit = {
 					OR = {
@@ -8974,6 +9152,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_crowning_ourselves_with_the_fin_ugor"
 			every_state = {
 				limit = {
 					OR = {
@@ -9027,6 +9206,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_learning_from_the_great_war"
 			army_experience = 10
 			if = {
 				limit = {
@@ -9050,6 +9230,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_modernising_the_army"
 			add_doctrine_cost_reduction = {
 				name = TUR_modernising_the_army
 				cost_reduction = 0.5
@@ -9072,6 +9253,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_hava_okulu"
 			air_experience = 5
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = TUR_sabiha_gokcen
@@ -9097,6 +9279,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_expand_the_air_bases"
 			354 = {
 				if = {
 					limit = {
@@ -9180,6 +9363,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_mechanising_our_army"
 			add_tech_bonus = {
 				name = TUR_mechanising_our_army
 				bonus = 2.0
@@ -9209,6 +9393,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_embrace_military_tradition"
 			add_tech_bonus = {
 				name = TUR_embrace_military_tradition
 				bonus = 2.0
@@ -9238,6 +9423,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_kirikkale_tank"
 			49 = {
 				if = {
 					limit = {
@@ -9277,6 +9463,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_superiority_of_arms"
 			add_tech_bonus = {
 				name = TUR_superiority_of_arms
 				bonus = 1.5
@@ -9299,6 +9486,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_utilising_our_terrain"
 			add_tech_bonus = {
 				name = TUR_utilising_our_terrain
 				bonus = 1.0
@@ -9328,6 +9516,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_construct_the_cakmak_line"
 			341 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -9367,6 +9556,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_accelerate_native_fighter_designs"
 			add_tech_bonus = {
 				name = TUR_accelerate_native_fighter_designs
 				bonus = 1.5
@@ -9390,6 +9580,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_patrol_the_seas"
 			add_tech_bonus = {
 				name = TUR_patrol_the_seas
 				bonus = 1.5
@@ -9419,6 +9610,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_invoke_the_methods_of_mehmed_ii"
 			add_tech_bonus = {
 				name = TUR_invoke_the_methods_of_mehmed_ii
 				bonus = 1.5
@@ -9447,6 +9639,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_turkish_air_defense_platforms"
 			797 = {
 				add_building_construction = {
 					type = air_base
@@ -9492,6 +9685,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_expand_the_golcuk_naval_base"
 			1940 = { 
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -9533,6 +9727,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_relocate_from_yildiz_palace"
 			932 = { 
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -9583,6 +9778,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_legacy_of_osmanli_donanmasi"
 			add_tech_bonus = {
 				name = TUR_the_legacy_of_osmanli_donanmasi
 				bonus = 1.50
@@ -9612,6 +9808,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_path_of_the_wolf"
 			add_tech_bonus = {
 				name = TUR_the_path_of_the_wolf
 				bonus = 1.00
@@ -9642,6 +9839,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_fortified_defensive_bases"
 			add_tech_bonus = {
 				name = TUR_fortified_defensive_bases
 				bonus = 1.00
@@ -9669,6 +9867,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_turk_silahli_kuvvetleri"
 			add_war_support = 0.15
 			if = {
 				limit = {

@@ -93,6 +93,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_ethiopian_war_logistics_bba"
 			if = { limit = { 550 = { owner = { controls_state = 550 OR = { original_tag = ROOT is_subject_of = ROOT } } } }
 				550 = {
 					add_building_construction = {
@@ -172,6 +173,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_italian_highways_bba"
 			158 = { #PIEDMONT
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -289,6 +291,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_ministry_of_italian_africa"
 			add_political_power = 75
 			custom_effect_tooltip = ITA_ministry_of_italian_africa_occupation_law_tt
 			show_ideas_tooltip = ITA_fake_colonial_police_law
@@ -328,6 +331,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_develop_ethiopia"
 			if = {
 				limit = {
 					NOT = {
@@ -643,6 +647,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_develop_libya"
 			if = {
 				limit = {
 					NOT = {
@@ -943,6 +948,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_develop_eritrea"
 			550 = { #ERITREA
 				set_state_flag = ITA_improved_infrastructure_in_state_flag
 				add_building_construction = {
@@ -976,6 +982,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_develop_somaliland"
 			559 = { #SOMALILAND
 				set_state_flag = ITA_improved_infrastructure_in_state_flag
 				add_building_construction = {
@@ -1037,6 +1044,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_regional_development"
 			#Makes previous Colonial Police law hidden (Both old and new version need to cohexist so that the previous can fallback to the next one)
 			set_country_flag = ITA_colonial_police_improved_flag
 
@@ -1275,6 +1283,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_litoranea_balbo"
 			if = { #TRIPOLI
 				limit = {
 					448 = {
@@ -1355,6 +1364,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_via_della_vittoria"
 			451 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1664,6 +1674,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_libyan_railway"
 			# Tripoli - Tobruk
 			build_railway = {
 				path = { 1149 4194 7209 9980 1118 1041 4047 10046 10117 12088 4057 1198 1127 4120 11954 10123 12094 4151 1204 7082 9992 1130 }
@@ -1721,6 +1732,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_prospect_for_oil"
 			add_resource = {
 				type = oil
 				amount = 8
@@ -1772,6 +1784,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_libyan_refineries"
 			add_resource = {
 				type = oil
 				amount = 4
@@ -1808,6 +1821,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_polizia_dell_africa_italiana"
 			custom_effect_tooltip = ITA_polizia_dell_africa_italiana_occupation_law_tt
 
 			set_country_flag = ITA_colonial_police_final_flag
@@ -1837,6 +1851,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_strengthen_ascari_corps"
 			unlock_decision_tooltip = ITA_reorganize_ascari
 
 			hidden_effect = {
@@ -2396,6 +2411,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_comandante_diavolo"
 			add_ideas = ITA_hardened_irregular_bands
 
 			hidden_effect = {
@@ -2797,6 +2813,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_leone_del_sahara"
 			custom_effect_tooltip = ITA_leone_del_sahara_re_tt
 			add_to_variable = { ITA_re_supply_consumption_factor = -0.05 }
 			show_unit_leaders_tooltip = ITA_orlando_lorenzini
@@ -2819,6 +2836,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_steel_industry_in_terni"
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.025 }
 			custom_effect_tooltip = ITA_steel_industry_in_terni_ricostruzione_industriale_tt
 			157 = {
@@ -2852,6 +2870,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_power_plants_in_terni"
 			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.05 }
 			custom_effect_tooltip = ITA_power_plants_in_terni_ricostruzione_industriale_tt
 
@@ -2882,6 +2901,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_industria_della_gomma_sintetica"
 			add_tech_bonus = {
 				name = ITA_industria_della_gomma_sintetica
 				bonus = 0.75
@@ -2945,6 +2965,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_strengthen_northern_industry"
 			if = {
 				limit = {
 					has_full_control_of_state = 158
@@ -3141,6 +3162,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_modernize_the_mezzogiorno"
 			if = {
 				limit = {
 					has_full_control_of_state = 117
@@ -3341,6 +3363,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_new_industrialization_program"
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
@@ -3383,6 +3406,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_railway_innovations"
 			add_tech_bonus = {
 				name = ITA_railway_innovations
 				ahead_reduction = 1.5
@@ -3440,6 +3464,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_expand_foggia_farm_fields"
 			add_timed_idea = { idea = ITA_foggia_farm_fields days = 730 }
 		}
 	}
@@ -3460,6 +3485,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_investments_in_edison"
 			add_to_variable = { ITA_iri_consumer_goods_factor = -0.05 }
 			custom_effect_tooltip = ITA_investments_in_edison_ricostruzione_industriale_tt
 
@@ -3519,6 +3545,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_expand_national_universities"
 			add_research_slot = 1
 		}
 	}
@@ -3539,6 +3566,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_fiocchi_munizioni"
 			if = {
 				limit = {
 					159 = {
@@ -3596,6 +3624,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_brescia_small_arms_industry"
 			if = {
 				limit = {
 					159 = {
@@ -3661,6 +3690,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_milan_comms_industry"
 			159 = { #LOMBARDY (Milano)
 				add_building_construction = {
 					type = radar_station
@@ -3707,6 +3737,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_redirect_alfa_romeo_production"
 			if = {
 				limit = {
 					159 = {
@@ -3772,6 +3803,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_increase_production"
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_line_change_production_efficiency_factor = 0.2 }
@@ -3799,6 +3831,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_keep_specialization"
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = 0.1 }
 			add_to_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = 0.1 }
@@ -3825,6 +3858,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_thermojet_research"
 			add_tech_bonus = {
 				name = ITA_thermojet_research
 				bonus = 0.75
@@ -3865,6 +3899,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_army_primacy_bba"
 			army_experience = 25
 
 			random_owned_controlled_state = {
@@ -3974,6 +4009,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_preserve_army_traditions"
 			add_to_variable = { ITA_re_grand_battle_plan_cost_factor = -0.05 }
 			add_to_variable = { ITA_re_superior_firepower_cost_factor = -0.05 }
 			add_to_variable = { ITA_re_army_army_org_factor = 0.05 }
@@ -4010,6 +4046,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_increase_artillery_production"
 			custom_effect_tooltip = ITA_increase_artillery_production_military_industry_tt
 			hidden_effect = {
 				add_ideas = ITA_hidden_arty_production_ns
@@ -4066,6 +4103,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_vallo_alpino_del_littorio"
 
 			### VALLO ALPINO OCCIDENTALE ###
 			if = { #PIEDMONT
@@ -4337,6 +4375,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_moschettieri_del_duce"
 			if = {
 				limit = { has_completed_focus = ITA_monarchia_d_italia }
 				add_to_variable = { ITA_re_army_core_defence_factor = 0.1 }
@@ -4365,6 +4404,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_a_bandits_war"
 			#ITA_bandit_war_effect = yes
 			add_to_variable = { ITA_re_land_doctrine_cost_factor = -0.2 }
 			add_to_variable = { ITA_re_army_army_org_factor = 0.05 }
@@ -4459,6 +4499,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_carica_di_isbuscenskij"
 			add_to_variable = { ITA_re_modifier_army_sub_unit_cavalry_speed_factor = 0.1 }
 			add_to_variable = { ITA_re_modifier_army_sub_unit_cavalry_attack_factor = 0.05 }
 			add_to_variable = { ITA_re_modifier_army_sub_unit_cavalry_defence_factor = 0.05 }
@@ -4487,6 +4528,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_army_leaders"
 			add_to_variable = { ITA_re_army_leader_cost_factor = -0.15 }
 			add_to_variable = { ITA_re_experience_gain_factor = 0.1 }
 			add_to_variable = { ITA_re_promote_cost_factor = -0.25 }
@@ -4541,6 +4583,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_superesercito"
 			custom_effect_tooltip = ITA_superesercito_re_tt 
 			add_to_variable = { ITA_re_land_doctrine_cost_factor = -0.1 }
 			add_to_variable = { ITA_re_army_army_org_factor = 0.05 }
@@ -4574,6 +4617,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_italian_tankettes"
 			custom_effect_tooltip = ITA_italian_tankettes_military_industry_tt
 			hidden_effect = {
 				add_ideas = ITA_hidden_tankettes_ns
@@ -4719,6 +4763,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_bersaglieri"
 			add_to_variable = { ITA_re_special_forces_cap = 0.05 }
 			add_to_variable = { ITA_re_special_forces_attack_factor = 0.03 }
 			add_to_variable = { ITA_re_special_forces_defence_factor = 0.03 }
@@ -4775,6 +4820,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_divisioni_alpine"
 			add_to_variable = { ITA_re_special_forces_cap = 0.02 }
 			add_to_variable = { ITA_re_modifier_army_sub_unit_mountaineers_defence_factor = 0.03 }
 			add_to_variable = { ITA_re_modifier_army_sub_unit_mountaineers_max_org_factor = 0.05 }
@@ -4808,6 +4854,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_fanti_dell_aria"
 			add_to_variable = { ITA_re_special_forces_cap = 0.02 }
 			add_to_variable = { ITA_re_special_forces_out_of_supply_factor = -0.1 }
 			add_to_variable = { ITA_re_modifier_army_sub_unit_paratrooper_max_org_factor = 0.05 }
@@ -4927,6 +4974,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_self_propelled_guns"
 			custom_effect_tooltip = ITA_self_propelled_guns_military_industry_tt
 			hidden_effect = {
 				add_ideas = ITA_hidden_spg_production_ns
@@ -4994,6 +5042,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_end_fiat_ansaldo_duopoly"
 			add_to_variable = { ITA_military_industry_dm_production_lack_of_resource_penalty_factor = -0.1 }
 			custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_military_industry_tt
 
@@ -5054,6 +5103,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_modernize_ansaldo_facilities"
 			add_to_variable = { ITA_military_industry_dm_equipment_upgrade_xp_cost = -0.15 }
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0.05 }
@@ -5154,6 +5204,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_ferrea_mole_ferreo_cuore"
 			custom_effect_tooltip = ITA_ferrea_mole_ferreo_cuore_military_industry_tt
 			hidden_effect = {
 				add_ideas = ITA_hidden_ferrea_mole_ns
@@ -5241,6 +5292,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_air_innovations_bba"
 			air_experience = 25
 
 			add_tech_bonus = {
@@ -5275,6 +5327,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_citta_dell_aria"
 			add_tech_bonus = {
 				name = ITA_citta_dell_aria
 				bonus = 0.5
@@ -5345,6 +5398,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_expand_rome_flying_school"
 			add_to_variable = { ITA_ra_air_ace_generation_chance_factor = 0.05 }
 			add_to_variable = { ITA_ra_air_night_penalty = -0.1 }
 			add_to_variable = { ITA_ra_air_weather_penalty = -0.1 }
@@ -5373,6 +5427,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_reggianes_exports"
 			add_to_variable = { ITA_iri_consumer_goods_factor = -0.01 }
 			custom_effect_tooltip = ITA_reggianes_exports_ricostruzione_industriale_tt
 
@@ -5447,6 +5502,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_diving_bombers"
 			air_experience = 15
 			if = {
 				limit = {
@@ -5491,6 +5547,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_superaereo"
 			add_to_variable = { ITA_ra_air_mission_efficiency = 0.05 }
 			add_to_variable = { ITA_ra_air_mission_xp_gain_factor = 0.05 }
 			add_to_variable = { ITA_ra_air_doctrine_cost_factor = -0.1 }
@@ -5536,6 +5593,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_officers_of_the_service_role"
 			add_to_variable = { ITA_ra_air_night_penalty = -0.05 }
 			add_to_variable = { ITA_ra_air_weather_penalty = -0.05 }
 			add_to_variable = { ITA_ra_air_accidents_factor = -0.1 }
@@ -5575,6 +5633,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_standardization"
 			#More expensive to edit templates, more cheap to produce aircraft
 			add_to_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = 0.25 }
 			custom_effect_tooltip = ITA_standardization_ra_tt
@@ -5632,6 +5691,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_specialization"
 			#More expensive to edit templates, more cheap to produce aircraft
 			add_to_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = -0.5 }
 			custom_effect_tooltip = ITA_specialization_ra_tt
@@ -5690,6 +5750,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_long_range_aircraft"
 			add_to_variable = { ITA_ra_strategic_bomb_visibility = -0.05 }
 			add_to_variable = { ITA_ra_air_strategic_bomber_bombing_factor = 0.05 }
 			add_to_variable = { ITA_ra_air_range_factor = 0.05 }
@@ -5736,6 +5797,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_bomber_designs"
 			air_experience = 25
 
 			random_core_state = {
@@ -5779,6 +5841,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_fighter_designs"
 			air_experience = 25
 
 			random_core_state = {
@@ -5822,6 +5885,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_multirole_aircraft"
 			add_to_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = -0.25 }
 			custom_effect_tooltip = ITA_multirole_aircraft_military_industry_tt
 
@@ -5869,6 +5933,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_supremacy_in_the_skies"
 			add_to_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.05 }
 			add_to_variable = { ITA_ra_air_superiority_efficiency = 0.05 }
 			add_to_variable = { ITA_ra_air_intercept_efficiency = 0.05 }
@@ -5926,6 +5991,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_naval_power_projection"
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -6029,6 +6095,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_intensify_torpedo_manufacturing"
 			add_to_variable = { ITA_rm_convoy_raiding_efficiency_factor = 0.05 }
 			add_to_variable = { ITA_rm_naval_strike_attack_factor = 0.05 }
 			add_to_variable = { ITA_rm_navy_submarine_attack_factor = 0.05 }
@@ -6066,6 +6133,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_expand_naval_facilities"
 			if = {
 				limit = {
 					162 = {
@@ -6206,6 +6274,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_oto_naval_guns"
 			add_to_variable = { ITA_rm_navy_capital_ship_attack_factor = 0.05 }
 			custom_effect_tooltip = ITA_oto_naval_guns_rm_tt
 
@@ -6284,6 +6353,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_improve_overseas_naval_bases"
 			if = {
 				limit = {
 					has_full_control_of_state = 448
@@ -6482,6 +6552,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_milizia_marittima_di_artiglieria"
 			add_tech_bonus = {
 				name = ITA_milizia_marittima_di_artiglieria
 				bonus = 1.0
@@ -6526,6 +6597,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_supermarina"
 			add_to_variable = { ITA_rm_naval_doctrine_cost_factor = -0.1 }
 			add_to_variable = { ITA_rm_naval_morale_factor = 0.1 }
 			add_to_variable = { ITA_rm_strike_force_movement_org_loss = -0.05 }
@@ -6560,6 +6632,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_stockpile_fuel"
 			add_timed_idea = { idea = ITA_stockpiling_fuel days = 730 }
 
 			if = {
@@ -6700,6 +6773,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_forza_navale_especiale"
 			add_to_variable = { ITA_rm_special_forces_cap = 0.02 }
 			add_to_variable = { ITA_rm_amphibious_invasion = 0.05 }
 			add_to_variable = { ITA_rm_naval_invasion_capacity = 10 }
@@ -6879,6 +6953,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_naval_air_coordination"
 			add_to_variable = { ITA_rm_naval_coordination = 0.05 }
 			add_to_variable = { ITA_rm_spotting_chance = 0.1 }
 			add_to_variable = { ITA_rm_naval_strike_agility_factor = 0.05 }
@@ -6933,6 +7008,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_decima_flottiglia_mas"
 			add_to_variable = { ITA_rm_convoy_raiding_efficiency_factor = 0.02 }
 			add_to_variable = { ITA_rm_naval_critical_score_chance_factor = 0.02 }
 			add_to_variable = { ITA_rm_sub_retreat_speed = 0.05 }
@@ -6962,6 +7038,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_incrociatori_leggeri"
 			add_to_variable = { ITA_rm_screening_efficiency = 0.05 }
 			custom_effect_tooltip = ITA_incrociatori_leggeri_rm_tt
 			hidden_effect = {
@@ -7006,6 +7083,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_incrociatori_pesanti"
 			add_to_variable = { ITA_rm_strike_force_movement_org_loss = -0.05 }
 			custom_effect_tooltip = ITA_incrociatori_pesanti_rm_tt
 			hidden_effect = {
@@ -7051,6 +7129,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_expand_naval_intelligence"
 			add_to_variable = { ITA_rm_decryption_factor = 0.05 }
 			add_to_variable = { ITA_rm_navy_intel_factor = 0.1 }
 			custom_effect_tooltip = ITA_expand_naval_intelligence_rm_tt
@@ -7074,6 +7153,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_cooperation_programs"
 			navy_experience = 25
 			custom_effect_tooltip = ITA_cooperation_programs_decisions_tt
 			if = { #Historical agreement with Sweden
@@ -7110,6 +7190,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_cruiser_submarines"
 			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				name = ITA_cruiser_submarines
@@ -7223,6 +7304,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_midget_submarines"
 			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				name = ITA_midget_submarines
@@ -7355,6 +7437,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_cacciatorpediniere_di_scorta"
 			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				name = ITA_cacciatorpediniere_di_scorta
@@ -7501,6 +7584,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_ispettorato_dei_mezzi_antisommergibili"
 			add_to_variable = { ITA_rm_naval_detection = 0.1 }
 			custom_effect_tooltip = ITA_ispettorato_dei_mezzi_antisommergibili_rm_tt
 
@@ -7653,6 +7737,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_navi_da_battaglia"
 			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				name = ITA_navi_da_battaglia
@@ -7768,6 +7853,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_proper_carriers"
 			navy_experience = 15
 			add_tech_bonus = {
 				name = ITA_proper_carriers
@@ -7906,6 +7992,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_refit_civilian_ships"
 			custom_effect_tooltip = ITA_refit_civilian_ships_rm_tt
 			hidden_effect = {
 				add_ideas = ITA_hidden_deck_conversion_production_ns
@@ -8042,6 +8129,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_flotta_d_evasione"
 			custom_effect_tooltip = ITA_flotta_d_evasione_admiral_traits_tt
 			#Stupid tooltips oh my god I hate this game
 			hidden_effect = {
@@ -8626,6 +8714,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_abyssinian_fiasco"
 			add_popularity = {
 				ideology = fascism 
 				popularity = -0.15
@@ -8677,6 +8766,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_solid_progress"
 			add_popularity = {
 				ideology = fascism 
 				popularity = 0.05
@@ -8705,6 +8795,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_struggle_in_ethiopia"
 			add_popularity = {
 				ideology = fascism 
 				popularity = -0.05
@@ -8741,6 +8832,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_undermine_the_duce"
 			add_war_support = -0.05
 			add_political_power = 50
 
@@ -8817,6 +8909,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_servizio_informazione_militare"
 			if = {
 				limit = {
 					has_dlc = "By Blood Alone"
@@ -8858,6 +8951,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_conspiracies_in_the_shadows"
 			add_political_power = 25
 			add_popularity = {
 				ideology = fascism
@@ -8902,6 +8996,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_triumph_in_africa_bba"
 			add_war_support = 0.05
 			add_stability = 0.05
 			add_political_power = 50
@@ -9017,6 +9112,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_convene_the_grand_council"
 			add_stability = -0.05
 			add_political_power = 25
 
@@ -9045,6 +9141,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_devaluate_the_lire"
 			add_stability = 0.02
 			add_timed_idea = { idea = ITA_devaluated_lira days = 365 }
 		}
@@ -9086,6 +9183,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_anglo_italian_agreements"
 			#Suez Canal access
 			if = {
 				limit = {
@@ -9132,7 +9230,8 @@ focus_tree = {
 
 		search_filters = {}
 
-		completion_reward = {#Changing stuff here will require changing stuff in History file for 1939 bookmark
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_topple_amhara_rulers"#Changing stuff here will require changing stuff in History file for 1939 bookmark
 			effect_tooltip = {
 				if = {
 					limit = {
@@ -9278,6 +9377,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_new_emperor_of_ethiopia"
 			# The king is an idea
 			if = {
 				limit = {
@@ -9364,6 +9464,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_culto_del_duce"
 			add_country_leader_trait = lion_tamer
 
 			ITA_bop_very_low_increase_effect = yes
@@ -9399,6 +9500,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_man_of_providence"
 			add_political_power = 25
 			if = {
 				limit = {
@@ -9435,6 +9537,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_legge_bottai"
 			add_political_power = 50
 			add_popularity = {
 				ideology = fascism
@@ -9466,6 +9569,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_ITA_MISSIOLINI}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_boost_the_grand_council_of_fascism"
 			add_political_power = 50
 			add_stability = 0.05
 
@@ -9498,6 +9602,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_ITA_MISSIOLINI}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_to_live_as_a_lion"
 			add_political_power = 50
 
 			swap_ruler_traits = {
@@ -9528,6 +9633,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_la_battaglia_del_grano"
 			add_timed_idea = { idea = ITA_battaglia_del_grano days = 730 }
 		}
 	}
@@ -9547,6 +9653,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_la_battaglia_per_la_terra"
 			if = { #Latium
 				limit = {
 					2 = {
@@ -9610,6 +9717,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_la_battaglia_per_le_nascite"
 			add_timed_idea = { idea = ITA_battaglia_per_la_nascite days = 730 }
 			add_political_power = 25
 		}
@@ -9634,6 +9742,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_strengthen_the_regime"
 			add_political_power = 50
 			add_stability = 0.05
 			add_war_support = 0.05
@@ -9680,6 +9789,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_devotion"
 			add_political_power = 50
 
 			swap_ruler_traits = {
@@ -9719,7 +9829,8 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER}
 
-		completion_reward = { #Propaganda System? NOPE :D
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_ministero_della_cultura_popolare #Alt name would be Ministry of Popular Culture (1937-1943)" #Propaganda System? NOPE :D
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.05
@@ -9747,6 +9858,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_believe_obey_fight"
 			add_to_variable = { ITA_re_conscription_factor = 0.1 }
 			custom_effect_tooltip = ITA_believe_obey_fight_re_tt
 
@@ -9811,7 +9923,8 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
-		completion_reward = { 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_banda_carita" 
 			IF = {
 				limit = { has_dlc = "La Resistance" }
 				swap_ideas = {
@@ -9867,6 +9980,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_banda_koch"
 			swap_ideas = {
 				remove_idea = ITA_servizio_informazione_militare_banda_carita
 				add_idea = ITA_servizio_informazione_militare_banda_koch
@@ -9906,6 +10020,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_security_militias"
 			add_ideas = ITA_camicie_nere
 			hidden_effect = {
 				set_technology = {
@@ -9953,6 +10068,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_battaglioni_d_assalto"
 			custom_effect_tooltip = ITA_battaglioni_d_assalto_tt
 			hidden_effect = {
 				set_technology = { blackshirt_assault_battalion_tech = 1 popup = no }
@@ -9981,6 +10097,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_strengthen_the_blackshirts"
 			swap_ideas = {
 				remove_idea = ITA_camicie_nere
 				add_idea = ITA_camicie_nere_strengthened
@@ -10033,6 +10150,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_milizia_coloniale"
 			if = {
 				limit = {
 					has_idea = ITA_camicie_nere_strengthened
@@ -10095,6 +10213,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_towards_a_greater_italy"
 			#TODO_Manu: Need to do something here because it is super redundant with everything else
 
 			custom_effect_tooltip = form_greater_italy_tt
@@ -10317,6 +10436,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_heroes_of_the_nation"
 			add_to_variable = { ITA_re_promote_cost_factor = -0.2 }
 			add_to_variable = { ITA_re_command_power_gain_mult = 0.15 }
 			custom_effect_tooltip = ITA_heroes_of_the_nation_re_tt
@@ -10447,6 +10567,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_capo_supremo"
 			add_war_support = 0.05
 			add_stability = -0.05
 			add_political_power = 75
@@ -10539,6 +10660,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_bend_the_bars"
 			#CLAIM IN CORSICA
 			if = {
 				limit = {
@@ -10730,6 +10852,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_subdue_the_sentinels"
 			#CLAIMS IN GIBRALTAR AND SUEZ CANAL
 			if = {
 				limit = {
@@ -10813,6 +10936,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_a_colonial_empire"
 			add_to_variable = { ITA_re_non_core_manpower = 0.15 }
 			custom_effect_tooltip = ITA_a_colonial_empire_re_tt
 
@@ -10880,6 +11004,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_by_blood_alone"
 			# REGIO ESERCITO
 			add_to_variable = { ITA_re_army_morale_factor = 0.05 }
 			add_to_variable = { ITA_re_conscription_factor = 0.05 }
@@ -10920,6 +11045,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_masters_of_the_aegean"
 			custom_effect_tooltip = ITA_masters_of_the_aegean_claims_tt
 			every_state = {
 				limit = {
@@ -10950,6 +11076,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_masters_of_the_mediterranean"
 			custom_effect_tooltip = ITA_masters_of_the_mediterranean_claims_tt
 			every_state = {
 				limit = {
@@ -11013,6 +11140,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_depose_mussolini"
 			add_political_power = 50
 
 			if = {
@@ -11050,6 +11178,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_italo_balbo_focus"
 			set_power_balance = {
 				id = ITA_power_balance
 				right_side = ITA_balbo_side 
@@ -11108,6 +11237,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_dino_grandi_focus"
 			hidden_effect = {
 				if = {
 					limit = {
@@ -11178,6 +11308,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_stop_the_squandering"
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 } 
 			custom_effect_tooltip = ITA_stop_the_squandering_ricostruzione_industriale_tt
 			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
@@ -11222,6 +11353,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_consolidate_power"
 			add_popularity = {
 				ideology = fascism 
 				popularity = 0.05
@@ -11271,6 +11403,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_purge_the_party"
 			ROOT = { 
 				country_event = { id = BBA_italy_purge_the_party.1 hours = 8 random_hours = 6 } 
 			} 
@@ -11292,6 +11425,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_fate_of_mussolini"
 			ROOT = { 
 				country_event = { id = BBA_italy_decide_the_fate_of_mussolini.1 hours = 6 random_hours = 2 } 
 			}
@@ -11315,6 +11449,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_divino_duce"
 			add_political_power = 100
 			add_popularity = {
 				ideology = fascism 
@@ -11360,6 +11495,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_blackshirt_loyalty"
 			swap_ideas = {
 				remove_idea = ITA_divino_duce_1
 				add_idea = ITA_divino_duce_2
@@ -11384,6 +11520,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_a_greater_purpose"
 			add_political_power = 100
 			add_popularity = {
 				ideology = fascism 
@@ -11430,6 +11567,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_spreading_the_eagles_wings"
 			hidden_effect = {
 				every_other_country = {
 					limit = {
@@ -11480,6 +11618,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_italian_hegemony"
 			swap_ideas = {
 				remove_idea = ITA_italian_hegemony_master_2
 				add_idea = ITA_italian_hegemony_master_3
@@ -11531,6 +11670,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_INDUSTRY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_reorganize_regio_esercito"
 		#	custom_effect_tooltip = "Longer training?"
 			army_experience = 25
 			add_timed_idea = { 
@@ -11562,6 +11702,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_INDUSTRY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_reinforce_regia_aeronautica"
 			air_experience = 25
 			add_timed_idea = { 
 				idea = ITA_prioritizing_the_military 
@@ -11590,6 +11731,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_compagnie_auto_avio_sahariane"
 			add_to_variable = { ITA_ra_ground_attack_factor = 0.05 }
 			add_to_variable = { ITA_ra_air_interception = 0.05 }
 			custom_effect_tooltip = ITA_compagnie_auto_avio_sahariane_ra_tt
@@ -11613,6 +11755,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_combined_land_and_air_warfare"
 			custom_effect_tooltip = "Longer training?"
 			add_country_leader_trait = military_modernizer
 			add_to_variable = {  ITA_ra_air_mission_efficiency = 0.05 }
@@ -11652,6 +11795,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_fourth_shore"
 			if = {
 				limit = {
 					448 = { #TRIPOLI
@@ -11751,6 +11895,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_oil_in_tripoli"
 			if = {
 				limit = {
 					448 = { 
@@ -11818,6 +11963,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_steel_in_tripoli"
 			if = {
 				limit = {
 					448 = { 
@@ -11880,6 +12026,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_novus_ordo"
 			add_to_variable = { ITA_iri_consumer_goods_factor = -0.025 }
 			custom_effect_tooltip = ITA_novus_ordo_ricostruzione_industriale_tt
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
@@ -12170,6 +12317,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_seek_british_military_cooperation"
 			ENG = { 
 				country_event = { id = BBA_italy_research_agreement.1 hours = 6 random_hours = 2 } 
 			}
@@ -12207,6 +12355,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_anglo_italian_pact"
 			ENG = { 
 				country_event = { id = BBA_italy_pact.1 hours = 12 random_hours = 6 } 
 			}
@@ -12243,6 +12392,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_invite_france_to_military_partnership"
 			FRA = { 
 				country_event = { id = BBA_italy_research_agreement.1 hours = 6 random_hours = 2 } 
 			}
@@ -12280,6 +12430,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_franco_italian_pact"
 			FRA = { 
 				country_event = { id = BBA_italy_pact.1 hours = 12 random_hours = 6 } 
 			}
@@ -12353,6 +12504,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_proclaim_the_italian_empire"
 
 			every_other_country = {
 				limit = { is_major = yes }
@@ -12423,6 +12575,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_reorganize_the_party"
 			add_country_leader_trait = political_reformer_1
 			add_political_power = 100
 			ITA_bop_very_low_increase_grandi_side_effect = yes
@@ -12445,6 +12598,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_meritocracy"
 			if = {
 				limit = {
 					has_dlc = "La Resistance"					
@@ -12501,6 +12655,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_economic_reforms"
 			add_to_variable = { ITA_iri_consumer_goods_factor = -0.025 }
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
 			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.05 }
@@ -12522,6 +12677,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_improve_the_industries"
 			add_to_variable = {  ITA_iri_conversion_cost_civ_to_mil_factor = -0.1 }
 			custom_effect_tooltip = ITA_improve_the_industries_ricostruzione_industriale_tt
 			add_to_variable = {  ITA_military_industry_dm_production_factory_start_efficiency_factor = 0.05 }
@@ -12546,6 +12702,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_expanded_corporatism"
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
 			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.05 }
 			custom_effect_tooltip = ITA_expanded_corporatism_ricostruzione_industriale_tt
@@ -12681,6 +12838,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_monarchia_d_italia"
 			every_owned_state = { #Compensating for ideology swap auto-eating half compliance
 				limit = {
 					has_resistance = yes
@@ -12731,6 +12889,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_extraction_industry"
 			#IRI
 			add_to_variable = { ITA_iri_local_resources_factor = 0.1 }
 			custom_effect_tooltip = ITA_extraction_industry_iri_tt
@@ -12807,6 +12966,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_new_corporations"
 			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = -0.35 }
 			add_to_variable = { ITA_iri_conversion_cost_civ_to_mil_factor = 0.15 }
 			custom_effect_tooltip = ITA_new_corporations_iri_tt
@@ -12893,6 +13053,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_prepare_for_the_coming_wars"
 			random_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -12991,6 +13152,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_mobilize_the_railway_guns"
 			custom_effect_tooltip = ITA_mobilize_the_railway_guns_military_industry_dm_tt
 			hidden_effect = {
 				add_ideas = ITA_hidden_railway_gun_production_ns
@@ -13021,6 +13183,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_bring_back_old_glories"
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -13355,6 +13518,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_new_forms_of_weaponry"
 			add_timed_idea = {
 				idea = ITA_nuclear_research
 				days = 1095
@@ -13384,6 +13548,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_revoke_the_acerbo_law"
 			every_owned_state = { #Compensating for ideology swap auto-eating half compliance
 				limit = {
 					has_resistance = yes
@@ -13419,6 +13584,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_christian_democracy"
 			every_owned_state = { #Compensating for ideology swap auto-eating half compliance
 				limit = {
 					has_resistance = yes
@@ -13479,6 +13645,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_ARMY_XP FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_democratic_king"
 			every_owned_state = { #Compensating for ideology swap auto-eating half compliance
 				limit = {
 					has_resistance = yes
@@ -13535,6 +13702,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_cooperate_with_moderates"
 			add_political_power = 50
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ITA_guido_de_ruggiero
@@ -13564,6 +13732,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_expand_intelligence_services"
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -13598,6 +13767,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_crush_opposition"
 			if = {
 				limit = {
 					NOT = { has_completed_focus = ITA_gloria_al_regno_d_italia }
@@ -13670,6 +13840,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_power_to_the_king"
 			add_political_power = 75
 			add_ideas = ITA_political_reforms_monarchist
 			add_popularity = {
@@ -13702,6 +13873,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_disband_the_blackshirts"
 			add_popularity = {
 				ideology = fascism
 				popularity = -0.5
@@ -13748,6 +13920,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_utilize_the_blackshirts"
 			add_stability = -0.05
 			add_popularity = {
 				ideology = fascism
@@ -13785,6 +13958,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_expand_the_royal_guard"
 			custom_effect_tooltip = ITA_expand_the_royal_guard_re_tt
 			add_to_variable = { ITA_re_modifier_army_sub_unit_cavalry_defence_factor = 0.05 }
 
@@ -13848,6 +14022,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_gloria_al_regno_d_italia"
 			add_political_power = 50
 			if = {
 				limit = {
@@ -13943,6 +14118,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_paramilitary_training"
 			custom_effect_tooltip = ITA_paramilitary_training_re_tt
 			add_to_variable = { ITA_re_modifier_army_sub_unit_militia_defence_factor = 0.05 }
 			add_to_variable = { ITA_re_modifier_army_sub_unit_militia_attack_factor = 0.05 }
@@ -13973,6 +14149,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_seek_papal_support"
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
@@ -14027,6 +14204,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_agents_of_the_church"
 		if = {
 			limit = {
 				has_dlc = "La Resistance"
@@ -14064,6 +14242,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_strengthen_the_papacy"
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -14101,6 +14280,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_setting_course"
 			add_war_support = 0.05
 			army_experience = 25
 			air_experience = 25
@@ -14154,6 +14334,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_mare_nostrum_bba"
 			if = {
 				limit = {
 					NOT = { has_rule = can_create_factions }
@@ -14259,6 +14440,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_auxiliaries"
 			custom_effect_tooltip = ITA_ITA_auxiliaries_re_tt
 			add_to_variable = { ITA_re_modifier_army_sub_unit_militia_speed_factor = 0.05 }
 			add_to_variable = { ITA_re_modifier_army_sub_unit_militia_attack_factor = 0.03 }
@@ -14286,6 +14468,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_italian_legions"
 			custom_effect_tooltip = ITA_the_italian_legions_re_tt
 			add_to_variable = { ITA_re_army_core_defence_factor = 0.05 }
 			add_to_variable = { ITA_re_army_speed_factor = 0.05 }
@@ -14308,6 +14491,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_new_roman_citizens"
 			every_controlled_state = {
 				limit = {
 					resistance > 0
@@ -14335,6 +14519,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_all_roads_lead_to_rome"
 			custom_effect_tooltip = ITA_all_roads_lead_to_rome_iri_tt
 			add_to_variable = { ITA_iri_production_speed_infrastructure_factor = 0.1 }
 
@@ -14404,6 +14589,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_king_of_the_skies"
 			random_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -14462,6 +14648,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_modern_musculus"
 			random_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -14543,6 +14730,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_caligulas_pride"
 			random_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -14705,7 +14893,8 @@ focus_tree = {
 
 		search_filters = {}
 
-		completion_reward = { 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_iberian_protection" 
 			every_country = {
 				limit = {
 					OR = {
@@ -14758,6 +14947,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_south_american_alliances"
 			every_country = {
 				limit = {
 					exists = yes
@@ -14819,6 +15009,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_papacy_reborn"
 			if = {
 				limit = {
 					has_rule = can_create_factions
@@ -14887,6 +15078,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_deus_vult"
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -14920,6 +15112,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_il_vento_aureo"
 			air_experience = 15
 
 			add_ideas = ITA_vento_aureo
@@ -14948,6 +15141,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_catholic_action"
 			set_variable = { ITA_re_army_morale_factor = 0.05 }
 			set_variable = { ITA_re_conscription_factor = 0.1 }
 			custom_effect_tooltip = ITA_catholic_action_re_tt
@@ -14969,6 +15163,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_a_time_for_war"
 			custom_effect_tooltip = ITA_a_time_for_war_tt
 			if = {
 				limit = {
@@ -15075,6 +15270,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_holy_lands"
 			if = {
 				limit = {
 					NOT = { owns_state = 454 }
@@ -15176,6 +15372,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_catholic_dominion"
 			unlock_decision_tooltip = form_roman_empire
 			if = {
 				limit = {
@@ -15271,6 +15468,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_foreign_affairs"
 			add_political_power = 50
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ITA_gian_galeazzo_ciano
@@ -15300,6 +15498,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_balkan_ambition"
 			add_state_claim = 102 #NORTH SLOVENIA
 			add_state_claim = 853 #LJUBLJANA
 			add_state_claim = 103 #DALMATIA
@@ -15353,7 +15552,8 @@ focus_tree = {
 
 		search_filters = {}
 
-		completion_reward = { #Changing stuff here will require changing stuff in History file for 1939 bookmark
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_potential_allies_in_the_balkans" #Changing stuff here will require changing stuff in History file for 1939 bookmark
 			HUN = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
@@ -15464,6 +15664,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_albanian_occupation"
 			if = {
 				limit = {
 					ALB = { has_war = no }
@@ -15530,6 +15731,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_albanian_oil"
 			44 = {
 				add_building_construction = {
 					type = infrastructure
@@ -15567,6 +15769,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_support_albanian_irredentism"
 			add_state_claim = 802 #KOSOVO
 			add_state_claim = 106 #MACEDONIA
 			add_state_claim = 185 #EPIRUS
@@ -15667,6 +15870,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_albanian_fascist_militia"
 			if = {
 				limit = {
 					NOT = { has_completed_focus = ITA_regional_development }
@@ -15723,6 +15927,7 @@ focus_tree = {
 		search_filters = {} 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_guarantee_austrian_independence"
 			give_guarantee = AUS
 			custom_effect_tooltip = ITA_austrian_guarantees_tt
 		}
@@ -15788,6 +15993,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_negotiate_italian_claims"
 			if = { #Send this event if ETH is hosted by ENG and ITA is at war with ETH
 				limit = { #UK or an ally is hosting exiled Ethiopia
 					ITA_hosting_exiled_ethiopia = yes
@@ -15922,6 +16128,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_ratify_the_stresa_front"
 			FRA = {
 				country_event = {
 					id = BBA_italy_interaction_events.40
@@ -15971,6 +16178,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_joint_military_programs"
 			if = {
 				limit = {
 					is_in_faction_with = ENG
@@ -16041,6 +16249,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_italys_destiny"
 			every_other_country = {
 				limit = {
 					BUL_is_balkan_nation = yes
@@ -16083,6 +16292,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_eastern_threat"
 			custom_effect_tooltip = ITA_the_eastern_threat_claims_tt
 			every_state = {
 				limit = {
@@ -16135,6 +16345,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_pact_of_steel"
 			GER = {
 				add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion }
 			}
@@ -16168,6 +16379,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_german_military_cooperation"
 			add_ideas = ITA_german_millitary_cooperation_focus
 		}
 	}
@@ -16188,6 +16400,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_sea_wolves_bba"
 			navy_experience = 25
 			add_tech_bonus = {
 				name = ITA_sea_wolves_bba
@@ -16220,6 +16433,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_secret_weapons"
 			add_tech_bonus = {
 				name = ITA_secret_weapons
 				bonus = 1.0
@@ -16247,6 +16461,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_treaty_with_germany"
 			GER = {
 				country_event = { id = italy.5 days = 1 }
 				custom_effect_tooltip = needs_approval
@@ -16304,6 +16519,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_request_control_of_french_territories"
 			if = {
 				limit = { 
 					any_other_country = {
@@ -16363,6 +16579,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_italy_first"
 			add_political_power = 75
 			if = {
 				limit = {
@@ -16435,6 +16652,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_befriend_japan"
 			add_relation_modifier = {
 				target = JAP
 				modifier = ITA_military_agreements
@@ -16466,6 +16684,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_italian_irredentism"
 			add_political_power = 50
 			add_war_support = 0.03
 			add_popularity = {
@@ -16571,6 +16790,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_war_with_france"
 			custom_effect_tooltip = ITA_war_with_france_claims_tt
 			every_state = {
 				limit = {
@@ -16639,7 +16859,8 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
-		completion_reward = { 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_demand_ticino" 
 
 			SWI = {
 				country_event = {
@@ -16673,6 +16894,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_war_with_the_uk"
 			custom_effect_tooltip = ITA_war_with_the_uk_claims_tt
 			every_state = {
 				limit = {
@@ -16741,6 +16963,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_war_with_greece"
 			GRE = {
 				every_owned_state = {
 					limit = {
@@ -16783,6 +17006,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_befriend_greece"
 			GRE = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
@@ -16833,6 +17057,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_claims_on_turkey_bba"
 			add_state_claim = 342
 
 			if = {
@@ -16874,6 +17099,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_befriend_turkey"
 			TUR = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
@@ -16987,7 +17213,8 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_AIR_XP}
 
-		completion_reward = { #Changing stuff here will require changing stuff in History file for 1939 bookmark
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_corpo_di_truppe_volontarie" #Changing stuff here will require changing stuff in History file for 1939 bookmark
 			if = {
 				limit = {
 					NOT = { has_dlc = "La Resistance" }
@@ -17112,6 +17339,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_spanish_italian_alliance"
 			random_other_country = {
 				limit = {
 					original_tag = SPR
@@ -17180,6 +17408,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_demand_balearic_islands_bba"
 			random_other_country = {
 				limit = {
 					owns_state = 177
@@ -17209,6 +17438,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_befriend_portugal"
 			POR = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
@@ -17263,6 +17493,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_italian_liberation_war"
 			effect_tooltip = {
 				set_country_flag = ITA_rds_cw_flag
 				#Leader back
@@ -17390,6 +17621,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_fronte_militare_clandestino"
 			if = {
 				limit = {
 					NOT = { has_template = "Divisione di Fanteria" }
@@ -17515,6 +17747,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_corpo_volontari_della_liberta"
 			#Add 2 Militia divs in up to 5 fully controlled states
 			custom_effect_tooltip = ITA_corpo_volontari_della_liberta_spawn_divs_tt
 			hidden_effect = {
@@ -17580,6 +17813,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_carabinieri"
 			show_unit_leaders_tooltip = ITA_ugo_luca
 			show_unit_leaders_tooltip = ITA_giuseppe_pieche
 
@@ -17669,6 +17903,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_gappisti"
 			add_war_support = 0.05
 			add_popularity = {
 				ideology = communism
@@ -17719,6 +17954,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_partisan_republics"
 			add_war_support = 0.05
 
 			add_to_variable = { 2.ITA_fronte_militare_clandestino_compliance_growth_on_our_occupied_states = -0.1 }
@@ -17777,6 +18013,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_kings_finest"
 			add_stability = 0.05
 			add_popularity = {
 				ideology = neutrality
@@ -17895,6 +18132,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_grande_rivolta_rurale"
 			add_timed_idea = {
 				idea = ITA_grande_rivolta_rurale_ns
 				days = 365
@@ -17929,6 +18167,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_liberation_or_death"
 			add_timed_idea = {
 				idea = ITA_liberation_or_death_ns
 				days = 365
@@ -17951,6 +18190,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_independence_rds"
 			if = {
 				limit = {
 					is_subject = yes
@@ -18014,6 +18254,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_italian_social_republic"
 			effect_tooltip = { 
 				set_country_flag = ITA_rsi_cw_flag
 				#Leader back
@@ -18116,6 +18357,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_guardia_nazionale_repubblicana"
 			custom_effect_tooltip = ITA_blackshirts_div_cap_8_tt
 			hidden_effect = {
 				add_to_variable = { ITA_militias_cap = 8 }
@@ -18191,6 +18433,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_integrate_polizia_dell_africa_italiana"
 			hidden_effect = {
 				### COLONIAL CAVALRY & CAMELRY TEMPLATES
 				if = {
@@ -18643,6 +18886,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_anti_partisan_measures"
 			add_stability = 0.05
 
 			add_timed_idea = {
@@ -18680,6 +18924,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_all_within_the_state"
 			add_war_support = 0.05
 			add_timed_idea = {
 				idea = ITA_all_within_the_state_ns
@@ -18707,6 +18952,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_battaglioni_m"
 			add_to_variable = { ITA_re_modifier_army_sub_unit_militia_defence_factor = 0.05 }
 			add_to_variable = { ITA_re_modifier_army_sub_unit_militia_max_org_factor = 0.05 }
 			add_to_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = 0.05 }
@@ -18749,6 +18995,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_reinforce_the_gustav_line"
 			every_core_state = {
 				limit = {
 					is_island_state = no
@@ -18818,6 +19065,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_social_republic_prevails"
 			add_to_variable = { ITA_re_conscription_factor = 0.1 }
 			add_to_variable = { ITA_re_army_core_defence_factor = 0.05 }
 			custom_effect_tooltip = ITA_the_social_republic_prevails_re_tt
@@ -18842,6 +19090,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_independence_rsi"
 			if = {
 				limit = {
 					is_subject = yes
@@ -18936,6 +19185,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_unite_the_opposition"
 			add_stability = -0.1
 			add_popularity = {
 				ideology = fascism 
@@ -18985,6 +19235,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_liberate_gramsci"
 			add_popularity = {
 				ideology = communism 
 				popularity = 0.1
@@ -19035,6 +19286,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_organize_strikes_in_the_north"
 			custom_effect_tooltip = ITA_organize_strikes_in_the_north_tt
 		}
 	}
@@ -19065,6 +19317,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_southern_farmlands"
 			custom_effect_tooltip = ITA_the_southern_farmlands_tt
 		}
 	}
@@ -19100,6 +19353,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_defy_the_duce"
 			country_event = BBA_italy_civil_war.300
 
 			#Unlock Political Advisors if coming from Solid Progress
@@ -19139,6 +19393,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_appeal_to_the_bourgeoisie"
 			add_war_support = 0.1
 			add_equipment_to_stockpile = { 
 				type = motorized_equipment
@@ -19171,6 +19426,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_seize_old_equipment"
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
@@ -19245,6 +19501,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_italian_republic"
 			add_stability = 0.1
 			add_political_power = 50
 			effect_tooltip = {
@@ -19311,6 +19568,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_popular_front"
 			add_political_power = 50
 			add_popularity = {
 				ideology = communism
@@ -19434,6 +19692,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_garibaldi_legion"
 			add_ideas = ITA_the_garibaldi_legion_ns
 			if = {
 				limit = {
@@ -19494,6 +19753,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_gruppi_di_difesa_della_donna"
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_popularity = {
@@ -19532,6 +19792,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_a_new_era_for_the_red_shirts"
 			add_to_variable = { ITA_re_modifier_army_sub_unit_militia_max_org_factor = 0.05 }
 			custom_effect_tooltip = ITA_a_new_era_for_the_red_shirts_re_tt
 
@@ -19560,6 +19821,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_pugno_alzato"
 			add_war_support = 0.1
 			add_popularity = {
 				ideology = communism
@@ -19606,6 +19868,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_a_leader_steps_forward"
 			country_event = BBA_italy_communist_events.01
 
 			unlock_decision_tooltip = ITA_bop_unify_the_left
@@ -19641,6 +19904,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_path_to_progress"
 			add_political_power = 50
 			custom_effect_tooltip = ITA_the_path_to_progress_event_tt
 
@@ -19692,6 +19956,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_industrial_socialization"
 			add_stability = -0.15
 
 			custom_effect_tooltip = ITA_industrial_socialization_factories_tt
@@ -19795,6 +20060,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_institute_the_five_year_plan"
 			add_stability = -0.05
 
 			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.1 }
@@ -19820,6 +20086,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_new_ricostruzione_industriale"
 			add_stability = -0.05
 
 			add_to_variable = { ITA_iri_consumer_goods_factor = -0.02 }
@@ -19849,6 +20116,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_political_commissars"
 			if = {
 				limit = {
 					has_idea = ITA_disgruntled_military
@@ -19893,6 +20161,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_common_ground"
 			add_political_power = 50
 			add_stability = 0.05
 			if = {
@@ -19969,6 +20238,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_appease_the_military"
 			#NTH_Manu: Medals to Divsion Commanders
 
 			if = {
@@ -20106,6 +20376,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_crush_the_mafia"
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -1000
@@ -20159,6 +20430,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_empower_the_carabinieri"
 			show_unit_leaders_tooltip = ITA_ugo_luca
 			show_unit_leaders_tooltip = ITA_giuseppe_pieche
 
@@ -20200,6 +20472,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_army_modernization"
 			army_experience = 25
 			air_experience = 25
 			navy_experience = 25
@@ -20231,6 +20504,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_union_in_the_party"
 			add_stability = -0.05
 			add_popularity = {
 				ideology = communism
@@ -20305,7 +20579,8 @@ focus_tree = {
 		}
 		
 		search_filters = {}
-		completion_reward = {			
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_follow_the_soviet_union"			
 			SOU = {
 				country_event = { id = generic.2 hours = 4 random_hours = 4 }
 			}
@@ -20347,6 +20622,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_military_cooperation"
 			army_experience = 25
 			air_experience = 25
 			navy_experience = 25
@@ -20394,6 +20670,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_defense_against_capitalism"
 			add_timed_idea = {
 				idea = ITA_defense_against_capitalism
 				days = 730
@@ -20449,6 +20726,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_combined_research_effort"
 			custom_effect_tooltip = BUL_soviet_bulgarian_war_industry_research_sharing_tt
 			hidden_effect = {
 				every_country = {
@@ -20478,6 +20756,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_special_brigades"
 			custom_effect_tooltip = ITA_special_brigades_tt
 			hidden_effect = {
 				set_technology = { blackshirt_assault_battalion_tech = 1 popup = no }
@@ -20507,6 +20786,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_defend_the_land"
 			create_faction = ITA_united_socialist_front
 
 			custom_effect_tooltip = ITA_defend_the_land_invite_tt
@@ -20570,6 +20850,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_united_anarchist_confederations"
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -20628,6 +20909,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_fight_against_stalinism"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = SOU
@@ -20656,6 +20938,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_raise_the_peoples"
 			add_to_variable = { ITA_re_conscription_factor = 0.05 }
 			custom_effect_tooltip = ITA_raise_the_peoples_re_tt
 
@@ -20696,6 +20979,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_il_sol_dell_avvenire"
 			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = 0.05 }
 			custom_effect_tooltip = ITA_il_sol_dell_avvenire_military_industry_dm_tt
@@ -20744,6 +21028,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_italian_socialism"
 			every_owned_state = { #Compensating for ideology swap auto-eating half compliance
 				limit = {
 					has_resistance = yes
@@ -20818,6 +21103,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_cooperate_with_the_mafia"
 			random_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -20912,6 +21198,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_mafia_abroad"
 			if = {
 				limit = {
 					country_exists = USA
@@ -20955,6 +21242,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_empower_the_unions"
 			add_to_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0.05 }
@@ -20996,6 +21284,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_production_lines"
 			add_to_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.1 }
 			custom_effect_tooltip = ITA_production_lines_military_industry_dm_tt
@@ -21063,6 +21352,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_republics_leadership"
 			country_event = BBA_italy_democratic_events.01
 
 			ITA_bop_medium_increase_democratic_side_effect = yes
@@ -21084,6 +21374,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_bring_back_exiled_intellectuals"
 			add_political_power = 70
 
 			add_tech_bonus = {
@@ -21118,6 +21409,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_social_stability"
 			add_political_power = 50
 			add_stability = 0.1
 			add_war_support = -0.05
@@ -21181,6 +21473,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_aid_for_the_spanish_republic"
 			add_ideas = ITA_aiding_the_spanish_republic
 
 			add_manpower = -10000
@@ -21272,6 +21565,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_italia_libera"
 			create_faction = ITA_free_states_of_europe
 			add_political_power = 50
 			custom_effect_tooltip = ITA_italia_libera_invite_tt
@@ -21312,6 +21606,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_european_democracies"
 			custom_effect_tooltip = ITA_european_democracies_tt
 			hidden_effect = {
 				every_other_country = {
@@ -21406,6 +21701,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_peace_preservation"
 			hidden_effect = { #GUARANTEES
 				set_variable = { ITA_num_of_countries_guaranteed = 0 }
 				set_variable = { ITA_peace_keepers_consumer_goods_factor = 0.005 }
@@ -21478,6 +21774,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_scientific_cooperation"
 			add_research_slot = 1
 
 			if = {
@@ -21545,6 +21842,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_secure_the_borders"
 			add_to_variable = { ITA_re_army_core_defence_factor = 0.05 }
 			custom_effect_tooltip = ITA_secure_the_borders_re_tt
 
@@ -21605,6 +21903,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_bring_down_fascist_strongholds"
 			custom_effect_tooltip = ITA_bring_down_fascist_strongholds_tt
 			if = {
 				limit = {
@@ -21686,6 +21985,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_reestablish_old_alliances"
 			if = { #UK first
 				limit = {
 					ENG = {
@@ -21790,6 +22090,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_military_agreements"
 			army_experience = 15
 			air_experience = 15
 			navy_experience = 15
@@ -21847,6 +22148,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_enemies_of_capitalism"
 			random_other_country = {
 				limit = {
 					original_tag = SOV
@@ -21898,6 +22200,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_ethiopian_question"
 			country_event = BBA_italy_anti_colonialism_events.01
 		}
 	}
@@ -21921,6 +22224,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_abolish_the_colonies"
 			every_owned_state = {
 				limit = {
 					has_resistance = yes
@@ -21950,6 +22254,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_cooperatives_for_intensive_exploitation"
 			custom_effect_tooltip = ITA_cooperatives_for_intensive_exploitation_tt
 
 			if = {
@@ -21987,6 +22292,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_condemn_colonialism"
 			custom_effect_tooltip = ITA_condemn_colonialism_tt
 
 			if = {
@@ -22043,6 +22349,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_new_colonial_policies"
 			set_temp_variable = { ITA_pp_from_releasing_colonies = 0 }
 
 			custom_effect_tooltip = ITA_new_colonial_policies_tt
@@ -22151,6 +22458,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_negotiations_with_albania"
 			ALB = { country_event = { id = BBA_italy_anti_colonialism_events.100 hours = 4 random_hours = 2 } }
 			
 			custom_effect_tooltip = if_they_accept_tt
@@ -22183,6 +22491,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_enlist_the_bashkimi_kombetar"
 			44 = {
 				add_dynamic_modifier = { modifier = ITA_cooperatives_for_intensive_exploitation_dm }
 			}
@@ -22221,6 +22530,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_italian_confederation"
 			create_faction = ITA_italian_confederation
 			add_ideas = ITA_italian_confederation_leader
 
@@ -22270,6 +22580,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_planned_economy"
 			swap_ideas = {
 				remove_idea = ITA_italian_confederation_leader
 				add_idea = ITA_italian_confederation_leader_improved
@@ -22317,6 +22628,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_the_fight_overseas"
 			add_to_variable = { ITA_re_supply_consumption_factor = -0.05 }
 			add_to_variable = { ITA_re_acclimatization_hot_climate_gain_factor = 0.15 }
 			add_to_variable = { ITA_re_heat_attrition_factor = -0.1 }
@@ -22404,6 +22716,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_irregulars"
 			add_to_variable = { ITA_re_irregular_org = 0.05 }
 			custom_effect_tooltip = ITA_irregulars_re_tt
 
@@ -22734,6 +23047,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_liberate_the_workers_of_africa"
 			custom_effect_tooltip = ITA_liberate_the_workers_of_africa_tt
 			if = {
 				limit = {
@@ -22808,6 +23122,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_ascari"
 			add_to_variable = { ITA_re_modifier_army_sub_unit_infantry_defence_factor = 0.03 }
 			custom_effect_tooltip = ITA_ascari_re_tt
 

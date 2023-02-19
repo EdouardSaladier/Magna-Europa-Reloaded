@@ -94,6 +94,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_rowell_sirois_commission"
 			add_political_power = 120
 		}
 	}
@@ -128,6 +129,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_crown_corporations"
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CAN_c_d_howe
 		}
@@ -185,6 +187,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_national_housing_act"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -233,6 +236,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_dollar_a_year_men"
 			add_tech_bonus = {
 				name = CAN_dollar_a_year_men
 				bonus = 1.0
@@ -273,6 +277,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_canada_pacific_railway"
 			random_owned_state = {
 				limit = {
 					free_building_slots = {
@@ -343,6 +348,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_maritime_colonial_railway"
 			
 			build_railway = { #Montreal-Halifax
 				level = 2
@@ -420,6 +426,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_retool_angus_shops"
 			random_owned_controlled_state = {
 				prioritize = { 285 517 }
 				limit = {
@@ -468,6 +475,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_imperial_oil"
 			1 = {
 				add_resource = {
 					type = oil
@@ -507,6 +515,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_defence_of_canada_regulations"
 			if = {
 				limit = { has_government = democratic }
 				add_ideas = CAN_defence_of_canada_regulations_democratic
@@ -549,6 +558,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_war_bonds"
 			add_ideas = CAN_war_bonds_1
 		}
 	}
@@ -617,6 +627,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_department_of_munitions_and_supply"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -680,6 +691,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_national_resources_mobilization_act"
 			add_ideas = CAN_national_resources_mobilization_act
 		}
 	}
@@ -712,6 +724,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_wartime_prices_and_trade_board"
 			add_ideas = CAN_wartime_prices_and_trade_board
 		}
 	}
@@ -744,6 +757,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_bits_and_pieces_program"
 			add_ideas = CAN_bits_and_pieces_program
 		}
 	}
@@ -776,6 +790,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_fund_the_national_research_council"
 			add_research_slot = 1
 		}
 	}
@@ -816,6 +831,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_mine_the_shield"
 			random_owned_controlled_state = {
 				prioritize = { 471 472 683 }
 				limit = {
@@ -881,6 +897,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_canada_wheat_board"
 			swap_ideas = {
 				remove_idea = CAN_great_depression_1
 				add_idea = CAN_great_depression_2		
@@ -954,6 +971,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_victory_aircraft_limited"
 			random_owned_controlled_state = {
 				prioritize = { 276 682 }
 				limit = {
@@ -1043,6 +1061,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_alberta_coal_towns"
 			random_owned_controlled_state = {
 				prioritize = { 470 }
 				limit = {
@@ -1091,6 +1110,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_commit_to_the_war"
 			add_ideas = CAN_commit_to_the_war
 		}
 	}
@@ -1161,6 +1181,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_john_inglis_and_company"
 			random_owned_controlled_state = {
 				prioritize = { 276 682 }
 				limit = {
@@ -1273,6 +1294,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_polymer_corporation"
 			if = {
 				limit = {
 					NOT = { has_tech = synth_oil_experiments }
@@ -1417,6 +1439,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_national_steel_car"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1481,6 +1504,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_send_in_the_zombies"
 			add_ideas = CAN_send_in_the_zombies
 		}
 	}
@@ -1518,6 +1542,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_if_day"
 			swap_ideas = {
 				remove_idea = CAN_war_bonds_1
 				add_idea = CAN_war_bonds_2
@@ -1555,6 +1580,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_defense_research_grants"
 			add_research_slot = 1
 		}
 	}
@@ -1587,6 +1613,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_uranium_mining"
 			add_tech_bonus = {
 				name = CAN_uranium_mining
 				bonus = 1.0
@@ -1624,6 +1651,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_long_branch_arsenal"
 			add_tech_bonus = {
 				name = CAN_long_branch_arsenal
 				bonus = 1.0
@@ -1663,6 +1691,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_independent_command"
 			army_experience = 20
 			add_doctrine_cost_reduction = {
 				name = CAN_independent_command
@@ -1702,6 +1731,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_forced_quebec_conscription"
 			remove_ideas = CAN_conscription_crisis
 			custom_effect_tooltip = "CAN_ANGERED_WORKERS"
 			
@@ -1738,6 +1768,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_compromise_with_quebec"
 			swap_ideas = {
 				remove_idea = CAN_conscription_crisis
 				add_idea = CAN_conscription_crisis_mended
@@ -1811,6 +1842,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_war_fueled_economy"
 			remove_ideas = CAN_great_depression_2
 			random_owned_controlled_state = {
 				limit = {
@@ -1897,6 +1929,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_army_modernization"
 			army_experience = 10 
 			add_doctrine_cost_reduction = {
 				name = CAN_army_modernization
@@ -1935,6 +1968,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_canadian_infantry_corps"
 			add_tech_bonus = {
 				name = CAN_canadian_infantry_corps
 				bonus = 1.0
@@ -1973,6 +2007,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_cmp_truck"
 			add_tech_bonus = {
 				name = CAN_cmp_truck
 				ahead_reduction = 2
@@ -2011,6 +2046,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_the_walkie_talkie"
 			add_tech_bonus = {
 				name = CAN_the_walkie_talkie
 				bonus = 1.0
@@ -2057,6 +2093,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_royal_regiment_of_canadian_artillery"
 			add_tech_bonus = {
 				name = CAN_royal_regiment_of_canadian_artillery
 				bonus = 1.0
@@ -2094,6 +2131,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_a_motorized_army"
 			add_tech_bonus = {
 				name = CAN_a_motorized_army
 				bonus = 1.0
@@ -2143,6 +2181,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_red_deer_training_camp"
 			army_experience = 15
 			add_doctrine_cost_reduction = {
 				name = CAN_red_deer_training_camp
@@ -2181,6 +2220,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_1st_canadian_parachute_battalion"
 			add_tech_bonus = {
 				name = CAN_1st_canadian_parachute_battalion
 				bonus = 3.0
@@ -2218,6 +2258,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_the_black_devils"
 			add_tech_bonus = {
 				name = CAN_the_black_devils
 				bonus = 1.00
@@ -2256,6 +2297,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_the_rocky_mountain_rangers"
 			add_tech_bonus = {
 				name = CAN_the_rocky_mountain_rangers
 				bonus = 1.00
@@ -2293,6 +2335,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_the_valentine_tank"
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank
 				bonus = 1.0
@@ -2346,6 +2389,8 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_strengthen_the_commonwealth_ties
+		mutually_exclusive = { focus = CAN_patriation }"
    			modify_tech_sharing_bonus = {
          		id = commonwealth_research
          		bonus = 0.03
@@ -2432,6 +2477,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_shadow_factories"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -2512,6 +2558,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_montreal_laboratory_collaboration"
 			CAN = {
    				 modify_tech_sharing_bonus = {
         			id = commonwealth_research
@@ -2552,6 +2599,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_the_plan"
 			add_ideas = CAN_the_plan
 		}
 	}
@@ -2588,6 +2636,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_camp_x"
 			if = {
 				limit = {
 					NOT = { has_dlc = "La Resistance" }
@@ -2638,6 +2687,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_supply_the_empire"
 			add_tech_bonus = {
 				name = CAN_supply_the_empire
 				bonus = 1.0
@@ -2680,6 +2730,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_aluminium_company_of_canada"
 			9 = {
 				add_resource = {
 					type = aluminium
@@ -2723,6 +2774,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_turner_valley_oilfield"
 			9 = {
 				add_resource = {
 					type = oil
@@ -2771,7 +2823,8 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
-		completion_reward = {			
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_patriation"			
 			add_ideas = CAN_patriation
 			ENG = {
 				add_opinion_modifier = { target = CAN modifier = CAN_patriation_mod }
@@ -2832,6 +2885,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_permanent_joint_defense_board"
 			ENG = { remove_from_faction = ROOT }
 			USA = {
 				add_opinion_modifier = {
@@ -2875,6 +2929,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_north_american_alliance"
 			set_rule = { can_create_factions = yes }
 			if = {
 				limit = {
@@ -2918,6 +2973,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_habakkuk_carrier"
 			add_tech_bonus = {
 				name = CAN_habakkuk_carrier
 				bonus = 1.0
@@ -2956,6 +3012,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_refuge_for_scientists"
 		USA = {
 			add_to_tech_sharing_group = us_research
 		}
@@ -3006,6 +3063,7 @@
 		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_swastika_clubs"
 			add_autonomy_ratio = {
 				value = 0.1
 				localization = CAN_swastika_clubs
@@ -3044,6 +3102,7 @@
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_support_the_blue_shirts"
 			swap_ideas = {
 				remove_idea = CAN_swastika_clubs
 				add_idea = CAN_swastika_clubs_2
@@ -3094,6 +3153,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_join_germany"
 			GER = { 
 				country_event = { id = tfv_canada.20 }
 			}
@@ -3128,6 +3188,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_support_a_synarchist_baja"
 			swap_ideas = {
 				add_idea = CAN_swastika_clubs_skewer
 				remove_idea = CAN_swastika_clubs_2
@@ -3165,6 +3226,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_pinion_the_eagle"
 			every_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -3234,6 +3296,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_skewer_the_eagle"
 			set_rule = { can_create_factions = yes }
 			random_country = {
 				limit = {
@@ -3277,6 +3340,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_defence_scheme_no_1"
 			set_rule = { can_create_factions = yes }
 			create_wargoal = {
 				type = annex_everything
@@ -3314,6 +3378,7 @@
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_demand_labrador_and_newfoundland"
 			ENG = {
 				country_event = { id = tfv_canada.60 }
 			}
@@ -3359,6 +3424,7 @@
 		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_burn_the_royal_portraits"
 			add_autonomy_ratio = {
 				value = 0.1
 				localization = CAN_burn_the_royal_portraits
@@ -3397,6 +3463,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_communist_labor_total_war_committee"
 			swap_ideas = {
 				remove_idea = CAN_communist_ideals
 				add_idea = CAN_communist_ideals_2
@@ -3439,6 +3506,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_defence_scheme_no_2"
 			every_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -3537,6 +3605,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_supply_the_red_army"
 			SOV = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -3591,6 +3660,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_canada_united"
 			set_rule = { can_create_factions = yes }
 			add_stability = 0.05
 			add_war_support = 0.05
@@ -3637,6 +3707,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_join_comintern"
 			if = {
 				limit = {
 					SOV = {
@@ -3685,6 +3756,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_support_the_world_revolution"
 			swap_ideas = {
 				remove_idea = CAN_communist_ideals_2
 				add_idea = CAN_communist_ideals_3
@@ -3743,6 +3815,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_rcaf_station_borden"
 			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -3795,6 +3868,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_we_have_the_hurricane"
 			add_tech_bonus = {
 				name = CAN_we_have_the_hurricane
 				bonus = 1.0
@@ -3871,6 +3945,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_the_pacific_coast_air_defence_radar_system"
 			add_tech_bonus = {
 				name = CAN_the_pacific_coast_air_defence_radar_system
 				bonus = 1.0
@@ -4047,6 +4122,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_commonwealth_air_training_plan"
 			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -4103,6 +4179,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_fund_fairchilds_development"
 			add_tech_bonus = {
 				name = CAN_fund_fairchilds_development
 				bonus = 1.0
@@ -4147,6 +4224,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_cookie_carriers"
 			add_tech_bonus = {
 				name = CAN_cookie_carriers
 				bonus = 1.0
@@ -4187,6 +4265,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_the_sabre_project"
 			add_tech_bonus = {
 				name = CAN_the_sabre_project
 				ahead_reduction = 2
@@ -4243,6 +4322,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_halifax_shipyards"
 			navy_experience = 25
 			random_owned_controlled_state = {
 				prioritize = { 464 }
@@ -4293,6 +4373,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_destroyer_effort"
 			add_tech_bonus = {
 				name = CAN_destroyer_effort
 				bonus = 1.0
@@ -4331,6 +4412,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_light_cruiser_effort"
 			add_tech_bonus = {
 				name = CAN_light_cruiser_effort
 				bonus = 1.0
@@ -4369,6 +4451,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_heavy_cruiser_effort"
 			add_tech_bonus = {
 				name = CAN_heavy_cruiser_effort
 				bonus = 1.0
@@ -4412,6 +4495,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_escort_fleet"
 			navy_experience = 25
 			add_doctrine_cost_reduction = {
 				name = CAN_escort_fleet
@@ -4451,6 +4535,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_fleet_in_being"
 			navy_experience = 25
 			add_doctrine_cost_reduction = {
 				name = CAN_fleet_in_being
@@ -4489,6 +4574,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_degauss_ship_hulls"
 			add_ideas = CAN_degauss_ship_hulls
 			if = {
 				limit = {
@@ -4542,6 +4628,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_trade_fleet"
 			add_ideas = CAN_trade_fleet			
 		}
 	}
@@ -4589,6 +4676,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_united_shipyards"
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {

@@ -59,6 +59,26 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_obtain_foreign_colonial_investments
+		allow_branch = { has_country_flag = NEVER }
+		available = {
+			NOT = { has_war_with = USA }
+			NOT = { has_war_with = ENG }
+			any_country = {
+				OR = {
+					original_tag = HOL
+					is_subject_of = HOL
+				}
+				has_full_control_of_state = 335
+				has_full_control_of_state = 672
+				has_full_control_of_state = 334
+			}
+			has_full_control_of_state = 695
+			has_full_control_of_state = 309
+		}
+		bypass = {
+		}
+		"
 			unlock_decision_category_tooltip = HOL_obtain_foreign_colonial_investments
 			custom_effect_tooltip = HOL_obtain_foreign_colonial_investments_tt
 		}
@@ -88,6 +108,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_western_possessions
+		allow_branch = { has_country_flag = NEVER }
+		available = {
+			has_full_control_of_state = 695
+			has_full_control_of_state = 309
+		}
+		prerequisite = { focus = HOL_obtain_foreign_colonial_investments }"
 			695 = {
 				add_building_construction = {
 					type = infrastructure
@@ -141,6 +168,32 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_expand_curacao_oil_refineries
+		available = {
+			has_full_control_of_state = 695
+			OR = {
+				threat > 0.2
+				has_war = yes
+			}
+			OR = {
+				GER = {
+					is_in_faction_with = ROOT
+				}
+				AND = {
+					USA = {
+						NOT = { has_war_with = ROOT }
+					}
+					ENG = {
+						NOT = { has_war_with = ROOT }
+					}
+				}
+			}
+			OR = {
+				has_idea = free_trade
+				has_idea = export_focus
+			}
+		}
+		prerequisite = { focus = HOL_the_western_possessions }"
 			custom_effect_tooltip = HOL_expand_curacao_oil_refineries_tt
 			695 = {
 				add_resource = {
@@ -214,6 +267,31 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_open_second_paranam_bauxite_mine
+		available = {
+			has_full_control_of_state = 309
+			OR = {
+				has_war = yes
+				GER = {
+					is_in_faction_with = ROOT
+				}
+				AND = {
+					USA = {
+						has_war = yes
+						NOT = { has_war_with = ROOT }
+					}
+					ENG = {
+						has_war = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+			}
+			OR = {
+				has_idea = free_trade
+				has_idea = export_focus
+			}
+		}
+		prerequisite = { focus = HOL_expand_curacao_oil_refineries }"
 			309 = {
 				add_resource = {
 					type = aluminium
@@ -255,6 +333,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_antilles_defenses
+		available = {
+			has_full_control_of_state = 695
+		}
+		prerequisite = { focus = HOL_expand_curacao_oil_refineries }"
 			695 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -311,6 +394,25 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_pre_empt_venezuelan_aggression
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = HOL_pre_empt_venezuelan_aggression_tt
+				NOT = {
+					OR = {
+						has_idea = HOL_shell_shocked_spectator_1
+						has_idea = HOL_shell_shocked_spectator_2
+						has_idea = HOL_shell_shocked_spectator_3
+						has_idea = HOL_shell_shocked_spectator_4
+						has_idea = HOL_shell_shocked_spectator_5
+					}
+				}
+			}
+			NOT = { has_idea = HOL_aloof_neutrality }
+			has_global_flag = ven_claims_abc_islands
+		}
+		prerequisite = { focus = HOL_antilles_defenses }
+		will_lead_to_war_with = VEN"
 			create_wargoal = {
 			    type = puppet_wargoal_focus
 			    target = VEN
@@ -350,6 +452,21 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_crown_jewel_colony
+		available = {
+			OR = {
+				AND = {
+					has_full_control_of_state = 335
+					has_full_control_of_state = 672
+				}
+				any_other_country = {
+					is_subject_of = HOL
+					has_full_control_of_state = 335
+					has_full_control_of_state = 672
+				}
+			}
+		}
+		prerequisite = { focus = HOL_obtain_foreign_colonial_investments }"
 			335 = {
 				add_building_construction = {
 					type = infrastructure
@@ -403,6 +520,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_java
+		available = {
+			OR = {
+				has_full_control_of_state = 335
+				any_other_country = {
+					is_subject_of = HOL
+					has_full_control_of_state = 335
+				}
+			}
+		}
+		prerequisite = { focus = HOL_the_crown_jewel_colony }"
 			335 = {
 				add_building_construction = {
 					type = infrastructure
@@ -465,6 +593,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_reinforce_java
+		available = {
+			OR = {
+				has_full_control_of_state = 335
+				any_other_country = {
+					is_subject_of = HOL
+					has_full_control_of_state = 335
+				}
+			}
+		}
+		prerequisite = { focus = HOL_java }"
 			335 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -547,6 +686,30 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_foundations_of_defense
+		available = {
+			OR = {
+				has_full_control_of_state = 335
+				any_other_country = {
+					is_subject_of = HOL
+					has_full_control_of_state = 335
+				}
+			}
+			has_full_control_of_state = 695
+			custom_trigger_tooltip = {
+				tooltip = HOL_pre_empt_venezuelan_aggression_tt
+				NOT = {
+					OR = {
+						has_idea = HOL_shell_shocked_spectator_1
+						has_idea = HOL_shell_shocked_spectator_2
+						has_idea = HOL_shell_shocked_spectator_3
+						has_idea = HOL_shell_shocked_spectator_4
+						has_idea = HOL_shell_shocked_spectator_5
+					}
+				}
+			}
+		}
+		prerequisite = { focus = HOL_antilles_defenses focus = HOL_reinforce_java }"
 			add_ideas = HOL_the_foundations_of_defense
 			335 = {
 				custom_effect_tooltip = HOL_the_foundations_of_defense_tt
@@ -591,6 +754,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_sumatra
+		available = {
+			OR = {
+				has_full_control_of_state = 672
+				any_other_country = {
+					is_subject_of = HOL
+					has_full_control_of_state = 672
+				}
+			}
+		}
+		prerequisite = { focus = HOL_java }"
 			672 = {
 				add_building_construction = {
 					type = infrastructure
@@ -661,6 +835,25 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_borneo_and_the_grote_oost
+		available = {
+			OR = {
+				AND = {
+					has_full_control_of_state = 667
+					has_full_control_of_state = 334
+					has_full_control_of_state = 668
+					has_full_control_of_state = 673
+				}
+				any_other_country = {
+					is_subject_of = HOL
+					has_full_control_of_state = 667
+					has_full_control_of_state = 334
+					has_full_control_of_state = 668
+					has_full_control_of_state = 673
+				}
+			}
+		}
+		prerequisite = { focus = HOL_java }"
 			667 = {
 				add_building_construction = {
 					type = infrastructure
@@ -754,6 +947,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_curtail_colonial_autonomy
+		available = {
+			country_exists = INS
+			NOT = { has_completed_focus = HOL_oranje_boven }
+			INS = { is_subject_of = HOL }
+		}
+		bypass = {
+			INS = { exists = no }
+			owns_state = 335
+		}
+		prerequisite = { focus = HOL_the_crown_jewel_colony }
+		mutually_exclusive = { focus = HOL_the_zuiderzee_works }"
 			add_timed_idea = {
 				idea = HOL_curtail_colonial_autonomy_overlord
 				days = 545
@@ -797,6 +1002,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_continue_the_war_in_batavia
+		prerequisite = { focus = HOL_sumatra }
+		prerequisite = { focus = HOL_borneo_and_the_grote_oost }
+		prerequisite = { focus = HOL_curtail_colonial_autonomy }
+		available = {
+			has_capitulated = yes
+			NOT = { has_completed_focus = HOL_oranje_boven }
+			OR = {
+				INS = {
+					is_subject_of = HOL
+					has_autonomy_state = autonomy_integrated_puppet
+					compare_autonomy_progress_ratio < 0.6
+					has_full_control_of_state = 335
+				}
+				has_full_control_of_state = 335
+			}
+		}"
 			activate_decision = HOL_relocate_government_to_batavia
 			custom_effect_tooltip = HOL_continue_the_war_in_batavia_tt
 			effect_tooltip = {
@@ -836,6 +1058,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_a_western_capital
+		available = {
+			has_full_control_of_state = 335
+		}
+		prerequisite = { focus = HOL_continue_the_war_in_batavia }"
 			335 = {
 				add_building_construction = {
 					type = infrastructure
@@ -875,6 +1102,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_expand_the_colonial_army
+		prerequisite = { focus = HOL_continue_the_war_in_batavia }"
 			add_ideas = HOL_expand_the_colonial_army
 			every_state = {
 				limit = {
@@ -910,6 +1139,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_colonial_shipbuilding
+		available = {
+			controls_state = 335
+			controls_state = 672
+			controls_state = 334
+			controls_state = 673
+			controls_state = 667
+			controls_state = 309
+		}
+		prerequisite = { focus = HOL_a_western_capital }
+		prerequisite = { focus = HOL_the_foundations_of_defense }"
 			335 = {
 				if = {
 					limit = {
@@ -1043,6 +1283,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_east_indies_war_machine
+		available = {
+			has_full_control_of_state = 335
+		}
+		prerequisite = { focus = HOL_a_western_capital }
+		prerequisite = { focus = HOL_expand_the_colonial_army }"
 			335 = {
 				if = {
 					limit = {
@@ -1085,6 +1331,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_prepare_for_our_return
+		available = {
+		}
+		bypass = {
+			controls_state = 358
+			controls_state = 35
+			controls_state = 336
+		}
+		prerequisite = { focus = HOL_colonial_shipbuilding }
+		prerequisite = { focus = HOL_the_east_indies_war_machine }"
 			335 = {
 				if = {
 					limit = {
@@ -1150,6 +1406,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_liberation
+		available = {
+			has_full_control_of_state = 358
+			has_full_control_of_state = 35
+			has_full_control_of_state = 336
+		}
+		prerequisite = { focus = HOL_prepare_for_our_return }"
 			set_capital = { state = 358 }
 			add_stability = 0.1
 			add_war_support = 0.05
@@ -1185,6 +1448,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_abandon_the_gold_standard"
 			HOL_de_crisisjaren_level_down = yes
 		}
 	}
@@ -1217,6 +1481,16 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_continue_the_public_works
+		available = {
+			has_full_control_of_state = 336
+		}
+		bypass = {
+			NOT = { controls_state = 336 }
+			NOT = { controls_state = 358 }
+			NOT = { controls_state = 399 }
+		}
+		prerequisite = { focus = HOL_abandon_the_gold_standard }"
 			add_tech_bonus = {
 				name = HOL_continue_the_public_works
 				bonus = 1.0
@@ -1266,6 +1540,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_finish_the_noordoostpolder
+		available = {
+			has_full_control_of_state = 336
+		}
+		bypass = {
+			NOT = { controls_state = 336 }
+			NOT = { controls_state = 358 }
+			NOT = { controls_state = 399 }
+		}
+		prerequisite = { focus = HOL_continue_the_public_works }"
 			336 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1298,6 +1582,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_maastunnel
+		available = {
+			has_full_control_of_state = 402
+			has_full_control_of_state = 2332
+		}
+		bypass = {
+			NOT = { controls_state = 402 }
+			NOT = { controls_state = 2332 }
+		}
+		prerequisite = { focus = HOL_continue_the_public_works }"
 			402 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1337,6 +1631,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_expand_the_artillerieinrichtingen
+		available = {
+			has_full_control_of_state = 402
+		}
+		bypass = {
+			NOT = { controls_state = 336 }
+			NOT = { controls_state = 358 }
+			NOT = { controls_state = 399 }
+		}
+		prerequisite = { focus = HOL_finish_the_noordoostpolder }
+		prerequisite = { focus = HOL_the_maastunnel }"
 			custom_effect_tooltip = HOL_expand_the_artillerieinrichtingen_tt
 			402 = {
 				if = {
@@ -1372,6 +1677,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_philips_focus
+		prerequisite = { focus = HOL_expand_the_artillerieinrichtingen }"
 			custom_effect_tooltip = HOL_philips_focus_tt
 			add_tech_bonus = {
 				name = HOL_philips_focus
@@ -1401,6 +1708,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_expand_RD_facilities
+		prerequisite = { focus = HOL_philips_focus }"
 			add_research_slot = 1
 		}
 	}
@@ -1428,6 +1737,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_zuiderzee_works
+		available = {
+			has_full_control_of_state = 358
+			has_full_control_of_state = 336
+		}
+		prerequisite = { focus = HOL_expand_the_artillerieinrichtingen }
+		mutually_exclusive = { focus = HOL_curtail_colonial_autonomy }"
 			add_tech_bonus = {
 				name = HOL_the_zuiderzee_works
 				bonus = 1.0
@@ -1472,6 +1788,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_develop_the_randstad
+		available = {
+			has_full_control_of_state = 358
+		}
+		prerequisite = { focus = HOL_the_zuiderzee_works }
+		mutually_exclusive = { focus = HOL_develop_the_zandstad }"
 			add_tech_bonus = {
 				name = HOL_develop_the_randstad
 				bonus = 1.0
@@ -1534,6 +1856,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_expand_the_ijmuiden_steel_mill
+		available = {
+			has_full_control_of_state = 358
+		}
+		prerequisite = { focus = HOL_develop_the_randstad }"
 			358 = {
 				add_resource = {
 					type = steel
@@ -1575,6 +1902,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_fokker
+		available = {
+			has_full_control_of_state = 358
+		}
+		prerequisite = { focus = HOL_expand_the_ijmuiden_steel_mill }"
 			custom_effect_tooltip = HOL_fokker_tt
 			358 = {
 				if = {
@@ -1610,6 +1942,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_domestic_jet_engine_designs
+		prerequisite = { focus = HOL_fokker }"
 			add_tech_bonus = {
 				name = HOL_domestic_jet_engine_designs
 				bonus = 1.0
@@ -1637,6 +1971,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_develop_the_zandstad
+		available = {
+			has_full_control_of_state = 402
+			has_full_control_of_state = 336
+		}
+		prerequisite = { focus = HOL_the_zuiderzee_works }
+		mutually_exclusive = { focus = HOL_develop_the_randstad }"
 			add_tech_bonus = {
 				name = HOL_develop_the_randstad
 				bonus = 1.0
@@ -1699,6 +2040,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_friesland_agricultural_impetus
+		available = {
+			has_full_control_of_state = 336
+		}
+		prerequisite = { focus = HOL_develop_the_zandstad }"
 			add_ideas = HOL_friesland_agricultural_impetus
 			336 = {
 				if = {
@@ -1737,6 +2083,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_daf
+		available = {
+			has_full_control_of_state = 402
+		}
+		prerequisite = { focus = HOL_friesland_agricultural_impetus }"
 			custom_effect_tooltip = HOL_daf_tt
 			402 = {
 				if = {
@@ -1772,6 +2123,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_domestic_vehicle_designs
+		prerequisite = { focus = HOL_daf }"
 			add_tech_bonus = {
 				name = HOL_domestic_vehicle_designs
 				bonus = 1.0
@@ -1799,6 +2152,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_continental_shipbuilding
+		available = {
+			has_full_control_of_state = 358
+			has_full_control_of_state = 402
+			has_full_control_of_state = 336
+		}
+		prerequisite = { focus = HOL_fokker focus = HOL_daf }"
 			358 = {
 				if = {
 					limit = {
@@ -1876,6 +2236,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_domestic_innovation
+		prerequisite = { focus = HOL_the_east_indies_war_machine focus = HOL_fokker focus = HOL_daf }
+		available = {
+			num_of_factories > 50
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes"
 			add_research_slot = 1
 		}
 	}
@@ -1892,6 +2259,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_make_use_of_our_riches
+		prerequisite = { focus = HOL_domestic_innovation }"
 			add_tech_bonus = {
 				name = HOL_make_use_of_our_riches
 				bonus = 1.0
@@ -1914,6 +2283,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_ultimate_deterrent
+		prerequisite = { focus = HOL_domestic_innovation }"
 			add_tech_bonus = {
 				name = HOL_the_ultimate_deterrent
 				bonus = 1.0
@@ -1941,6 +2312,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_overturn_military_budget_cuts
+		prerequisite = { focus = HOL_abandon_the_gold_standard }"
 			army_experience = 5
 			add_war_support = 0.1
 		}
@@ -1965,6 +2338,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_prepare_the_inundation_lines
+		prerequisite = { focus = HOL_overturn_military_budget_cuts }"
 			add_ideas = HOL_prepare_the_inundation_lines
 			unlock_decision_category_tooltip = HOL_prepare_the_inundation_lines
 			custom_effect_tooltip = HOL_prepare_the_inundation_lines_tt
@@ -2003,6 +2378,28 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_protect_against_britain
+		available = {
+			threat > 0.1
+			has_full_control_of_state = 358
+			has_full_control_of_state = 336
+		}
+		bypass = {
+			OR = {
+				is_in_faction_with = ENG
+				AND = {
+					has_defensive_war_with = ENG
+					NOT = {
+						focus_progress = {
+							focus = HOL_germany_is_the_greater_threat
+							progress > 0
+						}
+					}
+				}
+			}
+		}
+		prerequisite = { focus = HOL_prepare_the_inundation_lines }
+		mutually_exclusive = { focus = HOL_germany_is_the_greater_threat }"
 			358 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -2066,6 +2463,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_further_reinforce_the_ports
+		available = {
+			threat > 0.15
+			has_full_control_of_state = 358
+			has_full_control_of_state = 336
+		}
+		prerequisite = { focus = HOL_protect_against_britain }"
 			358 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -2127,6 +2531,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_southward_defenses
+		available = {
+			threat > 0.2
+			has_full_control_of_state = 358
+			has_full_control_of_state = 35
+			has_full_control_of_state = 336
+		}
+		prerequisite = { focus = HOL_further_reinforce_the_ports }"
 			358 = {
 				add_building_construction = {
 					type = bunker
@@ -2204,6 +2616,29 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_germany_is_the_greater_threat
+		available = {
+			threat > 0.1
+			has_full_control_of_state = 358
+			has_full_control_of_state = 1317
+			has_full_control_of_state = 336
+		}
+		bypass = {
+			OR = {
+				is_in_faction_with = GER
+				AND = {
+					has_defensive_war_with = GER
+					NOT = {
+						focus_progress = {
+							focus = HOL_protect_against_britain
+							progress > 0
+						}
+					}
+				}
+			}
+		}
+		prerequisite = { focus = HOL_prepare_the_inundation_lines }
+		mutually_exclusive = { focus = HOL_protect_against_britain }"
 			
 			2344 = {
 				set_building_level = {
@@ -2316,6 +2751,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_fortress_holland
+		available = {
+			threat > 0.15
+			has_full_control_of_state = 358
+			has_full_control_of_state = 402
+		}
+		prerequisite = { focus = HOL_germany_is_the_greater_threat }"
 			358 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -2373,6 +2815,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_modernize_the_grebbeline
+		available = {
+			threat > 0.2
+			has_full_control_of_state = 336
+		}
+		prerequisite = { focus = HOL_fortress_holland }"
 			399 = {	
 				add_building_construction = {
 					type = bunker
@@ -2417,6 +2865,11 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_war_on_pacifism
+		available = {
+			threat > 0.15
+		}
+		prerequisite = { focus = HOL_protect_against_britain focus = HOL_germany_is_the_greater_threat }"
 			unlock_decision_category_tooltip = HOL_war_on_pacifism
 			custom_effect_tooltip = HOL_war_on_pacifism_tt
 		}
@@ -2441,6 +2894,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_appoint_new_supreme_commander
+		prerequisite = { focus = HOL_overturn_military_budget_cuts }"
 			army_experience = 10
 			add_doctrine_cost_reduction = {
 				name = HOL_appoint_new_supreme_commander
@@ -2490,6 +2945,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_modernize_our_infantry_equipment
+		prerequisite = { focus = HOL_appoint_new_supreme_commander }
+		mutually_exclusive = { focus = HOL_production_under_license }"
 			add_tech_bonus = {
 				name = HOL_modernize_our_infantry_equipment
 				bonus = 1.0
@@ -2530,6 +2988,16 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_production_under_license
+		prerequisite = { focus = HOL_appoint_new_supreme_commander }
+		mutually_exclusive = { focus = HOL_modernize_our_infantry_equipment }
+
+		allow_branch = {
+			has_dlc = "Death or Dishonor"
+		}
+
+		available = {
+		}"
 			add_ideas = HOL_production_under_license
 			custom_effect_tooltip = HOL_production_under_license_tt
 		}
@@ -2557,6 +3025,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_light_tanks_for_the_colonies
+		allow_branch = {
+			always = yes
+		}
+		prerequisite = { focus = HOL_modernize_our_infantry_equipment focus = HOL_production_under_license }"
 			if = {
 				limit = {
 					NOT = { has_completed_focus = HOL_modernize_our_infantry_equipment }
@@ -2629,6 +3102,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_secret_staff_talks
+		available = {
+			threat > 0.15
+			OR = {
+				GER = { has_added_tension_amount > 10 }
+				ENG = { has_added_tension_amount > 10 }
+				FRA = { has_added_tension_amount > 10 }
+			}
+			has_war = no
+		}
+		allow_branch = {
+			always = yes
+		}
+		prerequisite = { focus = HOL_modernize_our_infantry_equipment focus = HOL_production_under_license }"
 			unlock_decision_category_tooltip = HOL_secret_staff_talks
 			custom_effect_tooltip = HOL_secret_staff_talks_tt
 		}
@@ -2656,6 +3143,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_anti_tank_guns_for_the_continent
+		allow_branch = {
+			always = yes
+		}
+		prerequisite = { focus = HOL_modernize_our_infantry_equipment focus = HOL_production_under_license }"
 			if = {
 				limit = {
 					NOT = { has_completed_focus = HOL_modernize_our_infantry_equipment }
@@ -2709,6 +3201,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_lessons_from_the_last_war
+		prerequisite = { focus = HOL_light_tanks_for_the_colonies focus = HOL_secret_staff_talks focus = HOL_anti_tank_guns_for_the_continent }"
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HOL_lessons_from_the_last_war
@@ -2758,6 +3252,29 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_expand_the_mld
+		available = {
+			OR = {
+				has_full_control_of_state = 335
+				any_other_country = {
+					is_subject_of = ROOT
+					has_full_control_of_state = 335
+				}
+			}
+		}
+		bypass = {
+			335 = {
+				OWNER = { 
+					NOT = {
+						OR = {
+							TAG = ROOT 
+							is_subject_of = ROOT 
+						}
+					} 
+				}
+			}
+		}
+		prerequisite = { focus = HOL_overturn_military_budget_cuts }"
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HOL_expand_the_mld
@@ -2801,6 +3318,22 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_protect_the_mainland
+		bypass = {
+			OR = {
+				NOT = { controls_state = 358 }
+				NOT = { controls_state = 402 }
+				NOT = { controls_state = 336 }
+			}
+			NOT = {
+				focus_progress = {
+					focus = HOL_protect_the_colonies
+					progress > 0
+				}
+			}
+		}
+		prerequisite = { focus = HOL_expand_the_mld }
+		mutually_exclusive = { focus = HOL_protect_the_colonies }"
 			add_tech_bonus = {
 				name = HOL_protect_the_mainland
 				bonus = 1.0
@@ -2879,6 +3412,65 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_protect_the_colonies
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = netherlands_has_no_colonies_tt
+				NOT = {
+					OR = {
+						controls_state = 335
+						any_country = {
+							is_subject_of = HOL
+							controls_state = 335
+						}
+					}
+					OR = {
+						controls_state = 672
+						any_country = {
+							is_subject_of = HOL
+							controls_state = 672
+						}
+					}
+					OR = {
+						controls_state = 334
+						any_country = {
+							is_subject_of = HOL
+							controls_state = 334
+						}
+					}
+					OR = {
+						controls_state = 673
+						any_country = {
+							is_subject_of = HOL
+							controls_state = 673
+						}
+					}
+					OR = {
+						controls_state = 667
+						any_country = {
+							is_subject_of = HOL
+							controls_state = 667
+						}
+					}
+					OR = {
+						controls_state = 309
+						any_country = {
+							is_subject_of = HOL
+							controls_state = 309
+						}
+					}
+				}
+				
+				NOT = {
+					focus_progress = {
+						focus = HOL_protect_the_mainland
+						progress > 0
+					}
+				}
+			}
+		}
+		prerequisite = { focus = HOL_expand_the_mld }
+		mutually_exclusive = { focus = HOL_protect_the_mainland }"
 			add_tech_bonus = {
 				name = HOL_protect_the_colonies
 				bonus = 1
@@ -2900,6 +3492,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_modernize_the_air_fleet
+		prerequisite = { focus = HOL_protect_the_mainland focus = HOL_protect_the_colonies }"
 			add_timed_idea = { idea = HOL_modernize_the_air_fleet days = 365 }
 		}
 	}
@@ -2919,6 +3513,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_strategic_bombing_defense
+		available = {
+			has_full_control_of_state = 358
+		}
+		prerequisite = { focus = HOL_modernize_the_air_fleet }"
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HOL_strategic_bombing_defense
@@ -2953,6 +3552,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_longer_range_models
+		prerequisite = { focus = HOL_strategic_bombing_defense }"
 			add_tech_bonus = {
 				name = HOL_longer_range_models
 				bonus = 1
@@ -3001,6 +3602,34 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_unsinkable_aircraft_carriers
+		available = {
+			OR = {
+				AND = {
+					has_full_control_of_state = 335
+					has_full_control_of_state = 672
+					has_full_control_of_state = 673
+					has_full_control_of_state = 334
+					has_full_control_of_state = 667
+					has_full_control_of_state = 668
+					has_full_control_of_state = 358
+					has_full_control_of_state = 669
+				}
+				any_other_country = {
+					is_subject_of = HOL
+					has_full_control_of_state = 335
+					has_full_control_of_state = 672
+					has_full_control_of_state = 673
+					has_full_control_of_state = 334
+					has_full_control_of_state = 667
+					has_full_control_of_state = 668
+					has_full_control_of_state = 838
+					has_full_control_of_state = 669
+				}
+			}
+		}
+		prerequisite = { focus = HOL_strategic_bombing_defense }
+		mutually_exclusive = { focus = HOL_air_cover_for_the_new_fleet }"
 			335 = {			
 				add_building_construction = {
 					type = air_base
@@ -3072,6 +3701,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_aviatic_aspirations
+		prerequisite = { focus = HOL_longer_range_models focus = HOL_unsinkable_aircraft_carriers }"
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HOL_aviatic_aspirations
@@ -3120,6 +3751,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_prepare_naval_expansion
+		prerequisite = { focus = HOL_overturn_military_budget_cuts }
+		available = {
+			OR = {
+				has_full_control_of_state = 358
+				has_full_control_of_state = 402
+				has_full_control_of_state = 336
+			}
+		}"
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -3164,6 +3804,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_expand_the_amsterdam_petroleum_harbor
+		prerequisite = { focus = HOL_prepare_naval_expansion }
+		available = {
+			has_full_control_of_state = 358
+			358 = {
+				free_building_slots = {
+					building = fuel_silo
+					size > 1
+					include_locked = yes
+				}
+			}
+		}"
 			358 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -3187,6 +3839,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_cornerstone_of_colonial_defense
+		prerequisite = { focus = HOL_prepare_naval_expansion }"
 			add_doctrine_cost_reduction = {
 				name = HOL_cornerstone_of_colonial_defense
 				cost_reduction = 0.5
@@ -3209,6 +3863,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_rely_on_submarines
+		prerequisite = { focus = HOL_cornerstone_of_colonial_defense }
+		mutually_exclusive = { focus = HOL_modernize_the_cruiser_fleet }"
 			add_tech_bonus = {
 				name = HOL_rely_on_submarines
 				bonus = 1
@@ -3231,6 +3888,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_modernize_the_cruiser_fleet
+		prerequisite = { focus = HOL_cornerstone_of_colonial_defense }
+		mutually_exclusive = { focus = HOL_rely_on_submarines }"
 			add_tech_bonus = {
 				name = HOL_modernize_the_cruiser_fleet
 				bonus = 1
@@ -3266,6 +3926,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_battlecruiser_plan
+		prerequisite = { focus = HOL_rely_on_submarines focus = HOL_modernize_the_cruiser_fleet focus = HOL_join_germany }
+		available = {
+			GER = {
+				is_subject = no
+				AND = {
+						country_exists = GER
+						has_opinion = { target = HOL value > 74 } 
+				}
+			}
+		}
+		bypass = {
+			has_war_with = GER
+		}"
 			effect_tooltip = {
 				set_technology = {
 					basic_ship_hull_heavy = 1
@@ -3311,6 +3985,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_air_cover_for_the_new_fleet
+		prerequisite = { focus = HOL_the_battlecruiser_plan }
+		mutually_exclusive = { focus = HOL_unsinkable_aircraft_carriers }"
 			add_tech_bonus = {
 				name = HOL_air_cover_for_the_new_fleet
 				bonus = 1
@@ -3333,6 +4010,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_escorts_for_the_new_fleet
+		prerequisite = { focus = HOL_the_battlecruiser_plan }"
 			add_tech_bonus = {
 				name = HOL_escorts_for_the_new_fleet
 				bonus = 1
@@ -3356,6 +4035,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_naval_heritage
+		prerequisite = { focus = HOL_air_cover_for_the_new_fleet focus = HOL_escorts_for_the_new_fleet }"
 			navy_experience = 50
 			add_doctrine_cost_reduction = {
 				name = HOL_naval_heritage
@@ -3387,6 +4068,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_form_new_government
+		bypass = {
+			has_capitulated = yes
+		}"
 			country_event = { id = mtg_netherlands.10 hours = 6 }
 			effect_tooltip = {
 				set_party_name = { ideology = democratic long_name = HOL_CHU_party_long name = HOL_CHU_party }
@@ -3417,6 +4102,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_gateway_to_europe
+		prerequisite = { focus = HOL_form_new_government }
+		bypass = {
+			OR = {
+				has_war_with = GER
+				has_war_with = ENG
+			}
+		}"
 			add_political_power = 120
 			unlock_decision_category_tooltip = HOL_gateway_to_europe_hol_category
 			custom_effect_tooltip = HOL_gateway_to_europe_tt
@@ -3479,6 +4172,40 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_cave_to_the_germans
+		prerequisite = { focus = HOL_gateway_to_europe }
+		mutually_exclusive = { focus = HOL_maintain_trade_neutrality focus = HOL_cave_to_the_british }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = HOL_cave_to_the_germans2_tt
+				check_variable = { var = GER.ger_gateway_to_europe_influence value = 25 compare = greater_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOL_cave_to_the_germans_tt
+				check_variable = { var = ger_temp_trade_influence value = 15 compare = greater_than_or_equals }
+			}
+		}
+		bypass = {
+			OR = {
+				GER = { NOT = { has_government = fascism } }
+				GER = { exists = no }
+				GER = { has_completed_focus = GER_oppose_hitler }
+				has_war_with = ENG
+			}
+			NOT = {
+				OR = {
+					focus_progress = {
+						focus = HOL_cave_to_the_british
+						progress > 0
+					}
+					focus_progress = {
+						focus = HOL_maintain_trade_neutrality
+						progress > 0
+					}
+
+				}
+			}
+		}"
 			effect_tooltip = {
 				GER = {
 					custom_effect_tooltip = HOL_trade_influence_tt
@@ -3552,6 +4279,42 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_maintain_trade_neutrality
+		prerequisite = { focus = HOL_gateway_to_europe }
+		mutually_exclusive = { focus = HOL_cave_to_the_germans focus = HOL_cave_to_the_british }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = HOL_maintain_trade_neutrality2_tt
+				check_variable = { var = ENG.eng_gateway_to_europe_influence value = 50 compare = greater_than_or_equals }
+				check_variable = { var = GER.ger_gateway_to_europe_influence value = 50 compare = greater_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOL_maintain_trade_neutrality_tt
+				check_variable = { var = eng_temp_trade_influence value = 5 compare = less_than_or_equals }
+				check_variable = { var = eng_temp_trade_influence value = -5 compare = greater_than_or_equals }
+			}
+			NOT = { has_war_with = ENG }
+			NOT = { has_war_with = GER }
+		}
+		bypass = {
+			OR = {
+				GER = { NOT = { has_government = fascism } }
+				ENG = { NOT = { has_government = democratic } }
+			}
+			NOT = {
+				OR = {
+					focus_progress = {
+						focus = HOL_cave_to_the_british
+						progress > 0
+					}
+					focus_progress = {
+						focus = HOL_cave_to_the_germans
+						progress > 0
+					}
+
+				}
+			}
+		}"
 			ROOT = {
 				custom_effect_tooltip = HOL_trade_influence_tt
 				add_political_power = gateway_to_europe_influence_pp_total
@@ -3625,6 +4388,39 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_cave_to_the_british
+		prerequisite = { focus = HOL_gateway_to_europe }
+		mutually_exclusive = { focus = HOL_cave_to_the_germans focus = HOL_maintain_trade_neutrality }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = HOL_cave_to_the_british2_tt
+				check_variable = { var = ENG.eng_gateway_to_europe_influence value = 25 compare = greater_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = HOL_cave_to_the_british_tt
+				check_variable = { var = eng_temp_trade_influence value = 15 compare = greater_than_or_equals }
+			}
+		}
+		bypass = {
+			OR = {
+				ENG = { NOT = { has_government = democratic } }
+				ENG = { exists = no }
+				has_war_with = GER
+			}
+			NOT = {
+				OR = {
+					focus_progress = {
+						focus = HOL_maintain_trade_neutrality
+						progress > 0
+					}
+					focus_progress = {
+						focus = HOL_cave_to_the_germans
+						progress > 0
+					}
+
+				}
+			}
+		}"
 			effect_tooltip = {
 				ENG = {
 					custom_effect_tooltip = HOL_trade_influence_tt
@@ -3668,6 +4464,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_volk_en_vaderland
+		prerequisite = { focus = HOL_cave_to_the_germans }"
 			add_timed_idea = { idea = HOL_volk_en_vaderland days = 1095 }
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = HOL_meinout_rost_van_tonningen
@@ -3689,6 +4487,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_de_jeugdstorm
+		available = {
+			has_government = fascism
+		}
+		prerequisite = { focus = HOL_volk_en_vaderland }"
 			add_popularity = {
 			    ideology = fascism
 			    popularity = 0.05
@@ -3713,6 +4516,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_strength_over_blood
+		available = {
+			has_government = fascism
+		}
+		prerequisite = { focus = HOL_volk_en_vaderland }"
 			remove_ideas = HOL_aloof_neutrality
 			add_war_support = 0.1
 			if = {
@@ -3757,6 +4565,22 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_join_germany
+		available = {
+			GER = { has_government = fascism }
+			NOT = { has_war_with = GER }
+		}
+		bypass = {
+			is_in_faction_with = GER
+			NOT = {
+				focus_progress = {
+					focus = HOL_the_netherlands_first
+					progress > 0
+				}
+			}
+		}
+		prerequisite = { focus = HOL_strength_over_blood }
+		mutually_exclusive = { focus = HOL_the_netherlands_first }"
 			GER = { country_event = { id = generic.2 hours = 6 } }
 		}
 	}
@@ -3773,6 +4597,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_german_technological_exchange
+		prerequisite = { focus = HOL_join_germany }"
 			add_to_tech_sharing_group = HOL_ger_research
 			every_country = {
 				limit = {
@@ -3804,6 +4630,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_beginnings_of_a_dutch_blitzkrieg
+		prerequisite = { focus = HOL_german_technological_exchange }
+		mutually_exclusive = { focus = HOL_assume_the_naval_burden }
+		available = {
+			GER = {
+				OR = {
+					has_tech = basic_medium_tank
+					has_tech = basic_medium_tank_chassis
+				}
+			}
+		}"
 			if = {
 				limit = {
 					has_dlc = "Death or Dishonor"
@@ -4122,6 +4959,54 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_placate_the_japanese
+		allow_branch = { has_country_flag = NEVER }
+		available = {
+			JAP = { has_government = fascism }
+			NOT = { has_war_with = JAP }
+			OR = {
+				AND = {
+					controls_state = 335
+					controls_state = 672
+					controls_state = 334
+					controls_state = 673
+					controls_state = 667
+				}
+				any_country = {
+					is_subject_of = HOL
+					controls_state = 335
+					controls_state = 672
+					controls_state = 334
+					controls_state = 673
+					controls_state = 667
+				}
+			}
+		}
+		bypass = {
+			has_war_with = JAP
+			NOT = {
+				OR = {
+					AND = {
+						controls_state = 335
+						controls_state = 672
+						controls_state = 334
+						controls_state = 673
+						controls_state = 667
+						controls_state = 309
+					}
+					any_country = {
+						is_subject_of = HOL
+						controls_state = 335
+						controls_state = 672
+						controls_state = 334
+						controls_state = 673
+						controls_state = 667
+						controls_state = 309
+					}
+				}
+			}
+		}
+		prerequisite = { focus = HOL_join_germany }"
 			country_event = { id = mtg_netherlands.11 hours = 6 }
 		}
 	}
@@ -4143,6 +5028,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_assume_the_naval_burden
+		available = {
+			has_full_control_of_state = 358
+			has_full_control_of_state = 336
+		}
+		prerequisite = { focus = HOL_join_germany }
+		mutually_exclusive = { focus = HOL_beginnings_of_a_dutch_blitzkrieg }"
 			add_ideas = HOL_assume_the_naval_burden
 			358 = {
 				if = {
@@ -4228,6 +5120,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_netherlands_first
+		available = {
+			NOT = {
+				is_in_faction_with = GER
+			}
+		}
+		prerequisite = { focus = HOL_strength_over_blood }
+		mutually_exclusive = { focus = HOL_join_germany }"
 			set_rule = { can_create_factions = yes }
 			add_war_support = 0.1
 		}
@@ -4245,6 +5145,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_implement_the_program
+		prerequisite = { focus = HOL_the_netherlands_first }"
 			add_ideas = HOL_implement_the_program
 			add_stability = 0.05
 			add_popularity = {
@@ -4314,6 +5216,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_taking_back_french_flanders
+		prerequisite = { focus = HOL_implement_the_program }"
 			random_other_country = {
 				limit = {
 					owns_state = 1342
@@ -4373,6 +5277,31 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_united_netherlands
+		available = {
+			NOT = { is_in_faction_with = BEL }
+			NOT = { is_in_faction_with = LUX }
+			custom_trigger_tooltip = {
+				tooltip = HOL_pre_empt_venezuelan_aggression_tt
+				NOT = {
+					OR = {
+						has_idea = HOL_shell_shocked_spectator_1
+						has_idea = HOL_shell_shocked_spectator_2
+						has_idea = HOL_shell_shocked_spectator_3
+						has_idea = HOL_shell_shocked_spectator_4
+						has_idea = HOL_shell_shocked_spectator_5
+					}
+				}
+			}
+		}
+		bypass = {
+			has_full_control_of_state = 6
+			has_full_control_of_state = 34
+			has_full_control_of_state = 8
+		}
+		prerequisite = { focus = HOL_join_germany focus = HOL_the_netherlands_first }
+		will_lead_to_war_with = BEL
+		will_lead_to_war_with = LUX"
 			create_wargoal = {
 			    type = annex_everything
 			    target = BEL
@@ -4408,6 +5337,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_taking_back_our_old_colonies
+		available = {
+			NOT = { is_in_faction_with = FRA }
+			NOT = { is_in_faction_with = ENG }
+		}
+		bypass = {
+			FRA = { exists = no }
+			ENG = { exists = no }
+		}
+		prerequisite = { focus = HOL_the_united_netherlands }
+		will_lead_to_war_with = FRA
+		will_lead_to_war_with = ENG"
 			create_wargoal = {
 			    type = puppet_wargoal_focus
 			    generator = { 694 310 }
@@ -4446,6 +5387,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_imperial_ambitions
+		available = {
+			NOT = { is_in_faction_with = USA }
+		}
+		bypass = {
+			has_full_control_of_state = 7
+			has_full_control_of_state = 11
+			has_full_control_of_state = 26
+			has_full_control_of_state = 2
+		}
+
+		prerequisite = { focus = HOL_taking_back_our_old_colonies }
+		will_lead_to_war_with = USA"
 			add_ideas = HOL_imperial_ambitions
 			add_war_support = 0.1
 			add_state_claim = 7
@@ -4487,6 +5441,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_legacy_of_the_de_zeven_provincien_mutiny
+		prerequisite = { focus = HOL_maintain_trade_neutrality }
+		mutually_exclusive = { focus = HOL_oranje_boven }"
 			add_timed_idea = { idea = HOL_legacy_of_the_de_zeven_provincien_mutiny days = 1095 }
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = HOL_saul_de_groot
@@ -4597,6 +5554,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_decolonization
+		available = {
+			has_government = communism
+		}
+		prerequisite = { focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }"
 			add_stability = -0.1
 			add_political_power = 150
 			add_manpower = 150000
@@ -4673,6 +5635,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_red_is_the_new_orange
+		available = {
+			has_government = communism
+		}
+		prerequisite = { focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }"
 			remove_ideas = HOL_wilhelmina
 			add_war_support = 0.1
 			add_ideas = HOL_red_is_the_new_orange
@@ -4725,6 +5692,30 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_affirm_loyalty_to_moscow
+		available = {
+			NOT = { has_war_with = SOU }
+			SOU = { has_government = communism }
+		}
+		bypass = {
+			is_in_faction_with = SOU
+			NOT = {
+				OR = {
+					focus_progress = {
+						focus = HOL_join_the_french
+						progress > 0
+					}
+					focus_progress = {
+						focus = HOL_bastion_of_true_communism
+						progress > 0
+					}
+				}
+			}
+		}
+		prerequisite = { focus = HOL_decolonization }
+		prerequisite = { focus = HOL_red_is_the_new_orange }
+		mutually_exclusive = { focus = HOL_join_the_french focus = HOL_bastion_of_true_communism }
+		dynamic = yes"
 			SOU = { country_event = { id = generic.2 hours = 6 } }
 			remove_ideas = HOL_aloof_neutrality
 		}
@@ -4742,6 +5733,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_soviet_technical_teams
+		prerequisite = { focus = HOL_affirm_loyalty_to_moscow }"
 			add_ideas = HOL_soviet_technical_teams
 		}
 	}
@@ -4765,6 +5758,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_making_the_ends_of_europe_meet
+		available = {
+			NOT = { is_in_faction_with = GER }
+		}
+		bypass = {
+			has_war_with = GER
+		}
+		prerequisite = { focus = HOL_soviet_technical_teams }
+		will_lead_to_war_with = GER"
 			create_wargoal = {
 			    type = puppet_wargoal_focus
 			    target = GER
@@ -4820,6 +5822,37 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_join_the_french
+		available = {
+			NOT = { has_war_with = FRA }
+			FRA = {
+				OR = {
+					has_completed_focus = FRA_humanite_unie
+					has_completed_focus = FRA_loyalty_to_the_cause
+					has_completed_focus = FRA_anti_fascist_coalition
+				}
+				has_government = ROOT
+				is_faction_leader = yes
+			}
+		}
+		bypass = {
+			is_in_faction_with = FRA
+			NOT = {
+				OR = {
+					focus_progress = {
+						focus = HOL_affirm_loyalty_to_moscow
+						progress > 0
+					}
+					focus_progress = {
+						focus = HOL_bastion_of_true_communism
+						progress > 0
+					}
+				}
+			}
+		}
+		prerequisite = { focus = HOL_decolonization }
+		prerequisite = { focus = HOL_red_is_the_new_orange }
+		mutually_exclusive = { focus = HOL_affirm_loyalty_to_moscow focus = HOL_bastion_of_true_communism }"
 			FRA = { country_event = { id = generic.2 hours = 6 } }
 			remove_ideas = HOL_aloof_neutrality
 			hidden_effect = {
@@ -4866,6 +5899,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_french_military_mission
+		prerequisite = { focus = HOL_join_the_french }"
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HOL_french_military_mission
@@ -4889,6 +5924,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_socialist_industrial_support
+		prerequisite = { focus = HOL_affirm_loyalty_to_moscow focus = HOL_join_the_french }"
 			add_offsite_building = { type = arms_factory level = 4 }
 		}
 	}
@@ -4905,6 +5942,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_for_the_common_good
+		prerequisite = { focus = HOL_socialist_industrial_support }"
 			if = {
 				limit = {
 					NOT = { is_in_faction_with = SOV }
@@ -4952,6 +5991,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_mobilize_the_masses
+		prerequisite = { focus = HOL_socialist_industrial_support }"
 			add_ideas = HOL_mobilize_the_masses
 		}
 	}
@@ -4980,6 +6021,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_bastion_of_true_communism
+		available = {
+			NOT = { is_in_faction_with = SOV }
+			NOT = { is_in_faction_with = FRA }
+		}
+		prerequisite = { focus = HOL_decolonization }
+		prerequisite = { focus = HOL_red_is_the_new_orange }
+		mutually_exclusive = { focus = HOL_affirm_loyalty_to_moscow focus = HOL_join_the_french }"
 			set_rule = { can_create_factions = yes }
 			add_war_support = 0.1
 			add_ideas = HOL_bastion_of_true_communism
@@ -5075,6 +6124,31 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_bring_socialism_south
+		available = {
+			NOT = { is_in_faction_with = BEL }
+			NOT = { is_in_faction_with = LUX }
+			custom_trigger_tooltip = {
+				tooltip = HOL_pre_empt_venezuelan_aggression_tt
+				NOT = {
+					OR = {
+						has_idea = HOL_shell_shocked_spectator_1
+						has_idea = HOL_shell_shocked_spectator_2
+						has_idea = HOL_shell_shocked_spectator_3
+						has_idea = HOL_shell_shocked_spectator_4
+						has_idea = HOL_shell_shocked_spectator_5
+					}
+				}
+			}
+		}
+		bypass = {
+			has_full_control_of_state = 6
+			has_full_control_of_state = 34
+			has_full_control_of_state = 8
+		}
+		prerequisite = { focus = HOL_bastion_of_true_communism focus = HOL_join_the_french focus = HOL_affirm_loyalty_to_moscow }
+		will_lead_to_war_with = BEL
+		will_lead_to_war_with = LUX"
 			add_war_support = 0.1
 			create_wargoal = {
 			    type = puppet_wargoal_focus
@@ -5101,6 +6175,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_enemies_on_all_fronts
+		prerequisite = { focus = HOL_bastion_of_true_communism }"
 			add_ideas = HOL_enemies_on_all_fronts
 		}
 	}
@@ -5117,6 +6193,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_haven_of_tolerance
+		prerequisite = { focus = HOL_enemies_on_all_fronts }"
 			add_stability = 0.1
 			add_war_support = 0.05
 			add_ideas = HOL_haven_of_tolerance
@@ -5182,6 +6260,23 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_pre_empt_western_intervention
+		available = {
+			OR = {
+				ENG = { NOT = { has_government = communism } }
+				FRA = { NOT = { has_government = communism } }
+				USA = { NOT = { has_government = communism } }
+			}
+			OR = {
+				NOT = { is_in_faction_with = ENG }
+				NOT = { is_in_faction_with = FRA }
+				NOT = { is_in_faction_with = USA }
+			}
+		}
+		prerequisite = { focus = HOL_french_military_mission focus = HOL_enemies_on_all_fronts }
+		will_lead_to_war_with = ENG
+		will_lead_to_war_with = FRA
+		will_lead_to_war_with = USA"
 			if = {
 				limit = {
 					ENG = {
@@ -5246,6 +6341,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_oranje_boven
+		available = {
+			NOT = { has_completed_focus = HOL_curtail_colonial_autonomy }
+		}
+		prerequisite = { focus = HOL_maintain_trade_neutrality }
+		mutually_exclusive = { focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }"
 			add_ideas = HOL_oranje_boven_1
 		}
 	}
@@ -5262,6 +6363,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_symbol_of_resistance
+		prerequisite = { focus = HOL_oranje_boven }"
 			swap_ideas = {
 				remove_idea = HOL_oranje_boven_1
 				add_idea = HOL_oranje_boven_2
@@ -5288,6 +6391,14 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_replace_the_defeatist_government
+		prerequisite = { focus = HOL_oranje_boven focus = HOL_unity_through_democracy }
+		available = {
+			has_war = yes
+		}
+		bypass = {
+			has_government = neutrality
+		}"
 			country_event = { id = mtg_netherlands.14 }
 			effect_tooltip = {
 				add_popularity = {
@@ -5327,6 +6438,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_only_man_in_the_dutch_government
+		available = {
+			neutrality > 0.45
+			NOT = { has_completed_focus = HOL_curtail_colonial_autonomy }
+		}
+		prerequisite = { focus = HOL_symbol_of_resistance }
+		prerequisite = { focus = HOL_replace_the_defeatist_government }"
 			promote_character = {
 				character = HOL_wilhelmina
 				ideology = centrism
@@ -5348,6 +6466,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_de_vernieuwing
+		prerequisite = { focus = HOL_the_only_man_in_the_dutch_government }"
 			add_political_power = 200
 			set_temp_variable = {
 				var = ban_communism_var
@@ -5401,6 +6521,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_depillarization
+		prerequisite = { focus = HOL_the_only_man_in_the_dutch_government }"
 			add_stability = 0.1
 			add_ideas = HOL_depillarization
 		}
@@ -5419,6 +6541,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_a_new_dutch_unity
+		prerequisite = { focus = HOL_de_vernieuwing }
+		prerequisite = { focus = HOL_depillarization }"
 			add_war_support = 0.15
 			add_stability = 0.05
 		}
@@ -5469,6 +6594,41 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_revive_the_buffer_state_proposal
+		available = {
+			is_in_faction_with = ENG
+			has_war_together_with = ENG
+			BEL = {
+				is_in_faction_with = ROOT
+				has_war_together_with = ROOT
+			}
+			LUX = {
+				is_in_faction_with = ROOT
+				has_war_together_with = ROOT
+			}
+			OR = {
+				AND = {
+					ROOT = { has_capitulated = no }
+					BEL = { has_capitulated = yes }
+					LUX = { has_capitulated = yes }
+				}
+				AND = {
+					ROOT = { has_capitulated = yes }
+					BEL = { has_capitulated = yes }
+					LUX = { has_capitulated = yes }
+					custom_trigger_tooltip = {
+						tooltip = HOL_revive_the_buffer_state_proposal_tt1
+						check_variable = { HOL.legitimacy > BEL.legitimacy }
+					}
+					custom_trigger_tooltip = {
+						tooltip = HOL_revive_the_buffer_state_proposal_tt2
+						check_variable = { HOL.legitimacy > LUX.legitimacy }
+					}
+				}
+			}
+		}
+		prerequisite = { focus = HOL_a_new_dutch_unity }
+		prerequisite = { focus = HOL_request_allied_favors }"
 			ENG = { country_event = { id = mtg_netherlands.15 hours = 6 } }
 		}
 	}
@@ -5488,6 +6648,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_royal_arms_purchases
+		available = {
+			
+		}
+		prerequisite = { focus = HOL_de_vernieuwing }"
 			add_offsite_building = { type = arms_factory level = 3 }
 		}
 	}
@@ -5510,6 +6675,14 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_develop_the_south
+		available = {
+			has_full_control_of_state = 6
+			has_full_control_of_state = 34
+			has_full_control_of_state = 8
+		}
+		cancel_if_invalid = yes
+		prerequisite = { focus = HOL_revive_the_buffer_state_proposal }"
 			6 = {
 				if = {
 					limit = {
@@ -5620,6 +6793,36 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_wilhelminism
+		available = {
+			OR = {
+				AND = {
+					has_war_with = GER
+					GER = { has_government = fascism }
+				}
+				AND = {
+					NOT = { has_war_with = GER }
+					NOT = {
+						any_country = {
+							is_in_faction_with = GER
+							has_war_with = ROOT
+						}
+					}
+					GER = {
+						has_completed_focus = GER_revive_the_kaiserreich 
+						is_faction_leader = yes
+					}
+				}
+			}
+		}
+		bypass = {
+			AND = {
+				is_in_faction_with = GER
+				HOL = { has_government = neutrality }
+				GER = { has_government = neutrality } 
+			}
+		}
+		prerequisite = { focus = HOL_a_new_dutch_unity }"
 			if = {
 				limit = {
 					is_in_faction = yes
@@ -5753,6 +6956,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_unity_through_democracy
+		prerequisite = { focus = HOL_cave_to_the_british }"
 			add_stability = 0.05
 			add_timed_idea = { idea = HOL_unity_through_democracy days = 1095 }
 			custom_effect_tooltip = available_political_advisor
@@ -5819,6 +7024,22 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_go_with_britain
+		available = {
+			ENG = { has_government = democratic }
+			threat > 0.25
+		}
+		bypass = {
+			is_in_faction_with = ENG
+			NOT = {
+				focus_progress = {
+					focus = HOL_lead_the_minor_democracies
+					progress > 0
+				}
+			}
+		}
+		prerequisite = { focus = HOL_oranje_boven focus = HOL_unity_through_democracy }
+		mutually_exclusive = { focus = HOL_lead_the_minor_democracies }"
 			remove_ideas = HOL_aloof_neutrality
 			ENG = { country_event = { id = generic.2 hours = 6 } }
 		}
@@ -5837,6 +7058,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_de_vaarplicht
+		prerequisite = { focus = HOL_replace_the_defeatist_government }
+		prerequisite = { focus = HOL_go_with_britain }"
 			add_ideas = HOL_de_vaarplicht
 		}
 	}
@@ -5861,6 +7085,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_request_allied_favors
+		available = {
+			is_in_faction_with = ENG
+			has_war = yes
+			OR = {
+				has_capitulated = no
+				has_legitimacy > 40
+			}
+		}
+		prerequisite = { focus = HOL_de_vaarplicht }"
 			add_political_power = 60
 			unlock_decision_category_tooltip = HOL_request_allied_favors
 			custom_effect_tooltip = HOL_request_allied_favors_tt
@@ -5895,6 +7129,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_singapore_conferences
+		prerequisite = { focus = HOL_go_with_britain }
+		available = {
+			has_completed_focus = HOL_unity_through_democracy
+			has_government = democratic
+			is_in_faction_with = ENG
+			is_in_faction_with = AST
+			is_in_faction_with = MAL
+			NOT = { has_war_with = USA }
+			OR = {
+				MAL = { has_full_control_of_state = 336 }
+				ENG = { has_full_control_of_state = 336 }
+			}
+		}
+		bypass = {
+			has_war_with = JAP
+			NOT = { has_completed_focus = HOL_oranje_boven }
+		}"
 			add_doctrine_cost_reduction = {
 				name = HOL_the_singapore_conferences
 				cost_reduction = 0.5
@@ -5919,6 +7171,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_ship_a_day_sinking_quotas
+		available = {
+			has_war = yes
+		}
+		prerequisite = { focus = HOL_de_vaarplicht focus = HOL_the_singapore_conferences }"
 			add_tech_bonus = {
 				name = HOL_ship_a_day_sinking_quotas
 				bonus = 1.0
@@ -5954,6 +7211,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_allied_technological_developments
+		prerequisite = { focus = HOL_the_singapore_conferences }"
 			add_ideas = HOL_allied_technological_developments
 		}
 	}
@@ -5975,6 +7234,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_american_west_indies_protectorate
+		available = {
+			has_war = yes
+			NOT = { has_war_with = USA }
+		}
+		prerequisite = { focus = HOL_ship_a_day_sinking_quotas }
+		prerequisite = { focus = HOL_allied_technological_developments }"
 			if = {
 				limit = {
 					is_in_faction_with = USA
@@ -6082,6 +7348,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_combined_chiefs_of_staff_representation
+		available = {
+			is_in_faction_with = ENG
+			is_in_faction_with = USA
+			has_war = yes
+			OR = {
+				has_capitulated = no
+				has_legitimacy > 80
+			}
+		}
+		prerequisite = { focus = HOL_request_allied_favors }
+		prerequisite = { focus = HOL_american_west_indies_protectorate }"
 			add_ideas = HOL_combined_chiefs_of_staff_representation
 		}
 	}
@@ -6106,6 +7384,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_fourth_ally
+		available = {
+			is_in_faction_with = ENG
+			is_in_faction_with = USA
+			has_war = yes
+			NOT = { has_war_with = SOV }
+			has_full_control_of_state = 335
+			has_full_control_of_state = 672
+		}
+		prerequisite = { focus = HOL_combined_chiefs_of_staff_representation }"
 			335 = {
 				if = {
 					limit = {
@@ -6166,6 +7454,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_zandery_military_airport
+		available = {
+			is_in_faction_with = USA
+			has_war = yes
+			has_full_control_of_state = 309
+			has_full_control_of_state = 695
+		}
+		prerequisite = { focus = HOL_american_west_indies_protectorate }"
 			309 = {	
 				add_building_construction = {
 					type = air_base
@@ -6211,6 +7507,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_lead_the_minor_democracies
+		available = {
+			has_war = no
+			is_in_faction = no
+		}
+		prerequisite = { focus = HOL_unity_through_democracy }
+		mutually_exclusive = { focus = HOL_go_with_britain }"
 			add_political_power = 120
 			remove_ideas = HOL_aloof_neutrality
 			every_other_country = {
@@ -6249,6 +7552,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_form_the_benelux
+		available = {
+			is_in_faction = no
+			is_subject = no
+			BEL = { is_in_faction = no }
+			LUX = { is_in_faction = no }
+		}
+		bypass = {
+			BEL = { exists = no }
+			LUX = { exists = no }
+		}
+		prerequisite = { focus = HOL_lead_the_minor_democracies }"
 			set_rule = { can_create_factions = yes }
 			create_faction = HOL_benelux
 			BEL = {
@@ -6284,6 +7599,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_responsibility_for_our_own_defense
+		prerequisite = { focus = HOL_lead_the_minor_democracies }"
 			add_war_support = 0.05
 			add_ideas = HOL_responsibility_for_our_own_defense
 		}
@@ -6302,6 +7619,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_lessons_from_the_low_countries
+		prerequisite = { focus = HOL_form_the_benelux }
+		prerequisite = { focus = HOL_responsibility_for_our_own_defense }"
 			add_ideas = HOL_lessons_from_the_low_countries
 		}
 	}
@@ -6321,6 +7641,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_foundations_for_a_european_union
+		available = {
+			is_faction_leader = yes
+		}
+		prerequisite = { focus = HOL_lessons_from_the_low_countries }"
 			set_faction_name = european_union
 			every_other_country = {
 				limit = {
@@ -6349,6 +7674,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_continents_best_and_brightest
+		prerequisite = { focus = HOL_foundations_for_a_european_union }"
 			add_to_tech_sharing_group = HOL_europe_research
 			every_country = {
 				limit = {
@@ -6377,6 +7704,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_best_defense
+		available = {
+			NOT = { is_in_faction_with = GER }
+			NOT = { is_in_faction_with = ENG }
+		}
+		prerequisite = { focus = HOL_foundations_for_a_european_union }
+		will_lead_to_war_with = GER
+		will_lead_to_war_with = ENG"
 			create_wargoal = {
 			    type = puppet_wargoal_focus
 			    target = GER

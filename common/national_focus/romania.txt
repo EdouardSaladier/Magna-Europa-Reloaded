@@ -88,6 +88,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_preserve_greater_romania"
 			add_ideas = ROM_preserve_greater_romania
 		}
 	}
@@ -125,6 +126,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_a_deal_with_the_devil"
 			add_popularity = { ideology = communism popularity = 0.1 }
 			add_opinion_modifier = { target = SOV modifier = ROM_a_deal_with_the_devil }
 			SOV = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
@@ -159,6 +161,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_form_peasant_militias"
 			add_ideas = ROM_a_deal_with_the_devil_2
 		}
 	}
@@ -199,6 +202,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_basing_rights_for_soviet_union"
 			SOV = { country_event = DOD_romania.30 }
 		}
 	}
@@ -231,6 +235,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_romanian_volunteer_brigades"
 			add_ideas = ROM_romanian_volunteer_brigades
 		}
 	}
@@ -277,6 +282,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_join_comintern"
 			SOV = { country_event = generic.2 }
 		}
 	}
@@ -309,6 +315,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_trade_treaty_with_germany"
 			add_popularity = { ideology = fascism popularity = 0.05 }
 			add_opinion_modifier = { target = GER modifier = ROM_trade_treaty_with_germany }
 			GER = { add_opinion_modifier = { target = ROOT modifier = ROM_trade_treaty_with_germany } }
@@ -347,6 +354,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_invite_german_advisors"
 			custom_effect_tooltip = ROM_invite_german_advisors_tt
 			hidden_effect = {
 				diplomatic_relation = {
@@ -391,6 +399,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_license_german_equipment"
 			add_relation_modifier = {
 				target = GER
 				modifier = ROM_license_german_equipment
@@ -444,6 +453,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_join_axis"
 			GER = {
 				country_event = generic.2
 			}
@@ -483,6 +493,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_german_romanian_oil_exploitation_company"
 			random_owned_controlled_state = {
 				prioritize = { 46 }
 				limit = {
@@ -538,6 +549,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_demand_transnistria"
 			create_wargoal = {
 				type = take_state_focus
 				target = SOV
@@ -579,6 +591,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_renew_the_romanian_polish_alliance"
 			add_popularity = { ideology = democratic popularity = 0.05 }
 			POL = { country_event = DOD_romania.1 }
 		}
@@ -617,6 +630,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_the_cordon_sanitaire"
 			set_rule = { can_create_factions = yes }
 			create_faction = ROM_CORDON_SANITAIRE_FACTION
 			if = {
@@ -702,6 +716,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_demand_a_western_guarantee"
 			if = {
 				limit = {
 					OR = {
@@ -757,6 +772,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_military_modernization"
 			
 			add_relation_modifier = {
 				target = ENG
@@ -829,6 +845,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_join_allies"
 			ENG = {
 				country_event = generic.2
 			}
@@ -865,6 +882,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_joint_allied_staff_college"
 			add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group
 			ENG = { add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group }
 			if = {
@@ -908,6 +926,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_civil_works"
 			add_tech_bonus = {
 				name = ROM_civil_works
 				bonus = 1.0
@@ -969,6 +988,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_national_defense_industry"
 			random_owned_controlled_state = {
 				prioritize = { 79 81 }
 				limit = {
@@ -1034,6 +1054,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_agrarian_reform"
 			add_ideas = ROM_agrarian_reform
 		}
 	}
@@ -1066,6 +1087,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_danubian_transport_network"
 			every_owned_state = {
 				limit = {
 					is_core_of = BNT
@@ -1131,6 +1153,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_malaxa"
 			random_owned_controlled_state = {
 				prioritize = { 1594 }
 				limit = {
@@ -1181,6 +1204,7 @@
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_invite_foreign_motor_companies"
 			country_event = DOD_romania.120
 		}
 	}
@@ -1213,6 +1237,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_hunedoara_steel_works"
 			random_owned_controlled_state = {
 				prioritize = { 727 }
 				limit = {
@@ -1279,6 +1304,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_invest_in_the_iar"
 			random_owned_controlled_state = {
 				prioritize = { 737 }
 				limit = {
@@ -1331,6 +1357,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_expand_ploiesti_oil_production"
 			764 = {
 				add_resource = {
 					type = oil
@@ -1367,6 +1394,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_expand_the_university_of_bucharest"
 			add_research_slot = 1
 		}
 	}
@@ -1398,6 +1426,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_exploit_the_baita_mines"
 			add_ideas = ROM_exploit_the_baita_mines
 		}
 	}
@@ -1432,6 +1461,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_balkans_dominance"
 			add_ideas = ROM_balkans_dominance
 			set_rule = { can_create_factions = yes }
 			if = {
@@ -1529,6 +1559,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_puppet_bulgaria"
 			BUL = { country_event = DOD_romania.40 }
 		}
 	}
@@ -1576,6 +1607,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_align_hungary"
 			HUN = { country_event = DOD_romania.50 }
 		}
 	}
@@ -1620,6 +1652,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_secure_greece"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = GRE
@@ -1671,6 +1704,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_divide_yugoslavia"
 			#Only split if YUG is not at war
 			if = {
 				limit = {
@@ -1727,6 +1761,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_split_czechoslovakia"
 			GER = { country_event = DOD_romania.110 }
 		}
 	}
@@ -1766,6 +1801,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_secure_the_bosporus"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = TUR
@@ -1805,6 +1841,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_institute_royal_dictatorship"
 			add_political_power = 120
 			create_country_leader = {
 				name = "Carol II"
@@ -1863,6 +1900,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_fortify_the_borders"
 			add_ideas = ROM_fortify_the_borders
 		}
 	}
@@ -1915,6 +1953,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_his_majestys_loyal_government"
 			add_political_power = 120
 		}
 	}
@@ -1951,6 +1990,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_militarize_the_sentinels"
 			swap_ideas = {
 				add_idea = ROM_the_sentinel_of_the_motherland_2
 				remove_idea = ROM_the_sentinel_of_the_motherland
@@ -1990,6 +2030,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_all_parties_must_end"
 			swap_ideas = {
 				add_idea = ROM_king_carol_ii_handled
 				remove_idea = ROM_king_carol_ii_hedonist
@@ -2027,7 +2068,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		completion_reward = {			
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_revise_the_constitution"			
 			add_country_leader_trait = camarilla_leader
 			add_ideas = ROM_the_sentinel_of_the_motherland
 		}
@@ -2061,6 +2103,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_the_royal_foundation"
 			add_research_slot = 1
 		}
 	}
@@ -2093,6 +2136,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_flexible_foreign_policy"
 			add_ideas = ROM_flexible_foreign_policy
 		}
 	}
@@ -2132,6 +2176,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_appoint_soviet_friendly_government"
 			#Remove ideas or display tooltip warning that it will happen
 			if = {
 				limit = {
@@ -2256,6 +2301,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_securitate"
 			if = {
 				limit = { 
 					NOT = { has_idea = ROM_securitate	} 
@@ -2311,6 +2357,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_appoint_german_friendly_government"
 			#Remove ideas or display tooltip warning that it will happen
 			if = {
 				limit = {
@@ -2458,6 +2505,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_iron_guard"
 			
 			ROM_ion_antonescu = { #Making Antonescu into a Country leader and removing him from his other roles. 
 				add_country_leader_role = {
@@ -2547,6 +2595,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_force_abdication"
 			#Removes king carol and makes the most popular party the ruling one
 			if = {
 				limit = { 
@@ -2633,6 +2682,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_king_michaels_coup"
 			unlock_decision_category_tooltip = ROM_change_sides
 			if = {
 				limit = {
@@ -2724,6 +2774,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_appoint_allied_friendly_government"
 			#Remove ideas or display tooltip warning that it will happen
 			if = {
 				limit = {
@@ -2789,6 +2840,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_constitutional_guarantees"
 			add_ideas = ROM_constitutional_guarantees
 			#Remove ideas or display tooltip warning that it will happen
 			if = {
@@ -2846,6 +2898,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_handle_the_king"
 			if = {
 				limit = {
 					has_country_leader = { id = 550 }
@@ -2921,6 +2974,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_expand_the_air_force"
 			air_experience = 25
 			random_owned_controlled_state = {
 				prioritize = { 46 79 }
@@ -2985,6 +3039,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_acquire_licenses"
 			add_ideas = ROM_acquire_licenses
 		}
 	}
@@ -3017,6 +3072,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_air_defense"
 			add_doctrine_cost_reduction = {
 				name = ROM_air_defense
 				cost_reduction = 0.25
@@ -3054,6 +3110,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_ground_support"
 			add_doctrine_cost_reduction = {
 				name = ROM_ground_support
 				cost_reduction = 0.25
@@ -3090,6 +3147,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_medium_bombers"
 			add_tech_bonus = {
 				name = ROM_medium_bombers
 				bonus = 1.0
@@ -3176,6 +3234,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_acquire_fighters"
 			country_event = DOD_romania.150
 		}
 	}
@@ -3208,6 +3267,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_local_development"
 			add_ideas = ROM_local_development
 		}
 	}
@@ -3240,6 +3300,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_air_superiority"
 			add_doctrine_cost_reduction = {
 				name = ROM_air_superiority
 				cost_reduction = 0.25
@@ -3276,6 +3337,7 @@
 		available_if_capitulated = no 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_cas"
 			add_tech_bonus = {
 				name = ROM_cas
 				bonus = 1.0
@@ -3312,6 +3374,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_iar_80"
 			#Give generic fighter bonus if fighter_2 already researched
 			if = {
 				limit = {
@@ -3365,6 +3428,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_strategic_bomber_force"
 			add_tech_bonus = {
 				name = ROM_strategic_bomber_force
 				bonus = 1.0
@@ -3401,6 +3465,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_heavy_bombers"
 			add_tech_bonus = {
 				name = ROM_heavy_bombers
 				bonus = 1.0
@@ -3437,6 +3502,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_nuclear_bomb_project"
 			add_tech_bonus = {
 				name = ROM_nuclear_bomb_project
 				bonus = 1.0
@@ -3475,6 +3541,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_army_maneuvers"
 			army_experience = 25
 		}
 	}
@@ -3506,6 +3573,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_army_war_college"
 			add_ideas = ROM_army_war_college
 			custom_effect_tooltip = ROM_war_college_tt
 			hidden_effect = {
@@ -3550,6 +3618,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_the_zb_53"
 			add_tech_bonus = {
 				name = ROM_the_zb_53
 				bonus = 1.0
@@ -3586,6 +3655,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_vanatori_de_munte"
 			custom_effect_tooltip = ROM_vanatori_de_munte_unit_tt
 			hidden_effect = {
 				division_template = {
@@ -3654,6 +3724,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_artillery_modernization"
 			add_tech_bonus = {
 				name = ROM_artillery_modernization
 				bonus = 1.0
@@ -3691,6 +3762,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_modern_at_guns"
 			add_tech_bonus = {
 				name = ROM_modern_at_guns
 				bonus = 1.0
@@ -3728,6 +3800,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_mountain_artillery"
 			custom_effect_tooltip = ROM_mountain_artillery_tech_tt
 			hidden_effect = { set_technology = { mountain_gun = 1 } }
 		}
@@ -3760,6 +3833,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_royal_guards_divisions"
 			custom_effect_tooltip = ROM_royal_guards_divisions_tt
 			hidden_effect = {
 				if = {
@@ -3852,6 +3926,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_reserve_divisions"
 			add_ideas = ROM_reserve_divisions
 		}
 	}
@@ -3884,6 +3959,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_the_armored_division"
 			custom_effect_tooltip = ROM_the_armored_division_tt
 			#Give template depending on recon tech and medium
 			hidden_effect = {
@@ -4045,6 +4121,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_acquire_modern_tanks"
 			add_ideas = ROM_acquire_modern_tanks
 		}
 	}
@@ -4078,6 +4155,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_mobile_tank_destroyers"
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = ROM_leonidas_works
 		}
@@ -4110,6 +4188,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_the_maresal"
 			add_tech_bonus = {
 				name = ROM_the_maresal
 				bonus = 1.0
@@ -4163,6 +4242,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_expand_the_galati_shipyards"
 			navy_experience = 25
 			random_owned_controlled_state = {
 				prioritize = { 46 }
@@ -4213,6 +4293,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_coastal_defense_navy"
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = ROM_coastal_defense_navy_designer
 		}
@@ -4245,6 +4326,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_coastal_defense_ships"
 			add_ideas = ROM_coastal_defense_ships
 			#custom_effect_tooltip = ROM_coastal_defense_ships_tech_tt
 			if = { 
@@ -4281,6 +4363,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_modern_destroyers"
 			add_tech_bonus = {
 				name = ROM_modern_destroyers
 				bonus = 3.0
@@ -4317,6 +4400,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_torpedo_boats"
 			swap_ideas = {
 				add_idea = ROM_coastal_defense_ships_2
 				remove_idea = ROM_coastal_defense_ships
@@ -4351,6 +4435,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_modern_submarines"
 			add_tech_bonus = {
 				name = ROM_modern_submarines
 				bonus = 1.0
@@ -4387,7 +4472,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {			
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_black_sea_dominance"			
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = ROM_black_sea_dominance_designer
 		}
@@ -4420,6 +4506,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_capital_ships"
 			add_tech_bonus = {
 				name = ROM_capital_ships
 				bonus = 1.0
@@ -4458,6 +4545,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_torpedo_bombers"
 			add_tech_bonus = {
 				name = ROM_torpedo_bombers
 				bonus = 1.0
@@ -4494,6 +4582,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ROM_expand_the_marine_regiment"
 			add_tech_bonus = {
 				name = ROM_expand_the_marine_regiment
 				bonus = 1.0

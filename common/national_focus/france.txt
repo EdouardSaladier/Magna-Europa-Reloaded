@@ -43,6 +43,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_devalue_the_franc"
 			add_timed_idea = {
 				idea = FRA_devalue_the_franc
 				days = 365
@@ -85,6 +86,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_autoroutes"
 			PIC = {
 				random_core_state = {
 					limit = { 
@@ -267,6 +269,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_metropolitan_france"
 			random_owned_state = {
 				limit = { 
 					is_core_of = ROOT 
@@ -327,6 +330,7 @@
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_industrial_expansion"
 			custom_effect_tooltip = FRA_industrial_expansion_effect_tt
 			every_owned_state = {
 				limit = {
@@ -380,6 +384,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_military_factories"
 			custom_effect_tooltip = FRA_military_factories_effect_tt
 			every_owned_state = {
 				limit = {
@@ -454,6 +459,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_algerie_france"
 		ALG = {
 			random_core_state = {
 				limit = { 
@@ -522,6 +528,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_invest_in_the_colonies"
 			every_owned_state = {
 				limit = {
 					not = { is_core_of = ROOT }
@@ -576,6 +583,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_invest_in_west_africa"
 			random_state = {
 				limit = { 
 					OR = {
@@ -638,6 +646,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_invest_in_indochina"
 			random_state = {
 				limit = { 
 					OR = {
@@ -694,6 +703,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_invest_in_syria"
 		SYR = {
 			random_core_state = {
 				limit = { 
@@ -730,6 +740,7 @@
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_colonial_industry"
 			custom_effect_tooltip = FRA_colonial_industry_effect_tt
 			every_owned_state = {
 				limit = {
@@ -771,6 +782,7 @@
 		}		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_extra_research_slot"
 			add_research_slot = 1
 		}
 	}
@@ -796,6 +808,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_extra_research_slot_2"
 			add_research_slot = 1
 		}
 	}
@@ -830,6 +843,7 @@
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_global_integration"
 			add_ideas = { FRA_global_investments }
 		}
 	}	
@@ -867,6 +881,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_begin_rearmament"
 			random_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -908,6 +923,7 @@
 			factor = 1
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_defensive_focus"
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maxime_weygand
 		}
@@ -943,6 +959,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_firepower_kills"
 			add_ideas = { FRA_firepower }
 		}
 	}
@@ -977,6 +994,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_methodical_battle"
 			add_doctrine_cost_reduction = {
 				name = FRA_methodical_battle
 				category = land_doctrine
@@ -997,6 +1015,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_fortification_focus"
 			add_ideas = FRA_fortification_focus
 		}
 	}
@@ -1014,6 +1033,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_alpine_forts"
 			ROOT = { country_event = { id = france.3 } }
 			ITA = {
 				add_opinion_modifier = {
@@ -1043,6 +1063,7 @@
 			has_idea = FRA_protected_by_the_maginot_line
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_extend_the_maginot_line"
 			ROOT = { country_event = { id = france.2 } }
 			BEL = {
 				add_opinion_modifier = {
@@ -1068,6 +1089,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_infantry_focus"
 			army_experience = 5
 			add_ideas = FRA_infantry_focus
 		}
@@ -1084,6 +1106,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_artillery_focus"
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_artillery_focus
@@ -1105,6 +1128,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heavy_armor_focus"
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_heavy_armor_focus
@@ -1154,6 +1178,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_division_cuirassee"
 			division_template = {
 				name = "Division Cuirassée" 	
 				division_names_group = FRA_ARM_01
@@ -1234,6 +1259,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_infantry_tanks"
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = FRA_hotchkiss
 		}
@@ -1269,6 +1295,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_special_forces"
 			add_ideas = { special_forces }
 		}
 	}
@@ -1303,6 +1330,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_fusiliers_marine"
 			add_tech_bonus = {
 				name = FRA_fusiliers_marine
 				category = tp_tech
@@ -1327,6 +1355,7 @@
 			factor = 0.2
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_aggressive_focus"
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maurice_gamelin
 			army_experience = 25
@@ -1363,6 +1392,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_battle_of_maneuver"
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = charles_de_gaulle
 		}
@@ -1379,6 +1409,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_motorized_focus"
 			army_experience = 5
 			add_ideas = FRA_motorized_focus
 		}
@@ -1392,6 +1423,7 @@
 		relative_position_id = FRA_motorized_focus
 		cost = 10
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_mechanized_focus"
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_mechanized_focus
@@ -1413,6 +1445,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_light_medium_armor"
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
@@ -1454,6 +1487,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_air_dominance"
 			add_ideas = { FRA_air_dominance }
 		}
 	}
@@ -1471,6 +1505,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_cas_focus"
 			add_tech_bonus = {
 				name = FRA_cas_focus
 				bonus = 1.0
@@ -1510,6 +1545,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_air_ground_cooperation"
 			add_doctrine_cost_reduction = {
 				name = FRA_air_ground_cooperation
 				category = air_doctrine
@@ -1549,6 +1585,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_flying_artillery"
 			add_ideas = { FRA_flying_artillery }
 		}
 	}
@@ -1573,6 +1610,7 @@
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_army_reform"
 			remove_ideas = FRA_victors_of_wwi
 			army_experience = 10
 			add_doctrine_cost_reduction = {
@@ -1619,6 +1657,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_form_the_popular_front"
 			add_country_leader_role = {
 				character = FRA_leon_blum
 				country_leader = {
@@ -1670,6 +1709,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_invite_communist_ministers"
 			FRA_right_wing_riot_effect = yes
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_temp_variable = { communism_temp = party_popularity@communism }
@@ -1709,6 +1749,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_strengthen_the_unions"
 			add_popularity = { ideology = communism popularity = 0.05}
 			FRA_right_wing_riot_effect = yes
 		}
@@ -1741,6 +1782,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_celebrate_the_commune"
 			add_popularity = { ideology = communism popularity = 0.05}
 		}
 	}
@@ -1776,6 +1818,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_womens_suffrage"
 			add_ideas = { FRA_womens_suffrage }
 			add_popularity = { ideology = communism popularity = 0.05}
 		}
@@ -1812,6 +1855,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_legal_equality"
 			FRA_right_wing_riot_effect = yes
 			add_popularity = { ideology = communism popularity = 0.05 }
 		}
@@ -1859,6 +1903,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_industrial_collectivization"
 		
 			random_owned_state = {
 				limit = {
@@ -1910,6 +1955,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_agricultural_collectivization"
 			add_ideas = { FRA_agricultural_collectivization }
 			if = {
 				limit = {
@@ -1957,6 +2003,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_force_the_issue"
 			set_temp_variable = { FRA_democratic_support = party_popularity@democratic }
 			multiply_temp_variable = { FRA_democratic_support = -0.25 }
 			add_stability = FRA_democratic_support
@@ -2007,6 +2054,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_reconciliation"
 			add_stability = 0.1
 		}
 	}
@@ -2042,6 +2090,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_constitutional_convention"
 			add_political_power = 120
 		}
 	}
@@ -2078,6 +2127,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_anti_fascist_coalition"
 			promote_character  = FRA_rene_nicod
 			add_trait = {
 				character = FRA_rene_nicod
@@ -2178,6 +2228,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_invite_anti_fascist_emigrants"
 			add_ideas = { FRA_anti_fascist_immigrants }
 		}
 	}
@@ -2213,6 +2264,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_reconnect_to_the_balkans"
 			
 			every_other_country = {
 				limit = {
@@ -2305,6 +2357,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_pre_empt_the_fascist_attack"
 			every_neighbor_country = {
 				limit = {
 					has_government = fascism
@@ -2362,6 +2415,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_loyalty_to_moscow"
 			if = {
 				limit = {
 					SOV = {
@@ -2422,6 +2476,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_league_of_french_bolshevist_volunteers"
 			add_ideas = { FRA_league_of_french_bolshevist_volunteers }
 		}
 	}
@@ -2462,6 +2517,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_host_the_german_exiles"
 			add_relation_modifier = {
   				target = GER
   				modifier = FRA_host_the_german_exiles
@@ -2501,6 +2557,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_revolution_to_the_utmost"
 			add_war_support = 0.1
 		}
 	}
@@ -2536,6 +2593,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_destroy_the_counter_revolution"
 			set_temp_variable = { FRA_rw_support = party_popularity@fascism }
 			add_to_temp_variable = { FRA_rw_support = party_popularity@neutrality }
 			multiply_temp_variable = { FRA_rw_support = 0.5 }
@@ -2577,6 +2635,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_revolutionary_zeal"
 			add_ideas = { FRA_revolutionary_zeal}
 		}
 	}
@@ -2613,6 +2672,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_loyalty_to_the_cause"
 			promote_character = FRA_rene_nicod
 			add_trait = {
 				character = FRA_rene_nicod
@@ -2676,6 +2736,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_carry_the_revolution_north"
 			
 			create_wargoal = {
 				target = ENG
@@ -2721,6 +2782,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_carry_the_revolution_west"
 			custom_effect_tooltip = FRA_carry_the_revolution_west_tt
 			hidden_effect = {
 				every_other_country = {
@@ -2784,6 +2846,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_carry_the_revolution_east"
 			create_wargoal = {
 				target = GER
 				type = topple_government
@@ -2839,6 +2902,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_carry_the_revolution_south"
 			create_wargoal = {
 				target = ITA
 				type = topple_government
@@ -2880,6 +2944,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_egalite_liberte_solidarite"
 			add_ideas = { FRA_egalite_liberte_solidarite }
 		}
 	}
@@ -2915,6 +2980,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_reform_the_labour_laws"
 			add_ideas = { FRA_matignon_agreements }
 			if = {
 				limit = {
@@ -2958,6 +3024,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_nationalize_key_industry"
 			swap_ideas = {
 				remove_idea = FRA_inefficient_economy_2
 				add_idea = FRA_inefficient_economy_1
@@ -2996,6 +3063,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_reorganize_the_aviation_industry"
 			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_north show_effect_tooltip = yes }
 			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_west show_effect_tooltip = yes }
 			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_center show_effect_tooltip = yes }
@@ -3035,6 +3103,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_form_the_state_arsenals"
 			random_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -3108,6 +3177,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_general_work_council"
 			if = {
 				limit = {
 					has_idea = FRA_inefficient_economy_1
@@ -3154,6 +3224,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_dirigisme"
 			add_ideas = { FRA_dirigisme }
 		}
 	}
@@ -3189,6 +3260,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_national_champions"
 			random_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -3291,6 +3363,7 @@
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_ban_the_leagues"
 			remove_ideas = { FRA_political_violence }
 			set_temp_variable = { FRA_rw_support = party_popularity@neutrality }
 			add_to_temp_variable = { FRA_rw_support = party_popularity@fascism }
@@ -3356,6 +3429,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_the_blum_viollette_proposal"
 			
 			if = {
 				limit = {
@@ -3409,6 +3483,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_expand_the_citizenship"
 			add_ideas = { FRA_expanded_citizenship }
 		}
 	}
@@ -3445,6 +3520,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_france_undividable"
 			swap_ideas = {
 				remove_idea = FRA_expanded_citizenship
 				add_idea = FRA_france_undividable
@@ -3495,6 +3571,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_french_union"
 			hidden_effect = {
 				country_event = lar_france_french_union.1
 			}
@@ -3540,6 +3617,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_encourage_immigration"
 			remove_worker_shortage_effect = yes
 		}
 	}
@@ -3581,6 +3659,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_review_foreign_policy"
 			add_political_power = 120
 		}
 	}
@@ -3619,6 +3698,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_intervention_in_spain"
 			unlock_decision_category_tooltip = FRA_spanish_intervention_category
 			set_country_flag = FRA_non_intervention
 		}
@@ -3661,6 +3741,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_support_the_finns"
 			army_experience = 10
 			FIN = {
 				add_manpower = 10000
@@ -3719,6 +3800,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_confirm_eastern_commitments"
 			every_other_country = {
 				limit = {
 					OR = {
@@ -3770,6 +3852,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_strengthen_the_little_entente"
 			if = {
 				limit = {
 					CZE = {
@@ -3841,6 +3924,7 @@
 			factor = 1
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_invite_yugoslavia"
 			YUG = { country_event = france.17 }
 		}
 	}
@@ -3871,6 +3955,7 @@
 			factor = 1
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_invite_romania"
 			ROM = { country_event = france.17 }
 		}
 	}
@@ -3913,6 +3998,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_invest_in_our_weaker_allies"
 			every_other_country = {
 				limit = {
 					is_in_faction_with = ROOT
@@ -3971,6 +4057,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_coordinate_rearmament"
 			if = {
 				limit = {
 					is_in_faction = no
@@ -4033,6 +4120,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_foreign_guest_workers"
 			remove_worker_shortage_effect = yes
 		}
 	}
@@ -4070,6 +4158,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_join_the_ententes"
 			ENG = { 
 				if = {
 					limit = { ROOT = { is_in_faction = yes } }
@@ -4111,6 +4200,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_revive_the_franco_polish_alliance"
 			if = {
 				limit = {
 					is_faction_leader = yes
@@ -4152,6 +4242,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_buy_time"
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = georges_bonnet
 			if = {
@@ -4217,6 +4308,7 @@
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_strengthen_government_support"
 			set_country_flag = FRA_strengthen_government_support_focus_flag
 			add_timed_idea = {
 				idea = FRA_strengthen_government_support_focus
@@ -4248,6 +4340,7 @@
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_defensive_strategems"
 			remove_ideas = FRA_disjointed_government
 			set_rule = { can_send_volunteers = yes }
 		}
@@ -4301,6 +4394,7 @@
 			}
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_go_with_britain"
 			ENG = { country_event = { id = britain.13 } }
 		}
 	}
@@ -4333,6 +4427,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_arms_purchases_in_the_us"
 			USA = { country_event = lar_arms_purchases.1 }
 			unlock_decision_category_tooltip = FRA_weapons_purchases_category
 		}
@@ -4367,6 +4462,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_france_leads"
 			set_rule = { can_create_factions = yes }
 			add_political_power = 120
 		}
@@ -4424,6 +4520,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_concessions_to_italy"
 			ENG = {
 				country_event = lar_concessions_to_italy.1
 			}
@@ -4473,6 +4570,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_ratify_the_stresa_front"
 			ITA = { country_event = lar_ratify_the_stresa_front.1 }
 		}
 	}
@@ -4514,6 +4612,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_franco_soviet_treaty"
 			SOV = { country_event = lar_franco_soviet_treaty.1 }
 			effect_tooltip = {
 				SOV = { give_guarantee = ROOT }
@@ -4539,6 +4638,7 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_leftist_rhetoric"
 			add_ideas = maurice_thorez
 			every_other_country = {
 				limit = { 
@@ -4596,6 +4696,7 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_national_mobilization"
 			remove_ideas = FRA_disjointed_government
 			add_ideas = FRA_national_mobilization_focus
 		}
@@ -4635,6 +4736,7 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_join_comintern"
 			SOV = { country_event = { id = soviet.29 days = 1 } }
 		}
 	}	
@@ -4659,6 +4761,7 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_humanite_unie"
 			set_rule = { can_create_factions = yes }
 		}
 	}	
@@ -4688,6 +4791,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_revive_the_national_bloc"
 			add_country_leader_trait = tenacious_negotiator
 		}
 	}	
@@ -4724,6 +4828,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_laissez_faire"
 			add_tech_bonus = {
 				name = FRA_laissez_faire
 				category = industry
@@ -4767,6 +4872,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_protect_the_rights_of_man"
 			add_stability = 0.05
 		}
 	}
@@ -4802,6 +4908,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_freedom_front"
 			if = {
 				limit = {
 					not = { has_completed_focus = FRA_utilize_the_leagues }
@@ -4854,6 +4961,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_stimulate_the_dynamic_market"
 			add_ideas = { FRA_market_dynamism }
 		}
 	}
@@ -4891,6 +4999,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_agricultural_protectionism"
 			add_ideas = { FRA_agricultural_protectionism }
 		}
 	}
@@ -4947,6 +5056,7 @@
 			}
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_economic_devolution"
 			if = {
 				limit = { has_idea = FRA_inefficient_economy_2 }
 				swap_ideas = {
@@ -4994,6 +5104,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_promote_entrepeneurship"
 			add_ideas = { FRA_entrepeneurship }
 		}
 	}
@@ -5030,6 +5141,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_ban_communism"
 			add_ideas = { FRA_communism_banned }
 			set_temp_variable = { communism_temp = party_popularity@communism }
 			multiply_temp_variable = { communism_temp = -0.25 }
@@ -5075,6 +5187,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_utilize_the_leagues"
 			unlock_decision_tooltip = { decision = FRA_rally_the_leagues show_effect_tooltip = yes }
 			unlock_decision_tooltip = { decision = FRA_unleash_la_cagoule show_effect_tooltip = yes }
 		}
@@ -5117,6 +5230,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_national_regeneration"
 			hidden_effect = {
 				create_country_leader = {
 					name = "Pierre Laval"
@@ -5167,6 +5281,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_destroy_decadence"
 			add_timed_idea = { idea = FRA_anti_decandence days = 365 }
 		}
 	}
@@ -5202,6 +5317,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_integralism"
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = charles_maurras
 		}
@@ -5238,6 +5354,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_work"
 			add_ideas = { FRA_travail }
 		}
 	}
@@ -5273,6 +5390,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_family"
 			add_stability = 0.1
 		}
 	}
@@ -5308,6 +5426,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_fatherland"
 			add_war_support = 0.1
 		}
 	}
@@ -5343,6 +5462,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_political_unity"
 			remove_ideas = { FRA_disjointed_government }
 			add_popularity = { ideology = fascism popularity = party_popularity@neutrality }
 			add_popularity = { ideology = neutrality popularity = -1}
@@ -5391,6 +5511,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_diplomatic_freedom"
 			every_other_country = {
 				limit = {
 					OR = {
@@ -5448,6 +5569,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_latin_entente"
 			set_rule = { can_create_factions = yes }
 			create_faction = FRA_latin_entente
 			create_country_leader = {
@@ -5520,6 +5642,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_reach_out_to_spain"
 			random_other_country = { 
 				limit = {
 					original_tag = SPR
@@ -5591,6 +5714,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_invite_portugal"
 			POR = { 
 				if = {
 					limit = {
@@ -5642,6 +5766,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_compensate_italy"
 			ITA = { country_event = lar_compensate_italy.1 }
 			effect_tooltip = {
 				custom_effect_tooltip = needs_approval
@@ -5698,6 +5823,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_intervention_in_greece"
 			ITA = {
 				country_event = lar_intervention_in_greece.1
 			}
@@ -5775,6 +5901,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_the_congress_of_paris"
 			country_event = lar_congress_of_paris.1
 		}
 	}
@@ -5813,6 +5940,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_the_natural_borders_of_france"
 			create_wargoal = {
 				type = annex_everything
 				target = BEL
@@ -5874,6 +6002,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_towards_a_new_europe"
 			add_stability = -0.05
 			create_country_leader = {
 				name = "Jacques Doriot"
@@ -5926,6 +6055,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_establish_spheres_of_influence"
 			GER = {
 				country_event = lar_spheres_of_influence.1
 			}
@@ -5993,6 +6123,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_split_belgium"
 			BEL = {
 				country_event = lar_split_belgium.1
 			}
@@ -6043,6 +6174,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_align_belgium"
 			BEL = {
 				country_event = lar_align_belgium.1
 			}
@@ -6145,6 +6277,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_grow_the_empire"
 			transfer_state = 295
 			transfer_state = 538
 			transfer_state = 718
@@ -6192,6 +6325,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_bring_home_quebec"
 			1 = { 
 				OWNER = { 
 					ROOT = { 
@@ -6245,6 +6379,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_expand_to_the_suez"
 			add_state_claim = 1285
 			if = {
 				limit = {
@@ -6316,6 +6451,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_dominate_the_middle_east"
 			every_other_country = {
 				limit = {
 					capital_scope = {
@@ -6349,6 +6485,7 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_right_wing_rhetoric"
 			add_ideas = marcel_bucard
 			every_other_country = {
 				limit = { 
@@ -6405,6 +6542,7 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_army_of_aggression"
 			remove_ideas = FRA_protected_by_the_maginot_line
 			remove_ideas = FRA_disjointed_government
 			add_ideas = FRA_army_of_aggression_focus
@@ -6440,6 +6578,7 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_france_first"
 			set_rule = { can_create_factions = yes }
 		}
 	}
@@ -6477,6 +6616,7 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_woo_italy"
 			ITA = { country_event = { id = italy.8 days = 1 } }			
 			### Fires event to ITA asking them to join your faction - creates faction if you don't already lead one.
 			hidden_effect = {
@@ -6721,6 +6861,7 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_dismantle_the_democracies"
 			create_wargoal = {
 				type = annex_everything
 				target = GER
@@ -6761,6 +6902,7 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_join_germany"
 			### EVENT ASKING GERMANY TO JOIN FACTION
 			GER = { country_event = { id = germany.91 days = 1 } }			
 		}
@@ -6798,6 +6940,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_the_council_of_rambouillet"
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.1
@@ -6836,6 +6979,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_revise_the_constitution"
 			add_timed_idea = { idea = FRA_constitutional_revision days = 365 }
 		}
 	}
@@ -6872,6 +7016,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_repeal_the_law_of_exile"
 			add_political_power = 120
 			remove_ideas = { FRA_disjointed_government }
 		}
@@ -6912,6 +7057,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_orleanist_restoration"
 			if = {
 				limit = {
 					date < 1940.8.25
@@ -6983,6 +7129,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_guarantee_the_constitution"
 			add_stability = 0.1
 		}
 	}
@@ -7018,6 +7165,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_the_first_citizen_of_the_state"
 			add_country_leader_trait = constitutional_monarch
 		}
 	}
@@ -7054,6 +7202,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_counter_action"
 			add_timed_idea = { idea = FRA_counter_action days = 730 }
 		}
 	}
@@ -7097,6 +7246,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_no_further_humiliations"
 			set_rule = { can_create_factions = yes }
 			create_faction = FRA_orleanist_faction
 			if = {
@@ -7153,6 +7303,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_slum_clearing"
 			every_owned_state = {
 				limit = { 
 					is_core_of = ROOT 
@@ -7198,6 +7349,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_public_welfare"
 			add_stability = 0.1
 		}
 	}
@@ -7237,6 +7389,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_the_legitimate_heir"
 			if = {
 				limit = {
 					date < 1941.2.21 #TODO_GABRIEL: coordinate with Drikus for death events
@@ -7311,6 +7464,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_secure_the_crown_of_spain"
 			if = {
 				limit = {
 					country_exists = SPB
@@ -7390,6 +7544,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_unite_the_crowns"
 			if = {
 				limit = {
 					country_exists = SPB
@@ -7449,6 +7604,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_two_countries_two_crowns"
 			if = {
 				limit = {
 					is_in_faction = no
@@ -7504,6 +7660,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_proclaim_the_third_empire"
 			create_country_leader = {
 				name = "Napoléon VI"
 				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
@@ -7584,6 +7741,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_avenge_waterloo #you now have ABBA stuck in your head for the rest of the day"
 			create_wargoal = {
 				target = BEL
 				type = annex_everything
@@ -7647,6 +7805,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_reorganize_the_dutch"
 			every_state = {
 				limit = {
 					is_core_of = WLN
@@ -7719,6 +7878,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_retribution_for_sedan"
 			create_wargoal = { 
 				type = annex_everything
 				target = GER
@@ -7768,6 +7928,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_disunite_germany"
 			set_rule = { can_create_factions = yes }
 			if = {
 				limit = {
@@ -8843,6 +9004,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_return_to_borodino"
 			create_wargoal = {
 				target = SOV
 				type = annex_everything
@@ -8882,6 +9044,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_je_suis_la_deluge"
 			add_ideas = { FRA_la_deluge }
 		}
 	}
@@ -8923,6 +9086,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_naval_rearmament"
 			navy_experience = 25
 			583 = {
 				if = {
@@ -8963,6 +9127,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_colonial_naval_bases"
 			1120 = {
 				if = {
 					limit = { is_owned_or_subject_trigger = yes }
@@ -9026,6 +9191,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_develop_colonial_dockyards"
 			1120 = {
 				if = {
 					limit = { is_owned_or_subject_trigger = yes }
@@ -9078,6 +9244,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_the_old_school"
 			random_owned_state = {
 				limit = {
 					is_core_of = ROOT
@@ -9107,6 +9274,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_capital_ship_focus"
 			add_tech_bonus = {
 				name = FRA_capital_ship_focus
 				bonus = 1.0
@@ -9130,6 +9298,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_carrier_focus"
 			add_tech_bonus = {
 				name = FRA_carrier_focus
 				bonus = 1.0
@@ -9152,6 +9321,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_carrier_planes"
 			add_tech_bonus = {
 				name = FRA_carrier_focus
 				bonus = 1.0
@@ -9174,6 +9344,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_rush_the_richelieus"
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
@@ -9234,6 +9405,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_prioritize_the_joffre"
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
@@ -9293,6 +9465,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_the_young_school"
 			add_ideas = FRA_the_young_school
 		}
 	}
@@ -9309,6 +9482,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_undersea_combat"
 			navy_experience = 25
 			add_tech_bonus = {
 				name = FRA_undersea_combat
@@ -9331,6 +9505,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_surface_combat"
 			navy_experience = 25
 			add_tech_bonus = {
 				name = FRA_surface_combat
@@ -9353,6 +9528,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_improved_screen_ships"
 			navy_experience = 25
 			add_tech_bonus = {
 				name = FRA_improved_screen_ships
@@ -9381,6 +9557,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_naval_doctrine"
 
 			add_doctrine_cost_reduction = {
 				name = FRA_naval_doctrine
@@ -9435,6 +9612,7 @@
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_air_focus"
 			air_experience = 25
 
 			random_owned_controlled_state = {
@@ -9495,6 +9673,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_fighter_focus"
 			add_tech_bonus = {
 				name = FRA_fighter_focus
 				bonus = 1.0
@@ -9516,6 +9695,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heavy_fighter_focus"
 			add_tech_bonus = {
 				name = FRA_heavy_fighter_focus
 				bonus = 1.0
@@ -9538,6 +9718,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_bomber_focus"
 			add_tech_bonus = {
 				name = FRA_bomber_focus
 				bonus = 1.0
@@ -9562,6 +9743,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_air_doctrine"
 			air_experience = 50
 
 			add_doctrine_cost_reduction = {
@@ -9585,6 +9767,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heavy_bomber_focus"
 			add_tech_bonus = {
 				name = FRA_heavy_bomber_focus
 				bonus = 1.0
@@ -9606,6 +9789,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_naval_bomber_focus"
 			add_tech_bonus = {
 				name = FRA_naval_bomber_focus
 				bonus = 1.0

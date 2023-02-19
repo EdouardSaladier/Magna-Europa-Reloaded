@@ -91,6 +91,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_balanced_budget"
 			add_political_power = 120
 			
 		}
@@ -124,6 +125,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_strengthen_the_monarchists"
 			add_ideas = HUN_hungarian_monarchy
 			set_party_name = { ideology = neutrality long_name = HUN_legitimists_party_long name = HUN_legitimists_party }
 		}
@@ -157,6 +159,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_elect_a_king"
 			swap_ideas = {
 				remove_idea = HUN_hungarian_monarchy
 				add_idea = HUN_hungarian_monarchy_2
@@ -199,6 +202,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_invite_the_habsburg_prince"
 			add_naval_commander_role = {
 				character = HUN_miklos_horthy
 				traits = { gunnery_expert navy_media_personality superior_tactician }
@@ -265,6 +269,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_demand_a_referendum"
 			AUS = { country_event = { id = DOD_hungary.1 } }
 		}
 	}
@@ -308,6 +313,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_take_austria_by_force"
 			random_country = {
 				limit = {
 					owns_state = 1817
@@ -362,6 +368,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_proclaim_the_restoration_of_austria_hungary"
 			set_cosmetic_tag = HUN_EMPIRE
 			hidden_effect = { AUS = { set_cosmetic_tag = AUS_NOT_WHITE } }
 			AUS = {
@@ -423,6 +430,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_protect_czechoslovakia"
 			CZE = { country_event = { id = DOD_hungary.10 } }
 		}
 	}
@@ -463,6 +471,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_claim_transylvania"
 			
 			every_state = {
 				limit = {
@@ -539,6 +548,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_march_to_the_shore"
 			every_state = {
 				limit = {
 					OR = {
@@ -600,6 +610,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_reclaim_venetia"
 			every_state = {
 				limit = {
 					OR = {
@@ -662,6 +673,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_claim_galicia"
 			every_state = {
 				limit = {
 					OR = {
@@ -728,6 +740,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_claim_the_bucovina"
 			every_state = {
 				limit = {
 					is_core_of = BUC
@@ -765,6 +778,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_reclaim_the_empire"
 			every_state = {
 				limit = {
 					OR = {
@@ -816,6 +830,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_elect_a_democratic_king"
 			swap_ideas = {
 				add_idea = HUN_hungarian_monarchy_democratic
 				remove_idea = HUN_hungarian_monarchy_2
@@ -884,6 +899,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_responsible_government"
 			set_politics = { ruling_party = democratic }
 			hold_election = HUN
 
@@ -966,6 +982,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_rapproachement_with_little_entente"
 			if = {
 				limit = {
 					FRA = { 
@@ -1046,6 +1063,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_join_allies"
 			if = {
 				limit = {
 					ENG = {
@@ -1093,6 +1111,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_the_balkan_pact"
 			set_rule = { can_create_factions = yes } 
 			create_faction = HUN_BALKAN_FACTION
 		}
@@ -1128,6 +1147,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_an_unlikely_alliance"
 			ROM = { country_event = generic.5 }
 		}
 	}
@@ -1165,6 +1185,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_joint_oil_exploitation_company"
 			add_to_tech_sharing_group = HUN_joint_oil_exploitation_company_tech_group
 			ENG = { add_to_tech_sharing_group = HUN_joint_oil_exploitation_company_tech_group }
 		}
@@ -1209,6 +1230,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_elect_a_fascist_king"
 			swap_ideas = {
 				add_idea = HUN_hungarian_monarchy_fascism
 				remove_idea = HUN_hungarian_monarchy_2
@@ -1276,6 +1298,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_economic_intervention"
 			add_ideas = HUN_interventionism
 		}
 	}
@@ -1316,6 +1339,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_strengthen_fascists"
 			add_timed_idea = { idea = HUN_strengthen_fascists days = 720 }
 			add_popularity = { ideology = fascism popularity = 0.05 }
 			set_party_name = { ideology = fascism long_name = HUN_arrow_cross_party_long name = HUN_arrow_cross_party }
@@ -1358,6 +1382,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_renounce_the_treaty_of_trianon"
 			add_threat = 1
 			if = {
 				limit = { 
@@ -1509,6 +1534,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_renew_the_rome_protocols"
 			swap_ideas = {
 				add_idea = HUN_interventionism_2
 				remove_idea = HUN_interventionism
@@ -1570,6 +1596,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_protect_austria"
 			#This modifies the AI change in germany.4 Aschluss event
 			give_guarantee = AUS
 		}
@@ -1613,6 +1640,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_alliance_with_italy"
 			if = {
 				limit = {
 					ITA = { is_in_faction = no }
@@ -1693,6 +1721,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_trade_deal_with_germany"
 			add_opinion_modifier = { target = GER modifier = HUN_trade_deal_with_germany }
 			reverse_add_opinion_modifier = { target = GER modifier = HUN_trade_deal_with_germany }
 			swap_ideas = {
@@ -1731,6 +1760,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_joint_aluminum_mining_company"
 			722 = {
 				add_resource = {
 					type = aluminium
@@ -1795,6 +1825,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_join_axis"
 			GER = {
 				country_event = generic.2
 			}
@@ -1852,6 +1883,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_reaffirm_territorial_claims"
 			every_state = {
 				limit = {
 					OR = {
@@ -1929,7 +1961,8 @@ focus_tree = {
 
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_demand_transylvania"	
 			custom_effect_tooltip = HUN_demands_tt		
 			ROM = { country_event = { id = DOD_hungary.50 } }
 			hidden_effect = {
@@ -1996,6 +2029,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_demand_southern_slovakia"
 			custom_effect_tooltip = HUN_demands_tt
 			if = {
 				limit = {
@@ -2089,6 +2123,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_demand_the_vojvodina"
 			custom_effect_tooltip = HUN_demands_tt
 			if = {
 				limit = {
@@ -2193,6 +2228,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_claim_overlordship_over_slovakia"
 			custom_effect_tooltip = HUN_demands_tt
 			if = {
 				limit = {
@@ -2285,6 +2321,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_proclaim_greater_hungary"
 			custom_effect_tooltip = HUN_GREATER_tt
 			set_cosmetic_tag = HUN_GREATER
 			add_stability = 0.1
@@ -2329,6 +2366,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_council_of_peoples_commissars"
 			swap_ideas = {
 				add_idea = HUN_interventionism_communism
 				remove_idea = HUN_interventionism
@@ -2367,6 +2405,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_assassinate_horthy"
 			if = {
 				limit = { has_country_leader = { character = HUN_miklos_horthy } }
 				kill_country_leader = yes
@@ -2410,6 +2449,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_the_hungarian_red_army"
 			add_ideas = HUN_the_hungarian_red_army
 		}
 	}
@@ -2446,6 +2486,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_soviet_hungarian_military_academy"
 			add_to_tech_sharing_group = HUN_soviet_hungarian_military_academy_tech_group
 			SOU = { add_to_tech_sharing_group = HUN_soviet_hungarian_military_academy_tech_group }
 		}
@@ -2496,6 +2537,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_join_comintern"
 			if = {
 				limit = {
 					SOV = {
@@ -2564,6 +2606,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_the_revolutionary_council"
 			set_rule = { can_create_factions = yes } 
 			create_faction = HUN_FACTION_COMMIE
 		}
@@ -2606,6 +2649,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_pressure_romania"
 			SOV = { country_event = DOD_hungary.110 }
 		}
 	}
@@ -2640,6 +2684,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_intervene_in_czechoslovakia"
 			SOV = { country_event = DOD_hungary.120 }
 		}
 	}
@@ -2674,6 +2719,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_industrial_revitalization"
 			add_tech_bonus = {
 				name = HUN_industrial_revitalization
 				bonus = 1.0
@@ -2752,6 +2798,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_reintegrate_the_railroads"
 			random_owned_controlled_state = {
 				prioritize = { 155 }
 				limit = {
@@ -2850,6 +2897,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_support_domestic_industry"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -2896,6 +2944,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_support_urbanization"
 			if = {
 				limit = {
 					43 = {
@@ -2941,6 +2990,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_institute_for_industrial_techniques"
 			add_research_slot = 1
 		}
 	}
@@ -2974,6 +3024,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_announce_the_gyor_program"
 			add_tech_bonus = {
 				name = HUN_announce_the_gyor_program
 				bonus = 1.0
@@ -3030,6 +3081,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_civilian_industry"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3079,6 +3131,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_invite_foreign_investors"
 			add_ideas = HUN_invite_foreign_investors
 		}
 	}
@@ -3129,6 +3182,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_expand_the_manfred_weiss_steel_works"
 			random_owned_controlled_state = {
 				prioritize = { 43 }
 				limit = {
@@ -3182,6 +3236,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_expand_the_aluminum_industry"
 			43 = {
 				add_resource = {
 					type = aluminium
@@ -3220,6 +3275,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_expand_the_technical_university_of_budapest"
 			add_research_slot = 1
 		}
 	}
@@ -3282,6 +3338,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_domestic_arms_industry"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3347,6 +3404,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_aeronautic_technology_institute"
 			add_research_slot = 1
 		}
 	}
@@ -3393,6 +3451,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_boost_hungarian_aviation_industry"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3445,6 +3504,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_autarky"
 			add_tech_bonus = {
 				name = HUN_synthetic_industry
 				bonus = 3.0
@@ -3497,6 +3557,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_synthetic_industry"
 			if = {
 				limit = { NOT = { has_tech = synth_oil_experiments } }
 				custom_effect_tooltip = HUN_synthetic_oil_tt
@@ -3550,6 +3611,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_secret_rearmament"
 			add_ideas = HUN_secret_rearmament
 			custom_effect_tooltip = HUN_secret_rearmament_tt
 		}
@@ -3582,6 +3644,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_war_games"
 			army_experience = 25
 		}
 	}
@@ -3614,6 +3677,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_theoretical_air_efforts"
 			add_doctrine_cost_reduction = {
 				name = HUN_theoretical_air_efforts
 				cost_reduction = 0.5
@@ -3671,6 +3735,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_bled_agreement"
 			if = {
 				limit = {
 					FRA = { has_completed_focus = FRA_strengthen_the_little_entente }
@@ -3720,6 +3785,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_establish_the_air_force"
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HUN_establish_the_air_force
@@ -3761,6 +3827,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_indigenous_designs"
 			add_ideas = HUN_indigenous_designs
 		}
 	}
@@ -3794,6 +3861,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_heavy_fighter_effort"
 			add_tech_bonus = {
 				name = HUN_heavy_fighter_effort
 				bonus = 1.0
@@ -3833,6 +3901,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_light_fighter_effort"
 			add_tech_bonus = {
 				name = HUN_light_fighter_effort
 				bonus = 1.0
@@ -3872,6 +3941,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_cas_focus"
 			add_tech_bonus = {
 				name = HUN_cas_focus
 				bonus = 1.0
@@ -3911,6 +3981,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_tac_focus"
 			add_tech_bonus = {
 				name = HUN_tac_focus
 				bonus = 1.0
@@ -3950,6 +4021,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_license_foreign_designs"
 			add_ideas = HUN_license_foreign
 		}
 	}
@@ -4045,6 +4117,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_fighter_competition"
 			country_event = DOD_hungary.150 
 		}
 	}
@@ -4140,6 +4213,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_bomber_competition"
 			country_event = DOD_hungary.160
 		}
 	}
@@ -4174,6 +4248,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_joint_air_development"
 			add_to_tech_sharing_group = HUN_joint_air_development_group
 			every_other_country = {
 				limit = {
@@ -4216,6 +4291,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_army_maneuvers"
 			army_experience = 10
 			add_doctrine_cost_reduction = {
 				name = HUN_army_maneuvers
@@ -4259,6 +4335,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_mobile_focus"
 			add_doctrine_cost_reduction = {
 				name = HUN_mobile_focus
 				cost_reduction = 0.25
@@ -4296,6 +4373,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_the_botond"
 			add_tech_bonus = {
 				name = HUN_the_botond
 				bonus = 1.0
@@ -4333,6 +4411,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_motorized_logistics"
 			add_tech_bonus = {
 				name = HUN_motorized_logistics
 				bonus = 1.0
@@ -4372,6 +4451,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_develop_tanks"
 			add_tech_bonus = {
 				name = HUN_develop_tanks
 				ahead_reduction = 2
@@ -4410,6 +4490,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_assault_gun_focus"
 			add_ideas = HUN_assault_gun_focus
 		}
 	}
@@ -4442,6 +4523,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_joint_tank_procurement"
 			add_to_tech_sharing_group = HUN_joint_tank_development_group
 			every_other_country = {
 				limit = {
@@ -4481,6 +4563,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_armored_warfare"
 			add_tech_bonus = {
 				name = HUN_armored_warfare
 				bonus = 1.0
@@ -4518,6 +4601,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_mobile_corps_doctrine"
 			add_doctrine_cost_reduction = {
 				name = HUN_mobile_corps_doctrine
 				cost_reduction = 0.25
@@ -4560,6 +4644,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_home_defense"
 			add_doctrine_cost_reduction = {
 				name = HUN_home_defense
 				cost_reduction = 0.25
@@ -4597,6 +4682,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_danuvia_submachine_guns"
 			add_tech_bonus = {
 				name = HUN_danuvia_submachine_guns
 				bonus = 1.0
@@ -4634,6 +4720,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_artillery_effort"
 			add_tech_bonus = {
 				name = HUN_artillery_effort
 				bonus = 1.0
@@ -4671,6 +4758,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_light_infantry_divisions_doctrine"
 			custom_effect_tooltip = HUN_light_infantry_divisions_doctrine_tech_tt
 			custom_effect_tooltip = HUN_light_infantry_divisions_doctrine_unit_tt
 			hidden_effect = {
@@ -4760,6 +4848,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_form_parachute_battalions"
 			add_tech_bonus = {
 				name = HUN_form_parachute_battalions
 				bonus = 3.0
@@ -4804,6 +4893,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_naval_warfare"
 			navy_experience = 15
 			add_ideas = HUN_naval_warfare
 			custom_effect_tooltip = available_designer
@@ -4839,6 +4929,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_restauration"
 			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				name = HUN_restauration
@@ -4877,6 +4968,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_capital_ships"
 			navy_experience = 15
 			add_tech_bonus = {
 				name = HUN_capital_ships
@@ -4918,6 +5010,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_reform"
 			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				name = HUN_reform
@@ -4957,6 +5050,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_destroyer"
 			navy_experience = 15
 			add_tech_bonus = {
 				name = HUN_destroyer
@@ -4995,6 +5089,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_cruisers"
 			navy_experience = 15
 			add_tech_bonus = {
 				name = HUN_cruisers
@@ -5034,6 +5129,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_submarines"
 			navy_experience = 15
 			add_tech_bonus = {
 				name = HUN_submarines
@@ -5073,6 +5169,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HUN_carriers"
 			navy_experience = 15
 			add_tech_bonus = {
 				name = HUN_carriers

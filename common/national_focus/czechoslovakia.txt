@@ -83,6 +83,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_fortification_studies"
 			army_experience = 10
 			add_ideas = CZE_fortification_focus
 		}
@@ -119,6 +120,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_fallback_line"
 			army_experience = 20
 			513 = {
 				add_building_construction = { 
@@ -172,6 +174,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_sudeten_1"
 			army_experience = 20
 			every_state = {
 				limit = {
@@ -234,6 +237,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_sudeten_2"
 			army_experience = 20
 			every_state = {
 				limit = {
@@ -301,6 +305,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_sudeten_3"
 			army_experience = 30
 			every_state = {
 				limit = {
@@ -364,7 +369,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {       
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_hungarian_line"       
 			army_experience = 30
 			every_state = {
 				limit = {
@@ -428,6 +434,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_polish_line"
 			army_experience = 30
 			every_state = {
 				limit = {
@@ -500,6 +507,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_internal_redoubts"
 			army_experience = 20
 			
 			every_state = {
@@ -560,6 +568,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_industrial_legacy"
 			add_ideas = CZE_industrial_legacy_idea
 		}
 	}
@@ -602,6 +611,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_favor_czechs_1"
 			513 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -650,6 +660,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_favor_czechs_2"
 			513 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -698,6 +709,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_favor_czechs_3"
 			513 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -755,6 +767,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_balanced_1"
 			513 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -808,6 +821,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_balanced_2"
 			513 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -861,6 +875,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_balanced_3"
 			513 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -913,6 +928,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_united_population"
 			if = {
 				limit = { has_idea = CZE_divided_nation }
 				remove_ideas = CZE_divided_nation
@@ -956,6 +972,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_arms_exports_1"
 			add_ideas = CZE_export_focus1
 		}
 	}
@@ -996,6 +1013,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_arms_exports_2"
 			swap_ideas = { remove_idea = CZE_export_focus1 add_idea = CZE_export_focus2  }
 		}
 	}
@@ -1036,6 +1054,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_arms_exports_3"
 			swap_ideas = { remove_idea = CZE_export_focus2 add_idea = CZE_export_focus3 }
 		}
 	}
@@ -1071,6 +1090,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_political_direction"
 			add_political_power = 120
 		}
 	}
@@ -1112,6 +1132,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_go_left"
 			add_political_power = 120
 			#allow communist reformer
 			# relations changes
@@ -1176,6 +1197,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_czech_socialism"
 			if = {
 				limit = { has_idea = CZE_divided_nation }
 				remove_ideas = CZE_divided_nation
@@ -1213,6 +1235,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_communism_with_a_human_face"
 			add_ideas = CZE_communism_with_a_human_face
 		}
 	}
@@ -1245,6 +1268,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_communist_support"
 			add_ideas = communist_influence
 		}
 	}
@@ -1284,6 +1308,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_join_comintern"
 			SOV = { country_event = { hours = 1 id = czech.1 } }
 		}
 	}
@@ -1315,6 +1340,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_the_romanian_question"
 			SOV = { country_event = { hours = 1 id = czech.4 } }
 		}
 	}
@@ -1346,6 +1372,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_the_polish_division"
 			SOV = { country_event = { hours = 1 id = czech.7 } }
 		}
 	}
@@ -1383,6 +1410,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_democratic_bastion"
 			add_political_power = 200
 			add_ideas = CZE_democratic_bastion
 		}
@@ -1416,6 +1444,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_beacon_of_liberty"
 			swap_ideas = { remove_idea = CZE_democratic_bastion add_idea = CZE_beacon_of_liberty }
 		}
 	}
@@ -1452,6 +1481,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_defensive_preparations"
 			add_ideas = extensive_conscription
 		}
 	}
@@ -1484,6 +1514,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_bonus_research_slot_1"
 			add_research_slot = 1
 			custom_effect_tooltip = CZE_war_college_effect_tt
 		}
@@ -1525,6 +1556,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_go_right"
 			add_political_power = 120
 			#allow nazi leader
 			every_other_country = {
@@ -1588,6 +1620,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_czech_fascism"
 			add_timed_idea = { idea = CZE_czech_fascism days = 1095 }
 		}
 	}
@@ -1619,6 +1652,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_aggressive_wars"
 			add_ideas = FRA_army_of_aggression_focus
 		}
 	}
@@ -1657,6 +1691,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_the_polish_question"
 			GER = { country_event = { hours = 1 id = czech.10 } }
 		}
 	}
@@ -1698,6 +1733,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_exclude_the_slovaks"
 			if = {
 				limit = {
 					has_idea = CZE_divided_nation
@@ -1744,6 +1780,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_national_fascism"
 			add_ideas = CZE_national_fascism_idea
 		}
 	}
@@ -1784,6 +1821,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_german_minor_ally"
 			custom_effect_tooltip = CZE_german_minor_ally_tt
 			hidden_effect = {
 				GER = {
@@ -1832,6 +1870,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_german_ally"
 			GER = { country_event = { hours = 1 id = czech.16 } }
 		}
 	}
@@ -1867,6 +1906,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_strategy_decisions"
 			add_political_power = 150
 		}
 	}
@@ -1907,6 +1947,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_german_leanings"
 			 GER = { add_opinion_modifier = { target = CZE modifier = CZE_german_leanings } }
 			 add_political_power = 120
 		}
@@ -1941,6 +1982,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_german_puppet"
 			GER = { country_event = { hours = 1 id = czech.19 } }
 		}
 	}
@@ -1981,6 +2023,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_hungarian_situation"
 			create_wargoal = {
 				type = annex_everything
 				target = HUN
@@ -2017,6 +2060,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_deliver_sudetenland"
 			GER = { country_event = { hours = 1 id = czech.22 } }
 		}
 	}
@@ -2049,6 +2093,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_german_technology"
 			add_ideas = CZE_german_millitary_cooperation_focus
 		}
 	}
@@ -2089,6 +2134,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_trust_in_the_west"
 			ENG = {
 				add_opinion_modifier = { 
 						target = ROOT 
@@ -2145,6 +2191,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_doctrinal_innovation"
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.75
@@ -2182,6 +2229,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_bonus_research_slot_2"
 			add_research_slot = 1
 			custom_effect_tooltip = CZE_war_college_effect_tt	
 		}
@@ -2216,6 +2264,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_secret_weapons"
 			add_tech_bonus = {
 				name = secret_bonus
 				bonus = 1.0
@@ -2256,6 +2305,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_nukes"
 			add_tech_bonus = {
 				name = nuclear_bonus
 				bonus = 1.0
@@ -2294,6 +2344,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_an_entente_of_our_own"
 			set_rule = { can_create_factions = yes }
 			create_faction = "CZE_little_entente"
 		}
@@ -2335,6 +2386,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_invite_yugoslavia"
 			YUG = { country_event = { hours = 1 id = czech.25 } }
 		}
 	}
@@ -2374,6 +2426,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_invite_romania"
 			ROM = { country_event = { hours = 1 id = czech.28 } }
 		}
 	}
@@ -2415,6 +2468,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_faction_tech_sharing"
 			add_to_tech_sharing_group = little_entente_research_group
 			every_country = {
 				limit = {
@@ -2460,6 +2514,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_security_council"
 			add_ideas = CZE_planning_bonus
 			every_other_country = {
 				limit = {
@@ -2503,6 +2558,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_deal_with_hungary"
 			create_wargoal = {
 				type = annex_everything
 				target = HUN
@@ -2542,6 +2598,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_deal_with_bulgaria"
 			create_wargoal = {
 				type = annex_everything
 				target = BUL
@@ -2582,6 +2639,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_rapprochement_with_hungary"
 			HUN = { country_event = { hours = 1 id = czech.32 } }
 		}
 	}
@@ -2613,6 +2671,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_czechoslovak_legion"
 			set_rule = {
 				can_send_volunteers = yes
 			}
@@ -2649,6 +2708,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_military_research_institute"
 			army_experience = 50
 		}
 	}
@@ -2681,6 +2741,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_mountain_bonus"
 			add_tech_bonus = {
 				name = CZE_mountain_bonus
 				bonus = 1.0
@@ -2719,6 +2780,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_inf_and_artillery_advancement"
 			add_tech_bonus = {
 				name = CZE_inf_and_artillery_advancement
 				bonus = 1.0
@@ -2757,6 +2819,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_support_bonus"
 			add_tech_bonus = {
 				name = CZE_support_bonus #@#
 				bonus = 1.0
@@ -2801,6 +2864,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_inf_and_artillery_advancement_2"
 			add_tech_bonus = {
 				name = CZE_inf_and_artillery_advancement_2 #@#
 				bonus = 1.0
@@ -2840,6 +2904,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_doctrine_bonus"
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 1
@@ -2877,6 +2942,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_motorization_scheme"
 			add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 3.0
@@ -2913,6 +2979,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_armour_bonus_1"
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -2950,6 +3017,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_mechanization"
 			add_tech_bonus = {
 				name = CZE_mechanization #@#
 				bonus = 1.0
@@ -2987,6 +3055,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_armour_bonus_ii"
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -3025,6 +3094,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_doctrine_bonus_2"
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -3063,6 +3133,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_war_college"
 			add_ideas = CZE_war_college_idea
 			if = {
 				limit = {
@@ -3104,6 +3175,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_military_aeronautical_institute"
 			air_experience = 100
 		}
 	}
@@ -3136,6 +3208,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_import_foreign_fighters"
 			add_tech_bonus = {
 				name = CZE_import_foreign_fighters #@#
 				bonus = 1.0
@@ -3175,6 +3248,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_light_fighter_focus"
 			add_tech_bonus = {
 				name = CZE_light_fighter_focus #@#
 				bonus = 1.0
@@ -3213,6 +3287,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_heavy_fighter_focus"
 			add_tech_bonus = {
 				name = CZE_heavy_fighter_focus #@#
 				bonus = 1.0
@@ -3249,6 +3324,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_air_is_our_sea"
 			add_ideas = CZE_air_focus
 		}
 	}
@@ -3283,6 +3359,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_rule_the_air"
 			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
 				cost_reduction = 0.5
@@ -3320,6 +3397,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_import_foreign_bombers"
 			add_tech_bonus = {
 				name = CZE_import_foreign_bombers #@#
 				bonus = 1.0
@@ -3359,6 +3437,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_cas_focus"
 			add_tech_bonus = {
 				name = CZE_cas_focus #@#
 				bonus = 1.0
@@ -3397,6 +3476,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_tac_focus"
 			add_tech_bonus = {
 				name = CZE_tac_focus #@#
 				bonus = 1.0
@@ -3438,6 +3518,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_access_to_the_sea"
 			navy_experience = 100
 		}
 	}
@@ -3473,6 +3554,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_sudden_shipyard"
 			navy_experience = 10
 			random_owned_controlled_state = {
 				limit = {
@@ -3535,6 +3617,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_shipbuilding_legacy"
 			add_ideas = CZE_naval_focus
 		}
 	}
@@ -3567,6 +3650,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_battleship_catchup_1"
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
@@ -3603,6 +3687,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_destroyer_catchup_1"
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
@@ -3639,6 +3724,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_cruiser__catchup_1"
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
@@ -3678,6 +3764,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_raiding_focus"
 			add_doctrine_cost_reduction = {
 				name = naval_doc_bonus
 				cost_reduction = 0.25
@@ -3717,6 +3804,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_capital_focus"
 			add_doctrine_cost_reduction = {
 				name = naval_doc_bonus
 				cost_reduction = 0.25

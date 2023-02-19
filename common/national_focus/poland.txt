@@ -32,6 +32,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_four_year_plan"
 			#activate_mission = POL_four_year_plan_mission
 			set_variable = {
 				var = POL_investments_var
@@ -72,6 +73,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_additional_research_slot1"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -129,6 +131,7 @@ focus_tree = {
 		}
 	
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_central_region_strategy"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -229,6 +232,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_expansion_of_new_towns"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -317,6 +321,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_start_central_industrial_region"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -390,6 +395,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_expand_central_industrial_region"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -458,6 +464,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_expand_katowice_mines"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -498,6 +505,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_additional_research_slot2"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -529,6 +537,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_ideological_fanaticism"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -561,6 +570,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_abolish_segregated_seating"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -603,6 +613,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_fill_the_railways_gaps"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 2
@@ -669,6 +680,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_national_defence_fund"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -701,6 +713,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_central_defence_of_poland"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -745,6 +758,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_develop_upper_silesia"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -816,6 +830,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_agrarian_reform"
 			custom_effect_tooltip = POL_delay_strike_70_days_tt
 			add_to_variable = {
 				var = POL_investments_var
@@ -891,6 +906,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_invest_in_eastern_poland"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -1000,6 +1016,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_invest_in_the_old_polish_region"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -1081,6 +1098,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_modernize_congressional_factories"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -1179,6 +1197,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_warsaw_main_railway_station"
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -1260,6 +1279,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_prepare_for_the_next_war"
 			add_doctrine_cost_reduction = {
 				name = POL_prepare_for_the_next_war
 				cost_reduction = 0.5
@@ -1286,6 +1306,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_new_military_academy"
 			add_ideas = {
 				POL_new_military_academy_idea
 			}
@@ -1312,6 +1333,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_standardisation_of_equipment"
 			add_tech_bonus = {
 				name = POL_standardisation_of_equipment
 				bonus = 1.0
@@ -1339,6 +1361,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_army_modernisation"
 			add_doctrine_cost_reduction = {
 				name = POL_army_modernisation
 				cost_reduction = 0.5
@@ -1372,6 +1395,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_modernising_the_cavalry"
 			add_tech_bonus = {
 				name = POL_modernising_the_cavalry
 				bonus = 3.0
@@ -1399,6 +1423,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_attract_foreign_motors"
 			add_tech_bonus = {
 				name = POL_attract_foreign_motors
 				bonus = 1.0
@@ -1426,6 +1451,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_study_foreign_tanks"
 			add_tech_bonus = {
 				name = POL_study_foreign_tanks
 				bonus = 1.0
@@ -1453,6 +1479,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_cruiser_tank_experiments"
 			add_tech_bonus = {
 				name = POL_cruiser_tank_experiments
 				bonus = 1.0
@@ -1480,6 +1507,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_artillery_modernisation"
 			add_tech_bonus = {
 				name = POL_artillery_modernisation
 				bonus = 1.0
@@ -1507,6 +1535,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_anti_tank_guns"
 			add_tech_bonus = {
 				name = POL_anti_tank_guns
 				bonus = 1.0
@@ -1535,6 +1564,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_anti_blitz_vehicles"
 			add_ideas = POL_anti_blitz_vehicles
 		}
 	}
@@ -1566,6 +1596,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_adaptive_designs"
 			if = {
 				limit = {
 					has_idea = POL_vauxhall
@@ -1634,6 +1665,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_air_base_expansion"
 			random_owned_controlled_state = {
 				prioritize = { 10 }
 				limit = {
@@ -1671,6 +1703,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_fighter_modernisation"
 			add_tech_bonus = {
 				name = POL_fighter_modernisation
 				bonus = 1.0
@@ -1700,6 +1733,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_air_innovations"
 			add_doctrine_cost_reduction = {
 				name = POL_air_innovations
 				cost_reduction = 0.5
@@ -1727,6 +1761,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_heavy_fighter_concept"
 			add_tech_bonus = {
 				name = POL_heavy_fighter_concept
 				bonus = 1.0
@@ -1754,6 +1789,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_naval_bomber_experiments"
 			add_tech_bonus = {
 				name = POL_naval_bomber_experiments
 				bonus = 1.0
@@ -1782,6 +1818,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_medium_bomber_focus"
 			add_tech_bonus = {
 				name = POL_medium_bomber_focus
 				bonus = 1.0
@@ -1810,6 +1847,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_light_bomber_focus"
 			add_tech_bonus = {
 				name = POL_light_bomber_focus
 				bonus = 1.0
@@ -1837,6 +1875,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_air_modernisations_programme"
 			add_doctrine_cost_reduction = {
 				name = POL_air_modernisations_programme
 				cost_reduction = 0.5
@@ -1864,6 +1903,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_rocket_development"
 			add_tech_bonus = {
 				name = POL_rocket_development
 				bonus = 1.0
@@ -1914,6 +1954,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_complete_april_constitution"
 			hidden_effect = { #collapse focus tree
 				load_focus_tree = {
 					tree = polish_focus
@@ -1955,6 +1996,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_polish_militarism"
 			army_experience = 20
 			add_ideas = POL_militarism_focus
 			POL_april_constitution_up = yes
@@ -1978,6 +2020,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_consolidate_sanation_government"
 			POL_april_constitution_up = yes
 		}
 	}
@@ -2009,6 +2052,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_castle"
 			add_political_power = 75
 			if = {
 				limit = {
@@ -2054,6 +2098,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_eliminate_socialist_parties"
 			add_popularity = {
 				ideology = communism
 				popularity = -0.2
@@ -2093,6 +2138,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_dissolve_the_sejm"
 			add_popularity = {
 				ideology = democratic
 				popularity = -0.2
@@ -2127,6 +2173,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_promote_chemical_industry"
 			POL_sanation_left_opposition_down = yes 
 			POL_sanation_right_opposition_down = yes
 			random_owned_controlled_state = {
@@ -2176,6 +2223,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_camp_of_national_unity"
 			POL_sanation_left_opposition_remove = yes
 			POL_sanation_right_opposition_remove = yes
 			custom_effect_tooltip = no_more_san_right_tt
@@ -2208,6 +2256,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_sanation_left"
 			add_political_power = 75
 			POL_sanation_left_opposition_down = yes
 			POL_sanation_right_opposition_up = yes
@@ -2241,6 +2290,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_modus_vivendi"
 			POL_sanation_left_opposition_down = yes
 			POL_sanation_right_opposition_up = yes
 			add_popularity = {
@@ -2281,6 +2331,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_draft_a_new_constitution"
 			POL_sanation_left_opposition_down = yes
 			POL_sanation_right_opposition_up = yes
 			#POL_april_constitution_up = yes
@@ -2315,6 +2366,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_legion_of_merit"
 			POL_sanation_left_opposition_down = yes
 			POL_sanation_right_opposition_up = yes
 			add_ideas = POL_legion_of_merit
@@ -2342,6 +2394,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_left_chairman"
 			POL_sanation_right_opposition_up = yes
 			POL_sanation_left_opposition_remove = yes
 			add_ideas = POL_walery_slawek_chairman
@@ -2366,6 +2419,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_common_organization_of_society"
 			add_ideas = {
 				POL_common_organization_of_society_idea
 			}
@@ -2399,6 +2453,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_dissolve_the_bbwr"
 			POL_sanation_right_opposition_remove = yes
 			effect_tooltip = {
 				set_cosmetic_tag = POL_SANATION
@@ -2446,6 +2501,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_sanation_right"
 			add_political_power = 75
 			POL_sanation_left_opposition_up = yes
 			POL_sanation_right_opposition_down = yes
@@ -2480,6 +2536,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_department_for_home_defence"
 			add_doctrine_cost_reduction = {
 				name = POL_prepare_for_the_next_war
 				cost_reduction = 0.5
@@ -2513,6 +2570,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_support_right_paramilitaries"
 			POL_sanation_left_opposition_up = yes
 			POL_sanation_right_opposition_down = yes
 			custom_effect_tooltip = available_political_advisor
@@ -2548,6 +2606,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_codify_national_unity"
 			POL_sanation_left_opposition_up = yes
 			POL_sanation_right_opposition_down = yes
 			swap_ideas = {
@@ -2578,6 +2637,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_second_man_of_the_state"
 			POL_sanation_left_opposition_up = yes
 			POL_sanation_right_opposition_remove = yes
 			add_ideas = POL_edward_rydz_smigly_chairman
@@ -2606,6 +2666,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_ozon"
 			POL_sanation_left_opposition_remove = yes
 			effect_tooltip = {
 				set_cosmetic_tag = POL_SANATION
@@ -2650,6 +2711,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_polish_revanchism"
 			add_ideas = POL_polish_revanchism_focus
 			#grants a -10% PP cost to war goal justification
 		}
@@ -2692,6 +2754,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_baltic_ultimatums"
 			#Poland demands Latvian annexation
 			if = {
 				limit = {
@@ -2755,6 +2818,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_pan_slavic_revanchism"
 			swap_ideas = {
 				remove_idea = POL_polish_revanchism_focus
 				add_idea = POL_slavic_revanchism
@@ -2782,6 +2846,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_old_borders"
 			every_state = {
 				limit = {
 					OR = {
@@ -2816,6 +2881,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_annex_czech"
 			create_wargoal = {
 				target = CZE
 				type = annex_everything
@@ -2844,6 +2910,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_sea_to_sea"
 			every_state = {
 				limit = {
 					OR = {
@@ -2949,6 +3016,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_baltic_security"
 			if = {
 				limit = {
 					LIT = {
@@ -3069,6 +3137,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_protect_czechozlovakia"
 			if = {
 				limit = {
 					CZE = {
@@ -3190,6 +3259,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_baltic_alliance_focus"
 			create_faction = POL_baltic_alliance
 			set_rule = { can_create_factions = yes }
 			hidden_effect = {
@@ -3309,6 +3379,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_romanian_alliance"
 			set_faction_name = miedzymorze_faction
 			hidden_effect = {
 				news_event = { hours = 6 id = news.214 }
@@ -3363,6 +3434,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_plan_west"
 			every_owned_state = {
 				limit = {
 					any_neighbor_state = {
@@ -3398,6 +3470,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_prusya_line"
 			every_owned_state = {
 				limit = {
 					any_neighbor_state = {
@@ -3438,6 +3511,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_invest_anti_air"
 			add_tech_bonus = {
 				name = POL_invest_anti_air
 				bonus = 1.0
@@ -3467,6 +3541,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_prusya_army"
 			division_template = {
 				name = "Pruska Straż Graniczna"
 				priority = 1
@@ -3533,6 +3608,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_expand_poznan_forts"
 			every_state = {
 				limit = {
 					OR = {
@@ -3583,6 +3659,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_hel_fortified_area"
 			every_state = {
 				limit = {
 					is_core_of = PML
@@ -3622,6 +3699,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_local_western_plans"
 			unlock_decision_tooltip = POL_defend_in_west_state
 			add_doctrine_cost_reduction = {
 				name = POL_local_western_plans
@@ -3652,6 +3730,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_MANPOWER } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_sudeten_mountaineers"
 			division_template = {
 				name = "Dywizja Karpacka"
 				priority = 1
@@ -3729,6 +3808,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_silesia_fortified_area"
 			every_state = {
 				limit = {
 					OR = {
@@ -3786,6 +3866,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_complete_plan_west"
 			every_owned_state = {
 				limit = {
 					has_dynamic_modifier = {
@@ -3828,6 +3909,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_plan_east"
 			every_owned_state = {
 				limit = {
 					any_neighbor_state = {
@@ -3868,6 +3950,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_MANPOWER } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_eastern_conscripts"
 			add_timed_idea = {
 				idea = POL_eastern_conscription_idea
 				days = 365
@@ -3895,6 +3978,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_MANPOWER } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_belorussian_army"
 			division_template = {
 				name = "Białoruska Dywizja Milicji"
 				priority = 1
@@ -3943,6 +4027,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_MANPOWER } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_ruthenian_army"
 			division_template = {
 				name = "Ukraińska Dywizja Milicji"
 				priority = 1
@@ -4066,6 +4151,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_fortification_of_belarus"
 			if = {
 				limit = {
 					232 = {
@@ -4242,6 +4328,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_fortification_of_ukraine"
 			every_state = {
 				limit = {
 					OR = {
@@ -4299,6 +4386,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_supply_the_rail_nexus"
 			build_railway = {
 				#level = 2
 				start_province = 11800
@@ -4362,6 +4450,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_local_eastern_plans"
 			add_doctrine_cost_reduction = {
 				name = POL_local_eastern_plans
 				cost_reduction = 0.5
@@ -4400,6 +4489,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_complete_plan_east"
 			every_owned_state = {
 				limit = {
 					has_dynamic_modifier = {
@@ -4432,6 +4522,7 @@ focus_tree = {
 		
 		search_filters = {  } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_sabotage_polish_industry"
 			custom_effect_tooltip = sabotaged_industry_tt
 			#will trigger an event each time a Polish state is occupied by the enemy that sabotages industry
 		}
@@ -4483,6 +4574,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_align_with_the_west"
 			add_opinion_modifier = { target = ENG modifier = POL_draw_closer_to_britain }
 			ENG = { add_opinion_modifier = { target = ROOT modifier = POL_draw_closer_to_britain } }
 			add_opinion_modifier = { target = FRA modifier = POL_draw_closer_to_britain }
@@ -4555,6 +4647,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_join_allies"
 			join_allies_effect = yes
 		}
 	}
@@ -4580,6 +4673,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_romanian_bridgehead_strategy"
 			add_doctrine_cost_reduction = {
 				name = POL_romanian_bridgehead_strategy
 				cost_reduction = 0.5
@@ -4696,6 +4790,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_lithuanian_ultimatum"
 			#Poland asks for peace
 			LIT = {
 				country_event = {
@@ -4747,6 +4842,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_lithuanian_alliance"
 			#Brings Lithuania into the faction if Poland is faction leader
 			if = {
 				limit = {
@@ -4860,6 +4956,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_lithuanian_annexation"
 			#Poland demands Lithuanian annexation
 			if = {
 				limit = {
@@ -4903,6 +5000,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_restore_the_sejm"
 			POL_april_constitution_remove = yes
 			POL_sanation_left_opposition_remove = yes
 			POL_sanation_right_opposition_remove = yes
@@ -4986,6 +5084,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_organize_the_peasants_strike"
 			hidden_effect = { #collapse focus tree
 				load_focus_tree = {
 					tree = polish_focus
@@ -5029,6 +5128,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_woo_morges_staff"
 			set_country_flag = POL_morges_flag
 			POL_wladyslaw_sikorski = {
 				add_unit_leader_trait = peasant_sympathiser
@@ -5115,6 +5215,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_ease_sanationist_tensions"
 			if = {
 				limit = {
 					has_active_mission = POL_looming_peasants_strike_mission
@@ -5176,6 +5277,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_arm_peasant_militia"
 			if = {
 				limit = {
 					OR = {
@@ -5234,6 +5336,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_state_national_council"
 			add_political_power = 120
 			army_experience = 25
 			if = {
@@ -5291,6 +5394,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_communal_governance"
 			add_stability = 0.15
 			add_popularity = {
 				ideology = communism
@@ -5327,6 +5431,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_a_leftist_sejm"
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = POL_wanda_wasilewska
 			custom_effect_tooltip = available_political_advisor
@@ -5372,6 +5477,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_raise_the_black_madonna"
 			add_stability = 0.05
 			add_war_support = 0.15
 			if = {
@@ -5429,6 +5535,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_reassemble_the_sejm"
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = POL_stanislaw_wojciechowski
 			custom_effect_tooltip = available_political_advisor
@@ -5474,6 +5581,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_empower_the_morges"
 			custom_effect_tooltip = POL_morges_divisions_tt
 			hidden_effect = {
 				division_template = { 
@@ -5549,6 +5657,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_KPP_focus"
 			add_ideas = POL_leftist_sejm_idea
 			effect_tooltip = {
 				set_politics = {
@@ -5600,6 +5709,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_surrender_the_east"
 			SOU = { country_event = NSB_poland_communist_events.4 }
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
@@ -5661,6 +5771,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_polish_peoples_republic"
 			add_ideas = { POL_polish_peoples_republic }
 			OVERLORD = {
 				set_autonomy = {
@@ -5712,6 +5823,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_soviet_industry"
 			random_owned_controlled_state = {
 				prioritize = { 10 }
 				limit = {					
@@ -5777,6 +5889,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_pressure_for_the_west"
 			every_state = {
 				limit = {
 					is_yalta_polish_state = yes
@@ -5805,6 +5918,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_soviet_military_staff"
 			army_experience = 50
 			effect_tooltip = {
 				create_corps_commander = {
@@ -5898,6 +6012,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_com_independence"
 			custom_effect_tooltip = probably_lead_to_war_with_sov_tt
 			overlord = {
 				set_autonomy = {
@@ -5937,6 +6052,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_greater_polish_SSR"
 			overlord = { country_event = NSB_poland_communist_events.6 }
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
@@ -6038,6 +6154,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_polish_path_to_socialism"
 			if = {
 				limit = {
 					NOT = { has_government = communism }
@@ -6101,6 +6218,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_anti_imperialism"
 			add_ideas = { POL_anti_imperialism_idea }
 		}
 	}
@@ -6126,6 +6244,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_anti_capitalist_revolution"
 			unlock_decision_category_tooltip = POL_anti_capitalist_decisions
 		}
 	}
@@ -6187,6 +6306,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_morges_pact"
 			set_rule = {
 				can_create_factions = yes
 			}
@@ -6218,6 +6338,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_morges_economic_union"
 			add_offsite_building = { type = industrial_complex level = 2 }
 			add_ideas = { POL_morges_economic_union }
 		}
@@ -6248,6 +6369,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_purchase_madagascar"
 			543 = {
 				save_event_target_as = POL_colony_purchase
 				owner = {
@@ -6279,6 +6401,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_invite_romania_to_morges"
 			if = {
 				limit = {
 					ROM = {
@@ -6378,6 +6501,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_preserve_bougoise_democracy"
 			join_allies_effect = yes
 		}
 	}
@@ -6404,6 +6528,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_baltic_socialism"
 			if = {
 				limit = {
 					LIT = {
@@ -6486,6 +6611,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_dismantle_capitalist_empires"
 			custom_effect_tooltip = gain_topple_goal_tt
 			every_other_country = {
 				limit = {
@@ -6523,6 +6649,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_anti_fascist_military"
 			unlock_decision_category_tooltip = POL_anti_fascist_revolution_category
 			add_ideas = { anti_fascist_army_idea }
 		}
@@ -6617,6 +6744,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_preserve_baltic_independence"
 			if = {
 				limit = {
 					LIT = {
@@ -6729,6 +6857,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_dismantle_fascist_empires"
 			custom_effect_tooltip = gain_topple_goal_tt
 			every_other_country = {
 				limit = {
@@ -6779,6 +6908,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_dismantle_soviet_empire"
 			IF = {
 				limit = { SOV = { has_civil_war = no } }
 				POL = {
@@ -6825,6 +6955,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_social_commonwealth"
 			#Lithuania
 			if = {
 				limit = {
@@ -7028,6 +7159,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_elect_a_PSL_leader"
 			add_ideas = POL_democratic_sejm_idea
 			country_event = {
 				id = NSB_poland_democratic_events.1
@@ -7059,6 +7191,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_invest_in_the_peasantry"
 			add_stability = 0.1
 			every_owned_state = {
 				limit = {
@@ -7101,6 +7234,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_dabrowszczacy"
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = { POL_dabrowszczacy }
 		}
@@ -7129,6 +7263,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_leftist_economics"
 			add_ideas = { POL_leftist_economics }
 		}
 	}
@@ -7151,6 +7286,7 @@ focus_tree = {
 
 		search_filters = {  }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_committee_of_national_liberation"
 			add_ideas = { POL_committee_of_national_liberation_idea }
 		}
 	}
@@ -7174,6 +7310,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_non_discriminatory_recruitment"
 			add_ideas = { POL_non_discriminatory_recruitment_idea }
 		}
 	}
@@ -7198,6 +7335,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_armia_ludowa"
 			division_template = {
 				name = "Armia Ludowa"
 				priority = 2
@@ -7262,6 +7400,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_lower_class_education"
 			add_ideas = { POL_lower_class_education_idea }
 		}
 	}
@@ -7288,6 +7427,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_press_for_liberia"
 			LIB = {
 				country_event = { id = NSB_poland_events.6 days = 1 }
 			}
@@ -7320,6 +7460,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_support_colonial_workers_strikes"
 			swap_ideas = {
 				add_idea = POL_committee_of_international_liberation
 				remove_idea = POL_committee_of_national_liberation_idea
@@ -7353,6 +7494,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_reopen_the_maritime_and_colonial_league"
 			unlock_decision_category_tooltip = POL_reopen_the_maritime_and_colonial_league
 		}
 	}
@@ -7411,6 +7553,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_assemble_the_regency_council"
 			hidden_effect = { #collapse focus tree
 				load_focus_tree = {
 					tree = polish_focus
@@ -7470,6 +7613,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_fulfil_fifth_of_november"
 			custom_effect_tooltip = POL_find_a_king_tt
 			POL_april_constitution_remove = yes
 			if = {
@@ -7514,6 +7658,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_habsburg"
 			effect_tooltip = {
 				if = {
 					limit = {
@@ -7549,6 +7694,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_restore_the_diet_of_galicia"
 			if = {
 				limit = {
 					controls_state = 88
@@ -7589,6 +7735,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_support_monarchy_in_CZE"
 			if = {
 				limit = {
 					CZE = { exists = yes }
@@ -7678,6 +7825,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_royal_hussars"
 			add_ideas = { POL_royal_hussars_idea }
 			division_template = {
 				name = "Królewska Dywizja Husarii"
@@ -7765,6 +7913,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_habsburg_monarchist_militants"
 			unlock_decision_tooltip = POL_arm_monarchist_militants
 		}
 	}
@@ -7818,6 +7967,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_king_of_bohemia"
 			CZE = { country_event = { id = NSB_poland_monarchist_events.5 hours = 8 } }
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
@@ -7871,6 +8021,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_unite_west_slavia"
 			if = {
 				limit = {
 					CZE = {
@@ -7954,6 +8105,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_soldier_king"
 			POL_karl_albrecht = {
 				add_country_leader_trait = POL_soldier_king
 			}
@@ -7999,6 +8151,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_kings_guard"
 			add_ideas = { POL_royal_guard }
 			division_template = {
 				name = "Oddział Gwardii Królewskiej"
@@ -8105,6 +8258,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_press_the_habsburg_claim"
 			if = { #Tooltip purposes (Vojvodina takes over Hungary and we don't want it to be shown here)
 				limit = {
 					HUN = {
@@ -8153,6 +8307,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_royal_officer_corps"
 			add_ideas = { POL_royal_officer_corps }
 			army_experience = 50
 		}
@@ -8217,6 +8372,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_trust_in_the_west"
 			join_allies_effect = yes
 		}
 	}
@@ -8263,6 +8419,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_align_with_habsburgs"
 			if = {
 				limit = {
 					HUN = { is_faction_leader = yes }
@@ -8302,6 +8459,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_reclaim_west_slavia"
 			66 = { add_core_of = ROOT }
 			67 = { add_core_of = ROOT }
 			68 = { add_core_of = ROOT }
@@ -8366,6 +8524,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_join_CZE_rails"
 			build_railway = {
 				start_province = 6862
 				target_province = 7661
@@ -8435,6 +8594,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_join_CZE_industry"
 			random_owned_state = {
 				prioritize = { 513 }
 				limit = {
@@ -8497,6 +8657,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_join_CZE_military"
 			random_owned_state = {
 				prioritize = { 9 }
 				limit = {
@@ -8564,6 +8725,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_hohenzollern"
 			effect_tooltip = {
 				create_country_leader = {
 					name = "Michał II"
@@ -8615,6 +8777,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_cossack_king"
 			effect_tooltip = {
 				add_ruling_to_fas = yes
 				set_politics = {
@@ -8655,6 +8818,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_restore_bermontians"
 			show_unit_leaders_tooltip = POL_rudinger_von_der_goltz
 			add_field_marshal_role = {
 				character = "POL_pavel_bermondt_avalov"
@@ -8815,6 +8979,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_demand_LIT_pavel"
 			#Poland demands Lithuanian annexation
 			if = {
 				limit = {
@@ -8921,6 +9086,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_demand_slovakia_pavel"
 			every_state = {
 				limit = {
 					is_core_of = SLO
@@ -9001,6 +9167,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_governorate_livonia"
 			if = {
 				limit = {
 					EST = {
@@ -9078,6 +9245,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_seek_german_alignment"
 			GER = { country_event = NSB_polish_fascist_events.1 }
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
@@ -9105,6 +9273,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_assert_eastern_claims_pavel"
 			every_state = {
 				limit = {
 					OR = {
@@ -9190,6 +9359,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_assert_western_claims"
 			every_state = {
 				limit = {
 					is_yalta_polish_state = yes
@@ -9245,6 +9415,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_demand_pomerania"
 			GER = { country_event = pavel_events.3 }
 		}
 	}
@@ -9283,6 +9454,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_complete_the_bermontian_mission"
 			create_wargoal = {
 				type = topple_government
 				target = SOU
@@ -9322,6 +9494,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_romanov"
 			effect_tooltip = {
 				promote_character = POL_anna_andersson
 				set_cosmetic_tag = POL_KINGDOM_RUS
@@ -9347,6 +9520,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_invite_exiled_nobility"
 			add_ideas = POL_royal_sejm_idea
 			swap_ruler_traits = {
 				remove = the_last_romanov_maybe
@@ -9373,6 +9547,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_pan_slavism"
 			add_ideas = POL_slavic_revanchism
 		}
 	}
@@ -9410,6 +9585,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_demand_yugoslav_subjugation"
 			if = {
 				limit = {
 					YUG = {
@@ -9480,6 +9656,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_claim_russia"
 			create_wargoal = {
 				type = annex_everything
 				target = SOV
@@ -9532,6 +9709,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_proclaim_slavic_unity"
 			set_cosmetic_tag = SLAVIC_UNIFIED
 			every_state = {
 				limit = {
@@ -9599,6 +9777,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_claiming_lithuania"
 			effect_tooltip = {
 				promote_character = POL_friedrich_christian
 			}
@@ -9623,6 +9802,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_restoration_of_the_royal_sejm"
 			add_ideas = {
 				POL_royal_sejm_idea
 			}
@@ -9647,6 +9827,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_institute_royal_guards"
 			division_template = {
 				name = "Oddział Gwardii Królewskiej"
 				priority = 2
@@ -9706,6 +9887,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_support_monarchism_in_LIT"
 			hidden_effect = {
 				if = {
 					limit = {
@@ -9783,6 +9965,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_arm_monarchist_militants"
 			unlock_decision_tooltip = POL_arm_monarchist_militants
 		}
 	}
@@ -9837,6 +10020,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_king_of_lithuania"
 			if = {
 				limit = {
 					NOT = { has_country_flag = POL_banned_monarchy_flag }
@@ -9901,6 +10085,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_LIT_union"
 			if = {
 				limit = {
 					LIT = {
@@ -9987,6 +10172,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_expand_lithuanian_shipyards"
 			random_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -10044,6 +10230,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_lithuanian_rail"
 			build_railway = {
 				#level = 3
 				path = { 11342 11226 9246 9374 530 6376 9483 }
@@ -10109,6 +10296,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_merge_the_arms_industries"
 			random_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -10164,6 +10352,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_merge_civilian_industries"
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = LIT
@@ -10232,6 +10421,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_push_for_ruthenia"
 			build_railway = {
 				#level = 2
 				path = { 3392 11528 6415 560 11503 6435 11543 3470 6593 441 3543 525 }
@@ -10289,6 +10479,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_warsaw_to_crimea_railway"
 			build_railway = {
 				#level = 2
 				path = { 525 504 9456 11438 458 3452 6451 11561 11715 737 568 3722 705 3686 }
@@ -10341,6 +10532,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_claim_livonia"
 			if = {
 				limit = {
 					EST = {
@@ -10397,6 +10589,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_claim_prussia"
 			every_state = {
 				limit = {
 					is_east_prussia = yes
@@ -10427,6 +10620,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_claim_greater_lithuania"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = SOV
@@ -10460,6 +10654,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_greater_commonwealth"
 			every_state = {
 				limit = {
 					OR = {
@@ -10545,6 +10740,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_internal_romanian_support"
 			hidden_effect = {
 				ROM = {
 					country_event = NSB_poland_monarchist_events.1
@@ -10605,6 +10801,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_king_michaels_coup"
 			if = {
 				limit = { NOT = { has_country_flag = POL_banned_monarchy_flag } }
 				ROM = { country_event = NSB_poland_monarchist_events.5 }
@@ -10655,6 +10852,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_merge_internal_governments"
 			if = {
 				limit = {
 					ROM = {
@@ -10760,6 +10958,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_pro_allied_government"
 			add_ideas = { ROM_flexible_foreign_policy_2	}
 			add_popularity = {
 				popularity = 0.15
@@ -10849,6 +11048,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_ROM_join_allies"
 			join_allies_effect = yes
 		}
 	}
@@ -10876,6 +11076,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_royal_dictatorship"
 			add_country_leader_trait = royal_dictator
 		}
 	}
@@ -10944,6 +11145,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_demand_slovakia"
 			every_state = {
 				limit = {
 					is_core_of = SLO
@@ -11006,6 +11208,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_restore_poland_hungary"
 			if = {
 				limit = {
 					HUN = { exists = yes }
@@ -11088,6 +11291,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_seek_an_alliance_with_kaiser"
 			if = {
 				limit = {
 					GER = {
@@ -11165,6 +11369,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_nationalist_constitution"
 			hidden_effect = { #collapse focus tree
 				load_focus_tree = {
 					tree = polish_focus
@@ -11204,6 +11409,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_integrate_the_falanga"
 			add_political_power = 120
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = POL_jan_mosdorf
@@ -11234,6 +11440,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_empower_falangist_militants"
 			add_ideas = {
 				POL_right_paramilitarism_idea
 			}
@@ -11265,6 +11472,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_integrate_the_endecja"
 			add_political_power = 120
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = POL_joachim_stefan_bartoszewicz
@@ -11294,6 +11502,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_siodemki"
 			#Tadeusz Bielecki compromising with the Sanacja
 			swap_ideas = {
 				add_idea = POL_nationalist_constitution_1
@@ -11324,6 +11533,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_sideline_the_sanacja"
 			POL_sanation_left_opposition_remove = yes
 			POL_sanation_right_opposition_remove = yes
 			add_popularity = {
@@ -11358,6 +11568,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_riot_of_37"
 			effect_tooltip = {
 				set_politics = {
 					ruling_party = fascism
@@ -11400,6 +11611,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_reopen_national_elections"
 			effect_tooltip = {
 				set_party_name = { 
 					ideology = fascism 
@@ -11459,6 +11671,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_beck_ribbentrop"
 			GER = { country_event = NSB_polish_fascist_events.1 }
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
@@ -11491,6 +11704,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_divide_lit"
 			effect_tooltip = {
 				GER = {
 					country_event = NSB_polish_fascist_events.2
@@ -11596,6 +11810,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_german_training"
 			add_ideas = POL_german_training
 		}
 	}
@@ -11671,6 +11886,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_konfederacja_narodu"
 			add_ideas = POL_konfederacja_narodu
 		}
 	}
@@ -11699,6 +11915,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_german_staff"
 			add_ideas = POL_german_staff
 		}
 	}
@@ -11726,6 +11943,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_polish_shock_battallions"
 			add_ideas = POL_polish_shock_battallions
 		}
 	}
@@ -11767,6 +11985,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_request_autonomous_status"
 			GER = { country_event = NSB_polish_fascist_events.3 }
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
@@ -11803,6 +12022,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_reach_out_to_underground_state"
 			add_timed_idea = {
 				idea = POL_underground_conscripts
 				days = 365
@@ -11842,6 +12062,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_assurance_of_loyalty"
 			country_event = NSB_polish_fascist_events.4
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
@@ -11888,6 +12109,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_declare_independence"
 			custom_effect_tooltip = probably_lead_to_war_with_ger_tt
 			effect_tooltip = {
 				set_autonomy = {
@@ -11935,6 +12157,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_reassert_silesian_claims"
 			every_state = {
 				limit = {
 					is_core_of = SIL
@@ -11962,6 +12185,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_force_polish_upper_class"
 			add_ideas = POL_polish_upper_class
 		}
 	}
@@ -11984,6 +12208,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_privatize_education"
 			add_ideas = POL_privatized_education
 		}
 	}
@@ -12007,6 +12232,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_support_global_falangism"
 			add_ideas = POL_balachowicz_brigades
 			add_war_support = 0.1
 			custom_effect_tooltip = POL_can_boost_in_benelux_tt
@@ -12032,6 +12258,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_state_catholicism"
 			if = {
 				limit = {
 					has_completed_focus = POL_riot_of_37
@@ -12070,6 +12297,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_falangist_international"
 			set_rule = { can_create_factions = yes }
 			if = {
 				limit = {
@@ -12167,6 +12395,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_invite_the_lowlands"
 			custom_effect_tooltip = every_beneluxe_nation_20_fascism_tt
 			effect_tooltip = {
 				country_event = NSB_polish_fascist_events.5
@@ -12206,6 +12435,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_invite_the_baltics"
 			add_opinion_modifier = { 
 				target = EST modifier = POL_the_baltic_alliance 
 			}
@@ -12334,6 +12564,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_support_falangists_in_the_americas"
 			custom_effect_tooltip = every_latin_american_nation_40_fascism_tt
 			effect_tooltip = {
 				country_event = NSB_polish_fascist_events.5
@@ -12400,6 +12631,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_demand_LIT"
 			#Poland demands Lithuanian annexation
 			if = {
 				limit = {
@@ -12490,6 +12722,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_national_commonwealth"
 			custom_effect_tooltip = form_country_lithuania_coring_states_tt
 			custom_effect_tooltip = form_country_poland_coring_states_tt
 			custom_effect_tooltip = form_country_latvia_coring_states_tt
@@ -12561,6 +12794,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_anti_germans_abroad"
 			if = {
 				limit = {
 					LIT = {
@@ -12688,6 +12922,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_prepare_german_line"
 			every_owned_state = {
 				limit = {
 					controls_or_subject_of = yes
@@ -12736,6 +12971,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_integrate_greater_kashubia"
 			every_state = {
 				limit = {
 					OR = {
@@ -12809,6 +13045,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_radicalize_poles_in_germany"
 			add_ideas = POL_radicalized_anti_germans
 		}
 	}
@@ -12861,6 +13098,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_anti_blitz_tactics"
 			add_ideas = POL_anti_blitz_tactics
 			add_tech_bonus = {
 				name = POL_anti_tank_guns
@@ -12889,6 +13127,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_assert_eastern_claims"
 			every_state = {
 				limit = {
 					OR = {
@@ -12969,6 +13208,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_internationalism"
 			add_ideas = POL_internationalism_focus
 			#Some sort of Relations boost modifier
 		}
@@ -12992,6 +13232,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_authoritarianism"
 			add_timed_idea = {
 				idea = POL_authoritarianism_focus
 				days = 720
@@ -13017,6 +13258,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_paramilitarism"
 			add_ideas = paramilitarism_focus
 			#As Per Generic Focus
 		}
@@ -13040,6 +13282,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_go_right"
 			add_timed_idea = {
 				idea = fascist_influence
 				days = 720
@@ -13065,6 +13308,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_military_youth"
 			add_ideas = military_youth_focus
 			#As per generic
 		}
@@ -13091,6 +13335,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_seek_accommodation_with_germany"
 			GER = {
 				add_ai_strategy = {
 				   type = alliance
@@ -13127,6 +13372,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_go_left"
 			add_timed_idea = {
 				idea = communist_influence
 				days = 720
@@ -13152,6 +13398,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_political_commissars"
 			add_ideas = political_commissars_focus
 			#as per generic focus
 		}
@@ -13176,6 +13423,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_seek_accommodation_with_USSR"
 			add_opinion_modifier = { target = SOU modifier = POL_seek_accommodation_with_USSR }
 			SOU = { add_opinion_modifier = { target = ROOT modifier = POL_seek_accommodation_with_USSR } }
 			#Relation Boost with the USSR
@@ -13200,6 +13448,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_liberalism_focus"
 			add_timed_idea = {
 				idea = democratic_influence
 				days = 720
@@ -13225,6 +13474,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_intervention_focus"
 			set_rule = { can_send_volunteers = yes }
 			add_political_power = 150
 			#As per generic
@@ -13251,6 +13501,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_draw_closer_to_britain"
 			add_opinion_modifier = { target = ENG modifier = POL_draw_closer_to_britain }
 			ENG = { add_opinion_modifier = { target = ROOT modifier = POL_draw_closer_to_britain } }
 			#Relation boost with the UK
@@ -13274,6 +13525,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_volunteer_corps"
 			add_ideas = volunteer_corps_focus
 			#As Per Generic Tree
 		}
@@ -13413,6 +13665,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_between_the_seas_concept"
 			if = {
 				limit = {
 					is_in_faction = yes
@@ -13487,6 +13740,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_baltic_alliance"
 			add_opinion_modifier = { 
 				target = EST modifier = POL_the_baltic_alliance 
 			}
@@ -13577,6 +13831,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_treaty_with_lithuania"
 			add_opinion_modifier = { target = LIT modifier = POL_treaty_with_lithuania }
 			LIT = { 
 				add_opinion_modifier = { target = ROOT modifier = POL_treaty_with_lithuania } 
@@ -13624,6 +13879,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_north_sea"
 			unlock_decision_tooltip = POL_diplomatic_mission_to_FIN
 		}
 	}
@@ -13660,6 +13916,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_finno_polish_pact"
 			FIN = {
 				country_event = { id = poland.16 days = 1 }
 			}
@@ -13690,6 +13947,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_invite_denmark"
 			DEN = {
 				country_event = { id = poland.16 days = 1 }
 			}
@@ -13717,6 +13975,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_invite_sweden"
 			SWE = {
 				country_event = { id = poland.16 days = 1 }
 			}
@@ -13744,6 +14003,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_invite_norway"
 			NOR = {
 				country_event = { id = poland.16 days = 1 }
 			}
@@ -13784,6 +14044,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_mediterranean"
 			unlock_decision_tooltip = POL_diplomatic_mission_to_CZE
 			unlock_decision_tooltip = POL_diplomatic_mission_to_YUG
 		}
@@ -13820,6 +14081,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_coerce_czechoslovakia"
 			CZE = {
 				country_event = { id = poland.16 days = 1 }
 			}
@@ -13873,6 +14135,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_austro_hungarian_alliance"
 			if = {
 				limit = {
 					AUS = {
@@ -13935,6 +14198,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_protect_yugoslavia"
 			YUG = {
 				country_event = { id = poland.16 days = 1 }
 			}
@@ -13984,6 +14248,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_invite_greece"
 			GRE = {
 				country_event = { id = poland.16 days = 1 }
 			}
@@ -14032,6 +14297,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_control_the_bosporus"
 			TUR = {
 				country_event = { id = poland.16 days = 1 }
 			}
@@ -14065,6 +14331,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_italian_alliance"
 			ITA = {
 				country_event = { id = poland.16 days = 1 }
 			}
@@ -14165,6 +14432,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_prepare_for_the_inevitable"
 			#Should maybe also purge all Sanation spirits/effects.
 			#Historically, when Poland surrendered, the Sanation became deeply irrelevant and most of the military just operated from France before fleeing to Britain.
 			#Mosciki himself just waited the war out in Romania while Sikorski focussed on retaking the homeland.
@@ -14255,6 +14523,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_foreign_air_support"
 			air_experience = 50
 			# 19400 Poles served in the exile airforce, 100 manpower per plane making it around 200 planes total.
 			if = {
@@ -14321,6 +14590,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_foreign_army_support"
 			army_experience = 75
 			add_manpower = 9700
 			add_offsite_building = { type = arms_factory level = 2 }
@@ -14355,6 +14625,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_aces_in_exile"
 			add_ideas = POL_aces_in_exile
 			air_experience = 75
 			add_manpower = 9700
@@ -14410,6 +14681,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_foreign_naval_support"
 			add_offsite_building = { type = dockyard level = 5 }
 		}
 	}
@@ -14443,6 +14715,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_resistance_industries"
 			add_offsite_building = { type = industrial_complex level = 5 }
 		}
 	}
@@ -14476,6 +14749,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_exile_industries"
 			add_offsite_building = { type = industrial_complex level = 3 }
 			add_offsite_building = { type = arms_factory level = 3 }
 		}
@@ -14505,6 +14779,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_expand_polish_intelligence"
 			add_ideas = { POL_expand_intelligence_idea }
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = POL_marian_rejewski
@@ -14544,6 +14819,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_expand_polish_intelligence_no_mtg"
 			add_ideas = { POL_expand_intelligence_idea }
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = POL_marian_rejewski
@@ -14579,6 +14855,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_niech_zyje_opor"
 			gain_random_agency_upgrade = yes
 			custom_effect_tooltip = unlock_warsaw_uprising_tt
 			hidden_effect = {
@@ -14615,6 +14892,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_niech_zyje_opor_no_mtg"
 			gain_random_agency_upgrade = yes
 			custom_effect_tooltip = unlock_warsaw_uprising_tt
 			hidden_effect = {
@@ -14659,6 +14937,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_long_push_home"
 			add_timed_idea = {
 				idea = POL_push_home_idea
 				days = 365
@@ -14694,6 +14973,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_long_push_home_no_mtg"
 			add_timed_idea = {
 				idea = POL_push_home_idea
 				days = 365
@@ -14720,6 +15000,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_bombe"
 			add_tech_bonus = {
 				name = POL_the_bombe
 				bonus = 1.0
@@ -14748,6 +15029,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_bombe_no_mtg"
 			add_tech_bonus = {
 				name = POL_the_bombe
 				bonus = 1.0
@@ -14776,6 +15058,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_cyclometer"
 			if = {
 				limit = {
 					NOT = { has_dlc = "La Resistance" }
@@ -14816,6 +15099,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_cyclometer_no_mtg"
 			if = {
 				limit = {
 					NOT = { has_dlc = "La Resistance" }
@@ -14853,6 +15137,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_atomic_physics_institute"
 			add_tech_bonus = {
 				name = POL_atomic_physics_institute
 				bonus = 1.0
@@ -14900,6 +15185,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_develop_polish_ship_building"
 			random_owned_controlled_state = {
 				prioritize = { 267 }
 				limit = {
@@ -14963,6 +15249,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_clamp_down_on_danzig"
 			unlock_decision_category_tooltip = POL_danzig_decisions
 			add_political_power = 75
 			add_command_power = 50
@@ -15021,6 +15308,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_attract_poles_to_gdynia"
 			if = {
 				limit = {
 					OR = {
@@ -15078,6 +15366,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_study_foreign_built_ships"
 			add_tech_bonus = {
 				name = POL_study_foreign_built_ships
 				bonus = 1.0
@@ -15130,6 +15419,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_ban_the_nazi_party"
 			280 = {
 				force_enable_resistance = { 
 					clear = yes
@@ -15174,6 +15464,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_develop_gdansk_ship_building"
 			random_owned_controlled_state = {
 				prioritize = { 280 }
 				limit = {
@@ -15224,6 +15515,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_expand_gdynia_seaport"
 			if = {
 				limit = {
 					has_idea = uncontrolled_exports
@@ -15273,6 +15565,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_integrate_gdansk_industries"
 			if = {
 				limit = {
 					has_idea = uncontrolled_exports
@@ -15322,6 +15615,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_expand_northern_rail"
 			if = {
 				limit = {
 					has_completed_focus = POL_clamp_down_on_danzig
@@ -15375,6 +15669,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_the_twin_threats"
 			add_doctrine_cost_reduction = {
 				name = POL_the_twin_threats
 				cost_reduction = 0.5
@@ -15402,6 +15697,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_a_cruiser_navy"
 			add_tech_bonus = {
 				name = POL_a_cruiser_navy
 				bonus = 1.0
@@ -15428,6 +15724,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_import_submarine_technology"
 			add_tech_bonus = {
 				name = POL_import_submarine_technology
 				bonus = 1.0
@@ -15454,6 +15751,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_commerce_attack"
 			add_doctrine_cost_reduction = {
 				name = POL_commerce_attack
 				cost_reduction = 0.5
@@ -15482,6 +15780,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_coastal_defense"
 			add_tech_bonus = {
 				name = POL_coastal_defense
 				bonus = 1.0
@@ -15516,6 +15815,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_strike_force"
 			if = { 
 				limit = {
 					NOT = { has_dlc = "Man the Guns" }
@@ -15562,6 +15862,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_baltic_navy"
 			add_doctrine_cost_reduction = {
 				name = POL_baltic_navy
 				cost_reduction = 0.5
