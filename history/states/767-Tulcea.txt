@@ -11,6 +11,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			dockyard = 1
+			7492 = { naval_base = 1 }
 		}
 		victory_points = {
 			7492 5 
@@ -19,7 +20,7 @@ state={
 	}
 
 	provinces={
-		827 6664 6730 7492 8586 14369 14415 20417 
+		6664 6730 7492 8586 14369 14415 20417 
 	}
 	manpower=192570
 	buildings_max_level_factor=1.000
