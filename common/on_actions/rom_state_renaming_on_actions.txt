@@ -1,0 +1,91 @@
+#Romanian territories when they change controller
+#            if = {
+#                limit = {
+#                    FROM.FROM = { state = STATE_TAG }
+#                }
+#                if = {
+#                    limit = {
+#                        ROOT = {
+#                            condition 1
+#                        }
+#                    }
+#                    FROM.FROM = { set_state_name = "STATE NAME 1" }
+#                    set_province_name = {
+#                        id = PROVINCE_TAG
+#                        name = "PROVINCE NAME 1"
+#                    }
+#                }
+#                else_if = {
+#                    limit = {
+#                        ROOT = {
+#                            condition 2
+#                        }
+#                    }
+#                    FROM.FROM = { set_state_name = "STATE NAME 2" }
+#                    set_province_name = {
+#                        id = PROVINCE_TAG
+#                        name = "PROVINCE NAME 2"
+#                    }
+#                }
+#                else = {
+#                    reset_province_name = PROVINCE_TAG
+#                    FROM.FROM = { reset_state_name = yes }
+#                }
+#            }
+#
+
+on_actions = {
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 818 }
+				}
+				if = {
+					limit = {
+						ROOT = { original_tag = BUL }
+					}
+					FROM.FROM = { set_state_name = STATE_818_BUL }
+					set_province_name = { id = 5762 name = "VICTORY_POINTS_5762_BUL" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 5762
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = { state = 793 }
+				}
+				if = {
+					limit = {
+						ROOT = { original_tag = BUL }
+					}
+					FROM.FROM = { set_state_name = STATE_793_BUL }
+					set_province_name = { id = 14572 name = "VICTORY_POINTS_14572_BUL" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 14572
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = { state = 767 }
+				}
+				if = {
+					limit = {
+						ROOT = { original_tag = BUL }
+					}
+					FROM.FROM = { set_state_name = STATE_767_BUL }
+					set_province_name = { id = 7492 name = "VICTORY_POINTS_7492_BUL" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 7492
+				}
+			}
+		}
+	}
+}

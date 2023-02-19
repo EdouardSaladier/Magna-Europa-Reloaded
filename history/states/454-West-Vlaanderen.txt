@@ -2,35 +2,42 @@
 state={
 	id=454
 	name="STATE_454"
-	provinces={
-		3958 6128 8746 8779 12255 12265 12297 12361 
-	}
+
 	history={
 		owner = BEL
 		add_core_of = BEL
 		buildings = {
 			infrastructure = 4
-			8746 = { naval_base = 3 }
+			8746 = {
+				naval_base = 3
+
+			}
+
 		}
 		add_core_of = FLA
-        victory_points = {
-            8746 10 #Bruges
-        }
-        victory_points = {
-            12255 5 #Ostend
-        }
-        victory_points = {
-            12361 5 #Roeselare
-        }
-        victory_points = {
-            3958 5 #Kortrijk
-        }
-        victory_points = {
-            8779 2 #Ieper
-        }
-    }
+		victory_points = {
+			8746 10 
+		}
+		victory_points = {
+			12255 5 
+		}
+		victory_points = {
+			12361 5 
+		}
+		victory_points = {
+			3958 5 
+		}
+		victory_points = {
+			8779 2 
+		}
+
+	}
+
+	provinces={
+		3958 6128 8746 8779 12255 12265 12297 12361 19898 
+	}
 	manpower=939400
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
-	state_category = large_city
 }
