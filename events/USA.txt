@@ -7,6 +7,7 @@ add_namespace = usa
 # Amelia Eartharts wants to join the USAAC
 country_event = {
 	id = usa.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.1 FROM = [From.GetName]" }
 	title = usa.1.t
 	desc = usa.1.d
 	picture = GFX_report_event_usa_amelia_earhart_airplane
@@ -43,6 +44,7 @@ country_event = {
 # Pearl Harbor Gambit
 country_event = {
 	id = usa.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.3 FROM = [From.GetName]" }
 	title = usa.3.t
 	desc = usa.3.d
 	picture = GFX_report_event_usa_pearl_harbor_airphoto
@@ -88,6 +90,7 @@ country_event = {
 # Destroyers for Bases
 country_event = {
 	id = usa.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.4 FROM = [From.GetName]" }
 	title = usa.4.t
 	desc = usa.4.d
 	picture = GFX_report_event_usa_british_sailors_destroyers
@@ -166,6 +169,7 @@ country_event = {
 # Britain accepts offer
 country_event = {
 	id = usa.401
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.401 FROM = [From.GetName]" }
 	title = usa.401.t
 	desc = usa.401.desc
 	picture = GFX_report_event_usa_destroyers
@@ -180,6 +184,7 @@ country_event = {
 # Britain refuses offer
 country_event = {
 	id = usa.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.5 FROM = [From.GetName]" }
 	title = usa.5.t
 	desc = usa.5.d
 	picture = GFX_report_event_usa_destroyers
@@ -194,6 +199,7 @@ country_event = {
 # Election of 1936: Roosevelt vs Alf Landon
 country_event = {
 	id = usa.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.6 FROM = [From.GetName]" }
 	title = usa.6.t
 	desc = usa.6.d
 	picture = GFX_report_event_usa_election_generic
@@ -310,6 +316,7 @@ country_event = {
 # Election of 1940: Roosevelt vs Wendell Wilkie
 country_event = {
 	id = usa.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.7 FROM = [From.GetName]" }
 	title = usa.7.t
 	desc = usa.7.d
 	picture = GFX_report_event_usa_election_roosevelt_wilkie
@@ -401,6 +408,7 @@ country_event = {
 # Election of 1940: Roosevelt vs Landon (Incumbent)
 country_event = {
 	id = usa.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.8 FROM = [From.GetName]" }
 	title = usa.8.t
 	desc = usa.8.d
 	picture = GFX_report_event_usa_election_landon_roosevelt
@@ -473,6 +481,7 @@ country_event = {
 # Election of 1944: Roosevelt vs Thomas E. Dewey
 country_event = {
 	id = usa.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.9 FROM = [From.GetName]" }
 	title = usa.9.t
 	desc = usa.9.d
 	picture = GFX_report_event_usa_election_roosevelt_dewey
@@ -563,6 +572,7 @@ country_event = {
 # Election of 1944: Roosevelt vs Incumbent
 country_event = {
 	id = usa.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.10 FROM = [From.GetName]" }
 	title = usa.10.t
 	desc = usa.10.d
 	picture = GFX_report_event_usa_election_generic
@@ -637,6 +647,7 @@ country_event = {
 # Election of 1944: Roosevelt vs MacArthur
 country_event = {
 	id = usa.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.11 FROM = [From.GetName]" }
 	title = usa.11.t
 	desc = usa.11.d
 	picture = GFX_report_event_usa_election_roosevelt_macarthur
@@ -731,6 +742,7 @@ country_event = {
 # Election of 1944: MacArthur Candidate?
 country_event = {
 	id = usa.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.12 FROM = [From.GetName]" }
 	title = usa.12.t
 	desc = usa.12.d
 	picture = GFX_report_event_usa_macarthur_speech
@@ -760,6 +772,7 @@ country_event = {
 # Roosevelt Dies
 country_event = {
 	id = usa.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.13 FROM = [From.GetName]" }
 	title = usa.13.t
 	desc = usa.13.d
 	picture = GFX_report_event_usa_funeral
@@ -797,6 +810,7 @@ country_event = {
 # Fascist US reacts to Commienazis 
 country_event = {
 	id = usa.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.14 FROM = [From.GetName]" }
 	title = usa.14.t
 	desc = usa.14.d
 	picture = GFX_report_event_molotov_ribentrop_handshake
@@ -855,6 +869,7 @@ country_event = {
 # Hidden event to get scopes set up 
 country_event = {
 	id = usa.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.16 FROM = [From.GetName]" }
 
 	is_triggered_only = yes
 	
@@ -871,6 +886,7 @@ country_event = {
 # USA option to intervene in war 
 country_event = {
 	id = usa.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.17 FROM = [From.GetName]" }
 	title = usa.17.t
 	desc = usa.17.d
 	picture = GFX_report_event_usa_macarthur_speech
@@ -925,6 +941,7 @@ country_event = {
 # Country response to USA intervening
 country_event = {
 	id = usa.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.18 FROM = [From.GetName]" }
 	title = usa.18.t
 	desc = usa.18.d
 	picture = GFX_report_event_soldiers_marching
@@ -999,6 +1016,7 @@ country_event = {
 }
 country_event = {
 	id = usa.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.19 FROM = [From.GetName]" }
 	title = usa.19.t
 
 	is_triggered_only = yes
@@ -1018,6 +1036,7 @@ country_event = {
 # US supports democracy 
 country_event = {
 	id = usa.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.20 FROM = [From.GetName]" }
 	title = usa.20.t
 	desc = usa.20.d
 	picture = GFX_report_event_usa_election_generic
@@ -1037,6 +1056,7 @@ country_event = {
 # US supports communism
 country_event = {
 	id = usa.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.21 FROM = [From.GetName]" }
 	title = usa.20.t
 	desc = usa.21.d
 	picture = GFX_report_event_usa_election_generic
@@ -1056,6 +1076,7 @@ country_event = {
 # US supports fascism
 country_event = {
 	id = usa.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.22 FROM = [From.GetName]" }
 	title = usa.20.t
 	desc = usa.22.d
 	picture = GFX_report_event_usa_election_generic
@@ -1076,6 +1097,7 @@ country_event = {
 # US extends influence to protection. Will meddle in wars
 country_event = {
 	id = usa.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.23 FROM = [From.GetName]" }
 	title = usa.23.t
 	desc = usa.23.d
 	picture = GFX_report_event_usa_heavy_cruiser
@@ -1093,6 +1115,7 @@ country_event = {
 # Communist US reacts to Commienazis 
 country_event = {
 	id = usa.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.24 FROM = [From.GetName]" }
 	title = usa.24.t
 	desc = usa.24.d
 	picture = GFX_report_event_molotov_ribentrop_handshake
@@ -1147,6 +1170,7 @@ country_event = {
 # US congress elections - outcome
 country_event = {
 	id = usa.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.30 FROM = [From.GetName]" }
 	title = usa.30.t
 	desc = usa.30.desc
 	picture = GFX_report_event_election_vote
@@ -1165,6 +1189,7 @@ country_event = {
 # elections - new president, opposition/support switch roles
 country_event = {
 	id = usa.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.31 FROM = [From.GetName]" }
 	title = usa.31.t
 	desc = usa.31.desc
 	picture = GFX_report_event_usa_election_generic
@@ -1183,6 +1208,7 @@ country_event = {
 # elections in the US - player has a majority guaranteed
 country_event = {
 	id = usa.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.32 FROM = [From.GetName]" }
 	title = usa.32.t
 	desc = usa.32.desc
 	picture = GFX_report_event_election_vote
@@ -1205,6 +1231,7 @@ country_event = {
 #midterm elections
 country_event = {
 	id = usa.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.35 FROM = [From.GetName]" }
 	title = usa.35.t
 	desc = usa.35.desc
 	picture = GFX_report_event_election_vote
@@ -1252,6 +1279,7 @@ country_event = {
 #small support event - senate
 country_event = {
 	id = usa.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.40 FROM = [From.GetName]" }
 	title = usa.40.t
 	desc = usa.40.desc
 	picture = GFX_report_event_FDR_speech
@@ -1279,6 +1307,7 @@ country_event = {
 # small support event - house
 country_event = {
 	id = usa.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.41 FROM = [From.GetName]" }
 	title = usa.41.t
 	desc = usa.41.desc
 	picture = GFX_report_event_FDR_speech
@@ -1307,6 +1336,7 @@ country_event = {
 #small opposition event - senate
 country_event = {
 	id = usa.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.42 FROM = [From.GetName]" }
 	title = usa.42.t
 	desc = usa.42.desc
 	picture = GFX_report_event_journalists_speech
@@ -1335,6 +1365,7 @@ country_event = {
 # small opposition event - house
 country_event = {
 	id = usa.43
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.43 FROM = [From.GetName]" }
 	title = usa.43.t
 	desc = usa.43.desc
 	picture = GFX_report_event_journalists_speech
@@ -1363,6 +1394,7 @@ country_event = {
 #medium support event - senate
 country_event = {
 	id = usa.44
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.44 FROM = [From.GetName]" }
 	title = usa.44.t
 	desc = usa.44.desc
 	picture = GFX_report_event_FDR_speech
@@ -1390,6 +1422,7 @@ country_event = {
 # medium support event - house
 country_event = {
 	id = usa.45
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.45 FROM = [From.GetName]" }
 	title = usa.45.t
 	desc = usa.45.desc
 	picture = GFX_report_event_FDR_speech
@@ -1418,6 +1451,7 @@ country_event = {
 #medium opposition event - senate
 country_event = {
 	id = usa.46
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.46 FROM = [From.GetName]" }
 	title = usa.46.t
 	desc = usa.46.desc
 	picture = GFX_report_event_journalists_speech
@@ -1445,6 +1479,7 @@ country_event = {
 # medium opposition event - house
 country_event = {
 	id = usa.47
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.47 FROM = [From.GetName]" }
 	title = usa.47.t
 	desc = usa.47.desc
 	picture = GFX_report_event_journalists_speech
@@ -1473,6 +1508,7 @@ country_event = {
 # dispatcher event - senate
 country_event = {
 	id = usa.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.50 FROM = [From.GetName]" }
 	Hidden = yes
 	is_triggered_only = yes
 	trigger = {
@@ -1557,6 +1593,7 @@ country_event = {
 # dispatcher event - house
 country_event = {
 	id = usa.51
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.51 FROM = [From.GetName]" }
 	Hidden = yes
 	is_triggered_only = yes
 	trigger = {
@@ -1645,6 +1682,7 @@ country_event = {
 # senator wants investment in their state - hidden dispatch event
 country_event = {
 	id = usa.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.60 FROM = [From.GetName]" }
 	hidden = yes
 	is_triggered_only = yes
 	trigger = {
@@ -1798,6 +1836,7 @@ country_event = {
 # senator wants investment in civilian factory
 country_event = {
 	id = usa.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.61 FROM = [From.GetName]" }
 	title = usa.61.t
 	desc = usa.61.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -1830,6 +1869,7 @@ country_event = {
 # senator wants investment in military factory
 country_event = {
 	id = usa.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.62 FROM = [From.GetName]" }
 	title = usa.61.t
 	desc = usa.62.desc
 	picture = GFX_report_event_tank_factory
@@ -1861,6 +1901,7 @@ country_event = {
 # senator wants investment in infrastructure
 country_event = {
 	id = usa.63
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.63 FROM = [From.GetName]" }
 	title = usa.63.t
 	desc = usa.63.desc
 	picture = GFX_report_event_generic_train
@@ -1892,6 +1933,7 @@ country_event = {
 # senator wants investment in dockyards
 country_event = {
 	id = usa.64
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.64 FROM = [From.GetName]" }
 	title = usa.64.t
 	desc = usa.64.desc
 	picture = GFX_report_event_ast_navy
@@ -1923,6 +1965,7 @@ country_event = {
 
 country_event = {
 	id = usa.176 #Fire arsenal of democracy speech
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.176 #Fire arsenal of democracy speech FROM = [From.GetName]" }
 	
 	fire_only_once = yes
 	
@@ -1946,6 +1989,7 @@ country_event = {
 # join the allies
 country_event = {
 	id = usa.65
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.65 FROM = [From.GetName]" }
 	title = usa.65.t
 	desc = usa.65.desc
 	picture = GFX_report_event_ast_navy

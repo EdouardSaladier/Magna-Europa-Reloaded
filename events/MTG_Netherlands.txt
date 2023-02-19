@@ -3,6 +3,7 @@
 # Venezuela offers to 'protect' Curacao
 country_event = {
 	id = mtg_netherlands.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.1 FROM = [From.GetName]" }
 	title = mtg_netherlands.1.t
 	desc = mtg_netherlands.1.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -59,6 +60,7 @@ country_event = {
 # Netherlands accepts 'Venezuelan protection' for Curacao
 country_event = {
 	id = mtg_netherlands.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.2 FROM = [From.GetName]" }
 	title = mtg_netherlands.2.t
 	desc = mtg_netherlands.2.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -75,6 +77,7 @@ country_event = {
 # Netherlands rejects 'Venezuelan protection' for Curacao
 country_event = {
 	id = mtg_netherlands.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.3 FROM = [From.GetName]" }
 	title = mtg_netherlands.3.t
 	desc = mtg_netherlands.3.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -91,6 +94,7 @@ country_event = {
 # Netherlands asks USA/ENG to take over Curacao
 country_event = {
 	id = mtg_netherlands.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.4 FROM = [From.GetName]" }
 	title = mtg_netherlands.4.t
 	desc = mtg_netherlands.4.d
 	picture = GFX_report_event_generic_read_write
@@ -116,6 +120,7 @@ country_event = {
 # FROM accepts taking over Curacao
 country_event = {
 	id = mtg_netherlands.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.5 FROM = [From.GetName]" }
 	title = mtg_netherlands.5.t
 	desc = mtg_netherlands.5.d
 	picture = GFX_report_event_generic_sign_treaty2
@@ -132,6 +137,7 @@ country_event = {
 # FROM rejects taking over Curacao
 country_event = {
 	id = mtg_netherlands.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.6 FROM = [From.GetName]" }
 	title = mtg_netherlands.6.t
 	desc = mtg_netherlands.6.d
 	picture = GFX_report_event_generic_sign_treaty2
@@ -161,6 +167,7 @@ country_event = {
 # Netherlands asks Germany for battlecruiser tech
 country_event = {
 	id = mtg_netherlands.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.7 FROM = [From.GetName]" }
 	title = mtg_netherlands.7.t
 	desc = mtg_netherlands.7.d
 	picture = GFX_report_event_physics_lab_02
@@ -214,6 +221,7 @@ country_event = {
 # Germany shares Battlecruiser tech
 country_event = {
 	id = mtg_netherlands.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.8 FROM = [From.GetName]" }
 	title = mtg_netherlands.8.t
 	desc = mtg_netherlands.8.d
 	picture = GFX_report_event_physics_lab_02
@@ -253,6 +261,7 @@ country_event = {
 # Germany refuses to share Battlecruiser tech
 country_event = {
 	id = mtg_netherlands.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.9 FROM = [From.GetName]" }
 	title = mtg_netherlands.9.t
 	desc = mtg_netherlands.9.d
 	picture = GFX_report_event_generic_read_write
@@ -268,6 +277,7 @@ country_event = {
 # New government forms
 country_event = {
 	id = mtg_netherlands.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.10 FROM = [From.GetName]" }
 	title = mtg_netherlands.10.t
 	desc = mtg_netherlands.10.d
 	picture = GFX_report_event_hol_cabinet_de_geer
@@ -289,6 +299,7 @@ country_event = {
 # See to Japanese Demands in the East Indies
 country_event = {
 	id = mtg_netherlands.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.11 FROM = [From.GetName]" }
 	title = mtg_netherlands.11.t
 	desc = mtg_netherlands.11.d
 	picture = GFX_report_event_japan_europe_pact
@@ -358,6 +369,7 @@ country_event = {
 # Event for Japan saying NL gives them the Indies
 country_event = {
 	id = mtg_netherlands.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.12 FROM = [From.GetName]" }
 	title = mtg_netherlands.12.t
 	desc = mtg_netherlands.12.d
 	picture = GFX_report_event_japan_europe_pact
@@ -392,6 +404,7 @@ country_event = {
 # Event for Japan saying NL trades them the Indies resources
 country_event = {
 	id = mtg_netherlands.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.13 FROM = [From.GetName]" }
 	title = mtg_netherlands.13.t
 	desc = mtg_netherlands.13.d
 	picture = GFX_report_event_japan_europe_pact
@@ -457,6 +470,7 @@ country_event = {
 # Replace the Defeatist Government
 country_event = {
 	id = mtg_netherlands.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.14 FROM = [From.GetName]" }
 	title = mtg_netherlands.14.t
 	desc = mtg_netherlands.14.d
 	picture = GFX_report_event_hol_cabinet_gerbrandy
@@ -487,6 +501,7 @@ country_event = {
 # Event for Britain: Revive the Low Countries Buffer Proposal
 country_event = {
 	id = mtg_netherlands.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.15 FROM = [From.GetName]" }
 	title = mtg_netherlands.15.t
 	desc = mtg_netherlands.15.d
 	picture = GFX_report_event_generic_conference
@@ -512,6 +527,7 @@ country_event = {
 # Event for NL: Britain supports unified Low Countries
 country_event = {
 	id = mtg_netherlands.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.16 FROM = [From.GetName]" }
 	title = mtg_netherlands.16.t
 	desc = mtg_netherlands.16.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -548,6 +564,7 @@ country_event = {
 # Event for NL: Britain rejects unified Low Countries
 country_event = {
 	id = mtg_netherlands.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.17 FROM = [From.GetName]" }
 	title = mtg_netherlands.17.t
 	desc = mtg_netherlands.17.d
 	picture = GFX_report_event_generic_read_write
@@ -563,6 +580,7 @@ country_event = {
 # Event for BEL/LUX: Britain just agreed to hand you over to NL
 country_event = {
 	id = mtg_netherlands.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.18 FROM = [From.GetName]" }
 	title = mtg_netherlands.16.t
 	desc = mtg_netherlands.18.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -579,6 +597,7 @@ country_event = {
 # Event for BEL/LUX: HOL invites to Benelux
 country_event = {
 	id = mtg_netherlands.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.19 FROM = [From.GetName]" }
 	title = mtg_netherlands.19.t
 	desc = mtg_netherlands.19.d
 	picture = GFX_report_event_generic_conference
@@ -620,6 +639,7 @@ country_event = {
 # Event for Democratic minors: HOL invites to European Union
 country_event = {
 	id = mtg_netherlands.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.20 FROM = [From.GetName]" }
 	title = mtg_netherlands.20.t
 	desc = mtg_netherlands.20.d
 	picture = GFX_report_event_generic_conference
@@ -661,6 +681,7 @@ country_event = {
 # Event for INS informing of NL preparing to integrate
 country_event = {
 	id = mtg_netherlands.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.21 FROM = [From.GetName]" }
 	title = mtg_netherlands.21.t
 	desc = mtg_netherlands.21.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -682,6 +703,7 @@ country_event = {
 # Event for INS informing of NL moving capital to Batavia
 country_event = {
 	id = mtg_netherlands.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.22 FROM = [From.GetName]" }
 	title = mtg_netherlands.22.t
 	desc = mtg_netherlands.22.d
 	picture = GFX_report_event_generic_sign_treaty2
@@ -698,6 +720,7 @@ country_event = {
 # Event saying Japan accepts transfer of NEI
 country_event = {
 	id = mtg_netherlands.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.23 FROM = [From.GetName]" }
 	title = mtg_netherlands.23.t
 	desc = mtg_netherlands.23.d
 	picture = GFX_report_event_japan_europe_pact
@@ -722,6 +745,7 @@ country_event = {
 # Event saying Japan accepts transfer of NEI resources
 country_event = {
 	id = mtg_netherlands.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.24 FROM = [From.GetName]" }
 	title = mtg_netherlands.24.t
 	desc = mtg_netherlands.24.d
 	picture = GFX_report_event_japan_europe_pact
@@ -771,6 +795,7 @@ country_event = {
 # Event saying Japan rejects Dutch offer
 country_event = {
 	id = mtg_netherlands.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.25 FROM = [From.GetName]" }
 	title = mtg_netherlands.25.t
 	desc = mtg_netherlands.25.d
 	picture = GFX_report_event_japanese_reply
@@ -852,6 +877,7 @@ country_event = {
 # Event for USA informing them NL wants their protection in West Indies
 country_event = {
 	id = mtg_netherlands.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.26 FROM = [From.GetName]" }
 	title = mtg_netherlands.26.t
 	desc = mtg_netherlands.26.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -881,6 +907,7 @@ country_event = {
 # Event for HOL saying USA will protect West Indies
 country_event = {
 	id = mtg_netherlands.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.27 FROM = [From.GetName]" }
 	title = mtg_netherlands.27.t
 	desc = mtg_netherlands.27.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -901,6 +928,7 @@ country_event = {
 # Event for HOL saying USA will NOT protect West Indies
 country_event = {
 	id = mtg_netherlands.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.28 FROM = [From.GetName]" }
 	title = mtg_netherlands.28.t
 	desc = mtg_netherlands.28.d
 	picture = GFX_report_event_generic_read_write
@@ -916,6 +944,7 @@ country_event = {
 # Event for FROM for equipment to prepare against an invasion
 country_event = {
 	id = mtg_netherlands.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.29 FROM = [From.GetName]" }
 	title = mtg_netherlands.29.t
 	desc = mtg_netherlands.29.d
 	picture = GFX_report_event_generic_rifles
@@ -1196,6 +1225,7 @@ country_event = {
 # Event for HOL saying FROM will deliver equipment
 country_event = {
 	id = mtg_netherlands.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.30 FROM = [From.GetName]" }
 	title = mtg_netherlands.30.t
 	desc = mtg_netherlands.30.d
 	picture = GFX_report_event_generic_rifles
@@ -1250,6 +1280,7 @@ country_event = {
 # Event for HOL saying FROM will NOT deliver equipment
 country_event = {
 	id = mtg_netherlands.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.31 FROM = [From.GetName]" }
 	title = mtg_netherlands.31.t
 	desc = mtg_netherlands.31.d
 	picture = GFX_report_event_generic_read_write
@@ -1265,6 +1296,7 @@ country_event = {
 # Event for FROM asking to draw up a combined staff plan
 country_event = {
 	id = mtg_netherlands.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.32 FROM = [From.GetName]" }
 	title = mtg_netherlands.32.t
 	desc = mtg_netherlands.32.d
 	picture = GFX_report_event_military_planning
@@ -1409,6 +1441,7 @@ country_event = {
 # Event for HOL saying FROM wants to draw up a staff plan
 country_event = {
 	id = mtg_netherlands.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.33 FROM = [From.GetName]" }
 	title = mtg_netherlands.33.t
 	desc = mtg_netherlands.33.d
 	picture = GFX_report_event_military_planning
@@ -1446,6 +1479,7 @@ country_event = {
 # Event for HOL saying FROM does not want to draw up a staff plan
 country_event = {
 	id = mtg_netherlands.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.34 FROM = [From.GetName]" }
 	title = mtg_netherlands.34.t
 	desc = mtg_netherlands.34.d
 	picture = GFX_report_event_generic_read_write
@@ -1461,6 +1495,7 @@ country_event = {
 # Event for FROM asking to exchange intelligence
 country_event = {
 	id = mtg_netherlands.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.35 FROM = [From.GetName]" }
 	title = mtg_netherlands.35.t
 	desc = mtg_netherlands.35.d
 	picture = GFX_report_event_generic_read_write
@@ -1632,6 +1667,7 @@ country_event = {
 # Event for HOL saying FROM agrees to exchange intelligence
 country_event = {
 	id = mtg_netherlands.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.36 FROM = [From.GetName]" }
 	title = mtg_netherlands.36.t
 	desc = mtg_netherlands.36.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -1672,6 +1708,7 @@ country_event = {
 # Event for HOL saying FROM does not agree to exchange intelligence
 country_event = {
 	id = mtg_netherlands.37
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.37 FROM = [From.GetName]" }
 	title = mtg_netherlands.37.t
 	desc = mtg_netherlands.37.desc
 	picture = GFX_report_event_generic_read_write
@@ -1689,6 +1726,7 @@ country_event = {
 # Event for FROM asking to share military knowledge
 country_event = {
 	id = mtg_netherlands.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.41 FROM = [From.GetName]" }
 	title = mtg_netherlands.41.t
 	desc = mtg_netherlands.41.d
 	picture = GFX_report_event_generic_conference
@@ -1842,6 +1880,7 @@ country_event = {
 # Event for HOL saying FROM agrees to share military knowledge
 country_event = {
 	id = mtg_netherlands.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.42 FROM = [From.GetName]" }
 	title = mtg_netherlands.42.t
 	desc = mtg_netherlands.42.d
 	picture = GFX_report_event_generic_conference
@@ -1866,6 +1905,7 @@ country_event = {
 # Event for HOL saying FROM does not agree to share military knowledge
 country_event = {
 	id = mtg_netherlands.43
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.43 FROM = [From.GetName]" }
 	title = mtg_netherlands.43.t
 	desc = mtg_netherlands.43.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -1883,6 +1923,7 @@ country_event = {
 # Prince Bernhard generator event
 country_event = {
 	id = mtg_netherlands.44
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.44 FROM = [From.GetName]" }
 
 	is_triggered_only = yes
 
@@ -1981,6 +2022,7 @@ country_event = {
 # Prince Bernhard involved in minor scandal
 country_event = {
 	id = mtg_netherlands.45
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.45 FROM = [From.GetName]" }
 	title = mtg_netherlands.45.t
 	desc = mtg_netherlands.45.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2000,6 +2042,7 @@ country_event = {
 # Prince Bernhard makes dashing public impression
 country_event = {
 	id = mtg_netherlands.46
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.46 FROM = [From.GetName]" }
 	title = mtg_netherlands.46.t
 	desc = mtg_netherlands.46.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2019,6 +2062,7 @@ country_event = {
 # Prince Bernhard sets good example for air forces
 country_event = {
 	id = mtg_netherlands.47
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.47 FROM = [From.GetName]" }
 	title = mtg_netherlands.47.t
 	desc = mtg_netherlands.47.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2038,6 +2082,7 @@ country_event = {
 # Prince Bernhard sets bad example for air forces
 country_event = {
 	id = mtg_netherlands.48
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.48 FROM = [From.GetName]" }
 	title = mtg_netherlands.48.t
 	desc = mtg_netherlands.48.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2066,6 +2111,7 @@ country_event = {
 # Prince Bernhard gives good input on strategy
 country_event = {
 	id = mtg_netherlands.49
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.49 FROM = [From.GetName]" }
 	title = mtg_netherlands.49.t
 	desc = mtg_netherlands.49.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2085,6 +2131,7 @@ country_event = {
 # Prince Bernhard gives bad input on strategy
 country_event = {
 	id = mtg_netherlands.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.50 FROM = [From.GetName]" }
 	title = mtg_netherlands.50.t
 	desc = mtg_netherlands.50.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2113,6 +2160,7 @@ country_event = {
 # Prince Bernhard goes to gather intelligence
 country_event = {
 	id = mtg_netherlands.51
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.51 FROM = [From.GetName]" }
 	title = mtg_netherlands.51.t
 	desc = mtg_netherlands.51.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2143,6 +2191,7 @@ country_event = {
 # Prince Bernhard gathers good intelligence
 country_event = {
 	id = mtg_netherlands.52
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.52 FROM = [From.GetName]" }
 	title = mtg_netherlands.52.t
 	desc = mtg_netherlands.52.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2162,6 +2211,7 @@ country_event = {
 # Prince Bernhard gathers bad intelligence
 country_event = {
 	id = mtg_netherlands.53
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.53 FROM = [From.GetName]" }
 	title = mtg_netherlands.53.t
 	desc = mtg_netherlands.53.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2181,6 +2231,7 @@ country_event = {
 # Prince Bernhard goes to organize resistance
 country_event = {
 	id = mtg_netherlands.54
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.54 FROM = [From.GetName]" }
 	title = mtg_netherlands.54.t
 	desc = mtg_netherlands.54.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2211,6 +2262,7 @@ country_event = {
 # Prince Bernhard successfully organizes resistance
 country_event = {
 	id = mtg_netherlands.55
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.55 FROM = [From.GetName]" }
 	title = mtg_netherlands.55.t
 	desc = mtg_netherlands.55.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2230,6 +2282,7 @@ country_event = {
 # Prince Bernhard is wounded organizing resistance
 country_event = {
 	id = mtg_netherlands.56
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.56 FROM = [From.GetName]" }
 	title = mtg_netherlands.56.t
 	desc = mtg_netherlands.56.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2257,6 +2310,7 @@ country_event = {
 # Prince Bernhard causes diplomatic row generator event
 country_event = {
 	id = mtg_netherlands.57
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.57 FROM = [From.GetName]" }
 	hidden = yes
 
 	is_triggered_only = yes
@@ -2293,6 +2347,7 @@ country_event = {
 # Prince Bernhard causes diplomatic row
 country_event = {
 	id = mtg_netherlands.58
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.58 FROM = [From.GetName]" }
 	title = mtg_netherlands.58.t
 	desc = mtg_netherlands.58.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2315,6 +2370,7 @@ country_event = {
 # Notification event of diplomatic row
 country_event = {
 	id = mtg_netherlands.59
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.59 FROM = [From.GetName]" }
 	title = mtg_netherlands.59.t
 	desc = mtg_netherlands.59.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2330,6 +2386,7 @@ country_event = {
 # Notification event of escalation of diplomatic row
 country_event = {
 	id = mtg_netherlands.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.60 FROM = [From.GetName]" }
 	title = mtg_netherlands.60.t
 	desc = mtg_netherlands.60.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2363,6 +2420,7 @@ country_event = {
 # Event for HOL saying FROM is not backing down
 country_event = {
 	id = mtg_netherlands.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.61 FROM = [From.GetName]" }
 	title = mtg_netherlands.61.t
 	desc = mtg_netherlands.61.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2382,6 +2440,7 @@ country_event = {
 # Event for HOL saying FROM soothed tensions
 country_event = {
 	id = mtg_netherlands.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.62 FROM = [From.GetName]" }
 	title = mtg_netherlands.62.t
 	desc = mtg_netherlands.62.d
 	picture = GFX_report_event_hol_prins_bernhard
@@ -2397,6 +2456,7 @@ country_event = {
 # Event for HOL notifying of evacuation of gold reserves
 country_event = {
 	id = mtg_netherlands.63
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.63 FROM = [From.GetName]" }
 	title = mtg_netherlands.63.t
 	desc = mtg_netherlands.63.d
 	picture = GFX_report_event_merchant_ship_01
@@ -2415,6 +2475,7 @@ country_event = {
 # Zuiderzee event for HOL offering infrastructure build speed
 country_event = {
 	id = mtg_netherlands.64
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.64 FROM = [From.GetName]" }
 	title = mtg_netherlands.64.t
 	desc = mtg_netherlands.64.d
 	picture = GFX_report_event_hol_polderen
@@ -2453,6 +2514,7 @@ country_event = {
 # Zuiderzee event for HOL offering factory build speed
 country_event = {
 	id = mtg_netherlands.65
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.65 FROM = [From.GetName]" }
 	title = mtg_netherlands.65.t
 	desc = mtg_netherlands.65.d
 	picture = GFX_report_event_hol_polderen
@@ -2491,6 +2553,7 @@ country_event = {
 # Gateway to Europe notification event of ENG taking the lead
 country_event = {
 	id = mtg_netherlands.66
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.66 FROM = [From.GetName]" }
 	title = mtg_netherlands.66.t
 	desc = {
 		text = mtg_netherlands.66.d.a
@@ -2528,6 +2591,7 @@ country_event = {
 # Gateway to Europe notification event of GER taking the lead
 country_event = {
 	id = mtg_netherlands.67
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.67 FROM = [From.GetName]" }
 	title = mtg_netherlands.67.t
 	desc = {
 		text = mtg_netherlands.67.d.a
@@ -2565,6 +2629,7 @@ country_event = {
 # Hidden event removing Shell-shocked spectator spirit
 country_event = {
 	id = mtg_netherlands.68
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.68 FROM = [From.GetName]" }
 
 	hidden = yes
 
@@ -2620,6 +2685,7 @@ country_event = {
 # Event complaining about unneeded flooding
 country_event = {
 	id = mtg_netherlands.69
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.69 FROM = [From.GetName]" }
 	title = mtg_netherlands.69.t
 	desc = mtg_netherlands.69.d
 	picture = GFX_report_event_hol_polderen
@@ -2752,6 +2818,7 @@ country_event = {
 # Event spawning pro-Kaiser deserter unit
 country_event = {
 	id = mtg_netherlands.70
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.70 FROM = [From.GetName]" }
 	title = mtg_netherlands.70.t
 	desc = mtg_netherlands.70.d
 	picture = GFX_report_event_german_troops
@@ -2805,6 +2872,7 @@ country_event = {
 # Event informing Germany of pro-Kaiser deserters
 country_event = {
 	id = mtg_netherlands.71
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.71 FROM = [From.GetName]" }
 	title = mtg_netherlands.71.t
 	desc = mtg_netherlands.71.d
 	picture = GFX_report_event_german_troops
@@ -2821,6 +2889,7 @@ country_event = {
 # Wilhelm II dies (Netherlands)
 country_event = {
 	id = mtg_netherlands.72
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.72 FROM = [From.GetName]" }
 	title = wtt_germany.26.t
 	desc = mtg_netherlands.72.d
 	picture = GFX_report_event_generic_funeral
@@ -2858,6 +2927,7 @@ country_event = {
 # German Dutch-aided civil war
 country_event = {
 	id = mtg_netherlands.73
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.73 FROM = [From.GetName]" }
 	title = mtg_netherlands.73.t
 	desc = mtg_netherlands.73.d
 	picture = GFX_report_event_ger_civil_war
@@ -2970,6 +3040,7 @@ country_event = {
 # Imperial GER suggesting they become allies when the war has ended and HOL is no longer in a faction
 country_event = {
 	id = mtg_netherlands.74
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.74 FROM = [From.GetName]" }
 	title = mtg_netherlands.74.t
 	desc = mtg_netherlands.74.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -3011,6 +3082,7 @@ country_event = {
 # Event informing WW1 Allies of Wilhelminism
 country_event = {
 	id = mtg_netherlands.75
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.75 FROM = [From.GetName]" }
 	title = mtg_netherlands.75.t
 	desc = mtg_netherlands.75.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -3029,6 +3101,7 @@ country_event = {
 # Event informing HOL that German deserters are no longer needed
 country_event = {
 	id = mtg_netherlands.76
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.76 FROM = [From.GetName]" }
 	title = mtg_netherlands.76.t
 	desc = mtg_netherlands.76.d
 	picture = GFX_report_event_german_troops
@@ -3083,6 +3156,7 @@ country_event = {
 # Event asking BEL/LUX whether they want to unify
 country_event = {
 	id = mtg_netherlands.77
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.77 FROM = [From.GetName]" }
 	title = mtg_netherlands.77.t
 	desc = mtg_netherlands.77.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -3112,6 +3186,7 @@ country_event = {
 # Event for Netherlands informing BEL/LUX accepted
 country_event = {
 	id = mtg_netherlands.78
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.78 FROM = [From.GetName]" }
 	title = mtg_netherlands.78.t
 	desc = mtg_netherlands.78.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -3163,6 +3238,7 @@ country_event = {
 # Event for Netherlands informing BEL/LUX rejected
 country_event = {
 	id = mtg_netherlands.79
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.79 FROM = [From.GetName]" }
 	title = mtg_netherlands.79.t
 	desc = mtg_netherlands.79.d
 	picture = GFX_report_event_generic_sign_treaty1

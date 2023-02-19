@@ -7,6 +7,7 @@ add_namespace = poland
 # Eastward Expansion (Danzig Ceded)
 country_event = {
 	id = poland.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.1 FROM = [From.GetName]" }
 	title = poland.1.t
 	desc = poland.1.d
 	picture = GFX_report_event_polish_tanks_01
@@ -32,6 +33,7 @@ country_event = {
 # Soviet Union Demands the East
 country_event = {
 	id = poland.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.2 FROM = [From.GetName]" }
 	title = poland.2.t
 	desc = poland.2.d
 	picture = GFX_report_event_polish_tanks_01
@@ -114,6 +116,7 @@ country_event = {
 # Poland Cedes the East
 country_event = {
 	id = poland.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.3 FROM = [From.GetName]" }
 	title = poland.3.t
 	desc = poland.3.d
 	picture = GFX_report_event_polish_tanks_01
@@ -203,6 +206,7 @@ country_event = {
 # Poland Refuses to Cede the East
 country_event = {
 	id = poland.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.4 FROM = [From.GetName]" }
 	title = poland.4.t
 	desc = poland.4.d
 	picture = GFX_report_event_polish_tanks_01
@@ -223,6 +227,7 @@ country_event = {
 # Soviet Union Offers Protection
 country_event = {
 	id = poland.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.5 FROM = [From.GetName]" }
 	title = poland.5.t
 	desc = poland.5.d
 	picture = GFX_report_event_polish_tanks_01
@@ -335,6 +340,7 @@ country_event = {
 # Poland Accepts Protection
 country_event = {
 	id = poland.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.6 FROM = [From.GetName]" }
 	title = poland.6.t
 	desc = poland.6.d
 	picture = GFX_report_event_polish_tanks_01
@@ -389,6 +395,7 @@ country_event = {
 # Poland Refuses Protection
 country_event = {
 	id = poland.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.7 FROM = [From.GetName]" }
 	title = poland.7.t
 	desc = poland.7.d
 	picture = GFX_report_event_polish_tanks_01
@@ -408,6 +415,7 @@ country_event = {
 # Poland Granted Eastern Germany
 country_event = {
 	id = poland.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.8 FROM = [From.GetName]" }
 	title = poland.8.t
 	desc = poland.8.d
 	picture = GFX_report_event_polish_tanks_01
@@ -464,6 +472,7 @@ country_event = {
 
 country_event = {
 	id = poland.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.9 FROM = [From.GetName]" }
 	title = poland.8.t
 	desc = poland.8.d
 	picture = GFX_report_event_polish_tanks_01
@@ -528,6 +537,7 @@ country_event = {
 
 country_event = {
 	id = poland.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.10 FROM = [From.GetName]" }
 	title = poland.10.t
 	desc = poland.10.d
 	picture = GFX_report_event_romania_poland_visit
@@ -542,6 +552,7 @@ country_event = {
 
 country_event = {
 	id = poland.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.11 FROM = [From.GetName]" }
 	title = poland.11.t
 	desc = poland.11.d
 	picture = GFX_report_event_polish_tanks_01
@@ -559,6 +570,7 @@ country_event = {
 
 country_event = {
 	id = poland.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.12 FROM = [From.GetName]" }
 	title = poland.12.t
 	desc = poland.12.d
 	picture = GFX_report_event_polish_tanks_01
@@ -613,6 +625,7 @@ country_event = {
 #Poland wants to add Romania to the Allies
 country_event = {
 	id = poland.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.13 FROM = [From.GetName]" }
 	title = poland.13.t
 	desc = poland.13.d
 	picture = GFX_report_event_romania_poland_visit
@@ -644,6 +657,7 @@ country_event = {
 #Romania recieves invitation to the Allies
 country_event = {
 	id = poland.1301
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.1301 FROM = [From.GetName]" }
 	title = poland.1301.t
 	desc = poland.1301.d
 	picture = GFX_report_event_romania_poland_visit
@@ -757,6 +771,7 @@ country_event = {
 #Faction leader says no
 country_event = {
 	id = poland.1302
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.1302 FROM = [From.GetName]" }
 	title = poland.1302.t
 	desc = poland.1302.d
 	picture = GFX_report_event_british_inspect_troops
@@ -776,6 +791,7 @@ country_event = {
 #Romania says no
 country_event = {
 	id = poland.1303
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.1303 FROM = [From.GetName]" }
 	title = poland.1303.t
 	desc = poland.1303.d
 	picture = GFX_report_event_romania_poland_visit
@@ -795,6 +811,7 @@ country_event = {
 #Poland asks for peace
 country_event = {
 	id = poland.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.14 FROM = [From.GetName]" }
 	title = LIT_events.2.t
 	desc = LIT_events.2.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -856,6 +873,7 @@ country_event = {
 #Poland demands Lithuanian annexation
 country_event = {
 	id = poland.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.15 FROM = [From.GetName]" }
 	title = poland.15.t
 	desc = {
 		text = poland.15.d
@@ -944,6 +962,7 @@ country_event = {
 #Lithuania says yes
 country_event = {
 	id = poland.1501
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.1501 FROM = [From.GetName]" }
 	title = poland.1501.t
 	desc = poland.1501.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -970,6 +989,7 @@ country_event = {
 #Lithuania says no
 country_event = {
 	id = poland.1502
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.1502 FROM = [From.GetName]" }
 	title = poland.1502.t
 	desc = poland.1502.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -991,6 +1011,7 @@ country_event = {
 ###MIEDZYMORZE###
 country_event = {
 	id = poland.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.16 FROM = [From.GetName]" }
 	title = poland.16.t
 	desc = { # FROM and ROOT are Democratic
 		text = generic.5.d.a
@@ -1228,6 +1249,7 @@ country_event = {
 }
 country_event = {
 	id = poland.1602
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.1602 FROM = [From.GetName]" }
 	title = poland.11.t
 	desc = poland.11.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -1244,6 +1266,7 @@ country_event = {
 
 country_event = {
 	id = poland.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.17 FROM = [From.GetName]" }
 	title = poland.17.t
 	desc = poland.17.d
 	picture = GFX_report_event_sanation_left_victory
@@ -1337,6 +1360,7 @@ country_event = {
 
 country_event = {
 	id = poland.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.18 FROM = [From.GetName]" }
 	title = poland.18.t
 	desc = poland.18.d
 	picture = GFX_report_event_sanation_revolt
@@ -1430,6 +1454,7 @@ country_event = {
 
 country_event = {
 	id = poland.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.19 FROM = [From.GetName]" }
 	title = poland.19.t
 	desc = poland.19.d
 	picture = GFX_report_event_poland_funeral
@@ -1452,6 +1477,7 @@ country_event = {
 
 country_event = {
 	id = poland.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.20 FROM = [From.GetName]" }
 	title = poland.20.t
 	desc = { # Four Year Plan went poorly
 		text = poland.20.desc.a
@@ -1570,6 +1596,7 @@ country_event = {
 
 country_event = {
 	id = poland.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.21 FROM = [From.GetName]" }
 	title = poland.21.t
 	desc = poland.21.d
 	picture = GFX_report_event_danzig_joins_nazis

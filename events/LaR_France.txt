@@ -12,6 +12,7 @@ add_namespace = lar_congress_of_paris
 #opening event for France - set up claims, pass on to Italy
 country_event = {
 	id = lar_congress_of_paris.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_congress_of_paris.1 FROM = [From.GetName]" }
 	title = lar_congress_of_paris.1.t
 	desc = lar_congress_of_paris.1.desc
 	picture = GFX_report_event_fascist_gathering
@@ -100,6 +101,7 @@ country_event = {
 #second event for Italy
 country_event = {
 	id = lar_congress_of_paris.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_congress_of_paris.2 FROM = [From.GetName]" }
 	title = lar_congress_of_paris.2.t
 	desc = lar_congress_of_paris.2.desc
 	picture = GFX_report_event_fascist_gathering
@@ -199,6 +201,7 @@ country_event = {
 #generic event - country agrees
 country_event = {
 	id = lar_congress_of_paris.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_congress_of_paris.3 FROM = [From.GetName]" }
 	title = lar_congress_of_paris.3.t
 	desc = lar_congress_of_paris.3.desc
 	picture = GFX_report_event_generic_conference
@@ -212,6 +215,7 @@ country_event = {
 #generic event - country refuses
 country_event = {
 	id = lar_congress_of_paris.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_congress_of_paris.4 FROM = [From.GetName]" }
 	title = lar_congress_of_paris.4.t
 	desc = lar_congress_of_paris.4.desc
 	picture = GFX_report_event_german_politician_speech
@@ -226,6 +230,7 @@ country_event = {
 #third event for Spain
 country_event = {
 	id = lar_congress_of_paris.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_congress_of_paris.5 FROM = [From.GetName]" }
 	title = lar_congress_of_paris.2.t
 	desc = lar_congress_of_paris.5.desc
 	picture = GFX_report_event_fascist_gathering
@@ -287,6 +292,7 @@ country_event = {
 #fourth event for Portugal
 country_event = {
 	id = lar_congress_of_paris.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_congress_of_paris.6 FROM = [From.GetName]" }
 	title = lar_congress_of_paris.2.t
 	desc = lar_congress_of_paris.6.desc
 	picture = GFX_report_event_fascist_gathering
@@ -338,6 +344,7 @@ add_namespace = lar_france_political_violence
 # right wing riots
 country_event = {
 	id = lar_france_political_violence.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_political_violence.1 FROM = [From.GetName]" }
 	title = lar_france_political_violence.1.t
 	desc = lar_france_political_violence.1.desc
 	picture = GFX_report_event_generic_riot
@@ -359,6 +366,7 @@ country_event = {
 # communist riots
 country_event = {
 	id = lar_france_political_violence.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_political_violence.2 FROM = [From.GetName]" }
 	title = lar_france_political_violence.1.t
 	desc = lar_france_political_violence.2.desc
 	picture = GFX_report_event_generic_riot
@@ -379,6 +387,7 @@ country_event = {
 # massive right wing riots
 country_event = {
 	id = lar_france_political_violence.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_political_violence.3 FROM = [From.GetName]" }
 	title = lar_france_political_violence.3.t
 	desc = lar_france_political_violence.3.desc
 	picture = GFX_report_event_generic_riot
@@ -400,6 +409,7 @@ country_event = {
 # political violence returns at low stability
 country_event = {
 	id = lar_france_political_violence.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_political_violence.4 FROM = [From.GetName]" }
 	title = lar_france_political_violence.4.t
 	desc = lar_france_political_violence.4.desc
 	picture = GFX_report_event_generic_rally2
@@ -441,6 +451,7 @@ add_namespace = lar_france_french_union
 
 country_event = {
 	id = lar_france_french_union.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_french_union.1 FROM = [From.GetName]" }
 
 	is_triggered_only = yes
 	hidden = yes
@@ -531,6 +542,7 @@ country_event = {
 #north africa agrees
 country_event = {
 	id = lar_france_french_union.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_french_union.2 FROM = [From.GetName]" }
 	title = lar_france_french_union.2.t
 	desc = lar_france_french_union.2.desc
 	picture = GFX_report_event_election_vote #todo candidate for uniques
@@ -580,6 +592,7 @@ country_event = {
 #north africa refuses
 country_event = {
 	id = lar_france_french_union.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_french_union.3 FROM = [From.GetName]" }
 	title = lar_france_french_union.3.t
 	desc = lar_france_french_union.3.desc
 	picture = GFX_report_event_ghandi_women #TODO candidate for unique
@@ -649,6 +662,7 @@ country_event = {
 #west africa agrees
 country_event = {
 	id = lar_france_french_union.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_french_union.4 FROM = [From.GetName]" }
 	title = lar_france_french_union.4.t
 	desc = lar_france_french_union.4.desc
 	picture = GFX_report_event_election_vote
@@ -758,6 +772,7 @@ country_event = {
 #west africa refuses
 country_event = {
 	id = lar_france_french_union.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_french_union.5 FROM = [From.GetName]" }
 	title = lar_france_french_union.5.t
 	desc = lar_france_french_union.5.desc
 	picture = GFX_report_event_ghandi_women
@@ -915,6 +930,7 @@ country_event = {
 #central africa agrees
 country_event = {
 	id = lar_france_french_union.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_french_union.6 FROM = [From.GetName]" }
 	title = lar_france_french_union.6.t
 	desc = lar_france_french_union.6.desc
 	picture = GFX_report_event_election_vote
@@ -984,6 +1000,7 @@ country_event = {
 #central africa refuses
 country_event = {
 	id = lar_france_french_union.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_french_union.7 FROM = [From.GetName]" }
 	title = lar_france_french_union.7.t
 	desc = lar_france_french_union.7.desc
 	picture = GFX_report_event_ghandi_women
@@ -1082,6 +1099,7 @@ country_event = {
 #Syria agrees
 country_event = {
 	id = lar_france_french_union.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_french_union.8 FROM = [From.GetName]" }
 	title = lar_france_french_union.8.t
 	desc = lar_france_french_union.8.desc
 	picture = GFX_report_event_election_vote
@@ -1121,6 +1139,7 @@ country_event = {
 #Syria refuses
 country_event = {
 	id = lar_france_french_union.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_french_union.9 FROM = [From.GetName]" }
 	title = lar_france_french_union.9.t
 	desc = lar_france_french_union.9.desc
 	picture = GFX_report_event_ghandi_women
@@ -1173,6 +1192,7 @@ country_event = {
 #Indochina agrees
 country_event = {
 	id = lar_france_french_union.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_french_union.10 FROM = [From.GetName]" }
 	title = lar_france_french_union.10.t
 	desc = lar_france_french_union.10.desc
 	picture = GFX_report_event_election_vote
@@ -1222,6 +1242,7 @@ country_event = {
 #Indochina refuses
 country_event = {
 	id = lar_france_french_union.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_french_union.11 FROM = [From.GetName]" }
 	title = lar_france_french_union.11.t
 	desc = lar_france_french_union.11.desc
 	picture = GFX_report_event_ghandi_women
@@ -1298,6 +1319,7 @@ add_namespace = FRA_syria_intervention
 #attackers win syrian intervention
 country_event = {
 	id = FRA_syria_intervention.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_syria_intervention.1 FROM = [From.GetName]" }
 	title = FRA_syria_intervention.1.t
 	desc = FRA_syria_intervention.1.desc
 	picture = GFX_report_event_france_victory_syria
@@ -1334,6 +1356,7 @@ country_event = {
 #attackers win syrian intervention
 country_event = {
 	id = FRA_syria_intervention.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_syria_intervention.11 FROM = [From.GetName]" }
 	title = FRA_syria_intervention.1.t
 	desc = FRA_syria_intervention.1.desc
 	picture = GFX_report_event_france_victory_syria
@@ -1355,6 +1378,7 @@ country_event = {
 #defenders win syrian intervention
 country_event = {
 	id = FRA_syria_intervention.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_syria_intervention.2 FROM = [From.GetName]" }
 	title = FRA_syria_intervention.2.t
 	desc = FRA_syria_intervention.2.desc
 	picture = GFX_report_event_romanian_soldiers
@@ -1386,6 +1410,7 @@ country_event = {
 #defenders win syrian intervention
 country_event = {
 	id = FRA_syria_intervention.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_syria_intervention.21 FROM = [From.GetName]" }
 	title = FRA_syria_intervention.2.t
 	desc = FRA_syria_intervention.2.desc
 	picture = GFX_report_event_romanian_soldiers
@@ -1400,6 +1425,7 @@ country_event = {
 #syrian intervention stalls out
 country_event = {
 	id = FRA_syria_intervention.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_syria_intervention.3 FROM = [From.GetName]" }
 	title = FRA_syria_intervention.3.t
 	desc = FRA_syria_intervention.3.desc
 	picture = GFX_report_event_soldiers_in_france
@@ -1430,6 +1456,7 @@ country_event = {
 #syrian intervention stalls out
 country_event = {
 	id = FRA_syria_intervention.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_syria_intervention.31 FROM = [From.GetName]" }
 	title = FRA_syria_intervention.3.t
 	desc = FRA_syria_intervention.3.desc
 	picture = GFX_report_event_soldiers_in_france
@@ -1446,6 +1473,7 @@ add_namespace = FRA_indochina_intervention
 #attackers win indochina intervention
 country_event = {
 	id = FRA_indochina_intervention.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_indochina_intervention.1 FROM = [From.GetName]" }
 	title = FRA_indochina_intervention.1.t
 	desc = FRA_indochina_intervention.1.desc
 	picture = GFX_report_event_france_victory_syria
@@ -1481,6 +1509,7 @@ country_event = {
 #attackers win indochina intervention
 country_event = {
 	id = FRA_indochina_intervention.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_indochina_intervention.11 FROM = [From.GetName]" }
 	title = FRA_indochina_intervention.1.t
 	desc = FRA_indochina_intervention.1.desc
 	picture = GFX_report_event_france_victory_syria
@@ -1501,6 +1530,7 @@ country_event = {
 #defenders win indochina intervention
 country_event = {
 	id = FRA_indochina_intervention.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_indochina_intervention.2 FROM = [From.GetName]" }
 	title = FRA_indochina_intervention.2.t
 	desc = FRA_indochina_intervention.2.desc
 	picture = GFX_report_event_romanian_soldiers
@@ -1532,6 +1562,7 @@ country_event = {
 #defenders win indochina intervention
 country_event = {
 	id = FRA_indochina_intervention.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_indochina_intervention.21 FROM = [From.GetName]" }
 	title = FRA_indochina_intervention.2.t
 	desc = FRA_indochina_intervention.2.desc
 	picture = GFX_report_event_romanian_soldiers
@@ -1546,6 +1577,7 @@ country_event = {
 #indochina intervention stalls out
 country_event = {
 	id = FRA_indochina_intervention.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_indochina_intervention.3 FROM = [From.GetName]" }
 	title = FRA_indochina_intervention.3.t
 	desc = FRA_indochina_intervention.3.desc
 	picture = GFX_report_event_soldiers_in_france
@@ -1576,6 +1608,7 @@ country_event = {
 #indochina intervention stalls out
 country_event = {
 	id = FRA_indochina_intervention.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_indochina_intervention.31 FROM = [From.GetName]" }
 	title = FRA_indochina_intervention.3.t
 	desc = FRA_indochina_intervention.3.desc
 	picture = GFX_report_event_soldiers_in_france
@@ -1591,6 +1624,7 @@ add_namespace = FRA_central_africa_intervention
 #attackers win central african intervention
 country_event = {
 	id = FRA_central_africa_intervention.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_central_africa_intervention.1 FROM = [From.GetName]" }
 	title = FRA_central_africa_intervention.1.t
 	desc = FRA_central_africa_intervention.1.desc
 	picture = GFX_report_event_france_victory_syria
@@ -1634,6 +1668,7 @@ country_event = {
 
 country_event = {
 	id = FRA_central_africa_intervention.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_central_africa_intervention.11 FROM = [From.GetName]" }
 	title = FRA_central_africa_intervention.1.t
 	desc = FRA_central_africa_intervention.1.desc
 	picture = GFX_report_event_france_victory_syria
@@ -1663,6 +1698,7 @@ country_event = {
 #defenders win central african intervention
 country_event = {
 	id = FRA_central_africa_intervention.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_central_africa_intervention.2 FROM = [From.GetName]" }
 	title = FRA_central_africa_intervention.2.t
 	desc = FRA_central_africa_intervention.2.desc
 	picture = GFX_report_event_romanian_soldiers
@@ -1694,6 +1730,7 @@ country_event = {
 #defenders win central african intervention
 country_event = {
 	id = FRA_central_africa_intervention.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_central_africa_intervention.21 FROM = [From.GetName]" }
 	title = FRA_central_africa_intervention.2.t
 	desc = FRA_central_africa_intervention.2.desc
 	picture = GFX_report_event_romanian_soldiers
@@ -1708,6 +1745,7 @@ country_event = {
 #central african intervention stalls out
 country_event = {
 	id = FRA_central_africa_intervention.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_central_africa_intervention.3 FROM = [From.GetName]" }
 	title = FRA_central_africa_intervention.3.t
 	desc = FRA_central_africa_intervention.3.desc
 	picture = GFX_report_event_soldiers_in_france
@@ -1738,6 +1776,7 @@ country_event = {
 #central african intervention stalls out
 country_event = {
 	id = FRA_central_africa_intervention.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_central_africa_intervention.31 FROM = [From.GetName]" }
 	title = FRA_central_africa_intervention.3.t
 	desc = FRA_central_africa_intervention.3.desc
 	picture = GFX_report_event_soldiers_in_france
@@ -1753,6 +1792,7 @@ add_namespace = FRA_west_africa_intervention
 #attackers win west african intervention
 country_event = {
 	id = FRA_west_africa_intervention.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_west_africa_intervention.1 FROM = [From.GetName]" }
 	title = FRA_west_africa_intervention.1.t
 	desc = FRA_west_africa_intervention.1.desc
 	picture = GFX_report_event_france_victory_syria
@@ -1802,6 +1842,7 @@ country_event = {
 #attackers win west african intervention
 country_event = {
 	id = FRA_west_africa_intervention.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_west_africa_intervention.11 FROM = [From.GetName]" }
 	title = FRA_west_africa_intervention.1.t
 	desc = FRA_west_africa_intervention.1.desc
 	picture = GFX_report_event_france_victory_syria
@@ -1836,6 +1877,7 @@ country_event = {
 #defenders win west african intervention
 country_event = {
 	id = FRA_west_africa_intervention.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_west_africa_intervention.2 FROM = [From.GetName]" }
 	title = FRA_west_africa_intervention.2.t
 	desc = FRA_west_africa_intervention.2.desc
 	picture = GFX_report_event_romanian_soldiers
@@ -1867,6 +1909,7 @@ country_event = {
 #defenders win west african intervention
 country_event = {
 	id = FRA_west_africa_intervention.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_west_africa_intervention.21 FROM = [From.GetName]" }
 	title = FRA_west_africa_intervention.2.t
 	desc = FRA_west_africa_intervention.2.desc
 	picture = GFX_report_event_romanian_soldiers
@@ -1881,6 +1924,7 @@ country_event = {
 #west african intervention stalls out
 country_event = {
 	id = FRA_west_africa_intervention.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_west_africa_intervention.3 FROM = [From.GetName]" }
 	title = FRA_west_africa_intervention.3.t
 	desc = FRA_west_africa_intervention.3.desc
 	picture = GFX_report_event_soldiers_in_france
@@ -1911,6 +1955,7 @@ country_event = {
 #west african intervention stalls out
 country_event = {
 	id = FRA_west_africa_intervention.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRA_west_africa_intervention.31 FROM = [From.GetName]" }
 	title = FRA_west_africa_intervention.3.t
 	desc = FRA_west_africa_intervention.3.desc
 	picture = GFX_report_event_soldiers_in_france
@@ -1932,6 +1977,7 @@ add_namespace = lar_compensate_italy
 #initial event to Italy - France proposes to turn over Djibouti
 country_event = {
 	id = lar_compensate_italy.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_compensate_italy.1 FROM = [From.GetName]" }
 	title = lar_compensate_italy.1.t
 	desc = lar_compensate_italy.1.desc
 	picture = GFX_report_event_generic_conference
@@ -1977,6 +2023,7 @@ country_event = {
 # rasponse event for France - Italy agrees
 country_event = {
 	id = lar_compensate_italy.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_compensate_italy.2 FROM = [From.GetName]" }
 	title = lar_compensate_italy.2.t
 	desc = lar_compensate_italy.2.desc
 	picture = GFX_report_event_generic_read_write
@@ -2018,6 +2065,7 @@ country_event = {
 #response event for France - Italy refuses
 country_event = {
 	id = lar_compensate_italy.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_compensate_italy.3 FROM = [From.GetName]" }
 	title = lar_compensate_italy.3.t
 	desc = lar_compensate_italy.3.desc
 	picture = GFX_report_event_fascist_speech
@@ -2041,6 +2089,7 @@ add_namespace = lar_intervention_in_greece
 #initial event to Italy - France proposes to intervene in Greece
 country_event = {
 	id = lar_intervention_in_greece.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_intervention_in_greece.1 FROM = [From.GetName]" }
 	title = lar_intervention_in_greece.1.t
 	desc = lar_intervention_in_greece.1.desc
 	picture = GFX_report_event_generic_read_write
@@ -2098,6 +2147,7 @@ country_event = {
 # rasponse event for France - Italy agrees
 country_event = {
 	id = lar_intervention_in_greece.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_intervention_in_greece.2 FROM = [From.GetName]" }
 	title = lar_intervention_in_greece.2.t
 	desc = lar_intervention_in_greece.2.desc
 	picture = GFX_report_event_france_parade
@@ -2139,6 +2189,7 @@ country_event = {
 #response event for France - Italy refuses
 country_event = {
 	id = lar_intervention_in_greece.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_intervention_in_greece.3 FROM = [From.GetName]" }
 	title = lar_intervention_in_greece.3.t
 	desc = lar_intervention_in_greece.3.desc
 	picture = GFX_report_event_fascists_posing
@@ -2162,6 +2213,7 @@ add_namespace = lar_dominate_the_middle_east
 #initial event - France wants to control country
 country_event = {
 	id = lar_dominate_the_middle_east.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_dominate_the_middle_east.1 FROM = [From.GetName]" }
 	title = lar_dominate_the_middle_east.1.t
 	desc = lar_dominate_the_middle_east.1.desc
 	picture = GFX_report_event_french_tanks
@@ -2203,6 +2255,7 @@ country_event = {
 # rasponse event for France - country agrees
 country_event = {
 	id = lar_dominate_the_middle_east.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_dominate_the_middle_east.2 FROM = [From.GetName]" }
 	title = lar_dominate_the_middle_east.2.t
 	desc = lar_dominate_the_middle_east.2.desc
 	picture = GFX_report_event_france_parade
@@ -2218,6 +2271,7 @@ country_event = {
 #response event for France - country refuses
 country_event = {
 	id = lar_dominate_the_middle_east.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_dominate_the_middle_east.3 FROM = [From.GetName]" }
 	title = lar_dominate_the_middle_east.3.t
 	desc = lar_dominate_the_middle_east.3.desc
 	picture = GFX_report_event_generic_battle
@@ -2251,6 +2305,7 @@ add_namespace = lar_spheres_of_influence
 #initial event for Germany - France wants to split up spheres of interest in the benelux
 country_event = {
 	id = lar_spheres_of_influence.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spheres_of_influence.1 FROM = [From.GetName]" }
 	title = lar_spheres_of_influence.1.t
 	desc = lar_spheres_of_influence.1.desc
 	picture = GFX_report_event_generic_conference
@@ -2297,6 +2352,7 @@ country_event = {
 # rasponse event for France - country agrees
 country_event = {
 	id = lar_spheres_of_influence.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spheres_of_influence.2 FROM = [From.GetName]" }
 	title = lar_spheres_of_influence.2.t
 	desc = lar_spheres_of_influence.2.desc
 	picture = GFX_report_event_german_speech
@@ -2329,6 +2385,7 @@ country_event = {
 #response event for France - country refuses
 country_event = {
 	id = lar_spheres_of_influence.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spheres_of_influence.3 FROM = [From.GetName]" }
 	title = lar_spheres_of_influence.3.t
 	desc = lar_spheres_of_influence.3.desc
 	picture = GFX_report_event_generic_read_write
@@ -2367,6 +2424,7 @@ add_namespace = lar_align_belgium
 #initial event - France wants to control country
 country_event = {
 	id = lar_align_belgium.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_align_belgium.1 FROM = [From.GetName]" }
 	title = lar_align_belgium.1.t
 	desc = lar_align_belgium.1.desc
 	picture = GFX_report_event_fascist_speech
@@ -2406,6 +2464,7 @@ country_event = {
 # rasponse event for France - country agrees
 country_event = {
 	id = lar_align_belgium.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_align_belgium.2 FROM = [From.GetName]" }
 	title = lar_align_belgium.2.t
 	desc = lar_align_belgium.2.desc
 	Picture = GFX_report_event_generic_sign_treaty1
@@ -2421,6 +2480,7 @@ country_event = {
 #response event for France - country refuses
 country_event = {
 	id = lar_align_belgium.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_align_belgium.3 FROM = [From.GetName]" }
 	title = lar_align_belgium.3.t
 	desc = lar_align_belgium.3.desc
 	picture = GFX_report_event_generic_defensive_preparations
@@ -2455,6 +2515,7 @@ add_namespace = lar_split_belgium
 #initial event - France wants to control country
 country_event = {
 	id = lar_split_belgium.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_split_belgium.1 FROM = [From.GetName]" }
 	title = lar_split_belgium.1.t
 	desc = lar_split_belgium.1.desc
 	picture = GFX_report_event_fascist_speech
@@ -2499,6 +2560,7 @@ country_event = {
 # rasponse event for France - country agrees
 country_event = {
 	id = lar_split_belgium.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_split_belgium.2 FROM = [From.GetName]" }
 	title = lar_split_belgium.2.t
 	desc = lar_split_belgium.2.desc
 	Picture = GFX_report_event_generic_sign_treaty1
@@ -2519,6 +2581,7 @@ country_event = {
 #response event for France - Belgium refuses
 country_event = {
 	id = lar_split_belgium.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_split_belgium.3 FROM = [From.GetName]" }
 	title = lar_split_belgium.3.t
 	desc = lar_split_belgium.3.desc
 	Picture = GFX_report_event_generic_defensive_preparations
@@ -2552,6 +2615,7 @@ add_namespace = lar_concessions_to_italy
 #initial event for ENG - France wants to appease Italy to pull them over to their side
 country_event = {
 	id = lar_concessions_to_italy.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_concessions_to_italy.1 FROM = [From.GetName]" }
 	title = lar_concessions_to_italy.1.t
 	desc = lar_concessions_to_italy.1.desc
 	picture = GFX_report_event_mussolini_hotel
@@ -2589,6 +2653,7 @@ country_event = {
 # rasponse event for France - country agrees
 country_event = {
 	id = lar_concessions_to_italy.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_concessions_to_italy.2 FROM = [From.GetName]" }
 	title = lar_concessions_to_italy.2.t
 	desc = lar_concessions_to_italy.2.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -2606,6 +2671,7 @@ country_event = {
 #response event for France - country refuses
 country_event = {
 	id = lar_concessions_to_italy.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_concessions_to_italy.3 FROM = [From.GetName]" }
 	title = lar_concessions_to_italy.3.t
 	desc = lar_concessions_to_italy.3.desc
 	picture = GFX_report_event_fascist_gathering
@@ -2624,6 +2690,7 @@ country_event = {
 # rasponse event for Italy - France and Britain offer consessions
 country_event = {
 	id = lar_concessions_to_italy.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_concessions_to_italy.4 FROM = [From.GetName]" }
 	title = lar_concessions_to_italy.4.t
 	desc = lar_concessions_to_italy.4.desc
 	picture = GFX_report_event_generic_conference
@@ -2687,6 +2754,7 @@ country_event = {
 #response event for Italy - only France offers concessions
 country_event = {
 	id = lar_concessions_to_italy.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_concessions_to_italy.5 FROM = [From.GetName]" }
 	title = lar_concessions_to_italy.5.t
 	desc = lar_concessions_to_italy.5.desc
 	picture = GFX_report_event_generic_conference
@@ -2725,6 +2793,7 @@ country_event = {
 #notification event - Italy agrees
 country_event = {
 	id = lar_concessions_to_italy.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_concessions_to_italy.6 FROM = [From.GetName]" }
 	title = lar_concessions_to_italy.6.t
 	desc = lar_concessions_to_italy.6.desc
 	picture = GFX_report_event_fascist_speech
@@ -2740,6 +2809,7 @@ country_event = {
 # notification event - Italy refuses
 country_event = {
 	id = lar_concessions_to_italy.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_concessions_to_italy.7 FROM = [From.GetName]" }
 	title = lar_concessions_to_italy.7.t
 	desc = lar_concessions_to_italy.7.desc
 	picture = GFX_report_event_fascist_gathering
@@ -2763,6 +2833,7 @@ add_namespace = lar_ratify_the_stresa_front
 #initial event for Italy
 country_event = {
 	id = lar_ratify_the_stresa_front.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_ratify_the_stresa_front.1 FROM = [From.GetName]" }
 	title = lar_ratify_the_stresa_front.1.t
 	desc = lar_ratify_the_stresa_front.1.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -2824,6 +2895,7 @@ country_event = {
 # event for France - Italy has agreed, do we want to hand over territory in exchange for an alliance?
 country_event = {
 	id = lar_ratify_the_stresa_front.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_ratify_the_stresa_front.2 FROM = [From.GetName]" }
 	title = lar_ratify_the_stresa_front.1.t
 	desc = lar_ratify_the_stresa_front.2.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -2919,6 +2991,7 @@ country_event = {
 #notification - country has refused to ratify
 country_event = {
 	id = lar_ratify_the_stresa_front.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_ratify_the_stresa_front.3 FROM = [From.GetName]" }
 	title = lar_ratify_the_stresa_front.3.t
 	desc = lar_ratify_the_stresa_front.3.desc
 	picture = GFX_report_event_worried_french
@@ -2935,6 +3008,7 @@ country_event = {
 # event for Britain - Italy has agreed, do we want to hand over territory in exchange for an alliance?
 country_event = {
 	id = lar_ratify_the_stresa_front.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_ratify_the_stresa_front.4 FROM = [From.GetName]" }
 	title = lar_ratify_the_stresa_front.1.t
 	desc = lar_ratify_the_stresa_front.4.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -3025,6 +3099,7 @@ add_namespace = lar_franco_soviet_treaty
 #initial event - France offers treaty
 country_event = {
 	id = lar_franco_soviet_treaty.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_franco_soviet_treaty.1 FROM = [From.GetName]" }
 	title = lar_franco_soviet_treaty.1.t
 	desc = lar_franco_soviet_treaty.1.desc
 	picture = GFX_report_event_stalin_02
@@ -3063,6 +3138,7 @@ country_event = {
 # rasponse event for France - country agrees
 country_event = {
 	id = lar_franco_soviet_treaty.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_franco_soviet_treaty.2 FROM = [From.GetName]" }
 	title = lar_franco_soviet_treaty.2.t
 	desc = lar_franco_soviet_treaty.2.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -3080,6 +3156,7 @@ country_event = {
 #response event for France - soviets refuse
 country_event = {
 	id = lar_franco_soviet_treaty.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_franco_soviet_treaty.3 FROM = [From.GetName]" }
 	title = lar_franco_soviet_treaty.3.t
 	desc = lar_franco_soviet_treaty.3.desc
 	picture = GFX_report_event_stalin_meeting
@@ -3103,6 +3180,7 @@ add_namespace = lar_end_the_occupation
 #initial event for Germany - vichy wants to end the occupation and join the axis
 country_event = {
 	id = lar_end_the_occupation.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_end_the_occupation.1 FROM = [From.GetName]" }
 	title = lar_end_the_occupation.1.t
 	desc = lar_end_the_occupation.1.desc
 	picture = GFX_report_event_pierre_laval
@@ -3149,6 +3227,7 @@ country_event = {
 # Germany approves
 country_event = {
 	id = lar_end_the_occupation.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_end_the_occupation.2 FROM = [From.GetName]" }
 	title = lar_end_the_occupation.2.t
 	desc = lar_end_the_occupation.2.desc
 	picture = GFX_report_event_generic_military_parade
@@ -3193,6 +3272,7 @@ country_event = {
 # Germany refuses
 country_event = {
 	id = lar_end_the_occupation.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_end_the_occupation.3 FROM = [From.GetName]" }
 	title = lar_end_the_occupation.3.t
 	desc = lar_end_the_occupation.3.desc
 	picture = GFX_report_event_german_reichstag_gathering
@@ -3230,6 +3310,7 @@ country_event = {
 # Vichy wants to join after germany refuses to hand back territory
 country_event = {
 	id = lar_end_the_occupation.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_end_the_occupation.4 FROM = [From.GetName]" }
 	title = lar_end_the_occupation.4.t
 	desc = lar_end_the_occupation.4.desc
 	picture = GFX_report_event_degaulle_inspect_troops
@@ -3262,6 +3343,7 @@ country_event = {
 # Vichy joins Free France after germany refuses to hand back territory
 country_event = {
 	id = lar_end_the_occupation.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_end_the_occupation.5 FROM = [From.GetName]" }
 	title = lar_end_the_occupation.5.t
 	desc = lar_end_the_occupation.5.desc
 	picture = GFX_report_event_degaulle_inspect_troops
@@ -3301,6 +3383,7 @@ country_event = {
 # Free France refuses, Vichy goes at it alone after all
 country_event = {
 	id = lar_end_the_occupation.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_end_the_occupation.6 FROM = [From.GetName]" }
 	title = lar_end_the_occupation.6.t
 	desc = lar_end_the_occupation.6.desc
 	picture = GFX_report_event_degaulle_churchill
@@ -3332,6 +3415,7 @@ add_namespace = lar_low_stability_civil_war
 #communists start uprising
 country_event = {
 	id = lar_low_stability_civil_war.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_low_stability_civil_war.1 FROM = [From.GetName]" }
 	title = lar_low_stability_civil_war.1.t
 	desc = lar_low_stability_civil_war.1.desc
 	picture = GFX_report_event_spain_civil_war_volunteers_02
@@ -3353,6 +3437,7 @@ country_event = {
 #fascists start uprising
 country_event = {
 	id = lar_low_stability_civil_war.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_low_stability_civil_war.2 FROM = [From.GetName]" }
 	title = lar_low_stability_civil_war.2.t
 	desc = lar_low_stability_civil_war.2.desc
 	picture = GFX_report_event_spain_civil_war_soldiers
@@ -3385,6 +3470,7 @@ add_namespace = lar_worker_shortage
 #country switched to extensive conscription while on full employment
 country_event = {
 	id = lar_worker_shortage.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_worker_shortage.1 FROM = [From.GetName]" }
 	title = lar_worker_shortage.1.t
 	desc = lar_worker_shortage.1.desc
 	picture = GFX_report_event_generic_factory
@@ -3428,6 +3514,7 @@ country_event = {
 #country demobilizes while having worker shortage
 country_event = {
 	id = lar_worker_shortage.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_worker_shortage.2 FROM = [From.GetName]" }
 	title = lar_worker_shortage.2.t
 	desc = lar_worker_shortage.2.desc
 	picture = GFX_report_event_france_tank_production
@@ -3466,6 +3553,7 @@ add_namespace = lar_arms_purchases
 #intial event for US - France wants to buy weapons
 country_event = {
 	id = lar_arms_purchases.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_arms_purchases.1 FROM = [From.GetName]" }
 	title = lar_arms_purchases.1.t
 	desc = lar_arms_purchases.1.desc
 	picture = GFX_report_event_generic_lend_lease
@@ -3502,6 +3590,7 @@ country_event = {
 # rasponse event for France - country agrees
 country_event = {
 	id = lar_arms_purchases.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_arms_purchases.2 FROM = [From.GetName]" }
 	title = lar_arms_purchases.2.t
 	desc = lar_arms_purchases.2.desc
 	picture = GFX_report_event_merchant_ship_01
@@ -3517,6 +3606,7 @@ country_event = {
 #response event for France - US refuse
 country_event = {
 	id = lar_arms_purchases.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_arms_purchases.3 FROM = [From.GetName]" }
 	title = lar_arms_purchases.3.t
 	desc = lar_arms_purchases.3.desc
 	picture = GFX_report_event_generic_read_write
@@ -3540,6 +3630,7 @@ add_namespace = lar_france_volunteers
 #event for country - French volunteers have joined!
 country_event = {
 	id = lar_france_volunteers.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_volunteers.1 FROM = [From.GetName]" }
 	title = lar_france_volunteers.1.t
 	desc = lar_france_volunteers.1.desc
 	picture = GFX_report_event_spain_civil_war_volunteers_01
@@ -3577,6 +3668,7 @@ country_event = {
 # volunteers return - hidden event
 country_event = {
 	id = lar_france_volunteers.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_volunteers.2 FROM = [From.GetName]" }
 	hidden = yes
 	
 	trigger = {
@@ -3595,6 +3687,7 @@ country_event = {
 # volunteers return - event for France to accept them
 country_event = {
 	id = lar_france_volunteers.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_volunteers.3 FROM = [From.GetName]" }
 	title = lar_france_volunteers.3.t
 	desc = lar_france_volunteers.3.desc
 	picture = GFX_report_event_saf_civil_war
@@ -3702,6 +3795,7 @@ add_namespace = lar_non_intervention
 #intial event France wants to propose non-intervention
 country_event = {
 	id = lar_non_intervention.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_non_intervention.1 FROM = [From.GetName]" }
 	title = lar_non_intervention.1.t
 	desc = lar_non_intervention.1.desc
 	picture = GFX_report_event_generic_conference
@@ -3732,6 +3826,7 @@ country_event = {
 # rasponse event for France - country agrees
 country_event = {
 	id = lar_non_intervention.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_non_intervention.2 FROM = [From.GetName]" }
 	title = lar_non_intervention.2.t
 	desc = lar_non_intervention.2.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -3748,6 +3843,7 @@ country_event = {
 #response event for France - country refuses
 country_event = {
 	id = lar_non_intervention.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_non_intervention.3 FROM = [From.GetName]" }
 	title = lar_non_intervention.3.t
 	desc = lar_non_intervention.3.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -3770,6 +3866,7 @@ add_namespace = lar_communist_support
 
 country_event = {
 	id = lar_communist_support.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_communist_support.1 FROM = [From.GetName]" }
 	hidden = yes
 	trigger = {
 		has_idea = FRA_communist_cooperation
@@ -3798,6 +3895,7 @@ add_namespace = lar_appeal_to_overseas_territories
 
 country_event = {
 	id = lar_appeal_to_overseas_territories.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.1 FROM = [From.GetName]" }
 	hidden = yes
 	is_triggered_only = yes
 	immediate = {
@@ -3835,6 +3933,7 @@ country_event = {
 # indochina remains with Vichy France
 country_event = {
 	id = lar_appeal_to_overseas_territories.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.2 FROM = [From.GetName]" }
 	title = lar_appeal_to_overseas_territories.2.t
 	desc = lar_appeal_to_overseas_territories.2.desc
 	picture = GFX_report_event_france_parade
@@ -3849,6 +3948,7 @@ country_event = {
 #indochina switches sides
 country_event = {
 	id = lar_appeal_to_overseas_territories.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.3 FROM = [From.GetName]" }
 	title = lar_appeal_to_overseas_territories.3.t
 	desc = lar_appeal_to_overseas_territories.3.desc
 	picture = GFX_report_event_felix_eboue
@@ -3866,6 +3966,7 @@ country_event = {
 # syria remains with Vichy France
 country_event = {
 	id = lar_appeal_to_overseas_territories.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.4 FROM = [From.GetName]" }
 	title = lar_appeal_to_overseas_territories.4.t
 	desc = lar_appeal_to_overseas_territories.4.desc
 	picture = GFX_report_event_france_parade
@@ -3880,6 +3981,7 @@ country_event = {
 #syria switches sides
 country_event = {
 	id = lar_appeal_to_overseas_territories.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.5 FROM = [From.GetName]" }
 	title = lar_appeal_to_overseas_territories.5.t
 	desc = lar_appeal_to_overseas_territories.5.desc
 	picture = GFX_report_event_felix_eboue
@@ -3897,6 +3999,7 @@ country_event = {
 # central africa remains with Vichy France
 country_event = {
 	id = lar_appeal_to_overseas_territories.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.6 FROM = [From.GetName]" }
 	title = lar_appeal_to_overseas_territories.6.t
 	desc = lar_appeal_to_overseas_territories.6.desc
 	picture = GFX_report_event_france_parade
@@ -3911,6 +4014,7 @@ country_event = {
 #central africa switches sides
 country_event = {
 	id = lar_appeal_to_overseas_territories.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.7 FROM = [From.GetName]" }
 	title = lar_appeal_to_overseas_territories.7.t
 	desc = lar_appeal_to_overseas_territories.7.desc
 	picture = GFX_report_event_felix_eboue
@@ -3927,6 +4031,7 @@ country_event = {
 # western africa remains with Vichy France
 country_event = {
 	id = lar_appeal_to_overseas_territories.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.8 FROM = [From.GetName]" }
 	title = lar_appeal_to_overseas_territories.8.t
 	desc = lar_appeal_to_overseas_territories.8.desc
 	picture = GFX_report_event_france_parade
@@ -3941,6 +4046,7 @@ country_event = {
 #western africa switches sides
 country_event = {
 	id = lar_appeal_to_overseas_territories.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.9 FROM = [From.GetName]" }
 	title = lar_appeal_to_overseas_territories.9.t
 	desc = lar_appeal_to_overseas_territories.9.desc
 	picture = GFX_report_event_felix_eboue
@@ -3958,6 +4064,7 @@ country_event = {
 # madagascar remains with Vichy France
 country_event = {
 	id = lar_appeal_to_overseas_territories.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.10 FROM = [From.GetName]" }
 	title = lar_appeal_to_overseas_territories.10.t
 	desc = lar_appeal_to_overseas_territories.10.desc
 	picture = GFX_report_event_france_parade
@@ -3972,6 +4079,7 @@ country_event = {
 #madagascar switches sides
 country_event = {
 	id = lar_appeal_to_overseas_territories.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.11 FROM = [From.GetName]" }
 	title = lar_appeal_to_overseas_territories.11.t
 	desc = lar_appeal_to_overseas_territories.11.desc
 	picture = GFX_report_event_felix_eboue
@@ -4003,6 +4111,7 @@ country_event = {
 # north africa remains with Vichy France
 country_event = {
 	id = lar_appeal_to_overseas_territories.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.12 FROM = [From.GetName]" }
 	title = lar_appeal_to_overseas_territories.12.t
 	desc = lar_appeal_to_overseas_territories.12.desc
 	picture = GFX_report_event_france_parade
@@ -4017,6 +4126,7 @@ country_event = {
 #north africa switches sides
 country_event = {
 	id = lar_appeal_to_overseas_territories.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_appeal_to_overseas_territories.13 FROM = [From.GetName]" }
 	title = lar_appeal_to_overseas_territories.13.t
 	desc = lar_appeal_to_overseas_territories.13.desc
 	picture = GFX_report_event_felix_eboue
@@ -4042,6 +4152,7 @@ add_namespace = lar_france_vichy_reunification
 # initial event - Vichy government asked to unify with FRA
 country_event = {
 	id = lar_france_vichy_reunification.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_vichy_reunification.1 FROM = [From.GetName]" }
 	title = lar_france_vichy_reunification.1.t
 	desc = lar_france_vichy_reunification.1.desc
 	picture = GFX_report_event_degaulle_inspect_troops
@@ -4082,6 +4193,7 @@ country_event = {
 #VIC agrees to unification - event for FRA
 country_event = {
 	id = lar_france_vichy_reunification.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_vichy_reunification.2 FROM = [From.GetName]" }
 	title = lar_france_vichy_reunification.2.t
 	desc = lar_france_vichy_reunification.2.desc
 	picture = GFX_report_event_degaulle_inspect_troops
@@ -4106,6 +4218,7 @@ country_event = {
 #VIC refuses unification, FRA gains wargoal
 country_event = {
 	id = lar_france_vichy_reunification.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_france_vichy_reunification.3 FROM = [From.GetName]" }
 	title = lar_france_vichy_reunification.3.t
 	desc = lar_france_vichy_reunification.3.desc
 	picture = GFX_report_event_degaulle_churchill
@@ -4126,6 +4239,7 @@ add_namespace = lar_fra_inefficient_economy
 
 country_event = {
 	id = lar_fra_inefficient_economy.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_fra_inefficient_economy.1 FROM = [From.GetName]" }
 	hidden = yes
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -4154,6 +4268,7 @@ add_namespace = lar_fra_reconnect_to_the_balkans
 #first event - balkan country asked if it wants to join the French faction
 country_event = {
 	id = lar_fra_reconnect_to_the_balkans.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_fra_reconnect_to_the_balkans.1 FROM = [From.GetName]" }
 	title = generic.5.t
 	desc = generic.5.d.a
 	picture = GFX_report_event_generic_read_write
@@ -4190,6 +4305,7 @@ country_event = {
 #event 2 - country wants to join faction, ask faction leader?
 country_event = {
 	id = lar_fra_reconnect_to_the_balkans.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_fra_reconnect_to_the_balkans.2 FROM = [From.GetName]" }
 	title = generic.2.t
 	desc = generic.2.d.a
 	picture = GFX_report_event_generic_read_write
@@ -4231,6 +4347,7 @@ country_event = {
 #event 3 - country does not want to join faction at all
 country_event = {
 	id = lar_fra_reconnect_to_the_balkans.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_fra_reconnect_to_the_balkans.3 FROM = [From.GetName]" }
 	title = generic.7.t
 	desc = generic.7.d
 	picture = GFX_report_event_generic_read_write
@@ -4249,6 +4366,7 @@ country_event = {
 #event 4 - request accepted by faction leader
 country_event = {
 	id = lar_fra_reconnect_to_the_balkans.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_fra_reconnect_to_the_balkans.4 FROM = [From.GetName]" }
 	title = generic.6.t
 	desc = generic.6.d
 	picture = GFX_report_event_generic_read_write
@@ -4267,6 +4385,7 @@ country_event = {
 #event 4 - request refused by faction leader
 country_event = {
 	id = lar_fra_reconnect_to_the_balkans.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_fra_reconnect_to_the_balkans.5 FROM = [From.GetName]" }
 	title = generic.4.t
 	desc = generic.4.d
 	picture = GFX_report_event_generic_read_write
@@ -4293,6 +4412,7 @@ add_namespace = lar_fra_join_the_ententes
 #first event - join the French faction?
 country_event = {
 	id = lar_fra_join_the_ententes.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_fra_join_the_ententes.1 FROM = [From.GetName]" }
 	title = lar_fra_join_the_ententes.1.t
 	desc = lar_fra_join_the_ententes.1.desc
 	picture = GFX_report_event_generic_read_write
@@ -4319,6 +4439,7 @@ country_event = {
 #second event - Britain joins French faction, move them and all their subjects, fire event to independent nations in their faction
 country_event = {
 	id = lar_fra_join_the_ententes.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_fra_join_the_ententes.2 FROM = [From.GetName]" }
 	title = lar_fra_join_the_ententes.2.t
 	desc = lar_fra_join_the_ententes.2.desc
 	picture = GFX_report_event_generic_read_write
@@ -4346,6 +4467,7 @@ country_event = {
 #second event - country refuses
 country_event = {
 	id = lar_fra_join_the_ententes.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_fra_join_the_ententes.3 FROM = [From.GetName]" }
 	title = lar_fra_join_the_ententes.3.t
 	desc = lar_fra_join_the_ententes.3.desc
 	picture = GFX_report_event_generic_read_write
@@ -4364,6 +4486,7 @@ country_event = {
 # event for independent countries in British faction - join france?
 country_event = {
 	id = lar_fra_join_the_ententes.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_fra_join_the_ententes.4 FROM = [From.GetName]" }
 	title = lar_fra_join_the_ententes.1.t
 	desc = lar_fra_join_the_ententes.1.desc
 	picture = GFX_report_event_generic_read_write
@@ -4391,6 +4514,7 @@ country_event = {
 # event for france - non-british sovereign nation wants to join
 country_event = {
 	id = lar_fra_join_the_ententes.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_fra_join_the_ententes.5 FROM = [From.GetName]" }
 	title = lar_fra_join_the_ententes.2.t
 	desc = lar_fra_join_the_ententes.2.desc
 	picture = GFX_report_event_generic_read_write
@@ -4417,6 +4541,7 @@ add_namespace = LaR_france_vichy_notification_events
 # event for Vichy - Syria has decided to side with de gaulle
 country_event = {
 	id = LaR_france_vichy_notification_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LaR_france_vichy_notification_events.1 FROM = [From.GetName]" }
 	title =  LaR_france_vichy_notification_events.1.t
 	desc =  LaR_france_vichy_notification_events.1.desc
 	picture = GFX_report_event_generic_read_write
@@ -4435,6 +4560,7 @@ country_event = {
 # event for Vichy - Indochina has decided to side with de gaulle
 country_event = {
 	id = LaR_france_vichy_notification_events.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LaR_france_vichy_notification_events.2 FROM = [From.GetName]" }
 	title =  LaR_france_vichy_notification_events.2.t
 	desc =  LaR_france_vichy_notification_events.1.desc
 	picture = GFX_report_event_generic_read_write
@@ -4453,6 +4579,7 @@ country_event = {
 # event for Vichy - central africa has decided to side with de gaulle
 country_event = {
 	id = LaR_france_vichy_notification_events.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LaR_france_vichy_notification_events.3 FROM = [From.GetName]" }
 	title =  LaR_france_vichy_notification_events.3.t
 	desc =  LaR_france_vichy_notification_events.1.desc
 	picture = GFX_report_event_generic_read_write
@@ -4471,6 +4598,7 @@ country_event = {
 # event for Vichy - west africa has decided to side with de gaulle
 country_event = {
 	id = LaR_france_vichy_notification_events.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LaR_france_vichy_notification_events.4 FROM = [From.GetName]" }
 	title =  LaR_france_vichy_notification_events.4.t
 	desc =  LaR_france_vichy_notification_events.1.desc
 	picture = GFX_report_event_generic_read_write
@@ -4489,6 +4617,7 @@ country_event = {
 # event for Vichy - north_africa has decided to side with de gaulle
 country_event = {
 	id = LaR_france_vichy_notification_events.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LaR_france_vichy_notification_events.5 FROM = [From.GetName]" }
 	title =  LaR_france_vichy_notification_events.5.t
 	desc =  LaR_france_vichy_notification_events.1.desc
 	picture = GFX_report_event_generic_read_write
@@ -4507,6 +4636,7 @@ country_event = {
 # event for Vichy - madagascar has decided to side with de gaulle
 country_event = {
 	id = LaR_france_vichy_notification_events.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LaR_france_vichy_notification_events.6 FROM = [From.GetName]" }
 	title =  LaR_france_vichy_notification_events.6.t
 	desc =  LaR_france_vichy_notification_events.1.desc
 	picture = GFX_report_event_generic_read_write
@@ -4525,6 +4655,7 @@ country_event = {
 # event for Vichy - coup in Syria
 country_event = {
 	id = LaR_france_vichy_notification_events.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LaR_france_vichy_notification_events.7 FROM = [From.GetName]" }
 	title =  LaR_france_vichy_notification_events.7.t
 	desc =  LaR_france_vichy_notification_events.7.desc
 	picture = GFX_report_event_generic_read_write
@@ -4543,6 +4674,7 @@ country_event = {
 # event for Vichy - coup in indochina
 country_event = {
 	id = LaR_france_vichy_notification_events.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LaR_france_vichy_notification_events.8 FROM = [From.GetName]" }
 	title =  LaR_france_vichy_notification_events.8.t
 	desc =  LaR_france_vichy_notification_events.7.desc
 	picture = GFX_report_event_generic_read_write
@@ -4561,6 +4693,7 @@ country_event = {
 # event for Vichy - coup in central_africa
 country_event = {
 	id = LaR_france_vichy_notification_events.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LaR_france_vichy_notification_events.9 FROM = [From.GetName]" }
 	title =  LaR_france_vichy_notification_events.9.t
 	desc =  LaR_france_vichy_notification_events.7.desc
 	picture = GFX_report_event_generic_read_write
@@ -4579,6 +4712,7 @@ country_event = {
 # event for Vichy - coup in west_africa
 country_event = {
 	id = LaR_france_vichy_notification_events.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LaR_france_vichy_notification_events.10 FROM = [From.GetName]" }
 	title =  LaR_france_vichy_notification_events.10.t
 	desc =  LaR_france_vichy_notification_events.7.desc
 	picture = GFX_report_event_generic_read_write
@@ -4597,6 +4731,7 @@ country_event = {
 # event for Vichy - coup in north_africa
 country_event = {
 	id = LaR_france_vichy_notification_events.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LaR_france_vichy_notification_events.11 FROM = [From.GetName]" }
 	title =  LaR_france_vichy_notification_events.11.t
 	desc =  LaR_france_vichy_notification_events.7.desc
 	picture = GFX_report_event_generic_read_write
@@ -4615,6 +4750,7 @@ country_event = {
 # event for Vichy - coup in Madagascar
 country_event = {
 	id = LaR_france_vichy_notification_events.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LaR_france_vichy_notification_events.12 FROM = [From.GetName]" }
 	title =  LaR_france_vichy_notification_events.12.t
 	desc =  LaR_france_vichy_notification_events.7.desc
 	picture = GFX_report_event_generic_read_write

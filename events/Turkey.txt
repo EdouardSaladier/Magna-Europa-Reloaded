@@ -7,6 +7,7 @@ add_namespace = turkey
 # President dies
 country_event = {
 	id = turkey.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event turkey.1 FROM = [From.GetName]" }
 	title = turkey.1.t
 	desc = turkey.1.d
 	picture = GFX_report_event_generic_funeral

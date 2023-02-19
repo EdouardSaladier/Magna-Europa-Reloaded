@@ -3,6 +3,7 @@
 # Tizard mission event for USA
 country_event = {
 	id = britain.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.1 FROM = [From.GetName]" }
 	title = britain.1.t
 	desc = britain.1.d
 	picture = GFX_report_event_physics_lab_01
@@ -62,6 +63,7 @@ country_event = {
 # USA helps
 country_event = {
 	id = britain.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.2 FROM = [From.GetName]" }
 	title = britain.2.t
 	desc = britain.2.d
 	picture = GFX_report_event_physics_lab_02
@@ -90,6 +92,7 @@ country_event = {
 # USA says no
 country_event = {
 	id = britain.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.3 FROM = [From.GetName]" }
 	title = britain.3.t
 	desc = britain.3.d
 	picture = GFX_report_event_physics_lab_01
@@ -105,6 +108,7 @@ country_event = {
 # Burma road china
 country_event = {
 	id = britain.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.4 FROM = [From.GetName]" }
 	title = britain.4.t
 	desc = britain.4.d
 	picture = GFX_report_event_burma_road
@@ -119,6 +123,7 @@ country_event = {
 # Burma road yunnan
 country_event = {
 	id = britain.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.5 FROM = [From.GetName]" }
 	title = britain.4.t
 	desc = britain.4.d
 	picture = GFX_report_event_burma_road
@@ -133,6 +138,7 @@ country_event = {
 #Time for India to be free
 country_event = {
 	id = britain.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.6 FROM = [From.GetName]" }
 	title = britain.6.t
 	desc = britain.6.d
 	picture = GFX_report_event_ghandi_women
@@ -164,6 +170,7 @@ country_event = {
 #End trade with Germany event for SWE/NOR
 country_event = {
 	id = britain.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.7 FROM = [From.GetName]" }
 	title = britain.7.t
 	desc = britain.7.d
 	picture = GFX_report_event_merchant_ship_01
@@ -189,6 +196,7 @@ country_event = {
 
 country_event = {
 	id = britain.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.8 FROM = [From.GetName]" }
 	title = britain.8.t
 	desc = britain.8.d
 	picture = GFX_report_event_merchant_ship_01
@@ -225,6 +233,7 @@ country_event = {
 # Chamberlain Resigns
 country_event = {
 	id = britain.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.9 FROM = [From.GetName]" }
 	title = britain.9.t
 	desc = britain.9.d
 	picture = GFX_report_event_chamberlain
@@ -279,6 +288,7 @@ country_event = {
 # Chamberlain Passes Away
 country_event = {
 	id = britain.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.10 FROM = [From.GetName]" }
 	title = britain.10.t
 	desc = britain.10.d
 	picture = GFX_report_event_chamberlain
@@ -335,6 +345,7 @@ country_event = {
 # React to Rise of the CommieNazis 
 country_event = {
 	id = britain.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.11 FROM = [From.GetName]" }
 	title = britain.11.t
 	desc = britain.11.d
 	picture = GFX_report_event_molotov_ribentrop_handshake
@@ -376,6 +387,7 @@ country_event = {
 # React to British call
 country_event = {
 	id = britain.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.12 FROM = [From.GetName]" }
 	title = britain.12.t
 	desc = britain.12.d
 	picture = GFX_report_event_molotov_ribentrop_handshake
@@ -404,6 +416,7 @@ country_event = {
 # France wants to join allies
 country_event = {
 	id = britain.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.13 FROM = [From.GetName]" }
 	title = britain.13.t
 	desc = britain.13.d
 	picture = GFX_report_event_degaulle_churchill
@@ -445,6 +458,7 @@ country_event = {
 # Germany demands Slovenia from Yugoslavia
 country_event = {
 	id = britain.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.14 FROM = [From.GetName]" }
 	title = britain.14.t
 	desc = britain.14.d
 	picture = GFX_report_event_hitler_croatia_handshake
@@ -569,6 +583,7 @@ country_event = {
 # France leaves the Allies
 country_event = {
 	id = britain.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.15 FROM = [From.GetName]" }
 	title = britain.15.t
 	desc = britain.15.d
 	picture = GFX_report_event_french_british_officers
@@ -586,6 +601,7 @@ country_event = {
 # King dies
 country_event = {
 	id = britain.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.16 FROM = [From.GetName]" }
 	title = britain.16.t
 	desc = britain.16.d
 	picture = GFX_report_event_europe_funeral
@@ -620,6 +636,7 @@ country_event = {
 # King abdicates
 country_event = {
 	id = britain.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.17 FROM = [From.GetName]" }
 	title = britain.17.t
 	desc = britain.17.d
 	picture = GFX_report_event_generic_sign_treaty2
@@ -654,6 +671,7 @@ country_event = {
 # Return of the Nazi King
 country_event = {
 	id = britain.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.18 FROM = [From.GetName]" }
 	title = britain.18.t
 	desc = britain.18.d
 	picture = GFX_report_event_fascist_gathering
@@ -704,6 +722,7 @@ country_event = {
 #Britain receives warning of the Indian National Army
 country_event = {
 	id = britain.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.19 FROM = [From.GetName]" }
 	title = britain.19.t
 	desc = britain.19.d
 	picture = GFX_report_event_indian_soldiers
@@ -728,6 +747,7 @@ country_event = {
 #Free India Government Leads Revolt
 country_event = {
 	id = britain.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.20 FROM = [From.GetName]" }
 	title = britain.20.t
 	desc = britain.20.d
 	picture = GFX_report_event_indian_soldiers
@@ -798,6 +818,7 @@ country_event = {
 
 country_event = {
 	id = britain.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.21 FROM = [From.GetName]" }
 	title = britain.21.t
 	desc = britain.21.d
 	picture = GFX_report_event_physics_lab_02
@@ -855,6 +876,7 @@ country_event = {
 #RAJ gets to choose sides in Indian civil war
 country_event = {
 	id = britain.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.23 FROM = [From.GetName]" }
 	title = britain.23.t
 	desc = britain.23.d
 	picture = GFX_report_event_indian_soldiers

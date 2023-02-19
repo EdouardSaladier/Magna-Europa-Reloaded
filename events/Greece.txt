@@ -7,6 +7,7 @@ add_namespace = greece
 # Soviet Demands
 country_event = {
 	id = greece.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event greece.1 FROM = [From.GetName]" }
 	title = greece.1.t
 	desc = greece.1.d
 	picture = GFX_report_event_stalin_02
@@ -80,6 +81,7 @@ country_event = {
 # German demands to hand over territory to friends or self
 country_event = {
 	id = greece.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event greece.2 FROM = [From.GetName]" }
 	title = greece.2.t
 
 	desc = { 
@@ -350,6 +352,7 @@ country_event = {
 # Germany demands Greece become puppet
 country_event = {
 	id = greece.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event greece.3 FROM = [From.GetName]" }
 	title = greece.3.t
 	desc = greece.3.d
 	picture = GFX_report_event_generic_sign_treaty2
@@ -415,6 +418,7 @@ country_event = {
 # Greece gets wargoal - From Italian focus tree
 country_event = {
 	id = greece.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event greece.4 FROM = [From.GetName]" }
 	title = greece.4.t
 	desc = greece.4.d
 	picture = GFX_report_event_fascist_militia

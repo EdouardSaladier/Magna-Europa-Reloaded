@@ -7,6 +7,7 @@ add_namespace = france
 # Japan demands Indochina
 country_event = {
 	id = france.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.1 FROM = [From.GetName]" }
 	title = france.1.t
 	desc = france.1.d
 	picture = GFX_report_event_japan_army_mountainside
@@ -54,6 +55,7 @@ country_event = {
 # Maginot Line Extension
 country_event = {
 	id = france.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.2 FROM = [From.GetName]" }
 	title = france.2.t
 	desc = france.2.d
 	picture = GFX_report_event_bunker_01
@@ -180,6 +182,7 @@ country_event = {
 # Alpine Line Extension
 country_event = {
 	id = france.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.3 FROM = [From.GetName]" }
 	title = france.3.t
 	desc = france.3.d
 	picture = GFX_report_event_bunker_01
@@ -240,6 +243,7 @@ country_event = {
 #hidden pre-event to check before capitulation
 country_event = {
 	id = france.101
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.101 FROM = [From.GetName]" }
 	hidden = yes
 	trigger = {
 		tag = FRA
@@ -301,6 +305,7 @@ country_event = {
 # The Battle is Lost
 country_event = {
 	id = france.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.10 FROM = [From.GetName]" }
 	title = france.10.t
 	desc = france.10.d
 	picture = GFX_report_event_german_parade_paris
@@ -367,6 +372,7 @@ country_event = {
 # France suggests a Union (Britain)
 country_event = {
 	id = france.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.11 FROM = [From.GetName]" }
 	title = france.11.t
 	desc = france.11.d
 	picture = GFX_report_event_degaulle_churchill
@@ -396,6 +402,7 @@ country_event = {
 # Britain agrees to Union (France)
 country_event = {
 	id = france.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.12 FROM = [From.GetName]" }
 	title = france.12.t
 	desc = france.12.d
 	picture = GFX_report_event_chamberlain_announce
@@ -439,6 +446,7 @@ country_event = {
 # Britain refuses Union (France)
 country_event = {
 	id = france.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.13 FROM = [From.GetName]" }
 	title = france.13.t
 	desc = france.13.d
 	picture = GFX_report_event_pierre_laval
@@ -481,6 +489,7 @@ country_event = {
 # France wants Armistice (Germany)
 country_event = {
 	id = france.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.14 FROM = [From.GetName]" }
 	title = france.14.t
 	desc = france.14.d
 	picture = GFX_report_event_german_parade_paris
@@ -1320,6 +1329,7 @@ country_event = {
 # Germany refuses armistice! (France)
 country_event = {
 	id = france.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.15 FROM = [From.GetName]" }
 	title = france.15.t
 	desc = france.15.d
 	picture = GFX_report_event_french_resistance_01
@@ -1334,6 +1344,7 @@ country_event = {
 #Capital captured by non french faction
 country_event = {
 	id = france.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.16 FROM = [From.GetName]" }
 	title = france.16.t
 	desc = france.16.d
 	picture = GFX_report_event_french_resistance_02
@@ -1362,6 +1373,7 @@ country_event = {
 # Invitation to French Faction
 country_event = {
 	id = france.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.17 FROM = [From.GetName]" }
 	title = france.17.t
 	desc = france.17.d
 	picture = GFX_report_event_worried_french
@@ -1392,6 +1404,7 @@ country_event = {
 # [Country] Accepts
 country_event = {
 	id = france.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.18 FROM = [From.GetName]" }
 	title = france.18.t
 	desc = france.18.d
 	picture = GFX_report_event_soldiers_in_france
@@ -1409,6 +1422,7 @@ country_event = {
 # [Country] Refuses
 country_event = {
 	id = france.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.19 FROM = [From.GetName]" }
 	title = france.19.t
 	desc = france.19.d
 	picture = GFX_report_event_finnish_letter
@@ -1423,6 +1437,7 @@ country_event = {
 # De Gaulle becomes leader
 country_event = {
 	id = france.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.20 FROM = [From.GetName]" }
 	title = france.20.t
 	desc = france.20.d
 	picture = GFX_report_event_degaulle_churchill
@@ -1451,6 +1466,7 @@ country_event = {
 # French strikes
 country_event = {
 	id = france.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.21 FROM = [From.GetName]" }
 	title = france.21.t
 	desc = france.21.d
 	picture = GFX_report_event_worker_protests
@@ -1484,6 +1500,7 @@ country_event = {
 # French strikes
 country_event = {
 	id = france.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.22 FROM = [From.GetName]" }
 	title = france.21.t
 	desc = france.21.d
 	picture = GFX_report_event_worker_protests
@@ -1516,6 +1533,7 @@ country_event = {
 # Strikes are over
 country_event = {
 	id = france.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.23 FROM = [From.GetName]" }
 	title = france.23.t
 	desc = france.23.d
 	picture = GFX_report_event_airplane_factory
@@ -1587,6 +1605,7 @@ country_event = {
 # British abandon yugoslavia
 country_event = {
 	id = france.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.25 FROM = [From.GetName]" }
 	title = france.25.t
 	desc = france.25.d
 	picture = GFX_report_event_hitler_croatia_handshake
@@ -1741,6 +1760,7 @@ country_event = {
 # British support yugoslavia
 country_event = {
 	id = france.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.26 FROM = [From.GetName]" }
 	title = france.26.t
 	desc = france.26.d
 	picture = GFX_report_event_hitler_croatia_handshake
@@ -1818,6 +1838,7 @@ country_event = {
 # Vichy France: Germany is handing over some of our land
 country_event = {
 	id = france.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.27 FROM = [From.GetName]" }
 	title = france.27.t
 	desc = { 
 		text = france.27.d_1_state 
@@ -1895,6 +1916,7 @@ country_event = {
 # France - Syria defects to us
 country_event = {
 	id = france.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.28 FROM = [From.GetName]" }
 	title = france.28.t
 	desc = france.28.d
 	picture = GFX_report_event_worried_french
@@ -1910,6 +1932,7 @@ country_event = {
 # France - Britain accepts Ally request
 country_event = {
 	id = france.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.29 FROM = [From.GetName]" }
 	title = france.29.t
 	desc = france.29.d
 	picture = GFX_report_event_generic_sign_treaty2
@@ -1924,6 +1947,7 @@ country_event = {
 # France - Britain denies Ally request
 country_event = {
 	id = france.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.30 FROM = [From.GetName]" }
 	title = france.30.t
 	desc = france.30.d
 	picture = GFX_report_event_chamberlain
@@ -1938,6 +1962,7 @@ country_event = {
 # Édouard Daladier Resigns
 country_event = {
 	id = france.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.31 FROM = [From.GetName]" }
 	title = france.31.t
 	desc = france.31.d
 	picture = GFX_report_event_german_parade_paris
@@ -1975,6 +2000,7 @@ country_event = {
 # Hidden event to add AI values for nationalist spain if France is going fascist
 country_event = {
 	id = france.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.32 FROM = [From.GetName]" }
 	hidden = yes
  
     fire_only_once = yes
@@ -2024,6 +2050,7 @@ country_event = {
 
 country_event = {
 	id = france.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event france.33 FROM = [From.GetName]" }
 	title = france.33.title
 	desc = france.33.desc
 	

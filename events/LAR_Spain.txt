@@ -3,6 +3,7 @@
 # Election of 1936 - La Resistance Edition
 country_event = {
 	id = lar_spain.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.1 FROM = [From.GetName]" }
 	title = spain.9.t
 	desc = lar_spain.1.desc
 	picture = GFX_report_event_election_vote
@@ -178,6 +179,7 @@ country_event = {
 # Spanish Civil War - La Resistance Edition
 country_event = {
 	id = lar_spain.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.2 FROM = [From.GetName]" }
 	title = lar_spain.2.t
 	desc = lar_spain.2.desc
 	picture = GFX_report_event_spain_civil_war_soldiers
@@ -4843,6 +4845,7 @@ country_event = {
 # Mission Generator simulating Republican government working against the Nationalists
 country_event = {
 	id = lar_spain.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.3 FROM = [From.GetName]" }
 
 	trigger = {
 		NOT = { has_global_flag = spanish_civil_war }
@@ -4893,6 +4896,7 @@ country_event = {
 # Mission Generator simulating Nationalists working against the Republican Government
 country_event = {
 	id = lar_spain.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.4 FROM = [From.GetName]" }
 
 	trigger = {
 		NOT = { has_global_flag = spanish_civil_war }
@@ -4937,6 +4941,7 @@ country_event = {
 # Mission Generator simulating other side expanding garrison influence
 country_event = {
 	id = lar_spain.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.5 FROM = [From.GetName]" }
 
 	trigger = {
 		NOT = { has_global_flag = spanish_civil_war }
@@ -5542,6 +5547,7 @@ country_event = {
 # Spanish Civil War - Frontlines Solidify
 country_event = {
 	id = lar_spain.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.6 FROM = [From.GetName]" }
 	title = lar_spain.6.t
 	desc = lar_spain.6.desc
 	picture = GFX_report_event_spr_spanish_civil_war2
@@ -5589,6 +5595,7 @@ country_event = {
 # Spanish Civil War - Carlists rise up
 country_event = {
 	id = lar_spain.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.7 FROM = [From.GetName]" }
 	title = lar_spain.7.t
 	desc = {
 		text = lar_spain.7.desc
@@ -6360,6 +6367,7 @@ country_event = {
 # Spanish Civil War - Fascist Anti-Carlist Crack-down
 country_event = {
 	id = lar_spain.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.8 FROM = [From.GetName]" }
 	title = lar_spain.8.t
 	desc = {
 		text = lar_spain.8.desc
@@ -6857,6 +6865,7 @@ country_event = {
 # Spanish Civil War - Anarchists rise up ("player" goes SPD)
 country_event = {
 	id = lar_spain.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.9 FROM = [From.GetName]" }
 	title = lar_spain.9.t
 	desc = {
 		text = lar_spain.9.desc
@@ -7591,6 +7600,7 @@ country_event = {
 # Spanish Civil War - Republican Crack-Down ("player" goes SPC)
 country_event = {
 	id = lar_spain.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.10 FROM = [From.GetName]" }
 	title = lar_spain.10.t
 	desc = {
 		text = lar_spain.10.desc
@@ -8630,6 +8640,7 @@ country_event = {
 # Spanish Civil War - Carlists Defeated
 country_event = {
 	id = lar_spain.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.11 FROM = [From.GetName]" }
 	title = lar_spain.11.t
 	desc = lar_spain.11.desc
 	picture = GFX_report_event_spr_civil_war_faction_defeated
@@ -8644,6 +8655,7 @@ country_event = {
 # Spanish Civil War - Fascists Defeated
 country_event = {
 	id = lar_spain.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.12 FROM = [From.GetName]" }
 	title = lar_spain.12.t
 	desc = lar_spain.12.desc
 	picture = GFX_report_event_spr_civil_war_faction_defeated
@@ -8658,6 +8670,7 @@ country_event = {
 # Spanish Civil War - Franco Defeated
 country_event = {
 	id = lar_spain.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.13 FROM = [From.GetName]" }
 	title = lar_spain.13.t
 	desc = lar_spain.13.desc
 	picture = GFX_report_event_spr_civil_war_faction_defeated
@@ -8672,6 +8685,7 @@ country_event = {
 # Spanish Civil War - Anarchists Defeated
 country_event = {
 	id = lar_spain.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.14 FROM = [From.GetName]" }
 	title = lar_spain.14.t
 	desc = lar_spain.14.desc
 	picture = GFX_report_event_spr_civil_war_faction_defeated
@@ -8686,6 +8700,7 @@ country_event = {
 # Spanish Civil War - Independent Communists Defeated
 country_event = {
 	id = lar_spain.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.15 FROM = [From.GetName]" }
 	title = lar_spain.15.t
 	desc = lar_spain.15.desc
 	picture = GFX_report_event_spr_civil_war_faction_defeated
@@ -8700,6 +8715,7 @@ country_event = {
 # Spanish Civil War - Republicans Defeated
 country_event = {
 	id = lar_spain.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.16 FROM = [From.GetName]" }
 	title = lar_spain.16.t
 	desc = lar_spain.16.desc
 	picture = GFX_report_event_spr_civil_war_faction_defeated
@@ -8714,6 +8730,7 @@ country_event = {
 # Spanish Civil War - Stalinist Communists Defeated
 country_event = {
 	id = lar_spain.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.17 FROM = [From.GetName]" }
 	title = lar_spain.17.t
 	desc = lar_spain.17.desc
 	picture = GFX_report_event_spr_civil_war_faction_defeated
@@ -8728,6 +8745,7 @@ country_event = {
 # Spain - Nationalists out of focuses to take, have to 'lay low' for a while
 country_event = {
 	id = lar_spain.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.18 FROM = [From.GetName]" }
 	title = lar_spain.18.t
 	desc = lar_spain.18.desc
 	picture = GFX_report_event_spr_nationalist_soldiers
@@ -8756,6 +8774,7 @@ country_event = {
 # Reassert American Dominance - Event for American nations
 country_event = {
 	id = lar_spain.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.19 FROM = [From.GetName]" }
 	title = lar_spain.19.t
 	desc = lar_spain.19.desc
 	picture = GFX_report_event_generic_parliament
@@ -8825,6 +8844,7 @@ country_event = {
 # Reassert American Dominance - Notification event for Spain - Target Accepted
 country_event = {
 	id = lar_spain.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.20 FROM = [From.GetName]" }
 	title = lar_spain.20.t
 	desc = lar_spain.20.desc
 	picture = GFX_report_event_generic_parliament
@@ -8840,6 +8860,7 @@ country_event = {
 # Reassert American Dominance - Notification event for Spain - Target Declined
 country_event = {
 	id = lar_spain.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.21 FROM = [From.GetName]" }
 	title = lar_spain.21.t
 	desc = lar_spain.21.desc
 	picture = GFX_report_event_generic_parliament
@@ -8858,6 +8879,7 @@ country_event = {
 # Portuguese Aid - Event for Portugal
 country_event = {
 	id = lar_spain.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.22 FROM = [From.GetName]" }
 	title = lar_spain.22.t
 	desc = lar_spain.22.desc
 	picture = GFX_report_event_generic_read_write
@@ -8927,6 +8949,7 @@ country_event = {
 # Portuguese Aid - Event for Spain - POR accepted
 country_event = {
 	id = lar_spain.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.23 FROM = [From.GetName]" }
 	title = lar_spain.23.t
 	desc = lar_spain.23.desc
 	picture = GFX_report_event_soldiers_marching
@@ -8948,6 +8971,7 @@ country_event = {
 # Portuguese Aid - Event for Spain - POR declined
 country_event = {
 	id = lar_spain.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.24 FROM = [From.GetName]" }
 	title = lar_spain.24.t
 	desc = lar_spain.24.desc
 	picture = GFX_report_event_generic_read_write
@@ -8962,6 +8986,7 @@ country_event = {
 # Iberian Pact - Event for Portugal
 country_event = {
 	id = lar_spain.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.25 FROM = [From.GetName]" }
 	title = lar_spain.25.t
 	desc = lar_spain.25.desc
 	picture = GFX_report_event_generic_parliament
@@ -9060,6 +9085,7 @@ country_event = {
 # Iberian Pact - Event for Spain - POR accepted
 country_event = {
 	id = lar_spain.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.26 FROM = [From.GetName]" }
 	title = lar_spain.25.t
 	desc = lar_spain.26.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -9116,6 +9142,7 @@ country_event = {
 # Iberian Pact - Event for Spain - POR declined
 country_event = {
 	id = lar_spain.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.27 FROM = [From.GetName]" }
 	title = lar_spain.25.t
 	desc = lar_spain.27.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -9130,6 +9157,7 @@ country_event = {
 # Iberian Pact - Other party has joined a faction, we must uphold our end of the bargain!
 country_event = {
 	id = lar_spain.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.28 FROM = [From.GetName]" }
 	title = lar_spain.28.t
 	desc = lar_spain.28.desc
 	picture = GFX_report_event_generic_parliament
@@ -9170,6 +9198,7 @@ country_event = {
 # Iberian Pact - Other party has joined the war, we must uphold our end of the bargain!
 country_event = {
 	id = lar_spain.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.29 FROM = [From.GetName]" }
 	title = lar_spain.28.t
 	desc = lar_spain.29.desc
 	picture = GFX_report_event_generic_parliament
@@ -9210,6 +9239,7 @@ country_event = {
 # Latin Bloc - Event for invitees
 country_event = {
 	id = lar_spain.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.30 FROM = [From.GetName]" }
 	title = lar_spain.30.t
 	desc = lar_spain.30.desc
 	picture = GFX_report_event_generic_read_write
@@ -9271,6 +9301,7 @@ country_event = {
 # Latin Bloc - Event for Spain - FROM accepted
 country_event = {
 	id = lar_spain.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.31 FROM = [From.GetName]" }
 	title = lar_spain.30.t
 	desc = lar_spain.31.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -9286,6 +9317,7 @@ country_event = {
 # Latin Bloc - Event for Spain - FROM declined
 country_event = {
 	id = lar_spain.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.32 FROM = [From.GetName]" }
 	title = lar_spain.30.t
 	desc = lar_spain.32.desc
 	picture = GFX_report_event_generic_read_write
@@ -9300,6 +9332,7 @@ country_event = {
 # Spain - Contact the Union Militar Espanola
 country_event = {
 	id = lar_spain.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.33 FROM = [From.GetName]" }
 	title = lar_spain.33.t
 	desc = lar_spain.33.desc
 	picture = GFX_report_event_spr_carlists2
@@ -9405,6 +9438,7 @@ country_event = {
 # Spain - Settle the Succession Question
 country_event = {
 	id = lar_spain.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.34 FROM = [From.GetName]" }
 	title = lar_spain.34.t
 	desc = lar_spain.34.desc
 	picture = GFX_report_event_generic_parliament
@@ -9432,6 +9466,7 @@ country_event = {
 # Spain - Restore the Monarchy - ### DEPRECATED, replaced by News Event ###
 country_event = {
 	id = lar_spain.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.35 FROM = [From.GetName]" }
 	title = lar_spain.35.t
 	desc = lar_spain.35.desc
 	picture = GFX_report_event_royal_parade
@@ -9495,6 +9530,7 @@ country_event = {
 # Tangiers Enclave - Event for UK
 country_event = {
 	id = lar_spain.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.36 FROM = [From.GetName]" }
 	title = lar_spain.36.t
 	desc = lar_spain.36.desc
 	picture = GFX_report_event_spr_occupation_of_tangiers
@@ -9593,6 +9629,7 @@ country_event = {
 # Tangiers Enclave - Event for Spain - UK protested
 country_event = {
 	id = lar_spain.37
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.37 FROM = [From.GetName]" }
 	title = lar_spain.36.t
 	desc = lar_spain.37.desc
 	picture = GFX_report_event_spr_occupation_of_tangiers
@@ -9642,6 +9679,7 @@ country_event = {
 # Tangiers Enclave - Event for Spain - UK let it slide
 country_event = {
 	id = lar_spain.38
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.38 FROM = [From.GetName]" }
 	title = lar_spain.36.t
 	desc = lar_spain.38.desc
 	picture = GFX_report_event_spr_occupation_of_tangiers
@@ -9664,6 +9702,7 @@ country_event = {
 # Demand French North Africa - Event for France
 country_event = {
 	id = lar_spain.39
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.39 FROM = [From.GetName]" }
 	title = lar_spain.39.t
 	desc = lar_spain.39.desc
 	picture = GFX_report_event_generic_parliament
@@ -9758,6 +9797,7 @@ country_event = {
 # Demand French North Africa - Event for Spain - France accepted
 country_event = {
 	id = lar_spain.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.40 FROM = [From.GetName]" }
 	title = lar_spain.40.t
 	desc = lar_spain.40.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -9778,6 +9818,7 @@ country_event = {
 # Demand French North Africa - Event for Spain - France declined
 country_event = {
 	id = lar_spain.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.41 FROM = [From.GetName]" }
 	title = lar_spain.41.t
 	desc = lar_spain.41.desc
 	picture = GFX_report_event_generic_read_write
@@ -9805,6 +9846,7 @@ country_event = {
 # Claim the French Throne - Event for France
 country_event = {
 	id = lar_spain.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.42 FROM = [From.GetName]" }
 	title = lar_spain.42.t
 	desc = lar_spain.42.desc
 	picture = GFX_report_event_generic_parliament
@@ -9888,6 +9930,7 @@ country_event = {
 # Claim the French Throne - Event for Spain - France accepted
 country_event = {
 	id = lar_spain.43
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.43 FROM = [From.GetName]" }
 	title = lar_spain.43.t
 	desc = lar_spain.43.desc
 	picture = GFX_report_event_generic_parliament
@@ -9905,6 +9948,7 @@ country_event = {
 # Claim the French Throne - Event for Spain - France declined
 country_event = {
 	id = lar_spain.44
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.44 FROM = [From.GetName]" }
 	title = lar_spain.44.t
 	desc = lar_spain.44.desc
 	picture = GFX_report_event_read_write
@@ -9923,6 +9967,7 @@ country_event = {
 # Iberian Union - Event for Portugal
 country_event = {
 	id = lar_spain.45
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.45 FROM = [From.GetName]" }
 	title = lar_spain.45.t
 	desc = lar_spain.45.desc
 	picture = GFX_report_event_generic_parliament
@@ -10013,6 +10058,7 @@ country_event = {
 # Iberian Union - Event for Spain - Portugal Accepted
 country_event = {
 	id = lar_spain.46
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.46 FROM = [From.GetName]" }
 	title = lar_spain.46.t
 	desc = lar_spain.46.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -10035,6 +10081,7 @@ country_event = {
 # Iberian Union - Event for Spain - Portugal Declined
 country_event = {
 	id = lar_spain.47
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.47 FROM = [From.GetName]" }
 	title = lar_spain.47.t
 	desc = lar_spain.47.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -10053,6 +10100,7 @@ country_event = {
 # Portuguese Anarchism - Event for Portugal
 country_event = {
 	id = lar_spain.48
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.48 FROM = [From.GetName]" }
 	title = lar_spain.48.t
 	desc = lar_spain.48.desc
 	picture = GFX_report_event_spr_anarchist_uprising
@@ -10123,6 +10171,7 @@ country_event = {
 # Portuguese Anarchism - Event for Spain
 country_event = {
 	id = lar_spain.49
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.49 FROM = [From.GetName]" }
 	title = lar_spain.48.t
 	desc = lar_spain.49.desc
 	picture = GFX_report_event_spr_anarchist_uprising
@@ -10159,6 +10208,7 @@ country_event = {
 # Portuguese Anarchism - Event for Spain - Portuguese Civil War ends
 country_event = {
 	id = lar_spain.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.50 FROM = [From.GetName]" }
 	title = lar_spain.50.t
 	desc = lar_spain.50.desc
 	picture = GFX_report_event_spr_anarchist_success
@@ -10187,6 +10237,7 @@ country_event = {
 # Relocate the Gold Reserves - Event for Spain - Choose target
 country_event = {
 	id = lar_spain.51
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.51 FROM = [From.GetName]" }
 	title = lar_spain.51.t
 	desc = lar_spain.51.desc
 	picture = GFX_report_event_generic_read_write
@@ -10320,6 +10371,7 @@ country_event = {
 # Relocate the Gold Reserves - Event for Target
 country_event = {
 	id = lar_spain.52
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.52 FROM = [From.GetName]" }
 	title = lar_spain.52.t
 	desc = lar_spain.52.desc
 	picture = GFX_report_event_destroyers
@@ -10335,6 +10387,7 @@ country_event = {
 # Relocate the Gold Reserves - Event for Target - Seize the Gold
 country_event = {
 	id = lar_spain.53
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.53 FROM = [From.GetName]" }
 	title = lar_spain.53.t
 	desc = lar_spain.53.desc
 	picture = GFX_report_event_generic_read_write
@@ -10396,6 +10449,7 @@ country_event = {
 # Relocate the Gold Reserves - Event for Spain - Gold seized!
 country_event = {
 	id = lar_spain.54
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.54 FROM = [From.GetName]" }
 	title = lar_spain.54.t
 	desc = lar_spain.54.desc
 	picture = GFX_report_event_generic_read_write
@@ -10419,6 +10473,7 @@ country_event = {
 # Relocate the Gold Reserves - Event for Spain - Payback time
 country_event = {
 	id = lar_spain.55
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.55 FROM = [From.GetName]" }
 	title = lar_spain.55.t
 	desc = lar_spain.55.desc
 	picture = GFX_report_event_generic_read_write
@@ -10444,6 +10499,7 @@ country_event = {
 # Appeal for Increased Autonomy - Event for SOV
 country_event = {
 	id = lar_spain.56
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.56 FROM = [From.GetName]" }
 	title = lar_spain.56.t
 	desc = lar_spain.56.desc
 	picture = GFX_report_event_generic_parliament
@@ -10476,6 +10532,7 @@ country_event = {
 # Appeal for Increased Autonomy - Event for Spain - SOV accepted
 country_event = {
 	id = lar_spain.57
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.57 FROM = [From.GetName]" }
 	title = lar_spain.57.t
 	desc = lar_spain.57.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -10493,6 +10550,7 @@ country_event = {
 # Appeal for Increased Autonomy - Event for Spain - SOV declined
 country_event = {
 	id = lar_spain.58
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.58 FROM = [From.GetName]" }
 	title = lar_spain.58.t
 	desc = lar_spain.58.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -10507,6 +10565,7 @@ country_event = {
 # A Red Iberia - Event for Portugal
 country_event = {
 	id = lar_spain.59
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.59 FROM = [From.GetName]" }
 	title = lar_spain.59.t
 	desc = lar_spain.59.desc
 	picture = GFX_report_event_generic_parliament
@@ -10604,6 +10663,7 @@ country_event = {
 # A Red Iberia - Event for Spain - Portugal Accepted
 country_event = {
 	id = lar_spain.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.60 FROM = [From.GetName]" }
 	title = lar_spain.60.t
 	desc = lar_spain.60.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -10626,6 +10686,7 @@ country_event = {
 # A Red Iberia - Event for Spain - Portugal Declined
 country_event = {
 	id = lar_spain.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.61 FROM = [From.GetName]" }
 	title = lar_spain.61.t
 	desc = lar_spain.61.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -10644,6 +10705,7 @@ country_event = {
 # Support French Communists - Event for France
 country_event = {
 	id = lar_spain.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.62 FROM = [From.GetName]" }
 	title = lar_spain.62.t
 	desc = lar_spain.62.desc
 	picture = GFX_report_event_generic_riot
@@ -10696,6 +10758,7 @@ country_event = {
 # Support French Communists - Event for Spain
 country_event = {
 	id = lar_spain.63
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.63 FROM = [From.GetName]" }
 	title = lar_spain.63.t
 	desc = lar_spain.63.desc
 	picture = GFX_report_event_generic_riot
@@ -10725,6 +10788,7 @@ country_event = {
 # Petition for French Aid - Event for France
 country_event = {
 	id = lar_spain.64
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.64 FROM = [From.GetName]" }
 	title = lar_spain.64.t
 	desc = lar_spain.64.desc
 	picture = GFX_report_event_spr_no_pasaran
@@ -10786,6 +10850,7 @@ country_event = {
 # Petition for French Aid - Event for Spain - France Accepted
 country_event = {
 	id = lar_spain.65
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.65 FROM = [From.GetName]" }
 	title = lar_spain.65.t
 	desc = lar_spain.65.desc
 	picture = GFX_report_event_spr_no_pasaran
@@ -10801,6 +10866,7 @@ country_event = {
 # Petition for French Aid - Event for Spain - France Declined
 country_event = {
 	id = lar_spain.66
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.66 FROM = [From.GetName]" }
 	title = lar_spain.66.t
 	desc = lar_spain.66.desc
 	picture = GFX_report_event_generic_read_write
@@ -10815,6 +10881,7 @@ country_event = {
 # War of Independence - Event for SOV
 country_event = {
 	id = lar_spain.67
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.67 FROM = [From.GetName]" }
 	title = lar_spain.67.t
 	desc = lar_spain.67.desc
 	picture = GFX_report_event_generic_parliament
@@ -10904,6 +10971,7 @@ country_event = {
 # Those Who Would Not Help Us - Event for USA/ENG/FRA
 country_event = {
 	id = lar_spain.68
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.68 FROM = [From.GetName]" }
 	title = lar_spain.68.t
 	desc = lar_spain.68.desc
 	picture = GFX_report_event_generic_read_write
@@ -10948,6 +11016,7 @@ country_event = {
 # Those Who Would Not Help Us - Event for Spain - FROM Accepted
 country_event = {
 	id = lar_spain.69
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.69 FROM = [From.GetName]" }
 	title = lar_spain.69.t
 	desc = lar_spain.69.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -10965,6 +11034,7 @@ country_event = {
 # Those Who Would Not Help Us - Event for Spain - FROM Declined
 country_event = {
 	id = lar_spain.70
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.70 FROM = [From.GetName]" }
 	title = lar_spain.70.t
 	desc = lar_spain.70.desc
 	picture = GFX_report_event_generic_read_write
@@ -10979,6 +11049,7 @@ country_event = {
 # Enemies of Our Enemy - Event for GER/ITA
 country_event = {
 	id = lar_spain.71
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.71 FROM = [From.GetName]" }
 	title = lar_spain.71.t
 	desc = lar_spain.71.desc
 	picture = GFX_report_event_generic_parliament
@@ -11026,6 +11097,7 @@ country_event = {
 # Enemies of Our Enemy - Event for Spain - FROM Accepted
 country_event = {
 	id = lar_spain.72
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.72 FROM = [From.GetName]" }
 	title = lar_spain.72.t
 	desc = lar_spain.72.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -11049,6 +11121,7 @@ country_event = {
 # Enemies of Our Enemy - Event for Spain - FROM Declined
 country_event = {
 	id = lar_spain.73
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.73 FROM = [From.GetName]" }
 	title = lar_spain.73.t
 	desc = lar_spain.73.desc
 	picture = GFX_report_event_generic_read_write
@@ -11063,6 +11136,7 @@ country_event = {
 # Enemies of Our Enemy - Event for GER
 country_event = {
 	id = lar_spain.74
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.74 FROM = [From.GetName]" }
 	title = lar_spain.74.t
 	desc = lar_spain.74.desc
 	picture = GFX_report_event_generic_parliament
@@ -11111,6 +11185,7 @@ country_event = {
 # Enemies of Our Enemy - Event for Spain - FROM Accepted
 country_event = {
 	id = lar_spain.75
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.75 FROM = [From.GetName]" }
 	title = lar_spain.75.t
 	desc = lar_spain.75.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -11126,6 +11201,7 @@ country_event = {
 # Enemies of Our Enemy - Event for Spain - FROM Declined
 country_event = {
 	id = lar_spain.76
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.76 FROM = [From.GetName]" }
 	title = lar_spain.76.t
 	desc = lar_spain.76.desc
 	picture = GFX_report_event_generic_read_write
@@ -11140,6 +11216,7 @@ country_event = {
 # Spain - Alfonso Dies
 country_event = {
 	id = lar_spain.77
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.77 FROM = [From.GetName]" }
 	title = lar_spain.77.t
 	desc = {
 		text = lar_spain.77.desc1
@@ -11244,6 +11321,7 @@ country_event = {
 # Spain - Sanjurjo Dies
 country_event = {
 	id = lar_spain.78
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.78 FROM = [From.GetName]" }
 	title = lar_spain.78.t
 	desc = lar_spain.78.desc
 	picture = GFX_report_event_spr_plane_crash
@@ -11290,6 +11368,7 @@ country_event = {
 # Claim the French Throne - Event for Spain - Coronation
 country_event = {
 	id = lar_spain.79
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.79 FROM = [From.GetName]" }
 	title = lar_spain.79.t
 	desc = lar_spain.79.desc
 	picture = GFX_report_event_royal_parade
@@ -11316,6 +11395,7 @@ country_event = {
 # Hidden event to 'age' Franco after 1950
 country_event = {
 	id = lar_spain.80
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.80 FROM = [From.GetName]" }
 
 	trigger = {
 		tag = SPA
@@ -11346,6 +11426,7 @@ country_event = {
 # End of SCW, Republicans expanded Soviet aid - event for SOV
 country_event = {
 	id = lar_spain.81
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.81 FROM = [From.GetName]" }
 	title = lar_spain.81.t
 	desc = lar_spain.81.desc
 	picture = GFX_report_event_generic_parliament
@@ -11363,6 +11444,7 @@ country_event = {
 # End of SCW, Republicans expanded Soviet aid - event for SPD
 country_event = {
 	id = lar_spain.82
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.82 FROM = [From.GetName]" }
 	title = lar_spain.82.t
 	desc = lar_spain.82.desc
 	picture = GFX_report_event_generic_parliament
@@ -11413,6 +11495,7 @@ country_event = {
 # Soviets get notification SPR is being disloyal
 country_event = {
 	id = lar_spain.83
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.83 FROM = [From.GetName]" }
 	title = lar_spain.83.t
 	desc = lar_spain.83.desc
 	picture = GFX_report_event_generic_parliament
@@ -11571,6 +11654,7 @@ country_event = {
 # Event for SPR that Soviets are seizing land
 country_event = {
 	id = lar_spain.84
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.84 FROM = [From.GetName]" }
 	title = lar_spain.84.t
 	desc = lar_spain.84.desc
 	picture = GFX_report_event_soviet_army_greeted
@@ -11598,6 +11682,7 @@ country_event = {
 # SPR has Catalonia returned
 country_event = {
 	id = lar_spain.85
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.85 FROM = [From.GetName]" }
 	title = lar_spain.85.t
 	desc = lar_spain.85.desc
 	picture = GFX_report_event_soldiers_marching
@@ -11639,6 +11724,7 @@ country_event = {
 # SPR has Valencia returned
 country_event = {
 	id = lar_spain.86
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.86 FROM = [From.GetName]" }
 	title = lar_spain.85.t
 	desc = lar_spain.85.desc
 	picture = GFX_report_event_soldiers_marching
@@ -11680,6 +11766,7 @@ country_event = {
 # SPR has Eastern Aragon returned
 country_event = {
 	id = lar_spain.87
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.87 FROM = [From.GetName]" }
 	title = lar_spain.85.t
 	desc = lar_spain.85.desc
 	picture = GFX_report_event_soldiers_marching
@@ -11715,6 +11802,7 @@ country_event = {
 # Event for SOV informing them of losing a state to SPR
 country_event = {
 	id = lar_spain.88
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.88 FROM = [From.GetName]" }
 	title = lar_spain.88.t
 	desc = lar_spain.88.desc
 	picture = GFX_report_event_soldiers_marching
@@ -11730,6 +11818,7 @@ country_event = {
 # Event for SPR that Soviets are giving them independence
 country_event = {
 	id = lar_spain.89
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.89 FROM = [From.GetName]" }
 	title = lar_spain.89.t
 	desc = lar_spain.89.desc
 	picture = GFX_report_event_soviet_army_greeted
@@ -11762,6 +11851,7 @@ country_event = {
 # Event for Spain that the president is dismissed
 country_event = {
 	id = lar_spain.90
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_spain.90 FROM = [From.GetName]" }
 	title = lar_spain.90.t
 	desc = lar_spain.90.desc
 	picture = GFX_report_event_generic_parliament

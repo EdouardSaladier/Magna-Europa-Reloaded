@@ -7,6 +7,7 @@ add_namespace = EST_events
 # Ask Germany to be friends
 country_event = {
 	id = EST_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.1 FROM = [From.GetName]" }
 	title = EST_events.1.t
 	desc = EST_events.1.d
 	picture = GFX_report_event_generic_conference
@@ -57,6 +58,7 @@ country_event = {
 }
 country_event = {
 	id = EST_events.101
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.101 FROM = [From.GetName]" }
 	title = EST_events.101.t
 	desc = EST_events.101.d
 	picture = GFX_report_event_generic_sign_treaty2
@@ -88,6 +90,7 @@ country_event = {
 }
 country_event = {
 	id = EST_events.102
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.102 FROM = [From.GetName]" }
 	title = EST_events.102.t
 	desc = EST_events.102.d
 	picture = GFX_report_event_military_planning
@@ -107,6 +110,7 @@ country_event = {
 # Annex Finland
 country_event = {
 	id = EST_events.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.2 FROM = [From.GetName]" }
 	title = EST_events.2.t
 	desc = EST_events.2.d
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -150,6 +154,7 @@ country_event = {
 }
 country_event = {
 	id = EST_events.201
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.201 FROM = [From.GetName]" }
 	title = EST_events.201.t
 	desc = EST_events.201.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -169,6 +174,7 @@ country_event = {
 }
 country_event = {
 	id = EST_events.202
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.202 FROM = [From.GetName]" }
 	title = EST_events.202.t
 	desc = EST_events.202.d
 	picture = GFX_report_event_generic_rally
@@ -192,6 +198,7 @@ country_event = {
 #Annex Baltic States
 country_event = {
 	id = EST_events.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.4 FROM = [From.GetName]" }
 	title = EST_events.4.t
 	desc = EST_events.4.d
 	picture = GFX_report_event_generic_conference
@@ -235,6 +242,7 @@ country_event = {
 }
 country_event = {
 	id = EST_events.401
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.401 FROM = [From.GetName]" }
 	title = EST_events.401.t
 	desc = EST_events.401.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -254,6 +262,7 @@ country_event = {
 }
 country_event = {
 	id = EST_events.402
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.402 FROM = [From.GetName]" }
 	title = EST_events.402.t
 	desc = EST_events.402.d
 	picture = GFX_report_event_soldiers_marching
@@ -275,6 +284,7 @@ country_event = {
 #Other Baltics are informed of Estonia getting wargoal
 country_event = {
 	id = EST_events.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.5 FROM = [From.GetName]" }
 	title = EST_events.5.t
 	desc = EST_events.5.d
 	picture = GFX_report_event_german_troops
@@ -300,6 +310,7 @@ country_event = {
 #Estonia asks to add Finland to the faction
 country_event = {
 	id = EST_events.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.6 FROM = [From.GetName]" }
 	title = EST_events.6.t
 	desc = EST_events.6.d
 	picture = GFX_report_event_hol_cabinet_de_geer
@@ -325,6 +336,7 @@ country_event = {
 
 country_event = {
 	id = EST_events.601
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.601 FROM = [From.GetName]" }
 	title = EST_events.601.t
 	desc = EST_events.601.d
 	picture = GFX_report_event_generic_rally
@@ -342,6 +354,7 @@ country_event = {
 #Vapsid Civil War
 country_event = {
 	id = EST_events.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.7 FROM = [From.GetName]" }
 	title = EST_events.7.t
 	desc = EST_events.7.d
 	picture = GFX_report_event_ger_civil_war
@@ -393,6 +406,7 @@ country_event = {
 #Vapsid peaceful takeover
 country_event = {
 	id = EST_events.701
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.701 FROM = [From.GetName]" }
 	title = EST_events.701.t
 	desc = EST_events.701.d
 	picture = GFX_report_event_generic_peaceful_annexation
@@ -426,6 +440,7 @@ country_event = {
 #Vapsid march results
 country_event = {
 	id = EST_events.801
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.801 FROM = [From.GetName]" }
 	title = EST_events.801.t
 	desc = EST_events.801.d
 	picture = GFX_report_event_generic_riot
@@ -465,6 +480,7 @@ country_event = {
 }
 country_event = {
 	id = EST_events.802
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.802 FROM = [From.GetName]" }
 	title = EST_events.802.t
 	desc = EST_events.802.d
 	picture = GFX_report_event_vaps_march
@@ -504,6 +520,7 @@ country_event = {
 }
 country_event = {
 	id = EST_events.803
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.803 FROM = [From.GetName]" }
 	title = EST_events.803.t
 	desc = EST_events.803.d
 	picture = GFX_report_event_vaps_march
@@ -546,6 +563,7 @@ country_event = {
 #Finnish Civil War
 country_event = {
 	id = EST_events.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.9 FROM = [From.GetName]" }
 	title = EST_events.7.t
 	desc = EST_events.7.d
 	picture = GFX_report_event_ger_civil_war
@@ -605,6 +623,7 @@ country_event = {
 #Estonia informed that Finland voluntarily flipped
 country_event = {
 	id = EST_events.901
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.901 FROM = [From.GetName]" }
 	title = EST_events.901.t
 	desc = EST_events.901.d
 	picture = GFX_report_event_hungary_parliament
@@ -630,6 +649,7 @@ country_event = {
 #Estonia adds itself to the war
 country_event = {
 	id = EST_events.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.10 FROM = [From.GetName]" }
 	title = EST_events.10.t
 	desc = EST_events.10.d
 	picture = GFX_report_event_generic_army
@@ -671,6 +691,7 @@ country_event = {
 #Finland informed of Estonia boosting fascism and what they can do about it.
 country_event = {
 	id = EST_events.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event EST_events.11 FROM = [From.GetName]" }
 	title = EST_events.11.t
 	desc = EST_events.11.d
 	picture = GFX_report_event_eng_blackshirt_march

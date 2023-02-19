@@ -3,6 +3,7 @@
 #IRE gets choice; trade northern ireland in return for joining the alliance?
 country_event = {
 	id = wtt_britain.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_britain.24 FROM = [From.GetName]" }
 	title = wtt_britain.24.t
 	desc = wtt_britain.24.d
 	picture = GFX_report_event_generic_parliament
@@ -42,6 +43,7 @@ country_event = {
 #Mers-El-Kebir Raid: France gets choice; transfer fleet or lose a portion
 country_event = {
 	id = wtt_britain.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_britain.25 FROM = [From.GetName]" }
 	title = wtt_britain.25.t
 	desc = wtt_britain.25.d
 	picture = GFX_report_event_generic_conference
@@ -89,6 +91,7 @@ country_event = {
 #Mers-El-Kebir Raid: Notification event for French accepted
 country_event = {
 	id = wtt_britain.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_britain.26 FROM = [From.GetName]" }
 	title = wtt_britain.26.t
 	desc = wtt_britain.26.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -104,6 +107,7 @@ country_event = {
 #Mers-El-Kebir Raid: British informed of rejection; choice of going through with bombardment or not
 country_event = {
 	id = wtt_britain.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_britain.27 FROM = [From.GetName]" }
 	title = wtt_britain.27.t
 	desc = wtt_britain.27.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -225,6 +229,7 @@ country_event = {
 #MacDonald Proposal - Ireland Accepts
 country_event = {
 	id = wtt_britain.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_britain.28 FROM = [From.GetName]" }
 	title = wtt_britain.28.t
 	desc = wtt_britain.28.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -240,6 +245,7 @@ country_event = {
 #MacDonald Proposal - Ireland Rejects Offer
 country_event = {
 	id = wtt_britain.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_britain.29 FROM = [From.GetName]" }
 	title = wtt_britain.29.t
 	desc = wtt_britain.29.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -255,6 +261,7 @@ country_event = {
 # Emergency Arms Deliveries
 country_event = {
 	id = wtt_britain.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_britain.30 FROM = [From.GetName]" }
 	title = wtt_britain.30.t
 	desc = wtt_britain.30.d
 	picture = GFX_report_event_generic_factory
@@ -283,6 +290,7 @@ add_namespace = wtt_britain_lease_azores
 # England request lease of Azore from POR
 country_event = {
 	id = wtt_britain_lease_azores.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_britain_lease_azores.1 FROM = [From.GetName]" }
 	title = wtt_britain_lease_azores.1.t
 	desc = wtt_britain_lease_azores.1.desc
 	picture = GFX_report_event_degaulle_churchill
@@ -317,6 +325,7 @@ country_event = {
 # Answer from POR - yes
 country_event = {
 	id = wtt_britain_lease_azores.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_britain_lease_azores.2 FROM = [From.GetName]" }
 	title = wtt_britain_lease_azores.2.t
 	desc = wtt_britain_lease_azores.2.desc
 	picture = GFX_report_event_usa_heavy_cruiser
@@ -332,6 +341,7 @@ country_event = {
 # Answer from POR - no
 country_event = {
 	id = wtt_britain_lease_azores.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_britain_lease_azores.3 FROM = [From.GetName]" }
 	title = wtt_britain_lease_azores.3.t
 	desc = wtt_britain_lease_azores.3.desc
 	picture = GFX_report_event_french_british_officers
@@ -347,6 +357,7 @@ country_event = {
 # Was is over - Give control back to POR
 country_event = {
 	id = wtt_britain_lease_azores.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_britain_lease_azores.4 FROM = [From.GetName]" }
 	title = wtt_britain_lease_azores.4.t
 	desc = wtt_britain_lease_azores.4.desc
 	picture = GFX_report_event_ast_navy
@@ -371,6 +382,7 @@ country_event = {
 
 country_event = {
 	id = wtt_britain_lease_azores.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_britain_lease_azores.5 FROM = [From.GetName]" }
 	title = wtt_britain_lease_azores.5.t
 	desc = wtt_britain_lease_azores.5.desc
 	picture = GFX_report_event_ast_navy

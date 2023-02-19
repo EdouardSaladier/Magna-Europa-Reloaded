@@ -7,6 +7,7 @@ add_namespace = generic
 # President dies
 country_event = {
 	id = generic.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.1 FROM = [From.GetName]" }
 	title = generic.1.t
 	desc = { 
 		text = generic.1.d_neutral_good
@@ -65,6 +66,7 @@ country_event = {
 # Generic request to join major Alliance
 country_event = {
 	id = generic.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.2 FROM = [From.GetName]" }
 	title = generic.2.t
 	desc = { # FROM and ROOT are Democratic
 		text = generic.2.d.a
@@ -344,6 +346,7 @@ country_event = {
 # Generic accepted request to join major Alliance
 country_event = {
 	id = generic.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.3 FROM = [From.GetName]" }
 	title = generic.3.t
 	desc = generic.3.d
 
@@ -416,6 +419,7 @@ country_event = {
 # Generic rejected request to join major Alliance
 country_event = {
 	id = generic.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.4 FROM = [From.GetName]" }
 	title = generic.4.t
 	desc = generic.4.d
 	
@@ -513,6 +517,7 @@ country_event = {
 # Generic invitaton to join major Alliance
 country_event = {
 	id = generic.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.5 FROM = [From.GetName]" }
 	title = generic.5.t
 	desc = { # FROM and ROOT are Democratic
 		text = generic.5.d.a
@@ -891,6 +896,7 @@ country_event = {
 # Generic accepted invitation to join major Alliance
 country_event = {
 	id = generic.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.6 FROM = [From.GetName]" }
 	title = generic.6.t
 	desc = generic.6.d
 
@@ -963,6 +969,7 @@ country_event = {
 # Generic rejected invitation to join major Alliance
 country_event = {
 	id = generic.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.7 FROM = [From.GetName]" }
 	title = generic.7.t
 	desc = generic.7.d
 	
@@ -1034,6 +1041,7 @@ country_event = {
 # Race for the Bomb success event
 country_event = {
 	id = generic.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.8 FROM = [From.GetName]" }
 	title = generic.8.t
 	desc = generic.8.d
 	
@@ -1066,6 +1074,7 @@ country_event = {
 # Race for the Bomb failure event
 country_event = {
 	id = generic.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.9 FROM = [From.GetName]" }
 	title = generic.9.t
 	desc = generic.9.d
 	
@@ -1085,6 +1094,7 @@ country_event = {
 # Race for the Bomb faction member success event
 country_event = {
 	id = generic.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.10 FROM = [From.GetName]" }
 	title = generic.10.t
 	desc = generic.10.d
 	
@@ -1103,6 +1113,7 @@ country_event = {
 # Ideology civil war won
 country_event = {
 	id = generic.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.11 FROM = [From.GetName]" }
 	title = generic.11.t
 	desc = generic.11.d
 	
@@ -1119,6 +1130,7 @@ country_event = {
 # Enemy attempting to destroy Suez
 country_event = {
 	id = generic.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.12 FROM = [From.GetName]" }
 	title = generic.12.t
 	desc = generic.12.d
 	
@@ -1135,6 +1147,7 @@ country_event = {
 # Enemy attempting to destroy Panama
 country_event = {
 	id = generic.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.13 FROM = [From.GetName]" }
 	title = generic.13.t
 	desc = generic.13.d
 	
@@ -1151,6 +1164,7 @@ country_event = {
 # Object to Attaches
 country_event = {
 	id = generic.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.14 FROM = [From.GetName]" }
 	title = generic.14.t
 	desc = generic.14.d
 	
@@ -1470,6 +1484,7 @@ country_event = {
 # Notification event that TAG withdrew attache
 country_event = {
 	id = generic.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.15 FROM = [From.GetName]" }
 	title = generic.15.t
 	desc = generic.15.d
 	
@@ -1485,6 +1500,7 @@ country_event = {
 # Notification event that TAG refused to withdraw attache
 country_event = {
 	id = generic.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.16 FROM = [From.GetName]" }
 	title = generic.16.t
 	desc = generic.16.d
 	
@@ -1538,6 +1554,7 @@ unit_leader_event = {
 # Notification event that leader has been wounded
 country_event = {
 	id = generic.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.18 FROM = [From.GetName]" }
 	title = generic.18.t
 	desc = generic.18.d
 	
@@ -1561,6 +1578,7 @@ country_event = {
 # Notification event that FROM has sent industrial support
 country_event = {
 	id = generic.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.19 FROM = [From.GetName]" }
 	title = generic.19.t
 	desc = generic.19.d
 	
@@ -1579,6 +1597,7 @@ country_event = {
 #Become a puppet
 country_event = {
 	id = generic.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.20 FROM = [From.GetName]" }
 	title = generic.20.t
 	desc = {
 		text = generic.20.d_friends
@@ -1734,6 +1753,7 @@ country_event = {
 #Became puppet
 country_event = {
 	id = generic.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.21 FROM = [From.GetName]" }
 	title = generic.21.t
 	desc = generic.21.d
 	picture = GFX_report_event_generic_read_write
@@ -1765,6 +1785,7 @@ country_event = {
 #Denied puppet
 country_event = {
 	id = generic.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.22 FROM = [From.GetName]" }
 	title = generic.22.t
 	desc = generic.22.d
 	picture = GFX_report_event_generic_read_write
@@ -1789,6 +1810,7 @@ country_event = {
 # generic event for demanding territory
 country_event = {
 	id = generic.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.23 FROM = [From.GetName]" }
 	title = generic.23.t
 	desc = generic.23.d
 	
@@ -1866,6 +1888,7 @@ country_event = {
 # accepted demands
 country_event = {
 	id = generic.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.24 FROM = [From.GetName]" }
 	title = generic.24.t
 	desc = generic.24.d
 	
@@ -1892,6 +1915,7 @@ country_event = {
 # accepted demands
 country_event = {
 	id = generic.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event generic.25 FROM = [From.GetName]" }
 	title = generic.25.t
 	desc = generic.25.d
 	

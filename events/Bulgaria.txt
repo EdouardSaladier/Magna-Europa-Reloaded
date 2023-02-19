@@ -7,6 +7,7 @@ add_namespace = bulgaria
 # Treaty of Craiova - Romania Accepts
 country_event = {
 	id = bulgaria.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bulgaria.1 FROM = [From.GetName]" }
 	title = bulgaria.1.t
 	desc = bulgaria.1.d
 	picture = GFX_report_event_hitler_handshake
@@ -46,6 +47,7 @@ country_event = {
 # Treaty of Craiova - Romania Refuses
 country_event = {
 	id = bulgaria.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bulgaria.2 FROM = [From.GetName]" }
 	title = bulgaria.2.t
 	desc = bulgaria.2.d
 	picture = GFX_report_event_finnish_letter
@@ -66,6 +68,7 @@ country_event = {
 # Bulgaria (First Ljubljana Award) from german focus
 country_event = {
 	id = bulgaria.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bulgaria.3 FROM = [From.GetName]" }
 	title = bulgaria.3.t
 	desc = bulgaria.3.d
 	picture = GFX_report_event_vienna_award_negotiations
@@ -112,6 +115,7 @@ country_event = {
 # Treaty of Craiova - Hungary gets land. So should we
 country_event = {
 	id = bulgaria.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bulgaria.4 FROM = [From.GetName]" }
 	title = bulgaria.4.t
 	desc = bulgaria.4.d
 	picture = GFX_report_event_vienna_award_negotiations
@@ -153,6 +157,7 @@ country_event = {
 # Treaty of Craiova - Germany will not back us
 country_event = {
 	id = bulgaria.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bulgaria.5 FROM = [From.GetName]" }
 	title = bulgaria.5.t
 	desc = bulgaria.5.d
 	picture = GFX_report_event_vienna_award_negotiations

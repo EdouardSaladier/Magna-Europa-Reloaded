@@ -17,6 +17,7 @@ add_namespace = lar_portugal_overseas_provinces
 # Iberian summit - country suggests joining axis
 country_event = {
 	id = lar_portugal_iberian_summit.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_iberian_summit.1 FROM = [From.GetName]" }
 	title = lar_portugal_iberian_summit.1.t
 	desc = lar_portugal_iberian_summit.1.desc
 	picture = GFX_report_event_generic_read_write
@@ -226,6 +227,7 @@ country_event = {
 # Join Axis Now
 country_event = {
 	id = lar_portugal_iberian_summit.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_iberian_summit.2 FROM = [From.GetName]" }
 	title = lar_portugal_iberian_summit.2.t
 	desc = lar_portugal_iberian_summit.2.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -258,6 +260,7 @@ country_event = {
 # Join Axis Later
 country_event = {
 	id = lar_portugal_iberian_summit.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_iberian_summit.3 FROM = [From.GetName]" }
 	title = lar_portugal_iberian_summit.3.t
 	desc = lar_portugal_iberian_summit.3.desc
 	picture = GFX_report_event_generic_conference
@@ -289,6 +292,7 @@ country_event = {
 # Event for Germany - POR & SPA asks to join Faction
 country_event = {
 	id = lar_portugal_iberian_summit.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_iberian_summit.4 FROM = [From.GetName]" }
 	title = lar_portugal_iberian_summit.4.t
 	desc = lar_portugal_iberian_summit.4.desc
 	picture = GFX_report_event_por_salazar_franco1
@@ -384,6 +388,7 @@ country_event = {
 # Iberian summit - country suggests joining allies
 country_event = {
 	id = lar_portugal_iberian_summit.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_iberian_summit.5 FROM = [From.GetName]" }
 
 	title = lar_portugal_iberian_summit.5.t
 	desc = lar_portugal_iberian_summit.5.desc
@@ -627,6 +632,7 @@ country_event = {
 # Join Allies Now
 country_event = {
 	id = lar_portugal_iberian_summit.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_iberian_summit.6 FROM = [From.GetName]" }
 	title = lar_portugal_iberian_summit.6.t
 	desc = lar_portugal_iberian_summit.6.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -658,6 +664,7 @@ country_event = {
 # Join Allies Later
 country_event = {
 	id = lar_portugal_iberian_summit.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_iberian_summit.7 FROM = [From.GetName]" }
 	title = lar_portugal_iberian_summit.7.t
 	desc = lar_portugal_iberian_summit.7.desc
 	picture = GFX_report_event_generic_conference
@@ -690,6 +697,7 @@ country_event = {
 # Event for ENG - POR & SPD/SPA asks to join Faction
 country_event = {
 	id = lar_portugal_iberian_summit.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_iberian_summit.8 FROM = [From.GetName]" }
 	title = lar_portugal_iberian_summit.8.t
 	desc = lar_portugal_iberian_summit.8.desc
 	picture = GFX_report_event_por_salazar_franco1
@@ -817,6 +825,7 @@ country_event = {
 # Proposal declined
 country_event = {
 	id = lar_portugal_iberian_summit.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_iberian_summit.9 FROM = [From.GetName]" }
 	title = lar_portugal_iberian_summit.9.t
 	desc = lar_portugal_iberian_summit.9.desc
 	picture = GFX_report_event_por_estado_novo
@@ -835,6 +844,7 @@ country_event = {
 # Navy Mutiny - Mutineers want to help SPD in the SCW
 country_event = {
 	id = lar_portugal_navy_mutiny.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_navy_mutiny.1 FROM = [From.GetName]" }
 	title = lar_portugal_navy_mutiny.1.t
 	desc = lar_portugal_navy_mutiny.1.desc
 	picture = GFX_report_event_destroyers
@@ -1002,6 +1012,7 @@ country_event = {
 # Mutiny Report -> Government allowed ships to head to SPD
 country_event = {
 	id = lar_portugal_navy_mutiny.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_navy_mutiny.2 FROM = [From.GetName]" }
 	title = lar_portugal_navy_mutiny.2.t
 	# Desc when only Dão heads to SPD
 	desc = {
@@ -1034,6 +1045,7 @@ country_event = {
 # Mutiny Report -> Government fought the fleeing ships
 country_event = {
 	id = lar_portugal_navy_mutiny.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_navy_mutiny.3 FROM = [From.GetName]" }
 	title = lar_portugal_navy_mutiny.3.t
 	# Desc when no ships make it out of harbour
 	desc = {
@@ -1120,6 +1132,7 @@ country_event = {
 # Spanish Republic receives ships -> Event for Spain
 country_event = {
 	id = lar_portugal_navy_mutiny.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_navy_mutiny.4 FROM = [From.GetName]" }
 	title = lar_portugal_navy_mutiny.4.t
 
 	desc = { #Mutiny allowed
@@ -1150,6 +1163,7 @@ country_event = {
 # Event for POR: Spain sends ships back in compensation after SCW
 country_event = {
 	id = lar_portugal_navy_mutiny.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_navy_mutiny.5 FROM = [From.GetName]" }
 	title = lar_portugal_navy_mutiny.5.t
 
 	desc = lar_portugal_navy_mutiny.5.desc
@@ -1179,6 +1193,7 @@ country_event = {
 # Event for SPD: Spain sends ships back in compensation after SCW
 country_event = {
 	id = lar_portugal_navy_mutiny.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_navy_mutiny.6 FROM = [From.GetName]" }
 	title = lar_portugal_navy_mutiny.6.t
 
 	desc = lar_portugal_navy_mutiny.6.desc
@@ -1247,6 +1262,7 @@ country_event = {
 # Iberian Workers United
 country_event = {
 	id = lar_portugal_iberian_workers_united.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_iberian_workers_united.1 FROM = [From.GetName]" }
 	title = lar_portugal_iberian_workers_united.1.t
 	desc = lar_portugal_iberian_workers_united.1.desc
 	picture = GFX_report_event_generic_rifles
@@ -1266,6 +1282,7 @@ country_event = {
 # Event for SPD when Portugal asks for annexation
 country_event = {
 	id = lar_portugal_iberian_workers_united.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_iberian_workers_united.2 FROM = [From.GetName]" }
 	title = lar_portugal_iberian_workers_united.2.t
 	desc = lar_portugal_iberian_workers_united.2.desc
 	picture = GFX_report_event_generic_communist_congress
@@ -1359,6 +1376,7 @@ country_event = {
 # Event for Major countries at war with ENG
 country_event = {
 	id = lar_portugal_naval_blockade.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_naval_blockade.1 FROM = [From.GetName]" }
 	title = lar_portugal_naval_blockade.1.t
 	desc = lar_portugal_naval_blockade.1.desc
 	picture = GFX_report_event_merchant_ship_01
@@ -1378,6 +1396,7 @@ country_event = {
 # Event for POR when a Major country activates decision
 country_event = {
 	id = lar_portugal_naval_blockade.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_naval_blockade.2 FROM = [From.GetName]" }
 	title = lar_portugal_naval_blockade.2.t
 	desc = lar_portugal_naval_blockade.2.desc
 	picture = GFX_report_event_merchant_ship_01
@@ -1400,6 +1419,7 @@ country_event = {
 # Event for ENG when POR completes Refuse Naval Blockade focus
 country_event = {
 	id = lar_portugal_naval_blockade.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_naval_blockade.3 FROM = [From.GetName]" }
 	title = lar_portugal_naval_blockade.3.t
 	desc = lar_portugal_naval_blockade.3.desc
 	picture = GFX_report_event_merchant_ship_01
@@ -1433,6 +1453,7 @@ country_event = {
 #Event for ENG/ITA to accept or reject Portuguese proposal to purchase ships
 country_event = {
 	id = lar_portugal_purchase_ships.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_purchase_ships.1 FROM = [From.GetName]" }
 	title = lar_portugal_purchase_ships.1.t
 	desc = lar_portugal_purchase_ships.1.desc
 	picture = GFX_report_event_sailors_in_working_rig
@@ -1504,6 +1525,7 @@ country_event = {
 # Event for POR to choose the type of ships to be purchased
 country_event = {
 	id = lar_portugal_purchase_ships.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_purchase_ships.2 FROM = [From.GetName]" }
 	title = lar_portugal_purchase_ships.2.t
 	desc = lar_portugal_purchase_ships.2.desc
 	picture = GFX_report_event_sailors_in_working_rig
@@ -1644,6 +1666,7 @@ country_event = {
 # Event for POR when ships purchase has been rejected
 country_event = {
 	id = lar_portugal_purchase_ships.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_purchase_ships.3 FROM = [From.GetName]" }
 	title = lar_portugal_purchase_ships.3.t
 	desc = lar_portugal_purchase_ships.3.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -1659,6 +1682,7 @@ country_event = {
 # Event for POR when submarines purchased are ready
 country_event = {
 	id = lar_portugal_purchase_ships.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_purchase_ships.4 FROM = [From.GetName]" }
 	title = lar_portugal_purchase_ships.4.t
 	desc = lar_portugal_purchase_ships.4.desc
 	picture = GFX_report_event_ast_navy
@@ -1674,6 +1698,7 @@ country_event = {
 # Event for POR when destroyers purchased are ready
 country_event = {
 	id = lar_portugal_purchase_ships.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_purchase_ships.5 FROM = [From.GetName]" }
 	title = lar_portugal_purchase_ships.5.t
 	desc = lar_portugal_purchase_ships.5.desc
 	picture = GFX_report_event_ast_navy
@@ -1689,6 +1714,7 @@ country_event = {
 # Event for POR when light cruiser purchased is ready
 country_event = {
 	id = lar_portugal_purchase_ships.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_purchase_ships.6 FROM = [From.GetName]" }
 	title = lar_portugal_purchase_ships.6.t
 	desc = lar_portugal_purchase_ships.6.desc
 	picture = GFX_report_event_ast_navy
@@ -1706,6 +1732,7 @@ country_event = {
 # Event for Brazil when Portugal activates "Promote Monarchist Cause in Brazil" Decision
 country_event = {
 	id = lar_portugal_promote_monarchist_cause.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_promote_monarchist_cause.1 FROM = [From.GetName]" }
 	title = lar_portugal_promote_monarchist_cause.1.t
 	desc = lar_portugal_promote_monarchist_cause.1.desc
 	picture = GFX_report_event_generic_rally
@@ -1721,6 +1748,7 @@ country_event = {
 # Event for Brazil when Portugal completes "The Kingdom Reunited" Focus
 country_event = {
 	id = lar_portugal_promote_monarchist_cause.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_promote_monarchist_cause.2 FROM = [From.GetName]" }
 	title = lar_portugal_promote_monarchist_cause.2.t
 	desc = lar_portugal_promote_monarchist_cause.2.desc
 	picture = GFX_report_event_por_president_military_inspection
@@ -1781,6 +1809,7 @@ country_event = {
 # Event for Brazil when Portugal triggers the Monarchist Civil War
 country_event = {
 	id = lar_portugal_promote_monarchist_cause.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_promote_monarchist_cause.3 FROM = [From.GetName]" }
 	title = lar_portugal_promote_monarchist_cause.3.t
 
 	desc = {
@@ -2065,6 +2094,7 @@ country_event = {
 # Event for Brazil when Portugal completes "The Empire of Brazil" focus and changes Brazil's government peacefully
 country_event = {
 	id = lar_portugal_promote_monarchist_cause.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_promote_monarchist_cause.4 FROM = [From.GetName]" }
 	title = lar_portugal_promote_monarchist_cause.4.t
 	desc = lar_portugal_promote_monarchist_cause.4.desc
 	picture = GFX_report_event_por_return_of_the_monarchy
@@ -2110,6 +2140,7 @@ country_event = {
 # Event for Portugal when Brazil accepts to get annexed
 country_event = {
 	id = lar_portugal_promote_monarchist_cause.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_promote_monarchist_cause.5 FROM = [From.GetName]" }
 	title = lar_portugal_promote_monarchist_cause.5.t
 	desc = lar_portugal_promote_monarchist_cause.5.desc
 	picture = GFX_report_event_por_return_of_the_monarchy
@@ -2124,6 +2155,7 @@ country_event = {
 # Event for Portugal when Brazil refuses to get annexed
 country_event = {
 	id = lar_portugal_promote_monarchist_cause.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_promote_monarchist_cause.6 FROM = [From.GetName]" }
 	title = lar_portugal_promote_monarchist_cause.6.t
 	desc = lar_portugal_promote_monarchist_cause.6.desc
 	picture = GFX_report_event_por_return_of_the_monarchy
@@ -2144,6 +2176,7 @@ country_event = {
 # Event for BRA to decide if it will go Fascist or Monarchist
 country_event = {
 	id = lar_portugal_promote_monarchist_cause.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_promote_monarchist_cause.7 FROM = [From.GetName]" }
 	title = lar_portugal_promote_monarchist_cause.7.t
 	desc = lar_portugal_promote_monarchist_cause.7.desc
 	picture = GFX_report_event_generic_riot
@@ -2276,6 +2309,7 @@ country_event = {
 # Event for SPA, when Portugal completes focus "They Need our Help" 
 country_event = {
 	id = lar_portugal_spanish_civil_war.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_spanish_civil_war.1 FROM = [From.GetName]" }
 	title = lar_portugal_spanish_civil_war.1.t
 	desc = lar_portugal_spanish_civil_war.1.desc
 	picture = GFX_report_event_por_salazar_military
@@ -2294,6 +2328,7 @@ country_event = {
 # Event for SPD, when Portugal completes focus "Send Assistance" 
 country_event = {
 	id = lar_portugal_spanish_civil_war.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_spanish_civil_war.2 FROM = [From.GetName]" }
 	title = lar_portugal_spanish_civil_war.2.t
 	desc = lar_portugal_spanish_civil_war.2.desc
 	picture = GFX_report_event_por_salazar_franco2
@@ -2312,6 +2347,7 @@ country_event = {
 # Event for SPD & SPA, when Portugal completes focus "Support a Spanish Monarchy" 
 country_event = {
 	id = lar_portugal_spanish_civil_war.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_spanish_civil_war.3 FROM = [From.GetName]" }
 	title = lar_portugal_spanish_civil_war.3.t
 	desc = lar_portugal_spanish_civil_war.3.desc
 	picture = GFX_report_event_por_salazar_franco2
@@ -2330,6 +2366,7 @@ country_event = {
 # Event for SPB, when Portugal completes focus "The Royal Iberian Alliance" and invites SPB to join faction 
 country_event = {
 	id = lar_portugal_royal_iberian_alliance.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_royal_iberian_alliance.1 FROM = [From.GetName]" }
 	title = lar_portugal_royal_iberian_alliance.1.t
 	desc = lar_portugal_royal_iberian_alliance.1.desc
 	picture = GFX_report_event_por_president_military_inspection
@@ -2391,6 +2428,7 @@ country_event = {
 # Event for POR after integrating Angola (via decision)
 country_event = {
 	id = lar_portugal_overseas_provinces.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_overseas_provinces.1 FROM = [From.GetName]" }
 	title = lar_portugal_overseas_provinces.1.t
 	desc = lar_portugal_overseas_provinces.1.desc
 	picture = GFX_report_event_por_estado_novo
@@ -2445,6 +2483,7 @@ country_event = {
 # Event for POR after integrating Mozambique (via decision) 
 country_event = {
 	id = lar_portugal_overseas_provinces.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lar_portugal_overseas_provinces.2 FROM = [From.GetName]" }
 	title = lar_portugal_overseas_provinces.2.t
 	desc = lar_portugal_overseas_provinces.2.desc
 	picture = GFX_report_event_por_estado_novo

@@ -7,6 +7,7 @@ add_namespace = yugoslavia
 # Britain to Back Coup in Yugoslavia
 country_event = {
 	id = yugoslavia.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event yugoslavia.1 FROM = [From.GetName]" }
 	title = yugoslavia.1.t
 	desc = yugoslavia.1.d
 	picture = GFX_report_event_yugoslavian_king_peter
@@ -68,6 +69,7 @@ country_event = {
 # Yugoslavian Coup
 country_event = {
 	id = yugoslavia.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event yugoslavia.2 FROM = [From.GetName]" }
 	title = yugoslavia.2.t
 	desc = yugoslavia.2.d
 	picture = GFX_report_event_yugoslavian_king_peter
@@ -239,6 +241,7 @@ country_event = {
 # Yugoslavia (British and (possibly) French Support)
 country_event = {
 	id = yugoslavia.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event yugoslavia.3 FROM = [From.GetName]" }
 	title = yugoslavia.3.t
 	desc = {
 		text = yugoslavia.3.d 
@@ -273,6 +276,7 @@ country_event = {
 # Yugoslavia (French Support)
 country_event = {
 	id = yugoslavia.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event yugoslavia.4 FROM = [From.GetName]" }
 	title = yugoslavia.3.t
 	desc = yugoslavia.4.d
 	picture = GFX_report_event_chamberlain_announce
@@ -296,6 +300,7 @@ country_event = {
 # Yugoslavia (Abandoned)
 country_event = {
 	id = yugoslavia.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event yugoslavia.5 FROM = [From.GetName]" }
 	title = yugoslavia.5.t
 	desc = yugoslavia.5.d
 	picture = GFX_report_event_hitler_croatia_handshake
@@ -351,6 +356,7 @@ country_event = {
 # Yugoslavia (Italian Support)
 country_event = {
 	id = yugoslavia.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event yugoslavia.6 FROM = [From.GetName]" }
 	title = yugoslavia.3.t
 	desc = yugoslavia.6.d
 	picture = GFX_report_event_fascists_posing
@@ -374,6 +380,7 @@ country_event = {
 # Fate of Yugoslavia
 country_event = {
 	id = yugoslavia.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event yugoslavia.7 FROM = [From.GetName]" }
 	title = germany.98.t
 	desc = {
 		text = yugoslavia.7.d
@@ -454,6 +461,7 @@ country_event = {
 # Fate of Yugoslavia
 country_event = {
 	id = yugoslavia.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event yugoslavia.8 FROM = [From.GetName]" }
 	title = germany.98.t
 	desc = {
 		text = yugoslavia.8.d
@@ -578,6 +586,7 @@ country_event = {
 # Fate of Yugoslavia
 country_event = {
 	id = yugoslavia.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event yugoslavia.9 FROM = [From.GetName]" }
 	title = germany.98.t
 	desc = {
 		text = yugoslavia.9.d

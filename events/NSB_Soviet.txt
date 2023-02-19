@@ -30,6 +30,7 @@ add_namespace = NSB_soviet_nationalist
 ### PARANOIA SYSTEM STARTS ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.01
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.01 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.01.t
 	desc = NSB_soviet_paranoia_system_events.01.desc
 	picture = GFX_report_event_stalin_01
@@ -71,6 +72,7 @@ country_event = {
 ### ADVISOR ACCUSED OF TREASON - ADMIN ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.11 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.11.t
 	desc = NSB_soviet_paranoia_system_events.11.desc
 	picture = GFX_report_event_soviet_purge_trial
@@ -163,6 +165,7 @@ country_event = {
 ### CIVIL SERVANTS PURGED - ADMIN ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.12 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.12.t
 	desc = NSB_soviet_paranoia_system_events.12.desc
 	picture = GFX_report_event_SOV_purge_administration
@@ -231,6 +234,7 @@ country_event = {
 ### NKVD PURGED - ADMIN ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.13 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.13.t
 	desc = NSB_soviet_paranoia_system_events.13.desc
 	picture = GFX_report_event_soviet_purge_trial
@@ -331,6 +335,7 @@ country_event = {
 ### GREAT PURGE - MOSCOW TRIALS - ADMIN ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.19 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.19.t
 	desc = {
 		text = NSB_soviet_paranoia_system_events.19.desc_1 #first Moscow trial 
@@ -555,6 +560,7 @@ unit_leader_event = {
 ### CONSPIRACY IN THE ACADEMY - ARMY ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.22 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.22.t
 	desc = NSB_soviet_paranoia_system_events.22.desc
 	picture = GFX_report_event_SOV_purge_administration
@@ -621,6 +627,7 @@ country_event = {
 ### ANTI-SABOTEUR CAMPAIGN - ARMY ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.23 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.23.t
 	desc = NSB_soviet_paranoia_system_events.23.desc
 	picture = GFX_report_event_soviet_soldiers_tank
@@ -880,6 +887,7 @@ unit_leader_event = {
 ### GREAT PURGE OF JUNIOR ARMY OFFICERS - ARMY ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.28 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.28.t
 	desc = NSB_soviet_paranoia_system_events.28.desc
 	picture = GFX_report_event_SOV_purge_young_officers
@@ -983,6 +991,7 @@ country_event = {
 ### GREAT PURGE TRIAL OF THE GENERALS - ARMY ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.29 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.29.t
 	desc = NSB_soviet_paranoia_system_events.29.desc
 	picture = GFX_report_event_soviet_purge_officers_01
@@ -1194,6 +1203,7 @@ unit_leader_event = {
 #Loc taken from the Army event
 country_event = {
 	id = NSB_soviet_paranoia_system_events.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.32 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.22.t
 	desc = NSB_soviet_paranoia_system_events.22.desc
 	picture = GFX_report_event_SOV_purge_administration
@@ -1264,6 +1274,7 @@ country_event = {
 ### ANTI-SABOTEUR CAMPAIGN - NAVY ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.33 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.23.t
 	desc = NSB_soviet_paranoia_system_events.33.desc
 	picture = GFX_report_event_SOV_purge_navy
@@ -1337,6 +1348,7 @@ country_event = {
 ### GREAT PURGE - JUNIOR NAVY OFFICERS - NAVY ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.38
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.38 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.38.t
 	desc = NSB_soviet_paranoia_system_events.38.desc
 	picture = GFX_report_event_SOV_purge_young_officers
@@ -1440,6 +1452,7 @@ country_event = {
 ### GREAT PURGE - TRIAL OF THE ADMIRALS - NAVY ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.39
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.39 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.39.t
 	desc = NSB_soviet_paranoia_system_events.39.desc
 	picture = GFX_report_event_SOV_purge_navy
@@ -1552,6 +1565,7 @@ country_event = {
 ### CONSPIRACY IN THE ACADEMY - AIRFORCE ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.41 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.22.t
 	desc = NSB_soviet_paranoia_system_events.22.desc
 	picture = GFX_report_event_SOV_purge_administration
@@ -1616,6 +1630,7 @@ country_event = {
 #### ANTI-SABOTEUR CAMPAIGN - AIRFORCE ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.42 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.23.t
 	desc = NSB_soviet_paranoia_system_events.42.desc
 	picture = GFX_report_event_SOV_purge_aircraft_2
@@ -1683,6 +1698,7 @@ country_event = {
 ### GREAT PURGE - DESIGN BUREAU DISSOLVED - AIRFORCE ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.48
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.48 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.48.t
 	desc = NSB_soviet_paranoia_system_events.48.desc
 	picture = GFX_report_event_SOV_purge_aircraft_1
@@ -1797,6 +1813,7 @@ country_event = {
 ### GREAT PURGE - AIRFORCE CHIEFS - AIRFORCE ###
 country_event = {
 	id = NSB_soviet_paranoia_system_events.49
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_paranoia_system_events.49 FROM = [From.GetName]" }
 	title = NSB_soviet_paranoia_system_events.49.t
 	desc = NSB_soviet_paranoia_system_events.49.desc
 	picture = GFX_report_event_soviet_purge_trial
@@ -1896,6 +1913,7 @@ country_event = {
 #Propaganda Dispatcher - Left Slot - Used to update Campaign GFX when it's old.
 country_event = {
 	id = NSB_soviet_propaganda_capmaign_events.101
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_propaganda_capmaign_events.101 FROM = [From.GetName]" }
 	title = NSB_soviet_propaganda_capmaign_events.101.t
 	desc = NSB_soviet_propaganda_capmaign_events.101.desc
 	
@@ -1916,6 +1934,7 @@ country_event = {
 #Propaganda Dispatcher - Center Slot - Used to update Campaign GFX when it's old.
 country_event = {
 	id = NSB_soviet_propaganda_capmaign_events.102
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_propaganda_capmaign_events.102 FROM = [From.GetName]" }
 	title = NSB_soviet_propaganda_capmaign_events.102.t
 	desc = NSB_soviet_propaganda_capmaign_events.102.desc
 	
@@ -1936,6 +1955,7 @@ country_event = {
 #Propaganda Dispatcher - Right Slot - Used to update Campaign GFX when it's old.
 country_event = {
 	id = NSB_soviet_propaganda_capmaign_events.103
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_propaganda_capmaign_events.103 FROM = [From.GetName]" }
 	title = NSB_soviet_propaganda_capmaign_events.103.t
 	desc = NSB_soviet_propaganda_capmaign_events.103.desc
 	
@@ -1956,6 +1976,7 @@ country_event = {
 # YOUNG BUILDERS OF COMMUNISM - event for SOV's puppets
 country_event = {
 	id = NSB_soviet_propaganda_capmaign_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_propaganda_capmaign_events.1 FROM = [From.GetName]" }
 	title = NSB_soviet_propaganda_capmaign_events.1.t
 	desc = NSB_soviet_propaganda_capmaign_events.1.desc
 	picture = GFX_report_event_SOV_young_builders_of_communism
@@ -1975,6 +1996,7 @@ country_event = {
 # LONG LIVE TO PEACE - event for SOV (peace broken as attacker)
 country_event = {
 	id = NSB_soviet_propaganda_capmaign_events.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_propaganda_capmaign_events.2 FROM = [From.GetName]" }
 	title = NSB_soviet_propaganda_capmaign_events.2.t
 	desc = NSB_soviet_propaganda_capmaign_events.2.desc
 	picture = GFX_report_event_SOV_young_builders_of_communism
@@ -2013,6 +2035,7 @@ country_event = {
 # LONG LIVE TO PEACE - event for SOV (peace broken as defender)
 country_event = {
 	id = NSB_soviet_propaganda_capmaign_events.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_propaganda_capmaign_events.3 FROM = [From.GetName]" }
 	title = NSB_soviet_propaganda_capmaign_events.2.t
 	desc = NSB_soviet_propaganda_capmaign_events.3.desc
 	picture = GFX_report_event_SOV_young_builders_of_communism
@@ -2060,6 +2083,7 @@ country_event = {
 # SOV is pressuring our government - Event for Targeted country ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.1 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.1.t
 	desc = NSB_soviet_foreign_politics_events.1.desc
 	picture = "[GetPressureGovernmentGFX]"
@@ -2229,6 +2253,7 @@ country_event = {
 # SOV is promoting ideology rallies - Event for Targeted country ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.2 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.2.t
 	desc = NSB_soviet_foreign_politics_events.2.desc
 	picture = "[GetPromotingIdeologyGFX]"
@@ -2359,6 +2384,7 @@ country_event = {
 # SOV is investing in developing our country - Event for minor Asian allies
 country_event = {
 	id = NSB_soviet_foreign_politics_events.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.10 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.10.t
 	desc = NSB_soviet_foreign_politics_events.10.desc
 	picture = GFX_report_event_china_ledo_road
@@ -2482,6 +2508,7 @@ country_event = {
 # SOV wants us to follow war measures - Event for minor Asian allies
 country_event = {
 	id = NSB_soviet_foreign_politics_events.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.11 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.11.t
 	desc = NSB_soviet_foreign_politics_events.11.desc
 	picture = GFX_report_event_SOV_mongolia_cavalry
@@ -2514,6 +2541,7 @@ country_event = {
 # SOV wants to fortify our border with JAP - Event for MON
 country_event = {
 	id = NSB_soviet_foreign_politics_events.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.12 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.12.t
 	desc = NSB_soviet_foreign_politics_events.12.desc
 	picture = GFX_report_event_SOV_mongolia_fortify_border
@@ -2546,6 +2574,7 @@ country_event = {
 # Our ally rejects our guidelines - Event for SOV (when any of the three events above are refused by a PLAYER)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.13 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.13.t
 	desc = NSB_soviet_foreign_politics_events.13.desc
 	picture = GFX_report_event_stalin_meeting
@@ -2567,6 +2596,7 @@ country_event = {
 # SOV sends military advisors - Event for SPR
 country_event = {
 	id = NSB_soviet_foreign_politics_events.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.20 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.20.t
 	desc = NSB_soviet_foreign_politics_events.20.desc
 	picture = GFX_report_event_spr_spanish_civil_war
@@ -2588,6 +2618,7 @@ country_event = {
 # SOV demands Alaska - Event for USA (or Alaska's owner)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.30 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.30.t
 	desc = NSB_soviet_foreign_politics_events.30.desc
 	picture = GFX_report_event_SOV_demands
@@ -2712,6 +2743,7 @@ country_event = {
 # USA cedes Alaska - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.31 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.31.t
 	desc = NSB_soviet_foreign_politics_events.31.desc
 	picture = GFX_report_event_generic_usa_treaty
@@ -2757,6 +2789,7 @@ country_event = {
 # USA refuses to cede Alaska - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.32 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.32.t
 	desc = NSB_soviet_foreign_politics_events.32.desc
 	picture = GFX_report_event_generic_usa_treaty
@@ -2836,6 +2869,7 @@ country_event = {
 # Country becomes a puppet - Event for SOV ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.150
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.150 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.150.t
 	desc = NSB_soviet_foreign_politics_events.150.desc
 	picture = "[GetCountryBecomesPuppetGFX]"
@@ -2855,6 +2889,7 @@ country_event = {
 # Country joins faction - Event for SOV ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.151
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.151 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.151.t
 	desc = NSB_soviet_foreign_politics_events.151.desc
 	picture = "[GetCountryBecomesPuppetGFX]"
@@ -2878,6 +2913,7 @@ country_event = {
 # Country changes government - Event for SOV ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.158
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.158 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.158.t
 	desc = NSB_soviet_foreign_politics_events.158.desc
 	picture = "[GetCountryChangesGovernmentGFX]"
@@ -2901,6 +2937,7 @@ country_event = {
 # Country refuses - Event for SOV ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.152
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.152 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.152.t
 	desc = NSB_soviet_foreign_politics_events.152.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -3099,6 +3136,7 @@ country_event = {
 # Anglo-Soviet Invasion of Iran proposal - Event for ENG
 country_event = {
 	id = NSB_soviet_foreign_politics_events.153
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.153 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.153.t
 	desc = NSB_soviet_foreign_politics_events.153.desc
 	picture = GFX_report_event_stalin_meeting
@@ -3193,6 +3231,7 @@ country_event = {
 # Anglo-Soviet Invasion of Iran - ENG ACCEPTS - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.154
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.154 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.154.t
 	desc = NSB_soviet_foreign_politics_events.154.desc
 	picture = GFX_report_event_british_inspect_troops
@@ -3227,6 +3266,7 @@ country_event = {
 # Anglo-Soviet Invasion of Iran - ENG REFUSES - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.155
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.155 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.155.t
 	desc = NSB_soviet_foreign_politics_events.155.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -3257,6 +3297,7 @@ country_event = {
 # HIDDEN EVENT TO MANAGE THE FALL OF IRAN - ONLY SOVIETS
 country_event = {
 	id = NSB_soviet_foreign_politics_events.156
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.156 FROM = [From.GetName]" }
 
 	is_triggered_only = yes
 
@@ -3280,6 +3321,7 @@ country_event = {
 # HIDDEN EVENT TO MANAGE THE FALL OF IRAN - JOINT INVASION
 country_event = {
 	id = NSB_soviet_foreign_politics_events.157
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.157 FROM = [From.GetName]" }
 
 	is_triggered_only = yes
 
@@ -3304,6 +3346,7 @@ country_event = {
 # Generic Ultimatum - Event for target ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.200
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.200 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.200.t
 	desc = NSB_soviet_foreign_politics_events.200.desc
 	picture = "[GetUltimatumGFX]"
@@ -3509,6 +3552,7 @@ country_event = {
 # Ultimatum to Iran - Event for Iran
 country_event = {
 	id = NSB_soviet_foreign_politics_events.210
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.210 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.210.t
 	desc = NSB_soviet_foreign_politics_events.210.desc
 	picture = GFX_report_event_SOV_demands
@@ -3633,6 +3677,7 @@ country_event = {
 # The Khakimov Proposal - Event for SAU
 country_event = {
 	id = NSB_soviet_foreign_politics_events.211
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.211 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.211.t
 	desc = NSB_soviet_foreign_politics_events.211.desc
 	picture = GFX_report_event_SOV_demands
@@ -3652,6 +3697,7 @@ country_event = {
 # SOV sends Infantry Equipment - Event for Target
 country_event = {
 	id = NSB_soviet_foreign_politics_events.250
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.250 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.250.t
 	desc = NSB_soviet_foreign_politics_events.250.desc
 	picture = "[GetInfantryEquipmentGFX]"
@@ -3691,6 +3737,7 @@ country_event = {
 # SOV prepares a war against JAP - Event for SOV's allies
 country_event = {
 	id = NSB_soviet_foreign_politics_events.251
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.251 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.251.t
 	desc = NSB_soviet_foreign_politics_events.251.desc
 	picture = GFX_report_event_SOV_tank_column
@@ -3710,6 +3757,7 @@ country_event = {
 # SOV starts war with JAP - Event for SOV's allies
 country_event = {
 	id = NSB_soviet_foreign_politics_events.252
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.252 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.252.t
 	desc = NSB_soviet_foreign_politics_events.252.desc
 	picture = GFX_report_event_soviet_soldiers_tank
@@ -3729,6 +3777,7 @@ country_event = {
 # SOV Peace deal for South Sakhalin and Kuril Islands - Event for JAP
 country_event = {
 	id = NSB_soviet_foreign_politics_events.260
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.260 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.260.t
 	desc = NSB_soviet_foreign_politics_events.260.desc
 	picture = GFX_report_event_SOV_demands
@@ -3816,6 +3865,7 @@ country_event = {
 # SOV Peace deal for Hokkaido (and South Sakhalin and Kuril Islands) - Event for JAP
 country_event = {
 	id = NSB_soviet_foreign_politics_events.261
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.261 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.260.t
 	desc = NSB_soviet_foreign_politics_events.261.desc
 	picture = GFX_report_event_SOV_demands
@@ -3917,6 +3967,7 @@ country_event = {
 # JAP Accepts Peace Deal - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.264
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.264 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.264.t
 	desc = NSB_soviet_foreign_politics_events.264.desc
 	picture = GFX_report_event_soviet_japanese_pact
@@ -3952,6 +4003,7 @@ country_event = {
 # JAP Rejects Peace Deal - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.265
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.265 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.265.t
 	desc = NSB_soviet_foreign_politics_events.265.desc
 	picture = GFX_report_event_japanese_reply
@@ -3973,6 +4025,7 @@ country_event = {
 # SOV offers North Sakhalin in exchange for NAP - Event for JAP
 country_event = {
 	id = NSB_soviet_foreign_politics_events.262
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.262 FROM = [From.GetName]" }
 	title = soviet.23.t
 	desc = soviet.23.d
 	picture = GFX_report_event_soviet_japanese_pact
@@ -4045,6 +4098,7 @@ country_event = {
 # JAP Accepts NAP - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.266
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.266 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.266.t
 	desc = NSB_soviet_foreign_politics_events.266.desc
 	picture = GFX_report_event_soviet_japanese_pact
@@ -4071,6 +4125,7 @@ country_event = {
 # JAP Rejects NAP - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.267
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.267 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.267.t
 	desc = NSB_soviet_foreign_politics_events.267.desc
 	picture = GFX_report_event_japanese_reply
@@ -4086,6 +4141,7 @@ country_event = {
 # SOV offers pact against USA - Event for JAP
 country_event = {
 	id = NSB_soviet_foreign_politics_events.263
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.263 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.263.t
 	desc = NSB_soviet_foreign_politics_events.263.desc
 	picture = GFX_report_event_soviet_japanese_pact
@@ -4219,6 +4275,7 @@ country_event = {
 # JAP Accepts pact against USA - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.268
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.268 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.268.t
 	desc = NSB_soviet_foreign_politics_events.268.desc
 	picture = GFX_report_event_soviet_japanese_pact
@@ -4290,6 +4347,7 @@ country_event = {
 # JAP Rejects pact against USA - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.269
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.269 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.269.t
 	desc = NSB_soviet_foreign_politics_events.269.desc
 	picture = GFX_report_event_japanese_reply
@@ -4307,6 +4365,7 @@ country_event = {
 # SOV-SINKIANG - Initiate relations (Railwway SOV-SIK - Gobi Gambit) - Event for SIK
 country_event = {
 	id = NSB_soviet_foreign_politics_events.270
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.270 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.270.t
 	desc = NSB_soviet_foreign_politics_events.270.desc
 	picture = GFX_report_event_SOV_demands
@@ -4401,6 +4460,7 @@ country_event = {
 # SOV-SINKIANG - Sinkiang accepts our proposal - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.271
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.271 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.271.t
 	desc = NSB_soviet_foreign_politics_events.271.desc
 	picture = GFX_report_event_generic_train
@@ -4441,6 +4501,7 @@ country_event = {
 # SOV-SINKIANG - Sinkiang rejects our proposal - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.272
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.272 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.272.t
 	desc = NSB_soviet_foreign_politics_events.272.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -4530,6 +4591,7 @@ country_event = {
 # SOV-SINKIANG - Mineral Prospection (Railwway Urumqui-Kashgar) - Event for SIK
 country_event = {
 	id = NSB_soviet_foreign_politics_events.273
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.273 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.273.t
 	desc = NSB_soviet_foreign_politics_events.273.desc
 	picture = GFX_report_event_china_ledo_road
@@ -4666,6 +4728,7 @@ country_event = {
 # SOV-SINKIANG - Sinkiang accepts our proposal (Mineral Prospection) - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.274
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.274 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.274.t
 	desc = NSB_soviet_foreign_politics_events.274.desc
 	picture = GFX_report_event_china_ledo_road
@@ -4742,6 +4805,7 @@ country_event = {
 # SOV-SINKIANG - Sinkiang rejects our proposal (generic) - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.275
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.275 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.275.t
 	desc = NSB_soviet_foreign_politics_events.275.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -4807,6 +4871,7 @@ country_event = {
 # SOV-SINKIANG - Oil Prospection (Railwway Urumqui-Altay) - Event for SIK
 country_event = {
 	id = NSB_soviet_foreign_politics_events.276
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.276 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.276.t
 	desc = NSB_soviet_foreign_politics_events.276.desc
 	picture = GFX_report_event_china_ledo_road
@@ -4948,6 +5013,7 @@ country_event = {
 # SOV-SINKIANG - Sinkiang accepts our proposal (Oil Prospection) - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.277
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.277 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.277.t
 	desc = NSB_soviet_foreign_politics_events.277.desc
 	picture = GFX_report_event_china_ledo_road
@@ -5029,6 +5095,7 @@ country_event = {
 # SOV-SINKIANG - Military Aid (Mil in Urumqui + Infra, Air Base and Forts in Kunlun Shan + Forts in Dabancheng) - Event for SIK
 country_event = {
 	id = NSB_soviet_foreign_politics_events.278
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.278 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.278.t
 	desc = NSB_soviet_foreign_politics_events.278.desc
 	picture = GFX_report_event_SOV_purge_aircraft_2
@@ -5216,6 +5283,7 @@ country_event = {
 # SOV-SINKIANG - Sinkiang accepts our proposal (Military Aid) - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.279
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.279 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.279.t
 	desc = NSB_soviet_foreign_politics_events.279.desc
 	picture = GFX_report_event_SOV_purge_aircraft_2
@@ -5342,6 +5410,7 @@ country_event = {
 # SOV-SINKIANG - Support Expansion (in XSM) (Infra and Forts in various XSM states + Air Base in Gansu + Oil in Jiuquan) - Event for SIK
 country_event = {
 	id = NSB_soviet_foreign_politics_events.280
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.280 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.280.t
 	desc = NSB_soviet_foreign_politics_events.280.desc
 	picture = GFX_report_event_generic_truck
@@ -5547,6 +5616,7 @@ country_event = {
 # SOV-SINKIANG - Sinkiang accepts our proposal (Support Territorial Expansion) - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.281
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.281 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.281.t
 	desc = NSB_soviet_foreign_politics_events.281.desc
 	picture = GFX_report_event_generic_truck
@@ -5691,6 +5761,7 @@ country_event = {
 # SOV-SINKIANG - Formalize the Soviet Republic of Sinkiang (aka puppet Sinkiang)- Event for SIK
 country_event = {
 	id = NSB_soviet_foreign_politics_events.282
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.282 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.282.t
 	desc = NSB_soviet_foreign_politics_events.282.desc
 	picture = GFX_report_event_SOV_demands
@@ -5742,6 +5813,7 @@ country_event = {
 # SOV-SINKIANG - Sinkiang becomes a puppet - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.283
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.283 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.283.t
 	desc = NSB_soviet_foreign_politics_events.283.desc
 	picture = GFX_report_event_stalin_propaganda
@@ -5765,6 +5837,7 @@ country_event = {
 # SOV-SINKIANG - Sinkiang refuses to become a puppet - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.284
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.284 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.284.t
 	desc = NSB_soviet_foreign_politics_events.284.desc
 	picture = GFX_report_event_stalin_meeting
@@ -5818,6 +5891,7 @@ country_event = {
 # SOV-SINKIANG - Soviet Union is losing and we might need new friends - Event for SIK (triggered via MTTH)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.285
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.285 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.285.t
 	desc = NSB_soviet_foreign_politics_events.285.desc
 	picture = GFX_report_event_soviet_tanks_snow
@@ -6121,6 +6195,7 @@ country_event = {
 # SOV-SINKIANG - Sinkiang loses autonomy - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.286
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.286 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.286.t
 	desc = NSB_soviet_foreign_politics_events.286.desc
 	picture = GFX_report_event_soviet_tanks_snow
@@ -6166,6 +6241,7 @@ country_event = {
 # SOV-SINKIANG - Sinkiang leaves faction - Event for SOV
 country_event = {
 	id = NSB_soviet_foreign_politics_events.287
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_foreign_politics_events.287 FROM = [From.GetName]" }
 	title = NSB_soviet_foreign_politics_events.287.t
 	desc = NSB_soviet_foreign_politics_events.287.desc
 	picture = GFX_report_event_chinese_army_training
@@ -6249,6 +6325,7 @@ country_event = {
 # Soviet-German Trade Agreement - Event for GER
 country_event = {
 	id = NSB_soviet_soviet_german_trade_agreement.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_soviet_german_trade_agreement.1 FROM = [From.GetName]" }
 	title = NSB_soviet_soviet_german_trade_agreement.1.t
 	desc = NSB_soviet_soviet_german_trade_agreement.1.desc
 	picture = GFX_report_event_SOV_demands
@@ -6480,6 +6557,7 @@ country_event = {
 # Soviet-German Trade Agreement - GER Accepts - Event for SOV
 country_event = {
 	id = NSB_soviet_soviet_german_trade_agreement.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_soviet_german_trade_agreement.2 FROM = [From.GetName]" }
 	title = NSB_soviet_soviet_german_trade_agreement.2.t
 	desc = NSB_soviet_soviet_german_trade_agreement.2.desc
 	picture = GFX_report_event_molotov_ribentrop_handshake
@@ -6649,6 +6727,7 @@ country_event = {
 # Soviet-German Trade Agreement - GER Refuses - Event for SOV
 country_event = {
 	id = NSB_soviet_soviet_german_trade_agreement.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_soviet_german_trade_agreement.3 FROM = [From.GetName]" }
 	title = NSB_soviet_soviet_german_trade_agreement.3.t
 	desc = NSB_soviet_soviet_german_trade_agreement.3.desc
 	picture = GFX_report_event_SOV_demands
@@ -6680,6 +6759,7 @@ country_event = {
 # Policies of Collective Security - SOV offers Mutual Assitance - Event for FRA
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.1 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.1.t
 	desc = NSB_soviet_policies_of_collective_security.1.desc
 	picture = GFX_report_event_SOV_demands
@@ -6884,6 +6964,7 @@ country_event = {
 # Policies of Collective Security - FRA accepts - Event for SOV
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.2 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.2.t
 	desc = NSB_soviet_policies_of_collective_security.2.desc
 	picture = GFX_report_event_worried_french
@@ -6903,6 +6984,7 @@ country_event = {
 # Policies of Collective Security - FRA refuses - Event for SOV
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.3 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.3.t
 	desc = NSB_soviet_policies_of_collective_security.3.desc
 	picture = GFX_report_event_worried_french
@@ -6922,6 +7004,7 @@ country_event = {
 # Policies of Collective Security - FRA wants to include Poland - Event for SOV
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.4 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.4.t
 	desc = NSB_soviet_policies_of_collective_security.4.desc
 	picture = GFX_report_event_worried_french
@@ -6992,6 +7075,7 @@ country_event = {
 # Policies of Collective Security - SOV rejects Poland's inclusion - Event for FRA
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.5 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.5.t
 	desc = NSB_soviet_policies_of_collective_security.5.desc
 	picture = GFX_report_event_SOV_demands
@@ -7067,6 +7151,7 @@ country_event = {
 # Policies of Collective Security - SOV accepts Poland's inclusion - Event for FRA
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.6 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.6.t
 	desc = NSB_soviet_policies_of_collective_security.6.desc
 	picture = GFX_report_event_SOV_litvinov_beck
@@ -7100,6 +7185,7 @@ country_event = {
 # Policies of Collective Security - Wanna join Soviet-French <-(potentially) Mutual Assitance pact? - Event for POL
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.7 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.7.t
 	desc = NSB_soviet_policies_of_collective_security.7.desc
 	picture = GFX_report_event_SOV_litvinov_beck
@@ -7183,6 +7269,7 @@ country_event = {
 # Policies of Collective Security - FRA refuses the pact without Poland - Event for SOV
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.8 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.8.t
 	desc = NSB_soviet_policies_of_collective_security.8.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -7198,6 +7285,7 @@ country_event = {
 # Policies of Collective Security - FRA agrees to the pact not including Poland - Event for SOV
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.9 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.9.t
 	desc = NSB_soviet_policies_of_collective_security.9.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -7217,6 +7305,7 @@ country_event = {
 # Policies of Collective Security - Poland does not want to be involved in any of this - Event for FRA
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.10 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.10.t
 	desc = NSB_soviet_policies_of_collective_security.10.desc
 	picture = GFX_report_event_polish_army
@@ -7237,6 +7326,7 @@ country_event = {
 # Policies of Collective Security - Poland refused to join our pact, let's just sign it ourselves - Event for SOV
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.11 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.11.t
 	desc = NSB_soviet_policies_of_collective_security.11.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -7256,6 +7346,7 @@ country_event = {
 # Policies of Collective Security - Poland joins our pact, hurray! - Event for FRA
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.12 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.12.t
 	desc = NSB_soviet_policies_of_collective_security.12.desc
 	picture = GFX_report_event_SOV_litvinov_beck
@@ -7274,6 +7365,7 @@ country_event = {
 # Policies of Collective Security - Poland joins our pact, viva! - Event for SOV
 country_event = {
 	id = NSB_soviet_policies_of_collective_security.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_policies_of_collective_security.13 FROM = [From.GetName]" }
 	title = NSB_soviet_policies_of_collective_security.12.t
 	desc = NSB_soviet_policies_of_collective_security.13.desc
 	picture = GFX_report_event_SOV_litvinov_beck
@@ -7300,6 +7392,7 @@ country_event = {
 # SOV builds a National Academy of Sciences in our country
 country_event = {
 	id = NSB_soviet_academy_of_sciences.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_academy_of_sciences.1 FROM = [From.GetName]" }
 	title = NSB_soviet_academy_of_sciences.1.t
 	desc = NSB_soviet_academy_of_sciences.1.desc
 	picture = GFX_report_event_SOV_national_academy_of_sciences
@@ -7317,6 +7410,7 @@ country_event = {
 # SOV infiltrates an atomic program - Success - Event for SOV (Only non-LaR)
 country_event = {
 	id = NSB_soviet_atomic_bomb_project.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_atomic_bomb_project.1 FROM = [From.GetName]" }
 	title = NSB_soviet_atomic_bomb_project.1.t
 	desc = NSB_soviet_atomic_bomb_project.1.desc
 	picture = GFX_report_event_SOV_demands
@@ -7349,6 +7443,7 @@ country_event = {
 # SOV fails to infiltrate an atomic program - Failure - Event for SOV
 country_event = {
 	id = NSB_soviet_atomic_bomb_project.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_atomic_bomb_project.2 FROM = [From.GetName]" }
 	title = NSB_soviet_atomic_bomb_project.2.t
 	desc = NSB_soviet_atomic_bomb_project.2.desc
 	picture = GFX_report_event_SOV_atomic_program_caught
@@ -7385,6 +7480,7 @@ country_event = {
 # SOV fails to infiltrate an atomic program - Failure - Event for target country
 country_event = {
 	id = NSB_soviet_atomic_bomb_project.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_atomic_bomb_project.3 FROM = [From.GetName]" }
 	title = NSB_soviet_atomic_bomb_project.3.t
 	desc = NSB_soviet_atomic_bomb_project.3.desc
 	picture = GFX_report_event_SOV_atomic_program_caught
@@ -7428,6 +7524,7 @@ country_event = {
 ### THIRD FIVE YEAR PLAN CANCELED ###
 country_event = {
 	id = NSB_soviet_five_year_plan.01
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_five_year_plan.01 FROM = [From.GetName]" }
 	title = NSB_soviet_five_year_plan.01.t
 	desc = NSB_soviet_five_year_plan.01.desc
 	picture = GFX_report_event_stalin_01
@@ -7452,6 +7549,7 @@ country_event = {
 ### Kuznetsov becomes an Operative -> Fired when SOV loses control over a Ukrainian state 
 country_event = {
 	id = NSB_soviet_great_patriotic_war.01
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_great_patriotic_war.01 FROM = [From.GetName]" }
 	title = NSB_soviet_great_patriotic_war.01.t
 	desc = NSB_soviet_great_patriotic_war.01.desc
 	picture = GFX_report_event_SOV_tank_column
@@ -7483,6 +7581,7 @@ country_event = {
 # SOV starts an industrialization project in our country - Event for puppet
 country_event = {
 	id = NSB_soviet_comecon.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_comecon.1 FROM = [From.GetName]" }
 	title = NSB_soviet_comecon.1.t
 	desc = NSB_soviet_comecon.1.desc
 	picture = GFX_report_event_generic_factory
@@ -7505,6 +7604,7 @@ country_event = {
 # SOV starts a joint military program - Event for puppets
 country_event = {
 	id = NSB_soviet_comecon.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_comecon.2 FROM = [From.GetName]" }
 	title = NSB_soviet_comecon.2.t
 	desc = NSB_soviet_comecon.2.desc
 	picture = GFX_report_event_soviet_tanks
@@ -7549,6 +7649,7 @@ unit_leader_event = {
 # POUM - SOV has organized International Marxist Brigades -> Event for SPC
 country_event = {
 	id = NSB_soviet_spanish_civil_war.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_spanish_civil_war.2 FROM = [From.GetName]" }
 	title = NSB_soviet_spanish_civil_war.2.t
 	desc = NSB_soviet_spanish_civil_war.2.desc
 	picture = GFX_report_event_spr_poum_militia
@@ -7586,6 +7687,7 @@ country_event = {
 # POUM - SOV has sent special commandos -> Event for SPC
 country_event = {
 	id = NSB_soviet_spanish_civil_war.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_spanish_civil_war.3 FROM = [From.GetName]" }
 	title = NSB_soviet_spanish_civil_war.3.t
 	desc = NSB_soviet_spanish_civil_war.3.desc
 	picture = GFX_report_event_spr_the_maquis
@@ -7636,6 +7738,7 @@ country_event = {
 # POUM - SOV has organized popular speeches in the country -> Event for SPC
 country_event = {
 	id = NSB_soviet_spanish_civil_war.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_spanish_civil_war.4 FROM = [From.GetName]" }
 	title = NSB_soviet_spanish_civil_war.4.t
 	desc = NSB_soviet_spanish_civil_war.4.desc
 	picture = GFX_report_event_spr_anarchists
@@ -7678,6 +7781,7 @@ country_event = {
 # POUM - SOV has infiltrate the Stalinist command in Spain -> Event for SPC
 country_event = {
 	id = NSB_soviet_spanish_civil_war.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_spanish_civil_war.5 FROM = [From.GetName]" }
 	title = NSB_soviet_spanish_civil_war.5.t
 	desc = NSB_soviet_spanish_civil_war.5.desc
 	picture = GFX_report_event_spr_republican_soldiers
@@ -7697,6 +7801,7 @@ country_event = {
 # POUM won CW -> Troops will aid Right Oppo in the Soviet CW -> Event for SOV
 country_event = {
 	id = NSB_soviet_spanish_civil_war.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_spanish_civil_war.6 FROM = [From.GetName]" }
 	title = NSB_soviet_spanish_civil_war.6.t
 	desc = {
 		text = NSB_soviet_spanish_civil_war.6.desc_1
@@ -7756,6 +7861,7 @@ country_event = {
 # SOV planned economy - Event for puppets
 country_event = {
 	id = NSB_soviet_planned_economy.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_planned_economy.1 FROM = [From.GetName]" }
 	title = NSB_soviet_planned_economy.1.t
 	desc = NSB_soviet_planned_economy.1.desc
 	picture = GFX_report_event_SOV_national_academy_of_sciences
@@ -7822,6 +7928,7 @@ country_event = {
 # Thus it begins - Left Opposition Civil War Start
 country_event = {
 	id = NSB_soviet_communist_civil_war.001
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_communist_civil_war.001 FROM = [From.GetName]" }
 	title = NSB_soviet_communist_civil_war.001.t
 	desc = NSB_soviet_communist_civil_war.001.desc
 	picture = GFX_report_event_generic_battle
@@ -8065,6 +8172,7 @@ country_event = {
 # Right Opposition Coup Successful
 country_event = {
 	id = NSB_soviet_communist_civil_war.002
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_communist_civil_war.002 FROM = [From.GetName]" }
 	title = NSB_soviet_communist_civil_war.002.t
 	desc = NSB_soviet_communist_civil_war.002.desc
 	picture = GFX_report_event_soviet_tank_parade
@@ -8219,6 +8327,7 @@ country_event = {
 # Right Opposition Civil War start
 country_event = {
 	id = NSB_soviet_communist_civil_war.003
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_communist_civil_war.003 FROM = [From.GetName]" }
 	title = NSB_soviet_communist_civil_war.003.t
 	desc = NSB_soviet_communist_civil_war.003.desc
 	picture = GFX_report_event_generic_battle
@@ -8447,6 +8556,7 @@ country_event = {
 # The Vanguard of the True Revolution
 country_event = {
 	id = NSB_soviet_communist_civil_war.004
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_communist_civil_war.004 FROM = [From.GetName]" }
 	title = NSB_soviet_communist_civil_war.004.t
 	desc = NSB_soviet_communist_civil_war.004.desc
 	picture = GFX_report_event_generic_rally2
@@ -8526,6 +8636,7 @@ country_event = {
 # International brigades
 country_event = {
 	id = NSB_soviet_communist_civil_war.005
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_communist_civil_war.005 FROM = [From.GetName]" }
 	title = NSB_soviet_communist_civil_war.005.t
 	desc = NSB_soviet_communist_civil_war.005.desc
 	picture = GFX_report_event_generic_army
@@ -8581,6 +8692,7 @@ country_event = {
 # Uprisings
 country_event = {
 	id = NSB_soviet_communist_civil_war.006
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_communist_civil_war.006 FROM = [From.GetName]" }
 	title = NSB_soviet_communist_civil_war.006.t
 	desc = NSB_soviet_communist_civil_war.006.desc
 	picture = GFX_report_event_worker_protests
@@ -8669,6 +8781,7 @@ country_event = {
 # Uprisings trigger
 country_event = {
 	id = NSB_soviet_communist_civil_war.007
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_communist_civil_war.007 FROM = [From.GetName]" }
 	title = NSB_soviet_communist_civil_war.007.t
 	desc = NSB_soviet_communist_civil_war.007.desc
 	# picture = GFX_report_event_soviet_japanese_pact
@@ -8731,6 +8844,7 @@ news_event = {
 # Defections
 country_event = {
 	id = NSB_soviet_communist_civil_war.010
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_communist_civil_war.010 FROM = [From.GetName]" }
 	title = NSB_soviet_communist_civil_war.010.t
 	desc = NSB_soviet_communist_civil_war.010.desc
 	picture = GFX_report_event_soviet_japanese_pact
@@ -8766,6 +8880,7 @@ country_event = {
 # PERMANENT REVOLUTION
 country_event = {
 	id = NSB_soviet_permanent_revolution.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_permanent_revolution.1 FROM = [From.GetName]" }
 	title = NSB_soviet_permanent_revolution.1.t
 	desc = NSB_soviet_permanent_revolution.1.desc
 	picture = GFX_report_event_soviet_purge_speech
@@ -8805,6 +8920,7 @@ country_event = {
 # FOR THE COMMON GOOD - Event for Soviet Subjects and Allies
 country_event = {
 	id = NSB_soviet_for_the_common_good.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_for_the_common_good.1 FROM = [From.GetName]" }
 	title = NSB_soviet_for_the_common_good.1.t
 	desc = NSB_soviet_for_the_common_good.1.desc
 	picture = GFX_report_event_SOV_demands
@@ -8871,6 +8987,7 @@ country_event = {
 
 country_event = {
 	id = NSB_Soviet_fascist_civil_war.001
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_Soviet_fascist_civil_war.001 FROM = [From.GetName]" }
 	title = NSB_Soviet_fascist_civil_war.001.t
 	desc = NSB_Soviet_fascist_civil_war.001.desc
 	picture = GFX_report_event_SOV_military_offensive
@@ -8911,6 +9028,7 @@ country_event = {
 
 country_event = {
 	id = NSB_Soviet_fascist_civil_war.002
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_Soviet_fascist_civil_war.002 FROM = [From.GetName]" }
 	title = NSB_Soviet_fascist_civil_war.002.t
 	desc = NSB_Soviet_fascist_civil_war.002.desc
 	picture = GFX_report_event_soldiers_marching
@@ -8950,6 +9068,7 @@ unit_leader_event = {
 
 country_event = {
 	id = NSB_Soviet_fascist_civil_war.004
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_Soviet_fascist_civil_war.004 FROM = [From.GetName]" }
 	title = NSB_Soviet_fascist_civil_war.004.t
 	desc = NSB_Soviet_fascist_civil_war.004.desc
 	picture = GFX_report_event_SOV_mongolia_cavalry
@@ -8984,6 +9103,7 @@ country_event = {
 # Post Civil War - Concessions etc
 country_event = {
 	id = NSB_soviet_civil_war_common.001
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.001 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.001.t
 	desc = {
 		text = NSB_soviet_civil_war_common.001.desc_left 
@@ -9115,6 +9235,7 @@ country_event = {
 # Post Civil War - Capital selection
 country_event = {
 	id = NSB_soviet_civil_war_common.002
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.002 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.002.t
 	desc = NSB_soviet_civil_war_common.002.desc
 	picture = GFX_report_event_generic_ruins 
@@ -9238,6 +9359,7 @@ country_event = {
 # LAUNCH CIVIL WAR BASED ON HIGH PARANOIA
 country_event = {
 	id = NSB_soviet_civil_war_common.003
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.003 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.003.t
 	desc = NSB_soviet_civil_war_common.003.desc
 	picture = GFX_report_event_soviet_soldiers
@@ -9280,6 +9402,7 @@ country_event = {
 # Dispatcher event for Stalin trying to align generals and stuff
 country_event = {
 	id = NSB_soviet_civil_war_common.004
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.004 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.004.t
 	desc = NSB_soviet_civil_war_common.004.desc  
 	# # Hidden event, no need for picture
@@ -9331,6 +9454,7 @@ country_event = {
 
 country_event = {
 	id = NSB_soviet_civil_war_common.005
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.005 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.005.t
 	desc = NSB_soviet_civil_war_common.005.desc 
 	# picture =  # Hidden event, no need for picture
@@ -9383,6 +9507,7 @@ country_event = {
 # launching opposition partisans after war starts
 country_event = {
 	id = NSB_soviet_civil_war_common.006
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.006 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.006.t
 	desc = NSB_soviet_civil_war_common.006.desc
 	picture = GFX_report_event_generic_riot
@@ -9406,6 +9531,7 @@ country_event = {
 # De-Stalinization
 country_event = {
 	id = NSB_soviet_civil_war_common.010
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.010 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.010.t
 	desc = {
 		text = NSB_soviet_civil_war_common.010_right_opposition
@@ -9819,6 +9945,7 @@ country_event = {
 # Sending offer of Vladivostok to Japan
 country_event = {
 	id = NSB_soviet_civil_war_common.100
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.100 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.100.t
 	desc = {
 		text = NSB_soviet_civil_war_common.100.desc  
@@ -9923,6 +10050,7 @@ country_event = {
 # Japan wants Vladivostok!
 country_event = {
 	id = NSB_soviet_civil_war_common.101
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.101 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.101.t
 	desc = {
 		text = NSB_soviet_civil_war_common.101.desc  
@@ -9958,6 +10086,7 @@ country_event = {
 # Japan refuses Vladivostok!
 country_event = {
 	id = NSB_soviet_civil_war_common.102
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.102 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.102.t
 	desc = NSB_soviet_civil_war_common.102.desc 
 	picture = "[GetJapaneseNegotiationsPicture]" 
@@ -9974,6 +10103,7 @@ country_event = {
 # How about Sakhalin?
 country_event = {
 	id = NSB_soviet_civil_war_common.103
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.103 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.103.t
 	desc = {
 		text = NSB_soviet_civil_war_common.103.desc_exiles
@@ -10247,6 +10377,7 @@ country_event = {
 # Japan wants Sakhalin
 country_event = {
 	id = NSB_soviet_civil_war_common.104
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.104 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.104.t
 	desc = NSB_soviet_civil_war_common.104.desc 
 	picture = "[GetJapaneseNegotiationsPicture]" 
@@ -10262,6 +10393,7 @@ country_event = {
 # Japan refuses Sakhalin
 country_event = {
 	id = NSB_soviet_civil_war_common.105
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.105 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.105.t
 	desc = NSB_soviet_civil_war_common.105.desc 
 	picture = "[GetJapaneseNegotiationsPicture]"  
@@ -10277,6 +10409,7 @@ country_event = {
 # Baku Oil fields in return for help with military buildup
 country_event = {
 	id = NSB_soviet_civil_war_common.106
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.106 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.106.t
 	desc = {
 		text = NSB_soviet_civil_war_common.106.desc_right_opp_before 
@@ -10433,6 +10566,7 @@ country_event = {
 # Baku Oil fields yes please
 country_event = {
 	id = NSB_soviet_civil_war_common.107
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.107 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.107.t
 	desc = {
 		text = NSB_soviet_civil_war_common.107.desc_advisors 
@@ -10467,6 +10601,7 @@ country_event = {
 # Baku Oil fields no thanks
 country_event = {
 	id = NSB_soviet_civil_war_common.108
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.108 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.108.t
 	desc = NSB_soviet_civil_war_common.108.desc
 	picture =  GFX_report_event_german_reichstag_gathering
@@ -10482,6 +10617,7 @@ country_event = {
 # Sending "advisors"
 country_event = {
 	id = NSB_soviet_civil_war_common.109
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.109 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.109.t
 	desc = NSB_soviet_civil_war_common.109.desc 
 	picture = GFX_report_event_german_inspect_troops
@@ -10519,6 +10655,7 @@ country_event = {
 # Ukraininan independence to Germany
 country_event = {
 	id = NSB_soviet_civil_war_common.110
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.110 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.110.t
 	desc = NSB_soviet_civil_war_common.110.desc 
 	picture =  GFX_report_event_generic_read_write
@@ -10597,6 +10734,7 @@ country_event = {
 #Ukraininan independence yes please
 country_event = {
 	id = NSB_soviet_civil_war_common.111
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.111 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.111.t
 	desc = NSB_soviet_civil_war_common.111.desc 
 	picture =  GFX_report_event_generic_sign_treaty1
@@ -10611,6 +10749,7 @@ country_event = {
 # Ukraininan independence no thanks
 country_event = {
 	id = NSB_soviet_civil_war_common.112
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.112 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.112.t
 	desc = NSB_soviet_civil_war_common.112.desc 
 	picture =  GFX_report_event_german_reichstag_gathering
@@ -10625,6 +10764,7 @@ country_event = {
 # Ukrainian insurrection prepped
 country_event = {
 	id = NSB_soviet_civil_war_common.113
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.113 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.113.t
 	desc = {
 		text = NSB_soviet_civil_war_common.113.desc_before
@@ -10679,6 +10819,7 @@ country_event = {
 # ukrainian insurrection starts 
 country_event = {
 	id = NSB_soviet_civil_war_common.114
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.114 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.114.t
 	desc = NSB_soviet_civil_war_common.114.desc 
 	picture =  GFX_report_event_generic_rally2
@@ -10758,6 +10899,7 @@ country_event = {
 # Belarus -> UK
 country_event = {
 	id = NSB_soviet_civil_war_common.115
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.115 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.115.t
 	desc = NSB_soviet_civil_war_common.115.desc
 	picture =  GFX_report_event_generic_read_write
@@ -10833,6 +10975,7 @@ country_event = {
 #Belarus independence yes please
 country_event = {
 	id = NSB_soviet_civil_war_common.116
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.116 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.116.t
 	desc = NSB_soviet_civil_war_common.116.desc 
 	picture =  GFX_report_event_generic_sign_treaty1
@@ -10847,6 +10990,7 @@ country_event = {
 # Belarus independence no thanks
 country_event = {
 	id = NSB_soviet_civil_war_common.117
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.117 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.117.t
 	desc = NSB_soviet_civil_war_common.117.desc 
 	picture =  GFX_report_event_generic_parliament
@@ -10861,6 +11005,7 @@ country_event = {
 # Funds for the cause
 country_event = {
 	id = NSB_soviet_civil_war_common.118
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.118 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.118.t
 	desc = NSB_soviet_civil_war_common.118.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -11028,6 +11173,7 @@ country_event = {
 # Have some guns
 country_event = {
 	id = NSB_soviet_civil_war_common.119
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.119 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.119.t
 	desc = NSB_soviet_civil_war_common.119.desc 
 	picture =  GFX_report_event_generic_sign_treaty1
@@ -11042,6 +11188,7 @@ country_event = {
 # No weapons 
 country_event = {
 	id = NSB_soviet_civil_war_common.120
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.120 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.120.t
 	desc = NSB_soviet_civil_war_common.120.desc
 	picture =  GFX_report_event_generic_conference
@@ -11056,6 +11203,7 @@ country_event = {
 # Hirohito - tasukete kudasai !
 country_event = {
 	id = NSB_soviet_civil_war_common.121
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.121 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.121.t
 	desc = NSB_soviet_civil_war_common.121.desc
 	picture =  "[GetJapaneseNegotiationsPicture]" 
@@ -11106,6 +11254,7 @@ country_event = {
 # They are coming to help us!
 country_event = {
 	id = NSB_soviet_civil_war_common.122
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.122 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.122.t
 	desc = NSB_soviet_civil_war_common.122.desc
 	picture =  GFX_report_event_japanese_transport_soldiers
@@ -11193,6 +11342,7 @@ country_event = {
 # Japan abandones us!
 country_event = {
 	id = NSB_soviet_civil_war_common.123
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.123 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.123.t
 	desc = NSB_soviet_civil_war_common.123.desc
 	picture =  GFX_report_event_military_planning
@@ -11207,6 +11357,7 @@ country_event = {
 # Factories Done
 country_event = {
 	id = NSB_soviet_civil_war_common.124
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.124 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.124.t
 	desc = NSB_soviet_civil_war_common.124.desc
 	picture =  GFX_report_event_generic_factory
@@ -11221,6 +11372,7 @@ country_event = {
 # Snowballing - Defections Army
 country_event = {
 	id = NSB_soviet_civil_war_common.125
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.125 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.125.t
 	desc = NSB_soviet_civil_war_common.125.desc
 	picture = GFX_report_event_soviet_soldiers_tank
@@ -11275,6 +11427,7 @@ country_event = {
 # Snowballing - Stockpiles
 country_event = {
 	id = NSB_soviet_civil_war_common.126
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.126 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.126.t
 	desc = NSB_soviet_civil_war_common.126.desc
 	picture =  GFX_report_event_generic_rifles
@@ -11319,6 +11472,7 @@ country_event = {
 # Snowballing - Defections Navy
 country_event = {
 	id = NSB_soviet_civil_war_common.127
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.127 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.127.t
 	desc = NSB_soviet_civil_war_common.127.desc
 	picture =  GFX_report_event_SOV_purge_navy
@@ -11356,6 +11510,7 @@ country_event = {
 # Snowballing - Civilian Unrest
 country_event = {
 	id = NSB_soviet_civil_war_common.128
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_civil_war_common.128 FROM = [From.GetName]" }
 	title = NSB_soviet_civil_war_common.128.t
 	desc = NSB_soviet_civil_war_common.128.desc
 	picture =  GFX_report_event_generic_riot
@@ -11423,6 +11578,7 @@ unit_leader_event = {
 # Dispatcher event for uprisings 
 country_event = {
 	id = NSB_soviet_nationalist.000
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_nationalist.000 FROM = [From.GetName]" }
 	title = NSB_soviet_nationalist.000.t
 	desc = NSB_soviet_nationalist.000.desc
 	picture =  GFX_report_event_SOV_purge_navy
@@ -11789,6 +11945,7 @@ country_event = {
 # Nationalist Revolt
 country_event = {
 	id = NSB_soviet_nationalist.001
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_nationalist.001 FROM = [From.GetName]" }
 	title = NSB_soviet_nationalist.001.t
 	desc = NSB_soviet_nationalist.001.desc
 	picture =  GFX_report_event_generic_rally2
@@ -11939,6 +12096,7 @@ country_event = {
 # Nationalists offered autonomy
 country_event = {
 	id = NSB_soviet_nationalist.002
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_nationalist.002 FROM = [From.GetName]" }
 	title = NSB_soviet_nationalist.002.t
 	desc = NSB_soviet_nationalist.002.desc
 	picture =  GFX_report_event_generic_read_write
@@ -11990,6 +12148,7 @@ country_event = {
 # Nationalists accept puppet status
 country_event = {
 	id = NSB_soviet_nationalist.003
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_nationalist.003 FROM = [From.GetName]" }
 	title = NSB_soviet_nationalist.003.t
 	desc = NSB_soviet_nationalist.003.desc
 	picture =  GFX_report_event_generic_sign_treaty2
@@ -12007,6 +12166,7 @@ country_event = {
 # Nationalists reject puppet status
 country_event = {
 	id = NSB_soviet_nationalist.004
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_nationalist.004 FROM = [From.GetName]" }
 	title = NSB_soviet_nationalist.004.t
 	desc = NSB_soviet_nationalist.004.desc
 	picture =  GFX_report_event_generic_parliament
@@ -12055,6 +12215,7 @@ country_event = {
 # Events for minor Slavic powers: "Join or die"
 country_event = {
 	id = NSB_soviet_fascist_tsarist.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.1 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.1.t
 	desc = NSB_soviet_fascist_tsarist.1.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -12200,6 +12361,7 @@ country_event = {
 # Events for Russia: Slavic country accepted "Join or die"
 country_event = {
 	id = NSB_soviet_fascist_tsarist.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.2 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.2.t
 	desc = NSB_soviet_fascist_tsarist.2.desc
 	picture = GFX_report_event_generic_read_write
@@ -12219,6 +12381,7 @@ country_event = {
 # Events for Russia: Slavic country rejected "Join or die"
 country_event = {
 	id = NSB_soviet_fascist_tsarist.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.3 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.3.t
 	desc = NSB_soviet_fascist_tsarist.3.desc
 	picture = GFX_report_event_generic_read_write
@@ -12238,6 +12401,7 @@ country_event = {
 # Event for Central American nations (excluding Mexico): Russia influencing our politics!
 country_event = {
 	id = NSB_soviet_fascist_tsarist.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.4 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.4.t
 	desc = NSB_soviet_fascist_tsarist.4.desc
 	picture = GFX_report_event_generic_worker_protests
@@ -12259,6 +12423,7 @@ country_event = {
 # Event for American Fascist nations: Wanna join the party?
 country_event = {
 	id = NSB_soviet_fascist_tsarist.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.5 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.5.t
 	desc = NSB_soviet_fascist_tsarist.5.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -12288,6 +12453,7 @@ country_event = {
 # Events for Russia: American country joins faction
 country_event = {
 	id = NSB_soviet_fascist_tsarist.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.6 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.6.t
 	desc = NSB_soviet_fascist_tsarist.6.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12306,6 +12472,7 @@ country_event = {
 # Events for Russia: American country refuses to join faction
 country_event = {
 	id = NSB_soviet_fascist_tsarist.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.7 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.7.t
 	desc = NSB_soviet_fascist_tsarist.7.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12322,6 +12489,7 @@ country_event = {
 # Event for American Fascist nations that have switched fascist later on: Wanna join the party?
 country_event = {
 	id = NSB_soviet_fascist_tsarist.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.8 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.7.t
 	desc = NSB_soviet_fascist_tsarist.8.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -12351,6 +12519,7 @@ country_event = {
 # Events for Russia: American country joins faction
 country_event = {
 	id = NSB_soviet_fascist_tsarist.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.9 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.6.t
 	desc = NSB_soviet_fascist_tsarist.9.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -12369,6 +12538,7 @@ country_event = {
 # Events for Russia: American country refuses to join faction
 country_event = {
 	id = NSB_soviet_fascist_tsarist.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.10 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.6.t
 	desc = NSB_soviet_fascist_tsarist.10.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -12385,6 +12555,7 @@ country_event = {
 # Event for Japan: Russia's rebuilding Far Eastern Fleet infrastructure
 country_event = {
 	id = NSB_soviet_fascist_tsarist.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.11 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.11.t
 	desc = NSB_soviet_fascist_tsarist.11.desc
 	picture = GFX_report_event_usa_heavy_cruiser
@@ -12417,6 +12588,7 @@ country_event = {
 # Event for Japan: Russia's digging up the past
 country_event = {
 	id = NSB_soviet_fascist_tsarist.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.12 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.12.t
 	desc = NSB_soviet_fascist_tsarist.12.desc
 	picture = GFX_report_event_fascist_speech
@@ -12443,6 +12615,7 @@ country_event = {
 # Event for USA: Russia's building military infrastructure facing Alaska
 country_event = {
 	id = NSB_soviet_fascist_tsarist.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.13 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.13.t
 	desc = NSB_soviet_fascist_tsarist.13.desc
 	picture = GFX_report_event_soviet_tanks
@@ -12476,6 +12649,7 @@ country_event = {
 # Event for Russia: coronation of Tsar Vladimir I
 country_event = {
 	id = NSB_soviet_fascist_tsarist.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.14 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.14.t
 	desc = NSB_soviet_fascist_tsarist.14.desc
 	picture = GFX_report_event_generic_military_parade
@@ -12498,6 +12672,7 @@ country_event = {
 # Event for Russia: coronation of Patriarch Meletius
 country_event = {
 	id = NSB_soviet_fascist_tsarist.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.15 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.15.t
 	desc = NSB_soviet_fascist_tsarist.15.desc
 	picture = GFX_report_event_generic_military_parade
@@ -12517,6 +12692,7 @@ country_event = {
 # Event for ENG/FRA: Russia proposes recreation of Triple Entente
 country_event = {
 	id = NSB_soviet_fascist_tsarist.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.16 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.16.t
 	desc = NSB_soviet_fascist_tsarist.16.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12567,6 +12743,7 @@ country_event = {
 # Event for SOV: Proposal for Triple Entente Accepted
 country_event = {
 	id = NSB_soviet_fascist_tsarist.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.17 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.17.t
 	desc = NSB_soviet_fascist_tsarist.17.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12603,6 +12780,7 @@ country_event = {
 # Event for SOV: Proposal for Triple Entente Rejected
 country_event = {
 	id = NSB_soviet_fascist_tsarist.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.18 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.18.t
 	desc = NSB_soviet_fascist_tsarist.18.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12619,6 +12797,7 @@ country_event = {
 # Event for ENG/FRA: Invitation to Triple Entente
 country_event = {
 	id = NSB_soviet_fascist_tsarist.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.19 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.16.t
 	desc = NSB_soviet_fascist_tsarist.19.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12646,6 +12825,7 @@ country_event = {
 # Event for FROM: Invitation to Triple Entente Accepted
 country_event = {
 	id = NSB_soviet_fascist_tsarist.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.20 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.17.t
 	desc = NSB_soviet_fascist_tsarist.17.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12663,6 +12843,7 @@ country_event = {
 # Event for FROM: Invitation to Triple Entente Rejected
 country_event = {
 	id = NSB_soviet_fascist_tsarist.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.21 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.18.t
 	desc = NSB_soviet_fascist_tsarist.18.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12679,6 +12860,7 @@ country_event = {
 # Event for GER: Russia wants to join Axis
 country_event = {
 	id = NSB_soviet_fascist_tsarist.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.22 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.22.t
 	desc = NSB_soviet_fascist_tsarist.22.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12706,6 +12888,7 @@ country_event = {
 # Event for Russia: Germany accepts
 country_event = {
 	id = NSB_soviet_fascist_tsarist.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.23 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.23.t
 	desc = NSB_soviet_fascist_tsarist.23.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12723,6 +12906,7 @@ country_event = {
 # Event for Russia: Germany rejects
 country_event = {
 	id = NSB_soviet_fascist_tsarist.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.24 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.24.t
 	desc = NSB_soviet_fascist_tsarist.24.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12740,6 +12924,7 @@ country_event = {
 # Event for GER: Russia wants Japan to be invited
 country_event = {
 	id = NSB_soviet_fascist_tsarist.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.25 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.25.t
 	desc = NSB_soviet_fascist_tsarist.25.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12766,6 +12951,7 @@ country_event = {
 # Event for Russia: Germany accepted proposal, Japan accepted invitation
 country_event = {
 	id = NSB_soviet_fascist_tsarist.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.26 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.26.t
 	desc = NSB_soviet_fascist_tsarist.26.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12783,6 +12969,7 @@ country_event = {
 # Event for Russia: Germany accepted proposal, Japan rejected invitation
 country_event = {
 	id = NSB_soviet_fascist_tsarist.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.27 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.27.t
 	desc = NSB_soviet_fascist_tsarist.27.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12799,6 +12986,7 @@ country_event = {
 # Event for Russia: Germany rejected proposal
 country_event = {
 	id = NSB_soviet_fascist_tsarist.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.28 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.28.t
 	desc = NSB_soviet_fascist_tsarist.28.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12815,6 +13003,7 @@ country_event = {
 # Event for JAP: Germany and Russia invite Japan to faction
 country_event = {
 	id = NSB_soviet_fascist_tsarist.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.29 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.25.t
 	desc = NSB_soviet_fascist_tsarist.29.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12844,6 +13033,7 @@ country_event = {
 # Event for GER: Japan accepted invitation
 country_event = {
 	id = NSB_soviet_fascist_tsarist.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.30 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.26.t
 	desc = NSB_soviet_fascist_tsarist.30.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12863,6 +13053,7 @@ country_event = {
 # Event for GER: Japan rejected invitation
 country_event = {
 	id = NSB_soviet_fascist_tsarist.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.31 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.27.t
 	desc = NSB_soviet_fascist_tsarist.31.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -12881,6 +13072,7 @@ country_event = {
 # Event for GER: Vlasov captured/collaborates
 country_event = {
 	id = NSB_soviet_fascist_tsarist.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.32 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.32.t
 	desc = NSB_soviet_fascist_tsarist.32.desc
 	picture = GFX_report_event_soviet_soldiers
@@ -12974,6 +13166,7 @@ country_event = {
 # Event for SOV: Vlasov captured
 country_event = {
 	id = NSB_soviet_fascist_tsarist.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_soviet_fascist_tsarist.33 FROM = [From.GetName]" }
 	title = NSB_soviet_fascist_tsarist.32.t
 	desc = NSB_soviet_fascist_tsarist.33.desc
 	picture = GFX_report_event_soviet_soldiers

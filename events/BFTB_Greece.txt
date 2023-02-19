@@ -7,6 +7,7 @@ add_namespace = bftb_greece
 #Greek monarchists win election
 country_event = {
 	id = bftb_greece.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.1 FROM = [From.GetName]" }
 	title = bftb_greece.1.t
 	desc = bftb_greece.1.desc
 	picture = GFX_report_event_gre_george_ii_victorious
@@ -30,6 +31,7 @@ country_event = {
 #Greek republicans win election
 country_event = {
 	id = bftb_greece.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.2 FROM = [From.GetName]" }
 	title = bftb_greece.2.t
 	desc = bftb_greece.2.desc
 	picture = GFX_report_event_gre_venizelos_speech
@@ -68,6 +70,7 @@ country_event = {
 #Anatolian fascists mobilize
 country_event = {
 	id = bftb_greece.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.3 FROM = [From.GetName]" }
 	title = bftb_greece.3.t
 	desc = bftb_greece.3.desc
 	picture = GFX_report_event_gre_political_march
@@ -123,6 +126,7 @@ country_event = {
 #Greek summit meeting with Anatolian fascist party
 country_event = {
 	id = bftb_greece.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.6 FROM = [From.GetName]" }
 	title = bftb_greece.6.t
 	desc = bftb_greece.6.desc
 	picture = GFX_report_event_gre_venizelos_speech
@@ -194,6 +198,7 @@ country_event = {
 #Sending the invitations to the Convention on the Revision of the Treaty of Sevres, Treaty of Lausanne, and the Megali Idea
 country_event = {
 	id = bftb_greece.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.7 FROM = [From.GetName]" }
 	title = bftb_greece.7.t
 	desc = bftb_greece.7.desc
 	picture = GFX_report_event_gre_allied_diplomacy
@@ -234,6 +239,7 @@ country_event = {
 #Invitation to the Convention on the Revision of the Treaty of Sevres, Treaty of Lausanne, and the Megali Idea
 country_event = {
 	id = bftb_greece.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.8 FROM = [From.GetName]" }
 	title = bftb_greece.8.t
 	desc = bftb_greece.8.desc
 	picture = GFX_report_event_gre_allied_diplomacy_military
@@ -327,6 +333,7 @@ country_event = {
 #Invitations received: Only Britain attending
 country_event = {
 	id = bftb_greece.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.9 FROM = [From.GetName]" }
 	title = bftb_greece.9.t
 	desc = bftb_greece.9.desc
 	picture = GFX_report_event_gre_athens
@@ -365,6 +372,7 @@ country_event = {
 #Invitations received: Only France attending
 country_event = {
 	id = bftb_greece.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.10 FROM = [From.GetName]" }
 	title = bftb_greece.10.t
 	desc = bftb_greece.10.desc
 	picture = GFX_report_event_gre_athens
@@ -404,6 +412,7 @@ country_event = {
 #Invitations received: Only Italy attending
 country_event = {
 	id = bftb_greece.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.11 FROM = [From.GetName]" }
 	title = bftb_greece.11.t
 	desc = bftb_greece.11.desc
 	picture = GFX_report_event_gre_athens
@@ -437,6 +446,7 @@ country_event = {
 #Invitations received: Britain and France attending!
 country_event = {
 	id = bftb_greece.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.12 FROM = [From.GetName]" }
 	title = bftb_greece.12.t
 	desc = bftb_greece.12.desc
 	picture = GFX_report_event_gre_allied_diplomacy_military
@@ -472,6 +482,7 @@ country_event = {
 #Invitations received: Britain, France, and Italy attending!
 country_event = {
 	id = bftb_greece.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.13 FROM = [From.GetName]" }
 	title = bftb_greece.13.t
 	desc = bftb_greece.13.desc
 	picture = GFX_report_event_gre_allied_diplomacy_military
@@ -508,6 +519,7 @@ country_event = {
 #Invitations received: Nobody attending!
 country_event = {
 	id = bftb_greece.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.14 FROM = [From.GetName]" }
 	title = bftb_greece.14.t
 	desc = bftb_greece.14.desc
 	picture = GFX_report_event_gre_political_upheaval
@@ -540,6 +552,7 @@ country_event = {
 #First order of business! A French Kurdistan 'protectorate'
 country_event = {
 	id = bftb_greece.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.15 FROM = [From.GetName]" }
 	title = bftb_greece.15.t
 	desc = bftb_greece.15.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -595,6 +608,7 @@ country_event = {
 #Results are in on Kurdistan! It's a...
 country_event = {
 	id = bftb_greece.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.16 FROM = [From.GetName]" }
 	title = bftb_greece.16.t
 	desc = bftb_greece.16.desc
 	picture = GFX_report_event_gre_diplomacy
@@ -668,6 +682,7 @@ country_event = {
 #Aye for French Kurdistan Notification Event
 country_event = {
 	id = bftb_greece.221
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.221 FROM = [From.GetName]" }
 	title = bftb_greece.221.t
 	desc = bftb_greece.221.desc
 	picture = GFX_report_event_gre_diplomacy
@@ -729,6 +744,7 @@ country_event = {
 #Results are in on Kurdistan! It's a...
 country_event = {
 	id = bftb_greece.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.17 FROM = [From.GetName]" }
 	title = bftb_greece.17.t
 	desc = bftb_greece.17.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -809,6 +825,7 @@ country_event = {
 #Nay for French Kurdistan Notification Event
 country_event = {
 	id = bftb_greece.222
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.222 FROM = [From.GetName]" }
 	title = bftb_greece.222.t
 	desc = bftb_greece.222.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -870,6 +887,7 @@ country_event = {
 #Next order of business: a British puppet in Armenia!
 country_event = {
 	id = bftb_greece.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.18 FROM = [From.GetName]" }
 	title = bftb_greece.18.t
 	desc = bftb_greece.18.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -930,6 +948,7 @@ country_event = {
 #Results are in on Armenia! It's a...
 country_event = {
 	id = bftb_greece.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.19 FROM = [From.GetName]" }
 	title = bftb_greece.19.t
 	desc = bftb_greece.19.desc
 	picture = GFX_report_event_gre_diplomacy
@@ -1015,6 +1034,7 @@ country_event = {
 #Aye for British Armenia Notification Event
 country_event = {
 	id = bftb_greece.223
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.223 FROM = [From.GetName]" }
 	title = bftb_greece.223.t
 	desc = bftb_greece.223.desc
 	picture = GFX_report_event_gre_diplomacy
@@ -1064,6 +1084,7 @@ country_event = {
 #Results are in on Armenia! It's a...
 country_event = {
 	id = bftb_greece.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.20 FROM = [From.GetName]" }
 	title = bftb_greece.20.t
 	desc = bftb_greece.20.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -1156,6 +1177,7 @@ country_event = {
 #Nay for British Armenia Notification Event
 country_event = {
 	id = bftb_greece.224
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.224 FROM = [From.GetName]" }
 	title = bftb_greece.224.t
 	desc = bftb_greece.224.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -1188,6 +1210,7 @@ country_event = {
 #Next order of business: Italian territories on Turkey's coast!
 country_event = {
 	id = bftb_greece.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.21 FROM = [From.GetName]" }
 	title = bftb_greece.21.t
 	desc = bftb_greece.21.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -1266,6 +1289,7 @@ country_event = {
 #Results are in on Turkish coastal states Antalya and Mersin going to Italy! It's a...
 country_event = {
 	id = bftb_greece.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.22 FROM = [From.GetName]" }
 	title = bftb_greece.22.t
 	desc = bftb_greece.22.desc
 	picture = GFX_report_event_gre_diplomacy
@@ -1338,6 +1362,7 @@ country_event = {
 #Yes for Italian Antalya Notification Event
 country_event = {
 	id = bftb_greece.225
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.225 FROM = [From.GetName]" }
 	title = bftb_greece.225.t
 	desc = bftb_greece.225.desc
 	picture = GFX_report_event_gre_diplomacy
@@ -1366,6 +1391,7 @@ country_event = {
 #Results are in on Turkish coastal states Antalya and Mersin going to Italy! It's a...
 country_event = {
 	id = bftb_greece.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.23 FROM = [From.GetName]" }
 	title = bftb_greece.23.t
 	desc = bftb_greece.23.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -1435,6 +1461,7 @@ country_event = {
 #No for Italian Antalya Notification Event
 country_event = {
 	id = bftb_greece.226
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.226 FROM = [From.GetName]" }
 	title = bftb_greece.226.t
 	desc = bftb_greece.226.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -1463,6 +1490,7 @@ country_event = {
 #Final order of business: The Megali Idea!
 country_event = {
 	id = bftb_greece.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.24 FROM = [From.GetName]" }
 	title = bftb_greece.24.t
 	desc = bftb_greece.24.desc
 	picture = GFX_report_event_gre_venizelos_speech
@@ -1564,6 +1592,7 @@ country_event = {
 #Results are in on whether the Megali Idea has the approval of attendees! It's a...
 country_event = {
 	id = bftb_greece.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.25 FROM = [From.GetName]" }
 	title = bftb_greece.25.t
 	desc = bftb_greece.25.desc
 	picture = GFX_report_event_gre_diplomacy
@@ -1626,6 +1655,7 @@ country_event = {
 #Results are in on whether the Megali Idea has the approval of attendees! It's a...
 country_event = {
 	id = bftb_greece.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.26 FROM = [From.GetName]" }
 	title = bftb_greece.26.t
 	desc = bftb_greece.26.desc
 	picture = GFX_report_event_gre_trial
@@ -1750,6 +1780,7 @@ country_event = {
 #The Heraklion Convention is Over - everyone gets something!
 country_event = {
 	id = bftb_greece.200
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.200 FROM = [From.GetName]" }
 	title = bftb_greece.200.t
 	desc = bftb_greece.200.desc
 	picture = GFX_report_event_gre_megali_conference_signing
@@ -1862,6 +1893,7 @@ country_event = {
 #The Heraklion Convention is Over - Britain misses out!
 country_event = {
 	id = bftb_greece.201
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.201 FROM = [From.GetName]" }
 	title = bftb_greece.201.t
 	desc = bftb_greece.201.desc
 	picture = GFX_report_event_gre_megali_conference_signing
@@ -1993,6 +2025,7 @@ country_event = {
 #The Heraklion Convention is Over - France misses out!
 country_event = {
 	id = bftb_greece.202
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.202 FROM = [From.GetName]" }
 	title = bftb_greece.202.t
 	desc = bftb_greece.202.desc
 	picture = GFX_report_event_gre_megali_conference_signing
@@ -2135,6 +2168,7 @@ country_event = {
 #The Heraklion Convention is Over - Italy misses out!
 country_event = {
 	id = bftb_greece.203
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.203 FROM = [From.GetName]" }
 	title = bftb_greece.203.t
 	desc = bftb_greece.203.desc
 	picture = GFX_report_event_gre_megali_conference_signing
@@ -2260,6 +2294,7 @@ country_event = {
 #The Heraklion Convention is Over - Britain and France miss out!
 country_event = {
 	id = bftb_greece.204
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.204 FROM = [From.GetName]" }
 	title = bftb_greece.204.t
 	desc = bftb_greece.204.desc
 	picture = GFX_report_event_gre_megali_conference_signing
@@ -2400,6 +2435,7 @@ country_event = {
 #The Heraklion Convention is Over - Britain and Italy miss out!
 country_event = {
 	id = bftb_greece.205
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.205 FROM = [From.GetName]" }
 	title = bftb_greece.205.t
 	desc = bftb_greece.205.desc
 	picture = GFX_report_event_gre_megali_conference_signing
@@ -2552,6 +2588,7 @@ country_event = {
 #The Heraklion Convention is Over - France and Italy miss out!
 country_event = {
 	id = bftb_greece.206
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.206 FROM = [From.GetName]" }
 	title = bftb_greece.206.t
 	desc = bftb_greece.206.desc
 	picture = GFX_report_event_gre_megali_conference_signing
@@ -2710,6 +2747,7 @@ country_event = {
 #Megali idea - Greek Allies are Summoned to Fulfill their Pledges
 country_event = {
 	id = bftb_greece.229
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.229 FROM = [From.GetName]" }
 	title = bftb_greece.229.t
 	desc = bftb_greece.229.desc
 	picture = GFX_report_event_gre_allied_diplomacy_military
@@ -2781,6 +2819,7 @@ country_event = {
 #Megali idea - Greek Allies Join the War!
 country_event = {
 	id = bftb_greece.230
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.230 FROM = [From.GetName]" }
 	title = bftb_greece.230.t
 	desc = bftb_greece.230.desc
 	picture = GFX_report_event_gre_allied_diplomacy_military
@@ -2802,6 +2841,7 @@ country_event = {
 #Megali idea - Greek Allies Abandon the Cause!
 country_event = {
 	id = bftb_greece.231
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.231 FROM = [From.GetName]" }
 	title = bftb_greece.231.t
 	desc = bftb_greece.231.desc
 	picture = GFX_report_event_gre_officers_chatting
@@ -2828,6 +2868,7 @@ country_event = {
 #Megali Idea/Byzantinists - Anatolian fascists coup out government
 country_event = {
 	id = bftb_greece.207
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.207 FROM = [From.GetName]" }
 	title = bftb_greece.207.t
 	desc = bftb_greece.207.desc
 	picture = GFX_report_event_gre_political_upheaval
@@ -2913,6 +2954,7 @@ country_event = {
 #Megali Idea - hidden Turkey capitulation event
 country_event = {
 	id = bftb_greece.208
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.208 FROM = [From.GetName]" }
 
 	is_triggered_only = yes
 
@@ -3140,6 +3182,7 @@ country_event = {
 #Megali Idea - The Megali Conferance Stipulations Honoured, Greece
 country_event = {
 	id = bftb_greece.209
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.209 FROM = [From.GetName]" }
 	title = bftb_greece.209.t
 	desc = bftb_greece.209.desc
 	picture = GFX_report_event_gre_militaristic_march
@@ -3159,6 +3202,7 @@ country_event = {
 #Megali Idea - The Megali Conferance Stipulations Honoured, Allies
 country_event = {
 	id = bftb_greece.210
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.210 FROM = [From.GetName]" }
 	title = bftb_greece.210.t
 	desc = bftb_greece.210.desc
 	picture = GFX_report_event_gre_militaristic_march
@@ -3185,6 +3229,7 @@ country_event = {
 #Tow the Stalinist Line - event chain begins here
 country_event = {
 	id = bftb_greece.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.29 FROM = [From.GetName]" }
 	title = bftb_greece.29.t
 	desc = bftb_greece.29.desc
 	picture = GFX_report_event_tur_turkish_soldiers
@@ -3209,6 +3254,7 @@ country_event = {
 #Tow the Stalinist Line - Soviet Union is informed of Greece's submission and of Turkey's new hostile move
 country_event = {
 	id = bftb_greece.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.30 FROM = [From.GetName]" }
 	title = bftb_greece.30.t
 	desc = bftb_greece.30.desc
 	picture = GFX_report_event_tur_military_affair
@@ -3235,6 +3281,7 @@ country_event = {
 #Tow the Stalinist Line - Greek player is notified they'll be demanding Istanbul be demilitarised again, with the strait reopened and for Greek/Soviet troops to be stationed in Turkey (Danzig or War - the offer is not meant to be accepted)
 country_event = {
 	id = bftb_greece.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.31 FROM = [From.GetName]" }
 	title = bftb_greece.31.t
 	desc = bftb_greece.31.desc
 	picture = GFX_report_event_gre_greek_cavalry
@@ -3254,6 +3301,7 @@ country_event = {
 #Tow the Stalinist Line - Greek demands to Turkey
 country_event = {
 	id = bftb_greece.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.32 FROM = [From.GetName]" }
 	title = bftb_greece.32.t
 	desc = bftb_greece.32.desc
 	picture = GFX_report_event_tur_cakmak_general_staff
@@ -3295,6 +3343,7 @@ country_event = {
 #Tow the Stalinist Line - Turkey submitted to us!
 country_event = {
 	id = bftb_greece.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.33 FROM = [From.GetName]" }
 	title = bftb_greece.33.t
 	desc = bftb_greece.33.desc
 	picture = GFX_report_event_gre_winter_soldiers_celebrating
@@ -3329,6 +3378,7 @@ country_event = {
 #Tow the Stalinist Line - Turkey is puppeted, civil war breaks out
 country_event = {
 	id = bftb_greece.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.34 FROM = [From.GetName]" }
 	title = bftb_greece.34.t
 	desc = bftb_greece.34.desc
 	picture = GFX_report_event_gre_city_siege
@@ -3466,6 +3516,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey
 country_event = {
 	id = bftb_greece.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.35 FROM = [From.GetName]" }
 	title = bftb_greece.35.t
 	desc = bftb_greece.35.desc
 	picture = GFX_report_event_tur_machine_gunners
@@ -3495,6 +3546,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Greece wins first engagement
 country_event = {
 	id = bftb_greece.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.36 FROM = [From.GetName]" }
 	title = bftb_greece.36.t
 	desc = bftb_greece.36.desc
 	picture = GFX_report_event_gre_city_devastated
@@ -3518,6 +3570,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Turkey wins first engagement
 country_event = {
 	id = bftb_greece.37
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.37 FROM = [From.GetName]" }
 	title = bftb_greece.37.t
 	desc = bftb_greece.37.desc
 	picture = GFX_report_event_tur_turkish_soldiers
@@ -3543,6 +3596,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Soviets Informed of Skirmishes on Turkish Border
 country_event = {
 	id = bftb_greece.227
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.227 FROM = [From.GetName]" }
 	title = bftb_greece.227.t
 	desc = bftb_greece.227.desc
 	picture = GFX_report_event_gre_city_siege
@@ -3561,6 +3615,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Greece loses first engagement
 country_event = {
 	id = bftb_greece.38
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.38 FROM = [From.GetName]" }
 	title = bftb_greece.38.t
 	desc = bftb_greece.38.desc
 	picture = GFX_report_event_gre_rural_rebels
@@ -3606,6 +3661,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Turkey loses first engagement
 country_event = {
 	id = bftb_greece.39
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.39 FROM = [From.GetName]" }
 	title = bftb_greece.39.t
 	desc = bftb_greece.39.desc
 	picture = GFX_report_event_gre_greek_cavalry
@@ -3621,6 +3677,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Greece wins second engagement
 country_event = {
 	id = bftb_greece.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.40 FROM = [From.GetName]" }
 	title = bftb_greece.40.t
 	desc = bftb_greece.40.desc
 	picture = GFX_report_event_gre_parade
@@ -3646,6 +3703,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Turkey wins second engagement
 country_event = {
 	id = bftb_greece.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.41 FROM = [From.GetName]" }
 	title = bftb_greece.41.t
 	desc = bftb_greece.41.desc
 	picture = GFX_report_event_tur_military_affair
@@ -3665,6 +3723,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Greece loses second engagement
 country_event = {
 	id = bftb_greece.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.42 FROM = [From.GetName]" }
 	title = bftb_greece.42.t
 	desc = bftb_greece.42.desc
 	picture = GFX_report_event_gre_rural_rebels
@@ -3680,6 +3739,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Turkey loses second engagement
 country_event = {
 	id = bftb_greece.43
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.43 FROM = [From.GetName]" }
 	title = bftb_greece.43.t
 	desc = bftb_greece.43.desc
 	picture = GFX_report_event_tur_machine_gunners
@@ -3695,6 +3755,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Soviets win border clash
 country_event = {
 	id = bftb_greece.44
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.44 FROM = [From.GetName]" }
 	title = bftb_greece.44.t
 	desc = bftb_greece.44.desc
 	picture = GFX_report_event_gre_city_devastated
@@ -3715,6 +3776,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Turkey wins clash with Soviets
 country_event = {
 	id = bftb_greece.45
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.45 FROM = [From.GetName]" }
 	title = bftb_greece.45.t
 	desc = bftb_greece.45.desc
 	picture = GFX_report_event_tur_upheaval_celebration
@@ -3730,6 +3792,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Soviets lose clash with Turks
 country_event = {
 	id = bftb_greece.46
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.46 FROM = [From.GetName]" }
 	title = bftb_greece.46.t
 	desc = bftb_greece.46.desc
 	picture = GFX_report_event_tur_turkish_soldiers
@@ -3753,6 +3816,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Greeks are Notified Soviets lost clash with Turks
 country_event = {
 	id = bftb_greece.228
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.228 FROM = [From.GetName]" }
 	title = bftb_greece.228.t
 	desc = bftb_greece.228.desc
 	picture = GFX_report_event_tur_turkish_soldiers
@@ -3767,6 +3831,7 @@ country_event = {
 #Tow the Stalinist Line - Escalation with Turkey - Turks lose clash with Soviets
 country_event = {
 	id = bftb_greece.47
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.47 FROM = [From.GetName]" }
 	title = bftb_greece.47.t
 	desc = bftb_greece.47.desc
 	picture = GFX_report_event_tur_military_affair
@@ -3783,6 +3848,7 @@ country_event = {
 #Ally Tito Event - Yugoslavia not communist
 country_event = {
 	id = bftb_greece.48 
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.48  FROM = [From.GetName]" }
 	title = bftb_greece.48.t
 	desc = bftb_greece.48.desc
 	picture = GFX_report_event_yugoslavia_partisans
@@ -3825,6 +3891,7 @@ country_event = {
 #The King Takes Power
 country_event = {
 	id = bftb_greece.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.50 FROM = [From.GetName]" }
 	title = bftb_greece.50.t
 	desc = bftb_greece.50.desc
 	picture = GFX_report_event_gre_george_ii_victorious
@@ -3855,6 +3922,7 @@ country_event = {
 #Greek Civil War - Greece petitions monarchist Germany and/or Britain for aid
 country_event = {
 	id = bftb_greece.51
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.51 FROM = [From.GetName]" }
 	title = bftb_greece.51.t
 	desc = bftb_greece.51.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -3912,6 +3980,7 @@ country_event = {
 #Greek Civil War - [Country] sends us guns!
 country_event = {
 	id = bftb_greece.52
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.52 FROM = [From.GetName]" }
 	title = bftb_greece.52.t
 	desc = bftb_greece.52.desc
 	picture = GFX_report_event_gre_allied_diplomacy_military
@@ -3937,6 +4006,7 @@ country_event = {
 #Greek Civil War - [Country] sends us aid!
 country_event = {
 	id = bftb_greece.53
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.53 FROM = [From.GetName]" }
 	title = bftb_greece.53.t
 	desc = bftb_greece.53.desc
 	picture = GFX_report_event_gre_allied_diplomacy_military
@@ -3963,6 +4033,7 @@ country_event = {
 #Greek Civil War - [Country] sends us nothing!
 country_event = {
 	id = bftb_greece.54
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.54 FROM = [From.GetName]" }
 	title = bftb_greece.54.t
 	desc = bftb_greece.54.desc
 	picture = GFX_report_event_gre_city_siege
@@ -3982,6 +4053,7 @@ country_event = {
 #Enosis - Independent Cyprus event
 country_event = {
 	id = bftb_greece.55
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.55 FROM = [From.GetName]" }
 	title = bftb_greece.55.t
 	desc = bftb_greece.55.desc
 	picture = GFX_report_event_gre_enosis
@@ -4001,6 +4073,7 @@ country_event = {
 #Enosis - Cyprus accepts union with Greece
 country_event = {
 	id = bftb_greece.56
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.56 FROM = [From.GetName]" }
 	title = bftb_greece.56.t
 	desc = bftb_greece.56.desc
 	picture = GFX_report_event_gre_enosis
@@ -4029,6 +4102,7 @@ country_event = {
 #Enosis - Cyprus rejects union with Greece
 country_event = {
 	id = bftb_greece.57
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.57 FROM = [From.GetName]" }
 	title = bftb_greece.57.t
 	desc = bftb_greece.57.desc
 	picture = GFX_report_event_gre_athens
@@ -4051,6 +4125,7 @@ country_event = {
 #Enosis - British Cyprus event
 country_event = {
 	id = bftb_greece.58
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.58 FROM = [From.GetName]" }
 	title = bftb_greece.58.t
 	desc = bftb_greece.58.desc
 	picture = GFX_report_event_gre_enosis
@@ -4077,6 +4152,7 @@ country_event = {
 #Enosis - British accept full Enosis
 country_event = {
 	id = bftb_greece.59
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.59 FROM = [From.GetName]" }
 	title = bftb_greece.59.t
 	desc = bftb_greece.59.desc
 	picture = GFX_report_event_gre_enosis
@@ -4125,6 +4201,7 @@ country_event = {
 #Enosis - British accept full Enosis unconditionally
 country_event = {
 	id = bftb_greece.220
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.220 FROM = [From.GetName]" }
 	title = bftb_greece.220.t
 	desc = bftb_greece.220.desc
 	picture = GFX_report_event_gre_enosis
@@ -4148,6 +4225,7 @@ country_event = {
 #Enosis - British partial Enosis
 country_event = {
 	id = bftb_greece.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.60 FROM = [From.GetName]" }
 	title = bftb_greece.60.t
 	desc = bftb_greece.60.desc
 	picture = GFX_report_event_gre_enosis
@@ -4192,6 +4270,7 @@ country_event = {
 #Enosis - British reject Enosis prospects
 country_event = {
 	id = bftb_greece.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.61 FROM = [From.GetName]" }
 	title = bftb_greece.61.t
 	desc = bftb_greece.61.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -4213,6 +4292,7 @@ country_event = {
 #Event for Turkey suggesting joint applications into the Axis/Pact of Rome
 country_event = {
 	id = bftb_greece.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.62 FROM = [From.GetName]" }
 	title = bftb_greece.62.t
 	desc = bftb_greece.62.desc
 	picture = GFX_report_event_gre_balkan_pact
@@ -4265,6 +4345,7 @@ country_event = {
 #Greece is notified that Turkey has accepted
 country_event = {
 	id = bftb_greece.63
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.63 FROM = [From.GetName]" }
 	title = bftb_greece.63.t
 	desc = bftb_greece.63.desc
 	picture = GFX_report_event_gre_balkan_pact
@@ -4333,6 +4414,7 @@ country_event = {
 #Greece is notified that Turkey has rejected their offer!
 country_event = {
 	id = bftb_greece.64
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.64 FROM = [From.GetName]" }
 	title = bftb_greece.64.t
 	desc = bftb_greece.64.desc
 	picture = GFX_report_event_gre_political_upheaval
@@ -4365,6 +4447,7 @@ country_event = {
 #Greece and Turkey want to join/form a faction with Italy!
 country_event = {
 	id = bftb_greece.65
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.65 FROM = [From.GetName]" }
 	title = bftb_greece.65.t
 	desc = bftb_greece.65.desc
 	picture = GFX_report_event_gre_greece_and_turkey_relations
@@ -4425,6 +4508,7 @@ country_event = {
 #Greece and Turkey want to join the Axis!
 country_event = {
 	id = bftb_greece.66
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.66 FROM = [From.GetName]" }
 	title = bftb_greece.66.t
 	desc = bftb_greece.66.desc
 	picture = GFX_report_event_german_turkish_pact
@@ -4487,6 +4571,7 @@ country_event = {
 #Greece wants to join/form a faction with Italy!
 country_event = {
 	id = bftb_greece.67
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.67 FROM = [From.GetName]" }
 	title = bftb_greece.67.t
 	desc = bftb_greece.67.desc
 	picture = GFX_report_event_gre_george_ii_victorious
@@ -4540,6 +4625,7 @@ country_event = {
 #Greece wants to join the Axis!
 country_event = {
 	id = bftb_greece.68
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.68 FROM = [From.GetName]" }
 	title = bftb_greece.68.t
 	desc = bftb_greece.68.desc
 	picture = GFX_report_event_gre_allied_diplomacy_military
@@ -4584,6 +4670,7 @@ country_event = {
 #Italy/Germany denies us an alliance
 country_event = {
 	id = bftb_greece.69
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.69 FROM = [From.GetName]" }
 	title = bftb_greece.69.t
 	desc = bftb_greece.69.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -4608,6 +4695,7 @@ country_event = {
 #Eleftherios Venizelos passes away - Venezelists not in power
 country_event = {
 	id = bftb_greece.70
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.70 FROM = [From.GetName]" }
 	title = bftb_greece.70.t
 	desc = bftb_greece.70.desc
 	picture = GFX_report_event_gre_venizelos_death
@@ -4650,6 +4738,7 @@ country_event = {
 #Eleftherios Venizelos passes away - Venezelists in power
 country_event = {
 	id = bftb_greece.71
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.71 FROM = [From.GetName]" }
 	title = bftb_greece.71.t
 	desc = bftb_greece.71.desc
 	picture = GFX_report_event_gre_venizelos_death
@@ -4703,6 +4792,7 @@ country_event = {
 #Hidden dispatch event
 country_event = {
 	id = bftb_greece.90
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.90 FROM = [From.GetName]" }
 	
 	is_triggered_only = yes
 
@@ -4741,6 +4831,7 @@ country_event = {
 #EEE open relief centre for refugees
 country_event = {
 	id = bftb_greece.91 
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.91  FROM = [From.GetName]" }
 	title = bftb_greece.91.t
 	desc = bftb_greece.91.desc
 	picture = GFX_report_event_gre_athens
@@ -4790,6 +4881,7 @@ country_event = {
 #EEE protests over low wages for Greek workers
 country_event = {
 	id = bftb_greece.92
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.92 FROM = [From.GetName]" }
 	title = bftb_greece.92.t
 	desc = bftb_greece.92.desc
 	picture = GFX_report_event_gre_political_march
@@ -4841,6 +4933,7 @@ country_event = {
 #battles in the streets between Anatolian refugees and police officers
 country_event = {
 	id = bftb_greece.93
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.93 FROM = [From.GetName]" }
 	title = bftb_greece.93.t
 	desc = bftb_greece.93.desc
 	picture = GFX_report_event_gre_political_upheaval
@@ -4895,6 +4988,7 @@ country_event = {
 #EEE members steal from factories and redistribute goods among refugees
 country_event = {
 	id = bftb_greece.94 
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.94  FROM = [From.GetName]" }
 	title = bftb_greece.94.t
 	desc = bftb_greece.94.desc
 	picture = GFX_report_event_gre_officers_chatting
@@ -4943,6 +5037,7 @@ country_event = {
 #EEE members take up arms and offer to join us in the war against the Turks!
 country_event = {
 	id = bftb_greece.95
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.95 FROM = [From.GetName]" }
 	title = bftb_greece.95.t
 	desc = bftb_greece.95.desc
 	picture = GFX_report_event_gre_parade
@@ -4997,6 +5092,7 @@ country_event = {
 #Aristotle Onasis returns to Greece
 country_event = {
 	id = bftb_greece.96
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.96 FROM = [From.GetName]" }
 	title = bftb_greece.96.t
 	desc = bftb_greece.96.desc
 	picture = GFX_report_event_gre_athens
@@ -5026,6 +5122,7 @@ country_event = {
 #Byzantinists - An Emperor Appears
 country_event = {
 	id = bftb_greece.232
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.232 FROM = [From.GetName]" }
 	title = bftb_greece.232.t
 	desc = bftb_greece.232.desc
 	picture = GFX_report_event_hitler_croatia_handshake
@@ -5080,6 +5177,7 @@ country_event = {
 #Hidden dispatch event
 country_event = {
 	id = bftb_greece.100
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.100 FROM = [From.GetName]" }
 	
 	is_triggered_only = yes
 
@@ -5153,6 +5251,7 @@ country_event = {
 #George II civil war events - Communists and Republicans Align Together
 country_event = {
 	id = bftb_greece.101 
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.101  FROM = [From.GetName]" }
 	title = bftb_greece.101.t
 	desc = bftb_greece.101.desc
 	picture = GFX_report_event_gre_venizelos_speech
@@ -5171,6 +5270,7 @@ country_event = {
 #George II civil war events - Communists raid arms factory
 country_event = {
 	id = bftb_greece.102 
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.102  FROM = [From.GetName]" }
 	title = bftb_greece.102.t
 	desc = bftb_greece.102.desc
 	picture = GFX_report_event_gre_rural_rebels
@@ -5203,6 +5303,7 @@ country_event = {
 #George II civil war events - Republican generals sneak back into country
 country_event = {
 	id = bftb_greece.103
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.103 FROM = [From.GetName]" }
 	title = bftb_greece.103.t
 	desc = bftb_greece.103.desc
 	picture = GFX_report_event_gre_city_devastated
@@ -5231,6 +5332,7 @@ country_event = {
 #George II civil war events - Riots widespread throughout northern and southern Greece
 country_event = {
 	id = bftb_greece.104
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.104 FROM = [From.GetName]" }
 	title = bftb_greece.104.t
 	desc = bftb_greece.104.desc
 	picture = GFX_report_event_gre_political_upheaval
@@ -5289,6 +5391,7 @@ country_event = {
 #George II civil war events - Civil War!
 country_event = {
 	id = bftb_greece.105
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.105 FROM = [From.GetName]" }
 	title = bftb_greece.105.t
 	desc = bftb_greece.105.desc
 	picture = GFX_report_event_gre_george_ii_victorious
@@ -5414,6 +5517,7 @@ country_event = {
 #German investment events - German politicians return from investment negotiations in Greek capital
 country_event = {
 	id = bftb_greece.166
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.166 FROM = [From.GetName]" }
 	title = bftb_greece.166.t
 	desc = bftb_greece.166.desc
 	picture = GFX_report_event_gre_allied_diplomacy
@@ -5479,6 +5583,7 @@ country_event = {
 #German investment events - German businessmen attend Greek national showcase to lure investors
 country_event = {
 	id = bftb_greece.167
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.167 FROM = [From.GetName]" }
 	title = bftb_greece.167.t
 	desc = bftb_greece.167.desc
 	picture = GFX_report_event_gre_athens
@@ -5544,6 +5649,7 @@ country_event = {
 #German investment events - The Greeks manipulate the fine print of the Schachtplan to their own advantage
 country_event = {
 	id = bftb_greece.168
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.168 FROM = [From.GetName]" }
 	title = bftb_greece.168.t
 	desc = bftb_greece.168.desc
 	picture = GFX_report_event_gre_diplomacy
@@ -5651,6 +5757,7 @@ country_event = {
 #German investment events - the Germans invest!
 country_event = {
 	id = bftb_greece.169
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.169 FROM = [From.GetName]" }
 	title = bftb_greece.169.t
 	desc = bftb_greece.169.desc
 	picture = GFX_report_event_gre_allied_diplomacy
@@ -5714,6 +5821,7 @@ country_event = {
 #German investment events - the Germans don't invest this time
 country_event = {
 	id = bftb_greece.170
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.170 FROM = [From.GetName]" }
 	title = bftb_greece.170.t
 	desc = bftb_greece.170.desc
 	picture = GFX_report_event_gre_athens
@@ -5729,6 +5837,7 @@ country_event = {
 #German investment events - the Germans declare their definitive disinterest in investing!
 country_event = {
 	id = bftb_greece.171
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.171 FROM = [From.GetName]" }
 	title = bftb_greece.171.t
 	desc = bftb_greece.171.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -5746,6 +5855,7 @@ country_event = {
 #German investment events - Hjalmar Schacht bamboozles us!
 country_event = {
 	id = bftb_greece.172
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.172 FROM = [From.GetName]" }
 	title = bftb_greece.172.t
 	desc = bftb_greece.172.desc
 	picture = GFX_report_event_gre_megali_conference_signing
@@ -5774,6 +5884,7 @@ country_event = {
 #British investment events - British entrepreneurs return from investment negotiations in Greek capital and seek permission from government to invest 
 country_event = {
 	id = bftb_greece.173
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.173 FROM = [From.GetName]" }
 	title = bftb_greece.173.t
 	desc = bftb_greece.173.desc
 	picture = GFX_report_event_gre_allied_diplomacy
@@ -5839,6 +5950,7 @@ country_event = {
 #British investment events - British officials attend Greek national showcase to lure investors
 country_event = {
 	id = bftb_greece.174
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.174 FROM = [From.GetName]" }
 	title = bftb_greece.174.t
 	desc = bftb_greece.174.desc
 	picture = GFX_report_event_gre_athens
@@ -5904,6 +6016,7 @@ country_event = {
 #British investment events - The Greeks offer manufactured ship parts for more intensive investment into their country
 country_event = {
 	id = bftb_greece.175
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.175 FROM = [From.GetName]" }
 	title = bftb_greece.175.t
 	desc = bftb_greece.175.desc
 	picture = GFX_report_event_gre_diplomacy
@@ -5960,6 +6073,7 @@ country_event = {
 #British investment events - the British invest!
 country_event = {
 	id = bftb_greece.176
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.176 FROM = [From.GetName]" }
 	title = bftb_greece.176.t
 	desc = bftb_greece.176.desc
 	picture = GFX_report_event_gre_allied_diplomacy
@@ -6023,6 +6137,7 @@ country_event = {
 #British investment events - the British don't invest this time
 country_event = {
 	id = bftb_greece.177
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.177 FROM = [From.GetName]" }
 	title = bftb_greece.177.t
 	desc = bftb_greece.177.desc
 	picture = GFX_report_event_gre_athens
@@ -6038,6 +6153,7 @@ country_event = {
 #British investment events - the British declare their definitive disinterest in investing!
 country_event = {
 	id = bftb_greece.178
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.178 FROM = [From.GetName]" }
 	title = bftb_greece.178.t
 	desc = bftb_greece.178.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -6060,6 +6176,7 @@ country_event = {
 #French investment events - Greek officials petition us in our capital for investment
 country_event = {
 	id = bftb_greece.179
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.179 FROM = [From.GetName]" }
 	title = bftb_greece.179.t
 	desc = bftb_greece.179.desc
 	picture = GFX_report_event_gre_allied_diplomacy
@@ -6125,6 +6242,7 @@ country_event = {
 #French investment events - French officials attend Greek national showcase to lure investors
 country_event = {
 	id = bftb_greece.180
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.180 FROM = [From.GetName]" }
 	title = bftb_greece.180.t
 	desc = bftb_greece.180.desc
 	picture = GFX_report_event_gre_athens
@@ -6190,6 +6308,7 @@ country_event = {
 #French investment events - Taking payments from the Greeks, the trade unions threaten to strike unless we employ Frenchmen to build in Greece
 country_event = {
 	id = bftb_greece.181
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.181 FROM = [From.GetName]" }
 	title = bftb_greece.181.t
 	desc = bftb_greece.181.desc
 	picture = GFX_report_event_gre_diplomacy
@@ -6264,6 +6383,7 @@ country_event = {
 #French investment events - the French invest!
 country_event = {
 	id = bftb_greece.182
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.182 FROM = [From.GetName]" }
 	title = bftb_greece.182.t
 	desc = bftb_greece.182.desc
 	picture = GFX_report_event_gre_allied_diplomacy
@@ -6328,6 +6448,7 @@ country_event = {
 #French investment events - the French don't invest this time
 country_event = {
 	id = bftb_greece.183
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.183 FROM = [From.GetName]" }
 	title = bftb_greece.183.t
 	desc = bftb_greece.183.desc
 	picture = GFX_report_event_gre_athens
@@ -6343,6 +6464,7 @@ country_event = {
 #French investment events - the French declare their definitive disinterest in investing!
 country_event = {
 	id = bftb_greece.184
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.184 FROM = [From.GetName]" }
 	title = bftb_greece.184.t
 	desc = bftb_greece.184.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -6365,6 +6487,7 @@ country_event = {
 #Italian investment events - the Greeks approach us for help with industrialising their country
 country_event = {
 	id = bftb_greece.185
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.185 FROM = [From.GetName]" }
 	title = bftb_greece.185.t
 	desc = bftb_greece.185.desc
 	picture = GFX_report_event_gre_athens
@@ -6426,6 +6549,7 @@ country_event = {
 #Italian investment events - Greek diplomats hope to soften Italian ambitions in the region
 country_event = {
 	id = bftb_greece.186
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.186 FROM = [From.GetName]" }
 	title = bftb_greece.186.t
 	desc = bftb_greece.186.desc
 	picture = GFX_report_event_gre_fascism
@@ -6493,6 +6617,7 @@ country_event = {
 #Italian investment events - the Italians accept!
 country_event = {
 	id = bftb_greece.187
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.187 FROM = [From.GetName]" }
 	title = bftb_greece.187.t
 	desc = bftb_greece.187.desc
 	picture = GFX_report_event_gre_allied_diplomacy
@@ -6535,6 +6660,7 @@ country_event = {
 #Italian investment events - the Italians don't invest this time
 country_event = {
 	id = bftb_greece.188
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.188 FROM = [From.GetName]" }
 	title = bftb_greece.188.t
 	desc = bftb_greece.188.desc
 	picture = GFX_report_event_gre_george_ii_victorious
@@ -6549,6 +6675,7 @@ country_event = {
 #Italian investment events - the Italians shun us!
 country_event = {
 	id = bftb_greece.189
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.189 FROM = [From.GetName]" }
 	title = bftb_greece.189.t
 	desc = bftb_greece.189.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -6573,6 +6700,7 @@ country_event = {
 #Soviet investment events - Greek officials finish their visit to the Presidium
 country_event = {
 	id = bftb_greece.190
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.190 FROM = [From.GetName]" }
 	title = bftb_greece.190.t
 	desc = bftb_greece.190.desc
 	picture = GFX_report_event_gre_allied_diplomacy
@@ -6634,6 +6762,7 @@ country_event = {
 #Soviet investment events - Soviet bureaucrats finish their tour of Greece 
 country_event = {
 	id = bftb_greece.191
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.191 FROM = [From.GetName]" }
 	title = bftb_greece.191.t
 	desc = bftb_greece.191.desc
 	picture = GFX_report_event_gre_athens
@@ -6696,6 +6825,7 @@ country_event = {
 #Soviet investment events - Greek officials come up with blueprint to invest back into neglected Siberian regions
 country_event = {
 	id = bftb_greece.192
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.192 FROM = [From.GetName]" }
 	title = bftb_greece.192.t
 	desc = bftb_greece.192.desc
 	picture = GFX_report_event_gre_officers_chatting
@@ -6825,6 +6955,7 @@ country_event = {
 #Soviet investment events - the soviets accept!
 country_event = {
 	id = bftb_greece.193
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.193 FROM = [From.GetName]" }
 	title = bftb_greece.193.t
 	desc = bftb_greece.193.desc
 	picture = GFX_report_event_gre_allied_diplomacy
@@ -6848,6 +6979,7 @@ country_event = {
 #Soviet investment events - the Soviets don't invest this time
 country_event = {
 	id = bftb_greece.194
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.194 FROM = [From.GetName]" }
 	title = bftb_greece.194.t
 	desc = bftb_greece.194.desc
 	picture = GFX_report_event_gre_athens
@@ -6862,6 +6994,7 @@ country_event = {
 #Soviet investment events - the Soviets shun us!
 country_event = {
 	id = bftb_greece.195
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.195 FROM = [From.GetName]" }
 	title = bftb_greece.195.t
 	desc = bftb_greece.195.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -6880,6 +7013,7 @@ country_event = {
 #Debt to the I.F.C. events - the Greeks default on their debt! notification event
 country_event = {
 	id = bftb_greece.213
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.213 FROM = [From.GetName]" }
 	title = bftb_greece.213.t
 	desc = bftb_greece.213.desc
 	picture = GFX_report_event_gre_balkan_pact
@@ -6926,6 +7060,7 @@ country_event = {
 #Fascist Council Leader Choosing
 country_event = {
 	id = bftb_greece.217
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.217 FROM = [From.GetName]" }
 	title = bftb_greece.217.t
 	desc = bftb_greece.217.desc
 	picture = GFX_report_event_gre_fascism
@@ -7049,6 +7184,7 @@ country_event = {
 #Anatolian fascists rebel!
 country_event = {
 	id = bftb_greece.218
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.218 FROM = [From.GetName]" }
 	title = bftb_greece.218.t
 	desc = bftb_greece.218.desc
 	picture = GFX_report_event_gre_italian_troops
@@ -7213,6 +7349,7 @@ country_event = {
 #Country event - Ioannis Metaxas passes away
 country_event = {
 	id = bftb_greece.233
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.233 FROM = [From.GetName]" }
 	title = bftb_greece.233.t
 	desc = bftb_greece.233.desc
 	picture = GFX_report_event_gre_city_siege
@@ -7263,6 +7400,7 @@ country_event = {
 #Notification event for Romania, being informed the Megali Idea was approved and they may well be dragged into a war with major powers
 country_event = {
 	id = bftb_greece.234
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.234 FROM = [From.GetName]" }
 	title = bftb_greece.234.t
 	desc = bftb_greece.234.desc
 	picture = GFX_report_event_generic_read_write
@@ -7370,6 +7508,7 @@ country_event = {
 #Notification event for Turkey, informing them the Romanians abandoned them
 country_event = {
 	id = bftb_greece.235
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_greece.235 FROM = [From.GetName]" }
 	title = bftb_greece.235.t
 	desc = bftb_greece.235.desc
 	picture = GFX_report_event_generic_read_write

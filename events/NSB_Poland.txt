@@ -7,6 +7,7 @@ add_namespace = NSB_poland_events
 #Poland demands Slovakia
 country_event = {
 	id = NSB_poland_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.1 FROM = [From.GetName]" }
 	title = NSB_poland_events.1.t
 	desc = NSB_poland_events.1.desc
 	picture = GFX_report_event_lithuanian_ultimatum
@@ -123,6 +124,7 @@ country_event = {
 #Slovakia/Czechoslovakia says yes, gain Slovakia
 country_event = {
 	id = NSB_poland_events.101
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.101 FROM = [From.GetName]" }
 	title = NSB_poland_events.101.t
 	desc = NSB_poland_events.101.desc
 	picture = GFX_report_event_generic_conference
@@ -161,6 +163,7 @@ country_event = {
 #Slovakia/Czechoslovakia says no, gain a wargoal
 country_event = {
 	id = NSB_poland_events.102
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.102 FROM = [From.GetName]" }
 	title = NSB_poland_events.102.t
 	desc = NSB_poland_events.102.desc
 	picture = GFX_report_event_poland_rejects
@@ -184,6 +187,7 @@ country_event = {
 #Poland claims the throne of Hungary
 country_event = {
 	id = NSB_poland_events.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.2 FROM = [From.GetName]" }
 	title = NSB_poland_events.2.t
 	desc = NSB_poland_events.2.d
 	picture = GFX_report_event_generic_rally
@@ -274,6 +278,7 @@ country_event = {
 #Hungary says yes, Hungary becomes a puppet
 country_event = {
 	id = NSB_poland_events.201
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.201 FROM = [From.GetName]" }
 	title = NSB_poland_events.201.t
 	desc = NSB_poland_events.201.desc
 	picture = GFX_report_event_generic_parliament
@@ -296,6 +301,7 @@ country_event = {
 #Hungary says no, gain a wargoal
 country_event = {
 	id = NSB_poland_events.202
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.202 FROM = [From.GetName]" }
 	title = NSB_poland_events.202.t
 	desc = NSB_poland_events.202.desc
 	picture = GFX_report_event_military_planning
@@ -319,6 +325,7 @@ country_event = {
 #Poland proposes alliance with the Kaiser, but kaiser is not in a faction already.
 country_event = {
 	id = NSB_poland_events.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.3 FROM = [From.GetName]" }
 	title = NSB_poland_events.3.t
 	desc = NSB_poland_events.3.desc
 	picture = GFX_report_event_generic_read_write
@@ -372,6 +379,7 @@ country_event = {
 #Germany accepts
 country_event = {
 	id = NSB_poland_events.301
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.301 FROM = [From.GetName]" }
 	title = NSB_poland_events.301.t
 	desc = NSB_poland_events.301.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -393,6 +401,7 @@ country_event = {
 #Germany refuses
 country_event = {
 	id = NSB_poland_events.302
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.302 FROM = [From.GetName]" }
 	title = NSB_poland_events.302.t
 	desc = NSB_poland_events.302.desc
 	picture = GFX_report_event_generic_rally2
@@ -413,6 +422,7 @@ country_event = {
 #Germany asks for Danzig in ecxhange for Alliance  
 country_event = {
 	id = NSB_poland_events.303
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.303 FROM = [From.GetName]" }
 	title = NSB_poland_events.303.t
 	desc = NSB_poland_events.303.desc
 	picture = GFX_report_event_generic_parliament
@@ -477,6 +487,7 @@ country_event = {
 
 country_event = {
 	id = NSB_poland_events.304
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.304 FROM = [From.GetName]" }
 	title = NSB_poland_events.304.t
 	desc = NSB_poland_events.304.desc
 	picture = GFX_report_event_military_planning
@@ -502,6 +513,7 @@ country_event = {
 #Poland wants to buy Madagascar
 country_event = {
 	id = NSB_poland_events.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.4 FROM = [From.GetName]" }
 	title = NSB_poland_events.4.t
 	desc = NSB_poland_events.4.desc
 	picture = GFX_report_event_generic_conference
@@ -581,6 +593,7 @@ country_event = {
 #Madagascar sale goes through
 country_event = {
 	id = NSB_poland_events.401
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.401 FROM = [From.GetName]" }
 	title = NSB_poland_events.401.t
 	desc = {
 		text = NSB_poland_events.401.desc.dem
@@ -631,6 +644,7 @@ country_event = {
 #France refuses to sell Madagascar
 country_event = {
 	id = NSB_poland_events.402
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.402 FROM = [From.GetName]" }
 	title = NSB_poland_events.402.t
 	desc = NSB_poland_events.402.desc
 	picture = GFX_report_event_generic_parliament
@@ -649,6 +663,7 @@ country_event = {
 #Poland wants to buy other colonies
 country_event = {
 	id = NSB_poland_events.5	
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.5	 FROM = [From.GetName]" }
 	title = NSB_poland_events.4.t
 	desc = NSB_poland_events.4.desc
 	picture = GFX_report_event_generic_conference
@@ -715,6 +730,7 @@ country_event = {
 #Colony sale succeeds
 country_event = {
 	id = NSB_poland_events.501
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.501 FROM = [From.GetName]" }
 	title = NSB_poland_events.401.t
 	desc = {
 		text = NSB_poland_events.401.desc.dem
@@ -745,6 +761,7 @@ country_event = {
 #Colony sale fails
 country_event = {
 	id = NSB_poland_events.502
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.502 FROM = [From.GetName]" }
 	title = NSB_poland_events.402.t
 	desc = NSB_poland_events.402.desc
 	picture = GFX_report_event_journalists_speech
@@ -797,6 +814,7 @@ country_event = {
 #Poland asks Liberia to become a puppet
 country_event = {
 	id = NSB_poland_events.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.6 FROM = [From.GetName]" }
 	title = NSB_poland_events.6.t
 	desc = NSB_poland_events.6.desc
 	picture = GFX_report_event_generic_rally
@@ -893,6 +911,7 @@ country_event = {
 #Poland is told no by Liberia
 country_event = {
 	id = NSB_poland_events.601
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.601 FROM = [From.GetName]" }
 	title = NSB_poland_events.601.t
 	desc = NSB_poland_events.601.desc
 	picture = GFX_report_event_generic_parliament
@@ -923,6 +942,7 @@ country_event = {
 #Poland asks France to form the Morges Pact
 country_event = {
 	id = NSB_poland_events.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.7 FROM = [From.GetName]" }
 	title = NSB_poland_events.7.t
 	desc = NSB_poland_events.7.desc
 	picture = GFX_report_event_french_british_officers
@@ -979,6 +999,7 @@ country_event = {
 #France says no, change to Bourgois Democracy branch
 country_event = {
 	id = NSB_poland_events.701
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.701 FROM = [From.GetName]" }
 	title = NSB_poland_events.601.t
 	desc = NSB_poland_events.701.desc
 	picture = GFX_report_event_french_british_officers
@@ -1005,6 +1026,7 @@ country_event = {
 #
 country_event = {
 	id = NSB_poland_events.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_events.8 FROM = [From.GetName]" }
 	title = NSB_poland_events.8.t
 	desc = NSB_poland_events.8.d
 	picture = GFX_report_event_royal_parade
@@ -1047,6 +1069,7 @@ add_namespace = NSB_poland_royal_election
 # Friedrich Christian
 country_event = {
 	id = NSB_poland_royal_election.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_royal_election.1 FROM = [From.GetName]" }
 	title = NSB_poland_royal_election.1.t
 	desc = NSB_poland_royal_election.1.desc
 	picture = GFX_report_event_royal_parade
@@ -1121,6 +1144,7 @@ country_event = {
 # King Michael
 country_event = {
 	id = NSB_poland_royal_election.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_royal_election.2 FROM = [From.GetName]" }
 	title = NSB_poland_royal_election.2.t
 	desc = NSB_poland_royal_election.2.desc
 	picture = GFX_report_event_royal_parade
@@ -1213,6 +1237,7 @@ country_event = {
 # Pavel Bermondt-Avalov
 country_event = {
 	id = NSB_poland_royal_election.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_royal_election.3 FROM = [From.GetName]" }
 	title = NSB_poland_royal_election.3.t
 	desc = NSB_poland_royal_election.3.desc
 	picture = GFX_report_event_royal_visit
@@ -1305,6 +1330,7 @@ country_event = {
 # "Anastasia"
 country_event = {
 	id = NSB_poland_royal_election.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_royal_election.4 FROM = [From.GetName]" }
 	title = NSB_poland_royal_election.4.t
 	desc = NSB_poland_royal_election.4.desc
 	picture = GFX_report_event_royal_parade
@@ -1366,6 +1392,7 @@ country_event = {
 # The fan favourite Habsburg man™
 country_event = {
 	id = NSB_poland_royal_election.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_royal_election.5 FROM = [From.GetName]" }
 	title = NSB_poland_royal_election.5.t
 	desc = NSB_poland_royal_election.5.desc
 	picture = GFX_report_event_generic_parliament
@@ -1443,6 +1470,7 @@ add_namespace = NSB_poland_monarchist_events
 # Romania/Lithuania made aware of Poland claiming them
 country_event = {
 	id = NSB_poland_monarchist_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_monarchist_events.1 FROM = [From.GetName]" }
 	title = NSB_poland_monarchist_events.1.t
 	desc = NSB_poland_monarchist_events.1.desc
 	picture = GFX_report_event_generic_riot
@@ -1462,6 +1490,7 @@ country_event = {
 #Poland made aware that Lithuania/Romania has purged Monarchist support
 country_event = {
 	id = NSB_poland_monarchist_events.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_monarchist_events.2 FROM = [From.GetName]" }
 	title = NSB_poland_monarchist_events.2.t
 	desc = NSB_poland_monarchist_events.2.desc
 	picture = GFX_report_event_generic_rally2
@@ -1484,6 +1513,7 @@ country_event = {
 #Romania/Lithuania/Czechoslovakia given the option to refuse the coup
 country_event = {
 	id = NSB_poland_monarchist_events.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_monarchist_events.5 FROM = [From.GetName]" }
 	title = NSB_poland_monarchist_events.5.t
 	desc = NSB_poland_monarchist_events.5.desc
 	picture = GFX_report_event_generic_riot
@@ -1605,6 +1635,7 @@ country_event = {
 #Romania/Lithuania made aware that they are now a subject of Poland
 country_event = {
 	id = NSB_poland_monarchist_events.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_monarchist_events.3 FROM = [From.GetName]" }
 	title = NSB_poland_monarchist_events.3.t
 	desc = NSB_poland_monarchist_events.3.desc
 	picture = GFX_report_event_generic_peaceful_annexation
@@ -1633,6 +1664,7 @@ country_event = {
 #Romania/Lithuania made aware of their civil war
 country_event = {
 	id = NSB_poland_monarchist_events.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_monarchist_events.4 FROM = [From.GetName]" }
 	title = NSB_poland_monarchist_events.4.t
 	desc = NSB_poland_monarchist_events.4.desc
 	picture = GFX_report_event_polish_tanks_01
@@ -1652,6 +1684,7 @@ country_event = {
 #Poland demands Yugoslavian annexation
 country_event = {
 	id = NSB_poland_monarchist_events.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_monarchist_events.6 FROM = [From.GetName]" }
 	title = NSB_poland_monarchist_events.6.t
 	desc = NSB_poland_monarchist_events.6.desc
 	picture = GFX_report_event_poland_rejects
@@ -1748,6 +1781,7 @@ country_event = {
 #Yugoslavia says yes
 country_event = {
 	id = NSB_poland_monarchist_events.601
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_monarchist_events.601 FROM = [From.GetName]" }
 	title = NSB_poland_monarchist_events.601.t
 	desc = NSB_poland_monarchist_events.601.desc
 	picture = GFX_report_event_generic_conference
@@ -1768,6 +1802,7 @@ country_event = {
 #Yugoslavia says no
 country_event = {
 	id = NSB_poland_monarchist_events.602
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_monarchist_events.602 FROM = [From.GetName]" }
 	title = NSB_poland_monarchist_events.602.t
 	desc = NSB_poland_monarchist_events.602.desc
 	picture = GFX_report_event_poland_rejects
@@ -1793,6 +1828,7 @@ add_namespace = pavel_events
 #Release Don Republic
 country_event = {
 	id = pavel_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pavel_events.1 FROM = [From.GetName]" }
 	title = pavel_events.1.t
 	desc = pavel_events.1.desc
 	picture = GFX_report_event_generic_military_parade
@@ -1914,6 +1950,7 @@ country_event = {
 #Release Kuban Republic
 country_event = {
 	id = pavel_events.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pavel_events.2 FROM = [From.GetName]" }
 	title = pavel_events.2.t
 	desc = pavel_events.2.desc
 	picture = GFX_report_event_generic_military_parade
@@ -2019,6 +2056,7 @@ country_event = {
 #Demand Pomerania and Silesia, event for Germany
 country_event = {
 	id = pavel_events.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pavel_events.3 FROM = [From.GetName]" }
 	title = pavel_events.3.t
 	desc = pavel_events.3.desc
 	picture = GFX_report_event_generic_panzer_attack
@@ -2164,6 +2202,7 @@ country_event = {
 #Poland is informed, given the territory
 country_event = {
 	id = pavel_events.301
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pavel_events.301 FROM = [From.GetName]" }
 	title = pavel_events.301.t
 	desc = pavel_events.301.desc
 	picture = GFX_report_event_generic_peaceful_annexation
@@ -2214,6 +2253,7 @@ country_event = {
 #Poland informed of German rejection, gain wargoal
 country_event = {
 	id = pavel_events.302
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pavel_events.302 FROM = [From.GetName]" }
 	title = pavel_events.302.t
 	desc = pavel_events.302.desc
 	picture = GFX_report_event_military_planning
@@ -2241,6 +2281,7 @@ add_namespace = NSB_poland_communist_events
 #Event for deciding if the KPP should be anti or pro USSR
 country_event = {
 	id = NSB_poland_communist_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.1 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.1.t
 	desc = NSB_poland_communist_events.1.desc
 	picture = GFX_report_event_sanation_left_victory
@@ -2307,6 +2348,7 @@ country_event = {
 #Event for Baltic States being offered to become a Polish subject
 country_event = {
 	id = NSB_poland_communist_events.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.2 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.2.t
 	desc = NSB_poland_communist_events.2.desc
 	picture = GFX_report_event_lithuanian_ultimatum
@@ -2391,6 +2433,7 @@ country_event = {
 #Poland informed they said yes
 country_event = {
 	id = NSB_poland_communist_events.201
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.201 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.201.t
 	desc = NSB_poland_communist_events.201.desc
 	picture = GFX_report_event_generic_peaceful_annexation
@@ -2407,6 +2450,7 @@ country_event = {
 #Poland informed they said no
 country_event = {
 	id = NSB_poland_communist_events.202
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.202 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.202.t
 	desc = NSB_poland_communist_events.202.desc
 	picture = GFX_report_event_polish_tanks_01
@@ -2426,6 +2470,7 @@ country_event = {
 #Event for Baltic States being annexed by Poland
 country_event = {
 	id = NSB_poland_communist_events.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.3 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.3.t
 	desc = NSB_poland_communist_events.3.desc
 	picture = GFX_report_event_generic_peaceful_annexation
@@ -2515,6 +2560,7 @@ country_event = {
 #Baltic State is annexed
 country_event = {
 	id = NSB_poland_communist_events.301
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.301 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.301.t
 	desc = NSB_poland_communist_events.301.desc
 	picture = GFX_report_event_poland_rejects
@@ -2534,6 +2580,7 @@ country_event = {
 #Poland gains a wargoal
 country_event = {
 	id = NSB_poland_communist_events.302
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.302 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.302.t
 	desc = NSB_poland_communist_events.302.desc
 	picture = GFX_report_event_generic_peaceful_annexation
@@ -2576,6 +2623,7 @@ country_event = {
 #Soviet event; Poland wants to surrender Eastern Poland and become a Soviet puppet
 country_event = {
 	id = NSB_poland_communist_events.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.4 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.4.t
 	desc = NSB_poland_communist_events.4.desc
 	picture = GFX_report_event_sanation_left_victory
@@ -2678,6 +2726,7 @@ country_event = {
 #Poland informed Soviets are okay with them becoming a puppet
 country_event = {
 	id = NSB_poland_communist_events.401
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.401 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.401.t
 	desc = NSB_poland_communist_events.401.desc
 	picture = GFX_report_event_sanation_left_victory
@@ -2744,6 +2793,7 @@ country_event = {
 #Poland informed Soviets said no, move to Maria Koszutska's path
 country_event = {
 	id = NSB_poland_communist_events.402
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.402 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.402.t
 	desc = NSB_poland_communist_events.402.desc
 	picture = GFX_report_event_sanation_left_victory
@@ -2769,6 +2819,7 @@ country_event = {
 #Soviet event; Poland declares independence
 country_event = {
 	id = NSB_poland_communist_events.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.5 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.5.t
 	desc = NSB_poland_communist_events.5.desc
 	picture = GFX_report_event_poland_rejects
@@ -2839,6 +2890,7 @@ country_event = {
 #Poland told Soviets are declaring war
 country_event = {
 	id = NSB_poland_communist_events.501
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.501 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.501.t
 	desc = NSB_poland_communist_events.501.desc
 	picture = GFX_report_event_polish_tanks_01
@@ -2864,6 +2916,7 @@ country_event = {
 #Poland told former overlord accepts their independence
 country_event = {
 	id = NSB_poland_communist_events.502
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.502 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.502.t
 	desc = NSB_poland_communist_events.502.desc
 	picture = GFX_report_event_sanation_left_victory
@@ -2890,6 +2943,7 @@ country_event = {
 #Poland asks for East Poland
 country_event = {
 	id = NSB_poland_communist_events.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.6 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.6.t
 	desc = NSB_poland_communist_events.6.desc
 	picture = GFX_report_event_sanation_left_victory
@@ -2994,6 +3048,7 @@ country_event = {
 #Soviets said yes, Poland gets East Poland
 country_event = {
 	id = NSB_poland_communist_events.601
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.601 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.601.t
 	desc = NSB_poland_communist_events.601.desc
 	picture = GFX_report_event_generic_peaceful_annexation
@@ -3073,6 +3128,7 @@ country_event = {
 #Soviets said no, Poland gets nothing
 country_event = {
 	id = NSB_poland_communist_events.602
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_communist_events.602 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.602.t
 	desc = NSB_poland_communist_events.602.desc
 	picture = GFX_report_event_sanation_left_victory
@@ -3105,6 +3161,7 @@ add_namespace = NSB_poland_democratic_events
 #Event for deciding if Poland should be lead by Wincenty Witos or Stanisław Mikołajczyk
 country_event = {
 	id = NSB_poland_democratic_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_poland_democratic_events.1 FROM = [From.GetName]" }
 	title = NSB_poland_democratic_events.1.t
 	desc = NSB_poland_democratic_events.1.desc
 	picture = GFX_report_event_sanation_revolt
@@ -3140,6 +3197,7 @@ add_namespace = NSB_polish_fascist_events
 #German event; Poland wants to surrender Western Poland and become a German puppet
 country_event = {
 	id = NSB_polish_fascist_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.1 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.1.t
 	desc = NSB_polish_fascist_events.1.desc
 	picture = GFX_report_event_danzig_joins_nazis
@@ -3230,6 +3288,7 @@ country_event = {
 #Inform Poland of Germany saying yes
 country_event = {
 	id = NSB_polish_fascist_events.101
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.101 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.101.t
 	desc = NSB_polish_fascist_events.101.desc
 	picture = GFX_report_event_nazis_in_danzig
@@ -3251,6 +3310,7 @@ country_event = {
 #Inform Poland of Germany saying no
 country_event = {
 	id = NSB_polish_fascist_events.102
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.102 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.102.t
 	desc = NSB_polish_fascist_events.102.desc
 	picture = GFX_report_event_poland_rejects
@@ -3274,6 +3334,7 @@ country_event = {
 #German event; Poland wants to invade Lithuania
 country_event = {
 	id = NSB_polish_fascist_events.2		
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.2		 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.2.t
 	desc = NSB_polish_fascist_events.2.desc
 	picture = GFX_report_event_lithuanian_ultimatum
@@ -3366,6 +3427,7 @@ country_event = {
 #Lithuania recieves the demand
 country_event = {
 	id = NSB_polish_fascist_events.201
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.201 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.201.t
 	desc = NSB_polish_fascist_events.201.desc
 	picture = GFX_report_event_lithuanian_ultimatum
@@ -3475,6 +3537,7 @@ country_event = {
 #Inform Poland of Germany saying no
 country_event = {
 	id = NSB_polish_fascist_events.202
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.202 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.202.t
 	desc = NSB_polish_fascist_events.202.desc
 	picture = GFX_report_event_generic_conference
@@ -3493,6 +3556,7 @@ country_event = {
 #Inform Poland/Germany of Lithuania saying yes
 country_event = {
 	id = NSB_polish_fascist_events.203
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.203 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.203.t
 	desc = NSB_polish_fascist_events.203.desc
 	picture = GFX_report_event_lithuanian_ultimatum
@@ -3514,6 +3578,7 @@ country_event = {
 #Inform Poland/Germany of Lithuania saying no
 country_event = {
 	id = NSB_polish_fascist_events.204
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.204 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.204.t
 	desc = NSB_polish_fascist_events.204.desc
 	picture = GFX_report_event_military_planning
@@ -3535,6 +3600,7 @@ country_event = {
 #Poland asks Germany to become more autonomous
 country_event = {
 	id = NSB_polish_fascist_events.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.3 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.3.t
 	desc = NSB_polish_fascist_events.3.desc
 	picture = GFX_report_event_danzig_joins_nazis
@@ -3570,6 +3636,7 @@ country_event = {
 #Poland becomes more autonomous
 country_event = {
 	id = NSB_polish_fascist_events.301
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.301 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.301.t
 	desc = NSB_polish_fascist_events.301.desc
 	picture = GFX_report_event_generic_communist_congress
@@ -3596,6 +3663,7 @@ country_event = {
 #Poland is told no to being more autonomous
 country_event = {
 	id = NSB_polish_fascist_events.302
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.302 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.302.t
 	desc = NSB_polish_fascist_events.302.desc
 	picture = GFX_report_event_nazis_in_danzig
@@ -3628,6 +3696,7 @@ country_event = {
 #Poland tries to decide post-war borders
 country_event = {
 	id = NSB_polish_fascist_events.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.4 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.4.t
 	desc = {
 		text = NSB_polish_fascist_events.4.desc.rejected
@@ -3701,6 +3770,7 @@ country_event = {
 #Germany deliberates on post-war borders
 country_event = {
 	id = NSB_polish_fascist_events.401
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.401 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.4.t
 	desc = {
 		text = NSB_polish_fascist_events.401.desc.baltics
@@ -3791,6 +3861,7 @@ country_event = {
 }
 country_event = {
 	id = NSB_polish_fascist_events.402
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.402 FROM = [From.GetName]" }
 	title = NSB_poland_communist_events.401.t
 	desc = NSB_polish_fascist_events.402.desc
 	picture = GFX_report_event_generic_peaceful_annexation
@@ -3880,6 +3951,7 @@ country_event = {
 
 country_event = {
 	id = NSB_polish_fascist_events.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.5 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.5.t
 	desc = NSB_polish_fascist_events.5.desc
 	picture = GFX_report_event_generic_rally
@@ -4065,6 +4137,7 @@ country_event = {
 #Piasecki taking control of the government
 country_event = {
 	id = NSB_polish_fascist_events.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.6 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.6.t
 	desc = NSB_polish_fascist_events.6.desc
 	picture = GFX_report_event_sanation_revolt
@@ -4088,6 +4161,7 @@ country_event = {
 #National-Democrats winning the "election"
 country_event = {
 	id = NSB_polish_fascist_events.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NSB_polish_fascist_events.7 FROM = [From.GetName]" }
 	title = NSB_polish_fascist_events.7.t
 	desc = NSB_polish_fascist_events.7.desc
 	picture = GFX_report_event_election_vote
@@ -4117,6 +4191,7 @@ add_namespace = POL_habsburg_events
 #Hungarian event: Poland demands the return of Otto von Habsburg
 country_event = {
 	id = POL_habsburg_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_habsburg_events.1 FROM = [From.GetName]" }
 	title = POL_habsburg_events.1.t
 	desc = POL_habsburg_events.1.desc
 	picture = GFX_report_event_military_planning
@@ -4267,6 +4342,7 @@ country_event = {
 #Hungary accepts
 country_event = {
 	id = POL_habsburg_events.101
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_habsburg_events.101 FROM = [From.GetName]" }
 	title = POL_habsburg_events.101.t
 	desc = POL_habsburg_events.101.desc
 	picture = GFX_report_event_generic_parliament
@@ -4286,6 +4362,7 @@ country_event = {
 #Hungary says no
 country_event = {
 	id = POL_habsburg_events.102
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_habsburg_events.102 FROM = [From.GetName]" }
 	title = POL_habsburg_events.102.t
 	desc = POL_habsburg_events.102.desc
 	picture = GFX_report_event_polish_tanks_01
@@ -4308,6 +4385,7 @@ country_event = {
 #Poland asks Austria to join Habsburg faction
 country_event = {
 	id = POL_habsburg_events.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_habsburg_events.2 FROM = [From.GetName]" }
 	title = POL_habsburg_events.2.t
 	desc = POL_habsburg_events.2.desc
 	picture = GFX_report_event_royal_parade
@@ -4366,6 +4444,7 @@ country_event = {
 #Hungary says no, change to allied focus
 country_event = {
 	id = POL_habsburg_events.201
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_habsburg_events.201 FROM = [From.GetName]" }
 	title = POL_habsburg_events.201.t
 	desc = POL_habsburg_events.201.desc
 	picture = GFX_report_event_royal_visit

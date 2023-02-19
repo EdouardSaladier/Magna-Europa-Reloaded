@@ -7,6 +7,7 @@ add_namespace = romania
 # Soviet Union demands Bessarabia
 country_event = {
 	id = romania.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event romania.1 FROM = [From.GetName]" }
 	title = romania.1.t
 	desc = romania.1.d
 	picture = GFX_report_event_generic_read_write
@@ -77,6 +78,7 @@ country_event = {
 # Second Vienna Award - Northern Transylvania
 country_event = {
 	id = romania.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event romania.2 FROM = [From.GetName]" }
 	title = romania.2.t
 	desc = romania.2.d
 	picture = GFX_report_event_second_vienna_award_pact
@@ -130,6 +132,7 @@ country_event = {
 # Second Vienna Award - All of Transylvania
 country_event = {
 	id = romania.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event romania.3 FROM = [From.GetName]" }
 	title = romania.2.t
 	desc = romania.3.d
 	picture = GFX_report_event_second_vienna_award_pact
@@ -179,6 +182,7 @@ country_event = {
 # Second Vienna Award - No Concessions
 country_event = {
 	id = romania.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event romania.4 FROM = [From.GetName]" }
 	title = romania.4.t
 	desc = romania.4.d
 	picture = GFX_report_event_germany_politician_handshake
@@ -193,6 +197,7 @@ country_event = {
 # Treaty of Craiova - Bulgaria Demands Territory
 country_event = {
 	id = romania.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event romania.5 FROM = [From.GetName]" }
 	title = romania.5.t
 	desc = romania.5.d
 	picture = GFX_report_event_hitler_croatia_handshake
@@ -227,6 +232,7 @@ country_event = {
 # Seek an alliance - Since everyone is out to get us
 country_event = {
 	id = romania.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event romania.6 FROM = [From.GetName]" }
 	title = romania.6.t
 	desc = romania.6.d
 	picture = GFX_report_event_hitler_croatia_handshake

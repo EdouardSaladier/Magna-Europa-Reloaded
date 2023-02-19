@@ -35,6 +35,7 @@ add_namespace = bftb_bulgaria_democratic_international_policies
 #ZVENO DISPATCHER EVENT
 country_event = {
 	id = bftb_bulgaria_factions.01
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.01 FROM = [From.GetName]" }
 
 	hidden = yes
 
@@ -116,6 +117,7 @@ country_event = {
 #BROAD SOCIALISTS DISPATCHER EVENT
 country_event = {
 	id = bftb_bulgaria_factions.02
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.02 FROM = [From.GetName]" }
 
 	hidden = yes
 
@@ -205,6 +207,7 @@ country_event = {
 #AGRARIAN NATIONAL UNION DISPATCHER EVENT
 country_event = {
 	id = bftb_bulgaria_factions.03
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.03 FROM = [From.GetName]" }
 
 	hidden = yes
 
@@ -290,6 +293,7 @@ country_event = {
 #NATIONAL SOCIAL MOVEMENT DISPATCHER EVENT
 country_event = {
 	id = bftb_bulgaria_factions.04
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.04 FROM = [From.GetName]" }
 
 	hidden = yes
 
@@ -375,6 +379,7 @@ country_event = {
 #ZVENO COUP DISPATCHER EVENT
 country_event = {
 	id = bftb_bulgaria_factions.05
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.05 FROM = [From.GetName]" }
 
 	hidden = yes
 
@@ -471,6 +476,7 @@ country_event = {
 #Dissident Event ZVENO - Military members conspiring
 country_event = {
 	id = bftb_bulgaria_factions.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.10 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.10.t
 	desc = bftb_bulgaria_factions.10.desc
 	picture = GFX_report_event_bul_military_parade_vidin 
@@ -569,6 +575,7 @@ country_event = {
 #Dissident Event ZVENO - Conspirators exposed
 country_event = {
 	id = bftb_bulgaria_factions.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.11 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.11.t
 	desc = bftb_bulgaria_factions.11.desc
 	picture = GFX_report_event_bul_officers_burgas
@@ -627,6 +634,7 @@ country_event = {
 #Dissident Event ZVENO - Impending coup
 country_event = {
 	id = bftb_bulgaria_factions.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.12 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.12.t
 	desc = bftb_bulgaria_factions.12.desc
 	picture = GFX_report_event_military_planning
@@ -669,6 +677,7 @@ country_event = {
 #Dissident Event BS - Workers Strike
 country_event = {
 	id = bftb_bulgaria_factions.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.20 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.20.t
 	desc = bftb_bulgaria_factions.20.desc
 	picture = GFX_report_event_generic_strike 
@@ -823,6 +832,7 @@ country_event = {
 #Dissident Event BS - Workers Strikes Outcome
 country_event = {
 	id = bftb_bulgaria_factions.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.21 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.21.t
 	desc = bftb_bulgaria_factions.21.desc
 	picture = GFX_report_event_generic_riot
@@ -1033,6 +1043,7 @@ country_event = {
 #Dissident Event BZNS - Agrarian Support Rising in the Countryside
 country_event = {
 	id = bftb_bulgaria_factions.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.30 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.30.t
 	desc = bftb_bulgaria_factions.30.desc
 	picture = GFX_report_event_bul_making_bricks_for_school
@@ -1088,6 +1099,7 @@ country_event = {
 #Flavor Event BZNS - Agrarian Support splits!
 country_event = {
 	id = bftb_bulgaria_factions.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.31 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.31.t
 	desc = bftb_bulgaria_factions.31.desc
 	picture = GFX_report_event_generic_rally2 
@@ -1130,6 +1142,7 @@ country_event = {
 #Dissident Event NSM - March on Turnovo (March on "X" afterwards)
 country_event = {
 	id = bftb_bulgaria_factions.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.40 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.40.t
 	desc = bftb_bulgaria_factions.40.desc
 	picture = GFX_report_event_fascists_posing 
@@ -1218,6 +1231,7 @@ country_event = {
 # Zveno Repression - Success
 country_event = {
 	id = bftb_bulgaria_factions.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.50 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.50.t
 	desc = bftb_bulgaria_factions.50.desc
 	picture = GFX_report_event_gathering_protest 
@@ -1248,6 +1262,7 @@ country_event = {
 # Zveno Repression - Extra Success
 country_event = {
 	id = bftb_bulgaria_factions.51
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.51 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.51.t
 	desc = bftb_bulgaria_factions.51.desc
 	picture = GFX_report_event_gathering_protest  
@@ -1279,6 +1294,7 @@ country_event = {
 # Zveno Repression - Failure
 country_event = {
 	id = bftb_bulgaria_factions.52
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.52 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.52.t
 	desc = bftb_bulgaria_factions.52.desc
 	picture = GFX_report_event_generic_riot
@@ -1297,6 +1313,7 @@ country_event = {
 # Zveno Imprison Leaders - Success
 country_event = {
 	id = bftb_bulgaria_factions.53
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.53 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.53.t
 	desc = bftb_bulgaria_factions.53.desc
 	picture = GFX_report_event_bul_boris_military 
@@ -1327,6 +1344,7 @@ country_event = {
 # Zveno Imprison Leaders - Failure
 country_event = {
 	id = bftb_bulgaria_factions.54
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.54 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.54.t
 	desc = bftb_bulgaria_factions.54.desc
 	picture = GFX_report_event_bul_military_parade_vidin 
@@ -1355,6 +1373,7 @@ country_event = {
 # Zveno Imprison Leaders - Backfired
 country_event = {
 	id = bftb_bulgaria_factions.55
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.55 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.55.t
 	desc = bftb_bulgaria_factions.55.desc
 	picture = GFX_report_event_generic_riot
@@ -1384,6 +1403,7 @@ country_event = {
 # Broad Socialists Repression - Success
 country_event = {
 	id = bftb_bulgaria_factions.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.60 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.60.t
 	desc = bftb_bulgaria_factions.60.desc
 	picture = GFX_report_event_gathering_protest 
@@ -1403,6 +1423,7 @@ country_event = {
 # Broad Socialists Repression - Extra Success
 country_event = {
 	id = bftb_bulgaria_factions.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.61 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.61.t
 	desc = bftb_bulgaria_factions.61.desc
 	picture = GFX_report_event_gathering_protest  
@@ -1423,6 +1444,7 @@ country_event = {
 # Broad Socialists Repression - Failure
 country_event = {
 	id = bftb_bulgaria_factions.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.62 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.62.t
 	desc = bftb_bulgaria_factions.62.desc
 	picture = GFX_report_event_generic_riot
@@ -1441,6 +1463,7 @@ country_event = {
 # Broad Socialists Imprison Leaders - Success
 country_event = {
 	id = bftb_bulgaria_factions.63
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.63 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.63.t
 	desc = bftb_bulgaria_factions.63.desc
 	picture = GFX_report_event_bul_boris_military
@@ -1460,6 +1483,7 @@ country_event = {
 # Broad Socialists Imprison Leaders - Failure
 country_event = {
 	id = bftb_bulgaria_factions.64
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.64 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.64.t
 	desc = bftb_bulgaria_factions.64.desc
 	picture = GFX_report_event_bul_military_parade_vidin
@@ -1477,6 +1501,7 @@ country_event = {
 # Broad Socialists Imprison Leaders - Backfired
 country_event = {
 	id = bftb_bulgaria_factions.65
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.65 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.65.t
 	desc = bftb_bulgaria_factions.65.desc
 	picture = GFX_report_event_generic_riot
@@ -1495,6 +1520,7 @@ country_event = {
 # Agrarian Union Repression - Success
 country_event = {
 	id = bftb_bulgaria_factions.70
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.70 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.70.t
 	desc = bftb_bulgaria_factions.70.desc
 	picture = GFX_report_event_gathering_protest 
@@ -1514,6 +1540,7 @@ country_event = {
 # Agrarian Union Repression - Extra Success
 country_event = {
 	id = bftb_bulgaria_factions.71
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.71 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.71.t
 	desc = bftb_bulgaria_factions.71.desc
 	picture = GFX_report_event_gathering_protest  
@@ -1534,6 +1561,7 @@ country_event = {
 # Agrarian Union Repression - Failure
 country_event = {
 	id = bftb_bulgaria_factions.72
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.72 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.72.t
 	desc = bftb_bulgaria_factions.72.desc
 	picture = GFX_report_event_generic_riot
@@ -1552,6 +1580,7 @@ country_event = {
 # Agrarian Union Imprison Leaders - Success
 country_event = {
 	id = bftb_bulgaria_factions.73
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.73 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.73.t
 	desc = bftb_bulgaria_factions.73.desc
 	picture = GFX_report_event_bul_boris_military
@@ -1571,6 +1600,7 @@ country_event = {
 # Agrarian Union Imprison Leaders - Failure
 country_event = {
 	id = bftb_bulgaria_factions.74
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.74 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.74.t
 	desc = bftb_bulgaria_factions.74.desc
 	picture = GFX_report_event_bul_military_parade_vidin
@@ -1588,6 +1618,7 @@ country_event = {
 # Agrarian Union Imprison Leaders - Backfired
 country_event = {
 	id = bftb_bulgaria_factions.75
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.75 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.75.t
 	desc = bftb_bulgaria_factions.75.desc
 	picture = GFX_report_event_generic_riot
@@ -1606,6 +1637,7 @@ country_event = {
 # National Social Movement Repression - Success
 country_event = {
 	id = bftb_bulgaria_factions.80
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.80 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.80.t
 	desc = bftb_bulgaria_factions.80.desc
 	picture = GFX_report_event_gathering_protest 
@@ -1625,6 +1657,7 @@ country_event = {
 # National Social Movement Repression - Extra Success
 country_event = {
 	id = bftb_bulgaria_factions.81
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.81 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.81.t
 	desc = bftb_bulgaria_factions.81.desc
 	picture = GFX_report_event_gathering_protest  
@@ -1645,6 +1678,7 @@ country_event = {
 # National Social Movement Repression - Failure
 country_event = {
 	id = bftb_bulgaria_factions.82
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.82 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.82.t
 	desc = bftb_bulgaria_factions.82.desc
 	picture = GFX_report_event_generic_riot
@@ -1663,6 +1697,7 @@ country_event = {
 # National Social Movement Imprison Leaders - Success
 country_event = {
 	id = bftb_bulgaria_factions.83
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.83 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.83.t
 	desc = bftb_bulgaria_factions.83.desc
 	picture = GFX_report_event_bul_boris_military
@@ -1682,6 +1717,7 @@ country_event = {
 # National Social Movement Imprison Leaders - Failure
 country_event = {
 	id = bftb_bulgaria_factions.84
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.84 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.84.t
 	desc = bftb_bulgaria_factions.84.desc
 	picture = GFX_report_event_bul_military_parade_vidin
@@ -1699,6 +1735,7 @@ country_event = {
 # National Social Movement Imprison Leaders - Backfired
 country_event = {
 	id = bftb_bulgaria_factions.85
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.85 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.85.t
 	desc = bftb_bulgaria_factions.85.desc
 	picture = GFX_report_event_generic_riot
@@ -1717,6 +1754,7 @@ country_event = {
 # Integrated Faction - ZVENO
 country_event = {
 	id = bftb_bulgaria_factions.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.17 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.17.t
 	desc = bftb_bulgaria_factions.17.desc
 	picture = GFX_report_event_bul_boris_with_muraviev
@@ -1755,6 +1793,7 @@ country_event = {
 # Integrated Faction - BS
 country_event = {
 	id = bftb_bulgaria_factions.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.27 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.27.t
 	desc = bftb_bulgaria_factions.27.desc
 	picture = GFX_report_event_bul_boris_with_muraviev
@@ -1793,6 +1832,7 @@ country_event = {
 # Integrated Faction - BZNS
 country_event = {
 	id = bftb_bulgaria_factions.37
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.37 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.37.t
 	desc = bftb_bulgaria_factions.37.desc
 	picture = GFX_report_event_bul_boris_with_muraviev
@@ -1831,6 +1871,7 @@ country_event = {
 # Integrated Faction - NSM
 country_event = {
 	id = bftb_bulgaria_factions.47
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.47 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.47.t
 	desc = bftb_bulgaria_factions.47.desc
 	picture = GFX_report_event_bul_boris_with_muraviev
@@ -1869,6 +1910,7 @@ country_event = {
 # Destroyed Faction - ZVENO
 country_event = {
 	id = bftb_bulgaria_factions.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.19 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.19.t
 	desc = bftb_bulgaria_factions.19.desc
 	picture = GFX_report_event_bul_military_parade_vidin 
@@ -1913,6 +1955,7 @@ country_event = {
 # Destroyed Faction - BS
 country_event = {
 	id = bftb_bulgaria_factions.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.29 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.29.t
 	desc = bftb_bulgaria_factions.29.desc
 	picture = GFX_report_event_bul_military_parade_vidin 
@@ -1951,6 +1994,7 @@ country_event = {
 # Destroyed Faction - BZNS
 country_event = {
 	id = bftb_bulgaria_factions.39
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.39 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.39.t
 	desc = bftb_bulgaria_factions.39.desc
 	picture = GFX_report_event_bul_military_parade_vidin 
@@ -1989,6 +2033,7 @@ country_event = {
 # Destroyed Faction - NSM
 country_event = {
 	id = bftb_bulgaria_factions.49
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_factions.49 FROM = [From.GetName]" }
 	title = bftb_bulgaria_factions.49.t
 	desc = bftb_bulgaria_factions.49.desc
 	picture = GFX_report_event_bul_military_parade_vidin 
@@ -2037,6 +2082,7 @@ country_event = {
 #The IMRO is back! - Event for YUG and GRE (or whoever occupy Macedonian states)
 country_event = {
 	id = bftb_bulgaria_imro.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_imro.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_imro.1.t
 	desc = bftb_bulgaria_imro.1.desc
 	picture = GFX_report_event_bul_troops_macedonia
@@ -2064,6 +2110,7 @@ country_event = {
 #IMRO spreads Bulgarian sentiment - Event for YUG and GRE (or whoever occupy Macedonian states)
 country_event = {
 	id = bftb_bulgaria_imro.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_imro.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_imro.2.t
 	desc = bftb_bulgaria_imro.2.desc
 	picture = GFX_report_event_albanian_partisans
@@ -2100,6 +2147,7 @@ country_event = {
 #Tsar Boris visits a town
 country_event = {
 	id = bftb_bulgaria_tsar_boris.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_tsar_boris.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_tsar_boris.1.t
 	desc = {
 		text = bftb_bulgaria_tsar_boris.1.desc_success
@@ -2182,6 +2230,7 @@ country_event = {
 #Tsar Boris has died. Form a temporary government
 country_event = {
 	id = bftb_bulgaria_tsar_boris.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_tsar_boris.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_tsar_boris.2.t
 	desc = bftb_bulgaria_tsar_boris.2.desc
 	picture = GFX_report_event_bul_boris_death
@@ -2284,6 +2333,7 @@ country_event = {
 #Form a Regency Council
 country_event = {
 	id = bftb_bulgaria_tsar_boris.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_tsar_boris.3 FROM = [From.GetName]" }
 	title = bftb_bulgaria_tsar_boris.3.t
 	desc = bftb_bulgaria_tsar_boris.3.desc
 	picture = GFX_report_event_bul_prince_simeon 
@@ -2832,6 +2882,7 @@ country_event = {
 #The Fatherland Front has formed
 country_event = {
 	id = bftb_bulgaria_fatherland_front.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_fatherland_front.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_fatherland_front.1.t
 
 	# Desc when formed by the player
@@ -2931,6 +2982,7 @@ country_event = {
 #The Fatherland Front coup
 country_event = {
 	id = bftb_bulgaria_fatherland_front.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_fatherland_front.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_fatherland_front.2.t
 	desc = bftb_bulgaria_fatherland_front.2.desc
 	picture = GFX_report_event_bul_troops_partisans_boat
@@ -2971,6 +3023,7 @@ country_event = {
 #Negotiate Bulgarian Rearmament - Event for ENG
 country_event = {
 	id = bftb_bulgaria_rearmament.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_rearmament.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_rearmament.1.t
 	desc = bftb_bulgaria_rearmament.1.desc
 	picture = GFX_report_event_generic_sign_treaty1 
@@ -3113,6 +3166,7 @@ country_event = {
 #Negotiate Bulgarian Rearmament - ENG refuses (Event for BUL)
 country_event = {
 	id = bftb_bulgaria_rearmament.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_rearmament.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_rearmament.2.t
 	desc = bftb_bulgaria_rearmament.2.desc
 	picture = GFX_report_event_generic_sign_treaty1 
@@ -3132,6 +3186,7 @@ country_event = {
 #Negotiate Bulgarian Rearmament - ENG demands NAP with a Balkan nation (Event for BUL)
 country_event = {
 	id = bftb_bulgaria_rearmament.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_rearmament.3 FROM = [From.GetName]" }
 	title = bftb_bulgaria_rearmament.3.t
 	desc = bftb_bulgaria_rearmament.3.desc
 	picture = GFX_report_event_generic_sign_treaty2 
@@ -3154,6 +3209,7 @@ country_event = {
 #Negotiate Bulgarian Rearmament - BUL has NAP (event for BUL)
 country_event = {
 	id = bftb_bulgaria_rearmament.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_rearmament.4 FROM = [From.GetName]" }
 	title = bftb_bulgaria_rearmament.4.t
 	desc = bftb_bulgaria_rearmament.4.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -3172,6 +3228,7 @@ country_event = {
 #Negotiate Bulgarian Rearmament - BUL has NAP (event for ENG)
 country_event = {
 	id = bftb_bulgaria_rearmament.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_rearmament.5 FROM = [From.GetName]" }
 	title = bftb_bulgaria_rearmament.5.t
 	desc = bftb_bulgaria_rearmament.5.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -3190,6 +3247,7 @@ country_event = {
 #Negotiate Bulgarian Rearmament - ENG accepts (Event for BUL)
 country_event = {
 	id = bftb_bulgaria_rearmament.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_rearmament.6 FROM = [From.GetName]" }
 	title = bftb_bulgaria_rearmament.6.t
 	desc = bftb_bulgaria_rearmament.6.desc
 	picture = GFX_report_event_generic_sign_treaty1 
@@ -3212,6 +3270,7 @@ country_event = {
 #Pressure for Bulgarian Rearmament - Event for ENG
 country_event = {
 	id = bftb_bulgaria_rearmament.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_rearmament.7 FROM = [From.GetName]" }
 	title = bftb_bulgaria_rearmament.7.t
 	desc = bftb_bulgaria_rearmament.7.desc
 	picture = GFX_report_event_generic_sign_treaty2 
@@ -3381,6 +3440,7 @@ country_event = {
 #Pressure for Bulgarian Rearmament - ENG refuses (Event for BUL)
 country_event = {
 	id = bftb_bulgaria_rearmament.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_rearmament.8 FROM = [From.GetName]" }
 	title = bftb_bulgaria_rearmament.8.t
 	desc = bftb_bulgaria_rearmament.8.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -3401,6 +3461,7 @@ country_event = {
 #Bulgaria Refuses Army Restrictions - Event for ENG
 country_event = {
 	id = bftb_bulgaria_rearmament.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_rearmament.9 FROM = [From.GetName]" }
 	title = bftb_bulgaria_rearmament.9.t
 	desc = bftb_bulgaria_rearmament.9.desc
 	picture = GFX_report_event_generic_sign_treaty1 
@@ -3497,6 +3558,7 @@ country_event = {
 #Bulgaria has nationalized foreign factories and subsidiaries - Event for GER/SOV/ENG
 country_event = {
 	id = bftb_bulgaria_nationalization.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_nationalization.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_nationalization.1.t
 	desc = bftb_bulgaria_nationalization.1.desc
 	picture = GFX_report_event_generic_factory 
@@ -3917,6 +3979,7 @@ country_event = {
 # Bulgaria is under embargo - Event for BUL
 country_event = {
 	id = bftb_bulgaria_nationalization.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_nationalization.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_nationalization.2.t
 	desc = bftb_bulgaria_nationalization.2.desc
 	picture = GFX_report_event_merchant_ship_01  
@@ -3939,6 +4002,7 @@ country_event = {
 # Bulgaria has been kicked from faction - Event for BUL
 country_event = {
 	id = bftb_bulgaria_nationalization.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_nationalization.3 FROM = [From.GetName]" }
 	title = bftb_bulgaria_nationalization.3.t
 	desc = bftb_bulgaria_nationalization.3.desc
 	picture = GFX_report_event_generic_read_write 
@@ -3970,6 +4034,7 @@ country_event = {
  #Bulgaria grants exploitation rights to an ally
 country_event = {
 	id = bftb_bulgaria_uranium_mining_concessions.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_uranium_mining_concessions.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_uranium_mining_concessions.1.t
 	desc = bftb_bulgaria_uranium_mining_concessions.1.desc
 	picture = GFX_report_event_generic_read_write 
@@ -4008,6 +4073,7 @@ country_event = {
 #Bulgaria wants to get their claims warranted - Event for GER
 country_event = {
 	id = bftb_bulgarian_claims.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgarian_claims.1 FROM = [From.GetName]" }
 	title = bftb_bulgarian_claims.1.t
 	desc = bftb_bulgarian_claims.1.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -4121,6 +4187,7 @@ country_event = {
 #Germany recognizes Bulgarian claims in the Balkans - Event for BUL
 country_event = {
 	id = bftb_bulgarian_claims.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgarian_claims.2 FROM = [From.GetName]" }
 	title = bftb_bulgarian_claims.2.t
 	desc = bftb_bulgarian_claims.2.desc
 	picture = GFX_report_event_bul_boris_with_hitler 
@@ -4170,6 +4237,7 @@ country_event = {
 #Germany does not recognize Bulgarian claims in the Balkans - Event for BUL
 country_event = {
 	id = bftb_bulgarian_claims.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgarian_claims.3 FROM = [From.GetName]" }
 	title = bftb_bulgarian_claims.3.t
 	desc = bftb_bulgarian_claims.3.desc
 	picture = GFX_report_event_generic_sign_treaty1 
@@ -4191,6 +4259,7 @@ country_event = {
 #Germany transferred Bulgaria's claimed states - Event for BUL
 country_event = {
 	id = bftb_bulgarian_claims.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgarian_claims.4 FROM = [From.GetName]" }
 	title = bftb_bulgarian_claims.4.t
 	desc = bftb_bulgarian_claims.4.desc
 	picture = GFX_report_event_bul_imro_chieftain
@@ -4267,6 +4336,7 @@ country_event = {
 #Germany transferred Bulgaria's claimed states - Event for GER
 country_event = {
 	id = bftb_bulgarian_claims.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgarian_claims.5 FROM = [From.GetName]" }
 	title = bftb_bulgarian_claims.5.t
 	desc = bftb_bulgarian_claims.5.desc
 	picture = GFX_report_event_bul_troops_dobrudja
@@ -4304,6 +4374,7 @@ country_event = {
 #Germany transferred Bulgaria's claimed states - Event for any allied controller of transferred states
 country_event = {
 	id = bftb_bulgarian_claims.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgarian_claims.6 FROM = [From.GetName]" }
 	title = bftb_bulgarian_claims.6.t
 	desc = bftb_bulgarian_claims.6.desc
 	picture = GFX_report_event_bul_troops_dobrudja 
@@ -4328,6 +4399,7 @@ country_event = {
 #Bulgaria asks for control over Balkan state - Event for controller of the state
 country_event = {
 	id = bftb_bulgarian_claims.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgarian_claims.7 FROM = [From.GetName]" }
 	title = bftb_bulgarian_claims.7.t
 	desc = bftb_bulgarian_claims.7.desc
 	picture = GFX_report_event_generic_sign_treaty2 
@@ -4456,6 +4528,7 @@ country_event = {
 #Country accepts Bulgarian control over state - Event for BUL
 country_event = {
 	id = bftb_bulgarian_claims.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgarian_claims.8 FROM = [From.GetName]" }
 	title = bftb_bulgarian_claims.8.t
 	desc = bftb_bulgarian_claims.8.desc
 	picture = GFX_report_event_bul_troops_dobrudja
@@ -4476,6 +4549,7 @@ country_event = {
 #Country rejects Bulgarian control over state - Event for BUL
 country_event = {
 	id = bftb_bulgarian_claims.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgarian_claims.9 FROM = [From.GetName]" }
 	title = bftb_bulgarian_claims.9.t
 	desc = bftb_bulgarian_claims.9.desc
 	picture = GFX_report_event_generic_read_write 
@@ -4491,6 +4565,7 @@ country_event = {
 #Germany offers to donate aircraft - Event for BUL
 country_event = {
 	id = bftb_bulgaria_german_influence.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_german_influence.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_german_influence.1.t
 	desc = bftb_bulgaria_german_influence.1.desc
 	picture = GFX_report_event_bul_boris_with_hitler
@@ -4563,6 +4638,7 @@ country_event = {
 #Bulgaria accepts our donation - Event for GER
 country_event = {
 	id = bftb_bulgaria_german_influence.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_german_influence.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_german_influence.2.t
 	desc = bftb_bulgaria_german_influence.2.desc
 	picture = GFX_report_event_bul_boris_with_hitler
@@ -4593,6 +4669,7 @@ country_event = {
 #Bulgaria rejects our donation - Event for GER
 country_event = {
 	id = bftb_bulgaria_german_influence.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_german_influence.3 FROM = [From.GetName]" }
 	title = bftb_bulgaria_german_influence.3.t
 	desc = bftb_bulgaria_german_influence.3.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -4614,6 +4691,7 @@ country_event = {
 #Germany demands we replace Kyoseyvanov - Event for BUL
 country_event = {
 	id = bftb_bulgaria_german_influence.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_german_influence.4 FROM = [From.GetName]" }
 	title = bftb_bulgaria_german_influence.4.t
 	desc = bftb_bulgaria_german_influence.4.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -4679,6 +4757,7 @@ country_event = {
 #Bulgaria accepts to replace Kyoseyvanov - Event for GER
 country_event = {
 	id = bftb_bulgaria_german_influence.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_german_influence.5 FROM = [From.GetName]" }
 	title = bftb_bulgaria_german_influence.5.t
 	desc = bftb_bulgaria_german_influence.5.desc
 	picture = GFX_report_event_generic_sign_treaty2 
@@ -4707,6 +4786,7 @@ country_event = {
 #Bulgaria refuses to replace Kyoseyvanov - Event for GER
 country_event = {
 	id = bftb_bulgaria_german_influence.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_german_influence.6 FROM = [From.GetName]" }
 	title = bftb_bulgaria_german_influence.6.t
 	desc = bftb_bulgaria_german_influence.6.desc
 	picture = GFX_report_event_generic_sign_treaty2 
@@ -4730,6 +4810,7 @@ country_event = {
 #Germany demands military access - Event for BUL
 country_event = {
 	id = bftb_bulgaria_german_influence.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_german_influence.7 FROM = [From.GetName]" }
 	title = bftb_bulgaria_german_influence.7.t
 	desc = bftb_bulgaria_german_influence.7.desc
 	picture = GFX_report_event_german_troops 
@@ -4795,6 +4876,7 @@ country_event = {
 #Bulgaria grants us military access - Event for GER
 country_event = {
 	id = bftb_bulgaria_german_influence.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_german_influence.8 FROM = [From.GetName]" }
 	title = bftb_bulgaria_german_influence.8.t
 	desc = bftb_bulgaria_german_influence.8.desc
 	picture = GFX_report_event_german_troops 
@@ -4817,6 +4899,7 @@ country_event = {
 #Bulgaria refuses to grant us military access - Event for GER
 country_event = {
 	id = bftb_bulgaria_german_influence.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_german_influence.9 FROM = [From.GetName]" }
 	title = bftb_bulgaria_german_influence.9.t
 	desc = bftb_bulgaria_german_influence.9.desc
 	picture = GFX_report_event_generic_sign_treaty2 
@@ -4867,6 +4950,7 @@ country_event = {
 #BUL wants a Research Agreement with ITA - Event for ITA
 country_event = {
 	id = bftb_bulgaria_italian_influence.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_italian_influence.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_italian_influence.1.t
 	desc = bftb_bulgaria_italian_influence.1.desc
 	picture = GFX_report_event_german_troops 
@@ -4930,6 +5014,7 @@ country_event = {
 #Purchase Artillery
 country_event = {
 	id = bftb_bulgaria_equipment_purchases.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_equipment_purchases.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_equipment_purchases.1.t
 	desc = bftb_bulgaria_equipment_purchases.1.desc
 	picture = GFX_report_event_bul_artillery 
@@ -5006,6 +5091,7 @@ country_event = {
 #Purchase Military Vehicles
 country_event = {
 	id = bftb_bulgaria_equipment_purchases.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_equipment_purchases.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_equipment_purchases.2.t
 	desc = bftb_bulgaria_equipment_purchases.2.desc
 	picture = GFX_report_event_generic_truck 
@@ -5085,6 +5171,7 @@ country_event = {
 #Purchase Armor
 country_event = {
 	id = bftb_bulgaria_equipment_purchases.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_equipment_purchases.3 FROM = [From.GetName]" }
 	title = bftb_bulgaria_equipment_purchases.3.t
 	desc = bftb_bulgaria_equipment_purchases.3.desc
 	picture = GFX_report_event_tank_factory 
@@ -5167,6 +5254,7 @@ country_event = {
 #Purchase Aircraft
 country_event = {
 	id = bftb_bulgaria_equipment_purchases.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_equipment_purchases.4 FROM = [From.GetName]" }
 	title = bftb_bulgaria_equipment_purchases.4.t
 	desc = bftb_bulgaria_equipment_purchases.4.desc
 	picture = GFX_report_event_bul_aircraft_repairs
@@ -5249,6 +5337,7 @@ country_event = {
 #BUL wants to purchase our ships - Event for Majors influencing BUL
 country_event = {
 	id = bftb_bulgaria_equipment_purchases.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_equipment_purchases.5 FROM = [From.GetName]" }
 	title = bftb_bulgaria_equipment_purchases.5.t
 	desc = lar_portugal_purchase_ships.1.desc
 	picture = GFX_report_event_sailors_in_working_rig
@@ -5306,6 +5395,7 @@ country_event = {
 #Purchase Ships - FROM has accepted - Event for BUL (Choose type of ships)
 country_event = {
 	id = bftb_bulgaria_equipment_purchases.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_equipment_purchases.6 FROM = [From.GetName]" }
 	title = lar_portugal_purchase_ships.2.t
 	desc = lar_portugal_purchase_ships.2.desc
 	picture = GFX_report_event_sailors_in_working_rig
@@ -5388,6 +5478,7 @@ country_event = {
 #Purchase Ships - FROM has declined our offer - Event for BUL
 country_event = {
 	id = bftb_bulgaria_equipment_purchases.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_equipment_purchases.7 FROM = [From.GetName]" }
 	title = lar_portugal_purchase_ships.3.t
 	desc = lar_portugal_purchase_ships.3.desc
 	picture = GFX_report_event_sailors_in_working_rig
@@ -5403,6 +5494,7 @@ country_event = {
 #Purchase Ships - Submarines ready - Event for BUL
 country_event = {
 	id = bftb_bulgaria_equipment_purchases.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_equipment_purchases.8 FROM = [From.GetName]" }
 	title = bftb_bulgaria_equipment_purchases.8.t
 	desc = bftb_bulgaria_equipment_purchases.8.desc
 	picture = GFX_report_event_ast_navy
@@ -5622,6 +5714,7 @@ country_event = {
 #Purchase Ships - Destroyers ready - Event for BUL
 country_event = {
 	id = bftb_bulgaria_equipment_purchases.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_equipment_purchases.9 FROM = [From.GetName]" }
 	title = bftb_bulgaria_equipment_purchases.9.t
 	desc = bftb_bulgaria_equipment_purchases.9.desc
 	picture = GFX_report_event_ast_navy
@@ -5866,6 +5959,7 @@ country_event = {
 #Purchase Ships - Light Cruiser ready - Event for BUL
 country_event = {
 	id = bftb_bulgaria_equipment_purchases.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_equipment_purchases.10 FROM = [From.GetName]" }
 	title = bftb_bulgaria_equipment_purchases.10.t
 	desc = bftb_bulgaria_equipment_purchases.10.desc
 	picture = GFX_report_event_ast_navy
@@ -6118,6 +6212,7 @@ country_event = {
 #SCW is over - Bulgarian volunteers aiding the Spanish Republic are back - Event for BUL
 country_event = {
 	id = bftb_bulgaria_scw_volunteers.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_scw_volunteers.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_scw_volunteers.1.t
 	desc = bftb_bulgaria_scw_volunteers.1.desc
 	picture = GFX_report_event_spr_no_pasaran 
@@ -6176,6 +6271,7 @@ country_event = {
 #SCW is over - Bulgarian volunteers aiding the Spanish Nationalists are back - Event for BUL
 country_event = {
 	id = bftb_bulgaria_scw_volunteers.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_scw_volunteers.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_scw_volunteers.2.t
 	desc = bftb_bulgaria_scw_volunteers.2.desc
 	picture = GFX_report_event_spr_army_of_africa
@@ -6540,6 +6636,7 @@ country_event = {
 # Treaty of Mutual Assistance - BUL wants a NA and guarantee with SOV - Event for SOV
 country_event = {
 	id = bftb_bulgaria_soviet_influence.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_soviet_influence.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_soviet_influence.1.t
 	desc = bftb_bulgaria_soviet_influence.1.desc
 	picture = GFX_report_event_bul_dimitrov_with_stalin
@@ -6657,6 +6754,7 @@ country_event = {
 # Treaty of Mutual Assistance - SOV accepts - Event for BUL
 country_event = {
 	id = bftb_bulgaria_soviet_influence.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_soviet_influence.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_soviet_influence.2.t
 	desc = bftb_bulgaria_soviet_influence.2.desc
 	picture = GFX_report_event_bul_dimitrov_with_stalin
@@ -6709,6 +6807,7 @@ country_event = {
 # Treaty of Mutual Assistance - SOV rejects our proposal - Event for BUL
 country_event = {
 	id = bftb_bulgaria_soviet_influence.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_soviet_influence.3 FROM = [From.GetName]" }
 	title = bftb_bulgaria_soviet_influence.3.t
 	desc = bftb_bulgaria_soviet_influence.3.desc
 	picture = GFX_report_event_stalin_02
@@ -6732,6 +6831,7 @@ country_event = {
 # Carry the Revolution Abroad - Join Faction or Wargoal - Event for Balkan communist independent nations
 country_event = {
 	id = bftb_bulgaria_soviet_influence.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_soviet_influence.4 FROM = [From.GetName]" }
 	title = bftb_bulgaria_soviet_influence.4.t
 	desc = bftb_bulgaria_soviet_influence.4.desc
 	picture = GFX_report_event_bul_ff_troops_panzer
@@ -6870,6 +6970,7 @@ country_event = {
 # Carry the Revolution Abroad - Country Accepts - Event for BUL
 country_event = {
 	id = bftb_bulgaria_soviet_influence.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_soviet_influence.5 FROM = [From.GetName]" }
 	title = bftb_bulgaria_soviet_influence.5.t
 	desc = bftb_bulgaria_soviet_influence.5.desc
 	picture = GFX_report_event_communists_cheer
@@ -6916,6 +7017,7 @@ country_event = {
 # Carry the Revolution Abroad - Country Refuses - Event for BUL
 country_event = {
 	id = bftb_bulgaria_soviet_influence.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_soviet_influence.6 FROM = [From.GetName]" }
 	title = bftb_bulgaria_soviet_influence.6.t
 	desc = bftb_bulgaria_soviet_influence.6.desc
 	picture = GFX_report_event_generic_read_write
@@ -6954,6 +7056,7 @@ country_event = {
 # Treaty of Perpetual Friendship - BUL wants a NA with YUG - Event for YUG
 country_event = {
 	id = bftb_bulgaria_yugoslavian_influence.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_yugoslavian_influence.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_yugoslavian_influence.1.t
 	desc = bftb_bulgaria_yugoslavian_influence.1.desc
 	picture = GFX_report_event_bul_ff_troops_yugoslavia
@@ -7101,6 +7204,7 @@ country_event = {
 # Treaty of Perpetual Friendship - YUG accepts - Event for BUL
 country_event = {
 	id = bftb_bulgaria_yugoslavian_influence.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_yugoslavian_influence.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_yugoslavian_influence.2.t
 	desc = bftb_bulgaria_yugoslavian_influence.2.desc
 	picture = GFX_report_event_communists_cheer 
@@ -7156,6 +7260,7 @@ country_event = {
 # Treaty of Perpetual Friendship - YUG rejects our proposal - Event for BUL
 country_event = {
 	id = bftb_bulgaria_yugoslavian_influence.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_yugoslavian_influence.3 FROM = [From.GetName]" }
 	title = bftb_bulgaria_yugoslavian_influence.3.t
 	desc = bftb_bulgaria_yugoslavian_influence.3.desc
 	picture = GFX_report_event_generic_sign_treaty1 
@@ -7189,6 +7294,7 @@ country_event = {
 #Bulgarian Balkan Federation Project Ready - Event for BUL
 country_event = {
 	id = bftb_bulgaria_balkan_federation.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.1.t
 	desc = bftb_bulgaria_balkan_federation.1.desc
 	picture = GFX_report_event_bul_soviet_army_sofia
@@ -7205,6 +7311,7 @@ country_event = {
 #Bulgarian Balkan Federation Project Ready - Event for YUG
 country_event = {
 	id = bftb_bulgaria_balkan_federation.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.2.t
 	desc = bftb_bulgaria_balkan_federation.2.desc
 	picture = GFX_report_event_generic_rally
@@ -7224,6 +7331,7 @@ country_event = {
 #Bulgarian Propaganda for Balkan Federation - Event for Balkan Countries
 country_event = {
 	id = bftb_bulgaria_balkan_federation.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.3 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.3.t
 	desc = bftb_bulgaria_balkan_federation.3.desc
 	picture = GFX_report_event_generic_rally
@@ -7243,6 +7351,7 @@ country_event = {
 #Bulgaria destabilizes country - Event for Balkan Countries
 country_event = {
 	id = bftb_bulgaria_balkan_federation.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.4 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.4.t
 	desc = bftb_bulgaria_balkan_federation.4.desc
 	picture = GFX_report_event_bul_troops_partisans_boat 
@@ -7263,6 +7372,7 @@ country_event = {
 #Unification of the Balkans - Event for Balkan Allies
 country_event = {
 	id = bftb_bulgaria_balkan_federation.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.5 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.5.t
 	desc = bftb_bulgaria_balkan_federation.5.desc
 	picture = GFX_report_event_bul_troops_dobrudja
@@ -7547,6 +7657,7 @@ country_event = {
 #Unification of the Balkans - Country Accepts - Event for BUL
 country_event = {
 	id = bftb_bulgaria_balkan_federation.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.6 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.6.t
 	desc = bftb_bulgaria_balkan_federation.6.desc
 	picture = GFX_report_event_bul_soviet_army_sofia 
@@ -7572,6 +7683,7 @@ country_event = {
 #Unification of the Balkans - Country Requests Industrial Aid before annexation - Event for BUL
 country_event = {
 	id = bftb_bulgaria_balkan_federation.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.7 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.7.t
 	desc = bftb_bulgaria_balkan_federation.7.desc
 	picture = GFX_report_event_generic_factory
@@ -7588,6 +7700,7 @@ country_event = {
 #Unification of the Balkans - Country Requests Economic Aid before annexation - Event for BUL
 country_event = {
 	id = bftb_bulgaria_balkan_federation.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.8 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.8.t
 	desc = bftb_bulgaria_balkan_federation.8.desc
 	picture = GFX_report_event_hitler_handshake
@@ -7604,6 +7717,7 @@ country_event = {
 #Unification of the Balkans - Country Requests Military Aid before annexation - Event for BUL
 country_event = {
 	id = bftb_bulgaria_balkan_federation.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.9 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.9.t
 	desc = bftb_bulgaria_balkan_federation.9.desc
 	picture = GFX_report_event_bul_ff_troops_yugoslavia
@@ -7620,6 +7734,7 @@ country_event = {
 #Unification of the Balkans - Country requests limited freedom (aka puppet) - Event for BUL
 country_event = {
 	id = bftb_bulgaria_balkan_federation.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.10 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.10.t
 	desc = bftb_bulgaria_balkan_federation.10.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -7654,6 +7769,7 @@ country_event = {
 #Unification of the Balkans - Country Refuses - Event for BUL
 country_event = {
 	id = bftb_bulgaria_balkan_federation.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.11 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.11.t
 	desc = bftb_bulgaria_balkan_federation.11.desc
 	picture = GFX_report_event_gre_balkan_pact
@@ -7848,6 +7964,7 @@ country_event = {
 #Recover Italian Territories - Event for ITA
 country_event = {
 	id = bftb_bulgaria_balkan_federation.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.12 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.12.t
 	desc = bftb_bulgaria_balkan_federation.12.desc
 	picture = GFX_report_event_bul_boris_military
@@ -8063,6 +8180,7 @@ country_event = {
 #Recover Italian Territories - ITA Accepts - Event for BUL
 country_event = {
 	id = bftb_bulgaria_balkan_federation.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.13 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.13.t
 	desc = bftb_bulgaria_balkan_federation.13.desc
 	picture = GFX_report_event_bul_italian_equipment 
@@ -8116,6 +8234,7 @@ country_event = {
 #Recover Italian Territories - ITA transfers state - Event for other Balkan countries
 country_event = {
 	id = bftb_bulgaria_balkan_federation.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.14 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.14.t
 	desc = bftb_bulgaria_balkan_federation.14.desc
 	picture = GFX_report_event_bul_soviet_army_sofia
@@ -8165,6 +8284,7 @@ country_event = {
 #Recover Italian Territories - ITA refuses - Event for BUL
 country_event = {
 	id = bftb_bulgaria_balkan_federation.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.15 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.15.t
 	desc = bftb_bulgaria_balkan_federation.15.desc
 	picture = GFX_report_event_bul_ff_troops_panzer
@@ -8215,6 +8335,7 @@ country_event = {
 #Demand Turkish Territories - Event for TUR
 country_event = {
 	id = bftb_bulgaria_balkan_federation.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.16 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.16.t
 	desc = bftb_bulgaria_balkan_federation.16.desc
 	picture = GFX_report_event_bul_boris_military
@@ -8339,6 +8460,7 @@ country_event = {
 #Demand Turkish Territories - Turkey accepts - Event for BUL
 country_event = {
 	id = bftb_bulgaria_balkan_federation.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.17 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.17.t
 	desc = bftb_bulgaria_balkan_federation.17.desc
 	picture = GFX_report_event_bul_soviet_army_sofia 
@@ -8377,6 +8499,7 @@ country_event = {
 #Demand Turkish Territories - Turkey refuses - Event for BUL
 country_event = {
 	id = bftb_bulgaria_balkan_federation.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.18 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.18.t
 	desc = bftb_bulgaria_balkan_federation.18.desc
 	picture = GFX_report_event_bul_ff_troops_panzer 
@@ -8414,6 +8537,7 @@ country_event = {
 #Ultimatum to join faction - Event for Balkan nation
 country_event = {
 	id = bftb_bulgaria_fate_of_the_balkans.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_fate_of_the_balkans.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_fate_of_the_balkans.1.t
 	desc = bftb_bulgaria_fate_of_the_balkans.1.desc
 	picture = GFX_report_event_bul_boris_military 
@@ -8559,6 +8683,7 @@ country_event = {
 #Country accepts to join - Event for BUL
 country_event = {
 	id = bftb_bulgaria_fate_of_the_balkans.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_fate_of_the_balkans.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_fate_of_the_balkans.2.t
 	desc = bftb_bulgaria_fate_of_the_balkans.2.desc
 	picture = GFX_report_event_bul_boris_military
@@ -8576,6 +8701,7 @@ country_event = {
 #Country refuses invitation - Event for BUL
 country_event = {
 	id = bftb_bulgaria_fate_of_the_balkans.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_fate_of_the_balkans.3 FROM = [From.GetName]" }
 	title = bftb_bulgaria_fate_of_the_balkans.3.t
 	desc = bftb_bulgaria_fate_of_the_balkans.3.desc
 	picture = GFX_report_event_finnish_letter
@@ -8595,6 +8721,7 @@ country_event = {
 #Bulgaria demands territory - Event for Bulgarian puppets
 country_event = {
 	id = bftb_bulgaria_fate_of_the_balkans.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_fate_of_the_balkans.4 FROM = [From.GetName]" }
 	title = bftb_bulgaria_fate_of_the_balkans.4.t
 	desc = bftb_bulgaria_fate_of_the_balkans.4.desc
 	picture = GFX_report_event_finnish_letter
@@ -8646,6 +8773,7 @@ country_event = {
 #Puppet transfers territory - Event for BUL
 country_event = {
 	id = bftb_bulgaria_fate_of_the_balkans.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_fate_of_the_balkans.5 FROM = [From.GetName]" }
 	title = bftb_bulgaria_fate_of_the_balkans.5.t
 	desc = bftb_bulgaria_fate_of_the_balkans.5.desc
 	picture = GFX_report_event_finnish_letter
@@ -8671,6 +8799,7 @@ country_event = {
 #Puppet refuses to transfer territory - Event for BUL
 country_event = {
 	id = bftb_bulgaria_fate_of_the_balkans.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_fate_of_the_balkans.6 FROM = [From.GetName]" }
 	title = bftb_bulgaria_fate_of_the_balkans.6.t
 	desc = bftb_bulgaria_fate_of_the_balkans.6.desc
 	picture = GFX_report_event_finnish_letter
@@ -8689,6 +8818,7 @@ country_event = {
 #Bulgaria demands submission of an ally - Event for Bulgarian allies
 country_event = {
 	id = bftb_bulgaria_fate_of_the_balkans.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_fate_of_the_balkans.7 FROM = [From.GetName]" }
 	title = bftb_bulgaria_fate_of_the_balkans.7.t
 	desc = bftb_bulgaria_fate_of_the_balkans.7.desc
 	picture = GFX_report_event_finnish_letter
@@ -8750,6 +8880,7 @@ country_event = {
 #Ally submits to BUL - Event for BUL
 country_event = {
 	id = bftb_bulgaria_fate_of_the_balkans.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_fate_of_the_balkans.8 FROM = [From.GetName]" }
 	title = bftb_bulgaria_fate_of_the_balkans.8.t
 	desc = bftb_bulgaria_fate_of_the_balkans.8.desc
 	picture = GFX_report_event_finnish_letter
@@ -8776,6 +8907,7 @@ country_event = {
 #Ally refuses to become a Bulgarian puppet - Event for BUL
 country_event = {
 	id = bftb_bulgaria_fate_of_the_balkans.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_fate_of_the_balkans.9 FROM = [From.GetName]" }
 	title = bftb_bulgaria_fate_of_the_balkans.9.t
 	desc = bftb_bulgaria_fate_of_the_balkans.9.desc
 	picture = GFX_report_event_finnish_letter
@@ -8806,6 +8938,7 @@ country_event = {
 #Bulgaria has pressured an ally to join their faction - Event for faction leader whose ally has join BUL's faction
 country_event = {
 	id = bftb_bulgaria_fate_of_the_balkans.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_fate_of_the_balkans.10 FROM = [From.GetName]" }
 	title = bftb_bulgaria_fate_of_the_balkans.10.t
 	desc = bftb_bulgaria_fate_of_the_balkans.10.desc
 	picture = GFX_report_event_finnish_letter
@@ -8901,6 +9034,7 @@ country_event = {
 #The murder of Hristo Lukov
 country_event = {
 	id = bftb_bulgaria_political_leaders.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_political_leaders.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_political_leaders.1.t
 	desc = bftb_bulgaria_political_leaders.1.desc
 	picture = GFX_report_event_generic_funeral
@@ -9021,6 +9155,7 @@ country_event = {
 #Bulgaria asks GRE for a NA pact - Event for GRE
 country_event = {
 	id = bftb_bulgaria_greek_influence.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_greek_influence.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_greek_influence.1.t
 	desc = bftb_bulgaria_greek_influence.1.desc
 	picture = GFX_report_event_bul_boris_with_muraviev
@@ -9156,6 +9291,7 @@ country_event = {
 #GRE accepts NA with BUL - Event for BUL
 country_event = {
 	id = bftb_bulgaria_greek_influence.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_greek_influence.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_greek_influence.2.t
 	desc = bftb_bulgaria_greek_influence.2.desc
 	picture = GFX_report_event_gre_cabinet_meeting
@@ -9199,6 +9335,7 @@ country_event = {
 #GRE declines NA with BUL - Event for BUL
 country_event = {
 	id = bftb_bulgaria_greek_influence.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_greek_influence.3 FROM = [From.GetName]" }
 	title = bftb_bulgaria_greek_influence.3.t
 	desc = bftb_bulgaria_greek_influence.3.desc
 	picture = GFX_report_event_gre_balkan_pact
@@ -9230,6 +9367,7 @@ country_event = {
 #Bulgaria asks ENG for a NA pact - Event for ENG
 country_event = {
 	id = bftb_bulgaria_british_influence.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_british_influence.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_british_influence.1.t
 	desc = bftb_bulgaria_british_influence.1.desc
 	picture = GFX_report_event_generic_sign_treaty1
@@ -9418,6 +9556,7 @@ country_event = {
 #ENG accepts Guaranteeing BUL (and NA) - Event for BUL
 country_event = {
 	id = bftb_bulgaria_british_influence.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_british_influence.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_british_influence.2.t
 	desc = bftb_bulgaria_british_influence.2.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -9462,6 +9601,7 @@ country_event = {
 #ENG accepts NA with BUL - Event for BUL
 country_event = {
 	id = bftb_bulgaria_british_influence.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_british_influence.3 FROM = [From.GetName]" }
 	title = bftb_bulgaria_british_influence.3.t
 	desc = bftb_bulgaria_british_influence.3.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -9505,6 +9645,7 @@ country_event = {
 #ENG declines NA with BUL - Event for BUL
 country_event = {
 	id = bftb_bulgaria_british_influence.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_british_influence.4 FROM = [From.GetName]" }
 	title = bftb_bulgaria_british_influence.4.t
 	desc = bftb_bulgaria_british_influence.4.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -9537,6 +9678,7 @@ country_event = {
 #BUL Guarantees Country - Event for Balkan Nations
 country_event = {
 	id = bftb_bulgaria_democratic_international_policies.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_democratic_international_policies.1 FROM = [From.GetName]" }
 	title = bftb_bulgaria_democratic_international_policies.1.t
 	desc = bftb_bulgaria_democratic_international_policies.1.desc
 	picture = GFX_report_event_bul_military_parade_vidin
@@ -9553,6 +9695,7 @@ country_event = {
 #Balkan Confederation - BUL has made an industrial investement in the country - Event for Balkan Nations
 country_event = {
 	id = bftb_bulgaria_democratic_international_policies.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_democratic_international_policies.2 FROM = [From.GetName]" }
 	title = bftb_bulgaria_democratic_international_policies.2.t
 	desc = bftb_bulgaria_democratic_international_policies.2.desc
 	picture = GFX_report_event_bul_officers_burgas
@@ -9583,6 +9726,7 @@ country_event = {
 #Balkan Confederation - Bulgarian capitalists are lobbying the government - Event for Balkan Nations
 country_event = {
 	id = bftb_bulgaria_democratic_international_policies.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_democratic_international_policies.3 FROM = [From.GetName]" }
 	title = bftb_bulgaria_democratic_international_policies.3.t
 	desc = bftb_bulgaria_democratic_international_policies.3.desc
 	picture = GFX_report_event_bul_boris_with_muraviev
@@ -9606,6 +9750,7 @@ country_event = {
 #Assert our Claims - Bulgaria asks to core controlled historical claims and bring back any Bulgarian initial state controlled by an ally - Event for ENG
 country_event = {
 	id = bftb_bulgaria_democratic_international_policies.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_democratic_international_policies.4 FROM = [From.GetName]" }
 	title = bftb_bulgaria_democratic_international_policies.4.t
 	desc = bftb_bulgaria_democratic_international_policies.4.desc
 	picture = GFX_report_event_bul_boris_with_muraviev
@@ -9757,6 +9902,7 @@ country_event = {
 #Assert our Claims - ENG Accepts - Event for BUL
 country_event = {
 	id = bftb_bulgaria_democratic_international_policies.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_democratic_international_policies.5 FROM = [From.GetName]" }
 	title = bftb_bulgaria_democratic_international_policies.5.t
 	desc = bftb_bulgaria_democratic_international_policies.5.desc
 	picture = GFX_report_event_generic_sign_treaty3
@@ -9789,6 +9935,7 @@ country_event = {
 #Assert our Claims - ENG Refuses - Event for BUL
 country_event = {
 	id = bftb_bulgaria_democratic_international_policies.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_democratic_international_policies.6 FROM = [From.GetName]" }
 	title = bftb_bulgaria_democratic_international_policies.6.t
 	desc = bftb_bulgaria_democratic_international_policies.6.desc
 	picture = GFX_report_event_generic_sign_treaty2
@@ -9808,6 +9955,7 @@ country_event = {
 #Assert our Claims - Transferred formerly Bulgarian states to BUL - Event for allies controlling any Bulgarian initial state
 country_event = {
 	id = bftb_bulgaria_democratic_international_policies.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_democratic_international_policies.7 FROM = [From.GetName]" }
 	title = bftb_bulgaria_democratic_international_policies.7.t
 	desc = bftb_bulgaria_democratic_international_policies.7.desc
 	picture = GFX_report_event_bul_troops_dobrudja

@@ -7,6 +7,7 @@ add_namespace = spain
 # Spanish Civil War
 country_event = {
 	id = spain.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event spain.1 FROM = [From.GetName]" }
 	title = spain.1.t
 	desc = spain.1.d
 	picture = GFX_report_event_spain_civil_war_soldiers
@@ -169,6 +170,7 @@ country_event = {
 # Nationalists: Seek Support
 country_event = {
 	id = spain.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event spain.2 FROM = [From.GetName]" }
 	title = spain.2.t
 	desc = spain.2.d
 	picture = GFX_report_event_spain_civil_war_volunteers_01
@@ -207,6 +209,7 @@ country_event = {
 # Republicans: Seek Support
 country_event = {
 	id = spain.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event spain.3 FROM = [From.GetName]" }
 	title = spain.2.t
 	desc = spain.3.d
 	picture = GFX_report_event_spain_civil_war_volunteers
@@ -244,6 +247,7 @@ country_event = {
 # Nationalist Spain Wants Our Help
 country_event = {
 	id = spain.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event spain.4 FROM = [From.GetName]" }
 	title = spain.4.t
 	desc = spain.4.d
 	picture = GFX_report_event_spain_civil_war_soldiers
@@ -269,6 +273,7 @@ country_event = {
 # Republican Spain Wants Our Help
 country_event = {
 	id = spain.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event spain.5 FROM = [From.GetName]" }
 	title = spain.5.t
 	desc = spain.5.d
 	picture = GFX_report_event_spain_civil_war_volunteers_02
@@ -294,6 +299,7 @@ country_event = {
 # Nationalist Spain Appreciates our Help
 country_event = {
 	id = spain.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event spain.6 FROM = [From.GetName]" }
 	title = spain.6.t
 	desc = spain.6.d
 	picture = GFX_report_event_finnish_letter
@@ -328,6 +334,7 @@ country_event = {
 # Republican Spain Appreciates our Help
 country_event = {
 	id = spain.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event spain.7 FROM = [From.GetName]" }
 	title = spain.7.t
 	desc = spain.7.d
 	picture = GFX_report_event_spain_civil_war_volunteers_01
@@ -352,6 +359,7 @@ country_event = {
 # Civil war over. Move Capital
 country_event = {
 	id = spain.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event spain.8 FROM = [From.GetName]" }
 	title = spain.8.t
 	desc = spain.8.d
 	picture = GFX_report_event_spain_civil_war_volunteers_01
@@ -386,6 +394,7 @@ country_event = {
 # Election of 1936
 country_event = {
 	id = spain.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event spain.9 FROM = [From.GetName]" }
 	title = spain.9.t
 	desc = spain.9.d
 	picture = GFX_report_event_election_vote
@@ -427,6 +436,7 @@ country_event = {
 # Spanish Civil War if Franco is elected
 country_event = {
 	id = spain.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event spain.10 FROM = [From.GetName]" }
 	title = spain.1.t
 	desc = spain.10.d
 	picture = GFX_report_event_spain_civil_war_soldiers

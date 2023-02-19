@@ -7,6 +7,7 @@ add_namespace = baltic
 # Soviet Ultimatum (Estonia)
 country_event = {
 	id = baltic.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event baltic.1 FROM = [From.GetName]" }
 	title = baltic.1.t
 	desc = baltic.1.d
 	picture = GFX_report_event_soviet_soldiers
@@ -94,6 +95,7 @@ country_event = {
 # Soviet Ultimatum (Latvia)
 country_event = {
 	id = baltic.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event baltic.2 FROM = [From.GetName]" }
 	title = baltic.1.t
 	desc = baltic.1.d
 	picture = GFX_report_event_soviet_soldiers
@@ -182,6 +184,7 @@ country_event = {
 # Soviet Ultimatum (Lithuania)
 country_event = {
 	id = baltic.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event baltic.3 FROM = [From.GetName]" }
 	title = baltic.1.t
 	desc = baltic.1.d
 	picture = GFX_report_event_soviet_soldiers
@@ -270,6 +273,7 @@ country_event = {
 # Germany Claims Memel (Lithuania)
 country_event = {
 	id = baltic.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event baltic.4 FROM = [From.GetName]" }
 	title = baltic.4.t
 	desc = baltic.4.d
 	picture = GFX_report_event_generic_read_write
@@ -381,6 +385,7 @@ country_event = {
 # Country becomes communist. Get's event to become part of the Soviet Union
 country_event = {
 	id = baltic.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event baltic.5 FROM = [From.GetName]" }
 	title = baltic.5.t
 	desc = baltic.5.d
 	picture = GFX_report_event_worker_protests
@@ -449,6 +454,7 @@ country_event = {
 # Hidden event to be annexed. Needed because of problem with FROM and events in annexed countries (JH)
 country_event = {
 	id = baltic.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event baltic.6 FROM = [From.GetName]" }
 
 	hidden = yes
 	
@@ -464,6 +470,7 @@ country_event = {
 #Event fired by Poland seeking to make a Baltic faction
 country_event = {
 	id = baltic.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event baltic.7 FROM = [From.GetName]" }
 	title = baltic.7.t
 	desc = baltic.7.d
 	picture = GFX_report_event_polish_tanks_01

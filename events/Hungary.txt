@@ -7,6 +7,7 @@ add_namespace = hungary
 # Second Vienna Award - No Territory
 country_event = {
 	id = hungary.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event hungary.1 FROM = [From.GetName]" }
 	title = hungary.1.t
 	desc = hungary.1.d
 	picture = GFX_report_event_finnish_letter
@@ -21,6 +22,7 @@ country_event = {
 # Second Vienna Award - Northern Transylvania
 country_event = {
 	id = hungary.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event hungary.2 FROM = [From.GetName]" }
 	title = hungary.2.t
 	desc = hungary.2.d
 	picture = GFX_report_event_second_vienna_award_pact
@@ -62,6 +64,7 @@ country_event = {
 # Second Vienna Award - All of Transylvania
 country_event = {
 	id = hungary.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event hungary.3 FROM = [From.GetName]" }
 	title = hungary.2.t
 	desc = hungary.3.d
 	picture = GFX_report_event_second_vienna_award_pact
@@ -90,6 +93,7 @@ country_event = {
 # Second Vienna Award - Romania Rejects Verdict (Northern Transylvania)
 country_event = {
 	id = hungary.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event hungary.4 FROM = [From.GetName]" }
 	title = hungary.2.t
 	desc = hungary.4.d
 	picture = GFX_report_event_second_vienna_award_pact
@@ -130,6 +134,7 @@ country_event = {
 # Second Vienna Award - Romania Rejects Verdict (All of Transylvania)
 country_event = {
 	id = hungary.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event hungary.5 FROM = [From.GetName]" }
 	title = hungary.2.t
 	desc = hungary.5.d
 	picture = GFX_report_event_second_vienna_award_pact
@@ -158,6 +163,7 @@ country_event = {
 # Hungary (First Ljubljana Award) from german focus
 country_event = {
 	id = hungary.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event hungary.6 FROM = [From.GetName]" }
 	title = hungary.6.t
 	desc = hungary.6.d
 	picture = GFX_report_event_vienna_award_negotiations

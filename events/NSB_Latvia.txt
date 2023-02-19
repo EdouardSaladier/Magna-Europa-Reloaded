@@ -7,6 +7,7 @@ add_namespace = LAT_events
 # Decide who is the true enemy
 country_event = {
 	id = LAT_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.1 FROM = [From.GetName]" }
 	title = LAT_events.1.t
 	desc = LAT_events.1.d
 	picture = GFX_report_event_romania_parliament
@@ -223,6 +224,7 @@ country_event = {
 #Latvia demands Lithuanian annexation
 country_event = {
 	id = LAT_events.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.2 FROM = [From.GetName]" }
 	title = LAT_events.2.t
 	desc = LAT_events.2.d
 	picture = GFX_report_event_communist_leader
@@ -300,6 +302,7 @@ country_event = {
 #Lithuania says yes
 country_event = {
 	id = LAT_events.201
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.201 FROM = [From.GetName]" }
 	title = EST_events.401.t
 	desc = EST_events.401.d
 	picture = GFX_report_event_military_planning
@@ -318,6 +321,7 @@ country_event = {
 #Lithuania says no
 country_event = {
 	id = LAT_events.202
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.202 FROM = [From.GetName]" }
 	title = EST_events.402.t
 	desc = EST_events.402.d
 	picture = GFX_report_event_generic_panzer_attack
@@ -339,6 +343,7 @@ country_event = {
 #Latvia supports fascism in Baltic states, gain opinion
 country_event = {
 	id = LAT_events.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.3 FROM = [From.GetName]" }
 	title = LAT_events.3.t
 	desc = LAT_events.3.d
 	picture = GFX_report_event_generic_rally
@@ -362,6 +367,7 @@ country_event = {
 #Latvia demands puppet's annexation
 country_event = {
 	id = LAT_events.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.4 FROM = [From.GetName]" }
 	title = EST_events.4.t
 	desc = EST_events.4.d
 	picture = GFX_report_event_lithuanian_ultimatum
@@ -399,6 +405,7 @@ country_event = {
 #Latvia asks for Ostland occupation
 country_event = {
 	id = LAT_events.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.5 FROM = [From.GetName]" }
 	title = LAT_events.5.t
 	desc = LAT_events.5.d
 	picture = GFX_report_event_SOV_demands
@@ -455,6 +462,7 @@ country_event = {
 #Latvia informed that they are approved to become Ostland
 country_event = {
 	id = LAT_events.501
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.501 FROM = [From.GetName]" }
 	title = LAT_events.501.t
 	desc = LAT_events.501.d
 	picture = GFX_report_event_nazis_in_danzig
@@ -498,6 +506,7 @@ country_event = {
 #Latvia informed that they are not allowed to form Ostland
 country_event = {
 	id = LAT_events.502
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.502 FROM = [From.GetName]" }
 	title = LAT_events.502.t
 	desc = LAT_events.502.d
 	picture = GFX_report_event_danzig_joins_nazis
@@ -515,6 +524,7 @@ country_event = {
 #Asks faction leader to invite Baltic States to faction
 country_event = {
 	id = LAT_events.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.6 FROM = [From.GetName]" }
 	title = {
 		text = LAT_events.6.t_both
 		trigger = {
@@ -666,6 +676,7 @@ country_event = {
 #Latvia informed that the faction leader said no.
 country_event = {
 	id = LAT_events.601
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.601 FROM = [From.GetName]" }
 	title = LAT_events.601.t
 	desc = LAT_events.601.d
 	picture = GFX_report_event_generic_read_write
@@ -683,6 +694,7 @@ country_event = {
 #Latvia ignites a Fascist civil war
 country_event = {
 	id = LAT_events.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.7 FROM = [From.GetName]" }
 	title = LAT_events.7.t
 	desc = LAT_events.7.d
 	picture = GFX_report_event_generic_riot
@@ -715,6 +727,7 @@ country_event = {
 #Latvia fails to curb Perkonkrusts - civil war
 country_event = {
 	id = LAT_events.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event LAT_events.8 FROM = [From.GetName]" }
 	title = LAT_events.8.t
 	desc = LAT_events.8.d
 	picture = GFX_report_event_ger_civil_war

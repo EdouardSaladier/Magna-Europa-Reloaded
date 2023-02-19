@@ -3,6 +3,7 @@
 # Ask SOV about joining Comintern
 country_event = {
 	id = czech.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.1 FROM = [From.GetName]" }
 	title = czech.1.t
 	desc = czech.1.d
 	picture = GFX_report_event_hitler_handshake
@@ -40,6 +41,7 @@ country_event = {
 # SOV says yes
 country_event = {
 	id = czech.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.2 FROM = [From.GetName]" }
 	title = czech.1.t
 	desc = czech.2.d
 	picture = GFX_report_event_hitler_handshake
@@ -59,6 +61,7 @@ country_event = {
 # SOV says no
 country_event = {
 	id = czech.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.3 FROM = [From.GetName]" }
 	title = czech.1.t
 	desc = czech.3.d
 	picture = GFX_report_event_hitler_handshake
@@ -77,6 +80,7 @@ country_event = {
 # Ask SOV about splitting ROM
 country_event = {
 	id = czech.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.4 FROM = [From.GetName]" }
 	title = czech.4.t
 	desc = czech.4.d
 	picture = GFX_report_event_hitler_handshake
@@ -118,6 +122,7 @@ country_event = {
 # SOV says yes
 country_event = {
 	id = czech.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.5 FROM = [From.GetName]" }
 	title = czech.4.t
 	desc = czech.5.d
 	picture = GFX_report_event_hitler_handshake
@@ -138,6 +143,7 @@ country_event = {
 # SOV says no
 country_event = {
 	id = czech.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.6 FROM = [From.GetName]" }
 	title = czech.4.t
 	desc = czech.6.d
 	picture = GFX_report_event_hitler_handshake
@@ -156,6 +162,7 @@ country_event = {
 # Ask SOV about splitting POL
 country_event = {
 	id = czech.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.7 FROM = [From.GetName]" }
 	title = czech.7.t
 	desc = czech.7.d
 	picture = GFX_report_event_hitler_handshake
@@ -197,6 +204,7 @@ country_event = {
 # SOV says yes
 country_event = {
 	id = czech.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.8 FROM = [From.GetName]" }
 	title = czech.7.t
 	desc = czech.8.d
 	picture = GFX_report_event_hitler_handshake
@@ -217,6 +225,7 @@ country_event = {
 # SOV says no
 country_event = {
 	id = czech.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.9 FROM = [From.GetName]" }
 	title = czech.7.t
 	desc = czech.9.d
 	picture = GFX_report_event_hitler_handshake
@@ -235,6 +244,7 @@ country_event = {
 # Ask GER about splitting POL
 country_event = {
 	id = czech.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.10 FROM = [From.GetName]" }
 	title = czech.7.t
 	desc = czech.10.d
 	picture = GFX_report_event_hitler_handshake
@@ -280,6 +290,7 @@ country_event = {
 # GER says yes
 country_event = {
 	id = czech.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.11 FROM = [From.GetName]" }
 	title = czech.7.t
 	desc = czech.11.d
 	picture = GFX_report_event_hitler_handshake
@@ -301,6 +312,7 @@ country_event = {
 # GER says no
 country_event = {
 	id = czech.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.12 FROM = [From.GetName]" }
 	title = czech.7.t
 	desc = czech.12.d
 	picture = GFX_report_event_hitler_handshake
@@ -319,6 +331,7 @@ country_event = {
 # Excluding the slovaks
 country_event = {
 	id = czech.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.14 FROM = [From.GetName]" }
 	title = czech.14.t
 	desc = czech.14.d
 	picture = GFX_report_event_hitler_handshake
@@ -375,6 +388,7 @@ country_event = {
 # Excluding the slovaks
 country_event = {
 	id = czech.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.15 FROM = [From.GetName]" }
 	title = czech.14.t
 	desc = czech.15.d
 	picture = GFX_report_event_hitler_handshake
@@ -394,6 +408,7 @@ country_event = {
 # Ask GER about joining Axis
 country_event = {
 	id = czech.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.16 FROM = [From.GetName]" }
 	title = czech.16.t
 	desc = czech.16.d
 	picture = GFX_report_event_hitler_handshake
@@ -431,6 +446,7 @@ country_event = {
 # GER says yes
 country_event = {
 	id = czech.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.17 FROM = [From.GetName]" }
 	title = czech.16.t
 	desc = czech.17.d
 	picture = GFX_report_event_hitler_handshake
@@ -449,6 +465,7 @@ country_event = {
 # GER says no
 country_event = {
 	id = czech.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.18 FROM = [From.GetName]" }
 	title = czech.16.t
 	desc = czech.18.d
 	picture = GFX_report_event_hitler_handshake
@@ -467,6 +484,7 @@ country_event = {
 # Ask GER about being a puppet
 country_event = {
 	id = czech.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.19 FROM = [From.GetName]" }
 	title = czech.19.t
 	desc = czech.19.d
 	picture = GFX_report_event_hitler_handshake
@@ -509,6 +527,7 @@ country_event = {
 # GER says yes
 country_event = {
 	id = czech.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.20 FROM = [From.GetName]" }
 	title = czech.20.t
 	desc = czech.20.d
 	picture = GFX_report_event_hitler_handshake
@@ -530,6 +549,7 @@ country_event = {
 # GER says no
 country_event = {
 	id = czech.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.21 FROM = [From.GetName]" }
 	title = czech.21.t
 	desc = czech.21.d
 	picture = GFX_report_event_hitler_handshake
@@ -548,6 +568,7 @@ country_event = {
 #Give GER Sudetenland 
 country_event = {
 	id = czech.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.22 FROM = [From.GetName]" }
 	title = czech.22.t
 	desc = czech.22.d
 	picture = GFX_report_event_hitler_handshake
@@ -595,6 +616,7 @@ country_event = {
 # GER says yes
 country_event = {
 	id = czech.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.23 FROM = [From.GetName]" }
 	title = czech.22.t
 	desc = czech.23.d
 	picture = GFX_report_event_hitler_handshake
@@ -612,6 +634,7 @@ country_event = {
 # GER says no
 country_event = {
 	id = czech.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.24 FROM = [From.GetName]" }
 	title = czech.22.t
 	desc = czech.24.d
 	picture = GFX_report_event_hitler_handshake
@@ -630,6 +653,7 @@ country_event = {
 #Invite YUG to faction
 country_event = {
 	id = czech.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.25 FROM = [From.GetName]" }
 	title = czech.25.t
 	desc = czech.25.d
 	picture = GFX_report_event_hitler_handshake
@@ -674,6 +698,7 @@ country_event = {
 # YUG says yes
 country_event = {
 	id = czech.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.26 FROM = [From.GetName]" }
 	title = czech.25.t
 	desc = czech.26.d
 	picture = GFX_report_event_hitler_handshake
@@ -697,6 +722,7 @@ country_event = {
 # YUG says no
 country_event = {
 	id = czech.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.27 FROM = [From.GetName]" }
 	title = czech.25.t
 	desc = czech.27.d
 	picture = GFX_report_event_hitler_handshake
@@ -715,6 +741,7 @@ country_event = {
 #Invite ROM to faction
 country_event = {
 	id = czech.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.28 FROM = [From.GetName]" }
 	title = czech.28.t
 	desc = czech.27.d
 	picture = GFX_report_event_hitler_handshake
@@ -759,6 +786,7 @@ country_event = {
 # ROM says yes
 country_event = {
 	id = czech.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.29 FROM = [From.GetName]" }
 	title = czech.28.t
 	desc = czech.26.d
 	picture = GFX_report_event_hitler_handshake
@@ -782,6 +810,7 @@ country_event = {
 # ROM says no
 country_event = {
 	id = czech.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.30 FROM = [From.GetName]" }
 	title = czech.28.t
 	desc = czech.27.d
 	picture = GFX_report_event_hitler_handshake
@@ -800,6 +829,7 @@ country_event = {
 # Ask HUN to be nice
 country_event = {
 	id = czech.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.32 FROM = [From.GetName]" }
 	title = czech.32.t
 	desc = czech.32.d
 	picture = GFX_report_event_hitler_handshake
@@ -845,6 +875,7 @@ country_event = {
 # HUN says yes
 country_event = {
 	id = czech.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.33 FROM = [From.GetName]" }
 	title = czech.32.t
 	desc = czech.33.d
 	picture = GFX_report_event_hitler_handshake
@@ -869,6 +900,7 @@ country_event = {
 # HUN says no
 country_event = {
 	id = czech.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.34 FROM = [From.GetName]" }
 	title = czech.32.t
 	desc = czech.34.d
 	picture = GFX_report_event_hitler_handshake
@@ -887,6 +919,7 @@ country_event = {
 # Czechoslovakia becomes just Czech
 country_event = {
 	id = czech.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.35 FROM = [From.GetName]" }
 	
 	trigger = {
 		original_tag = CZE
@@ -913,6 +946,7 @@ country_event = {
 # Czechoslovakia becomes Czechoslovakia again
 country_event = {
 	id = czech.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event czech.36 FROM = [From.GetName]" }
 	
 	trigger = {
 		original_tag = CZE

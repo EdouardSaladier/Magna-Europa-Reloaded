@@ -7,6 +7,7 @@ add_namespace = finland
 # Soviet Ultimatum
 country_event = {
 	id = finland.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event finland.1 FROM = [From.GetName]" }
 	title = finland.1.t
 	desc = finland.1.d
 	picture = GFX_report_event_soviet_tanks_snow
@@ -73,6 +74,7 @@ country_event = {
 # Request Swedish Assistance?
 country_event = {
 	id = finland.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event finland.2 FROM = [From.GetName]" }
 	title = finland.2.t
 	desc = finland.2.d
 	picture = GFX_report_event_soviet_finnish_pact
@@ -108,6 +110,7 @@ country_event = {
 # Swedish Support in Winter War
 country_event = {
 	id = finland.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event finland.3 FROM = [From.GetName]" }
 	title = finland.3.t
 	desc = finland.3.d
 	picture = GFX_report_event_finnish_letter
@@ -240,6 +243,7 @@ country_event = {
 
 country_event = {
 	id = finland.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event finland.4 FROM = [From.GetName]" }
 	title = finland.4.t
 	desc = finland.4.d
 	picture = GFX_report_event_finnish_soldiers_snow
@@ -253,6 +257,7 @@ country_event = {
 
 country_event = {
 	id = finland.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event finland.5 FROM = [From.GetName]" }
 	title = finland.5.t
 	desc = finland.5.d
 	picture = GFX_report_event_swedish_soldier
@@ -296,6 +301,7 @@ country_event = {
 
 country_event = {
 	id = finland.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event finland.6 FROM = [From.GetName]" }
 	title = finland.6.t
 	desc = finland.6.d
 	picture = GFX_report_event_swedish_soldier
@@ -310,6 +316,7 @@ country_event = {
 #Surrender when Soviet has taken too much land
 country_event = {
 	id = finland.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event finland.7 FROM = [From.GetName]" }
 	title = finland.7.t
 	desc = finland.7.d
 	picture = GFX_report_event_soviet_tanks_snow
@@ -387,6 +394,7 @@ country_event = {
 #Soviet response to Finish surrender
 country_event = {
 	id = finland.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event finland.8 FROM = [From.GetName]" }
 	title = finland.8.t
 	desc = finland.8.d
 	picture = GFX_report_event_finnish_soldiers_snow
@@ -473,6 +481,7 @@ country_event = {
 #Soviet says no!
 country_event = {
 	id = finland.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event finland.9 FROM = [From.GetName]" }
 	title = finland.9.t
 	desc = finland.9.d
 	picture = GFX_report_event_finnish_soldiers_snow
@@ -487,6 +496,7 @@ country_event = {
 # WINTER WAR STARTS! -> (NSB Barbarossa free patch)
 country_event = {
 	id = finland.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event finland.10 FROM = [From.GetName]" }
 	title = finland.10.t
 	desc = finland.10.d
 	picture = GFX_report_event_finnish_soldiers_snow

@@ -8,6 +8,7 @@ add_namespace = DOD_yugoslavia
 # Yugoslavia joins axis without solving Anti-German military - coup event
 country_event = {
 	id = DOD_yugoslavia.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.1 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.1.t
 	desc = DOD_yugoslavia.1.desc
 	picture = GFX_report_event_yugoslavian_king_peter
@@ -166,6 +167,7 @@ country_event = {
 #Yugoslavian coup event - Yugoslavia has rolled over, event for Germany to intervene
 country_event = {
 	id = DOD_yugoslavia.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.2 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.2.t
 	desc = DOD_yugoslavia.2.desc
 	picture = GFX_report_event_military_planning
@@ -194,6 +196,7 @@ country_event = {
 #Yugoslavian coup event - Yugoslavian government resists the coup, Germany comes to the rescue...or not
 country_event = {
 	id = DOD_yugoslavia.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.3 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.2.t
 	desc = DOD_yugoslavia.3.desc
 	picture = GFX_report_event_military_planning
@@ -223,6 +226,7 @@ country_event = {
 #Yugoslavian independence war(s)
 country_event = {
 	id = DOD_yugoslavia.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.10 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.10.t
 	desc = DOD_yugoslavia.10.desc
 	picture = GFX_report_event_yugoslavia_partisans
@@ -355,6 +359,7 @@ country_event = {
 #Yugoslavia wants to buy planes - event for GER,FRA,ENG,ITA
 country_event = {
 	id = DOD_yugoslavia.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.20 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.20.t
 	desc = DOD_yugoslavia.20.desc
 	picture = GFX_report_event_fighters
@@ -439,6 +444,7 @@ country_event = {
 #Yugoslavia wants to buy planes - Major nation sells some fighters
 country_event = {
 	id = DOD_yugoslavia.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.21 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.21.t
 	desc = DOD_yugoslavia.21.desc   
 	picture = GFX_report_event_fighters
@@ -459,6 +465,7 @@ country_event = {
 #Yugoslavia wants to buy planes - Major nation sells some bombers
 country_event = {
 	id = DOD_yugoslavia.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.22 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.22.t
 	desc = DOD_yugoslavia.22.desc
 	picture = GFX_report_event_generic_bombers
@@ -478,6 +485,7 @@ country_event = {
 #Yugoslavia wants to buy planes - Major nation sells some fighters
 country_event = {
 	id = DOD_yugoslavia.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.23 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.21.t
 	desc = DOD_yugoslavia.21.desc   
 	picture = GFX_report_event_fighters
@@ -668,6 +676,7 @@ country_event = {
 #Yugoslavia wants to buy planes - Major nation sells some bombers
 country_event = {
 	id = DOD_yugoslavia.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.24 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.22.t
 	desc = DOD_yugoslavia.22.desc
 	picture = GFX_report_event_generic_bombers
@@ -857,6 +866,7 @@ country_event = {
 #Yugoslavia pressured by Germany - Anschluss
 country_event = {
 	id = DOD_yugoslavia.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.30 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.30.t
 	desc = DOD_yugoslavia.30.desc
 	picture = GFX_report_event_german_speech
@@ -888,6 +898,7 @@ country_event = {
 #Yugoslavia pressured by Germany - First event
 country_event = {
 	id = DOD_yugoslavia.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.31 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.31.t
 	desc = DOD_yugoslavia.31.desc
 	picture = GFX_report_event_german_speech
@@ -908,6 +919,7 @@ country_event = {
 #Yugoslavia pressured by Germany - Fate of CZE
 country_event = {
 	id = DOD_yugoslavia.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.32 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.30.t
 	desc = DOD_yugoslavia.32.desc
 	picture = GFX_report_event_german_troops
@@ -939,6 +951,7 @@ country_event = {
 #Yugoslavia pressured by Germany - Second event
 country_event = {
 	id = DOD_yugoslavia.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.33 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.31.t
 	desc = DOD_yugoslavia.33.desc
 	picture = GFX_report_event_german_troops
@@ -954,6 +967,7 @@ country_event = {
 #Yugoslavia pressured by Germany - Last Warning - after Fall of France
 country_event = {
 	id = DOD_yugoslavia.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.34 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.30.t
 	desc = DOD_yugoslavia.34.desc
 	picture = GFX_report_event_german_troops_paris
@@ -1000,6 +1014,7 @@ country_event = {
 #Yugoslavia pressured by Germany - third event
 country_event = {
 	id = DOD_yugoslavia.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.35 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.31.t
 	desc = DOD_yugoslavia.35.desc
 	picture = GFX_report_event_german_troops_paris
@@ -1022,6 +1037,7 @@ country_event = {
 #Yugoslavia pressured by Britain - Balkan Strategy
 country_event = {
 	id = DOD_yugoslavia.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.40 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.30.t
 	desc = DOD_yugoslavia.40.desc
 	picture = GFX_report_event_chamberlain_announce
@@ -1050,6 +1066,7 @@ country_event = {
 #Yugoslavia pressured by Britain - First event
 country_event = {
 	id = DOD_yugoslavia.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.41 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.41.t
 	desc = DOD_yugoslavia.41.desc
 	picture = GFX_report_event_french_british_officers
@@ -1068,6 +1085,7 @@ country_event = {
 #Yugoslavia pressured by Britain - Munich
 country_event = {
 	id = DOD_yugoslavia.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.42 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.30.t
 	desc = DOD_yugoslavia.42.desc
 	picture = GFX_report_event_french_british_officers
@@ -1096,6 +1114,7 @@ country_event = {
 #Yugoslavia pressured by Britain - Second event
 country_event = {
 	id = DOD_yugoslavia.43
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.43 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.41.t
 	desc = DOD_yugoslavia.43.desc
 	picture = GFX_report_event_canadian_soldiers
@@ -1114,6 +1133,7 @@ country_event = {
 #Yugoslavia pressured by Britain - late 1940, last warning
 country_event = {
 	id = DOD_yugoslavia.44
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.44 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.30.t
 	desc = DOD_yugoslavia.44.desc
 	picture = GFX_report_event_french_british_officers
@@ -1154,6 +1174,7 @@ country_event = {
 #Yugoslavia pressured by Britain - Third event
 country_event = {
 	id = DOD_yugoslavia.45
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.45 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.41.t
 	desc = DOD_yugoslavia.45.desc
 	picture = GFX_report_event_british_inspect_troops
@@ -1172,6 +1193,7 @@ country_event = {
 #Yugoslavia pressured by Britain - war
 country_event = {
 	id = DOD_yugoslavia.46
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.46 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.30.t
 	desc = DOD_yugoslavia.46.desc
 	picture = GFX_report_event_ast_army
@@ -1210,6 +1232,7 @@ country_event = {
 #fighter competition - initial choice for Yugoslavia
 country_event = {
 	id = DOD_yugoslavia.150
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.150 FROM = [From.GetName]" }
 	title = DOD_hungary.150.t
 	desc = DOD_hungary.150.desc 
 	picture = GFX_report_event_fighters
@@ -1299,6 +1322,7 @@ country_event = {
 #Fighter competition - Yugoslavia is looking for a light fighter
 country_event = {
 	id = DOD_yugoslavia.151
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.151 FROM = [From.GetName]" }
 	title = DOD_hungary.151.t
 	desc = {
 		text = DOD_hungary.151.desc_light_fighter
@@ -1621,6 +1645,7 @@ country_event = {
 #Fighter competition - Yugoslavia is looking for a heavy fighter
 country_event = {
 	id = DOD_yugoslavia.152
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.152 FROM = [From.GetName]" }
 	title = DOD_hungary.152.t
 	desc = {
 		text = DOD_hungary.152.desc_heavy_fighter
@@ -1943,6 +1968,7 @@ country_event = {
 #fighter competition - light fighter competition winner gets a choice whether to permit license production
 country_event = {
 	id = DOD_yugoslavia.153
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.153 FROM = [From.GetName]" }
 	title = DOD_hungary.153.t
 	desc = DOD_hungary.153.desc 
 	picture = GFX_report_event_fighters
@@ -2038,6 +2064,7 @@ country_event = {
 #fighter competition - heavy fighter competition winner gets a choice whether to permit license production
 country_event = {
 	id = DOD_yugoslavia.154
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.154 FROM = [From.GetName]" }
 	title = DOD_hungary.153.t
 	desc = DOD_hungary.154.desc 
 	picture = GFX_report_event_fighters
@@ -2133,6 +2160,7 @@ country_event = {
 #fighter competition - license production approved
 country_event = {
 	id = DOD_yugoslavia.155
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.155 FROM = [From.GetName]" }
 	title = DOD_hungary.155.t
 	desc = DOD_hungary.155.desc 
 	picture = GFX_report_event_fighters
@@ -2149,6 +2177,7 @@ country_event = {
 #bomber competition - initial choice for Yugoslavia
 country_event = {
 	id = DOD_yugoslavia.160
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.160 FROM = [From.GetName]" }
 	title = DOD_hungary.160.t
 	desc = DOD_hungary.160.desc 
 	picture = GFX_report_event_generic_bombers
@@ -2237,6 +2266,7 @@ country_event = {
 #Bomber competition - Yugoslavia is looking for a CAS
 country_event = {
 	id = DOD_yugoslavia.161
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.161 FROM = [From.GetName]" }
 	title = DOD_hungary.161.t
 	desc = {
 		text = DOD_hungary.161.desc_cas
@@ -2557,6 +2587,7 @@ country_event = {
 #Fighter competition - Yugoslavia is looking for a tacbomber
 country_event = {
 	id = DOD_yugoslavia.162
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.162 FROM = [From.GetName]" }
 	title = DOD_hungary.162.t
 	desc = {
 		text = DOD_hungary.162.desc_tac
@@ -2878,6 +2909,7 @@ country_event = {
 #bomber competition - CAS competition winner gets a choice whether to permit license production
 country_event = {
 	id = DOD_yugoslavia.163
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.163 FROM = [From.GetName]" }
 	title = DOD_hungary.163.t
 	desc = DOD_hungary.163.desc 
 	picture = GFX_report_event_generic_bombers
@@ -2972,6 +3004,7 @@ country_event = {
 #bomber competition - tac bomber competition winner gets a choice whether to permit license production
 country_event = {
 	id = DOD_yugoslavia.164
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.164 FROM = [From.GetName]" }
 	title = DOD_hungary.164.t
 	desc = DOD_hungary.164.desc 
 	picture = GFX_report_event_generic_bombers
@@ -3066,6 +3099,7 @@ country_event = {
 #bomber competition - license production approved
 country_event = {
 	id = DOD_yugoslavia.165
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.165 FROM = [From.GetName]" }
 	title = DOD_hungary.165.t
 	desc = DOD_hungary.165.desc 
 	picture = GFX_report_event_generic_bombers
@@ -3081,6 +3115,7 @@ country_event = {
 # Yugoslavia starting Communist propaganda in another nation
 country_event = {
 	id = DOD_yugoslavia.181
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.181 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.181.t
 	desc = DOD_yugoslavia.181.d
 	picture = GFX_report_event_generic_bombers
@@ -3100,6 +3135,7 @@ country_event = {
 # Pan-Slavic propaganda
 country_event = {
 	id = DOD_yugoslavia.182
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.182 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.182.t
 	desc = DOD_yugoslavia.182.d
 	picture = GFX_report_event_generic_bombers
@@ -3123,6 +3159,7 @@ country_event = {
 # Pan-Slavic militants
 country_event = {
 	id = DOD_yugoslavia.183
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.183 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.183.t
 	desc = DOD_yugoslavia.183.d
 	picture = GFX_report_event_generic_bombers
@@ -3153,6 +3190,7 @@ country_event = {
 # Communist civil war
 country_event = {
 	id = DOD_yugoslavia.184
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.184 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.184.t
 	desc = DOD_yugoslavia.184.d
 	picture = GFX_report_event_generic_bombers
@@ -3261,6 +3299,7 @@ country_event = {
 #Age King Peter after a few years
 country_event = {
 	id = DOD_yugoslavia.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.19 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.19.t
 	desc = DOD_yugoslavia.19.desc
 	picture = GFX_report_event_yugoslavian_king_peter
@@ -3331,6 +3370,7 @@ country_event = {
 #The Royal Wedding
 country_event = {
 	id = DOD_yugoslavia.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.50 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.50.t
 	desc = DOD_yugoslavia.50.desc
 	picture = GFX_report_event_generic_rally
@@ -3440,6 +3480,7 @@ country_event = {
 #Wedding partner can accept or decline
 country_event = {
 	id = DOD_yugoslavia.501
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.501 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.501.t
 	desc = DOD_yugoslavia.501.desc
 	picture = GFX_report_event_election_vote
@@ -3529,6 +3570,7 @@ country_event = {
 #Yugoslavia is informed of their choice
 country_event = {
 	id = DOD_yugoslavia.502
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.502 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.502.t
 	desc = DOD_yugoslavia.502.desc
 	picture = GFX_report_event_election_vote
@@ -3562,6 +3604,7 @@ country_event = {
 #Yugoslavia is informed of their rejection
 country_event = {
 	id = DOD_yugoslavia.503
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.503 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.503.t
 	desc = DOD_yugoslavia.503.desc
 	picture = GFX_report_event_election_vote
@@ -3582,6 +3625,7 @@ country_event = {
 #The Coronation
 country_event = {
 	id = DOD_yugoslavia.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.60 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.60.t
 	desc = {
 		text = DOD_yugoslavia.60.peter
@@ -3714,6 +3758,7 @@ country_event = {
 #Signing the Tripartite Pact
 country_event = {
 	id = DOD_yugoslavia.70
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.70 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.70.t
 	desc = DOD_yugoslavia.70.desc
 	picture = GFX_report_event_election_vote
@@ -3758,6 +3803,7 @@ country_event = {
 #Yugo is informed of their choice
 country_event = {
 	id = DOD_yugoslavia.701
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.701 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.701.t
 	desc = {
 		text = DOD_yugoslavia.701.tripartite_rejection
@@ -3851,6 +3897,7 @@ country_event = {
 #England can demand Paul to step down
 country_event = {
 	id = DOD_yugoslavia.702
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.702 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.702.t
 	desc = DOD_yugoslavia.702.desc
 	picture = GFX_report_event_election_vote
@@ -3913,6 +3960,7 @@ country_event = {
 #Italy recieves Yugo's request to control Zara
 country_event = {
 	id = DOD_yugoslavia.80
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.80 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.80.t
 	desc = DOD_yugoslavia.80.desc
 	picture = GFX_report_event_election_vote
@@ -4081,6 +4129,7 @@ country_event = {
 #Yugo informed of rejection
 country_event = {
 	id = DOD_yugoslavia.801
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.801 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.801.t
 	desc = DOD_yugoslavia.801.desc
 	picture = GFX_report_event_election_vote
@@ -4119,6 +4168,7 @@ country_event = {
 #Yugo informed of acceptance
 country_event = {
 	id = DOD_yugoslavia.802
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.802 FROM = [From.GetName]" }
 	title = DOD_yugoslavia.802.t
 	desc = DOD_yugoslavia.802.desc
 	picture = GFX_report_event_election_vote
@@ -4153,6 +4203,7 @@ country_event = {
 #Hidden event adding Yugoslavia's puppets to wars involving Yugo.
 country_event = {
 	id = DOD_yugoslavia.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event DOD_yugoslavia.9 FROM = [From.GetName]" }
 	
 	is_triggered_only = yes
 

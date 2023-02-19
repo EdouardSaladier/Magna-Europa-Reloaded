@@ -7,6 +7,7 @@ add_namespace = bftb_turkey
 #The Montreux Convention - Britain
 country_event = {
 	id = bftb_turkey.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.1 FROM = [From.GetName]" }
 	title = bftb_turkey.1.t
 	desc = bftb_turkey.1.desc
 	picture = GFX_report_event_tur_britain
@@ -62,6 +63,7 @@ country_event = {
 #The Montreux Convention - Britain supports us
 country_event = {
 	id = bftb_turkey.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.2 FROM = [From.GetName]" }
 	title = bftb_turkey.2.t
 	desc = bftb_turkey.2.desc
 	picture = GFX_report_event_tur_britain
@@ -76,6 +78,7 @@ country_event = {
 #The Montreux Convention - Britain abandons us
 country_event = {
 	id = bftb_turkey.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.3 FROM = [From.GetName]" }
 	title = bftb_turkey.3.t
 	desc = bftb_turkey.3.desc
 	picture = GFX_report_event_tur_kemalist_officers 
@@ -90,6 +93,7 @@ country_event = {
 #The Montreux Convention - Soviet Union
 country_event = {
 	id = bftb_turkey.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.4 FROM = [From.GetName]" }
 	title = bftb_turkey.4.t
 	desc = bftb_turkey.4.desc
 	picture = GFX_report_event_tur_soviets
@@ -132,6 +136,7 @@ country_event = {
 #The Montreux Convention - Soviets Oppose Turkish Remilitarisation of the Straits
 country_event = {
 	id = bftb_turkey.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.5 FROM = [From.GetName]" }
 	title = bftb_turkey.5.t
 	desc = bftb_turkey.5.desc
 	picture = GFX_report_event_tur_cakmak_general_staff
@@ -183,6 +188,7 @@ country_event = {
 #The Montreux Convention - Soviets Allow Remilitarisation
 country_event = {
 	id = bftb_turkey.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.6 FROM = [From.GetName]" }
 	title = bftb_turkey.6.t
 	desc = bftb_turkey.6.desc
 	picture = GFX_report_event_tur_kemalists_positive
@@ -203,6 +209,7 @@ country_event = {
 #The Montreux Convention - Turks compromise on the Straits
 country_event = {
 	id = bftb_turkey.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.7 FROM = [From.GetName]" }
 	title = bftb_turkey.7.t
 	desc = bftb_turkey.7.desc
 	picture = GFX_report_event_tur_the_montreux_convention
@@ -223,6 +230,7 @@ country_event = {
 #The Montreux Convention - British reaction to defiant Turks standing up against Soviets
 country_event = {
 	id = bftb_turkey.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.8 FROM = [From.GetName]" }
 	title = bftb_turkey.8.t
 	desc = bftb_turkey.8.desc
 	picture = GFX_report_event_tur_turkish_soldiers
@@ -268,6 +276,7 @@ country_event = {
 #The Montreux Convention - Turkish reaction to the British abandoning them to their fate
 country_event = {
 	id = bftb_turkey.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.9 FROM = [From.GetName]" }
 	title = bftb_turkey.9.t
 	desc = bftb_turkey.9.desc
 	picture = GFX_report_event_tur_ataturk_writing_desk
@@ -301,6 +310,7 @@ country_event = {
 #The Montreux Convention - Soviet reaction to defiant Turks
 country_event = {
 	id = bftb_turkey.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.10 FROM = [From.GetName]" }
 	title = bftb_turkey.10.t
 	desc = bftb_turkey.10.desc
 	picture = GFX_report_event_tur_ataturk_determined
@@ -339,6 +349,7 @@ country_event = {
 #The Montreux Convention - Soviet reaction to submissive Turks
 country_event = {
 	id = bftb_turkey.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.11 FROM = [From.GetName]" }
 	title = bftb_turkey.11.t
 	desc = bftb_turkey.11.desc
 	picture = GFX_report_event_generic_read_write
@@ -357,6 +368,7 @@ country_event = {
 #The Montreux Convention - Turkish reaction to Soviet deescalation
 country_event = {
 	id = bftb_turkey.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.12 FROM = [From.GetName]" }
 	title = bftb_turkey.12.t
 	desc = bftb_turkey.12.desc
 	picture = GFX_report_event_tur_inonu_diplomacy 
@@ -380,6 +392,7 @@ country_event = {
 #The Montreux Convention - Turkish reaction to Soviet declaration of war
 country_event = {
 	id = bftb_turkey.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.13 FROM = [From.GetName]" }
 	title = bftb_turkey.13.t
 	desc = bftb_turkey.13.desc
 	picture = GFX_report_event_tur_turkish_soldiers 
@@ -411,6 +424,7 @@ country_event = {
 #The Demokrat Parti Rises
 country_event = {
 	id = bftb_turkey.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.14 FROM = [From.GetName]" }
 	title = bftb_turkey.14.t
 	desc = bftb_turkey.14.desc
 	picture = GFX_report_event_tur_opposition_party
@@ -450,6 +464,7 @@ country_event = {
 #hidden dispatch event for democratic Islamists mobilising
 country_event = {
 	id = bftb_turkey.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.15 FROM = [From.GetName]" }
 	
 	is_triggered_only = yes
 
@@ -529,6 +544,7 @@ country_event = {
 #The Demokrat Parti - Initiative Encouraging Traditional Islamists to Vote Propagated
 country_event = {
 	id = bftb_turkey.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.16 FROM = [From.GetName]" }
 	title = bftb_turkey.16.t
 	desc = bftb_turkey.16.desc
 	picture = GFX_report_event_tur_politician_march
@@ -563,6 +579,7 @@ country_event = {
 #The Demokrat Parti - Turkish and Kurdish Islamists Unite to Depose CHP
 country_event = {
 	id = bftb_turkey.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.17 FROM = [From.GetName]" }
 	title = bftb_turkey.17.t
 	desc = bftb_turkey.17.desc
 	picture = GFX_report_event_gathering_protest 
@@ -597,6 +614,7 @@ country_event = {
 #The Demokrat Parti - Regional Officials Caught Conspiring to Commit Electoral Fraud
 country_event = {
 	id = bftb_turkey.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.18 FROM = [From.GetName]" }
 	title = bftb_turkey.18.t
 	desc = bftb_turkey.18.desc
 	picture = GFX_report_event_tur_kurds_traditionalists_thwarted
@@ -655,6 +673,7 @@ country_event = {
 #The Demokrat Parti - Demokrat Parti Benefit from Massive Public Turnout
 country_event = {
 	id = bftb_turkey.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.19 FROM = [From.GetName]" }
 	title = bftb_turkey.19.t
 	desc = bftb_turkey.19.desc
 	picture = GFX_report_event_tur_political_rally 
@@ -677,6 +696,7 @@ country_event = {
 #The Demokrat Parti - The Demokrat Parti Introduces Itself as the CHP's Official Opposition
 country_event = {
 	id = bftb_turkey.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.20 FROM = [From.GetName]" }
 	title = bftb_turkey.20.t
 	desc = bftb_turkey.20.desc
 	picture = GFX_report_event_tur_menderes_opposition
@@ -705,6 +725,7 @@ country_event = {
 #The Election - The Turkish General Election
 country_event = {
 	id = bftb_turkey.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.21 FROM = [From.GetName]" }
 	title = bftb_turkey.21.t
 	desc = bftb_turkey.21.desc
 	picture = GFX_report_event_tur_upheaval_celebration
@@ -863,6 +884,7 @@ country_event = {
 #The Civil War - The Kemalists Attempt to Overthrow Menderes' Government
 country_event = {
 	id = bftb_turkey.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.22 FROM = [From.GetName]" }
 	title = bftb_turkey.22.t
 	desc = bftb_turkey.22.desc
 	picture = GFX_report_event_tur_military_affair
@@ -1039,6 +1061,7 @@ country_event = {
 #The Saadabad Pact
 country_event = {
 	id = bftb_turkey.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.23 FROM = [From.GetName]" }
 	title = bftb_turkey.23.t
 	desc = bftb_turkey.23.desc
 	picture = GFX_report_event_tur_the_saadabad_pact
@@ -1104,6 +1127,7 @@ country_event = {
 #The Saadabad Pact - Country Accepts
 country_event = {
 	id = bftb_turkey.92
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.92 FROM = [From.GetName]" }
 	title = bftb_turkey.92.t
 	desc = bftb_turkey.92.desc
 	picture = GFX_report_event_tur_the_saadabad_pact
@@ -1126,6 +1150,7 @@ country_event = {
 #The Saadabad Pact - Country Rejects
 country_event = {
 	id = bftb_turkey.93
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.93 FROM = [From.GetName]" }
 	title = bftb_turkey.93.t
 	desc = bftb_turkey.93.desc
 	picture = GFX_report_event_tur_politician_march
@@ -1140,6 +1165,7 @@ country_event = {
 #Electing a New President
 country_event = {
 	id = bftb_turkey.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.24 FROM = [From.GetName]" }
 	title = bftb_turkey.24.t
 	desc = bftb_turkey.24.desc
 	picture = GFX_report_event_tur_ataturk_inonu_parliament
@@ -1342,6 +1368,7 @@ country_event = {
 #The Hatay Issue - France Event
 country_event = {
 	id = bftb_turkey.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.25 FROM = [From.GetName]" }
 	title = bftb_turkey.25.t
 	desc = bftb_turkey.25.desc
 	picture = GFX_report_event_tur_inonu_diplomacy 
@@ -1391,6 +1418,7 @@ country_event = {
 #The Hatay Issue - France Transfers Hatay
 country_event = {
 	id = bftb_turkey.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.26 FROM = [From.GetName]" }
 	title = bftb_turkey.26.t
 	desc = bftb_turkey.26.desc
 	picture = GFX_report_event_tur_ataturk_impassioned_speech
@@ -1407,6 +1435,7 @@ country_event = {
 #The Hatay Issue - France Holds Hatay
 country_event = {
 	id = bftb_turkey.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.27 FROM = [From.GetName]" }
 	title = bftb_turkey.27.t
 	desc = bftb_turkey.27.desc
 	picture = GFX_report_event_tur_kemalist_officers
@@ -1423,6 +1452,7 @@ country_event = {
 #The Hatay Issue - Syria Event
 country_event = {
 	id = bftb_turkey.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.60 FROM = [From.GetName]" }
 	title = bftb_turkey.60.t
 	desc = bftb_turkey.60.desc
 	picture = GFX_report_event_tur_turkish_soldiers
@@ -1461,6 +1491,7 @@ country_event = {
 #The Hatay Issue - Syria Transfers Hatay
 country_event = {
 	id = bftb_turkey.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.61 FROM = [From.GetName]" }
 	title = bftb_turkey.61.t
 	desc = bftb_turkey.61.desc
 	picture = GFX_report_event_tur_ataturk_impassioned_speech
@@ -1477,6 +1508,7 @@ country_event = {
 #The Hatay Issue - Syria Holds Hatay
 country_event = {
 	id = bftb_turkey.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.62 FROM = [From.GetName]" }
 	title = bftb_turkey.62.t
 	desc = bftb_turkey.62.desc
 	picture = GFX_report_event_tur_cakmak_general_staff
@@ -1502,6 +1534,7 @@ country_event = {
 #Fatherland First - Conscientious Objecters Volunteer for Service
 country_event = {
 	id = bftb_turkey.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.29 FROM = [From.GetName]" }
 	title = bftb_turkey.29.t
 	desc = bftb_turkey.29.desc
 	picture = GFX_report_event_tur_upheaval_celebration
@@ -1523,6 +1556,7 @@ country_event = {
 #The Oniki Islands - Turkey Compensation Event
 country_event = {
 	id = bftb_turkey.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.30 FROM = [From.GetName]" }
 	title = bftb_turkey.30.t
 	desc = bftb_turkey.30.desc
 	picture = GFX_report_event_tur_the_montreux_convention
@@ -1574,6 +1608,7 @@ country_event = {
 #The Oniki Islands - Turkey offers Antalya Chromium
 country_event = {
 	id = bftb_turkey.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.31 FROM = [From.GetName]" }
 	title = bftb_turkey.31.t
 	desc = bftb_turkey.31.desc
 	picture = GFX_report_event_tur_inonu_diplomacy 
@@ -1619,6 +1654,7 @@ country_event = {
 #The Oniki Islands - Turkey offers Factories
 country_event = {
 	id = bftb_turkey.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.32 FROM = [From.GetName]" }
 	title = bftb_turkey.32.t
 	desc = bftb_turkey.32.desc
 	picture = GFX_report_event_tur_industry
@@ -1661,6 +1697,7 @@ country_event = {
 #The Oniki Islands - Turkey offers Pact of Friendship
 country_event = {
 	id = bftb_turkey.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.33 FROM = [From.GetName]" }
 	title = bftb_turkey.33.t
 	desc = bftb_turkey.33.desc
 	picture = GFX_report_event_tur_inonu_diplomacy
@@ -1721,6 +1758,7 @@ country_event = {
 #The Oniki Islands - Italy Accepts Chromium
 country_event = {
 	id = bftb_turkey.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.34 FROM = [From.GetName]" }
 	title = bftb_turkey.34.t
 	desc = bftb_turkey.34.desc
 	picture = GFX_report_event_tur_politician_march
@@ -1739,6 +1777,7 @@ country_event = {
 #The Oniki Islands - Italy Accepts Factories
 country_event = {
 	id = bftb_turkey.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.35 FROM = [From.GetName]" }
 	title = bftb_turkey.35.t
 	desc = bftb_turkey.35.desc
 	picture = GFX_report_event_tur_industry
@@ -1802,6 +1841,7 @@ country_event = {
 #The Oniki Islands - Italy Accepts Pact of Power
 country_event = {
 	id = bftb_turkey.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.36 FROM = [From.GetName]" }
 	title = bftb_turkey.36.t
 	desc = bftb_turkey.36.desc
 	picture = GFX_report_event_tur_inonu_diplomacy
@@ -1820,6 +1860,7 @@ country_event = {
 #The Oniki Islands - Italy Rejects Our Offer!
 country_event = {
 	id = bftb_turkey.37
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.37 FROM = [From.GetName]" }
 	title = bftb_turkey.37.t
 	desc = bftb_turkey.37.desc
 	picture = GFX_report_event_tur_kemalist_officers
@@ -1838,6 +1879,7 @@ country_event = {
 #Turkish-Georgian Cooperative Resource Extraction - Turkish Offer to Soviets/Georgians
 country_event = {
 	id = bftb_turkey.38
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.38 FROM = [From.GetName]" }
 	title = bftb_turkey.38.t
 	desc = bftb_turkey.38.desc
 	picture = GFX_report_event_tur_soviets
@@ -1887,6 +1929,7 @@ country_event = {
 #Turkish-Georgian Cooperative Resource Extraction - Soviets/Georgians Accept!
 country_event = {
 	id = bftb_turkey.39
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.39 FROM = [From.GetName]" }
 	title = bftb_turkey.39.t
 	desc = bftb_turkey.39.desc
 	picture = GFX_report_event_tur_inonu_diplomacy
@@ -1933,6 +1976,7 @@ country_event = {
 #Turkish-Georgian Cooperative Resource Extraction - Soviets/Georgians Decline!
 country_event = {
 	id = bftb_turkey.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.40 FROM = [From.GetName]" }
 	title = bftb_turkey.40.t
 	desc = bftb_turkey.40.desc
 	picture = GFX_report_event_tur_soviets
@@ -1948,6 +1992,7 @@ country_event = {
 #The Balkan Pact Faction - Invitation
 country_event = {
 	id = bftb_turkey.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.41 FROM = [From.GetName]" }
 	title = bftb_turkey.41.t
 	desc = bftb_turkey.41.desc
 	picture = GFX_report_event_gre_balkan_pact
@@ -2015,6 +2060,7 @@ country_event = {
 #The Balkan Pact Faction - [FROM] Accepts!
 country_event = {
 	id = bftb_turkey.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.42 FROM = [From.GetName]" }
 	title = bftb_turkey.42.t
 	desc = bftb_turkey.42.desc
 	picture = GFX_report_event_gre_balkan_pact
@@ -2032,6 +2078,7 @@ country_event = {
 #The Balkan Pact Faction - [FROM] Rejects!
 country_event = {
 	id = bftb_turkey.43
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.43 FROM = [From.GetName]" }
 	title = bftb_turkey.43.t
 	desc = bftb_turkey.43.desc
 	picture = GFX_report_event_gre_balkan_pact
@@ -2046,6 +2093,7 @@ country_event = {
 #The Petra Proposal - the Offer
 country_event = {
 	id = bftb_turkey.44
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.44 FROM = [From.GetName]" }
 	title = bftb_turkey.44.t
 	desc = bftb_turkey.44.desc
 	picture = GFX_report_event_tur_military_affair
@@ -2115,6 +2163,7 @@ country_event = {
 #The Petra Proposal - the British Accept
 country_event = {
 	id = bftb_turkey.45
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.45 FROM = [From.GetName]" }
 	title = bftb_turkey.45.t
 	desc = bftb_turkey.45.desc
 	picture = GFX_report_event_tur_britain
@@ -2146,6 +2195,7 @@ country_event = {
 #The Petra Proposal - the British Decline
 country_event = {
 	id = bftb_turkey.46
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.46 FROM = [From.GetName]" }
 	title = bftb_turkey.46.t
 	desc = bftb_turkey.46.desc
 	picture = GFX_report_event_tur_cakmak_general_staff
@@ -2180,6 +2230,7 @@ country_event = {
 #Defense of the Gulf - the Offer
 country_event = {
 	id = bftb_turkey.47
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.47 FROM = [From.GetName]" }
 	title = bftb_turkey.47.t
 	desc = bftb_turkey.47.desc
 	picture = GFX_report_event_tur_inonu_diplomacy
@@ -2214,6 +2265,7 @@ country_event = {
 #Defense of the Gulf - the British Accept
 country_event = {
 	id = bftb_turkey.48
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.48 FROM = [From.GetName]" }
 	title = bftb_turkey.48.t
 	desc = bftb_turkey.48.desc
 	picture = GFX_report_event_tur_military_affair
@@ -2239,6 +2291,7 @@ country_event = {
 #Defense of the Gulf - the British Decline
 country_event = {
 	id = bftb_turkey.49
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.49 FROM = [From.GetName]" }
 	title = bftb_turkey.49.t
 	desc = bftb_turkey.49.desc
 	picture = GFX_report_event_tur_the_montreux_convention
@@ -2254,6 +2307,7 @@ country_event = {
 #Turkey Desires Light Tanks!
 country_event = {
 	id = bftb_turkey.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.50 FROM = [From.GetName]" }
 	title = bftb_turkey.50.t
 	desc = bftb_turkey.50.desc
 	picture = GFX_report_event_tur_cakmak_general_staff
@@ -2367,6 +2421,7 @@ country_event = {
 #Turkey Desires Light Tanks - Improved Light Tanks
 country_event = {
 	id = bftb_turkey.51
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.51 FROM = [From.GetName]" }
 	title = bftb_turkey.51.t
 	desc = bftb_turkey.51.desc
 	picture = GFX_report_event_tank_factory
@@ -2396,6 +2451,7 @@ country_event = {
 #Turkey Desires Light Tanks - Light Tanks
 country_event = {
 	id = bftb_turkey.52
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.52 FROM = [From.GetName]" }
 	title = bftb_turkey.52.t
 	desc = bftb_turkey.52.desc
 	picture = GFX_report_event_tank_factory
@@ -2425,6 +2481,7 @@ country_event = {
 #Turkey Desires Light Tanks - Interwar Tanks
 country_event = {
 	id = bftb_turkey.53
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.53 FROM = [From.GetName]" }
 	title = bftb_turkey.53.t
 	desc = bftb_turkey.53.desc
 	picture = GFX_report_event_tank_factory
@@ -2454,6 +2511,7 @@ country_event = {
 #Turkey Desires Light Tanks - No Tanks
 country_event = {
 	id = bftb_turkey.54
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.54 FROM = [From.GetName]" }
 	title = bftb_turkey.54.t
 	desc = bftb_turkey.54.desc
 	picture = GFX_report_event_tur_military_affair
@@ -2468,6 +2526,7 @@ country_event = {
 #The Chester Concession - America's Event
 country_event = {
 	id = bftb_turkey.55
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.55 FROM = [From.GetName]" }
 	title = bftb_turkey.55.t
 	desc = bftb_turkey.55.desc
 	picture = GFX_report_event_tur_inonu_diplomacy
@@ -2511,6 +2570,7 @@ country_event = {
 #The Chester Concession - The United States Sends Aid!
 country_event = {
 	id = bftb_turkey.56
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.56 FROM = [From.GetName]" }
 	title = bftb_turkey.56.t
 	desc = bftb_turkey.56.desc
 	picture = GFX_report_event_tur_kemalists_positive
@@ -2582,6 +2642,7 @@ country_event = {
 #The Chester Concession - The United States Demands the Concession
 country_event = {
 	id = bftb_turkey.57
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.57 FROM = [From.GetName]" }
 	title = bftb_turkey.57.t
 	desc = bftb_turkey.57.desc
 	picture = GFX_report_event_tur_cakmak_general_staff
@@ -2627,6 +2688,7 @@ country_event = {
 #The Chester Concession - The Turks Provide the Concession
 country_event = {
 	id = bftb_turkey.58
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.58 FROM = [From.GetName]" }
 	title = bftb_turkey.58.t
 	desc = bftb_turkey.58.desc
 	picture = GFX_report_event_tur_ataturk_writing_desk
@@ -2647,6 +2709,7 @@ country_event = {
 #The Chester Concession - The Turks Deny Us the Concession
 country_event = {
 	id = bftb_turkey.59
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.59 FROM = [From.GetName]" }
 	title = bftb_turkey.59.t
 	desc = bftb_turkey.59.desc
 	picture = GFX_report_event_tur_the_montreux_convention 
@@ -2661,6 +2724,7 @@ country_event = {
 #The Mediterranean Entente Faction - Invitation
 country_event = {
 	id = bftb_turkey.63
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.63 FROM = [From.GetName]" }
 	title = bftb_turkey.63.t
 	desc = bftb_turkey.63.desc
 	picture = GFX_report_event_tur_inonu_diplomacy
@@ -2686,6 +2750,7 @@ country_event = {
 #The Mediterranean Entente Faction - [FROM] Accepts!
 country_event = {
 	id = bftb_turkey.64
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.64 FROM = [From.GetName]" }
 	title = bftb_turkey.64.t
 	desc = bftb_turkey.64.desc
 	picture = GFX_report_event_tur_upheaval_celebration
@@ -2706,6 +2771,7 @@ country_event = {
 #The Mediterranean Entente Faction - [FROM] Rejects!
 country_event = {
 	id = bftb_turkey.65
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.65 FROM = [From.GetName]" }
 	title = bftb_turkey.65.t
 	desc = bftb_turkey.65.desc
 	picture = GFX_report_event_tur_kemalist_officers
@@ -2720,6 +2786,7 @@ country_event = {
 #Turkey Presents Plan to Divide Greece - Italian Event
 country_event = {
 	id = bftb_turkey.66
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.66 FROM = [From.GetName]" }
 	title = bftb_turkey.66.t
 	desc = bftb_turkey.66.desc
 	picture = GFX_report_event_tur_kemalist_officers
@@ -2753,6 +2820,7 @@ country_event = {
 #Turkey Presents Plan to Divide Greece - Turkish Event, Italy Agrees
 country_event = {
 	id = bftb_turkey.131
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.131 FROM = [From.GetName]" }
 	title = bftb_turkey.131.t
 	desc = bftb_turkey.131.desc
 	picture = GFX_report_event_tur_ataturk_inonu_parliament
@@ -2784,6 +2852,7 @@ country_event = {
 #Turkey Presents Plan to Divide Greece - Turkish Event, Italy Rejects
 country_event = {
 	id = bftb_turkey.132
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.132 FROM = [From.GetName]" }
 	title = bftb_turkey.132.t
 	desc = bftb_turkey.132.desc
 	picture = GFX_report_event_tur_kemalist_officers
@@ -2808,6 +2877,7 @@ country_event = {
 #Support the Golden Square - Al-Gaylani's Coup
 country_event = {
 	id = bftb_turkey.67
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.67 FROM = [From.GetName]" }
 	title = bftb_turkey.67.t
 	desc = bftb_turkey.67.desc
 	picture = GFX_report_event_france_parade
@@ -2900,6 +2970,7 @@ country_event = {
 #Support the Golden Square - Iraqi Civil War
 country_event = {
 	id = bftb_turkey.68
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.68 FROM = [From.GetName]" }
 	title = bftb_turkey.68.t
 	desc = bftb_turkey.68.desc
 	picture = GFX_report_event_gre_political_upheaval
@@ -2932,6 +3003,7 @@ country_event = {
 #Support the Golden Square - Fascist Coup Succeeds
 country_event = {
 	id = bftb_turkey.69
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.69 FROM = [From.GetName]" }
 	title = bftb_turkey.69.t
 	desc = bftb_turkey.69.desc
 	picture = GFX_report_event_gre_political_upheaval
@@ -2973,6 +3045,7 @@ country_event = {
 #Support the Golden Square - Fascist Coup Fails
 country_event = {
 	id = bftb_turkey.70
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.70 FROM = [From.GetName]" }
 	title = bftb_turkey.70.t
 	desc = bftb_turkey.70.desc
 	picture = GFX_report_event_tur_turkish_soldiers
@@ -2991,6 +3064,7 @@ country_event = {
 #Support the Golden Square - Germans Informed of Fascist Coup
 country_event = {
 	id = bftb_turkey.71
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.71 FROM = [From.GetName]" }
 	title = bftb_turkey.71.t
 	desc = bftb_turkey.71.desc
 	picture = GFX_report_event_tur_military_affair
@@ -3037,6 +3111,7 @@ country_event = {
 #Support the Golden Square - Germany Supports Us!
 country_event = {
 	id = bftb_turkey.72
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.72 FROM = [From.GetName]" }
 	title = bftb_turkey.72.t
 	desc = bftb_turkey.72.desc
 	picture = GFX_report_event_german_italian_pact
@@ -3056,6 +3131,7 @@ country_event = {
 #Support the Golden Square - Italy Informed of Fascist Coup
 country_event = {
 	id = bftb_turkey.73
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.73 FROM = [From.GetName]" }
 	title = bftb_turkey.73.t
 	desc = bftb_turkey.73.desc
 	picture = GFX_report_event_tur_military_affair
@@ -3098,6 +3174,7 @@ country_event = {
 #Support the Golden Square - Italy Supports Us!
 country_event = {
 	id = bftb_turkey.74
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.74 FROM = [From.GetName]" }
 	title = bftb_turkey.74.t
 	desc = bftb_turkey.74.desc
 	picture = GFX_report_event_fascists_posing
@@ -3117,6 +3194,7 @@ country_event = {
 #Support the Golden Square - Britain Informed of Fascist Coup and Nationalisation of Oil
 country_event = {
 	id = bftb_turkey.75
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.75 FROM = [From.GetName]" }
 	title = bftb_turkey.75.t
 	desc = bftb_turkey.75.desc
 	picture = GFX_report_event_generic_military_parade
@@ -3176,6 +3254,7 @@ country_event = {
 #Support the Golden Square - The British Do Not Interfere
 country_event = {
 	id = bftb_turkey.76
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.76 FROM = [From.GetName]" }
 	title = bftb_turkey.76.t
 	desc = bftb_turkey.76.desc
 	picture = GFX_report_event_tur_political_rally 
@@ -3199,6 +3278,7 @@ country_event = {
 #Support the Golden Square - The British Have Aligned with the Germans
 country_event = {
 	id = bftb_turkey.77
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.77 FROM = [From.GetName]" }
 	title = bftb_turkey.77.t
 	desc = bftb_turkey.77.desc
 	picture = GFX_report_event_eng_royal_family
@@ -3276,6 +3356,7 @@ country_event = {
 #Support the Golden Square - The Iraqi Government Wins the Civil War
 country_event = {
 	id = bftb_turkey.78
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.78 FROM = [From.GetName]" }
 	title = bftb_turkey.78.t
 	desc = bftb_turkey.78.desc
 	picture = GFX_report_event_gre_city_devastated
@@ -3294,6 +3375,7 @@ country_event = {
 #Renew the Soviet-Turkish Non-Aggression Pact - Soviet Event
 country_event = {
 	id = bftb_turkey.79
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.79 FROM = [From.GetName]" }
 	title = bftb_turkey.79.t
 	desc = bftb_turkey.79.desc
 	picture = GFX_report_event_tur_inonu_diplomacy
@@ -3329,6 +3411,7 @@ country_event = {
 #Renew the Soviet-Turkish Non-Aggression Pact - Soviets Renew Pact
 country_event = {
 	id = bftb_turkey.80
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.80 FROM = [From.GetName]" }
 	title = bftb_turkey.80.t
 	desc = bftb_turkey.80.desc
 	picture = GFX_report_event_tur_ataturk_inonu_parliament
@@ -3350,6 +3433,7 @@ country_event = {
 #Renew the Soviet-Turkish Non-Aggression Pact - Soviets Kill Pact
 country_event = {
 	id = bftb_turkey.81
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.81 FROM = [From.GetName]" }
 	title = bftb_turkey.81.t
 	desc = bftb_turkey.81.desc
 	picture = GFX_report_event_tur_politician_march
@@ -3365,6 +3449,7 @@ country_event = {
 #Lift the Turkish Communist Party's Exile - Anti-Bolshevik Bloc
 country_event = {
 	id = bftb_turkey.82
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.82 FROM = [From.GetName]" }
 	title = bftb_turkey.82.t
 	desc = bftb_turkey.82.desc
 	picture = GFX_report_event_tur_ataturk_inonu_parliament
@@ -3386,6 +3471,7 @@ country_event = {
 #Lift the Turkish Communist Party's Exile - Stalinist Path
 country_event = {
 	id = bftb_turkey.83
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.83 FROM = [From.GetName]" }
 	title = bftb_turkey.83.t
 	desc = bftb_turkey.83.desc
 	picture = GFX_report_event_gre_trial
@@ -3415,6 +3501,7 @@ country_event = {
 #Pressure Bulgaria - Bulgaria receives puppet demand
 country_event = {
 	id = bftb_turkey.84
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.84 FROM = [From.GetName]" }
 	title = bftb_turkey.84.t
 	desc = bftb_turkey.84.desc
 	picture = GFX_report_event_tur_military_affair
@@ -3568,6 +3655,7 @@ country_event = {
 #Pressure Bulgaria - Bulgaria seeks mediation
 country_event = {
 	id = bftb_turkey.85
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.85 FROM = [From.GetName]" }
 	title = bftb_turkey.85.t
 	desc = bftb_turkey.85.desc
 	picture = GFX_report_event_bul_boris_military
@@ -3631,6 +3719,7 @@ country_event = {
 #Pressure Bulgaria - Bulgaria gets its aid!
 country_event = {
 	id = bftb_turkey.86
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.86 FROM = [From.GetName]" }
 	title = bftb_turkey.86.t
 	desc = bftb_turkey.86.desc
 	picture = GFX_report_event_bul_partisans_plovdiv
@@ -3652,6 +3741,7 @@ country_event = {
 #Pressure Bulgaria - Bulgaria is supported
 country_event = {
 	id = bftb_turkey.87
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.87 FROM = [From.GetName]" }
 	title = bftb_turkey.87.t
 	desc = bftb_turkey.87.desc
 	picture = GFX_report_event_tur_the_montreux_convention
@@ -3680,6 +3770,7 @@ country_event = {
 #Pressure Bulgaria - Bulgaria wins!
 country_event = {
 	id = bftb_turkey.88
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.88 FROM = [From.GetName]" }
 	title = bftb_turkey.88.t
 	desc = bftb_turkey.88.desc
 	picture = GFX_report_event_tur_military_affair
@@ -3699,6 +3790,7 @@ country_event = {
 #Pressure Bulgaria - No Aid Offered to Bulgaria
 country_event = {
 	id = bftb_turkey.89
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.89 FROM = [From.GetName]" }
 	title = bftb_turkey.89.t
 	desc = bftb_turkey.89.desc
 	picture = GFX_report_event_tur_turkish_soldiers
@@ -3734,6 +3826,7 @@ country_event = {
 #Pressure Bulgaria - Bulgaria gives in
 country_event = {
 	id = bftb_turkey.90
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.90 FROM = [From.GetName]" }
 	title = bftb_turkey.90.t
 	desc = bftb_turkey.90.desc
 	picture = GFX_report_event_tur_upheaval_celebration 
@@ -3752,6 +3845,7 @@ country_event = {
 #Pressure Bulgaria - Bulgaria stands defiant
 country_event = {
 	id = bftb_turkey.91
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.91 FROM = [From.GetName]" }
 	title = bftb_turkey.91.t
 	desc = bftb_turkey.91.desc
 	picture = GFX_report_event_tur_turkish_soldiers
@@ -3772,6 +3866,7 @@ country_event = {
 #Etatism - Country Economy Collapses
 country_event = {
 	id = bftb_turkey.94
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.94 FROM = [From.GetName]" }
 	title = bftb_turkey.94.t
 	desc = bftb_turkey.94.desc
 	picture = GFX_report_event_gre_political_upheaval
@@ -3791,6 +3886,7 @@ country_event = {
 #The Civil War - Ottoman Officers Offer Chance to Restore Sultanate
 country_event = {
 	id = bftb_turkey.95
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.95 FROM = [From.GetName]" }
 	title = bftb_turkey.95.t
 	desc = bftb_turkey.95.desc
 	picture = GFX_report_event_tur_sultan_and_pashas
@@ -3940,6 +4036,7 @@ country_event = {
 #Align Bulgaria - Bulgaria receives puppet demand
 country_event = {
 	id = bftb_turkey.97
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.97 FROM = [From.GetName]" }
 	title = bftb_turkey.97.t
 	desc = bftb_turkey.97.desc
 	picture = GFX_report_event_tur_sultan_in_istanbul
@@ -3984,6 +4081,7 @@ country_event = {
 #Align Bulgaria - Bulgaria is in a faction
 country_event = {
 	id = bftb_turkey.98
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.98 FROM = [From.GetName]" }
 	title = bftb_turkey.98.t
 	desc = bftb_turkey.98.desc
 	picture = GFX_report_event_tur_cakmak_general_staff
@@ -4015,6 +4113,7 @@ country_event = {
 #Align Bulgaria - Bulgaria wins!
 country_event = {
 	id = bftb_turkey.99
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.99 FROM = [From.GetName]" }
 	title = bftb_turkey.99.t
 	desc = bftb_turkey.99.desc
 	picture = GFX_report_event_tur_politician_march
@@ -4035,6 +4134,7 @@ country_event = {
 #Align Bulgaria - Bulgaria gives in
 country_event = {
 	id = bftb_turkey.100
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.100 FROM = [From.GetName]" }
 	title = bftb_turkey.100.t
 	desc = bftb_turkey.100.desc
 	picture = GFX_report_event_tur_sultan_in_istanbul
@@ -4053,6 +4153,7 @@ country_event = {
 #Align Bulgaria - Bulgaria stands defiant
 country_event = {
 	id = bftb_turkey.101
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.101 FROM = [From.GetName]" }
 	title = bftb_turkey.101.t
 	desc = bftb_turkey.101.desc
 	picture = GFX_report_event_tur_cakmak_general_staff
@@ -4073,6 +4174,7 @@ country_event = {
 #The Damascus Diktat - ROOT receives demand
 country_event = {
 	id = bftb_turkey.102
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.102 FROM = [From.GetName]" }
 	title = bftb_turkey.102.t
 	desc = bftb_turkey.102.desc
 	picture = GFX_report_event_tur_military_affair
@@ -4124,6 +4226,7 @@ country_event = {
 #The Damascus Diktat - ROOT denies us!
 country_event = {
 	id = bftb_turkey.103
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.103 FROM = [From.GetName]" }
 	title = bftb_turkey.103.t
 	desc = bftb_turkey.103.desc
 	picture = GFX_report_event_tur_military_affair
@@ -4152,6 +4255,7 @@ country_event = {
 #The Damascus Diktat - Our Territories are Ours!
 country_event = {
 	id = bftb_turkey.104
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.104 FROM = [From.GetName]" }
 	title = bftb_turkey.104.t
 	desc = bftb_turkey.104.desc
 	picture = GFX_report_event_tur_sultan_and_pashas
@@ -4205,6 +4309,7 @@ country_event = {
 #hidden dispatch event for Kurdish events
 country_event = {
 	id = bftb_turkey.105
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.105 FROM = [From.GetName]" }
 	
 	is_triggered_only = yes
 
@@ -4260,6 +4365,7 @@ country_event = {
 #Kurdistani Resistance - Kurds Object to Infrastructure Project
 country_event = {
 	id = bftb_turkey.106
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.106 FROM = [From.GetName]" }
 	title = bftb_turkey.106.t
 	desc = bftb_turkey.106.desc
 	picture = GFX_report_event_tur_industry
@@ -4320,6 +4426,7 @@ country_event = {
 #Kurdistani Resistance - Kurds March for Freedom
 country_event = {
 	id = bftb_turkey.107
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.107 FROM = [From.GetName]" }
 	title = bftb_turkey.107.t
 	desc = bftb_turkey.107.desc
 	picture = GFX_report_event_tur_political_rally
@@ -4356,6 +4463,7 @@ country_event = {
 #Kurdistani Resistance - Kurds Demand Exemption from Conscription
 country_event = {
 	id = bftb_turkey.108
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.108 FROM = [From.GetName]" }
 	title = bftb_turkey.108.t
 	desc = bftb_turkey.108.desc
 	picture = GFX_report_event_tur_turkish_soldiers
@@ -4390,6 +4498,7 @@ country_event = {
 #Kurdistani Resistance - Radical Kurds Occupy Rural Population Centers in the East
 country_event = {
 	id = bftb_turkey.109
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.109 FROM = [From.GetName]" }
 	title = bftb_turkey.109.t
 	desc = bftb_turkey.109.desc
 	picture = GFX_report_event_tur_kurdish_guerillas
@@ -4482,6 +4591,7 @@ country_event = {
 #Kurdistani Resistance - Rebels Successfully Countered in [StateName]
 country_event = {
 	id = bftb_turkey.110
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.110 FROM = [From.GetName]" }
 	title = bftb_turkey.110.t
 	desc = bftb_turkey.110.desc
 	picture = GFX_report_event_tur_kurdish_guerillas
@@ -4535,6 +4645,7 @@ country_event = {
 #Kurdistani Resistance - Rebels Defeat Our Forces in [StateName]
 country_event = {
 	id = bftb_turkey.111
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.111 FROM = [From.GetName]" }
 	title = bftb_turkey.111.t
 	desc = bftb_turkey.111.desc
 	picture = GFX_report_event_tur_kurdish_guerillas
@@ -4583,6 +4694,7 @@ country_event = {
 #hidden dispatch event for fundamentalist events
 country_event = {
 	id = bftb_turkey.112
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.112 FROM = [From.GetName]" }
 	
 	is_triggered_only = yes
 
@@ -4695,6 +4807,7 @@ country_event = {
 #Fundamentalist Opposition - Fundamentalists Protest to Production of Religiously Prohibited Goods
 country_event = {
 	id = bftb_turkey.113
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.113 FROM = [From.GetName]" }
 	title = bftb_turkey.113.t
 	desc = bftb_turkey.113.desc
 	picture = GFX_report_event_tur_kurdish_guerillas
@@ -4742,6 +4855,7 @@ country_event = {
 #Fundamentalist Opposition - Fundamentalists Peacefully Protest Against Government Policies
 country_event = {
 	id = bftb_turkey.114
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.114 FROM = [From.GetName]" }
 	title = bftb_turkey.114.t
 	desc = bftb_turkey.114.desc
 	picture = GFX_report_event_tur_political_rally
@@ -4786,6 +4900,7 @@ country_event = {
 #Fundamentalist Opposition - Fundamentalists Demand Regional Autonomy
 country_event = {
 	id = bftb_turkey.115
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.115 FROM = [From.GetName]" }
 	title = bftb_turkey.115.t
 	desc = bftb_turkey.115.desc
 	picture = GFX_report_event_tur_kurds_traditionalists_thwarted
@@ -4841,6 +4956,7 @@ country_event = {
 #Fundamentalist Opposition - Guerilla Attack Launched in [StateName]!
 country_event = {
 	id = bftb_turkey.116
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.116 FROM = [From.GetName]" }
 	title = bftb_turkey.116.t
 	desc = bftb_turkey.116.desc
 	picture = GFX_report_event_tur_kurdish_guerillas
@@ -4889,6 +5005,7 @@ country_event = {
 #Fundamentalist Opposition - The Fundamentalists Spread Their Poison into [StateName]
 country_event = {
 	id = bftb_turkey.117
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.117 FROM = [From.GetName]" }
 	title = bftb_turkey.117.t
 	desc = bftb_turkey.117.desc
 	picture = GFX_report_event_tur_kurdish_guerillas 
@@ -4941,6 +5058,7 @@ country_event = {
 #Fundamentalist Opposition - The Fundamentalists Seize Complete Control Over [StateName]
 country_event = {
 	id = bftb_turkey.118
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.118 FROM = [From.GetName]" }
 	title = bftb_turkey.118.t
 	desc = bftb_turkey.118.desc
 	picture = GFX_report_event_tur_kurdish_guerillas
@@ -4985,6 +5103,7 @@ country_event = {
 #Fundamentalist Appeasement - The Fundamentalists Yield to the Government in [StateName]
 country_event = {
 	id = bftb_turkey.119
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.119 FROM = [From.GetName]" }
 	title = bftb_turkey.119.t
 	desc = bftb_turkey.119.desc
 	picture = GFX_report_event_tur_inonu_diplomacy
@@ -5016,6 +5135,7 @@ country_event = {
 #Turkish Investment - The Turks Deliver an Investment Portfolio
 country_event = {
 	id = bftb_turkey.126
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.126 FROM = [From.GetName]" }
 	title = bftb_turkey.126.t
 	desc = bftb_turkey.126.desc
 	picture = GFX_report_event_tur_industry
@@ -5095,6 +5215,7 @@ country_event = {
 #Turkish Investment - [FROM] Rules Investment Out
 country_event = {
 	id = bftb_turkey.127
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.127 FROM = [From.GetName]" }
 	title = bftb_turkey.127.t
 	desc = bftb_turkey.127.desc
 	picture = GFX_report_event_tur_the_montreux_convention 
@@ -5113,6 +5234,7 @@ country_event = {
 #Turkish Investment - [FROM] Invests Light Amount
 country_event = {
 	id = bftb_turkey.128
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.128 FROM = [From.GetName]" }
 	title = bftb_turkey.128.t
 	desc = bftb_turkey.128.desc
 	picture = GFX_report_event_tur_industry
@@ -5177,6 +5299,7 @@ country_event = {
 #Turkish Investment - [FROM] Invests Medium Amount
 country_event = {
 	id = bftb_turkey.129
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.129 FROM = [From.GetName]" }
 	title = bftb_turkey.129.t
 	desc = bftb_turkey.129.desc
 	picture = GFX_report_event_tur_industry 
@@ -5244,6 +5367,7 @@ country_event = {
 #Turkish Investment - [FROM] Invests Heavy Amount
 country_event = {
 	id = bftb_turkey.130
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.130 FROM = [From.GetName]" }
 	title = bftb_turkey.130.t
 	desc = bftb_turkey.130.desc
 	picture = GFX_report_event_tur_industry 
@@ -5321,6 +5445,7 @@ country_event = {
 #The Fading Father - Ataturk Health Crisis Begins
 country_event = {
 	id = bftb_turkey.133
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.133 FROM = [From.GetName]" }
 	title = bftb_turkey.133.t
 	desc = bftb_turkey.133.desc
 	picture = GFX_report_event_tur_ataturk_determined
@@ -5358,6 +5483,7 @@ country_event = {
 #The Fading Father - Ataturk Passes Away [Leader]
 country_event = {
 	id = bftb_turkey.134
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.134 FROM = [From.GetName]" }
 	title = bftb_turkey.134.t
 	desc = bftb_turkey.134.desc
 	picture = GFX_report_event_tur_ataturk_death
@@ -5550,6 +5676,7 @@ country_event = {
 #The Fading Father - Ataturk Passes Away [Retired]
 country_event = {
 	id = bftb_turkey.135
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.135 FROM = [From.GetName]" }
 	title = bftb_turkey.135.t
 	desc = bftb_turkey.135.desc
 	picture = GFX_report_event_tur_ataturk_death
@@ -5569,6 +5696,7 @@ country_event = {
 #Tragedy Befalls Ottoman Royal Family
 country_event = {
 	id = bftb_turkey.136
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.136 FROM = [From.GetName]" }
 	title = bftb_turkey.136.t
 	desc = bftb_turkey.136.desc
 	picture = GFX_report_event_tur_upheaval_celebration
@@ -5681,6 +5809,7 @@ country_event = {
 #Misak-i Milli - Independent Turkey takes dangerous foreign policy stance [Turkey is in faction]
 country_event = {
 	id = bftb_turkey.137
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.137 FROM = [From.GetName]" }
 	title = bftb_turkey.137.t
 	desc = bftb_turkey.137.desc
 	picture = GFX_report_event_tur_menderes_opposition
@@ -5748,6 +5877,7 @@ country_event = {
 #Misak-i Milli - Turkey Violates Faction Member's Sovereignty
 country_event = {
 	id = bftb_turkey.138
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.138 FROM = [From.GetName]" }
 	title = bftb_turkey.138.t
 	desc = bftb_turkey.138.desc
 	picture = GFX_report_event_tur_turkish_soldiers
@@ -5772,6 +5902,7 @@ country_event = {
 #Misak-i Milli -  Turkey Violates Faction Member's Sovereignty Again!
 country_event = {
 	id = bftb_turkey.139
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.139 FROM = [From.GetName]" }
 	title = bftb_turkey.139.t
 	desc = bftb_turkey.139.desc
 	picture = GFX_report_event_tur_military_affair
@@ -5790,6 +5921,7 @@ country_event = {
 #Misak-i Milli -  Turkey Warned by Faction Leader
 country_event = {
 	id = bftb_turkey.140
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.140 FROM = [From.GetName]" }
 	title = bftb_turkey.140.t
 	desc = bftb_turkey.140.desc
 	picture = GFX_report_event_tur_cakmak_general_staff
@@ -5804,6 +5936,7 @@ country_event = {
 #Misak-i Milli -  Turkey Booted by Faction Leader
 country_event = {
 	id = bftb_turkey.141
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.141 FROM = [From.GetName]" }
 	title = bftb_turkey.141.t
 	desc = bftb_turkey.141.desc
 	picture = GFX_report_event_tur_military_affair
@@ -5819,6 +5952,7 @@ country_event = {
 #Saadabad Hidden Event
 country_event = {
 	id = bftb_turkey.142
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.142 FROM = [From.GetName]" }
 	
 	hidden = yes
 
@@ -5857,6 +5991,7 @@ country_event = {
 #Partner Bulgaria Hidden Event
 country_event = {
 	id = bftb_turkey.143
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_turkey.143 FROM = [From.GetName]" }
 	
 	hidden = yes
 

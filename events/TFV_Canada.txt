@@ -9,6 +9,7 @@ add_namespace = canada_vanilla
 # Canadian national focus.
 country_event = {
 	id = tfv_canada.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.1 FROM = [From.GetName]" }
 	title = tfv_canada.1.t	# Canada asks US to create a faction.
 	desc = tfv_canada.1.d	#
 	picture = GFX_report_event_canada_patriation
@@ -50,6 +51,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.2 FROM = [From.GetName]" }
 	title = tfv_canada.2.t	#
 	desc = tfv_canada.2.d	#
 	picture = GFX_report_event_canadian_soldiers
@@ -70,6 +72,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.3 FROM = [From.GetName]" }
 	title = tfv_canada.3.t	#
 	desc = tfv_canada.3.d	#
 	picture = GFX_report_event_king_speech
@@ -85,6 +88,7 @@ country_event = {
 # Canadian national focus.
 country_event = {
 	id = tfv_canada.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.10 FROM = [From.GetName]" }
 	title = tfv_canada.10.t	# Canada asks CCCP for membership in Comintern
 	desc = tfv_canada.10.d	#
 	picture = GFX_report_event_stalin_meeting
@@ -126,6 +130,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.11 FROM = [From.GetName]" }
 	title = tfv_canada.11.t	#
 	desc = tfv_canada.11.d	#
 	picture = GFX_report_event_canadian_soldiers
@@ -142,6 +147,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.12 FROM = [From.GetName]" }
 	title = tfv_canada.12.t	#
 	desc = tfv_canada.12.d	#
 	picture = GFX_report_event_generic_rally_3
@@ -157,6 +163,7 @@ country_event = {
 # Canadian national focus.
 country_event = {
 	id = tfv_canada.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.20 FROM = [From.GetName]" }
 	title = tfv_canada.20.t	# Canada asks Germany for membership in Axis
 	desc = tfv_canada.20.d	#
 	picture = GFX_report_event_canadian_tank
@@ -198,6 +205,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.21 FROM = [From.GetName]" }
 	title = tfv_canada.21.t	# 
 	desc = tfv_canada.21.d	#
 	picture = GFX_report_event_hitler_handshake
@@ -231,6 +239,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.22 FROM = [From.GetName]" }
 	title = tfv_canada.22.t	# 
 	desc = tfv_canada.22.d	#
 	picture = GFX_report_event_canadian_artillery
@@ -246,6 +255,7 @@ country_event = {
 # Canadian national focus.
 country_event = {
 	id = tfv_canada.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.30 FROM = [From.GetName]" }
 	title = tfv_canada.30.t	# Mexican civil war starts.
 	desc = tfv_canada.30.d	#
 	picture = GFX_report_event_mex_civil_war
@@ -368,6 +378,7 @@ country_event = {
 # Canadian national focus.
 country_event = {
 	id = tfv_canada.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.40 FROM = [From.GetName]" }
 	title = tfv_canada.40.t # Canada proposes alliance with Mexico to surround the US.
 	desc = tfv_canada.40.d	#
 	picture = GFX_report_event_canadian_artillery
@@ -425,6 +436,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.41 FROM = [From.GetName]" }
 	title = tfv_canada.41.t
 	desc = tfv_canada.41.d
 	picture = GFX_report_event_military_planning
@@ -460,6 +472,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.42 FROM = [From.GetName]" }
 	title = tfv_canada.42.t
 	desc = tfv_canada.42.desc
 	picture = GFX_report_event_american_hunger_march
@@ -478,6 +491,7 @@ country_event = {
 # Canadian national focus.
 country_event = {
 	id = tfv_canada.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.50 FROM = [From.GetName]" }
 	title = tfv_canada.50.t	# Factory sabotaged
 	desc = tfv_canada.50.d	#
 	picture = GFX_report_event_generic_factory
@@ -514,6 +528,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.51
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.51 FROM = [From.GetName]" }
 	title = tfv_canada.51.t
 	desc = tfv_canada.51.d
 	picture = GFX_report_event_generic_factory
@@ -550,6 +565,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.52
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.52 FROM = [From.GetName]" }
 	title = tfv_canada.52.t
 	desc = tfv_canada.52.d
 	picture = GFX_report_event_generic_factory
@@ -586,6 +602,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.53
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.53 FROM = [From.GetName]" }
 	title = tfv_canada.53.t
 	desc = tfv_canada.53.d
 	picture = GFX_report_event_RCMP
@@ -626,6 +643,7 @@ country_event = {
 # Canadian national focus.
 country_event = {
 	id = tfv_canada.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.60 FROM = [From.GetName]" }
 	title = tfv_canada.60.t # Fascist CAN demads Labrador and Newfoundland from ENG
 	desc = tfv_canada.60.d	#
 	picture = GFX_report_event_canadian_soldiers
@@ -669,6 +687,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.61 FROM = [From.GetName]" }
 	title = tfv_canada.61.t
 	desc = tfv_canada.61.d
 	picture = GFX_report_event_canada_treaty
@@ -685,6 +704,7 @@ country_event = {
 
 country_event = {
 	id = tfv_canada.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfv_canada.62 FROM = [From.GetName]" }
 	title = tfv_canada.62.t
 	desc = tfv_canada.62.d
 	picture = GFX_report_event_canada_army
@@ -707,6 +727,7 @@ country_event = {
 
 country_event = {
 	id = canada_vanilla.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event canada_vanilla.1 FROM = [From.GetName]" }
 	title = canada_vanilla.1.title
 	desc = canada_vanilla.1.desc
 	

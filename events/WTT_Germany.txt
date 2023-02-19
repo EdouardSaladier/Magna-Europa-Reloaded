@@ -3,6 +3,7 @@
 # Event starting neutral civil war
 country_event = {
 	id = wtt_germany.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.1 FROM = [From.GetName]" }
 	title = wtt_germany.1.t
 	desc = wtt_germany.1.d
 	picture = GFX_report_event_ger_civil_war
@@ -129,6 +130,7 @@ country_event = {
 #Notification event for Spain for getting troops from German Expatriate Communists focus
 country_event = {
 	id = wtt_germany.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.2 FROM = [From.GetName]" }
 	title = wtt_germany.2.t
 	desc = wtt_germany.2.d
 	picture = GFX_report_event_spain_civil_war_volunteers_02
@@ -158,6 +160,7 @@ country_event = {
 #Event for Netherlands demanding return of Kaiser
 country_event = {
 	id = wtt_germany.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.3 FROM = [From.GetName]" }
 	title = wtt_germany.3.t
 	desc = wtt_germany.3.d
 	picture = GFX_report_event_generic_sign_treaty1
@@ -225,6 +228,7 @@ country_event = {
 #Notification event for Germany that the Kaiser is returned
 country_event = {
 	id = wtt_germany.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.4 FROM = [From.GetName]" }
 	title = wtt_germany.4.t
 	desc = wtt_germany.4.d
 	picture = GFX_report_event_royal_parade
@@ -257,6 +261,7 @@ country_event = {
 #Netherlands refuses to return the Kaiser!
 country_event = {
 	id = wtt_germany.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.5 FROM = [From.GetName]" }
 	title = wtt_germany.5.t
 	desc = wtt_germany.5.d
 	picture = GFX_report_event_german_troops
@@ -302,6 +307,7 @@ country_event = {
 #Kaiser returned through war
 country_event = {
 	id = wtt_germany.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.6 FROM = [From.GetName]" }
 	title = wtt_germany.6.t
 	desc = wtt_germany.6.d
 	picture = GFX_report_event_royal_parade
@@ -335,6 +341,7 @@ country_event = {
 #Notification event for Hungary and Romania for Integrate War Economies
 country_event = {
 	id = wtt_germany.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.7 FROM = [From.GetName]" }
 	title = wtt_germany.7.t
 	desc = wtt_germany.7.d
 	picture = GFX_report_event_tank_factory
@@ -372,6 +379,7 @@ country_event = {
 # Event for Italy Offering Support for Coup
 country_event = {
 	id = wtt_germany.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.8 FROM = [From.GetName]" }
 	title = wtt_germany.8.t
 	desc = wtt_germany.8.d
 	picture = GFX_report_event_french_resistance_02
@@ -405,6 +413,7 @@ country_event = {
 # German Notification Event for Italy Accepting Offer of Support for Coup
 country_event = {
 	id = wtt_germany.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.9 FROM = [From.GetName]" }
 	title = wtt_germany.9.t
 	desc = wtt_germany.9.d
 	picture = GFX_report_event_french_resistance_02
@@ -420,6 +429,7 @@ country_event = {
 # German Notification Event for Italy Rejecting Offer of Support for Coup
 country_event = {
 	id = wtt_germany.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.10 FROM = [From.GetName]" }
 	title = wtt_germany.10.t
 	desc = wtt_germany.10.d
 	picture = GFX_report_event_french_resistance_02
@@ -435,6 +445,7 @@ country_event = {
 # Event for Italy Launching Coup
 country_event = {
 	id = wtt_germany.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.11 FROM = [From.GetName]" }
 	title = wtt_germany.11.t
 	desc = wtt_germany.11.d
 	picture = GFX_report_event_french_resistance_02
@@ -469,6 +480,7 @@ country_event = {
 # Notification event for Germany upon successful coup
 country_event = {
 	id = wtt_germany.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.12 FROM = [From.GetName]" }
 	title = wtt_germany.12.t
 	desc = wtt_germany.12.d
 	picture = GFX_report_event_french_resistance_02
@@ -485,6 +497,7 @@ country_event = {
 # Notification event for Germany upon formation of Austria-Hungary
 country_event = {
 	id = wtt_germany.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.13 FROM = [From.GetName]" }
 	title = wtt_germany.13.t
 	desc = wtt_germany.13.d
 	picture = GFX_report_event_generic_parliament
@@ -501,6 +514,7 @@ country_event = {
 # Danzig for Guarantees event for Poland
 country_event = {
 	id = wtt_germany.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.14 FROM = [From.GetName]" }
 	title = wtt_germany.14.t
 	desc = wtt_germany.14.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -556,6 +570,7 @@ country_event = {
 # Danzig for Guarantees acceptance event for Germany
 country_event = {
 	id = wtt_germany.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.15 FROM = [From.GetName]" }
 	title = wtt_germany.15.t
 	desc = wtt_germany.15.d
 	picture = GFX_report_event_generic_sign_treaty3
@@ -645,6 +660,7 @@ country_event = {
 # Danzig for Guarantees rejection event for Germany
 country_event = {
 	id = wtt_germany.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.16 FROM = [From.GetName]" }
 	title = wtt_germany.16.t
 	desc = wtt_germany.16.d
 	picture = GFX_report_event_poland_rejects
@@ -689,6 +705,7 @@ country_event = {
 # Notification event for France on German expatriation of Communists
 country_event = {
 	id = wtt_germany.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.17 FROM = [From.GetName]" }
 	title = wtt_germany.17.t
 	desc = wtt_germany.17.d
 	picture = GFX_report_event_gathering_protest
@@ -707,6 +724,7 @@ country_event = {
 # Event for end of civil war
 country_event = {
 	id = wtt_germany.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.18 FROM = [From.GetName]" }
 	title = wtt_germany.18.t
 	desc = wtt_germany.18.d
 	picture = GFX_report_event_fascists_posing
@@ -749,6 +767,7 @@ country_event = {
 # Event for Soviet Union on Great Red Menace
 country_event = {
 	id = wtt_germany.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.19 FROM = [From.GetName]" }
 	title = wtt_germany.19.t
 	desc = wtt_germany.19.d
 	picture = GFX_report_event_german_politician_speech
@@ -805,6 +824,7 @@ country_event = {
 # Event for Soviet Union on Central European Alliance
 country_event = {
 	id = wtt_germany.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.20 FROM = [From.GetName]" }
 	title = wtt_germany.20.t
 	desc = wtt_germany.20.d
 	picture = GFX_report_event_generic_conference
@@ -929,6 +949,7 @@ country_event = {
 # Event for Soviet Union upon membership of Baltics
 country_event = {
 	id = wtt_germany.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.21 FROM = [From.GetName]" }
 	title = wtt_germany.21.t
 	desc = wtt_germany.21.d
 	picture = GFX_report_event_generic_sign_treaty2
@@ -970,6 +991,7 @@ country_event = {
 # Event for Soviet Union upon membership of Poland
 country_event = {
 	id = wtt_germany.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.22 FROM = [From.GetName]" }
 	title = wtt_germany.22.t
 	desc = wtt_germany.21.d
 	picture = GFX_report_event_generic_sign_treaty2
@@ -1019,6 +1041,7 @@ country_event = {
 # Event for Soviet Union upon membership of Finland
 country_event = {
 	id = wtt_germany.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.23 FROM = [From.GetName]" }
 	title = wtt_germany.23.t
 	desc = wtt_germany.21.d
 	picture = GFX_report_event_generic_sign_treaty2
@@ -1068,6 +1091,7 @@ country_event = {
 # Event for all nations receiving the Great Red Menace
 country_event = {
 	id = wtt_germany.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.24 FROM = [From.GetName]" }
 	title = wtt_germany.24.t
 	desc = wtt_germany.24.d
 	picture = GFX_report_event_german_politician_speech
@@ -1084,6 +1108,7 @@ country_event = {
 # Event for all nations with Great Red Menace if Soviet smoothes relations
 country_event = {
 	id = wtt_germany.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.25 FROM = [From.GetName]" }
 	title = wtt_germany.25.t
 	desc = wtt_germany.25.d
 	picture = GFX_report_event_communist_leader
@@ -1099,6 +1124,7 @@ country_event = {
 # Wilhelm II dies
 country_event = {
 	id = wtt_germany.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.26 FROM = [From.GetName]" }
 	title = wtt_germany.26.t
 	desc = wtt_germany.26.d
 	picture = GFX_report_event_generic_funeral
@@ -1138,6 +1164,7 @@ country_event = {
 # Von Mackensen dies
 country_event = {
 	id = wtt_germany.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.27 FROM = [From.GetName]" }
 	title = wtt_germany.27.t
 	desc = wtt_germany.27.d
 	picture = GFX_report_event_generic_funeral
@@ -1180,6 +1207,7 @@ country_event = {
 # French Response
 country_event = {
 	id = wtt_germany.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.28 FROM = [From.GetName]" }
 	title = wtt_germany.28.t
 	desc = {
 		text = wtt_germany.28.d
@@ -1352,6 +1380,7 @@ country_event = {
 # British Response (French Press for War)
 country_event = {
 	id = wtt_germany.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.29 FROM = [From.GetName]" }
 	title = wtt_germany.28.t
 	desc = {
 		text = wtt_germany.29.d
@@ -1497,6 +1526,7 @@ country_event = {
 # British Response (French Want Peace)
 country_event = {
 	id = wtt_germany.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.30 FROM = [From.GetName]" }
 	title = wtt_germany.28.t
 	desc = wtt_germany.30.d
 	picture = GFX_report_event_german_troops
@@ -1521,6 +1551,7 @@ country_event = {
 # France (Britain Refuses Support)
 country_event = {
 	id = wtt_germany.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.31 FROM = [From.GetName]" }
 	title = germany.63.t
 	desc = wtt_germany.31.d
 	picture = GFX_report_event_chamberlain_announce
@@ -1584,6 +1615,7 @@ country_event = {
 # France (Britain Gives Support)
 country_event = {
 	id = wtt_germany.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.32 FROM = [From.GetName]" }
 	title = germany.64.t
 	desc = wtt_germany.32.d
 	picture = GFX_report_event_british_inspect_troops
@@ -1625,6 +1657,7 @@ country_event = {
 # Germany (France and Britain go to war)
 country_event = {
 	id = wtt_germany.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.33 FROM = [From.GetName]" }
 	title = germany.65.t
 	desc = wtt_germany.33.d
 	picture = GFX_report_event_british_artillery
@@ -1725,6 +1758,7 @@ country_event = {
 # Germany (France goes to war)
 country_event = {
 	id = wtt_germany.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.34 FROM = [From.GetName]" }
 	title = germany.66.t
 	desc = wtt_germany.34.d
 	picture = GFX_report_event_degaulle_inspect_troops
@@ -1811,6 +1845,7 @@ country_event = {
 # Britain (France Backs Down)
 country_event = {
 	id = wtt_germany.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.35 FROM = [From.GetName]" }
 	title = germany.67.t
 	desc = germany.67.d
 	picture = GFX_report_event_german_inspect_troops
@@ -1829,6 +1864,7 @@ country_event = {
 # Britain (France Goes Ahead Anyway)
 country_event = {
 	id = wtt_germany.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.36 FROM = [From.GetName]" }
 	title = germany.68.t
 	desc = germany.68.d
 	picture = GFX_report_event_french_liberation
@@ -1843,6 +1879,7 @@ country_event = {
 # France/England (Germany Refuses Ultimatum)
 country_event = {
 	id = wtt_germany.37
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.37 FROM = [From.GetName]" }
 	title = germany.92.t
 	desc = wtt_germany.35.d
 	picture = GFX_report_event_worried_french
@@ -1861,6 +1898,7 @@ country_event = {
 # Germans demand return of Tsingtao # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.38
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.38 FROM = [From.GetName]" }
 	title = wtt_germany.38.t
 	desc = wtt_germany.38.desc
 	picture = GFX_report_event_generic_read_write
@@ -1920,6 +1958,7 @@ country_event = {
 # China demands continued support of Von Falkenhausen in return # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.39
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.39 FROM = [From.GetName]" }
 	title = wtt_germany.39.t
 	desc = wtt_germany.39.desc
 	picture = GFX_report_event_generic_read_write
@@ -1946,6 +1985,7 @@ country_event = {
 # German notification event that China rejected request # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.40 FROM = [From.GetName]" }
 	title = wtt_germany.40.t
 	desc = wtt_germany.40.desc
 	picture = GFX_report_event_generic_read_write
@@ -1962,6 +2002,7 @@ country_event = {
 # Chinese notification event that Germany accepted offer # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.41 FROM = [From.GetName]" }
 	title = wtt_germany.41.t
 	desc = wtt_germany.41.desc
 	picture = GFX_report_event_generic_read_write
@@ -1978,6 +2019,7 @@ country_event = {
 # Chinese notification event that Germany rejected offer # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.42 FROM = [From.GetName]" }
 	title = wtt_germany.42.t
 	desc = wtt_germany.42.desc
 	picture = GFX_report_event_generic_read_write
@@ -1995,6 +2037,7 @@ country_event = {
 # Germans demand return of Tsingtao # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.43
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.43 FROM = [From.GetName]" }
 	title = wtt_germany.43.t
 	desc = wtt_germany.43.desc
 	picture = GFX_report_event_generic_read_write
@@ -2053,6 +2096,7 @@ country_event = {
 # Japan demands withdraw support of Von Falkenhausen in return # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.44
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.44 FROM = [From.GetName]" }
 	title = wtt_germany.44.t
 	desc = wtt_germany.44.desc
 	picture = GFX_report_event_generic_read_write
@@ -2094,6 +2138,7 @@ country_event = {
 # German notification event that Japan rejected request # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.45
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.45 FROM = [From.GetName]" }
 	title = wtt_germany.40.t
 	desc = wtt_germany.40.desc
 	picture = GFX_report_event_generic_read_write
@@ -2110,6 +2155,7 @@ country_event = {
 # Japanese notification event that Germany accepted offer # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.46
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.46 FROM = [From.GetName]" }
 	title = wtt_germany.41.t
 	desc = wtt_germany.46.desc
 	picture = GFX_report_event_generic_read_write
@@ -2126,6 +2172,7 @@ country_event = {
 # Japanese notification event that Germany rejected offer # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.47
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.47 FROM = [From.GetName]" }
 	title = wtt_germany.42.t
 	desc = wtt_germany.42.desc
 	picture = GFX_report_event_generic_read_write
@@ -2141,6 +2188,7 @@ country_event = {
 # German notification event that China/Japan acceded to demands # simply remove event, irrelevant
 country_event = {
 	id = wtt_germany.48
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.48 FROM = [From.GetName]" }
 	title = wtt_germany.48.t
 	desc = wtt_germany.48.desc
 	picture = GFX_report_event_generic_read_write
@@ -2308,6 +2356,7 @@ state_event = {
 # Hitler suicide upon fall of Berlin in civil war
 country_event = {
 	id = wtt_germany.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.50 FROM = [From.GetName]" }
 	title = wtt_germany.50.t
 	desc = wtt_germany.50.desc
 	picture = GFX_report_event_german_reichstag_bombed
@@ -2366,6 +2415,7 @@ country_event = {
 # Reinstate Nazi advisors and generals?
 country_event = {
 	id = wtt_germany.51
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.51 FROM = [From.GetName]" }
 	title = wtt_germany.51.t
 	desc = wtt_germany.51.desc
 	picture = GFX_report_event_fascists_posing
@@ -2509,6 +2559,7 @@ country_event = {
 # Undemocratic faction member civil war aid event for Germany
 country_event = {
 	id = wtt_germany.52
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.52 FROM = [From.GetName]" }
 	title = wtt_germany.52.t
 	desc = wtt_germany.52.desc
 	picture = GFX_report_event_german_troops
@@ -2534,6 +2585,7 @@ country_event = {
 # German event for Austrian referendum to join Democratic Germany
 country_event = {
 	id = wtt_germany.53
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.53 FROM = [From.GetName]" }
 	title = wtt_germany.53.t
 	desc = wtt_germany.53.desc
 	picture = GFX_report_event_generic_parliament
@@ -2581,6 +2633,7 @@ country_event = {
 # Austrian event for Austrian referendum to join Democratic Germany
 country_event = {
 	id = wtt_germany.54
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.54 FROM = [From.GetName]" }
 	title = wtt_germany.54.t
 	desc = wtt_germany.54.desc
 	picture = GFX_report_event_generic_parliament
@@ -2606,6 +2659,7 @@ country_event = {
 # German confirmation event for Austrian referendum to join Democratic Germany
 country_event = {
 	id = wtt_germany.55
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.55 FROM = [From.GetName]" }
 	title = wtt_germany.55.t
 	desc = wtt_germany.55.desc
 	picture = GFX_report_event_generic_peaceful_annexation
@@ -2635,6 +2689,7 @@ country_event = {
 # Polish event when attacked by SOV and not in faction with democratic Germany
 country_event = {
 	id = wtt_germany.56
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.56 FROM = [From.GetName]" }
 	title = wtt_germany.56.t
 	desc = wtt_germany.56.desc
 	picture = GFX_report_event_generic_parliament
@@ -2681,6 +2736,7 @@ country_event = {
 # German event giving back Danzig and Poznan if POL almost losing to SOV
 country_event = {
 	id = wtt_germany.57
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.57 FROM = [From.GetName]" }
 	title = wtt_germany.57.t
 	desc = wtt_germany.57.desc
 	picture = GFX_report_event_generic_parliament
@@ -2715,6 +2771,7 @@ country_event = {
 # German notification event for Austrian rejection of referendum to join Democratic Germany
 country_event = {
 	id = wtt_germany.58
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.58 FROM = [From.GetName]" }
 	title = wtt_germany.58.t
 	desc = wtt_germany.58.desc
 	picture = GFX_report_event_gathering_protest
@@ -2730,6 +2787,7 @@ country_event = {
 # Polish confirmation event for Germany accepting Danzig and Poznan
 country_event = {
 	id = wtt_germany.59
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.59 FROM = [From.GetName]" }
 	title = wtt_germany.59.t
 	desc = wtt_germany.59.desc
 	picture = GFX_report_event_generic_peaceful_annexation
@@ -2746,6 +2804,7 @@ country_event = {
 # Polish notification event for Germany rejecting Danzig and Poznan
 country_event = {
 	id = wtt_germany.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.60 FROM = [From.GetName]" }
 	title = wtt_germany.60.t
 	desc = wtt_germany.60.desc
 	picture = GFX_report_event_generic_read_write
@@ -2763,6 +2822,7 @@ country_event = {
 #Anti-smartass event to give penalty of mefo_bills_ended effect if MEFO bills have been removed through a (potentially insignificant) war.
 country_event = {
 	id = wtt_germany.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.62 FROM = [From.GetName]" }
 	title = wtt_germany.62.t
 	desc = wtt_germany.62.desc
 	picture = GFX_report_event_tank_factory
@@ -2948,6 +3008,7 @@ country_event = {
 # Reintegration remove cores for Alsace and notification for France
 country_event = {
 	id = wtt_germany.63
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.63 FROM = [From.GetName]" }
 	title = wtt_germany.63.t
 	desc = wtt_germany.63.desc
 	picture = GFX_report_event_generic_peaceful_annexation
@@ -2967,6 +3028,7 @@ country_event = {
 # Reintegration notification for Luxemburg
 country_event = {
 	id = wtt_germany.64
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.64 FROM = [From.GetName]" }
 	title = wtt_germany.64.t
 	desc = wtt_germany.63.desc
 	picture = GFX_report_event_generic_peaceful_annexation
@@ -2986,6 +3048,7 @@ country_event = {
 # Event for POL - GER Pressures POL to Join War against SOV
 country_event = {
 	id = wtt_germany.65
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.65 FROM = [From.GetName]" }
 	title = wtt_germany.65.t
 	desc = wtt_germany.65.desc
 	picture = GFX_report_event_german_troops
@@ -3081,6 +3144,7 @@ country_event = {
 # Event for GER - POL Joins Faction and War against SOV
 country_event = {
 	id = wtt_germany.66
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.66 FROM = [From.GetName]" }
 	title = wtt_germany.66.t
 	desc = wtt_germany.66.desc
 	picture = GFX_report_event_german_troops
@@ -3099,6 +3163,7 @@ country_event = {
 # Event for GER - POL Rejects Demands
 country_event = {
 	id = wtt_germany.67
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.67 FROM = [From.GetName]" }
 	title = wtt_germany.67.t
 	desc = wtt_germany.67.desc
 	picture = GFX_report_event_german_troops
@@ -3119,6 +3184,7 @@ country_event = {
 # Event for other nations (HUN/AUS/CZE) to accept becoming annex by new Austria-Hungary
 country_event = {
 	id = wtt_germany.68
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.68 FROM = [From.GetName]" }
 	title = wtt_germany.68.t
 	desc = wtt_germany.68.desc
 	picture = GFX_report_event_generic_conference
@@ -3145,6 +3211,7 @@ country_event = {
 # Event for original nation (HUN/AUS/CZE) notifying another nation accepted
 country_event = {
 	id = wtt_germany.69
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.69 FROM = [From.GetName]" }
 	title = wtt_germany.69.t
 	desc = wtt_germany.69.desc
 	picture = GFX_report_event_generic_conference
@@ -3171,6 +3238,7 @@ country_event = {
 # Event for original nation (HUN/AUS/CZE) notifying another nation rejected
 country_event = {
 	id = wtt_germany.70
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.70 FROM = [From.GetName]" }
 	title = wtt_germany.70.t
 	desc = wtt_germany.70.desc
 	picture = GFX_report_event_generic_conference
@@ -3186,6 +3254,7 @@ country_event = {
 # Event for original nation (HUN/AUS/CZE) notifying of integration and formation of Austria-Hungary
 country_event = {
 	id = wtt_germany.71
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.71 FROM = [From.GetName]" }
 	title = wtt_germany.71.t
 	desc = wtt_germany.71.desc
 	picture = GFX_report_event_generic_conference
@@ -3290,6 +3359,7 @@ country_event = {
 # Event asking whether HUN/ROM want to become puppet in return for factories.
 country_event = {
 	id = wtt_germany.72
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.72 FROM = [From.GetName]" }
 	title = wtt_germany.72.t
 	desc = wtt_germany.72.desc
 	picture = GFX_report_event_generic_read_write
@@ -3449,6 +3519,7 @@ country_event = {
 # Event for GER saying HUN/ROM accepted
 country_event = {
 	id = wtt_germany.73
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.73 FROM = [From.GetName]" }
 	title = wtt_germany.73.t
 	desc = wtt_germany.73.desc
 	picture = GFX_report_event_generic_read_write
@@ -3604,6 +3675,7 @@ country_event = {
 # Event for GER saying HUN/ROM rejected
 country_event = {
 	id = wtt_germany.74
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.74 FROM = [From.GetName]" }
 	title = wtt_germany.74.t
 	desc = wtt_germany.74.desc
 	picture = GFX_report_event_generic_read_write
@@ -3619,6 +3691,7 @@ country_event = {
 
 country_event = {
 	id = wtt_germany.999
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.999 FROM = [From.GetName]" }
 	title = wtt_germany.999.t
 	desc = wtt_germany.999.desc
 	picture = GFX_report_event_generic_conference
@@ -3644,6 +3717,7 @@ country_event = {
 
 country_event = {
 	id = wtt_germany.1000
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.1000 FROM = [From.GetName]" }
 	title = wtt_germany.1000.t
 	desc = wtt_germany.1000.desc
 	picture = GFX_report_event_generic_conference
@@ -3671,6 +3745,7 @@ country_event = {
 
 country_event = {
 	id = wtt_germany.1001
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.1001 FROM = [From.GetName]" }
 	title = wtt_germany.1001.t
 	desc = wtt_germany.1001.desc
 	picture = GFX_report_event_hindenburg_flames
@@ -3700,6 +3775,7 @@ country_event = {
 
 country_event = {
 	id = wtt_germany.1002
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.1002 FROM = [From.GetName]" }
 	title = wtt_germany.1001.t
 	desc = wtt_germany.1002.desc
 	picture = GFX_report_event_hindenburg_flames
@@ -3716,6 +3792,7 @@ country_event = {
 
 country_event = {
 	id = wtt_germany.1003
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.1003 FROM = [From.GetName]" }
 	title = wtt_germany.1003.t
 	desc = wtt_germany.1003.desc
 	picture = GFX_report_event_generic_conference
@@ -3732,6 +3809,7 @@ country_event = {
 
 country_event = {
 	id = wtt_germany.1004
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.1004 FROM = [From.GetName]" }
 
 	hidden = yes
 
@@ -3759,6 +3837,7 @@ country_event = {
 
 country_event = {
 	id = wtt_germany.1005
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wtt_germany.1005 FROM = [From.GetName]" }
 
 	hidden = yes
 
