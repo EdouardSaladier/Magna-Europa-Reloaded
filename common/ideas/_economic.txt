@@ -657,13 +657,13 @@ ideas = {
 
 			available = {
 
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
-				}
+				#if = {
+				#	limit = {
+				#		original_tag = CHI
+				#		has_dlc = "Waking the Tiger"
+				#	}
+				#	NOT = { has_idea = CHI_nine_power_treaty }
+				#}
 				if = {
 					limit = {
 						original_tag = SPR
@@ -741,13 +741,13 @@ ideas = {
 				}
 
 
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
-				}
+				#if = {
+				#	limit = {
+				#		original_tag = CHI
+				#		has_dlc = "Waking the Tiger"
+				#	}
+				#	NOT = { has_idea = CHI_nine_power_treaty }
+				#}
 				if = {
 					limit = {
 						original_tag = SPR
@@ -819,13 +819,13 @@ ideas = {
 					NOT = { has_opinion_modifier = MR_pact }
 				}
 
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
-				}
+				#if = {
+				#	limit = {
+				#		original_tag = CHI
+				#		has_dlc = "Waking the Tiger"
+				#	}
+				#	NOT = { has_idea = CHI_nine_power_treaty }
+				#}
 			}
 
 			cost = 150
