@@ -943,7 +943,7 @@ focus_tree = {
 			has_tech = rubber_processing
 			SOV_third_five_year_plan_available = yes
 			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
-			has_full_control_of_state = 219 #MOSCOW
+			has_full_control_of_state = 229 #MOSCOW
 			OR = {
 				has_full_control_of_state = 260 #VORONEZH
 				has_full_control_of_state = 223 #TULA
@@ -2109,7 +2109,7 @@ focus_tree = {
 			any_enemy_country = {
 				SOV_is_major_not_original_sov = yes
 			}
-			has_full_control_of_state = 219 #MOSCOW
+			has_full_control_of_state = 229 #MOSCOW
 		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -3945,7 +3945,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_full_control_of_state = 219 #MOSCOW
+			has_full_control_of_state = 229 #MOSCOW
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -3979,7 +3979,7 @@ focus_tree = {
 				}
 			}
 			
-			219 = {
+			229 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -4429,7 +4429,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_full_control_of_state = 219 #MOSCOW
+			has_full_control_of_state = 229 #MOSCOW
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -4461,7 +4461,7 @@ focus_tree = {
 				}
 			}
 
-			219 = {
+			229 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -4719,7 +4719,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_full_control_of_state = 219 #MOSCOW
+			has_full_control_of_state = 229 #MOSCOW
 			has_equipment = { train_equipment > 119 } #20 trains per factory
 			OR = {
 				threat > 0.85
@@ -4739,7 +4739,7 @@ focus_tree = {
 				producer = SOV
 			}
 			#Factories are removed immediately to keep consistency with how decisions work
-			219 = { #Moscow
+			229 = { #Moscow
 				remove_building = {
 					type = arms_factory
 					level = 1
@@ -4794,7 +4794,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = SOV_focus_select_effect_tt
 			effect_tooltip = {
-				219 = { #Moscow
+				229 = { #Moscow
 					remove_building = {
 						type = arms_factory
 						level = 1
