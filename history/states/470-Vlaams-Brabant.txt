@@ -12,15 +12,12 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = FLA
-        victory_points = {
-            12389 80 #Bruxelles
-        }
 		victory_points = {
             12362 5 #Leuven
         }
     }
-	manpower=1462900
+	manpower=633900
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = metropolis
+	state_category = large_city
 }

@@ -1,0 +1,74 @@
+﻿capital = 2969
+
+set_research_slots = 3
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+#	early_fighter = 1
+	trench_warfare = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 70
+	fascism = 21
+	communism = 9
+}
+
+create_country_leader = {
+	name = "Frédéric Joseph Vandemeulebroek"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1958.12.14"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Jules Coelst"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1946.6.27"
+	ideology = centrism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Joannes Grauls"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1960.2.5"
+	ideology = rexism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Julien Lahaut"
+	desc = ""
+	picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+	expire = "1970.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
