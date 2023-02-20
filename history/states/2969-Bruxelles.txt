@@ -1,0 +1,23 @@
+
+state={
+	id=2969
+	name="STATE_2969"
+	provinces={
+		12389
+	}
+	history={
+		owner = BEL
+		add_core_of = BEL
+		add_core_of = BRU
+		buildings = {
+			infrastructure = 4
+		}
+        victory_points = {
+            12389 40 #Bruxelles
+        }
+    }
+	manpower=829000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = large_city
+}
