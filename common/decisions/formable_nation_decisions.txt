@@ -18,27 +18,48 @@ form_scandinavia_category = {
 			# Norway
 			custom_trigger_tooltip = {
 				tooltip = form_country_norway_required_states_tt
-				controls_state = 110
-				controls_state = 142
-				controls_state = 143
-				controls_state = 144
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 122
+								region = 121
+								region = 120
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# Sweden
 			custom_trigger_tooltip = {
 				tooltip = form_country_sweden_required_states_tt
-				controls_state = 124
-				controls_state = 138
-				controls_state = 139
-				controls_state = 140
-				controls_state = 141
-				controls_state = 38
-				controls_state = 666
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 123
+								region = 124
+								region = 119
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# Denmark / European Mainland
 			custom_trigger_tooltip = {
 				tooltip = form_scandinavia_denmark_required_states_tt
-				controls_state = 37
-				controls_state = 99
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 26
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 		}
 
@@ -56,27 +77,32 @@ form_scandinavia_category = {
 			# Norway
 			custom_effect_tooltip = form_country_norway_coring_states_tt
 			hidden_effect = {
-				110 = { add_core_of = ROOT }
-				142 = { add_core_of = ROOT }
-				143 = { add_core_of = ROOT }
-				144 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						is_core_of = NOR
+					}
+					add_core_of = ROOT
+				}
 			}
 			# Sweden
 			custom_effect_tooltip = form_country_sweden_coring_states_tt
 			hidden_effect = {
-				124 = { add_core_of = ROOT }
-				138 = { add_core_of = ROOT }
-				139 = { add_core_of = ROOT }
-				140 = { add_core_of = ROOT }
-				141 = { add_core_of = ROOT }
-				38 = { add_core_of = ROOT }
-				666 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						is_core_of = SWE
+					}
+					add_core_of = ROOT
+				}
 			}
 			# Denmark / European Mainland
 			custom_effect_tooltip = form_scandinavia_denmark_coring_states_tt
 			hidden_effect = {
-				37 = { add_core_of = ROOT }
-				99 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						is_core_of = DEN
+					}
+					add_core_of = ROOT
+				}
 			}
 			hidden_effect = {
 				news_event = { id = wtt_news.53 hours = 6 }
@@ -127,39 +153,65 @@ form_nordic_league_category = {
 				# Norway
 				custom_trigger_tooltip = {
 					tooltip = form_country_norway_required_states_tt
-					controls_state = 110
-					controls_state = 142
-					controls_state = 143
-					controls_state = 144
+					all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 122
+								region = 121
+								region = 120
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 				}
 				# Sweden
 				custom_trigger_tooltip = {
 					tooltip = form_country_sweden_required_states_tt
-					controls_state = 124
-					controls_state = 138
-					controls_state = 139
-					controls_state = 140
-					controls_state = 141
-					controls_state = 38
-					controls_state = 666
+					all_state = {
+						if = {
+							limit = {
+								OR = {
+									region = 123
+									region = 124
+									region = 119
+								}
+							}
+							is_controlled_by = ROOT
+						}
+					}
 				}
 				# Denmark
 				custom_trigger_tooltip = {
 					tooltip = form_country_denmark_required_states_tt
-					controls_state = 37
-					controls_state = 99
-					controls_state = 100
-					controls_state = 101
-					controls_state = 337
+					all_state = {
+						if = {
+							limit = {
+								OR = {
+									region = 26
+								}
+							}
+							is_controlled_by = ROOT
+						}
+					}
 				}
 				# Finland
 				custom_trigger_tooltip = {
 					tooltip = form_country_finland_required_states_tt
-					controls_state = 111
-					controls_state = 145
-					controls_state = 148
-					controls_state = 149
-					controls_state = 150
+					all_state = {
+						if = {
+							limit = {
+								OR = {
+									region = 116
+									region = 118
+									region = 112
+									region = 117
+								}
+							}
+							is_controlled_by = ROOT
+						}
+					}
 				}
 			}
 			else = {
@@ -204,10 +256,12 @@ form_nordic_league_category = {
 			# Norway
 			custom_effect_tooltip = form_country_norway_coring_states_tt
 			hidden_effect = {
-				110 = { add_core_of = ROOT }
-				142 = { add_core_of = ROOT }
-				143 = { add_core_of = ROOT }
-				144 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						is_core_of = NOR
+					}
+					add_core_of = ROOT
+				}
 			}
 
 			if = {
@@ -231,13 +285,12 @@ form_nordic_league_category = {
 			# Sweden
 			custom_effect_tooltip = form_country_sweden_coring_states_tt
 			hidden_effect = {
-				124 = { add_core_of = ROOT }
-				138 = { add_core_of = ROOT }
-				139 = { add_core_of = ROOT }
-				140 = { add_core_of = ROOT }
-				141 = { add_core_of = ROOT }
-				38 = { add_core_of = ROOT }
-				666 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						is_core_of = SWE
+					}
+					add_core_of = ROOT
+				}
 
 			}
 
@@ -262,11 +315,12 @@ form_nordic_league_category = {
 			# Denmark
 			custom_effect_tooltip = form_country_denmark_coring_states_tt
 			hidden_effect = {
-				37 = { add_core_of = ROOT }
-				99 = { add_core_of = ROOT }
-				100 = { add_core_of = ROOT }
-				101 = { add_core_of = ROOT }
-				337 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						is_core_of = DEN
+					}
+					add_core_of = ROOT
+				}
 			}
 
 			if = {
@@ -291,11 +345,12 @@ form_nordic_league_category = {
 			# Finland
 			custom_effect_tooltip = form_country_finland_coring_states_tt
 			hidden_effect = {
-				111 = { add_core_of = ROOT }
-				145 = { add_core_of = ROOT }
-				148 = { add_core_of = ROOT }
-				149 = { add_core_of = ROOT }
-				150 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						is_core_of = FIN
+					}
+					add_core_of = ROOT
+				}
 			}
 			
 			if = {
@@ -379,30 +434,29 @@ form_austria_hungary_category = {
 			# Austria
 			custom_trigger_tooltip = {
 				tooltip = form_country_austria_required_states_tt
-				controls_state = 848
-				controls_state = 153
-				controls_state = 152
-				controls_state = 4
+				AUS = {
+					all_core_state = {
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# Czechoslovakia
 			custom_trigger_tooltip = {
 				tooltip = form_country_czechoslovakia_required_states_tt
-				controls_state = 69
-				controls_state = 9
-				controls_state = 75
-				controls_state = 74
-				controls_state = 72
-				controls_state = 70
-				controls_state = 664
-				controls_state = 71
-				controls_state = 73
+				CZE = {
+					all_core_state = {
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# Hungary
 			custom_trigger_tooltip = {
 				tooltip = form_country_hungary_required_states_tt
-				controls_state = 155
-				controls_state = 43
-				controls_state = 154
+				HUN = {
+					all_core_state = {
+						is_controlled_by = ROOT
+					}
+				}
 			}
 		}
 
@@ -423,50 +477,52 @@ form_austria_hungary_category = {
 				}
 				AUS = { set_cosmetic_tag = AUS_NOT_WHITE }
 			}
-			102 = { add_core_of = ROOT }
-			853 = { add_core_of = ROOT }
-			103 = { add_core_of = ROOT }
-			104 = { add_core_of = ROOT }
-			804 = { add_core_of = ROOT }
-			109 = { add_core_of = ROOT }
-			45 = { add_core_of = ROOT }
-			83 = { add_core_of = ROOT }
-			76 = { add_core_of = ROOT }
-			84 = { add_core_of = ROOT }
-			39 = { add_core_of = ROOT }
-			163 = { add_core_of = ROOT }
-			736 = { add_core_of = ROOT }
-			852 = { add_core_of = ROOT }
-			850 = { add_core_of = ROOT }
-			764 = { add_core_of = ROOT }
-			82 = { add_core_of = ROOT }
+			every_state = {
+					limit =  {
+						OR = {
+							is_core_of = TRA
+							is_core_of = VJV
+							is_core_of = BNT
+							is_core_of = SLV
+							is_core_of = TIR
+							is_core_of = CRO
+							is_core_of = BOS
+							is_core_of = SLO
+							is_core_of = CZN
+							is_core_of = BUC
+						}
+					}
+					add_core_of = ROOT
+				}
 			# Austria
 			custom_effect_tooltip = form_country_austria_coring_states_tt
 			hidden_effect = {
-				848 = { add_core_of = ROOT }
-				153 = { add_core_of = ROOT }
-				152 = { add_core_of = ROOT }
-				4 = { add_core_of = ROOT }
+				every_state = {
+					limit =  {
+						is_core_of = AUS
+					}
+					add_core_of = ROOT
+				}
 			}
 			# Czechoslovakia
 			custom_effect_tooltip = form_country_czechoslovakia_coring_states_tt
 			hidden_effect = {
-				69 = { add_core_of = ROOT }
-				9 = { add_core_of = ROOT }
-				75 = { add_core_of = ROOT }
-				74 = { add_core_of = ROOT }
-				72 = { add_core_of = ROOT }
-				70 = { add_core_of = ROOT }
-				664 = { add_core_of = ROOT }
-				71 = { add_core_of = ROOT }
-				73 = { add_core_of = ROOT }
+				every_state = {
+					limit =  {
+						is_core_of = CZE
+					}
+					add_core_of = ROOT
+				}
 			}
 			# Hungary
 			custom_effect_tooltip = form_country_hungary_coring_states_tt
 			hidden_effect = {
-				155 = { add_core_of = ROOT }
-				43 = { add_core_of = ROOT }
-				154 = { add_core_of = ROOT }
+				every_state = {
+					limit =  {
+						is_core_of = HUN
+					}
+					add_core_of = ROOT
+				}
 			}
 			hidden_effect = {
 				news_event = { id = wtt_news.56 hours = 6 }
@@ -494,21 +550,33 @@ form_austria_hungary_category = {
 
 		available = {
 			is_subject = no
-			controls_state = 155
-			controls_state = 43
-			controls_state = 154
-			controls_state = 102
-			controls_state = 853
-			controls_state = 103
-			controls_state = 104
-			controls_state = 804
-			controls_state = 109
-			controls_state = 45
-			controls_state = 83
-			controls_state = 76
-			controls_state = 84
-			controls_state = 764
-			controls_state = 82
+			# Austria
+			custom_trigger_tooltip = {
+				tooltip = form_country_austria_required_states_tt
+				AUS = {
+					all_core_state = {
+						is_controlled_by = ROOT
+					}
+				}
+			}
+			# Czechoslovakia
+			custom_trigger_tooltip = {
+				tooltip = form_country_czechoslovakia_required_states_tt
+				CZE = {
+					all_core_state = {
+						is_controlled_by = ROOT
+					}
+				}
+			}
+			# Hungary
+			custom_trigger_tooltip = {
+				tooltip = form_country_hungary_required_states_tt
+				HUN = {
+					all_core_state = {
+						is_controlled_by = ROOT
+					}
+				}
+			}
 		}
 
 		visible = {
@@ -518,26 +586,36 @@ form_austria_hungary_category = {
 		}
 
 		complete_effect = {
-			155 = { add_core_of = ROOT }
-			43 = { add_core_of = ROOT }
-			154 = { add_core_of = ROOT }
-			102 = { add_core_of = ROOT }
-			853 = { add_core_of = ROOT }
-			103 = { add_core_of = ROOT }
-			104 = { add_core_of = ROOT }
-			804 = { add_core_of = ROOT }
-			109 = { add_core_of = ROOT }
-			45 = { add_core_of = ROOT }
-			83 = { add_core_of = ROOT }
-			76 = { add_core_of = ROOT }
-			84 = { add_core_of = ROOT }
-			39 = { add_core_of = ROOT }
-			163 = { add_core_of = ROOT }
-			736 = { add_core_of = ROOT }
-			852 = { add_core_of = ROOT }
-			850 = { add_core_of = ROOT }
-			764 = { add_core_of = ROOT }
-			82 = { add_core_of = ROOT }
+			# Austria
+			custom_effect_tooltip = form_country_austria_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit =  {
+						is_core_of = AUS
+					}
+					add_core_of = ROOT
+				}
+			}
+			# Czechoslovakia
+			custom_effect_tooltip = form_country_czechoslovakia_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit =  {
+						is_core_of = CZE
+					}
+					add_core_of = ROOT
+				}
+			}
+			# Hungary
+			custom_effect_tooltip = form_country_hungary_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit =  {
+						is_core_of = HUN
+					}
+					add_core_of = ROOT
+				}
+			}
 			set_global_flag = reintegrate_the_empire_flag
 		}
 
@@ -569,27 +647,32 @@ form_commonwealth_category = {
 			# Lithuania
 			custom_trigger_tooltip = {
 				tooltip = form_country_lithuania_required_states_tt
-				controls_state = 11
-				controls_state = 189
+				all_state = {
+					if = {
+						limit = {
+							is_core_of = LIT
+							NOT = {
+								state = 227
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				} 
 			}
 			# Poland
 			custom_trigger_tooltip = {
 				tooltip = form_country_poland_required_states_tt
-				controls_state = 86
-				controls_state = 87
-				controls_state = 88
-				controls_state = 90
-				controls_state = 98
-				controls_state = 10
-				controls_state = 97
-				controls_state = 92
-				controls_state = 91
-				controls_state = 89
-				controls_state = 93
-				controls_state = 94
-				controls_state = 95
-				controls_state = 96
-				controls_state = 784
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								is_east_poland = yes
+								is_west_poland = yes
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			OR = {
 				AND = {
@@ -1870,91 +1953,101 @@ form_european_union_category = {
 			# Netherlands
 			custom_trigger_tooltip = {
 				tooltip = form_eu_netherlands_required_states_tt
-				controls_state = 7
-				controls_state = 35
-				controls_state = 36
+				all_state = {
+					if = {
+						limit = {
+							is_core_of = HOL
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# Belgium
 			custom_trigger_tooltip = {
 				tooltip = form_eu_belgium_required_states_tt
-				controls_state = 6
-				controls_state = 34
+				all_state = {
+					if = {
+						limit = {
+							is_core_of = BEL
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# France
 			custom_trigger_tooltip = {
 				tooltip = form_eu_france_required_states_tt
-				controls_state = 29
-				controls_state = 18
-				controls_state = 17
-				controls_state = 28
-				controls_state = 15
-				controls_state = 16
-				controls_state = 27
-				controls_state = 14
-				controls_state = 30
-				controls_state = 24
-				controls_state = 23
-				controls_state = 33
-				controls_state = 26
-				controls_state = 20
-				controls_state = 32
-				controls_state = 735
-				controls_state = 25
-				controls_state = 22
-				controls_state = 21
-				controls_state = 851
-				controls_state = 19
-				controls_state = 20
-				controls_state = 1
-				controls_state = 785
-				controls_state = 31
+				all_state = {
+					if = {
+						limit = {
+							is_core_of = FRA
+							is_on_continent = europe
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# Italy
 			custom_trigger_tooltip = {
 				tooltip = form_eu_italy_required_states_tt
-				controls_state = 158
-				controls_state = 159
-				controls_state = 39
-				controls_state = 160
-				controls_state = 161
-				controls_state = 162
-				controls_state = 157
-				controls_state = 2
-				controls_state = 117
-				controls_state = 156
-				controls_state = 115
-				controls_state = 114
-				controls_state = 736
-				controls_state = 163
-				controls_state = 849
-				controls_state = 850
-				controls_state = 852
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 16
+								region = 25
+								region = 17
+								region = 18
+								region = 19
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# Germany
 			custom_trigger_tooltip = {
 				tooltip = form_country_germany_required_states_tt
-				controls_state = 51
-				controls_state = 42
-				controls_state = 56
-				controls_state = 57
-				controls_state = 55
-				controls_state = 50
-				controls_state = 59
-				controls_state = 58
-				controls_state = 60
-				controls_state = 54
-				controls_state = 52
-				controls_state = 53
-				controls_state = 61
-				controls_state = 64
-				controls_state = 65
-				controls_state = 62
-				controls_state = 68
-				controls_state = 66
-				controls_state = 67
-				controls_state = 63
-				controls_state = 5
-				controls_state = 763
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 35
+								region = 36
+								region = 70
+								region = 64
+								region = 40
+								region = 69
+								region = 68
+								region = 9
+								AND = {
+									region = 95
+									NOT = {
+										state = 2341
+										state = 264
+										state = 267
+										state = 1979
+										state = 546
+										state = 2729
+										state = 280
+									}
+								}
+								AND = {
+									region = 11
+									NOT = {
+										state = 2329
+										state = 481
+										state = 2262
+										state = 467
+										state = 509
+										state = 2932
+									}
+								}
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 		}
 
@@ -1994,95 +2087,93 @@ form_european_union_category = {
 			else = {
 				set_cosmetic_tag = ENG_imperial_federation_unified #Europe-a-Nation
 			}
-			8 = { add_core_of = ROOT }
 			# Netherlands
 			custom_effect_tooltip = form_eu_netherlands_coring_states_tt 
 			hidden_effect = {
-				7 = { add_core_of = ROOT }
-				35 = { add_core_of = ROOT }
-				36 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						region = 4
+					}
+					add_core_of = ROOT
+				}
 			}
 			# Belgium
 			custom_effect_tooltip = form_eu_belgium_coring_states_tt
 			hidden_effect = {
-				6 = { add_core_of = ROOT }
-				34 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						region = 4
+					}
+					add_core_of = ROOT
+				}
 			}
 			# France
 			custom_effect_tooltip = form_eu_france_coring_states_tt
 			hidden_effect = {
-				29 = { add_core_of = ROOT }
-				18 = { add_core_of = ROOT }
-				17 = { add_core_of = ROOT }
-				28 = { add_core_of = ROOT }
-				15 = { add_core_of = ROOT }
-				16 = { add_core_of = ROOT }
-				27 = { add_core_of = ROOT }
-				14 = { add_core_of = ROOT }
-				30 = { add_core_of = ROOT }
-				24 = { add_core_of = ROOT }
-				23 = { add_core_of = ROOT }
-				33 = { add_core_of = ROOT }
-				26 = { add_core_of = ROOT }
-				20 = { add_core_of = ROOT }
-				32 = { add_core_of = ROOT }
-				735 = { add_core_of = ROOT }
-				25 = { add_core_of = ROOT }
-				22 = { add_core_of = ROOT }
-				21 = { add_core_of = ROOT }
-				851 = { add_core_of = ROOT }
-				19 = { add_core_of = ROOT }
-				20 = { add_core_of = ROOT }
-				1 = { add_core_of = ROOT }
-				785 = { add_core_of = ROOT }
-				31 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						is_core_of = FRA
+					}
+					add_core_of = ROOT
+				}
 			}
 			# Italy
 			custom_effect_tooltip = form_eu_italy_coring_states_tt
 			hidden_effect = {
-				158 = { add_core_of = ROOT }
-				159 = { add_core_of = ROOT }
-				39 = { add_core_of = ROOT }
-				160 = { add_core_of = ROOT }
-				161 = { add_core_of = ROOT }
-				162 = { add_core_of = ROOT }
-				157 = { add_core_of = ROOT }
-				2 = { add_core_of = ROOT }
-				117 = { add_core_of = ROOT }
-				156 = { add_core_of = ROOT }
-				115 = { add_core_of = ROOT }
-				114 = { add_core_of = ROOT }
-				736 = { add_core_of = ROOT }
-				163 = { add_core_of = ROOT }
-				849 = { add_core_of = ROOT }
-				850 = { add_core_of = ROOT }
-				852 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						OR = {
+								region = 16
+								region = 25
+								region = 17
+								region = 18
+								region = 19
+							}
+					}
+					add_core_of = ROOT
+				}
 			}
 			# Germany
 			custom_effect_tooltip = form_country_germany_coring_states_tt
 			hidden_effect = {
-				51 = { add_core_of = ROOT }
-				42 = { add_core_of = ROOT }
-				56 = { add_core_of = ROOT }
-				57 = { add_core_of = ROOT }
-				55 = { add_core_of = ROOT }
-				50 = { add_core_of = ROOT }
-				59 = { add_core_of = ROOT }
-				58 = { add_core_of = ROOT }
-				60 = { add_core_of = ROOT }
-				54 = { add_core_of = ROOT }
-				52 = { add_core_of = ROOT }
-				53 = { add_core_of = ROOT }
-				61 = { add_core_of = ROOT }
-				64 = { add_core_of = ROOT }
-				65 = { add_core_of = ROOT }
-				62 = { add_core_of = ROOT }
-				68 = { add_core_of = ROOT }
-				66 = { add_core_of = ROOT }
-				67 = { add_core_of = ROOT }
-				63 = { add_core_of = ROOT }
-				5 = { add_core_of = ROOT }
-				763 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						OR = {
+								region = 35
+								region = 36
+								region = 70
+								region = 64
+								region = 40
+								region = 69
+								region = 68
+								region = 9
+								AND = {
+									region = 95
+									NOT = {
+										state = 2341
+										state = 264
+										state = 267
+										state = 1979
+										state = 546
+										state = 2729
+										state = 280
+									}
+								}
+								AND = {
+									region = 11
+									NOT = {
+										state = 2329
+										state = 481
+										state = 2262
+										state = 467
+										state = 509
+										state = 2932
+									}
+								}
+							}
+					}
+					add_core_of = ROOT
+				}
 			}
 			hidden_effect = {
 				news_event = { id = wtt_news.62 hours = 6 }
@@ -2109,12 +2200,14 @@ form_mutapa_category = {
 
 		allowed = {
 			OR = {
-				original_tag = SAF
-				original_tag = BOT
-				original_tag = ZIM
-				original_tag = MZB
+				#original_tag = SAF
+				#original_tag = BOT
+				#original_tag = ZIM
+				#original_tag = MZB
+				original_tag = IRE
 			}
 			has_dlc = "Waking the Tiger"
+			has_global_flag = NEVER
 		}
 
 		available = {
@@ -2144,7 +2237,7 @@ form_mutapa_category = {
 		}
 
 		complete_effect = {
-			set_cosmetic_tag = MUT_UNIFIED
+			#set_cosmetic_tag = MUT_UNIFIED
 			541 = { add_core_of = ROOT }
 			681 = { add_core_of = ROOT }
 			719 = { add_core_of = ROOT }
@@ -2198,117 +2291,173 @@ form_roman_empire_category = {
 			custom_trigger_tooltip = {
 				tooltip = form_country_albania_required_states_tt
 				# Albania
-				controls_state = 44
-				controls_state = 805
+				all_state = {
+					if = {
+						limit = {
+							region = 20
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# Yugoslavia
 			custom_trigger_tooltip = {
 				tooltip = form_country_mare_nostrum_required_states_tt
-				controls_state = 103
-				controls_state = 104 
-				controls_state = 804
-				controls_state = 105
-				controls_state = 853
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								is_core_of = DLM
+								state = 2924
+								state = 1477
+								state = 2911
+								state = 1473
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# Greece
 			custom_trigger_tooltip = {
 				tooltip = form_country_greece_required_states_tt
-				controls_state = 185
-				controls_state = 731
-				controls_state = 47
-				controls_state = 186
-				controls_state = 184
-				controls_state = 187
-				controls_state = 182
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 34
+								region = 33
+								region = 75
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# Turkey
 			custom_trigger_tooltip = {
 				tooltip = form_country_mare_nostrum_turkey_required_states_tt
-				controls_state = 341
-				controls_state = 797
-				controls_state = 340
-				controls_state = 339
-				controls_state = 342
-				controls_state = 345
-				controls_state = 344
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 60
+								region = 72
+								region = 73
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# Italy
 			custom_trigger_tooltip = {
 				tooltip = form_spqr_italy_required_states_tt
-				controls_state = 158
-				controls_state = 159
-				controls_state = 39
-				controls_state = 850
-				controls_state = 160
-				controls_state = 161
-				controls_state = 162
-				controls_state = 157
-				controls_state = 2
-				controls_state = 117
-				controls_state = 849
-				controls_state = 156
-				controls_state = 115
-				controls_state = 114
-				controls_state = 736
-				controls_state = 852
-				controls_state = 163
-				controls_state = 164
-				controls_state = 849
-				controls_state = 850
-				controls_state = 852
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 16
+								region = 25
+								region = 17
+								region = 18
+								region = 19
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 				# North Africa / Dodecanese
-				controls_state = 164
-				controls_state = 448
-				controls_state = 661
-				controls_state = 449
-				controls_state = 662
-				controls_state = 450
-				controls_state = 451
-				controls_state = 663
+				all_state = {
+					if = {
+						limit = {
+							is_core_of = LBA
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# Spain
 			custom_trigger_tooltip = {
 				tooltip = form_spqr_coastal_spain_required_states_tt
-				controls_state = 165
-				controls_state = 177
-				controls_state = 167
-				controls_state = 168
-				controls_state = 173
-				controls_state = 290
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								is_balearic_group = yes
+								is_catalonia_group = yes
+								is_valencia_group = yes
+								is_murcia_group = yes
+								is_granada_group = yes
+								is_spanish_nafrica_group = yes
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 
 			}
 			# France
 			custom_trigger_tooltip = {
 				tooltip = form_spqr_coastal_france_required_states_tt
-				controls_state = 1
-				controls_state = 735
-				controls_state = 851
-				controls_state = 21
-				controls_state = 22
-				controls_state = 31
+				controls_state = 817
+				controls_state = 810
+				controls_state = 825
+				controls_state = 829
+				controls_state = 824
+				controls_state = 807
+				controls_state = 822
+				controls_state = 850
+				controls_state = 871
 				# North Africa
-				controls_state = 458
-				controls_state = 665
-				controls_state = 460
-				controls_state = 459
-				controls_state = 461
+				all_state = {
+					if = {
+						limit = {
+							is_core_of = ALG
+							NOT = {
+								region = 66
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 				# Syria
-				controls_state = 677
-				controls_state = 553
-				controls_state = 799
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								is_core_of = SYR
+								is_core_of = LEB
+								NOT = {
+									is_core_of = JBS
+								}
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 			# British Mediterranean
 			custom_trigger_tooltip = {
 				tooltip = form_spqr_coastal_uk_required_states_tt
-				controls_state = 118
-				controls_state = 116
-				controls_state = 183
-				controls_state = 454 
-				controls_state = 453
-				controls_state = 446
-				controls_state = 907
-				controls_state = 447
-				controls_state = 452
+				controls_state = 1622
+				controls_state = 882
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								is_core_of = CYP
+								is_core_of = EGY
+								is_core_of = PAL
+								NOT = {
+									region = 66
+									region = 50
+								}
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
 			}
 		}
 
@@ -2328,66 +2477,52 @@ form_roman_empire_category = {
 			custom_effect_tooltip = form_spqr_core_mare_nostrum_states_tt
  			hidden_effect = {
 
- 				1 = { add_core_of = ROOT }
- 				735 = { add_core_of = ROOT }
- 				851 = { add_core_of = ROOT }
- 				21 = { add_core_of = ROOT }
- 				22 = { add_core_of = ROOT }
- 				31 = { add_core_of = ROOT }
- 				165 = { add_core_of = ROOT }
- 				177 = { add_core_of = ROOT }
- 				167 = { add_core_of = ROOT }
- 				168 = { add_core_of = ROOT }
- 				173 = { add_core_of = ROOT }
- 				118 = { add_core_of = ROOT }
- 				290 = { add_core_of = ROOT }
- 				461 = { add_core_of = ROOT }
- 				459 = { add_core_of = ROOT }
- 				460 = { add_core_of = ROOT }
- 				116 = { add_core_of = ROOT }
- 				458 = { add_core_of = ROOT }
- 				665 = { add_core_of = ROOT }
- 				448 = { add_core_of = ROOT }
- 				661 = { add_core_of = ROOT }
- 				273 = { add_core_of = ROOT }
- 				662 = { add_core_of = ROOT }
- 				449 = { add_core_of = ROOT }
- 				450 = { add_core_of = ROOT }
- 				663 = { add_core_of = ROOT }
- 				451 = { add_core_of = ROOT }
- 				452 = { add_core_of = ROOT }
- 				447 = { add_core_of = ROOT }
- 				907 = { add_core_of = ROOT }
- 				446 = { add_core_of = ROOT }
- 				453 = { add_core_of = ROOT }
- 				454 = { add_core_of = ROOT }
- 				553 = { add_core_of = ROOT }
- 				183 = { add_core_of = ROOT }
- 				677 = { add_core_of = ROOT }
- 				799 = { add_core_of = ROOT }
- 				344 = { add_core_of = ROOT }
- 				345 = { add_core_of = ROOT }
- 				342 = { add_core_of = ROOT }
- 				164 = { add_core_of = ROOT }
- 				182 = { add_core_of = ROOT }
- 				339 = { add_core_of = ROOT }
- 				187 = { add_core_of = ROOT }
- 				340 = { add_core_of = ROOT }
- 				797 = { add_core_of = ROOT }
- 				341 = { add_core_of = ROOT }
- 				184 = { add_core_of = ROOT }
- 				731 = { add_core_of = ROOT }
- 				47 = { add_core_of = ROOT }
- 				186 = { add_core_of = ROOT }
- 				185 = { add_core_of = ROOT }
- 				805 = { add_core_of = ROOT }
- 				44 = { add_core_of = ROOT }
- 				105 = { add_core_of = ROOT }
- 				103 = { add_core_of = ROOT }
- 				163 = { add_core_of = ROOT }
- 				804 = { add_core_of = ROOT }
- 				104 = { add_core_of = ROOT }
- 				853 = { add_core_of = ROOT }
+ 				every_state = {
+					limit = {
+							OR = {
+								is_core_of = CYP
+								is_core_of = EGY
+								is_core_of = PAL
+								is_core_of = SYR
+								is_core_of = LEB
+								AND = {
+									is_core_of = ALG
+									NOT = {
+										state = 1295
+										state = 1305
+										state = 1276
+										state = 1306
+										state = 1256
+										state = 1883
+										state = 1237
+										state = 1221
+									}
+								}
+								is_balearic_group = yes
+								is_catalonia_group = yes
+								is_valencia_group = yes
+								is_murcia_group = yes
+								is_granada_group = yes
+								is_spanish_nafrica_group = yes
+								region = 16
+								region = 25
+								region = 17
+								region = 18
+								region = 19
+								region = 60
+								region = 72
+								region = 73
+								region = 34
+								region = 33
+								region = 75
+								region = 22
+								region = 24
+								region = 23
+								region = 20
+							}
+					}
+					add_core_of = ROOT
+				}
 
  			}
 			
@@ -2493,27 +2628,27 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 794 #Eastern Aragon
-			controls_state = 166 #Western Aragon
-			controls_state = 172 #Navarra
-			controls_state = 792 #Pais Vasco
-			controls_state = 790 #Asturias
-			controls_state = 171 #Galicia
-			controls_state = 174 #Leon
-			controls_state = 791 #Valladolid
-			controls_state = 176 #Burgos
-			controls_state = 793 #Guadalajara
-			controls_state = 788 #Salamanca
-			controls_state = 41 #Madrid
-			controls_state = 175 #Ciudad Real
-			controls_state = 170 #Extramadura
-			controls_state = 789 #Cordoba
-			controls_state = 169 #Sevilla
-			controls_state = 179 #Beja
-			controls_state = 795 #Santarem
-			controls_state = 112 #Lisbon
-			controls_state = 181 #Guarda
-			controls_state = 180 #Porto
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								is_mainland_spain_vanilla_groups = yes
+								NOT = {
+									is_balearic_group = yes
+									is_catalonia_group = yes
+									is_valencia_group = yes
+									is_murcia_group = yes
+									is_granada_group = yes
+									is_spanish_nafrica_group = yes
+								}
+							}
+							is_core_of = POR
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 
 		}
 
@@ -2525,68 +2660,25 @@ form_roman_empire_category = {
 
 		complete_effect = {
 
-			# Eastern Aragon
-			794 = { add_core_of = ROOT }
-
-			# Western Aragon
-			166 = { add_core_of = ROOT }
-
-			# Navarra
-			172 = { add_core_of = ROOT }
-
-			# Pais Vasco
-			792 = { add_core_of = ROOT }
-
-			# Asturias
-			790 = { add_core_of = ROOT }
-
-			# Galicia
-			171 = { add_core_of = ROOT }
-
-			# Leon
-			174 = { add_core_of = ROOT }
-
-			# Valladolid
-			791 = { add_core_of = ROOT }
-
-			# Burgos
-			176 = { add_core_of = ROOT }
-
-			# Guadalajara
-			793 = { add_core_of = ROOT }
-
-			# Salamanca
-			788 = { add_core_of = ROOT }
-
-			# Madrid
-			41 = { add_core_of = ROOT }
-
-			# Ciudad Real
-			175 = { add_core_of = ROOT }
-
-			# Extramadura
-			170 = { add_core_of = ROOT }
-
-			# Cordoba
-			789 = { add_core_of = ROOT }
-
-			# Sevilla
-			169 = { add_core_of = ROOT }
-
-			# Beja
-			179 = { add_core_of = ROOT }
-
-			# Santarem
-			795 = { add_core_of = ROOT }
-
-			# Lisbon
-			112 = { add_core_of = ROOT }
-
-			# Guarda
-			181 = { add_core_of = ROOT }
-
-			# Porto
-			180 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					OR = {
+							AND = {
+								is_mainland_spain_vanilla_groups = yes
+								NOT = {
+									is_balearic_group = yes
+									is_catalonia_group = yes
+									is_valencia_group = yes
+									is_murcia_group = yes
+									is_granada_group = yes
+									is_spanish_nafrica_group = yes
+								}
+							}
+							is_core_of = POR
+						}
+				}
+				add_core_of = ROOT
+			}	
 			
 			add_stability = -0.05
 			 
@@ -2620,13 +2712,25 @@ form_roman_empire_category = {
 		}
 
 		available = {
-			
-			controls_state = 76 #North Transylvania
-			controls_state = 84 #Transylvania
-			controls_state = 83 #Crisana
-			controls_state = 81 #Oltenia
-			controls_state = 82 #Banat
-			controls_state = 764 #West Banat
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+							region = 12
+							state = 800
+							state = 759
+							state = 774
+							state = 781
+							state = 797
+							state = 797
+							state = 2364
+							state = 2363
+							state = 2359
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 
 		}
 
@@ -2638,23 +2742,23 @@ form_roman_empire_category = {
 
 		complete_effect = {
 
-			# North Transylvania
-			76 = { add_core_of = ROOT }
-
-			# Transylvania
-			84 = { add_core_of = ROOT }
-
-			# Crisana
-			83 = { add_core_of = ROOT }
-
-			# Oltenia
-			81 = { add_core_of = ROOT }
-
-			# Banat
-			82 = { add_core_of = ROOT }
-
-			# West Banat
-			764 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					OR = {
+							region = 12
+							state = 800
+							state = 759
+							state = 774
+							state = 781
+							state = 797
+							state = 797
+							state = 2364
+							state = 2363
+							state = 2359
+						}
+				}
+				add_core_of = ROOT
+			}
 
 			
 			
@@ -2691,29 +2795,14 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 766 #Southern Bessarabia
-
-			controls_state = 46 #Muntenia
-
-			controls_state = 77 #Dobrudja
-
-			controls_state = 211 #Burgas
-
-			controls_state = 801 #Moesia
-
-			controls_state = 212 #Plovdiv
-
-			controls_state = 48 #Sofia
-
-			controls_state = 803 #Southern Serbia
-
-			controls_state = 106 #Macedonia
- 
-			controls_state = 802 #Kosovo
-
-			controls_state = 108 #Morava
-
-			controls_state = 107 #Serbia
+			all_state = {
+				if = {
+					limit = {
+						region = 13
+					}
+					is_controlled_by = ROOT
+				}
+			}
 			
 
 		}
@@ -2726,41 +2815,12 @@ form_roman_empire_category = {
 
 		complete_effect = {
 
-			# Southern Bessarabia
-			766 = { add_core_of = ROOT }
-
-			# Muntenia
-			46 = { add_core_of = ROOT }
-
-			# Dobrudja
-			77 = { add_core_of = ROOT }
-
-			# Burgas
-			211 = { add_core_of = ROOT }
-
-			# Moesia
-			801 = { add_core_of = ROOT }
-
-			# Plovdiv
-			212 = { add_core_of = ROOT }
-
-			# Sofia
-			48 = { add_core_of = ROOT }
-
-			# Southern Serbia
-			803 = { add_core_of = ROOT }
-
-			# Macedonia
-			106 = { add_core_of = ROOT }
-
-			# Kosovo
-			802 = { add_core_of = ROOT }
-
-			# Morava
-			108 = { add_core_of = ROOT }
-
-			# Serbia
-			107 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					region = 13
+				}
+				add_core_of = ROOT
+			}
 
 
 
@@ -2797,9 +2857,14 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 552 #Western Desert
-			controls_state = 456 #Aswan
-			controls_state = 457 #Eastern Desert
+			all_state = {
+				if = {
+					limit = {
+						region = 50
+					}
+					is_controlled_by = ROOT
+				}
+			}
 
 		}
 
@@ -2811,14 +2876,12 @@ form_roman_empire_category = {
 
 		complete_effect = {
 
-			# Western Desert
-			552 = { add_core_of = ROOT }
-
-			# Aswan
-			456 = { add_core_of = ROOT }
-
-			# Eastern Desert
-			457 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					region = 50
+				}
+				add_core_of = ROOT
+			}
 
 			
 			
@@ -2854,12 +2917,17 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 656 #Kuwait
-			controls_state = 291 #Baghdad
-			controls_state = 675 #Al Hajara
-			controls_state = 676 #Mosul
-			controls_state = 680 #Deir-az-Zur
-			controls_state = 350 #Diyarbakir
+			all_state = {
+				if = {
+					limit = {
+						is_core_of = IRQ
+						NOT = {
+							is_core_of = JBS
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 
 		}
 
@@ -2872,23 +2940,15 @@ form_roman_empire_category = {
 		complete_effect = {
  
 
-			# Kuwait
-			656 = { add_core_of = ROOT }
-
-			# Baghdad
-			291 = { add_core_of = ROOT }
-
-			# Al Hajara
-			675 = { add_core_of = ROOT }
-
-			# Mosul
-			676 = { add_core_of = ROOT }
-
-			# Deir-az-Zur
-			680 = { add_core_of = ROOT }
-
-			# Diyarbakir
-			350 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					is_core_of = IRQ
+					NOT = {
+							is_core_of = JBS
+						}
+				}
+				add_core_of = ROOT
+			}
 			
 			
 			add_stability = -0.05
@@ -2923,16 +2983,31 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 347 #Izmit
-			controls_state = 49 #Ankara
-			controls_state = 343 #Afyon
-			controls_state = 346 #Konya
-			controls_state = 356 #Kastamonu
-			controls_state = 798 #Amasya
-			controls_state = 348 #Kayseri
-			controls_state = 349 #Sivas
-			controls_state = 355 #Samsun
-			controls_state = 354 #Trabzon
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+								region = 60
+								region = 72
+								region = 73
+								region = 74
+								region = 71
+								region = 125
+								region = 103
+								region = 102
+								region = 48
+								state = 2248
+								state = 1001
+								state = 2256
+								state = 953
+								state = 925
+								state = 933
+								state = 971
+							}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 			
 
 		}
@@ -2946,35 +3021,29 @@ form_roman_empire_category = {
 		complete_effect = {
  
 
-			# Izmit
-			347 = { add_core_of = ROOT }
-
-			# Ankara
-			49 = { add_core_of = ROOT }
-
-			# Afyon
-			343 = { add_core_of = ROOT }
-
-			# Konya
-			346 = { add_core_of = ROOT }
-
-			# Kastamonu
-			356 = { add_core_of = ROOT }
-
-			# Amasya
-			798 = { add_core_of = ROOT }
-
-			# Kayseri
-			348 = { add_core_of = ROOT }
-
-			# Sivas
-			349 = { add_core_of = ROOT } 
-
-			# Samsun
-			355 = { add_core_of = ROOT }
-
-			# Trabzon
-			354 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					OR = {
+						region = 60
+								region = 72
+								region = 73
+								region = 74
+								region = 71
+								region = 125
+								region = 103
+								region = 102
+								region = 48
+								state = 2248
+								state = 1001
+								state = 2256
+								state = 953
+								state = 925
+								state = 933
+								state = 971
+					}
+				}
+				add_core_of = ROOT
+			}
 			
 			
 			add_stability = -0.05
@@ -3009,10 +3078,17 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 230 #Armenia
-			controls_state = 800 #Van
-			controls_state = 353 #Tunceli
-			controls_state = 352 #Hakkari
+			all_state = {
+				if = {
+					limit = {
+						is_core_of = ARM
+						NOT = {
+							is_core_of = NGK
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 			
 
 		}
@@ -3026,17 +3102,20 @@ form_roman_empire_category = {
 		complete_effect = { 
  
 
-			# Armenia
-			230 = { add_core_of = ROOT }
-
-			# Van
-			800 = { add_core_of = ROOT }
-
-			# Tunceli
-			353 = { add_core_of = ROOT }
-
-			# Hakkari
-			352 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					OR = {
+						AND = {
+							is_core_of = ARM
+							NOT = {
+								is_core_of = NGK
+							}
+						}
+						state = 1023
+					}
+				}
+				add_core_of = ROOT
+			}
 			
 			
 			add_stability = -0.05
@@ -3071,10 +3150,22 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 554 #Damascus
-			controls_state = 455 #Jordan
-			controls_state = 854 #Jawf
-			controls_state = 855 #Tabuk
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								is_core_of = JOR
+								NOT = {
+									is_core_of = JBS
+								}
+							} 
+							is_core_of = HJZ
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 			
 
 		}
@@ -3088,17 +3179,20 @@ form_roman_empire_category = {
 		complete_effect = { 
  
 
-			# Damascus
-			554 = { add_core_of = ROOT }
-
-			# Jordan
-			455 = { add_core_of = ROOT }
-
-			# Jawf
-			854 = { add_core_of = ROOT }
-
-			# Tabuk
-			855 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					OR = {
+							AND = {
+								is_core_of = JOR
+								NOT = {
+									is_core_of = JBS
+								}
+							} 
+							is_core_of = HJZ
+						}
+				}
+				add_core_of = ROOT
+			}
 			
 			
 			add_stability = -0.05
@@ -3133,10 +3227,14 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 513 #Tlemcen
-			controls_state = 514 #Algerian Desert
-			controls_state = 462 #Marrakech
-			controls_state = 783 #Sidi Ifni
+			all_state = {
+				if = {
+					limit = {
+						is_core_of = MOR
+					}
+					is_controlled_by = ROOT
+				}
+			}
 
 		}
 
@@ -3148,18 +3246,12 @@ form_roman_empire_category = {
 
 		complete_effect = { 
  
-
-			# Tlemcen
-			513 = { add_core_of = ROOT }
-
-			# Algerian Desert
-			514 = { add_core_of = ROOT }
-
-			# Marrakech
-			462 = { add_core_of = ROOT }
-
-			# Sidi Ifni
-			783 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					is_core_of = MOR
+				}
+				add_core_of = ROOT
+			}
 			
 			
 			add_stability = -0.05
@@ -3194,12 +3286,17 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 43 #Northern Hungary
-			controls_state = 154 #Alföld
-			controls_state = 155 #Transdanubia
-			controls_state = 45 #Vojvodina
-			controls_state = 109 #Croatia
-			controls_state = 102 #North Slovenia
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+							region = 52
+							region = 23
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 
 		}
 
@@ -3212,23 +3309,15 @@ form_roman_empire_category = {
 		complete_effect = { 
  
 
-			# Northern Hungary
-			43 = { add_core_of = ROOT }
-
-			# Alföld
-			154 = { add_core_of = ROOT }
-
-			# Transdanubia
-			155 = { add_core_of = ROOT }
-
-			# Vojvodina
-			45 = { add_core_of = ROOT }
-
-			# Croatia
-			109 = { add_core_of = ROOT }
-
-			# North Slovenia
-			102 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					OR = {
+							region = 52
+							region = 23
+						}
+				}
+				add_core_of = ROOT
+			}
 			
 			
 			add_stability = -0.05
@@ -3263,15 +3352,17 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 4 #Lower Austria
-			controls_state = 152 #Upper Austria
-			controls_state = 153 #Tyrol
-			controls_state = 848 #Vorarlberg
-			controls_state = 151 #Eastern Swiss Alps
-			controls_state = 846 #Ticino
-			controls_state = 847 #Western Swiss Alps
-			controls_state = 3 #Swiss Plateu
-			controls_state = 845 #Jura Mountains
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+							is_core_of = SWI
+							is_core_of = AUS
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 
 		}
 
@@ -3284,32 +3375,15 @@ form_roman_empire_category = {
 		complete_effect = { 
  
 
-			# Lower Austria 
-			4 = { add_core_of = ROOT }
-
-			# Upper Austria
-			152 = { add_core_of = ROOT }
-
-			# Tyrol
-			153 = { add_core_of = ROOT }
-			
-			# Vorarlberg
-			848 = { add_core_of = ROOT }
-
-			# Eastern Swiss Alps
-			151 = { add_core_of = ROOT }
-
-			# Ticino
-			846 = { add_core_of = ROOT }
-
-			# Western Swiss Alps
-			847 = { add_core_of = ROOT }
-
-			# Swiss Plateu
-			3 = { add_core_of = ROOT }
-
-			# Jura Mountains
-			845 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = SWI
+						is_core_of = AUS
+					}
+				}
+				add_core_of = ROOT
+			}
 			
 			
 			add_stability = -0.05
@@ -3344,24 +3418,25 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 806 #Pyrenees-Atlantiques
-			controls_state = 19 #Aquitaine
-			controls_state = 25 #Limousin
-			controls_state = 26 #Auveragne
-			controls_state = 20 #Rhone
-			controls_state = 32 #Alpes
-			controls_state = 33 #Centre-Sud
-			controls_state = 23 #Poitou
-			controls_state = 30 #Loire
-			controls_state = 14 #Brittany
-			controls_state = 27 #Bourgogne
-			controls_state = 17 #Franche-Comte
-			controls_state = 28 #Alsace-Lorraine
-			controls_state = 16 #Ile De France
-			controls_state = 24 #Centre
-			controls_state = 15 #Normandy
-			controls_state = 785 #Picardy
-			controls_state = 18 #Champagne
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+							region = 61
+							region = 91
+							region = 87
+							region = 90
+							region = 88
+							region = 92
+							region = 89
+							region = 62
+							region = 67
+							region = 93
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 
 		}
 
@@ -3374,59 +3449,23 @@ form_roman_empire_category = {
 		complete_effect = { 
  
 
-			# Pyrenees-Atlantiques 
-			806 = { add_core_of = ROOT }
-
-			# Aquitaine
-			19 = { add_core_of = ROOT }
-
-			# Limousin
-			25 = { add_core_of = ROOT }
-
-			# Auveragne
-			26 = { add_core_of = ROOT }
-
-			# Rhone
-			20 = { add_core_of = ROOT }
-
-			# Alpes
-			32 = { add_core_of = ROOT }
-
-			# Centre-Sud
-			33 = { add_core_of = ROOT }
-
-			# Poitou
-			23 = { add_core_of = ROOT }
-
-			# Loire
-			30 = { add_core_of = ROOT }
-
-			# Brittany
-			14 = { add_core_of = ROOT }
-
-			# Bourgogne
-			27 = { add_core_of = ROOT }
-
-			# Franche-Comte
-			17 = { add_core_of = ROOT }
-
-			# Alsace-Lorraine
-			28 = { add_core_of = ROOT }
-
-			# Ile De France
-			16 = { add_core_of = ROOT }
-
-			# Centre
-			24 = { add_core_of = ROOT }
-
-			# Normandy
-			15 = { add_core_of = ROOT }
-
-			# Picardy
-			785 = { add_core_of = ROOT }
-
-			# Champagne
-			18 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					OR = {
+							region = 61
+							region = 91
+							region = 87
+							region = 90
+							region = 88
+							region = 92
+							region = 89
+							region = 62
+							region = 67
+							region = 93
+						}
+				}
+				add_core_of = ROOT
+			}
 			
 			
 			add_stability = -0.05
@@ -3461,11 +3500,27 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 35 #Brabant
-			controls_state = 6 #Vlaanderen
-			controls_state = 34 #Wallonia
-			controls_state = 8 #Luxembourg
-			controls_state = 29 #Nord-Pas-De-Calais
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+							region = 5
+							state = 2344
+							state = 2717
+							state = 432
+							state = 479
+							state = 2845
+							state = 2713
+							state = 1974
+							state = 451
+							state = 2331
+							state = 2875
+							state = 2332
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 			
 
 		}
@@ -3479,20 +3534,25 @@ form_roman_empire_category = {
 		complete_effect = { 
  
 
-			# Brabant
-			35 = { add_core_of = ROOT }
-
-			# Vlaanderen
-			6 = { add_core_of = ROOT }
-
-			# Wallonia
-			34 = { add_core_of = ROOT }
-
-			# Luxembourg
-			8 = { add_core_of = ROOT }
-
-			# Nord-Pas-De-Calais
-			29 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					OR = {
+							region = 5
+							state = 2344
+							state = 2717
+							state = 432
+							state = 479
+							state = 2845
+							state = 2713
+							state = 1974
+							state = 451
+							state = 2331
+							state = 2875
+							state = 2332
+						}
+				}
+				add_core_of = ROOT
+			}
 			
 			
 			add_stability = -0.05
@@ -3527,9 +3587,20 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 229 #Azerbaijan
-			controls_state = 231 #Georgia
-			controls_state = 826 #Abkhazia
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+							is_core_of = GEO
+							is_core_of = AZR
+							NOT = {
+								is_core_of = TBZ
+							}
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 
 		}
 
@@ -3542,14 +3613,18 @@ form_roman_empire_category = {
 		complete_effect = { 
  
 
-			# Azerbaijan
-			229 = { add_core_of = ROOT }
-
-			# Georgia
-			231 = { add_core_of = ROOT }
- 
-			# Abkhazia
-			826 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					OR = {
+							is_core_of = GEO
+							is_core_of = AZR
+							NOT = {
+								is_core_of = TBZ
+							}
+						}
+				}
+				add_core_of = ROOT
+			}
 			
 			
 			add_stability = -0.05
@@ -3584,17 +3659,25 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 127 #Sussex
-			controls_state = 123 #South-West England
-			controls_state = 338 #Gloucestershire
-			controls_state = 126 #Greater London Area
-			controls_state = 125 #East Anglia
-			controls_state = 128 #West Midlands
-			controls_state = 122 #Wales
-			controls_state = 129 #East Midlands
-			controls_state = 132 #Lancashire
-			controls_state = 130 #Yorkshire
-			controls_state = 131 #Nothern England
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+							is_core_of = MER
+							is_core_of = EAG
+							is_core_of = WSX
+							is_core_of = SSX
+							is_core_of = KNT
+							is_core_of = WLS
+							is_core_of = NRT
+							is_core_of = KER
+							is_core_of = ESX
+							state = 2475
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
 
 		}
 
@@ -3607,38 +3690,23 @@ form_roman_empire_category = {
 		complete_effect = { 
  
 
-			# Sussex
-			127 = { add_core_of = ROOT }
-
-			# South-West England
-			123 = { add_core_of = ROOT }
- 
-			# Gloucestershire
-			338 = { add_core_of = ROOT }
-
-			# Greater London Area
-			126 = { add_core_of = ROOT }
-
-			# East Anglia
-			125 = { add_core_of = ROOT }
-
-			# West Midlands
-			128 = { add_core_of = ROOT }
-
-			# Wales
-			122 = { add_core_of = ROOT }
-
-			# East Midlands
-			129 = { add_core_of = ROOT }
-
-			# Lancashire
-			132 = { add_core_of = ROOT }
-
-			# Yorkshire
-			130 = { add_core_of = ROOT }
-
-			# Nothern England
-			131 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					OR = {
+							is_core_of = MER
+							is_core_of = EAG
+							is_core_of = WSX
+							is_core_of = SSX
+							is_core_of = KNT
+							is_core_of = WLS
+							is_core_of = NRT
+							is_core_of = KER
+							is_core_of = ESX
+							state = 2475
+						}
+				}
+				add_core_of = ROOT
+			}
 			
 			
 			add_stability = -0.05

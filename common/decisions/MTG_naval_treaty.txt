@@ -530,6 +530,7 @@ MTG_naval_treaties = {
 						heavy_cruiser = 0.5
 					}
 				}
+				NOT = { tag = ENG }
 			}
 			else_if = {
 				limit = { USA = { has_naval_treaty_trigger = yes } }
@@ -544,12 +545,15 @@ MTG_naval_treaties = {
 					}
 				}
 			}
+			NOT = { tag = ENG }
+			NOT = { tag = USA }
 			else = {
 				has_navy_size = {
 					type = capital_ship
 					size < 20
 				}
 			}
+			
 		}
 		days_mission_timeout = 30
 	
