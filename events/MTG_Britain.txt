@@ -1326,34 +1326,34 @@ country_event = {
 	option = {
 		name = mtg_britain.20.a
 		add_opinion_modifier = { target = ENG modifier = ENG_three_nation_solution }
-		release = BAN
-		ENG = { set_autonomy = { target = BAN autonomy_state = autonomy_colony } }
-		BAN = {
-			add_ideas = ENG_guided_by_britain_raj_1
-		}
-		release = PAK
-		ENG = { set_autonomy = { target = PAK autonomy_state = autonomy_colony } }
-		PAK = {
-			add_ideas = ENG_guided_by_britain_raj_1
-		}
+		#release = BAN
+		#ENG = { set_autonomy = { target = BAN autonomy_state = autonomy_colony } }
+		#BAN = {
+		#	add_ideas = ENG_guided_by_britain_raj_1
+		#}
+		#release = PAK
+		#ENG = { set_autonomy = { target = PAK autonomy_state = autonomy_colony } }
+		#PAK = {
+		#	add_ideas = ENG_guided_by_britain_raj_1
+		#}
 		if = {
 			limit = {
-				has_idea = RAJ_marginalized_muslim_community_angry
+			#	has_idea = RAJ_marginalized_muslim_community_angry
 			}
 			swap_ideas = {
-				add_idea = RAJ_marginalized_muslim_community_happy
-				remove_idea = RAJ_marginalized_muslim_community_angry
+			#	add_idea = RAJ_marginalized_muslim_community_happy
+			#	remove_idea = RAJ_marginalized_muslim_community_angry
 			}
 		}
-		if = {
-			limit = {
-				has_idea = RAJ_marginalized_muslim_community
-			}
-			swap_ideas = {
-				add_idea = RAJ_marginalized_muslim_community_happy
-				remove_idea = RAJ_marginalized_muslim_community
-			}
-		}
+		#if = {
+		#	limit = {
+		#	#	has_idea = RAJ_marginalized_muslim_community
+		#	}
+		#	swap_ideas = {
+		#	#	add_idea = RAJ_marginalized_muslim_community_happy
+		#	#	remove_idea = RAJ_marginalized_muslim_community
+		#	}
+		#}
 	}
 }
 
@@ -4802,879 +4802,6 @@ country_event = {
 	}
 }
 
-# Event for RAJ notifying of impending civil war
-country_event = {
-	id = mtg_britain.72
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_britain.72 FROM = [From.GetName]" }
-	title = mtg_britain.72.t
-	desc = mtg_britain.72.d
-	picture = GFX_report_event_generic_riot
-
-	trigger = {
-		tag = RAJ
-		NOT = { country_exists = PAK }
-		NOT = { has_country_flag = RAJ_civil_war }
-		NOT = {
-			OR = {
-				ENG = { has_completed_focus = ENG_the_three_nation_solution }
-				AND = {
-					has_dlc = "Together for Victory"
-					has_completed_focus = RAJ_two_nation_theory
-				}
-			}
-		}
-		is_subject = no
-		has_dlc = "Man the Guns"
-	}
-
-	mean_time_to_happen = { days = 60 }
-	
-	# Ok
-	option = {
-		name = mtg_britain.72.a
-		set_country_flag = RAJ_civil_war
-		hidden_effect = {
-			country_event = { id = mtg_britain.73 days = 90 random_days = 180 }
-		}
-	}
-}
-
-# Event for RAJ starting civil war
-country_event = {
-	id = mtg_britain.73
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_britain.73 FROM = [From.GetName]" }
-	title = mtg_britain.73.t
-	desc = mtg_britain.73.d
-	picture = GFX_report_event_ger_civil_war
-
-	is_triggered_only = yes
-	
-	# We won't back down!
-	option = {
-		name = mtg_britain.73.a
-		release = PAK
-		PAK = {
-			declare_war_on = {
-				target = ROOT
-				type = annex_everything
-			}
-		}
-		hidden_effect = {
-			PAK = {
-				add_equipment_to_stockpile = {
-				    type = infantry_equipment
-				    amount = 15000
-				    producer = RAJ
-				}
-				division_template = {
-					name = "Pakistani Liberation Army"
-					priority = 1
-					division_names_group = RAJ_INF_01
-					is_locked = yes
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-					}
-				}
-				# Sind
-				443 = {
-					create_unit = {
-						division = "name = \"1. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"2. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"3. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-				}
-				# Punjab
-				440 = {
-					create_unit = {
-						division = "name = \"4. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"5. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"6. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-				}
-				# Northern Kashmir
-				787 = {
-					create_unit = {
-						division = "name = \"7. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"8. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"9. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-				}
-				# Peshawar
-				442 = {
-					create_unit = {
-						division = "name = \"10. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"11. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-				}
-				# Baluchistan
-				444 = {
-					create_unit = {
-						division = "name = \"12. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"13. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-				}
-				# Quetta
-				445 = {
-					create_unit = {
-						division = "name = \"14. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"15. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"16. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"17. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"18. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"19. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-				}
-				# East Bengal (Bangladesh)
-				430 = {
-					create_unit = {
-						division = "name = \"20. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"21. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"22. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"23. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"24. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"25. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"26. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"27. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"28. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"29. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"30. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"31. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"32. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"33. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-					create_unit = {
-						division = "name = \"34. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-						owner = PAK
-					}
-				}
-			}
-			hidden_effect = {
-				division_template = {
-					name = "Hindu Militia"
-					priority = 1
-					division_names_group = RAJ_INF_01
-					is_locked = yes
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-					}
-				}
-				# Delhi
-				439 = {
-					create_unit = {
-						division = "name = \"1. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"2. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"3. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"4. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"5. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"6. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-				}
-				# Rajahsthan
-				433 = {
-					create_unit = {
-						division = "name = \"7. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"8. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"9. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"10. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"11. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"12. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-				}
-				# Gujarat
-				428 = {
-					create_unit = {
-						division = "name = \"13. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"14. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"15. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-				}
-				# Assam
-				432 = {
-					create_unit = {
-						division = "name = \"16. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"17. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"18. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"19. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-				}
-				# West bengal
-				431 = {
-					create_unit = {
-						division = "name = \"20. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"21. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"22. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-					create_unit = {
-						division = "name = \"23. Hindu Militia\" division_template = \"Hindu Militia\" start_experience_factor = 0.5" 
-						owner = RAJ
-					}
-				}
-			}
-			PAK = {
-				if = {
-					limit = {
-						strength_ratio = {
-						    tag = RAJ
-						    ratio < 0.9
-						}
-					}
-					# East Bengal (Bangladesh)
-					430 = {
-						create_unit = {
-							division = "name = \"35. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-						create_unit = {
-							division = "name = \"36. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-					# Punjab
-					440 = {
-						create_unit = {
-							division = "name = \"37. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-						create_unit = {
-							division = "name = \"38. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-				}
-				if = {
-					limit = {
-						strength_ratio = {
-						    tag = RAJ
-						    ratio < 0.9
-						}
-					}
-					# East Bengal (Bangladesh)
-					430 = {
-						create_unit = {
-							division = "name = \"39. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-						create_unit = {
-							division = "name = \"40. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-					# Punjab
-					440 = {
-						create_unit = {
-							division = "name = \"41. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-						create_unit = {
-							division = "name = \"42. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-				}
-				if = {
-					limit = {
-						strength_ratio = {
-						    tag = RAJ
-						    ratio < 0.9
-						}
-					}
-					# East Bengal (Bangladesh)
-					430 = {
-						create_unit = {
-							division = "name = \"43. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-						create_unit = {
-							division = "name = \"44. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-					# Punjab
-					440 = {
-						create_unit = {
-							division = "name = \"45. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-						create_unit = {
-							division = "name = \"46. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-				}
-				if = {
-					limit = {
-						strength_ratio = {
-						    tag = RAJ
-						    ratio < 0.9
-						}
-					}
-					# East Bengal (Bangladesh)
-					430 = {
-						create_unit = {
-							division = "name = \"47. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-						create_unit = {
-							division = "name = \"48. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-					# Punjab
-					440 = {
-						create_unit = {
-							division = "name = \"49. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-						create_unit = {
-							division = "name = \"50. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-				}
-				if = {
-					limit = {
-						strength_ratio = {
-						    tag = RAJ
-						    ratio < 0.9
-						}
-					}
-					# East Bengal (Bangladesh)
-					430 = {
-						create_unit = {
-							division = "name = \"51. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-					# Punjab
-					440 = {
-						create_unit = {
-							division = "name = \"52. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-						create_unit = {
-							division = "name = \"53. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-				}
-				if = {
-					limit = {
-						strength_ratio = {
-						    tag = RAJ
-						    ratio < 0.9
-						}
-					}
-					# East Bengal (Bangladesh)
-					430 = {
-						create_unit = {
-							division = "name = \"54. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-					# Punjab
-					440 = {
-						create_unit = {
-							division = "name = \"55. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-						create_unit = {
-							division = "name = \"56. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-				}
-				if = {
-					limit = {
-						strength_ratio = {
-						    tag = RAJ
-						    ratio < 0.9
-						}
-					}
-					# East Bengal (Bangladesh)
-					430 = {
-						create_unit = {
-							division = "name = \"57. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-					# Punjab
-					440 = {
-						create_unit = {
-							division = "name = \"58. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-						create_unit = {
-							division = "name = \"59. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-							owner = PAK
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_idea = RAJ_marginalized_muslim_community_angry
-				}
-				swap_ideas = {
-					add_idea = RAJ_marginalized_muslim_community_happy
-					remove_idea = RAJ_marginalized_muslim_community_angry
-				}
-			}
-			if = {
-				limit = {
-					has_idea = RAJ_marginalized_muslim_community
-				}
-				swap_ideas = {
-					add_idea = RAJ_marginalized_muslim_community_happy
-					remove_idea = RAJ_marginalized_muslim_community
-				}
-			}
-			set_country_flag = RAJ_pakistani_civil_war_flag
-			hidden_effect = { country_event = { id = mtg_britain.109 days = 15 random_days = 75 } }
-		}
-	}
-	# Give them their independence
-	option = {
-		name = mtg_britain.73.b
-		ai_chance = {
-			factor = 0
-		}
-		release = PAK
-		hidden_effect = { country_event = { id = mtg_britain.109 days = 5 random_days = 5 } }
-	}
-}
-
-# Event for RAJ ending civil war if Pakistan hasn't been dealt with.
-country_event = {
-	id = mtg_britain.74
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_britain.74 FROM = [From.GetName]" }
-	title = mtg_britain.74.t
-	desc = mtg_britain.74.d
-	picture = GFX_report_event_generic_sign_treaty2
-
-	trigger = {
-		has_war_with = PAK
-	}
-
-	trigger = {
-		tag = RAJ
-		has_war_with = PAK
-		has_country_flag = RAJ_pakistani_civil_war_flag
-	}
-	
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 270
-		modifier = {
-			factor = 0.8
-			surrender_progress > 0.2
-		}
-		modifier = {
-			factor = 0.5
-			surrender_progress > 0.5
-		}
-		modifier = {
-			factor = 0.2
-			surrender_progress > 0.8
-		}
-		modifier = {
-			factor = 0.1
-			surrender_progress > 0.9
-		}
-	}
-	
-	# Let's make peace
-	option = {
-		name = mtg_britain.74.a
-		every_country = {
-			limit = {
-				is_in_faction_with = RAJ
-				has_war_with = PAK
-			}
-			white_peace = PAK
-		}
-		white_peace = PAK
-		PAK = { country_event = { id = mtg_britain.75 } }
-		effect_tooltip = {
-			delete_unit_template_and_units = {
-   				division_template = "Hindu Militia"
-			}
-		}
-		clr_country_flag = RAJ_pakistani_civil_war_flag
-	}
-
-	# All or nothing - no peace!
-	option = {
-		name = mtg_britain.74.b
-		ai_chance = {
-			factor = 0
-		}
-		add_war_support = -0.1
-	}
-}
-
-# Event for PAK notifying of white peace
-country_event = {
-	id = mtg_britain.75
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_britain.75 FROM = [From.GetName]" }
-	title = mtg_britain.75.t
-	desc = mtg_britain.75.d
-	picture = GFX_report_event_generic_sign_treaty2
-
-	is_triggered_only = yes
-	
-	# Ok
-	option = {
-		name = mtg_britain.75.a
-		effect_tooltip = {
-			every_country = {
-				limit = {
-					is_in_faction_with = RAJ
-					has_war_with = PAK
-				}
-				white_peace = PAK
-			}
-			RAJ = { white_peace = PAK }
-		}
-		delete_unit_template_and_units = {
-   			division_template = "Pakistani Liberation Army"
-		}
-		hidden_effect = {
-			RAJ = {
-				delete_unit_template_and_units = {
-   					division_template = "Hindu Militia"
-				}
-			}
-		}
-	}
-}
-
-# Event for PAK starting civil war
-country_event = {
-	id = mtg_britain.76
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_britain.76 FROM = [From.GetName]" }
-	title = mtg_britain.76.t
-	desc = mtg_britain.76.d
-	picture = GFX_report_event_ger_civil_war
-
-	trigger = {
-		tag = PAK
-		NOT = { country_exists = BAN }
-		NOT = { has_country_flag = PAK_civil_war }
-		NOT = { ENG = { has_completed_focus = ENG_the_three_nation_solution } }
-		is_subject = no
-		has_war = no
-		has_dlc = "Man the Guns"
-	}
-	
-	fire_only_once = yes
-
-	mean_time_to_happen = { days = 180 }
-	
-	# We won't back down!
-	option = {
-		name = mtg_britain.76.a
-		set_country_flag = PAK_civil_war
-		release = BAN
-		hidden_effect = {
-			BAN = {
-				division_template = {
-					name = "Bangladeshi Liberation Army"
-					priority = 1
-					division_names_group = RAJ_INF_01
-					is_locked = yes
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-					}
-				}
-				# East Bengal (Bangladesh)
-				430 = {
-					create_unit = {
-						division = "name = \"1. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"2. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"3. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"4. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"5. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"6. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"7. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"8. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"9. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"10. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"11. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"12. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"13. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"14. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-					create_unit = {
-						division = "name = \"15. Bangladeshi Liberation Army\" division_template = \"Bangladeshi Liberation Army\" start_experience_factor = 0.5" 
-						owner = BAN
-					}
-				}
-				declare_war_on = {
-					target = ROOT
-					type = annex_everything
-				}
-			}
-			hidden_effect = { country_event = { id = mtg_britain.77 days = 270 random_days = 95 } }
-		}
-	}
-	# Give them their independence
-	option = {
-		name = mtg_britain.76.b
-		ai_chance = {
-			factor = 0
-		}
-		release = BAN
-		set_country_flag = PAK_civil_war
-	}
-}
-
-# Event for PAK ending civil war if Bangladesh hasn't been dealt with.
-country_event = {
-	id = mtg_britain.77
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_britain.77 FROM = [From.GetName]" }
-	title = mtg_britain.77.t
-	desc = mtg_britain.77.d
-	picture = GFX_report_event_generic_sign_treaty2
-
-	trigger = {
-		has_war_with = BAN
-	}
-
-	is_triggered_only = yes
-	
-	# Let's make peace
-	option = {
-		name = mtg_britain.77.a
-		white_peace = BAN
-		BAN = { country_event = { id = mtg_britain.78 } }
-	}
-
-	# All or nothing - no peace!
-	option = {
-		name = mtg_britain.77.b
-		ai_chance = {
-			factor = 0
-		}
-		add_war_support = -0.1
-	}
-}
-
-# Event for BAN notifying of white peace
-country_event = {
-	id = mtg_britain.78
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_britain.78 FROM = [From.GetName]" }
-	title = mtg_britain.78.t
-	desc = mtg_britain.78.d
-	picture = GFX_report_event_generic_sign_treaty2
-
-	is_triggered_only = yes
-	
-	# Ok
-	option = {
-		name = mtg_britain.75.a
-		effect_tooltip = { BAN = { white_peace = PAK } }
-		delete_unit_template_and_units = {
-   			division_template = "Bangladeshi Liberation Army"
-		}
-	}
-}
 
 # Event for Iran/Afghanistan demanding puppet status
 country_event = {
@@ -5755,15 +4882,6 @@ country_event = {
 					target = PER
 				}
 			}
-			if = {
-				limit = {
-					tag = AFG
-				}
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = AFG
-				}
-			}
 		}
 		FROM = { country_event = { id = mtg_britain.81 hours = 6 } }
 		hidden_effect = { news_event = { id = mtg_news.29 hours = 30 } }
@@ -5834,19 +4952,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -5893,19 +4999,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -5928,19 +5022,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -5962,19 +5044,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -6175,19 +5245,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -6210,19 +5268,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -6244,19 +5290,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -6435,19 +5469,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -6470,19 +5492,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -6504,19 +5514,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -6717,19 +5715,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -6752,19 +5738,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -6786,19 +5760,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -6979,19 +5941,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -7014,19 +5964,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -7048,19 +5986,7 @@ country_event = {
 					}
 					AND = {
 						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
+						tag = EGY
 					}
 				}
 			}
@@ -7209,10 +6135,7 @@ country_event = {
 					any_country = {
 						OR = {
 							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-							tag = NZL
+							tag = EGY
 						}
 						has_country_flag = ENG_rejected_federation
 					}
@@ -7231,9 +6154,7 @@ country_event = {
 					any_country = {
 						OR = {
 							tag = CAN
-							tag = SAF
-							tag = AST
-							tag = NZL
+							tag = EGY
 						}
 						has_country_flag = ENG_rejected_federation
 					}
@@ -7247,9 +6168,7 @@ country_event = {
 				any_country = {
 					OR = {
 						tag = CAN
-						tag = SAF
-						tag = AST
-						tag = NZL
+						tag = EGY
 					}
 					has_country_flag = ENG_rejected_federation
 				}
@@ -7303,9 +6222,7 @@ country_event = {
 					any_country = {
 						OR = {
 							tag = CAN
-							tag = SAF
-							tag = AST
-							tag = NZL
+							tag = EGY
 						}
 						has_country_flag = ENG_rejected_federation
 					}
@@ -7319,9 +6236,7 @@ country_event = {
 				any_country = {
 					OR = {
 						tag = CAN
-						tag = SAF
-						tag = AST
-						tag = NZL
+						tag = EGY
 					}
 					has_country_flag = ENG_rejected_federation
 				}
@@ -7363,23 +6278,7 @@ country_event = {
 						}
 						AND = {
 							is_subject_of = ENG
-							tag = SAF
-						}
-						AND = {
-							is_subject_of = ENG
 							tag = RAJ
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = MAL
 						}
 					}
 				}
@@ -7396,23 +6295,7 @@ country_event = {
 						}
 						AND = {
 							is_subject_of = ENG
-							tag = SAF
-						}
-						AND = {
-							is_subject_of = ENG
 							tag = RAJ
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = MAL
 						}
 					}
 				}
@@ -7455,19 +6338,7 @@ country_event = {
 						}
 						AND = {
 							is_subject_of = ENG
-							tag = SAF
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = MAL
+							tag = RAJ
 						}
 					}
 				}
@@ -7484,19 +6355,7 @@ country_event = {
 						}
 						AND = {
 							is_subject_of = ENG
-							tag = SAF
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = MAL
+							tag = RAJ
 						}
 					}
 				}
@@ -7641,11 +6500,11 @@ country_event = {
 		NOT = { country_exists = NIR }
 		NOT = { country_exists = WLS }
 		NOT = { country_exists = SCO }
-		owns_state = 120
-		owns_state = 119
-		owns_state = 136
-		owns_state = 133
-		owns_state = 121
+		owns_state = 126
+		owns_state = 253
+		owns_state = 426
+		owns_state = 130
+		owns_state = 2475
 		has_global_flag = ENG_became_england
 	}
 
@@ -7702,29 +6561,11 @@ country_event = {
 			}
 			if = {
 				limit = {
-					FROM = { original_tag = SAF }
+					FROM = { original_tag = EGY }
 				}
 				FROM = {
 					load_focus_tree = { tree = south_african_focus keep_completed = yes }
 					SAF_enforce_loyalty = yes
-				}
-			}
-			if = {
-				limit = {
-					FROM = { original_tag = AST }
-				}
-				FROM = {
-					load_focus_tree = { tree = australian_focus keep_completed = yes }
-					AST_enforce_loyalty = yes
-				}
-			}
-			if = {
-				limit = {
-					FROM = { original_tag = NZL }
-				}
-				FROM = {
-					load_focus_tree = { tree = new_zealander_focus keep_completed = yes }
-					NZL_enforce_loyalty = yes
 				}
 			}
 		}

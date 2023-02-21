@@ -691,12 +691,12 @@ country_event = {
 	# Oh, well then...
 	option = {
 		name = mtg_netherlands.21.a
-		effect_tooltip = {
-			add_timed_idea = {
-				idea = HOL_curtail_colonial_autonomy_subject
-				days = 545
-			}
-		}
+		#effect_tooltip = {
+		#	add_timed_idea = {
+		#		idea = HOL_curtail_colonial_autonomy_subject
+		#		days = 545
+		#	}
+		#} ##UNUSED
 	}
 }
 
