@@ -1401,11 +1401,9 @@ on_actions = {
 		}
 		effect = { #This is so Switzerland can keep its SWI_biggest_fascist and SWI_best_dem_ally updated. 
 			if ={
-				limit = { 
+				limit = {
 					has_dlc = "By Blood Alone" 
 					SWI = { exists = yes }
-					capital_scope = { is_on_continent = europe }
-					tag = USA
 				}
 				SWI = {
 					SWI_update_neighbor_opinion_balance = yes
@@ -1414,7 +1412,7 @@ on_actions = {
 					SWI_find_democratic_planes_seller = yes 
 				}
 			}
-		}	
+		}
 	}
 	#on_unit_leader_promote_from_ranks_green
 	on_unit_leader_promote_from_ranks_green = { # This uses the UNIT LEADER sub scope of a character, FROM == country

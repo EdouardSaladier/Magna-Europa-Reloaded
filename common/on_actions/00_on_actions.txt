@@ -853,10 +853,10 @@ on_actions = {
 				}
 
 				#Remove anti_soviet_pact
-				if = {
-					limit = { has_idea = anti_soviet_pact }
-					remove_ideas = anti_soviet_pact
-				}
+				#if = {
+				#	limit = { has_idea = anti_soviet_pact }
+				#	remove_ideas = anti_soviet_pact
+				#}
 			}
 			if = {
 				limit = { has_government = fascism }

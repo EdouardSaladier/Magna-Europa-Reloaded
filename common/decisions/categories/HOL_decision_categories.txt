@@ -25,6 +25,17 @@ HOL_prepare_the_inundation_lines = {
 		has_dlc = "Man the Guns"
 	}
 
+	highlight_states = {
+		highlight_provinces = {
+			11821
+			11866
+			19894
+			11943
+			11969
+			658
+		}
+	}
+
 	visible = {
 		has_completed_focus = HOL_prepare_the_inundation_lines
 	}

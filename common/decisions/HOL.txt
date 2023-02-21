@@ -382,14 +382,8 @@ HOL_prepare_the_inundation_lines = {
 		days_remove = 14
 
 		highlight_states = {
-			highlight_state_targets = { state = 399 }
-			highlight_provinces = {
-				11821
-				11866
-				11842
-				19894
-				8539
-				6838
+			highlight_state_targets = {
+				state = 399
 			}
 		}
 
@@ -413,10 +407,6 @@ HOL_prepare_the_inundation_lines = {
 						province = {
 							id = 11821
 							id = 11866
-							id = 11842
-							id = 19894
-							id = 8539
-							id = 6838
 						}
 					}
 					damage_building = {
@@ -452,12 +442,32 @@ HOL_prepare_the_inundation_lines = {
 					    damage = 1.5
 					}
 				}
-				2332 = {
+				2331 = {
 					add_province_modifier = {
 						static_modifiers = { flooded }
 						province = {
-							id = 8539
-							id = 6838
+							id = 11943
+							id = 658
+						}
+					}
+					damage_building = {
+					    type = infrastructure
+					    damage = 3
+					}
+					damage_building = {
+					    type = industrial_complex
+					    damage = 1.5
+					}
+					damage_building = {
+					    type = arms_factory
+					    damage = 1.5
+					}
+				}
+				2875 = {
+					add_province_modifier = {
+						static_modifiers = { flooded }
+						province = {
+							id = 11969
 						}
 					}
 					damage_building = {

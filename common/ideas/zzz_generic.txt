@@ -1,6 +1,21 @@
 ideas = {
 
 	hidden_ideas = {
+		
+		league_of_nations_member_idea = { 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
 
 		continuous_naval_production = {
 			allowed = {
