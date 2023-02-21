@@ -14,7 +14,7 @@ POR_overseas_provinces = {
 					controls_state = 891
 					controls_state = 892
 				}
-				ANG = { exists = no }
+			#	ANG = { exists = no }
 			}
 		}
 
@@ -47,7 +47,7 @@ POR_overseas_provinces = {
 					controls_state = 896
 					controls_state = 897
 				}
-				MZB = { exists = no }
+			#	MZB = { exists = no }
 			}
 		}
 
@@ -2282,9 +2282,9 @@ POR_monarchist_cause = {
 		}
 
 		available = {
-			BRA = { 
-				has_war = no 
-			}
+		#	BRA = { 
+		#		has_war = no 
+		#	}
 		}
 
 		cost = 25
@@ -2308,10 +2308,10 @@ POR_monarchist_cause = {
 		}
 
 		cancel_effect = {
-			BRA = {
-				clr_country_flag = POR_portugal_stirring_brazilian_monarchists_flag
-				set_country_flag = POR_brazilian_monarchists_stirred_flag
-			}
+			#BRA = {
+			#	clr_country_flag = POR_portugal_stirring_brazilian_monarchists_flag
+			#	set_country_flag = POR_brazilian_monarchists_stirred_flag
+			#}
 		}
 
 		modifier = {
@@ -2320,19 +2320,19 @@ POR_monarchist_cause = {
 		days_remove = 180
 
 		remove_effect = {
-			BRA = {
-				clr_country_flag = POR_portugal_stirring_brazilian_monarchists_flag
-				set_country_flag = POR_brazilian_monarchists_stirred_flag
-			}
+			#BRA = {
+			#	clr_country_flag = POR_portugal_stirring_brazilian_monarchists_flag
+			#	set_country_flag = POR_brazilian_monarchists_stirred_flag
+			#}
 		}
 
 		complete_effect = {
 			custom_effect_tooltip = POR_stir_monarchist_sentiment_in_brazil_tt
-			BRA = { 
-				activate_decision = POR_portugal_promoting_monarchist_cause_in_brazil
-				set_country_flag = POR_portugal_stirring_brazilian_monarchists_flag 
-				country_event = { id = lar_portugal_promote_monarchist_cause.1 }
-			}
+			#BRA = { 
+			#	activate_decision = POR_portugal_promoting_monarchist_cause_in_brazil
+			#	set_country_flag = POR_portugal_stirring_brazilian_monarchists_flag 
+			#	country_event = { id = lar_portugal_promote_monarchist_cause.1 }
+			#}
 		}
 	}
 
@@ -2342,7 +2342,7 @@ POR_monarchist_cause = {
 
 		allowed = {
 			has_dlc = "La Resistance"
-			original_tag = BRA
+			#original_tag = BRA
 		}
 
 		visible = {

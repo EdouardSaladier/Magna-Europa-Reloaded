@@ -118,41 +118,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_a_great_spain
-
-		available = {
-			NOT = {
-				has_country_flag = SPR_spanish_elections_flag
-			}
-		}
-		cancel_if_invalid = yes
-		
-		bypass = {
-			has_global_flag = spanish_civil_war
-		}
-		mutually_exclusive = { focus = SPR_the_popular_front }
-
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				OR = {
-					NOT = {
-						has_global_flag = spanish_civil_war
-					}
-					AND = {
-						NOT = { has_completed_focus = SPR_the_popular_front }
-						has_global_flag = spanish_civil_war
-					}
-				}
-			}
-		}
-		
-		"
 			add_popularity = {
 			    ideology = fascism
 			    popularity = 0.1
@@ -203,14 +168,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_hand_over_the_ceda_campaign_chest
-		available = {
-		}
-		bypass = {
-			has_global_flag = spanish_civil_war
-		}
-		prerequisite = { focus = SPA_a_great_spain }
-		"
 			add_political_power = 200
 		}
 	}
@@ -233,14 +190,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_negotiate_carlist_support
-		available = {
-		}
-		bypass = {
-			has_global_flag = spanish_civil_war
-		}
-		prerequisite = { focus = SPA_hand_over_the_ceda_campaign_chest }
-		"
 			set_country_flag = SPA_negotiate_carlist_support_flag
 			add_popularity = {
 			    ideology = neutrality
@@ -270,14 +219,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_army_of_africa
-		available = {
-		}
-		bypass = {
-			has_global_flag = spanish_civil_war
-		}
-		prerequisite = { focus = SPA_negotiate_carlist_support }
-		"
 			army_experience = 10
 			add_to_variable = { var = spa_civil_war_divisions_counter_var value = 5 }
 			custom_effect_tooltip = SPA_the_army_of_africa_tt
@@ -302,14 +243,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_secure_the_northern_garrisons
-		available = {
-		}
-		bypass = {
-			has_global_flag = spanish_civil_war
-		}
-		prerequisite = { focus = SPA_the_army_of_africa }
-		"
 			custom_effect_tooltip = SPA_secure_the_northern_garrisons_tt
 			hidden_effect = {
 				every_owned_state = {
@@ -391,14 +324,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_sin_paquito
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_secure_the_northern_garrisons }
-		mutually_exclusive = { focus = SPA_con_paquito }
-		"
 			add_political_power = 60
 			set_global_flag = SPR_sin_paquito
 		}
@@ -423,15 +348,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_con_paquito
-		available = {
-		}
-		bypass = {
-			has_global_flag = spanish_civil_war
-		}
-		prerequisite = { focus = SPA_secure_the_northern_garrisons }
-		mutually_exclusive = { focus = SPA_sin_paquito }
-		"
 			custom_effect_tooltip = SPA_con_paquito_tt
 			random_unit_leader = {
 				limit = {
@@ -501,38 +417,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_popular_front
-		available = {
-			NOT = {
-				has_country_flag = SPR_spanish_elections_flag
-			}
-		}
-		
-		bypass = {
-			has_global_flag = spanish_civil_war
-		}
-		mutually_exclusive = { focus = SPA_a_great_spain }
-		cancel_if_invalid = yes
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				OR = {
-					NOT = {
-						has_global_flag = spanish_civil_war
-					}
-					AND = {
-						NOT = { has_completed_focus = SPA_a_great_spain }
-						has_global_flag = spanish_civil_war
-					}
-				}
-			}
-		}
-		"
 			add_popularity = {
 			    ideology = communism
 			    popularity = 0.1
@@ -583,15 +467,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_secure_the_guardia_de_asalto
-		available = {
-		}
-		bypass = {
-			has_global_flag = spanish_civil_war
-		}
-		prerequisite = { focus = SPR_the_popular_front }
-		mutually_exclusive = { focus = SPR_secure_the_guardia_civil }
-		"
 			army_experience = 5
 			if = {
 				limit = {
@@ -643,14 +518,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_secure_the_guardia_civil
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_popular_front }
-		mutually_exclusive = { focus = SPR_secure_the_guardia_de_asalto }
-		"
 			add_stability = 0.05
 			if = {
 				limit = {
@@ -690,14 +557,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_train_the_union_youth
-		available = {
-		}
-		bypass = {
-			has_global_flag = spanish_civil_war
-		}
-		prerequisite = { focus = SPR_secure_the_guardia_de_asalto focus = SPR_secure_the_guardia_civil }
-		"
 			add_popularity = {
 			    ideology = communism
 			    popularity = 0.05
@@ -726,14 +585,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_enlarge_the_weapon_caches
-		available = {
-		}
-		bypass = {
-			has_global_flag = spanish_civil_war
-		}
-		prerequisite = { focus = SPR_train_the_union_youth }
-		"
 			army_experience = 5
 			custom_effect_tooltip = SPR_enlarge_the_weapon_caches_tt
 			add_political_power = 50
@@ -758,14 +609,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_distribute_arms_to_the_people
-		available = {
-		}
-		bypass = {
-			has_global_flag = spanish_civil_war
-		}
-		prerequisite = { focus = SPR_enlarge_the_weapon_caches }
-		"
 			add_popularity = {
 			    ideology = neutrality
 			    popularity = 0.05
@@ -795,14 +638,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_disband_the_army
-		available = {
-		}
-		bypass = {
-			has_global_flag = spanish_civil_war
-		}
-		prerequisite = { focus = SPR_distribute_arms_to_the_people }
-		"
 			add_political_power = 200
 			set_country_flag = SPR_disband_the_army_flag
 			custom_effect_tooltip = SPR_disband_the_army_tt
@@ -836,16 +671,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_phalanx_ascendant
-		available = {
-			has_global_flag = spanish_civil_war
-			hidden_trigger = { always = no }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_sin_paquito }
-		mutually_exclusive = { focus = SPA_unify_the_nationalist_front focus = SPA_supremacy_of_the_communion }
-		"
 			add_popularity = {
 			    ideology = fascism
 			    popularity = 0.1
@@ -883,14 +708,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_bolster_offensive_infrastructure
-		available = {
-			NOT = { has_global_flag = scw_over }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_phalanx_ascendant }
-		"
 			if = {
 				limit = {
 					NOT = {
@@ -981,14 +798,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_fifth_column
-		available = {
-			NOT = { has_global_flag = scw_over }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_bolster_offensive_infrastructure }
-		"
 			division_template = {
 				name = "Fifth Columnist Brigade"
 				template_counter = 33
@@ -1036,15 +845,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_emergency_munitions_corporations
-		available = {
-			NOT = { has_global_flag = scw_over }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_bolster_offensive_infrastructure }
-		prerequisite = { focus = SPA_secure_the_national_defense_council }
-		"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1120,18 +920,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_corpo_truppe_volontarie
-		available = {
-			NOT = { has_global_flag = scw_over }
-			has_volunteers_amount_from = {
-				tag = ITA
-				count > 0
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_phalanx_ascendant focus = SPA_unify_the_nationalist_front }
-		"
 			ITA = {
 				add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
 				add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
@@ -1173,18 +961,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_condor_legion
-		available = {
-			NOT = { has_global_flag = scw_over }
-			has_volunteers_amount_from = {
-				tag = GER
-				count > 0
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_phalanx_ascendant focus = SPA_unify_the_nationalist_front }
-		"
 			GER = {
 				add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
 				add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
@@ -1235,25 +1011,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_equipment_shipments
-		available = {
-			NOT = { has_global_flag = scw_over }
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 0
-				}
-				has_volunteers_amount_from = {
-					tag = GER
-					count > 0
-				}
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_corpo_truppe_volontarie }
-		prerequisite = { focus = SPA_the_condor_legion }
-		"
 			GER = {
 				add_timed_idea = { idea = SPR_equipment_shipments days = 730 }
 				add_ai_strategy = { type = send_lend_lease_desire id = SPA value = 200 }
@@ -1294,24 +1051,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_obtain_training_staff
-		available = {
-			NOT = { has_global_flag = scw_over }
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 0
-				}
-				has_volunteers_amount_from = {
-					tag = GER
-					count > 0
-				}
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_equipment_shipments }
-		"
 			army_experience = 50
 			add_timed_idea = { idea = SPA_foreign_training_staff days = 730 }
 		}
@@ -1345,24 +1084,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_doctrinal_advancements
-		available = {
-			NOT = { has_global_flag = scw_over }
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 0
-				}
-				has_volunteers_amount_from = {
-					tag = GER
-					count > 0
-				}
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_equipment_shipments }
-		"
 			add_doctrine_cost_reduction = {
 				name = SPA_doctrinal_advancements
 				cost_reduction = 0.5
@@ -1396,14 +1117,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_secure_the_national_defense_council
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_the_phalanx_ascendant }
-		"
 			add_stability = 0.2
 		}
 	}
@@ -1426,14 +1139,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_suspend_the_constitution
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_secure_the_national_defense_council }
-		"
 			add_political_power = 120
 			add_popularity = {
 			    ideology = democratic
@@ -1472,14 +1177,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_primo_de_rivera_prisoner_exchange
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_secure_the_national_defense_council }
-		"
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SPR_SPA_jose_antonio_primo_de_rivera
 		}
@@ -1507,18 +1204,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_eliminate_the_carlists
-		available = {
-		}
-		bypass = {
-			OR = {
-				has_war_with = SPB
-				has_global_flag = SPR_carlist_uprising_flag
-				has_global_flag = scw_over
-			}
-		}
-		prerequisite = { focus = SPA_suspend_the_constitution }
-		"
 			add_timed_idea = { idea = SPA_eliminate_the_carlists days = 60 }
 			custom_effect_tooltip = SPR_crush_the_revolution_tt
 			if = {
@@ -1548,14 +1233,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_absorb_carlist_remnants
-		available = {
-			NOT = { country_exists = SPB }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_eliminate_the_carlists }
-		"
 			add_popularity = {
 			    ideology = neutrality
 			    popularity = 0.1
@@ -1584,15 +1261,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_establish_the_directory
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_suspend_the_constitution }
-		prerequisite = { focus = SPA_primo_de_rivera_prisoner_exchange }
-		"
 			add_stability = 0.05
 			custom_effect_tooltip = SPA_establish_the_directory_tt
 			hidden_effect = {
@@ -1687,14 +1355,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_a_one_party_state
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_establish_the_directory }
-		prerequisite = { focus = SPA_eliminate_the_carlists }
-		"
 			set_politics = {
 				ruling_party = fascism
 			}
@@ -1743,13 +1403,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_expand_conscription
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_establish_the_directory focus = SPA_extol_the_martyrs_of_the_war }
-		"
 			add_ideas = SPA_expand_conscription
 		}
 	}
@@ -1771,13 +1424,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_safeguard_the_freedom_of_worship
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_establish_the_directory focus = SPA_extol_the_martyrs_of_the_war }
-		"
 			add_popularity = {
 			    ideology = neutrality
 			    popularity = 0.05
@@ -1815,24 +1461,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_prepare_the_pyrenees_defenses
-		available = {
-			all_state = {
-				if = {
-					limit = {
-						is_core_of = ROOT
-						any_neighbor_state = {
-							is_core_of = FRA
-						}
-					}
-					is_controlled_by = ROOT
-				}
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_establish_the_directory focus = SPA_extol_the_martyrs_of_the_war }
-		"
 			custom_effect_tooltip = SPA_prepare_the_pyrenees_defenses_tt
 			hidden_effect = {
 				every_state = {
@@ -1873,13 +1501,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_develop_all_talent
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_a_one_party_state }
-		"
 			add_research_slot = 1
 		}
 	}
@@ -1913,13 +1534,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_regional_agrarian_commissions
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_a_one_party_state }
-		"
 			add_ideas = SPA_regional_agrarian_commissions
 			random_owned_controlled_state = {
 				limit = {
@@ -1975,14 +1589,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_national_syndicalist_state
-		available = {
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_a_one_party_state }
-		"
 			add_political_power = 100
 			custom_effect_tooltip = SPA_the_national_syndicalist_state_tt
 			hidden_effect = {
@@ -2038,13 +1644,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_syndicalize_production
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_national_syndicalist_state }
-		"
 			add_tech_bonus = {
 				name = SPA_syndicalize_production
 				bonus = 1.0
@@ -2104,13 +1703,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_strengthen_the_supreme_reality_of_spain
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_national_syndicalist_state }
-		"
 			custom_effect_tooltip = SPR_recovering_from_civil_war_focus_tt
 			add_stability = 0.1
 			every_owned_state = {
@@ -2144,13 +1736,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_glory_and_wealth_on_the_sea_lanes
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_strengthen_the_supreme_reality_of_spain }
-		"
 			navy_experience = 25
 			add_tech_bonus = {
 				name = SPA_glory_and_wealth_on_the_sea_lanes
@@ -2203,13 +1788,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_improve_domestic_naval_facilities
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_glory_and_wealth_on_the_sea_lanes }
-		"
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -2260,13 +1838,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_a_great_maritime_power
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_improve_domestic_naval_facilities }
-		"
 			navy_experience = 50
 			add_tech_bonus = {
 				name = SPA_a_great_maritime_power
@@ -2317,13 +1888,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_commerce_protection
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_glory_and_wealth_on_the_sea_lanes }
-		"
 			add_tech_bonus = {
 				name = SPA_commerce_protection
 				bonus = 1
@@ -2358,14 +1922,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_exemplify_the_art_and_science_of_warfare
-		available = {
-			num_of_factories > 50
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_strengthen_the_supreme_reality_of_spain }
-		"
 			add_research_slot = 1
 		}
 	}
@@ -2392,18 +1948,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_will_to_empire
-		available = {
-			has_full_control_of_state = 290
-			has_country_leader = {
-				character = SPA_jose_antonio_primo_de_rivera
-				ruling_only = yes
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_strengthen_the_supreme_reality_of_spain }
-		"
 			add_political_power = 200
 			290 = {
 				if = {
@@ -2466,34 +2010,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_unite_iberia
-		available = {
-			OR = {
-				AND = {
-					country_exists = POR
-					POR = {
-						NOT = { is_in_faction_with = ROOT }
-						NOT = { is_subject_of = ROOT }
-						NOT = { has_war_with = ROOT }
-					}
-					NOT = {
-						any_state = {
-							is_core_of = POR
-							NOT = { is_owned_by = POR }
-						}
-					}
-				}
-				AND = {
-					ENG = { owns_state = 882 }
-					NOT = { is_in_faction_with = ENG }
-				}
-			}
-		}
-		bypass = {
-			NOT = { country_exists = POR }
-		}
-		prerequisite = { focus = SPA_the_will_to_empire }
-		"
 			if = {
 				limit = {
 					POR = {
@@ -2571,43 +2087,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_absorb_the_portuguese_empire
-		available = {
-			OR = {
-				AND = {
-					country_exists = MZB
-					MZB = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				AND = {
-					country_exists = ANG
-					ANG = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				AND = {
-					country_exists = GNB
-					GNB = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				AND = {
-					country_exists = BRA
-					BRA = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_unite_iberia }
-		"
 			if = {
 				limit = {
 					country_exists = BRA
@@ -2687,16 +2166,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_claim_the_aragonese_possessions
-		available = {
-			NOT = {
-				is_in_faction_with = ITA
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_unite_iberia }
-		"
 			every_state = {
 				limit = {
 					is_southern_italian_core = yes
@@ -2731,16 +2200,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_reclaim_spanish_africa
-		available = {
-			NOT = {
-				is_in_faction_with = FRA
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_will_to_empire }
-		"
 			every_state = {
 				limit = {
 					is_core_of = MOR
@@ -2773,14 +2232,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_reassert_american_dominance
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_will_to_empire }
-		allow_branch = { has_global_flag = NEVER }
-		"
 			custom_effect_tooltip = SPA_reassert_american_dominance_tt
 		}
 	}
@@ -2812,23 +2263,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_retake_the_americas
-		available = {
-			OR = {
-				NOT = { is_in_faction_with = ARG }
-				NOT = { is_in_faction_with = CHL }
-				NOT = { is_in_faction_with = PRU }
-				NOT = { is_in_faction_with = VEN }
-				NOT = { is_in_faction_with = COL }
-				NOT = { is_in_faction_with = BOL }
-				NOT = { is_in_faction_with = MEX }
-				NOT = { is_in_faction_with = USA }
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_reassert_american_dominance }
-		"
 			if = {
 				limit = {
 					NOT = { is_in_faction_with = ARG }
@@ -2930,13 +2364,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_embrace_the_spanish_destiny
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_will_to_empire }
-		"
 			add_ideas = SPA_embrace_the_spanish_destiny
 		}
 	}
@@ -2970,14 +2397,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_national_and_popular_army_of_spain
-		available = {
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_national_syndicalist_state focus = SPA_fuse_the_parties }
-		"
 			army_experience = 10
 			random_owned_controlled_state = {
 				limit = {
@@ -3016,14 +2435,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_mandatory_pre_military_training
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_national_syndicalist_state }
-		prerequisite = { focus = SPA_the_national_and_popular_army_of_spain }
-		"
 			add_ideas = SPA_mandatory_pre_military_training_1
 		}
 	}
@@ -3045,13 +2456,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_all_shall_serve
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_mandatory_pre_military_training }
-		"
 			add_war_support = 0.1
 			swap_ideas = {
 				remove_idea = SPA_mandatory_pre_military_training_1
@@ -3077,13 +2481,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_army_of_africa_model
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_national_and_popular_army_of_spain }
-		"
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = SPA_the_army_of_africa_model
@@ -3111,13 +2508,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_equipment_modernization
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_army_of_africa_model }
-		"
 			add_tech_bonus = {
 				name = SPA_equipment_modernization
 				bonus = 1.0
@@ -3144,13 +2534,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_artillery_modernization
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_equipment_modernization }
-		"
 			add_tech_bonus = {
 				name = SPA_artillery_modernization
 				bonus = 1.0
@@ -3177,13 +2560,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_expand_the_air_branch
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_equipment_modernization }
-		"
 			air_experience = 50
 			add_doctrine_cost_reduction = {
 				name = SPA_expand_the_air_branch
@@ -3218,13 +2594,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_expand_the_special_forces
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_equipment_modernization }
-		"
 			add_tech_bonus = {
 				name = SPA_expand_the_special_forces
 				bonus = 1.0
@@ -3257,13 +2626,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_motorization
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_army_of_africa_model }
-		"
 			add_tech_bonus = {
 				name = SPA_equipment_modernization
 				bonus = 2.0
@@ -3291,14 +2653,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_an_armored_corps
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_motorization }
-		prerequisite = { focus = SPA_join_the_axis }
-		"
 			add_tech_bonus = {
 				name = SPA_an_armored_corps
 				bonus = 1.0
@@ -3359,47 +2713,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_join_the_axis
-		available = {
-			has_global_flag = scw_over
-			is_in_faction = no
-			OR = {
-				AND = {
-					GER = {
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-				AND = {
-					ITA = {
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-			}
-			NOT = { has_completed_focus = SPA_the_latin_bloc }
-			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
-		}
-		bypass = {
-			OR = {
-				AND = {
-					NOT = { GER = { has_government = fascism } }
-					NOT = { ITA = { has_government = fascism } }
-				}
-				is_in_faction_with = GER
-				is_in_faction_with = ITA
-			}
-		}
-		prerequisite = { focus = SPA_the_national_syndicalist_state focus = SPA_fuse_the_parties }
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		"
 			if = {
 				limit = {
 					GER = {
@@ -3445,20 +2758,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_fascist_economic_aid
-		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_join_the_axis }
-		prerequisite = { focus = SPA_national_recovery }
-		mutually_exclusive = { focus = SPA_autarky }
-		"
 			add_ideas = SPA_fascist_economic_aid
 			swap_ideas = {
 				remove_idea = SPA_recovering_from_civil_war
@@ -3505,28 +2804,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_facilitate_pyrenees_freight_transports
-		available = {
-			all_state = {
-				if = {
-					limit = {
-						is_core_of = ROOT
-						any_neighbor_state = {
-							is_core_of = FRA
-						}
-					}
-					is_controlled_by = ROOT
-				}
-			}
-			any_allied_country = {
-				is_major = yes
-				has_government = fascism
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_fascist_economic_aid }
-		"
 			custom_effect_tooltip = SPA_facilitate_pyrenees_freight_transports_tt
 			hidden_effect = {
 				every_state = {
@@ -3589,22 +2866,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_improve_cross_country_railways
-		available = {
-			any_allied_country = {
-				is_major = yes
-				has_government = fascism
-			}
-			ROOT = {
-				all_core_state = {
-					is_controlled_by = ROOT
-				}
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_fascist_economic_aid focus = SPA_spanish_austerity }
-		"
 			build_railway = { #Madrid - Crodoba
 				start_province = 15120
 				target_province = 19772
@@ -3663,19 +2924,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_support_the_war_industry
-		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports }
-		prerequisite = { focus = SPA_improve_cross_country_railways }
-		"
 			swap_ideas = {
 				remove_idea = SPA_recovering_from_civil_war_2
 				add_idea = SPA_recovering_from_civil_war_3
@@ -3752,14 +3000,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_italian_shipbuilding_expertise
-		available = {
-			is_in_faction_with = ITA
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_support_the_war_industry }
-		"
 			add_ideas = SPA_italian_shipbuilding_expertise
 			add_tech_bonus = {
 				name = SPA_italian_shipbuilding_expertise
@@ -3792,18 +3032,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_duty_to_work
-		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_support_the_war_industry }
-		"
 			add_ideas = SPA_the_duty_to_work
 		}
 	}
@@ -3842,18 +3070,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_expand_the_war_industry
-		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_support_the_war_industry focus = SPA_expand_the_axis_gold_trade }
-		"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3919,14 +3135,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_national_recovery
-		available = {
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_national_syndicalist_state focus = SPA_fuse_the_parties }
-		"
 			add_timed_idea = { idea = SPA_national_recovery_1 days = 1825 }
 			random_owned_controlled_state = {
 				limit = {
@@ -3965,14 +3173,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_autarky
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_national_recovery }
-		mutually_exclusive = { focus = SPA_fascist_economic_aid }
-		"
 			if = {
 				limit = {
 					NOT = { has_idea = closed_economy }
@@ -4023,21 +3223,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_spanish_austerity
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_autarky }
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		"
 			swap_ideas = {
 				remove_idea = SPA_national_recovery_2
 				add_idea = SPA_national_recovery_3
@@ -4094,13 +3279,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_reduce_reliance_on_foreign_resources
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_spanish_austerity }
-		"
 			add_tech_bonus = {
 				name = SPA_reduce_reliance_on_foreign_resources
 				bonus = 1.5
@@ -4130,15 +3308,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_expand_the_axis_gold_trade
-		available = {
-			NOT = { has_completed_focus = SPA_the_stabilization_plan }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_spanish_austerity }
-		mutually_exclusive = { focus = SPA_capitalist_economic_aid }
-		"
 			add_ideas = SPA_expand_the_axis_gold_trade
 		}
 	}
@@ -4172,13 +3341,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_ensure_agricultural_self_sufficiency
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_expand_the_axis_gold_trade }
-		"
 			remove_ideas = SPA_recovering_from_civil_war_3
 			random_owned_controlled_state = {
 				limit = {
@@ -4260,16 +3422,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_unify_the_nationalist_front
-		available = {
-			has_global_flag = spanish_civil_war
-			hidden_trigger = { always = no }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_con_paquito }
-		mutually_exclusive = { focus = SPA_the_phalanx_ascendant focus = SPA_supremacy_of_the_communion }
-		"
 			add_stability = 0.1
 			activate_mission = SPA_carlist_uprising_mission
 		}
@@ -4296,17 +3448,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_save_the_alcazar
-		available = {
-		}
-		bypass = {
-			OR = {
-				controls_province = 858
-				has_global_flag = scw_over
-			}
-		}
-		prerequisite = { focus = SPA_unify_the_nationalist_front }
-		"
 			activate_mission = SPA_save_the_alcazar_mission
 		}
 	}
@@ -4329,14 +3470,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_martyrdom_for_primo_de_rivera
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_save_the_alcazar }
-		"
 			add_war_support = 0.1
 			add_popularity = {
 			    ideology = fascism
@@ -4362,13 +3495,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_caudillo_of_spain
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_save_the_alcazar }
-		"
 			add_stability = 0.05
 			hidden_effect = {
 				kill_country_leader = yes
@@ -4413,14 +3539,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_SPA_CARLIST_UPRISING}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_extol_the_martyrs_of_the_war
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_martyrdom_for_primo_de_rivera }
-		prerequisite = { focus = SPA_caudillo_of_spain }
-		"
 			add_war_support = 0.1
 		}
 	}
@@ -4455,26 +3573,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_consolidate_the_north
-		available = {
-			all_state = {
-				if = {
-					limit = {
-						is_west_aragon_group = yes
-						is_navarra_group = yes
-						is_burgos_group = yes
-						is_pais_group = yes
-						is_asturias_group = yes
-					}
-					is_controlled_by = ROOT
-				}
-			}
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_unify_the_nationalist_front }
-		"
 			837 = {
 				if = {
 					limit = {
@@ -4595,14 +3693,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_SPA_CARLIST_UPRISING}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_foment_a_carlist_split
-		available = {
-		}
-		bypass = {
-			has_global_flag = SPR_carlist_uprising_flag
-		}
-		prerequisite = { focus = SPA_consolidate_the_north }
-		"
 			swap_ideas = {
 				remove_idea = SPA_carlism_1
 				add_idea = SPA_carlism_2
@@ -4632,14 +3722,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_a_methodical_approach
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_unify_the_nationalist_front }
-		"
 			add_ideas = SPA_a_methodical_approach
 			custom_effect_tooltip = SPR_seize_public_transport_tt
 		}
@@ -4663,14 +3745,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_tackle_the_vulnerable_fronts
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_a_methodical_approach }
-		"
 			custom_effect_tooltip = SPA_tackle_the_vulnerable_fronts_tt
 		}
 	}
@@ -4694,15 +3768,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_integrate_the_requetes
-		available = {
-		}
-		bypass = {
-			has_global_flag = SPR_carlist_uprising_flag
-		}
-		prerequisite = { focus = SPA_tackle_the_vulnerable_fronts }
-		prerequisite = { focus = SPA_foment_a_carlist_split }
-		"
 			add_popularity = {
 			    ideology = neutrality
 			    popularity = 0.1
@@ -4769,23 +3834,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_portuguese_aid
-		available = {
-			NOT = { has_war_with = POR }
-			any_enemy_country = {
-				NOT = {
-					has_volunteers_amount_from = {
-						tag = POR
-						count > 0
-					}
-				}
-			}
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_a_methodical_approach }
-		"
 			effect_tooltip = {
 				add_manpower = 20000
 				POR = {
@@ -4824,22 +3872,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_iberian_pact
-		available = {
-			has_global_flag = scw_over
-			has_war = no
-			is_in_faction = no
-			POR = {
-				has_war = no
-				is_in_faction = no
-			}
-			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
-		}
-		bypass = {
-			POR = { is_in_faction = yes }
-		}
-		prerequisite = { focus = SPA_portuguese_aid }
-		"
 			custom_effect_tooltip = SPA_the_iberian_pact_tt
 			custom_effect_tooltip = SPA_the_iberian_pact_tt_2
 			POR = { country_event = { id = lar_spain.25 hours = 12 random_hours = 36 } }
@@ -4873,15 +3905,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_latin_bloc
-		available = {
-			has_global_flag = scw_over
-			NOT = { has_completed_focus = SPA_join_the_axis }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_iberian_pact }
-		"
 			set_rule = {
 				can_create_factions = yes
 			}
@@ -4921,13 +3944,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_utilize_the_intellectuals
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_integrate_the_requetes focus = SPA_confirm_the_fueros }
-		"
 			add_research_slot = 1
 		}
 	}
@@ -4951,15 +3967,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CARLIST_UPRISING}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_banish_the_party_leaders
-		available = {
-		}
-		bypass = {
-			has_global_flag = SPR_carlist_uprising_flag
-		}
-		prerequisite = { focus = SPA_extol_the_martyrs_of_the_war }
-		prerequisite = { focus = SPA_foment_a_carlist_split }
-		"
 			add_political_power = 200
 			custom_effect_tooltip = remove_political_advisor
 			show_ideas_tooltip = SPA_manuel_hedilla
@@ -4991,15 +3998,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_fuse_the_parties
-		available = {
-		}
-		bypass = {
-			has_global_flag = SPR_carlist_uprising_flag
-		}
-		prerequisite = { focus = SPA_banish_the_party_leaders }
-		prerequisite = { focus = SPA_safeguard_the_freedom_of_worship }
-		"
 			set_party_name = { ideology = fascism long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
 			set_party_name = { ideology = neutrality long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
 			if = {
@@ -5099,49 +4097,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_join_the_allies
-		available = {
-			has_global_flag = scw_over
-			is_in_faction = no
-			OR = {
-				AND = {
-					ENG = {
-						has_government = democratic
-						is_faction_leader = yes
-					}
-				}
-				AND = {
-					USA = {
-						has_government = democratic
-						is_faction_leader = yes
-					}
-				}
-			}
-			NOT = { has_completed_focus = SPA_the_latin_bloc }
-			NOT = { has_government = fascism }
-			fascism < 0.4		
-			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
-		}
-		bypass = {
-			OR = {
-				AND = {
-					NOT = { USA = { has_government = democratic } }
-					NOT = { ENG = { has_government = democratic } }
-				}
-				is_in_faction_with = USA
-				is_in_faction_with = ENG
-			}
-		}
-		prerequisite = { focus = SPA_fuse_the_parties }
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		"
 			if = {
 				limit = {
 					ENG = {
@@ -5187,19 +4142,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_stabilization_plan
-		available = {
-			NOT = { has_completed_focus = SPA_expand_the_axis_gold_trade }
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_join_the_allies }
-		prerequisite = { focus = SPA_national_recovery }
-		"
 			if = {
 				limit = {
 					NOT = {
@@ -5256,17 +4198,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_expand_spanish_bases
-		available = {
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_stabilization_plan }
-		"
 			830 = { #Galicia
 				add_building_construction = {
 					type = air_base
@@ -5444,19 +4375,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_capitalist_economic_aid
-		available = {
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_expand_spanish_bases }
-		prerequisite = { focus = SPA_reduce_reliance_on_foreign_resources }
-		mutually_exclusive = { focus = SPA_expand_the_axis_gold_trade }
-		"
 			add_tech_bonus = {
 				name = SPA_capitalist_economic_aid
 				bonus = 1.0
@@ -5508,17 +4426,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_improve_living_standards
-		available = {
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_capitalist_economic_aid }
-		"
 			add_stability = 0.15
 			add_political_power = 120
 			if = {
@@ -5577,17 +4484,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_domestic_industrial_developments
-		available = {
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_capitalist_economic_aid }
-		"
 			if = {
 				limit = {
 					NOT = {
@@ -5666,18 +4562,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_spanish_miracle
-		available = {
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_improve_living_standards }
-		prerequisite = { focus = SPA_domestic_industrial_developments }
-		"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -5782,14 +4666,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_adopt_the_26_points
-		available = {
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_fuse_the_parties }
-		"
 			add_popularity = {
 			    ideology = fascism
 			    popularity = 0.1
@@ -5847,14 +4723,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_direct_the_universities
-		available = {
-			num_of_factories > 50
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_adopt_the_26_points }
-		"
 			add_research_slot = 1
 		}
 	}
@@ -5881,18 +4749,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_dictator_for_life
-		available = {
-			has_country_leader = {
-				character = SPA_francisco_franco
-				ruling_only = yes
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_adopt_the_26_points }
-		mutually_exclusive = { focus = SPA_restore_the_monarchy }
-		"
 			add_stability = 0.05
 			swap_ruler_traits = { remove = caudillo_1 add = caudillo_2 }
 			hidden_effect = {
@@ -5960,14 +4816,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_invest_in_naval_infrastructure
-		available = {
-			has_completed_focus = SPA_unify_the_nationalist_front
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_expand_spanish_bases focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
-		"
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -6018,13 +4866,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_expand_the_slipways
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_invest_in_naval_infrastructure }
-		"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -6080,13 +4921,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_plan_imperial
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_expand_the_slipways }
-		"
 			navy_experience = 50
 			add_ideas = SPA_the_plan_imperial
 			add_tech_bonus = {
@@ -6121,13 +4955,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_restart_small_scale_shipbuilding
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_invest_in_naval_infrastructure }
-		"
 			navy_experience = 25
 			add_tech_bonus = {
 				name = SPA_restart_small_scale_shipbuilding
@@ -6169,14 +4996,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_la_division_azul
-		available = {
-			has_completed_focus = SPA_adopt_the_26_points
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
-		"
 			add_ideas = SPA_la_division_azul
 			if = {
 				limit = {
@@ -6208,15 +5027,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_tangiers_enclave
-		available = {
-			has_full_control_of_state = 290
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_la_division_azul }
-		prerequisite = { focus = SPA_stamp_out_the_maquis }
-		"
 			if = {
 				limit = {
 					ENG = { has_government = democratic }
@@ -6281,30 +5091,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_demand_french_north_africa
-		available = {
-				ALG = {
-					all_core_state = {
-						OWNER = {
-							original_tag = FRA
-							has_focus_tree = vichy_french_focus
-						}
-					}	
-				}
-			
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_tangiers_enclave }
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		"
 			random_other_country = {
 				limit = {
 					original_tag = FRA
@@ -6341,14 +5127,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_restore_the_monarchy
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_adopt_the_26_points focus = SPA_settle_the_succession_question }
-		mutually_exclusive = { focus = SPA_dictator_for_life }
-		"
 			if = {
 				limit = {
 					has_completed_focus = SPA_supremacy_of_the_communion
@@ -6386,13 +5164,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_stamp_out_the_maquis
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
-		"
 			custom_effect_tooltip = SPR_recovering_from_civil_war_focus_tt
 		}
 	}
@@ -6414,13 +5185,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_defenses_against_strategic_bombing
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_stamp_out_the_maquis }
-		"
 			every_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -6474,13 +5238,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_defenses_against_invasion
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_defenses_against_strategic_bombing }
-		"
 			custom_effect_tooltip = SPA_defenses_against_invasion_tt
 			every_owned_state = {
 				limit = {
@@ -6533,19 +5290,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_retake_gibraltar
-		available = {
-			NOT = {
-				is_in_faction_with = ENG
-				has_war_with = ENG
-				controls_state = 882
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_demand_french_north_africa }
-		prerequisite = { focus = SPA_defenses_against_invasion }
-		"
 			create_wargoal = {
 				type = take_state_focus
 				target = ENG
@@ -6577,18 +5321,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_claim_west_africa
-		available = {
-		}
-		bypass = {
-			MOR = {
-				all_core_state = {
-					is_owned_by = ROOT
-				}
-			}
-		}
-		prerequisite = { focus = SPA_retake_gibraltar }
-		"
 			every_state = {
 				limit = {
 					is_core_of = MOR
@@ -6664,16 +5396,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_supremacy_of_the_communion
-		available = {
-			has_global_flag = spanish_civil_war
-			hidden_trigger = { always = no }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_negotiate_carlist_support }
-		mutually_exclusive = { focus = SPA_the_phalanx_ascendant focus = SPA_unify_the_nationalist_front }
-		"
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SPA_luis_hernando_de_larramendi
 			show_ideas_tooltip = SPA_martin_de_riquer
@@ -6719,14 +5441,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CARLIST_UPRISING}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_prepare_the_carlist_insurrection
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_supremacy_of_the_communion }
-		"
 			custom_effect_tooltip = SPA_prepare_the_carlist_insurrection_tt
 			hidden_effect = {
 				if = {
@@ -6779,14 +5493,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_contact_the_union_militar_espanola
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_prepare_the_carlist_insurrection }
-		"
 			add_doctrine_cost_reduction = {
 				name = SPA_contact_the_union_militar_espanola
 				cost_reduction = 0.5
@@ -6815,14 +5521,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_head_the_junta_nacional
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_supremacy_of_the_communion }
-		"
 			add_stability = 0.05
 			create_country_leader = {
 				name = "Manuel Fal Conde"
@@ -6855,14 +5553,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_unite_the_requetes
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_head_the_junta_nacional }
-		"
 			remove_ideas = SPA_disjointed_carlist_juntas
 		}
 	}
@@ -6885,14 +5575,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_war_in_the_north
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_supremacy_of_the_communion }
-		"
 			add_doctrine_cost_reduction = {
 				name = SPA_the_war_in_the_north
 				cost_reduction = 0.5
@@ -6960,14 +5642,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_revive_the_spirit_of_the_carlist_wars
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_the_war_in_the_north }
-		"
 			add_war_support = 0.1
 		}
 	}
@@ -6989,13 +5663,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_arms_modernization
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_revive_the_spirit_of_the_carlist_wars }
-		"
 			add_tech_bonus = {
 				name = SPA_arms_modernization
 				bonus = 1.0
@@ -7034,19 +5701,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR FOCUS_FILTER_SPA_CARLIST_UPRISING}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_no_compromise_on_carlist_ideals
-		available = {
-		}
-		bypass = {
-			OR = {
-				has_war_with = SPA
-				has_global_flag = SPR_carlist_uprising_flag
-				has_global_flag = scw_over
-			}
-		}
-		prerequisite = { focus = SPA_contact_the_union_militar_espanola }
-		prerequisite = { focus = SPA_unite_the_requetes }
-		"
 			set_party_name = { ideology = neutrality long_name = SPR_neutrality_party_long name = SPR_neutrality_party }
 			add_timed_idea = { idea = SPA_no_compromise_on_carlist_ideals days = 60 }
 			custom_effect_tooltip = SPA_no_compromise_on_carlist_ideals_tt_2
@@ -7078,14 +5732,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_crusade_against_democracy
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_unite_the_requetes }
-		prerequisite = { focus = SPA_revive_the_spirit_of_the_carlist_wars }
-		"
 			set_country_flag = { flag = SPA_the_crusade_against_democracy_timer_flag value = 1 days = 69 }
 			add_ideas = SPA_crusade_against_democracy_1
 			add_doctrine_cost_reduction = {
@@ -7119,18 +5765,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_expand_the_requetes
-		available = {
-			custom_trigger_tooltip = {
-			    tooltip = SPA_the_crusade_against_democracy_timer_tt
-			   	NOT = { has_country_flag = SPA_the_crusade_against_democracy_timer_flag }
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_crusade_against_democracy }
-		prerequisite = { focus = SPA_no_compromise_on_carlist_ideals }
-		"
 			set_country_flag = { flag = SPA_the_crusade_against_democracy_timer_flag value = 1 days = 69 }
 			if = {
 				limit = {
@@ -7198,17 +5832,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_militarize_the_masses
-		available = {
-			custom_trigger_tooltip = {
-			    tooltip = SPA_the_crusade_against_democracy_timer_tt
-			   	NOT = { has_country_flag = SPA_the_crusade_against_democracy_timer_flag }
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_expand_the_requetes }
-		"
 			set_country_flag = { flag = SPA_the_crusade_against_democracy_timer_flag value = 1 days = 69 }
 			if = {
 				limit = {
@@ -7276,17 +5899,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_defenders_of_catholicism
-		available = {
-			custom_trigger_tooltip = {
-			    tooltip = SPA_the_crusade_against_democracy_timer_tt
-			   	NOT = { has_country_flag = SPA_the_crusade_against_democracy_timer_flag }
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_crusade_against_democracy }
-		"
 			set_country_flag = { flag = SPA_the_crusade_against_democracy_timer_flag value = 1 days = 69 }
 			if = {
 				limit = {
@@ -7355,17 +5967,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_battle_rites
-		available = {
-			custom_trigger_tooltip = {
-			    tooltip = SPA_the_crusade_against_democracy_timer_tt
-			   	NOT = { has_country_flag = SPA_the_crusade_against_democracy_timer_flag }
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_defenders_of_catholicism }
-		"
 			set_country_flag = { flag = SPA_the_crusade_against_democracy_timer_flag value = 1 days = 69 }
 			if = {
 				limit = {
@@ -7434,18 +6035,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_cultivate_fanaticism
-		available = {
-			custom_trigger_tooltip = {
-			    tooltip = SPA_the_crusade_against_democracy_timer_tt
-			   	NOT = { has_country_flag = SPA_the_crusade_against_democracy_timer_flag }
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_militarize_the_masses }
-		prerequisite = { focus = SPA_battle_rites }
-		"
 			swap_ideas = {
 				remove_idea = SPA_crusade_against_democracy_9
 				add_idea = SPA_crusade_against_democracy_10
@@ -7477,14 +6066,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_third_dimension_of_warfare
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_crusade_against_democracy }
-		prerequisite = { focus = SPA_arms_modernization }
-		"
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = SPA_the_third_dimension_of_warfare
@@ -7512,13 +6093,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_a_modern_fighter_fleet
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_third_dimension_of_warfare }
-		"
 			air_experience = 50
 			add_tech_bonus = {
 				name = SPA_a_modern_fighter_fleet
@@ -7547,13 +6121,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_confirm_the_fueros
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_no_compromise_on_carlist_ideals }
-		"
 			add_stability = 0.1
 			every_owned_state = {
 				limit = {
@@ -7599,13 +6166,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_encourage_local_industrialization
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_confirm_the_fueros }
-		"
 			add_tech_bonus = {
 				name = SPA_encourage_local_industrialization
 				bonus = 1.0
@@ -7693,13 +6253,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_encourage_local_mining
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_encourage_local_industrialization }
-		"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -7773,14 +6326,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_settle_the_succession_question
-		available = {
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_confirm_the_fueros }
-		"
 			add_stability = 0.1
 			country_event = { id = lar_spain.34 hours = 6 random_hours = 6 }
 		}
@@ -7803,13 +6348,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_dios_patria_rey
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_settle_the_succession_question }
-		"
 			add_stability = 0.05
 			add_war_support = 0.05
 			swap_ideas = {
@@ -7848,13 +6386,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_restore_the_empire
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_dios_patria_rey }
-		"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -7937,13 +6468,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_strengthen_the_empire
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_restore_the_empire }
-		"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -8009,13 +6533,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_prosperity_of_the_empire
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_strengthen_the_empire }
-		"
 			if = {
 				limit = {
 					has_idea = SPA_recovering_from_civil_war_3
@@ -8118,13 +6635,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_press_the_gibraltar_claim
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_restore_the_empire }
-		"
 			create_wargoal = {
 				type = take_state_focus
 				target = ENG
@@ -8151,13 +6661,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_claim_the_french_throne
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_restore_the_empire }
-		"
 			if = {
 				limit = {
 					FRA = {
@@ -8192,13 +6695,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_retake_the_spanish_netherlands
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_claim_the_french_throne }
-		"
 			create_wargoal = {
 			    type = annex_everything
 			    target = HOL
@@ -8234,13 +6730,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_restore_the_iberian_union
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_restore_the_empire }
-		"
 			POR = { country_event = { id = lar_spain.45 hours = 6 random_hours = 6 } }
 		}
 	}
@@ -8263,14 +6752,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_the_war_of_vengeance
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_press_the_gibraltar_claim }
-		prerequisite = { focus = SPA_restore_the_iberian_union }
-		"
 			create_wargoal = {
 			    type = take_state_focus
 			    target = USA
@@ -8308,14 +6789,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_found_the_academia_vazquez_de_mella
-		available = {
-			num_of_factories > 50
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_dios_patria_rey }
-		"
 			add_research_slot = 1
 		}
 	}
@@ -8349,13 +6822,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_a_fleet_worthy_of_a_king
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_restore_the_empire }
-		"
 			navy_experience = 25
 			add_tech_bonus = {
 				name = SPA_a_fleet_worthy_of_a_king
@@ -8418,13 +6884,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_rebuild_the_battlefleet
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_a_fleet_worthy_of_a_king }
-		"
 			add_ideas = SPA_rebuild_the_battlefleet
 			add_tech_bonus = {
 				name = SPA_rebuild_the_battlefleet
@@ -8452,13 +6911,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPA_imperial_security
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_rebuild_the_battlefleet }
-		"
 			navy_experience = 50
 			add_tech_bonus = {
 				name = SPA_imperial_security
@@ -8502,16 +6954,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_regional_defense_council_of_aragon
-		available = {
-			has_global_flag = spanish_civil_war
-			hidden_trigger = { always = no }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_disband_the_army }
-		mutually_exclusive = { focus = SPR_the_anti_fascist_workers_revolution focus = SPR_maintain_the_second_republic }
-		"
 			create_field_marshal = {
 				name = "Buenaventura Durruti"
 				gfx = "GFX_portrait_SPR_buenaventura_durruti"
@@ -8582,14 +7024,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_appropriate_the_means_of_production
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_regional_defense_council_of_aragon }
-		"
 			swap_ideas = {
 				remove_idea = SPR_anarchist_society_1
 				add_idea = SPR_anarchist_society_2
@@ -8614,13 +7048,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_autogestion
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_appropriate_the_means_of_production }
-		"
 			if = {
 				limit = {
 					has_idea = SPR_anarchist_society_2
@@ -8696,15 +7123,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_collectivization_and_workers_control
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_autogestion }
-		prerequisite = { focus = SPR_seize_public_transport }
-		prerequisite = { focus = SPR_agrarian_collectivization }
-		"
 			if = {
 				limit = {
 					has_idea = SPR_anarchist_society_3
@@ -8778,13 +7196,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_arm_the_people
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_regional_defense_council_of_aragon }
-		"
 			add_war_support = 0.1
 			swap_ideas = {
 				remove_idea = SPR_disbanded_army_1
@@ -8815,18 +7226,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_maximum_concession
-		available = {
-		}
-		bypass = {
-			OR = {
-				has_global_flag = scw_over
-				tag = SPC
-			}
-		}
-		prerequisite = { focus = SPR_appropriate_the_means_of_production }
-		prerequisite = { focus = SPR_arm_the_people }
-		"
 			add_ideas = SPR_the_maximum_concession
 			add_days_mission_timeout = {
 				mission = SPR_government_crackdown_mission
@@ -8853,14 +7252,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_seize_public_transport
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_the_maximum_concession }
-		"
 			add_ideas = SPR_anarchist_public_transport
 			custom_effect_tooltip = SPR_seize_public_transport_tt
 		}
@@ -8883,13 +7274,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_agrarian_collectivization
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_maximum_concession }
-		"
 			if = {
 				limit = {
 					has_idea = SPR_anarchist_society_2
@@ -8973,14 +7357,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_mujeres_libres
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_seize_public_transport }
-		prerequisite = { focus = SPR_agrarian_collectivization }
-		"
 			if = {
 				limit = {
 					has_idea = SPR_anarchist_society_5
@@ -9064,14 +7440,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_literacy_programs
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_collectivization_and_workers_control }
-		prerequisite = { focus = SPR_mujeres_libres }
-		"
 			add_research_slot = 1
 		}
 	}
@@ -9094,14 +7462,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_shared_burdens
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_arm_the_people }
-		prerequisite = { focus = SPR_appropriate_the_means_of_production }
-		"
 			if = {
 				limit = {
 					has_idea = SPR_anarchist_society_2
@@ -9212,14 +7572,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_international_brigades
-		available = {
-			NOT = { has_global_flag = scw_over }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_arm_the_people focus = SPR_arm_the_workers_militias }
-		"
 			if = {
 				limit = {
 					has_completed_focus = SPR_the_anti_fascist_workers_revolution
@@ -9262,18 +7614,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_seize_the_gold_reserves
-		available = {
-		}
-		bypass = {
-			OR = {
-				has_global_flag = scw_over
-				has_global_flag = SPR_anarchist_uprising_flag
-				has_global_flag = SPR_gold_reserves_flag
-			}
-		}
-		prerequisite = { focus = SPR_the_maximum_concession focus = SPR_hinder_nkvd_interference }
-		"
 			add_timed_idea = { idea = SPR_seized_gold_reserves  days = 730 }
 			set_global_flag = SPR_gold_reserves_flag
 		}
@@ -9297,14 +7637,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_foreign_arms_purchases
-		available = {
-			NOT = { has_global_flag = scw_over }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_seize_the_gold_reserves }
-		"
 			custom_effect_tooltip = SPR_foreign_arms_purchases_tt
 		}
 	}
@@ -9331,18 +7663,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_masters_of_our_own_fate
-		available = {
-		}
-		bypass = {
-			OR = {
-				has_war_with = SPD
-				has_global_flag = SPR_anarchist_uprising_flag
-				has_global_flag = scw_over
-			}
-		}
-		prerequisite = { focus = SPR_seize_the_gold_reserves }
-		"
 			effect_tooltip = {
 				if = {
 					limit = {
@@ -9517,15 +7837,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_all_must_bear_the_torch
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_mujeres_libres }
-		prerequisite = { focus = SPR_masters_of_our_own_fate }
-		prerequisite = { focus = SPR_collectivization_and_workers_control }
-		"
 			add_ideas = SPR_collectivized_society
 			if = {
 				limit = {
@@ -9594,13 +7905,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_threats_abound
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_all_must_bear_the_torch }
-		"
 			add_ideas = SPR_the_threats_abound_1
 		}
 	}
@@ -9635,26 +7939,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_portuguese_anarchism
-		available = {
-			any_state = {
-				is_fully_controlled_by = ROOT
-				any_neighbor_state = {
-					is_owned_by = POR
-				}
-			}
-		}
-		bypass = {
-			POR = {
-				all_core_state = {
-					is_owned_by = ROOT
-				}
-			}
-		}
-
-		will_lead_to_war_with = POR
-		prerequisite = { focus = SPR_the_threats_abound }
-		"
 			if = {
 				limit = {
 					POR = { has_civil_war = yes }
@@ -9700,18 +7984,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_regional_defense_council_of_iberia
-		available = {
-			POR = {
-				all_core_state = {
-					is_owned_by = ROOT
-				}
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_portuguese_anarchism }
-		"
 			custom_effect_tooltip = SPR_regional_defense_council_of_iberia_tt
 			hidden_effect = {
 				drop_cosmetic_tag = yes
@@ -9743,13 +8015,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_a_new_way_of_warfare
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_threats_abound }
-		"
 			add_tech_bonus = {
 				name = SPR_a_new_way_of_warfare
 				bonus = 1.0
@@ -9782,13 +8047,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_communal_military_strategies
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_a_new_way_of_warfare }
-		"
 			remove_ideas = SPR_disbanded_army_2
 			add_doctrine_cost_reduction = {
 				name = SPR_communal_military_strategies
@@ -9818,13 +8076,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_maintaining_the_fire
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_all_must_bear_the_torch }
-		"
 			add_war_support = 0.15
 		}
 	}
@@ -9847,14 +8098,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_freedom_of_thought
-		available = {
-			num_of_factories > 50
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_maintaining_the_fire }
-		"
 			add_research_slot = 1
 		}
 	}
@@ -9877,14 +8120,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_torchbearers_of_tomorrow
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_a_new_way_of_warfare }
-		prerequisite = { focus = SPR_collective_recovery_efforts }
-		"
 			add_ideas = SPR_torchbearers_of_tomorrow
 			swap_ideas = {
 				remove_idea = SPR_the_threats_abound_1
@@ -9915,18 +8150,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_inevitable_counterblow
-		available = {
-			has_country_leader = {
-				name = "Anarchist Commune"
-				ruling_only = yes
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_regional_defense_council_of_iberia }
-		prerequisite = { focus = SPR_torchbearers_of_tomorrow }
-		"
 			custom_effect_tooltip = SPR_recovering_from_civil_war_focus_tt
 			add_ideas = SPR_the_inevitable_counterblow
 			add_country_leader_trait = anarchist_zeal
@@ -9953,13 +8176,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_improve_military_infrastructure
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_inevitable_counterblow }
-		"
 			add_ideas = SPR_improve_military_infrastructure
 			random_owned_controlled_state = {
 				limit = {
@@ -10055,24 +8271,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_fortify_the_pyrenees
-		available = {
-			all_state = {
-				if = {
-					limit = {
-						is_core_of = ROOT
-						any_neighbor_state = {
-							is_core_of = FRA
-						}
-					}
-					is_controlled_by = ROOT
-				}
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_improve_military_infrastructure }
-		"
 			custom_effect_tooltip = SPR_fortify_the_pyrenees_tt
 			hidden_effect = {
 				every_state = {
@@ -10114,14 +8312,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_fortify_la_linea_de_la_concepcion
-		available = {
-			has_full_control_of_state = 1115
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_fortify_the_pyrenees }
-		"
 			custom_effect_tooltip = SPR_fortify_la_linea_de_la_concepcion_tt
 			hidden_effect = {
 				1115 = {
@@ -10163,21 +8353,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_fortify_the_coastlines
-		available = {
-			NOT = {
-				any_state = {
-					is_core_of = ROOT
-					is_in_home_area = yes
-					is_coastal = yes
-					NOT = { is_controlled_by = ROOT }
-				}
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_fortify_the_pyrenees }
-		"
 			custom_effect_tooltip = SPR_fortify_the_coastlines_tt_1
 			custom_effect_tooltip = SPR_fortify_the_coastlines_tt_2
 			hidden_effect = {
@@ -10272,13 +8447,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_militarize_the_industry
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_inevitable_counterblow }
-		"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -10366,13 +8534,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_communal_autarky
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_militarize_the_industry }
-		"
 			if = {
 				limit = {
 					has_idea = SPR_anarchist_society_17
@@ -10427,13 +8588,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_faith_in_the_cause
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_torchbearers_of_tomorrow }
-		"
 			add_war_support = 0.1
 		}
 	}
@@ -10456,14 +8610,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_militarize_the_people
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_inevitable_counterblow }
-		prerequisite = { focus = SPR_faith_in_the_cause }
-		"
 			add_doctrine_cost_reduction = {
 				name = SPA_doctrinal_advancements
 				cost_reduction = 0.5
@@ -10494,13 +8640,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_anarchism_knows_no_borders
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_militarize_the_people }
-		"
 			add_ideas = SPR_anarchism_knows_no_borders
 		}
 	}
@@ -10522,13 +8661,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_plant_the_seeds_of_revolution
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_anarchism_knows_no_borders }
-		"
 			custom_effect_tooltip = SPR_plant_the_seeds_of_revolution_tt
 			division_template = {
 				name = "Anarchist Militia"
@@ -10561,13 +8693,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_global_defense_council
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_anarchism_knows_no_borders }
-		"
 			custom_effect_tooltip = SPR_global_defense_council_tt
 			hidden_effect = {
 				drop_cosmetic_tag = yes
@@ -10603,16 +8728,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_anti_fascist_workers_revolution
-		available = {
-			has_global_flag = spanish_civil_war
-			hidden_trigger = { always = no }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_disband_the_army }
-		mutually_exclusive = { focus = SPR_regional_defense_council_of_aragon focus = SPR_maintain_the_second_republic }
-		"
 			add_popularity = {
 				ideology = communism
 				popularity = 0.1
@@ -10640,15 +8755,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_strengthen_the_euzko_gudarostea
-		available = {
-			has_full_control_of_state = 849
-			NOT = { has_global_flag = scw_over }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_anti_fascist_workers_revolution focus = SPR_maintain_the_second_republic }
-		"
 			custom_effect_tooltip = SPR_strengthen_the_euzko_gudarostea_tt
 			hidden_effect = {
 				division_template = {
@@ -10711,15 +8817,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_fortify_the_iron_ring
-		available = {
-			has_full_control_of_state = 849
-			NOT = { has_global_flag = scw_over }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_strengthen_the_euzko_gudarostea }
-		"
 			add_timed_idea = { idea = SPR_fortify_the_iron_ring days = 730 }
 			849 = {
 				add_building_construction = {
@@ -10755,17 +8852,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_arm_the_workers_militias
-		available = {
-		}
-		bypass = {
-			OR = {
-				has_global_flag = scw_over
-				has_global_flag = SPR_anarchist_uprising_flag
-			}
-		}
-		prerequisite = { focus = SPR_the_anti_fascist_workers_revolution }
-		"
 			add_war_support = 0.1
 			swap_ideas = {
 				remove_idea = SPR_disbanded_army_1
@@ -10797,19 +8883,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_hinder_nkvd_interference
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		cancel = {
-			has_completed_focus = SPR_the_stalinist_doctrine
-		}
-		prerequisite = { focus = SPR_arm_the_workers_militias }
-		prerequisite = { focus = SPR_demand_ministerial_positions }
-		mutually_exclusive = { focus = SPR_the_stalinist_doctrine }
-		"
 			set_party_name = { ideology = communism long_name = SPR_communism_independent_party_long name = SPR_communism_independent_party }
 			add_stability = 0.05
 			SOV = {
@@ -10862,17 +8935,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_demand_ministerial_positions
-		available = {
-		}
-		bypass = {
-			OR = {
-				has_global_flag = scw_over
-				has_global_flag = SPR_anarchist_uprising_flag
-			}
-		}
-		prerequisite = { focus = SPR_the_anti_fascist_workers_revolution }
-		"
 			add_ideas = SPR_demand_ministerial_positions
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SPR_dolores_ibarruri
@@ -10901,16 +8963,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_stalinist_doctrine
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_demand_ministerial_positions }
-		prerequisite = { focus = SPR_arm_the_workers_militias }
-		mutually_exclusive = { focus = SPR_hinder_nkvd_interference }
-		"
 			add_stability = -0.1
 			add_political_power = 120
 			SOV = { add_opinion_modifier = { target = ROOT modifier = SPR_the_stalinist_doctrine } }
@@ -10936,13 +8988,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_subvert_the_stalinists
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_hinder_nkvd_interference }
-		"
 			add_stability = 0.05
 			add_political_power = 120
 		}
@@ -10965,13 +9010,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_class_war
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_subvert_the_stalinists }
-		"
 			add_ideas = SPR_class_war_1
 		}
 	}
@@ -10993,13 +9031,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_secularize_the_new_state
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_hinder_nkvd_interference focus = SPR_the_stalinist_doctrine }
-		"
 			add_stability = -0.1
 			add_political_power = 200
 			add_popularity = {
@@ -11026,13 +9057,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_appropriate_church_riches
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_secularize_the_new_state }
-		"
 			add_timed_idea = { idea = SPR_appropriate_church_riches days = 730 }
 		}
 	}
@@ -11054,13 +9078,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_an_army_of_all_classes
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_stalinist_doctrine }
-		"
 			add_ideas = SPR_an_army_of_all_classes_1
 		}
 	}
@@ -11086,17 +9103,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_relocate_the_gold_reserves
-		available = {
-		}
-		bypass = {
-			OR = {
-				has_global_flag = scw_over
-				has_global_flag = SPR_gold_reserves_flag
-			}
-		}
-		prerequisite = { focus = SPR_the_stalinist_doctrine focus = SPR_the_future_of_the_republic }
-		"
 			add_stability = -0.05
 			add_ideas = SPR_relocate_the_gold_reserves
 			custom_effect_tooltip = SPR_relocate_the_gold_reserves_tt
@@ -11126,17 +9132,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_reaffirm_the_popular_front_strategy
-		available = {
-		}
-		bypass = {
-			OR = {
-				has_global_flag = SPR_anarchist_uprising_flag
-				has_global_flag = scw_over
-			}
-		}
-		prerequisite = { focus = SPR_the_stalinist_doctrine focus = SPR_the_future_of_the_republic }
-		"
 			add_war_support = 0.05
 			add_timed_idea = { idea = SPR_popular_front_1 days = 730 }
 		}
@@ -11160,15 +9155,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_anti_fascist_unity
-		available = {
-			NOT = { has_global_flag = scw_over }
-			NOT = { has_global_flag = SPR_anarchist_uprising_flag }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_reaffirm_the_popular_front_strategy }
-		"
 			custom_effect_tooltip = SPR_anti_fascist_unity_tt
 			add_days_mission_timeout = {
 				mission = SPR_anarchist_uprising_mission
@@ -11199,18 +9185,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_crush_the_revolution
-		available = {
-		}
-		bypass = {
-			OR = {
-				has_war_with = SPC
-				has_global_flag = SPR_anarchist_uprising_flag
-				has_global_flag = scw_over
-			}
-		}
-		prerequisite = { focus = SPR_reaffirm_the_popular_front_strategy }
-		"
 			custom_effect_tooltip = remove_political_advisor
 			show_ideas_tooltip = SPR_jesus_hernandez_tomas
 			add_timed_idea = { idea = SPR_crush_the_revolution days = 60 }
@@ -11246,14 +9220,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_united_under_socialism
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_class_war }
-		prerequisite = { focus = SPR_masters_of_our_own_fate }
-		"
 			add_war_support = 0.1
 			every_owned_state = {
 				limit = {
@@ -11282,13 +9248,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_wealth_redistribution
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_united_under_socialism }
-		"
 			add_ideas = SPR_wealth_redistribution
 		}
 	}
@@ -11311,14 +9270,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_collective_recovery_efforts
-		available = {
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_wealth_redistribution focus = SPR_maintaining_the_fire }
-		"
 			add_timed_idea = { idea = SPR_collective_recovery_efforts days = 730 }
 			every_state = {
 				limit	= {
@@ -11364,13 +9315,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_repair_and_expand_the_dockyards
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_collective_recovery_efforts }
-		"
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -11427,13 +9371,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_peoples_fleet
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_repair_and_expand_the_dockyards }
-		"
 			navy_experience = 75
 			add_tech_bonus = {
 				name = SPR_the_peoples_fleet
@@ -11487,13 +9424,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_land_redistribution
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_united_under_socialism }
-		"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -11599,13 +9529,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_expand_the_means_of_production
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_land_redistribution }
-		"
 			add_tech_bonus = {
 				name = SPR_expand_the_means_of_production
 				bonus = 1.0
@@ -11666,13 +9589,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_invite_socialist_intellectuals
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_class_war focus = SPR_an_army_of_all_classes }
-		"
 			add_research_slot = 1
 		}
 	}
@@ -11694,13 +9610,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_solidify_government_control
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_an_army_of_all_classes }
-		"
 			set_politics = {
 				ruling_party = communism
 			}
@@ -11733,14 +9642,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_reeducate_the_bourgeoisie
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_invite_socialist_intellectuals }
-		prerequisite = { focus = SPR_solidify_government_control }
-		"
 			add_popularity = {
 				ideology = communism
 				popularity = 0.05
@@ -11767,13 +9668,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_spanish_red_army
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_reeducate_the_bourgeoisie }
-		"
 			army_experience = 25
 			remove_ideas = SPR_disbanded_army_2
 			add_tech_bonus = {
@@ -11856,25 +9750,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_expand_soviet_aid
-		available = {
-			NOT = { has_war_with = SOV }
-			NOT = { has_global_flag = scw_over }
-			SOV = { has_government = communism }
-			has_volunteers_amount_from = {
-			    tag = SOV
-			    count > 0
-			}
-		}
-		bypass = {
-			AND = {
-				has_completed_focus = SPR_the_stalinist_doctrine
-				has_global_flag = scw_over
-			}
-		}
-		prerequisite = { focus = SPR_relocate_the_gold_reserves }
-		prerequisite = { focus = SPR_crush_the_revolution }
-		"
 			add_popularity = {
 			    ideology = communism
 			    popularity = 0.05
@@ -11920,16 +9795,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_soviet_equipment_shipments
-		available = {
-			NOT = { has_war_with = SOV }
-			SOV = { has_government = communism }
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_expand_soviet_aid }
-"
 			add_popularity = {
 			    ideology = communism
 			    popularity = 0.05
@@ -12012,16 +9877,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_soviet_military_advisors
-		available = {
-			NOT = { has_war_with = SOV }
-			SOV = { has_government = communism }
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_expand_soviet_aid }
-"
 			army_experience = 25
 			add_war_support = 0.1
 			add_ideas = SPR_soviet_military_advisors
@@ -12062,16 +9917,6 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_soviet_industrial_aid
-		available = {
-			NOT = { has_war_with = SOV }
-			SOV = { has_government = communism }
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_soviet_equipment_shipments focus = SPR_soviet_military_advisors }
-"
 			add_tech_bonus = {
 				name = SPR_soviet_industrial_aid
 				bonus = 1.0
@@ -12118,16 +9963,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_soviet_technological_advancements
-		available = {
-			NOT = { has_war_with = SOV }
-			SOV = { has_government = communism }
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_soviet_equipment_shipments focus = SPR_soviet_military_advisors }
-"
 			add_popularity = {
 			    ideology = communism
 			    popularity = 0.05
@@ -12182,17 +10017,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_soviet_recovery_aid
-		available = {
-			NOT = { has_war_with = SOV }
-			SOV = { has_government = communism }
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_soviet_industrial_aid }
-		prerequisite = { focus = SPR_soviet_technological_advancements }
-"
 			add_timed_idea = { idea = SPR_soviet_recovery_aid days = 1095 }
 			if = {
 				limit = {
@@ -12252,14 +10076,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_all_must_do_their_part
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_collective_recovery_efforts }
-		prerequisite = { focus = SPR_expand_the_means_of_production }
-"
 			custom_effect_tooltip = SPR_recovering_from_civil_war_focus_tt
 			if = {
 				limit = {
@@ -12326,13 +10142,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_red_tide
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_all_must_do_their_part }
-"
 			swap_ideas = {
 				remove_idea = SPR_class_war_2
 				add_idea = SPR_class_war_3
@@ -12357,13 +10166,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_arm_the_tide
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_red_tide }
-"
 			add_tech_bonus = {
 				name = SPR_arm_the_tide
 				bonus = 1.0
@@ -12396,13 +10198,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_against_fascism
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_red_tide }
-"
 			every_country = {
 				limit = {
 					capital_scope = { is_on_continent = europe }
@@ -12437,14 +10232,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_doctrinal_advancements
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_red_tide }
-		prerequisite = { focus = SPR_lessons_from_the_civil_war }
-"
 			add_doctrine_cost_reduction = {
 				name = SPA_doctrinal_advancements
 				cost_reduction = 0.5
@@ -12477,13 +10264,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_lessons_from_the_civil_war
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_all_must_do_their_part }
-"
 			remove_ideas = SPR_disbanded_army_2
 			add_doctrine_cost_reduction = {
 				name = SPA_doctrinal_advancements
@@ -12523,13 +10303,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_nationalize_the_industry
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_land_redistribution focus = SPR_reeducate_the_bourgeoisie }
-"
 			add_stability = -0.1
 			add_tech_bonus = {
 				name = SPR_nationalize_the_industry
@@ -12608,14 +10381,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_beacon_of_socialism
-		available = {
-			num_of_factories > 50
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_nationalize_the_industry }
-"
 			add_research_slot = 1
 		}
 	}
@@ -12649,13 +10414,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_increase_arms_production
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_nationalize_the_industry }
-"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -12727,14 +10485,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_exploit_spains_riches
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_beacon_of_socialism }
-		prerequisite = { focus = SPR_increase_arms_production }
-		"
 			if = {
 				limit = {
 					has_idea = SPA_recovering_from_civil_war_3
@@ -12792,14 +10542,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_unify_the_london_bureau
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_lessons_from_the_civil_war }
-		prerequisite = { focus = SPR_beacon_of_socialism }
-"
 			create_faction = SPC_international_bureau_of_revolutionary_socialist_unity
 			hidden_effect = { news_event = { id = lar_news.21 hours = 6 } }
 			every_other_country = {
@@ -12834,13 +10576,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_against_trotskyism_and_stalinism
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_unify_the_london_bureau }
-"
 			if = {
 				limit = {
 					MEX = {
@@ -12917,28 +10652,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_red_bulwark_in_the_west
-		available = {
-			is_in_faction_with = SOV
-			SOV = { has_government = communism }
-			has_full_control_of_state = 880
-			has_full_control_of_state = 870
-			has_full_control_of_state = 854
-			NOT = {
-				any_state = {
-					is_core_of = ROOT
-					is_in_home_area = yes
-					is_coastal = yes
-					NOT = { is_controlled_by = ROOT }
-				}
-			}
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_spanish_red_army }
-		prerequisite = { focus = SPR_soviet_industrial_aid }
-"
 			custom_effect_tooltip = SPR_recovering_from_civil_war_focus_tt
 			custom_effect_tooltip = SPA_prepare_the_pyrenees_defenses_tt
 			hidden_effect = {
@@ -13054,17 +10767,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_appeal_for_increased_autonomy
-		available = {
-			is_in_faction_with = SOV
-			is_subject_of = SOV
-		}
-		bypass = {
-			NOT = { is_subject_of = SOV }
-		}
-		prerequisite = { focus = SPR_red_bulwark_in_the_west }
-		prerequisite = { focus = SPR_soviet_recovery_aid }
-"
 			SOV = { country_event = { id = lar_spain.56 hours = 6 random_hours = 6 } }
 		}
 	}
@@ -13087,14 +10789,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_modernize_the_armed_forces
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_increase_arms_production }
-		prerequisite = { focus = SPR_appeal_for_increased_autonomy }
-"
 			add_tech_bonus = {
 				name = SPR_modernize_the_armed_forces
 				bonus = 1.0
@@ -13140,14 +10834,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_a_red_iberia
-		available = {
-		}
-		bypass = {
-			has_war_with = POR
-		}
-		prerequisite = { focus = SPR_unify_the_london_bureau focus = SPR_modernize_the_armed_forces }
-"
 			if = {
 				limit = {
 					POR = {
@@ -13182,13 +10868,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_support_french_communists
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_modernize_the_armed_forces }
-"
 			if = {
 				limit = {
 					FRA = {
@@ -13234,13 +10913,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_avenge_foreign_interference
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_a_red_iberia focus = SPR_support_french_communists }
-"
 			custom_effect_tooltip = SPR_avenge_foreign_interference_tt
 			every_other_country = {
 				limit = {
@@ -13276,15 +10948,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_provide_for_the_people
-		available = {
-			is_in_faction_with = SOV
-			SOV = { has_government = communism }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_soviet_recovery_aid }
-"
 			add_ideas = SPR_provide_for_the_people
 		}
 	}
@@ -13320,15 +10983,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_collectivize_industry
-		available = {
-			is_in_faction_with = SOV
-			SOV = { has_government = communism }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_provide_for_the_people }
-"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -13395,15 +11049,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_connect_the_country
-		available = {
-			is_in_faction_with = SOV
-			SOV = { has_government = communism }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_provide_for_the_people }
-"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -13518,16 +11163,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_transplant_soviet_industry
-		available = {
-			is_in_faction_with = SOV
-			SOV = { has_government = communism }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_collectivize_industry }
-		prerequisite = { focus = SPR_connect_the_country }
-"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -13584,15 +11219,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_five_year_plan
-		available = {
-			is_in_faction_with = SOV
-			SOV = { has_government = communism }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_transplant_soviet_industry }
-"
 			add_timed_idea = { idea = SPR_the_five_year_plan days = 1825 }
 			if = {
 				limit = {
@@ -13671,16 +11297,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_slipway_enlargement
-		available = {
-			is_in_faction_with = SOV
-			SOV = { has_government = communism }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_collectivize_industry }
-		prerequisite = { focus = SPR_connect_the_country }
-"
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -13748,15 +11364,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_a_red_fleet
-		available = {
-			is_in_faction_with = SOV
-			SOV = { has_government = communism }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_slipway_enlargement }
-"
 			navy_experience = 50
 			add_tech_bonus = {
 				name = SPR_a_red_fleet
@@ -13806,16 +11413,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_maintain_the_second_republic
-		available = {
-			has_global_flag = spanish_civil_war
-			hidden_trigger = { always = no }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_disband_the_army }
-		mutually_exclusive = { focus = SPR_regional_defense_council_of_aragon focus = SPR_the_anti_fascist_workers_revolution }
-		"
 			add_political_power = 60
 			add_war_support = 0.05
 			activate_mission = SPR_anarchist_uprising_mission
@@ -13842,14 +11439,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_new_leadership
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_maintain_the_second_republic }
-"
 			add_stability = 0.05
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SPR_jesus_hernandez_tomas
@@ -13874,14 +11463,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_future_of_the_republic
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_new_leadership }
-"
 			add_political_power = 200
 		}
 	}
@@ -13912,21 +11493,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_petition_for_french_aid
-		available = {
-			NOT = { has_war_with = FRA }
-			NOT = { has_global_flag = scw_over }
-			FRA = {
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_future_of_the_republic }
-"
 			effect_tooltip = {
 				add_war_support = 0.15
 				FRA = {
@@ -13958,14 +11524,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_ensure_loyalty
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_maintain_the_second_republic }
-"
 			add_stability = 0.1
 		}
 	}
@@ -13989,15 +11547,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_enlist_the_carabineros
-		available = {
-			has_idea = SPR_juan_negrin
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_maintain_the_second_republic }
-"
 			custom_effect_tooltip = SPR_enlist_the_carabineros_tt
 			custom_effect_tooltip = SPR_remove_after_civil_war_tt
 			hidden_effect = {
@@ -14082,14 +11631,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_popular_army
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_ensure_loyalty }
-		prerequisite = { focus = SPR_enlist_the_carabineros }
-"
 			remove_ideas = SPR_disbanded_army_1
 			add_tech_bonus = {
 				name = SPR_the_popular_army
@@ -14124,14 +11665,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_take_the_initiative
-		available = {
-			NOT = { has_global_flag = scw_over }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_the_popular_army }
-"
 			custom_effect_tooltip = SPA_tackle_the_vulnerable_fronts_tt
 		}
 	}
@@ -14155,15 +11688,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_no_pasaran
-		available = {
-			SPR_scw_in_progress = yes
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_the_popular_army }
-"
 			custom_effect_tooltip = SPR_no_pasaran_tt
 			hidden_effect = {
 				every_state = {
@@ -14244,13 +11768,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_a_frontline_suited_for_intellectuals
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_no_pasaran }
-"
 			add_research_slot = 1
 		}
 	}
@@ -14274,15 +11791,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_strengthen_the_anti_fascist_coalition
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_crush_the_revolution }
-		prerequisite = { focus = SPR_no_pasaran }
-"
 			add_stability = 0.05
 			add_war_support = 0.1
 		}
@@ -14310,18 +11818,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_oppose_the_communists
-		available = {
-			has_country_leader = {
-				name = "Manuel Azaña"
-				ruling_only = yes
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_strengthen_the_anti_fascist_coalition }
-		mutually_exclusive = { focus = SPR_end_fascism_at_all_costs }
-"
 			add_popularity = {
 			    ideology = communism
 			    popularity = -0.1
@@ -14350,13 +11846,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_fortify_the_central_government
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_oppose_the_communists }
-"
 			add_stability = 0.1
 			add_political_power = 120
 		}
@@ -14381,13 +11870,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_secure_democratic_principles
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_fortify_the_central_government }
-"
 			add_stability = 0.1
 			add_popularity = {
 				ideology = democratic
@@ -14416,15 +11898,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_subvert_soviet_control
-		available = {
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_soviet_recovery_aid }
-		prerequisite = { focus = SPR_secure_democratic_principles }
-"
 			SOV = { add_opinion_modifier = { target = ROOT modifier = SPR_subvert_soviet_control } }
 			remove_ideas = SPR_soviet_military_advisors
 			remove_ideas = SPR_soviet_industrial_aid
@@ -14455,14 +11928,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_war_of_independence
-		available = {
-		}
-		bypass = {
-		}
-		will_lead_to_war_with = SOV
-		prerequisite = { focus = SPR_subvert_soviet_control }
-"
 			if = {
 				limit = {
 					NOT = {
@@ -14509,15 +11974,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_those_who_would_not_help_us
-		available = {
-			NOT = { is_subject_of = SOU }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_war_of_independence }
-		mutually_exclusive = { focus = SPR_enemies_of_our_enemy }
-"
 			effect_tooltip = {
 				every_other_country = {
 					limit = {
@@ -14575,23 +12031,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_ideological_allies
-		available = {
-			any_other_country = {
-				has_government = democratic
-				is_faction_leader = yes
-			}
-			is_in_faction = no
-			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_those_who_would_not_help_us }
-
-		ai_will_do = {
-			factor = 0
-		}
-"
 			if = {
 				limit = {
 					ENG = {
@@ -14683,19 +12122,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_enemies_of_our_enemy
-		available = {
-			NOT = {
-				has_war_with = GER
-				has_war_with = ITA
-			}
-			NOT = { is_subject_of = SOU }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_war_of_independence }
-		mutually_exclusive = { focus = SPR_those_who_would_not_help_us focus = SPR_join_the_global_fight_against_fascism }
-"
 			effect_tooltip = {
 				every_other_country = {
 					limit = {
@@ -14746,14 +12172,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_deal_with_the_devil
-		available = {
-			NOT = { is_subject_of = SOU }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_enemies_of_our_enemy }
-"
 			effect_tooltip = {
 				add_timed_idea = { idea = SPR_deal_with_the_devil days = 730 }
 			}
@@ -14819,32 +12237,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_foreign_industrial_aid
-		available = {
-			OR = {
-				ENG = {
-					has_idea = SPR_equipment_shipments
-				}
-				USA = {
-					has_idea = SPR_equipment_shipments
-				}
-				FRA = {
-					has_idea = SPR_equipment_shipments
-				}
-				AND = {
-					has_completed_focus = SPR_enemies_of_our_enemy
-					OR = {
-						has_non_aggression_pact_with = GER
-						has_non_aggression_pact_with = ITA
-					}
-				}
-				NOT = { is_subject_of = SOU }
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_those_who_would_not_help_us focus = SPR_enemies_of_our_enemy }
-"
 			if = {
 				limit = {
 					has_idea = SPA_recovering_from_civil_war_3
@@ -14934,14 +12326,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_stabilize_the_nation
-		available = {
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_fortify_the_central_government focus = SPR_communists_in_the_government }
-"
 			custom_effect_tooltip = SPR_recovering_from_civil_war_focus_tt
 			add_stability = 0.2
 		}
@@ -14965,14 +12349,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_end_fascism_at_all_costs
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_strengthen_the_anti_fascist_coalition }
-		mutually_exclusive = { focus = SPR_oppose_the_communists }
-"
 			swap_ideas = {
 				remove_idea = SPR_popular_front_2
 				add_idea = SPR_popular_front_3
@@ -14998,13 +12374,6 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_communists_in_the_government
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_end_fascism_at_all_costs }
-"
 			set_politics = {
 				ruling_party = communism
 			}
@@ -15055,15 +12424,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_restore_higher_education
-		available = {
-			num_of_factories > 50
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_fortify_the_central_government focus = SPR_communists_in_the_government }
-"
 			add_research_slot = 1
 		}
 	}
@@ -15086,13 +12446,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_engineering_advances
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_stabilize_the_nation focus = SPR_restore_higher_education }
-"
 			if = {
 				limit = {
 					has_idea = SPA_recovering_from_civil_war_3
@@ -15178,13 +12531,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_rebuild_the_nation
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_engineering_advances }
-"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -15238,13 +12584,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_reprofessionalize_the_military
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_strengthen_the_anti_fascist_coalition }
-"
 			add_ideas = SPR_professional_military_1
 		}
 	}
@@ -15267,13 +12606,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_experiences_from_the_civil_war
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_reprofessionalize_the_military }
-"
 			army_experience = 15
 			add_doctrine_cost_reduction = {
 				name = SPR_engineering_advances
@@ -15302,14 +12634,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_a_new_military_academy
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_experiences_from_the_civil_war }
-		prerequisite = { focus = SPR_restore_higher_education }
-"
 			army_experience = 25
 			swap_ideas = {
 				remove_idea = SPR_professional_military_1
@@ -15347,13 +12671,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_revive_the_republican_navy
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_strengthen_the_anti_fascist_coalition }
-"
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -15429,13 +12746,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_navy_modernization
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_revive_the_republican_navy }
-"
 			navy_experience = 25
 			add_tech_bonus = {
 				name = SPR_navy_modernization
@@ -15472,14 +12782,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_expand_the_naval_academy
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_navy_modernization }
-		prerequisite = { focus = SPR_restore_higher_education }
-"
 			navy_experience = 50
 			add_doctrine_cost_reduction = {
 				name = SPR_navy_modernization
@@ -15522,14 +12824,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_prepare_for_the_next_war
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_a_new_military_academy }
-		prerequisite = { focus = SPR_expand_the_naval_academy }
-"
 			add_war_support = 0.1
 			add_doctrine_cost_reduction = {
 				name = SPR_engineering_advances
@@ -15587,14 +12881,6 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_wartime_industry
-		available = {
-			has_war = yes
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_prepare_for_the_next_war }
-"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -15682,13 +12968,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_fuel_for_the_war_machine
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_wartime_industry }
-		"
 			add_tech_bonus = {
 				name = SPR_fuel_for_the_war_machine
 				bonus = 1.5
@@ -15717,14 +12996,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_join_the_global_fight_against_fascism
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_prepare_for_the_next_war }
-		mutually_exclusive = { focus = SPR_enemies_of_our_enemy }
-"
 			every_country = {
 				limit = {
 					has_government = fascism
@@ -15759,13 +13030,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SPR_the_anti_fascist_crusade
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_join_the_global_fight_against_fascism }
-"
 			add_ideas = SPR_the_anti_fascist_crusade
 		}
 	}

@@ -77,7 +77,7 @@ debug_decisions = { #TODO_Manu: Comment these out
 				limit = {
 					is_on_continent = asia
 				}
-				TIB = { transfer_state = PREV }
+				CHI = { transfer_state = PREV }
 			}
 			every_state = {
 				limit = {
@@ -89,31 +89,19 @@ debug_decisions = { #TODO_Manu: Comment these out
 				limit = {
 					is_on_continent = middle_east
 				}
-				YEM = { transfer_state = PREV }
+				OMA = { transfer_state = PREV }
 			}
 			every_state = {
 				limit = {
 					is_on_continent = africa
 				}
-				ETH = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = australia
-				}
-				NZL = { transfer_state = PREV }
+				LBA = { transfer_state = PREV }
 			}
 			every_state = {
 				limit = {
 					is_on_continent = north_america
 				}
 				CAN = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = south_america
-				}
-				PER = { transfer_state = PREV }
 			}
 		}
 	}
@@ -10078,6 +10066,7 @@ SOV_national_academy_of_sciences_dec_cat = {
 
 		allowed = {
 			original_tag = SOV
+			always = no
 		}
 
 		available = {
@@ -10087,7 +10076,8 @@ SOV_national_academy_of_sciences_dec_cat = {
 		visible = {
 			has_completed_focus = SOV_national_academies_of_sciences
 			NOT = { has_country_flag = SOV_national_academy_of_sciences_built_KYR_flag }
-			NOT = { country_exists = KYR }
+		#	NOT = { country_exists = KYR }
+		always = no
 		}
 
 		fire_only_once = yes
@@ -10101,7 +10091,7 @@ SOV_national_academy_of_sciences_dec_cat = {
 		}
 
 		remove_effect = {
-			KYR = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
+		#	KYR = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
 			set_country_flag = SOV_national_academy_of_sciences_built_KYR_flag
 		}
 	}
@@ -10119,7 +10109,8 @@ SOV_national_academy_of_sciences_dec_cat = {
 		cosmetic_ideology = communism
 
 		allowed = {
-			original_tag = SOV
+			#original_tag = SOV
+			always = no
 		}
 
 		available = {
@@ -10129,7 +10120,8 @@ SOV_national_academy_of_sciences_dec_cat = {
 		visible = {
 			has_completed_focus = SOV_national_academies_of_sciences
 			NOT = { has_country_flag = SOV_national_academy_of_sciences_built_TAJ_flag }
-			NOT = { country_exists = TAJ }
+			#NOT = { country_exists = TAJ }
+			always = no
 		}
 
 		fire_only_once = yes
@@ -10143,8 +10135,8 @@ SOV_national_academy_of_sciences_dec_cat = {
 		}
 
 		remove_effect = {
-			TAJ = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
-			set_country_flag = SOV_national_academy_of_sciences_built_TAJ_flag
+		#	TAJ = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
+			#set_country_flag = SOV_national_academy_of_sciences_built_TAJ_flag
 		}
 	}
 
@@ -10466,7 +10458,8 @@ SOV_national_academy_of_sciences_dec_cat = {
 		visible = {
 			has_completed_focus = SOV_national_academies_of_sciences
 			NOT = { has_country_flag = SOV_national_academy_of_sciences_built_TAN_flag }
-			NOT = { country_exists = TAN }
+			#NOT = { country_exists = TAN }
+			always = no
 		}
 
 		fire_only_once = yes
@@ -10480,7 +10473,7 @@ SOV_national_academy_of_sciences_dec_cat = {
 		}
 
 		remove_effect = {
-			TAN = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
+			#TAN = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier
 			set_country_flag = SOV_national_academy_of_sciences_built_TAN_flag
 		}
 	}
@@ -10508,7 +10501,8 @@ SOV_national_academy_of_sciences_dec_cat = {
 		visible = {
 			has_completed_focus = SOV_national_academies_of_sciences
 			NOT = { has_country_flag = SOV_national_academy_of_sciences_built_MON_flag }
-			NOT = { country_exists = MON }
+			#NOT = { country_exists = MON }
+			always = no
 		}
 
 		fire_only_once = yes
@@ -10522,7 +10516,7 @@ SOV_national_academy_of_sciences_dec_cat = {
 		}
 
 		remove_effect = {
-			MON = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier // Done in this scope for tooltip reasons
+			#MON = { SOV_build_national_academy_of_sciences_effect = yes } #Tooltip + increase research speed in dynamic modifier // Done in this scope for tooltip reasons
 			set_country_flag = SOV_national_academy_of_sciences_built_MON_flag
 		}
 	}
