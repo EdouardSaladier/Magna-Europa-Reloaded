@@ -7,6 +7,7 @@ state={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = SLV
+		add_core_of = GIU
 		victory_points = {
 			17789 1 
 		}
@@ -19,9 +20,9 @@ state={
 	}
 
 	provinces={
-		14257 17789 
+		14257 17019 17789 
 	}
-	manpower=48914
+	manpower=62914
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

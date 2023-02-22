@@ -7,7 +7,7 @@ state={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = CRO
-		add_core_of = FIU
+		add_core_of = GIU
 		buildings = {
 			infrastructure = 2
 			18920 = { bunker = 1 }
@@ -17,9 +17,9 @@ state={
 	}
 
 	provinces={
-		18920 
+		14308 14343 18920 
 	}
-	manpower=26256
+	manpower=83457
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

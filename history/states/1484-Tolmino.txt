@@ -6,15 +6,15 @@ state={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = SLV
-		add_core_of = TST
+		add_core_of = GIU
 		buildings = {
 			infrastructure = 2
 		}
 	}
 	provinces={
-		1613 2174 14200 18916 
+		2174 18916 
 	}
-	manpower=51246
+	manpower=31246
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000
