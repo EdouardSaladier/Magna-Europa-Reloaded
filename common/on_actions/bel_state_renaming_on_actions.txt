@@ -1,0 +1,199 @@
+#TO-DO: ITALIAN NAMES, GREEK NORTHERN EPIRUS, YUGOSLAV NAMES
+
+on_actions = {
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 444 }
+				}
+				if = {
+					limit = { ROOT = { original_tag = BRB } }
+					FLA = { set_capital =  { state = 454 remember_old_capital = no } }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = FLA } }
+					FLA = { set_capital = { state = 444 remember_old_capital = no } }
+				}
+				else_if = {
+					limit = { ROOT = { is_french = yes } }
+					FROM.FROM = { set_state_name = "Anvers" }
+					set_province_name = { id = 12205 name = "Anvers" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12205
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 454 }
+				}
+				if = {
+					limit = { ROOT = { is_french = yes } }
+					FROM.FROM = { set_state_name = "Flandre Occidentale" }
+					set_province_name = { id = 8746 name = "Bruges" }
+					set_province_name = { id = 8779 name = "Ypres" }
+					set_province_name = { id = 12361 name = "Roulers" }
+					set_province_name = { id = 3958 name = "Courtrai" }
+					set_province_name = { id = 12255 name = "Ostende" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 8746
+					reset_province_name = 8779
+					reset_province_name = 12361
+					reset_province_name = 3958
+					reset_province_name = 12255
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 455 }
+				}
+				if = {
+					limit = { ROOT = { is_french = yes } }
+					FROM.FROM = { set_state_name = "Flandre Orientale" }
+					set_province_name = { id = 12249 name = "Gand" }
+					set_province_name = { id = 12311 name = "Alost" }
+					set_province_name = { id = 9081 name = "Saint-Nicolas" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12249
+					reset_province_name = 12311
+					reset_province_name = 9081
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 456 }
+				}
+				if = {
+					limit = { ROOT = { is_french = yes } }
+					FROM.FROM = { set_state_name = "Limbourg Flamand" }
+					set_province_name = { id = 12354 name = "Genck" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12354
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 470 }
+				}
+				if = {
+					limit = { ROOT = { is_french = yes } }
+					FROM.FROM = { set_state_name = "Brabant Flamand" }
+					set_province_name = { id = 12362 name = "Louvain" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12362
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2969 }
+				}
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Brussel" }
+					set_province_name = { id = 12389 name = "Brussel" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12389
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 482 }
+				}
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Henegouwen" }
+					set_province_name = { id = 5375 name = "Karelskoning" }
+					set_province_name = { id = 9341 name = "Doornik" }
+					set_province_name = { id = 12533 name = "Bergen" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 5375
+					reset_province_name = 9341
+					reset_province_name = 12533
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 487 }
+				}
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Namen" }
+					set_province_name = { id = 19890 name = "Namen" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 19890
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 480 }
+				}
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Luik" }
+					set_province_name = { id = 19891 name = "Luik" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 19891
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 500 }
+				}
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "West Luxemburg" }
+					set_province_name = { id = 7962 name = "Mars-in-Famenne" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 7962
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2368 }
+				}
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Aarlen" }
+					set_province_name = { id = 12901 name = "Aarlen" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12901
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 422 }
+				}
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Waals-Brabant" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+		}
+	}
+}
