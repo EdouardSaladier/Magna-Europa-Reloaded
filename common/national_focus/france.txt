@@ -1029,7 +1029,27 @@
 		cost = 10
 
 		available = {
-			735 = { is_controlled_by = ROOT }
+			custom_trigger_tooltip = {
+				tooltip = FRA_alpine_forts_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								state = 2851
+								state = 750
+								state = 2852
+								state = 771
+								state = 2854
+								state = 842
+								state = 2855
+								state = 810
+								state = 817
+							}
+						}
+						is_controlled_by = ROOT
+					}
+				}
+			}
 		}
 
 		completion_reward = {

@@ -417,3 +417,28 @@ is_mainland_spain = {
 		
 	}
 }
+is_westland_state = {
+	OR = {
+		state = 688
+		state = 668
+		state = 658
+		state = 2613
+		state = 668
+		state = 2613
+		state = 638
+		state = 2611
+		state = 627
+		state = 734
+		state = 2610
+		state = 597
+		state = 598
+		state = 2367
+		state = 570
+		state = 2366
+		state = 538
+		state = 543
+		state = 2574
+		state = 2374
+		state = 544
+	}
+}

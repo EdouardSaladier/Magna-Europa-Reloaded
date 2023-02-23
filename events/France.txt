@@ -191,46 +191,26 @@ country_event = {
 	
 	option = {
 		name = france.3.a
-		735 = {
-			add_building_construction = {
-				type = bunker
-				province = 764
-				level = 2
-				instant_build = yes
+		every_state = {
+			limit = {
+				OR = {
+					state = 2851
+					state = 750
+					state = 2852
+					state = 771
+					state = 2854
+					state = 842
+					state = 2855
+					state = 810
+					state = 817
+				}
 			}
 			add_building_construction = {
 				type = bunker
-				province = 9909
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
-				province = 3959
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
-				province = 6975
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
-				province = 3764
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
-				province = 9745
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
-				province = 778
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
 				level = 2
 				instant_build = yes
 			}

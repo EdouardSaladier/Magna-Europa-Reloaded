@@ -577,12 +577,6 @@ GER_reichskommissariats = {
 				
 				HOL = {
 					every_core_state = {
-							limit = {
-								NOT = {
-									state = 2344
-									state = 2717
-								}
-							}
 							add_claim_by = RKN
 							set_state_controller_to	 = RKN
 							add_compliance = 30
@@ -627,10 +621,6 @@ GER_reichskommissariats = {
 									is_subject_of = GER
 								}
 							}
-							NOT = {
-								state = 2344
-								state = 2717
-							}
 						}
 						transfer_state_to = RKN
 						add_claim_by = RKN
@@ -648,10 +638,6 @@ GER_reichskommissariats = {
 						every_state = {
 							limit = {
 								is_owned_by = HOL
-								NOT = {
-									state = 2344
-									state = 2717
-								}
 							}
 							transfer_state_to = RKN
 						}
@@ -666,6 +652,21 @@ GER_reichskommissariats = {
 							transfer_state_to = GER
 						}
 					}
+				if = {
+					limit = {
+						has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED }
+					}
+					every_state = {
+							limit = {
+								is_owned_by = RKN
+								OR = {
+									state = 2344
+									state = 2717
+								}
+							}
+							transfer_state_to = GER
+						}
+				}
 		}
 	}
 
@@ -676,24 +677,26 @@ GER_reichskommissariats = {
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
-			all_state = {
-				if = {
-					limit = {
+			custom_trigger_tooltip = {
+				tooltip = GER_RKB_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								is_core_of = BEL
+								state = 466
+								state = 1342
+								state = 2333
+								state = 472
+								state = 1324
+								state = 2874
+							}	
+						}
 						OR = {
-							is_core_of = BEL
-							state = 466
-							state = 1342
-							state = 2333
-							state = 472
-							state = 1324
-							state = 2874
-							state = 515
-						}	
-					}
-					OR = {
-						is_controlled_by = GER
-						controller = {
-							is_subject_of = GER
+							is_controlled_by = GER
+							controller = {
+								is_subject_of = GER
+							}
 						}
 					}
 				}
@@ -747,7 +750,6 @@ GER_reichskommissariats = {
 							state = 472
 							state = 1324
 							state = 2874
-							state = 515
 						}
 					}
 					set_state_controller_to	 = RKB
@@ -797,7 +799,6 @@ GER_reichskommissariats = {
 								state = 472
 								state = 1324
 								state = 2874
-								state = 515
 							}
 							OR = {
 								is_controlled_by = GER
@@ -812,10 +813,24 @@ GER_reichskommissariats = {
 						transfer_state_to = RKB
 						add_claim_by = RKB
 					}
-					GER = { set_autonomy = { target = RKN autonomy_state = autonomy_integrated_puppet } }
+					GER = { set_autonomy = { target = RKB autonomy_state = autonomy_integrated_puppet } }
 					485 = { transfer_state_to = GER }
 				}
-			
+				if = {
+					limit = {
+						has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED }
+						515 = {
+							OR = {
+								is_controlled_by = GER
+								controller = is_subject_of = GER
+							}
+						}
+					}
+					515 = {
+						transfer_state_to = RKB
+					}
+					
+				}
 		}
 	}
 	GER_reichskommissariat_kaukasien = {
@@ -825,36 +840,39 @@ GER_reichskommissariats = {
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
-			all_state = {
-				if = {
-					limit = {
-						OR = {
-							AND = {
-								region = 47
-								NOT = {
-									is_core_of = WAM
+			custom_trigger_tooltip = {
+				tooltip = GER_RKK_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								AND = {
+									region = 47
+									NOT = {
+										is_core_of = WAM
+									}
 								}
-							}
-							AND = {
-								region = 139
-								NOT = {
-									state = 2520
-									state = 2730
-									state = 2515
-									state = 2516
+								AND = {
+									region = 139
+									NOT = {
+										state = 2520
+										state = 2730
+										state = 2515
+										state = 2516
+									}
 								}
+								region = 129
+								region = 63
+								state = 2409
+								state = 642
+								state = 2864
+								state = 2410
 							}
-							region = 129
-							region = 63
-							state = 2409
-							state = 642
-							state = 2864
-							state = 2410
 						}
-					}
-					OR = {
-						controller = { is_subject_of = ROOT }
-						is_controlled_by = ROOT
+						OR = {
+							controller = { is_subject_of = ROOT }
+							is_controlled_by = ROOT
+						}
 					}
 				}
 			}
@@ -920,18 +938,21 @@ GER_reichskommissariats = {
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
-			all_state = {
-				if = {
-					limit = {
-						OR = {
-							region = 221
-							region = 228
-							region = 229
+			custom_trigger_tooltip = {
+				tooltip = GER_RKT_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 221
+								region = 228
+								region = 229
+							}
 						}
-					}
-					OR = {
-						controller = { is_subject_of = ROOT }
-						is_controlled_by = ROOT
+						OR = {
+							controller = { is_subject_of = ROOT }
+							is_controlled_by = ROOT
+						}
 					}
 				}
 			}
@@ -978,30 +999,33 @@ GER_reichskommissariats = {
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
-			all_state = {
-				if = {
-					limit = {
-						OR = {
-							region = 43
-							AND = {
-								region = 27
-								NOT = {
-									state = 227
+			custom_trigger_tooltip = {
+				tooltip = GER_RKO_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 43
+								AND = {
+									region = 27
+									NOT = {
+										state = 227
+									}
 								}
+								region = 56
+								region = 28
+								
+								state = 2134
+								state = 2161
+								state = 2135
+								state = 2136
+								state = 2697
 							}
-							region = 56
-							region = 28
-							
-							state = 2134
-							state = 2161
-							state = 2135
-							state = 2136
-							state = 2697
 						}
-					}
-					OR = {
-						controller = { is_subject_of = ROOT }
-						is_controlled_by = ROOT
+						OR = {
+							controller = { is_subject_of = ROOT }
+							is_controlled_by = ROOT
+						}
 					}
 				}
 			}
@@ -1072,46 +1096,49 @@ GER_reichskommissariats = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			RKO = { exists = yes }
-			all_state = {
-				if = {
-					limit = {
+			custom_trigger_tooltip = {
+				tooltip = GER_RKO_expand_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 29
+								region = 110
+								AND = {
+									region = 111
+									NOT = {
+										state = 119
+										state = 2787
+									}
+								}
+								AND = {
+									region = 108
+									NOT = {
+										state = 2183
+										state = 330
+									}
+								}
+								AND = {
+									region = 109
+									NOT = {
+										state = 218
+									}
+								}
+								state = 189
+								state = 2186
+								state = 2185
+								state = 2685
+								state = 2440
+								state = 2443
+							}
+						}
 						OR = {
-							region = 29
-							region = 110
-							AND = {
-								region = 111
-								NOT = {
-									state = 119
-									state = 2787
+								is_controlled_by = GER
+								controller = {
+									is_subject_of = GER
 								}
 							}
-							AND = {
-								region = 108
-								NOT = {
-									state = 2183
-									state = 330
-								}
-							}
-							AND = {
-								region = 109
-								NOT = {
-									state = 218
-								}
-							}
-							state = 189
-							state = 2186
-							state = 2185
-							state = 2685
-							state = 2440
-							state = 2443
-						}
 					}
-					OR = {
-							is_controlled_by = GER
-							controller = {
-								is_subject_of = GER
-							}
-						}
 				}
 			}
 		}
@@ -1178,61 +1205,64 @@ GER_reichskommissariats = {
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
-			all_state = {
-				if = {
-						limit = {
+			custom_trigger_tooltip = {
+				tooltip = GER_RKU_required_states_tt
+				all_state = {
+					if = {
+							limit = {
+								OR = {
+									AND = {
+										region = 100
+										NOT = {
+											is_transnistria = yes
+										}
+									}
+									AND = {
+										region = 99
+										NOT = {
+											is_transnistria = yes
+										}
+									 }
+									AND = {
+										region = 42
+										NOT = {
+											state = 1002
+											state = 1131
+										}
+									}
+									region = 97
+									region = 107
+									region = 106
+									AND = {
+										region = 78
+										NOT = {
+											state = 2087
+											state = 2086
+											state = 657
+											state = 2089
+										}
+									}
+									state = 2043
+									state = 2092
+									state = 2091
+									state = 2090
+									state = 2112
+									state = 2124
+									state = 2113
+									state = 2059
+									state = 459
+									state = 1110
+									state = 434
+								}
+							}
 							OR = {
-								AND = {
-									region = 100
-									NOT = {
-										is_transnistria = yes
-									}
+								is_controlled_by = GER
+								controller = {
+									is_subject_of = GER
 								}
-								AND = {
-									region = 99
-									NOT = {
-										is_transnistria = yes
-									}
-								 }
-								AND = {
-									region = 42
-									NOT = {
-										state = 1002
-										state = 1131
-									}
-								}
-								region = 97
-								region = 107
-								region = 106
-								AND = {
-									region = 78
-									NOT = {
-										state = 2087
-										state = 2086
-										state = 657
-										state = 2089
-									}
-								}
-								state = 2043
-								state = 2092
-								state = 2091
-								state = 2090
-								state = 2112
-								state = 2124
-								state = 2113
-								state = 2059
-								state = 459
-								state = 1110
-								state = 434
 							}
 						}
-						OR = {
-							is_controlled_by = GER
-							controller = {
-								is_subject_of = GER
-							}
-						}
-					}
+				}
 			}
 		}
 
@@ -1378,84 +1408,87 @@ GER_reichskommissariats = {
 			has_completed_focus = GER_form_the_reichskommissariats 
 			has_government = fascism
 			RKU = { exists = yes }
-			all_state = {
-				if = {
-					limit = {
-						OR = {
-							region = 98
-							region = 101
-							region = 133
-							region = 134
-							region = 138
-							AND = {
-								region = 137
-								NOT = {
-									state = 642
-									state = 2409
-									state = 2864
-									state = 2410
+			custom_trigger_tooltip = {
+				tooltip = GER_RKU_expand_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 98
+								region = 101
+								region = 133
+								region = 134
+								region = 138
+								AND = {
+									region = 137
+									NOT = {
+										state = 642
+										state = 2409
+										state = 2864
+										state = 2410
+									}
 								}
-							}
-							region = 104
-							AND = {
-								region = 105
-								NOT = {
+								region = 104
+								AND = {
+									region = 105
+									NOT = {
+										state = 2090
+									}
+								}
+								region = 153
+								region = 152
+								region = 140
+								state = 359
+								state = 2516
+								state = 2515
+								state = 2730
+								state = 2520
+								state = 330
+								state = 2183
+								state = 303
+								AND = {
+										region = 100
+										NOT = {
+											is_transnistria = yes
+										}
+									}
+									AND = {
+										region = 99
+										NOT = {
+											is_transnistria = yes
+										}
+									 }
+									AND = {
+										region = 42
+										NOT = {
+											state = 1002
+											state = 1131
+										}
+									}
+									region = 97
+									region = 107
+									region = 106
+									region = 78
+									state = 2043
+									state = 2092
+									state = 2091
 									state = 2090
+									state = 2112
+									state = 2124
+									state = 2113
+									state = 2059
+									state = 459
+									state = 1110
+									state = 434
+							}
+						}
+						OR = {
+								is_controlled_by = GER
+								controller = {
+									is_subject_of = GER
 								}
 							}
-							region = 153
-							region = 152
-							region = 140
-							state = 359
-							state = 2516
-							state = 2515
-							state = 2730
-							state = 2520
-							state = 330
-							state = 2183
-							state = 303
-							AND = {
-									region = 100
-									NOT = {
-										is_transnistria = yes
-									}
-								}
-								AND = {
-									region = 99
-									NOT = {
-										is_transnistria = yes
-									}
-								 }
-								AND = {
-									region = 42
-									NOT = {
-										state = 1002
-										state = 1131
-									}
-								}
-								region = 97
-								region = 107
-								region = 106
-								region = 78
-								state = 2043
-								state = 2092
-								state = 2091
-								state = 2090
-								state = 2112
-								state = 2124
-								state = 2113
-								state = 2059
-								state = 459
-								state = 1110
-								state = 434
-						}
 					}
-					OR = {
-							is_controlled_by = GER
-							controller = {
-								is_subject_of = GER
-							}
-						}
 				}
 			}
 		}
@@ -1528,110 +1561,113 @@ GER_reichskommissariats = {
 					is_puppet = yes
 				}
 			}
-			any_state = {
-				if = {
-					limit = {
-						is_core_of = RUS
-						NOT = {
-							region = 98
-							region = 101
-							region = 133
-							region = 134
-							region = 138
-							AND = {
-								region = 137
-								NOT = {
-									state = 642
-									state = 2409
-									state = 2864
-									state = 2410
+			custom_trigger_tooltip = {
+				tooltip = GER_RKM_required_states_tt
+				any_state = {
+					if = {
+						limit = {
+							is_core_of = RUS
+							NOT = {
+								region = 98
+								region = 101
+								region = 133
+								region = 134
+								region = 138
+								AND = {
+									region = 137
+									NOT = {
+										state = 642
+										state = 2409
+										state = 2864
+										state = 2410
+									}
 								}
-							}
-							region = 104
-							region = 105
-							region = 153
-							region = 152
-							region = 140
-							state = 359
-							state = 2516
-							state = 2515
-							state = 2730
-							state = 2520
-							state = 330
-							state = 2183
-							state = 303
-							region = 29
-							region = 110
-							AND = {
-								region = 111
-								NOT = {
-									state = 119
-									state = 2787
+								region = 104
+								region = 105
+								region = 153
+								region = 152
+								region = 140
+								state = 359
+								state = 2516
+								state = 2515
+								state = 2730
+								state = 2520
+								state = 330
+								state = 2183
+								state = 303
+								region = 29
+								region = 110
+								AND = {
+									region = 111
+									NOT = {
+										state = 119
+										state = 2787
+									}
 								}
-							}
-							AND = {
-								region = 108
-								NOT = {
-									state = 2183
-									state = 330
+								AND = {
+									region = 108
+									NOT = {
+										state = 2183
+										state = 330
+									}
 								}
-							}
-							AND = {
-								region = 109
-								NOT = {
-									state = 218
+								AND = {
+									region = 109
+									NOT = {
+										state = 218
+									}
 								}
-							}
-							state = 189
-							state = 2186
-							state = 2185
-							state = 2685
-							state = 2440
-							state = 2443
-							region = 43
-							AND = {
-								region = 27
-								NOT = {
-									state = 227
+								state = 189
+								state = 2186
+								state = 2185
+								state = 2685
+								state = 2440
+								state = 2443
+								region = 43
+								AND = {
+									region = 27
+									NOT = {
+										state = 227
+									}
 								}
-							}
-							region = 56
-							region = 28
-							
-							state = 2134
-							state = 2161
-							state = 2135
-							state = 2136
-							state = 2697
-							AND = {
-								region = 47
-								NOT = {
-									is_core_of = WAM
+								region = 56
+								region = 28
+								
+								state = 2134
+								state = 2161
+								state = 2135
+								state = 2136
+								state = 2697
+								AND = {
+									region = 47
+									NOT = {
+										is_core_of = WAM
+									}
 								}
-							}
-							AND = {
-								region = 139
-								NOT = {
-									state = 2520
-									state = 2730
-									state = 2515
-									state = 2516
+								AND = {
+									region = 139
+									NOT = {
+										state = 2520
+										state = 2730
+										state = 2515
+										state = 2516
+									}
 								}
+								region = 129
+								region = 63
+								state = 2409
+								state = 642
+								state = 2864
+								state = 2410
+								is_core_of = CRI
+								state = 119
+								state = 2787
 							}
-							region = 129
-							region = 63
-							state = 2409
-							state = 642
-							state = 2864
-							state = 2410
-							is_core_of = CRI
-							state = 119
-							state = 2787
 						}
-					}
-					OR = {
-						controller = { is_subject_of = ROOT }
-						is_controlled_by = ROOT
+						OR = {
+							controller = { is_subject_of = ROOT }
+							is_controlled_by = ROOT
+						}
 					}
 				}
 			}
@@ -1836,17 +1872,20 @@ GER_reichskommissariats = {
 				has_completed_focus = GER_form_the_reichskommissariats
 			}
 			has_government = fascism
-			all_state = {
-				if = {
-					limit = {
-						is_ggv_state = yes	
+			custom_trigger_tooltip = {
+				tooltip = GER_GGV_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							is_ggv_state = yes	
+						}
+						OR = {
+							is_controlled_by = GER
+							controller = { is_subject_of = GER }
+						}
 					}
-					OR = {
-					is_controlled_by = GER
-					controller = { is_subject_of = GER }
+					
 				}
-				}
-				
 			}
 		}
 
@@ -1961,17 +2000,20 @@ GER_reichskommissariats = {
 				has_completed_focus = GER_form_the_reichskommissariats
 			}
 			has_government = fascism
-			all_state = {
-				if = {
-					limit = {
-						is_ger_occupation_zone = yes	
+			custom_trigger_tooltip = {
+				tooltip = GER_MVF_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							is_ger_occupation_zone = yes	
+						}
+						OR = {
+						is_controlled_by = GER
+						controller = { is_subject_of = GER }
 					}
-					OR = {
-					is_controlled_by = GER
-					controller = { is_subject_of = GER }
+					}
+					
 				}
-				}
-				
 			}
 		}
 
@@ -2046,17 +2088,20 @@ GER_reichskommissariats = {
 				has_completed_focus = GER_form_the_reichskommissariats
 			}
 			has_government = fascism
-			all_state = {
-				if = {
-					limit = {
-						is_vichy_state = yes
+			custom_trigger_tooltip = {
+				tooltip = GER_MVF_south_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							is_vichy_state = yes
+						}
+						OR = {
+						is_controlled_by = GER
+						controller = { is_subject_of = GER }
 					}
-					OR = {
-					is_controlled_by = GER
-					controller = { is_subject_of = GER }
+					}
+					
 				}
-				}
-				
 			}
 			any_country = {
 				if = {
@@ -2155,6 +2200,59 @@ GER_reichskommissariats = {
 			
 			
 					
+		}
+	}
+	GER_settle_eastern_france = {
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			custom_trigger_tooltip = {
+				tooltip = GER_WSL_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							is_westland_state = yes	
+						}
+						OR = {
+						is_controlled_by = GER
+						controller = { is_subject_of = GER }
+					}
+					}
+					
+				}
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				FRA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = GER_around_maginot
+				has_completed_focus = GER_form_the_reichskommissariats
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+				every_state = {
+						limit = {
+							is_westland_state = yes
+						}
+						transfer_state_to = WSL
+					}
+				GER = { puppet = WSL }
+				GER = { set_autonomy = { target = WSL autonomy_state = autonomy_integrated_puppet } }	
+			
 		}
 	}
 }
@@ -3304,6 +3402,7 @@ GER_ordenstaats = {
 					is_subject_of = GER
 				}
 			}
+			has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED }
 		}
 
 		complete_effect = {
