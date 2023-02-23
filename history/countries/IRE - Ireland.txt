@@ -18,6 +18,11 @@ if = {
 	set_cosmetic_tag = IRE_free_state
 }
 
+add_ideas = {
+	neutrality_idea
+	IRE_free_state_idea
+}
+
 set_convoys = 10
 
 recruit_character = IRE_Éamon_de_valera

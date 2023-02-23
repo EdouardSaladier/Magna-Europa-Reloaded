@@ -6345,25 +6345,20 @@ focus_tree = {
 		}
 
 		available = {
-			508 = {
-				controller = {
-					OR = {
-						is_in_faction_with = ROOT
-						original_tag = GER
+			if = {
+				limit = {
+					ENG = {
+						exists = yes
+						NOT = { is_subject_of = ROOT }
 					}
 				}
-			}
-			280 = {
-				controller = {
-					OR = {
-						is_in_faction_with = ROOT
-						original_tag = GER
-					}
-				}
-			}
-			OR = { 
 				has_war_with = ENG
-				NOT = {country_exists = ENG}
+			}
+			if = {
+				limit = {
+					has_war_with = POL
+				}
+				POL = { has_capitulated = yes }
 			}
 		}
 		
@@ -6421,137 +6416,6 @@ focus_tree = {
 			hidden_effect = {
 				news_event = { hours = 6 id = news.233 }
 			}	
-		}
-	}
-	
-	focus = {
-		id = GER_around_maginot
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = GER_danzig_or_war focus = GER_poland_friend}
-		
-		available = {
-			OR = {
-				NOT = { HOL = { is_in_faction_with = GER } }
-				NOT = { BEL = { is_in_faction_with = GER } }
-				NOT = { LUX = { is_in_faction_with = GER } }
-			}
-		}
-
-		bypass = {
-			HOL = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
-			BEL = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
-			LUX = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
-		}
-
-		historical_ai = {
-			date > 1939.1.1
-			NOT = {
-				any_home_area_neighbor_country = {
-					NOT = { tag = FRA }
-					has_war_with = ROOT
-					surrender_progress < 0.5
-				}
-			}
-		}
-		will_lead_to_war_with = BEL
-		will_lead_to_war_with = HOL
-		will_lead_to_war_with = LUX
-		will_lead_to_war_with = FRA
-		x = -1
-		y = 2
-		relative_position_id = GER_danzig_or_war
-		cost = 4
-		ai_will_do = {
-			factor = 10			
-			modifier = {
-				factor = 0.05
-				date < 1939.1.1
-			}			
-			modifier = {
-				factor = 0.2
-				any_home_area_neighbor_country = {
-					NOT = { tag = FRA }
-					has_war_with = ROOT
-					surrender_progress < 0.5
-				}
-			}
-		}	
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GER_around_maginot"
-			#limit wargoals to when it makes sense to give them. No faction, war or non exist
-			if = { 
-				limit = {
-					country_exists = BEL
-					NOT = { BEL = { is_in_faction_with = GER } }
-					NOT = { has_war_with = BEL }
-				}
-				add_state_claim = 485
-				create_wargoal = {
-					type = take_state_focus
-					target = BEL
-					expire = 0
-					generator = { 485 }
-				}
-			}
-			if =  {
-				limit = {
-					country_exists = HOL
-					NOT = { HOL = { is_in_faction_with = GER } }
-					NOT = { has_war_with = HOL }
-					NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = HOL
-					expire = 0
-					generator = { 2344 2717 }
-				}
-			}
-			if =  {
-				limit = {
-					country_exists = HOL
-					NOT = { HOL = { is_in_faction_with = GER } }
-					NOT = { has_war_with = HOL }
-					HOL = { has_completed_focus = HOL_cave_to_the_germans } 
-					NOT = { HOL = { has_completed_focus = HOL_the_netherlands_first } }
-				}
-				HOL = {
-					country_event = { id = mtg_germany.1 hours = 6 }
-				}
-			}
-			if = {
-				limit = {
-					country_exists = LUX
-					NOT = { LUX = { is_in_faction_with = GER } }
-					NOT = { has_war_with = LUX }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = LUX
-					expire = 0
-				}			
-			}
-			hidden_effect = {
-				news_event = { hours = 6 id = news.234 }
-			}
 		}
 	}
 	
@@ -7342,18 +7206,19 @@ focus_tree = {
 	focus = {
 		id = GER_war_with_france
 		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = GER_around_maginot focus = GER_weserubung }
+		prerequisite = { focus = GER_poland_friend focus = GER_danzig_or_war }
 		available = {
 			is_subject = no			
 			NOT = { is_in_faction_with = FRA }
 		}
 		x = 1
 		y = 1
-		relative_position_id = GER_around_maginot
+		relative_position_id = GER_poland_friend
 		cost = 10
 		bypass = {
 			OR = {
 				NOT = { country_exists = FRA }
+				FRA = { is_subject_of = ROOT }
 				has_war_with = FRA
 			}
 		}
@@ -7382,7 +7247,145 @@ focus_tree = {
  				generator = { 28 }
  			}
 		}
-	}	
+	}
+	
+	focus = {
+		id = GER_around_maginot
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = GER_war_with_france focus = GER_weserubung }
+		
+		available = {
+			has_war_with = FRA
+			if = {
+				limit = {
+					has_war_with = POL
+				}
+				POL = { has_capitulated = yes }
+			}
+			OR = {
+				NOT = { HOL = { is_in_faction_with = GER } }
+				NOT = { BEL = { is_in_faction_with = GER } }
+				NOT = { LUX = { is_in_faction_with = GER } }
+			}
+		}
+
+		bypass = {
+			HOL = {
+				OR = {
+					exists = no
+					is_in_faction_with = GER
+					has_war_with = ROOT
+				}
+			}
+			BEL = {
+				OR = {
+					exists = no
+					is_in_faction_with = GER
+					has_war_with = ROOT
+				}
+			}
+			LUX = {
+				OR = {
+					exists = no
+					is_in_faction_with = GER
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		historical_ai = {
+			date > 1939.1.1
+			NOT = {
+				any_home_area_neighbor_country = {
+					NOT = { tag = FRA }
+					has_war_with = ROOT
+					surrender_progress < 0.5
+				}
+			}
+		}
+		will_lead_to_war_with = BEL
+		will_lead_to_war_with = HOL
+		will_lead_to_war_with = LUX
+		will_lead_to_war_with = FRA
+		x = 1
+		y = 1
+		relative_position_id = GER_war_with_france
+		cost = 4
+		ai_will_do = {
+			factor = 10			
+			modifier = {
+				factor = 0.05
+				date < 1939.1.1
+			}			
+			modifier = {
+				factor = 0.2
+				any_home_area_neighbor_country = {
+					NOT = { tag = FRA }
+					has_war_with = ROOT
+					surrender_progress < 0.5
+				}
+			}
+		}	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GER_around_maginot"
+			#limit wargoals to when it makes sense to give them. No faction, war or non exist
+			if = { 
+				limit = {
+					country_exists = BEL
+					NOT = { BEL = { is_in_faction_with = GER } }
+					NOT = { has_war_with = BEL }
+				}
+				add_state_claim = 485
+				create_wargoal = {
+					type = take_state_focus
+					target = BEL
+					expire = 0
+					generator = { 485 }
+				}
+			}
+			if =  {
+				limit = {
+					country_exists = HOL
+					NOT = { HOL = { is_in_faction_with = GER } }
+					NOT = { has_war_with = HOL }
+					NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = HOL
+					expire = 0
+					generator = { 2344 2717 }
+				}
+			}
+			if =  {
+				limit = {
+					country_exists = HOL
+					NOT = { HOL = { is_in_faction_with = GER } }
+					NOT = { has_war_with = HOL }
+					HOL = { has_completed_focus = HOL_cave_to_the_germans } 
+					NOT = { HOL = { has_completed_focus = HOL_the_netherlands_first } }
+				}
+				HOL = {
+					country_event = { id = mtg_germany.1 hours = 6 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = LUX
+					NOT = { LUX = { is_in_faction_with = GER } }
+					NOT = { has_war_with = LUX }
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = LUX
+					expire = 0
+				}			
+			}
+			hidden_effect = {
+				news_event = { hours = 6 id = news.234 }
+			}
+		}
+	}
 
 	focus = {
 		id = GER_operation_tannenbaum
@@ -7400,7 +7403,7 @@ focus_tree = {
 		will_lead_to_war_with = SWI
 		will_lead_to_war_with = LIE
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_war_with_france
 		cost = 10
 		ai_will_do = {
@@ -7482,7 +7485,7 @@ focus_tree = {
 		bypass = {
 		}
 		cancel_if_invalid = yes
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = GER_war_with_france
 		cost = 10

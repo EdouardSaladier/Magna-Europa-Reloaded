@@ -12456,7 +12456,7 @@ ai_will_do = {
 		id = SOV_anti_capitalist_policies
 		icon = GFX_focus_spr_class_war
 		prerequisite = { focus = SOV_the_comintern }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = SOV_policy_of_individual_security
 		cost = 5
@@ -12816,7 +12816,7 @@ ai_will_do = {
 		id = SOV_baltic_security
 		icon = GFX_focus_SOV_baltic_security
 		prerequisite = { focus = SOV_the_comintern }
-		x = 3
+		x = 4
 		y = -1
 		relative_position_id = SOV_anti_capitalist_policies
 		cost = 5
@@ -12922,7 +12922,7 @@ ai_will_do = {
 		id = SOV_respect_baltic_self_determination
 		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = SOV_baltic_security }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SOV_baltic_security
 		cost = 5
@@ -12967,7 +12967,7 @@ ai_will_do = {
 		id = SOV_claims_in_baltic
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = SOV_baltic_security }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SOV_baltic_security
 		cost = 10
@@ -13054,10 +13054,10 @@ ai_will_do = {
 	focus = {
 		id = SOV_secure_leningrad
 		icon = GFX_focus_generic_attack_finland
-		prerequisite = { focus = SOV_respect_baltic_self_determination focus = SOV_claims_in_baltic }
-		x = 0
+		prerequisite = { focus = SOV_baltic_security }
+		x = -2
 		y = 1
-		relative_position_id = SOV_respect_baltic_self_determination
+		relative_position_id = SOV_baltic_security
 		cost = 10
 		
 		ai_will_do = {
@@ -13111,7 +13111,7 @@ ai_will_do = {
 		icon = GFX_focus_generic_scandinavia_flags
 		prerequisite = { focus = SOV_secure_leningrad }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = SOV_secure_leningrad
 		cost = 10
 
@@ -13215,7 +13215,7 @@ ai_will_do = {
 		id = SOV_claims_on_poland
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = SOV_respect_baltic_self_determination focus = SOV_claims_in_baltic }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = SOV_claims_in_baltic
 		cost = 10

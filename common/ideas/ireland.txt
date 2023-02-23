@@ -1,0 +1,26 @@
+ideas = {
+	country = {
+		IRE_free_state_idea = {
+			allowed = { original_tag = IRE }
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = 0.5
+			}
+			
+			cancel = {
+				NOT = { is_subject_of = ENG }
+				compare_autonomy_state < autonomy_dominion
+			}
+			
+			on_remove = {
+				if = {
+					limit = {
+						faction_leader = { original_tag = ENG }
+					}
+					leave_faction = yes
+				}
+			}
+		}
+	}
+}
