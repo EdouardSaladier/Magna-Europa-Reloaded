@@ -1,12 +1,10 @@
-
 state={
-	id=2330
-	name="STATE_2330"
-
+	id=2972
+	name="STATE_2972"
 	history={
 		owner = ITA
 		add_core_of = ITA
-		add_core_of = CRO
+		add_core_of = SLV
 		add_core_of = JUL
 		buildings = {
 			infrastructure = 2
@@ -14,12 +12,12 @@ state={
 		}
 
 	}
-
+	
 	provinces={
-		18920 
+		17019 
 	}
-	manpower=26256
+	manpower=17432
+	state_category = enclave
 	buildings_max_level_factor=1.000
-	state_category=pastoral
 	local_supplies=0.000
 }
