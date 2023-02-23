@@ -1200,23 +1200,31 @@ BRU = {
 	color = rgb { 35 133 210 }
 	color_ui = rgb { 35 133 210 }
 }
-#HNT = {
-#	color = rgb { 35 51 178 }
-#	color_ui = rgb { 35 51 178 }
-#}
-#BRB = {
-#	color = rgb { 225 178 51 }
-#	color_ui = rgb { 225 178 51 }
-#}
-#LIM = {
-#	color = rgb { 153 225 51 }
-#	color_ui = rgb { 153 225 51 }
-#}
+HNT = {
+	color = rgb { 103 62 185 }
+	color_ui = rgb { 35 51 178 }
+}
+BRB = {
+	color = rgb { 125 85 110 }
+	color_ui = rgb { 225 178 51 }
+}
+LIM = {
+	color = rgb { 153 225 51 }
+	color_ui = rgb { 153 225 51 }
+}
+LEG = {
+	color = rgb { 149 186 37 }
+	color_ui = rgb { 149 186 37 }
+}
 WLN = {
-	color = rgb { 43 141 172 }
-	color_ui = rgb { 43 141 172 }
+	color = rgb { 120 100 155 }
+	color_ui = rgb { 120 100 155 }
+}
+NMR = {
+	color = rgb { 100 95 150 }
+	color_ui = rgb { 100 95 150 }
 }
 FLA = {
-	color = rgb { 203 153 51 }
+	color = rgb { 65 95 180 }
 	color_ui = rgb { 203 153 51 }
 }
