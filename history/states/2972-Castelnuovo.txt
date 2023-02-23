@@ -1,9 +1,6 @@
 state={
-	id=2900
-	name="STATE_2900"
-	provinces={
-		1613 14200 
-	}
+	id=2972
+	name="STATE_2972"
 	history={
 		owner = ITA
 		add_core_of = ITA
@@ -15,8 +12,12 @@ state={
 		}
 
 	}
-	manpower=21420
-	state_category=enclave
+	
+	provinces={
+		17019 
+	}
+	manpower=17432
+	state_category = enclave
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

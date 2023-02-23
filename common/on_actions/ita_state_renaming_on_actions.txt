@@ -508,9 +508,9 @@ on_actions = {
 				}
 				else = { FROM.FROM = { reset_state_name = yes } reset_province_name = 17789 }
 			}
-			#Catelnuovo d'Istria
+			#Castelnuovo d'Istria
 			if = {
-				limit = { FROM.FROM = { state = 2900 } }
+				limit = { FROM.FROM = { state = 2972 } }
 				if = {
 					limit = { ROOT = { is_yugoslav = yes } }
 					FROM.FROM = { set_state_name = "Podgrad" }
@@ -578,6 +578,19 @@ on_actions = {
 				else_if = {
 					limit = { ROOT = {  OR = { original_tag = FRI original_tag = TST original_tag = FIU } } }
 					FROM.FROM = { set_state_name = "Tulmin" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } }
+			}
+			#Aidussina
+			if = {
+				limit = { FROM.FROM = { state = 2900 } }
+				if = {
+					limit = { ROOT = {  is_yugoslav = yes } }
+					FROM.FROM = { set_state_name = "Ajdovščina" }
+				}
+				else_if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Haidenschaft" }
 				}
 				else = { FROM.FROM = { reset_state_name = yes } }
 			}
@@ -2799,7 +2812,7 @@ on_actions = {
 				}
 			}
 			#Albona
-		   if = {
+			if = {
 				limit = {
 					FROM.FROM = { state = 2908 }
 				}
@@ -2818,8 +2831,87 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
+			#Pisino
+			if = {
+				limit = {
+					FROM.FROM = { state = 2971 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								is_yugoslav = yes
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Pazin" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								is_german = yes
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Mitterburg" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Aquileia
+			if = {
+				limit = {
+					FROM.FROM = { state = 2970 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								original_tag = FRI
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Aquilee" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								original_tag = TST
+								original_tag = JUL
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Aquilea" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								is_yugoslav = yes
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Oglej" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								is_german = yes
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Aglarn" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 			#Cividale del Friuli
-		   if = {
+			if = {
 				limit = {
 					FROM.FROM = { state = 2910 }
 				}
