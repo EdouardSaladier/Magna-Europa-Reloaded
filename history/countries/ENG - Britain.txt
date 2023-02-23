@@ -214,6 +214,11 @@ if = {
 		target = EGY
 		autonomous_state = autonomy_dominion
 	}
+	set_autonomy = {
+		target = IRE
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.8
+	}
 }
 if = {
 	limit = { has_dlc = "No Step Back" }

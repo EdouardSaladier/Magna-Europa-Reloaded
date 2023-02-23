@@ -11,6 +11,13 @@ set_technology = {
 	basic_train = 1
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_cosmetic_tag = IRE_free_state
+}
+
 set_convoys = 10
 
 recruit_character = IRE_Éamon_de_valera

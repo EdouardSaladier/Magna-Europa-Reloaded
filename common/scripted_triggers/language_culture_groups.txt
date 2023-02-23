@@ -68,6 +68,9 @@ is_italian = {
 		original_tag = FRI
 		original_tag = FIU
 		original_tag = LDN
+		original_tag = JUL
+		#original_tag = IST
+		#original_tag = GOR
 	}
 }
 
@@ -248,6 +251,7 @@ is_german = {
 		is_middle_german = yes
 		is_low_german = yes
 		original_tag = GER
+		original_tag = WSL
 	}
 }
 is_hungarian = {
