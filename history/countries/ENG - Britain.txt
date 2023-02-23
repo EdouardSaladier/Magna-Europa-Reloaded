@@ -242,13 +242,9 @@ if = {
 					 
 	}
 	set_autonomy = {
-		target = JER
+		target = IRE
 		autonomous_state = autonomy_dominion
-					 
-	}
-	set_autonomy = {
-		target = GUE
-		autonomous_state = autonomy_dominion
+		freedom_level = 0.8
 					 
 	}
 	add_to_tech_sharing_group = commonwealth_research
