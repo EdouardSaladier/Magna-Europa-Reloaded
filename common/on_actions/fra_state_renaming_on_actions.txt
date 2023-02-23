@@ -125,6 +125,118 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
+			if = {
+				limit = { FROM.FROM = { state = 1342 } }
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Romaans-Vlaanderen" }
+					set_province_name = { id = 12502 name = "Rijsel" }
+					set_province_name = { id = 4392 name = "Dowaai" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12502
+					reset_province_name = 4392
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2333 } }
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Maritiem Vlaanderen" }
+					set_province_name = { id = 12284 name = "Duinkerke" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12284
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 466 } }
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Frans-Henegouwen" }
+					set_province_name = { id = 8296 name = "Valencijn" }
+					set_province_name = { id = 6087 name = "Malbode" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 8296
+					reset_province_name = 6087
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 472 } }
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Kales" }
+					set_province_name = { id = 12325 name = "Kales" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12325
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 1324 } }
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Artesië" }
+					set_province_name = { id = 12637 name = "Atrecht" }
+					set_province_name = { id = 1406 name = "Betun" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12637
+					reset_province_name = 1406
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2874 } }
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Bonen" }
+					set_province_name = { id = 73 name = "Bonen" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 73
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 448 } }
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Abbekerke" }
+					set_province_name = { id = 12664 name = "Abbekerke" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12664
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2365 } }
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Werven" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2615 } }
+				if = {
+					limit = { ROOT = { is_dutch = yes } }
+					FROM.FROM = { set_state_name = "Sint-Kwintens" }
+					set_province_name = { id = 5137 name = "Sint-Kwintens" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 5137
+				}
+			}
 		}
 	}
 }
