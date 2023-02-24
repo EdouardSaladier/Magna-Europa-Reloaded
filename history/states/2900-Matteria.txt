@@ -1,0 +1,26 @@
+
+state={
+	id=2900
+	name="STATE_2900"
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = SLV
+		add_core_of = JUL
+		add_core_of = IST
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		1613 
+	}
+	manpower=10095
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}

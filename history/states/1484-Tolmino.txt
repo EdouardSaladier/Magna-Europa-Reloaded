@@ -2,19 +2,24 @@
 state={
 	id=1484
 	name="STATE_1484"
-	history = {
+
+	history={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = SLV
 		add_core_of = JUL
+		add_core_of = GOR
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
+
 	provinces={
-		2174 18916 
+		2174 14200 18916 
 	}
-	manpower=29826
+	manpower=34589
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000
