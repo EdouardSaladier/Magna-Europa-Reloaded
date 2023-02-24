@@ -359,7 +359,11 @@ on_actions = {
 				if = {
 					limit = {
 						ROOT = {
-							original_tag = TST
+							OR = {
+								original_tag = TST
+								original_tag = IST
+								original_tag = JUL
+							}
 						}
 					}
 					set_province_name = {
@@ -541,7 +545,7 @@ on_actions = {
 					FROM.FROM = { set_state_name = "Kanalburg" }
 				}
 				else_if = {
-					limit = { ROOT = {  OR = { original_tag = FRI original_tag = TST original_tag = FIU } } }
+					limit = { ROOT = {  OR = { original_tag = FRI original_tag = TST original_tag = JUL original_tag = GOR original_tag = FIU } } }
 					FROM.FROM = { set_state_name = "Cjanâl" }
 				}
 				else = { FROM.FROM = { reset_state_name = yes } }
@@ -571,21 +575,17 @@ on_actions = {
 					FROM.FROM = { set_state_name = "Tolmein" }
 				}
 				else_if = {
-					limit = { ROOT = {  OR = { original_tag = FRI original_tag = TST original_tag = FIU } } }
+					limit = { ROOT = {  OR = { original_tag = FRI original_tag = TST original_tag = JUL original_tag = GOR original_tag = FIU } } }
 					FROM.FROM = { set_state_name = "Tulmin" }
 				}
 				else = { FROM.FROM = { reset_state_name = yes } }
 			}
-			#Aidussina
+			#Matteria
 			if = {
 				limit = { FROM.FROM = { state = 2900 } }
 				if = {
 					limit = { ROOT = {  is_yugoslav = yes } }
-					FROM.FROM = { set_state_name = "Ajdovščina" }
-				}
-				else_if = {
-					limit = { ROOT = { is_german = yes } }
-					FROM.FROM = { set_state_name = "Haidenschaft" }
+					FROM.FROM = { set_state_name = "Materija" }
 				}
 				else = { FROM.FROM = { reset_state_name = yes } }
 			}
@@ -1151,6 +1151,45 @@ on_actions = {
 					742 = { reset_state_name = yes }
 				}
 			}
+			#Terraferma Veneziana
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2953 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = VNT
+						}
+					}
+					FROM.FROM = { set_state_name = "Teraferma de Venèsia" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Chioggia
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2952 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = VNT
+						}
+					}
+					FROM.FROM = { set_state_name = "Cióxa" }
+					set_province_name = {
+						id = 20005
+						name = "Cióxa"
+					}
+				}
+				else = {
+					reset_province_name = 20005
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 			#Padova
 		   if = {
 				limit = {
@@ -1312,7 +1351,11 @@ on_actions = {
 				if = {
 					limit = {
 						ROOT = {
-							original_tag = TST
+							OR = {
+								original_tag = TST
+								original_tag = JUL
+								original_tag = GOR
+							}
 						}
 					}
 					1533 = { set_state_name = "Guriza" }
@@ -1452,6 +1495,21 @@ on_actions = {
 						}
 					}
 					FROM.FROM = { set_state_name = "Kanalska Dolina" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Portogruaro
+			if = {
+				limit = { FROM.FROM = { state = 2951 } }
+				if = {
+					limit = { ROOT = { original_tag = FRI } }
+					FROM.FROM = { set_state_name = "Puart" }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = VNT } }
+					FROM.FROM = { set_state_name = "Porto" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
@@ -1653,17 +1711,36 @@ on_actions = {
 				limit = {
 					FROM.FROM = { state = 1381 }
 				}
-				if = {
+				if= {
+					limit = {
+						ROOT = { original_tag = MCR }
+					}
+					FROM.FROM = { set_state_name = "Massa e Carara" }
+					set_province_name = {
+						id = 14595
+						name = "Massa"
+					}
+				}
+				else_if = {
 					limit = {
 						ROOT = {
 							is_emilian = yes
 						}
+						FROM.FROM = { NOT = { has_state_flag = massa_capital_flag } }
 					}
 					FROM.FROM = { set_state_name = "Massa e Carara" }
 					set_province_name = {
 						id = 14595
 						name = "Carara"
 					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { has_state_flag = massa_capital_flag } }
+					set_province_name = {
+						id = 14595
+						name = "Massa"
+					}
+					FROM.FROM = { reset_state_name = yes }
 				}
 				else = {
 					reset_province_name = 14595
@@ -2360,13 +2437,30 @@ on_actions = {
 						id = 15006
 						name = "Bare"
 					}
+				}
+				else = {
+					reset_province_name = 15006
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Barletta-Andria-Trani
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2921 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = PUG
+						}
+					}
+					FROM.FROM = { set_state_name = "Varrétte-Àndrie-Trane" }
 					set_province_name = {
 						id = 6160
 						name = "Àndrie"
 					}
 				}
 				else = {
-					reset_province_name = 15006
 					reset_province_name = 6160
 					FROM.FROM = { reset_state_name = yes }
 				}
@@ -2395,6 +2489,51 @@ on_actions = {
 				else = {
 					reset_province_name = 1980
 					reset_province_name = 14922
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+		   #Lucanian States
+			#Potenza
+		   if = {
+				limit = {
+					FROM.FROM = { state = 956 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = LUC
+						}
+					}
+					FROM.FROM = { set_state_name = "Putenza" }
+					set_province_name = {
+						id = 15093
+						name = "Putenza"
+					}
+				}
+				else = {
+					reset_province_name = 15093
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Matera
+		   if = {
+				limit = {
+					FROM.FROM = { state = 1409 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = LUC
+						}
+					}
+					FROM.FROM = { set_state_name = "Matàrë" }
+					set_province_name = {
+						id = 6041
+						name = "Matàrë"
+					}
+				}
+				else = {
+					reset_province_name = 6041
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
@@ -2876,6 +3015,7 @@ on_actions = {
 							OR = {
 								original_tag = TST
 								original_tag = JUL
+								original_tag = GOR
 							}
 						}
 					}
