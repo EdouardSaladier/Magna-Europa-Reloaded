@@ -9,8 +9,10 @@ ideas = {
 			}
 			
 			cancel = {
-				NOT = { is_subject_of = ENG }
-				compare_autonomy_state < autonomy_dominion
+				OR = {
+					NOT = { is_subject_of = ENG }
+					compare_autonomy_state < autonomy_dominion
+				}
 			}
 			
 			on_remove = {
