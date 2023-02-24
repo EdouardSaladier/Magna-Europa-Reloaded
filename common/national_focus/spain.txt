@@ -2030,117 +2030,11 @@ focus_tree = {
 						owns_state = 882
 					}
 				}
+				add_state_claim = 882
 				create_wargoal = {
-					type = take_state_focus
+					type = take_claimed_state
 					target = ENG
-					generator = { 882 }
 					expire = 0
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SPA_absorb_the_portuguese_empire
-		available = {
-			OR = {
-				AND = {
-					country_exists = MZB
-					MZB = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				AND = {
-					country_exists = ANG
-					ANG = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				AND = {
-					country_exists = GNB
-					GNB = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				AND = {
-					country_exists = BRA
-					BRA = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_unite_iberia }
-		
-		icon = GFX_goal_generic_forceful_treaty
-		x = 1
-		y = 1
-		relative_position_id = SPA_unite_iberia
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = {
-					country_exists = BRA
-					BRA = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = BRA
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					country_exists = MZB
-					MZB = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = MZB
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					country_exists = ANG
-					ANG = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = ANG
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					country_exists = GNB
-					GNB = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = GNB
-				    expire = 0
 				}
 			}
 		}
@@ -2159,7 +2053,7 @@ focus_tree = {
 		
 		icon = GFX_goal_generic_territory_or_war
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = SPA_unite_iberia
 		cost = 10
 

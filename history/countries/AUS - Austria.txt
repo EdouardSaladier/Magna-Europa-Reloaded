@@ -20,7 +20,12 @@ if = {
 }
 set_research_slots = 3
 
-
+every_state = {
+	limit = {
+		is_core_of = AUS
+	}
+	set_state_flag = AUS_INITIAL_STATE
+}
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1

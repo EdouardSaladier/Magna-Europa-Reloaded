@@ -19,6 +19,15 @@ can_ROOT_get_wargoal_on_THIS = {
 	NOT = { is_subject_of = ROOT }
 }
 
+#Country scope
+is_JAP_or_ally_of_JAP = {
+	OR = {
+		tag = JAP
+		is_in_faction_with = JAP
+		is_subject_of = JAP
+	}
+}
+
 is_border_conflict_defender_vs_FROM = {
 	has_variable = ROOT.defender_state_vs_@FROM
 }
@@ -51,31 +60,11 @@ has_ROOT_at_least_1_div_in_current_state_scope = {
 		tooltip = at_least_one_division_in_state
 		ROOT = { divisions_in_state = { state = PREV size > 0 } }
 	}
+}
 
 check_has_focus_tree_to_switch_to_fascism = {
-#	NOT = { tag = JAP }
 	NOT = { tag = GER }
-#	NOT = { tag = MAN }
 	NOT = { tag = ITA }
-#	OR = {
-#		NOT = {
-#			AND = {
-#				tag = SAF
-#				has_dlc = "Together for Victory"
-#			}
-#		}
-#		AND = {
-#			tag = SAF
-#			has_dlc = "Together for Victory"
-#			has_completed_focus = SAF_south_africa_first
-#		}
-#	}
-#	NOT = {
-#		AND = {
-#			tag = RAJ
-#			has_dlc = "Together for Victory"
-#		}
-#	}
 	NOT = {
 		AND = {
 			tag = USA
@@ -190,6 +179,17 @@ is_controlled_by_ROOT_or_ally = {
 	}
 }
 
+is_csa_state = {
+	OR = {
+		state = 7
+		state = 12
+		state = 10
+		state = 2
+		state = 18
+		state = 55
+	}
+}
+
 has_naval_treaty_trigger = {
 	OR = {
 		has_idea = MTG_naval_treaty_adherent
@@ -242,6 +242,23 @@ ai_land_doctrine_tier_2_trigger = {
 	}
 }
 
+CHI_is_on_historical_plan_trigger = {
+	has_dlc = "Waking the Tiger"
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			has_game_rule = {
+				rule = CHI_ai_behavior
+				option = DEFAULT
+			}
+		}
+		has_country_flag = CHI_AI_RANDOM_HISTORICAL
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = HISTORICAL
+		}
+	}
+}
 SOV_is_on_historical_plan_trigger = {
 	OR = {
 		AND = {
@@ -497,10 +514,10 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 
 is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
 	NOT = {
-	#	AND = {
-	#		FROM = { original_tag = YUG }
-	#		original_tag = ITA
-	#	}
+		AND = {
+			FROM = { original_tag = YUG }
+			original_tag = ITA
+		}
 		AND = {
 			FROM = { original_tag = DNZ }
 			original_tag = POL
@@ -593,6 +610,12 @@ has_same_ideology = {
 	}
 }
 
+is_latin_american_country = {
+	OR = {
+		
+	}
+}
+
 has_specialist_level_trigger = {
 	skill > 5
 	skill < 6
@@ -614,10 +637,37 @@ is_league_of_nations_member = {
 	}
 }
 
+state_is_in_the_mediterranean_sea = {
+	custom_trigger_tooltip = {
+		tooltip = state_is_in_the_mediterranean_sea_tt
+		OR = {
+			
+		}
+	}
+}
+
 is_major_not_original_tag_root = {
 	is_major = yes
 	hidden_trigger = {
 		NOT = { original_tag = ROOT }
+	}
+}
+
+is_initial_ethiopian_state = {
+	OR = {
+		
+	}
+}
+
+has_subject_autonomy_feature = {
+	has_dlc = "Together for Victory"
+	#TODO_Manu: More DLCs?
+}
+
+is_organization_of_african_unity_member = {
+	custom_trigger_tooltip = {
+		tooltip = is_league_of_nations_member_tt
+		has_idea = organization_of_african_unity_member_idea
 	}
 }
 
@@ -666,6 +716,44 @@ state_is_fully_controlled_by_ROOT_or_subject = {
 	}
 }
 
+is_alpine_state = {
+	custom_trigger_tooltip = {
+		tooltip = is_alpine_TT
+	}
+	hidden_trigger = {
+		OR = {
+			has_state_flag = AUS_INITAL_STATE
+			has_state_flag = SWI_INITIAL_STATE
+			is_core_of = TIR
+			state = 704
+			state = 2905
+			state = 2849
+			state = 1424
+			state = 2850
+			state = 1359
+			state = 1365
+			state = 1360
+			state = 2311
+			state = 1362
+			state = 2543
+			state = 745
+			state = 2358
+			state = 1366
+			state = 749
+			state = 2853
+			is_core_of = LIE
+			is_core_of = SAV
+			AND = {
+				is_core_of = PRV
+				NOT = {
+					state = 808
+					state = 824i
+				}
+			}
+		}
+	}
+}
+
 state_has_any_resource = {
 	OR = {
 		has_resources_amount = {
@@ -708,5 +796,42 @@ country_can_be_reasonable_target_of_wargoal = { #Expected scopes: Target country
 
 is_unlikely_country_tag = {
 	OR = {
+	    tag = BRI
+	    tag = CAT
+	    tag = NAV
+	    tag = GLC
+	    tag = ADU
+	    tag = OCC
+	    tag = COR
+	    tag = DNZ
+	    tag = KSH
+	    tag = CKK
+	    tag = FER
+	    tag = YAK
+	    tag = VLA
+	    tag = KKP
+	    tag = YAM
+	    tag = TAY
+	    tag = OVO
+	    tag = NEN
+	    tag = KOM
+	    tag = CHU
+	    tag = MEL
+	    tag = RIF
+	    tag = HAR
+	    tag = PAP
+	    tag = TOS
+		tag = BSK
+		tag = TAT
+		tag = UDM
+		tag = KHA
+		tag = VGE
+		tag = KAL
+		tag = KAR
+		tag = SIL
+		tag = KSH
+		tag = ALT
+		tag = UZB
+		tag = KHI
 	}
 }

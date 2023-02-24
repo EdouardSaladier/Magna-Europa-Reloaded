@@ -8419,9 +8419,9 @@ focus_tree = {
 	focus = {
 		id = POR_latin_america
 
-		will_lead_to_war_with = PAR
-		will_lead_to_war_with = URG
-		will_lead_to_war_with = ARG
+		#will_lead_to_war_with = PAR
+		#will_lead_to_war_with = URG
+		#will_lead_to_war_with = ARG
 
 		select_effect = {
 			random_country = {
@@ -8475,9 +8475,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POR_latin_america
 
-		will_lead_to_war_with = PAR
-		will_lead_to_war_with = URG
-		will_lead_to_war_with = ARG
+		#will_lead_to_war_with = PAR
+		#will_lead_to_war_with = URG
+		#will_lead_to_war_with = ARG
 
 		select_effect = {
 			random_country = {
