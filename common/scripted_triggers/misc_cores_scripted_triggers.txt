@@ -419,7 +419,6 @@ is_mainland_spain = {
 }
 is_westland_state = {
 	OR = {
-		state = 688
 		state = 668
 		state = 658
 		state = 2613
@@ -440,5 +439,7 @@ is_westland_state = {
 		state = 2574
 		state = 2374
 		state = 544
+		state = 2365
+		state = 525
 	}
 }

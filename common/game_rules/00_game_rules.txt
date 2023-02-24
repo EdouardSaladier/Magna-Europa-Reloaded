@@ -1749,6 +1749,20 @@ ita_fragmentation_status = {
 		desc = "RULE_OPTION_ITA_FRAGMENTED_DESC"
 	}
 }
+kongs_secret_stuff = {
+	name = "FBKong's Secret Stuff"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_KONG_DESC"
+	}
+	option = {
+		name = SECRET_ENABLED
+		text = "RULE_OPTION_SECRET_ENABLED"
+		desc = "RULE_OPTION_SECRET_ENABLED_DESC"
+	}
+}
 
 
 

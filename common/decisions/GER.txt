@@ -641,16 +641,6 @@ GER_reichskommissariats = {
 							}
 							transfer_state_to = RKN
 						}
-						every_state = {
-							limit = {
-								is_owned_by = HOL
-								OR = {
-									state = 2344
-									state = 2717
-								}
-							}
-							transfer_state_to = GER
-						}
 					}
 				if = {
 					limit = {
@@ -2103,16 +2093,19 @@ GER_reichskommissariats = {
 					
 				}
 			}
-			any_country = {
-				if = {
-					limit = {
-						original_tag = FRA
-						has_government = fascism
-						NOT = { is_subject_of = GER }
+			custom_trigger_tooltip = {
+				tooltip = GER_MVF_vichy_doesnt_exist_tt
+				any_country = {
+					if = {
+						limit = {
+							original_tag = FRA
+							has_government = fascism
+							NOT = { is_subject_of = GER }
+						}
+						exists = no
 					}
-					exists = no
+					
 				}
-				
 			}
 			OR = {
 				date > 1942.1.1
@@ -2252,7 +2245,12 @@ GER_reichskommissariats = {
 					}
 				GER = { puppet = WSL }
 				GER = { set_autonomy = { target = WSL autonomy_state = autonomy_integrated_puppet } }	
-			
+			if = {
+				limit = {
+					NOT = { has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED } }
+				}
+				WSL = { transfer_state = 515 }
+			}
 		}
 	}
 }
