@@ -530,6 +530,7 @@ focus_tree = {
 						add_state_core = 2823
 						add_state_core = 1496
 						add_state_core = 2824
+						add_state_core = 1993
 						remove_state_core = 2555
 						remove_state_core = 1503
 						remove_state_core = 1472
@@ -558,6 +559,7 @@ focus_tree = {
 						transfer_state = 1470
 						transfer_state = 775
 						transfer_state = 2555
+						transfer_state = 1993
 					}
 				}
 				event_target:released_nation_target = {
@@ -1018,6 +1020,7 @@ focus_tree = {
 					remove_state_core = 2812
 					remove_state_core = 813
 					remove_state_core = 1500
+					remove_state_core = 1501
 				}
 				if = {
 					limit = { CRO = { owns_state = 1498 } }
@@ -1180,7 +1183,28 @@ focus_tree = {
 				custom_effect_tooltip = create_one_units_tt
 			}
 			hidden_effect = {
-				MNT = { save_event_target_as = released_nation_target }
+				
+					every_state = {
+						limit = {
+							OR = {
+								state = 782
+								state = 2812
+								state = 835
+								state = 1495
+								state = 2820
+								state = 2007
+								state = 1987
+								state = 844
+								state = 2802
+								state = 2804
+							}
+						}
+						transfer_state_to = MNT
+						add_core_of = MNT
+					}
+				MNT = { 	
+					save_event_target_as = released_nation_target 
+				}
 				event_target:released_nation_target = {
 					division_template = {
 						name = "Yugoslavian Division"
@@ -1371,12 +1395,14 @@ focus_tree = {
 						controls_state = 1512
 						controls_state = 2554
 						controls_state = 1513
+						controls_state = 2933
 					}
 					hidden_effect = {
 					738 = { add_core_of = TRA }
 					1512 = { add_core_of = TRA }
 					2554 = { add_core_of = TRA }
 					1513 = { add_core_of = TRA }
+					2933= { add_core_of = TRA }
 					if = {
 						limit = { TRA = { exists = no } }
 						release_puppet = TRA 
@@ -1404,6 +1430,9 @@ focus_tree = {
 								add_core_of = PREV
 							}
 							738 = {
+								add_core_of = PREV
+							}
+							2933 = {
 								add_core_of = PREV
 							}
 							1512 = {
