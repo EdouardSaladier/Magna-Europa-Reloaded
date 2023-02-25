@@ -2897,15 +2897,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HOL_production_under_license"
-		prerequisite = { focus = HOL_appoint_new_supreme_commander }
-		mutually_exclusive = { focus = HOL_modernize_our_infantry_equipment }
-
-		allow_branch = {
-			has_dlc = "Death or Dishonor"
-		}
-
-		available = {
-		}
 			add_ideas = HOL_production_under_license
 			custom_effect_tooltip = HOL_production_under_license_tt
 		}
@@ -2933,11 +2924,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_light_tanks_for_the_colonies
-		allow_branch = {
-			always = yes
-		}
-		prerequisite = { focus = HOL_modernize_our_infantry_equipment focus = HOL_production_under_license }"
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_light_tanks_for_the_colonies"
 			if = {
 				limit = {
 					NOT = { has_completed_focus = HOL_modernize_our_infantry_equipment }
@@ -6952,13 +6939,7 @@ focus_tree = {
 			has_completed_focus = HOL_unity_through_democracy
 			has_government = democratic
 			is_in_faction_with = ENG
-			is_in_faction_with = AST
-			is_in_faction_with = MAL
 			NOT = { has_war_with = USA }
-			OR = {
-				MAL = { has_full_control_of_state = 336 }
-				ENG = { has_full_control_of_state = 336 }
-			}
 		}
 		bypass = {
 			has_war_with = JAP
@@ -6973,24 +6954,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_singapore_conferences
-		prerequisite = { focus = HOL_go_with_britain }
-		available = {
-			has_completed_focus = HOL_unity_through_democracy
-			has_government = democratic
-			is_in_faction_with = ENG
-			is_in_faction_with = AST
-			is_in_faction_with = MAL
-			NOT = { has_war_with = USA }
-			OR = {
-				MAL = { has_full_control_of_state = 336 }
-				ENG = { has_full_control_of_state = 336 }
-			}
-		}
-		bypass = {
-			has_war_with = JAP
-			NOT = { has_completed_focus = HOL_oranje_boven }
-		}"
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_singapore_conferences"
 			add_doctrine_cost_reduction = {
 				name = HOL_the_singapore_conferences
 				cost_reduction = 0.5
@@ -7015,11 +6979,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_ship_a_day_sinking_quotas
-		available = {
-			has_war = yes
-		}
-		prerequisite = { focus = HOL_de_vaarplicht focus = HOL_the_singapore_conferences }"
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_ship_a_day_sinking_quotas"
 			add_tech_bonus = {
 				name = HOL_ship_a_day_sinking_quotas
 				bonus = 1.0
@@ -7055,8 +7015,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_allied_technological_developments
-		prerequisite = { focus = HOL_the_singapore_conferences }"
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_allied_technological_developments"
 			add_ideas = HOL_allied_technological_developments
 		}
 	}

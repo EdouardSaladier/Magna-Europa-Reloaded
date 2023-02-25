@@ -41,16 +41,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_colonial_assimilation_policy
-		available = {
-			any_controlled_state = {
-				NOT = { is_core_of = ROOT }
-			}
-		}
-
-		bypass = {
-		}
-"
+			log = "[GetDateText]: [Root.GetName]: Focus POR_colonial_assimilation_policy"
 			add_ideas = POR_colonial_assimilation_policy
 		}
 	}
@@ -75,317 +66,20 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_colonial_army
-		available = {
-			any_owned_state = {
-				NOT = { is_core_of = ROOT }
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_colonial_assimilation_policy }
-"
+			log = "[GetDateText]: [Root.GetName]: Focus POR_colonial_army"
 			add_ideas = POR_colonial_army
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = POR_francisco_craveiro_lopes
 		}
 	}
 
-	focus = {
-		id = POR_luso_tropicalism
-		allow_branch = { has_country_flag = NEVER }
-		available = {
-			NOT = { has_government = fascism }
-			OR = {
-				has_full_control_of_state = 796 #North Angola
-				has_full_control_of_state = 540 #Luanda
-				has_full_control_of_state = 891 #South West Angola
-				has_full_control_of_state = 892 #Zambesi
-				has_full_control_of_state = 544 #Mozambique
-				has_full_control_of_state = 896 #Manica e Sofala
-				has_full_control_of_state = 897 #Zambeziá-Mozambique
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-					has_government = communism
-				}
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_colonial_assimilation_policy }
-		mutually_exclusive = { focus = POR_limited_self_rule }
-			
-		icon = GFX_focus_por_luso_tropicalism
-		x = -2
-		y = 2
-
-		relative_position_id = POR_colonial_assimilation_policy
-		cost = 10
-		search_filters = {FOCUS_FILTER_ANNEXATION}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_luso_tropicalism
-		allow_branch = { has_country_flag = NEVER }
-		available = {
-			NOT = { has_government = fascism }
-			OR = {
-				has_full_control_of_state = 796 #North Angola
-				has_full_control_of_state = 540 #Luanda
-				has_full_control_of_state = 891 #South West Angola
-				has_full_control_of_state = 892 #Zambesi
-				has_full_control_of_state = 544 #Mozambique
-				has_full_control_of_state = 896 #Manica e Sofala
-				has_full_control_of_state = 897 #Zambeziá-Mozambique
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-					has_government = communism
-				}
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_colonial_assimilation_policy }
-		mutually_exclusive = { focus = POR_limited_self_rule }
-			"
-			unlock_decision_tooltip = POR_mozambique_overseas_territory
-			unlock_decision_tooltip = POR_angola_overseas_province
-		}
-	}
-
-	
-
-	focus = {
-		id = POR_infrastructure_in_angola
-		allow_branch = { has_country_flag = NEVER }
-		available = {
-			OR = {
-				has_full_control_of_state = 796
-				796 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_colonial_assimilation_policy }	
-			
-		icon = GFX_focus_generic_africa_infrastructure
-		x = 2
-		y = 0
-
-		relative_position_id = POR_limited_self_rule
-		cost = 10
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_infrastructure_in_angola
-		allow_branch = { has_country_flag = NEVER }
-		available = {
-			OR = {
-				has_full_control_of_state = 796
-				796 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_colonial_assimilation_policy }	
-			" 
-
-			796 = {		
-				
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					province = 2115
-					instant_build = yes
-				}	
-
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}					
-				add_extra_state_shared_building_slots = 1	
-			}
-
-			540 = {		
-
-				add_building_construction = {
-					type = naval_base
-					level = 3
-					province = 8248
-					instant_build = yes
-				}	
-
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}					
-				add_extra_state_shared_building_slots = 1					
-			}				
-		}
-	}
-
-	focus = {
-		id = POR_develop_north_angola
-		available = {	
-			OR = {
-				has_full_control_of_state = 796
-				796 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}					
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_infrastructure_in_angola }
-		prerequisite = { focus = POR_roads_bridges_and_dams }  	
-			
-		icon = GFX_focus_generic_africa_factory
-		x = 0
-		y = 1
-
-		relative_position_id = POR_infrastructure_in_angola
-		cost = 10
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_develop_north_angola
-		available = {	
-			OR = {
-				has_full_control_of_state = 796
-				796 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}					
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_infrastructure_in_angola }
-		prerequisite = { focus = POR_roads_bridges_and_dams }  	
-			" 
-			796 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-
-				add_resource = {
-					type = steel
-					amount = 8
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = POR_develop_south_angola
-		available = {
-			OR = {
-				has_full_control_of_state = 540
-				540 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_develop_north_angola }	
-			
-		icon = GFX_focus_generic_africa_production
-		x = 0
-		y = 1
-
-		relative_position_id = POR_develop_north_angola
-		cost = 10
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_develop_south_angola
-		available = {
-			OR = {
-				has_full_control_of_state = 540
-				540 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_develop_north_angola }	
-			" 
-			540 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					province = 8248
-					instant_build = yes
-				}
-
-				add_resource = {
-					type = steel
-					amount = 8
-				}
-
-				add_resource = {
-					type = rubber
-					amount = 4
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = POR_portuguese_oil
 		available = {
 			OR = {
-				has_full_control_of_state = 796
-				796 = {
+				has_full_control_of_state = 1823
+				1823 = {
 					owner = { is_subject_of = ROOT }
 				}
 			}
@@ -393,98 +87,20 @@ focus_tree = {
 
 		bypass = {		
 		}
-		prerequisite = { focus = POR_develop_south_angola }
+		prerequisite = { focus = POR_hydroelectricity }
 				
 		icon = GFX_goal_generic_oil_refinery
-		x = -1
+		x = 0
 		y = 1
 
-		relative_position_id = POR_develop_south_angola
+		relative_position_id = POR_hydroelectricity
 		cost = 10
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_portuguese_oil
-		available = {
-			OR = {
-				has_full_control_of_state = 796
-				796 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_develop_south_angola }
-				" 
-			796 = {
+			log = "[GetDateText]: [Root.GetName]: Focus POR_portuguese_oil" 
+			1823 = {
 				add_resource = {
 					type = oil
-					amount = 12
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = POR_develop_mozambique
-		available = {
-			OR = {
-				has_full_control_of_state = 544
-				544 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_develop_south_angola }
-				
-		icon = GFX_focus_generic_africa_naval
-		x = 1
-		y = 1
-
-		relative_position_id = POR_develop_south_angola
-		cost = 10
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_develop_mozambique
-		available = {
-			OR = {
-				has_full_control_of_state = 544
-				544 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_develop_south_angola }
-				" 
-			544 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					province = 2123				
-					instant_build = yes
-				}
-				add_resource = {
-					type = aluminium
 					amount = 12
 				}
 			}
@@ -758,7 +374,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = POR_instituto_superior_tecnico }	
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 2
+		x = 6
 		y = 0
 
 		relative_position_id = POR_infrastructure_in_angola
@@ -7597,7 +7213,7 @@ focus_tree = {
 		relative_position_id = POR_join_the_carlist_fight
 		cost = 10
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_the_royal_iberian_alliance
+			log = "[GetDateText]: [Root.GetName]: Focus POR_the_royal_iberian_alliance"
 		available = {
 			is_in_faction = no
 			has_country_leader = { name = "Dom Duarte Nuno" }
@@ -7626,7 +7242,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = POR_join_the_carlist_fight }
-		mutually_exclusive = { focus = POR_remember_olivenca }"
+		mutually_exclusive = { focus = POR_remember_olivenca }
 			SPB = { 
 				country_event = { id = lar_portugal_royal_iberian_alliance.1 hours = 6 }
 			}
@@ -7733,24 +7349,26 @@ focus_tree = {
 			has_government = neutrality
 			OR = {
 				AND = {
-					country_exists = BRA
-					BRA = {
-						has_government = neutrality
-						has_civil_war = no
-						NOT = { has_war_with = ROOT }
-					}
-					NOT = {
-						any_enemy_country = {
-							is_in_faction_with = BRA
-						}
-					}
+					#country_exists = BRA
+					#BRA = {
+					#	has_government = neutrality
+					#	has_civil_war = no
+					#	NOT = { has_war_with = ROOT }
+					#}
+					#NOT = {
+					#	any_enemy_country = {
+					##		is_in_faction_with = BRA
+					#	}
+					#}
 				}
-				AND = {
-					NOT = { country_exists = BRA }
-					owns_state = 500
-				}
+				#AND = {
+				#	NOT = { country_exists = BRA }
+				#	owns_state = 500
+				#}
 			}
+			
 		}
+		allow_branch = { has_global_flag = NEVER }
 
 		bypass = {
 		}
@@ -7771,23 +7389,23 @@ focus_tree = {
 		available = {
 			has_government = neutrality
 			OR = {
-				AND = {
-					country_exists = BRA
-					BRA = {
-						has_government = neutrality
-						has_civil_war = no
-						NOT = { has_war_with = ROOT }
-					}
-					NOT = {
-						any_enemy_country = {
-							is_in_faction_with = BRA
-						}
-					}
-				}
-				AND = {
-					NOT = { country_exists = BRA }
-					owns_state = 500
-				}
+				#AND = {
+				#	country_exists = BRA
+				#	BRA = {
+				#		has_government = neutrality
+				#		has_civil_war = no
+				#		NOT = { has_war_with = ROOT }
+				#	}
+				#	NOT = {
+				#		any_enemy_country = {
+				#			is_in_faction_with = BRA
+				#		}
+				#	}
+				#}
+				#AND = {
+				#	NOT = { country_exists = BRA }
+				#	owns_state = 500
+				#}
 			}
 		}
 
@@ -7800,14 +7418,14 @@ focus_tree = {
 "
 			remove_ideas = POR_unstable_monarchy
 			add_ideas = POR_the_portuguese_empire
-			if = {
-				limit = {
-					country_exists = BRA
-				}
-				BRA = {
-					country_event = { id = lar_portugal_promote_monarchist_cause.2 hours = 6 }
-				}
-			}
+			#if = {
+			#	limit = {
+			#		country_exists = BRA
+			#	}
+			#	BRA = {
+			#		country_event = { id = lar_portugal_promote_monarchist_cause.2 hours = 6 }
+			#	}
+			#}
 			set_rule = { can_create_factions = yes }
 		}		
 	}
@@ -8084,55 +7702,7 @@ focus_tree = {
 		relative_position_id = POR_the_kingdom_reunited
 		cost = 10
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_latin_america
-
-		#will_lead_to_war_with = PAR
-		#will_lead_to_war_with = URG
-		#will_lead_to_war_with = ARG
-
-		select_effect = {
-			random_country = {
-				limit = { controls_state = 300 }
-				ROOT = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = PREV
-						value = 100
-					}
-				}
-			}
-			random_country = {
-				limit = { controls_state = 301 }
-				ROOT = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = PREV
-						value = 100
-					}
-				}
-			}
-			random_country = {
-				limit = { controls_state = 510 }
-				ROOT = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = PREV
-						value = 100
-					}
-				}
-			}
-		}
-
-		available = {
-		}
-
-		bypass = {
-			owns_state = 300
-			owns_state = 301
-			owns_state = 510
-		}
-		prerequisite = { focus = POR_the_kingdom_reunited focus = POR_recover_brazil }
-" 
+			log = "[GetDateText]: [Root.GetName]: Focus POR_latin_america" 
 			add_state_claim = 300
 			add_state_claim = 301
 			add_state_claim = 510
@@ -8211,49 +7781,13 @@ focus_tree = {
 		prerequisite = { focus = POR_refuse_the_naval_blockade focus = POR_proudly_alone }
 
 		icon = GFX_focus_ger_great_red_menace
-		x = -8
-		y = 0
+		x = 0
+		y = 2
 
-		relative_position_id = POR_latin_america
+		relative_position_id = POR_proudly_alone
 		cost = 10
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_the_communist_threat
-
-		select_effect = {
-			every_country = {
-				limit = {
-					has_government = communism
-					NOT = { is_in_faction_with = ROOT }
-					OR = {
-						is_major = yes
-						is_neighbor_of = ROOT
-					}
-				}
-				ROOT = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = PREV
-						value = 100
-					}
-				}
-			}
-		}
-
-		available = {
-			any_country = {
-				has_government = communism
-				NOT = { is_in_faction_with = ROOT }
-				OR = {
-					is_major = yes
-					is_neighbor_of = ROOT
-				}
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_refuse_the_naval_blockade focus = POR_proudly_alone }
-"
+			log = "[GetDateText]: [Root.GetName]: Focus POR_the_communist_threat"
 			hidden_effect = {
 				every_country = {
 					limit = {

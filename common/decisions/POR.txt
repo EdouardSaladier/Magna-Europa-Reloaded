@@ -2296,14 +2296,14 @@ POR_monarchist_cause = {
 		visible = {
 			has_completed_focus = POR_a_royal_wedding
 			NOT = { has_completed_focus = POR_the_empire_of_brazil }
-			country_exists = BRA
+		#	country_exists = BRA
 		}
 
 		cancel_trigger = {
 			OR = {
 				has_completed_focus = POR_the_empire_of_brazil
-				has_war_with = BRA
-				BRA = { neutrality < -0.15 }
+				#has_war_with = BRA
+				#BRA = { neutrality < -0.15 }
 			}
 		}
 

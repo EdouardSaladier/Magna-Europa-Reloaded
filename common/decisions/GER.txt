@@ -812,7 +812,7 @@ GER_reichskommissariats = {
 						515 = {
 							OR = {
 								is_controlled_by = GER
-								controller = is_subject_of = GER
+								controller = { is_subject_of = GER }
 							}
 						}
 					}

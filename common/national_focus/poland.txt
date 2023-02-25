@@ -7428,13 +7428,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_press_for_liberia"
-			LIB = {
-				country_event = { id = NSB_poland_events.6 days = 1 }
-			}
+			#LIB = {
+			#	country_event = { id = NSB_poland_events.6 days = 1 }
+			#}
 			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				puppet = LIB
-			}
+			#effect_tooltip = {
+			#	puppet = LIB
+			#}
 		}
 	}
 
@@ -15254,7 +15254,9 @@ focus_tree = {
 			add_political_power = 75
 			add_command_power = 50
 			POL = {
-				annex_country = DNZ
+				annex_country = {
+					target = DNZ
+				}
 			}
 			every_state = {
 				limit = {
