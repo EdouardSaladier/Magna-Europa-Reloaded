@@ -15388,7 +15388,10 @@ SOV_soviet_civil_war_dec_cat = {
 		target_trigger = {
 			FROM = {
 				OR = {
-					AAAAAAAAAAAAAAAAAAAA
+					region = 109
+					region = 131
+					region = 111
+					region = 110
 				}
 			}
 		}

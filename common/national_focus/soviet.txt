@@ -11609,14 +11609,14 @@ focus_tree = {
 		}
 		
 		available = {
-			MON = {
-				is_in_faction_with = ROOT
-				has_full_control_of_state = 330
-				has_full_control_of_state = 819
-				has_full_control_of_state = 817
-				has_full_control_of_state = 818
-
-			}
+			#MON = {
+			#	is_in_faction_with = ROOT
+			#	has_full_control_of_state = 330
+			#	has_full_control_of_state = 819
+			#	has_full_control_of_state = 817
+			#	has_full_control_of_state = 818
+#
+			#}
 			is_subject = no
 		}
 		
@@ -11624,7 +11624,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_fortify_mongolian_border"
-			MON = { country_event = { id = NSB_soviet_foreign_politics_events.12 hours = 2 random_hours = 1 } }
+			#MON = { country_event = { id = NSB_soviet_foreign_politics_events.12 hours = 2 random_hours = 1 } }
 			custom_effect_tooltip = if_they_accept
 			custom_effect_tooltip = SOV_fortify_mongolian_border_forts_tt
 		}
@@ -13702,28 +13702,6 @@ ai_will_do = {
 			}
 			if = {
 				limit = {
-					country_exists = AFG
-				}
-				AFG = {
-					if = {
-						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence_weak days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence_weak days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence_weak days = 1095 }
-					}
-					hidden_effect = {
-						country_event = { id = generic.1 }
-					}
-				}
-			}
-			if = {
-				limit = {
 					country_exists = SAU
 				}
 				SAU = {
@@ -13795,17 +13773,12 @@ ai_will_do = {
 				NOT = { owns_state = 676 }
 				NOT = { owns_state = 291 }
 			}
-			AFG = {
-				NOT = { owns_state = 267 }
-				NOT = { owns_state = 415 }
-			}
 		}
 
 		available = {
 			OR = {
 				country_exists = IRQ
 				country_exists = PER
-				country_exists = AFG
 				country_exists = SAU
 			}
 			is_subject = no
@@ -13815,7 +13788,6 @@ ai_will_do = {
 		
 		will_lead_to_war_with = PER
 		will_lead_to_war_with = IRQ
-		will_lead_to_war_with = AFG
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -13852,22 +13824,6 @@ ai_will_do = {
 					target = IRQ
 					expire = 0
 					generator = { 676 291 }
-				}
-			}
-			if = {
-				limit = {
-					AFG = {
-						OR = {
-							owns_state = 267
-							owns_state = 415
-						}
-					} 
-				}			
-				create_wargoal = {
-					type = take_state_focus
-					target = AFG
-					expire = 0
-					generator = { 267 415 }
 				}
 			}
 			ENG = {
@@ -13915,8 +13871,8 @@ ai_will_do = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_support_afghan_ideology"
-			activate_targeted_decision = { target = AFG decision = SOV_pressure_country_government_middle_east }
-			activate_targeted_decision = { target = AFG decision = SOV_promote_ideology_rallies_middle_east }
+			#activate_targeted_decision = { target = AFG decision = SOV_pressure_country_government_middle_east }
+			#activate_targeted_decision = { target = AFG decision = SOV_promote_ideology_rallies_middle_east }
 		}
 	}
 
@@ -14562,12 +14518,6 @@ ai_will_do = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_recover_the_kuril_islands"
-			create_wargoal = {
-				type = take_state_focus
-				target = JAP
-				expire = 0
-				generator = { 537 555 }
-			}
 
 			if = {
 				limit = {
