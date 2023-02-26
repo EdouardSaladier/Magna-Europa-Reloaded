@@ -6316,6 +6316,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip = GER_danzig_or_war_POL_civil_war
 			}
+			unlock_decision_tooltip = GER_generalgouvernement_form
 		}
 	}
 	
@@ -6415,7 +6416,9 @@ focus_tree = {
 			}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.233 }
-			}	
+			}
+			unlock_decision_tooltip = GER_reichskommissariat_norwegen
+			unlock_decision_tooltip = GER_reichskommissariat_danemark
 		}
 	}
 	
@@ -7246,6 +7249,10 @@ focus_tree = {
  				expire = 0
  				generator = { 28 }
  			}
+			
+			unlock_decision_tooltip = GER_occupy_france_north
+			unlock_decision_tooltip = GER_occupy_france_south
+			unlock_decision_tooltip = GER_settle_eastern_france
 		}
 	}
 	
@@ -7381,9 +7388,12 @@ focus_tree = {
 					expire = 0
 				}			
 			}
+			unlock_decision_tooltip = GER_reichskommissariat_niederlande
+			unlock_decision_tooltip = GER_reichskommissariat_belgien_nordfrankreich
 			hidden_effect = {
 				news_event = { hours = 6 id = news.234 }
 			}
+			
 		}
 	}
 
@@ -7426,6 +7436,7 @@ focus_tree = {
 				target = LIE
 				expire = 0
 			}
+			unlock_decision_tooltip = GER_reichskommissariat_schweiz
 		}
 	}
 

@@ -449,7 +449,6 @@ GER_reichskommissariats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			NOR = {
 				all_core_state = {	
@@ -468,7 +467,10 @@ GER_reichskommissariats = {
 		}
 
 		visible = {
-			has_completed_focus = GER_form_the_reichskommissariats
+			OR = {
+				has_completed_focus = GER_form_the_reichskommissariats
+				has_completed_focus = GER_weserubung
+			}
 			has_government = fascism
 		}
 
@@ -528,10 +530,128 @@ GER_reichskommissariats = {
 								}
 							}
 						}
+						add_compliance = 50
 						transfer_state_to = RKG
 					}
 					GER = { set_autonomy = { target = RKG autonomy_state = autonomy_integrated_puppet } }
 				}
+			hidden_effect = {
+				RKG = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
+			}
+		}
+	}
+	GER_reichskommissariat_danemark = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_government = fascism
+			DEN = {
+				all_core_state = {	
+					is_controlled_by = GER
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+				is_historical_focus_on = yes
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = GER_form_the_reichskommissariats
+				has_completed_focus = GER_weserubung
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+					limit = {
+						315 = {	
+							owner = {
+								has_war_with = ROOT
+							}
+						}
+					}
+					
+				
+				DEN = {
+					every_core_state = {
+							limit = {
+								NOT = {
+									state = 139
+									state = 246
+									state = 104
+								}
+							}
+							set_state_controller_to	 = RKD
+							add_compliance = 30
+						}
+						
+					}
+				RKD = {
+					declare_war_on = {
+						target = NOR
+						type = civil_war
+					}
+				}	
+				GER = {
+					puppet = RKD
+					set_autonomy = { target = RKD autonomy_state = autonomy_integrated_puppet }
+				}
+			}
+				if = {
+					limit = {
+						315 = {	
+							owner = {
+								NOT = { has_war_with = ROOT }
+							}
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = DEN
+							NOT = {
+									state = 139
+									state = 246
+									state = 104
+								}
+							OR = {
+								is_controlled_by = GER
+								owner = {
+									is_subject_of = GER
+								}
+							}
+						}
+						transfer_state_to = RKD
+						add_claim_by = RKD
+					}
+					
+					GER = { 
+						puppet = RKD
+						set_autonomy = { target = RKD autonomy_state = autonomy_integrated_puppet } 
+					}
+				}
+			hidden_effect = {
+				RKD = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
+			}
 		}
 	}
 
@@ -540,7 +660,6 @@ GER_reichskommissariats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			HOL = {
 				all_core_state = {	
@@ -560,7 +679,10 @@ GER_reichskommissariats = {
 		}
 
 		visible = {
-			has_completed_focus = GER_form_the_reichskommissariats
+			OR = {
+				has_completed_focus = GER_form_the_reichskommissariats
+				has_completed_focus = GER_around_maginot
+			}
 			has_government = fascism
 		}
 
@@ -657,6 +779,14 @@ GER_reichskommissariats = {
 							transfer_state_to = GER
 						}
 				}
+			hidden_effect = {
+				RKN = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
+			}
 		}
 	}
 
@@ -665,7 +795,6 @@ GER_reichskommissariats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			custom_trigger_tooltip = {
 				tooltip = GER_RKB_required_states_tt
@@ -821,6 +950,14 @@ GER_reichskommissariats = {
 					}
 					
 				}
+			hidden_effect = {
+				RKB = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
+			}
 		}
 	}
 	GER_reichskommissariat_kaukasien = {
@@ -917,7 +1054,14 @@ GER_reichskommissariats = {
 					puppet = RKK
 					set_autonomy = { target = RKK autonomy_state = autonomy_integrated_puppet }
 				}
-			
+			hidden_effect = {
+				RKK = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
+			}
 		}
 	}
 	
@@ -979,7 +1123,14 @@ GER_reichskommissariats = {
 					puppet = RKT
 					set_autonomy = { target = RKT autonomy_state = autonomy_integrated_puppet }
 				}
-			
+			hidden_effect = {
+				RKT = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
+			}
 		}
 	}
 	GER_reichskommissariat_ostland = {
@@ -1075,7 +1226,14 @@ GER_reichskommissariats = {
 					puppet = RKO
 					set_autonomy = { target = RKO autonomy_state = autonomy_integrated_puppet }
 				}
-			
+			hidden_effect = {
+				RKO = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
+			}
 		}
 	}
 	GER_expand_ostland = {
@@ -1388,6 +1546,14 @@ GER_reichskommissariats = {
 						transfer_state_to = GGV
 					}
 				}
+			hidden_effect = {
+				RKU = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
+			}
 		}
 	}
 	GER_expand_ukriane = {
@@ -1786,7 +1952,14 @@ GER_reichskommissariats = {
 					puppet = RKM
 					set_autonomy = { target = RKM autonomy_state = autonomy_integrated_puppet }
 				}
-			
+			hidden_effect = {
+				RKM = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
+			}
 		}
 	}
 	GER_reichskommissariat_schweiz = {
@@ -1794,7 +1967,6 @@ GER_reichskommissariats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			SWI = {
 				all_core_state = {
@@ -1817,7 +1989,10 @@ GER_reichskommissariats = {
 		}
 
 		visible = {
-			has_completed_focus = GER_form_the_reichskommissariats
+			OR = {
+				has_completed_focus = GER_form_the_reichskommissariats
+				has_completed_focus = GER_operation_tannenbaum
+			}
 			has_government = fascism
 		}
 
@@ -1849,7 +2024,14 @@ GER_reichskommissariats = {
 					transfer_state_to = ITA
 				}
 			}
-			
+			hidden_effect = {
+				RKS = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
+			}
 		}
 	}
 	GER_generalgouvernement_form = {
@@ -1857,10 +2039,6 @@ GER_reichskommissariats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			OR = {
-				has_completed_focus = GER_danzig_or_war
-				has_completed_focus = GER_form_the_reichskommissariats
-			}
 			has_government = fascism
 			custom_trigger_tooltip = {
 				tooltip = GER_GGV_required_states_tt
@@ -1979,16 +2157,20 @@ GER_reichskommissariats = {
 							transfer_state_to = GGV
 						}
 					}
+			hidden_effect = {
+				GGV = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
+			}
 		}
 	}
 	GER_occupy_france_north = {
 		icon = ger_reichskommissariats
 
 		available = {
-			OR = {
-				has_completed_focus = GER_around_maginot
-				has_completed_focus = GER_form_the_reichskommissariats
-			}
 			has_government = fascism
 			custom_trigger_tooltip = {
 				tooltip = GER_MVF_required_states_tt
@@ -2014,12 +2196,13 @@ GER_reichskommissariats = {
 			modifier = {
 				add = 1
 				FRA = { has_capitulated = yes }
+				VIC = { exists = no }
 			}
 		}
 
 		visible = {
 			OR = {
-				has_completed_focus = GER_around_maginot
+				has_completed_focus = GER_war_with_france
 				has_completed_focus = GER_form_the_reichskommissariats
 			}
 			has_government = fascism
@@ -2065,7 +2248,14 @@ GER_reichskommissariats = {
 						}
 					}	
 			
-			
+			hidden_effect = {
+				MVF = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
+			}
 					
 		}
 	}
@@ -2073,10 +2263,6 @@ GER_reichskommissariats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			OR = {
-				has_completed_focus = GER_around_maginot
-				has_completed_focus = GER_form_the_reichskommissariats
-			}
 			has_government = fascism
 			custom_trigger_tooltip = {
 				tooltip = GER_MVF_south_required_states_tt
@@ -2107,10 +2293,6 @@ GER_reichskommissariats = {
 					
 				}
 			}
-			OR = {
-				date > 1942.1.1
-				has_global_flag = NO_VICHY
-			}
 		}
 
 		cost = 0
@@ -2125,7 +2307,7 @@ GER_reichskommissariats = {
 
 		visible = {
 			OR = {
-				has_completed_focus = GER_around_maginot
+				has_completed_focus = GER_war_with_france
 				has_completed_focus = GER_form_the_reichskommissariats
 			}
 			has_government = fascism
@@ -2199,7 +2381,6 @@ GER_reichskommissariats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			custom_trigger_tooltip = {
 				tooltip = GER_WSL_required_states_tt
@@ -2230,7 +2411,7 @@ GER_reichskommissariats = {
 
 		visible = {
 			OR = {
-				has_completed_focus = GER_around_maginot
+				has_completed_focus = GER_war_with_france
 				has_completed_focus = GER_form_the_reichskommissariats
 			}
 			has_government = fascism
@@ -2250,6 +2431,14 @@ GER_reichskommissariats = {
 					NOT = { has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED } }
 				}
 				WSL = { transfer_state = 515 }
+			}
+			hidden_effect = {
+				WSL = {
+					add_ideas = {
+						GER_brutal_repression
+						GER_nazi_sympathisers
+					}
+				}
 			}
 		}
 	}
