@@ -27,8 +27,8 @@ set_convoys = 10
 
 recruit_character = IRE_Éamon_de_valera
 recruit_character = IRE_eoin_oduffy
-recruit_character = IRE_james_larkin
-recruit_character = IRE_william_norton
+recruit_character = IRE_sean_murray
+recruit_character = IRE_william_thomas_cosgrave
 recruit_character = IRE_michael_costello
 recruit_character = IRE_p_a_mulcahy
 recruit_character = IRE_liam_archer
@@ -54,7 +54,8 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 98
-	fascism = 1
-	communism = 1
+	communism = 10
+	democratic = 45
+	fascism = 11
+	neutrality = 34
 }
