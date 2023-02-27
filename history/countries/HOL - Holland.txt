@@ -40,8 +40,6 @@ set_technology = {
 	tech_recon = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-#	early_fighter = 1
-#	early_bomber = 1
 	fuel_silos = 1
 	fuel_refining = 1
 	marines = 1
@@ -80,12 +78,13 @@ if = {
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		coastal_defense_ships = 1
 		mtg_transport = 1
 	}
 }
+
+set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
 
 add_ideas = {
 	HOL_wilhelmina
@@ -339,4 +338,3 @@ if = {
 		}
 	}
 }
-

@@ -21,8 +21,6 @@ if = {
 	}
 }
 
-set_research_slots = 3
-
 recruit_character = DEN_thorvald_stauning
 recruit_character = DEN_frits_clausen
 recruit_character = DEN_aksel_larsen
@@ -56,8 +54,6 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-#	early_fighter = 1
-#	cv_early_fighter = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -77,7 +73,6 @@ if = {
 		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
-		basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_torpedo = 1
 		coastal_defense_ships = 1
@@ -85,6 +80,19 @@ if = {
 	}
 }
 
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.22"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 97
+	fascism = 1
+	communism = 2
+}
+
+set_convoys = 40
 
 if = {
 	limit = { has_dlc = "No Step Back" }
@@ -161,21 +169,6 @@ if = {
 	}
 }
 
-
-set_politics = {
-	ruling_party = democratic
-	last_election = "1935.10.22"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	democratic = 97
-	fascism = 1
-	communism = 2
-}
-
-set_convoys = 40
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -235,5 +228,3 @@ if = {
 		}
 	}
 }
-
-
