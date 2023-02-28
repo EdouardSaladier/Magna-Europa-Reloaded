@@ -305,6 +305,7 @@ country_event = {
 				add_claim_by = SOV
 			}
 		}
+		add_ideas = export_focus
 		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } }
 		GER = {
 			country_event = { days = 1 id = germany.12 }
@@ -2360,6 +2361,10 @@ country_event = {
 			}
 			ENG = {
 				add_war_support = 0.1
+				send_embargo = GER
+			}
+			UAE = {
+				send_embargo = GER
 			}
 		}
 		if = {
@@ -2372,6 +2377,19 @@ country_event = {
 			}
 			FRA = {
 				add_war_support = 0.1
+				send_embargo = GER
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					NOT = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+			USA = {
+				send_embargo = GER
 			}
 		}
 		if = {
@@ -5789,6 +5807,47 @@ country_event = {
 		custom_effect_tooltip = yugoslavia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 		GER_mefo_bills_level_down = yes
+		if = {
+			limit = {
+				ENG = {
+					NOT = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+			ENG = {
+				add_war_support = 0.1
+				send_embargo = GER
+			}
+			UAE = {
+				send_embargo = GER
+			}
+		}
+		if = {
+			limit = {
+				FRA = {
+					NOT = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+			FRA = {
+				add_war_support = 0.1
+				send_embargo = GER
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					NOT = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+			USA = {
+				send_embargo = GER
+			}
+		}
 	}
 
 	option = {
@@ -5825,7 +5884,47 @@ country_event = {
 		custom_effect_tooltip = yugoslavia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 		GER_mefo_bills_level_down = yes
-
+		if = {
+			limit = {
+				ENG = {
+					NOT = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+			ENG = {
+				add_war_support = 0.1
+				send_embargo = GER
+			}
+			UAE = {
+				send_embargo = GER
+			}
+		}
+		if = {
+			limit = {
+				FRA = {
+					NOT = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+			FRA = {
+				add_war_support = 0.1
+				send_embargo = GER
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					NOT = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+			USA = {
+				send_embargo = GER
+			}
+		}
 	}
 
 	option = {
@@ -5857,6 +5956,47 @@ country_event = {
 		custom_effect_tooltip = yugoslavia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 		GER_mefo_bills_level_down = yes
+		if = {
+			limit = {
+				ENG = {
+					NOT = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+			ENG = {
+				add_war_support = 0.1
+				send_embargo = GER
+			}
+			UAE = {
+				send_embargo = GER
+			}
+		}
+		if = {
+			limit = {
+				FRA = {
+					NOT = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+			FRA = {
+				add_war_support = 0.1
+				send_embargo = GER
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					NOT = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+			USA = {
+				send_embargo = GER
+			}
+		}
 	}
 }
 

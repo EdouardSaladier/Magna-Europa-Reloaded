@@ -1,0 +1,102 @@
+ideas = {
+	country = {
+		usa_manpower_from_west = {
+			picture = eng_imperial_conscription
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 1.73
+			}
+		}
+		
+		usa_resources_from_west = {
+			picture = generic_exploit_mines
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				country_resource_steel = 260
+				country_resource_tungsten = 140
+				country_resource_aluminium = 180
+				country_resource_oil = 680
+			}
+		}
+		
+		sov_manpower_from_east = {
+			picture = eng_imperial_conscription
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.26
+			}
+		}
+		
+		eng_resources_from_malaya = {
+			picture = generic_exploit_mines
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				country_resource_steel = 28
+				country_resource_tungsten = 260
+				country_resource_aluminium = 28
+				country_resource_oil = 28
+				country_resource_rubber = 380
+			}
+		}
+		
+		hol_resources_from_indies = {
+			picture = generic_exploit_mines
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				country_resource_aluminium = 28
+				country_resource_oil = 28
+				country_resource_rubber = 420	
+			}
+		}
+	}
+}

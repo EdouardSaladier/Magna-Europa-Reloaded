@@ -633,8 +633,17 @@ ideas = {
 					OR = {
 						tag = PER
 						tag = IRQ
+						tag = UAE
 					}
 					is_in_faction = no
+				}
+				
+				modifier = {
+					factor = 0
+					tag = SOV
+					NOT = { has_opinion_modifier = MR_pact }
+					has_war = no
+					has_large_ally_not_pick_closed_economy = no
 				}
 
 				modifier = {
@@ -708,8 +717,18 @@ ideas = {
 						# Iraq & Iran are special oil snowflakes
 						tag = PER
 						tag = IRQ
+						tag = UAE
 					}
 				}
+				
+				modifier = {
+					factor = 0
+					tag = SOV
+					NOT = { has_opinion_modifier = MR_pact }
+					has_war = no
+					has_large_ally_not_pick_closed_economy = no
+				}
+				
 				modifier = {
 					factor = 1000
 					has_idea = uncontrolled_exports #Poland should try and escape this as soon as they can
@@ -782,6 +801,14 @@ ideas = {
 					is_in_faction = yes
 					has_war = yes
 				}
+				
+				modifier = {
+					factor = 0
+					tag = SOV
+					NOT = { has_opinion_modifier = MR_pact }
+					has_war = no
+					has_large_ally_not_pick_closed_economy = no
+				}
 
 				# minors not at war should want to get the bonuses from free trade
 				modifier = {
@@ -844,6 +871,13 @@ ideas = {
 
 			ai_will_do = {
    				factor = 1
+				
+				modifier = {
+					factor = 100
+					tag = SOV
+					NOT = { has_opinion_modifier = MR_pact }
+					has_war = no
+				}
 
    				modifier = {
 					factor = 0

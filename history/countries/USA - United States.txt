@@ -41,6 +41,18 @@ set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
 add_command_power = 20
+set_variable = { var = senators_support value = 48 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 218 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
+USA_recalc_congress_icon_frames = yes
+USA = {
+	country_event = { id = usa.50 days = 2 }
+	country_event = { id = usa.51 days = 2 }
+}
 add_offsite_building = { type = industrial_complex level =  101 }
 add_offsite_building = { type = arms_factory level =  7 }
 
@@ -156,6 +168,8 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
+	usa_manpower_from_west
+	usa_resources_from_west
 }
 recruit_character = USA_earl_browder
 recruit_character = USA_william_dudley_pelley
