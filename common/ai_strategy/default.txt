@@ -4,16 +4,12 @@
 default_unit_production = { #If adding country-unique ones, bear in mind that they STACK
 	enable = {
 		always = yes
-		NOT = { original_tag = GER } NOT = { original_tag = FRA } 
+		NOT = { original_tag = GER }
+		NOT = { original_tag = FRA } 
 		NOT = { original_tag = ENG  }
 		NOT = { original_tag = CZE }
 		NOT = { tag = SOV }
 		NOT = { original_tag = ITA }
-		NOT = {
-			OR = {
-				original_tag = JAP
-			}
-		}
 	}
 
 	ai_strategy = {
@@ -1295,11 +1291,6 @@ comintern_avoid_starting_wars_during_endgame = { #Sov should avoid attacking all
 		type = befriend
 		id = "POL"
 		value = 200
-	}
-	ai_strategy = {
-		type = conquer
-		id = JAP
-		value = 400 #These values offset each other. Basically we won't start wars with anyone except for japan while this strategy is active
 	}
 	ai_strategy = {
 		type = conquer

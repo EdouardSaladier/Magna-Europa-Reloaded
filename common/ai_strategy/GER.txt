@@ -58,19 +58,19 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
-		value = 0 #because doctrine this = 2
+		value = 2 #because doctrine this = 4
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = mechanized
-		value = -5 #because doctrine this = 0
+		value = 0 #because doctrine this = 5
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = -17 #because doctrine this = 3
+		value = 0 #because doctrine this = 20
 	}
 
 	ai_strategy = {
@@ -204,7 +204,7 @@ GER_armored_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 4
+		value = 5
 	}
 }
 
@@ -495,8 +495,11 @@ dont_die_in_mountains = {
 				NOT = { country_exists = FRA }
 				date > 1942.5.1
 			}
-			SWI = {	
-				NOt = {has_idea = SWI_swiss_neutrality}
+			AND = {
+				SWI = {	
+					NOT = {has_idea = SWI_swiss_neutrality}
+				}
+				NOT = { is_historical_focus_on = yes }
 			}
 		}
 	}
@@ -519,12 +522,29 @@ war_with_soviets = {
 	abort = {
 		NOT = { country_exists = SOV }
 	}
-
-
+	
+	ai_strategy = {
+		type = antagonize
+		id = "SOV" # Yes, SOU is deliberate
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "SOV"
+		value = 100
+	}
+	
 	ai_strategy = {
 		type = antagonize
 		id = "SOU" # Yes, SOU is deliberate
 		value = 200
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "SOU"
+		value = 100
 	}
 }
 
@@ -3055,11 +3075,14 @@ GER_avoid_war_with_SWI = {
 		}
 	}
 	abort = {
-		OR = {
-			has_wargoal_against = SWI
-			SWI = {
-				NOT = { has_idea = SWI_swiss_neutrality }
+		AND = {
+			OR = {
+				has_wargoal_against = SWI
+				SWI = {
+					NOT = { has_idea = SWI_swiss_neutrality }
+				}
 			}
+			NOT = { is_historical_focus_on = yes }
 		}
 	}
 

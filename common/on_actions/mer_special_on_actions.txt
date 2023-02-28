@@ -1,0 +1,50 @@
+on_actions = {
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						TAG = GER
+					}
+					FROM = {
+						OR = {
+							original_tag = DEN
+							original_tag = NOR
+						}
+						is_ai = yes
+					}
+				}
+				FROM = {
+					add_timed_idea = {
+						idea = decreased_surrender_idea
+						days = 180
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						TAG = GER
+					}
+					FROM = {
+						OR = {
+							original_tag = BEL
+							original_tag = HOL
+							original_tag = LUX
+						}
+						is_ai = yes
+					}
+					FRA = { is_ai = yes }
+					ENG = { is_ai = yes }
+					SWI = { is_ai = yes }
+				}
+				FROM = {
+					add_timed_idea = {
+						idea = decreased_surrender_idea
+						days = 60
+					}
+				}
+			}
+		}
+	}
+}

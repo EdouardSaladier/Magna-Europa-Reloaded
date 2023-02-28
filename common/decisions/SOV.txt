@@ -10789,20 +10789,16 @@ SOV_industry_relocation = {
 				add = 200 # oh shit they are getting close!
 				FROM = {
 					OR = {
-						state = 219 #MOSCOW
-						state = 195 #LENINGRAD
-						state = 202 #KIEV
-						state = 206 #MINSK
-						state = 217 #STALINGRAD
+						state = 229 #MOSCOW
+						state = 119 #LENINGRAD
+						state = 2027 #KIEV
+						state = 2135 #MINSK
+						state = 457 #STALINGRAD
 					}
 					any_neighbor_state = {
 						NOT = { is_fully_controlled_by = ROOT }
 					}
 				}
-			}
-			modifier = {
-				factor = 0
-				SOV_save_pp_for_manpower_trouble = yes
 			}
 		}
 
@@ -10861,7 +10857,7 @@ SOV_industry_relocation = {
 
 		cancel_if_not_visible = no
 
-		cost = 25
+		cost = 5
 
 		days_remove = SOV_industrial_relocation_days
 

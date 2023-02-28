@@ -99,4 +99,24 @@ ideas = {
 			}
 		}
 	}
+	
+	hidden_ideas = {
+	
+		decreased_surrender_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = -0.4	
+			}
+		}
+		
+	}
 }

@@ -452,19 +452,31 @@ GER_reichskommissariats = {
 			has_government = fascism
 			NOR = {
 				all_core_state = {	
-					is_controlled_by = GER
+					OR = {
+						controller = {
+							OR = {
+								is_subject_of = GER
+								AND = {
+									is_in_faction_with = GER
+									is_ai = yes
+								}
+							}
+						}
+						is_controlled_by = GER
+					}
 				}
 			}
 		}
 
 		cost = 0
 		ai_will_do = {
-			factor = 0
 			modifier = {
 				add = 1
-				ENG = { has_capitulated = yes }
+				NOR = { has_capitulated = yes }
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			OR = {
@@ -476,22 +488,19 @@ GER_reichskommissariats = {
 
 		complete_effect = {
 			if = {
-					limit = {
-						124 = {	
-							owner = {
-								has_war_with = ROOT
-							}
+				limit = {
+					124 = {	
+						owner = {
+							has_war_with = ROOT
 						}
 					}
-					
-				
+				}
 				NOR = {
 					every_core_state = {
-							set_state_controller_to	 = RKG
-							add_compliance = 50
-						}
-						
+						set_state_controller_to	 = RKG
+						add_compliance = 50
 					}
+				}
 				RKG = {
 					declare_war_on = {
 						target = NOR
@@ -512,29 +521,29 @@ GER_reichskommissariats = {
 					set_autonomy = { target = RKG autonomy_state = autonomy_integrated_puppet }
 				}
 			}
-				if = {
-					limit = {
-						124 = {	
-							owner = {
-								NOT = { has_war_with = ROOT }
-							}
+			if = {
+				limit = {
+					124 = {	
+						owner = {
+							NOT = { has_war_with = ROOT }
 						}
 					}
-					every_state = {
-						limit = {
-							is_core_of = NOR
-							OR = {
-								is_controlled_by = GER
-								owner = {
-									is_subject_of = GER
-								}
-							}
-						}
-						add_compliance = 50
-						transfer_state_to = RKG
-					}
-					GER = { set_autonomy = { target = RKG autonomy_state = autonomy_integrated_puppet } }
 				}
+				every_state = {
+					limit = {
+						is_core_of = NOR
+						OR = {
+							is_controlled_by = GER
+							owner = {
+								is_subject_of = GER
+							}
+						}
+					}
+					add_compliance = 50
+					transfer_state_to = RKG
+				}
+				GER = { set_autonomy = { target = RKG autonomy_state = autonomy_integrated_puppet } }
+			}
 			hidden_effect = {
 				RKG = {
 					add_ideas = {
@@ -560,13 +569,14 @@ GER_reichskommissariats = {
 
 		cost = 0
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
-				add = 1
-				ENG = { has_capitulated = yes }
+				factor = 0
 				is_historical_focus_on = yes
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			OR = {
@@ -674,9 +684,11 @@ GER_reichskommissariats = {
 			factor = 0
 			modifier = {
 				add = 1
-				ENG = { has_capitulated = yes }
+				HOL = { has_capitulated = yes }
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			OR = {
@@ -688,23 +700,20 @@ GER_reichskommissariats = {
 
 		complete_effect = {
 			if = {
-					limit = {
-						358 = {	
-							owner = {
-								has_war_with = ROOT
-							}
+				limit = {
+					358 = {	
+						owner = {
+							has_war_with = GER
 						}
 					}
-					
-				
+				}
 				HOL = {
 					every_core_state = {
-							add_claim_by = RKN
-							set_state_controller_to	 = RKN
-							add_compliance = 30
-						}
-						
+						add_claim_by = RKN
+						set_state_controller_to	= RKN
+						add_compliance = 30
 					}
+				}
 				RKN = {
 					declare_war_on = {
 						target = HOL
@@ -722,63 +731,48 @@ GER_reichskommissariats = {
 						traits = {
 						}
 					}
-					transfer_state = 1319
+					transfer_state = 1974
 				}
 				set_autonomy = { target = RKN autonomy_state = autonomy_integrated_puppet }
 			}
-				if = {
-					limit = {
-						358 = {	
-							owner = {
-								NOT = { has_war_with = ROOT }
-							}
+			if = {
+				limit = {
+					358 = {	
+						owner = {
+							NOT = { has_war_with = ROOT }
 						}
 					}
-					every_state = {
-						limit = {
-							is_core_of = HOL
-							OR = {
-								is_controlled_by = GER
-								owner = {
-									is_subject_of = GER
-								}
-							}
-						}
-						transfer_state_to = RKN
-						add_claim_by = RKN
-					}
-					GER = { set_autonomy = { target = RKN autonomy_state = autonomy_integrated_puppet } }
 				}
-				
-					if = {
-						limit = {
-							HOL = {
-								exists = yes
+				every_state = {
+					limit = {
+						is_core_of = HOL
+						OR = {
+							is_controlled_by = GER
+							owner = {
 								is_subject_of = GER
 							}
 						}
-						every_state = {
-							limit = {
-								is_owned_by = HOL
-							}
-							transfer_state_to = RKN
-						}
 					}
-				if = {
-					limit = {
-						has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED }
-					}
-					every_state = {
-							limit = {
-								is_owned_by = RKN
-								OR = {
-									state = 2344
-									state = 2717
-								}
-							}
-							transfer_state_to = GER
-						}
+					transfer_state_to = RKN
+					add_claim_by = RKN
 				}
+				GER = { set_autonomy = { target = RKN autonomy_state = autonomy_integrated_puppet } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED }
+				}
+				every_state = {
+					limit = {
+						is_owned_by = RKN
+						OR = {
+							state = 2344
+							state = 2717
+						}
+					}
+					transfer_state_to = GER
+				}
+			}
 			hidden_effect = {
 				RKN = {
 					add_ideas = {
@@ -828,41 +822,33 @@ GER_reichskommissariats = {
 			factor = 0
 			modifier = {
 				add = 1
-				ENG = { has_capitulated = yes }
+				BEL = { has_capitulated = yes }
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
-			has_completed_focus = GER_form_the_reichskommissariats
+			OR = {
+				has_completed_focus = GER_form_the_reichskommissariats
+				has_completed_focus = GER_around_maginot
+			}
 			has_government = fascism
 		}
 
 		complete_effect = {
 			if = {
-					limit = {
-						470 = {	
-							owner = {
-								has_war_with = ROOT
-							}
+				limit = {
+					2368 = {	
+						owner = {
+							has_war_with = ROOT
 						}
 					}
-					
-				
-				BEL = {
-					every_core_state = {
-							limit = {
-								NOT = {
-									state = 485
-								}
-							}
-							set_state_controller_to	 = RKB
-							add_compliance = 30
-						}
-						
-					}
+				}
 				every_state = {
 					limit = {
 						OR = {
+							is_core_of = BEL
 							state = 466
 							state = 1342
 							state = 2333
@@ -871,8 +857,8 @@ GER_reichskommissariats = {
 							state = 2874
 						}
 					}
-					set_state_controller_to	 = RKB
 					add_claim_by = RKB
+					set_state_controller_to	= RKB
 					add_compliance = 30
 				}
 				RKB = {
@@ -884,6 +870,9 @@ GER_reichskommissariats = {
 						target = FRA
 						type = take_claimed_state
 					}
+				}	
+				RKB = {
+					set_cosmetic_tag = HOL_reichskommissariat
 					create_country_leader = {
 						name = "Josef Grohe"
 						desc = "POLITICS_JOSEF_GROHE_DESC"
@@ -893,63 +882,51 @@ GER_reichskommissariats = {
 						traits = {
 						}
 					}
-				}	
-				GER = {
-					puppet = RKB
-					set_autonomy = { target = RKB autonomy_state = autonomy_integrated_puppet }
+					transfer_state = 2368
 				}
-					
+				GER = { transfer_state = 485 }
+				set_autonomy = { target = RKB autonomy_state = autonomy_integrated_puppet }
 			}
-				if = {
-					limit = {
-						470 = {	
-							owner = {
-								NOT = { has_war_with = ROOT }
-							}
+			if = {
+				limit = {
+					2368 = {	
+						owner = {
+							NOT = { has_war_with = ROOT }
 						}
 					}
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = BEL
-								state = 466
-								state = 1342
-								state = 2333
-								state = 472
-								state = 1324
-								state = 2874
-							}
-							OR = {
-								is_controlled_by = GER
-								owner = {
-									is_subject_of = GER
-								}
-							}
-							NOT = {
-								state = 485
-							}
-						}
-						transfer_state_to = RKB
-						add_claim_by = RKB
-					}
-					GER = { set_autonomy = { target = RKB autonomy_state = autonomy_integrated_puppet } }
-					485 = { transfer_state_to = GER }
 				}
-				if = {
+				every_state = {
 					limit = {
-						has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED }
-						515 = {
-							OR = {
-								is_controlled_by = GER
-								controller = { is_subject_of = GER }
-							}
+						OR = {
+							is_core_of = BEL
+							state = 466
+							state = 1342
+							state = 2333
+							state = 472
+							state = 1324
+							state = 2874
 						}
 					}
+					transfer_state_to = RKB
+					add_claim_by = RKB
+				}
+				GER = { transfer_state = 485 }
+				GER = { set_autonomy = { target = RKB autonomy_state = autonomy_integrated_puppet } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED }
 					515 = {
-						transfer_state_to = RKB
+						OR = {
+							is_controlled_by = GER
+							controller = { is_subject_of = GER }
+						}
 					}
-					
 				}
+				515 = {
+					transfer_state_to = RKB
+				}
+			}
 			hidden_effect = {
 				RKB = {
 					add_ideas = {
@@ -997,8 +974,16 @@ GER_reichskommissariats = {
 							}
 						}
 						OR = {
-							controller = { is_subject_of = ROOT }
-							is_controlled_by = ROOT
+							controller = {
+								OR = {
+									is_subject_of = GER
+									AND = {
+										is_in_faction_with = GER
+										is_ai = yes
+									}
+								}
+							}
+							is_controlled_by = GER
 						}
 					}
 				}
@@ -1014,6 +999,8 @@ GER_reichskommissariats = {
 				SOV = { has_capitulated = yes }
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
@@ -1084,8 +1071,16 @@ GER_reichskommissariats = {
 							}
 						}
 						OR = {
-							controller = { is_subject_of = ROOT }
-							is_controlled_by = ROOT
+							controller = {
+								OR = {
+									is_subject_of = GER
+									AND = {
+										is_in_faction_with = GER
+										is_ai = yes
+									}
+								}
+							}
+							is_controlled_by = GER
 						}
 					}
 				}
@@ -1101,6 +1096,8 @@ GER_reichskommissariats = {
 				SOV = { has_capitulated = yes }
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
@@ -1164,8 +1161,16 @@ GER_reichskommissariats = {
 							}
 						}
 						OR = {
-							controller = { is_subject_of = ROOT }
-							is_controlled_by = ROOT
+							controller = {
+								OR = {
+									is_subject_of = GER
+									AND = {
+										is_in_faction_with = GER
+										is_ai = yes
+									}
+								}
+							}
+							is_controlled_by = GER
 						}
 					}
 				}
@@ -1175,12 +1180,10 @@ GER_reichskommissariats = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				SOV = { has_capitulated = yes }
-			}
+			factor = 1
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
@@ -1236,6 +1239,7 @@ GER_reichskommissariats = {
 			}
 		}
 	}
+	
 	GER_expand_ostland = {
 
 		icon = ger_reichskommissariats
@@ -1281,11 +1285,17 @@ GER_reichskommissariats = {
 							}
 						}
 						OR = {
-								is_controlled_by = GER
-								controller = {
+							controller = {
+								OR = {
 									is_subject_of = GER
+									AND = {
+										is_in_faction_with = GER
+										is_ai = yes
+									}
 								}
 							}
+							is_controlled_by = GER
+						}
 					}
 				}
 			}
@@ -1300,6 +1310,8 @@ GER_reichskommissariats = {
 				SOV = { has_capitulated = yes }
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
@@ -1357,84 +1369,8 @@ GER_reichskommissariats = {
 				tooltip = GER_RKU_required_states_tt
 				all_state = {
 					if = {
-							limit = {
-								OR = {
-									AND = {
-										region = 100
-										NOT = {
-											is_transnistria = yes
-										}
-									}
-									AND = {
-										region = 99
-										NOT = {
-											is_transnistria = yes
-										}
-									 }
-									AND = {
-										region = 42
-										NOT = {
-											state = 1002
-											state = 1131
-										}
-									}
-									region = 97
-									region = 107
-									region = 106
-									AND = {
-										region = 78
-										NOT = {
-											state = 2087
-											state = 2086
-											state = 657
-											state = 2089
-										}
-									}
-									state = 2043
-									state = 2092
-									state = 2091
-									state = 2090
-									state = 2112
-									state = 2124
-									state = 2113
-									state = 2059
-									state = 459
-									state = 1110
-									state = 434
-								}
-							}
+						limit = {
 							OR = {
-								is_controlled_by = GER
-								controller = {
-									is_subject_of = GER
-								}
-							}
-						}
-				}
-			}
-		}
-
-		cost = 0
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				SOV = { has_capitulated = yes }
-			}
-		}
-
-		visible = {
-			has_completed_focus = GER_form_the_reichskommissariats
-			has_government = fascism
-		}
-
-		complete_effect = {
-			
-					
-				every_state = {
-					limit = {
-						OR = {
 								AND = {
 									region = 100
 									NOT = {
@@ -1478,74 +1414,150 @@ GER_reichskommissariats = {
 								state = 1110
 								state = 434
 							}
-					}
-					add_claim_by = RKU
-					transfer_state_to = RKU
-					add_compliance = 30
-				}	
-				RKU = {
-					set_cosmetic_tag = HOL_reichskommissariat
-					create_country_leader = {
-						name = "Erich Koch"
-						desc = "POLITICS_HINRICH_LOHSE_DESC"
-						picture = GFX_portrait_Erich_Koch
-						expire = "1965.1.1"
-						ideology = nazism
-						traits = {
+						}
+						OR = {
+							controller = {
+								OR = {
+									is_subject_of = GER
+									AND = {
+										is_in_faction_with = GER
+										is_ai = yes
+									}
+								}
+							}
+							is_controlled_by = GER
 						}
 					}
 				}
-				GER = {
-					puppet = RKU
-					set_autonomy = { target = RKU autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+							AND = {
+								region = 100
+								NOT = {
+									is_transnistria = yes
+								}
+							}
+							AND = {
+								region = 99
+								NOT = {
+									is_transnistria = yes
+								}
+							 }
+							AND = {
+								region = 42
+								NOT = {
+									state = 1002
+									state = 1131
+								}
+							}
+							region = 97
+							region = 107
+							region = 106
+							AND = {
+								region = 78
+								NOT = {
+									state = 2087
+									state = 2086
+									state = 657
+									state = 2089
+								}
+							}
+							state = 2043
+							state = 2092
+							state = 2091
+							state = 2090
+							state = 2112
+							state = 2124
+							state = 2113
+							state = 2059
+							state = 459
+							state = 1110
+							state = 434
+						}
 				}
-			
-				
-					if = {
-						limit = {
-							UKR = {
-								exists = yes
+				add_claim_by = RKU
+				transfer_state_to = RKU
+				add_compliance = 30
+			}	
+			RKU = {
+				set_cosmetic_tag = HOL_reichskommissariat
+				create_country_leader = {
+					name = "Erich Koch"
+					desc = "POLITICS_HINRICH_LOHSE_DESC"
+					picture = GFX_portrait_Erich_Koch
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+			}
+			GER = {
+				puppet = RKU
+				set_autonomy = { target = RKU autonomy_state = autonomy_integrated_puppet }
+			}
+			if = {
+				limit = {
+					UKR = {
+						exists = yes
+						is_subject_of = GER
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = UKR
+						NOT = {
+							is_core_of = WUK
+						}
+					}
+					transfer_state_to = RKU
+				}
+				every_state = {
+					limit = {
+						is_owned_by = UKR
+						is_core_of = WUK
+					}
+					transfer_state_to = GER
+				}
+			}
+			if = {
+				limit = {
+					GGV = {
+						exists = yes
+						is_subject_of = GER
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = WUK
+						is_core_of = GAL
+						OR = {
+							is_controlled_by = GER
+							controller = {
 								is_subject_of = GER
 							}
 						}
-						every_state = {
-							limit = {
-								is_owned_by = UKR
-								NOT = {
-									is_core_of = WUK
-								}
-							}
-							transfer_state_to = RKU
-						}
-						every_state = {
-							limit = {
-								is_owned_by = UKR
-								is_core_of = WUK
-							}
-							transfer_state_to = GER
-						}
 					}
-				if = {
-					limit = {
-						GGV = {
-							exists = yes
-							is_subject_of = GER
-						}
-					}
-					every_state = {
-						limit = {
-							is_core_of = WUK
-							is_core_of = GAL
-							OR = {
-								is_controlled_by = GER
-								controller = {
-									is_subject_of = GER
-								}
-							}
-						}
-						transfer_state_to = GGV
-					}
+					transfer_state_to = GGV
 				}
+			}
 			hidden_effect = {
 				RKU = {
 					add_ideas = {
@@ -1556,6 +1568,7 @@ GER_reichskommissariats = {
 			}
 		}
 	}
+	
 	GER_expand_ukriane = {
 
 		icon = ger_reichskommissariats
@@ -1639,11 +1652,17 @@ GER_reichskommissariats = {
 							}
 						}
 						OR = {
-								is_controlled_by = GER
-								controller = {
+							controller = {
+								OR = {
 									is_subject_of = GER
+									AND = {
+										is_in_faction_with = GER
+										is_ai = yes
+									}
 								}
 							}
+							is_controlled_by = GER
+						}
 					}
 				}
 			}
@@ -1658,6 +1677,8 @@ GER_reichskommissariats = {
 				SOV = { has_capitulated = yes }
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
@@ -1668,34 +1689,34 @@ GER_reichskommissariats = {
 			every_state = {
 				limit = {
 					OR = {
-							region = 98
-							region = 101
-							region = 133
-							region = 134
-							region = 138
-							AND = {
-								region = 137
-								NOT = {
-									state = 642
-									state = 2409
-									state = 2864
-									state = 2410
-								}
+						region = 98
+						region = 101
+						region = 133
+						region = 134
+						region = 138
+						AND = {
+							region = 137
+							NOT = {
+								state = 642
+								state = 2409
+								state = 2864
+								state = 2410
 							}
-							region = 104
-							region = 105
-							region = 153
-							region = 152
-							region = 140
-							state = 359
-							state = 2516
-							state = 2515
-							state = 2730
-							state = 2520
-							state = 330
-							state = 2183
-							state = 303
 						}
+						region = 104
+						region = 105
+						region = 153
+						region = 152
+						region = 140
+						state = 359
+						state = 2516
+						state = 2515
+						state = 2730
+						state = 2520
+						state = 330
+						state = 2183
+						state = 303
+					}
 				}
 				transfer_state_to = RKU
 				add_compliance = 30 
@@ -1703,6 +1724,7 @@ GER_reichskommissariats = {
 			
 		}
 	}
+	
 	GER_reichskommissariat_moskowien = {
 
 		icon = ger_reichskommissariats
@@ -1821,8 +1843,16 @@ GER_reichskommissariats = {
 							}
 						}
 						OR = {
-							controller = { is_subject_of = ROOT }
-							is_controlled_by = ROOT
+							controller = {
+								OR = {
+									is_subject_of = GER
+									AND = {
+										is_in_faction_with = GER
+										is_ai = yes
+									}
+								}
+							}
+							is_controlled_by = GER
 						}
 					}
 				}
@@ -1838,6 +1868,8 @@ GER_reichskommissariats = {
 				SOV = { has_capitulated = yes }
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
@@ -1971,8 +2003,16 @@ GER_reichskommissariats = {
 			SWI = {
 				all_core_state = {
 					OR = {
-						controller = { is_subject_of = ROOT }
-						is_controlled_by = ROOT
+						controller = {
+							OR = {
+								is_subject_of = GER
+								AND = {
+									is_in_faction_with = GER
+									is_ai = yes
+								}
+							}
+						}
+						is_controlled_by = GER
 					}
 				}
 			}
@@ -1981,12 +2021,14 @@ GER_reichskommissariats = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
-				add = 1
-				SOV = { has_capitulated = yes }
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			OR = {
@@ -2034,6 +2076,7 @@ GER_reichskommissariats = {
 			}
 		}
 	}
+	
 	GER_generalgouvernement_form = {
 
 		icon = ger_reichskommissariats
@@ -2048,11 +2091,18 @@ GER_reichskommissariats = {
 							is_ggv_state = yes	
 						}
 						OR = {
+							controller = {
+								OR = {
+									is_subject_of = GER
+									AND = {
+										is_in_faction_with = GER
+										is_ai = yes
+									}
+								}
+							}
 							is_controlled_by = GER
-							controller = { is_subject_of = GER }
 						}
 					}
-					
 				}
 			}
 		}
@@ -2066,6 +2116,8 @@ GER_reichskommissariats = {
 				FRA = { has_capitulated = yes }
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			OR = {
@@ -2077,26 +2129,23 @@ GER_reichskommissariats = {
 
 		complete_effect = {
 			if = {
-					limit = {
-						508 = {	
-							owner = {
-								has_war_with = ROOT
-							}
+				limit = {
+					508 = {	
+						owner = {
+							has_war_with = ROOT
 						}
 					}
-					
-				
+				}
 				POL = {
 					every_core_state = {
-							limit = {
-								is_ggv_state = yes
-							}
-							add_claim_by = GGV
-							set_state_controller_to	 = GGV
-							add_compliance = 30
+						limit = {
+							is_ggv_state = yes
 						}
-						
+						add_claim_by = GGV
+						set_state_controller_to	= GGV
+						add_compliance = 30
 					}
+				}
 				GGV = {
 					declare_war_on = {
 						target = POL
@@ -2180,9 +2229,17 @@ GER_reichskommissariats = {
 							is_ger_occupation_zone = yes	
 						}
 						OR = {
-						is_controlled_by = GER
-						controller = { is_subject_of = GER }
-					}
+							controller = {
+								OR = {
+									is_subject_of = GER
+									AND = {
+										is_in_faction_with = GER
+										is_ai = yes
+									}
+								}
+							}
+							is_controlled_by = GER
+						}
 					}
 					
 				}
@@ -2196,9 +2253,10 @@ GER_reichskommissariats = {
 			modifier = {
 				add = 1
 				FRA = { has_capitulated = yes }
-				VIC = { exists = no }
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			OR = {
@@ -2209,44 +2267,42 @@ GER_reichskommissariats = {
 		}
 
 		complete_effect = {
-				FRA = {
-					every_core_state = {
-							limit = {
-								is_ger_occupation_zone = yes
-								is_alsace_lorraine = no
-							}
-							add_claim_by = MVF
-							transfer_state_to = MVF
-							
-						}
-						
+			FRA = {
+				every_core_state = {
+					limit = {
+						is_ger_occupation_zone = yes
+						is_alsace_lorraine = no
 					}
-				MVF = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment_1
-						amount = 300000
-						producer = GER
-					}
-					add_manpower = 300000
-					every_owned_state = {
-						add_compliance  = 30
+					add_claim_by = MVF
+					transfer_state_to = MVF
+				}
+			}
+			MVF = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 300000
+					producer = GER
+				}
+				add_manpower = 300000
+				every_owned_state = {
+					add_compliance  = 30
+				}
+			}
+			GER = { set_autonomy = { target = MVF autonomy_state = autonomy_integrated_puppet } }
+			if = {
+				limit = {
+					FRA = {
+						exists = yes
+						is_subject_of = GER
 					}
 				}
-				GER = { set_autonomy = { target = MVF autonomy_state = autonomy_integrated_puppet } }
-				if = {
-						limit = {
-							FRA = {
-								exists = yes
-								is_subject_of = GER
-							}
-						}
-						every_state = {
-							limit = {
-								is_owned_by = FRA
-							}
-							transfer_state_to = MVF
-						}
-					}	
+				every_state = {
+					limit = {
+						is_owned_by = FRA
+					}
+					transfer_state_to = MVF
+				}
+			}	
 			
 			hidden_effect = {
 				MVF = {
@@ -2272,11 +2328,18 @@ GER_reichskommissariats = {
 							is_vichy_state = yes
 						}
 						OR = {
-						is_controlled_by = GER
-						controller = { is_subject_of = GER }
+							controller = {
+								OR = {
+									is_subject_of = GER
+									AND = {
+										is_in_faction_with = GER
+										is_ai = yes
+									}
+								}
+							}
+							is_controlled_by = GER
+						}
 					}
-					}
-					
 				}
 			}
 			custom_trigger_tooltip = {
@@ -2298,10 +2361,10 @@ GER_reichskommissariats = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
-				add = 1
-				FRA = { has_capitulated = yes }
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 
@@ -2314,67 +2377,64 @@ GER_reichskommissariats = {
 		}
 
 		complete_effect = {
-				FRA = {
-					every_core_state = {
-							limit = {
-								is_vichy_state = yes
-								is_controlled_by = GER
-							}
-							add_claim_by = MVF
-							transfer_state_to = MVF
-							
+			FRA = {
+				every_core_state = {
+						limit = {
+							is_vichy_state = yes
+							is_controlled_by = GER
 						}
+						add_claim_by = MVF
+						transfer_state_to = MVF
 						
 					}
-				MVF = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment_1
-						amount = 300000
-						producer = GER
-					}
-					add_manpower = 300000
-					every_owned_state = {
-						add_compliance  = 30
-					}
+					
 				}
-				GER = { set_autonomy = { target = MVF autonomy_state = autonomy_integrated_puppet } }
-				if = {
-						limit = {
-							FRA = {
-								exists = yes
-								is_subject_of = GER
-							}
-						}
-						every_state = {
-							limit = {
-								is_owned_by = FRA
-							}
-							transfer_state_to = MVF
-						}
-					}
-				if = {
+			MVF = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 300000
+					producer = GER
+				}
+				add_manpower = 300000
+				every_owned_state = {
+					add_compliance  = 30
+				}
+			}
+			GER = { set_autonomy = { target = MVF autonomy_state = autonomy_integrated_puppet } }
+			if = {
 					limit = {
-						is_in_faction_with = ITA
-					}
-					every_state = {
-						limit = {
-							is_ita_occupation_zone = yes
+						FRA = {
+							exists = yes
+							is_subject_of = GER
 						}
-						transfer_state_to = ITA
 					}
-				}
-				else = {
 					every_state = {
 						limit = {
-							is_ita_occupation_zone = yes
-							is_controlled_by = ROOT
+							is_owned_by = FRA
 						}
 						transfer_state_to = MVF
 					}
 				}
-			
-			
-					
+			if = {
+				limit = {
+					is_in_faction_with = ITA
+				}
+				every_state = {
+					limit = {
+						is_ita_occupation_zone = yes
+					}
+					transfer_state_to = ITA
+				}
+			}
+			else = {
+				every_state = {
+					limit = {
+						is_ita_occupation_zone = yes
+						is_controlled_by = ROOT
+					}
+					transfer_state_to = MVF
+				}
+			}
 		}
 	}
 	GER_settle_eastern_france = {
@@ -2382,17 +2442,30 @@ GER_reichskommissariats = {
 
 		available = {
 			has_government = fascism
+			
 			custom_trigger_tooltip = {
 				tooltip = GER_WSL_required_states_tt
+				RKB = {
+					exists = yes
+					is_subject_of = GER
+				}
 				all_state = {
 					if = {
 						limit = {
 							is_westland_state = yes	
 						}
 						OR = {
-						is_controlled_by = GER
-						controller = { is_subject_of = GER }
-					}
+							controller = {
+								OR = {
+									is_subject_of = GER
+									AND = {
+										is_in_faction_with = GER
+										is_ai = yes
+									}
+								}
+							}
+							is_controlled_by = GER
+						}
 					}
 					
 				}
@@ -2402,12 +2475,14 @@ GER_reichskommissariats = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
-				add = 1
-				FRA = { has_capitulated = yes }
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
+		
+		fire_only_once = yes
 
 		visible = {
 			OR = {
@@ -2418,14 +2493,14 @@ GER_reichskommissariats = {
 		}
 
 		complete_effect = {
-				every_state = {
-						limit = {
-							is_westland_state = yes
-						}
-						transfer_state_to = WSL
-					}
-				GER = { puppet = WSL }
-				GER = { set_autonomy = { target = WSL autonomy_state = autonomy_integrated_puppet } }	
+			every_state = {
+				limit = {
+					is_westland_state = yes
+				}
+				transfer_state_to = WSL
+			}
+			GER = { puppet = WSL }
+			GER = { set_autonomy = { target = WSL autonomy_state = autonomy_integrated_puppet } }	
 			if = {
 				limit = {
 					NOT = { has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED } }

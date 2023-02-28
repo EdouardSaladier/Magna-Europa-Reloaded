@@ -73,7 +73,7 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 5
+		value = 15
 	}
 
 	ai_strategy = {
@@ -519,6 +519,12 @@ SOV_template_design_2 = {
 	}
 	enable = {
 		date > 1940.1.1
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
 	}
 
 	ai_strategy = {
