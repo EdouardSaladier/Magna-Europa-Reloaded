@@ -10,6 +10,9 @@ NDefines.NGame.SAVE_VERSION = 7
 
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.15
 
+NDefines.NProduction.EQUIPMENT_BASE_LEND_LEASE_WEIGHT = 0.5
+NDefines.NProduction.LEND_LEASE_DELIVERY_TOTAL_DAYS = 10 -- Nr of days between lend lease deliveries
+
 NDefines.NSupply.CAPITAL_SUPPLY_BASE = 1.6 -- base supply for capital
 NDefines.NSupply.CAPITAL_INITIAL_SUPPLY_FLOW = 3.0 -- starting supply from capital
 NDefines.NSupply.CAPITAL_STARTING_PENALTY_PER_PROVINCE = 0.3 -- starting penalty that will be added as supply moves away from its origin (modified by stuff like terrain)
@@ -26,6 +29,8 @@ NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 0.6
 NDefines.NSupply.FLOATING_HARBOR_INITIAL_SUPPLY_FLOW = 0.8
 NDefines.NSupply.NUM_RAILWAYS_TRAIN_FACTOR = 0.2  --Distance should matter much more now
 NDefines.NSupply.TRUCK_ATTRITION = 0.01  --More supply truck attrition
+NDefines.NSupply.AVAILABLE_MANPOWER_STATE_SUPPLY = 0.1
+NDefines.NSupply.NON_CORE_MANPOWER_STATE_SUPPLY = 0.05
 
 NDefines.NAir.AIR_REGION_SUPERIORITY_PIXEL_SCALE = 0.02
 

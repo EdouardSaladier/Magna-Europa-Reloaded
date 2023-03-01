@@ -405,6 +405,12 @@ USA_stop_soviet_from_falling = {
 		id = "SOV"
 		value = 100
 	}
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "SOV"
+		value = 500
+	}
 }
 
 # this one is same as above, but if you have entered the war yourself
@@ -441,6 +447,12 @@ USA_stop_soviet_from_falling_2 = {
 		type = support
 		id = "SOV"
 		value = 100
+	}
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "SOV"
+		value = 500
 	}
 }
 
