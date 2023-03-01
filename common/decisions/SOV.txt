@@ -11758,6 +11758,158 @@ SOV_great_patriotic_war = {
 			org_loss_when_moving = -0.1
 		}
 	}
+	
+	SOV_this_is_not_over_yet_1 = {
+		priority = 101
+
+		icon = generic_army_support
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			surrender_progress > 0.15
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			is_ai = yes
+		}
+
+		days_remove = 720
+
+		modifier = {
+			mobilization_speed = 0.5
+		}
+
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 20 }
+		}
+	}
+	
+	SOV_this_is_not_over_yet_2 = {
+		priority = 101
+
+		icon = generic_army_support
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			surrender_progress > 0.3
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			is_ai = yes
+		}
+
+		days_remove = 720
+
+		modifier = {
+			mobilization_speed = 0.5
+		}
+
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 20 }
+		}
+	}
+	
+	SOV_this_is_not_over_yet_3 = {
+		priority = 101
+
+		icon = generic_army_support
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			surrender_progress > 0.5
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			is_ai = yes
+		}
+
+		days_remove = 720
+
+		modifier = {
+			mobilization_speed = 0.5
+		}
+
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 40 }
+		}
+	}
+	
+	SOV_this_is_not_over_yet_4 = {
+		priority = 101
+
+		icon = generic_army_support
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			surrender_progress > 0.75
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			is_ai = yes
+		}
+
+		days_remove = 720
+
+		modifier = {
+			mobilization_speed = 0.5
+		}
+
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 40 }
+		}
+	}
 
 	SOV_order_227 = {
 		priority = 101
