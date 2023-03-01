@@ -10784,7 +10784,7 @@ SOV_industry_relocation = {
 		icon = generic_construction
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 200 # oh shit they are getting close!
 				FROM = {
@@ -10857,7 +10857,7 @@ SOV_industry_relocation = {
 
 		cancel_if_not_visible = no
 
-		cost = 5
+		cost = 0
 
 		days_remove = SOV_industrial_relocation_days
 
@@ -10991,8 +10991,6 @@ SOV_industry_relocation = {
 					add_to_temp_variable = { SOV_factories_counter = 1 }
 				}
 			}
-			custom_effect_tooltip = SOV_relocate_industry_repair_tt
-			custom_effect_tooltip = SOV_relocate_industry_lose_control_tt
 		}
 	}
 
@@ -11778,7 +11776,6 @@ SOV_great_patriotic_war = {
 			any_enemy_country = {
 				SOV_is_major_not_original_sov = yes
 			}
-			has_completed_focus = SOV_lessons_of_war
 			surrender_progress > 0.15
 		}
 
@@ -11802,7 +11799,7 @@ SOV_great_patriotic_war = {
 
 		modifier = {
 			army_core_defence_factor = 0.25
-			mobilization_speed = 0.15
+			mobilization_speed = 0.25
 		}
 
 		complete_effect = {

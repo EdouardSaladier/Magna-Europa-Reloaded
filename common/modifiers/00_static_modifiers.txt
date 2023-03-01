@@ -192,11 +192,11 @@ compliance_effect = {
 	local_factories = 0.65
 	local_non_core_manpower = 0.18
 	local_resources = 0.60
-	#local_supplies = 0.2
+	local_supplies = 0.25
 }
 
 core = {
-	#local_supplies = 0.2
+	local_supplies = 0.25 #Less supplies consumed in core territory
 }
 
 # On States that are owned by a non-core country
@@ -210,6 +210,7 @@ non_core_controller = {
 	local_factories = -0.75
 	#local_manpower = -0.75
 	local_resources = -0.65
+	local_supplies = -0.25
 }
 
 lacking_consumer_goods = {
