@@ -3099,16 +3099,28 @@ special_projects = {
 	GER_dismantle_maginot = {
 
 		icon = generic_construction
+		
+		allowed = {
+			original_tag = GER 
+		}
 
 		available = {
-			#has_war = yes
-			controls_state = 28
+			controls_state = 566
+			controls_state = 606
+			controls_state = 547
 			if = {
 				limit = {
 					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
 				}
-				controls_state = 18
-				controls_state = 29
+				controls_state = 2333
+				controls_state = 1342
+				controls_state = 466
+				controls_state = 2365
+				controls_state = 525
+				controls_state = 515
+				controls_state = 538
+				controls_state = 544
+				controls_state = 2608
 			}
 		}
 
@@ -3119,28 +3131,44 @@ special_projects = {
 			factor = 0
 		}
 		visible = {
-			#has_war = yes
-			controls_state = 28
-			if = {
-				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+			FRA = {
+				any_owned_state = {
+					is_controlled_by = ROOT
 				}
-				controls_state = 18
-				controls_state = 29
 			}
+			NOT = { is_in_faction_with = FRA }
 		}
 		days_remove = 180
 		modifier = {
 			civilian_factory_use = 5
 		}
 		remove_effect = {
-			28 = {
+			566 = {
 				set_building_level = {
 					type = bunker
 					level = 2
 					province = {
 						all_provinces = yes
-						limit_to_border = no
+						level > 2
+					}
+				}
+			}
+			606 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						level > 2
+					}
+				}
+			}
+			547 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
 						level > 2
 					}
 				}
@@ -3149,24 +3177,92 @@ special_projects = {
 				limit = {
 					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
 				}
-				18 = {
+				2333 = {
 					set_building_level = {
 						type = bunker
 						level = 2
 						province = {
 							all_provinces = yes
-							limit_to_border = no
 							level > 2
 						}
 					}
 				}
-				29 = {
+				1342 = {
 					set_building_level = {
 						type = bunker
 						level = 2
 						province = {
 							all_provinces = yes
-							limit_to_border = no
+							level > 2
+						}
+					}
+				}
+				466 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				2365 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				525 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				515 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				538 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				544 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				2608 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
 							level > 2
 						}
 					}
@@ -3177,6 +3273,12 @@ special_projects = {
 					has_idea = FRA_protected_by_the_maginot_line
 				}
 				remove_ideas = FRA_protected_by_the_maginot_line
+			}
+			if = {
+				limit = {
+					FRA = { has_idea = FRA_protected_by_the_maginot_line }
+				}
+				FRA = { remove_ideas = FRA_protected_by_the_maginot_line }
 			}
 		}
 		complete_effect = {
