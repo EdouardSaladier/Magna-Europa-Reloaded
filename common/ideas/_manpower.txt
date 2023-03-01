@@ -531,13 +531,6 @@ ideas = {
 					NOT = { tag = CHI }
 					manpower_per_military_factory >  2800
 				}
-
-				modifier = { # china relies a lot on throwing bodies at the enemy
-					factor = 3
-
-					tag = CHI
-					has_manpower < 200000
-				}
 				modifier = {
 					factor = 10
 					original_tag = SOV

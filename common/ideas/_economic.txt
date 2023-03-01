@@ -646,13 +646,6 @@ ideas = {
 					has_large_ally_not_pick_closed_economy = no
 				}
 
-				modifier = {
-					factor = 300
-
-					tag = BRA
-					date > 1943.1.1 # at this point we can probably cash in on rubber lack in the world
-				}
-
 				# Oil for hitlers oil throne!
 				modifier = {
 					factor = 600

@@ -263,11 +263,11 @@ BUL_historical_requirements_met = {
 			any_controlled_state = {
 				is_core_of = GER
 				NOT = {
-					state = 188
-					state = 763
-					state = 5
-					state = 807
-					state = 85
+					OR = {
+						is_core_of = ESP
+						is_core_of = LIT
+						is_core_of = POL
+					}
 				}
 			}
 		}

@@ -778,9 +778,19 @@ BUL_start_ff_civil_war = {
 	#Default state
 	if = {
 		limit = {
-			controls_state = 211
+			controls_state = 1580
+			controls_state = 868
+			controls_state = 2525
+			controls_state = 820
+			controls_state = 1573
+			controls_state = 1572
 		}
-		211 = { set_state_flag = BUL_ff_state_flag }
+		1580 = { set_state_flag = BUL_ff_state_flag }
+		868 = { set_state_flag = BUL_ff_state_flag }
+		2525 = { set_state_flag = BUL_ff_state_flag }
+		820 = { set_state_flag = BUL_ff_state_flag }
+		1573 = { set_state_flag = BUL_ff_state_flag }
+		1572 = { set_state_flag = BUL_ff_state_flag }
 	}
 	#Bonuses from BS
 	if = {
@@ -794,7 +804,18 @@ BUL_start_ff_civil_war = {
 				NOT = { has_country_flag = BUL_bs_integrated_flag }
 			}
 			add_to_variable = { BUL_ff_coup_size = 0.05 }
-			212 = { set_state_flag = BUL_ff_state_flag }
+			877 = { set_state_flag = BUL_ff_state_flag }
+			878 = { set_state_flag = BUL_ff_state_flag }
+			1570 = { set_state_flag = BUL_ff_state_flag }
+			900 = { set_state_flag = BUL_ff_state_flag }
+			2524 = { set_state_flag = BUL_ff_state_flag }
+			905 = { set_state_flag = BUL_ff_state_flag }
+			2834 = { set_state_flag = BUL_ff_state_flag }
+			1569 = { set_state_flag = BUL_ff_state_flag }
+			2833 = { set_state_flag = BUL_ff_state_flag }
+			2752 = { set_state_flag = BUL_ff_state_flag }
+			2835 = { set_state_flag = BUL_ff_state_flag }
+			1571 = { set_state_flag = BUL_ff_state_flag }
 		}
 	}
 	#Bonuses from BZNS
@@ -809,7 +830,12 @@ BUL_start_ff_civil_war = {
 				NOT = { has_country_flag = BUL_bzns_integrated_flag }
 			}
 			add_to_variable = { BUL_ff_coup_size = 0.05 }
-			801 = { set_state_flag = BUL_ff_state_flag } 
+			1575 = { set_state_flag = BUL_ff_state_flag } 
+			1574 = { set_state_flag = BUL_ff_state_flag } 
+			1576 = { set_state_flag = BUL_ff_state_flag } 
+			831 = { set_state_flag = BUL_ff_state_flag } 
+			1577 = { set_state_flag = BUL_ff_state_flag } 
+			1578 = { set_state_flag = BUL_ff_state_flag } 
 		}
 	}
 	#Bonuses from Greek partisans
@@ -850,7 +876,7 @@ BUL_start_ff_civil_war = {
 			limit = {
 				is_core_of = YUG
 				is_core_of = BUL
-				NOT = { state = 106 }
+				NOT = { is_core_of = MAC }
 			}
 			set_state_flag = BUL_ff_state_flag
 		}
@@ -917,13 +943,13 @@ BUL_start_ff_civil_war = {
 	#Set FF capital based on the states they get in the split
 	if = {
 		limit = {
-			48 = { has_state_flag = BUL_ff_state_flag } #Sofia is FF's capital
+			1566 = { has_state_flag = BUL_ff_state_flag } #Sofia is FF's capital
 		}
 		#START CIVIL WAR
 		start_civil_war = {
 			ideology = communism
 			size = BUL_ff_coup_size
-			capital = 48
+			capital = 1566
 			states = all
 			states_filter = {
 				has_state_flag = BUL_ff_state_flag
@@ -932,13 +958,13 @@ BUL_start_ff_civil_war = {
 	}
 	else_if = {
 		limit = {
-			212 = { has_state_flag = BUL_ff_state_flag } #Plovdiv is FF's capital
+			878 = { has_state_flag = BUL_ff_state_flag } #Plovdiv is FF's capital
 		}
 		#START CIVIL WAR
 		start_civil_war = {
 			ideology = communism
 			size = BUL_ff_coup_size
-			capital = 212
+			capital = 878
 			states = all
 			states_filter = {
 				has_state_flag = BUL_ff_state_flag
@@ -950,7 +976,7 @@ BUL_start_ff_civil_war = {
 		start_civil_war = {
 			ideology = communism
 			size = BUL_ff_coup_size
-			capital = 211
+			capital = 1580
 			states = all
 			states_filter = {
 				has_state_flag = BUL_ff_state_flag
