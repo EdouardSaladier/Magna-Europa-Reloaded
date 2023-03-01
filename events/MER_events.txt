@@ -1,0 +1,166 @@
+﻿###########################
+# MER Events
+###########################
+
+add_namespace = mer_event
+
+# join the allies
+
+country_event = {
+	id = mer_event.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.1 FROM = [From.GetName]" }
+	title = mer_event.1.t
+	desc = mer_event.1.desc
+	picture = GFX_report_event_ast_navy
+	trigger = {
+		tag = USA
+		has_government = democratic
+		date > 1941.12.01
+		ENG = { 
+			exists = yes
+			has_government = democratic
+			is_faction_leader = yes
+			has_war = yes
+		}
+		NOT = { is_in_faction_with = ENG }
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mer_event.1.a #accept
+		ai_chance = {
+			factor = 200
+		}
+		ENG = { add_to_faction = USA }
+	}
+	option = {
+		name = mer_event.1.b #refuse
+		ai_chance = {
+			factor = 0
+		}
+		
+	}
+}
+
+country_event = {
+	id = mer_event.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.2 FROM = [From.GetName]" }
+	title = mer_event.2.t
+	desc = mer_event.2.desc
+	picture = GFX_report_event_ast_navy
+	trigger = {
+		tag = USA
+		has_government = democratic
+		date > 1942.01.01
+		ENG = { 
+			exists = yes
+			has_government = democratic
+			is_faction_leader = yes
+			has_war = yes
+		}
+		FRA = {
+			is_in_faction_with = ENG
+			has_capitulated = yes
+		}
+		is_in_faction_with = ENG
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mer_event.2.a #accept
+		ai_chance = {
+			factor = 200
+		}
+		set_faction_leader = yes
+		set_faction_name = UNITED_NATION
+	}
+	option = {
+		name = mer_event.2.b #refuse
+		ai_chance = {
+			factor = 0
+		}
+		
+	}
+}
+
+country_event = {
+	id = mer_event.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.3 FROM = [From.GetName]" }
+	title = mer_event.3.t
+	desc = mer_event.3.desc
+	picture = GFX_report_event_degaulle_churchill
+	trigger = {
+		tag = FRA
+		has_government = democratic
+		has_war = yes
+		has_capitulated = no
+		ENG = { 
+			exists = yes
+			has_government = democratic
+			is_faction_leader = yes
+			has_war = yes
+		}
+		is_in_faction_with = ENG
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mer_event.3.a #accept
+		ai_chance = {
+			factor = 200
+		}
+		set_faction_name = ENTENTE_CORDIALE
+	}
+	option = {
+		name = mer_event.3.b #refuse
+		ai_chance = {
+			factor = 0
+		}
+		
+	}
+}
+
+country_event = {
+	id = mer_event.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.4 FROM = [From.GetName]" }
+	title = mer_event.4.t
+	desc = mer_event.4.desc
+	picture = GFX_report_event_ast_navy
+	trigger = {
+		tag = IRE
+		has_government = democratic
+		date > 1937.12.28
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mer_event.4.a #accept
+		ai_chance = {
+			factor = 200
+		}
+		ENG = {
+			end_puppet = IRE
+		}
+		drop_cosmetic_tag = yes
+		leave_faction = yes
+		if = {
+			limit = { NOT = { has_idea = neutrality_idea } }
+			add_ideas = neutrality_idea
+		}
+		remove_ideas = IRE_free_state_idea
+	}
+	option = {
+		name = mer_event.4.b #refuse
+		ai_chance = {
+			factor = 0
+		}
+		ENG = {
+			end_puppet = IRE
+		}
+		drop_cosmetic_tag = yes
+	}
+}

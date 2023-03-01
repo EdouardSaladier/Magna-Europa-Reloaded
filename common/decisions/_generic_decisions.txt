@@ -174,6 +174,89 @@ political_actions = {
 
 economy_decisions = {
 
+	us_industry_relocation #needed or else US run out of slots too soon = {
+
+		icon = generic_industry
+		
+		allowed = {
+			tag = USA
+		}
+
+		available = {
+			any_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		cost = 0
+
+		complete_effect = {
+			if = {
+				limit = {
+					any_owned_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							is_owned_by = ROOT
+							arms_factory > 2
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						arms_factory > 2
+					}
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				add_offsite_building = { type = arms_factory level = 2 }
+			}
+			else_if = {
+				limit = {
+					any_owned_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							is_owned_by = ROOT
+							industrial_complex > 2
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						industrial_complex > 2
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	dismantle_maginot = {
 
 		icon = generic_construction
