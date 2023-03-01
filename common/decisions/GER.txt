@@ -4057,7 +4057,7 @@ GER_ordenstaats = {
 				all_core_state = {
 					OR = {
 						is_controlled_by = GER
-				`		controller = {
+						controller = {
 							is_subject_of = GER
 						}
 					}
