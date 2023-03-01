@@ -190,6 +190,10 @@ economy_decisions = {
 						size < 1
 						include_locked = yes
 					}
+					OR = {
+						arms_factory > 1
+						industrial_complex > 1
+					}
 				}
 			}
 		}
@@ -200,56 +204,30 @@ economy_decisions = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		cost = 0
 
 		complete_effect = {
-			if = {
+			random_owned_controlled_state = {
 				limit = {
-					any_owned_state = {
-						limit = {
-							is_fully_controlled_by = ROOT
-							is_owned_by = ROOT
-							arms_factory > 2
-						}
-					}
+					arms_factory > 1
 				}
-				random_owned_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-						is_owned_by = ROOT
-						arms_factory > 2
-					}
-					remove_building = {
-						type = arms_factory
-						level = 2
-					}
-					USA = { add_offsite_building = { type = arms_factory level = 2 } }
+				remove_building = {
+					type = arms_factory
+					level = 2
 				}
+				USA = { add_offsite_building = { type = arms_factory level = 2 } }
 			}
-			else_if = {
+			random_owned_controlled_state = {
 				limit = {
-					any_owned_state = {
-						limit = {
-							is_fully_controlled_by = ROOT
-							is_owned_by = ROOT
-							industrial_complex > 2
-						}
-					}
+					industrial_complex > 1
 				}
-				random_owned_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-						is_owned_by = ROOT
-						industrial_complex > 2
-					}
-					remove_building = {
-						type = industrial_complex
-						level = 2
-					}
-					USA = { add_offsite_building = { type = industrial_complex level = 2 } }
+				remove_building = {
+					type = industrial_complex
+					level = 2
 				}
+				USA = { add_offsite_building = { type = industrial_complex level = 2 } }
 			}
 		}
 		ai_will_do = {
