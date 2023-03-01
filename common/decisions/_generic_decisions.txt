@@ -225,8 +225,8 @@ economy_decisions = {
 						type = arms_factory
 						level = 2
 					}
+					USA = { add_offsite_building = { type = arms_factory level = 2 } }
 				}
-				add_offsite_building = { type = arms_factory level = 2 }
 			}
 			else_if = {
 				limit = {
@@ -248,8 +248,8 @@ economy_decisions = {
 						type = industrial_complex
 						level = 2
 					}
+					USA = { add_offsite_building = { type = industrial_complex level = 2 } }
 				}
-				add_offsite_building = { type = industrial_complex level = 2 }
 			}
 		}
 		ai_will_do = {
