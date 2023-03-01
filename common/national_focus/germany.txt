@@ -5627,22 +5627,48 @@ focus_tree = {
 		}	
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_ussr_war_goal"
-			IF = {
-				limit = { SOV = { has_civil_war = no } }
-				create_wargoal = {
-					type = annex_everything
-					target = SOV
-					expire = 0
+			if = {
+				limit = {
+					is_ai = yes
+					is_historical_focus_on = yes
+				}
+				if = {
+					limit = { SOV = { has_civil_war = no } }
+					declare_war_on = { 
+						target = SOV 
+						type = annex_everything
+					}
+				}
+				else = {
+					every_country = {
+						limit = { original_tag = SOV }
+						GER = {
+							declare_war_on = { 
+								target = PREV 
+								type = annex_everything
+							}
+						}
+					}
 				}
 			}
-			ELSE = {
-				every_country = {
-					limit = { original_tag = SOV }
-					GER = {
-						create_wargoal = {
-							type = annex_everything
-							target = PREV
-							expire = 0
+			else = {
+				if = {
+					limit = { SOV = { has_civil_war = no } }
+					create_wargoal = {
+						type = annex_everything
+						target = SOV
+						expire = 0
+					}
+				}
+				else = {
+					every_country = {
+						limit = { original_tag = SOV }
+						GER = {
+							create_wargoal = {
+								type = annex_everything
+								target = PREV
+								expire = 0
+							}
 						}
 					}
 				}

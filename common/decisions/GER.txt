@@ -491,14 +491,15 @@ GER_reichskommissariats = {
 				limit = {
 					124 = {	
 						owner = {
-							has_war_with = ROOT
+							has_war_with = GER
 						}
 					}
 				}
 				NOR = {
 					every_core_state = {
-						set_state_controller_to	 = RKG
-						add_compliance = 50
+						add_claim_by = RKG
+						set_state_controller_to	= RKG
+						add_compliance = 30
 					}
 				}
 				RKG = {
@@ -506,6 +507,8 @@ GER_reichskommissariats = {
 						target = NOR
 						type = civil_war
 					}
+				}	
+				RKG = {
 					create_country_leader = {
 						name = "Josef Terboven"
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
@@ -515,11 +518,9 @@ GER_reichskommissariats = {
 						traits = {
 						}
 					}
-				}	
-				GER = {
-					puppet = RKG
-					set_autonomy = { target = RKG autonomy_state = autonomy_integrated_puppet }
+					transfer_state = 124
 				}
+				set_autonomy = { target = RKG autonomy_state = autonomy_integrated_puppet }
 			}
 			if = {
 				limit = {
@@ -539,8 +540,8 @@ GER_reichskommissariats = {
 							}
 						}
 					}
-					add_compliance = 50
 					transfer_state_to = RKG
+					add_claim_by = RKG
 				}
 				GER = { set_autonomy = { target = RKG autonomy_state = autonomy_integrated_puppet } }
 			}
