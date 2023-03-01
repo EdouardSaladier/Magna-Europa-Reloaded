@@ -17,7 +17,7 @@ GER_light_tanks = {
 
 	great_war_tank_default = {
 		priority = {
-			factor = 1
+			factor = 0 #It's obsolete
 			modifier = { 
 				has_tech = basic_light_tank_chassis
 				factor = 0 #let's not waste XP here
@@ -1493,11 +1493,15 @@ GER_heavy_tanks = {
 			num_of_factories < 50
 			factor = 0
 		}
+		modifier = {
+			NOT = { has_tech = improved_heavy_tank_chassis }
+			factor = 0
+		}
 	}
 
 	basic_heavy_tank_default = {
 		priority = {
-			factor = 10
+			factor = 0 #Do not improve the Neubeufarzshit
 			modifier = { 
 				has_tech = improved_heavy_tank_chassis 
 				factor = 0 #let's not waste XP here
@@ -1506,7 +1510,7 @@ GER_heavy_tanks = {
 		}
 
 		target_variant = {
-			match_value = 1000
+			match_value = 0
 			type = heavy_tank_chassis_1
 			modules = {
 				main_armament_slot = tank_close_support_gun

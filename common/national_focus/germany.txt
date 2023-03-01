@@ -4803,97 +4803,51 @@ focus_tree = {
 					give_SOV_armor_research_bonuses = yes
 				}
 			}
-
+			hidden_effect = {
+				load_oob = "GER_Panzer_Division"
+			}
 			if = {
 				limit = { 
 					has_dlc = "No Step Back"
 				}
-				if = {
-					limit = {
-						has_tech = basic_medium_tank_chassis
+				effect_tooltip = {
+					create_equipment_variant = {
+						name = "Panzer III Ausf. A"
+						type = medium_tank_chassis_1
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_high_velocity_cannon
+							turret_type_slot = tank_medium_three_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = smoke_launchers
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 6
+							tank_nsb_armor_upgrade = 3
+						}
+						icon = "GFX_GER_basic_medium_tank_medium"
 					}
-					effect_tooltip = {
-						create_equipment_variant = {
-							name = "Panzer III Ausf. A"
-							type = medium_tank_chassis_1
-							parent_version = 0
-							modules = {
-								main_armament_slot = tank_high_velocity_cannon
-								turret_type_slot = tank_medium_three_man_tank_turret
-								suspension_type_slot = tank_bogie_suspension
-								armor_type_slot = tank_welded_armor
-								engine_type_slot = tank_gasoline_engine
-								special_type_slot_1 = tank_radio_1
-								special_type_slot_2 = smoke_launchers
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 6
-								tank_nsb_armor_upgrade = 3
-							}
-							icon = "GFX_GER_basic_medium_tank_medium"
+					create_equipment_variant = {
+						name = "Panzer IV Ausf. D"
+						type = medium_tank_chassis_1
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_close_support_gun
+							turret_type_slot = tank_medium_three_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = smoke_launchers
 						}
-						create_equipment_variant = {
-							name = "Panzer IV Ausf. A"
-							type = medium_tank_chassis_1
-							parent_version = 1
-							modules = {
-								main_armament_slot = tank_close_support_gun
-								turret_type_slot = tank_medium_three_man_tank_turret
-								suspension_type_slot = tank_bogie_suspension
-								armor_type_slot = tank_welded_armor
-								engine_type_slot = tank_gasoline_engine
-								special_type_slot_1 = tank_radio_1
-								special_type_slot_2 = smoke_launchers
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 6
-								tank_nsb_armor_upgrade = 2
-							}
-							icon = "GFX_GER_basic_medium_tank_medium"
+						upgrades = {
+							tank_nsb_engine_upgrade = 6
+							tank_nsb_armor_upgrade = 2
 						}
-					}
-				}
-				else = {
-					custom_effect_tooltip = GER_soviet_treaty_research_nsb_tt
-					effect_tooltip = {
-						create_equipment_variant = {
-							name = "Panzer III Ausf. A"
-							type = medium_tank_chassis_1
-							parent_version = 0
-							modules = {
-								main_armament_slot = tank_high_velocity_cannon
-								turret_type_slot = tank_medium_three_man_tank_turret
-								suspension_type_slot = tank_bogie_suspension
-								armor_type_slot = tank_welded_armor
-								engine_type_slot = tank_gasoline_engine
-								special_type_slot_1 = tank_radio_1
-								special_type_slot_2 = smoke_launchers
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 6
-								tank_nsb_armor_upgrade = 3
-							}
-							icon = "GFX_GER_basic_medium_tank_medium"
-						}
-						create_equipment_variant = {
-							name = "Panzer IV Ausf. A"
-							type = medium_tank_chassis_1
-							parent_version = 1
-							modules = {
-								main_armament_slot = tank_close_support_gun
-								turret_type_slot = tank_medium_three_man_tank_turret
-								suspension_type_slot = tank_bogie_suspension
-								armor_type_slot = tank_welded_armor
-								engine_type_slot = tank_gasoline_engine
-								special_type_slot_1 = tank_radio_1
-								special_type_slot_2 = smoke_launchers
-							}
-							upgrades = {
-								tank_nsb_engine_upgrade = 6
-								tank_nsb_armor_upgrade = 2
-							}
-							icon = "GFX_GER_basic_medium_tank_medium"
-						}	
+						icon = "GFX_GER_basic_medium_tank_medium"
 					}
 				}
 				add_tech_bonus = {
@@ -5008,6 +4962,54 @@ focus_tree = {
 					technology = improved_medium_tank_chassis
 					technology = advanced_medium_tank_chassis
 					technology = mechanised_infantry
+				}
+				if = {
+					limit = {
+						OR = {
+							has_tech = artillery3
+							has_tech = antitank3
+						}
+					}
+					create_equipment_variant = {
+						name = "Panzer IV Ausf. G"
+						type = medium_tank_chassis_2
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_medium_cannon_2
+							turret_type_slot = tank_medium_three_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = smoke_launchers
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 5
+							tank_nsb_armor_upgrade = 8
+						}
+						icon = "GFX_GER_improved_medium_tank_medium"
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Panzer IV Ausf. G"
+						type = medium_tank_chassis_2
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_medium_cannon
+							turret_type_slot = tank_medium_three_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = smoke_launchers
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 5
+							tank_nsb_armor_upgrade = 8
+						}
+						icon = "GFX_GER_improved_medium_tank_medium"
+					}
 				}
 			}
 		}
@@ -7319,9 +7321,9 @@ focus_tree = {
 		relative_position_id = GER_war_with_france
 		cost = 4
 		ai_will_do = {
-			factor = 10			
+			factor = 1000 #Do as fast as you can boy, no manual justification possible so rush it	
 			modifier = {
-				factor = 0.05
+				factor = 0
 				date < 1939.1.1
 			}			
 			modifier = {

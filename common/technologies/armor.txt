@@ -1638,6 +1638,17 @@ technologies = {
 			position = { x = 4 y = 8 }
 		}
 		
+		on_research_complete = {
+			hidden_effect = {
+				if = {
+					limit = {
+						original_tag = GER
+					}
+					load_oob = "GER_Tiger_Division"
+				}
+			}
+		}
+		
 		sub_technologies = {
 			improved_heavy_td
 			improved_heavy_art

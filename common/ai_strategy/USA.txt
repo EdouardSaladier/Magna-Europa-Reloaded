@@ -25,25 +25,25 @@ USA_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
-		value = 5
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = mechanized
 		value = 10
 	}
 
 	ai_strategy = {
 		type = role_ratio
-		id = armor
+		id = mechanized
 		value = 20
 	}
 
 	ai_strategy = {
 		type = role_ratio
+		id = armor
+		value = 30
+	}
+
+	ai_strategy = {
+		type = role_ratio
 		id = infantry
-		value = 70 #88 to 70
+		value = -20 #88 to 70
 	}
 
 	ai_strategy = {

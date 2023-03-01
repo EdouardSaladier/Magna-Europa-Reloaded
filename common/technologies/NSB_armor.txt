@@ -864,6 +864,33 @@ technologies = {
 				}
 				ITA_add_improved_heavy_tank_templates = yes
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						original_tag = GER
+					}
+					load_oob = "GER_Tiger_Division"
+					create_equipment_variant = {
+						name = "Tiger Ausf. H1"
+						type = medium_tank_chassis_2
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_heavy_cannon_2
+							turret_type_slot = 	tank_heavy_three_man_tank_turret 
+							suspension_type_slot = tank_interleaved_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_module
+							special_type_slot_2 = smoke_launchers
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 8
+							tank_nsb_armor_upgrade = 10
+						}
+						icon = "GFX_GER_improved_heavy_tank_medium"
+					}
+				}
+			}
 		}
 
 		ai_will_do = {

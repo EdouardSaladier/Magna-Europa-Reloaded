@@ -64,19 +64,19 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = mechanized
-		value = 0 #because doctrine this = 5
+		value = 5 #because doctrine this = 5
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 0 #because doctrine this = 20
+		value = 10 #because doctrine this = 20
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 75 #88 to 70
+		value = 60 #88 to 70
 	}
 
 	# Naval unit factors
@@ -112,12 +112,6 @@ GER_unit_production = {
 
 	ai_strategy = {
 		type = equipment_production_factor
-		id = infantry
-		value = 5 #30 to 50
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
 		id = anti_tank
 		value = 20
 	}
@@ -131,18 +125,18 @@ GER_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
-		value = 100 #20 to 40
+		value = 50 #20 to 40
 	}
 
 	ai_strategy = {
 		type = equipment_production_factor
 		id = armor
-		value = -10
+		value = 50
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = motorized
-		value = -10
+		value = 10
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories #Build these up over time, don't stall
@@ -154,6 +148,7 @@ GER_unit_production = {
 		id = artillery
 		value = 4
 	}
+	
 
 	ai_strategy = { #added to railway gun define (set to 0 by default, increased in default strategies)
 		type = railway_gun_divisions_ratio
@@ -189,22 +184,54 @@ GER_anti_armor = {
 	}
 }
 
-GER_armored_production = {
+GER_armored_production_1 = {
 	allowed = {
 		original_tag = GER
 	}
 	enable = {
 		date > 1938.8.1
-		ai_wants_divisions > 10 #Decreasing the amount of tanks the AI wants
 	}
 	abort = {
-		ai_wants_divisions < 10 #Decreasing the amount of tanks the AI wants
+		date > 1939.9.1
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 5
+		value = 10
+	}
+}
+
+GER_armored_production_2 = {
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		date > 1939.9.1
+	}
+	abort = {
+		date > 1941.5.1
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 16
+	}
+}
+
+GER_armored_production_3 = {
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		date > 1941.5.1
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 25
 	}
 }
 
@@ -415,7 +442,7 @@ GER_template_design = {
 	ai_strategy = {
 		type = template_prio
 		id = heavy_armor
-		value = -50
+		value = -200
 	}
 
 	ai_strategy = {
@@ -526,25 +553,25 @@ war_with_soviets = {
 	ai_strategy = {
 		type = antagonize
 		id = "SOV" # Yes, SOU is deliberate
-		value = 200
+		value = 20000
 	}
 	
 	ai_strategy = {
 		type = conquer
 		id = "SOV"
-		value = 100
+		value = 10000
 	}
 	
 	ai_strategy = {
 		type = antagonize
 		id = "SOU" # Yes, SOU is deliberate
-		value = 200
+		value = 20000
 	}
 	
 	ai_strategy = {
 		type = conquer
 		id = "SOU"
-		value = 100
+		value = 10000
 	}
 }
 
@@ -921,40 +948,6 @@ play_nice_with_ribbentrop_pact = {
 		type = ignore
 		id = "EST"
 		value = 100
-	}
-}
-
-tfv_protect_fascist_south_africa = {
-	allowed = {
-		original_tag = GER
-	}
-	enable = {
-		has_country_flag = saf_fascist_uprising # Set from the national focus
-	}
-	abort = {
-		surrender_progress > 0.8
-		SAF = { has_civil_war = no }
-	}
-
-	ai_strategy = {
-		type = protect
-		id = "SAF"
-		value = 200
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "SAF"
-		value = 200
-	}
-	ai_strategy = {
-		type = support
-		id = "SAF"
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = "SAF"
-		value = 200
 	}
 }
 

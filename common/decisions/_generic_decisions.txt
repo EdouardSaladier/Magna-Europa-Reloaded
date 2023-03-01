@@ -179,7 +179,12 @@ economy_decisions = {
 		icon = generic_construction
 
 		allowed = {
-			NOT = { OR = { original_tag = GER original_tag = FRA } }
+			NOT = { 
+				OR = { 
+					original_tag = GER 
+					original_tag = FRA 
+				}
+			}
 		}
 
 		cost = 50
@@ -188,13 +193,22 @@ economy_decisions = {
 		days_remove = 200
 
 		available = {
-			controls_state = 28
+			controls_state = 566
+			controls_state = 606
+			controls_state = 547
 			if = {
 				limit = {
 					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
 				}
-				controls_state = 18
-				controls_state = 29
+				controls_state = 2333
+				controls_state = 1342
+				controls_state = 466
+				controls_state = 2365
+				controls_state = 525
+				controls_state = 515
+				controls_state = 538
+				controls_state = 544
+				controls_state = 2608
 			}
 		}
 
@@ -212,7 +226,27 @@ economy_decisions = {
 		}
 
 		complete_effect = {
-			28 = {
+			566 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						level > 2
+					}
+				}
+			}
+			606 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						level > 2
+					}
+				}
+			}
+			547 = {
 				set_building_level = {
 					type = bunker
 					level = 2
@@ -226,7 +260,7 @@ economy_decisions = {
 				limit = {
 					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
 				}
-				18 = {
+				2333 = {
 					set_building_level = {
 						type = bunker
 						level = 2
@@ -236,7 +270,77 @@ economy_decisions = {
 						}
 					}
 				}
-				29 = {
+				1342 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				466 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				2365 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				525 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				515 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				538 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				544 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				2608 = {
 					set_building_level = {
 						type = bunker
 						level = 2
@@ -970,21 +1074,25 @@ operations = {
 			has_dlc = "Waking the Tiger"
 		}
 		available = {
-			controls_state = 446
-			controls_state = 453
+			controls_state = 1285
+			controls_state = 1286
 			OR = {
 				NOT = {
-					owns_state = 446
-					owns_state = 453
+					owns_state = 1285
+					owns_state = 1286
 				}
 				any_enemy_country = {
 					OR = {
-						controls_state = 452
-						controls_state = 447
-						controls_state = 456
-						controls_state = 457
-						controls_state = 454
-						controls_state = 455
+						controls_state = 1893
+						controls_state = 1895
+						controls_state = 1284
+						controls_state = 1278
+						controls_state = 1281
+						controls_state = 1891
+						controls_state = 1291
+						controls_state = 1290
+						controls_state = 1902
+						controls_state = 1911	
 					}
 				}
 			}
@@ -995,8 +1103,10 @@ operations = {
 			NOT = { has_global_flag = SUEZ_CANAL_BLOCKED }
 			any_controlled_state = {
 				OR = {
-					region = 28
-					region = 128
+					region = 32
+					region = 57
+					region = 58
+					region = 59
 				}
 			}
 		}
@@ -1016,14 +1126,14 @@ operations = {
 				if = {
 					limit = {
 						NOT = {
-							owns_state = 446
-							owns_state = 453
+							owns_state = 1285
+							owns_state = 1286
 						}
 					}
 					random_country = {
 						limit = {
-							owns_state = 446
-							owns_state = 453
+							owns_state = 1285
+							owns_state = 1286
 						}
 						country_event = { id = generic.12 days = 1 }
 					}
@@ -1035,8 +1145,8 @@ operations = {
 			if = {
 				limit = {
 					OR = {
-						has_full_control_of_state = 446
-						has_full_control_of_state = 453
+						has_full_control_of_state = 1285
+						has_full_control_of_state = 1286
 					}
 				}
 				set_country_flag = blew_up_suez
@@ -1047,8 +1157,7 @@ operations = {
 				if = {
 					limit = {
 						ENG = {
-							owns_state = 446
-							owns_state = 453
+							owns_state = 1285
 						}
 					}
 					add_war_support = -0.05
@@ -1063,46 +1172,33 @@ operations = {
 				NOT = {
 					any_enemy_country = {
 						OR = {
-							controls_state = 452
-							controls_state = 447
-							controls_state = 456
-							controls_state = 457
-							controls_state = 454
-							controls_state = 455
+							controls_state = 1893
+							controls_state = 1895
+							controls_state = 1284
+							controls_state = 1278
+							controls_state = 1281
+							controls_state = 1891
+							controls_state = 1291
+							controls_state = 1290
+							controls_state = 1902
+							controls_state = 1911	
 							OR = {
-								divisions_in_state = { state = 454 size > 2 }
-								divisions_in_state = { state = 447 size > 2 }
-								divisions_in_state = { state = 457 size > 2 }
-								divisions_in_state = { state = 456 size > 2 }
+								divisions_in_state = { state = 1285 size > 2 }
+								divisions_in_state = { state = 1286 size > 2 }
+								divisions_in_state = { state = 1281 size > 2 }
+								divisions_in_state = { state = 1291 size > 2 }
+								divisions_in_state = { state = 1891 size > 2 }
 							}
 						}
 					}
 				}
 			}
 			modifier = {
-				factor = 0 # Don't blow the canal when you've got troops needing supplies in the Horn of Africa, and no land route has been established there
-				any_allied_country = {
-					NOT = {
-						OR = {
-							has_full_control_of_state = 457
-							has_full_control_of_state = 456
-						}
-					}
-					NOT = { has_full_control_of_state = 551 }
-					OR = {
-						divisions_in_state = { state = 550 size > 0 }
-						divisions_in_state = { state = 268 size > 0 }
-						divisions_in_state = { state = 269 size > 0 }
-						divisions_in_state = { state = 559 size > 0 }
-					}
-				}
-			}
-			modifier = {
 				factor = 200 # Try to cut the enemy off from the mediterranean if you also occupy Gibraltar
 				OR = {
-					has_full_control_of_state = 118
+					has_full_control_of_state = 882
 					any_allied_country = {
-						has_full_control_of_state = 118
+						has_full_control_of_state = 882
 					}
 				}
 				has_war = yes
@@ -1119,18 +1215,11 @@ operations = {
 			
 		}
 		available = {
-			has_full_control_of_state = 685
+			always = no
 		}
 	
 		visible = {
-			has_war = yes
-			NOT = { has_global_flag = PANAMA_CANAL_BLOCKED }
-			any_controlled_state = {
-				OR = {
-					region = 34
-					region = 124
-				}
-			}
+			always = no
 		}
 	
 		fire_only_once = no
@@ -1221,8 +1310,8 @@ special_projects = {
 		icon = GFX_decision_generic_special_project
 
 		available = {
-			has_full_control_of_state = 446
-			has_full_control_of_state = 453
+			has_full_control_of_state = 1285
+			has_full_control_of_state = 1286
 			num_of_civilian_factories > 15
 		}
 	
@@ -1243,8 +1332,8 @@ special_projects = {
 		remove_effect = {
 			if = {
 				limit = {
-					has_full_control_of_state = 446
-					has_full_control_of_state = 453
+					has_full_control_of_state = 1285
+					has_full_control_of_state = 1286
 				}
 				set_country_flag = rebuilt_suez
 				clr_global_flag = SUEZ_CANAL_BLOCKED
@@ -1263,19 +1352,14 @@ special_projects = {
 				factor = 200 # Prioritize if Italy is being invaded and you can't get to the battlefront (no control of Gibraltar strait)
 				NOT = {
 					OR = {
-						has_full_control_of_state = 118
+						has_full_control_of_state = 882
 						any_allied_country = {
-							has_full_control_of_state = 118
+							has_full_control_of_state = 882
 						}
 					}
 				}
 				has_war_with = ITA
 				ITA = { surrender_progress > 0.1 }
-				has_full_control_of_state = 447
-				has_full_control_of_state = 454
-				has_full_control_of_state = 452
-				has_full_control_of_state = 456
-				has_full_control_of_state = 457
 				NOT = { has_country_flag = blew_up_suez }
 			}
 			modifier = {
