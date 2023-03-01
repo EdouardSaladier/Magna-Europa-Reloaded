@@ -178,6 +178,7 @@ if = {
 	}
 }
 
+
 set_convoys = 300
 
 
@@ -277,7 +278,7 @@ if = {
 	create_operative_leader = {
 		name = "Jeannie Rousseau"
 		GFX = GFX_portrait_jennie_rousseau
-		traits = { operative_linguist }
+	#	traits = { operative_linguist }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
@@ -287,7 +288,7 @@ if = {
 	create_operative_leader = {
 		name = "Odette Samson"
 		GFX = GFX_portrait_odette_samson
-		traits = { operative_tough }
+	#	traits = { operative_tough }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
@@ -297,7 +298,7 @@ if = {
 	create_operative_leader = {
 		name = "René Joyeuse"
 		GFX = GFX_portrait_rene_joyeuse
-		traits = { operative_infiltrator }
+	#	traits = { operative_infiltrator }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		nationalities = { FRA }
@@ -306,7 +307,7 @@ if = {
 	create_operative_leader = {
 		name = "Gilbert Renault"
 		GFX = GFX_portrait_gilbert_renault
-		traits = { }
+	#	traits = { }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		nationalities = { FRA }
@@ -530,14 +531,34 @@ if = {
 		obsolete = yes
 	}
 }
+
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
 	create_equipment_variant = {
-		name = "FT mod. 31"
+		name = "Renault UE"
 		type = light_tank_chassis_0
 		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_fixed_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 0
+		}
+		obsolete = yes
+		icon = "GFX_gwtank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "FT mod. 31"
+		type = light_tank_chassis_0
+		parent_version = 1
 		modules = {
 			main_armament_slot = tank_heavy_machine_gun
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -554,7 +575,7 @@ if = {
 	create_equipment_variant = {
 		name = "FT Char Cannon"
 		type = light_tank_chassis_0
-		parent_version = 0
+		parent_version = 2
 		modules = {
 			main_armament_slot = tank_small_cannon
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -569,9 +590,67 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "H-35" #due to similar design this also covers R-35
+		name = "D1"
+		type = light_tank_chassis_0
+		parent_version = 3
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 3
+		}
+		icon = "GFX_FRA_basic_light_tank_medium"
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "AMR 33"
 		type = light_tank_chassis_1
 		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_fixed_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 5
+			tank_nsb_armor_upgrade = 1
+		}
+		obsolete = yes
+		icon = "GFX_gwtank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "D2"
+		type = light_tank_chassis_1
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 3
+		}
+		icon = "GFX_FRA_basic_light_tank_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "H-35" 
+		type = light_tank_chassis_1
+		parent_version = 2
 		modules = {
 			main_armament_slot = tank_small_cannon
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -586,27 +665,26 @@ if = {
 		icon = "GFX_FRA_basic_light_tank_medium"
 	}
 	create_equipment_variant = {
-		name = "Char B1"
-		type = heavy_tank_chassis_0
-		parent_version = 0
+		name = "R-35" 
+		type = light_tank_chassis_1
+		parent_version = 3
 		modules = {
-			main_armament_slot = tank_medium_howitzer
-			turret_type_slot = tank_heavy_fixed_superstructure_turret
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
+			armor_type_slot = tank_cast_armor
 			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_1 = additional_machine_guns
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 6
+			tank_nsb_engine_upgrade = 2
 			tank_nsb_armor_upgrade = 4
 		}
-		icon = "GFX_FRA_basic_heavy_tank_medium"
+		icon = "GFX_FRA_basic_light_tank_medium"
 	}
 
 	create_equipment_variant = {
-		name = "SOUMUA S35"
+		name = "SOUMUA S35" 
 		type = medium_tank_chassis_0
 		parent_version = 0
 		modules = {
@@ -623,7 +701,51 @@ if = {
 		}
 		icon = "GFX_FRA_improved_medium_tank_medium"
 	}
+	create_equipment_variant = {
+		name = "Char B1" 
+		type = heavy_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_howitzer
+			turret_type_slot = tank_heavy_fixed_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_small_cannon
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 6
+			tank_nsb_armor_upgrade = 4
+		}
+		icon = "GFX_FRA_basic_heavy_tank_medium"
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "B1 bis" 
+		type = heavy_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_howitzer
+			turret_type_slot = tank_heavy_fixed_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = additional_machine_guns
+			
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 6
+			tank_nsb_armor_upgrade = 6
+		}
+		icon = "GFX_FRA_basic_heavy_tank_medium"
+	}
+	
 }
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
@@ -646,7 +768,7 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_engine_slot = sub_ship_engine_2
 			rear_1_custom_slot = empty
 		}
 		obsolete = yes
@@ -664,7 +786,18 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Redoutable Class"				# represents Surcouf, Roubtable, L'Esoire, and Agosta classes
+		name = "Requin Class"
+		type = ship_hull_submarine_2
+		name_group = FRA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Redoutable Class"				# represents Redoubtable, L'Esoire, and Agosta classes
 		type = ship_hull_submarine_2
 		name_group = FRA_SS_HISTORICAL
 		parent_version = 0
@@ -688,7 +821,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Minerve Class"
+		name = "Minerve Class"					
 		type = ship_hull_submarine_1
 		name_group = FRA_SS_HISTORICAL
 		parent_version = 0
@@ -717,12 +850,46 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Chacal Class"				# represents Chacal, Guépard, Agile, and Vauquelin classes
+		name = "Bougainville Class"
 		type = ship_hull_light_1
-		name_group = FRA_DD_HISTORICAL
+		name_group = FRA_DE_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "La Melpomène Class"
+		type = ship_hull_light_1
+		name_group = FRA_DE_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Chacal Class"				# represents Chacal, Guépard, Agile, and Vauquelin classes
+		type = ship_hull_light_2
+		name_group = FRA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -734,8 +901,8 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Le Fantasque Class"
-		type = ship_hull_light_1
+		name = "Le Fantasque Class"				
+		type = ship_hull_light_2
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -750,24 +917,42 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Mogador Class"
-		type = ship_hull_light_2
+		name = "Mogador Class"				
+		type = ship_hull_light_3
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = dp_light_battery_2
+			fixed_ship_battery_slot = ship_light_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_2
-			mid_1_custom_slot = dp_light_battery_2
-			rear_1_custom_slot = ship_depth_charge_1
+			front_1_custom_slot = ship_light_battery_2
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = ship_mine_layer_1
 		}
 	}
 	# Light Cruisers #
 	create_equipment_variant = {
-		name = "Duguay-Trouin Class"			# represents Duguay-Trouin, Pluton, Jeanne d'Arc classes
+		name = "Jeanne d'Arc Class"
+		type = ship_hull_cruiser_1
+		name_group = FRA_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Duguay-Trouin Class"
 		type = ship_hull_cruiser_1
 		name_group = FRA_CL_HISTORICAL
 		parent_version = 0
@@ -777,15 +962,52 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
-			mid_1_custom_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_2
 			mid_2_custom_slot = ship_light_medium_battery_1
 			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Émile Bertin Class"					# minelaying cruiser
+		name = "Pluton Class"
 		type = ship_hull_cruiser_1
+		name_group = FRA_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_mine_layer_1
+			mid_2_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Commandant Teste Class"
+		type = ship_hull_cruiser_1
+		name_group = FRA_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Émile Bertin Class"					# minelaying cruiser
+		type = ship_hull_cruiser_2
 		name_group = FRA_CL_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -795,14 +1017,15 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = empty
+			front_1_custom_slot = ship_airplane_launcher_1
 			mid_1_custom_slot = ship_anti_air_1
 			mid_2_custom_slot = ship_light_medium_battery_2
 			rear_1_custom_slot = ship_mine_layer_1
 		}
 	}
 	create_equipment_variant = {
-		name = "La Galissonnière Class"
-		type = ship_hull_cruiser_1
+		name = "La Galissonnière Class"			
+		type = ship_hull_cruiser_2
 		name_group = FRA_CL_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -812,6 +1035,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_anti_air_1
 			mid_2_custom_slot = ship_light_medium_battery_2
 			rear_1_custom_slot = ship_airplane_launcher_1
@@ -819,7 +1043,42 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Suffren Class"				# Duquesne and Suffren classes
+		name = "Castor Class"		
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = FRA_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Duquesne Class"
+		type = ship_hull_cruiser_1
+		name_group = FRA_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_medium_battery_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Suffren Class"
 		type = ship_hull_cruiser_1
 		name_group = FRA_CA_HISTORICAL
 		parent_version = 0
@@ -837,8 +1096,8 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Algérie Class"
-		type = ship_hull_cruiser_1
+		name = "Algérie Class"				
+		type = ship_hull_cruiser_2
 		name_group = FRA_CA_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -847,7 +1106,8 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			front_1_custom_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_medium_battery_1
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = ship_airplane_launcher_1
@@ -855,7 +1115,7 @@ if = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Courbet Class"
+		name = "Courbet Class"		
 		type = ship_hull_heavy_1
 		name_group = FRA_BB_HISTORICAL
 		parent_version = 0
@@ -875,7 +1135,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Bretagne Class"
+		name = "Bretagne Class"				
 		type = ship_hull_heavy_1
 		name_group = FRA_BB_HISTORICAL
 		parent_version = 0
@@ -890,12 +1150,12 @@ if = {
 			front_1_custom_slot = ship_heavy_battery_1
 			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = ship_anti_air_1
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_heavy_battery_1
 		}
 	}
 	# Battlecruisers #
 	create_equipment_variant = {
-		name = "Dunkerque Class"
+		name = "Dunkerque Class"		
 		type = ship_hull_heavy_2
 		name_group = FRA_BC_HISTORICAL
 		parent_version = 0
@@ -916,18 +1176,18 @@ if = {
 	# Battleships #
 		create_equipment_variant = {
 			name = "Richelieu Class"
-			type = ship_hull_heavy_2
+			type = ship_hull_heavy_3
 			name_group = FRA_BB_HISTORICAL
 			parent_version = 0
 			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_battery_slot = ship_heavy_battery_3
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_engine_slot = heavy_ship_engine_3
 				fixed_ship_secondaries_slot = ship_secondaries_2
-				fixed_ship_armor_slot = ship_armor_bc_2
-				front_1_custom_slot = ship_heavy_battery_2
+				fixed_ship_armor_slot = ship_armor_bb_2
+				front_1_custom_slot = ship_heavy_battery_3
 				mid_1_custom_slot = ship_secondaries_2
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = ship_airplane_launcher_1
