@@ -148,6 +148,11 @@ GER_unit_production = {
 		id = artillery
 		value = 4
 	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = motorized
+		value = 2
+	}
 	
 
 	ai_strategy = { #added to railway gun define (set to 0 by default, increased in default strategies)
@@ -2385,8 +2390,9 @@ GER_blitz_france = {
 	}
 
 	enable = {
-		date < 1940.6.1
+		date < 1940.9.1
 		HOL = { has_capitulated = yes }
+		BEL = { has_capitulated = yes }
 		is_historical_focus_on = yes
 	}
 

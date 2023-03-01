@@ -505,9 +505,15 @@ FRA_benelux_will_surely_not_fall = {
 		type = put_unit_buffers
 		# french states bordering benelux
 		states = {
-			29
-			785
-			18
+			2333
+			1342
+			466
+			2365
+			525
+			515
+			538
+			544
+			2608
 		}
 		ratio = 0.1
 		area = europe
@@ -566,7 +572,7 @@ FRA_avoid_pushing_into_ger_early = {
 	}
 	
 	abort = {
-		date > 1940.3.1
+		date > 1940.9.1
 	}
 
 	ai_strategy = {
