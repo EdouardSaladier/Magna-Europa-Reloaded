@@ -411,6 +411,7 @@ country_event = {
 				every_state = {
 					limit = {
 						OR = {
+							state = 22
 							state = 100
 							state = 77
 							state = 113
@@ -424,7 +425,6 @@ country_event = {
 					is_claimed_by = SOV
 					OR = {
 						state = 17
-						state = 22
 						state = 2786
 						state = 33
 					}

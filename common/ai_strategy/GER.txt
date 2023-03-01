@@ -58,13 +58,13 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
-		value = 2 #because doctrine this = 4
+		value = -2 #because doctrine this = 0
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = mechanized
-		value = 5 #because doctrine this = 5
+		value = -5 #because doctrine this = 0
 	}
 
 	ai_strategy = {
@@ -136,7 +136,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = motorized
-		value = 10
+		value = -10
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories #Build these up over time, don't stall
@@ -154,7 +154,6 @@ GER_unit_production = {
 		value = 2
 	}
 	
-
 	ai_strategy = { #added to railway gun define (set to 0 by default, increased in default strategies)
 		type = railway_gun_divisions_ratio
 		value = 1

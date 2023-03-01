@@ -4937,6 +4937,14 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					load_oob = "GER_AI_Panzer_Division"
+				}	
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -7305,8 +7313,7 @@ focus_tree = {
 		historical_ai = {
 			date > 1939.1.1
 			NOT = {
-				any_home_area_neighbor_country = {
-					NOT = { tag = FRA }
+				POL = {
 					has_war_with = ROOT
 					surrender_progress < 0.5
 				}
@@ -7325,11 +7332,10 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1939.1.1
-			}			
+			}		
 			modifier = {
 				factor = 0.2
-				any_home_area_neighbor_country = {
-					NOT = { tag = FRA }
+				POL = {
 					has_war_with = ROOT
 					surrender_progress < 0.5
 				}
