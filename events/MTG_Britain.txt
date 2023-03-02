@@ -1326,34 +1326,7 @@ country_event = {
 	option = {
 		name = mtg_britain.20.a
 		add_opinion_modifier = { target = ENG modifier = ENG_three_nation_solution }
-		#release = BAN
-		#ENG = { set_autonomy = { target = BAN autonomy_state = autonomy_colony } }
-		#BAN = {
-		#	add_ideas = ENG_guided_by_britain_raj_1
-		#}
-		#release = PAK
-		#ENG = { set_autonomy = { target = PAK autonomy_state = autonomy_colony } }
-		#PAK = {
-		#	add_ideas = ENG_guided_by_britain_raj_1
-		#}
-		if = {
-			limit = {
-			#	has_idea = RAJ_marginalized_muslim_community_angry
-			}
-			swap_ideas = {
-			#	add_idea = RAJ_marginalized_muslim_community_happy
-			#	remove_idea = RAJ_marginalized_muslim_community_angry
-			}
-		}
-		#if = {
-		#	limit = {
-		#	#	has_idea = RAJ_marginalized_muslim_community
-		#	}
-		#	swap_ideas = {
-		#	#	add_idea = RAJ_marginalized_muslim_community_happy
-		#	#	remove_idea = RAJ_marginalized_muslim_community
-		#	}
-		#}
+		
 	}
 }
 
@@ -1370,40 +1343,7 @@ country_event = {
 	# Ok
 	option = {
 		name = mtg_britain.18.a
-		effect_tooltip = {
-			swap_ideas = {
-				remove_idea = ENG_guided_by_britain_RAJ_1
-				add_idea = ENG_guided_by_britain_RAJ_2
-			}
-			if = {
-				limit = {
-					tag = RAJ
-					NOT = { is_subject = no }
-					NOT = { has_autonomy_state = autonomy_dominion }
-					has_dlc = "Together for Victory"
-				}
-				set_autonomy = { target = RAJ autonomy_state = autonomy_dominion }
-			}
-			if = {
-				limit = {
-					tag = PAK
-					NOT = { is_subject = no }
-					NOT = { has_autonomy_state = autonomy_dominion }
-					has_dlc = "Together for Victory"
-				}
-				set_autonomy = { target = RAJ autonomy_state = autonomy_dominion }
-			}
-			if = {
-				limit = {
-					tag = BAN
-					NOT = { is_subject = no }
-					NOT = { has_autonomy_state = autonomy_dominion }
-					has_dlc = "Together for Victory"
-				}
-				set_autonomy = { target = RAJ autonomy_state = autonomy_dominion }
-			}
-			retire_country_leader = yes
-		}
+		
 	}
 }
 
