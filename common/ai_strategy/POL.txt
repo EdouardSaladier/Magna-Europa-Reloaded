@@ -110,25 +110,25 @@ dont_ally_germany_pls = {
 		value = -5000
 	}
 }
-pol_is_too_broken_nerf_pls = {
-	allowed = {
-		original_tag = POL
-	}
-	enable = {
-		NOT = { has_government = fascism }
-	}
+# pol_is_too_broken_nerf_pls = {
+	# allowed = {
+		# original_tag = POL
+	# }
+	# enable = {
+		# NOT = { has_government = fascism }
+	# }
 
-	abort = {
-		has_government = fascism
-	}
+	# abort = {
+		# has_government = fascism
+	# }
 
-	ai_strategy = {
-		type = added_military_to_civilian_factory_ratio
-		value = -100
-	}
-	ai_strategy = {
-		type = build_army
-		id = infantry
-		value = -200
-	}
-}
+	# ai_strategy = {
+		# type = added_military_to_civilian_factory_ratio
+		# value = -100
+	# }
+	# ai_strategy = {
+		# type = build_army
+		# id = infantry
+		# value = -200
+	# }
+# }
