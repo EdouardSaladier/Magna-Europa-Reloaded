@@ -9,6 +9,7 @@ NDefines.NGame.MAP_SCALE_PIXEL_TO_KM = 1.74
 NDefines.NGame.SAVE_VERSION = 7
 
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.15
+NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.01				-- after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
 
 NDefines.NProduction.EQUIPMENT_BASE_LEND_LEASE_WEIGHT = 0.5
 NDefines.NProduction.LEND_LEASE_DELIVERY_TOTAL_DAYS = 10 -- Nr of days between lend lease deliveries
@@ -27,7 +28,7 @@ NDefines.NSupply.NAVAL_BASE_INITIAL_SUPPLY_FLOW = 0.8
 NDefines.NSupply.NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 0.6
 NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 0.6
 NDefines.NSupply.FLOATING_HARBOR_INITIAL_SUPPLY_FLOW = 0.8
-NDefines.NSupply.NUM_RAILWAYS_TRAIN_FACTOR = 0.2  --Distance should matter much more now
+NDefines.NSupply.NUM_RAILWAYS_TRAIN_FACTOR = 0.15  --Distance should matter much more now
 NDefines.NSupply.TRUCK_ATTRITION = 0.01  --More supply truck attrition
 NDefines.NSupply.AVAILABLE_MANPOWER_STATE_SUPPLY = 0.1
 NDefines.NSupply.NON_CORE_MANPOWER_STATE_SUPPLY = 0.05

@@ -114,7 +114,23 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				surrender_limit = -0.4	
+				surrender_limit = -0.25	
+			}
+		}
+		
+		decreased_surrender_idea_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = -0.5	
 			}
 		}
 		

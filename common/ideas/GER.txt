@@ -837,6 +837,14 @@ ideas = {
 				attack_bonus_against = 0.10
 				defense_bonus_against = 0.05
 			}
+			
+			modifier = {
+				army_speed_factor = 0.25
+				army_morale_factor = 0.25
+				org_loss_when_moving = -0.25
+				equipment_capture = 0.05
+				equipment_capture_factor = 0.5
+			}
 
 		}
 		GER_dismantle_maginot = {

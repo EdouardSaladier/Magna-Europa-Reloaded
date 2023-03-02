@@ -674,6 +674,10 @@ country_event = {
 				factor = 2
 				has_same_ideology = yes
 			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 		FROM = {
 			add_to_faction = PREV
@@ -688,6 +692,11 @@ country_event = {
 		name = poland.1301.b
 		ai_chance = {
 			factor = 50
+			
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
 			
 			modifier = {
 				factor = 0.5

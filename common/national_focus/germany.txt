@@ -5090,7 +5090,13 @@ focus_tree = {
 		available = {
 			is_subject = no
 			has_government = fascism
-			has_army_manpower = { size > 849999 } #ca 90 div
+			OR = {
+				has_army_manpower = { size > 849999 }
+				AND = {
+					is_historical_focus_on = yes
+					date > 1939.1.1
+				}
+			}
 			SOV = {
 				NOT = { has_war_with = GER }
 				country_exists = SOV

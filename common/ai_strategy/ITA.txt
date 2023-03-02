@@ -808,7 +808,7 @@ ITA_share_borders_with_GER_against_SOV = {
 		value = 100
 	}
 	ai_strategy = {
-		type = force_defend_ally_borders
+		type = dont_defend_ally_borders
 		id = "SLO"
 		value = 100
 	}

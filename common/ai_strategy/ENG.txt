@@ -632,6 +632,7 @@ careful_with_early_invasions = {
 		OR = {
 			is_in_faction_with = ENG # anyone in allies
 			tag = FRA
+			tag = ENG
 		}
 
 		NOT = {
@@ -673,12 +674,6 @@ careful_with_early_invasions = {
 		value = -500
 	}
 
-	ai_strategy = { #TODO why does this crash
-		type = invade
-		id = "JAP"
-		value = -500
-	}
-
 	ai_strategy = {
 		type = area_priority
 		id = scandinavia
@@ -692,6 +687,7 @@ east_prussia_invasion_is_death_trap = {
 		OR = {
 			is_in_faction_with = ENG # anyone in allies
 			tag = FRA
+			tag = ENG
 		}
 
 		GER = { has_war_with = POL }
@@ -702,7 +698,7 @@ east_prussia_invasion_is_death_trap = {
 			}
 		}
 
-		date < 1940.1.1
+		date < 1941.1.1
 	}
 
 	abort = {
@@ -714,7 +710,7 @@ east_prussia_invasion_is_death_trap = {
 					has_capitulated = yes
 				}
 			}
-			date > 1940.1.1
+			date > 1941.1.1
 		}
 	}
 
@@ -781,6 +777,28 @@ ENG_trying_to_save_benelux_is_deathtrap = {
 		area = europe
 		subtract_invasions_from_need = no
 		subtract_fronts_from_need = yes
+	}
+}
+
+ENG_trying_to_save_yugoslavia_is_deathtrap = {
+	allowed = { original_tag = ENG }
+	enable = {
+		has_war_with = GER
+		date < 1941.8.1
+		YUG = { has_capitulated = no }
+	}
+
+	abort = {
+		OR = {
+			date > 1941.8.1
+			YUG = { has_capitulated = yes }
+		}
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "YUG"
+		value = 100
 	}
 }
 

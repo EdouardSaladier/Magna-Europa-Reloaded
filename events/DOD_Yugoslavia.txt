@@ -233,7 +233,11 @@ country_event = {
 	
 	trigger = {
 		tag = YUG
-		has_idea = YUG_idea_croatian_opposition
+		OR = {
+			is_historical_focus_on = yes
+			has_idea = YUG_idea_croatian_opposition
+			has_idea = YUG_idea_croats_suppressed
+		}
 		has_war_with = GER
 		GER = {
 			has_government = fascism

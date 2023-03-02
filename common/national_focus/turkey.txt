@@ -481,6 +481,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
@@ -5279,6 +5283,11 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1945.1.1
+			}
 		}
 
 		bypass = {

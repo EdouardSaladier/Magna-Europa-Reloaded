@@ -7,10 +7,24 @@ on_actions = {
 						TAG = GER
 					}
 					FROM = {
-						OR = {
-							original_tag = DEN
-							original_tag = NOR
-						}
+						original_tag = NOR
+						is_ai = yes
+					}
+				}
+				FROM = {
+					add_timed_idea = {
+						idea = decreased_surrender_idea_2
+						days = 365 #Germany got a year to easily take Norway
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						TAG = GER
+					}
+					FROM = {
+						original_tag = DEN
 						is_ai = yes
 					}
 				}
@@ -21,30 +35,30 @@ on_actions = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					ROOT = {
-						TAG = GER
-					}
-					FROM = {
-						OR = {
-							original_tag = BEL
-							original_tag = HOL
-							original_tag = LUX
-						}
-						is_ai = yes
-					}
-					FRA = { is_ai = yes }
-					ENG = { is_ai = yes }
-					SWI = { is_ai = yes }
-				}
-				FROM = {
-					add_timed_idea = {
-						idea = decreased_surrender_idea
-						days = 60
-					}
-				}
-			}
+			# if = {
+				# limit = {
+					# ROOT = {
+						# TAG = GER
+					# }
+					# FROM = {
+						# OR = {
+							# original_tag = BEL
+							# original_tag = HOL
+							# original_tag = LUX
+						# }
+						# is_ai = yes
+					# }
+					# FRA = { is_ai = yes }
+					# ENG = { is_ai = yes }
+					# SWI = { is_ai = yes }
+				# }
+				# FROM = {
+					# add_timed_idea = {
+						# idea = decreased_surrender_idea
+						# days = 60
+					# }
+				# }
+			# }
 		}
 	}
 }
