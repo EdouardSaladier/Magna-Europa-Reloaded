@@ -2426,6 +2426,10 @@ focus_tree = {
 					has_war_with = YUG
 				}
 			}
+			NOT = {
+				is_historical_focus_on = yes
+				date < 1941.1.1
+			}
 		}
 
 		bypass = {

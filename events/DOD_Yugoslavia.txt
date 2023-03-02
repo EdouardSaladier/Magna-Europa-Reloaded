@@ -270,10 +270,19 @@ country_event = {
 			}
 			set_autonomy = { target = CRO autonomy_state = autonomy_free }
 			CRO = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 15
+					neutrality = 15
+					fascism = 60
+					communism = 10
+				}
 				declare_war_on = {
 					target = YUG
 					type = annex_everything
-
 				}
 			}
 		}
@@ -350,6 +359,16 @@ country_event = {
 				}
 			}
 			CRO = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 15
+					neutrality = 15
+					fascism = 60
+					communism = 10
+				}
 				declare_war_on = {
 					target = YUG
 					type = annex_everything

@@ -686,6 +686,8 @@ GER_reichskommissariats = {
 			modifier = {
 				add = 1
 				HOL = { has_capitulated = yes }
+				BEL = { has_capitulated = yes }
+				FRA = { has_capitulated = yes }
 			}
 		}
 		
@@ -726,7 +728,6 @@ GER_reichskommissariats = {
 					}
 				}	
 				RKN = {
-					set_cosmetic_tag = HOL_reichskommissariat
 					create_country_leader = {
 						name = "Arthur Seyss-Inquart"
 						desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
@@ -827,7 +828,9 @@ GER_reichskommissariats = {
 			factor = 0
 			modifier = {
 				add = 1
+				HOL = { has_capitulated = yes }
 				BEL = { has_capitulated = yes }
+				FRA = { has_capitulated = yes }
 			}
 		}
 		
@@ -881,7 +884,6 @@ GER_reichskommissariats = {
 					}
 				}	
 				RKB = {
-					set_cosmetic_tag = HOL_reichskommissariat
 					create_country_leader = {
 						name = "Josef Grohe"
 						desc = "POLITICS_JOSEF_GROHE_DESC"
