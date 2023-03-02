@@ -2056,6 +2056,25 @@ GER_enable_invasion_of_NOR = {
 	}
 }
 
+GER_kill_poland_with_tanks = {
+	allowed = {
+		original_tag = GER
+	}
+	
+	enable = {
+		date < 1941.4.1
+		POL = {
+			has_capitulated = no
+		}
+	}
+	
+	ai_strategy = {
+		type = front_armor_score
+		id = "POL"
+		value = 5000
+	}
+}	
+
 
 # focus armor units on low countries
 # and ignore mighty lux until they fall
@@ -2135,21 +2154,14 @@ GER_around_the_maginot = {
 	ai_strategy = {
 		type = front_armor_score
 		id = "HOL"
-		value = 100
+		value = 500
 	}
 
 	ai_strategy = {
 		type = front_armor_score
 		id = "BEL"
-		value = 100
+		value = 500
 	}
-
-	ai_strategy = {
-		type = front_armor_score
-		id = "POL"
-		value = 100
-	}
-
 }
 
 
