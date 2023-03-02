@@ -2828,6 +2828,37 @@ political_actions = {
 				limit = {
 					is_in_faction_with = ITA
 				}
+				if = { #If Albania do not exists, ITA grabs the stuff
+					limit = {
+						ALB = {
+							exists = no
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								AND = {
+									is_core_of = KOS
+									NOT = {
+										OR = {
+											state = 1517
+											state = 1997
+											state = 1996
+										}
+									}
+								}
+								state = 2795
+								state = 989
+								state = 904
+								state = 2796
+								state = 1986
+								state = 1987
+								state = 2007
+							}
+						}
+						transfer_state_to = ITA
+					}
+				}
 				every_state = {
 					limit = {
 						OR = {
@@ -2888,6 +2919,10 @@ political_actions = {
 					limit = {
 						is_claimed_by = BUL
 						is_core_of = YUG
+						NOT = {
+							is_owned_by = ITA
+							is_owned_by = ALB
+						}
 					}
 					transfer_state_to = BUL
 				}

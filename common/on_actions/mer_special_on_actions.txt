@@ -10,6 +10,7 @@ on_actions = {
 						original_tag = NOR
 						is_ai = yes
 					}
+					is_historical_focus_on = yes
 				}
 				FROM = {
 					add_timed_idea = {
@@ -27,6 +28,7 @@ on_actions = {
 						original_tag = DEN
 						is_ai = yes
 					}
+					is_historical_focus_on = yes
 				}
 				FROM = {
 					add_timed_idea = {
@@ -35,6 +37,22 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					ROOT = {
+						TAG = GER
+					}
+					FROM = {
+						original_tag = POL
+						is_ai = yes
+					}
+					is_historical_focus_on = yes
+				}
+				SOV = {
+					country_event = { id = soviet.75 days = 7 }
+				}
+			}
+			
 			# if = {
 				# limit = {
 					# ROOT = {
