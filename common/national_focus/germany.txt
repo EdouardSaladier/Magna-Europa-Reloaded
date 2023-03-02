@@ -3541,6 +3541,11 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 12
+			modifier = {
+				factor = 0 #Don't waste time for this useless shit before starting WW2
+				is_historical_focus_on = yes
+				date < 1941.1.1
+			}
 		}
 
 		available = {
