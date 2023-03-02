@@ -10839,7 +10839,7 @@ SOV_industry_relocation = {
 				is_fully_controlled_by = ROOT
 				infrastructure > 2
 			}
-			has_equipment = { train_equipment > 79 } #20 trains per factory
+			has_equipment = { train_equipment > 39 } #20 trains per factory
 		}
 
 		visible = {
@@ -11793,7 +11793,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_offsite_building = { type = arms_factory level = 20 }
+			# add_offsite_building = { type = arms_factory level = 20 } #Let's try without these for now
 		}
 	}
 	
@@ -11831,7 +11831,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_offsite_building = { type = arms_factory level = 20 }
+			# add_offsite_building = { type = arms_factory level = 20 } #Let's try without these for now
 		}
 	}
 	

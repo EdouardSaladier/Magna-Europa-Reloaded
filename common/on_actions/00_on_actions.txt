@@ -3047,6 +3047,12 @@ on_actions = {
 					}
 				}
 				set_global_flag = { flag = barbarossa_counter value = 1 days = 60 }
+				SOV = { 
+					add_ideas = { 
+						war_economy
+						extensive_conscription
+					} 
+				}
 			}
 			if = {
 				limit = {
