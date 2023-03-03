@@ -11793,7 +11793,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			# add_offsite_building = { type = arms_factory level = 20 } #Let's try without these for now
+			add_offsite_building = { type = arms_factory level = 20 } #Let's try without these for now
 		}
 	}
 	
@@ -11831,7 +11831,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			# add_offsite_building = { type = arms_factory level = 20 } #Let's try without these for now
+			add_offsite_building = { type = arms_factory level = 40 } #Let's try without these for now
 		}
 	}
 	
