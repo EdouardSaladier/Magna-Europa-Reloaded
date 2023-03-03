@@ -10839,7 +10839,8 @@ SOV_industry_relocation = {
 				is_fully_controlled_by = ROOT
 				infrastructure > 2
 			}
-			has_equipment = { train_equipment > 39 } #20 trains per factory
+			has_equipment = { train_equipment > 79 } #20 trains per factory
+			check_variable = { SOV_industrial_relocation_number < SOV_industrial_relocation_max_number }
 		}
 
 		visible = {
@@ -10862,6 +10863,7 @@ SOV_industry_relocation = {
 		days_remove = SOV_industrial_relocation_days
 
 		complete_effect = {  #Attempt to remove 2 CIVS & 2 MILS
+			add_to_temp_variable = { SOV_industrial_relocation_number = 1 }
 			hidden_effect = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
@@ -11793,6 +11795,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
+			add_offsite_building = { type = industrial_complex level = 10 } #Let's try without these for now
 			add_offsite_building = { type = arms_factory level = 20 } #Let's try without these for now
 		}
 	}
@@ -11831,6 +11834,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
+			add_offsite_building = { type = industrial_complex level = 10 } #Let's try without these for now
 			add_offsite_building = { type = arms_factory level = 20 } #Let's try without these for now
 		}
 	}
@@ -11869,6 +11873,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
+			add_offsite_building = { type = industrial_complex level = 20 } #Let's try without these for now
 			add_offsite_building = { type = arms_factory level = 40 }
 		}
 	}
@@ -11907,6 +11912,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
+			add_offsite_building = { type = industrial_complex level = 20 } #Let's try without these for now
 			add_offsite_building = { type = arms_factory level = 40 }
 		}
 	}
@@ -11945,6 +11951,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
+			add_offsite_building = { type = industrial_complex level = 20 } #Let's try without these for now
 			add_offsite_building = { type = arms_factory level = 40 }
 		}
 	}
