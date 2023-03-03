@@ -1336,20 +1336,7 @@ ITA_invasion_buffer = {
 	ai_strategy = {
 		type = put_unit_buffers
 		states = {
-			all_state = {
-				OR = {
-					is_core_of = NAP
-					is_core_of = CAL
-					is_core_of = PUG
-					is_core_of = LUC
-					is_core_of = ABR
-					is_core_of = MLS
-					is_core_of = LAZ
-					### Oh no we forgot sicily! What could possibly go wrong.
-				}
-				is_coastal = yes
-			}
-			
+			#Add Italian states list
 		}
 		ratio = 0.20
 		area = italy
