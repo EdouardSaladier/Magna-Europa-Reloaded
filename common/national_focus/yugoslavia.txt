@@ -2881,10 +2881,19 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 40
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1941.6.1
+			}
 		}
 
 		available = {
 			date > 1938.09.06
+			NOT = {
+				is_historical_focus_on = yes
+				date < 1941.6.1
+			}
 		}
 
 		bypass = {
