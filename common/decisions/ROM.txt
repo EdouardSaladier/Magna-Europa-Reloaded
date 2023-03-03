@@ -410,6 +410,125 @@ ROM_change_sides = {
 	}
 	
 }
+political_actions = {
+	ROM_integrate_transnistria = {
+		available = {
+			all_state = {
+				if = {
+					limit = {
+						is_transnistria = yes
+					}
+					is_controlled_by = ROOT
+				}
+			}
+		}
+		allowed = {
+			original_tag = ROM
+		}
+		visible = {
+			all_state = {
+				if = {
+					limit = {
+						is_transnistria = yes
+					}
+					NOT = { is_owned_by = ROOT }
+				}
+			}
+			date > 1941.1.1
+		}
+		cost = 10
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				has_global_flag = BESSARABIA_REINTEGRATED
+			}
+		}
+		days_remove = 1
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_transnistria = yes
+					}
+				transfer_state_to = ROOT
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						is_in_faction_with = GER
+						has_war_with = SOV
+					}
+					every_state = {
+						limit = {
+							is_owned_by = SOV
+							is_controlled_by = ROOT
+							is_transnistria = no
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+						set_state_controller_to = GER
+					}
+				}
+			}
+		}
+	}
+	ROM_retake_bessarabia = {
+		available = {
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+							is_bessarabia = yes
+							state = 1600
+							state = 1599
+							state = 590
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
+		}
+		allowed = {
+			original_tag = ROM
+		}
+		visible = {
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+							is_bessarabia = yes
+							state = 1600
+							state = 1599
+							state = 590
+						}
+					}
+					NOT = { is_owned_by = ROOT }
+				}
+			}
+			
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 1
+		complete_effect = {
+			every_state = {
+				limit = {
+						OR = {
+							is_bessarabia = yes
+							state = 1600
+							state = 1599
+							state = 590
+						}
+					}
+					transfer_state_to = ROOT
+			}
+			set_global_flag = BESSARABIA_REINTEGRATED
+		}
+	}
+}
 
 ROM_dividing_yugo = {
 

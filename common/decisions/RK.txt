@@ -1,0 +1,73 @@
+political_actions = {
+	
+	crush_radical_elements = {
+		available = { 
+			any_controlled_state = {
+				compliance < 70
+			}
+			NOT = {
+				has_decision = crush_radical_elements
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+				compliance < 70 
+			}
+		}
+		state_target = yes
+		on_map_mode = map_only
+		visible = {
+			has_completed_focus = RK_crush_radical_elements
+			is_subject_of = GER
+		}
+		days_remove = 70
+		days_re_enable = 350
+		cost = 40
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			resistance_activity = -0.2
+			resistance_target = -0.3
+		}
+		remove_effect = {
+			FROM = {
+				add_compliance = 15
+			}
+		}
+	}
+}
+
+economy_decisions = {
+
+	
+}
+
+
+
+
+operations = {
+	
+	
+}
+
+
+
+war_measures = {
+	
+	
+}
+
+foreign_politics = {
+	
+}
+
+economy_decisions = {
+	
+}
+
+foreign_support = {
+
+
+}

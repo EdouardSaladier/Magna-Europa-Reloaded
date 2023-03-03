@@ -549,14 +549,6 @@ GER_reichskommissariats = {
 				}
 				GER = { set_autonomy = { target = RKG autonomy_state = autonomy_integrated_puppet } }
 			}
-			hidden_effect = {
-				RKG = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
-				}
-			}
 		}
 	}
 	GER_reichskommissariat_danemark = {
@@ -653,14 +645,6 @@ GER_reichskommissariats = {
 				GER = { 
 					puppet = RKD
 					set_autonomy = { target = RKD autonomy_state = autonomy_integrated_puppet } 
-				}
-			}
-			hidden_effect = {
-				RKD = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
 				}
 			}
 		}
@@ -777,14 +761,6 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = GER
-				}
-			}
-			hidden_effect = {
-				RKN = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
 				}
 			}
 		}
@@ -938,14 +914,6 @@ GER_reichskommissariats = {
 					transfer_state_to = RKB
 				}
 			}
-			hidden_effect = {
-				RKB = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
-				}
-			}
 		}
 	}
 	GER_reichskommissariat_kaukasien = {
@@ -1058,14 +1026,6 @@ GER_reichskommissariats = {
 					puppet = RKK
 					set_autonomy = { target = RKK autonomy_state = autonomy_integrated_puppet }
 				}
-			hidden_effect = {
-				RKK = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
-				}
-			}
 		}
 	}
 	
@@ -1143,14 +1103,6 @@ GER_reichskommissariats = {
 					puppet = RKT
 					set_autonomy = { target = RKT autonomy_state = autonomy_integrated_puppet }
 				}
-			hidden_effect = {
-				RKT = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
-				}
-			}
 		}
 	}
 	GER_reichskommissariat_ostland = {
@@ -1258,14 +1210,6 @@ GER_reichskommissariats = {
 					puppet = RKO
 					set_autonomy = { target = RKO autonomy_state = autonomy_integrated_puppet }
 				}
-			hidden_effect = {
-				RKO = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
-				}
-			}
 		}
 	}
 	
@@ -1597,14 +1541,6 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = GGV
-				}
-			}
-			hidden_effect = {
-				RKU = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
 				}
 			}
 		}
@@ -2037,14 +1973,6 @@ GER_reichskommissariats = {
 					puppet = RKM
 					set_autonomy = { target = RKM autonomy_state = autonomy_integrated_puppet }
 				}
-			hidden_effect = {
-				RKM = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
-				}
-			}
 		}
 	}
 	GER_reichskommissariat_schweiz = {
@@ -2117,14 +2045,6 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = ITA
-				}
-			}
-			hidden_effect = {
-				RKS = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
 				}
 			}
 		}
@@ -2263,14 +2183,6 @@ GER_reichskommissariats = {
 							transfer_state_to = GGV
 						}
 					}
-			hidden_effect = {
-				GGV = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
-				}
-			}
 		}
 	}
 	GER_occupy_france_north = {
@@ -2373,14 +2285,6 @@ GER_reichskommissariats = {
 				}
 			}	
 			
-			hidden_effect = {
-				MVF = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
-				}
-			}
 					
 		}
 	}
@@ -2575,14 +2479,6 @@ GER_reichskommissariats = {
 					NOT = { has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED } }
 				}
 				WSL = { transfer_state = 515 }
-			}
-			hidden_effect = {
-				WSL = {
-					add_ideas = {
-						GER_brutal_repression
-						GER_nazi_sympathisers
-					}
-				}
 			}
 		}
 	}

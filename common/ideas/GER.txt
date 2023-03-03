@@ -1610,8 +1610,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				resistance_target = -0.15
-				resistance_activity = 0.1
+				resistance_target = -0.20
 			}
 		}
 		GER_nazi_sympathisers = {
@@ -1627,8 +1626,24 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				non_core_manpower = 0.1
+				non_core_manpower = 0.2
 				local_non_core_supply_impact_factor = -0.1
+			}
+		}
+		GER_german_immigration = {
+			picture = generic_fascism_drift_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.1
 			}
 		}
 	}

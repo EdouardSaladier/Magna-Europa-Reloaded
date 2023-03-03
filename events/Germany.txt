@@ -7813,3 +7813,108 @@ country_event = { #Handed Over.. NOT
 		}
 	}
 }
+# RK requests manpower
+country_event = {
+	id = germany.129
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany.129 FROM = [From.GetName]" }
+	title = germany.129.t
+	desc = germany.129.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	# Ok
+	option = {
+		name = germany.129.a
+		trigger = {
+			is_in_faction = no
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -10
+				GER = {
+					has_manpower < 400000
+				}
+			}
+		}
+		effect_tooltip = {
+			GER = {
+				add_manpower = -50000
+				add_political_power = 50
+			}
+			FROM = {
+				add_manpower = 50000
+				add_political_power = -50
+			}
+		}
+		FROM = country_event = germany.130
+		
+	}
+
+	# No ty
+	option = {
+		name = germany.129.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				GER = {
+					has_manpower < 400000
+				}
+			}
+		}
+	}
+}
+# RK requests manpower - GER accepts
+country_event = {
+	id = germany.130
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany.130 FROM = [From.GetName]" }
+	title = germany.130.t
+	desc = germany.130.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	# Nice
+	option = {
+		name = germany.130.a
+		trigger = {
+			is_in_faction = no
+		}
+		ai_chance = {
+			base = 10
+		}
+			ROOT = {
+				add_manpower = 50000
+				add_political_power = -50
+			}
+			GER = {
+				add_manpower = -50000
+				add_political_power = 50
+			}
+		
+	}
+}
+# RK requests manpower - GER declines
+country_event = {
+	id = germany.131
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany.131 FROM = [From.GetName]" }
+	title = germany.131.t
+	desc = germany.131.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	# Damn
+	option = {
+		name = germany.131.a
+		trigger = {
+			is_in_faction = no
+		}
+		ai_chance = {
+			base = 10
+		}
+		
+	}
+}
