@@ -6,11 +6,13 @@
  germany.130.t:0 "Germany accepts our request"
  germany.130.d:0 ""
  germany.130.a:0 "Great."
- germany.131:t:0 "Germany declines our request"
+ germany.131.t:0 "Germany declines our request"
  germany.131.d:0 ""
  germany.131.a:0 "Nothing we can do."
+ 
  us_industry_relocation:0 "Relocate Industries to the West Coast"
- mer_event.1.t:0 ""
+  
+ mer_event.1.t:0 "The Japanese attack Pearl Harbor"
  mer_event.1.desc:0 "Today, the Japanese bombed our ships in a surprise attack. Can't have shit in Pearl Harbor. Anyway, it's time to join the Allies, and curbstomp Germany with your superior industrial power!"
  mer_event.1.a:0 "Murica, fuck yeah! Let's join the Allies"
  mer_event.1.b:0 "Hell no! I'm not actually playing Hoi4, I just want to see the map colors move!"
@@ -31,3 +33,8 @@
  mer_event.4.desc:0 "This whole \"Irish Free State\" is fucking cringe. Seriously uncool. But, it's time to fix it, and we just got the perfect idea for it!"
  mer_event.4.a:0 "Fuck Britain yeah! Also, let's try this whole \"neutrality\" thing, it made the Swiss rich"
  mer_event.4.b:0 "Fuck Britain yeah! But don't worry bro, we'll stay in your alliance"
+ 
+ mer_event.5.t:0 "Syria ask to vore the Alawites and Jabal Druze states"
+ mer_event.5.desc:0 "Today, the Syrian parliament asked us if they were allowed to 'vore' the Alawites and Jabal Druze states, citing that these were cringe ass countries that looked like shit on the map. They said that if we don't accept, they're gonna rebel against our rule."
+ mer_event.5.a:0 "The Ala-who? Uh, yeah sure, vore them, I don't care"
+ mer_event.5.b:0 "Nooo not my artificial states they looked so good when I painted them on the map!"

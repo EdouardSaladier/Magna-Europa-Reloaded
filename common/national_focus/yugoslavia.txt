@@ -2404,6 +2404,11 @@ focus_tree = {
 				is_historical_focus_on = yes
 				date < 1941.1.1
 			}
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				date > 1941.1.1
+			}
 		}
 
 		available = {

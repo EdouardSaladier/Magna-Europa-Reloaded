@@ -667,6 +667,24 @@ careful_with_early_invasions = {
 		id = "GER"
 		value = -500
 	}
+	
+	ai_strategy = {
+		type = invade
+		id = "RKN"
+		value = -500
+	}
+	
+	ai_strategy = {
+		type = invade
+		id = "RKB"
+		value = -500
+	}
+	
+	ai_strategy = {
+		type = invade
+		id = "MVF"
+		value = -500
+	}
 
 	ai_strategy = {
 		type = invade
@@ -1005,6 +1023,18 @@ ENG_lifeline_of_the_empire = {
 		type = area_priority
 		id = suez
 		value = 80 # this is extra on top of 50 base (now equal to other territory)
+	}
+	
+	ai_strategy = { #fucking defend Egypt
+		type = force_defend_ally_borders
+		id = "MLT"
+		value = 100
+	}
+	
+	ai_strategy = { #fucking defend Egypt
+		type = force_defend_ally_borders
+		id = "EGY"
+		value = 100
 	}
 }
 
@@ -1428,14 +1458,14 @@ ENG_Defends_Mediterranean = {
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
 		id = 882
-		value = 4
+		value = 5
 	}
 
 	# Malta
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
 		id = 1622
-		value = 4
+		value = 10
 	}
 }
 
@@ -1756,48 +1786,6 @@ ENG_USA_d_day = {
 		type = invasion_unit_request
 		area = normandy_landing_zone
 		value = 5
-	}
-
-}
-
-ENG_RAJ_the_hot_gates = {
-	allowed = {
-		OR = {
-			original_tag = ENG
-			original_tag = RAJ
-		}
-	}
-	enable = {
-		OR = {
-			671 = { is_controlled_by = JAP }
-			670 = { is_controlled_by = JAP }
-		}
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = burma
-		value = 60
-	}
-
-	ai_strategy = {
-		type = front_unit_request
-		area = burma
-		value = 8
-	}
-
-	ai_strategy = {
-		type = put_unit_buffers
-		# burmese states
-		states = {
-			288
-			640
-			430
-		}
-		ratio = 0.05
-		area = burma
-		subtract_invasions_from_need = no
-		subtract_fronts_from_need = yes
 	}
 
 }

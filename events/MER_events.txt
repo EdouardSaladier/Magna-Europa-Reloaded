@@ -164,3 +164,50 @@ country_event = {
 		drop_cosmetic_tag = yes
 	}
 }
+
+country_event = {
+	id = mer_event.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.5 FROM = [From.GetName]" }
+	title = mer_event.5.t
+	desc = mer_event.5.desc
+	picture = GFX_report_event_ast_navy
+	trigger = {
+		tag = FRA
+		date > 1936.12.2
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mer_event.5.a #accept
+		ai_chance = {
+			factor = 200
+		}
+		SYR = {
+			annex_country = {
+				target = ALW
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = JDZ
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = mer_event.5.b #refuse
+		ai_chance = {
+			factor = 0
+		}
+		end_puppet = SYR
+		SYR = {
+			drop_cosmetic_tag = yes
+			leave_faction = yes
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SYR
+			expire = 0
+		}
+	}
+}
