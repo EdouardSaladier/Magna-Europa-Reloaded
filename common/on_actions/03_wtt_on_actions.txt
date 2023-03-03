@@ -267,7 +267,7 @@ on_actions = {
 				}
 				hidden_effect = {
 					GER = { 
-						add_timed_idea = { idea = GER_barbarossa days = 180 }
+						add_timed_idea = { idea = GER_barbarossa days = 150 }
 						activate_mission = GER_barbarossa_mission
 					}
 					SOV = { 
