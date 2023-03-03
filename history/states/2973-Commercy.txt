@@ -1,23 +1,20 @@
 state={
-	id=538
-	name="STATE_538"
+	id=2973
+	name="STATE_2973"
 	provinces={
-		4400 12945 
+		9248 19851 
 	}
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = LOR
-		victory_points = {
-			4400 2 
-		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+
 		}
 	}
-	manpower=63443
+	manpower=34161
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=pastoral
 	local_supplies=0.000
 }

@@ -9,14 +9,16 @@ state={
 		add_core_of = CMP
 		buildings = {
 			infrastructure = 4
+
 		}
 		victory_points = {
-			12814 5 #Charleville-Mézières
+			12814 5 
 		}
+
 	}
 
 	provinces={
-		7286 12814 16150 
+		6469 7286 12814 16150 
 	}
 	manpower=159740
 	buildings_max_level_factor=1.000
