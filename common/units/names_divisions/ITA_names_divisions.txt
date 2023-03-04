@@ -415,6 +415,8 @@ ITA_CAV_02 = {
 	
 	division_types = { "cavalry" }
 	
+	fallback_name = "%da Divisione di Cavalleria"
+	
 	# Number reservation system will tie to another group.
 	link_numbering_with = { ITA_CAV_01 } 
 	
