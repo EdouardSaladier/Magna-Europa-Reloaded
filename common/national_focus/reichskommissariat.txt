@@ -391,6 +391,12 @@
 		}
 
 		available = {
+			all_controlled_state = {
+				compliance > 40
+			}
+			capital_scope = {
+				is_controlled_by = ROOT
+			}
 		}
 
 		bypass = {

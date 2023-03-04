@@ -4301,8 +4301,10 @@ focus_tree = {
 				activate_decision = form_commonwealth
 				every_state = {
 					limit = {
-						is_core_of = POL
-						is_core_of = LAT
+						OR = {
+							is_core_of = POL
+							is_core_of = LAT
+						}
 					}
 					add_core_of = LIT
 				}
