@@ -1646,6 +1646,53 @@ ideas = {
 				monthly_population = 0.1
 			}
 		}
+		GER_military_regime = {
+			picture = german_advisors
+			allowed = {
+				always = no
+			}
+			cancel = {
+				OR = {
+					NOT = { is_subject_of = GER }
+					GER = { has_capitulated = yes }
+				}
+			}
+			on_remove = {
+				add_ideas = GER_abandoned_colony
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				forced_surrender_limit = 1
+			}
+		}
+		GER_abandoned_colony = {
+			picture = SPR_anti_fascist_crusade
+			allowed = {
+				always = no
+			}
+			cancel = {
+				is_subject_of = GER
+				GER = { has_capitulated = no }
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				forced_surrender_limit = -0.5
+				resistance_activity = 0.4
+				resistance_target = 0.25
+				compliance_gain = -0.1
+				no_compliance_gain = 1
+			}
+		}
 	}
 
 	# TECHNOLOGY
