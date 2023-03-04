@@ -6757,34 +6757,36 @@ country_event = {
 			}
 		}
 		effect_tooltip = {
-			WGR = {
-				add_state_core = 42
-				add_state_core = 50
-				add_state_core = 51
-				add_state_core = 52
-				add_state_core = 53
-				add_state_core = 54
-				add_state_core = 55
-				add_state_core = 56
-				add_state_core = 57
-				add_state_core = 58
-				add_state_core = 59
+			every_state = {
+				limit = {
+					is_core_of = GER
+					NOT = {
+						is_core_of = AUS
+						is_core_of = CZE
+						is_core_of = POL
+						is_core_of = BEL
+						is_core_of = FRA
+						is_core_of = ITA
+						is_core_of = DNZ
+						is_yalta_polish_state = yes
+						is_ddr_state = yes
+						is_east_prussia = yes
+					}
+				}
+				add_core_of = WGR
 			}
-			DDR = {
-				add_state_core = 60
-				add_state_core = 61
-				add_state_core = 62
-				add_state_core = 64
-				add_state_core = 65
-				add_state_core = 66
-				add_state_core = 67
+			
+			every_state = {
+				limit = {
+					is_ddr_state = yes
+				}
+				add_core_of = DDR
 			}
-			POL = {
-				add_state_core = 66
-				add_state_core = 67
-				add_state_core = 68
-				add_state_core = 63
-				add_state_core = 5
+			every_state = {
+				limit = {
+					is_yalta_polish_state = yes
+				}
+				add_core_of = POL
 			}
 		}
 		event_target:yalta_partner = {
@@ -6815,35 +6817,37 @@ country_event = {
 
 	option = {
 		name = germany.119.a
-		WGR = {
-			add_state_core = 42
-			add_state_core = 50
-			add_state_core = 51
-			add_state_core = 52
-			add_state_core = 53
-			add_state_core = 54
-			add_state_core = 55
-			add_state_core = 56
-			add_state_core = 57
-			add_state_core = 58
-			add_state_core = 59
-		}
-		DDR = {
-			add_state_core = 60
-			add_state_core = 61
-			add_state_core = 62
-			add_state_core = 64
-			add_state_core = 65
-			add_state_core = 66
-			add_state_core = 67
-		}
-		POL = {
-			add_state_core = 66
-			add_state_core = 67
-			add_state_core = 68
-			add_state_core = 63
-			add_state_core = 5
-		}
+		every_state = {
+				limit = {
+					is_core_of = GER
+					NOT = {
+						is_core_of = AUS
+						is_core_of = CZE
+						is_core_of = POL
+						is_core_of = BEL
+						is_core_of = FRA
+						is_core_of = ITA
+						is_core_of = DNZ
+						is_yalta_polish_state = yes
+						is_ddr_state = yes
+						is_east_prussia = yes
+					}
+				}
+				add_core_of = WGR
+			}
+			
+			every_state = {
+				limit = {
+					is_ddr_state = yes
+				}
+				add_core_of = DDR
+			}
+			every_state = {
+				limit = {
+					is_yalta_polish_state = yes
+				}
+				add_core_of = POL
+			}
 		hidden_effect = {
 			news_event = { days = 1 id = news.236 }
 		}

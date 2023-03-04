@@ -2142,6 +2142,23 @@ SOV_ultimatum_ROM = {
 	}
 }
 
+SOV_produce_units = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		date > 1941.12.1
+	}
+
+	abort = {
+	}
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 400
+	}
+}
+
 ###########################
 ### avoid attacking Finland until we have sent ultimatum
 ###########################

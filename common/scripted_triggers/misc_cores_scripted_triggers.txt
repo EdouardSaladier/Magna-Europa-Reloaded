@@ -443,3 +443,40 @@ is_westland_state = {
 		state = 2609
 	}
 }
+is_ddr_state = {
+	OR = {
+		is_core_of = THU
+		is_core_of = SXP
+		is_core_of = ANH
+		is_core_of = MKW
+		is_core_of = MKS
+		AND = {
+			is_core_of = SAX
+			NOT = {
+				state = 1980
+			}
+		}
+		AND = {
+			is_core_of = BRN
+			NOT = {
+				state = 1646
+				state = 2595
+				state = 1647
+				state = 1649
+				state = 1627
+				state = 339
+				state = 1648
+			}
+		}
+		state = 2533
+		state = 441
+		state = 1711
+		state = 2566
+		state = 2551
+		state = 1632
+		state = 1633
+		state = 281
+		state = 1635
+		state = 1634
+	}
+}	
