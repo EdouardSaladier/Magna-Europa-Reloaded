@@ -20,6 +20,10 @@ if = {
 	}
 }
 
+every_owned_state = {
+	set_state_flag = GRE_INITIAL_STATE
+}
+
 ###################
 #### 3D MODELS ####
 ###################

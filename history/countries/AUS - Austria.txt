@@ -18,6 +18,11 @@ if = {
 		}
 	}
 }
+
+every_owned_state = {
+	set_state_flag = AUS_INITIAL_STATE
+}
+
 set_research_slots = 3
 
 every_state = {

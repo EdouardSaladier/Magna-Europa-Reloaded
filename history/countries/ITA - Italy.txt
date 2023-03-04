@@ -15,6 +15,13 @@ if = {
 	set_oob = "ITA_1936_nsb"
 }
 
+every_state = {
+	limit = {
+		is_core_of = ITA
+	}
+	add_state_flag = ITA_INITIAL_STATE
+}
+
 starting_train_buffer = 1.5
 starting_truck_buffer = 0.8
 set_cosmetic_tag = ITA_neutrality

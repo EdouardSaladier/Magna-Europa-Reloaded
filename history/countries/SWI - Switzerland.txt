@@ -16,6 +16,10 @@ if = {
 
 set_research_slots = 3
 
+every_owned_state = {
+	set_state_flag = SWI_INITIAL_STATE
+}
+
 every_state = {
 	limit = {
 		is_core_of = SWI

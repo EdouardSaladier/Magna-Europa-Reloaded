@@ -34,6 +34,10 @@ if = {
 	}
 }
 
+every_owned_state = {
+	set_state_flag = TUR_INITIAL_STATE
+}
+
 ###################
 #### 3D MODELS ####
 ###################

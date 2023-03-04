@@ -36,6 +36,10 @@ if = {
 	}
 }
 
+every_owned_state = {
+	set_state_flag = YUG_INITIAL_STATE
+}
+
 set_research_slots = 3
 
 recruit_character = YUG_prince_paul

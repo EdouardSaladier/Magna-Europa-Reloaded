@@ -15,6 +15,10 @@ if = {
 	set_oob = "GER_1936_nsb"
 }
 
+every_owned_state = {
+	set_state_flag = GER_INITIAL_STATE
+}
+
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "GER_1936_air_bba"
