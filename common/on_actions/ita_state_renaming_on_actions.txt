@@ -476,14 +476,14 @@ on_actions = {
 			if = {
 				limit = { FROM.FROM = { state = 755 } }
 				if = {
-					limit = { ROOT = { is_yugoslav = yes } }
-					FROM.FROM = { set_state_name = "Rijeka" }
-					set_province_name = { id = 14309 name = "Rijeka" }
-				}
-				else_if = {
 					limit = { ROOT = { original_tag = SLV } }
 					FROM.FROM = { set_state_name = "Reka" }
 					set_province_name = { id = 14309 name = "Reka" }
+				}
+				else_if = {
+					limit = { ROOT = { is_yugoslav = yes } }
+					FROM.FROM = { set_state_name = "Rijeka" }
+					set_province_name = { id = 14309 name = "Rijeka" }
 				}
 				else_if = {
 					limit = { ROOT = { is_german = yes } }
