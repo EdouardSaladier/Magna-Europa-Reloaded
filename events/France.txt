@@ -1243,6 +1243,64 @@ country_event = {
 					limit = { FRA = { has_country_flag = become_vichy } }
 					change_tag_from = FRA
 				}
+				FRA = {
+					every_subject_country = {
+						limit = {
+							original_tag = SYR
+							original_tag = LEB
+							original_tag = TUN
+							original_tag = MOR
+						}
+						if = {
+							limit = {
+								has_autonomy_state = autonomy_dominion
+							}
+							VIC = {
+								set_autonomy = {
+									target = PREV
+									autonomy_state = autonomy_dominion
+									end_wars = yes
+								}
+							}
+						}
+						if = {
+							limit = {
+								has_autonomy_state = autonomy_colony
+							}
+							VIC = {
+								set_autonomy = {
+									target = PREV
+									autonomy_state = autonomy_colony
+									end_wars = yes
+								}
+							}
+						}
+						if = {
+							limit = {
+								has_autonomy_state = autonomy_puppet
+							}
+							VIC = {
+								set_autonomy = {
+									target = PREV
+									autonomy_state = autonomy_puppet
+									end_wars = yes
+								}
+							}
+						}
+						if = {
+							limit = {
+								has_autonomy_state = autonomy_integrated_puppet
+							}
+							VIC = {
+								set_autonomy = {
+									target = PREV
+									autonomy_state = autonomy_integrated_puppet
+									end_wars = yes
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 		random_country = {
