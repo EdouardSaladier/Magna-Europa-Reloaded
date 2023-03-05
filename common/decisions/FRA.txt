@@ -238,7 +238,7 @@ FRA_vichy_france = {
 					has_war_with = ROOT
 				}
 			}
-			controls_state = 16 #Paris
+			controls_state = 571 #Paris
 		}
 
 		visible = {
@@ -272,9 +272,7 @@ FRA_vichy_france = {
 			FRA = {
 				any_controlled_state = {
 					NOT = { #algeria
-						state = 459
-						state = 460
-						state = 513
+						is_core_of = ALG
 					}
 					is_core_of = FRA
 				}
@@ -358,7 +356,7 @@ category_test_decisions = {
 					}
 					add_core_of = PREV
 				}
-				set_capital = { state = 26 }
+				set_capital = { state = 699 }
 				set_politics = {
 					ruling_party = fascism
 					elections_allowed = no
