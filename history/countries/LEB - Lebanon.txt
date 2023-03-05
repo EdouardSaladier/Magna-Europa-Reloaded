@@ -34,9 +34,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Hashim al-Atassi"
+	name = "Émile Eddé"
 	desc = ""
-	picture = GFX_portrait_Hashim_al_Atassi
+	picture = "gfx/leaders/LEB/portrait_LEB_Emile_Edde.dds"
 	ideology = liberalism
 	traits = {
 		#
@@ -46,7 +46,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Pierre Gemayel"
 	desc = ""
-	picture = GFX_portrait_Pierre_Gemayel
+	picture = "gfx/leaders/LEB/portrait_LEB_Sheick_Pierre_Gemayel.dds"
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -64,11 +64,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Rami Sarraff"
+	name = "Farajallah el-Helou"
 	desc = ""
-	picture = GFX_portrait_Rami_Sarraff
+	picture = "gfx/leaders/LEB/portrait_LEB_Farajallah_el_Helou.dds"
 	ideology = leninism
-	traits = {
-		#
-	}
 }

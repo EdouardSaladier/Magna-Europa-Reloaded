@@ -34,7 +34,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Hashim al-Atassi"
 	desc = ""
-	picture = GFX_portrait_Hashim_al_Atassi
+	picture = "gfx/leaders/SYR/portrait_SYR_Hashim_al_Atassi.dds"
 	ideology = liberalism
 	traits = {
 		#
@@ -44,7 +44,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Antun Saadeh"
 	desc = ""
-	picture = GFX_portrait_Antun_Saadeh
+	picture = "gfx/leaders/SYR/portrait_SYR_Antun_Saadeh.dds"
 	ideology = fascism_ideology
 	traits = {
 		#

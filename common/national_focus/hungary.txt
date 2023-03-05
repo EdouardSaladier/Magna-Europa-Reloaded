@@ -1444,7 +1444,7 @@ focus_tree = {
 					limit = {
 						has_country_leader = { character = HUN_franz_friedrich }
 					}
-					hidden_effect = { retire_country_leader = yes }
+				#	hidden_effect = { retire_country_leader = yes }
 					add_country_leader_role = {
 						character = "HUN_franz_friedrich"
 						country_leader = {
@@ -1452,6 +1452,10 @@ focus_tree = {
 						  expire="1965.1.1"
 						}
 						promote_leader = yes
+					}
+					set_politics = {
+						ruling_party = fascism
+						elections_allowed = no
 					}
 				}
 
@@ -1462,17 +1466,6 @@ focus_tree = {
 						NOT = { has_completed_focus = HUN_strengthen_fascists }
 					}
 					custom_effect_tooltip = HUN_renounce_the_treaty_of_trianon_tt
-				}
-
-				
-			}
-			if = {
-				limit = {
-					NOT = { has_government = fascism }
-				}
-				set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
 				}
 			}
 		}
