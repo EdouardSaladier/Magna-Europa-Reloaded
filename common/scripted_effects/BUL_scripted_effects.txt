@@ -994,6 +994,17 @@ BUL_start_ff_civil_war = {
 		}
 		set_country_flag = BUL_fatherland_front_flag
 		set_cosmetic_tag = BUL_ff_bulgaria
+		
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = GRE
+					is_core_of = YUG
+				}
+			}
+			remove_core_of = PREV
+			remove_claim_by = PREV
+		}
 
 		division_template = {
 			name = "Fatherland Front Militia"

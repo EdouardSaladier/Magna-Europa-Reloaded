@@ -63,6 +63,18 @@ country_event = {
 		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.36 }
+			AUS = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 60
+					neutrality = 20
+					fascism = 0
+					communism = 20
+				}
+			}
 		}
 	}
 }
@@ -6685,55 +6697,8 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	fire_only_once = yes
-
-	trigger = {
-		#A democratic faction leader whose faction holds at least one German core state while SOV holds another can get this.
-		has_war_with = GER
-		GER = {
-			surrender_progress > 0.5
-		}
-		is_faction_leader = yes
-		any_state = {
-			is_core_of = GER
-			controller = {
-				is_in_faction_with = ROOT
-			}
-		}
-		has_government = democratic
-		NOT = {
-			tag = SOV
-		}
-		NOT = {
-			has_war_with = SOV
-		}
-		SOV = {
-			is_faction_leader = yes
-		}
-		any_state = {
-			is_core_of = GER
-			is_controlled_by = SOV
-		}
-		NOT = {
-			has_global_flag = had_yalta_conference
-		}
-		NOT = {
-			any_state = {
-				is_core_of = GER
-				controller = {
-					NOT = {
-						tag = GER
-					}
-					is_in_faction = yes
-					NOT = {
-						OR = {
-							is_in_faction_with = ROOT
-							is_in_faction_with = SOV
-						}
-					}
-				}
-			}
-		}
-	}
+	
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
 		days = 15
@@ -6751,31 +6716,21 @@ country_event = {
 
 	option = {
 		name = germany.118.a
+		ai_chance = {
+			factor = 100
+		}
 		hidden_effect = {
 			event_target:yalta_partner = {
-				country_event = { days = 1 id = germany.119 }
+				country_event = { hours = 1 id = germany.119 }
 			}
 		}
 		effect_tooltip = {
 			every_state = {
 				limit = {
-					is_core_of = GER
-					NOT = {
-						is_core_of = AUS
-						is_core_of = CZE
-						is_core_of = POL
-						is_core_of = BEL
-						is_core_of = FRA
-						is_core_of = ITA
-						is_core_of = DNZ
-						is_yalta_polish_state = yes
-						is_ddr_state = yes
-						is_east_prussia = yes
-					}
+					is_wgr_state = yes
 				}
 				add_core_of = WGR
 			}
-			
 			every_state = {
 				limit = {
 					is_ddr_state = yes
@@ -6787,6 +6742,18 @@ country_event = {
 					is_yalta_polish_state = yes
 				}
 				add_core_of = POL
+			}
+			every_state = {
+				limit = {
+					is_east_poland = yes
+				}
+				remove_core_of = POL
+			}
+			every_state = {
+				limit = {
+					is_yugoslav_istria = yes
+				}
+				add_core_of = YUG
 			}
 		}
 		event_target:yalta_partner = {
@@ -6817,37 +6784,39 @@ country_event = {
 
 	option = {
 		name = germany.119.a
+		ai_chance = {
+			factor = 100
+		}
 		every_state = {
-				limit = {
-					is_core_of = GER
-					NOT = {
-						is_core_of = AUS
-						is_core_of = CZE
-						is_core_of = POL
-						is_core_of = BEL
-						is_core_of = FRA
-						is_core_of = ITA
-						is_core_of = DNZ
-						is_yalta_polish_state = yes
-						is_ddr_state = yes
-						is_east_prussia = yes
-					}
-				}
-				add_core_of = WGR
+			limit = {
+				is_wgr_state = yes
 			}
-			
-			every_state = {
-				limit = {
-					is_ddr_state = yes
-				}
-				add_core_of = DDR
+			add_core_of = WGR
+		}
+		every_state = {
+			limit = {
+				is_ddr_state = yes
 			}
-			every_state = {
-				limit = {
-					is_yalta_polish_state = yes
-				}
-				add_core_of = POL
+			add_core_of = DDR
+		}
+		every_state = {
+			limit = {
+				is_yalta_polish_state = yes
 			}
+			add_core_of = POL
+		}
+		every_state = {
+			limit = {
+				is_east_poland = yes
+			}
+			remove_core_of = POL
+		}
+		every_state = {
+			limit = {
+				is_yugoslav_istria = yes
+			}
+			add_core_of = YUG
+		}
 		hidden_effect = {
 			news_event = { days = 1 id = news.236 }
 		}
@@ -6904,18 +6873,7 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		#Fires for one of the new German states to transfer old German territory.
-		country_exists = GER
-		OR = {
-			country_exists = WGR
-			country_exists = DDR
-		}
-		OR = {
-			tag = WGR
-			tag = DDR
-		}
-	}
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
 		days = 0
@@ -6931,7 +6889,9 @@ country_event = {
 			every_state = {
 				limit = {
 					is_core_of = POL
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 				}
 				POL = {
 					transfer_state = PREV
@@ -6948,7 +6908,9 @@ country_event = {
 			every_state = {
 				limit = {
 					is_core_of = POL
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 				}
 				SOV = {
 					transfer_state = PREV
@@ -6962,7 +6924,9 @@ country_event = {
 			#Give WGR their cores
 			every_state = {
 				limit = {
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 					is_core_of = WGR
 				}
 				WGR = {
@@ -6977,7 +6941,9 @@ country_event = {
 			#Give East Germany their cores
 			every_state = {
 				limit = {
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 					is_core_of = DDR
 				}
 				DDR = {
@@ -7000,7 +6966,9 @@ country_event = {
 			limit = {
 				any_state = {
 					is_core_of = CZE
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 					NOT = {
 						OR = {
 							is_core_of = DDR
@@ -7014,7 +6982,9 @@ country_event = {
 			every_state = {
 				limit = {
 					is_core_of = CZE
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 					NOT = {
 						OR = {
 							is_core_of = DDR
@@ -7032,7 +7002,9 @@ country_event = {
 			limit = {
 				any_state = {
 					is_core_of = YUG
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 					NOT = {
 						OR = {
 							is_core_of = DDR
@@ -7046,7 +7018,9 @@ country_event = {
 			every_state = {
 				limit = {
 					is_core_of = YUG
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 					NOT = {
 						OR = {
 							is_core_of = DDR
@@ -7065,7 +7039,9 @@ country_event = {
 				country_exists = LIT
 				any_state = {
 					is_core_of = LIT
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 					NOT = {
 						OR = {
 							is_core_of = DDR
@@ -7079,7 +7055,9 @@ country_event = {
 			every_state = {
 				limit = {
 					is_core_of = LIT
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 					NOT = {
 						OR = {
 							is_core_of = DDR
@@ -7100,7 +7078,9 @@ country_event = {
 				}
 				any_state = {
 					is_core_of = LIT
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 					NOT = {
 						OR = {
 							is_core_of = DDR
@@ -7114,7 +7094,9 @@ country_event = {
 			every_state = {
 				limit = {
 					is_core_of = LIT
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 					NOT = {
 						OR = {
 							is_core_of = DDR
@@ -7130,22 +7112,13 @@ country_event = {
 		}
 		if = {
 			limit = {
-				DDR = {
-					GER = {
-						has_government = PREV
-					}
-				}
+				country_exists = DDR
 			}
-			#If GER has changed government, remaining territory is passed to the corresponding new state (WGR or DDR)
 			every_state = {
 				limit = {
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
-							is_core_of = POL
-						}
+					is_ddr_state = yes
+					owner = {
+						original_tag = GER
 					}
 				}
 				DDR = {
@@ -7155,22 +7128,13 @@ country_event = {
 		}
 		if = {
 			limit = {
-				WGR = {
-					GER = {
-						has_government = PREV
-					}
-				}
+				country_exists = WGR
 			}
-			#See above
 			every_state = {
 				limit = {
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
-							is_core_of = POL
-						}
+					is_wgr_state = yes
+					owner = {
+						original_tag = GER
 					}
 				}
 				WGR = {
@@ -7181,7 +7145,9 @@ country_event = {
 		if = {
 			limit = {
 				any_state = {
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 					NOT = {
 						OR = {
 							is_core_of = WGR
@@ -7193,7 +7159,9 @@ country_event = {
 			#Any remaining cores go to WGR, because democracy is fun
 			every_state = {
 				limit = {
-					is_owned_and_controlled_by = GER
+					owner = {
+						original_tag = GER
+					}
 					NOT = {
 						OR = {
 							is_core_of = WGR

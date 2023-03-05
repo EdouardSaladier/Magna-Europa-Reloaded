@@ -1,5 +1,453 @@
 political_actions = {
 
+	yalta_conference_decision = { #Can't trust the trigger imo
+	
+		available = {
+			GER = {
+				surrender_progress > 0.5
+			}
+		}
+	
+		visible = {
+			has_government = democratic
+			has_war_with = GER
+			is_faction_leader = yes
+			any_state = {
+				is_core_of = GER
+				controller = {
+					is_in_faction_with = ROOT
+				}
+			}
+			NOT = {
+				tag = SOV
+			}
+			NOT = {
+				has_war_with = SOV
+			}
+			SOV = {
+				is_faction_leader = yes
+			}
+			any_state = {
+				is_core_of = GER
+				is_controlled_by = SOV
+			}
+			NOT = {
+				any_state = {
+					is_core_of = GER
+					controller = {
+						NOT = {
+							tag = GER
+						}
+						is_in_faction = yes
+						NOT = {
+							OR = {
+								is_in_faction_with = ROOT
+								is_in_faction_with = SOV
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = { hours = 1 id = germany.118 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yalta_follow_up_decision = {
+		available = {
+			always = yes
+		}
+	
+		visible = {
+			has_global_flag = had_yalta_conference
+			any_country = {
+				original_tag = GER
+			}
+			OR = {
+				tag = WGR
+				tag = DDR
+			}
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = POL
+				}
+				#Return Polish territory + new cores if they exist
+				every_state = {
+					limit = {
+						is_core_of = POL
+						owner = {
+							original_tag = GER
+					 	}
+					}
+					POL = {
+						transfer_state = PREV
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = POL
+				}
+				#Return Polish territory - Soviet has already taken what it wanted
+				every_state = {
+					limit = {
+						is_core_of = POL
+						NOT = {
+							OR = {
+								is_core_of = SOV
+								is_core_of = LAT
+								is_core_of = LIT
+								is_core_of = EST
+								is_core_of = ROM
+								is_core_of = BLR
+								is_core_of = UKR
+							}
+						}
+						owner = {
+							original_tag = SOV
+						}
+					}
+					POL = {
+						transfer_state = PREV
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = POL
+					}
+				}
+				#Otherwise give SOV Polish cores
+				every_state = {
+					limit = {
+						is_core_of = POL
+						owner = {
+							original_tag = GER
+						}
+					}
+					SOV = {
+						transfer_state = PREV
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = AUS
+				}
+				#Return Austrian territory + new cores if they exist
+				every_state = {
+					limit = {
+						is_core_of = AUS
+						owner = {
+							original_tag = GER
+						}
+					}
+					AUS = {
+						transfer_state = PREV
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = AUS
+					}
+					country_exists = WGR
+				}
+				#Otherwise give WGR Austrian cores
+				every_state = {
+					limit = {
+						is_core_of = AUS
+						owner = {
+							original_tag = GER
+						}
+					}
+					AUS = {
+						transfer_state = PREV
+						set_politics = {
+							ruling_party = democratic
+							elections_allowed = no
+						}
+						set_popularities = {
+							democratic = 60
+							neutrality = 20
+							fascism = 0
+							communism = 20
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_state = {
+						is_core_of = CZE
+						owner = {
+							original_tag = GER
+						}
+						NOT = {
+							OR = {
+								is_core_of = DDR
+								is_core_of = WGR
+								is_core_of = POL
+							}
+						}
+					}
+				}
+				#Give CZE any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
+				every_state = {
+					limit = {
+						is_core_of = CZE
+						owner = {
+							original_tag = GER
+						}
+						NOT = {
+							OR = {
+								is_core_of = DDR
+								is_core_of = WGR
+								is_core_of = POL
+							}
+						}
+					}
+					CZE = {
+						transfer_state = PREV
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_state = {
+						is_core_of = YUG
+						owner = {
+							original_tag = GER
+						}
+						NOT = {
+							OR = {
+								is_core_of = DDR
+								is_core_of = WGR
+								is_core_of = POL
+							}
+						}
+					}
+				}
+				#Give YUG any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
+				every_state = {
+					limit = {
+						is_core_of = YUG
+						owner = {
+							original_tag = GER
+						}
+						NOT = {
+							OR = {
+								is_core_of = DDR
+								is_core_of = WGR
+								is_core_of = POL
+							}
+						}
+					}
+					YUG = {
+						transfer_state = PREV
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = LIT
+					any_state = {
+						is_core_of = LIT
+						owner = {
+							original_tag = GER
+						}
+						NOT = {
+							OR = {
+								is_core_of = DDR
+								is_core_of = WGR
+								is_core_of = POL
+							}
+						}
+					}
+				}
+				#Give LIT any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
+				every_state = {
+					limit = {
+						is_core_of = LIT
+						owner = {
+							original_tag = GER
+						}
+						NOT = {
+							OR = {
+								is_core_of = DDR
+								is_core_of = WGR
+								is_core_of = POL
+							}
+						}
+					}
+					LIT = {
+						transfer_state = PREV
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = LIT
+					}
+					any_state = {
+						is_core_of = LIT
+						owner = {
+							original_tag = GER
+						}
+						NOT = {
+							OR = {
+								is_core_of = DDR
+								is_core_of = WGR
+								is_core_of = POL
+							}
+						}
+					}
+				}
+				#Give any LIT cores to SOV if they have been taken in a previous war/focus
+				every_state = {
+					limit = {
+						is_core_of = LIT
+						owner = {
+							original_tag = GER
+						}
+						NOT = {
+							OR = {
+								is_core_of = DDR
+								is_core_of = WGR
+								is_core_of = POL
+							}
+						}
+					}
+					SOV = {
+						transfer_state = PREV
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = WGR
+				}
+				#Give WGR their cores
+				every_state = {
+					limit = {
+						owner = {
+							original_tag = GER
+						}
+						is_core_of = WGR
+					}
+					WGR = {
+						transfer_state = PREV
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = DDR
+				}
+				#Give East Germany their cores
+				every_state = {
+					limit = {
+						owner = {
+							original_tag = GER
+						}
+						is_core_of = DDR
+					}
+					DDR = {
+						transfer_state = PREV
+					}
+				}
+				if = {
+					limit = {
+						GER = {
+							is_puppet_of = SOV
+						}
+					}
+					#If SOV decided to puppet GER in peace, they now get DDR instead.
+					SOV = {
+						puppet = DDR
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_state = {
+						owner = {
+							original_tag = GER
+						}
+						NOT = {
+							OR = {
+								is_core_of = WGR
+								is_core_of = DDR
+							}
+						}
+					}
+				}
+				#Any remaining cores go to WGR, because democracy is fun
+				every_state = {
+					limit = {
+						owner = {
+							original_tag = GER
+						}
+						NOT = {
+							OR = {
+								is_core_of = WGR
+								is_core_of = DDR
+							}
+						}
+						is_kaliningrad = no
+					}
+					WGR = {
+						transfer_state = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						owner = {
+							original_tag = GER
+						}
+						is_kaliningrad = yes
+					}
+					SOV = {
+						transfer_state = PREV
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = WGR
+					country_exists = DDR
+				}
+				#Remove GER cores
+				hidden_effect = {
+					every_state = {
+						limit = {
+							is_core_of = GER
+						}
+						remove_core_of = GER
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	targeted_race_for_the_bomb = {
 

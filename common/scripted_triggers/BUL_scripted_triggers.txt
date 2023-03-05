@@ -297,9 +297,11 @@ BUL_country_can_influence_bulgaria = {
 
 BUL_is_macedonian_state = {
 	OR = {
-		state = 106
-		state = 731
-		state = 184
+		is_core_of = MAC
+		state = 846
+		state = 1972
+		state = 865
+		state = 2805
 	}
 }
 

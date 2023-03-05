@@ -23,7 +23,8 @@ is_yalta_polish_state = {
 				state = 1632
 			}
 		}
-			
+		state = 280
+		state = 2729	
 		state = 1980
 		state = 1646
 		state = 2595
@@ -247,6 +248,9 @@ is_bessarabia = {
 		state = 1605
 		state = 600
 		state = 592
+		state = 1599
+		state = 1600
+		state = 590
 		state = 1606
 	}
 }
@@ -466,6 +470,9 @@ is_ddr_state = {
 				state = 1627
 				state = 339
 				state = 1648
+				state = 3
+				state = 1651
+				state = 1652
 			}
 		}
 		state = 2533
@@ -480,3 +487,47 @@ is_ddr_state = {
 		state = 1634
 	}
 }	
+
+is_wgr_state = {
+	is_core_of = GER
+	NOT = {
+		OR = {
+			state = 280
+			state = 2729
+			state = 58
+			is_core_of = AUS
+			is_core_of = CZE
+			is_core_of = POL
+			is_core_of = BEL
+			is_core_of = FRA
+			is_core_of = ITA
+			is_core_of = DNZ
+			is_core_of = LIT
+			is_yalta_polish_state = yes
+			is_ddr_state = yes
+			is_east_prussia = yes
+		}
+	}
+}
+
+is_yugoslav_istria = {
+	is_core_of = ITA
+	OR = {
+		is_core_of = SLV
+		is_core_of = CRO
+	}
+	NOT = {
+		state = 2907
+	}
+}
+
+is_kaliningrad = {
+	OR = {
+		state = 252
+		state = 2484
+		state = 1614
+		state = 2335
+		state = 1615
+		state = 2334
+	}
+}

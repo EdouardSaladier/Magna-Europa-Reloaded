@@ -211,3 +211,28 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mer_event.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.6 FROM = [From.GetName]" }
+	title = mer_event.6.t
+	desc = mer_event.6.desc
+	picture = GFX_report_event_ast_navy
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mer_event.6.a #accept
+		ai_chance = {
+			factor = 200
+		}
+		every_state = {
+			limit = {
+				is_yugoslav_istria = yes
+			}
+			add_core_of = YUG
+		}
+	}
+}

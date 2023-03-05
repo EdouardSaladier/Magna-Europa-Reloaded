@@ -84,6 +84,114 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					tag = MVF
+					FROM = {
+						OR = {
+							is_in_faction_with = FRA
+							tag = FRA
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = MVF
+						is_core_of = FRA
+					}
+					transfer_state_to = FRA
+				}
+			}
+			if = { 
+				limit = {
+					original_tag = FRA
+					has_government = fascism
+					FROM = {
+						OR = {
+							is_in_faction_with = FRA
+							tag = FRA
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = ROOT
+						is_core_of = FRA
+					}
+					transfer_state_to = FRA
+				}
+			}
+			if = {
+				limit = {
+					tag = RKB
+				}
+				every_state = {
+					limit = {
+						is_owned_by = RKB
+						is_core_of = BEL
+					}
+					transfer_state_to = BEL
+					if = {
+						limit = {
+							BEL = {
+								NOT = { has_war_with = GER }
+							}
+						}
+						FROM = {
+							add_to_faction = BEL
+						}
+						BEL = {
+							add_to_war = {
+								targeted_alliance = FROM
+								enemy = GER
+								hostility_reason = asked_to_join
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = RKB
+					has_war_with = FRA
+				}
+				every_state = {
+					limit = {
+						is_owned_by = RKB
+						is_core_of = FRA
+					}
+					transfer_state_to = FRA
+				}
+			}
+			if = {
+				limit = {
+					tag = RKN
+				}
+				every_state = {
+					limit = {
+						is_owned_by = RKN
+						is_core_of = HOL
+					}
+					transfer_state_to = HOL
+					if = {
+						limit = {
+							HOL = {
+								NOT = { has_war_with = GER }
+							}
+						}
+						FROM = {
+							add_to_faction = HOL
+						}
+						HOL = {
+							add_to_war = {
+								targeted_alliance = FROM
+								enemy = GER
+								hostility_reason = asked_to_join
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
 					tag = GER
 				}
 				every_state = {
@@ -104,13 +212,6 @@ on_actions = {
 					}
 					remove_core_of = GER
 					remove_claim_by = GER
-				}
-				every_state = {
-					limit = {
-						is_core_of = PRE
-					}
-					remove_core_of = PRE
-					remove_claim_by = PRE
 				}
 			}
 			if = {
@@ -136,15 +237,33 @@ on_actions = {
 				}
 				every_state = {
 					limit = {
+						is_yugoslav_istria = yes
+					}
+					add_core_of = YUG
+					remove_core_of = ITA
+					remove_claim_by = ITA
+				}
+				every_state = {
+					limit = {
 						OR = {
 							is_core_of = ALB
 							is_core_of = YUG
 							is_core_of = FRA
 							is_core_of = SWI
+							is_core_of = GRE
+							is_core_of = SLV
+							is_core_of = CRO
 						}
 					}
 					remove_core_of = ITA
 					remove_claim_by = ITA
+				}
+				every_state = {
+					limit = {
+						is_owned_by = ITA
+						is_core_of = LBA
+					}
+					transfer_state_to = LBA
 				}
 			}
 			if = {
@@ -161,6 +280,7 @@ on_actions = {
 					remove_core_of = BUL
 					remove_claim_by = BUL
 				}
+				
 			}
 		}
 	}
