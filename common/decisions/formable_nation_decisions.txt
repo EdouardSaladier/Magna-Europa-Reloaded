@@ -7504,108 +7504,53 @@ greater_italy_category = {
 			has_completed_focus = ITA_towards_a_greater_italy
 			custom_trigger_tooltip = {
 				tooltip = greater_italy_required_states
-				controls_state = 852 # Istria
-				controls_state = 736 # Litorale
-				controls_state = 160 # Veneto
-				controls_state = 39 # Alto Adige
-				controls_state = 850 # Trentino
-				controls_state = 159 # Lombardia
-				controls_state = 158 # Piedmonte
-				controls_state = 161 # Emilia Romagna
-				controls_state = 162 # Toscana 
-				controls_state = 157 # Abruzzo
-				controls_state = 2 # Latium
-				controls_state = 849 # Puglia
-				controls_state = 117 # Campania
-				controls_state = 156 # Calabria
-				controls_state = 115 # Sicilia
-				controls_state = 114 # Sardegna
-			}  
-			custom_trigger_tooltip = {
-				tooltip = greater_italy_required_other_states 
-				AND = {
-					OR = {
-						ITA = { 
-						controls_state = 1 # Corsica 
+				all_state = {
+					if = {
+						limit = {
+							has_state_flag = ITA_INITIAL_STATE
 						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 1 # Corsica
-						}
-					}
-					OR = {
-						ITA = { 
-						controls_state = 846 # Ticino 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 846 # Ticino
-						}
-					}
-					OR = {
-						ITA = { 
-						controls_state = 735 # Savoy 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 735 # Savoy
-						}
-					}
-					OR = {
-						ITA = { 
-						controls_state = 163 # Zara 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 163 # Zara
-						}
-					}
-					OR = {
-						ITA = { 
-						controls_state = 103 # Dalmatia 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 103 # Dalmatia
-						}
-					}
-					OR = {
-						ITA = { 
-						controls_state = 853 # Ljubljana 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 853 # Ljubljana
-						}
-					}
-					OR = {
-						ITA = { 
-						controls_state = 116 # Malta 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 116 # Malta
-						}
-					}
-					OR = {
-						ITA = { 
-						controls_state = 182 # Crete 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 182 # Crete
-						}
-					}
-					OR = {
-						ITA = { 
-						controls_state = 164 # Dodecaneso 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 164 # Dodecaneso
-						}
+						is_controlled_by = ROOT
 					}
 				}
+			}  
+			custom_trigger_tooltip = {
+				tooltip = greater_italy_required_other_states
+					all_state = {
+						if = {
+							limit = {
+								OR = {
+									
+									state = 1422 
+									state = 866 
+									state = 743 
+									state = 1486 
+									state = 1554 
+									state = 1622 
+									state = 2829 
+									state = 754 
+									state = 2924 
+									state = 2651 
+									state = 2911 
+									state = 1473 
+									state = 2825 
+									state = 2965
+									state = 2964
+									state = 1477
+									is_core_of = DLM
+									is_core_of = TIC
+									is_core_of = SAV
+									is_core_of = NZA
+									is_core_of = CRT
+								}
+							}
+							OR = {
+								is_controlled_by = ROOT
+								controller = {
+									is_subject_of = ROOT
+								}
+							}
+						}
+					}
 			}
 			
 			
@@ -7629,107 +7574,35 @@ greater_italy_category = {
 			add_ideas = ITA_italia_irredenta_achieved
 			
 			hidden_effect = { 
-
-				# Corsica
-				ITA = {
-					transfer_state = 1
-				}
-				1 = { 
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = CRT
+							is_core_of = NZA
+							is_core_of = SAV
+							is_core_of = TIC
+							is_core_of = DLM
+							state = 1422 
+							state = 866 
+							state = 743 
+							state = 1486 
+							state = 1554 
+							state = 1622 
+							state = 2829 
+							state = 754 
+							state = 2924 
+							state = 2651 
+							state = 2911 
+							state = 1473 
+							state = 2825 
+							state = 2965
+							state = 2964
+							state = 1477
+						}
+					}
+					transfer_state_to = ROOT
 					add_core_of = ROOT
-					set_state_name = ITA_italian_corsica_name
 				}
-				set_province_name = {
-				    id = 3838 
-				    name = ITA_italian_ajaccio_name   
-				} 
-				
-				# Ticino
-				ITA = {
-					transfer_state = 846
-				}
-				846 = { add_core_of = ROOT }
-				
-				# Savoy
-				ITA = {
-					transfer_state = 735
-				}
-				735 = { 
-					add_core_of = ROOT
-					set_state_name = ITA_italian_savoy_name
-				}
-				set_province_name = {
-				    id = 9909 
-				    name = ITA_italian_nice_name
-				} 
-				set_province_name = {
-				    id = 778  
-				    name = ITA_italian_annecy_name
-				} 
-				 
-				# Zara
-				ITA = {
-					transfer_state = 163
-				} 
-				163 = { add_core_of = ROOT }
-				
-				# Dalmatia
-				ITA = {
-					transfer_state = 103
-				}
-				103 = { 
-					add_core_of = ROOT 
-					set_state_name = ITA_italian_dalmatia_name
-				}
-				set_province_name = {
-				    id = 3924
-				    name = ITA_italian_split_name
-				} 
-				set_province_name = {
-				    id = 6889  
-				    name = ITA_italian_dubrovnik_name
-				} 
-	 
-				# Ljubljana
-				ITA = {
-					transfer_state = 853
-				}
-				853 = { 
-					add_core_of = ROOT 
-					set_state_name = ITA_italian_ljubljana_state_name
-				}
-				set_province_name = {
-				    id = 9627
-				    name = ITA_italian_ljubljana_name
-				}
-
-				# Malta
-				ITA = {
-					transfer_state = 116
-				}
-				116 = { add_core_of = ROOT }
-
-				# Crete
-				ITA = {
-					transfer_state = 182
-				}
-				182 = { 
-					add_core_of = ROOT 
-					set_state_name = ITA_italian_crete_name
-				}
-				set_province_name = {
-				    id = 12058  
-				    name = ITA_italian_chania_name 
-				} 
-				set_province_name = {
-				    id = 9940  
-				    name = ITA_italian_heraklion_name 
-				} 
-
-				# Dodecaneso
-				ITA = {
-					transfer_state = 164
-				}
-				164 = { add_core_of = ROOT }
 
 				news_event = { id = bba_italian_formables_news.1 hours = 8 }	
 
