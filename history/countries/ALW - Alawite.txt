@@ -90,3 +90,13 @@ set_popularities = {
 	communism = 10
 	neutrality = 30
 }
+
+create_country_leader = {
+	name = "Ernest Marie Hubert Schoeffler"
+	desc = ""
+	picture = "gfx/leaders/ALW/Portrait_Ernest_Marie_Hubert_Schoeffler.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
