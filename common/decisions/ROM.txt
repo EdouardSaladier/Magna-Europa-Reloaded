@@ -413,12 +413,15 @@ ROM_change_sides = {
 political_actions = {
 	ROM_integrate_transnistria = {
 		available = {
-			all_state = {
-				if = {
-					limit = {
-						is_transnistria = yes
+			custom_trigger_tooltip = {
+				tooltip = ROM_controls_transnistria
+				all_state = {
+					if = {
+						limit = {
+							is_transnistria = yes
+						}
+						is_controlled_by = ROOT
 					}
-					is_controlled_by = ROOT
 				}
 			}
 		}
@@ -426,7 +429,7 @@ political_actions = {
 			original_tag = ROM
 		}
 		visible = {
-			all_state = {
+			any_state = {
 				if = {
 					limit = {
 						is_transnistria = yes
@@ -434,7 +437,6 @@ political_actions = {
 					NOT = { is_owned_by = ROOT }
 				}
 			}
-			date > 1941.1.1
 		}
 		cost = 10
 		ai_will_do = {
@@ -475,17 +477,20 @@ political_actions = {
 	}
 	ROM_retake_bessarabia = {
 		available = {
-			all_state = {
-				if = {
-					limit = {
-						OR = {
-							is_bessarabia = yes
-							state = 1600
-							state = 1599
-							state = 590
+			custom_trigger_tooltip = {
+				tooltip = ROM_controls_bessarabia
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								is_bessarabia = yes
+								state = 1600
+								state = 1599
+								state = 590
+							}
 						}
+						is_controlled_by = ROOT
 					}
-					is_controlled_by = ROOT
 				}
 			}
 		}

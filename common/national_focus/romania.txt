@@ -533,9 +533,16 @@
 		}
 
 		available = {
-			1604 = {
-				is_owned_by = SOV
-				is_controlled_by = SOV
+			SOV = {
+				exists = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = ROM_transnistria_is_russian
+				SOV = {
+					any_owned_state = {
+						is_transnistria = yes
+					}
+				}
 			}
 		}
 
@@ -550,10 +557,15 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ROM_demand_transnistria"
+			every_state =  {
+				limit = {
+					is_transnistria = yes
+				}
+				add_claim_by = ROOT
+			}
 			create_wargoal = {
-				type = take_state_focus
+				type = take_claimed_state
 				target = SOV
-				generator = { 1604 }
 			}
 		}
 	}
@@ -1724,6 +1736,7 @@
 				unlock_decision_category_tooltip = ROM_dividing_yugo
 				set_country_flag = invited_to_split_yugo
 			}
+			custom_effect_tooltip = focus_not_implemented
 		}
 	}
 
