@@ -618,6 +618,36 @@ political_actions = {
 			}
 		}
 	}
+	SLO_annex_border_territory = { #I'm not making a new file for SLO for a single decision
+		available = {
+			SLO = {
+				controls_state = 1440
+				controls_state = 1441
+			}
+		}
+		allowed = {
+			original_tag = SLO
+		}
+		visible = {
+			is_in_faction_with = GER
+			GER = { has_government = fascism }
+			NOT = {
+				SLO = {
+					owns_state = 1440
+					owns_state = 1441
+				}
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			base = 100
+		}
+		days_remove = 1
+		complete_effect = {
+			transfer_state = 1440
+			transfer_state = 1441
+		}
+	}
 }
 
 economy_decisions = {
