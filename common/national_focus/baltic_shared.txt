@@ -1620,15 +1620,15 @@ shared_focus = {
 		OR = {
 			AND = {
 				original_tag = LIT
-				controls_state = 11
+				controls_state = 242
 			}
 			AND = {
 				original_tag = LAT
-				controls_state = 12
+				controls_state = 172
 			}
 			AND = {
 				original_tag = EST
-				controls_state = 13
+				controls_state = 133
 			}
 		}
 	}
@@ -1646,28 +1646,27 @@ shared_focus = {
 		if = {
 			limit = { original_tag = LIT }
 			133 = {
-				add_building_construction = { type = bunker province = 19972 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 6446 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 17371 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 19930 level = 2 instant_build = yes }
 			}
-			152 = {
-				add_building_construction = { type = bunker province = 19994 level = 3 instant_build = yes }
+			259 = {
+				add_building_construction = { type = bunker province = 10814 level = 3 instant_build = yes }
 			}
 		}
 		if = {
 			limit = { original_tag = LAT }
-			808 = {
-				add_building_construction = { type = bunker province = 9340 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 9240 level = 2 instant_build = yes }
+			172 = {
+				add_building_construction = { type = bunker province = 19998 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3864 level = 2 instant_build = yes }
 				add_building_construction = { type = bunker province = 10323 level = 2 instant_build = yes }
 			}
-			809 = {
-				add_building_construction = { type = bunker province = 6222 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 265 level = 2 instant_build = yes }
+			91 = {
+				add_building_construction = { type = bunker province = 6312 level = 2 instant_build = yes }
 			}
 		}
 		if = {
 			limit = { original_tag = EST }
-			812 = {
+			133 = {
 				add_building_construction = { type = bunker province = 19972 level = 2 instant_build = yes }
 				add_building_construction = { type = bunker province = 6446 level = 2 instant_build = yes }
 			}
