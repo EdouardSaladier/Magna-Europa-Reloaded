@@ -2,27 +2,23 @@
 state={
 	id=255
 	name="STATE_255"
-
-	history={
+	provinces={
+		2889 3168 3863 4835 5550 7677 7871 8585 10954 11025 17291 
+	}
+	history = {
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
-
 		}
 		add_core_of = MRD
 		victory_points = {
-			10954 20 
+			10954 20
 		}
 		victory_points = {
-			11025 2 
+			11025 2
 		}
-
-	}
-
-	provinces={
-		3863 4835 5550 8585 11025 
 	}
 	manpower=463264
 	buildings_max_level_factor=1.000
