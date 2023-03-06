@@ -960,6 +960,13 @@ technologies = {
 					limit = {
 						original_tag = USA
 					}
+					load_oob = "USA_medium_tank_division"
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						load_oob = "USA_AI_medium_tank_division"
+					}
 					create_equipment_variant = {
 						name = "M3 Lee"
 						type = medium_tank_chassis_1
@@ -1004,6 +1011,13 @@ technologies = {
 				if = {
 					limit = {
 						original_tag = SOV
+					}
+					load_oob = "SOV_medium_tank_division"
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						load_oob = "SOV_AI_medium_tank_division"
 					}
 					create_equipment_variant = {
 						name = "T-28"

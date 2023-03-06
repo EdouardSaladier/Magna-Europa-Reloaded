@@ -2155,7 +2155,12 @@ SOV_produce_units = {
 	ai_strategy = {
 		type = build_army
 		id = infantry
-		value = 400
+		value = 100
+	}
+	ai_strategy = {
+		type = build_army
+		id = armor
+		value = 10
 	}
 }
 

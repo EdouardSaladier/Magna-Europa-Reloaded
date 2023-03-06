@@ -2641,7 +2641,7 @@ GER_normandy_buffer = {
 			578
 			583
 		}
-		ratio = 0.11
+		ratio = 0.10
 		area = normandy_landing_zone
 		subtract_invasions_from_need = no
 		subtract_fronts_from_need = yes
@@ -2676,7 +2676,7 @@ GER_invasion_buffer = {
 			578
 			583
 		}
-		ratio = 0.20
+		ratio = 0.15
 		area = normandy_landing_zone
 		subtract_invasions_from_need = no
 		subtract_fronts_from_need = yes

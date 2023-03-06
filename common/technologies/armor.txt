@@ -731,6 +731,35 @@ technologies = {
 			}
 		}
 		
+		on_research_complete = {
+			hidden_effect = {
+				if = {
+					limit = {
+						original_tag = USA
+					}
+					load_oob = "USA_medium_tank_division"
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						load_oob = "USA_AI_medium_tank_division"
+					}
+				}
+				if = {
+					limit = {
+						original_tag = SOV
+					}
+					load_oob = "SOV_medium_tank_division"
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						load_oob = "SOV_AI_medium_tank_division"
+					}
+				}
+			}
+		}
+		
 		categories = {
 			armor
 			cat_medium_armor

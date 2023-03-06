@@ -1036,6 +1036,12 @@ ENG_lifeline_of_the_empire = {
 		id = "EGY"
 		value = 100
 	}
+	
+	ai_strategy = {
+		type = front_unit_request
+		id = "ITA"
+		value = 100
+	}
 }
 
 ENG_USA_focus_on_europe = {
@@ -1466,6 +1472,20 @@ ENG_Defends_Mediterranean = {
 		type = theatre_distribution_demand_increase
 		id = 1622
 		value = 10
+	}
+	
+	ai_strategy = {
+		type = put_unit_buffers
+
+		ratio = 0.05
+
+		# states to put garrison orders (if no state is friendly, strat is invalid)
+		states = {
+			1622
+		}
+
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
 	}
 }
 
@@ -1919,6 +1939,6 @@ ENG_buff_pls = {
 	ai_strategy = {
 		type = build_army
 		id = infantry
-		value = 2000
+		value = 50
 	}
 }
