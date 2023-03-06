@@ -8,15 +8,23 @@ state={
 		add_core_of = UAE
 		buildings = {
 			infrastructure = 1
-			16977 = { naval_base = 3 }
+			16977 = {
+				naval_base = 3
+
+			}
+
 		}
-		victory_points = { 16977 80 }
+		victory_points = {
+			16977 80 
+		}
+
 	}
+
 	provinces={
-		1702 8185 9273 16977 18099 
+		1702 8185 9273 16977 
 	}
 	manpower=22400
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }
