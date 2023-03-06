@@ -5,7 +5,12 @@ state={
 	provinces={
 		1589 9143 9177 9590 9679 9680 9681 9682 18618 18673 18790 19343 19349 19355 19363 19364 
 	}
-	resources = { steel = 23 }
+	resources = {
+		steel = 280
+		tungsten = 140
+		aluminium = 180
+		oil = 680
+	}
 	history = {
 		owner = USA
 		add_core_of = USA

@@ -1197,3 +1197,10 @@ SOV_capital_of_the_tsars = {
 
 	state_production_speed_buildings_factor = 0.25
 }
+
+
+colonies_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_increased_metal_production
+	local_resources = 0.65
+}

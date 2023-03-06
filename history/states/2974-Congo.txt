@@ -1,17 +1,20 @@
 state={
 	id=2974
 	name="STATE_2974"
-	resources={
-		rubber=15
-		tungsten=2
-	}
 	provinces={
 		5603 
+	}
+	resources = {
+		chromium = 40
+		rubber = 68
 	}
 	history={
 		owner = BEL
 		buildings = {
 			infrastructure = 1
+			5603 = {
+				naval_base = 5
+			}
 		}
     }
 	manpower=11184000

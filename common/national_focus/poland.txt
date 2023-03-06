@@ -15228,6 +15228,11 @@ focus_tree = {
 						is_owned_by = DNZ
 					}
 				}
+				DNZ = {
+					all_core_state = {
+						is_owned_by = POL
+					}
+				}
 			}
 		}
 		
@@ -15239,6 +15244,7 @@ focus_tree = {
 				DNZ = {
 					all_core_state = {
 						NOT = { is_owned_by = DNZ }
+						NOT = { is_owned_by = POL }
 					}
 				}
 			}
@@ -15264,6 +15270,12 @@ focus_tree = {
 						state = 2729
 						state = 280
 					}
+				}
+				remove_dynamic_modifier = {
+					modifier = international_city
+				}
+				add_dynamic_modifier = {
+					modifier = international_city_2
 				}
 				set_demilitarized_zone = yes
 				force_enable_resistance = { 
@@ -15431,6 +15443,15 @@ focus_tree = {
 				POL_remove_danzig_effect = yes
 				set_state_name = "Gdańsk"
 			}
+			2729 = {
+				force_enable_resistance = { 
+					clear = yes
+					occupier = POL
+					occupied = DNZ
+				}
+				POL_remove_danzig_effect = yes
+				set_state_name = "Nowy Dwór Gdański"
+			}
 			set_province_name = {
 				id = 10923
 				name = "Gdańsk"
@@ -15578,7 +15599,7 @@ focus_tree = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 85 }
+				prioritize = { 280 }
 				limit = {
 					is_coastal = yes
 				}

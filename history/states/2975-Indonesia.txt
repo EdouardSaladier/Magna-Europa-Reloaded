@@ -1,18 +1,21 @@
 state={
 	id=2975
 	name="STATE_2975"
-	resources={
-		rubber=383
-		oil=39
-		aluminium=39
-	}
 	provinces={
 		18099 
+	}
+	resources = {
+		aluminium = 40
+		oil = 40
+		rubber = 420
 	}
 	history={
 		owner = HOL
 		buildings = {
 			infrastructure = 1
+			18099 = {
+				naval_base = 5
+			}
 		}
     }
 	manpower=60727233

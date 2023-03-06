@@ -53,8 +53,9 @@ recruit_character = BEL_paul-henri_spaak
 recruit_character = BEL_gaston_eyskens
 recruit_character = BEL_paul_van_zeeland
 
-
-
+2974 = {
+	add_dynamic_modifier = { modifier = colonies_modifier }
+}
 
 set_politics = {
 	ruling_party = democratic
