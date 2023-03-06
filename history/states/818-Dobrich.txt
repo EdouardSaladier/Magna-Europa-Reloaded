@@ -1,0 +1,27 @@
+
+state={
+	id=818
+	name="STATE_818"
+	history={
+		owner = ROM
+		add_core_of = ROM
+		add_core_of = BUL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = DOB
+		add_core_of = WLC
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = { 5762 2 }
+	}
+	provinces={
+		2129 5385 5762 7187 7780 14623 14656 
+	}
+	manpower=174930
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}
