@@ -479,6 +479,7 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			RKG = { exists = no }
 			OR = {
 				has_completed_focus = GER_form_the_reichskommissariats
 				has_completed_focus = GER_weserubung
@@ -581,6 +582,7 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			RKD = { exists = no }
 			OR = {
 				has_completed_focus = GER_form_the_reichskommissariats
 				has_completed_focus = GER_weserubung
@@ -687,6 +689,7 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			RKN = { exists = no }
 			OR = {
 				has_completed_focus = GER_form_the_reichskommissariats
 				has_completed_focus = GER_around_maginot
@@ -827,6 +830,7 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			RKB = { exists = no }
 			OR = {
 				has_completed_focus = GER_form_the_reichskommissariats
 				has_completed_focus = GER_around_maginot
@@ -1004,6 +1008,7 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			RKK = { exists = no }
 			OR = { 
 				has_completed_focus = GER_form_the_reichskommissariats
 				AND = {
@@ -1107,6 +1112,7 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			RKT = { exists = no }
 			OR = { 
 				has_completed_focus = GER_form_the_reichskommissariats
 				AND = {
@@ -1196,6 +1202,15 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			
+				RKO = { exists = no }
+				AND = {
+					event_target:BLT_WITH_GER = {
+						has_country_flag = OSTLAND
+						exists = no
+					}
+				}
+			
 			OR = { 
 				has_completed_focus = GER_form_the_reichskommissariats
 				AND = {
@@ -1378,6 +1393,16 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			event_target:BLT_WITH_GER = {
+				NOT = {
+					owns_state = 2189
+				}
+			}
+			RKO = {
+				NOT = {
+					owns_state = 2189
+				}
+			}
 			OR = { 
 				has_completed_focus = GER_form_the_reichskommissariats
 				AND = {
@@ -1522,6 +1547,7 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			RKU = { exists = no }
 			OR = { 
 				has_completed_focus = GER_form_the_reichskommissariats
 				AND = {
@@ -1768,6 +1794,11 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			RKU = {
+				NOT = {
+					controls_state = 366
+				}
+			}
 			OR = { 
 				has_completed_focus = GER_form_the_reichskommissariats
 				AND = {
@@ -1968,6 +1999,7 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			RKM = { exists = no }
 			OR = { 
 				has_completed_focus = GER_form_the_reichskommissariats
 				AND = {
@@ -2130,6 +2162,7 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			RKS = { exists = no }
 			OR = {
 				has_completed_focus = GER_form_the_reichskommissariats
 				has_completed_focus = GER_operation_tannenbaum
@@ -2216,6 +2249,7 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			GGV = { exists = no }
 			OR = {
 				has_completed_focus = GER_danzig_or_war
 				has_completed_focus = GER_form_the_reichskommissariats
@@ -2356,6 +2390,7 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			MVF = { exists = no }
 			OR = {
 				has_completed_focus = GER_war_with_france
 				has_completed_focus = GER_form_the_reichskommissariats
@@ -2474,6 +2509,11 @@ GER_reichskommissariats = {
 		}
 
 		visible = {
+			MVF = { 
+				NOT = {
+					owns_state = 822 
+				}
+			}
 			OR = {
 				has_completed_focus = GER_war_with_france
 				has_completed_focus = GER_form_the_reichskommissariats
@@ -2594,6 +2634,7 @@ GER_reichskommissariats = {
 		fire_only_once = yes
 
 		visible = {
+			WSL = { exists = no }
 			OR = {
 				has_completed_focus = GER_war_with_france
 				has_completed_focus = GER_form_the_reichskommissariats
