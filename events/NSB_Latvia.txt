@@ -423,22 +423,14 @@ country_event = {
 					NOT = { owner = { tag = ROOT } }
 					OR = {
 						#Lithuania States
-						state = 814
-						state = 11
-						state = 815
-						state = 189
-						state = 188
+						is_core_of = LIT
 						#Estonia States
-						state = 811
-						state = 812
-						state = 13
-						state = 813
-						state = 191
+						is_core_of = EST
 						#Belarus/East Poland States
-						state = 784
-						state = 96
-						state = 95
-						state = 94
+						AND = {
+							is_core_of = POL
+							is_core_of = BLR
+						}
 					}
 				}
 				LAT = { set_state_controller = PREV }
@@ -480,22 +472,14 @@ country_event = {
 					NOT = { owner = { tag = ROOT } }
 					OR = {
 						#Lithuania States
-						state = 814
-						state = 11
-						state = 815
-						state = 189
-						state = 188
+						is_core_of = LIT
 						#Estonia States
-						state = 811
-						state = 812
-						state = 13
-						state = 813
-						state = 191
-						#Belarus States
-						state = 784
-						state = 96
-						state = 95
-						state = 94
+						is_core_of = EST
+						#Belarus/East Poland States
+						AND = {
+							is_core_of = POL
+							is_core_of = BLR
+						}
 					}
 				}
 				LAT = { set_state_controller = PREV }

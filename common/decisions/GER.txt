@@ -1201,6 +1201,20 @@ GER_reichskommissariats = {
 		}
 
 		complete_effect = {
+			hidden_effect = {
+				every_country = {
+						limit = {
+							OR = {
+								tag = LIT
+								tag = LAT
+								tag = EST
+							}
+							is_in_faction_with = ROOT
+						}
+						save_event_target_as = BLT_WITH_GER
+					}
+			}
+					
 			every_state = {
 				limit = {
 					OR = {
@@ -1219,8 +1233,21 @@ GER_reichskommissariats = {
 						state = 2136
 						state = 2697
 					}
+					NOT = {
+						is_owned_by = event_target:BLT_WITH_GER
+					}
+					if = {
+						limit = {
+							event_target:BLT_WITH_GER = {
+								is_ai = no
+							}	
+						}
+						NOT = {
+							is_controlled_by = event_target:BLT_WITH_GER
+						}
+					}
 				}
-				transfer_state_to = RKO
+				transfer_state_to = RKO 
 				add_compliance = 30 
 			}
 			RKO = {

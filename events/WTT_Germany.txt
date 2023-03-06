@@ -12,6 +12,9 @@ country_event = {
 	
 	#civil war starts
 	option = {
+		ai_chance = {
+			base = 10
+		}
 		name = wtt_germany.1.a
 		hidden_effect = {
 
@@ -123,7 +126,9 @@ country_event = {
 	}
 	option = {
 		name = wtt_germany.1.b
-		
+			ai_chance = {
+				base = 0        # Unfinished
+			}
 			delete_units = {
 				division_template = "Infanterie-Division"
 				disband = no
