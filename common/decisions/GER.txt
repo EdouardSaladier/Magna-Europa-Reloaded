@@ -385,10 +385,7 @@ GER_case_anton_category = {
 				}
 			}
 			all_state = {
-				limit = {
-					is_vichy_state = yes
-					
-				}
+				is_vichy_state = yes
 				divisions_in_state = { state = THIS size < 1 }
 			}
 			OR = {
@@ -717,7 +714,7 @@ GER_reichskommissariats = {
 						add_compliance = 30
 					}
 				}
-				RKN = {`
+				RKN = {
 					declare_war_on = {
 						target = HOL
 						type = civil_war
