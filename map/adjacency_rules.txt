@@ -614,6 +614,95 @@ adjacency_rule =
 	icon = 18655
 	offset = { -5 0 0 }
 }
+
+adjacency_rule =
+{
+	name = "CONGO_BORDER"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	friend =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 18576 }
+
+	is_disabled = {
+		has_country_flag = CONGO_BORDER_BLOCKED_FOR_COUNTRY
+		tooltip = congo_blocked_tt
+	}
+	
+	icon = 18576
+	offset = { -5 0 0 }
+}
+
+adjacency_rule =
+{
+	name = "INDONESIA_BORDER"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	friend =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 19222 }
+
+	is_disabled = {
+		has_country_flag = INDONESIA_BORDER_BLOCKED_FOR_COUNTRY
+		tooltip = indonesia_blocked_tt
+	}
+	
+	icon = 19222
+	offset = { -5 0 0 }
+}
+
 adjacency_rule =
 {
 	name = "KARELIAN_ISTHMUS"

@@ -1,3 +1,4 @@
+
 state={
 	id=1340
 	name="STATE_1340"
@@ -5,10 +6,12 @@ state={
 		owner = MRT
 		add_core_of = MRT
 	}
+
 	provinces={
-		210 2608 5603 15892 
+		210 2608 15892 
 	}
 	manpower=2709
-	state_category=wasteland
 	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }
