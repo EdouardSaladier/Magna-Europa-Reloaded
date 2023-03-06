@@ -994,7 +994,10 @@ GER_reichskommissariats = {
 			factor = 0
 			modifier = {
 				add = 1
-				SOV = { has_capitulated = yes }
+				OR = {
+					SOV = { has_capitulated = yes }
+					SOV = { exists = no }
+				}
 			}
 		}
 		
@@ -1094,7 +1097,10 @@ GER_reichskommissariats = {
 			factor = 0
 			modifier = {
 				add = 1
-				SOV = { has_capitulated = yes }
+				OR = {
+					SOV = { has_capitulated = yes }
+					SOV = { exists = no }
+				}
 			}
 		}
 		
@@ -1211,7 +1217,7 @@ GER_reichskommissariats = {
 							}
 							is_in_faction_with = ROOT
 						}
-						save_event_target_as = BLT_WITH_GER
+						save_global_event_target_as = BLT_WITH_GER
 					}
 			}
 					
@@ -1249,6 +1255,19 @@ GER_reichskommissariats = {
 				}
 				transfer_state_to = RKO 
 				add_compliance = 30 
+				if = {
+					limit = {
+						event_target:BLT_WITH_GER = {
+							is_in_faction_with = GER
+							has_cosmetic_tag = OSTLAND
+						}
+					}
+					transfer_state_to = event_target:BLT_WITH_GER
+					else = {
+						transfer_state_to = RKO 
+						add_compliance = 30
+					}
+				}
 			}
 			RKO = {
 				set_cosmetic_tag = BLR_reichskommissariat
@@ -1281,7 +1300,15 @@ GER_reichskommissariats = {
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
-			RKO = { exists = yes }
+			OR = {
+				RKO = { exists = yes }
+				AND = {
+					event_target:BLT_WITH_GER = {
+						is_in_faction_with = GER
+						has_cosmetic_tag = OSTLAND
+					}
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = GER_RKO_expand_required_states_tt
 				all_state = {
@@ -1341,7 +1368,10 @@ GER_reichskommissariats = {
 			factor = 0
 			modifier = {
 				add = 1
-				SOV = { has_capitulated = yes }
+				OR = {
+					SOV = { has_capitulated = yes }
+					SOV = { exists = no }
+				}
 			}
 		}
 		
@@ -1392,8 +1422,19 @@ GER_reichskommissariats = {
 							state = 2443
 						}
 				}
-				transfer_state_to = RKO
-				add_compliance = 30 
+				if = {
+					limit = {
+						event_target:BLT_WITH_GER = {
+							is_in_faction_with = GER
+							has_cosmetic_tag = OSTLAND
+						}
+					}
+					transfer_state_to = event_target:BLT_WITH_GER
+					else = {
+						transfer_state_to = RKO 
+						add_compliance = 30
+					}
+				}
 			}
 			
 		}
@@ -1717,7 +1758,10 @@ GER_reichskommissariats = {
 			factor = 0
 			modifier = {
 				add = 1
-				SOV = { has_capitulated = yes }
+				OR = {
+					SOV = { has_capitulated = yes }
+					SOV = { exists = no }
+				}
 			}
 		}
 		
@@ -1914,7 +1958,10 @@ GER_reichskommissariats = {
 			factor = 0
 			modifier = {
 				add = 1
-				SOV = { has_capitulated = yes }
+				OR = {
+					SOV = { has_capitulated = yes }
+					SOV = { exists = no }
+				}
 			}
 		}
 		
