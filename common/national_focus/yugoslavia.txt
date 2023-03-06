@@ -2402,12 +2402,12 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
-				date < 1941.1.1
+				date < 1940.11.1
 			}
 			modifier = {
 				factor = 100
 				is_historical_focus_on = yes
-				date > 1941.1.1
+				date > 1940.11.1
 			}
 		}
 
@@ -2435,7 +2435,7 @@ focus_tree = {
 				AND = {
 					is_ai = yes
 					is_historical_focus_on = yes
-					date < 1941.1.1
+					date < 1940.11.1
 				}
 			}
 		}

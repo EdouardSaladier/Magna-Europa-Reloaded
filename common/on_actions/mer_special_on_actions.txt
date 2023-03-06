@@ -79,9 +79,174 @@ on_actions = {
 			# }
 		}
 	}
+	
+	#ROOT is subject FROM is previous overlord
+	on_subject_free = {
+		effect = {
+			#make sure Dominions lose the dominion tag
+			if = {
+				limit = {
+					OR = {
+						original_tag = TUN
+						original_tag = MOR
+						original_tag = PAL
+						original_tag = JOR
+						original_tag = LEB
+						original_tag = SYR
+						original_tag = ALW
+						original_tag = JDZ
+						original_tag = KUW
+						original_tag = QAT
+						original_tag = UAE
+						original_tag = IRE
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	
+	on_liberate = {
+		effect = {
+			#make sure Dominions lose the dominion tag
+			if = {
+				limit = {
+					OR = {
+						original_tag = TUN
+						original_tag = MOR
+						original_tag = PAL
+						original_tag = JOR
+						original_tag = LEB
+						original_tag = SYR
+						original_tag = ALW
+						original_tag = JDZ
+						original_tag = KUW
+						original_tag = QAT
+						original_tag = UAE
+						original_tag = IRE
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	
+	on_force_government = {
+		effect = {
+			#make sure Dominions lose the dominion tag
+			if = {
+				limit = {
+					OR = {
+						original_tag = TUN
+						original_tag = MOR
+						original_tag = PAL
+						original_tag = JOR
+						original_tag = LEB
+						original_tag = SYR
+						original_tag = ALW
+						original_tag = JDZ
+						original_tag = KUW
+						original_tag = QAT
+						original_tag = UAE
+						original_tag = IRE
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	#ROOT is subject FROM is previous overlord
+	on_puppet = {
+		effect = {
+			#make sure Dominions lose the dominion tag
+			if = {
+				limit = {
+					NOT ={
+						FROM = {
+							original_tag = FRA
+						}
+					}
+					OR = {
+						original_tag = TUN
+						original_tag = MOR
+						original_tag = LEB
+						original_tag = SYR
+						original_tag = ALW
+						original_tag = JDZ
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					NOT ={
+						FROM = {
+							original_tag = ENG
+						}
+					}
+					OR = {
+						original_tag = PAL
+						original_tag = JOR
+						original_tag = KUW
+						original_tag = QAT
+						original_tag = UAE
+						original_tag = IRE
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	
+	on_release_as_free = {
+		effect = {
+			#make sure Dominions lose the dominion tag
+			if = {
+				limit = {
+					OR = {
+						original_tag = TUN
+						original_tag = MOR
+						original_tag = PAL
+						original_tag = JOR
+						original_tag = LEB
+						original_tag = SYR
+						original_tag = ALW
+						original_tag = JDZ
+						original_tag = KUW
+						original_tag = QAT
+						original_tag = UAE
+						original_tag = IRE
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	
 	# ROOT is capitulated country, FROM is winner
 	on_capitulation_immediate = {
 		effect = {
+			if = {
+				limit = {
+					tag = ROM
+					has_cosmetic_tag = ROM_neutrality
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					tag = HUN
+					has_cosmetic_tag = HUN_neutrality
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					tag = HUN
+					has_cosmetic_tag = HUN_GREATER
+				}
+				drop_cosmetic_tag = yes
+			}
 			if = {
 				limit = {
 					tag = MVF

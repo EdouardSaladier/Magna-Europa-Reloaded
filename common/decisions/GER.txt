@@ -366,6 +366,7 @@ GER_case_anton_category = {
 				OR = {
 					is_subject_of = GER
 					has_focus_tree = vichy_french_focus
+					has_country_flag = vichy_france
 				}
 				NOT = { has_war_with = GER }
 				NOT = { has_country_flag = case_anton }
@@ -383,15 +384,13 @@ GER_case_anton_category = {
 					}
 				}
 			}
-			divisions_in_state = { state = 31 size < 1 }
-			divisions_in_state = { state = 25 size < 1 }
-			divisions_in_state = { state = 22 size < 1 }
-			divisions_in_state = { state = 21 size < 1 }
-			divisions_in_state = { state = 32 size < 1 }
-			divisions_in_state = { state = 22 size < 1 }
-			divisions_in_state = { state = 828 size < 1 }
-			divisions_in_state = { state = 822 size < 1 }
-			divisions_in_state = { state = 824 size < 1 }
+			all_state = {
+				limit = {
+					is_vichy_state = yes
+					
+				}
+				divisions_in_state = { state = THIS size < 1 }
+			}
 			OR = {
 				ITA = { owns_state = 810 }
 				divisions_in_state = { state = 810 size < 1 }
@@ -408,6 +407,7 @@ GER_case_anton_category = {
 				original_tag_to_check = FRA
 				has_government = fascism
 				OR = {
+					has_country_flag = vichy_france
 					is_subject_of = GER
 					has_focus_tree = vichy_french_focus
 				}

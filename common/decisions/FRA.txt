@@ -140,11 +140,12 @@ FRA_vichy_france = {
 		available = {
 			has_government = fascism
 			NOT = {
-				GER = { divisions_in_state = { state = 851 size > 0 } } #BBA: Replaced state 21 (Provence - Bouches-du-Rhone) by stat 851 (Provence - Var), where Toulon is
+				GER = { divisions_in_state = { state = 824 size > 0 } } #BBA: Replaced state 21 (Provence - Bouches-du-Rhone) by stat 851 (Provence - Var), where Toulon is
+				GER = { divisions_in_state = { state = 829 size > 0 } } #BBA: Replaced state 21 (Provence - Bouches-du-Rhone) by stat 851 (Provence - Var), where Toulon is
 			}
 			has_country_flag = {
 				flag = case_anton
-				days > 2
+				days > 4
 			}
 		}
 
@@ -202,6 +203,7 @@ FRA_vichy_france = {
 			OR = {
 				is_subject_of = GER
 				has_focus_tree = vichy_french_focus
+				has_country_flag = vichy_france
 			}
 			has_country_flag = case_anton
 		}
