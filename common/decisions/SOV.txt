@@ -8985,6 +8985,7 @@ SOV_industry_relocation = {
 		}
 
 		remove_effect = {
+			subtract_from_temp_variable = { SOV_industrial_relocation_number = 1 }
 			hidden_effect = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
