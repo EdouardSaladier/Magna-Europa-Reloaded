@@ -164,7 +164,7 @@
 		}
 		task_force = {
 			name = "Western Approaches Fleet"
-			location = 5768 # Plymouth
+			location = 19409 # Plymouth
 			# Western Approaches Destroyer Division
 			ship = { name = "HMS Montrose" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Sturdy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
