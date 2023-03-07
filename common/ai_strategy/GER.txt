@@ -1245,18 +1245,6 @@ GER_area_priority = {
 		id = africa
 		value = -70
 	}
-
-	ai_strategy = {
-		type = area_priority
-		id = pacific
-		value = -120 #less focus here
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = oceania
-		value = -80
-	}
 }
 
 GER_start_the_blitz = {
@@ -1389,17 +1377,6 @@ worry_about_barbarossa_before_africa = {
 		type = area_priority
 		id = suez
 		value = -30
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = horn_of_africa
-		value = -200
-	}
-	ai_strategy = {
-		type = front_unit_request
-		area = horn_of_africa
-		value = -50
 	}
 }
 
@@ -2190,12 +2167,7 @@ GER_dont_invade_until_FRA_falls = {
 
 	ai_strategy = {
 		type = front_unit_request
-
-		# norwayi
-		all_state = {
-			is_core_of = NOR
-		}
-
+		target = norway
 		value = -100
 	}
 }

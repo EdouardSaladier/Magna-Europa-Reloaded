@@ -6,6 +6,13 @@ areas = {
             58
         }
     }
+	norway = {
+		strategic_regions = {
+			122
+			121
+			120
+		}
+	}
 
     scandinavia = {
 		strategic_regions = {
@@ -25,6 +32,22 @@ areas = {
 	europe = {
 		continents = {
 			europe
+		}
+	}
+	italy = {
+		strategic_regions = {
+			16
+			25
+			17
+			18
+		}
+	}
+	uk = {
+		strategic_regions = {
+			45
+			3
+			2
+			46
 		}
 	}
 
@@ -106,7 +129,21 @@ areas = {
 			north_america
 		}
 	}
-
+	
+	north_africa = {
+		strategic_regions = {
+			30
+			37
+			65
+			66
+			38
+			39
+			59
+			58
+			50
+		}
+	}
+	
 	south_america = {
 
 		continents = {

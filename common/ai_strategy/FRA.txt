@@ -227,18 +227,6 @@ FRA_area_priority = {
         id = suez
         value = -50
     }
-
-	ai_strategy = {
-		type = area_priority
-		id = pacific
-		value = 10 #less focus here
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = oceania
-		value = 10
-	}
 }
 
 FRA_naval_role_ratios_historical = {

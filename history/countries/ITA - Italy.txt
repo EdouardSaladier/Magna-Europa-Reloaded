@@ -19,7 +19,7 @@ every_state = {
 	limit = {
 		is_core_of = ITA
 	}
-	add_state_flag = ITA_INITIAL_STATE
+	set_state_flag = ITA_INITIAL_STATE
 }
 
 starting_train_buffer = 1.5

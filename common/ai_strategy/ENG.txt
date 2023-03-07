@@ -1932,6 +1932,7 @@ ENG_buff_pls = {
 		original_tag = ENG
 	}
 	enable = {
+		always = yes
 	}
 
 	abort = {
@@ -1939,6 +1940,6 @@ ENG_buff_pls = {
 	ai_strategy = {
 		type = build_army
 		id = infantry
-		value = 50
+		value = 100
 	}
 }

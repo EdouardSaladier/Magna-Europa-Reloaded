@@ -74,38 +74,7 @@ focus_tree = {
 	}
 
 
-	focus = {
-		id = POR_portuguese_oil
-		available = {
-			OR = {
-				has_full_control_of_state = 1823
-				1823 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_hydroelectricity }
-				
-		icon = GFX_goal_generic_oil_refinery
-		x = 0
-		y = 1
-
-		relative_position_id = POR_hydroelectricity
-		cost = 10
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_portuguese_oil" 
-			1823 = {
-				add_resource = {
-					type = oil
-					amount = 12
-				}
-			}
-		}
-	}
+	
 
 	focus = {
 		id = POR_continue_the_public_works
@@ -501,6 +470,38 @@ focus_tree = {
 						instant_build = yes
 					}
 					add_extra_state_shared_building_slots = 1	
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_portuguese_oil
+		available = {
+			OR = {
+				has_full_control_of_state = 1823
+				1823 = {
+					owner = { is_subject_of = ROOT }
+				}
+			}
+		}
+		relative_position_id = POR_hydroelectricity
+		bypass = {		
+		}
+		prerequisite = { focus = POR_hydroelectricity }
+				
+		icon = GFX_goal_generic_oil_refinery
+		x = 0
+		y = 1
+
+		
+		cost = 10
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POR_portuguese_oil" 
+			1823 = {
+				add_resource = {
+					type = oil
+					amount = 12
 				}
 			}
 		}
@@ -2218,7 +2219,7 @@ focus_tree = {
 			is_in_faction = no
 			SOV_comintern_joinable = yes 
 			SOV = {
-				ruling_party = communism
+				has_government = communism
 				is_faction_leader = yes
 				has_civil_war = no
 				NOT = {
@@ -3649,13 +3650,6 @@ focus_tree = {
 			show_ideas_tooltip = POR_jaime_cortesao
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = POR_jose_manuel_sarmento_de_beires
-			if = {
-				limit = {
-					has_completed_focus = POR_limited_self_rule
-				}
-				custom_effect_tooltip = available_political_advisor
-				show_ideas_tooltip = POR_francisco_da_cunha_leal
-			}
 			create_corps_commander = {
 				name = "José Mendes dos Reis"
 				portrait_path = GFX_portrait_Jose_Mendes_dos_Reis
@@ -4857,7 +4851,7 @@ focus_tree = {
 		
 		icon = GFX_goal_generic_navy_anti_submarine
 		x = 3		
-		y = 4
+		y = 1
 
 		relative_position_id = POR_national_syndicalism
 		cost = 10
@@ -4889,195 +4883,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = POR_mapa_cor_de_rosa
-		allow_branch = { has_country_flag = NEVER }
-		select_effect = {
-			every_country = {
-				limit = { 
-					OR = {
-						controls_state = 770
-						controls_state = 545
-						controls_state = 771
-					}
-				}
-				ROOT = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = PREV
-						value = 100
-					}
-				}
-			}
-		}
-
-		available = {			
-		}
-
-		bypass = {
-			AND = {
-				owns_state = 770
-				owns_state = 545
-				owns_state = 771
-			}
-		}
-		prerequisite = { focus = POR_refuse_the_naval_blockade }
-		icon = GFX_focus_por_the_pink_map
-		x = 0		
-		y = 1
-
-		relative_position_id = POR_refuse_the_naval_blockade
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_mapa_cor_de_rosa" 	
-			add_state_claim = 770 #Malawi
-			add_state_claim = 545 #Rhodesia
-			add_state_claim = 771 #Zambia
-
-			hidden_effect = {
-				random_country = {
-					limit = { 
-						OR = {
-							controls_state = 770
-							controls_state = 545
-							controls_state = 771
-						}
-					}
-					ROOT = {
-						add_ai_strategy = {
-							type = declare_war
-							id = PREV
-							value = 100
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = POR_recover_the_east_indies
-
-		select_effect = {
-			random_country = {
-				limit = { controls_state = 336 }
-				ROOT = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = PREV
-						value = 100
-					}
-				}
-			}
-			random_country = {
-				limit = { controls_state = 667 }
-				ROOT = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = PREV
-						value = 100
-					}
-				}
-			}
-		}
-
-		available = {			
-		}
-
-		bypass = {
-			owns_state = 336
-			owns_state = 667
-		}
-		prerequisite = { focus = POR_mapa_cor_de_rosa }
-		icon = GFX_focus_RAJ_seek_help_from_germany
-		x = 0		
-		y = 1
-
-		relative_position_id = POR_mapa_cor_de_rosa
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_recover_the_east_indies" 
-			add_state_claim = 336 # Singapore
-			add_state_claim = 667 # Lesser Sunda
-
-			hidden_effect = {
-				random_country = {
-					limit = { controls_state = 336 }
-					ROOT = {
-						add_ai_strategy = {
-							type = declare_war
-							id = PREV
-							value = 100
-						}
-					}
-				}
-				random_country = {
-					limit = { controls_state = 667 }
-					ROOT = {
-						add_ai_strategy = {
-							type = declare_war
-							id = PREV
-							value = 100
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = POR_recover_brazil
-
-		will_lead_to_war_with = BRA
-
-		select_effect = {
-			random_country = {
-				limit = { controls_state = 500 }
-				ROOT = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = PREV
-						value = 100
-					}
-				}
-			}	
-		}
-
-		available = {			
-		}
-
-		bypass = {
-			owns_state = 500
-		}
-		prerequisite = { focus = POR_mapa_cor_de_rosa }
-
-		mutually_exclusive = { focus = POR_the_kingdom_reunited }
-
-		icon = GFX_focus_por_recover_brazil
-		x = 1
-		y = 2
-
-		relative_position_id = POR_mapa_cor_de_rosa
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_recover_brazil" 	
-			add_state_claim = 500 #Rio
-
-			hidden_effect = {
-				random_country = {
-					limit = { controls_state = 500 }
-					ROOT = {
-						add_ai_strategy = {
-							type = declare_war
-							id = PREV
-							value = 100
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = POR_a_royal_wedding
 		available = {			
 		}
@@ -5101,7 +4906,6 @@ focus_tree = {
 				news_event = { id = lar_news.25 days = 3 random_days = 5 }
 			}	
 			add_political_power = 120
-			unlock_decision_tooltip = POR_stir_monarchist_sentiment_in_brazil
 			unlock_decision_tooltip = POR_stir_monarchist_sentiment_in_portugal
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = POR_joao_de_azevedo_coutinho
@@ -5691,11 +5495,11 @@ focus_tree = {
 
 		bypass = {		
 		}
-		prerequisite = { focus = POR_refuse_the_naval_blockade focus = POR_proudly_alone }
+		prerequisite = { focus = POR_the_kingdom_reunited focus = POR_proudly_alone }
 
 		icon = GFX_focus_ger_great_red_menace
 		x = 0
-		y = 2
+		y = 3
 
 		relative_position_id = POR_proudly_alone
 		cost = 10

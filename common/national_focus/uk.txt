@@ -2929,10 +2929,11 @@ focus_tree = {
 						}
 					}
 					transfer_state_to = CYP
-					set_autonomy = {
-						target = CYP
-						autonomy_state = autonomy_dominion
-					}
+				}
+				
+				set_autonomy = {
+					target = CYP
+					autonomy_state = autonomy_dominion
 				}
 				else_if = {
 					limit = {
@@ -2998,10 +2999,11 @@ focus_tree = {
 						is_owned_by = ENG
 					}
 					transfer_state_to = EGY
-					set_autonomy = {
+					
+				}
+				set_autonomy = {
 					target = EGY
-						autonomy_state = autonomy_dominion
-					}
+					autonomy_state = autonomy_dominion
 				}
 				else_if = {
 					limit = {
