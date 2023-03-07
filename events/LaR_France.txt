@@ -1418,7 +1418,7 @@ country_event = {
 	option = {
 		name = lar_compensate_italy.1.a #agree
 		ai_chance = {
-			base = 0
+			base = 40
 			modifier = {
 				add = 100
 				OR = {
@@ -1445,7 +1445,7 @@ country_event = {
 	option = {
 		name = lar_compensate_italy.1.b #refuse
 		ai_chance = {
-			base = 1
+			base = 0
 		}
 		FRA = {
 			country_event = lar_compensate_italy.3

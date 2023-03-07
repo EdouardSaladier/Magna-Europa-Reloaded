@@ -606,31 +606,15 @@ news_event = {
 	
 	option = {
 		name = wtt_news.16.a
-		trigger = {
-			original_tag = GER
-		}
 	}
 	option = {
 		name = wtt_news.16.b
-		trigger = {
-			original_tag = CHI
-		}
 	}
 	option = {
 		name = wtt_news.16.c
-		trigger = {
-			original_tag = JAP
-		}
 	}
 	option = {
 		name = wtt_news.16.d
-		trigger = { 
-			NOT = { 
-				original_tag = GER
-				original_tag = CHI
-				original_tag = JAP
-			}
-		}
 	}
 }
 
@@ -653,25 +637,12 @@ news_event = {
 	}
 	option = {
 		name = wtt_news.17.b
-		trigger = {
-			original_tag = CHI
-		}
 	}
 	option = {
 		name = wtt_news.17.c
-		trigger = {
-			original_tag = JAP
-		}
 	}
 	option = {
 		name = wtt_news.16.d
-		trigger = { 
-			NOT = { 
-				original_tag = GER
-				original_tag = CHI
-				original_tag = JAP
-			}
-		}
 	}
 }
 
@@ -922,587 +893,6 @@ news_event = {
 	}
 }
 
-# News event for Japan taking European colonies
-news_event = {
-	id = wtt_news.25
-	title = wtt_news.25.t
-	desc = wtt_news.25.desc
-	picture = GFX_news_event_generic_read_write
-
-	is_triggered_only = yes
-	
-	major = yes
-	
-	option = {
-		name = wtt_news.25.a
-		trigger = {
-			original_tag = JAP
-		}
-	}
-	option = {
-		name = wtt_news.25.b
-		trigger = {
-			OR = {
-				original_tag = HOL
-				original_tag = ENG
-				AND = {
-					original_tag = FRA
-					has_government = democratic
-				}
-			}
-		}
-	}
-	option = {
-		name = wtt_news.25.c
-		trigger = {
-			NOT = {
-				original_tag = JAP
-				original_tag = HOL
-				original_tag = ENG
-				AND = {
-					original_tag = FRA
-					has_government = democratic
-				}
-			}
-		}
-	}
-}
-
-# News event for Phillipine Independence
-news_event = {
-	id = wtt_news.26
-	title = wtt_news.26.t
-	desc = wtt_news.26.desc
-	picture = GFX_news_event_generic_read_write
-
-	is_triggered_only = yes
-	
-	major = yes
-	
-	option = {
-		name = wtt_news.25.a
-		trigger = {
-			original_tag = JAP
-		}
-	}
-	option = {
-		name = wtt_news.26.b
-		trigger = {
-			original_tag = USA
-		}
-	}
-	option = {
-		name = wtt_news.26.c
-		trigger = {
-			original_tag = "PHI"
-		}
-	}
-	option = {
-		name = wtt_news.25.c
-		trigger = {
-			NOT = {
-				original_tag = JAP
-				original_tag = "PHI"
-				original_tag = USA
-			}
-		}
-	}
-}
-
-# News event for Phillipine Independence
-news_event = {
-	id = wtt_news.27
-	title = wtt_news.27.t
-	desc = wtt_news.27.desc
-	picture = GFX_news_event_japanese_parade
-
-	is_triggered_only = yes
-	
-	major = yes
-	
-	option = {
-		name = wtt_news.27.a
-		trigger = {
-			OR = {
-				original_tag = JAP
-				AND = {
-					original_tag = MAN
-					has_government = fascism
-				}
-			}
-		}
-	}
-	option = {
-		name = wtt_news.27.b
-		trigger = {
-			original_tag = SOV
-		}
-	}
-	option = {
-		name = wtt_news.27.c
-		trigger = {
-			OR = {
-				original_tag = HOL
-				original_tag = ENG
-				original_tag = USA
-				original_tag = CHI
-				original_tag = AST
-				original_tag = NZL
-				original_tag = RAJ
-			}
-		}
-	}
-	option = {
-		name = wtt_news.27.d
-		trigger = {
-			NOT = {
-				original_tag = JAP
-				original_tag = SOV
-				original_tag = HOL
-				original_tag = ENG
-				original_tag = USA
-				original_tag = CHI
-				original_tag = AST
-				original_tag = NZL
-				original_tag = RAJ
-				AND = {
-					original_tag = MAN
-					has_government = fascism
-				}
-			}
-		}
-	}
-}
-
-# China - Chiang Kai Shek executed by Communists, Soviets angry
-news_event = {
-	id = wtt_news.30
-	title = wtt_news.30.t
-	desc = wtt_news.30.desc
-	picture = GFX_news_event_018
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.30.a
-		trigger = {
-			original_tag = PRC
-		}
-	}
-	option = {
-		name = wtt_news.30.b
-		trigger = {
-			original_tag = CHI
-		}
-	}
-	option = {
-		name = wtt_news.30.c
-		trigger = {
-			original_tag = SOV
-		}
-	}
-	option = {
-		name = wtt_news.30.d
-		trigger = {
-			NOT = {
-				original_tag = PRC
-				original_tag = CHI
-				original_tag = SOV
-			}
-		}
-	}
-}
-# China - Chiang Kai Shek executed by Communists, Soviets approved
-news_event = {
-	id = wtt_news.31
-	title = wtt_news.31.t
-	desc = wtt_news.31.desc
-	picture = GFX_news_event_generic_funeral
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.30.a
-		trigger = {
-			original_tag = PRC
-		}
-	}
-	option = {
-		name = wtt_news.30.b
-		trigger = {
-			original_tag = CHI
-		}
-	}
-	option = {
-		name = wtt_news.31.c
-		trigger = {
-			original_tag = SOV
-		}
-	}
-	option = {
-		name = wtt_news.30.d
-		trigger = {
-			NOT = {
-				original_tag = PRC
-				original_tag = CHI
-				original_tag = SOV
-			}
-		}
-	}
-}
-
-# China - Chiang Kai Shek refuses an alliance with Communists, is released from house arrest
-news_event = {
-	id = wtt_news.32
-	title = wtt_news.32.t
-	desc = wtt_news.32.desc
-	picture = GFX_news_event_chinese_soldiers_march
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.32.a
-		trigger = {
-			original_tag = PRC
-		}
-	}
-	option = {
-		name = wtt_news.31.c
-		trigger = {
-			original_tag = CHI
-		}
-	}
-	option = {
-		name = wtt_news.32.e
-		trigger = {
-			OR = {
-				original_tag = JAP
-				original_tag = MAN
-			}
-		}
-	}
-	option = {
-		name = wtt_news.32.c
-		trigger = {
-			original_tag = SOV
-		}
-	}
-	option = {
-		name = wtt_news.32.d
-		trigger = {
-			NOT = {
-				original_tag = PRC
-				original_tag = CHI
-				original_tag = SOV
-				original_tag = JAP
-				original_tag = MAN
-			}
-		}
-	}
-}
-# China - Communists refuse United Front
-news_event = {
-	id = wtt_news.33
-	title = wtt_news.33.t
-	desc = wtt_news.33.desc
-	picture = GFX_news_event_chinese_soldiers_march
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.31.c
-		trigger = {
-			original_tag = PRC
-		}
-	}
-	option = {
-		name = wtt_news.33.b
-		trigger = {
-			original_tag = CHI
-		}
-	}
-	option = {
-		name = wtt_news.32.e
-		trigger = {
-			OR = {
-				original_tag = JAP
-				original_tag = MAN
-			}
-		}
-	}
-	option = {
-		name = wtt_news.32.c
-		trigger = {
-			original_tag = SOV
-		}
-	}
-	option = {
-		name = wtt_news.32.d
-		trigger = {
-			NOT = {
-				original_tag = PRC
-				original_tag = CHI
-				original_tag = SOV
-				original_tag = JAP
-				original_tag = MAN
-			}
-		}
-	}
-}
-# China - Flying Tigers sent to China
-news_event = {
-	id = wtt_news.34
-	title = wtt_news.34.t
-	desc = wtt_news.34.desc
-	picture = GFX_news_event_china_flying_tigers
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_news.34.a
-		trigger = {
-			original_tag = USA
-		}
-	}
-	option = {
-		name = wtt_news.34.b
-		trigger = {
-			original_tag = CHI
-		}
-	}
-	option = {
-		name = wtt_news.34.c
-		trigger = {
-			has_war_with = CHI
-		}
-	}
-	option = {
-		name = wtt_news.34.d
-		trigger = {
-			NOT = {
-				original_tag = CHI
-				original_tag = USA
-				has_war_with = CHI
-			}
-		}
-	}
-}
-
-# China - China picks a fight with Japan
-news_event = {
-	id = wtt_news.35
-	title = wtt_news.35.t
-	desc = wtt_news.35.desc
-	picture = GFX_news_event_001
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.35.a
-		trigger = {
-			original_tag = JAP
-		}
-	}
-	option = {
-		name = wtt_news.35.b
-		trigger = {
-			original_tag = CHI
-		}
-	}
-	option = {
-		name = wtt_news.35.c
-		trigger = {
-			is_literally_china = yes
-			NOT = {
-				original_tag = CHI
-			}
-		}
-	}
-	option = {
-		name = wtt_news.35.d
-		trigger = {
-			NOT = {
-				original_tag = CHI
-				original_tag = JAP
-				is_literally_china = yes
-			}
-		}
-	}
-}
-
-# PRC - Chiang kai Shek assassinated
-news_event = {
-	id = wtt_news.36
-	title = wtt_news.36.t
-	desc = wtt_news.36.desc
-	picture = GFX_news_event_generic_funeral
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.36.a
-		trigger = {
-			original_tag = PRC
-		}
-	}
-	option = {
-		name = wtt_news.36.b
-		trigger = {
-			is_literally_china = yes
-			NOT = {
-				original_tag = PRC
-			}
-		}
-	}
-	option = {
-		name = wtt_news.36.d
-		trigger = {
-			NOT = {
-				original_tag = CHI
-				original_tag = PRC
-				is_literally_china = yes
-			}
-		}
-	}
-}
-
-# PRC - PRC declared
-news_event = {
-	id = wtt_news.37
-	title = wtt_news.37.t
-	desc = wtt_news.37.desc
-	picture = GFX_news_event_prc_declared
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.37.a
-		trigger = {
-			original_tag = PRC
-		}
-	}
-	option = {
-		name = wtt_news.37.b
-		trigger = {
-			is_literally_china = yes
-			NOT = {
-				original_tag = PRC
-			}
-		}
-	}
-	option = {
-		name = wtt_news.37.d
-		trigger = {
-			NOT = {
-				original_tag = CHI
-				original_tag = PRC
-				is_literally_china = yes
-			}
-		}
-	}
-}
-
-# PRC - Wang Ming wins power struggle
-news_event = {
-	id = wtt_news.38
-	title = wtt_news.38.t
-	desc = wtt_news.38.desc
-	picture = GFX_news_event_generic_communist_congress
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.38.a
-		trigger = {
-			original_tag = PRC
-		}
-	}
-	option = {
-		name = wtt_news.38.b
-		trigger = {
-			is_literally_china = yes
-			NOT = {
-				original_tag = PRC
-			}
-		}
-	}
-	option = {
-		name = wtt_news.38.c
-		trigger = {
-			original_tag = SOV
-		}
-	}
-	option = {
-		name = wtt_news.38.d
-		trigger = {
-			NOT = {
-				original_tag = CHI
-				original_tag = PRC
-				original_tag = SOV
-				is_literally_china = yes
-			}
-		}
-	}
-}
-# PRC - Japan goes to war following provocations
-news_event = {
-	id = wtt_news.39
-	title = wtt_news.39.t
-	desc = wtt_news.39.desc
-	picture = GFX_news_event_050
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.39.a
-		trigger = {
-			original_tag = PRC
-		}
-	}
-	option = {
-		name = wtt_news.39.b
-		trigger = {
-			is_literally_china = yes
-			NOT = {
-				original_tag = PRC
-				original_tag = CHI
-			}
-		}
-	}
-	option = {
-		name = wtt_news.39.c
-		trigger = {
-			original_tag = CHI
-		}
-	}
-	option = {
-		name = wtt_news.39.e
-		trigger = {
-			original_tag = JAP
-		}
-	}
-	option = {
-		name = wtt_news.39.d
-		trigger = {
-			NOT = {
-				original_tag = CHI
-				original_tag = PRC
-				original_tag = JAP
-				is_literally_china = yes
-			}
-		}
-	}
-}
-
 # Canals - Suez Canal Blown
 news_event = {
 	id = wtt_news.40
@@ -1512,8 +902,7 @@ news_event = {
 		trigger = {
 			FROM = {
 				has_country_flag = blew_up_suez
-				owns_state = 446
-				#owns_state = 453
+				owns_state = 1285
 			}
 		}
 	}
@@ -1524,8 +913,7 @@ news_event = {
 				OR = {
 					NOT = {	has_country_flag = blew_up_suez }
 					NOT = {
-						owns_state = 446
-						#owns_state = 453
+						owns_state = 1285
 					}
 				}
 			}
@@ -1540,8 +928,7 @@ news_event = {
 		name = wtt_news.40.a
 		trigger = {
 			NOT = { has_country_flag = blew_up_suez }
-			owns_state = 446
-			#owns_state = 453
+			owns_state = 1285
 		}
 		if = {
 			limit = {
@@ -1555,8 +942,7 @@ news_event = {
 		name = wtt_news.40.b
 		trigger = {
 			has_country_flag = blew_up_suez
-			owns_state = 446
-			#owns_state = 453
+			owns_state = 1285
 		}
 		if = {
 			limit = {
@@ -1572,8 +958,7 @@ news_event = {
 		trigger = {
 			any_country = {
 				has_war_with = ROOT
-				owns_state = 446
-				#owns_state = 453
+				owns_state = 1285
 				has_country_flag = blew_up_suez
 			}
 		}
@@ -1583,8 +968,7 @@ news_event = {
 		trigger = {
 			any_country = {
 				has_war_with = ROOT
-				owns_state = 446
-				#owns_state = 453
+				owns_state = 1285
 			}
 			has_country_flag = blew_up_suez
 		}
@@ -1595,8 +979,7 @@ news_event = {
 		trigger = {
 			any_country = {
 				has_war_with = ROOT
-				owns_state = 446
-				#owns_state = 453
+				owns_state = 1285
 				NOT = { has_country_flag = blew_up_suez }
 			}
 			any_other_country = {
@@ -1611,8 +994,7 @@ news_event = {
 		trigger = {
 			any_other_country = {
 				has_war_together_with = ROOT
-				owns_state = 446
-				#owns_state = 453
+				owns_state = 1285
 				has_country_flag = blew_up_suez
 			}
 			NOT = { has_country_flag = blew_up_suez }
@@ -1627,8 +1009,7 @@ news_event = {
 			}
 			any_other_country = {
 				has_war_together_with = ROOT
-				owns_state = 446
-				#owns_state = 453
+				owns_state = 1285
 				NOT = { has_country_flag = blew_up_suez }
 			}
 			NOT = { has_country_flag = blew_up_suez }
@@ -1646,499 +1027,11 @@ news_event = {
 			NOT = {
 				any_other_country = {
 					has_war_together_with = ROOT
-					owns_state = 446
-					#owns_state = 453
+					owns_state = 1285
 					has_country_flag = blew_up_suez
 				}
 			}
 			NOT = { has_country_flag = blew_up_suez }
-		}
-	}
-}
-
-# Canals - Panama Canal Blown
-news_event = {
-	id = wtt_news.41
-	title = wtt_news.41.t
-	desc = {
-		text = wtt_news.41.desc_usa
-		trigger = {
-			FROM = {
-				has_country_flag = blew_up_panama
-				owns_state = 685
-			}
-		}
-	}
-	desc = {
-		text = wtt_news.41.desc_not_usa
-		trigger = {
-			FROM = {
-				OR = {
-					NOT = {	has_country_flag = blew_up_panama }
-					NOT = { owns_state = 685 }
-				}
-			}
-		}
-	}
-	picture = GFX_news_event_020
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.41.a
-		trigger = {
-			NOT = { has_country_flag = blew_up_panama }
-			owns_state = 685
-		}
-		if = {
-			limit = {
-				original_tag = USA
-			}
-			add_war_support = -0.05
-			add_stability = -0.05
-		}
-	}
-	option = {
-		name = wtt_news.41.b
-		trigger = {
-			has_country_flag = blew_up_panama
-			owns_state = 685
-		}
-		if = {
-			limit = {
-				original_tag = USA
-			}
-			add_war_support = -0.05
-			add_stability = -0.05
-		}
-		clr_country_flag = blew_up_panama
-	}
-	option = {
-		name = wtt_news.41.c
-		trigger = {
-			any_country = {
-				has_war_with = ROOT
-				owns_state = 685
-				has_country_flag = blew_up_panama
-			}
-		}
-	}
-	option = {
-		name = wtt_news.41.d
-		trigger = {
-			any_country = {
-				has_war_with = ROOT
-				owns_state = 685
-			}
-			has_country_flag = blew_up_panama
-		}
-		clr_country_flag = blew_up_panama
-	}
-	option = {
-		name = wtt_news.41.e
-		trigger = {
-			any_country = {
-				has_war_with = ROOT
-				owns_state = 685
-				NOT = { has_country_flag = blew_up_panama }
-			}
-			any_other_country = {
-				has_war_together_with = ROOT
-				has_country_flag = blew_up_panama
-			}
-			NOT = { has_country_flag = blew_up_panama }
-		}
-	}
-	option = {
-		name = wtt_news.41.f
-		trigger = {
-			any_other_country = {
-				has_war_together_with = ROOT
-				owns_state = 685
-				has_country_flag = blew_up_panama
-			}
-			NOT = { has_country_flag = blew_up_panama }
-		}
-	}
-	option = {
-		name = wtt_news.41.g
-		trigger = {
-			any_country = {
-				has_war_with = ROOT
-				has_country_flag = blew_up_panama
-			}
-			any_other_country = {
-				has_war_together_with = ROOT
-				owns_state = 685
-				NOT = { has_country_flag = blew_up_panama }
-			}
-			NOT = { has_country_flag = blew_up_panama }
-		}
-	}
-	option = {
-		name = wtt_news.41.h
-		trigger = {
-			NOT = {
-				any_country = {
-					has_war_with = ROOT
-					has_country_flag = blew_up_panama
-				}
-			}
-			NOT = {
-				any_other_country = {
-					has_war_together_with = ROOT
-					owns_state = 685
-					has_country_flag = blew_up_panama
-				}
-			}
-			NOT = { has_country_flag = blew_up_panama }
-		}
-	}
-}
-
-# Canals - Suez Canal Rebuilt
-news_event = {
-	id = wtt_news.42
-	title = wtt_news.42.t
-	desc = wtt_news.42.desc
-	picture = GFX_news_event_020
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.42.a
-		trigger = {
-			original_tag = ENG
-			has_country_flag = rebuilt_suez
-		}
-		clr_country_flag = rebuilt_suez
-	}
-	option = {
-		name = wtt_news.42.b
-		trigger = {
-			NOT = { original_tag = ENG }
-			has_country_flag = rebuilt_suez
-		}
-		clr_country_flag = rebuilt_suez
-	}
-	option = {
-		name = wtt_news.42.c
-		trigger = {
-			any_other_country = {
-				has_war_together_with = ROOT
-				has_country_flag = rebuilt_suez
-			}
-			NOT = { has_country_flag = rebuilt_suez }
-		}
-	}
-	option = {
-		name = wtt_news.42.d
-		trigger = {
-			any_other_country = {
-				has_war_with = ROOT
-				has_country_flag = rebuilt_suez
-			}
-			NOT = { has_country_flag = rebuilt_suez }
-		}
-	}
-	option = {
-		name = wtt_news.42.e
-		trigger = {
-			NOT = { has_country_flag = rebuilt_suez }
-			NOT = {
-				any_other_country = {
-					has_war_together_with = ROOT
-					has_country_flag = rebuilt_suez
-				}
-			}
-			NOT = {
-				any_other_country = {
-					has_war_with = ROOT
-					has_country_flag = rebuilt_suez
-				}
-			}
-		}
-	}
-}
-
-# Canals - Panama Canal Rebuilt
-news_event = {
-	id = wtt_news.43
-	title = wtt_news.43.t
-	desc = wtt_news.43.desc
-	picture = GFX_news_event_020
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.43.a
-		trigger = {
-			original_tag = USA
-			has_country_flag = rebuilt_panama
-		}
-		clr_country_flag = rebuilt_panama
-	}
-	option = {
-		name = wtt_news.43.b
-		trigger = {
-			NOT = { original_tag = USA }
-			has_country_flag = rebuilt_panama
-		}
-		clr_country_flag = rebuilt_panama
-	}
-	option = {
-		name = wtt_news.43.c
-		trigger = {
-			any_other_country = {
-				has_war_together_with = ROOT
-				has_country_flag = rebuilt_panama
-			}
-			NOT = { has_country_flag = rebuilt_panama }
-		}
-	}
-	option = {
-		name = wtt_news.43.d
-		trigger = {
-			any_other_country = {
-				has_war_with = ROOT
-				has_country_flag = rebuilt_panama
-			}
-			NOT = { has_country_flag = rebuilt_panama }
-		}
-	}
-	option = {
-		name = wtt_news.43.e
-		trigger = {
-			NOT = { has_country_flag = rebuilt_panama }
-			NOT = {
-				any_other_country = {
-					has_war_together_with = ROOT
-					has_country_flag = rebuilt_panama
-				}
-			}
-			NOT = {
-				any_other_country = {
-					has_war_with = ROOT
-					has_country_flag = rebuilt_panama
-				}
-			}
-		}
-	}
-}
-
-# Manchukuo - Emperor declares himself Emperor
-news_event = {
-	id = wtt_news.44
-	title = wtt_news.44.t
-	desc = wtt_news.44.desc
-	picture = GFX_news_event_japanese_army_parade
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.44.a
-		trigger = {
-			is_literally_china = yes
-			OR = {
-				is_subject_of = MAN
-				is_in_faction_with = MAN
-			}
-		}
-	}
-	option = {
-		name = wtt_news.44.b
-		trigger = {
-			original_tag = MAN
-		}
-	}
-	option = {
-		name = wtt_news.44.c
-		trigger = {
-			original_tag = JAP
-		}
-	}
-	option = {
-		name = wtt_news.44.d
-		trigger = {
-			NOT = {
-				original_tag = MAN
-				original_tag = JAP
-				is_literally_china = yes
-			}
-		}
-	}
-	option = {
-		name = wtt_news.44.e
-		trigger = {
-			is_literally_china = yes
-			NOT = { 
-				is_subject_of = MAN 
-				is_in_faction_with = MAN
-			}
-		}
-	}
-}
-
-# China - Transition of Power after Power Struggle
-news_event = {
-	id = wtt_news.45
-	title = wtt_news.45.t
-	desc = wtt_news.45.desc
-	picture = GFX_news_event_generic_rally_3
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.45.a
-		trigger = {
-			is_literally_china = yes
-			NOT = {
-				tag = event_target:new_leader
-				tag = event_target:old_leader
-			}
-		}
-	}
-	option = {
-		name = wtt_news.45.b
-		trigger = {
-			tag = event_target:new_leader
-		}
-	}
-	option = {
-		name = wtt_news.45.c
-		trigger = {
-			tag = event_target:old_leader
-		}
-	}
-	option = {
-		name = wtt_news.45.d
-		trigger = {
-			is_literally_china = no
-		}
-	}
-}
-
-# China - One China Policy
-news_event = {
-	id = wtt_news.46
-	title = wtt_news.46.t
-	desc = wtt_news.46.desc
-	picture = GFX_news_event_journalists_speech
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.46.a
-		trigger = {
-			is_literally_china = yes
-			NOT = {
-				tag = ROOT
-			}
-		}
-	}
-	option = {
-		name = wtt_news.46.b
-		trigger = {
-			tag = ROOT
-		}
-	}
-	option = {
-		name = wtt_news.46.d
-		trigger = {
-			is_literally_china = no
-		}
-	}
-}
-
-# China - Overlordship over Indochina
-news_event = {
-	id = wtt_news.47
-	title = wtt_news.47.t
-	desc = wtt_news.47.desc
-	picture = GFX_news_event_polish_army
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.47.a
-		trigger = {
-			is_literally_china = yes
-		}
-	}
-	option = {
-		name = wtt_news.47.b
-		trigger = {
-			OR = {
-				controls_state = 671
-				controls_state = 670
-				controls_state = 286
-				controls_state = 741
-			}
-		}
-	}
-	option = {
-		name = wtt_news.47.c
-		trigger = {
-			is_literally_china = no
-			NOT = {
-				controls_state = 671
-				controls_state = 670
-				controls_state = 286
-				controls_state = 741
-			}
-			NOT = { tag = USA }
-		}
-	}
-	option = {
-		name = wtt_news.47.d
-		trigger = {
-			tag = USA 
-		}
-	}
-}
-# manchukuo - Independence War
-news_event = {
-	id = wtt_news.48
-	title = wtt_news.48.t
-	desc = wtt_news.48.desc
-	picture = GFX_news_event_japanese_parade
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.48.a
-		trigger = {
-			is_literally_china = yes
-		}
-	}
-	option = {
-		name = wtt_news.48.b
-		trigger = {
-			original_tag = MAN
-		}
-	}
-	option = {
-		name = wtt_news.48.c
-		trigger = {
-			original_tag = JAP
-		}
-	}
-	option = {
-		name = wtt_news.48.d
-		trigger = {
-			NOT = {
-			 	original_tag = MAN
-			 	original_tag = JAP
-			 	is_literally_china = yes
-			}
 		}
 	}
 }
@@ -2517,48 +1410,6 @@ news_event = {
 	}
 }
 
-# Formation of United Central America
-news_event = {
-	id = wtt_news.59
-	title = wtt_news.59.t
-	desc = wtt_news.59.desc
-	picture = GFX_news_event_generic_parliament
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.59.a
-		trigger = {
-			OR = {
-				original_tag = GUA
-				original_tag = ELS
-				original_tag = HON
-				original_tag = NIC
-				original_tag = COS
-			}
-			NOT = { has_war_with = FROM }
-		}
-	}
-	option = {
-		name = wtt_news.59.b
-		trigger = {
-			NOT = { original_tag = GUA }
-			NOT = { original_tag = ELS }
-			NOT = { original_tag = HON }
-			NOT = { original_tag = NIC }
-			NOT = { original_tag = COS }
-			NOT = { has_war_with = FROM }
-		}
-	}
-	option = {
-		name = wtt_news.53.c
-		trigger = {
-			has_war_with = FROM
-		}
-	}
-}
-
 # Formation of Baltic Federation
 news_event = {
 	id = wtt_news.60
@@ -2685,46 +1536,6 @@ news_event = {
 	}
 }
 
-# Formation of Kingdom of Mutapa
-news_event = {
-	id = wtt_news.63
-	title = wtt_news.63.t
-	desc = wtt_news.63.desc
-	picture = GFX_news_event_generic_parliament
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.63.a
-		trigger = {
-			OR = {
-				original_tag = SAF
-				original_tag = BOT
-				original_tag = ZIM
-				original_tag = MZB
-			}
-			NOT = { has_war_with = FROM }
-		}
-	}
-	option = {
-		name = wtt_news.63.b
-		trigger = {
-			NOT = { original_tag = SAF }
-			NOT = { original_tag = BOT }
-			NOT = { original_tag = ZIM }
-			NOT = { original_tag = MZB }
-			NOT = { has_war_with = FROM }
-		}
-	}
-	option = {
-		name = wtt_news.53.c
-		trigger = {
-			has_war_with = FROM
-		}
-	}
-}
-
 # Formation of Roman Empire
 news_event = {
 	id = wtt_news.64
@@ -2839,7 +1650,6 @@ news_event = {
 			OR = {
 				original_tag = IRQ
 				original_tag = SAU
-				original_tag = YEM
 				original_tag = OMA
 				original_tag = EGY
 				original_tag = LBA
@@ -2856,7 +1666,6 @@ news_event = {
 		trigger = {
 			NOT = { original_tag = IRQ }
 			NOT = { original_tag = SAU }
-			NOT = { original_tag = YEM }
 			NOT = { original_tag = OMA }
 			NOT = { original_tag = EGY }
 			NOT = { original_tag = LBA }
@@ -2864,78 +1673,6 @@ news_event = {
 			NOT = { original_tag = PAL }
 			NOT = { original_tag = LEB }
 			NOT = { original_tag = SYR }
-			NOT = { has_war_with = FROM }
-		}
-	}
-	option = {
-		name = wtt_news.53.c
-		trigger = {
-			has_war_with = FROM
-		}
-	}
-}
-
-# Formation of Majapahit Empire
-news_event = {
-	id = wtt_news.68
-	title = wtt_news.68.t
-	desc = wtt_news.68.desc
-	picture = GFX_news_event_generic_parliament
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.68.a
-		trigger = {
-			OR = {
-				original_tag = INS
-				original_tag = MAL
-			}
-			NOT = { has_war_with = FROM }
-		}
-	}
-	option = {
-		name = wtt_news.68.b
-		trigger = {
-			NOT = { original_tag = INS }
-			NOT = { original_tag = MAL }
-			NOT = { has_war_with = FROM }
-		}
-	}
-	option = {
-		name = wtt_news.53.c
-		trigger = {
-			has_war_with = FROM
-		}
-	}
-}
-
-# Formation of Rattanakosin Kingdom
-news_event = {
-	id = wtt_news.69
-	title = wtt_news.69.t
-	desc = wtt_news.69.desc
-	picture = GFX_news_event_generic_parliament
-
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = wtt_news.69.a
-		trigger = {
-			OR = {
-				original_tag = INS
-				original_tag = MAL
-			}
-			NOT = { has_war_with = FROM }
-		}
-	}
-	option = {
-		name = wtt_news.69.b
-		trigger = {
-			NOT = { original_tag = INS }
-			NOT = { original_tag = MAL }
 			NOT = { has_war_with = FROM }
 		}
 	}

@@ -13,19 +13,11 @@ country_event = {
 	# Accept
 	option = {
 		name = mtg_netherlands.1.a
-		effect_tooltip = {
-			VEN = { transfer_state = 695 }
-		}
-		VEN = { country_event = { id = mtg_netherlands.2 days = 1 random_days = 3 } }
 	}
 
 	# They're just trying to get the islands for themselves...
 	option = {
 		name = mtg_netherlands.1.b
-		effect_tooltip = {
-			VEN = { add_state_claim = 695 }
-		}
-		VEN = { country_event = { id = mtg_netherlands.3 days = 1 random_days = 3 } }
 		set_global_flag = ven_claims_abc_islands
 	}
 
@@ -70,7 +62,6 @@ country_event = {
 	# Ok
 	option = {
 		name = mtg_netherlands.2.a
-		transfer_state = 695
 	}
 }
 
@@ -87,7 +78,6 @@ country_event = {
 	# Ok
 	option = {
 		name = mtg_netherlands.3.a
-		add_state_claim = 695
 	}
 }
 
@@ -147,19 +137,11 @@ country_event = {
 	# I guess we have no choice but to let them have it
 	option = {
 		name = mtg_netherlands.6.a
-		effect_tooltip = {
-			VEN = { transfer_state = 695 }
-		}
-		VEN = { country_event = { id = mtg_netherlands.2 days = 1 random_days = 3 } }
 	}
 
 	# We won't give it up!
 	option = {
-		name = mtg_netherlands.6.b
-		effect_tooltip = {
-			VEN = { add_state_claim = 695 }
-		}
-		VEN = { country_event = { id = mtg_netherlands.3 days = 1 random_days = 3 } }
+		name = mtg_netherlands.6.
 		set_global_flag = ven_claims_abc_islands
 	}
 }
@@ -293,177 +275,6 @@ country_event = {
 			ideology = conservatism
 		}
 		remove_ideas = HOL_weak_government
-	}
-}
-
-# See to Japanese Demands in the East Indies
-country_event = {
-	id = mtg_netherlands.11
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.11 FROM = [From.GetName]" }
-	title = mtg_netherlands.11.t
-	desc = mtg_netherlands.11.d
-	picture = GFX_report_event_japan_europe_pact
-
-	is_triggered_only = yes
-	
-	# Let them 'protect' the East Indies
-	option = {
-		name = mtg_netherlands.11.a
-		effect_tooltip = {
-			JAP = {
-				transfer_state = 672
-				transfer_state = 335
-				transfer_state = 334
-				transfer_state = 673
-				transfer_state = 667
-			}
-			add_offsite_building = { type = arms_factory level = 8 }
-		}
-		JAP = { country_event = { id = mtg_netherlands.12 hours = 6 } }
-	}
-
-	# Give them trade
-	option = {
-		name = mtg_netherlands.11.b
-		effect_tooltip = {
-			if = {
-				limit = {
-					country_exists = INS
-					INS = { is_subject_of = HOL }
-					672 = { is_owned_and_controlled_by = INS }
-					335 = { is_owned_and_controlled_by = INS }
-					334 = { is_owned_and_controlled_by = INS }
-					673 = { is_owned_and_controlled_by = INS }
-					667 = { is_owned_and_controlled_by = INS }
-				}
-				INS = {
-					give_resource_rights = { receiver = JAP state = 672 }
-					give_resource_rights = { receiver = JAP state = 335 }
-					give_resource_rights = { receiver = JAP state = 334 }
-					give_resource_rights = { receiver = JAP state = 673 }
-					give_resource_rights = { receiver = JAP state = 667 }
-				}
-			}
-			else_if = {
-				limit = {
-					672 = { is_owned_and_controlled_by = HOL }
-					335 = { is_owned_and_controlled_by = HOL }
-					334 = { is_owned_and_controlled_by = HOL }
-					673 = { is_owned_and_controlled_by = HOL }
-					667 = { is_owned_and_controlled_by = HOL }
-				}
-				give_resource_rights = { receiver = JAP state = 672 }
-				give_resource_rights = { receiver = JAP state = 335 }
-				give_resource_rights = { receiver = JAP state = 334 }
-				give_resource_rights = { receiver = JAP state = 673 }
-				give_resource_rights = { receiver = JAP state = 667 }
-			}
-		}
-		effect_tooltip = {
-			add_offsite_building = { type = arms_factory level = 4 }
-		}
-		JAP = { country_event = { id = mtg_netherlands.13 hours = 6 } }
-	}
-}
-
-# Event for Japan saying NL gives them the Indies
-country_event = {
-	id = mtg_netherlands.12
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.12 FROM = [From.GetName]" }
-	title = mtg_netherlands.12.t
-	desc = mtg_netherlands.12.d
-	picture = GFX_report_event_japan_europe_pact
-
-	is_triggered_only = yes
-	
-	# Huzzah!
-	option = {
-		name = mtg_netherlands.12.a
-		effect_tooltip = {
-			transfer_state = 672
-			transfer_state = 335
-			transfer_state = 334
-			transfer_state = 673
-			transfer_state = 667
-			FROM = { add_offsite_building = { type = arms_factory level = 6 } }
-		}
-		FROM = { country_event = { id = mtg_netherlands.23 } }
-	}
-
-	# We don't want it.
-	option = {
-		name = mtg_netherlands.12.b
-		ai_chance = { factor = 0 }
-		FROM = {
-			set_country_flag = HOL_jap_rejected_control
-			country_event = { id = mtg_netherlands.25 }
-		}
-	}
-}
-
-# Event for Japan saying NL trades them the Indies resources
-country_event = {
-	id = mtg_netherlands.13
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.13 FROM = [From.GetName]" }
-	title = mtg_netherlands.13.t
-	desc = mtg_netherlands.13.d
-	picture = GFX_report_event_japan_europe_pact
-
-	is_triggered_only = yes
-	
-	# Ok
-	option = {
-		name = mtg_netherlands.13.a
-		effect_tooltip = {
-			if = {
-				limit = {
-					country_exists = INS
-					INS = { is_subject_of = HOL }
-					672 = { is_owned_and_controlled_by = INS }
-					335 = { is_owned_and_controlled_by = INS }
-					334 = { is_owned_and_controlled_by = INS }
-					673 = { is_owned_and_controlled_by = INS }
-					667 = { is_owned_and_controlled_by = INS }
-				}
-				INS = {
-					give_resource_rights = { receiver = JAP state = 672 }
-					give_resource_rights = { receiver = JAP state = 335 }
-					give_resource_rights = { receiver = JAP state = 334 }
-					give_resource_rights = { receiver = JAP state = 673 }
-					give_resource_rights = { receiver = JAP state = 667 }
-				}
-			}
-			else_if = {
-				limit = {
-					FROM = {
-						672 = { is_owned_and_controlled_by = HOL }
-						335 = { is_owned_and_controlled_by = HOL }
-						334 = { is_owned_and_controlled_by = HOL }
-						673 = { is_owned_and_controlled_by = HOL }
-						667 = { is_owned_and_controlled_by = HOL }
-					}
-				}
-				FROM = {
-					give_resource_rights = { receiver = JAP state = 672 }
-					give_resource_rights = { receiver = JAP state = 335 }
-					give_resource_rights = { receiver = JAP state = 334 }
-					give_resource_rights = { receiver = JAP state = 673 }
-					give_resource_rights = { receiver = JAP state = 667 }
-				}
-			}
-			FROM = { add_offsite_building = { type = arms_factory level = 4 } }
-		}
-		FROM = { country_event = { id = mtg_netherlands.24 } }
-	}
-
-	# Not good enough!
-	option = {
-		name = mtg_netherlands.13.b
-		ai_chance = { factor = 0 }
-		FROM = {
-			set_country_flag = HOL_jap_rejected_resources
-			country_event = { id = mtg_netherlands.25 }
-		}
 	}
 }
 
@@ -675,202 +486,6 @@ country_event = {
 			}
 		}
 		FROM = { country_event = { id = generic.7 hours = 6 } }
-	}
-}
-
-# Event for INS informing of NL preparing to integrate
-country_event = {
-	id = mtg_netherlands.21
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.21 FROM = [From.GetName]" }
-	title = mtg_netherlands.21.t
-	desc = mtg_netherlands.21.d
-	picture = GFX_report_event_generic_sign_treaty1
-
-	is_triggered_only = yes
-	
-	# Oh, well then...
-	option = {
-		name = mtg_netherlands.21.a
-		#effect_tooltip = {
-		#	add_timed_idea = {
-		#		idea = HOL_curtail_colonial_autonomy_subject
-		#		days = 545
-		#	}
-		#} ##UNUSED
-	}
-}
-
-# Event for INS informing of NL moving capital to Batavia
-country_event = {
-	id = mtg_netherlands.22
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.22 FROM = [From.GetName]" }
-	title = mtg_netherlands.22.t
-	desc = mtg_netherlands.22.d
-	picture = GFX_report_event_generic_sign_treaty2
-
-	is_triggered_only = yes
-	
-	# Goodbye, cruel world!
-	option = {
-		name = mtg_netherlands.22.a
-		custom_effect_tooltip = GAME_OVER_TT
-	}
-}
-
-# Event saying Japan accepts transfer of NEI
-country_event = {
-	id = mtg_netherlands.23
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.23 FROM = [From.GetName]" }
-	title = mtg_netherlands.23.t
-	desc = mtg_netherlands.23.d
-	picture = GFX_report_event_japan_europe_pact
-
-	is_triggered_only = yes
-	
-	# Ok!
-	option = {
-		name = mtg_netherlands.23.a
-		FROM = {
-			transfer_state = 672
-			transfer_state = 335
-			transfer_state = 334
-			transfer_state = 673
-			transfer_state = 667
-		}
-		add_offsite_building = { type = arms_factory level = 6 }
-		hidden_effect = { news_event = { id = mtg_news.48 days = 1 } }
-	}
-}
-
-# Event saying Japan accepts transfer of NEI resources
-country_event = {
-	id = mtg_netherlands.24
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.24 FROM = [From.GetName]" }
-	title = mtg_netherlands.24.t
-	desc = mtg_netherlands.24.d
-	picture = GFX_report_event_japan_europe_pact
-
-	is_triggered_only = yes
-	
-	# Ok!
-	option = {
-		name = mtg_netherlands.23.a
-		if = {
-			limit = {
-				country_exists = INS
-				INS = { is_subject_of = HOL }
-				672 = { is_owned_and_controlled_by = INS }
-				335 = { is_owned_and_controlled_by = INS }
-				334 = { is_owned_and_controlled_by = INS }
-				673 = { is_owned_and_controlled_by = INS }
-				667 = { is_owned_and_controlled_by = INS }
-			}
-			INS = {
-				give_resource_rights = { receiver = JAP state = 672 }
-				give_resource_rights = { receiver = JAP state = 335 }
-				give_resource_rights = { receiver = JAP state = 334 }
-				give_resource_rights = { receiver = JAP state = 673 }
-				give_resource_rights = { receiver = JAP state = 667 }
-			}
-		}
-		else_if = {
-			limit = {
-				672 = { is_owned_and_controlled_by = HOL }
-				335 = { is_owned_and_controlled_by = HOL }
-				334 = { is_owned_and_controlled_by = HOL }
-				673 = { is_owned_and_controlled_by = HOL }
-				667 = { is_owned_and_controlled_by = HOL }
-			}
-			give_resource_rights = { receiver = JAP state = 672 }
-			give_resource_rights = { receiver = JAP state = 335 }
-			give_resource_rights = { receiver = JAP state = 334 }
-			give_resource_rights = { receiver = JAP state = 673 }
-			give_resource_rights = { receiver = JAP state = 667 }
-		}
-		add_offsite_building = { type = arms_factory level = 4 }
-		hidden_effect = { news_event = { id = mtg_news.49 days = 1 } }
-	}
-}
-
-# Event saying Japan rejects Dutch offer
-country_event = {
-	id = mtg_netherlands.25
-	immediate = { log = "[GetDateText]: [Root.GetName]: event mtg_netherlands.25 FROM = [From.GetName]" }
-	title = mtg_netherlands.25.t
-	desc = mtg_netherlands.25.d
-	picture = GFX_report_event_japanese_reply
-
-	is_triggered_only = yes
-	
-	# Ok!
-	option = {
-		name = mtg_netherlands.25.a
-		hidden_effect = { JAP = { set_country_flag = HOL_declare_war_indies_allowed } }
-	}
-
-	# Let them 'protect' the East Indies
-	option = {
-		name = mtg_netherlands.11.a
-		trigger = {
-			NOT = { has_country_flag = HOL_jap_rejected_control }
-		}
-		effect_tooltip = {
-			JAP = {
-				transfer_state = 672
-				transfer_state = 335
-				transfer_state = 334
-				transfer_state = 673
-				transfer_state = 667
-			}
-			add_offsite_building = { type = arms_factory level = 8 }
-		}
-		JAP = { country_event = { id = mtg_netherlands.12 hours = 6 } }
-	}
-
-	# Give them trade
-	option = {
-		name = mtg_netherlands.11.b
-		trigger = {
-			NOT = { has_country_flag = HOL_jap_rejected_resources }
-		}
-		effect_tooltip = {
-			if = {
-				limit = {
-					country_exists = INS
-					INS = { is_subject_of = HOL }
-					672 = { is_owned_and_controlled_by = INS }
-					335 = { is_owned_and_controlled_by = INS }
-					334 = { is_owned_and_controlled_by = INS }
-					673 = { is_owned_and_controlled_by = INS }
-					667 = { is_owned_and_controlled_by = INS }
-				}
-				INS = {
-					give_resource_rights = { receiver = JAP state = 672 }
-					give_resource_rights = { receiver = JAP state = 335 }
-					give_resource_rights = { receiver = JAP state = 334 }
-					give_resource_rights = { receiver = JAP state = 673 }
-					give_resource_rights = { receiver = JAP state = 667 }
-				}
-			}
-			else_if = {
-				limit = {
-					672 = { is_owned_and_controlled_by = HOL }
-					335 = { is_owned_and_controlled_by = HOL }
-					334 = { is_owned_and_controlled_by = HOL }
-					673 = { is_owned_and_controlled_by = HOL }
-					667 = { is_owned_and_controlled_by = HOL }
-				}
-				give_resource_rights = { receiver = JAP state = 672 }
-				give_resource_rights = { receiver = JAP state = 335 }
-				give_resource_rights = { receiver = JAP state = 334 }
-				give_resource_rights = { receiver = JAP state = 673 }
-				give_resource_rights = { receiver = JAP state = 667 }
-			}
-		}
-		effect_tooltip = {
-			add_offsite_building = { type = arms_factory level = 4 }
-		}
-		JAP = { country_event = { id = mtg_netherlands.13 hours = 6 } }
 	}
 }
 
