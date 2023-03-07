@@ -4701,22 +4701,22 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus YUG_rare_minerals_exploitation"
-			else = {
+			
 				random_owned_controlled_state = {
 					add_resource = {
 						type = tungsten
 						amount = 8
 					}
 				}
-			}
-			else = {
+			
+			
 				random_owned_controlled_state = {
 					add_resource = {
 						type = chromium
 						amount = 8
 					}
 				}
-			}
+			
 		}
 	}
 

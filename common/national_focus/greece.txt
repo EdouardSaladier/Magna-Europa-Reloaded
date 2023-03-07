@@ -1593,13 +1593,14 @@ focus_tree = {
 					}
 					add_claim_by = ROOT
 				
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = TUR
-					expire = 0
-				}
+				
 			}
 			add_war_support = -0.05
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = TUR
+				expire = 0
+			}
 		}
 	}
 

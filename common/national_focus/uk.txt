@@ -6437,7 +6437,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_pre_empt_the_ideological_threat
-		prerequisite = { focus = ENG_reclaim_the_jewel_in_the_crown focus = ENG_noninterference_treaty_with_germany focus = ENG_alliance_with_germany focus = ENG_consolidate_the_british_isles	}	
+		prerequisite = { focus = ENG_noninterference_treaty_with_germany focus = ENG_alliance_with_germany focus = ENG_consolidate_the_british_isles	}	
 		available = {
 			is_subject = no
 			country_exists = SOV
@@ -6767,45 +6767,6 @@ focus_tree = {
 			}
 			add_ideas = ENG_the_sun_never_sets_idea
 			custom_effect_tooltip = ENG_the_sun_never_sets_tt
-		}
-	}
-
-	focus = {
-		id = ENG_pre_empt_the_strategic_threat
-		prerequisite = { focus = ENG_bring_the_dominions_back_into_the_fold }	
-		allow_branch = { has_country_flag = NEVER }
-		available = {
-			is_subject = no
-			country_exists = JAP
-			NOT = { is_in_faction_with = JAP }
-			OR = {
-				JAP = { has_government = fascism }
-				JAP = { has_government = communism }
-			}
-		}
-		bypass = {
-			has_war_with = JAP
-		}
-		will_lead_to_war_with = JAP
-		icon = GFX_focus_attack_japan
-		x = 1
-		y = 1
-		relative_position_id = ENG_bring_the_dominions_back_into_the_fold
-		cost = 10
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-		}	
-		completion_reward = {
-			ENG_mosley_pacifism_level_down = yes
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = JAP
-				expire = 0
-			}
 		}
 	}
 

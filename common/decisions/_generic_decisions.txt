@@ -662,7 +662,6 @@ economy_decisions = {
 
 		available = {
 			any_owned_state = {
-				limit = {
 					free_building_slots = {
 						building = industrial_complex
 						size < 1
@@ -672,7 +671,6 @@ economy_decisions = {
 						arms_factory > 1
 						industrial_complex > 1
 					}
-				}
 			}
 		}
 

@@ -1374,8 +1374,9 @@ form_ottoman_empire_category = {
 						is_core_of = BOS
 						is_core_of = DLM
 					}
-					add_core_of = ROOT
 				}
+				
+					add_core_of = ROOT
 			}
 			hidden_effect = {
 				set_global_flag = ottoman_bosnia_flag
@@ -1714,16 +1715,16 @@ form_ottoman_empire_category = {
 					is_owned_by = ROOT
 				}
 				transfer_state_to = JBS
-				puppet = JBS
 			}
+			puppet = JBS
 			every_state = {
 				limit = {
 					is_core_of = NJD
 					is_owned_by = ROOT
 				}
 				transfer_state_to = NJD
-				puppet = NJD
 			}
+			puppet = NJD
 		}
 
 		ai_will_do = {

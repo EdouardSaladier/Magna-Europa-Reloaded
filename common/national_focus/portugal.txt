@@ -343,10 +343,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = POR_instituto_superior_tecnico }	
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 6
-		y = 0
+		x = -5
+		y = 1
 
-		relative_position_id = POR_infrastructure_in_angola
+		relative_position_id = POR_instituto_superior_tecnico
 		cost = 10
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
@@ -4833,254 +4833,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = POR_expand_the_chinese_territories
-		allow_branch = { has_country_flag = NEVER }
-		select_effect = {
-			every_country = {
-				limit = {
-					OR = {
-						controls_state = 592
-						controls_state = 594
-						controls_state = 325
-						controls_state = 613
-						controls_state = 622
-						controls_state = 604
-						controls_state = 615
-						controls_state = 611
-						controls_state = 328
-					}
-				}
-				ROOT = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = PREV
-						value = 100
-					}
-				}
-			}
-		}
-
-		available = {		
-			owns_state = 729
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_join_the_axis focus = POR_the_fifth_empire }			
-		icon = GFX_focus_usa_focus_on_asia
-		x = -1	
-		y = 1
-
-		relative_position_id = POR_the_fifth_empire
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_expand_the_chinese_territories"
-			hidden_effect = {
-				592 = {
-					owner =  {
-						ROOT = {
-							create_wargoal = {
-							  	target = PREV
-							    type = annex_everything
-							}						
-						}
-					}				
-				}
-
-				594 = {
-					owner =  {
-						ROOT = {
-							if = {
-								limit = {
-									NOT = { has_wargoal_against = PREV }
-								}
-								create_wargoal = {
-								  	target = PREV
-								    type = annex_everything
-								}	
-							}					
-						}
-					}				
-				}
-
-				325 = {
-					owner =  {
-						ROOT = {
-							if = {
-								limit = {
-									NOT = { has_wargoal_against = PREV }
-								}
-								create_wargoal = {
-								  	target = PREV
-								    type = annex_everything
-								}	
-							}					
-						}
-					}				
-				}
-
-				613 = {
-					owner =  {
-						ROOT = {
-							if = {
-								limit = {
-									NOT = { has_wargoal_against = PREV }
-								}
-								create_wargoal = {
-								  	target = PREV
-								    type = annex_everything
-								}	
-							}					
-						}
-					}				
-				}
-
-				622 = {
-					owner =  {
-						ROOT = {
-							if = {
-								limit = {
-									NOT = { has_wargoal_against = PREV }
-								}
-								create_wargoal = {
-								  	target = PREV
-								    type = annex_everything
-								}
-							}						
-						}
-					}				
-				}
-
-				604 = {
-					owner =  {
-						ROOT = {
-							if = {
-								limit = {
-									NOT = { has_wargoal_against = PREV }
-								}
-								create_wargoal = {
-								  	target = PREV
-								    type = annex_everything
-								}	
-							}			
-						}
-					}				
-				}
-
-				615 = {
-					owner =  {
-						ROOT = {
-							if = {
-								limit = {
-									NOT = { has_wargoal_against = PREV }
-								}
-								create_wargoal = {
-								  	target = PREV
-								    type = annex_everything
-								}
-							}					
-						}
-					}				
-				}
-
-				611 = {
-					owner =  {
-						ROOT = {
-							if = {
-								limit = {
-									NOT = { has_wargoal_against = PREV }
-								}
-								create_wargoal = {
-								  	target = PREV
-								    type = annex_everything
-								}	
-							}					
-						}
-					}				
-				}
-
-				328 = {
-					owner =  {
-						ROOT = {
-							if = {
-								limit = {
-									NOT = { has_wargoal_against = PREV }
-								}
-								create_wargoal = {
-								  	target = PREV
-								    type = annex_everything
-								}
-							}					
-						}
-					}				
-				}
-			}
-			custom_effect_tooltip = POR_expand_the_chinese_territories_tt
-
-			hidden_effect = {
-				random_country = {
-					limit = { controls_state = 592 }
-					ROOT = {
-						add_ai_strategy = {
-							type = prepare_for_war
-							id = PREV
-							value = 100
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = POR_deal_with_the_japanese_threat
-		allow_branch = { has_country_flag = NEVER }
-		will_lead_to_war_with = JAP
-
-		select_effect = {
-			add_ai_strategy = {
-				type = prepare_for_war
-				id = JAP
-				value = 100
-			}
-		}
-		
-		available = {
-			JAP = {
-				exists = yes
-				NOT = { is_in_faction_with = ROOT }
-			}
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_the_fifth_empire }
-		prerequisite = { focus = POR_recover_the_east_indies }		
-		icon = GFX_focus_attack_japan
-		x = 1		
-		y = 1
-
-		relative_position_id = POR_the_fifth_empire
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_deal_with_the_japanese_threat" 
-			create_wargoal = {
-				target = JAP
-				type = annex_everything
-				expire = 0
-			}
-
-			hidden_effect = {
-				add_ai_strategy = {
-					type = declare_war
-					id = JAP
-					value = 100
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = POR_refuse_the_naval_blockade
 		available = {	
 			has_equipment = {
@@ -5337,7 +5089,7 @@ focus_tree = {
 		mutually_exclusive = { focus = POR_support_the_spanish_nationalists focus = POR_strict_neutrality_in_the_spanish_civil_war focus = POR_support_the_spanish_republic }
 
 		icon = GFX_focus_generic_royal_wedding
-		x = 13
+		x = 9
 		y = 0
 
 		relative_position_id = POR_support_the_spanish_nationalists
@@ -5731,55 +5483,24 @@ focus_tree = {
 		id = POR_the_kingdom_reunited
 		available = {
 			has_government = neutrality
-			OR = {
-				AND = {
-					#country_exists = BRA
-					#BRA = {
-					#	has_government = neutrality
-					#	has_civil_war = no
-					#	NOT = { has_war_with = ROOT }
-					#}
-					#NOT = {
-					#	any_enemy_country = {
-					##		is_in_faction_with = BRA
-					#	}
-					#}
-				}
-				#AND = {
-				#	NOT = { country_exists = BRA }
-				#	owns_state = 500
-				#}
-			}
 			
 		}
-		allow_branch = { has_global_flag = NEVER }
 
 		bypass = {
 		}
-		prerequisite = { focus = POR_restoration_of_the_monarchy }
-		prerequisite = { focus = POR_the_empire_of_brazil }
-
-		mutually_exclusive = { focus = POR_recover_brazil }
+		prerequisite = { focus = POR_remember_olivenca focus = POR_the_royal_iberian_alliance }
 
 		icon = GFX_focus_por_the_kingdom_reunited
-		x = -1
-		y = 2
+		x = 0
+		y = 3
 
-		relative_position_id = POR_the_empire_of_brazil
+		relative_position_id = POR_restoration_of_the_monarchy
 		cost = 10
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POR_the_kingdom_reunited"
 			remove_ideas = POR_unstable_monarchy
 			add_ideas = POR_the_portuguese_empire
-			#if = {
-			#	limit = {
-			#		country_exists = BRA
-			#	}
-			#	BRA = {
-			#		country_event = { id = lar_portugal_promote_monarchist_cause.2 hours = 6 }
-			#	}
-			#}
 			set_rule = { can_create_factions = yes }
 		}		
 	}
@@ -5874,7 +5595,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = POR_remember_olivenca focus = POR_the_royal_iberian_alliance }
 		icon = GFX_focus_attack_germany
-		x = 1
+		x = 2
 		y = 1
 
 		relative_position_id = POR_remember_olivenca
@@ -5922,103 +5643,6 @@ focus_tree = {
 							is_neighbor_of = ROOT
 						}
 					}
-					ROOT = {
-						add_ai_strategy = {
-							type = declare_war
-							id = PREV
-							value = 100
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = POR_latin_america
-
-		#will_lead_to_war_with = PAR
-		#will_lead_to_war_with = URG
-		#will_lead_to_war_with = ARG
-
-		select_effect = {
-			random_country = {
-				limit = { controls_state = 300 }
-				ROOT = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = PREV
-						value = 100
-					}
-				}
-			}
-			random_country = {
-				limit = { controls_state = 301 }
-				ROOT = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = PREV
-						value = 100
-					}
-				}
-			}
-			random_country = {
-				limit = { controls_state = 510 }
-				ROOT = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = PREV
-						value = 100
-					}
-				}
-			}
-		}
-
-		available = {
-		}
-
-		bypass = {
-			owns_state = 300
-			owns_state = 301
-			owns_state = 510
-		}
-		prerequisite = { focus = POR_the_kingdom_reunited focus = POR_recover_brazil }
-
-		icon = GFX_focus_por_recover_latin_america
-		x = -1
-		y = 1
-
-		relative_position_id = POR_the_kingdom_reunited
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POR_latin_america" 
-			add_state_claim = 300
-			add_state_claim = 301
-			add_state_claim = 510
-
-			hidden_effect = {
-				random_country = {
-					limit = { controls_state = 300 }
-					ROOT = {
-						add_ai_strategy = {
-							type = declare_war
-							id = PREV
-							value = 100
-						}
-					}
-				}
-				random_country = {
-					limit = { controls_state = 301 }
-					ROOT = {
-						add_ai_strategy = {
-							type = declare_war
-							id = PREV
-							value = 100
-						}
-					}
-				}
-				random_country = {
-					limit = { controls_state = 510 }
 					ROOT = {
 						add_ai_strategy = {
 							type = declare_war
