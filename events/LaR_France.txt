@@ -669,15 +669,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.2.a
-		if = {
-			limit = {
-				SEN = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = SEN }
-		}
+		
 		if = {
 			limit = {
 				MRT = {
@@ -687,81 +679,10 @@ country_event = {
 			}
 			annex_country = { target = MRT }
 		}
-		if = {
-			limit = {
-				GNA = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = GNA }
-		}
-		if = {
-			limit = {
-				MLI = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = MLI }
-		}
-		if = {
-			limit = {
-				IVO = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = IVO }
-		}
-		if = {
-			limit = {
-				VOL = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = VOL }
-		}
-		if = {
-			limit = {
-				NGR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = NGR }
-		}
-		if = {
-			limit = {
-				DAH = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = DAH }
-		}
-		if = {
-			limit = {
-				TOG = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = TOG }
-		}
 		every_owned_state = {
 			limit = {
 				OR = {
-					is_core_of = SEN
 					is_core_of = MRT
-					is_core_of = GNA
-					is_core_of = MLI
-					is_core_of = IVO
-					is_core_of = VOL
-					is_core_of = NGR
-					is_core_of = DAH
-					is_core_of = TOG
 				}
 			}
 			add_core_of = ROOT
@@ -781,20 +702,6 @@ country_event = {
 		name = lar_france_french_union.3.a
 		if = {
 			limit = {
-				SEN = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = SEN
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
 				MRT = {
 					exists = yes
 					is_subject_of = ROOT
@@ -806,116 +713,12 @@ country_event = {
 					autonomy_state = autonomy_free
 				}
 			}
+			MRT = { drop_cosmetic_tag = yes }
 		}
-		if = {
-			limit = {
-				GNA = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = GNA
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				MLI = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = MLI
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				IVO = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = IVO
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				VOL = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = VOL
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				NGR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = NGR
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				DAH = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = DAH
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				TOG = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = TOG
-					autonomy_state = autonomy_free
-				}
-			}
-		}
+		
 		every_owned_state = {
 			limit = {
 				OR = {
-					is_core_of = TOG
-					is_core_of = DAH
-					is_core_of = NGR
-					is_core_of = IVO
-					is_core_of = VOL
-					is_core_of = SEN
-					is_core_of = MLI
-					is_core_of = GNA
 					is_core_of = MRT
 				}
 			}
@@ -937,63 +740,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.2.a
-		if = {
-			limit = {
-				CHA = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = CHA }
-		}
-		if = {
-			limit = {
-				CMR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = CMR }
-		}
-		if = {
-			limit = {
-				CAR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = CAR }
-		}
-		if = {
-			limit = {
-				RCG = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = RCG }
-		}
-		if = {
-			limit = {
-				GAB = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = GAB }
-		}
-		every_owned_state = {
-			limit = {
-				OR = {
-					is_core_of = CHA
-					is_core_of = CMR
-					is_core_of = CAR
-					is_core_of = RCG
-					is_core_of = GAB
-				}
-			}
-			add_core_of = ROOT
-		}
+		
 	}
 }
 
@@ -1007,92 +754,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.3.a
-		if = {
-			limit = {
-				CHA = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = CHA
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				CMR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = CMR
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				CAR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = CAR
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				RCG = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = RCG
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				GAB = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = GAB
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		every_owned_state = {
-			limit = {
-				is_controlled_by = ROOT
-				OR = {
-					is_core_of = CHA
-					is_core_of = CMR
-					is_core_of = CAR
-					is_core_of = RCG
-					is_core_of = GAB
-				}
-			}
-			add_resistance_target = {
-				amount = 55
-				tooltip = LAR_fra_voted_independence_tt
-			}
-		}
+		
 	}
 }
 
@@ -1199,43 +861,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.2.a
-		if = {
-			limit = {
-				VIN = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = VIN }
-		}
-		if = {
-			limit = {
-				LAO = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = LAO }
-		}
-		if = {
-			limit = {
-				CAM = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = CAM }
-		}
-		every_owned_state = {
-			limit = {
-				OR = {
-					is_core_of = VIN
-					is_core_of = LAO
-					is_core_of = CAM
-				}
-			}
-			add_core_of = ROOT
-		}
+		
 	}
 }
 
@@ -1249,62 +875,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.3.a
-		if = {
-			limit = {
-				VIN = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = VIN
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				LAO = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = LAO
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				CAM = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = CAM
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		every_owned_state = {
-			limit = {
-				is_controlled_by = ROOT
-				OR = {
-					is_core_of = CAM
-					is_core_of = VIN
-					is_core_of = LAO
-				}
-			}
-			add_resistance_target = {
-				amount = 100 #Vietnam War, here we come!
-				tooltip = LAR_fra_voted_independence_tt
-			}
-		}
+		
 	}
 }
 
@@ -1344,12 +915,16 @@ country_event = {
 	}
 	option = {
 		name = FRA_syria_intervention.1.a
-		event_target:free_france = {
-			transfer_state = 554
-			transfer_state = 680
-			transfer_state = 677
-			transfer_state = 553
-		}
+		
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = SYR
+						is_core_of = LEB
+					}
+				}
+				transfer_state_to = event_target:free_france 
+			}
 	}
 }
 
@@ -1365,11 +940,14 @@ country_event = {
 	option = {
 		name = FRA_syria_intervention.1.a
 		effect_tooltip = {
-			event_target:free_france = {
-				transfer_state = 554
-				transfer_state = 680
-				transfer_state = 677
-				transfer_state = 553
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = SYR
+						is_core_of = LEB
+					}
+				}
+				transfer_state_to = event_target:free_france 
 			}
 		}
 	}
@@ -1479,30 +1057,11 @@ country_event = {
 	picture = GFX_report_event_france_victory_syria
 	is_triggered_only = yes
 	immediate = {
-		hidden_effect = {
-			if = {
-				limit = { has_template = "Indochina Intervention Force" }
-				delete_unit_template_and_units = { division_template = "Indochina Intervention Force" }
-			}
-			if = {
-				limit = { has_template = "Indochina Defense Force" }
-				delete_unit_template_and_units = { division_template = "Indochina Defense Force" }
-			}
-			if = {
-				limit = {
-					NOT = { tag = FRA }
-				}
-				FRA = { country_event = FRA_indochina_intervention.11 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
-			}
-		}
+		
 	}
 	option = {
 		name = FRA_indochina_intervention.1.a
-		event_target:free_france = {
-			transfer_state = 670
-			transfer_state = 671
-			transfer_state = 741
-		}
+		
 	}
 }
 
@@ -1517,13 +1076,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = FRA_indochina_intervention.1.a
-		effect_tooltip = {
-			event_target:free_france = {
-				transfer_state = 670
-				transfer_state = 671
-				transfer_state = 74
-			}
-		}
+		
 	}
 }
 
@@ -1536,22 +1089,7 @@ country_event = {
 	picture = GFX_report_event_romanian_soldiers
 	is_triggered_only = yes
 	immediate = {
-		hidden_effect = {
-			if = {
-				limit = { has_template = "Indochina Intervention Force" }
-				delete_unit_template_and_units = { division_template = "Indochina Intervention Force" }
-			}
-			if = {
-				limit = { has_template = "Indochina Defense Force" }
-				delete_unit_template_and_units = { division_template = "Indochina Defense Force" }
-			}
-			if = {
-				limit = {
-					NOT = { tag = FRA }
-				}
-				FRA = { country_event = FRA_indochina_intervention.21 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
-			}
-		}
+		
 	}
 	option = {
 		name = FRA_indochina_intervention.2.a
@@ -1583,22 +1121,7 @@ country_event = {
 	picture = GFX_report_event_soldiers_in_france
 	is_triggered_only = yes
 	immediate = {
-		hidden_effect = {
-			if = {
-				limit = { has_template = "Indochina Intervention Force" }
-				delete_unit_template_and_units = { division_template = "Indochina Intervention Force" }
-			}
-			if = {
-				limit = { has_template = "Indochina Defense Force" }
-				delete_unit_template_and_units = { division_template = "Indochina Defense Force" }
-			}
-			if = {
-				limit = {
-					NOT = { tag = FRA }
-				}
-				FRA = { country_event = FRA_indochina_intervention.31 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
-			}
-		}
+		
 	}
 	option = {
 		name = FRA_indochina_intervention.3.a
@@ -1630,39 +1153,10 @@ country_event = {
 	picture = GFX_report_event_france_victory_syria
 	is_triggered_only = yes
 	immediate = {
-		hidden_effect = {
-			if = {
-				limit = { has_template = "Central Africa Intervention Force" }
-				delete_unit_template_and_units = { division_template = "Central Africa Intervention Force" }
-			}
-			if = {
-				limit = { has_template = "Central Africa Defense Force" }
-				delete_unit_template_and_units = { division_template = "Central Africa Defense Force" }
-			}
-			if = {
-				limit = {
-					NOT = { tag = FRA }
-				}
-				FRA = { country_event = FRA_central_africa_intervention.11 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
-			}
-		}
+		
 	}
 	option = {
 		name = FRA_central_africa_intervention.1.a
-		every_state = {
-			limit = {
-				OR = {
-					is_core_of = CHA
-					is_core_of = CMR
-					is_core_of = CAR
-					is_core_of = RCG
-					is_core_of = GAB
-				}
-			}
-			event_target:free_france = {
-				transfer_state = PREV
-			}
-		}
 	}
 }
 
@@ -1676,22 +1170,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = FRA_central_africa_intervention.1.a
-		effect_tooltip = {
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = CHA
-						is_core_of = CMR
-						is_core_of = CAR
-						is_core_of = RCG
-						is_core_of = GAB
-					}
-				}
-				event_target:free_france = {
-					transfer_state = PREV
-				}
-			}
-		}
+		
 	}
 }
 
@@ -1704,22 +1183,6 @@ country_event = {
 	picture = GFX_report_event_romanian_soldiers
 	is_triggered_only = yes
 	immediate = {
-		hidden_effect = {
-			if = {
-				limit = { has_template = "Central Africa Intervention Force" }
-				delete_unit_template_and_units = { division_template = "Central Africa Intervention Force" }
-			}
-			if = {
-				limit = { has_template = "Central Africa Defense Force" }
-				delete_unit_template_and_units = { division_template = "Central Africa Defense Force" }
-			}
-			if = {
-				limit = {
-					NOT = { tag = FRA }
-				}
-				FRA = { country_event = FRA_central_africa_intervention.21 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
-			}
-		}
 	}
 	option = {
 		name = FRA_central_africa_intervention.2.a
@@ -1751,22 +1214,6 @@ country_event = {
 	picture = GFX_report_event_soldiers_in_france
 	is_triggered_only = yes
 	immediate = {
-		hidden_effect = {
-			if = {
-				limit = { has_template = "Central Africa Intervention Force" }
-				delete_unit_template_and_units = { division_template = "Central Africa Intervention Force" }
-			}
-			if = {
-				limit = { has_template = "Central Africa Defense Force" }
-				delete_unit_template_and_units = { division_template = "Central Africa Defense Force" }
-			}
-			if = {
-				limit = {
-					NOT = { tag = FRA }
-				}
-				FRA = { country_event = FRA_central_africa_intervention.31 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
-			}
-		}
 	}
 	option = {
 		name = FRA_central_africa_intervention.3.a
@@ -1820,16 +1267,9 @@ country_event = {
 		every_state = {
 			limit = {
 				OR = {
-					state = 557
-					state = 272
-					state = 556
-					state = 898
-					state = 899
-					state = 780
-					state = 779
-					state = 778
-					state = 781
-					state = 776
+					state = 1884
+					state = 1340
+					state = 1331
 				}
 			}
 			event_target:free_france = {
@@ -1854,16 +1294,9 @@ country_event = {
 			every_state = {
 				limit = {
 					OR = {
-						state = 557
-						state = 272
-						state = 556
-						state = 898
-						state = 899
-						state = 780
-						state = 779
-						state = 778
-						state = 781
-						state = 776
+						state = 1884
+						state = 1340
+						state = 1331
 					}
 				}
 				event_target:free_france = {
@@ -2036,8 +1469,8 @@ country_event = {
 		if = {
 			limit = {
 				TUN = {
-					every_core_state = {
-						CONTROLLER = {
+					all_core_state = {
+						owner = {
 							OR = {
 								TAG = ROOT
 								is_subject_of = ROOT
@@ -4090,22 +3523,6 @@ country_event = {
 			factor = 80
 		}
 		VIC = { country_event = LaR_france_vichy_notification_events.6 }
-		if = {
-			limit = {
-				MAD = {
-					exists = yes
-					is_subject = yes
-					OVERLORD = { original_tag = FRA }
-				}
-			}
-			puppet = MAD
-		}
-		else_if = {
-			limit = {
-				543 = { CONTROLLER = { original_tag = FRA } }
-			}
-			transfer_state = 543
-		}
 	}
 }
 # north africa remains with Vichy France

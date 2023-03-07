@@ -4726,7 +4726,8 @@ country_event = {
 				}
 				custom_effect_tooltip = mer_transfer_transcarpathia
 			}
-			280 = { transfer_state = GER } # danzig
+			280 = { transfer_state_to = GER } # danzig
+			2729 = { transfer_state_to = GER } 
 			custom_effect_tooltip = mer_GER_claims_on_danzig_corridor_tt
 		}
 	}
@@ -4946,13 +4947,13 @@ country_event = {
 		hidden_effect = { 2729 = { transfer_state = GER } } #other danzig state, tooltip unnecessary
 		custom_effect_tooltip = mer_GER_claims_on_danzig_corridor_tt
 		hidden_effect = {
-			287 = { transfer_state = GER }
-			310 = { transfer_state = GER }
-			2567 = { transfer_state = GER }
+			287 = { transfer_state_to = GER }
+			310 = { transfer_state_to = GER }
+			2567 = { transfer_state_to = GER }
 			546 = { transfer_state = GER }
-			2341 = { transfer_state = GER }
-			264 = { transfer_state = GER }
-			267 = { transfer_state = GER }
+			2341 = { transfer_state_to = GER }
+			264 = { transfer_state_to = GER }
+			267 = { transfer_state_to = GER }
 		}
 		if = {
 			limit = {
@@ -7820,7 +7821,7 @@ country_event = {
 				add_political_power = -50
 			}
 		}
-		FROM = country_event = germany.130
+		FROM = { country_event = germany.130 }
 		
 	}
 

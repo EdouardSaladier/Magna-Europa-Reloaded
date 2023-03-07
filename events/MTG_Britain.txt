@@ -997,30 +997,6 @@ country_event = {
 				}
 				CAN_enforce_loyalty = yes
 			}
-			if = {
-				limit = {
-					tag = SAF
-				}
-				SAF_enforce_loyalty = yes
-			}
-			if = {
-				limit = {
-					tag = RAJ
-				}
-				RAJ_enforce_loyalty = yes
-			}
-			if = {
-				limit = {
-					tag = AST
-				}
-				AST_enforce_loyalty = yes
-			}
-			if = {
-				limit = {
-					tag = NZL
-				}
-				NZL_enforce_loyalty = yes
-			}
 		}
 	}
 }
@@ -1047,28 +1023,14 @@ country_event = {
 			create_faction = "ENG_commonwealth_of_nations"
 			if = {
 				limit = {
-					SAF = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+					EGY = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
 				}
-				add_to_faction = SAF
-			}
-			if = {
-				limit = {
-					AST = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				}
-				add_to_faction = AST
-			}
-			if = {
-				limit = {
-					NZL = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				}
-				add_to_faction = NZL
+				add_to_faction = EGY
 			}
 			hidden_effect = {
 				every_other_country = {
 					limit = {
-						NOT = { tag = SAF }
-						NOT = { tag = AST }
-						NOT = { tag = NZL }
+						NOT = { tag = EGY }
 					}
 					ROOT = {
 						add_ai_strategy = {
@@ -1079,96 +1041,6 @@ country_event = {
 					}
 				}
 			}
-		}
-		if = {
-			limit = {
-				tag = SAF
-			}
-			FROM = { set_autonomy = { target = SAF autonomy_state = autonomy_free } }
-			if = {
-				limit = {
-					CAN = { NOT = { has_country_flag = ENG_abdication_crisis_dominion_will_leave } }
-					AST = { NOT = { has_country_flag = ENG_abdication_crisis_dominion_will_leave } }
-				}
-				create_faction = "ENG_commonwealth_of_nations"
-				if = {
-					limit = {
-						NZL = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-					}
-					add_to_faction = NZL
-				}
-				hidden_effect = {
-					every_other_country = {
-						limit = {
-							NOT = { tag = NZL }
-						}
-						ROOT = {
-							add_ai_strategy = {
-								type = alliance
-								id = PREV
-								value = -200
-							}
-						}
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				tag = RAJ
-			}
-			FROM = { set_autonomy = { target = RAJ autonomy_state = autonomy_free } }
-			ENG = { remove_from_faction = RAJ }
-			RAJ = {
-				drop_cosmetic_tag = yes
-				retire_country_leader = yes
-				remove_from_tech_sharing_group = commonwealth_research
-			}
-		}
-		if = {
-			limit = {
-				tag = AST
-			}
-			FROM = { set_autonomy = { target = AST autonomy_state = autonomy_free } }
-			if = {
-				limit = {
-					CAN = { NOT = { has_country_flag = ENG_abdication_crisis_dominion_will_leave } }
-				}
-				create_faction = "ENG_commonwealth_of_nations"
-				if = {
-					limit = {
-						SAF = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-					}
-					add_to_faction = SAF
-				}
-				if = {
-					limit = {
-						NZL = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-					}
-					add_to_faction = NZL
-				}
-				hidden_effect = {
-					every_other_country = {
-						limit = {
-							NOT = { tag = SAF }
-							NOT = { tag = NZL }
-						}
-						ROOT = {
-							add_ai_strategy = {
-								type = alliance
-								id = PREV
-								value = -200
-							}
-						}
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				tag = NZL
-			}
-			FROM = { set_autonomy = { target = NZL autonomy_state = autonomy_free } }
 		}
 	}
 }
@@ -1951,15 +1823,6 @@ country_event = {
 		name = mtg_britain.34.a
 		add_ideas = ENG_george_vi
 		hidden_effect = {
-			RAJ = {
-				leave_faction = yes
-				drop_cosmetic_tag = yes
-				retire_country_leader = yes
-			}
-			MAL = {
-				drop_cosmetic_tag = yes
-				retire_country_leader = yes
-			}
 			CAN = {
 				if = {
 					limit = {
@@ -1968,9 +1831,7 @@ country_event = {
 					set_faction_name = "ENG_commonwealth_of_nations"
 					every_other_country = {
 						limit = {
-							NOT = { tag = SAF }
-							NOT = { tag = AST }
-							NOT = { tag = NZL }
+							NOT = { tag = EGY }
 						}
 						CAN = {
 							add_ai_strategy = {
@@ -2467,217 +2328,12 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { original_tag = PUE }
-				owns_state = 686
-				has_full_control_of_state = 686
-			}
-			release = PUE
-		}
-		if = {
-			limit = {
-				PUE = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = PUE autonomy_state = autonomy_free }
-			PUE = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = "PAN" }
-				owns_state = 685
-				has_full_control_of_state = 685
-			}
-			"PAN" = { transfer_state = 685 }
-		}
-		if = {
-			limit = {
-				"PHI" = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = PHI autonomy_state = autonomy_free }
-			"PHI" = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = CRC }
-				owns_state = 695
-				has_full_control_of_state = 695
-			}
-			release = CRC
-		}
-		if = {
-			limit = {
-				CRC = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = CRC autonomy_state = autonomy_free }
-			CRC = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = SUR }
-				owns_state = 309
-				has_full_control_of_state = 309
-			}
-			release = SUR
-		}
-		if = {
-			limit = {
-				SUR = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = SUR autonomy_state = autonomy_free }
-			SUR = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = SUR }
-				owns_state = 309
-				has_full_control_of_state = 309
-			}
-			release = SUR
-		}
-		if = {
-			limit = {
-				INS = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = INS autonomy_state = autonomy_free }
-			INS = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = INS }
-				owns_state = 335
-				has_full_control_of_state = 335
-				owns_state = 672
-				has_full_control_of_state = 672
-				owns_state = 334
-				has_full_control_of_state = 334
-				owns_state = 673
-				has_full_control_of_state = 673
-				owns_state = 667
-				has_full_control_of_state = 667
-				owns_state = 309
-				has_full_control_of_state = 309
-				owns_state = 668
-				has_full_control_of_state = 668
-				owns_state = 738
-				has_full_control_of_state = 738
-				owns_state = 669
-				has_full_control_of_state = 669
-			}
-			release = INS
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = COG }
-				owns_state = 295
-				has_full_control_of_state = 295
-				owns_state = 538
-				has_full_control_of_state = 538
-				owns_state = 718
-				has_full_control_of_state = 718
-				owns_state = 888
-				has_full_control_of_state = 888
-				owns_state = 889
-				has_full_control_of_state = 889
-				owns_state = 890
-				has_full_control_of_state = 890
-			}
-			release = COG
-		}
-		if = {
-			limit = {
-				COG = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = COG autonomy_state = autonomy_free }
-			COG = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = RWA }
-				owns_state = 768
-				has_full_control_of_state = 768
-			}
-			release = RWA
-		}
-		if = {
-			limit = {
-				RWA = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = RWA autonomy_state = autonomy_free }
-			RWA = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = BRD }
-				owns_state = 769
-				has_full_control_of_state = 769
-			}
-			release = BRD
-		}
-		if = {
-			limit = {
-				BRD = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = BRD autonomy_state = autonomy_free }
-			BRD = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = GDL }
-				owns_state = 694
-				has_full_control_of_state = 694
-			}
-			release = GDL
-		}
-		if = {
-			limit = {
-				GDL = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = GDL autonomy_state = autonomy_free }
-			GDL = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = CAY }
-				owns_state = 310
-				has_full_control_of_state = 310
-			}
-			release = CAY
-		}
-		if = {
-			limit = {
-				CAY = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = CAY autonomy_state = autonomy_free }
-			CAY = { leave_faction = yes }
-		}
-		if = {
-			limit = {
 				NOT = { original_tag = SYR }
-				owns_state = 677
-				has_full_control_of_state = 677
-				owns_state = 680
-				has_full_control_of_state = 680
-				owns_state = 554
-				has_full_control_of_state = 554
+				SYR = {
+					all_core_state = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
 			}
 			release = SYR
 		}
@@ -2693,8 +2349,11 @@ country_event = {
 		if = {
 			limit = {
 				NOT = { original_tag = LEB }
-				owns_state = 553
-				has_full_control_of_state = 553
+				LEB = {
+					all_core_state = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
 			}
 			release = LEB
 		}
@@ -2709,28 +2368,12 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { original_tag = MAD }
-				owns_state = 543
-				has_full_control_of_state = 543
-			}
-			release = MAD
-		}
-		if = {
-			limit = {
-				MAD = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = MAD autonomy_state = autonomy_free }
-			MAD = { leave_faction = yes }
-		}
-		if = {
-			limit = {
 				NOT = { original_tag = MOR }
-				owns_state = 461
-				has_full_control_of_state = 461
-				owns_state = 462
-				has_full_control_of_state = 462
+				MOR = {
+					all_core_state = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
 			}
 			release = MOR
 		}
@@ -2746,14 +2389,11 @@ country_event = {
 		if = {
 			limit = {
 				NOT = { original_tag = ALG }
-				owns_state = 459
-				has_full_control_of_state = 459
-				owns_state = 513
-				has_full_control_of_state = 513
-				owns_state = 460
-				has_full_control_of_state = 460
-				owns_state = 514
-				has_full_control_of_state = 514
+				ALG = {
+					all_core_state = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
 			}
 			release = ALG
 		}
@@ -2769,10 +2409,11 @@ country_event = {
 		if = {
 			limit = {
 				NOT = { original_tag = TUN }
-				owns_state = 458
-				has_full_control_of_state = 458
-				owns_state = 665
-				has_full_control_of_state = 665
+				TUN = {
+					all_core_state = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
 			}
 			release = TUN
 		}
@@ -2787,146 +2428,6 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { original_tag = DJI }
-				owns_state = 268
-				has_full_control_of_state = 268
-			}
-			release = DJI
-		}
-		if = {
-			limit = {
-				DJI = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = DJI autonomy_state = autonomy_free }
-			DJI = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = RCG }
-				owns_state = 772
-				has_full_control_of_state = 772
-			}
-			release = RCG
-		}
-		if = {
-			limit = {
-				RCG = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = RCG autonomy_state = autonomy_free }
-			RCG = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = GAB }
-				owns_state = 539
-				has_full_control_of_state = 539
-			}
-			release = GAB
-		}
-		if = {
-			limit = {
-				GAB = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = GAB autonomy_state = autonomy_free }
-			GAB = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = CMR }
-				owns_state = 773
-				has_full_control_of_state = 773
-			}
-			release = CMR
-		}
-		if = {
-			limit = {
-				CMR = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = CMR autonomy_state = autonomy_free }
-			CMR = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = CAR }
-				owns_state = 660
-				has_full_control_of_state = 660
-			}
-			release = CAR
-		}
-		if = {
-			limit = {
-				CAR = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = CAR autonomy_state = autonomy_free }
-			CAR = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = CHA }
-				owns_state = 774
-				has_full_control_of_state = 774
-				owns_state = 775
-				has_full_control_of_state = 775
-			}
-			release = CHA
-		}
-		if = {
-			limit = {
-				CHA = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = CHA autonomy_state = autonomy_free }
-			CHA = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = NGR }
-				owns_state = 515
-				has_full_control_of_state = 515
-				owns_state = 781
-				has_full_control_of_state = 781
-			}
-			release = NGR
-		}
-		if = {
-			limit = {
-				NGR = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = NGR autonomy_state = autonomy_free }
-			NGR = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = DAH }
-				owns_state = 776
-				has_full_control_of_state = 776
-			}
-			release = DAH
-		}
-		if = {
-			limit = {
-				DAH = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = DAH autonomy_state = autonomy_free }
-			DAH = { leave_faction = yes }
-		}
-		if = {
-			limit = {
 				NOT = { original_tag = TOG }
 				owns_state = 777
 				has_full_control_of_state = 777
@@ -2935,322 +2436,23 @@ country_event = {
 		}
 		if = {
 			limit = {
-				TOG = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = TOG autonomy_state = autonomy_free }
-			TOG = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = VOL }
-				owns_state = 778
-				has_full_control_of_state = 778
-			}
-			release = VOL
-		}
-		if = {
-			limit = {
-				VOL = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = VOL autonomy_state = autonomy_free }
-			VOL = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = IVO }
-				owns_state = 779
-				has_full_control_of_state = 779
-			}
-			release = IVO
-		}
-		if = {
-			limit = {
-				IVO = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = IVO autonomy_state = autonomy_free }
-			IVO = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = MLI }
-				owns_state = 556
-				has_full_control_of_state = 556
-				owns_state = 782
-				has_full_control_of_state = 782
-			}
-			release = MLI
-		}
-		if = {
-			limit = {
-				MLI = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = MLI autonomy_state = autonomy_free }
-			MLI = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = SEN }
-				owns_state = 272
-				has_full_control_of_state = 272
-			}
-			release = SEN
-		}
-		if = {
-			limit = {
-				SEN = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = SEN autonomy_state = autonomy_free }
-			SEN = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = CAY }
-				owns_state = 310
-				has_full_control_of_state = 310
-			}
-			release = CAY
-		}
-		if = {
-			limit = {
-				CAY = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = CAY autonomy_state = autonomy_free }
-			CAY = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = GNA }
-				owns_state = 780
-				has_full_control_of_state = 780
-			}
-			release = GNA
-		}
-		if = {
-			limit = {
-				GNA = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = GNA autonomy_state = autonomy_free }
-			GNA = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = LAO }
-				owns_state = 670
-				has_full_control_of_state = 670
-			}
-			release = LAO
-		}
-		if = {
-			limit = {
-				LAO = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = LAO autonomy_state = autonomy_free }
-			LAO = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = CAM }
-				owns_state = 741
-				has_full_control_of_state = 741
-			}
-			release = CAM
-		}
-		if = {
-			limit = {
-				CAM = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = CAM autonomy_state = autonomy_free }
-			CAM = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = VIN }
-				owns_state = 671
-				has_full_control_of_state = 671
-				owns_state = 286
-				has_full_control_of_state = 286
-			}
-			release = VIN
-		}
-		if = {
-			limit = {
-				VIN = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = VIN autonomy_state = autonomy_free }
-			VIN = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = event_target:WTT_current_china_leader }
-				owns_state = 728
-				has_full_control_of_state = 728
-			}
-			event_target:WTT_current_china_leader = { transfer_state = 728 }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = ANG }
-				owns_state = 540
-				has_full_control_of_state = 540
-				owns_state = 891
-				has_full_control_of_state = 891
-				owns_state = 892
-				has_full_control_of_state = 892
-			}
-			release = ANG
-		}
-		if = {
-			limit = {
-				ANG = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = ANG autonomy_state = autonomy_free }
-			ANG = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = GNB }
-				owns_state = 296
-				has_full_control_of_state = 296
-			}
-			release = GNB
-		}
-		if = {
-			limit = {
-				GNB = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = GNB autonomy_state = autonomy_free }
-			GNB = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = MZB }
-				owns_state = 544
-				has_full_control_of_state = 544
-				owns_state = 896
-				has_full_control_of_state = 896
-				owns_state = 897
-				has_full_control_of_state = 897
-			}
-			release = MZB
-		}
-		if = {
-			limit = {
-				MZB = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = MZB autonomy_state = autonomy_free }
-			MZB = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = event_target:WTT_current_china_leader }
-				owns_state = 729
-				has_full_control_of_state = 729
-			}
-			event_target:WTT_current_china_leader = { transfer_state = 729 }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = INS }
-				owns_state = 721
-				has_full_control_of_state = 721
-			}
-			INS = { transfer_state = 721 }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = EQG }
-				owns_state = 297
-				has_full_control_of_state = 297
-			}
-			release = EQG
-		}
-		if = {
-			limit = {
-				EQG = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = EQG autonomy_state = autonomy_free }
-			EQG = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = WES }
-				owns_state = 699
-				has_full_control_of_state = 699
-			}
-			release = WES
-		}
-		if = {
-			limit = {
-				WES = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = WES autonomy_state = autonomy_free }
-			WES = { leave_faction = yes }
-		}
-		if = {
-			limit = {
 				NOT = { original_tag = MOR }
-				owns_state = 290
-				has_full_control_of_state = 290
+				MOR = {
+					all_core_state = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
 			}
-			MOR = { transfer_state = 290 }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = MOR }
-				owns_state = 783
-				has_full_control_of_state = 783
-			}
-			MOR = { transfer_state = 783 }
+			release = MOR
 		}
 		if = {
 			limit = {
 				NOT = { original_tag = LBA }
-				owns_state = 448
-				has_full_control_of_state = 448
-				owns_state = 661
-				has_full_control_of_state = 661
-				owns_state = 449
-				has_full_control_of_state = 449
-				owns_state = 662
-				has_full_control_of_state = 662
-				owns_state = 450
-				has_full_control_of_state = 450
-				owns_state = 451
-				has_full_control_of_state = 451
-				owns_state = 663
-				has_full_control_of_state = 663
-				owns_state = 273
-				has_full_control_of_state = 273
+				LBA = {
+					all_core_state = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
 			}
 			release = LBA
 		}
@@ -3262,118 +2464,6 @@ country_event = {
 			}
 			set_autonomy = { target = LBA autonomy_state = autonomy_free }
 			LBA = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = ERI }
-				owns_state = 550
-				has_full_control_of_state = 550
-			}
-			release = ERI
-		}
-		if = {
-			limit = {
-				ERI = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = ERI autonomy_state = autonomy_free }
-			ERI = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = SOM }
-				owns_state = 559
-				has_full_control_of_state = 559
-			}
-			release = SOM
-		}
-		if = {
-			limit = {
-				SOM = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = SOM autonomy_state = autonomy_free }
-			SOM = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = ETH }
-				owns_state = 271
-				has_full_control_of_state = 271
-			}
-			release = ETH
-		}
-		if = {
-			limit = {
-				ETH = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = ETH autonomy_state = autonomy_free }
-			ETH = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = KOR }
-				owns_state = 527
-				has_full_control_of_state = 527
-				owns_state = 525
-				has_full_control_of_state = 525
-			}
-			release = KOR
-		}
-		if = {
-			limit = {
-				KOR = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = KOR autonomy_state = autonomy_free }
-			KOR = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				MAN = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = MAN autonomy_state = autonomy_free }
-			MAN = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				MEN = {
-					is_subject_of = ROOT
-				}
-			}
-			set_autonomy = { target = MEN autonomy_state = autonomy_free }
-			MEN = { leave_faction = yes }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = event_target:WTT_current_china_leader }
-				owns_state = 609
-				has_full_control_of_state = 609
-			}
-			event_target:WTT_current_china_leader = { transfer_state = 609 }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = event_target:WTT_current_china_leader }
-				owns_state = 745
-				has_full_control_of_state = 745
-			}
-			event_target:WTT_current_china_leader = { transfer_state = 745 }
-		}
-		if = {
-			limit = {
-				NOT = { original_tag = event_target:WTT_current_china_leader }
-				owns_state = 524
-				has_full_control_of_state = 524
-			}
-			event_target:WTT_current_china_leader = { transfer_state = 524 }
 		}
 		FROM = { country_event = { id = mtg_britain.47 hours = 6 } }
 	}

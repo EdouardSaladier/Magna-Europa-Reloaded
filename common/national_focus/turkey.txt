@@ -628,7 +628,6 @@ focus_tree = {
 
 		bypass = {
 			AND = {
-				AFG = { exists = no }
 				PER = { exists = no }
 				IRQ = { exists = no }
 			}
@@ -638,15 +637,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_treaty_of_saadabad"
-			if = {
-				limit = {
-					AFG = { 
-						exists = yes
-						is_subject = no 
-					}
-				}
-				AFG = { country_event = { id = bftb_turkey.23 } }
-			}
 			if = {
 				limit = {
 					EGY = { 
@@ -3019,9 +3009,6 @@ focus_tree = {
 			custom_trigger_tooltip = { 
 				tooltip = TUR_no_faction_alliance_members_tt
 				AND = {
-					AFG = {
-						NOT = { is_in_faction_with = TUR }
-					}
 					PER = {
 						NOT = { is_in_faction_with = TUR }
 					}
@@ -3043,22 +3030,9 @@ focus_tree = {
 					NOT = { has_completed_focus = TUR_treaty_of_saadabad }
 				}
 				effect_tooltip = {
-					puppet = AFG
 					puppet = PER
 					puppet = IRQ
 				}
-			}
-			if = { 
-				limit = {
-					has_completed_focus = TUR_treaty_of_saadabad
-					AFG = {
-						AND = {
-							NOT = { is_in_faction_with = TUR }
-							has_country_flag = TUR_saadabad_pact_member
-						}
-					}
-				}
-				effect_tooltip = { TUR = { puppet = AFG } }
 			}
 			if = { 
 				limit = {
@@ -3095,18 +3069,6 @@ focus_tree = {
 					}
 				}
 				effect_tooltip = { TUR = { puppet = SYR } }
-			}
-			if = { 
-				limit = {
-					has_completed_focus = TUR_treaty_of_saadabad
-					AFG = {
-						AND = {
-							is_in_faction_with = TUR
-							has_country_flag = TUR_saadabad_pact_member
-						}
-					}
-				}
-				TUR = { puppet = AFG }
 			}
 			if = { 
 				limit = {
@@ -9072,82 +9034,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = TUR_cin_turkleri
-		icon = GFX_focus_attack_china
-		prerequisite = { focus = TUR_turanist_ambition }
-		allow_branch = { has_global_flag = NEVER }
-		x = 2
-		y = 1
-		relative_position_id = TUR_turanist_ambition
-		cost = 10
-		ai_will_do = {
-			base = 10
-		}
-
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_cin_turkleri"
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = SIK
-						is_core_of = XSM
-						is_core_of = MON
-						is_core_of = MEN
-						is_core_of = TAN
-					}
-				}
-				add_claim_by = TUR
-			}
-			if = { 
-				limit = {
-					SIK = { exists = yes }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = SIK
-				}
-			}
-			if = { 
-				limit = {
-					XSM = { exists = yes }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = XSM
-				}
-			}
-			if = { 
-				limit = {
-					MON = { exists = yes }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = MON
-				}
-			}
-			if = { 
-				limit = {
-					MEN = { exists = yes }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = MEN
-				}
-			}
-			if = { 
-				limit = {
-					TAN = { exists = yes }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = TAN
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = TUR_crowning_ourselves_with_the_fin_ugor
 		icon = GFX_focus_TUR_crowning_ourselves_with_the_fin_ugor
 		prerequisite = { focus = TUR_turanist_ambition }
@@ -9166,7 +9052,7 @@ focus_tree = {
 				limit = {
 					OR = {
 						is_core_of = FIN
-						is_core_of = EST
+						has_state_flag = EST_INITIAL_STATE
 						is_core_of = KAR
 					}
 				}

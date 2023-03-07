@@ -5640,35 +5640,6 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POR_the_royal_iberian_alliance"
-		available = {
-			is_in_faction = no
-			has_country_leader = { name = "Dom Duarte Nuno" }
-			has_global_flag = scw_over
-			has_completed_focus = POR_restoration_of_the_monarchy
-			country_exists = SPB
-			NOT = { has_war_with = SPB }
-			SPB = { has_completed_focus = SPA_restore_the_monarchy }
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 100
-				has_idea = POR_volunteers_in_the_war_carlist
-			}
-			modifier = {
-				factor = 2
-				has_opinion = {
-					target = SPB
-					value > 30
-				}
-			}
-		}
-
-		bypass = {
-		}
-		prerequisite = { focus = POR_join_the_carlist_fight }
-		mutually_exclusive = { focus = POR_remember_olivenca }
 			SPB = { 
 				country_event = { id = lar_portugal_royal_iberian_alliance.1 hours = 6 }
 			}

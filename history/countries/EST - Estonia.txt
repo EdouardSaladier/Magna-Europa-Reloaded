@@ -25,6 +25,10 @@ IF = {
 	}
 }
 
+every_owned_state = {
+	add_state_flag = EST_INITIAL_STATE
+}
+
 recruit_character = EST_konstantin_pats
 recruit_character = EST_artur_sirk
 recruit_character = EST_johannes_kabin

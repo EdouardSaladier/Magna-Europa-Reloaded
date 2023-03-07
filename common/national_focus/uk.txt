@@ -6497,15 +6497,6 @@ focus_tree = {
 					country_event = { id = mtg_britain.79 hours = 6 }
 				} 	
 			}
-			AFG = {
-				if = {
-					limit = {
-						exists = yes
-						NOT = { is_in_faction_with = ENG }
-					}
-					country_event = { id = mtg_britain.79 hours = 6 }
-				} 
-			}
 		}
 	}
 
@@ -7122,183 +7113,49 @@ focus_tree = {
 				limit = {
 					OR = {
 						AND = {
-							NOT = { original_tag = PUE }
-							owns_state = 686
-							has_full_control_of_state = 686
-						}
-						PUE = {
-							is_subject_of = PREV
-						}
-						"PHI" = {
-							is_subject_of = PREV
-						}
-						AND = {
-							NOT = { original_tag = GDL }
-							owns_state = 694
-							has_full_control_of_state = 694
-						}
-						AND = {
 							NOT = { original_tag = SYR }
-							owns_state = 677
-							has_full_control_of_state = 677
-							owns_state = 680
-							has_full_control_of_state = 680
-							owns_state = 554
-							has_full_control_of_state = 554
+							SYR = {
+								all_core_state = {
+									is_owned_and_controlled_by = ROOT
+								}
+							}
 						}
 						AND = {
 							NOT = { original_tag = LEB }
-							owns_state = 553
-							has_full_control_of_state = 553
-						}
-						AND = {
-							NOT = { original_tag = MAD }
-							owns_state = 543
-							has_full_control_of_state = 543
-						}
-						AND = {
-							owns_state = 670
-							has_full_control_of_state = 670
-						}
-						AND = {
-							owns_state = 741
-							has_full_control_of_state = 741
-						}
-						AND = {
-							owns_state = 671
-							has_full_control_of_state = 671
-							owns_state = 286
-							has_full_control_of_state = 286
-						}
-						AND = {
-							owns_state = 728
-							has_full_control_of_state = 728
+							LEB = {
+								all_core_state = {
+									is_owned_and_controlled_by = ROOT
+								}
+							}
 						}
 						AND = {
 							NOT = { original_tag = MOR }
-							owns_state = 461
-							has_full_control_of_state = 461
-							owns_state = 462
-							has_full_control_of_state = 462
+							MOR = {
+								all_core_state = {
+									is_owned_and_controlled_by = ROOT
+								}
+							}
 						}
 						AND = {
 							NOT = { original_tag = ALG }
-							owns_state = 459
-							has_full_control_of_state = 459
-							owns_state = 513
-							has_full_control_of_state = 513
-							owns_state = 460
-							has_full_control_of_state = 460
-							owns_state = 514
-							has_full_control_of_state = 514
+							ALG = {
+								all_core_state = {
+									is_owned_and_controlled_by = ROOT
+								}
+							}
 						}
 						AND = {
 							NOT = { original_tag = TUN }
-							owns_state = 458
-							has_full_control_of_state = 458
-							owns_state = 665
-							has_full_control_of_state = 665
-						}
-						AND = {
-							NOT = { original_tag = DJI }
-							owns_state = 268
-							has_full_control_of_state = 268
-						}
-						AND = {
-							NOT = { original_tag = RCG }
-							owns_state = 772
-							has_full_control_of_state = 772
-						}
-						AND = {
-							NOT = { original_tag = GAB }
-							owns_state = 539
-							has_full_control_of_state = 539
-						}
-						AND = {
-							NOT = { original_tag = CMR }
-							owns_state = 773
-							has_full_control_of_state = 773
-						}
-						AND = {
-							NOT = { original_tag = CAR }
-							owns_state = 660
-							has_full_control_of_state = 660
-						}
-						AND = {
-							NOT = { original_tag = CHA }
-							owns_state = 774
-							has_full_control_of_state = 774
-							owns_state = 775
-							has_full_control_of_state = 775
-						}
-						AND = {
-							NOT = { original_tag = NGR }
-							owns_state = 781
-							has_full_control_of_state = 781
-							owns_state = 515
-							has_full_control_of_state = 515
-						}
-						AND = {
-							NOT = { original_tag = DAH }
-							owns_state = 776
-							has_full_control_of_state = 776
-						}
-						AND = {
-							NOT = { original_tag = TOG }
-							owns_state = 777
-							has_full_control_of_state = 777
-						}
-						AND = {
-							NOT = { original_tag = VOL }
-							owns_state = 778
-							has_full_control_of_state = 778
-						}
-						AND = {
-							NOT = { original_tag = IVO }
-							owns_state = 779
-							has_full_control_of_state = 779
-						}
-						AND = {
-							NOT = { original_tag = GNA }
-							owns_state = 780
-							has_full_control_of_state = 780
-						}
-						AND = {
-							NOT = { original_tag = MLI }
-							owns_state = 556
-							has_full_control_of_state = 556
-							owns_state = 782
-							has_full_control_of_state = 782
-						}
-						AND = {
-							NOT = { original_tag = SEN }
-							owns_state = 272
-							has_full_control_of_state = 272
-						}
-						AND = {
-							NOT = { original_tag = CAY }
-							owns_state = 310
-							has_full_control_of_state = 310
-						}
-						GDL = {
-							is_subject_of = PREV
+							TUN = {
+								all_core_state = {
+									is_owned_and_controlled_by = ROOT
+								}
+							}
 						}
 						SYR = {
 							is_subject_of = PREV
 						}
 						LEB = {
-							is_subject_of = PREV
-						}
-						LAO = {
-							is_subject_of = PREV
-						}
-						CAM = {
-							is_subject_of = PREV
-						}
-						VIN = {
-							is_subject_of = PREV
-						}
-						MAD = {
 							is_subject_of = PREV
 						}
 						MOR = {
@@ -7308,250 +7165,6 @@ focus_tree = {
 							is_subject_of = PREV
 						}
 						TUN = {
-							is_subject_of = PREV
-						}
-						DJI = {
-							is_subject_of = PREV
-						}
-						RCG = {
-							is_subject_of = PREV
-						}
-						GAB = {
-							is_subject_of = PREV
-						}
-						CMR = {
-							is_subject_of = PREV
-						}
-						CAR = {
-							is_subject_of = PREV
-						}
-						CHA = {
-							is_subject_of = PREV
-						}
-						NGR = {
-							is_subject_of = PREV
-						}
-						DAH = {
-							is_subject_of = PREV
-						}
-						TOG = {
-							is_subject_of = PREV
-						}
-						VOL = {
-							is_subject_of = PREV
-						}
-						IVO = {
-							is_subject_of = PREV
-						}
-						GNA = {
-							is_subject_of = PREV
-						}
-						MLI = {
-							is_subject_of = PREV
-						}
-						SEN = {
-							is_subject_of = PREV
-						}
-						CAY = {
-							is_subject_of = PREV
-						}
-						AND = {
-							NOT = { original_tag = LBA }
-							owns_state = 448
-							has_full_control_of_state = 448
-							owns_state = 661
-							has_full_control_of_state = 661
-							owns_state = 449
-							has_full_control_of_state = 449
-							owns_state = 662
-							has_full_control_of_state = 662
-							owns_state = 450
-							has_full_control_of_state = 450
-							owns_state = 451
-							has_full_control_of_state = 451
-							owns_state = 663
-							has_full_control_of_state = 663
-							owns_state = 273
-							has_full_control_of_state = 273
-						}
-						AND = {
-							NOT = { original_tag = ETH }
-							owns_state = 271
-							has_full_control_of_state = 271
-						}
-						AND = {
-							NOT = { original_tag = ERI }
-							owns_state = 550
-							has_full_control_of_state = 550
-						}
-						AND = {
-							NOT = { original_tag = SOM }
-							owns_state = 559
-							has_full_control_of_state = 559
-						}
-						LBA = {
-							is_subject_of = PREV
-						}
-						ETH = {
-							is_subject_of = PREV
-						}
-						ERI = {
-							is_subject_of = PREV
-						}
-						SOM = {
-							is_subject_of = PREV
-						}
-						AND = {
-							NOT = { original_tag = KOR }
-							owns_state = 527
-							has_full_control_of_state = 527
-							owns_state = 525
-							has_full_control_of_state = 525
-						}
-						AND = {
-							original_tag = JAP
-							owns_state = 609
-							has_full_control_of_state = 609
-						}
-						AND = {
-							original_tag = JAP
-							owns_state = 745
-							has_full_control_of_state = 745
-						}
-						AND = {
-							original_tag = JAP
-							owns_state = 524
-							has_full_control_of_state = 524
-						}
-						MAN = {
-							is_subject_of = PREV
-						}
-						MEN = {
-							is_subject_of = PREV
-						}
-						KOR = {
-							is_subject_of = PREV
-						}
-						AND = {
-							NOT = { original_tag = ANG }
-							owns_state = 540
-							has_full_control_of_state = 540
-							owns_state = 891
-							has_full_control_of_state = 891
-							owns_state = 892
-							has_full_control_of_state = 892
-						}
-						AND = {
-							NOT = { original_tag = MZB }
-							owns_state = 544
-							has_full_control_of_state = 544
-						}
-						AND = {
-							original_tag = POR
-							owns_state = 729
-							has_full_control_of_state = 729
-						}
-						AND = {
-							NOT = { original_tag = INS }
-							owns_state = 721
-							has_full_control_of_state = 721
-						}
-						AND = {
-							NOT = { original_tag = GNB }
-							owns_state = 296
-							has_full_control_of_state = 296
-						}
-						ANG = {
-							is_subject_of = PREV
-						}
-						MZB = {
-							is_subject_of = PREV
-						}
-						GNB = {
-							is_subject_of = PREV
-						}
-						AND = {
-							NOT = { original_tag = EQG }
-							owns_state = 297
-							has_full_control_of_state = 297
-						}
-						AND = {
-							NOT = { original_tag = WES }
-							owns_state = 699
-							has_full_control_of_state = 699
-						}
-						AND = {
-							NOT = { original_tag = MOR }
-							owns_state = 783
-							has_full_control_of_state = 783
-						}
-						AND = {
-							NOT = { original_tag = MOR }
-							owns_state = 290
-							has_full_control_of_state = 290
-						}
-						EQG = {
-							is_subject_of = PREV
-						}
-						WES = {
-							is_subject_of = PREV
-						}
-						AND = {
-							NOT = { original_tag = CRC }
-							owns_state = 695
-							has_full_control_of_state = 695
-						}
-						AND = {
-							NOT = { original_tag = SUR }
-							owns_state = 309
-							has_full_control_of_state = 309
-						}
-						CRC = {
-							is_subject_of = PREV
-						}
-						SUR = {
-							is_subject_of = PREV
-						}
-						INS = {
-							is_subject_of = PREV
-						}
-						AND = {
-							NOT = { original_tag = INS }
-							owns_state = 335
-							has_full_control_of_state = 335
-							owns_state = 672
-							has_full_control_of_state = 672
-							owns_state = 334
-							has_full_control_of_state = 334
-							owns_state = 673
-							has_full_control_of_state = 673
-							owns_state = 667
-							has_full_control_of_state = 667
-							owns_state = 309
-							has_full_control_of_state = 309
-							owns_state = 668
-							has_full_control_of_state = 668
-							owns_state = 738
-							has_full_control_of_state = 738
-							owns_state = 669
-							has_full_control_of_state = 669
-						}
-						AND = {
-							NOT = { original_tag = COG }
-							owns_state = 295
-							has_full_control_of_state = 295
-							owns_state = 538
-							has_full_control_of_state = 538
-							owns_state = 718
-							has_full_control_of_state = 718
-							owns_state = 888
-							has_full_control_of_state = 888
-							owns_state = 889
-							has_full_control_of_state = 889
-							owns_state = 890
-							has_full_control_of_state = 890
-						}
-						COG = {
 							is_subject_of = PREV
 						}
 					}
