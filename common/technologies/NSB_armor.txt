@@ -961,12 +961,6 @@ technologies = {
 						original_tag = USA
 					}
 					load_oob = "USA_medium_tank_division"
-					if = {
-						limit = {
-							is_ai = yes
-						}
-						load_oob = "USA_AI_medium_tank_division"
-					}
 					create_equipment_variant = {
 						name = "M3 Lee"
 						type = medium_tank_chassis_1
@@ -985,6 +979,37 @@ technologies = {
 						}
 						icon = "GFX_USA_basic_medium_tank_medium"
 					}
+				}
+				if = {
+					limit = {
+						original_tag = USA
+						is_ai = yes
+					}
+					if = {
+						limit = {
+							NOT = { has_tech = tech_engineers }
+						}
+						set_technology = { tech_engineers = 1 }
+					}
+					if = {
+						limit = {
+							NOT = { has_tech = tech_recon }
+						}
+						set_technology = { tech_recon = 1 }
+					}
+					if = {
+						limit = {
+							NOT = { has_tech = tech_logistics_company }
+						}
+						set_technology = { tech_logistics_company = 1 }
+					}
+					if = {
+						limit = {
+							NOT = { has_tech = tech_maintenance_company }
+						}
+						set_technology = { tech_maintenance_company = 1 }
+					}
+					load_oob = "USA_AI_medium_tank_division"
 				}
 				if = {
 					limit = {
@@ -1013,12 +1038,6 @@ technologies = {
 						original_tag = SOV
 					}
 					load_oob = "SOV_medium_tank_division"
-					if = {
-						limit = {
-							is_ai = yes
-						}
-						load_oob = "SOV_AI_medium_tank_division"
-					}
 					create_equipment_variant = {
 						name = "T-28"
 						type = medium_tank_chassis_1
@@ -1039,6 +1058,37 @@ technologies = {
 						}
 						icon = "GFX_SOV_basic_medium_tank_medium"
 					}
+				}
+				if = {
+					limit = {
+						original_tag = SOV
+						is_ai = yes
+					}
+					if = {
+						limit = {
+							NOT = { has_tech = tech_engineers }
+						}
+						set_technology = { tech_engineers = 1 }
+					}
+					if = {
+						limit = {
+							NOT = { has_tech = tech_recon }
+						}
+						set_technology = { tech_recon = 1 }
+					}
+					if = {
+						limit = {
+							NOT = { has_tech = tech_logistics_company }
+						}
+						set_technology = { tech_logistics_company = 1 }
+					}
+					if = {
+						limit = {
+							NOT = { has_tech = tech_maintenance_company }
+						}
+						set_technology = { tech_maintenance_company = 1 }
+					}
+					load_oob = "SOV_AI_medium_tank_division"
 				}
 				if = {
 					limit = {

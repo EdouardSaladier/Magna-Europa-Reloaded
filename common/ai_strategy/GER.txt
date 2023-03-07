@@ -475,6 +475,31 @@ war_with_poland = {
 	}
 }
 
+kill_yugoslavia_kill_it_kill_kill_kill = {
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		has_wargoal_against = YUG
+		country_exists = YUG
+	}
+	abort = {
+		NOT = { country_exists = YUG }
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "YUG"
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "YUG"
+		value = 200
+	}
+}
+
 danzig_of_war_preparation = {
 	allowed = {
 		original_tag = GER
@@ -651,54 +676,6 @@ iron_pact_italy = {
 		type = alliance
 		id = "ITA"
 		value = 100
-	}
-}
-
-japan_ally = {
-	allowed = {
-		original_tag = GER
-	}
-	enable = {
-		has_completed_focus = GER_japan_friend
-		country_exists = JAP
-	}
-	abort = {
-		NOT = { country_exists = JAP }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "JAP"
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = "JAP"
-		value = 200
-	}
-}
-
-china_ally = {
-	allowed = {
-		original_tag = GER
-	}
-	enable = {
-		has_completed_focus = GER_china_friend
-		country_exists = CHI
-	}
-	abort = {
-		NOT = { country_exists = CHI }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "CHI"
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = "CHI"
-		value = 200
 	}
 }
 
@@ -1215,18 +1192,6 @@ GER_area_priority = {
 		type = area_priority
 		id = north_america
 		value = 90
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = south_america
-		value = 75
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = asia
-		value = 75
 	}
 
 	ai_strategy = {

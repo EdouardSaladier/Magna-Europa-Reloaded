@@ -28,6 +28,24 @@ units = {
 	division= {
 		division_name = {
 			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 18646
+		division_template = "AI Tankovaya Diviziya"
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 18646
+		division_template = "AI Tankovaya Diviziya"
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
 			name_order = 3
 		}
 		location = 18646
@@ -37,7 +55,7 @@ units = {
 	division= {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 9
+			name_order = 4
 		}
 		location = 18646
 		division_template = "AI Tankovaya Diviziya"
@@ -46,25 +64,7 @@ units = {
 	division= {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 14
-		}
-		location = 18646
-		division_template = "AI Tankovaya Diviziya"
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 22
-		}
-		location = 18646
-		division_template = "AI Tankovaya Diviziya"
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 39
+			name_order = 5
 		}
 		location = 18646
 		division_template = "AI Tankovaya Diviziya"
