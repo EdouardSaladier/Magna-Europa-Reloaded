@@ -136,4 +136,46 @@ ideas = {
 		}
 		
 	}
+	
+	hidden_ideas = {
+		ai_dont_join_faction = {
+			name = "No desire to join faction"
+			allowed = { always = no }
+			
+			modifier = {
+				ai_get_ally_desire_factor = -1000
+			}
+		}
+		ai_call_or_join_faction = {
+			allowed = { always = no }
+			
+			modifier = {
+				ai_join_ally_desire_factor = -1000
+				ai_call_ally_desire_factor = -1000
+			}
+		}
+		POL_no_joining_MR = {
+			name = "Molotov-Ribbentrob Pact"
+			allowed = { 
+				always = no
+			} 
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				ai_join_ally_desire_factor = -1000
+				ai_call_ally_desire_factor = -1000
+			}
+			
+			cancel = {
+				NOT = {
+					POL = {
+						has_war_with = SOV
+					}
+				}
+			}
+		}
+	}
 }

@@ -2561,16 +2561,56 @@ country_event = {
 	
 	option = { #instant war
 		name = soviet.75.a
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 1 }
 		declare_war_on = {
 			target = POL
 			type = annex_everything
+		}
+		POL = {
+			leave_faction = yes
+			add_ideas = POL_no_joining_MR
+		}
+		every_country = {
+			limit = { NOT = { tag = POL } }
+			diplomatic_relation = {
+				country = POL
+				relation = guarantee
+				active = no
+			}
+			if = {
+				limit = {
+					is_in_faction_with = ENG
+				}
+				add_ideas = POL_no_joining_MR
+				set_truce = {
+					target = SOV
+					days = 120
+				}
+				add_ai_strategy = {
+					type = dont_join_wars_with
+					id = POL
+					target_country = SOV
+					value = 5000
+				}
+			}
+		}
+		ENG = { add_to_faction = POL }
+		declare_war_on = {
+			target = POL
+			type = annex_everything
+		}
+		effect_tooltip = {	
+			add_to_war = { 
+				targeted_alliance = GER 
+				enemy = POL 
+				hostility_reason = asked_to_join
+			}
 		}
 	}
 	
 	option = { #war goal
 		name = soviet.75.b
-		ai_chance = { factor = 10000 }
+		ai_chance = { factor = 0 }
 		create_wargoal = {
 			type = annex_everything
 			target = POL
