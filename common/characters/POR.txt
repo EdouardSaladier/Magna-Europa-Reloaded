@@ -908,10 +908,8 @@ characters = {
 				has_dlc = "La Resistance"
 			}
 			available = {
-				OR = {
-					has_completed_focus = POR_limited_self_rule 
 					has_completed_focus = POR_allow_free_elections 
-				}
+				
 			}
 			traits = {
 				silent_workhorse 

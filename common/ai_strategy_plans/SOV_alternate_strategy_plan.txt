@@ -70,8 +70,6 @@ SOV_left_opposition_plan = {
 		SOV_all_power_to_the_soviets
 		SOV_rehabilitated_military
 		SOV_the_comintern # 35
-		SOV_the_threat_from_the_land_of_the_rising_sun # 35
-		SOV_two_red_flags #35
 		SOV_the_permanent_revolution
 
 		# 1941
@@ -205,8 +203,6 @@ SOV_left_opposition_cooperative_plan = {
 		SOV_anti_capitalist_policies
 		SOV_the_supreme_soviet
 		SOV_the_comintern # 35
-		SOV_the_threat_from_the_land_of_the_rising_sun # 35
-		SOV_two_red_flags #35
 		SOV_the_permanent_revolution
 		
 		# 1942
@@ -1004,7 +1000,6 @@ SOV_exiles_fascist_plan = {
 		SOV_reconvene_the_zemsky_sobor
 		SOV_dismantle_the_zemsky_sobor
 		SOV_russian_corporate_state
-		SOV_pacify_the_rim
 		SOV_the_berlin_moscow_axis
 
 		#Take during Civil War if it lasts long, but otherwise take it as soon as political path is established - until 1st tech slot

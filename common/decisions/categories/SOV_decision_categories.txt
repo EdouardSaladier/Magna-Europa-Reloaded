@@ -198,7 +198,6 @@ SOV_diplomacy_middle_east_decision_category = {
 		OR = {
 			country_exists = IRQ
 			country_exists = PER
-			country_exists = AFG
 			country_exists = SAU
 		}
 		is_subject = no
@@ -215,32 +214,7 @@ SOV_diplomacy_asia_decision_category = {
 	}
 
 	visible = {
-		OR = {
-			AND = {
-				has_completed_focus = SOV_the_threat_from_the_land_of_the_rising_sun
-				any_country = {
-					OR = {
-						SOV_is_free_chinese_tag = yes
-					}
-					exists = yes
-				}
-			}
-			AND = {
-				has_completed_focus = SOV_reconcile_japan
-				any_country = {
-					OR = {
-						AND = {
-							tag = JAP
-							is_subject = no
-						}
-						AND = {
-							SOV_is_free_chinese_tag = yes
-							is_in_faction_with = JAP
-						}
-					}
-				}
-			}
-		}
+		has_global_flag = NEVER
 	}
 }
 
@@ -248,7 +222,7 @@ SOV_soviet_aid_decision_category = { #Dec cat for Sinkiang (mission dummies go h
 	icon = decision_category_generic_communism
 
 	allowed = {
-		original_tag = SIK
+		has_global_flag = NEVER
 	}
 }
 

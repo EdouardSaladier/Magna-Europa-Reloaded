@@ -43,8 +43,6 @@ USA_alternate_plan_1 = {
 		USA_agricultural_adjustment_act
 		USA_office_of_scientific_research_and_development
 		USA_limited_intervention
-		USA_intervention_in_asia
-		USA_war_plan_orange
 		USA_intervention_in_europe
 		USA_war_plan_black
 		USA_war_propaganda
@@ -148,8 +146,6 @@ USA_alternate_plan_2 = {
 		USA_war_plans_division = 5
 		USA_agricultural_adjustment_act = 15
 		USA_neutrality_act = 15
-		USA_intervention_in_asia = 5
-		USA_war_plan_orange = 5
 		USA_intervention_in_europe = 5
 		USA_war_plan_black = 5
 		USA_strategic_bombing = 5
@@ -287,14 +283,11 @@ USA_britain_hostile = {
 	focus_factors = {
 		USA_war_plan_red = 10
 		USA_war_plan_crimson = 10
-		USA_war_plan_ruby = 10
-		USA_war_plan_scarlet_garnet = 10
 		USA_intervention_in_europe = 20
 		USA_intervention_in_the_americas = 10
 		USA_destroyers_for_bases = 0
 		USA_limited_intervention = 25
 		USA_war_propaganda = 20
-		USA_focus_on_asia = 0
 	}
 	ai_strategy = {
 		type = support
@@ -351,14 +344,11 @@ USA_germany_friendly = {
 		USA_war_plan_red = 10
 		USA_war_plan_crimson = 10
 		USA_war_plan_gold = 10
-		USA_war_plan_ruby = 10
-		USA_war_plan_scarlet_garnet = 10
 		USA_intervention_in_europe = 20
 		USA_war_plan_white = 20
 		USA_war_plan_black = 0
 		USA_limited_intervention = 25
 		USA_war_propaganda = 20
-		USA_focus_on_asia = 0
 	}
 	ai_strategy = {
 		type = support

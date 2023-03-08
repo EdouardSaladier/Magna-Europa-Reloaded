@@ -53,13 +53,11 @@ POR_fascist_axis_plan = {
 		POR_merchant_marine_protection	
 		POR_roads_bridges_and_dams
 		POR_colonial_army
-		POR_mapa_cor_de_rosa
 		POR_join_the_axis	
 		#1942
 		POR_research_agreements
 		POR_ogma
 		POR_submarine_effort
-		POR_recover_the_east_indies
 		POR_fuzileiros		
 		#1943
 		POR_naval_research_institute
@@ -67,9 +65,6 @@ POR_fascist_axis_plan = {
 	}
 
 	focus_factors = {
-		POR_recover_brazil = 0
-		POR_limited_self_rule = 0
-		POR_expand_the_chinese_territories = 0
 	}				
 
 	research = {
@@ -144,10 +139,8 @@ POR_fascist_fifth_empire_plan = {
 		POR_the_fifth_empire
 		POR_refuse_the_naval_blockade
 		#1941
-		POR_mapa_cor_de_rosa
 		POR_roads_bridges_and_dams
 		POR_fuzileiros
-		POR_recover_the_east_indies
 		POR_colonial_assimilation_policy
 		#1942
 		POR_national_cruiser_production
@@ -156,17 +149,14 @@ POR_fascist_fifth_empire_plan = {
 		POR_standardization
 		POR_colonial_army
 		#1943
-		POR_recover_brazil
 		POR_naval_research_institute
 		POR_carrier_effort
 		POR_advanced_light_aircraft		
-		POR_air_naval_research		
-		POR_latin_america
+		POR_air_naval_research	
 
 	}	
 
 	focus_factors = {
-		POR_limited_self_rule = 0
 	}			
 
 	research = {
@@ -229,21 +219,18 @@ POR_neutrality_monarchist_plan = {
 		POR_restoration_of_the_monarchy
 		#1939
 		POR_arsenal_do_alfeite
-		POR_monarchist_uprising_in_brazil
 		POR_ogme
 		POR_military_vehicles
 		POR_military_research_facilities		
 		#1940
 		POR_refuse_the_naval_blockade
 		POR_the_royal_iberian_alliance
-		POR_the_empire_of_brazil
 		POR_the_kingdom_reunited
 		POR_a_powerful_merchant_marine	
 		#1941
 		POR_colonial_assimilation_policy
 		POR_national_cruiser_production
 		POR_atlantic_defense_strategy
-		POR_mapa_cor_de_rosa
 		POR_metropolitan_army
 		#1942
 		POR_merchant_marine_protection
@@ -252,7 +239,6 @@ POR_neutrality_monarchist_plan = {
 		POR_rebuild_the_lines_of_torres_vedras
 		POR_colonial_army
 		#1943
-		POR_luso_tropicalism
 		POR_corpo_do_estado_maior
 		POR_fuzileiros
 		POR_naval_research_institute
@@ -329,10 +315,8 @@ POR_democratic_plan = {
 		POR_colonial_assimilation_policy
 		#1940
 		POR_colonial_army
-		POR_limited_self_rule
 		POR_submarine_effort
 		POR_merchant_marine_protection
-		POR_infrastructure_in_angola
 		#1941
 		POR_metropolitan_army
 		POR_corpo_do_estado_maior
@@ -343,7 +327,6 @@ POR_democratic_plan = {
 		POR_standardization
 		POR_defend_the_borders
 		POR_research_sharing
-		POR_develop_north_angola
 		POR_securing_the_free_world
 		#1943
 		POR_oppose_germany
@@ -436,10 +419,8 @@ POR_communist_comintern_plan = {
 		POR_merchant_marine_protection
 		POR_national_cruiser_production
 		POR_atlantic_defense_strategy
-		POR_endless_sea
-		POR_protect_chinese_civilians			
+		POR_endless_sea			
 		#1943
-		POR_limited_self_rule
 		POR_submarine_effort
 		POR_extraction_industries
 		POR_hydroelectricity
@@ -517,12 +498,10 @@ POR_communist_independent_plan = {
 		POR_the_iberian_socialist_union
 		POR_a_powerful_merchant_marine
 		POR_the_popular_front_bloc
-		POR_latin_american_communism
 		POR_standardization
 		#1941
 		POR_arsenal_do_alfeite
 		POR_merchant_marine_protection
-		POR_luso_tropicalism
 		POR_cooperate_with_french_militants
 		POR_submarine_effort
 		#1942
