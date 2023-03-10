@@ -3482,7 +3482,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 158 #PIEMONT (Torino)
+				controls_state = 718 #PIEMONT (Torino)
 				ITA_is_northern_designer = yes
 			}
 			
@@ -3508,7 +3508,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 158 #PIEMONT (Torino)
+				controls_state = 718 #PIEMONT (Torino)
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -3548,7 +3548,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 736 #LITORALE (Trieste)
+				controls_state = 744 #LITORALE (Trieste)
 				ITA_is_northern_designer = yes
 			}
 						
@@ -3574,7 +3574,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 736 #LITORALE (Trieste)
+				controls_state = 744 #LITORALE (Trieste)
 				ITA_is_northern_designer_improved = yes
 			}
 						
@@ -3609,7 +3609,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 158 #PIEDMONT (Genova)
+				controls_State = 798 #PIEDMONT (Genova)
 				ITA_is_northern_designer = yes
 			}
 						
@@ -3635,7 +3635,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 158 #PIEDMONT (Genova)
+				controls_State = 798 #PIEDMONT (Genova)
 				ITA_is_northern_designer_improved = yes
 			}
 						
@@ -3669,7 +3669,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 117 # CAMPAGNA (Napoli)
+				controls_State = 934 # CAMPAGNA (Napoli)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -3695,7 +3695,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 117 # CAMPAGNA (Napoli)
+				controls_State = 934 # CAMPAGNA (Napoli)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -3730,7 +3730,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 157 # ABRUZZO (Ancona)
+				controls_State = 823 # ABRUZZO (Ancona)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -3756,7 +3756,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 157 # ABRUZZO (Ancona)
+				controls_State = 823 # ABRUZZO (Ancona)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -3788,7 +3788,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 849 # PUGLIA (Taranto)
+				controls_State = 1405 # PUGLIA (Taranto)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -3814,7 +3814,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 849 # PUGLIA (Taranto)
+				controls_State = 1405 # PUGLIA (Taranto)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -3845,7 +3845,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 159 #LOMBARDIA
+				controls_State = 1361 #LOMBARDIA (Varese)
 				ITA_is_northern_designer = yes
 			}
 			
@@ -3853,7 +3853,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { light_aircraft_manufacturer_2 }
+			traits = { light_aircraft_manufacturer_1 }
 		}
 		
 		ITA_macchi_improved = { #NORTH
@@ -3871,7 +3871,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 159 #LOMBARDIA
+				controls_State = 1361 #LOMBARDIA (Varese)
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -3901,7 +3901,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 159 #LOMBARDIA
+				controls_State = 709 #LOMBARDIA (Milano)
 				ITA_is_northern_designer = yes
 			}
 
@@ -3931,7 +3931,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 159 #LOMBARDIA
+				controls_State = 709 #LOMBARDIA (Milano)
 				ITA_is_northern_designer_improved = yes
 			}
 
@@ -3962,7 +3962,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 159 #LOMBARDIA
+				controls_State = 709 #LOMBARDIA (Milano)
 				ITA_is_northern_designer = yes
 			}
 						
@@ -3988,7 +3988,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 159 #LOMBARDIA
+				controls_State = 709 #LOMBARDIA (Milano)
 				ITA_is_northern_designer_improved = yes
 			}
 						
@@ -4003,7 +4003,7 @@ ideas = {
 			}
 		}
 		
-		piaggio = { #NORTH		
+		piaggio = { #SOUTH
 			allowed = {
 				original_tag = ITA
 			}
@@ -4012,14 +4012,14 @@ ideas = {
 				NOT = {
 					AND = {
 						has_completed_focus = ITA_new_industrialization_program
-						has_completed_focus = ITA_strengthen_northern_industry
+						has_completed_focus = ITA_modernize_the_mezzogiorno
 					}
 				}
 			}
 
 			available = {
-				controls_State = 158 #PIEMONTE
-				ITA_is_northern_designer = yes
+				controls_State = 1387 #TUSCANY (Pisa)
+				ITA_is_southern_designer = yes
 			}
 						
 			research_bonus = {
@@ -4040,12 +4040,12 @@ ideas = {
 
 			visible = {
 				has_completed_focus = ITA_new_industrialization_program
-				has_completed_focus = ITA_strengthen_northern_industry
+				has_completed_focus = ITA_modernize_the_mezzogiorno
 			}
 
 			available = {
-				controls_State = 158 #PIEMONTE
-				ITA_is_northern_designer_improved = yes
+				controls_State = 1387 #TUSCANY (Pisa)
+				ITA_is_southern_designer_improved = yes
 			}
 						
 			research_bonus = {
@@ -4076,7 +4076,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 117 #CAMPANIA (Napoli)
+				controls_State = 934 #CAMPANIA (Napoli)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -4102,7 +4102,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 117 #CAMPANIA (Napoli)
+				controls_State = 934 #CAMPANIA (Napoli)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -4142,7 +4142,7 @@ ideas = {
 						has_idea = ITA_crda_improved
 					}
 				}
-				controls_State = 736 #LITORALE (Trieste)
+				controls_State = 744 #LITORALE (Trieste)
 				ITA_is_northern_designer = yes
 			}
 
@@ -4177,7 +4177,7 @@ ideas = {
 						has_idea = ITA_crda_improved
 					}
 				}
-				controls_State = 736 #LITORALE (Trieste)
+				controls_State = 744 #LITORALE (Trieste)
 				ITA_is_northern_designer_improved = yes
 			}
 
@@ -4218,7 +4218,7 @@ ideas = {
 						has_idea = ITA_fiat_improved
 					}
 				}
-				controls_State = 158 #PIEDMONT (Torino)
+				controls_State = 718 #PIEDMONT (Torino)
 				ITA_is_northern_designer = yes
 			}
 
@@ -4250,7 +4250,7 @@ ideas = {
 					has_idea = fiat
 					has_idea = ITA_fiat_improved
 				}
-				controls_State = 158 #PIEDMONT (Torino)
+				controls_State = 718 #PIEDMONT (Torino)
 				ITA_is_northern_designer_improved = yes
 			}
 
@@ -4287,7 +4287,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 159 #LOMBARDIA
+				controls_state = 1359 #LOMBARDIA (Brescia)
 				ITA_is_northern_designer = yes
 			}
 			
@@ -4313,7 +4313,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 159 #LOMBARDIA
+				controls_state = 1359 #LOMBARDIA (Brescia)
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -4346,7 +4346,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 159 #LOMBARDIA
+				controls_state = 718 #PIEDMONT (Torino)
 				ITA_is_northern_designer = yes
 			}
 			
@@ -4372,7 +4372,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 159 #LOMBARDIA
+				controls_state = 718 #PIEDMONT (Torino)
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -4409,7 +4409,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 159 #LOMBARDIA
+				controls_state = 709 #LOMBARDIA (Milano)
 				ITA_is_northern_designer = yes
 			}
 			
@@ -4435,7 +4435,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 159 #LOMBARDIA
+				controls_state = 709 #LOMBARDIA (Milano)
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -4470,7 +4470,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 159 #LOMBARDY (Brescia)
+				controls_state = 1359 #LOMBARDY (Brescia)
 				ITA_is_northern_designer = yes
 			}
 			
@@ -4496,7 +4496,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 159 #LOMBARDY (Brescia)
+				controls_state = 1359 #LOMBARDY (Brescia)
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -4600,7 +4600,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 160 #VENETO
+				controls_state = 706 #FRIULI (Udine)
 				ITA_is_northern_designer = yes
 			}
 			
@@ -4626,7 +4626,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 160 #VENETO
+				controls_state = 706 #FRIULI (Udine)
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -4660,7 +4660,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 157 #UMBRIA
+				controls_state = 1392 #UMBRIA (Terni)
 				ITA_is_southern_designer = yes
 			}
 			
@@ -4686,7 +4686,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 157 #UMBRIA
+				controls_state = 1392 #UMBRIA (Terni)
 				ITA_is_southern_designer_improved = yes
 			}
 			
@@ -4716,7 +4716,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 158 #PIEDMONT
+				controls_state = 1365 #LOMBARDY (Bergamo)
 				ITA_is_northern_designer = yes
 			}
 
@@ -4738,7 +4738,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 158 #PIEDMONT
+				controls_state = 1365 #LOMBARDY (Bergamo)
 				ITA_is_northern_designer_improved = yes
 			}
 
@@ -4767,7 +4767,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 2 #LATIUM
+				controls_state = 2607 #LATIUM (Roma)
 				ITA_is_southern_designer = yes
 			}
 
@@ -4789,7 +4789,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 2 #LATIUM
+				controls_state = 2607 #LATIUM (Roma)
 				ITA_is_southern_designer_improved = yes
 			}
 
@@ -4824,7 +4824,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 161 #EMILIA ROMAGNA
+				controls_state = 779 #EMILIA ROMAGNA (Bologna)
 				ITA_is_northern_designer = yes
 			}
 
@@ -4850,7 +4850,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 161 #EMILIA ROMAGNA
+				controls_state = 779 #EMILIA ROMAGNA (Bologna)
 				ITA_is_northern_designer_improved = yes
 			}
 
