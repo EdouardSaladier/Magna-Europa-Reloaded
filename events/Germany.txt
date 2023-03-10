@@ -4943,14 +4943,14 @@ country_event = {
 				}
 			}
 		}
-		280 = { transfer_state = GER } # danzig
-		hidden_effect = { 2729 = { transfer_state = GER } } #other danzig state, tooltip unnecessary
+		280 = { transfer_state_to = GER } # danzig
+		hidden_effect = { 2729 = { transfer_state_to = GER } } #other danzig state, tooltip unnecessary
 		custom_effect_tooltip = mer_GER_claims_on_danzig_corridor_tt
 		hidden_effect = {
 			287 = { transfer_state_to = GER }
 			310 = { transfer_state_to = GER }
 			2567 = { transfer_state_to = GER }
-			546 = { transfer_state = GER }
+			546 = { transfer_state_to = GER }
 			2341 = { transfer_state_to = GER }
 			264 = { transfer_state_to = GER }
 			267 = { transfer_state_to = GER }
