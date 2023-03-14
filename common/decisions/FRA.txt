@@ -2647,14 +2647,16 @@ FRA_decolonization = {
 		activation = {
 			has_country_flag = FRA_syria_promised_independence
 			has_war = no
-			NOT = {
-				country_exists = SYR
-				country_exists = LEB
+			OR = {
+				NOT = {
+					country_exists = SYR
+					country_exists = LEB
+				}
+				AND = {
+					LEB = { is_subject_of = ROOT }
+					SYR = { is_subject_of = ROOT }
+				}
 			}
-			680 = { is_controlled_by = ROOT }
-			677 = { is_controlled_by = ROOT }
-			554 = { is_controlled_by = ROOT }
-			553 = { is_controlled_by = ROOT }
 		}
 
 		days_mission_timeout = 180
@@ -2667,70 +2669,6 @@ FRA_decolonization = {
 						is_core_of = SYR
 					}
 				}
-				add_resistance_target = {
-					amount = 10
-					tooltip = FRA_promised_independence_tt
-				}
-			}
-		}
-	}
-	FRA_independence_for_indochina_mission = {
-		available = {
-			country_exists = LAO
-			country_exists = CAM
-			country_exists = VIN
-		}
-
-		activation = {
-			has_country_flag = FRA_indochina_promised_independence
-			has_war = no
-			NOT = {
-				country_exists = CAM
-				country_exists = LAO
-				country_exists = VIN
-			}
-			671 = { is_controlled_by = ROOT }
-			670 = { is_controlled_by = ROOT }
-			286 = { is_controlled_by = ROOT }
-			741 = { is_controlled_by = ROOT }	
-		}
-
-		days_mission_timeout = 180
-
-		timeout_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = LAO
-						is_core_of = CAM
-						is_core_of = VIN
-					}
-				}
-				add_resistance_target = {
-					amount = 10
-					tooltip = FRA_promised_independence_tt
-				}
-			}
-		}
-	}
-	FRA_independence_for_madagascar_mission = {
-		available = {
-			country_exists = MAD
-		}
-
-		activation = {
-			has_country_flag = FRA_madagascar_promised_independence
-			has_war = no
-			NOT = {
-				country_exists = MAD
-			}
-			543 = { is_controlled_by = ROOT }
-		}
-
-		days_mission_timeout = 180
-
-		timeout_effect = {
-			543 = {
 				add_resistance_target = {
 					amount = 10
 					tooltip = FRA_promised_independence_tt
@@ -2771,104 +2709,6 @@ FRA_decolonization = {
 						is_core_of = ALG
 						is_core_of = MOR
 						is_core_of = TUN
-					}
-				}
-				add_resistance_target = {
-					amount = 10
-					tooltip = FRA_promised_independence_tt
-				}
-			}
-		}
-	}
-	FRA_independence_for_west_africa_mission = {
-		available = {
-			country_exists = NGR
-			country_exists = DAH
-			country_exists = TOG
-			country_exists = VOL
-			country_exists = IVO
-			country_exists = MLI
-			country_exists = GNA
-			country_exists = SEN
-			country_exists = MRT
-			
-		}
-
-		activation = {
-			has_country_flag = FRA_west_africa_promised_independence
-			has_war = no
-			NOT = {
-				country_exists = NGR
-				country_exists = DAH
-				country_exists = TOG
-				country_exists = VOL
-				country_exists = IVO
-				country_exists = MLI
-				country_exists = GNA
-				country_exists = SEN
-				country_exists = MRT
-			}
-			FRA_controls_west_africa = yes
-		}
-
-		days_mission_timeout = 180
-
-		timeout_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = NGR
-						is_core_of = DAH
-						is_core_of = TOG
-						is_core_of = VOL
-						is_core_of = IVO
-						is_core_of = MLI
-						is_core_of = GNA
-						is_core_of = SEN
-						is_core_of = MRT
-					}
-				}
-				add_resistance_target = {
-					amount = 10
-					tooltip = FRA_promised_independence_tt
-				}
-			}
-		}
-	}
-	FRA_independence_for_central_africa_mission = {
-		available = {
-			country_exists = RCG
-			country_exists = GAB
-			country_exists = CAR
-			country_exists = CMR
-			country_exists = CHA
-			
-		}
-
-		activation = {
-			has_country_flag = FRA_central_africa_promised_independence
-			has_war = no
-			NOT = {
-				country_exists = RCG
-				country_exists = GAB
-				country_exists = CAR
-				country_exists = CMR
-				country_exists = CHA
-			}
-			FRA_controls_central_africa = yes
-		}
-
-		days_mission_timeout = 180
-
-		timeout_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = RCG
-						is_core_of = GAB
-						is_core_of = CAR
-						is_core_of = CMR
-						is_core_of = CHA
 					}
 				}
 				add_resistance_target = {
