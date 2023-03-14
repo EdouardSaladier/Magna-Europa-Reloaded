@@ -169,14 +169,6 @@ ITA_missiolini_progress_in_ethiopia_success_effect = {
 	add_command_power = 15
 
 	#Effects in Ethiopia
-	if = {
-		limit = {
-			has_dlc = "By Blood Alone"
-		}
-		effect_tooltip = { #With BBA this is handled in Ethiopian decisions
-			ETH = { add_war_support = -0.1 }
-		}
-	}
 
 	if = { #First mission to succeed
 		limit = {
@@ -198,13 +190,6 @@ ITA_missiolini_conquer_ethiopia_failure_effect = {
 	add_political_power = -25
 	add_war_support = -0.05
 	add_stability = -0.05
-	every_controlled_state = {
-		limit = {
-			NOT = { is_owned_by = ROOT }
-			is_core_of = ETH
-		}
-		add_compliance = -5
-	}
 }
 
 ITA_missiolini_conquer_ethiopia_success_effect = {
@@ -218,37 +203,13 @@ ITA_missiolini_conquer_ethiopia_success_effect = {
 ### PACIFY ETHIOPIA ###
 ITA_missiolini_pacify_ethiopia_failure_effect = {
 	add_political_power = -25
-	every_controlled_state = {
-		limit = {
-			NOT = { is_owned_by = ROOT }
-			is_core_of = ETH
-		}
-		add_compliance = -5
-	}
+	
 }
 
 ITA_missiolini_pacify_ethiopia_success_effect = {
 	add_political_power = 75
 	add_stability = 0.05
 	add_command_power = 35
-	every_owned_state = {
-		limit = {
-			OR = {
-				is_core_of = ETH
-				is_core_of = ERI
-				is_core_of = SOM
-			}
-			is_fully_controlled_by = ROOT
-		}
-		add_dynamic_modifier = { modifier = ITA_pacified_italian_east_africa_modifier days = 730 }
-
-		if = {
-			limit = {
-				has_resistance = yes
-			}
-			add_resistance_target = -10
-		}
-	}
 }
 
 ### STRENGTHEN HEAVY INDUSTRY ###
@@ -1817,15 +1778,6 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 					uncomplete_children = yes
 				}
 			}
-			if = { #ETH-ITA war focus
-				limit = {
-					has_completed_focus = ITA_struggle_in_ethiopia
-				}
-				uncomplete_national_focus = {
-					focus = ITA_struggle_in_ethiopia
-				}
-				unlock_national_focus = ITA_the_abyssinian_fiasco
-			}
 
 			#COMPLETE FOCUS
 			unlock_national_focus = ITA_unite_the_opposition
@@ -1863,15 +1815,6 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 					focus = ITA_pact_of_steel
 					uncomplete_children = yes
 				}
-			}
-			if = { #ETH-ITA war focus
-				limit = {
-					has_completed_focus = ITA_the_abyssinian_fiasco
-				}
-				uncomplete_national_focus = {
-					focus = ITA_the_abyssinian_fiasco
-				}
-				unlock_national_focus = ITA_struggle_in_ethiopia
 			}
 			#COMPLETE FOCUS
 			if = {
@@ -2946,32 +2889,6 @@ ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 				is_controlled_by = ROOT
 			}
 			set_state_flag = ITA_cw_state_split
-		}
-	}
-
-	#If at war with ETH (while ETH controls any state), make sure controlled ETH states go to fascist side (Part I)
-	hidden_effect = {
-		if = {
-			limit = {
-				has_war_with = ETH
-				any_state = {
-					is_core_of = ETH
-					is_controlled_by = ETH
-				}
-			}
-			every_controlled_state = {
-				limit = {
-					NOT = { is_owned_by = ROOT }
-					is_core_of = ETH
-				}
-				set_state_flag = ITA_controlled_ethiopian_state_for_fascists_flag
-				if = {
-					limit = {
-						ROOT = { NOT = { has_country_flag = ITA_manage_ethiopian_states_in_cw_flag } }
-					}
-					ROOT = { set_country_flag = ITA_manage_ethiopian_states_in_cw_flag }
-				}
-			}
 		}
 	}
 
@@ -4845,13 +4762,6 @@ ITA_increase_resource_amount_in_state = { #THIS is state
 }
 
 ITA_peace_out_eth_on_startup_effect = {
-	ITA = {
-		white_peace = {
-			tag = ETH
-		}
-		unlock_national_focus = ITA_solid_progress
-	}
-	set_global_flag = ITA_peace_with_eth_on_startup_flag
 }
 
 
@@ -6088,7 +5998,7 @@ ITA_create_francesco_de_martini_operative = { #INITIAL
 		traits = { operative_commando operative_demolition_expert operative_linguist }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { ITA SYR ETH }
+		nationalities = { ITA SYR }
 	}
 }
 
@@ -6110,7 +6020,7 @@ ITA_create_rosa_dainelli_operative = { #SIM
 		traits = { operative_commando operative_demolition_expert }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { ITA ETH }
+		nationalities = { ITA }
 	}
 }
 
@@ -6720,143 +6630,5 @@ ITA_replace_stuff_based_on_ideology_effect = {
 }
 
 ITA_forced_italo_ethiopian_peace_deal = {
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					ETH = {
-						any_core_state = {
-							is_controlled_by = ITA
-						}
-					}
-					ITA = {
-						any_owned_state = {
-							is_controlled_by = ETH
-						}
-					}
-				}
-				AND = {
-					ITA = { surrender_progress < 0.01 }
-					ETH = { surrender_progress < 0.01 }
-				}
-			}
-		}
-		ETH = {
-			white_peace = ITA
-		}
-	}
-	else_if = {
-		limit = {
-			ETH = {
-				all_core_state = {
-					is_controlled_by = ITA
-				}
-			}
-		}
-		ITA = {
-			start_peace_conference = {
-				tag = ETH
-				score_factor = 0.25
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ETH = { surrender_progress > 0.74 }
-		}
-		ITA = {
-			start_peace_conference = {
-				tag = ETH
-				score_factor = 0.20
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ETH = { surrender_progress > 0.49 }
-		}
-		ITA = {
-			start_peace_conference = {
-				tag = ETH
-				score_factor = 0.15
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ETH = { surrender_progress > 0.19 }
-		}
-		ITA = {
-			start_peace_conference = {
-				tag = ETH
-				score_factor = 0.1
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ETH = { surrender_progress > 0 }
-		}
-		ITA = {
-			start_peace_conference = {
-				tag = ETH
-				score_factor = 0.05
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ITA = { surrender_progress > 0.74 }
-		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.125
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ITA = { surrender_progress > 0.49 }
-		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.1
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ITA = { surrender_progress > 0.19 }
-		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.075
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ITA = { surrender_progress > 0 }
-		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.05
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			ITA = { surrender_progress < 0.01 }
-		}
-		ETH = {
-			start_peace_conference = {
-				tag = ITA
-				score_factor = 0.025
-			}
-		}
-	}
+	
 }

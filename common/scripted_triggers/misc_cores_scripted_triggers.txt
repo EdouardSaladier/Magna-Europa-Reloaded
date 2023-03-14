@@ -531,3 +531,48 @@ is_kaliningrad = {
 		state = 2334
 	}
 }
+is_dalmatia = {
+	OR = {
+		is_core_of = DLM
+		state = 2924
+		state = 754
+		state = 2829
+		state = 1478
+		state = 1477
+		state = 2911
+		state = 2651
+		state = 1473
+		state = 2825
+	}
+}
+is_italian_dalmatia = {
+	OR = {
+		state = 1473
+		state = 2825
+		state = 2651
+		state = 1988
+		state = 2826
+		state = 2827
+		state = 1475
+		state = 811
+		state = 2916
+		state = 2897
+		state = 1990
+		state = 884
+		state = 1563
+		state = 1480
+	}
+}
+is_hungarian_vojvodina = {
+	OR = {
+		AND = {
+			is_core_of = VJV
+			NOT = {
+				is_core_of = BNT
+				state = 1470
+				state = 775
+				state = 2555
+			}
+		}
+	}
+}
