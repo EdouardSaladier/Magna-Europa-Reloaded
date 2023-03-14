@@ -842,7 +842,7 @@ GER_reichskommissariats = {
 		complete_effect = {
 			if = {
 				limit = {
-					2368 = {	
+					2969 = {	
 						owner = {
 							has_war_with = ROOT
 						}
@@ -891,7 +891,7 @@ GER_reichskommissariats = {
 			}
 			if = {
 				limit = {
-					2368 = {	
+					2969 = {	
 						owner = {
 							NOT = { has_war_with = ROOT }
 						}
@@ -2870,8 +2870,21 @@ political_actions = {
 					exists = no
 				}
 			}
-			
-			
+			NOT = {
+				AND = {
+					MCS = {
+						exists = yes
+						is_subject_of = GER
+					}	
+					CRO = {
+						exists = yes
+						is_subject_of = GER
+					}
+				}
+			}
+			hidden_trigger = {
+				
+			}
 		}
 		fire_only_once = yes
 		cost = 10
@@ -2980,9 +2993,13 @@ political_actions = {
 				}
 				every_state = {
 					limit = {
-						is_core_of = HUN
-						is_core_of = YUG
-						NOT = { is_core_of = BNT }
+						is_core_of = VJV
+						NOT = { 
+							is_core_of = BNT 
+							state = 2555
+							state = 775
+							state = 1470
+						}
 					}
 					transfer_state_to = HUN
 				}
@@ -2993,11 +3010,17 @@ political_actions = {
 				}
 				every_state = {
 					limit = {
-						is_claimed_by = BUL
-						is_core_of = YUG
+						OR = {
+							is_core_of = MAC
+							state = 846
+							state = 1972
+							state = 865
+							state = 1971
+							state = 2805
+						}
 						NOT = {
-							is_owned_by = ITA
-							is_owned_by = ALB
+							state = 904
+							state = 2796
 						}
 					}
 					transfer_state_to = BUL
@@ -3031,34 +3054,108 @@ political_actions = {
 						}
 					}
 					transfer_state_to = ALB
+					add_core_of = ALB
 				}
 			}
-			every_state = {
+			if = {
 				limit = {
-					OR = {
-						is_core_of = SER
-						is_core_of = MAC
-						is_core_of = MNT
-					}
-					NOT = {
-						is_owned_by = BUL
-						is_owned_by = ITA
-						is_owned_by = HUN
-						is_owned_by = CRO
-						is_owned_by = MNT
-						is_owned_by = ALB
-					}
+					is_in_faction_with = BUL
+					NOT = { is_in_faction_with = ALB }
 				}
-				transfer_state_to = SER
-				GER = {
-					puppet = SER
-					set_autonomy = { target = SER autonomy_state = autonomy_integrated_puppet }
+				BUL = {
+					transfer_state = 904
+					transfer_state = 2796
 				}
 			}
+			
+				if = {
+					limit = {
+						always = no
+						790 = {	
+							owner = {
+								has_war_with = ROOT
+							}
+						}
+					}
+					every_state = {
+						limit = {
+								OR = {
+									is_core_of = SER
+									is_core_of = MAC
+									is_core_of = MNT
+								}
+								NOT = {
+									is_owned_by = BUL
+									is_owned_by = ITA
+									is_owned_by = HUN
+									is_owned_by = CRO
+									is_owned_by = MNT
+									is_owned_by = ALB
+								}
+							}
+						add_claim_by = MCS
+						set_state_controller_to	= MCS
+						add_compliance = 30
+					}
+					MCS = {
+						declare_war_on = {
+							target = YUG
+							type = civil_war
+						}
+					}	
+					MCS = {
+						transfer_state = 2810
+					}
+					set_autonomy = { target = MCS autonomy_state = autonomy_integrated_puppet }
+				}
+				if = {
+					limit = {
+						#790 = {	
+						#	owner = {
+						#		NOT = { has_war_with = ROOT }
+						#	}
+						#}
+					}
+					every_state = {
+						limit = {
+								OR = {
+									is_core_of = SER
+									is_core_of = MAC
+									is_core_of = MNT
+								}
+								NOT = {
+									is_owned_by = BUL
+									is_owned_by = ITA
+									is_owned_by = HUN
+									is_owned_by = CRO
+									is_owned_by = MNT
+									is_owned_by = ALB
+								}
+							}
+						transfer_state_to = MCS
+						add_claim_by = MCS
+						add_compliance = 30
+					}
+					GER = { set_autonomy = { target = MCS autonomy_state = autonomy_integrated_puppet } }
+				}
+				GER = {
+					puppet = MCS
+					set_autonomy = { target = MCS autonomy_state = autonomy_integrated_puppet }
+				}
+				hidden_effect = {
+					MCS = {
+						load_focus_tree = rk_tree
+						add_ideas = GER_military_regime
+					}
+				}
+			
 			every_state = {
 				limit = {
 					is_core_of = SLV
-					NOT = { is_owned_by = ITA is_owned_by = HUN }
+					NOT = {
+						is_owned_by = ITA 
+						is_owned_by = HUN 
+					}
 				}
 				set_state_controller_to = GER
 			}
