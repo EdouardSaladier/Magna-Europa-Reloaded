@@ -1202,10 +1202,13 @@ GER_reichskommissariats = {
 			
 				RKO = { exists = no }
 				any_country = {
-					tag = event_target:BLT_WITH_GER
-					has_country_flag = OSTLAND
-					exists = no
-					
+					if = {
+						limit = {
+							tag = event_target:BLT_WITH_GER
+						}
+						has_country_flag = OSTLAND
+						exists = no
+					}
 				}	
 			
 			OR = { 
@@ -1391,7 +1394,11 @@ GER_reichskommissariats = {
 
 		visible = {
 			any_country = {
-				tag = event_target:BLT_WITH_GER
+				if = {
+					limit = {
+						tag = event_target:BLT_WITH_GER
+					}
+				}
 				NOT = {
 					owns_state = 2189
 				}
@@ -2190,7 +2197,7 @@ GER_reichskommissariats = {
 							state = 2965
 							state = 2964
 							state = 708
-							state = 1466
+							state = 1446
 						}
 					}
 					transfer_state_to = ITA
