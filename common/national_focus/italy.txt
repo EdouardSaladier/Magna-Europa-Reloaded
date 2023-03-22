@@ -15499,17 +15499,24 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_balkan_ambition"
-			add_state_claim = 102 #NORTH SLOVENIA
-			add_state_claim = 853 #LJUBLJANA
-			add_state_claim = 103 #DALMATIA
-			add_state_claim = 105 #MONTENEGRO
-
+			every_state = {
+				limit ={
+					NOT = { has_state_flag = ITA_INITIAL_STATE }
+					OR = {
+						state = 743
+						state = 1486
+						state = 2825
+						is_italian_dalmatia = yes
+					}
+				}
+				add_claim_by = ITA
+			}
 			if = {
 				limit = {
 					country_exists = CRO
 					OR = {
-						103 = { is_fully_controlled_by = CRO }
-						105 = { is_fully_controlled_by = CRO }
+						1563 = { is_fully_controlled_by = CRO }
+						881 = { is_fully_controlled_by = CRO }
 					}
 				}
 				activate_targeted_decision = { target = CRO decision = ITA_send_ultimatum_to_country_balkan }
@@ -15518,8 +15525,8 @@ focus_tree = {
 				limit = {
 					country_exists = MNT
 					OR = {
-						103 = { is_fully_controlled_by = MNT }
-						105 = { is_fully_controlled_by = MNT }
+						1563 = { is_fully_controlled_by = MNT }
+						881 = { is_fully_controlled_by = MNT }
 					}
 				}
 				activate_targeted_decision = { target = MNT decision = ITA_send_ultimatum_to_country_balkan }
@@ -15528,8 +15535,8 @@ focus_tree = {
 				limit = {
 					country_exists = YUG
 					OR = {
-						103 = { is_fully_controlled_by = YUG }
-						105 = { is_fully_controlled_by = YUG }
+						1563 = { is_fully_controlled_by = YUG }
+						881 = { is_fully_controlled_by = YUG }
 					}
 				}
 				activate_targeted_decision = { target = YUG decision = ITA_send_ultimatum_to_country_balkan }
@@ -15722,7 +15729,7 @@ focus_tree = {
 		relative_position_id = ITA_albanian_occupation
 		cost = 5
 		available = {
-			44 = {
+			1521 = {
 				state_is_fully_controlled_by_ROOT_or_subject = yes
 			}
 			has_tech = synth_oil_experiments
@@ -15732,7 +15739,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_albanian_oil"
-			44 = {
+			1521 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -15761,7 +15768,7 @@ focus_tree = {
 		relative_position_id = ITA_albanian_occupation
 		cost = 5
 		available = {
-			44 = {
+			1521 = {
 				state_is_fully_controlled_by_ROOT_or_subject = yes
 			}
 		}
@@ -15770,17 +15777,19 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_support_albanian_irredentism"
-			add_state_claim = 802 #KOSOVO
-			add_state_claim = 106 #MACEDONIA
-			add_state_claim = 185 #EPIRUS
-			add_state_claim = 105 #MONTENEGRO
+			every_state = {
+					limit = {
+						is_albanian_italian_irredentist_state = yes
+					}
+					add_claim_by = ITA
+				}
 
 			hidden_effect = { #Representing the Albanian Irredentism recognized by ITA.
-				ALB = {
-					add_state_claim = 802 #KOSOVO
-					add_state_claim = 106 #MACEDONIA
-					add_state_claim = 185 #EPIRUS
-					add_state_claim = 105 #MONTENEGRO
+				every_state = {
+					limit = {
+						is_albanian_italian_irredentist_state = yes
+					}
+					add_claim_by = ALB
 				}
 			}
 
@@ -15862,7 +15871,7 @@ focus_tree = {
 		relative_position_id = ITA_support_albanian_irredentism
 		cost = 5
 		available = {
-			44 = {
+			1521 = {
 				state_is_fully_controlled_by_ROOT_or_subject = yes
 			}
 		}
@@ -15897,7 +15906,7 @@ focus_tree = {
 				set_division_template_cap = {  division_template = "Camicie Nere" division_cap = ITA_militias_cap }
 			}
 
-			44 = {
+			1521 = {
 				custom_effect_tooltip = ITA_albanian_fascist_militia_spawn_divs_tt
 				hidden_effect = {
 					create_unit = { #Historically 14 battalions
@@ -16500,7 +16509,7 @@ focus_tree = {
 			is_puppet = no
 			is_in_faction_with = GER
 			GER = { 
-				controls_state = 16 				
+				controls_state = 571 				
 				GER = { is_faction_leader = yes }
 			}
 			custom_trigger_tooltip = {
@@ -16508,8 +16517,8 @@ focus_tree = {
 				any_other_country = {
 					original_tag = FRA
 					has_government = fascism
-					owns_state = 735
-					controls_state = 735
+					owns_state = 810
+					controls_state = 810
 					owns_state = 1
 					controls_state = 1
 				}
@@ -16525,12 +16534,12 @@ focus_tree = {
 					any_other_country = {
 						original_tag = FRA
 						has_government = fascism
-						owns_state = 735
+						owns_state = 810
 					}
 				}
 				set_global_flag = ITA_claims_on_france_735
 			}
-			if = {
+			if = { 
 				limit = { 
 					any_other_country = {
 						original_tag = FRA
@@ -16566,12 +16575,12 @@ focus_tree = {
 			NOT = { is_in_faction_with = GER }
 			NOT = { is_in_faction_with = ENG }
 			OR = {
-				owns_state = 44
-				44 = { owner = { is_subject_of = ROOT } }
-				owns_state = 102
-				102 = { owner = { is_subject_of = ROOT } }
-				owns_state = 853
-				853 = { owner = { is_subject_of = ROOT } }
+				owns_state = 1521
+				1521 = { owner = { is_subject_of = ROOT } }
+				owns_state = 743
+				743 = { owner = { is_subject_of = ROOT } }
+				owns_state = 1563
+				1563 = { owner = { is_subject_of = ROOT } }
 			}
 			is_in_faction = no
 		}
@@ -16632,43 +16641,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_befriend_japan
-		icon = GFX_focus_chi_collaboration_with_the_japanese
-		prerequisite = { focus = ITA_pact_of_steel focus = ITA_italy_first }
-
-		x = 1
-		y = 1
-		relative_position_id = ITA_pact_of_steel
-		cost = 10
-
-		available = {
-			country_exists = JAP
-			JAP = { 
-				is_in_faction = no
-				has_government = ROOT
-			}
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ITA_befriend_japan"
-			add_relation_modifier = {
-				target = JAP
-				modifier = ITA_military_agreements
-			}
-			JAP = {
-				add_relation_modifier = {
-					target = ROOT
-					modifier = ITA_military_agreements
-				}
-
-				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
-			}
-		}
-	}
-
-	focus = {
 		id = ITA_italian_irredentism
 		icon = GFX_focus_ITA_italian_irredentism
 		prerequisite = { focus = ITA_pact_of_steel focus = ITA_italy_first }
@@ -16694,38 +16666,23 @@ focus_tree = {
 			add_ideas = ITA_italian_irredentism_ns
 			#TODO_Manu: Might need to remove some/all of the claims below due to overlap with other focuses
 			add_named_threat = { threat = 4 name = ITA_italian_irredentism } #Comes from the old Claims in Yugoslavia focus
-			if = {
+			every_state = {
 				limit = {
-					103 = {
-						NOT = { is_claimed_by = ROOT }
+					NOT = { 
+						is_claimed_by = ITA 
+						has_state_flag = ITA_INITIAL_STATE
 					}
+					OR = {
+						is_dalmatia = yes
+						is_core_of = SLV
+						is_core_of = TUN
+						is_core_of = MLT
+						is_core_of = COR
+					}	
+
 				}
-				add_state_claim = 103 #DALMATIA
+				add_claim_by = ROOT
 			}
-			if = {
-				limit = {
-					105 = {
-						NOT = { is_claimed_by = ROOT }
-					}
-				}
-				add_state_claim = 105 #MONTENEGRO
-			}
-			if = {
-				limit = {
-					AOI = { exists = yes is_subject_of = ROOT }
-				}
-				AOI = { add_state_core = 268 add_state_core = 269 }
-				else = {
-					add_state_claim = 268 #DJIBUTI
-					add_state_claim = 269 #BRITISH SOMALILAND
-				}
-			}
-			add_state_claim = 735 #SAVOY
-			add_state_claim = 856 #VAR
-			add_state_claim = 185 #CORFU
-			add_state_claim = 116 #MALTA
-			add_state_core = 1 #CORSICA
-			add_state_core = 846 #TICINO
 
 			if = {
 				limit = {
@@ -16840,17 +16797,20 @@ focus_tree = {
 		cost = 10
 		available = {
 
-			846 = {
+			708 = {
+				is_owned_and_controlled_by = SWI
+			}
+			1446 = {
 				is_owned_and_controlled_by = SWI
 			}
 			is_subject = no
-			159 = { 
+			1361 = { 
 				is_controlled_by = ITA
 			}
-			158 = {
+			1360 = {
 				is_controlled_by = ITA
 			}
-			735 = {
+			1362 = {
 				is_controlled_by = ITA
 			}
 		}
@@ -16965,12 +16925,11 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_war_with_greece"
 			GRE = {
-				every_owned_state = {
+				every_core_state = {
 					limit = {
-						is_core_of = PREV
 						is_on_continent = europe
 					}
-					ROOT = {
+					ITA = {
 						add_state_claim = PREV
 					}
 				}
@@ -17048,7 +17007,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			TUR = {
-				owns_state = 342
+				owns_state = 1097
 			}
 		}
 		
@@ -17058,7 +17017,12 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_claims_on_turkey_bba"
-			add_state_claim = 342
+			add_state_claim = 1097
+			add_state_claim = 2879
+			add_state_claim = 1094
+			add_state_claim = 1942
+			add_state_claim = 1084
+			add_state_claim = 2878
 
 			if = {
 				limit = {
@@ -17069,9 +17033,8 @@ focus_tree = {
 			}
 			create_wargoal = {
 				target = TUR
-				type = take_state_focus
+				type = take_claimed_state
 				expire = 0
-				generator = { 342 }
 			}
 
 			hidden_effect = {
@@ -17370,7 +17333,7 @@ focus_tree = {
 					original_tag = SPR
 					has_government = fascism
 					has_war = no
-					owns_state = 177
+					owns_state = 1016
 				}
 			}
 			if = {
@@ -17379,7 +17342,7 @@ focus_tree = {
 				}
 				SPA = {
 					has_war = no
-					owns_state = 177
+					owns_state = 1016
 				}
 			}
 			is_puppet = no
@@ -17393,7 +17356,7 @@ focus_tree = {
 					original_tag = SPR
 					has_government = fascism
 					has_war_with = ROOT
-					owns_state = 177
+					owns_state = 1016
 				}
 			}
 			if = {
@@ -17401,7 +17364,7 @@ focus_tree = {
 					has_dlc = "La Resistance"
 				}
 				has_war_with = ROOT
-				owns_state = 177
+				owns_state = 1016
 			}
 		}
 
@@ -17411,7 +17374,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_demand_balearic_islands_bba"
 			random_other_country = {
 				limit = {
-					owns_state = 177
+					owns_state = 1016
 				}
 				country_event = { id = italy.9 }
 			}

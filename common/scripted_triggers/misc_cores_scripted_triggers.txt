@@ -576,3 +576,24 @@ is_hungarian_vojvodina = {
 		}
 	}
 }
+is_albanian_italian_irredentist_state = {
+	OR = {
+								AND = {
+									is_core_of = KOS
+									NOT = {
+										OR = {
+											state = 1517
+											state = 1997
+											state = 1996
+										}
+									}
+								}
+								state = 2795
+								state = 989
+								state = 904
+								state = 2796
+								state = 1986
+								state = 1987
+								state = 2007
+							}
+}
