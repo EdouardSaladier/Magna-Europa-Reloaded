@@ -5728,12 +5728,11 @@ country_event = {
 		name = germany.95.a
 		if = {
 			limit = {
-				YUG = { owns_state = 743 }
+				YUG = { owns_state = 1489 }
 			}
 			create_wargoal = {
-				type = take_state_focus
+				type = annex_everything
 				target = YUG
-				generator = { 714 2784 1490 703 695 1488 1489 743 1486 2825 1487 2861 }
 			}
 		}
 		else = {
@@ -5761,9 +5760,8 @@ country_event = {
 	option = {
 		name = germany.96.a
 		create_wargoal = {
-			type = take_state_focus
+			type = annex_everything
 			target = YUG
-			generator = { 714 2784 1490 703 695 1488 1489 743 1486 2825 1487 2861 }
 		}
 		hidden_effect = {
 			news_event = { id = news.167 hours = 6 }
@@ -5784,9 +5782,8 @@ country_event = {
 	option = {
 		name = germany.97.a
 		create_wargoal = {
-			type = take_state_focus
+			type = annex_everything
 			target = YUG
-			generator = { 714 2784 1490 703 695 1488 1489 743 1486 2825 1487 2861 }
 		}
 		hidden_effect = {
 			news_event = { id = news.165 hours = 6 }
@@ -7889,5 +7886,46 @@ country_event = {
 			base = 10
 		}
 		
+	}
+}
+# Event to help German AI declare war on Yugoslavia
+country_event = {
+	id = germany.132
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany.131 FROM = [From.GetName]" }
+	title = germany.132.t
+	desc = germany.132.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	option = { #War sounds good
+		name = germany.132.a
+		trigger = {
+			is_ai = yes
+		}
+		ai_chance = {
+			base = 10
+		}
+		GER = {
+			declare_war_on = {
+				target = YUG
+				type = annex_everything
+			}
+		}
+	}
+	option = { #I'm not AI and I don't want to go to war RN
+		name = germany.132.b
+		trigger = {
+			is_ai = no
+		}
+		ai_chance = {
+			base = 0
+		}
+		GER = {
+			create_wargoal = {
+				type = annex_everything
+				target = YUG
+			}
+		}
 	}
 }

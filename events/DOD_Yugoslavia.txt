@@ -3881,9 +3881,14 @@ country_event = {
 					}
 				}
 				GER = {
-					create_wargoal = {
-						type = annex_everything
-						target = YUG
+					country_event = {
+						id = germany.132
+						days = 4
+					}
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = YUG
+						value = 200
 					}
 				}
 			}

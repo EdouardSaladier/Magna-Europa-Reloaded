@@ -2514,7 +2514,6 @@ country_event = {
 	trigger = {
 		tag = SOV
 		POL = { has_capitulated = yes }
-		has_war_with = ENG
 		has_war_with = POL
 		is_historical_focus_on = yes
 		is_ai = yes

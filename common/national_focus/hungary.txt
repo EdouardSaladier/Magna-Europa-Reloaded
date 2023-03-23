@@ -1444,7 +1444,7 @@ focus_tree = {
 					limit = {
 						has_country_leader = { character = HUN_franz_friedrich }
 					}
-				#	hidden_effect = { retire_country_leader = yes }
+					hidden_effect = { retire_country_leader = yes }
 					add_country_leader_role = {
 						character = "HUN_franz_friedrich"
 						country_leader = {
@@ -1452,10 +1452,6 @@ focus_tree = {
 						  expire="1965.1.1"
 						}
 						promote_leader = yes
-					}
-					set_politics = {
-						ruling_party = fascism
-						elections_allowed = no
 					}
 				}
 
@@ -1466,6 +1462,17 @@ focus_tree = {
 						NOT = { has_completed_focus = HUN_strengthen_fascists }
 					}
 					custom_effect_tooltip = HUN_renounce_the_treaty_of_trianon_tt
+				}
+
+				
+			}
+			if = {
+				limit = {
+					NOT = { has_government = fascism }
+				}
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
 				}
 			}
 		}
@@ -1569,17 +1576,13 @@ focus_tree = {
 		}
 
 		bypass = {
-			4 = {
-				NOT = { is_owned_by = AUS }
-			}
-			152 = {
-				NOT = { is_owned_by = AUS }
-			}
-			153 = {
-				NOT = { is_owned_by = AUS }
-			}
-			848 = {
-				NOT = { is_owned_by = AUS }
+			all_state = {
+				if = {
+					limit = {
+						has_state_flag = AUS_INITIAL_STATE
+					}
+					NOT = { is_owned_by = AUS }
+				}
 			}
 		}
 
@@ -1914,11 +1917,12 @@ focus_tree = {
 
 		available = {
 
-			ROM = {
-				controls_state = 76
-				controls_state = 83
-				controls_state = 84
+			TRA = {
+				all_core_state = {
+					is_controlled_by_by = ROM
+				}
 			}
+			controls_state = 736
 			is_puppet = no
 			NOT = {
 				is_in_faction_with = ROM
@@ -1939,10 +1943,10 @@ focus_tree = {
 					}
 				}
 				NOT = {
-					ROM = {
-						controls_state = 76
-						controls_state = 83
-						controls_state = 84
+					TRA = {
+						all_core_state = {
+							is_controlled_by = ROM
+						}
 					}
 				}
 			}
@@ -4974,6 +4978,82 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = HUN_a_new_flagship
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = HUN_capital_ships }
+		x = 0
+		y = 1
+		relative_position_id = HUN_capital_ships
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		available = {
+			has_tech = basic_ship_hull_heavy
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Viribus Unitis Class"
+				type = ship_hull_heavy_2
+				parent_version = 0
+				allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_secondaries_slot = dp_ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+					front_1_custom_slot = ship_heavy_battery_1
+					mid_1_custom_slot = ship_anti_air_2
+					mid_2_custom_slot = dp_ship_secondaries_1
+					rear_1_custom_slot = ship_heavy_battery_1
+				}
+				upgrades = {
+					ship_reliability_upgrade = 2
+					ship_engine_upgrade = 2
+					ship_armor_upgrade = 3
+					ship_gun_upgrade = 3
+				}
+			}
+
+			#Line Production
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_2
+					creator = "HUN"
+					version_name = "Viribus Unitis Class"
+				}
+				name = "Viribus Unitis"
+				requested_factories = 2
+				progress = 0.75
+				amount = 1
+			}
+		}
+	}
 
 	focus = {
 		id = HUN_reform
@@ -5013,6 +5093,72 @@ focus_tree = {
 				category = cat_base_strike
 			}
 
+		}
+	}
+focus = {
+		id = HUN_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = HUN_naval_warfare }
+		x = 0
+		y = 1
+		relative_position_id = HUN_naval_warfare
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = HUN_dockyards_flag
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			navy_experience = 50
+			random_owned_controlled_state = {
+				prioritize = { 1563 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = HUN_dockyards_flag
+			}
 		}
 	}
 

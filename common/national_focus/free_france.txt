@@ -113,7 +113,19 @@
 		}
 		available = {
 			NOT = {
-				FRA_controls_north_africa = yes
+				ALG = {
+					all_core_state = {
+						is_owned_by = VIC
+						owner = { is_subject_of = VIC }
+					}
+				}
+				TUN = {
+					all_core_state = {
+						is_owned_by = VIC
+						owner = { is_subject_of = VIC }
+					}
+				}
+				
 			}
 		}
 		
@@ -149,7 +161,12 @@
 		}
 		available = {
 			NOT = {
-				FRA_controls_syria = yes
+				SYR = {
+					all_core_state = {
+						is_owned_by = VIC
+						owner = { is_subject_of = VIC }
+					}
+				}
 			}
 		}
 		
@@ -199,7 +216,7 @@
 		}
 		
 		bypass = {
-			16 = {
+			571 = {
 				is_controlled_by = ROOT
 			}
 		}
@@ -231,7 +248,7 @@
 			factor = 1
 		}
 		available = {
-			16 = {
+			571 = {
 				is_controlled_by = ROOT
 			}
 		}
