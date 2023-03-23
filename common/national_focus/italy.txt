@@ -8705,10 +8705,10 @@ focus_tree = {
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_the_abyssinian_fiasco_completion_tt
-				always = no
-			}
+			#custom_trigger_tooltip = {
+			#	tooltip = ITA_the_abyssinian_fiasco_completion_tt
+			#	always = no
+			#}
 		}
 
 		search_filters = {}
@@ -8757,10 +8757,10 @@ focus_tree = {
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_solid_progress_completion_tt
-				always = no
-			}
+			#custom_trigger_tooltip = {
+			#	tooltip = ITA_solid_progress_completion_tt
+			#	always = no
+			#}
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
@@ -8786,10 +8786,10 @@ focus_tree = {
 		relative_position_id = ITA_solid_progress
 		cost = 5
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_the_abyssinian_fiasco_completion_tt
-				always = no
-			}
+			#custom_trigger_tooltip = {
+			#	tooltip = ITA_the_abyssinian_fiasco_completion_tt
+			#	always = no
+			#}
 		}
 
 		search_filters = {}
