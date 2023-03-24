@@ -597,3 +597,15 @@ is_albanian_italian_irredentist_state = {
 								state = 2007
 							}
 }
+is_zakarpattia = {
+	OR = {
+		state = 2929
+		state = 1607
+		state = 593
+		state = 2930
+		state = 1608
+		state = 564
+		state = 2247
+		state = 2246
+	}
+}

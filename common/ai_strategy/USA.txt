@@ -1029,4 +1029,8 @@ USA_buff_pls = {
 		id = armor
 		value = 10
 	}
+	ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -20
+    }
 }

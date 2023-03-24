@@ -419,44 +419,17 @@ form_austria_hungary_category = {
 
 		available = {
 			is_subject = no
-			controls_state = 102
-			controls_state = 853
-			controls_state = 103
-			controls_state = 104
-			controls_state = 804
-			controls_state = 109
-			controls_state = 45
-			controls_state = 83
-			controls_state = 76
-			controls_state = 84
-			controls_state = 764
-			controls_state = 82
 			all_state = {
 				if = {
 					limit = {
-						OR = {
-							AND = {
-								is_core_of = CRO
-								NOT = {
-									is_core_of = ITA
-								}
-							}
-							AND = {
-								is_core_of = SLV
-								NOT = {
-									is_core_of = ITA
-								}
+						AND = {
+							has_state_flag = YUG_INITIAL_STATE
+							NOT = {
+								has_state_flag = ITA_INITIAL_STATE
+								is_core_of = SER
+								is_core_of = MNT
 							}
 							is_core_of = VJV
-							is_core_of = BOS
-							is_core_of = TRA
-							is_core_of = BNT
-							AND = {
-								is_core_of = DLM
-								NOT = {
-									is_core_of = ITA
-								}
-							}
 						}
 					}
 					is_controlled_by = ROOT

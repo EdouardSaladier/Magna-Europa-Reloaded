@@ -63,6 +63,15 @@ peace_ai_desires = {
         }
         ai_desire = 400
     }
+	SOV_take_zakarpattia_states = {
+        peace_action_type = take_state
+        enable = {
+			tag = SOV  # Negotiatior is soviet union
+            ROOT.FROM = { OR = { tag = CZE tag = HUN } }
+            ROOT.FROM.FROM.FROM = { is_zakarpattia = yes }
+        }
+        ai_desire = 400
+    }
 	
 	SOV_take_ukr_states = {
         peace_action_type = take_state
@@ -189,6 +198,25 @@ peace_ai_desires = {
 					is_claimed_by = SOV
 				}
 			}
+        }
+        ai_desire = -400
+    }
+	SOV_puppet_yugoslavia = {
+        peace_action_type = { force_government puppet }
+        enable = {
+            tag = SOV
+            ROOT.FROM = { tag = YUG }
+            ROOT.FROM.FROM.FROM = { is_core_of = YUG }
+        }
+        ai_desire = 400
+    }
+	
+	SOV_dont_eat_yugoslavia = {
+        peace_action_type = { take_states }
+        enable = {
+            tag = SOV
+            ROOT.FROM = { tag = YUG }
+            ROOT.FROM.FROM.FROM = { is_core_of = YUG }
         }
         ai_desire = -400
     }
