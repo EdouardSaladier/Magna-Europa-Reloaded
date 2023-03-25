@@ -25,7 +25,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits={}
+			traits={ harsh_leader politically_connected reckless offensive_doctrine inflexible_strategist media_personality }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -34,6 +34,7 @@ characters = {
 			legacy_id=0
 			visible = {
 				has_completed_focus = ITA_capo_supremo
+				has_government = fascism
 			}
 		}
 	}
@@ -112,7 +113,7 @@ characters = {
 
 		country_leader = {
 			ideology = socialism
-			traits = { resistance_leader }
+			traits = { resistance_leader social_reformer }
 			expire = "1965.1.1.1"
 			id = -1
 		}
@@ -129,9 +130,24 @@ characters = {
 
 		country_leader = {
 			ideology = despotism
-			traits = { the_soldier_king }
+			traits = { the_soldier_king staunch_constitutionalist }
 			expire = "1965.1.1.1"
 			id = -1
+		}
+	}
+
+	ITA_benedetto_croce={
+		name=ITA_benedetto_croce
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_ITA_Benedetto_Croce.dds"
+			}
+		}
+		country_leader={
+			traits = {}
+			ideology=moderatism
+			expire="1947.12.28.1"
+			id=-1
 		}
 	}
 
@@ -177,13 +193,13 @@ characters = {
 			}
 		}
 
-		field_marshal = {
-			traits = { trait_cautious politically_connected offensive_doctrine desert_fox }
-			skill = 2
+		corps_commander = {
+			traits={ inflexible_strategist trait_cautious politically_connected offensive_doctrine desert_fox harsh_leader }
+			skill = 3
 			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}
@@ -214,12 +230,12 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { old_guard inflexible_strategist politically_connected defensive_doctrine organizer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { old_guard inflexible_strategist politically_connected defensive_doctrine war_hero organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
 			legacy_id = 0
 		}
 	}
@@ -240,7 +256,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				army_chief_defensive_1
+				army_chief_defensive_3
 			}
 			cost = 50
 			ai_will_do = {
@@ -249,13 +265,94 @@ characters = {
 		}
 		
 		field_marshal = {
-			traits = { old_guard trait_cautious politically_connected defensive_doctrine }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { old_guard trait_cautious politically_connected defensive_doctrine unyielding_defender }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
+		}
+	}
+
+	ITA_ettore_bastico = {
+		name = ITA_ettore_bastico
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_ettore_bastico_small
+				large = GFX_portrait_ITA_ettore_bastico
+			}
+		}
+		
+		field_marshal = {
+			traits = { old_guard harsh_leader inflexible_strategist logistics_wizard organizer infantry_officer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 0
+			#visible = { has_government = fascism }
+		}
+	}
+	ITA_gabriele_nasci={
+		name=ITA_gabriele_nasci
+		portraits={
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Gabriele_Nasci.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	
+	ITA_guglielmo_nasi = {
+		name=ITA_guglielmo_nasi
+		portraits={
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Guglielmo_Nasi.dds"
+				small="gfx/leaders/ITA/Portrait_Italy_Guglielmo_Nasi.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando desert_fox brilliant_strategist irregulars_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	
+	ITA_gastone_gambara={
+		name=ITA_gastone_gambara
+		portraits={
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Gastone_Gambara.dds"
+				small="gfx/leaders/ITA/Portrait_Italy_Gastone_Gambara.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+			visible = { has_government = fascism }
 		}
 	}
 
@@ -287,7 +384,7 @@ characters = {
 			}
 			
 			traits = {
-				air_chief_all_weather_2
+				air_chief_all_weather_3
 			}
 			cost = 100
 			ai_will_do = {
@@ -296,7 +393,7 @@ characters = {
 		}
 		
 		field_marshal = {
-			traits = { career_officer politically_connected trait_reckless media_personality }
+			traits={ inspirational_leader career_officer politically_connected trait_reckless media_personality }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -319,8 +416,8 @@ characters = {
 		}
 
 		advisor = {
-			cost = 150
-			slot = theorist
+			cost = 100
+			slot = army_chief
 			idea_token = giovanni_messe
 			ledger = army
 			allowed = {
@@ -336,12 +433,12 @@ characters = {
 				}
 			}
 			traits = {
-				mobile_warfare_expert
+				army_chief_maneuver_3
 			}
 		}
 		
 		corps_commander = {
-			traits = { armor_officer war_hero }
+			traits = { brilliant_strategist armor_officer war_hero }
 			skill = 4
 			attack_skill = 4
 			defense_skill = 3
@@ -367,7 +464,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				army_chief_organizational_1 # Was army_chief_maneuver_2 (replaced by Alberto Pariani)
+				army_chief_organizational_2 # Was army_chief_maneuver_2 (replaced by Alberto Pariani)
 			}
 			cost = 50
 			ai_will_do = {
@@ -376,13 +473,33 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard career_officer trait_cautious organisational_leader }
-			skill = 2
+			traits = { old_guard career_officer trait_cautious organisational_leader war_hero }
+			skill = 3
 			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 2
+			defense_skill = 2
+			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
+		}
+	}
+	
+	ITA_orlando_lorenzini = {
+		name = ITA_orlando_lorenzini
+		portraits = {
+			army={
+				large ="gfx/leaders/ITA/Portrait_Italy_Orlando_Lorenzini.dds"
+			}
+		}
+		corps_commander = {
+			traits = { desert_fox inspirational_leader commando ascari_officer infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_country_flag = ITA_leone_del_sahara_flag
+			}
 		}
 	}
 
@@ -396,7 +513,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { inflexible_strategist career_officer }
+			traits = { inflexible_strategist career_officer old_guard }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -427,27 +544,6 @@ characters = {
 		}
 	}
 
-	ITA_ettore_bastico = {
-		name = ITA_ettore_bastico
-		portraits = {
-			army = {
-				small = GFX_portrait_ITA_ettore_bastico_small
-				large = GFX_portrait_ITA_ettore_bastico
-			}
-		}
-		
-		corps_commander = {
-			traits = { infantry_officer career_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
-			visible = { has_government = fascism }
-		}
-	}
-
 	ITA_italo_gariboldi = {
 		name = ITA_italo_gariboldi
 		portraits = {
@@ -458,10 +554,10 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard career_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			traits = { career_officer politically_connected old_guard inflexible_strategist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
@@ -493,13 +589,13 @@ characters = {
 			}
 		}
 		
-		corps_commander = {
-			traits = { cavalry_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+		field_marshal = {
+			traits = { career_officer trait_cautious politically_connected offensive_doctrine cavalry_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
 		}
 	}
@@ -525,7 +621,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_government = fascism
+			#	has_government = fascism
 			}
 			traits = {
 				army_infantry_2
@@ -537,14 +633,14 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { old_guard infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
 			legacy_id = 0
-			visible = { has_government = fascism }
+		#	visible = { has_government = fascism }
 		}
 	}
 
@@ -559,11 +655,11 @@ characters = {
 		
 		corps_commander = {
 			traits = { old_guard inflexible_strategist }
-			skill = 1
+			skill = 2
 			attack_skill = 1
-			defense_skill = 1
+			defense_skill = 3
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 2
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}
@@ -579,11 +675,11 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard trait_reckless war_hero } #Always sick really need to do something about it
-			skill = 1
-			attack_skill = 1
+			traits = { brilliant_strategist old_guard trait_reckless war_hero } #Always sick really need to do something about it
+			skill = 2
+			attack_skill = 3
 			defense_skill = 1
-			planning_skill = 1
+			planning_skill = 2
 			logistics_skill = 1
 			legacy_id = 0
 		}
@@ -599,11 +695,11 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard trait_engineer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
+			traits = { career_officer infantry_officer trait_mountaineer old_guard trait_engineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
 			logistics_skill = 1
 			legacy_id = 0
 		}
@@ -619,12 +715,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { armor_officer } #Representing how he died
-			skill = 1
-			attack_skill = 1
+			traits = { trickster trait_reckless armor_officer } #Representing how he died
+			skill = 3
+			attack_skill = 4
 			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}
@@ -661,11 +757,11 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { infantry_officer organizer } #Logistics and Infantry
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
+			traits = { infantry_officer organizer artillery_specialist } #Logistics and Infantry
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
 			logistics_skill = 1
 			legacy_id = 0
 		}
@@ -681,10 +777,10 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { infantry_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			traits = { career_officer infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
@@ -709,7 +805,8 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				has_completed_focus = ITA_paramilitary_training
+				NOT = { has_government = communism }
+			#	has_completed_focus = ITA_paramilitary_training
 			}
 		}
 	}
@@ -731,6 +828,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
+			visible = { NOT = { has_government = communism } }
 		}
 	}
 
@@ -744,13 +842,14 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { career_officer }
-			skill = 1
-			attack_skill = 1
+			traits = { career_officer politically_connected inspirational_leader }
+			skill = 2
+			attack_skill = 2
 			defense_skill = 1
-			planning_skill = 1
+			planning_skill = 2
 			logistics_skill = 1
 			legacy_id = 0
+			visible = { NOT = { has_government = communism } }
 		}
 	}
 
@@ -765,10 +864,10 @@ characters = {
 		
 		corps_commander = {
 			traits = { harsh_leader } #Resistance stuff if anything
-			skill = 1
-			attack_skill = 1
+			skill = 2
+			attack_skill = 3
 			defense_skill = 1
-			planning_skill = 1
+			planning_skill = 2
 			logistics_skill = 1
 			legacy_id = 0
 			visible = { has_government = fascism }
@@ -825,14 +924,32 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard trait_engineer fortress_buster trait_reckless } # Infantry
+			traits = { career_officer old_guard trait_engineer fortress_buster trait_reckless infantry_officer } # Infantry
 			skill = 2
 			attack_skill = 2
-			defense_skill = 1
+			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
 			visible = { has_government = fascism }
+		}
+	}
+	
+	ITA_amedeo_savoy_aosta = {
+		name = ITA_amedeo_savoy_aosta
+		portraits = {
+			army={
+				large ="gfx/leaders/ITA/Portrait_Italy_Amedeo_Savoia_Aosta.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless politically_connected inspirational_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			visible = { NOT = { has_government = communism } }
 		}
 	}
 
@@ -846,7 +963,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { irregulars_officer desert_fox cavalry_leader skirmisher }  # Irregulars, Cavalry. Comandante Diavolo trait?
+			traits = { commando trickster irregulars_officer desert_fox cavalry_leader skirmisher inspirational_leader guerilla_fighter }  # Irregulars, Cavalry. Comandante Diavolo trait?
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -867,7 +984,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard infantry_officer commando }
+			traits = { career_officer old_guard infantry_officer commando }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -923,6 +1040,27 @@ characters = {
 				has_completed_focus = ITA_strengthen_ascari_corps
 				has_completed_focus = ITA_forza_navale_especiale
 			}
+		}
+	}
+
+	ITA_junio_valerio_borghese = {
+		name = ITA_junio_valerio_borghese
+		portraits = {
+			navy = {
+				small = GFX_portrait_ITA_junio_valerio_borghese_small
+				large = GFX_portrait_ITA_junio_valerio_borghese
+			}
+		}
+
+		corps_commander = {
+			traits = { commando invader trickster }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+			visible = { has_completed_focus = ITA_decima_flottiglia_mas }
 		}
 	}
 
@@ -1023,13 +1161,32 @@ characters = {
 		}
 		 
 		navy_leader = {
-			traits = { gentlemanly inshore_fighter }
+			traits = { spotter gentlemanly aviation_enthusiast inshore_fighter }
 			skill = 2
-			attack_skill = 2
+			attack_skill = 4
 			defense_skill = 2
 			maneuvering_skill = 2
 			coordination_skill = 2
 			legacy_id = 0
+			visible = { NOT = { has_government = communism } }
+		}
+	}
+
+	ITA_luigi_sansonetti={
+		name=ITA_luigi_sansonetti
+		portraits={
+			army={
+				large="gfx/leaders/ITA/Portrait_ITA_Luigi_Sansonetti.tga"
+			}
+		}
+		
+		navy_leader={
+			traits = { gentlemanly spotter fly_swatter battleship_adherent }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
 		}
 	}
 
@@ -1160,25 +1317,144 @@ characters = {
 			} 
 		}
 	}
-
-	ITA_junio_valerio_borghese = {
-		name = ITA_junio_valerio_borghese
-		portraits = {
-			navy = {
-				small = GFX_portrait_ITA_junio_valerio_borghese_small
-				large = GFX_portrait_ITA_junio_valerio_borghese
+	
+	ITA_ferdinando={
+		name = ITA_Ferdinando_Genova
+		portraits={
+			navy={
+				large="gfx/leaders/ITA/portrait_ITA_ferdinando_adalberto.dds"
 			}
 		}
-
-		navy_leader = {
-			traits = { cuts_corners seawolf silent_hunter } #Submarines, Human torpedos, Torpedo boats, etc.
-			skill = 3
-			attack_skill = 4
-			defense_skill = 1
-			maneuvering_skill = 3
-			coordination_skill = 2
-			legacy_id = 0
-			visible = { has_completed_focus = ITA_decima_flottiglia_mas }
+		navy_leader={
+			traits = { gentlemanly media_personality career_officer superior_tactician }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=4
+			coordination_skill=3
+			visible = { NOT = { has_government = communism } }
+		}
+	}
+	ITA_giovanni_galati={
+		name=ITA_giovanni_galati
+		portraits={
+			navy={
+				large="gfx/leaders/ITA/Portrait_ITA_Giovanni_Galati.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold fleet_protector blockade_runner spotter }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+	ITA_angelo_parona={
+		name=ITA_angelo_parona
+		portraits={
+			navy={
+				large="gfx/leaders/ITA/Portrait_ITA_Angelo_Parona.dds"
+			}
+		}
+		navy_leader={
+			traits={ seawolf spotter }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+	ITA_bruno_brivonesi={
+		name=ITA_bruno_brivonesi
+		portraits={
+			navy={
+				large="gfx/leaders/ITA/Portrait_Italy_Bruno_Brivonesi_01.dds"
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast superior_tactician air_controller }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+	ITA_bruto_brivonesi={
+		name=ITA_bruto_brivonesi
+		portraits={
+			navy={
+				large="gfx/leaders/ITA/Portrait_Italy_Bruto_Brivonesi_01.dds"
+			}
+		}
+		navy_leader={
+			traits={ gunnery_expert superior_tactician ironside }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	ITA_antonio_legnani={
+		name=ITA_antonio_legnani
+		portraits={
+			navy={
+				large="gfx/leaders/ITA/Portrait_ITA_Antonio_Legnani.dds"
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner seawolf }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+			visible = { has_government = fascism }
+		}
+	}
+	ITA_carlo_fecia_cossato={
+		name=ITA_carlo_fecia_cossato
+		portraits={
+			navy={
+				large="gfx/leaders/ITA/Portrait_ITA_Carlo_Fecia_di_Cossato.dds"
+			}
+		}
+		navy_leader={
+			traits = { bold blockade_runner superior_tactician seawolf }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=4
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	ITA_mario_falangola={
+		name=ITA_mario_falangola
+		portraits={
+			navy={
+				large="gfx/leaders/ITA/Portrait_ITA_Mario_Falangola.dds"
+			}
+		}
+		navy_leader={
+			traits={ seawolf }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+			visible = { has_government = fascism }
 		}
 	}
 
@@ -1297,10 +1573,13 @@ characters = {
 			army = {
 				small = GFX_portrait_ITA_alberto_pariani_small
 			}
+			army = {
+				large = "gfx/leaders/ITA/Portrait_ITA_Alberto_Pariani.tga"
+			}
 		}
 
 		advisor = {
-			slot = army_chief
+			slot = theorist
 			idea_token = ITA_alberto_pariani
 			allowed = {
 				ITA_is_italian_tag = yes
@@ -1309,12 +1588,20 @@ characters = {
 				has_completed_focus = ITA_a_bandits_war
 			}
 			traits = {
-				army_chief_maneuver_2
+				blitzkrieg_theorist
 			}
 			cost = 100
 			ai_will_do = {
 				base = 1.000
 			}
+		}
+		field_marshal = {
+			traits = { organizer armor_officer brilliant_strategist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 
@@ -1380,6 +1667,9 @@ characters = {
 			army = {
 				small = GFX_portrait_ITA_raffaele_de_courten_small
 			}
+			navy={
+				large="gfx/leaders/ITA/Portrait_ITA_Raffaele_Courten.dds"
+			}
 		}
 
 		advisor = {
@@ -1398,6 +1688,49 @@ characters = {
 			ai_will_do = {
 				base = 1.000
 			}
+		}
+		navy_leader={
+			traits={ superior_tactician blockade_runner spotter green_water_expert destroyer_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	ITA_antonino_toscano={
+		name=ITA_antonino_toscano
+		portraits={
+			navy={
+				large="gfx/leaders/ITA/Portrait_ITA_Antonino_Toscano.dds"
+			}
+		}
+		navy_leader={
+			traits={ cruiser_captain }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	ITA_romeo_oliva={
+		name=ITA_romeo_oliva
+		portraits={
+			navy={
+				large="gfx/leaders/ITA/Portrait_ITA_Romeo_Oliva.dds"
+			}
+		}
+		navy_leader={
+			traits={ seawolf }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
 		}
 	}
 
@@ -1572,7 +1905,7 @@ characters = {
 				has_government = fascism
 			}
 			traits = {
-				air_bomber_interception_2
+				air_bomber_interception_3
 			}
 			cost = 100
 			ai_will_do = {
@@ -1600,7 +1933,7 @@ characters = {
 				has_government = fascism
 			}
 			traits = {
-				navy_naval_air_defense_1
+				navy_naval_air_defense_2
 			}
 			cost = 50
 			ai_will_do = {
@@ -1633,7 +1966,7 @@ characters = {
 				has_completed_focus = ITA_army_leaders
 			}
 			traits = {
-				army_logistics_1 # Blackshirt related trait instead?
+				army_logistics_2 # Blackshirt related trait instead?
 			}
 			cost = 50
 			ai_will_do = {
@@ -1891,7 +2224,7 @@ characters = {
 				ITA_government_is_really_fascist = yes
 			}
 			traits = {
-				army_regrouping_1
+				army_regrouping_2
 			}
 			cost = 50
 			ai_will_do = {
@@ -1928,9 +2261,9 @@ characters = {
 
 		corps_commander = {
 			traits = { politically_connected }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
@@ -2012,6 +2345,14 @@ characters = {
 			army = {
 				small = GFX_portrait_ITA_paolo_thaon_di_revel_small
 			}
+		}
+		navy_leader={
+			traits = { naval_lineage navy_career_officer gentlemanly ironside fleet_protector green_water_expert ground_pounder }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=4
 		}
 
 		advisor = {
@@ -2138,12 +2479,12 @@ characters = {
 			available = {
 				has_government = fascism
 				NOT = { has_completed_focus = ITA_pact_of_steel }
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					NOT = { has_completed_focus = ITA_revoke_the_acerbo_law }
-				}
+			#	if = {
+			#		limit = {
+			#			has_dlc = "By Blood Alone"
+			#		}
+			#		NOT = { has_completed_focus = ITA_revoke_the_acerbo_law }
+			#	}
 			}
 			traits = {
 				financial_expert
@@ -2315,6 +2656,31 @@ characters = {
 						ITA_is_christian_democracy_ai = yes
 					}
 				}
+			}
+		}
+	}
+	
+	ITA_carlo_sforza={
+		name=ITA_carlo_sforza
+		portraits = {
+			army = { small="gfx/interface/ideas/idea_carlo_sforza.dds" }
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = carlo_sforza
+			allowed  = {
+				original_tag  = ITA
+			}
+			available  = {
+				has_government=democratic
+			}
+			traits  = {
+				compassionate_gentleman
+			}
+			on_add  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
 			}
 		}
 	}
@@ -2529,11 +2895,15 @@ characters = {
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
+			visible = {
+				NOT = { has_completed_focus = ITA_pact_of_steel }
+			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_meritocracy
-					has_completed_focus = ITA_bring_back_exiled_intellectuals
-				}
+				NOT = { has_completed_focus = ITA_pact_of_steel }
+			#	OR = {
+			#		has_completed_focus = ITA_meritocracy
+			#		has_completed_focus = ITA_bring_back_exiled_intellectuals
+			#	}
 			}
 			research_bonus = {
 				nuclear = 0.15
@@ -3012,6 +3382,7 @@ characters = {
 
 	ITA_ada_gobetti = {
 		name = ITA_ada_gobetti
+		gender = female
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_ada_gobetti_small
@@ -3225,7 +3596,7 @@ characters = {
 		}
 
 		country_leader = {
-			ideology = marxism
+			ideology = stalinism
 			traits = { conservative_communist }
 			expire = "1965.1.1.1"
 			id = -1
@@ -3281,7 +3652,7 @@ characters = {
 		}
 
 		country_leader = {
-			ideology = stalinism
+			ideology = marxism
 			traits = { staunch_anti_fascist }
 			expire = "1965.1.1.1"
 			id = -1

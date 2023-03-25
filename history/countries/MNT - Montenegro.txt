@@ -74,4 +74,13 @@ set_popularities = {
 	communism = 5
 }
 
+create_country_leader = {
+	name = MNT_king_michael
+	desc = ""
+	picture = "gfx/leaders/MNT/Portrait_MNT_Mihailo_Petrovic_Njegos.png"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {}
+}
+
 

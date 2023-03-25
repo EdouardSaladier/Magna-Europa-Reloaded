@@ -9402,6 +9402,9 @@ focus_tree = {
 			ITA_vittorio_emanuele_iii = { 
 				add_country_leader_trait = emperor_of_ethiopia
 			}
+			hidden_effect = {
+				ITA_prince_umberto = { add_country_leader_trait = emperor_of_ethiopia }
+			}
 
 			add_popularity = {
 				ideology = neutrality
