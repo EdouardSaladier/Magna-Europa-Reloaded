@@ -1,4 +1,9 @@
 ﻿capital = 571
+starting_train_buffer = 2
+set_research_slots = 4 #BUFF
+set_stability = 0.5
+add_command_power = 30
+set_convoys = 300
 
 if = {
 	limit = {
@@ -15,7 +20,6 @@ if = {
 	set_oob = "FRA_1936_nsb"
 }
 
-starting_train_buffer = 2
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -55,15 +59,14 @@ if = {
 	}
 }
 
-set_research_slots = 3
-set_stability = 0.5
-add_command_power = 20
+#################
+# Starting tech #
+#################
 
-
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	support_weapons = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
@@ -71,6 +74,7 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_artillery = 1
+	interwar_antitank = 1
 	interwar_antiair = 1
 	trench_warfare = 1
 	fleet_in_being = 1
@@ -104,8 +108,8 @@ if = {
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
-		basic_medium_tank_chassis = 1
 		basic_heavy_tank_chassis = 1
+		basic_medium_tank_chassis = 1
 		improved_light_tank_chassis = 1
 		armor_tech_1 = 1
 		engine_tech_1 = 1
@@ -130,6 +134,7 @@ if = {
 		early_heavy_cruiser = 1
 		basic_heavy_cruiser = 1
 		early_battleship = 1
+		basic_battleship = 1
 		early_battlecruiser = 1
 		basic_battlecruiser = 1
 		early_carrier = 1
@@ -143,23 +148,28 @@ if = {
 		submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
+		improved_ship_hull_light = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_ship_hull_heavy = 1
+		improved_ship_hull_heavy = 1
 		early_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_heavy_battery = 1
 		basic_light_battery = 1
 		basic_medium_battery = 1
 		basic_torpedo = 1
+		sonar = 1
 		basic_depth_charges = 1
 		basic_heavy_armor_scheme = 1
 		basic_cruiser_armor_scheme = 1
 		mtg_transport = 1
 		basic_dp_light_battery = 1
 		cruiser_submarines = 1
+		coastal_defense_ships = 1
 	}
 	add_ideas = MTG_naval_treaty_cheating
 }
@@ -179,7 +189,6 @@ if = {
 }
 
 
-set_convoys = 300
 
 
 set_politics = {
@@ -423,6 +432,16 @@ if = {
 		has_dlc = "By Blood Alone"
 	}
 	create_equipment_variant = {
+		name = "Potez 25"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
 		name = "Br. 19" #
 		type = small_plane_cas_airframe_0
 		modules = {
@@ -506,7 +525,7 @@ if = {
 			engine_type_slot = engine_2_2x
 			special_type_slot_1 = lmg_defense_turret
 		}
-		icon = "GFX_FRA_early_bomber_medium"
+		icon = "GFX_FRA_tactical_bomber1_medium"
 	}
 	create_equipment_variant = {
 		name = "F.222" #
@@ -515,7 +534,8 @@ if = {
 			fixed_main_weapon_slot = large_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = empty
 			engine_type_slot = engine_2_4x
-			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_2 = lmg_defense_turret
 		}
 		icon = "GFX_FRA_strategic_bomber1_medium"
 	}
@@ -630,13 +650,13 @@ if = {
 	
 	create_equipment_variant = {
 		name = "D2"
-		type = light_tank_chassis_1
+		type = medium_tank_chassis_0
 		parent_version = 1
 		modules = {
-			main_armament_slot = tank_small_cannon
+			main_armament_slot = tank_small_cannon_2
 			turret_type_slot = tank_light_one_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
+			armor_type_slot = tank_welded_armor
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = additional_machine_guns
 		}
@@ -684,16 +704,17 @@ if = {
 	}
 
 	create_equipment_variant = {
-		name = "SOUMUA S35" 
-		type = medium_tank_chassis_0
+		name = "SOMUA S35" 
+		type = medium_tank_chassis_1
 		parent_version = 0
 		modules = {
-			main_armament_slot = tank_small_cannon_2
+			main_armament_slot = tank_high_velocity_cannon
 			turret_type_slot = tank_medium_one_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_welded_armor
+			armor_type_slot = tank_cast_armor
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = additional_machine_guns
 		}
 		upgrades = {
 			tank_nsb_engine_upgrade = 4
@@ -723,7 +744,7 @@ if = {
 	}
 	
 	create_equipment_variant = {
-		name = "B1 bis" 
+		name = "Char B1 bis"
 		type = heavy_tank_chassis_1
 		parent_version = 0
 		modules = {
@@ -1017,8 +1038,8 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = empty
-			front_1_custom_slot = ship_airplane_launcher_1
-			mid_1_custom_slot = ship_anti_air_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
 			mid_2_custom_slot = ship_light_medium_battery_2
 			rear_1_custom_slot = ship_mine_layer_1
 		}
@@ -1035,8 +1056,8 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-			front_1_custom_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_anti_air_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_light_medium_battery_2
 			rear_1_custom_slot = ship_airplane_launcher_1
 		}
@@ -1048,7 +1069,7 @@ if = {
 		name_group = FRA_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1107,8 +1128,8 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_2
-			front_1_custom_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_medium_battery_1
+			front_1_custom_slot = ship_medium_battery_1
+			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = ship_airplane_launcher_1
 		}
@@ -1160,14 +1181,14 @@ if = {
 		name_group = FRA_BC_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bc_2
-			front_1_custom_slot = ship_heavy_battery_1
+			front_1_custom_slot = ship_heavy_battery_2
 			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = ship_airplane_launcher_1

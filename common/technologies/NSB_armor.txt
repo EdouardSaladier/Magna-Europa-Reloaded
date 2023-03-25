@@ -1261,7 +1261,7 @@ technologies = {
 						original_tag = FRA
 					}
 					create_equipment_variant = {
-						name = "Somua S35"
+						name = "SOMUA S35"
 						type = medium_tank_chassis_2
 						parent_version = 0
 						modules = {
@@ -1308,7 +1308,7 @@ technologies = {
 						original_tag = ITA
 					}
 					create_equipment_variant = {
-						name = "Fiat M14/41"
+						name = "Fiat M13/40"
 						type = medium_tank_chassis_2
 						parent_version = 0
 						modules = {
@@ -1318,6 +1318,7 @@ technologies = {
 							armor_type_slot = tank_riveted_armor
 							engine_type_slot = tank_diesel_engine
 							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = additional_machine_guns
 						}
 						upgrades = {
 							tank_nsb_engine_upgrade = 5
@@ -1535,16 +1536,18 @@ technologies = {
 						original_tag = ITA
 					}
 					create_equipment_variant = {
-						name = "Fiat M20/43"
+						name = "Fiat M16/43"
 						type = medium_tank_chassis_3
 						parent_version = 0
 						modules = {
 							main_armament_slot = tank_medium_cannon 
-							turret_type_slot = tank_medium_two_man_tank_turret
-							suspension_type_slot = tank_bogie_suspension
+							turret_type_slot = tank_medium_three_man_tank_turret
+							suspension_type_slot = tank_christie_suspension
 							armor_type_slot = tank_riveted_armor
 							engine_type_slot = tank_gasoline_engine
 							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = sloped_armor
+							special_type_slot_3 = additional_machine_guns
 						}
 						upgrades = {
 							tank_nsb_engine_upgrade = 5
@@ -1634,7 +1637,7 @@ technologies = {
 					}
 					create_equipment_variant = {
 						name = "Centurion"
-						type = modern_tank_chassis
+						type = modern_tank_chassis_1
 						parent_version = 0
 						modules = {
 							main_armament_slot = tank_high_velocity_cannon_2 
@@ -1660,7 +1663,7 @@ technologies = {
 					}
 					create_equipment_variant = {
 						name = "M46 Patton"
-						type = modern_tank_chassis
+						type = modern_tank_chassis_1
 						parent_version = 0
 						modules = {
 							main_armament_slot = tank_high_velocity_cannon_2
@@ -1686,14 +1689,14 @@ technologies = {
 					}
 					create_equipment_variant = {
 						name = "Somua SARL42"
-						type = modern_tank_chassis
+						type = modern_tank_chassis_1
 						parent_version = 0
 						modules = {
 							main_armament_slot = tank_high_velocity_cannon_2
 							turret_type_slot = tank_modern_tank_turret
 							suspension_type_slot = tank_torsion_bar_suspension
 							armor_type_slot = tank_cast_armor 
-							engine_type_slot = tank_gas_turbine_engine
+							engine_type_slot = tank_gasoline_engine
 							special_type_slot_1 = tank_radio_1
 							special_type_slot_2 = sloped_armor
 							special_type_slot_3 = smoke_launchers
@@ -1712,7 +1715,7 @@ technologies = {
 					}
 					create_equipment_variant = {
 						name = "T-54"
-						type = modern_tank_chassis
+						type = modern_tank_chassis_1
 						parent_version = 0
 						modules = {
 							main_armament_slot = tank_high_velocity_cannon_2
@@ -1738,7 +1741,7 @@ technologies = {
 					}
 					create_equipment_variant = {
 						name = "E-50 Standardpanzer"
-						type = modern_tank_chassis
+						type = modern_tank_chassis_1
 						parent_version = 0
 						modules = {
 							main_armament_slot = tank_high_velocity_cannon_2
@@ -1764,14 +1767,14 @@ technologies = {
 					}
 					create_equipment_variant = {
 						name = "P45"
-						type = modern_tank_chassis
+						type = modern_tank_chassis_1
 						parent_version = 0
 						modules = {
 							main_armament_slot = tank_high_velocity_cannon_2 
 							turret_type_slot = tank_modern_tank_turret
 							suspension_type_slot = tank_torsion_bar_suspension
 							armor_type_slot = tank_riveted_armor
-							engine_type_slot = tank_gas_turbine_engine
+							engine_type_slot = tank_diesel_engine
 							special_type_slot_1 = tank_radio_1
 							special_type_slot_2 = smoke_launchers
 							special_type_slot_3 = stabilizer
