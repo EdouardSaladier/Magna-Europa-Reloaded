@@ -1,9 +1,9 @@
 
 state={
-	id=255
-	name="STATE_255"
+	id=2976
+	name="STATE_2976"
 	provinces={
-		3863 4835 5550 8585 11025
+		10954 7677 3168 17291 7871 2889
 	}
 	history = {
 		owner = SOV
@@ -14,10 +14,10 @@ state={
 		}
 		add_core_of = MRD
 		victory_points = {
-			11025 2
+			10954 20
 		}
 	}
-	manpower=139264
+	manpower=326241
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000
