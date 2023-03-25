@@ -322,30 +322,16 @@ set_technology = {
 	support_weapons = 1
 	tech_support = 1		
 	tech_engineers = 1
-	tech_recon = 1
 	tech_mountaineers = 1
-	tech_military_police = 1
-	marines = 1
 	motorised_infantry = 1
-#	paratroopers = 1
 	gw_artillery = 1
-	interwar_artillery = 1
 	interwar_antiair = 1
-	interwar_antitank = 1
 	trench_warfare = 1
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
-	synth_oil_experiments = 1
 	basic_train = 1
-	bicycle_infantry = 1
 }
-#if = {
-#	limit = { is_ai = yes }
-#	set_technology = {
-#		infantry_weapons1 = 1
-#	}
-#}
 if = {
 	limit = {
 		has_dlc = "La Resistance"
@@ -400,13 +386,10 @@ if = {
 		early_submarine = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
-		basic_light_cruiser = 1
 		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
 		early_battleship = 1
 		basic_battleship = 1
 		early_battlecruiser = 1
-		early_carrier = 1
 		transport = 1
 	}
 	set_naval_oob = "ITA_1936_naval_legacy"
@@ -420,14 +403,11 @@ if = {
 		submarine_mine_laying = 1
 		basic_depth_charges = 1
 		basic_torpedo = 1
-		improved_ship_torpedo_launcher = 1
 		basic_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_battery = 1
-		improved_heavy_battery = 1
 		basic_medium_battery = 1
 		basic_light_battery = 1
-		basic_dp_light_battery = 1
 		basic_heavy_armor_scheme = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
@@ -437,13 +417,9 @@ if = {
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_ship_hull_heavy = 1
-		improved_ship_hull_heavy = 1
-		early_ship_hull_carrier = 1
 		mtg_transport = 1
 		coastal_defense_ships = 1
 		improved_airplane_launcher = 1
-		midget_submarines = 1
-		sonar = 1
 	}
 	set_naval_oob = "ITA_1936_naval_mtg"
 }
@@ -453,27 +429,21 @@ if = {
 		set_air_oob = "ITA_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
-			aa_hmg = 1
 			early_bombs = 1
 			aircraft_construction = 1
 			engines_1 = 1
 			engines_2 = 1
 			iw_small_airframe = 1
 			iw_medium_airframe = 1
-			iw_large_airframe = 1
 			basic_small_airframe = 1
 			basic_medium_airframe = 1
-			photo_reconnaisance = 1
 		}
 	else = {
 		set_air_oob = "ITA_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
-			cv_early_fighter = 1
 			early_bomber = 1
-			scout_plane1 = 1
 			naval_bomber1 = 1
-			cv_naval_bomber1 = 1
 			CAS1 = 1
 			cv_CAS1 = 1
 		}
@@ -559,14 +529,9 @@ recruit_character = ITA_ettore_bastico
 recruit_character = ITA_italo_gariboldi
 recruit_character = ITA_pietro_pintor
 recruit_character = ITA_mario_berti
-recruit_character = ITA_orlando_lorenzini
 recruit_character = ITA_carlo_geloso
-recruit_character = ITA_gastone_gambara
-recruit_character = ITA_guglielmo_nasi
-recruit_character = ITA_gabriele_nasci
 recruit_character = ITA_giuseppe_tellera
 recruit_character = ITA_francesco_zingales
-recruit_character = ITA_amedeo_savoy_aosta
 recruit_character = ITA_ezio_rosi
 recruit_character = ITA_mario_vercellino
 recruit_character = ITA_prince_filiberto
@@ -595,17 +560,8 @@ recruit_character = ITA_alberto_da_zara
 recruit_character = ITA_giuseppe_fioravanzo
 recruit_character = ITA_carlo_bergamini
 recruit_character = ITA_angelo_iachino
-recruit_character = ITA_carlo_fecia_cossato
 recruit_character = ITA_giuseppe_di_bartolo
 recruit_character = ITA_junio_valerio_borghese
-recruit_character = ITA_luigi_sansonetti
-recruit_character = ITA_ferdinando
-recruit_character = ITA_giovanni_galati
-recruit_character = ITA_angelo_parona
-recruit_character = ITA_bruno_brivonesi
-recruit_character = ITA_bruto_brivonesi
-recruit_character = ITA_antonio_legnani
-recruit_character = ITA_mario_falangola
 
 recruit_character = ITA_alfredo_guzzoni
 recruit_character = ITA_renato_sandalli
@@ -727,6 +683,15 @@ if = {
 	ITA_create_paolo_caccia_dominioni_operative = yes
 }
 
+### STOCKPILE ###
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 150
+}
+add_equipment_to_stockpile = {
+	type = gw_armored_car_equipment
+	amount = 150
+}
 ### VARIANTS ###
 # 1936 Start #
 #plane variants
@@ -911,7 +876,7 @@ if = {
 		obsolete = yes
 		icon = "GFX_ITA_basic_light_tank_medium"
 	}
-	create_equipment_variant = {
+		create_equipment_variant = {
 		name = "CV35 I"
 		type = light_tank_chassis_1
 		parent_version = 2

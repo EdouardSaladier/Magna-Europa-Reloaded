@@ -652,7 +652,7 @@ political_actions = {
 
 economy_decisions = {
 
-	us_industry_relocation #needed or else US run out of slots too soon = {
+	us_industry_relocation = { #needed or else US run out of slots too soon
 
 		icon = generic_industry
 		

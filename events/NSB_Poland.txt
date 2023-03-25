@@ -656,7 +656,6 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-		remove_decision_on_cooldown = POL_purchase_madagascar
 	}
 }
 
@@ -775,38 +774,7 @@ country_event = {
 		}
 		custom_effect_tooltip = POL_remove_colony_purchase_tt
 		hidden_effect = {
-			if = {
-				limit = {
-					event_target:POL_colony_purchase = {
-						state = 701
-					}
-				}
-				remove_decision_on_cooldown = POL_purchase_gambia
-			}
-			if = {
-				limit = {
-					event_target:POL_colony_purchase = {
-						state = 773
-					}
-				}
-				remove_decision_on_cooldown = POL_purchase_cheap_colony
-			}
-			if = {
-				limit = {
-					event_target:POL_colony_purchase = {
-						state = 546
-					}
-				}
-				remove_decision_on_cooldown = POL_purchase_cheap_colony
-			}
-			if = {
-				limit = {
-					event_target:POL_colony_purchase = {
-						state = 454
-					}
-				}
-				remove_decision_on_cooldown = POL_purchase_cheap_colony
-			}
+			
 		}
 	}
 }

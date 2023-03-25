@@ -1893,21 +1893,6 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
-			on_add = {
-				owner = {
-					IF = {
-						limit = {
-							has_power_balance = {
-								id = ETH_centralization_balance
-							}
-						}
-						
-						hidden_effect = {
-							ETH_BOP_decentralization_large_effect = yes
-						}
-					}				
-				}
-			}
 		}
 	}
 

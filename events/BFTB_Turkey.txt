@@ -5974,12 +5974,6 @@ country_event = {
 			}
 			if = {
 				limit = {
-					AFG = { has_country_flag = TUR_saadabad_pact_member }
-				}
-				AFG = { country_event = { id = generic.5 } }
-			}
-			if = {
-				limit = {
 					SYR = { has_country_flag = TUR_saadabad_pact_member }
 				}
 				SYR = { country_event = { id = generic.5 } }
