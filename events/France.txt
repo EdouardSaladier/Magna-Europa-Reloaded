@@ -247,14 +247,6 @@ country_event = {
 					NOT = { is_controlled_by = FRA }
 				}
 			
-			if = {
-				limit = {
-					FRA = { has_war_with = ITA }
-				}
-				718 = {
-					NOT = { is_controlled_by = FRA }
-				}
-			}
 				
 
 		#Don't fire if any states in France are controlled by a different human player
@@ -483,7 +475,7 @@ country_event = {
 		}
 		trigger = {
 			has_government = fascism
-			not = { has_dlc = "La Resistance" }
+			#not = { has_dlc = "La Resistance" }
 		}
 		#Set same cosmetic tag they would get on capitulation
 		FRA = {

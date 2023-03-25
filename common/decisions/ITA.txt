@@ -4374,6 +4374,10 @@ ITA_diplomacy_balkan_decision_category = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		targets = { YUG CRO MNT SLV BOS HRZ MAC SER KOS TRA } #These are all tags included in scripted trigger "BUL_is_balkan_nation = yes"
@@ -4414,6 +4418,7 @@ ITA_diplomacy_balkan_decision_category = {
 		days_remove = ITA_ultimatum_days
 
 		remove_effect = {
+			
 			FROM = {
 				set_country_flag = ITA_ultimatum_sent_flag
 				country_event = { id = NSB_soviet_foreign_politics_events.200 hours = 16 random_hours = 8 }
@@ -5013,6 +5018,10 @@ ITA_diplomacy_balkan_decision_category = {
 
 		ai_will_do = {
 			base = 2 #Previously 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		allowed = {
