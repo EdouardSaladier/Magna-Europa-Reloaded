@@ -174,20 +174,12 @@ set_war_support = 0.3
 
 #Trade
 create_import = {
-		resource = tungsten
-		factories = 1
-		exporter = SWE
+	resource = tungsten
+	factories = 1
+	exporter = SWE
 }
 
-if = {
-	limit = {
-		has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED }
-	}
-	create_faction = "Berliner Pakt"	
-}
-else = {
-	create_faction = "Berlin Pact"
-}
+create_faction = "Berlin Pact"
 
 set_politics = {
 	ruling_party = fascism

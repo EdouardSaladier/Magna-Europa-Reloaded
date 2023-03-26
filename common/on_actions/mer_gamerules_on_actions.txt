@@ -197,6 +197,13 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED }
+				}
+				GER = { set_faction_name = "Berliner Pakt" }
+				
+			}
 		}
 	}
 }
