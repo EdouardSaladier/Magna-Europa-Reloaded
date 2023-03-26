@@ -228,14 +228,12 @@ southern_thrust = {
 		OR = {
 			country_exists = IRQ
 			country_exists = PER
-			country_exists = AFG
 		}
 	}
 	abort = {
 		NOT = {
 			country_exists = IRQ
 			country_exists = PER
-			country_exists = AFG
 		}
 	}
 
@@ -243,11 +241,6 @@ southern_thrust = {
 		type = antagonize
 		id = "PER"
 		value = 200
-	}
-	ai_strategy = {
-		type = antagonize
-		id = "AFG"
-		value = 150
 	}
 	ai_strategy = {
 		type = antagonize

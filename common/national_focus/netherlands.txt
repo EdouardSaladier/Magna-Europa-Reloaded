@@ -817,22 +817,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_curtail_colonial_autonomy
-		available = {
-			#country_exists = INS
-			NOT = { has_completed_focus = HOL_oranje_boven }
-			#INS = { is_subject_of = HOL }
-		}
-		bypass = {
-			#INS = { exists = no }
-			#owns_state = 335
-		}
-		prerequisite = { focus = HOL_the_crown_jewel_colony }
-		mutually_exclusive = { focus = HOL_the_zuiderzee_works }"
-			add_timed_idea = {
-				idea = HOL_curtail_colonial_autonomy_overlord
-				days = 545
-			}
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_curtail_colonial_autonomy"
 			#INS = {
 			#	add_timed_idea = {
 			#		idea = HOL_curtail_colonial_autonomy_subject
@@ -872,24 +857,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_continue_the_war_in_batavia
-		prerequisite = { focus = HOL_sumatra }
-		prerequisite = { focus = HOL_borneo_and_the_grote_oost }
-		prerequisite = { focus = HOL_curtail_colonial_autonomy }
-		available = {
-			has_capitulated = yes
-			NOT = { has_completed_focus = HOL_oranje_boven }
-			OR = {
-				#INS = {
-				#	is_subject_of = HOL
-				#	has_autonomy_state = autonomy_integrated_puppet
-				#	compare_autonomy_progress_ratio < 0.6
-				#	has_full_control_of_state = 335
-				#}
-				has_full_control_of_state = 335
-			}
-		}"
-			activate_decision = HOL_relocate_government_to_batavia
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_continue_the_war_in_batavia"
 			custom_effect_tooltip = HOL_continue_the_war_in_batavia_tt
 			effect_tooltip = {
 				remove_ideas = HOL_curtail_colonial_autonomy_overlord
@@ -928,11 +896,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_a_western_capital
-		available = {
-			has_full_control_of_state = 335
-		}
-		prerequisite = { focus = HOL_continue_the_war_in_batavia }"
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_a_western_capital"
 			335 = {
 				add_building_construction = {
 					type = infrastructure

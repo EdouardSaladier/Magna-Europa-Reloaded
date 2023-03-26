@@ -9338,17 +9338,7 @@ news_event = {
 	fire_for_sender = no
 
 	option = {
-		name = news.231.a
-		trigger = {
-			is_independent_china_or_warlord = yes
-		}
-	}
-
-	option = {
 		name = news.231.b
-		trigger = {
-			is_independent_china_or_warlord = no
-		}
 	}
 }
 

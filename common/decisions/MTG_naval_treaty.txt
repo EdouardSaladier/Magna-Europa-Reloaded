@@ -547,7 +547,13 @@ MTG_naval_treaties = {
 			}
 			NOT = { tag = ENG }
 			NOT = { tag = USA }
-			else = {
+			else_if = {
+				limit = {
+					NOT = {
+						USA = { has_naval_treaty_trigger = yes }
+						ENG = { has_naval_treaty_trigger = yes }
+					}
+				}
 				has_navy_size = {
 					type = capital_ship
 					size < 20

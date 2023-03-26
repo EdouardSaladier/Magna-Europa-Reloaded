@@ -11429,29 +11429,6 @@ country_event = {
 					set_country_flag = khi_uprising_flag
 					SOV = { country_event = NSB_soviet_nationalist.001 }
 				}
-				1 = { # Bukharan uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0.25
-						any_state = {
-							is_core_of = BUK
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = buk_uprising_flag
-							BUK = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = BUK }
-					set_country_flag = buk_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
 				1 = { # Kazakh uprising
 					modifier = {
 						add = SOV_civil_war_months
@@ -11542,29 +11519,6 @@ country_event = {
 					}
 					set_variable = { SOV_nationalist_country = TMS }
 					set_country_flag = tms_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				1 = { # KYR uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0.25
-						any_state = {
-							is_core_of = KYR
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = KYR_uprising_flag
-							KYR = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = KYR }
-					set_country_flag = KYR_uprising_flag
 					SOV = { country_event = NSB_soviet_nationalist.001 }
 				}
 

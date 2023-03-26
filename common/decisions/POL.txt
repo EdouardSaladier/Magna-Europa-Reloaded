@@ -125,13 +125,8 @@ POL_danzig_decisions = {
 		icon = infiltrate_state
 
 		available = {
-			every_state = {
-		limit = { 
-			state = 280
-			state = 2729
-		}
-				compliance > 40
-			}
+			280 = { compliance > 40 }
+			2729 = { compliance > 40 }
 		}
 
 		custom_cost_trigger = {

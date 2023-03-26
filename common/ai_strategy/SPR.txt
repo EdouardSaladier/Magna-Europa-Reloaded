@@ -633,8 +633,8 @@ nat_use_pp_for_decisions = {
 		SPR_scw_in_progress = yes
 	}
 	ai_strategy = {
-		type = pp_spend_ammount
+		type = pp_spend_priority
 		id = decision
-		value = 1000
+		value = 100
 	}
 }

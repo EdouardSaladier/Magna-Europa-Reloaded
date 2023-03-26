@@ -420,67 +420,6 @@ country_event = {
 	}
 }
 
-# Tannu Tuva is asked to join the USSR
-country_event = {
-	id = soviet.14
-	immediate = { log = "[GetDateText]: [Root.GetName]: event soviet.14 FROM = [From.GetName]" }
-	title = soviet.14.t
-	desc = soviet.14.d
-	picture = GFX_report_event_stalin_01
-	
-	is_triggered_only = yes
-	
-	option = { # Accept
-		name = soviet.14.a
-		ai_chance = { factor = 100 }
-		SOV = {
-			country_event = { id = soviet.16 }
-		}
-		custom_effect_tooltip = GAME_OVER_TT
-	}
-	option = { # Refuse
-		name = soviet.14.b
-		SOV = {
-			country_event = { id = soviet.15 }
-		}
-	}
-}
-
-# Tannu Tuva declines the offer
-country_event = {
-	id = soviet.15
-	immediate = { log = "[GetDateText]: [Root.GetName]: event soviet.15 FROM = [From.GetName]" }
-	title = soviet.15.t
-	desc = soviet.15.d
-	picture = GFX_report_event_stalin_02
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = soviet.15.a
-	}
-}
-
-# Tannu Tuva accepts the offer
-country_event = {
-	id = soviet.16
-	immediate = { log = "[GetDateText]: [Root.GetName]: event soviet.16 FROM = [From.GetName]" }
-	title = soviet.16.t
-	desc = soviet.16.d
-	picture = GFX_report_event_stalin_propaganda
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = soviet.16.a
-		annex_country = { target = TAN }
-		hidden_effect = {
-			SOV = {
-				country_event = { days = 1 id = news.14 }
-			}
-		}
-	}
-}
 
 # Improving the Stalin Line
 country_event = {
@@ -2187,7 +2126,7 @@ country_event = {
 					any_other_country = {
 						is_in_faction_with = SOV
 						SOV = { is_faction_leader = yes }
-						is_controlled_by = PREV
+						controls_state = PREV
 					}
 				}
 			}

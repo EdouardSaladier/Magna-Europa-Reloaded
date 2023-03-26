@@ -24,12 +24,6 @@ SWE_avoid_axis_or_comintern = {
 	abort = {
 		date > 1945.1.1
 	}
-
-	ai_strategy = {
-		type = alliance
-		id = "JAP"
-		value = -400
-	}
 	
 	ai_strategy = {
 		type = alliance
@@ -49,7 +43,6 @@ make_SWE_unpopular = {
 	allowed = { 
 		has_dlc = "By Blood Alone"
 		OR = {
-			original_tag = JAP 
 			original_tag = SOV 
 			original_tag = GER 
 		}
@@ -67,54 +60,5 @@ make_SWE_unpopular = {
 		type = alliance
 		id = "SWE"
 		value = -400
-	}
-}
-
-SWE_war_with_ITA = {
-	allowed = {
-		original_tag = SWE
-		has_dlc = "By Blood Alone"
-	}
-	enable = {
-		check_variable = { ETH.host_nation = SWE }
-		has_wargoal_against = ITA
-	}
-	abort = {
-		NOT = { country_exists = ETH }
-		NOT = { country_exists = ITA }
-		NOT = { ETH = { is_government_in_exile = yes } }
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "SWE"
-		value = 200
-	}
-}
-
-SWE_join_allies = {
-	allowed = {
-		original_tag = SWE
-		has_dlc = "By Blood Alone"
-	}
-	enable = {
-		check_variable = { ETH.host_nation = SWE }
-		has_wargoal_against = ITA
-	}
-	abort = {
-		NOT = { country_exists = ETH }
-		NOT = { country_exists = ITA }
-		NOT = { ETH = { is_government_in_exile = yes } }
-	}
-
-	ai_strategy = {
-		type = alliance
-		id = "ENG"
-		value = 400
-	}
-	ai_strategy = {
-		type = alliance
-		id = "USA"
-		value = 400
 	}
 }

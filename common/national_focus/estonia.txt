@@ -2344,49 +2344,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EST_unite_the_finnic_identity"
 			set_cosmetic_tag = EST_UGRA
-			
-			if = {
-				limit = {
-					OR = {
-						FIN = {
-							any_core_state = {
-								owner = {
-									is_subject_of = ROOT
-								}
-							}
-						}
-						
-						KAR = {
-							any_core_state = {
-								owner = {
-									is_subject_of = ROOT
-								}
-							}
-						}
-						2785 = {
-							owner = {
-								is_subject_of = ROOT
-							}
-						}
-						19 = {
-							owner = {
-								is_subject_of = ROOT
-							}
-						}
-						2709 = {
-							owner = {
-								is_subject_of = ROOT
-							}
-						}
-						16 = {
-							owner = {
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				transfer_state_to = EST
-			}
 			every_state = {
 				limit = {
 					OR = {
