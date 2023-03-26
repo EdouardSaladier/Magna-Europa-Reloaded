@@ -19,14 +19,6 @@ can_ROOT_get_wargoal_on_THIS = {
 	NOT = { is_subject_of = ROOT }
 }
 
-#Country scope
-is_JAP_or_ally_of_JAP = {
-	OR = {
-		tag = JAP
-		is_in_faction_with = JAP
-		is_subject_of = JAP
-	}
-}
 
 is_border_conflict_defender_vs_FROM = {
 	has_variable = ROOT.defender_state_vs_@FROM
@@ -242,23 +234,6 @@ ai_land_doctrine_tier_2_trigger = {
 	}
 }
 
-CHI_is_on_historical_plan_trigger = {
-	has_dlc = "Waking the Tiger"
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = CHI_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = CHI_AI_RANDOM_HISTORICAL
-		has_game_rule = {
-			rule = CHI_ai_behavior
-			option = HISTORICAL
-		}
-	}
-}
 SOV_is_on_historical_plan_trigger = {
 	OR = {
 		AND = {

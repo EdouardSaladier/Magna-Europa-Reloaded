@@ -2328,14 +2328,6 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
-		trigger = {
-			event_target:WTT_current_china_leader = {
-				OR = {
-					has_idea = german_advisors 
-					has_completed_focus = CHI_give_falkenhausen_citizenship
-				}
-			}
-		}
 		GER = { country_event = { id = wtt_germany.39 days = 1 } }
 	}
 
@@ -2344,15 +2336,6 @@ country_event = {
 		name = wtt_germany.38.b
 		ai_chance = {
 			factor = 10
-			modifier = {
-				factor = 0
-				has_war_with = JAP
-			}
-		}
-		effect_tooltip = {
-			GER = { transfer_state = 743 }
-			743 = { set_state_name = "Tsingtao" }
-			set_province_name = { id = 10000 name = "Tsingtao" }
 		}
 		GER = { country_event = { id = wtt_germany.48 days = 1 } }
 		hidden_effect = { news_event = { id = wtt_news.16 hours = 30 } }
@@ -2363,10 +2346,6 @@ country_event = {
 		name = wtt_germany.38.c
 		ai_chance = {
 			factor = 10
-			modifier = {
-				factor = 0
-				has_war_with = JAP
-			}
 		}
 		GER = { country_event = { id = wtt_germany.40 days = 1 } }
 	}
@@ -2801,19 +2780,6 @@ country_event = {
 		}
 		hidden_effect = {
 			random_list = {
-				1 = {
-					if = {
-						limit = {
-							ARG = {
-								is_ai = yes
-							}
-						}
-						ARG = {
-							add_timed_idea = { idea = fascism_drift_ARG days = 1460 }
-							country_event = { id = wtt_germany.1004 days = 1095 random_days = 365 }
-						}
-					}
-				}
 				1 = {
 					set_global_flag = MTG_flag_955
 				}

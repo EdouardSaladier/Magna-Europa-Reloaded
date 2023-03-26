@@ -179,7 +179,15 @@ create_import = {
 		exporter = SWE
 }
 
-create_faction = "Berlin Pact"
+if = {
+	limit = {
+		has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED }
+	}
+	create_faction = "Berliner Pakt"	
+}
+else = {
+	create_faction = "Berlin Pact"
+}
 
 set_politics = {
 	ruling_party = fascism
@@ -652,7 +660,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-			front_1_custom_slot = ship_mine_layer_1
+			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_light_medium_battery_1
 			rear_1_custom_slot = ship_airplane_launcher_1
@@ -670,7 +678,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_2
-			front_1_custom_slot = ship_secondaries_1
+			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_torpedo_2
 			mid_2_custom_slot = ship_airplane_launcher_1
 			rear_1_custom_slot = ship_medium_battery_2

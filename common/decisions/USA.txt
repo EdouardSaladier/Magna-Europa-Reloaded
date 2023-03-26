@@ -1587,28 +1587,6 @@ foreign_politics = {
 	}
 }
 USA_war_plans = {
-	USA_execute_war_plan_green = {
-		icon = generic_operation
-		available = {
-			has_war_with = MEX
-		}
-		visible = {
-			has_completed_focus = USA_war_plan_green
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 180
-		modifier = {
-			production_speed_infrastructure_factor = 0.1
-		}
-		targeted_modifier = {
-			tag = MEX
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-	}
 	USA_execute_war_plan_red = {
 		icon = generic_operation
 		available = {
@@ -1646,141 +1624,6 @@ USA_war_plans = {
 		days_remove = 180
 		targeted_modifier = {
 			tag = ITA
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-	}
-	USA_execute_war_plan_ruby = {
-		icon = generic_operation
-		available = {
-			has_war_with = RAJ
-		}
-		visible = {
-			has_completed_focus = USA_war_plan_ruby
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 180
-		targeted_modifier = {
-			tag = RAJ
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-	}
-	USA_execute_war_plan_scarlet_garnet = {
-		icon = generic_operation
-		available = {
-			has_war_with = AST
-			has_war_with = NZL
-		}
-		visible = {
-			has_completed_focus = USA_war_plan_scarlet_garnet
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 180
-		targeted_modifier = {
-			tag = AST
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = NZL
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-	}
-	USA_execute_war_plan_orange = {
-		icon = generic_operation
-		available = {
-			has_war_with = JAP
-		}
-		visible = {
-			has_completed_focus = USA_war_plan_orange
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 180
-		modifier = {
-			amphibious_invasion = 0.1
-			invasion_preparation = -0.25
-		}
-		targeted_modifier = {
-			tag = JAP
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = MAN
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = MEN
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-	}
-	USA_execute_war_plan_yellow = {
-		icon = generic_operation
-		available = {
-			OR = {
-				has_war_with = CHI
-				has_war_with = PRC
-				has_war_with = SHX
-				has_war_with = YUN
-				has_war_with = GXC
-				has_war_with = XSM
-				has_war_with = SIK
-
-			}
-		}
-		visible = {
-			has_completed_focus = USA_war_plan_yellow
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 180
-		targeted_modifier = {
-			tag = CHI
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = PRC
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = SHX
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = YUN
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = XSM
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = GXC
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = SIK
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1943,10 +1786,8 @@ USA_intervention_mandate = {
 				factor = 0
 			}
 			modifier = {
-				OR = {
-					GER = { has_completed_focus = GER_danzig_or_war }
-					JAP = { has_completed_focus = JAP_intervene_in_china }
-				}
+				GER = { has_completed_focus = GER_danzig_or_war }
+				
 				factor = 10
 			}
 		}

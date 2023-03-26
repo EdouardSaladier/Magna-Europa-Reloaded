@@ -6998,12 +6998,6 @@ ENG_imperial_conference_decision = {
 		complete_effect = {
 			country_event = { id = mtg_britain.99 hours = 6 }
 			set_country_flag = ENG_imperial_conference_discussion_in_progress
-			if = {
-				limit = {
-					NOT = { has_completed_focus = ENG_indian_autonomy }
-				}
-				custom_effect_tooltip = ENG_indian_autonomy_tt
-			}
 		}
 
 		ai_will_do = {

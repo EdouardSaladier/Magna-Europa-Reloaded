@@ -192,7 +192,9 @@ on_actions = {
 					CAT = { transfer_state = 871 }
 				}	
 				CAT = {
-					annex = VAL
+					annex_country = {
+						target = VAL
+					}
 				}
 			}
 		}

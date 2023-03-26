@@ -306,50 +306,6 @@ claims_on_finland = {
 	}
 }
 
-claims_on_sinkiang = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_completed_focus = SOV_spheres_of_influence_in_china
-		country_exists = CHI
-	}
-	abort = {
-		NOT = {
-			country_exists = CHI
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "CHI"
-		value = 200
-	}
-}
-
-japan_ally = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_completed_focus = SOV_reconcile_japan
-		country_exists = JAP
-	}
-	abort = {
-		NOT = { country_exists = JAP }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "JAP"
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = "JAP"
-		value = 200
-	}
-}
 
 germany_ally = {
 	allowed = {
@@ -814,58 +770,6 @@ SOV_dont_mess_with_volunteers_for_european_democratic_nations = { # Reverse stra
 	}
 }
 
-SOV_dont_send_volunteers_that_early_to_china = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		JAP = { has_war_with = CHI }
-		country_exists = CHI
-		CHI = {
-			surrender_progress < 0.8
-		}
-	}
-
-	abort = {
-		CHI = {
-			surrender_progress > 0.8
-		}
-		OR = {
-			#Soviet focus plans are set so that they support a Chinese tag in 39-40
-			AND = {
-				has_completed_focus = SOV_the_gobi_gambit
-				country_exists = SIK
-				SIK = { has_war_with = JAP }
-			}
-			AND = {
-				has_completed_focus = SOV_two_red_flags
-				country_exists = PRC
-				PRC = { has_war_with = JAP }
-			}
-			AND = {
-				has_completed_focus = SOV_support_the_kuomintang
-				country_exists = CHI
-				CHI = { has_war_with = JAP }
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "CHI"
-		value = -800
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "GXC"
-		value = -800
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "PRC"
-		value = -800
-	}
-}
 
 SOV_dont_send_lend_lease_that_early_to_china = {
 	allowed = {

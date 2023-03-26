@@ -177,21 +177,6 @@ on_actions = {
 
 	on_civil_war_end = { # ROOT is civil war winner, FROM gets annexed.
 		# End of Collaborationalist Civil War
-		effect = {
-			IF = {
-				limit = {
-					original_tag = ETH
-					has_completed_focus = ETH_declare_for_italy
-				}
-			}
-			every_owned_state = { #TODO_TA Make an event out this?
-				limit = {
-					has_state_flag = ETH_cede_state_flag
-				}
-				ITA = { transfer_state = PREV }
-				remove_core_of = ROOT
-			}
-		}
 
 		#End of Italian CW - Manage BoP -> If Monarchist, bring it back, but against communists
 		effect = {
@@ -574,20 +559,6 @@ on_actions = {
 					}
 				}
 				ETH_transfer_promised_states = yes
-			}
-		}
-		# Drop AOI cosmetic tag to set correct flag
-		effect = {
-			IF = {
-				limit = {
-					original_tag = AOI
-					NOT = {
-						is_subject_of = ITA
-					}
-				}
-				AOI = {
-					drop_cosmetic_tag = yes
-				}
 			}
 		}
 		effect = {
