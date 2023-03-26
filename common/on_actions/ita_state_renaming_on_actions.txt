@@ -493,7 +493,7 @@ on_actions = {
 				else_if = {
 					limit = { ROOT = { is_german = yes } }
 					FROM.FROM = { set_state_name = "Sankt Veit am Flaum" }
-					set_province_name = { id = 14309 name "Sankt Veit am Flaum" }
+					set_province_name = { id = 14309 name = "Sankt Veit am Flaum" }
 				}
 				else = { FROM.FROM = { reset_state_name = yes } reset_province_name = 14309 }
 			}
