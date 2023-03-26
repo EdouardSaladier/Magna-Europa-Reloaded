@@ -48,3 +48,35 @@ set_popularities = {
 	neutrality = 75
 	communism = 10
 }
+create_country_leader = {
+	name = "Ante Pavelic"
+	desc = "ANTE_PAVELIC_DESC"
+	picture = GFX_portrait_Ante_Pavelic
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vladko Maček"
+	picture = GFX_portrait_Vladko_Macek
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+add_country_leader_role = { #This replaces the commented script below - fixing a character duplicate error on launch
+	character = "CRO_vladko_maček"
+	country_leader = {
+	  ideology=socialism
+	  traits = {
+	  	#
+	  }
+	  expire = "1965.1.1"
+	}
+	promote_leader = yes
+}
