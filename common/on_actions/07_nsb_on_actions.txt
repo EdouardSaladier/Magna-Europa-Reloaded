@@ -1978,21 +1978,6 @@ on_actions = {
 		}
 	}
 
-	# called when a country send volunteers to another
-	# ROOT is sender, FROM is receiver
-	on_send_volunteers = {
-		#Manage Soviet volunteers in China
-		effect = {
-			if = { #Russia has sent volunteers to a Chinese faction
-				limit = {
-					original_tag = SOV
-					FROM = {is_literally_china = yes }
-				}
-				FROM = { set_country_flag = SOV_russian_volunteers_in_china_flag }
-			}	
-		}
-	}
-
 	on_startup = {
 		effect = {
 			#Set Iranian initial states (for Anglo-Soviet invasion of Iran)
