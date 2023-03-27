@@ -3026,15 +3026,15 @@ focus_tree = {
 		id = HOL_expand_the_mld
 		available = {
 			OR = {
-				has_full_control_of_state = 335
+				has_full_control_of_state = 358
 				any_other_country = {
 					is_subject_of = ROOT
-					has_full_control_of_state = 335
+					has_full_control_of_state = 358
 				}
 			}
 		}
 		bypass = {
-			335 = {
+			358 = {
 				OWNER = { 
 					NOT = {
 						OR = {
@@ -3055,29 +3055,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_expand_the_mld
-		available = {
-			OR = {
-				has_full_control_of_state = 335
-				any_other_country = {
-					is_subject_of = ROOT
-					has_full_control_of_state = 335
-				}
-			}
-		}
-		bypass = {
-			335 = {
-				OWNER = { 
-					NOT = {
-						OR = {
-							TAG = ROOT 
-							is_subject_of = ROOT 
-						}
-					} 
-				}
-			}
-		}
-		prerequisite = { focus = HOL_overturn_military_budget_cuts }"
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_expand_the_mld"
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HOL_expand_the_mld
@@ -3085,7 +3063,7 @@ focus_tree = {
 				uses = 1
 				category = air_doctrine
 			}
-			335 = {
+			358 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -3100,8 +3078,8 @@ focus_tree = {
 		bypass = {
 			OR = {
 				NOT = { controls_state = 358 }
+				NOT = { controls_state = 479 }
 				NOT = { controls_state = 402 }
-				NOT = { controls_state = 336 }
 			}
 			NOT = {
 				focus_progress = {
@@ -3111,7 +3089,6 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = HOL_expand_the_mld }
-		mutually_exclusive = { focus = HOL_protect_the_colonies }
 		icon = GFX_goal_generic_air_fighter
 		x = -1
 		y = 1
@@ -3121,164 +3098,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_protect_the_mainland
-		bypass = {
-			OR = {
-				NOT = { controls_state = 358 }
-				NOT = { controls_state = 402 }
-				NOT = { controls_state = 336 }
-			}
-			NOT = {
-				focus_progress = {
-					focus = HOL_protect_the_colonies
-					progress > 0
-				}
-			}
-		}
-		prerequisite = { focus = HOL_expand_the_mld }
-		mutually_exclusive = { focus = HOL_protect_the_colonies }"
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_protect_the_mainland"
 			add_tech_bonus = {
 				name = HOL_protect_the_mainland
 				bonus = 1.0
 				uses = 1
 				category = light_fighter
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_protect_the_colonies
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = netherlands_has_no_colonies_tt
-				NOT = {
-					OR = {
-						controls_state = 335
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 335
-						}
-					}
-					OR = {
-						controls_state = 672
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 672
-						}
-					}
-					OR = {
-						controls_state = 334
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 334
-						}
-					}
-					OR = {
-						controls_state = 673
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 673
-						}
-					}
-					OR = {
-						controls_state = 667
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 667
-						}
-					}
-					OR = {
-						controls_state = 309
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 309
-						}
-					}
-				}
-				
-				NOT = {
-					focus_progress = {
-						focus = HOL_protect_the_mainland
-						progress > 0
-					}
-				}
-			}
-		}
-		prerequisite = { focus = HOL_expand_the_mld }
-		mutually_exclusive = { focus = HOL_protect_the_mainland }
-		icon = GFX_goal_generic_air_naval_bomber
-		x = 1
-		y = 1
-		relative_position_id = HOL_expand_the_mld
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_protect_the_colonies
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = netherlands_has_no_colonies_tt
-				NOT = {
-					OR = {
-						controls_state = 335
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 335
-						}
-					}
-					OR = {
-						controls_state = 672
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 672
-						}
-					}
-					OR = {
-						controls_state = 334
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 334
-						}
-					}
-					OR = {
-						controls_state = 673
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 673
-						}
-					}
-					OR = {
-						controls_state = 667
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 667
-						}
-					}
-					OR = {
-						controls_state = 309
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 309
-						}
-					}
-				}
-				
-				NOT = {
-					focus_progress = {
-						focus = HOL_protect_the_mainland
-						progress > 0
-					}
-				}
-			}
-		}
-		prerequisite = { focus = HOL_expand_the_mld }
-		mutually_exclusive = { focus = HOL_protect_the_mainland }"
-			add_tech_bonus = {
-				name = HOL_protect_the_colonies
-				bonus = 1
-				uses = 1
-				category = naval_bomber
 			}
 		}
 	}
