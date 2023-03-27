@@ -1773,9 +1773,24 @@ ita_fragmentation_status = {
 		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
 	}
 	option = {
-		name = ITA_FRAGMENTED 
+		name = ITA_FRAGMENTED_1815
+		text = "RULE_OPTION_ITA_FRAGMENTED_1815"
+		desc = "RULE_OPTION_ITA_FRAGMENTED_1815_DESC"
+	}
+	option = {
+		name = ITA_FRAGMENTED
 		text = "RULE_OPTION_ITA_FRAGMENTED"
 		desc = "RULE_OPTION_ITA_FRAGMENTED_DESC"
+	}
+	option = {
+		name = ITA_REGIONS 
+		text = "RULE_OPTION_ITA_REGIONS"
+		desc = "RULE_OPTION_ITA_REGIONS_DESC"
+	}
+	option = {
+		name = ITA_MORE_FRAGMENTATION 
+		text = "RULE_OPTION_ITA_MORE_FRAGMENTATION"
+		desc = "RULE_OPTION_ITA_MORE_FRAGMENTATION_DESC"
 	}
 }
 kongs_secret_stuff = {

@@ -869,33 +869,31 @@ on_actions = {
 								is_core_of = PIE
 								is_core_of = LIG
 								is_core_of = AOS
+								is_core_of = SRD
+								is_core_of = SAV
+								is_core_of = NZA
 								state = 1363
 								state = 2393
 							}
 						}
-						transfer_state_to = PIE
 						add_core_of = PIE
 					}
+					PIE = { set_cosmetic_tag = PIE_SRD_UNION }
+					release = PIE
 					every_state = {
 						limit = {
 							OR = {
 								is_core_of = FRI
 								is_core_of = VNT
-								AND = {
-									is_core_of = LOM
-									NOT = {
-										state = 1363
-										state = 2393
-										is_core_of = SWI
-									}
-								}
+								is_core_of = LOM
 							}
+							NOT = { state = 1616 state = 2970 state = 1533 state = 2536 }
 						}
-						transfer_state_to = VNT
-						add_core_of = VNT
+						add_core_of = LOM
 					}
-					VNT = {
-						set_cosmetic_tag = LOM_VNT_UNIFIED
+					1616 = { transfer_state_to = AUS add_core_of = AUS }
+					LOM = {
+						set_cosmetic_tag = LOM_VEN_UNIFIED
 					}
 					every_state = {
 						limit = {
@@ -908,29 +906,34 @@ on_actions = {
 								is_core_of = MLS
 								is_core_of = ABR
 							}
+							NOT = { state = 2914 }
 						}
-						transfer_state_to = NAP
 						add_core_of = NAP
 					}
+					release = ALB
+					release = NAP
 					NAP = {
 						set_cosmetic_tag = NAP_KTS_UNIFIED
-					}	
+					}
+					every_owned_state = {
+						limit = { is_core_of = TIR }
+						add_core_of = AUS
+					}
+					release = AUS
+					release = GOR
+					release = LOM
 					release = PRM
-					release = TIR
-					release = JUL
-					release = LCC
 					release = MDN
 					release = TUS
-					release = SRD
 					release = LBA
-					1476 = {
-						transfer_state_to = YUG
+					release = IST
+					release = TST
+					every_owned_state = {
+						limit = { OR = { is_core_of = SLV is_core_of = CRO } }
 						add_core_of = YUG
 					}
-					1534 = {
-						transfer_state_to = YUG
-						add_core_of = YUG
-					}
+					release = YUG
+					
 					every_state = {
 						limit = {
 							is_owned_by = ITA
@@ -938,13 +941,13 @@ on_actions = {
 						transfer_state_to = VAT
 						add_core_of = VAT
 					}
-					VAT = { set_cosmetic_tag = papal_states }
+					VAT = { set_cosmetic_tag = papal_states set_capital = { state = 876 } }
 					transfer_units_fraction = {
-						target = VNT
+						target = LOM
 						size = 0.2
 					}
 					transfer_units_fraction = {
-						target = PAP
+						target = VAT
 						size = 0.1
 					}
 					transfer_units_fraction = {
@@ -953,19 +956,15 @@ on_actions = {
 					}
 					transfer_units_fraction = {
 						target = PIE
-						size = 0.1
+						size = 0.3
 					}
-					#transfer_units_fraction = {
-					#	target = TTS
-					#	size = 0.2
-					#}
+					transfer_units_fraction = {
+						target = NAP
+						size = 0.3
+					}
 					
-					VAT = {
-						annex_country = {
-							target = ITA
-							transfer_troops = yes
-						}
-					}
+					every_core_state = { remove_core_of = ITA }
+					
 					1554 = {
 						transfer_state_to = GRE
 					}
