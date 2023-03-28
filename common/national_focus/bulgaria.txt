@@ -4160,9 +4160,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BUL_the_unification_of_the_balkans
-
-		prerequisite = { focus = BUL_united_we_shall_prevail }"
+			log = "[GetDateText]: [Root.GetName]: Focus BUL_the_unification_of_the_balkans"
 			if = {
 				limit = {
 					has_idea = BUL_second_national_catastrophe
@@ -4715,17 +4713,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BUL_defy_moscow
-
-		select_effect = {
-			add_ai_strategy = {
-				type = prepare_for_war
-				id = SOV
-				value = 100
-			}
-		}
-
-		prerequisite = { focus = BUL_balkan_trade_union_secretariat }"
+			log = "[GetDateText]: [Root.GetName]: Focus BUL_defy_moscow"
 			add_war_support = 0.1
 			if = {
 				limit = {

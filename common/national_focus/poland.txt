@@ -10209,19 +10209,13 @@ focus_tree = {
 		}
 		
 		available = {
-			815 = {
+			241 = {
 				controls_or_subject_of = yes
 			}
-			784 = {
+			242 = {
 				controls_or_subject_of = yes
 			}
-			11 = {
-				controls_or_subject_of = yes
-			}
-			814 = {
-				controls_or_subject_of = yes
-			}
-			97 = {
+			2371 = {
 				controls_or_subject_of = yes
 			}
 		}
@@ -10233,15 +10227,18 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_lithuanian_rail"
 			build_railway = {
 				#level = 3
-				path = { 11342 11226 9246 9374 530 6376 9483 }
+				start_province = 19927
+				target_province = 17371
 			}
 			build_railway = {
 				#level = 3
-				path = { 11357 400 3254 11312 }
+				start_province = 17371
+				target_province = 9185
 			}
 			build_railway = {
 				#level = 3
-				path = { 6296 9357 9438 9374 }
+				start_province = 9185
+				target_province = 5384
 			}
 
 			random_core_state = {
@@ -10403,16 +10400,16 @@ focus_tree = {
 		}
 		
 		available = {
-			94 = {
+			1030 = {
 				controls_or_subject_of = yes
 			}
-			93 = {
+			436 = {
 				controls_or_subject_of = yes
 			}
-			201 = {
+			2081 = {
 				controls_or_subject_of = yes
 			}
-			202 = {
+			527 = {
 				controls_or_subject_of = yes
 			}
 		}
@@ -10424,11 +10421,11 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_push_for_ruthenia"
 			build_railway = {
 				#level = 2
-				path = { 3392 11528 6415 560 11503 6435 11543 3470 6593 441 3543 525 }
+				start_province = 19913
+				target_province = 2025
 			}
 
 			random_owned_controlled_state = {
-				prioritize = {93} 
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -10462,17 +10459,8 @@ focus_tree = {
 		}
 		
 		available = {
-			137 = { controls_or_subject_of = yes }
-			custom_trigger_tooltip = {
-				tooltip = control_all_ukrainian_states_tt
-				all_state = {
-					OR = {
-						NOT = { is_core_of = UKR }
-						controls_or_subject_of = yes 
-						state = 766
-					}
-				}
-			}
+			2044 = { controls_or_subject_of = yes }
+			508 = { controls_or_subject_of = yes }
 		}
 
 		available_if_capitulated = yes
@@ -10481,12 +10469,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_warsaw_to_crimea_railway"
 			build_railway = {
-				#level = 2
-				path = { 525 504 9456 11438 458 3452 6451 11561 11715 737 568 3722 705 3686 }
-			}
-			build_railway = {
-				#level = 2
-				path = { 11670 3738 11703 11546 11683 3755 737 568 3722 705 3686 }
+				level = 2
+				start_province = 11800
+				target_province = 3523
 			}
 			random_core_state = {
 				prioritize = {93} 

@@ -2341,9 +2341,9 @@ focus_tree = {
 		id = HOL_southward_defenses
 		available = {
 			threat > 0.2
-			has_full_control_of_state = 358
-			has_full_control_of_state = 35
-			has_full_control_of_state = 336
+			has_full_control_of_state = 1974
+			has_full_control_of_state = 2713
+			has_full_control_of_state = 479
 		}
 		prerequisite = { focus = HOL_further_reinforce_the_ports }
 		icon = GFX_goal_generic_construct_military
@@ -2355,31 +2355,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_southward_defenses
-		available = {
-			threat > 0.2
-			has_full_control_of_state = 358
-			has_full_control_of_state = 35
-			has_full_control_of_state = 336
-		}
-		prerequisite = { focus = HOL_further_reinforce_the_ports }"
-			358 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 9498
-					instant_build = yes
-				}
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_southward_defenses"
+			451 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
-					province = 3314
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 9498
+					province = 19873
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2388,22 +2369,22 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			402 = {
+			every_state = {
+				limit = {
+					is_owned_by = HOL
+					is_core_of = HOL
+					any_neighbor_state = { is_core_of = BEL is_owned_by = BEL }
+				}
 				add_building_construction = {
 					type = bunker
-					level = 3
-					province = 11456
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
 					instant_build = yes
 				}
-			}
-			336 = {	
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 6336
-					instant_build = yes
-				}
-			}
+			}	
 		}
 	}
 
@@ -3195,29 +3176,7 @@ focus_tree = {
 	focus = {
 		id = HOL_unsinkable_aircraft_carriers
 		available = {
-			OR = {
-				AND = {
-					has_full_control_of_state = 335
-					has_full_control_of_state = 672
-					has_full_control_of_state = 673
-					has_full_control_of_state = 334
-					has_full_control_of_state = 667
-					has_full_control_of_state = 668
-					has_full_control_of_state = 358
-					has_full_control_of_state = 669
-				}
-				any_other_country = {
-					is_subject_of = HOL
-					has_full_control_of_state = 335
-					has_full_control_of_state = 672
-					has_full_control_of_state = 673
-					has_full_control_of_state = 334
-					has_full_control_of_state = 667
-					has_full_control_of_state = 668
-					has_full_control_of_state = 838
-					has_full_control_of_state = 669
-				}
-			}
+			
 		}
 		prerequisite = { focus = HOL_strategic_bombing_defense }
 		mutually_exclusive = { focus = HOL_air_cover_for_the_new_fleet }
@@ -3230,87 +3189,60 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_unsinkable_aircraft_carriers
-		available = {
-			OR = {
-				AND = {
-					has_full_control_of_state = 335
-					has_full_control_of_state = 672
-					has_full_control_of_state = 673
-					has_full_control_of_state = 334
-					has_full_control_of_state = 667
-					has_full_control_of_state = 668
-					has_full_control_of_state = 358
-					has_full_control_of_state = 669
-				}
-				any_other_country = {
-					is_subject_of = HOL
-					has_full_control_of_state = 335
-					has_full_control_of_state = 672
-					has_full_control_of_state = 673
-					has_full_control_of_state = 334
-					has_full_control_of_state = 667
-					has_full_control_of_state = 668
-					has_full_control_of_state = 838
-					has_full_control_of_state = 669
-				}
-			}
-		}
-		prerequisite = { focus = HOL_strategic_bombing_defense }
-		mutually_exclusive = { focus = HOL_air_cover_for_the_new_fleet }"
-			335 = {			
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_unsinkable_aircraft_carriers"
+			358 = {			
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			672 = {			
+			479 = {			
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			673 = {			
+			336 = {			
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			334 = {			
+			331 = {			
 				add_building_construction = {
 					type = air_base
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			667 = {			
+			402 = {			
 				add_building_construction = {
 					type = air_base
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			668 = {			
+			2713 = {			
 				add_building_construction = {
 					type = air_base
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			738 = {			
+			1974 = {			
 				add_building_construction = {
 					type = air_base
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			669 = {			
+			1319 = {			
 				add_building_construction = {
 					type = air_base
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}	
@@ -6041,9 +5973,9 @@ focus_tree = {
 	focus = {
 		id = HOL_develop_the_south
 		available = {
-			has_full_control_of_state = 6
-			has_full_control_of_state = 34
-			has_full_control_of_state = 8
+			has_full_control_of_state = 470
+			has_full_control_of_state = 482
+			has_full_control_of_state = 454
 		}
 		cancel_if_invalid = yes
 		prerequisite = { focus = HOL_revive_the_buffer_state_proposal }
@@ -6057,10 +5989,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HOL_develop_the_south"
-			6 = {
+			454 = {
 				if = {
 					limit = {
-						6 = {
+						454 = {
 							free_building_slots = {
 								building = industrial_complex
 								size > 1
@@ -6076,10 +6008,10 @@ focus_tree = {
 					}
 				}
 			}
-			34 = {
+			482 = {
 				if = {
 					limit = {
-						34 = {
+						482 = {
 							free_building_slots = {
 								building = arms_factory
 								size > 0
@@ -6100,10 +6032,10 @@ focus_tree = {
 					}
 				}
 			}
-			8 = {
+			470 = {
 				if = {
 					limit = {
-						8 = {
+						470 = {
 							free_building_slots = {
 								building = industrial_complex
 								size > 0
@@ -6590,13 +6522,13 @@ focus_tree = {
 					    engineer = { x = 0 y = 1 }
 					}
 				}
-				695 = {
+				402 = {
 					create_unit = {
 						division = "name = \"1. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5" 
 						owner = HOL
 					}
 				}
-				309 = {
+				358 = {
 					create_unit = {
 						division = "name = \"2. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5" 
 						owner = HOL
@@ -6653,8 +6585,8 @@ focus_tree = {
 			is_in_faction_with = USA
 			has_war = yes
 			NOT = { has_war_with = SOV }
-			has_full_control_of_state = 335
-			has_full_control_of_state = 672
+			has_full_control_of_state = 336
+			has_full_control_of_state = 402
 		}
 		prerequisite = { focus = HOL_combined_chiefs_of_staff_representation }
 		icon = GFX_focus_hol_the_fourth_ally
@@ -6667,10 +6599,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HOL_the_fourth_ally"
-			335 = {
+			336 = {
 				if = {
 					limit = {
-						335 = {
+						336 = {
 							free_building_slots = {
 								building = dockyard
 								size > 1
@@ -6686,10 +6618,10 @@ focus_tree = {
 					}
 				}
 			}
-			672 = {
+			402 = {
 				if = {
 					limit = {
-						672 = {
+						402 = {
 							free_building_slots = {
 								building = dockyard
 								size > 1
@@ -6706,47 +6638,6 @@ focus_tree = {
 				}
 			}
 			add_ideas = HOL_the_fourth_ally
-		}
-	}
-
-	focus = {
-		id = HOL_zandery_military_airport
-		available = {
-			is_in_faction_with = USA
-			has_war = yes
-			has_full_control_of_state = 309
-			has_full_control_of_state = 695
-		}
-		prerequisite = { focus = HOL_american_west_indies_protectorate }
-		icon = GFX_goal_generic_construct_military
-		x = 1
-		y = 2
-		relative_position_id = HOL_american_west_indies_protectorate
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_zandery_military_airport"
-			309 = {	
-				add_building_construction = {
-					type = air_base
-					level = 8
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			695 = {	
-				add_building_construction = {
-					type = radar_station
-					level = 3
-					instant_build = yes
-				}
-			}
 		}
 	}
 
