@@ -609,3 +609,11 @@ is_zakarpattia = {
 		state = 2246
 	}
 }
+is_mezzogiorno = {
+	OR = {
+		region = 17
+		region = 18
+		is_core_of = SRD
+		is_core_of = ABR
+	}
+}

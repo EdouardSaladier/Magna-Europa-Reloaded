@@ -20,12 +20,6 @@ every_owned_state = {
 	set_state_flag = SWI_INITIAL_STATE
 }
 
-every_state = {
-	limit = {
-		is_core_of = SWI
-	}
-	set_state_flag = SWI_INITIAL_STATE
-}
 
 set_technology = {
 	infantry_weapons = 1
