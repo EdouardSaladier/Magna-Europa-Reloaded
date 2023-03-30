@@ -16575,7 +16575,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_civil_war = yes
-			has_full_control_of_state = 162 #TOSCANA -> La Spezia, where railway guns were stored.
+			has_full_control_of_state = 1368 #TOSCANA -> La Spezia, where railway guns were stored.
 		}
 
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
