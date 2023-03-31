@@ -1,4 +1,4 @@
-name="Magna Europa Reloaded"
+name="Magna Europa: Reloaded"
 version="1"
 tags={
 	"Map"
@@ -47,4 +47,4 @@ replace_path="common/peace_conference/ai_peace"
 replace_path="events"
 picture="thumbnail.png"
 supported_version="1.12.*"
-remote_file_id="2817468565"
+remote_file_id="2955331364"
