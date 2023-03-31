@@ -20,7 +20,6 @@ ITA_alt_fascist_balbo = {
 
 	ai_national_focuses = {
 		#1936
-		ITA_ethiopian_war_logistics_bba 	#35	IND/COL
 		ITA_italian_highways_bba			#35	IND
 		ITA_undermine_the_duce				#35	POL
 		ITA_conspiracies_in_the_shadows		#35	POL
@@ -34,7 +33,6 @@ ITA_alt_fascist_balbo = {
 		ITA_foreign_affairs 				#35	DIP
 		ITA_steel_industry_in_terni			#70	CIV
 		ITA_corpo_di_truppe_volontarie 		#35	DIP
-		ITA_topple_amhara_rulers 			#35	COL
 		ITA_railway_innovations				#70	CIV
 		ITA_air_innovations_bba 			#35 AIR
 		ITA_ministry_of_italian_africa 		#35	COL
@@ -156,8 +154,7 @@ ITA_alt_fascist_grandi = {
 	}
 
 	ai_national_focuses = {
-		#1936	
-		ITA_ethiopian_war_logistics_bba 			#35		
+		#1936		
 		ITA_italian_highways_bba					#35	
 		ITA_undermine_the_duce						#35	
 		ITA_conspiracies_in_the_shadows				#35	
@@ -176,7 +173,6 @@ ITA_alt_fascist_grandi = {
 		ITA_guarantee_austrian_independence			#35
 		ITA_power_plants_in_terni					
 		ITA_the_new_emperor_of_ethiopia 			#35	
-		ITA_topple_amhara_rulers 					#35	
 			
 		#1938	
 		ITA_albanian_occupation						#35	
@@ -282,7 +278,6 @@ ITA_monarchist_plan = {
 
 	ai_national_focuses = {
 		#1936
-		ITA_ethiopian_war_logistics_bba 			#35
 		ITA_triumph_in_africa_bba 					#35	(as soon as possible)
 		ITA_italian_highways_bba					#35
 		ITA_undermine_the_duce						#35
@@ -300,7 +295,6 @@ ITA_monarchist_plan = {
 		ITA_ministry_of_italian_africa 				#35
 		ITA_army_primacy_bba						#35
 		ITA_fiocchi_munizioni 						#35
-		ITA_topple_amhara_rulers 					#35
 		ITA_naval_power_projection					#35
 		ITA_prospect_for_oil					#35
 			
@@ -314,7 +308,6 @@ ITA_monarchist_plan = {
 				
 		#1939
 		ITA_develop_libya							#35
-		ITA_develop_eritrea							#35
 		ITA_regional_development
 		ITA_support_albanian_irredentism			#35
 		ITA_industria_della_gomma_sintetica 		#35
@@ -411,7 +404,6 @@ ITA_christian_democracy_plan = {
 
 	ai_national_focuses = {
 		#1936
-		ITA_ethiopian_war_logistics_bba 			#35
 		ITA_triumph_in_africa_bba 					#35	(as soon as possible)
 		ITA_italian_highways_bba					#35
 		ITA_undermine_the_duce						#35
@@ -430,7 +422,6 @@ ITA_christian_democracy_plan = {
 		ITA_ministry_of_italian_africa 				#35
 		ITA_army_primacy_bba						#35
 		ITA_fiocchi_munizioni 						#35
-		ITA_topple_amhara_rulers 					#35
 		ITA_naval_power_projection					#35
 			
 		#1938
@@ -539,7 +530,6 @@ ITA_communist_plan = {
 
 	ai_national_focuses = {
 		#1936
-		ITA_ethiopian_war_logistics_bba 			#35
 		ITA_triumph_in_africa_bba 					#35	(as soon as possible)
 		ITA_unite_the_opposition					#35
 		ITA_the_southern_farmlands					#35
@@ -571,9 +561,6 @@ ITA_communist_plan = {
 		ITA_develop_libya							#35
 
 		#1939
-		ITA_develop_eritrea							#35
-		ITA_develop_ethiopia						#35
-		ITA_develop_somaliland						#35
 		ITA_regional_development
 		ITA_litoranea_balbo							#35
 		ITA_new_ricostruzione_industriale
@@ -662,7 +649,6 @@ ITA_democratic_plan = {
 
 	ai_national_focuses = {
 		#1936
-		ITA_ethiopian_war_logistics_bba 			#35
 		ITA_triumph_in_africa_bba 					#35	(as soon as possible)
 		ITA_unite_the_opposition					#35
 		ITA_organize_strikes_in_the_north			#35

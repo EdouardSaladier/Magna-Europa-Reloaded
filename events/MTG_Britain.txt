@@ -109,10 +109,7 @@ country_event = {
 		set_country_flag = edward_viii_refused_to_abdicate_flag
 		hidden_effect = {
 			CAN = { country_event = { id = mtg_britain.15 } }
-			SAF = { country_event = { id = mtg_britain.15 } }
-			RAJ = { country_event = { id = mtg_britain.15 } }
-			AST = { country_event = { id = mtg_britain.15 } }
-			NZL = { country_event = { id = mtg_britain.15 } }
+			EGY = { country_event = { id = mtg_britain.15 } }
 		}
 	}
 
@@ -185,10 +182,7 @@ country_event = {
 		set_country_flag = edward_viii_refused_to_abdicate_flag
 		hidden_effect = {
 			CAN = { country_event = { id = mtg_britain.15 } }
-			SAF = { country_event = { id = mtg_britain.15 } }
-			RAJ = { country_event = { id = mtg_britain.15 } }
-			AST = { country_event = { id = mtg_britain.15 } }
-			NZL = { country_event = { id = mtg_britain.15 } }
+			EGY = { country_event = { id = mtg_britain.15 } }
 		}
 	}
 }
@@ -293,10 +287,7 @@ country_event = {
 		if = {
 			limit = {
 				CAN = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				SAF = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				RAJ = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				AST = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				NZL = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+				EGY = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
 			}
 			dismantle_faction = yes
 		}
@@ -310,32 +301,9 @@ country_event = {
 			}
 			if = {
 				limit = {
-					SAF = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+					EGY = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
 				}
-				set_autonomy = { target = SAF autonomy_state = autonomy_free }
-			}
-			if = {
-				limit = {
-					RAJ = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				}
-				set_autonomy = { target = RAJ autonomy_state = autonomy_free }
-				RAJ = {
-					drop_cosmetic_tag = yes
-					retire_country_leader = yes
-					remove_from_tech_sharing_group = commonwealth_research
-				}
-			}
-			if = {
-				limit = {
-					AST = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				}
-				set_autonomy = { target = AST autonomy_state = autonomy_free }
-			}
-			if = {
-				limit = {
-					NZL = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				}
-				set_autonomy = { target = NZL autonomy_state = autonomy_free }
+				set_autonomy = { target = EGY autonomy_state = autonomy_free }
 			}
 			if = {
 				limit = {
@@ -345,55 +313,23 @@ country_event = {
 					create_faction = "ENG_commonwealth_of_nations"
 					if = {
 						limit = {
-							SAF = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+							EGY = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
 						}
-						add_to_faction = SAF
-					}
-					if = {
-						limit = {
-							AST = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-						}
-						add_to_faction = AST
-					}
-					if = {
-						limit = {
-							NZL = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-						}
-						add_to_faction = NZL
+						add_to_faction = EGY
 					}
 				}
 			}
 			else_if = {
 				limit = {
-					SAF = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+					EGY = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
 				}
-				SAF = {
+				EGY = {
 					create_faction = "ENG_commonwealth_of_nations"
 					if = {
 						limit = {
-							SAF = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+							EGY = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
 						}
-						add_to_faction = SAF
-					}
-					if = {
-						limit = {
-							NZL = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-						}
-						add_to_faction = NZL
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					AST = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				}
-				AST = {
-					create_faction = "ENG_commonwealth_of_nations"
-					if = {
-						limit = {
-							NZL = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-						}
-						add_to_faction = NZL
+						add_to_faction = EGY
 					}
 				}
 			}
@@ -415,48 +351,9 @@ country_event = {
 			}
 			if = {
 				limit = {
-					SAF = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+					EGY = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
 				}
-				SAF = {
-					country_event = { id = mtg_britain.16 }
-					add_ai_strategy = {
-						type = alliance
-						id = ENG
-						value = -200
-					}
-				}
-			}
-			if = {
-				limit = {
-					RAJ = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				}
-				RAJ = {
-					country_event = { id = mtg_britain.16 }
-					add_ai_strategy = {
-						type = alliance
-						id = ENG
-						value = -200
-					}
-				}
-			}
-			if = {
-				limit = {
-					AST = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				}
-				AST = {
-					country_event = { id = mtg_britain.16 }
-					add_ai_strategy = {
-						type = alliance
-						id = ENG
-						value = -200
-					}
-				}
-			}
-			if = {
-				limit = {
-					NZL = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
-				}
-				NZL = {
+				EGY = {
 					country_event = { id = mtg_britain.16 }
 					add_ai_strategy = {
 						type = alliance
@@ -1072,27 +969,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				tag = AST
-			}
-			effect_tooltip = {
-				add_stability = 0.05
-				add_opinion_modifier = { target = ENG modifier = ENG_guiding_the_colonies }
-				add_ideas = ENG_guided_by_britain_1
-			}
-		}
-		if = {
-			limit = {
-				tag = NZL
-			}
-			effect_tooltip = {
-				add_stability = 0.05
-				add_opinion_modifier = { target = ENG modifier = ENG_guiding_the_colonies }
-				add_ideas = ENG_guided_by_britain_1
-			}
-		}
-		if = {
-			limit = {
-				tag = SAF
+				tag = EGY
 			}
 			effect_tooltip = {
 				add_stability = 0.05
@@ -1129,29 +1006,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				tag = AST
-			}
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = ENG_guided_by_britain_1
-					add_idea = ENG_guided_by_britain_2
-				}
-			}
-		}
-		if = {
-			limit = {
-				tag = NZL
-			}
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = ENG_guided_by_britain_1
-					add_idea = ENG_guided_by_britain_2
-				}
-			}
-		}
-		if = {
-			limit = {
-				tag = SAF
+				tag = EGY
 			}
 			effect_tooltip = {
 				swap_ideas = {
@@ -3551,10 +3406,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = CAN
-			tag = SAF
-			tag = RAJ
-			tag = AST
-			tag = NZL
+			tag = EGY
 		}
 		is_subject_of = ENG
 		OR = {
@@ -5545,15 +5397,6 @@ country_event = {
 				FROM = {
 					load_focus_tree = { tree = canadian_focus keep_completed = yes }
 					CAN_enforce_loyalty = yes
-				}
-			}
-			if = {
-				limit = {
-					FROM = { original_tag = EGY }
-				}
-				FROM = {
-					load_focus_tree = { tree = south_african_focus keep_completed = yes }
-					SAF_enforce_loyalty = yes
 				}
 			}
 		}

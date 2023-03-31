@@ -7008,7 +7008,6 @@ focus_tree = {
 			add_stability = 0.05
 			add_political_power = 50
 
-			unlock_decision_category_tooltip = ETH_italian_occupation_category
 
 			
 
@@ -7197,15 +7196,6 @@ focus_tree = {
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_all_eth_initial_states_controlled_tt
-				NOT = {
-					any_state = {
-						is_initial_ethiopian_state = yes
-						is_controlled_by_ROOT_or_subject = no
-					}
-				}
-			}
 			
 			OR = {
 				custom_trigger_tooltip = {

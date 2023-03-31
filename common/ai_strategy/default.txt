@@ -733,12 +733,6 @@ default_area_priority = {
 
 	ai_strategy = {
 		type = area_priority
-		id = south_america
-		value = 40
-	}
-
-	ai_strategy = {
-		type = area_priority
 		id = asia
 		value = 75
 	}
@@ -759,18 +753,6 @@ default_area_priority = {
 		type = area_priority
 		id = suez
 		value = 50
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = pacific
-		value = 50
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = oceania
-		value = 75
 	}
 
 }
