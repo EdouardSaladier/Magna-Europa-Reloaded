@@ -4401,7 +4401,7 @@ focus_tree = {
 		icon = GFX_focus_invite_yugoslavia
 		relative_position_id = BUL_the_peoples_republic_of_bulgaria
 		x = 2
-		y = 1
+		y = 3
 		cost = 10
 
 		bypass = {
@@ -4429,15 +4429,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BUL_treaty_of_perpetual_friendship
-
-		prerequisite = { focus = BUL_the_peoples_republic_of_bulgaria }"
+			log = "[GetDateText]: [Root.GetName]: Focus BUL_treaty_of_perpetual_friendship"
 			unlock_decision_category_tooltip = BUL_the_balkan_federation_dream
 			YUG = {
 				country_event = { id = bftb_bulgaria_yugoslavian_influence.1 hours = 4 random_hours = 4 }
 			}
 			custom_effect_tooltip = BUL_treaty_of_perpetual_friendship_event_effects_tt
-			custom_effect_tooltip = BUL_treaty_of_perpetual_friendship_claims_tt
 			effect_tooltip = {
 				YUG = {
 					diplomatic_relation = {
@@ -4485,6 +4482,72 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = BUL_renounce_territorial_claims
+
+		prerequisite = { focus = BUL_the_peoples_republic_of_bulgaria focus = BUL_legislative_elections }
+		icon = GFX_goal_generic_major_alliance
+		relative_position_id = BUL_the_peoples_republic_of_bulgaria
+		x = 3
+		y = 1
+		cost = 5
+
+		bypass = {
+			
+		}
+
+		available = {
+			has_completed_focus = BUL_condemn_macedonian_organizations
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BUL_renounce_territorial_claims"
+			if = {
+				limit = {
+					has_completed_focus = BUL_the_peoples_republic_of_bulgaria
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = BUL
+						is_core_of = YUG
+						is_owned_by = YUG
+					}
+					remove_claim_by = BUL
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = BUL_legislative_elections
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = BUL
+						is_core_of = GRE
+						is_owned_by = GRE
+					}
+					remove_claim_by = BUL
+				}
+			}
+			else = {
+				every_state = {
+					limit = {
+						is_claimed_by = BUL
+						OR = {
+							AND = {
+								is_core_of = GRE
+								is_owned_by = GRE
+							}
+							AND = {
+								is_core_of = YUG
+								is_owned_by = YUG
+							}
+						}
+					}
+					remove_claim_by = BUL
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = BUL_balkan_federation_of_socialist_republics
@@ -4493,7 +4556,7 @@ focus_tree = {
 		icon = GFX_focus_BUL_balkan_federation_of_socialist_republics
 		relative_position_id = BUL_treaty_of_perpetual_friendship
 		x = 0
-		y = 4
+		y = 2
 		cost = 5
 		mutually_exclusive = { focus = BUL_follow_the_stalinist_doctrine }
 
@@ -4506,9 +4569,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BUL_balkan_federation_of_socialist_republics
-
-		prerequisite = { focus = BUL_treaty_of_perpetual_friendship }"
+			log = "[GetDateText]: [Root.GetName]: Focus BUL_balkan_federation_of_socialist_republics"
 			
 			add_stability = 0.1
 			create_faction = BUL_balkan_federation_of_socialist_republics		
@@ -5368,7 +5429,7 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_greece
 		relative_position_id = BUL_legislative_elections
 		x = -3
-		y = 1
+		y = 2
 		cost = 10
 
 		bypass = {
@@ -5455,7 +5516,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		relative_position_id = BUL_the_salonika_agreement
 		x = 0
-		y = 4
+		y = 3
 		cost = 5
 		mutually_exclusive = { focus = BUL_join_the_allies focus = BUL_the_fate_of_the_balkans }
 
@@ -5466,9 +5527,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BUL_a_balkan_confederation
-
-		prerequisite = { focus = BUL_the_salonika_agreement }"
+			log = "[GetDateText]: [Root.GetName]: Focus BUL_a_balkan_confederation"
 			add_stability = 0.05
 			add_political_power = 50
 			create_faction = BUL_balkan_federation_democratic
@@ -5733,9 +5792,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BUL_consolidate_the_third_bulgarian_state
-
-		prerequisite = { focus = BUL_join_the_allies focus = BUL_a_balkan_confederation }"
+			log = "[GetDateText]: [Root.GetName]: Focus BUL_consolidate_the_third_bulgarian_state"
 			add_political_power = 70
 			add_war_support = 0.05
 			add_ideas = BUL_third_bulgarian_state
@@ -6546,9 +6603,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BUL_support_macedonian_organizations
-
-		prerequisite = { focus = BUL_power_to_the_tsar focus = BUL_oppose_the_royal_dictatorship }"
+			log = "[GetDateText]: [Root.GetName]: Focus BUL_support_macedonian_organizations"
 			add_threat = 1
 			BUL_zveno_low_loyalty_decrease_effect = yes
 			BUL_bs_low_loyalty_decrease_effect = yes

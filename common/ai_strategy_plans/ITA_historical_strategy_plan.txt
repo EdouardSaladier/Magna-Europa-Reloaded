@@ -30,6 +30,7 @@ ITA_historical_plan = {
 	ai_national_focuses = {
 		#1936
 		ITA_italian_highways_bba #35
+		ITA_solid_progress #35
 		ITA_servizio_informazione_militare #ASAP after Solid Progress / Struggle in Ethiopia
 		ITA_triumph_in_africa_bba #35 ASAP after winning in Ethiopia
 		ITA_ministry_of_italian_africa #35 ASAP after winning in Ethiopia
@@ -113,6 +114,8 @@ ITA_historical_plan = {
 
 	#Focuses never to take
 	focus_factors = {
+		ITA_the_abyssinian_fiasco = 0
+		ITA_struggle_in_ethiopia = 0
 		ITA_defy_the_duce = 0
 		ITA_unite_the_opposition = 0
 		ITA_liberate_gramsci = 0

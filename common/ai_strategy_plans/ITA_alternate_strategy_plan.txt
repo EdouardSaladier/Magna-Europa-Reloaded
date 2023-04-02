@@ -21,6 +21,7 @@ ITA_alt_fascist_balbo = {
 	ai_national_focuses = {
 		#1936
 		ITA_italian_highways_bba			#35	IND
+		ITA_struggle_in_ethiopia			#35 POL
 		ITA_undermine_the_duce				#35	POL
 		ITA_conspiracies_in_the_shadows		#35	POL
 		ITA_convene_the_grand_council 		#35	POL
@@ -102,6 +103,7 @@ ITA_alt_fascist_balbo = {
 
 	#Focuses never to take
 	focus_factors = {
+		ITA_the_abyssinian_fiasco = 0
 		ITA_culto_del_duce = 0
 		ITA_defy_the_duce = 0
 		ITA_dino_grandi_focus = 0
@@ -156,6 +158,7 @@ ITA_alt_fascist_grandi = {
 	ai_national_focuses = {
 		#1936		
 		ITA_italian_highways_bba					#35	
+		ITA_struggle_in_ethiopia					#35
 		ITA_undermine_the_duce						#35	
 		ITA_conspiracies_in_the_shadows				#35	
 		ITA_convene_the_grand_council 				#35	
@@ -230,6 +233,7 @@ ITA_alt_fascist_grandi = {
 
 	#Focuses never to take
 	focus_factors = {
+		ITA_the_abyssinian_fiasco = 0
 		ITA_culto_del_duce = 0
 		ITA_defy_the_duce = 0
 		ITA_italo_balbo_focus = 0
@@ -280,6 +284,7 @@ ITA_monarchist_plan = {
 		#1936
 		ITA_triumph_in_africa_bba 					#35	(as soon as possible)
 		ITA_italian_highways_bba					#35
+		ITA_struggle_in_ethiopia					#35
 		ITA_undermine_the_duce						#35
 		ITA_servizio_informazione_militare 			
 		ITA_conspiracies_in_the_shadows				#35
@@ -351,6 +356,8 @@ ITA_monarchist_plan = {
 
 	#Focuses never to take
 	focus_factors = {
+		ITA_solid_progress = 0
+		ITA_the_abyssinian_fiasco = 0
 		ITA_culto_del_duce = 0
 		ITA_defy_the_duce = 0
 		ITA_italo_balbo_focus = 0
@@ -406,6 +413,7 @@ ITA_christian_democracy_plan = {
 		#1936
 		ITA_triumph_in_africa_bba 					#35	(as soon as possible)
 		ITA_italian_highways_bba					#35
+		ITA_struggle_in_ethiopia					#35
 		ITA_undermine_the_duce						#35
 		ITA_servizio_informazione_militare 			
 		ITA_conspiracies_in_the_shadows				#35
@@ -476,6 +484,8 @@ ITA_christian_democracy_plan = {
 
 	#Focuses never to take
 	focus_factors = {
+		ITA_solid_progress = 0
+		ITA_the_abyssinian_fiasco = 0
 		ITA_culto_del_duce = 0
 		ITA_defy_the_duce = 0
 		ITA_italo_balbo_focus = 0
@@ -531,6 +541,7 @@ ITA_communist_plan = {
 	ai_national_focuses = {
 		#1936
 		ITA_triumph_in_africa_bba 					#35	(as soon as possible)
+		ITA_the_abyssinian_fiasco					#35
 		ITA_unite_the_opposition					#35
 		ITA_the_southern_farmlands					#35
 		ITA_liberate_gramsci						#35
@@ -602,6 +613,8 @@ ITA_communist_plan = {
 
 	#Focuses never to take
 	focus_factors = {
+		ITA_solid_progress = 0
+		ITA_struggle_in_ethiopia = 0
 		ITA_culto_del_duce = 0
 		ITA_monarchia_d_italia = 0
 		ITA_italian_socialism = 0
@@ -650,6 +663,7 @@ ITA_democratic_plan = {
 	ai_national_focuses = {
 		#1936
 		ITA_triumph_in_africa_bba 					#35	(as soon as possible)
+		ITA_the_abyssinian_fiasco					#35
 		ITA_unite_the_opposition					#35
 		ITA_organize_strikes_in_the_north			#35
 		ITA_servizio_informazione_militare 					
@@ -717,6 +731,8 @@ ITA_democratic_plan = {
 
 	#Focuses never to take
 	focus_factors = {
+		ITA_solid_progress = 0
+		ITA_struggle_in_ethiopia = 0
 		ITA_culto_del_duce = 0
 		ITA_monarchia_d_italia = 0
 		ITA_the_popular_front = 0
