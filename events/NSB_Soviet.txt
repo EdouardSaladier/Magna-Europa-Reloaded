@@ -1,3 +1,4 @@
+
 ###########################
 # NSB Soviet Events
 ###########################
@@ -3038,13 +3039,16 @@ country_event = {
 		custom_effect_tooltip = SOV_operation_countenance_successful_tt
 		effect_tooltip = {
 			puppet = PER
-			transfer_state = 419 #Tibriz (AZB)
-			transfer_state = 420 #Gilan (AZB)
-			transfer_state = 416 #Khorasan
+			every_state = {
+				limit = {
+					is_north_iran = yes
+				}
+				transfer_state_to = SOV
+			}
 			PER = {
-				give_resource_rights = { receiver = SOV state = 411 }
-				give_resource_rights = { receiver = SOV state = 412 }
-				give_resource_rights = { receiver = SOV state = 413 }
+				give_resource_rights = { receiver = SOV state = 1238 }
+				give_resource_rights = { receiver = SOV state = 2394 }
+				give_resource_rights = { receiver = SOV state = 1300 }
 			}
 		}
 	}
@@ -3105,15 +3109,16 @@ country_event = {
 			ENG = {
 				puppet = PER
 			}
-			SOV = {
-				transfer_state = 419 #Tibriz (AZB)
-				transfer_state = 420 #Gilan (AZB)
-				transfer_state = 416 #Khorasan
+			every_state = {
+				limit = {
+					is_north_iran = yes
+				}
+				transfer_state_to = SOV
 			}
 			PER = {
-				give_resource_rights = { receiver = SOV state = 411 }
-				give_resource_rights = { receiver = SOV state = 412 }
-				give_resource_rights = { receiver = ENG state = 413 }
+				give_resource_rights = { receiver = SOV state = 2394 }
+				give_resource_rights = { receiver = SOV state = 1238 }
+				give_resource_rights = { receiver = ENG state = 1300 }
 				give_military_access = SOV
 			}
 
@@ -3121,13 +3126,16 @@ country_event = {
 			activate_mission = SOV_preparations_for_operation_countenance
 			custom_effect_tooltip = SOV_operation_countenance_successful_tt
 			puppet = PER
-			transfer_state = 419 #Tibriz (AZB)
-			transfer_state = 420 #Gilan (AZB)
-			transfer_state = 416 #Khorasan
+			every_state = {
+				limit = {
+					is_north_iran = yes
+				}
+				transfer_state_to = SOV
+			}
 			PER = {
-				give_resource_rights = { receiver = SOV state = 411 }
-				give_resource_rights = { receiver = SOV state = 412 }
-				give_resource_rights = { receiver = SOV state = 413 }
+				give_resource_rights = { receiver = SOV state = 2394 }
+				give_resource_rights = { receiver = SOV state = 1238 }
+				give_resource_rights = { receiver = SOV state = 1300 }
 			}
 		}
 	}
@@ -3197,15 +3205,16 @@ country_event = {
 
 			custom_effect_tooltip = SOV_operation_countenance_successful_tt
 			puppet = PER
-			SOV = {
-				transfer_state = 419 #Tibriz (AZB)
-				transfer_state = 420 #Gilan (AZB)
-				transfer_state = 416 #Khorasan
+			every_state = {
+				limit = {
+					is_north_iran = yes
+				}
+				transfer_state_to = SOV
 			}
 			PER = {
-				give_resource_rights = { receiver = SOV state = 411 }
-				give_resource_rights = { receiver = SOV state = 412 }
-				give_resource_rights = { receiver = ENG state = 413 }
+				give_resource_rights = { receiver = SOV state = 2394 }
+				give_resource_rights = { receiver = SOV state = 1238 }
+				give_resource_rights = { receiver = ENG state = 1300 }
 				give_military_access = SOV
 			}
 		}
@@ -3250,13 +3259,16 @@ country_event = {
 			ENG = {
 				puppet = PER
 			}
-			transfer_state = 419 #Tibriz (AZB)
-			transfer_state = 420 #Gilan (AZB)
-			transfer_state = 416 #Khorasan
+			every_state = {
+				limit = {
+					is_north_iran = yes
+				}
+				transfer_state_to = SOV
+			}
 			PER = {
-				give_resource_rights = { receiver = SOV state = 411 }
-				give_resource_rights = { receiver = SOV state = 412 }
-				give_resource_rights = { receiver = ENG state = 413 }
+				give_resource_rights = { receiver = SOV state = 2394 }
+				give_resource_rights = { receiver = SOV state = 1238 }
+				give_resource_rights = { receiver = ENG state = 1300 }
 				give_military_access = SOV
 			}
 		}
@@ -3282,13 +3294,16 @@ country_event = {
 		effect_tooltip = {
 			custom_effect_tooltip = SOV_operation_countenance_successful_tt
 			puppet = PER
-			transfer_state = 419 #Tibriz (AZB)
-			transfer_state = 420 #Gilan (AZB)
-			transfer_state = 416 #Khorasan
+			every_state = {
+				limit = {
+					is_north_iran = yes
+				}
+				transfer_state_to = SOV
+			}
 			PER = {
-				give_resource_rights = { receiver = SOV state = 411 }
-				give_resource_rights = { receiver = SOV state = 412 }
-				give_resource_rights = { receiver = SOV state = 413 }
+				give_resource_rights = { receiver = SOV state = 2394 }
+				give_resource_rights = { receiver = SOV state = 1238 }
+				give_resource_rights = { receiver = SOV state = 1300 }
 			}
 		}
 	}
@@ -3304,17 +3319,20 @@ country_event = {
 	hidden = yes
 
 	immediate = {
-		transfer_state = 419 #Tibriz (AZB)
-		transfer_state = 420 #Gilan (AZB)
-		transfer_state = 416 #Khorasan
+		every_state = {
+				limit = {
+					is_north_iran = yes
+				}
+				transfer_state_to = SOV
+			}
 		PER = {
-			give_resource_rights = { receiver = SOV state = 411 }
-			give_resource_rights = { receiver = SOV state = 412 }
-			give_resource_rights = { receiver = SOV state = 413 }
+			give_resource_rights = { receiver = SOV state = 2394 }
+			give_resource_rights = { receiver = SOV state = 1238 }
+			give_resource_rights = { receiver = SOV state = 1300 }
 		}
-		411 = { set_state_flag = SOV_soviet_resource_rights_iran_flag }
-		412 = { set_state_flag = SOV_soviet_resource_rights_iran_flag }
-		413 = { set_state_flag = SOV_soviet_resource_rights_iran_flag }
+		2394 = { set_state_flag = SOV_soviet_resource_rights_iran_flag }
+		1238 = { set_state_flag = SOV_soviet_resource_rights_iran_flag }
+		1300 = { set_state_flag = SOV_soviet_resource_rights_iran_flag }
 	}
 }
 
@@ -3328,18 +3346,21 @@ country_event = {
 	hidden = yes
 
 	immediate = {
-		transfer_state = 419 #Tibriz (AZB)
-		transfer_state = 420 #Gilan (AZB)
-		transfer_state = 416 #Khorasan
+		every_state = {
+				limit = {
+					is_north_iran = yes
+				}
+				transfer_state_to = SOV
+			}
 		PER = {
-			give_resource_rights = { receiver = SOV state = 411 }
-			give_resource_rights = { receiver = SOV state = 412 }
-			give_resource_rights = { receiver = ENG state = 413 }
+			give_resource_rights = { receiver = SOV state = 2394 }
+			give_resource_rights = { receiver = SOV state = 1238 }
+			give_resource_rights = { receiver = ENG state = 1300 }
 			give_military_access = ROOT
 		}
-		411 = { set_state_flag = SOV_soviet_resource_rights_iran_flag }
-		412 = { set_state_flag = SOV_soviet_resource_rights_iran_flag }
-		413 = { set_state_flag = SOV_british_resource_rights_iran_flag }
+		2394 = { set_state_flag = SOV_soviet_resource_rights_iran_flag }
+		1238 = { set_state_flag = SOV_soviet_resource_rights_iran_flag }
+		1300 = { set_state_flag = SOV_british_resource_rights_iran_flag }
 	}
 }
 

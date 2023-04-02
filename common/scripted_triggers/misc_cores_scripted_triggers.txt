@@ -617,3 +617,15 @@ is_mezzogiorno = {
 		is_core_of = ABR
 	}
 }
+is_north_iran = {
+	OR = {
+		state = 1040
+		state = 2919
+		state = 1025
+		state = 2354
+		state = 1024
+		state = 2546
+		state = 2547
+		state = 2355
+	}
+}
