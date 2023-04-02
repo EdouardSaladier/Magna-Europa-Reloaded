@@ -226,29 +226,29 @@ country_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event france.101 FROM = [From.GetName]" }
 	hidden = yes
 	trigger = {
-		tag = FRA
-		has_war_with = GER
-		has_government = democratic
-		571 = { is_controlled_by = GER }
-		is_in_faction_with = ENG
-		ENG = { has_war_with = GER }
-		surrender_progress > 0.5
-		GER = {
-			OR = {
-				is_faction_leader = yes
-				has_government = neutrality
-			}
-		}
-		has_civil_war = no
-		#Don't fire if France has pushed pretty far into ITA or GER
-		
-			
-				1745 = {
-					NOT = { is_controlled_by = FRA }
-				}
-			
-				
-
+	#	tag = FRA
+	#	has_war_with = GER
+	#	has_government = democratic
+	#	571 = { is_controlled_by = GER }
+	#	is_in_faction_with = ENG
+	#	ENG = { has_war_with = GER }
+	#	surrender_progress > 0.5
+	#	GER = {
+	#		OR = {
+	#			is_faction_leader = yes
+	#			has_government = neutrality
+	#		}
+	#	}
+	#	has_civil_war = no
+	#	#Don't fire if France has pushed pretty far into ITA or GER
+	#	
+	#		
+	#			1745 = {
+	#				NOT = { is_controlled_by = FRA }
+	#			}
+	#		
+	#			
+	#
 		#Don't fire if any states in France are controlled by a different human player
 		#NOT = {
 		#	any_country = {
@@ -268,6 +268,7 @@ country_event = {
 		#		}
 		#	}
 		#}
+		always = no
 	}
 	mean_time_to_happen = { days = 2 }
 	immediate = {
@@ -475,7 +476,7 @@ country_event = {
 		}
 		trigger = {
 			has_government = fascism
-			#not = { has_dlc = "La Resistance" }
+			not = { has_dlc = "La Resistance" }
 		}
 		#Set same cosmetic tag they would get on capitulation
 		FRA = {
@@ -497,58 +498,63 @@ country_event = {
 			transfer_state_to = ITA
 		}
 		if = { #PART 2
-			limit = {
-				all_state = {
-					is_ita_occupation_zone = yes
-					is_owned_by = ITA
-				}
-			}
-			
-			every_state = {
-				limit = {
-					is_ita_occupation_zone_2 = yes
-					is_controlled_by = ITA
-				}
-				transfer_state_to = ITA
-			}
-			
-		}
-		if = { #PART 3
-			limit = {
-				all_state = {
-					is_ita_occupation_zone_2 = yes
-					is_controlled_by = ITA
-				}
-			}
-			
-				every_state = {
 					limit = {
-						is_ita_occupation_zone_3 = yes
-						is_controlled_by = ITA
-						owner = { tag = FRA }
+						all_state = {
+							if = {
+								limit = {
+									is_ita_occupation_zone = yes	
+								}
+								is_controlled_by = ITA
+							}
+						}
 					}
-					transfer_state_to = ITA
+					every_state = {
+						limit = {
+							is_ita_occupation_zone_2 = yes
+							is_controlled_by = ITA
+						}
+						transfer_state_to = ITA
+					}
 				}
-			
-		}
-		if = { #PART 4
-			limit = {
-				all_state = {
-					is_ita_occupation_zone_3 = yes	
-					is_controlled_by = ITA
-					
+				if = { #PART 3
+					limit = {
+						all_state = {
+							if = {
+								limit = {
+									is_ita_occupation_zone_2 = yes	
+								}
+								is_controlled_by = ITA
+							}
+						}
+					}
+					every_state = {
+						limit = {
+							is_ita_occupation_zone_3 = yes
+							is_controlled_by = ITA
+							owner = { tag = FRA }
+						}
+						transfer_state_to = ITA
+					}
 				}
-			}
-			
-			every_state = {
-				limit = {
-					is_ita_occupation_zone_4 = yes
-					is_controlled_by = ITA
+				if = { #PART 4
+					limit = {
+						all_state = {
+							if = {
+								limit = {
+									is_ita_occupation_zone_3 = yes	
+								}
+								is_controlled_by = ITA
+							}
+						}
+					}
+					every_state = {
+						limit = {
+							is_ita_occupation_zone_4 = yes
+							is_controlled_by = ITA
+						}
+						transfer_state_to = ITA
+					}
 				}
-				transfer_state_to = ITA
-			}
-			
-		}
 		if = {
 			limit = {
 				

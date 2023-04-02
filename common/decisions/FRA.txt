@@ -1427,8 +1427,8 @@ political_actions = {
 			has_completed_focus = FRA_utilize_the_leagues 
 			NOT = { has_government = fascism }
 		}
-		days_re_enable = 30
-		complete_effect = {
+		days_remove = 1
+		remove_effect = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.1
@@ -1442,6 +1442,47 @@ political_actions = {
 				has_stability < 0.3
 				factor = 0
 			}
+		}
+	}
+	FRA_fall_of_france = {
+		allowed = {
+			tag = FRA
+		}
+		activation = {
+			has_war_with = GER
+			has_government = democratic
+			571 = { OR = { is_controlled_by = GER is_controlled_by = MVF } }
+			is_in_faction_with = ENG
+			ENG = { has_war_with = GER }
+			surrender_progress > 0.5
+			GER = {
+				OR = {
+					is_faction_leader = yes
+					has_government = neutrality
+				}
+			}
+			has_civil_war = no
+			#Don't fire if France has pushed pretty far into ITA or GER
+			
+				
+					1745 = {
+						NOT = { is_controlled_by = FRA }
+					}
+				
+					
+
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		days_mission_timeout = 0
+		timeout_effect = {
+			
+			FRA = { country_event = france.10 }
+			
 		}
 	}
 }
