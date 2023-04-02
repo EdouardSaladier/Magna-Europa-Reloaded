@@ -744,7 +744,7 @@ country_event = {
 			start_civil_war = {
 				ideology = fascism
 				size = 0.2
-				capital = 282
+				capital = 174
 			}
 		}
 		else = { #Regular CW
@@ -752,14 +752,14 @@ country_event = {
 				ideology = fascism
 				size = party_popularity@fascism
 				states = {
-					190 809
+					174 1344 67 188 1345 91
 				}
 			}
 		}
 		
 		random_other_country = {
 			limit = { original_tag = LAT }
-			set_capital = { state = 809 } #Move the capital to Zemgale
+			set_capital = { state = 174 } #Move the capital to Zemgale
 		}
 		hidden_effect = {
 			if = {
@@ -809,13 +809,13 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		set_capital = { state = 809 } #Move the capital to Zemgale
+		set_capital = { state = 172 } #Move the capital to Zemgale
 		start_civil_war = {
 			ruling_party = fascism
 			ideology = neutrality
 			size = 0.45
 			states = {
-				808 12 810
+				172 95 112 2772 1347 170 185 1350 1351 1349 2541 2720 1348 2523 94 2774 87
 			}
 		}
 	}
