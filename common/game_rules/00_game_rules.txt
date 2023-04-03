@@ -1793,6 +1793,26 @@ ita_fragmentation_status = {
 		desc = "RULE_OPTION_ITA_MORE_FRAGMENTATION_DESC"
 	}
 }
+qbc_status = {
+	name = "QBC_STATUS"
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT_STATUS"
+		desc = "RULE_OPTION_DEFAULT_STATUS_DESC"
+	}
+	option = {
+		name = QBC_AUTONOMOUS
+		text = "RULE_OPTION_QBC_AUTONOMOUS"
+		desc = "RULE_OPTION_QBC_AUTONOMOUS_DESC"
+	}
+	option = {
+		name = QBC_INDEPENDENT
+		text = "RULE_OPTION_QBC_INDEPENDENT"
+		desc = "RULE_OPTION_QBC_INDEPENDENT_DESC"
+	}
+}
 kongs_secret_stuff = {
 	name = "FBKong's Secret Stuff"
 	group = "RULE_GROUP_GAME_SETUP"

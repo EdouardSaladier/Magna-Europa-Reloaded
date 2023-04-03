@@ -519,6 +519,37 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
+						rule = qbc_status
+						option = QBC_INDEPENDENT
+					}
+				}
+				every_state = {
+					limit = { has_state_flag = QBC_CORE }
+				add_core_of = QBC
+				transfer_state_to = QBC
+				remove_core_of = CAN
+				add_claim_by = CAN
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = qbc_status
+						option = QBC_AUTONOMOUS
+					}
+				}
+				every_state = {
+					limit = { has_state_flag = QBC_CORE }
+				add_core_of = QBC
+				transfer_state_to = QBC
+				remove_core_of = CAN
+				CAN = {
+					set_autonomy = { target = QBC autonomy_state = autonomy_integrated_puppet }
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
 						rule = eng_fragmentation_status
 						option = ENG_FRAGMENTED
 					}

@@ -70,6 +70,10 @@ ideas = {
 				always = no
 			}
 
+			available = {
+				owns_state = 1
+			}
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -87,6 +91,10 @@ ideas = {
 
 			allowed = {
 				always = no
+			}
+
+			available = {
+				owns_state = 1
 			}
 
 			allowed_civil_war = {

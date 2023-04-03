@@ -1,4 +1,11 @@
 ﻿l_english:
+ RULE_OPTION_DEFAULT_STATUS:0 "Default Status"
+ RULE_OPTION_DEFAULT_STATUS_DESC:0 "No change in the status of the country"
+ QBC_STATUS:0 "Quebec"
+ RULE_OPTION_QBC_AUTONOMOUS:0 "Autonomous Quebec"
+ RULE_OPTION_QBC_AUTONOMOUS_DESC:0 "Quebec will be released as a Canadian integrated puppet"
+ RULE_OPTION_QBC_INDEPENDENT:0 "Independent Quebec"
+ RULE_OPTION_QBC_INDEPENDENT_DESC:0 "Quebec will be released as an independent country"
  RULE_OPTION_DEFAULT_KONG_DESC:0 "No secrets are enabled. How sad."
  RULE_OPTION_SECRET_ENABLED:0 "Secrets Enabled"
  RULE_OPTION_SECRET_ENABLED_DESC:0 "What could I be? Who knows? I think you should enable me :)"
