@@ -297,6 +297,15 @@ is_soviet_mr = {
 		state = 2345
 	}
 }
+is_bialystok_region = {
+	state = 1287
+	state = 312
+	state = 2485
+	state = 319
+	state = 2026
+	state = 306
+	state = 2522
+}
 is_transnistria = {
 	OR = {
 		state = 618

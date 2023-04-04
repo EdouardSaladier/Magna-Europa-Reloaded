@@ -1,4 +1,4 @@
-name="Magna Europa: Reloaded"
+name="Magna Europa Reloaded"
 version="1"
 tags={
 	"Map"

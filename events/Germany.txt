@@ -489,7 +489,10 @@ country_event = {
 											is_faction_leader = yes
 										}
 									}
-									is_controlled_by = SOV
+									OR = {
+										is_controlled_by = SOV
+										controller = { is_subject_of = SOV }
+									}
 								}
 								
 							}
