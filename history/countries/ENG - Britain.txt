@@ -262,6 +262,10 @@ if = {
 		target = GUE
 		autonomous_state = autonomy_personal_union
 	}
+	set_autonomy = {
+		target = ISM
+		autonomous_state = autonomy_personal_union
+	}
 	else_if = {
 		limit = { has_dlc = "Together for Victory" }
 		set_autonomy = {
@@ -272,8 +276,12 @@ if = {
 			target = GUE
 			autonomous_state = autonomy_dominion
 		}
+		set_autonomy = {
+			target = ISM
+			autonomous_state = autonomy_dominion
+		}
 	}
-	else = { puppet = JER puppet = GUE }
+	else = { puppet = JER puppet = GUE puppet = ISM }
 }
 set_subject_cosmetic_tags = yes
 

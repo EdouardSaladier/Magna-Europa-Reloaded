@@ -3268,20 +3268,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_hermann_goring_werke"
-			random_owned_controlled_state = {
+			392 = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
 						include_locked = yes
-					}
-					NOT = { # keeps things a lil more in line with the state development, who wants to build a factory in a backwater
-						has_state_category = wasteland
-						has_state_category = enclave
-						has_state_category = tiny_island
-						has_state_category = small_island
-						has_state_category = pastoral
-						has_state_category = rural
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -3292,22 +3284,8 @@ focus_tree = {
 				}
 				set_state_flag = GER_industrial_effort_2IC
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					NOT = { 
-						has_state_category = wasteland
-						has_state_category = enclave
-						has_state_category = tiny_island
-						has_state_category = small_island
-						has_state_category = pastoral
-						has_state_category = rural
-					}
-				}
+			1726 = {
+				set_state_category = rural
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -3372,20 +3350,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_kdf_wagen"
-			random_owned_controlled_state = {
+			392 = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
 						include_locked = yes
-					}
-					NOT = { 
-						has_state_category = wasteland
-						has_state_category = enclave
-						has_state_category = tiny_island
-						has_state_category = small_island
-						has_state_category = pastoral
-						has_state_category = rural
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -3395,21 +3365,39 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
+				else = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+							NOT = { 
+								has_state_category = wasteland
+								has_state_category = enclave
+								has_state_category = tiny_island
+								has_state_category = small_island
+								has_state_category = pastoral
+								has_state_category = rural
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = GER_industrial_effort_2_2IC
+					}
+				}
 			}
-			random_owned_controlled_state = {
+			1726 = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
 						include_locked = yes
-					}
-					NOT = { 
-						has_state_category = wasteland
-						has_state_category = enclave
-						has_state_category = tiny_island
-						has_state_category = small_island
-						has_state_category = pastoral
-						has_state_category = rural
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -3418,7 +3406,35 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+				custom_effect_tooltip = GER_found_wolfsburg_tt
+				hidden_effect = { set_province_name = { id = 11719 name = Wolfsburg } set_victory_points = { province = 11719 value = 10 } }
 				set_state_flag = GER_industrial_effort_2_2IC
+				else = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+							NOT = { 
+								has_state_category = wasteland
+								has_state_category = enclave
+								has_state_category = tiny_island
+								has_state_category = small_island
+								has_state_category = pastoral
+								has_state_category = rural
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = GER_industrial_effort_2_2IC
+					}
+				}
 			}
 			random_owned_controlled_state = {
 				limit = {
