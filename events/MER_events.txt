@@ -236,3 +236,21 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mer_event.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.7 FROM = [From.GetName]" }
+	title = mer_event.7.t
+	desc = mer_event.7.desc
+	trigger = {
+		tag = GER
+		has_government = fascism
+		is_in_faction_with = ITA
+		is_faction_leader = yes
+	}
+	fire_only_once = yes
+	hidden = yes
+	immediate = {
+		GER = { set_faction_name = ROME_BERLIN_FACTION }
+	}
+}
