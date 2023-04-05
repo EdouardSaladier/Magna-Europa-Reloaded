@@ -6,9 +6,8 @@ add_command_power = 30
 set_convoys = 300
 
 every_owned_state = {
-	limit = {
-		set_state_flag = FRA_INITIAL_STATE
-	}
+	set_state_flag = FRA_INITIAL_STATE
+	
 }
 
 if = {
