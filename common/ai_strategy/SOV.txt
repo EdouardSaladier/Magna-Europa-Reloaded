@@ -2139,3 +2139,20 @@ ALLIES_avoid_enemies_for_a_while_ww3 = {
 		value = -200
 	}
 }
+SOV_ohshitohfuckgermanyiscoming = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		date > 1941.1.1
+	}
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 400
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 60
+	}
+}

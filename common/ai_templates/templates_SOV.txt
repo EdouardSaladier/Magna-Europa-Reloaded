@@ -572,7 +572,7 @@ infantry_SOV = {
 			}
 		}
 
-		target_width = 54.0
+		target_width = 40.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -626,8 +626,7 @@ infantry_SOV = {
 			}
 
 			regiments = {
-				infantry = 9
-				artillery_brigade = 2
+				infantry = 10
 			}
 		}
 
@@ -675,8 +674,8 @@ infantry_SOV = {
 			has_equipment = {artillery_equipment > 4000}
 		}
 
-		target_width = 54.0
-		width_weight = 1.0
+		target_width = 44.0
+		width_weight = 0.9
 		column_swap_factor = 0.5
 
 		stat_weights = {
@@ -730,8 +729,8 @@ infantry_SOV = {
 			}
 
 			regiments = {
-				infantry = 9
-				artillery_brigade = 3
+				infantry = 7
+				artillery_brigade = 2
 			}
 		}
 
