@@ -1000,45 +1000,18 @@ country_event = {
 		custom_effect_tooltip = mer_GER_transfer_polish_states
 		custom_effect_tooltip = mer_GER_core_polish_states
 		hidden_effect = {
-			# west prussia
-			transfer_state = 287
-			transfer_state = 310
-			transfer_state = 2567
-			transfer_state = 546
-			transfer_state = 2341
-			transfer_state = 264
-			transfer_state = 267
-			add_state_core = 287
-			add_state_core = 310
-			add_state_core = 2567
-			add_state_core = 546
-			add_state_core = 2341
-			add_state_core = 264
-			add_state_core = 267
-			# posnan
-			transfer_state = 80
-			transfer_state = 335
-			transfer_state = 243
-			transfer_state = 79
-			transfer_state = 122
-			transfer_state = 99
-			transfer_state = 82
-			transfer_state = 549
-			add_state_core = 80
-			add_state_core = 335
-			add_state_core = 243
-			add_state_core = 79
-			add_state_core = 122
-			add_state_core = 99
-			add_state_core = 82
-			add_state_core = 549
-			# katowice
-			transfer_state = 2329
-			transfer_state = 481
-			transfer_state = 2262
-			add_state_core = 2329
-			add_state_core = 481
-			add_state_core = 2262
+			every_state = {
+				limit = {
+					is_polish_german_empire = yes
+					is_owned_by = POL
+				}
+				transfer_state_to = GER
+				add_core_of = GER
+			}
+			annex_country = {
+				target = DNZ
+				transfer_troops = no
+			}
 		}
 		add_ideas = anti_soviet_pact
 		POL = { 
