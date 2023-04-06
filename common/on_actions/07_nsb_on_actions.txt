@@ -1555,12 +1555,6 @@ on_actions = {
 						}
 					}
 				}
-				if = { ## GREAT PATRIOTIC WAR
-					limit = {
-						NOT = { has_country_flag = SOV_great_patriotic_war_flag }
-					}
-					SOV = { set_country_flag = SOV_great_patriotic_war_flag }
-				}
 				if = { ## THIRD FIVE YEAR PLAN
 					limit = {
 						SOV = { NOT = { has_country_flag = SOV_third_five_year_plan_locked_flag } }
@@ -1597,6 +1591,32 @@ on_actions = {
 
 						country_event = NSB_soviet_five_year_plan.01
 					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							ROOT = { original_tag = SOV }
+							FROM = {
+								is_major = yes
+								NOT = { original_tag = SOV }
+							}
+						}
+						AND = {
+							FROM = { original_tag = SOV }
+							ROOT = {
+								is_major = yes
+								NOT = { original_tag = SOV }
+							}
+						}
+					}
+				}
+				if = { ## GREAT PATRIOTIC WAR
+					limit = {
+						NOT = { has_country_flag = SOV_great_patriotic_war_flag }
+					}
+					SOV = { set_country_flag = SOV_great_patriotic_war_flag }
 				}
 			}
 		}
