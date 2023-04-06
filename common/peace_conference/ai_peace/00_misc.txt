@@ -102,6 +102,32 @@ peace_ai_desires = {
         }
         ai_desire = 100
     }
+	
+	ai_do_annex_wargoal = {
+        peace_action_type = take_states
+        enable = {
+            FROM.FROM = {
+                has_war_with_wargoal_against = {
+                  target = ROOT
+                  type = annex_everything
+                }
+            }
+        }
+        ai_desire = 2500
+    }
+	
+	ai_do_puppet_wargoal = {
+        peace_action_type = puppet
+        enable = {
+            FROM.FROM = {
+                has_war_with_wargoal_against = {
+                  target = ROOT
+                  type = puppet_wargoal_focus
+                }
+            }
+        }
+        ai_desire = 2500
+    }
 
     doesnt_control_no_claim = {
         peace_action_type = { take_states }
@@ -114,6 +140,24 @@ peace_ai_desires = {
             }
         }
         ai_desire = -20
+    }
+	
+	dont_take_random_shit = {
+        peace_action_type = { take_states }
+        enable = {
+            ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+                tag = ROOT.FROM                #We are acting for ourselves
+            }
+            ROOT.FROM.FROM.FROM = {
+                NOT = { is_core_of = ROOT.FROM }
+                NOT = { is_claimed_by = ROOT.FROM }
+            }
+        }
+        ai_desire = -2000
     }
 	
 	dont_liberate_mer_new_small_releasables = {
@@ -200,6 +244,7 @@ peace_ai_desires = {
 	do_yalta_WGR = {
         peace_action_type = { liberate force_government puppet }
         enable = {
+			has_government = democratic
             has_global_flag = had_yalta_conference
             ROOT.FROM = { tag = WGR }
             ROOT.FROM.FROM.FROM = { is_core_of = WGR }
@@ -207,14 +252,37 @@ peace_ai_desires = {
         ai_desire = 200
     }
 	
+	dont_fuck_up_yalta_WGR = {
+        peace_action_type = { liberate force_government puppet take_states }
+        enable = {
+			has_government = communism
+            has_global_flag = had_yalta_conference
+            ROOT.FROM = { tag = WGR }
+            ROOT.FROM.FROM.FROM = { is_core_of = WGR }
+        }
+        ai_desire = -2000
+    }
+	
 	do_yalta_DDR = {
         peace_action_type = { puppet }
         enable = {
+			has_government = communism
             has_global_flag = had_yalta_conference
             ROOT.FROM = { tag = DDR }
             ROOT.FROM.FROM.FROM = { is_core_of = DDR }
         }
         ai_desire = 200
+    }
+	
+	dont_fuck_up_yalta_DDR = {
+        peace_action_type = { liberate force_government puppet take_states }
+        enable = {
+			has_government = democratic
+            has_global_flag = had_yalta_conference
+            ROOT.FROM = { tag = DDR }
+            ROOT.FROM.FROM.FROM = { is_core_of = DDR }
+        }
+        ai_desire = -2000
     }
 
     fascist_majors_on_a_mission = {
@@ -808,7 +876,7 @@ peace_ai_desires = {
 
             }
         }
-        ai_desire = 75
+        ai_desire = 5000
     }
 
 

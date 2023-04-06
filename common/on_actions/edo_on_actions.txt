@@ -16,4 +16,15 @@ on_actions = {
 			}
 		}
 	}
+	on_startup = {
+		effect = {
+			SOV = {
+				add_equipment_to_stockpile = {
+					type = motorized_equipment_1
+					amount = 2000
+					producer = SOV
+				}
+			}
+		}
+	}
 }

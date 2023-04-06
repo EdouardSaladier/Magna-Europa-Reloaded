@@ -316,6 +316,36 @@ peace_action_modifiers = {
         }
         cost_multiplier = 0.5
     }
+	
+	annexation_wargoal_cheaper = {
+        category = other
+        peace_action_type = { take_states }
+        enable = {
+            FROM.FROM = {
+                has_war_with_wargoal_against = {
+                  target = ROOT
+                  type = annex_everything
+                }
+
+            }
+        }
+        cost_multiplier = 0.8
+    }
+	
+	puppet_wargoal_cheaper = {
+        category = other
+        peace_action_type = { puppet }
+        enable = {
+            FROM.FROM = {
+                has_war_with_wargoal_against = {
+                  target = ROOT
+                  type = puppet_wargoal_focus
+                }
+
+            }
+        }
+        cost_multiplier = 0.7
+    }
 
 
     eat_the_rich = {
