@@ -9776,6 +9776,179 @@ SOV_great_patriotic_war = {
 		}
 	}
 	
+	SOV_ai_supply_help_1 = {
+		priority = 101
+
+		icon = generic_army_support
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			surrender_progress > 0.05
+		}
+
+		cost = 0
+		days_re_enable = 0
+		
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			is_ai = yes
+		}
+
+		days_remove = 720
+
+		modifier = {
+			supply_consumption_factor = -0.05
+		}
+
+		complete_effect = {
+		}
+		
+		cancel_trigger = {
+			OR = {
+				surrender_progress < 0
+				surrender_progress > 0.15
+			}
+		}
+	}
+	
+	SOV_ai_supply_help_2 = {
+		priority = 101
+
+		icon = generic_army_support
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			surrender_progress > 0.15
+		}
+
+		cost = 0
+		days_re_enable = 0
+		
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			is_ai = yes
+		}
+
+		days_remove = 720
+
+		modifier = {
+			supply_consumption_factor = -0.15
+		}
+
+		complete_effect = {
+		}
+		
+		cancel_trigger = {
+			OR = {
+				surrender_progress < 0.16
+				surrender_progress > 0.3
+			}
+		}
+	}
+	
+	SOV_ai_supply_help_3 = {
+		priority = 101
+
+		icon = generic_army_support
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			surrender_progress > 0.3
+		}
+
+		cost = 0
+		days_re_enable = 0
+		
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			is_ai = yes
+		}
+
+		days_remove = 720
+
+		modifier = {
+			supply_consumption_factor = -0.3
+		}
+
+		complete_effect = {
+		}
+		
+		cancel_trigger = {
+			OR = {
+				surrender_progress < 0.31
+				surrender_progress > 0.5
+			}
+		}
+	}
+	
+	SOV_ai_supply_help_4 = {
+		priority = 101
+
+		icon = generic_army_support
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			surrender_progress > 0.3
+		}
+
+		cost = 0
+		days_re_enable = 0
+		
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			is_ai = yes
+		}
+
+		days_remove = 720
+
+		modifier = {
+			supply_consumption_factor = -0.5
+		}
+
+		complete_effect = {
+		}
+		
+		cancel_trigger = {
+			surrender_progress < 0.51
+		}
+	}
+	
 	SOV_this_is_not_over_yet_1 = {
 		priority = 101
 
