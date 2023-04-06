@@ -333,9 +333,9 @@
 		}
 
 		available = {
-			controls_state = 464
-			controls_state = 465
-			controls_state = 468
+			controls_state = 8
+			controls_state = 6
+			controls_state = 9
 		}
 		
 		bypass = {
@@ -350,24 +350,19 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_maritime_colonial_railway"
 			
-			build_railway = { #Montreal-Halifax
-				level = 2
-				start_province = 19376
-				target_province = 19370
-			}
 
 			random_owned_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
 
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -399,7 +394,7 @@
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 1
+						size < 2
 						include_locked = yes
 					}					
 				}
@@ -416,10 +411,10 @@
 				limit = {
 					has_state_flag = CAN_retool_angus_shops_AF
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -436,10 +431,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_retool_angus_shops_AF
@@ -496,7 +491,7 @@
 		x = 8
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -1376,7 +1371,6 @@
 		id = CAN_national_steel_car
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CAN_alberta_coal_towns }
-		mutually_exclusive = { focus = CAN_send_in_the_zombies }
 		x = 1
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1479,7 +1473,6 @@
 		id = CAN_send_in_the_zombies
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = CAN_commit_to_the_war }
-		mutually_exclusive = { focus = CAN_national_steel_car }
 		x = 3
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1692,7 +1685,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_independent_command"
-			army_experience = 20
+			army_experience = 40
 			add_doctrine_cost_reduction = {
 				name = CAN_independent_command
 				cost_reduction = 0.5
@@ -1932,7 +1925,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_army_modernization"
-			army_experience = 10 
+			army_experience = 40 
 			add_doctrine_cost_reduction = {
 				name = CAN_army_modernization
 				cost_reduction = 0.5
@@ -2184,7 +2177,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_red_deer_training_camp"
-			army_experience = 15
+			army_experience = 40
 			add_doctrine_cost_reduction = {
 				name = CAN_red_deer_training_camp
 				cost_reduction = 0.5
@@ -3310,8 +3303,8 @@
 	focus = {
 		id = CAN_defence_scheme_no_1
 		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = CAN_skewer_the_eagle focus = CAN_pinion_the_eagle }
-		x = -1
+		prerequisite = { focus = CAN_skewer_the_eagle focus = CAN_pinion_the_eagle focus = CAN_reject_authoritarianism }
+		x = 1
 		y = 4
 		relative_position_id = CAN_swastika_clubs
 
@@ -3353,7 +3346,7 @@
 		id = CAN_demand_labrador_and_newfoundland
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = CAN_skewer_the_eagle focus = CAN_pinion_the_eagle }
-		x = 1
+		x = -1
 		y = 4
 		relative_position_id = CAN_swastika_clubs
 
@@ -3395,7 +3388,7 @@
 		prerequisite = { focus = CAN_patriation }
 		mutually_exclusive = { focus = CAN_swastika_clubs }
 		mutually_exclusive = { focus = CAN_permanent_joint_defense_board }
-		x = 8
+		x = 11
 		y = 1
 		relative_position_id = CAN_patriation
 
@@ -3469,16 +3462,15 @@
 			}
 		}
 	}
-
 	focus = {
-		id = CAN_defence_scheme_no_2
-		icon = GFX_goal_generic_fortify_city
+		id = CAN_mend_relations_with_the_trotskyites
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = CAN_communist_labor_total_war_committee }
-		mutually_exclusive = { focus = CAN_supply_the_red_army }
-		x = -1
+		mutually_exclusive = { focus = CAN_supply_the_red_army focus = CAN_canada_united }
+		x = -3
 		y = 2
 		relative_position_id = CAN_burn_the_royal_portraits
-		allow_branch = { has_global_flag = NEVER }
+
 		cost = 10
 
 		ai_will_do = {
@@ -3486,14 +3478,7 @@
 		}
 
 		available = {
-			OR = {
-				USA = { has_war_with = JAP }
-				USA = { has_wargoal_against = JAP }
-				JAP = { has_wargoal_against = USA }
-				USA = { is_justifying_wargoal_against = JAP }
-				JAP = { is_justifying_wargoal_against = USA }
-			}
-			NOT = { has_country_flag = britain_enforced_our_loyalty }
+
 		}
 		
 		bypass = {
@@ -3505,39 +3490,174 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAN_defence_scheme_no_2"
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						controller = { NOT = { is_in_faction_with = CAN } }
-					}
+			add_ideas = CAN_unified_communist_party
+			
+			if = {
+				limit = { 
+					SOV = {
+						has_government = communism
+					} 
 				}
-				add_building_construction = {
-					type = bunker
-					province = {
-						all_provinces = yes
-						limit_to_border = yes
+				SOV = {
+					if = {
+						limit = { has_country_leader = { character = SOV_lev_trotsky } }
+						add_opinion_modifier = {
+							target = ROOT 
+							modifier = CAN_trotsky_loves_us
+						}
 					}
-					level = 3
-					instant_build = yes
+					else = {
+						add_opinion_modifier = {
+							target = ROOT 
+							modifier = CAN_stalin_and_friends_hate_us_now
+						}
+					}
 				}
 			}
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_coastal = yes
-					is_in_home_area = yes
+			
+		}
+	}
+	
+	focus = {
+		id = CAN_reject_authoritarianism
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = CAN_mend_relations_with_the_trotskyites }
+		x = -1
+		y = 1
+		relative_position_id = CAN_mend_relations_with_the_trotskyites
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_war = no
+					is_in_faction = yes
 				}
-				add_building_construction = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
+				leave_faction = yes
+			}
+			set_rule = {
+				can_join_factions = no
+			}
+			swap_ideas = {
+				remove_idea = CAN_communist_ideals_2
+				add_idea = CAN_communist_ideals_4
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_liberate_the_workers_of_the_world
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_reject_authoritarianism }
+		x = 0
+		y = 1
+		relative_position_id = CAN_reject_authoritarianism
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = CAN_true_revolution
+		}
+	}
+	
+	focus = {
+		id = CAN_reactivate_farmers_unity_league
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = CAN_mend_relations_with_the_trotskyites }
+		x = 1
+		y = 1
+		relative_position_id = CAN_mend_relations_with_the_trotskyites
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+			has_war = yes
+			has_civil_war = no
+			9 = { is_fully_controlled_by = ROOT }
+			6 = { is_fully_controlled_by = ROOT }
+			8 = { is_fully_controlled_by = ROOT }
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			9 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT 
 					}
-					level = 3
-					instant_build = yes
+					add_extra_state_shared_building_slots = 2
 				}
+			}
+			8 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT 
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			6 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT 
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			if = {
+				limit = { has_idea = CAN_great_depression_1 }
+				swap_ideas = {
+					remove_idea = CAN_great_depression_1
+					add_idea = CAN_great_depression_2		
+				}
+			}
+			else_if = {
+				limit = { has_idea = CAN_great_depression_2 }
+				remove_ideas = CAN_great_depression_2
 			}
 		}
 	}
@@ -3546,7 +3666,7 @@
 		id = CAN_supply_the_red_army
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = CAN_communist_labor_total_war_committee }
-		mutually_exclusive = { focus = CAN_defence_scheme_no_2 focus = CAN_canada_united }
+		mutually_exclusive = { focus = CAN_mend_relations_with_the_trotskyites focus = CAN_canada_united }
 		x = 1
 		y = 2
 		relative_position_id = CAN_burn_the_royal_portraits
@@ -3771,7 +3891,7 @@
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 35
+		x = 38
 		y = 0
 
 		cost = 10
@@ -3794,7 +3914,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		complete_tooltip = {
-			air_experience = 25
+			air_experience = 50
 			random_state = {				
 				limit = {
 					has_state_flag = CAN_rcaf_station_borden_AB
@@ -3815,7 +3935,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_rcaf_station_borden"
-			air_experience = 25
+			air_experience = 50
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -4101,7 +4221,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		complete_tooltip = {
-			air_experience = 25
+			air_experience = 50
 			random_state = {
 				limit = {
 					has_state_flag = CAN_commonwealth_air_training_plan_AB
@@ -4122,7 +4242,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_commonwealth_air_training_plan"
-			air_experience = 25
+			air_experience = 50
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -4283,7 +4403,7 @@
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 39
+		x = 42
 		y = 0
 
 		cost = 10
@@ -4306,7 +4426,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
-			navy_experience = 25
+			navy_experience = 50
 			random_state = {
 				limit = {
 					has_state_flag = CAN_halifax_shipyards_DY
@@ -4322,7 +4442,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_halifax_shipyards"
-			navy_experience = 25
+			navy_experience = 50
 			random_owned_controlled_state = {
 				prioritize = { 464 }
 				limit = {
@@ -4495,7 +4615,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_escort_fleet"
-			navy_experience = 25
+			navy_experience = 50
 			add_doctrine_cost_reduction = {
 				name = CAN_escort_fleet
 				cost_reduction = 0.25
@@ -4535,7 +4655,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_fleet_in_being"
-			navy_experience = 25
+			navy_experience = 50
 			add_doctrine_cost_reduction = {
 				name = CAN_fleet_in_being
 				cost_reduction = 0.25
@@ -4660,15 +4780,15 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
-			navy_experience = 25
+			navy_experience = 50
 			random_state = {
 				limit = {
 					has_state_flag = CAN_united_shipyards_DY
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -4676,20 +4796,20 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_united_shipyards"
-			navy_experience = 25
+			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
-						size > 2
+						size > 3
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = CAN_united_shipyards_DY

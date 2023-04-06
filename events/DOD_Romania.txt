@@ -361,7 +361,7 @@ country_event = {
 
 	option = { #cool
 		name = DOD_romania.41.a
-		puppet = BUL
+		puppet = FROM
 		hidden_effect = {
 			news_event = { id = news.318 days = 1 }
 		}
@@ -384,11 +384,11 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
-				strength_ratio = { tag = BUL ratio < 1 }
+				strength_ratio = { tag = FROM ratio < 1 }
 				factor = 10
 			}
 			modifier = {
-				BUL = {
+				FROM = {
 					is_in_faction = yes
 				}
 				factor = 10
@@ -404,7 +404,7 @@ country_event = {
 		}
 		create_wargoal = {
 			type = puppet_wargoal_focus
-			target = BUL
+			target = FROM
 		}
 		news_event = { id = news.319 days = 1 }
 	}

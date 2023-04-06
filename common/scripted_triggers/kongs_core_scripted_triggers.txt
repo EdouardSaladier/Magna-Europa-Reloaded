@@ -62,7 +62,6 @@ is_southern_slovakia = {
 is_north_transylvania = {
 	OR = {
 		is_core_of = SZE
-		
 		state = 649
 		state = 1582
 		state = 2680
@@ -192,11 +191,11 @@ is_east_prussia = {
 is_polish_german_empire = {
 	OR = {
 		AND = {
-			is_core_of = POL
+			has_state_flag = POL_INITIAL_STATE
 			is_core_of = WPR
 		}
 		AND = {
-			is_core_of = POL
+			has_state_flag = POL_INITIAL_STATE
 			is_core_of = WKP
 			NOT = {
 				state = 656
@@ -210,6 +209,7 @@ is_polish_german_empire = {
 		state = 2329
 		state = 481
 		state = 2262
+		state = 1979
 	}
 }
 is_vilnius = {

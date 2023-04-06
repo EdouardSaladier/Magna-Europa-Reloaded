@@ -1718,26 +1718,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ROM_divide_yugoslavia"
-			#Only split if YUG is not at war
-			if = {
-				limit = {
-					YUG = {
-						OR = {
-							has_war = yes
-							is_subject = yes
-						}
-					}
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = YUG
-				}
-			}
-			else = {
-				unlock_decision_category_tooltip = ROM_dividing_yugo
-				set_country_flag = invited_to_split_yugo
-			}
-			custom_effect_tooltip = focus_not_implemented
+			YUG = { country_event = DOD_romania.40 }
 		}
 	}
 
@@ -2017,7 +1998,7 @@
 		icon = GFX_focus_rom_parties_end
 		prerequisite = { focus = ROM_militarize_the_sentinels }
 	
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = ROM_his_majestys_loyal_government
 
@@ -2121,7 +2102,63 @@
 			add_research_slot = 1
 		}
 	}
+	
+	focus = {
+		id = ROM_crack_down_on_extremism
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ROM_institute_royal_dictatorship }
+		x = 4
+		y = 1
+		relative_position_id = ROM_institute_royal_dictatorship
 
+		cost = 5
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			is_subject = no
+			NOT = { 
+				OR = {
+					has_completed_focus = ROM_iron_guard
+					has_completed_focus = ROM_national_christian_party
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ROM_ion_antonescu = { #Making Antonescu into a Country leader and removing him from his other roles. 
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							prince_of_terror
+						}
+					}
+					promote_leader = yes
+				}
+				remove_advisor_role = { slot = army_chief }
+				remove_unit_leader_role = yes
+			}
+			set_party_name = { 
+			    ideology = fascism
+			    long_name = ROM_fascism_party_long
+			    name = ROM_fascism_party
+			}
+			hidden_effect = { retire_character = ROM_corneliu_codreanu }
+		}
+	}	
+	
 	focus = {
 		id = ROM_flexible_foreign_policy
 		icon = GFX_goal_generic_improve_relations
@@ -2159,7 +2196,7 @@
 		id = ROM_appoint_soviet_friendly_government
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = ROM_flexible_foreign_policy
 
@@ -2496,9 +2533,10 @@
 		id = ROM_iron_guard
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ROM_appoint_german_friendly_government }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ROM_appoint_german_friendly_government
+		mutually_exclusive = { focus = ROM_national_christian_party }
 
 		cost = 10
 
@@ -2519,29 +2557,6 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ROM_iron_guard"
-			
-			ROM_ion_antonescu = { #Making Antonescu into a Country leader and removing him from his other roles. 
-				add_country_leader_role = {
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = fascism_ideology
-						traits = {
-							prince_of_terror
-						}
-					}
-					promote_leader = yes
-				}
-				remove_advisor_role = { slot = army_chief }
-				remove_unit_leader_role = yes
-			}
-		
-			set_party_name = { 
-			    ideology = fascism
-			    long_name = ROM_fascism_party_long
-			    name = ROM_fascism_party
-			}
-
 			if = {
 				limit = { has_idea = ROM_the_sentinel_of_the_motherland }
 				swap_ideas = {
@@ -2571,13 +2586,89 @@
 					}
 				}
 			}
+			hidden_effect = {
+				if = { 
+					limit = { has_idea = ROM_national_christian_party_in_power }
+					remove_ideas = ROM_national_christian_party_in_power
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ROM_national_christian_party
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ROM_appoint_german_friendly_government }
+		x = 1
+		y = 1
+		relative_position_id = ROM_appoint_german_friendly_government
+		mutually_exclusive = { focus = ROM_iron_guard }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			ROM_octavian_goga = {
+				promote_character = {
+					ideology = fascism_ideology
+				}
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = ROM_fascism_party2_long
+				name = ROM_fascism_party2
+			}
+			if = {
+				limit = { has_idea = ROM_the_sentinel_of_the_motherland }
+				swap_ideas = {
+					add_idea = ROM_national_christian_party_in_power
+					remove_idea = ROM_the_sentinel_of_the_motherland
+				}
+				else = {
+					remove_ideas = ROM_the_sentinel_of_the_motherland
+					add_ideas = ROM_national_christian_party_in_power
+				}
+			}
+			#Remove ideas or display tooltip warning that it will happen
+			if = {
+				limit = {
+					has_idea = ROM_securitate
+				}
+				remove_ideas = ROM_securitate
+				else = {
+					if = {
+						limit = {
+							has_idea = ROM_constitutional_guarantees
+						}
+						remove_ideas = ROM_constitutional_guarantees
+						else = {
+							custom_effect_tooltip = ROM_appoint_german_friendly_government_tooltip_ncp
+						}
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ROM_force_abdication
 		icon = GFX_focus_rom_abdicate
-		prerequisite = { focus = ROM_iron_guard focus = ROM_securitate }
+		prerequisite = { focus = ROM_iron_guard focus = ROM_securitate focus = ROM_national_christian_party}
 		mutually_exclusive = { focus = ROM_handle_the_king }
 		x = -1				
 		y = 2
@@ -2757,7 +2848,7 @@
 		id = ROM_appoint_allied_friendly_government
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = ROM_flexible_foreign_policy
 
@@ -3024,6 +3115,39 @@
 			}
 		}
 	}
+focus = {
+		id = ROM_white_squadron_focus
+		icon = GFX_goal_generic_build_airforce
+		x = 0
+		y = 1
+		prerequisite = { focus = ROM_expand_the_air_force }
+		relative_position_id = ROM_expand_the_air_force
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_war = yes
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			add_ideas = ROM_white_squadron
+		}
+
+		completion_reward = {
+			add_ideas = ROM_white_squadron
+		}
+	}
 
 	focus = {
 		id = ROM_acquire_licenses
@@ -3031,7 +3155,7 @@
 		prerequisite = { focus = ROM_expand_the_air_force }
 		mutually_exclusive = { focus = ROM_local_development }
 		x = -2
-		y = 1
+		y = 2
 		relative_position_id = ROM_expand_the_air_force
 
 		cost = 10
@@ -3259,7 +3383,7 @@
 		prerequisite = { focus = ROM_expand_the_air_force }
 		mutually_exclusive = { focus = ROM_acquire_licenses }
 		x = 2
-		y = 1
+		y = 2
 		relative_position_id = ROM_expand_the_air_force
 
 		cost = 10
