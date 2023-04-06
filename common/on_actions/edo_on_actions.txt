@@ -25,6 +25,12 @@ on_actions = {
 					producer = SOV
 				}
 			}
+			if = {
+				limit = { is_historical_focus_on = yes }
+				ITA = {
+					add_ideas = ai_italy_dont_join_WW2_wars_until_BEL_has_capitulated
+				}
+			}
 		}
 	}
 }
