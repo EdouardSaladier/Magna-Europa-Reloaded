@@ -1530,12 +1530,10 @@ on_actions = {
 						AND = {
 							ROOT = { original_tag = SOV }
 							FROM = {
-								OR = {
-									original_tag = GER
-									original_tag = FRA
-									original_tag = USA
-									original_tag = GBR
-									original_tag = ITA
+								is_major = yes
+								NOT = { 
+									original_tag = POL
+									is_ai = yes
 								}
 								NOT = { original_tag = SOV }
 							}
@@ -1543,15 +1541,12 @@ on_actions = {
 						AND = {
 							FROM = { original_tag = SOV }
 							ROOT = {
-								OR = {
-									original_tag = GER
-									original_tag = FRA
-									original_tag = USA
-									original_tag = ENG
-									original_tag = ITA
+								is_major = yes
+								NOT = { 
+									original_tag = POL
+									is_ai = yes
 								}
 								NOT = { original_tag = SOV }
-							}
 						}
 					}
 				}
@@ -1572,11 +1567,10 @@ on_actions = {
 						else = { #If no Germany, choose a random enemy major
 							random_enemy_country = {
 								limit = {
-									OR = {
-										original_tag = FRA
-										original_tag = USA
-										original_tag = ENG
-										original_tag = ITA
+									is_major = yes
+									NOT = { 
+										original_tag = POL
+										is_ai = yes
 									}
 								}
 								set_country_flag = SOV_third_five_year_plan_disruptor_flag
