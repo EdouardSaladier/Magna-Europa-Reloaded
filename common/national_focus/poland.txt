@@ -10131,8 +10131,12 @@ focus_tree = {
 			}
 			hidden_effect = {
 				activate_decision = form_commonwealth
-				5 = { remove_core_of = POL }
-				763 = { remove_core_of = POL }
+				every_state = {
+					limit = {
+						is_east_prussia = yes
+					}
+					remove_core_of = POL
+				}
 			}
 			if = {
 				limit = { NOT = { has_cosmetic_tag = POL_KINGDOM_RUS } }

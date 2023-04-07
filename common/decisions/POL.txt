@@ -458,7 +458,7 @@ POL_peasant_strike_category = {
 				if = { #If Krakow is the capital, then start in Warsaw
 					limit = {
 						capital_scope = {
-							state = 88
+							state = 1157
 						}
 					}
 					start_civil_war = {
@@ -466,7 +466,7 @@ POL_peasant_strike_category = {
 						size = 0.6
 						capital = 10
 						states = { 
-							10 92 91 93 94 89 #One state less but that's probably better than having Vilnius completely encircled by peasants (as Habsburg Poland)
+							1157 2931 1223 1440 1219 1441 509 1975 2329 481 467 2262 1119 #One state less but that's probably better than having Vilnius completely encircled by peasants (as Habsburg Poland)
 						}
 					}
 				}
@@ -474,7 +474,7 @@ POL_peasant_strike_category = {
 					start_civil_war = {
 						ideology = democratic
 						size = 0.6
-						capital = 88
+						capital = 1157
 						states = { 
 							1157 2931 1223 1440 1219 1441 509 1975 2329 481 467 2262 1119 429 1080 902 2692 484 2318 2880 836 1258 923 2312 1162 496
 						}

@@ -474,15 +474,15 @@ POL_monarchist_civil_war_effect = {
 		if = {
 			limit = {
 				POL = {
-					owns_state = 784
+					owns_state = 241
 				}
 			}
-			transfer_state = 784
+			transfer_state = 241
 			start_civil_war = {
 				ideology = neutrality
 				size = civil_war_size_var
 				keep_political_leader = yes
-				states = { 784 }
+				states = { 241 1304 1329 236 1000 1135 }
 				keep_unit_leaders_trigger = {
 					NOT = { has_unit_leader_flag = POL_monarchy_sympathies_flag }
 				}
@@ -673,47 +673,15 @@ POL_peasant_division_effect = {
 }
 
 POL_become_german_puppet_effect = {
+	every_state = {
+		limit = {
+			is_polish_german_empire = yes
+			is_owned_and_controlled_by = POL
+		}
+		transfer_state_to = GER
+		add_core_of = GER
+	}
 	GER = {
-		if = {
-			limit = {
-				POL = {
-					controls_state = 85
-					owns_state = 85
-				}
-			}
-			transfer_state = 85
-		}
-		if = {
-			limit = {
-				POL = {
-					controls_state = 807
-					owns_state = 807
-				}
-			}
-			transfer_state = 807
-		}
-		if = {
-			limit = {
-				POL = {
-					controls_state = 86
-					owns_state = 86
-				}
-			}
-			transfer_state = 86
-		}
-		if = {
-			limit = {
-				POL = {
-					controls_state = 762
-					owns_state = 762
-				}
-			}
-			transfer_state = 762
-		}
-		85 = { add_core_of = GER } #Danzig
-		86 = { add_core_of = GER } #Poznan
-		807 = { add_core_of = GER } #Gdynia
-		762 = { add_core_of = GER } #Upper Silesia
 		if = {
 			limit = {
 				has_dlc = "Death or Dishonor"
@@ -750,14 +718,14 @@ POL_become_german_puppet_effect = {
 }
 
 POL_divide_lithuania_effect = {
-	188 = { add_core_of = GER }
+	227 = { add_core_of = GER }
 	LIT = {
 		every_owned_state = {
 			limit = {
 				OR = {
 					is_core_of = GER
 					is_claimed_by = GER
-					state = 188
+					state = 227
 				}
 			}
 			GER = {
@@ -774,15 +742,20 @@ POL_divide_lithuania_effect = {
 }
 
 POL_lithuania_wargoal_claims_effect = {
-	188 = { add_core_of = GER }
-	189 = { add_claim_by = POL }
-	815 = { add_claim_by = POL }
-	11 = { add_claim_by = POL }
-	814 = { add_claim_by = POL }
+	227 = { add_core_of = GER }
+	every_state = {
+		limit = {
+			has_state_flag = LIT_INITIAL_STATE
+			NOT = {
+				state = 227
+			}
+		}
+		add_claim_by = POL
+	}
 	GER = {
 		create_wargoal = {
 			type = take_core_state
-			generator = { 188 }
+			generator = { 227 }
 			target = LIT
 		}
 	}
@@ -818,64 +791,23 @@ POL_set_attempted_royal_takeover_flag = {
 }
 
 POL_basic_form_commonwealth = {
-	# Lithuania
+	
+	hidden_effect = {
+		every_state = {
+			limit = {
+				OR = {
+					has_state_flag = LIT_INITIAL_STATE
+					has_state_flag = LAT_INITIAL_STATE
+					has_state_flag = POL_INITIAL_STATE
+				}
+			}
+			add_core_of = ROOT
+		}
+	}
 	custom_effect_tooltip = form_country_lithuania_coring_states_tt
-	hidden_effect = {
-		11 = { add_core_of = ROOT }
-		189 = { add_core_of = ROOT }
-		188 = { add_core_of = ROOT }
-		784 = { add_core_of = ROOT }
-		814 = { add_core_of = ROOT }
-		815 = { add_core_of = ROOT }
-	}
-	# Poland
 	custom_effect_tooltip = form_country_poland_coring_states_tt
-	hidden_effect = {
-		66 = { add_core_of = ROOT }
-		67 = { add_core_of = ROOT }
-		85 = { add_core_of = ROOT }
-		86 = { add_core_of = ROOT }
-		87 = { add_core_of = ROOT }
-		88 = { add_core_of = ROOT }
-		90 = { add_core_of = ROOT }
-		98 = { add_core_of = ROOT }
-		10 = { add_core_of = ROOT }
-		97 = { add_core_of = ROOT }
-		92 = { add_core_of = ROOT }
-		91 = { add_core_of = ROOT }
-		89 = { add_core_of = ROOT }
-		93 = { add_core_of = ROOT }
-		94 = { add_core_of = ROOT }
-		95 = { add_core_of = ROOT }
-		96 = { add_core_of = ROOT }
-		784 = { add_core_of = ROOT }
-		5 = { add_core_of = ROOT }
-		763 = { add_core_of = ROOT }
-		207 = { add_core_of = ROOT }
-		242 = { add_core_of = ROOT }
-		206 = { add_core_of = ROOT }
-		241 = { add_core_of = ROOT }
-		243 = { add_core_of = ROOT }
-		204 = { add_core_of = ROOT }
-		194 = { add_core_of = ROOT }
-		201 = { add_core_of = ROOT }
-		199 = { add_core_of = ROOT }
-		198 = { add_core_of = ROOT }
-		202 = { add_core_of = ROOT }
-		203 = { add_core_of = ROOT }
-		193 = { add_core_of = ROOT }
-		259 = { add_core_of = ROOT }
-		762 = { add_core_of = ROOT }
-		807 = { add_core_of = ROOT }
-	}
 	custom_effect_tooltip = form_country_latvia_coring_states_tt
-	hidden_effect = {
-		12 = { add_core_of = ROOT }
-		190 = { add_core_of = ROOT }
-		808 = { add_core_of = ROOT }
-		809 = { add_core_of = ROOT }
-		810 = { add_core_of = ROOT }
-	}
+	
 
 	hidden_effect = {
 		news_event = { id = wtt_news.57 hours = 6 }

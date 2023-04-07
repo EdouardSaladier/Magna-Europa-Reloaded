@@ -3225,13 +3225,10 @@ country_event = {
 			}
 			every_state = {
 				limit = {
-					is_core_of = POL
-					OR = {
-						is_core_of = BLR
-						is_core_of = UKR
-					}
+					is_owned_by = POL
+					is_soviet_mr = yes
 				}
-				transfer_state_to = SOV
+				add_claim_by = SOV
 			}
 		}
 		POL_become_german_puppet_effect = yes

@@ -18,6 +18,9 @@ if = {
 		}
 	}
 }
+every_owned_state = {
+	set_state_flag = LAT_INITIAL_STATE
+}
 
 set_research_slots = 3
 
