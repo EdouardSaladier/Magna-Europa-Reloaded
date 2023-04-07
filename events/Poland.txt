@@ -59,40 +59,13 @@ country_event = {
 			}
 		}
 		effect_tooltip = {
-			FROM = {
-				if = {
-					limit = { POL = { owns_state = 96 controls_state = 96 } }
-					transfer_state = 96
+			every_state = {
+					limit = {
+						is_owned_and_controlled_by = POL
+						is_east_poland = yes
+					}
+					transfer_state_to = FROM
 				}
-				if = {
-					limit = { POL = { owns_state = 95 controls_state = 95 } }
-					transfer_state = 95
-				}
-				if = {
-					limit = { POL = { owns_state = 94 controls_state = 94 } }
-					transfer_state = 94
-				}
-				if = {
-					limit = { POL = { owns_state = 93 controls_state = 93 } }
-					transfer_state = 93
-				}
-				if = {
-					limit = { POL = { owns_state = 91 controls_state = 91 } }
-					transfer_state = 91
-				}
-				if = {
-					limit = { POL = { owns_state = 89 controls_state = 89 } }
-					transfer_state = 89
-				}
-				if = {
-					limit = { POL = { owns_state = 97 controls_state = 97 } }
-					transfer_state = 97
-				}
-				if = {
-					limit = { POL = { owns_state = 784 controls_state = 784 } }
-					transfer_state = 784
-				}
-			}
 		}
 		FROM = {country_event = { id = poland.3} }
 	}
@@ -101,11 +74,18 @@ country_event = {
 		name = poland.2.b
 		ai_chance = { factor = 70 }
 		effect_tooltip = {
+			every_state = {
+					limit = {
+						is_owned_and_controlled_by = POL
+						is_east_poland = yes
+						NOT = { is_claimed_by = FROM }
+					}
+					add_claim_by = FROM
+				}
 			FROM = {
 				create_wargoal = {
-					type = take_state_focus
+					type = take_claimed_state
 					target = POL
-					generator = { 96 95 94 93 91 89 97 784 }
 				}
 			}
 		}
@@ -125,77 +105,12 @@ country_event = {
 	
 	option = {
 		name = poland.3.a
-		if = {
-			limit = { 
-				POL = { 
-					owns_state = 96
-					controls_state = 96 
-				}
+		every_state = {
+			limit = {
+				is_owned_and_controlled_by = POL
+				is_east_poland = yes
 			}
-			transfer_state = 96
-		}
-		if = {
-			limit = { 
-				POL = { 
-					owns_state = 95
-					controls_state = 95 
-				}
-			}
-			transfer_state = 95
-		}
-		if = {
-			limit = { 
-				POL = { 
-					owns_state = 94
-					controls_state = 94 
-				}
-			}
-			transfer_state = 94
-		}
-		if = {
-			limit = { 
-				POL = { 
-					owns_state = 93
-					controls_state = 93 
-				}
-			}
-			transfer_state = 93
-		}
-		if = {
-			limit = { 
-				POL = { 
-					owns_state = 91
-					controls_state = 91 
-				}
-			}
-			transfer_state = 91
-		}
-		if = {
-			limit = { 
-				POL = { 
-					owns_state = 89
-					controls_state = 89 
-				}
-			}
-			transfer_state = 89
-		}
-		if = {
-			limit = { 
-				POL = { 
-					owns_state = 97
-					controls_state = 97 
-				}
-			}
-			transfer_state = 97
-		}
-		if = {
-			limit = { 
-				POL = { 
-					owns_state = 784
-					controls_state = 784 
-				}
-			}
-			transfer_state = 784
+			transfer_state_to = ROOT
 		}
 		hidden_effect = {
 			news_event = { id = news.194 }
@@ -215,11 +130,20 @@ country_event = {
 	
 	option = {
 		name = poland.4.a
-		create_wargoal = {
-			type = take_state_focus
-			target = POL
-			generator = { 96 95 94 93 91 89 784 }
-		}
+		every_state = {
+					limit = {
+						is_owned_and_controlled_by = POL
+						is_east_poland = yes
+						NOT = { is_claimed_by = ROOT }
+					}
+					add_claim_by = ROOT
+				}
+		
+			create_wargoal = {
+				type = take_claimed_state
+				target = POL
+			}
+			
 	}
 }
 
@@ -245,41 +169,19 @@ country_event = {
 			}
 		}
 		effect_tooltip = {
-			add_state_claim = 5
-			add_state_claim = 63
-			add_state_claim = 68
-			add_state_claim = 66
-			add_state_claim = 67
+			every_state = {
+				limit = {
+					is_yalta_polish_state = yes
+				}
+				add_claim_by = ROOT
+			}
 			custom_effect_tooltip = SOV_offer_poland_protection_tt
-			FROM = {
-				if = {
-					limit = { POL = { owns_state = 96 controls_state = 96 } }
-					transfer_state = 96
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = POL
+					is_east_poland = yes
 				}
-				if = {
-					limit = { POL = { owns_state = 95 controls_state = 95 } }
-					transfer_state = 95
-				}
-				if = {
-					limit = { POL = { owns_state = 94 controls_state = 94 } }
-					transfer_state = 94
-				}
-				if = {
-					limit = { POL = { owns_state = 93 controls_state = 93 } }
-					transfer_state = 93
-				}
-				if = {
-					limit = { POL = { owns_state = 91 controls_state = 91 } }
-					transfer_state = 91
-				}
-				if = {
-					limit = { POL = { owns_state = 89 controls_state = 89 } }
-					transfer_state = 89
-				}
-				if = {
-					limit = { POL = { owns_state = 784 controls_state = 784 } }
-					transfer_state = 784
-				}
+				transfer_state_to = FROM
 			}
 		}
 		hidden_effect = {
@@ -325,11 +227,18 @@ country_event = {
 			}
 		}
 		effect_tooltip = {
+			every_state = {
+					limit = {
+						is_owned_and_controlled_by = POL
+						is_east_poland = yes
+						NOT = { is_claimed_by = FROM }
+					}
+					add_claim_by = FROM
+				}
 			FROM = {
 				create_wargoal = {
-					type = take_state_focus
+					type = take_claimed_state
 					target = POL
-					generator = { 96 95 94 93 91 89 784 }
 				}
 			}
 		}
@@ -350,42 +259,22 @@ country_event = {
 	option = {
 		name = poland.6.a
 		POL = {
-			add_state_claim = 5
-			add_state_claim = 63
-			add_state_claim = 68
-			add_state_claim = 66
-			add_state_claim = 67
+			every_state = {
+				limit = {
+					is_yalta_polish_state = yes
+				}
+				add_claim_by = ROOT
+			}
 			set_country_flag = POL_accepted_soviet_protection
 		}
 		custom_effect_tooltip = SOV_offer_poland_protection_tt
-		if = {
-			limit = { POL = { owns_state = 96 } }
-			transfer_state = 96
-		}
-		if = {
-			limit = { POL = { owns_state = 95 } }
-			transfer_state = 95
-		}
-		if = {
-			limit = { POL = { owns_state = 94 } }
-			transfer_state = 94
-		}
-		if = {
-			limit = { POL = { owns_state = 93 } }
-			transfer_state = 93
-		}
-		if = {
-			limit = { POL = { owns_state = 91 } }
-			transfer_state = 91
-		}
-		if = {
-			limit = { POL = { owns_state = 89 } }
-			transfer_state = 89
-		}
-		if = {
-			limit = { POL = { owns_state = 784 } }
-			transfer_state = 784
-		}
+		every_state = {
+				limit = {
+					is_owned_and_controlled_by = POL
+					is_east_poland = yes
+				}
+				transfer_state_to = FROM
+			}
 		hidden_effect = {
 			news_event = { id = news.194 }
 		}
@@ -404,11 +293,20 @@ country_event = {
 	
 	option = {
 		name = poland.7.a
-		create_wargoal = {
-			type = take_state_focus
-			target = POL
-			generator = { 96 95 94 93 91 89 }
-		}
+		every_state = {
+					limit = {
+						is_owned_and_controlled_by = POL
+						is_east_poland = yes
+						NOT = { is_claimed_by = ROOT }
+					}
+					add_claim_by = ROOT
+				}
+			ROOT = {
+				create_wargoal = {
+					type = take_claimed_state
+					target = POL
+				}
+			}
 	}
 }
 
@@ -424,12 +322,8 @@ country_event = {
 		POL = { has_country_flag = POL_accepted_soviet_protection }
 		tag = POL
 		SOV = {
-			OR = {
-				owns_state = 5
-				owns_state = 63
-				owns_state = 68
-				owns_state = 66
-				owns_state = 67
+			any_owned_state = {
+				is_yalta_polish_state = yes
 			}
 		}
 	}
@@ -446,26 +340,15 @@ country_event = {
 	
 	option = {
 		name = poland.8.a
-		if = {
-			limit = { SOV = { owns_state = 5 } }
-			transfer_state = 5
-		}
-		if = {
-			limit = { SOV = { owns_state = 63 } }
-			transfer_state = 63
-		}
-		if = {
-			limit = { SOV = { owns_state = 68 } }
-			transfer_state = 68
-		}
-		if = {
-			limit = { SOV = { owns_state = 66 } }
-			transfer_state = 66
-		}
-		if = {
-			limit = { SOV = { owns_state = 67 } }
-			transfer_state = 67
-		}
+		every_state = {
+				limit = {
+					is_yalta_polish_state = yes
+					is_owned_by = SOV
+					owner = { is_subject_of = SOV NOT = { tag = POL } }
+					
+				}
+				transfer_state_to = POL
+			}
 		SOV = { country_event = { id = poland.9 } }
 	}
 }
@@ -481,53 +364,7 @@ country_event = {
 	
 	option = {
 		name = poland.9.a
-		effect_tooltip = {
-			if = {
-				limit = {
-					OR = {
-						SOV = { owns_state = 5 }
-						POL = { owns_state = 5 }
-					}
-				}
-				POL = { transfer_state = 5 }
-			}
-			if = {
-				limit = {
-					OR = {
-						SOV = { owns_state = 63 }
-						POL = { owns_state = 63 }
-					}
-				}
-				POL = { transfer_state = 63 }
-			}
-			if = {
-				limit = {
-					OR = {
-						SOV = { owns_state = 68 }
-						POL = { owns_state = 68 }
-					}
-				}
-				POL = { transfer_state = 68 }
-			}
-			if = {
-				limit = {
-					OR = {
-						SOV = { owns_state = 66 }
-						POL = { owns_state = 66 }
-					}
-				}
-				POL = { transfer_state = 66 }
-			}
-			if = {
-				limit = {
-					OR = {
-						SOV = { owns_state = 67 }
-						POL = { owns_state = 67 }
-					}
-				}
-				POL = { transfer_state = 67 }
-			}
-		}
+			
 		hidden_effect = {
 			news_event = { id = news.195 }
 		}
