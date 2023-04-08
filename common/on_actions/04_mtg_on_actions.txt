@@ -519,12 +519,55 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = qbc_status
-						option = QBC_INDEPENDENT
+						rule = nel_status
+						option = NEL_AUTONOMOUS
 					}
 				}
-				CAN = {
-					release = QBC
+				every_state = {
+					limit = { has_state_flag = NEL_CORE }
+				add_core_of = NEL
+				transfer_state_to = NEL
+				remove_core_of = USA
+				USA = { set_autonomy = { target = NEL autonomy_state = autonomy_integrated_puppet } }
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = nel_status
+						option = NEL_INDEPENDENT
+					}
+				}
+				every_state = {
+					limit = { has_state_flag = NEL_CORE }
+				add_core_of = NEL
+				transfer_state_to = NEL
+				remove_core_of = USA
+				add_claim_by = USA
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = nfl_status
+						option = NFL_INDEPENDENT
+					}
+				}
+				ENG = {
+					release = NFL
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = nfl_status
+						option = NFL_DOMINION
+					}
+				}
+				ENG = {
+					release = NFL
+					set_autonomy = { target = NFL autonomy_state = autonomy_dominion }
+				NFL = { set_cosmetic_tag = NFL_UK }
 				}
 			}
 			if = {
@@ -537,6 +580,17 @@ on_actions = {
 				CAN = {
 					release = QBC
 					set_autonomy = { target = QBC autonomy_state = autonomy_integrated_puppet }
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = qbc_status
+						option = QBC_INDEPENDENT
+					}
+				}
+				CAN = {
+					release = QBC
 				}
 			}
 			if = {

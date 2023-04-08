@@ -1793,6 +1793,46 @@ ita_fragmentation_status = {
 		desc = "RULE_OPTION_ITA_MORE_FRAGMENTATION_DESC"
 	}
 }
+nel_status = {
+	name = "NEL_STATUS"
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT_STATUS"
+		desc = "RULE_OPTION_DEFAULT_STATUS_DESC"
+	}
+	option = {
+		name = NEL_AUTONOMOUS
+		text = "RULE_OPTION_NEL_AUTONOMOUS"
+		desc = "RULE_OPTION_NEL_AUTONOMOUS_DESC"
+	}
+	option = {
+		name = NEL_INDEPENDENT
+		text = "RULE_OPTION_NEL_INDEPENDENT"
+		desc = "RULE_OPTION_NEL_INDEPENDENT_DESC"
+	}
+}
+nfl_status = {
+	name = "NFL_STATUS"
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT_STATUS"
+		desc = "RULE_OPTION_DEFAULT_STATUS_DESC"
+	}
+	option = {
+		name = NFL_DOMINION
+		text = "RULE_OPTION_NFL_DOMINION"
+		desc = "RULE_OPTION_NFL_DOMINION_DESC"
+	}
+	option = {
+		name = NFL_INDEPENDENT
+		text = "RULE_OPTION_NFL_INDEPENDENT"
+		desc = "RULE_OPTION_NFL_INDEPENDENT_DESC"
+	}
+}
 qbc_status = {
 	name = "QBC_STATUS"
 	required_dlc = "Man the Guns"
