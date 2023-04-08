@@ -8,7 +8,8 @@ default_unit_production = { #If adding country-unique ones, bear in mind that th
 		NOT = { original_tag = FRA } 
 		NOT = { original_tag = ENG  }
 		NOT = { original_tag = CZE }
-		NOT = { tag = SOV }
+		NOT = { original_tag = USA }
+		NOT = { original_tag = SOV }
 		NOT = { original_tag = ITA }
 	}
 

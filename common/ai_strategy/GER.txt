@@ -30,7 +30,7 @@ GER_unit_production = {
 		id = garrison
 		value = 2
 	}
-
+	
 	ai_strategy = {
 		type = role_ratio
 		id = paratroopers
@@ -58,13 +58,13 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
-		value = -2 #because doctrine this = 0
+		value = 2 #because doctrine this = 0
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = mechanized
-		value = -5 #because doctrine this = 0
+		value = 5 #because doctrine this = 0
 	}
 
 	ai_strategy = {
@@ -76,7 +76,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 60 #88 to 70
+		value = 65 #88 to 70
 	}
 
 	# Naval unit factors
@@ -2556,7 +2556,7 @@ GER_blitzkrieg_russia_soft  = { #Rolling incursions
 
 }
 
-GER_normandy_buffer = {
+GER_atlantik_wall_buffer = {
 	allowed = {
 		original_tag = GER
 	}
@@ -2572,14 +2572,44 @@ GER_normandy_buffer = {
 	ai_strategy = {
 		type = put_unit_buffers
 		states = {
+			845
+			803
+			760
+			725
+			684
+			634
+			615
+			583
+			578
+			587
 			534
 			551
 			517
-			578
-			583
+			505
+			448
+			2874
+			472
+			2333
+			454
+			1974
+			454
+			455
+			1974
+			451
+			2332
+			402
+			358
+			260
+			1709
+			1705
+			2569
+			1719
+			322
+			314
+			316
 		}
-		ratio = 0.10
-		area = normandy_landing_zone
+		ratio = 0.1
+		area = atlantik_wall_zone
 		subtract_invasions_from_need = no
 		subtract_fronts_from_need = yes
 	}
@@ -2591,7 +2621,7 @@ GER_normandy_buffer = {
 	}
 }
 
-GER_invasion_buffer = {
+GER_atlantik_wall_invasion_buffer = {
 	allowed = {
 		original_tag = GER
 	}
@@ -2607,14 +2637,44 @@ GER_invasion_buffer = {
 	ai_strategy = {
 		type = put_unit_buffers
 		states = {
+			845
+			803
+			760
+			725
+			684
+			634
+			615
+			583
+			578
+			587
 			534
 			551
 			517
-			578
-			583
+			505
+			448
+			2874
+			472
+			2333
+			454
+			1974
+			454
+			455
+			1974
+			451
+			2332
+			402
+			358
+			260
+			1709
+			1705
+			2569
+			1719
+			322
+			314
+			316
 		}
 		ratio = 0.15
-		area = normandy_landing_zone
+		area = atlantik_wall_zone
 		subtract_invasions_from_need = no
 		subtract_fronts_from_need = yes
 	}

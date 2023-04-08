@@ -1974,6 +1974,10 @@ focus_tree = {
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
 			}
+			if = {
+				limit = { is_ai = yes }
+				add_offsite_building = { type = arms_factory level =  10 }
+			}
 		}
 	}
 	focus = {
@@ -2023,6 +2027,10 @@ focus_tree = {
 				add_ideas = civilian_economy
 				set_country_flag = USA_the_giant_wakes_added_civ_eco
 			}
+			if = {
+				limit = { is_ai = yes }
+				add_offsite_building = { type = arms_factory level =  10 }
+			}
 		}
 	}
 	focus = {
@@ -2045,6 +2053,10 @@ focus_tree = {
 			add_ideas = wartime_industry_focus
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
+			if = {
+				limit = { is_ai = yes }
+				add_offsite_building = { type = arms_factory level =  10 }
+			}
 		}
 	}
 	
@@ -2095,6 +2107,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_military_construction"
 			army_experience = 10
+			if = {
+				limit = { is_ai = yes }
+				add_offsite_building = { type = arms_factory level =  10 }
+			}
 			random_owned_controlled_state = {
 				limit = {
 					arms_factory > 0

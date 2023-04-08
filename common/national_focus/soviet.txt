@@ -488,7 +488,7 @@ focus_tree = {
 "
 			hidden_effect = {
 				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
-				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.05 }
+				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.025 }
 			}
 			if = {
 				limit = {
@@ -553,7 +553,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_reorganize_the_pc_of_heavy_industry
 "
 			hidden_effect = {
-				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.02 }
+				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.025 }
 			}
 			custom_effect_tooltip = SOV_reorganize_the_pc_of_heavy_industry_ns_tt
 			if = {
@@ -1148,7 +1148,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_fourth_five_year_plan
 "
 			hidden_effect = {
-				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.02 } #Bonus to CG
+				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.025 } #Bonus to CG
 				add_to_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 } #Bonus to max efficicency
 				if = {
 					limit = {
@@ -4496,7 +4496,10 @@ focus_tree = {
 				tooltip = SOV_fyp_controlled_factories_tier_4_tt
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_4 }
 			}
-			#TODO_Manu: This could require X num of factories to have been relocated
+		}
+		
+		ai_will_do = {
+			factor = 1000
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_XP}
@@ -4505,59 +4508,13 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_development_of_tankograd
 "
 			add_to_variable = { SOV_defense_industry_land_equipment_upgrade_xp_cost = -0.1 }
-			custom_effect_tooltip = SOV_development_of_tankograd_ns_tt
-
-			custom_effect_tooltip = SOV_development_of_tankograd_factories_tt
-			#This is just for tooltip purposes
-			effect_tooltip = {
-				every_owned_state = {
-					limit = {
-						is_on_continent = asia
-						arms_factory > 2
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
 			#Actual effects
-			set_temp_variable = { temp_targets_index = 0 }
-			while_loop_effect = {
-				limit = {
-					check_variable = { temp_targets_index = 10 compare = less_than }
-				}
-				hidden_effect = {
-					random_owned_state = {
-						limit = {
-							is_on_continent = asia
-							arms_factory > 2
-							free_building_slots = {
-								building = arms_factory
-								size > 1
-								include_locked = yes
-							}
-							NOT = { has_state_flag = SOV_development_of_tankograd_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-						set_state_flag = SOV_development_of_tankograd_flag
-						add_to_temp_variable = { SOV.temp_targets_index = 1 }
-						#log = "Round [?SOV.temp_targets_index]"
-					}
-				}
+			if = {
+				limit = { is_ai = yes }
+				add_offsite_building = { type = arms_factory level =  20 }
+			}
+			else = {
+				add_offsite_building = { type = arms_factory level =  20 }
 			}
 		}
 	}
@@ -4716,7 +4673,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 10
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 229 #MOSCOW
@@ -11475,7 +11432,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				factor = 0
 				has_civil_war = yes
@@ -11533,7 +11490,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				factor = 0
 				has_civil_war = yes

@@ -1161,6 +1161,237 @@ garrison_SOV = {
 	}
 }
 
+motorized_SOV = {
+
+	available_for = {
+		SOV
+	}
+	
+	roles = {
+		motorized
+	}
+	
+	upgrade_prio = {
+		factor = 2
+	}
+	
+	match_to_count = 0.8
+
+
+	motorized_SOV = {
+	
+		reinforce_prio = 0
+		custom_icon = 7
+	
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+		
+		reinforce_prio = 0
+		custom_icon = 7
+		
+		target_width = 10.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+		
+		stat_weights = {
+			0.00 #-- default_morale
+			1.10 #-- defense
+			0.60 #-- breakthrough
+			0.60 #-- hardness
+			1.00 #-- soft_attack
+			0.00 #-- hard_attack
+			0.10 #-- recon
+			0.01 #-- entrenchment
+			0.10 #-- initiative
+			0.01 #-- casualty_trickleback
+			-0.05 #-- supply_consumption_factor
+			-0.01 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.02 #-- air_attack
+			#-- Common Values
+			30.00 #-- max_organisation
+			0.80 #-- max_strength
+			2.0 #-- maximum_speed
+			0.20 #-- armor_value
+			0.05 #-- ap_attack
+			0.10 #-- reliability
+			0.10 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			0.00 #-- build_cost_ic
+		}
+		
+		target_template = {
+			weight = 0.9
+			match_value = 3000.0
+			
+			support = {
+				engineer = 1
+				artillery = 1
+				recon = 1
+				logistics_company = 1
+			}
+			
+			regiments = {
+				motorized = 6
+				motorized_rocket_brigade = 3
+			}
+		}
+		
+		allowed_types = {
+			motorized
+			mechanized
+			infantry
+			motorized_rocket_brigade 
+
+			engineer
+			mot_recon
+			armored_car_recon
+			light_tank_recon
+			signal_company
+			maintenance_company
+			logistics_company
+
+			anti_tank
+			military_police
+			artillery
+			anti_air
+			rocket_artillery
+		}
+	}
+}
+
+mechanized_SOV = {
+
+	available_for = {
+		SOV
+	}
+	
+	roles = {
+		mechanized
+	}
+	
+	upgrade_prio = {
+		factor = 2
+	}
+	
+	match_to_count = 0.8
+
+
+	mechanized_SOV = {
+	
+		reinforce_prio = 0
+		custom_icon = 7
+	
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+		
+		reinforce_prio = 0
+		custom_icon = 7
+		
+		target_width = 10.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+		
+		stat_weights = {
+			0.00 #-- default_morale
+			1.10 #-- defense
+			0.60 #-- breakthrough
+			0.60 #-- hardness
+			1.00 #-- soft_attack
+			0.00 #-- hard_attack
+			0.10 #-- recon
+			0.01 #-- entrenchment
+			0.10 #-- initiative
+			0.01 #-- casualty_trickleback
+			-0.05 #-- supply_consumption_factor
+			-0.01 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.02 #-- air_attack
+			#-- Common Values
+			30.00 #-- max_organisation
+			0.80 #-- max_strength
+			2.0 #-- maximum_speed
+			0.20 #-- armor_value
+			0.05 #-- ap_attack
+			0.10 #-- reliability
+			0.10 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			0.00 #-- build_cost_ic
+		}
+		
+		target_template = {
+			weight = 0.9
+			match_value = 3000.0
+			
+			support = {
+				engineer = 1
+				artillery = 1
+				recon = 1
+				logistics_company = 1
+			}
+			
+			regiments = {
+				mechanized = 6
+				motorized_rocket_brigade = 3
+			}
+		}
+		
+		allowed_types = {
+			motorized
+			mechanized
+			mot_artillery_brigade
+			infantry
+			motorized_rocket_brigade 
+
+			engineer
+			mot_recon
+			armored_car_recon
+			light_tank_recon
+			signal_company
+			maintenance_company
+			logistics_company
+
+			anti_tank
+			military_police
+			artillery
+			anti_air
+			rocket_artillery
+		}
+	}
+}
+
 
 anti_armor_SOV = {
 

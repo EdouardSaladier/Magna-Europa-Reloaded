@@ -1691,13 +1691,13 @@ ENG_take_italys_spaghetti = {
 	ai_strategy = {
 		type = area_priority
 		id = italy
-		value = 50
+		value = 60
 	}
 
 	ai_strategy = {
 		type = area_priority
 		id = normandy_landing_zone
-		value = -100
+		value = -20
 	}
 }
 
@@ -1799,7 +1799,7 @@ ENG_USA_d_day = {
 	ai_strategy = {
 		type = area_priority
 		id = normandy_landing_zone
-		value = 60
+		value = 80
 	}
 
 	ai_strategy = {

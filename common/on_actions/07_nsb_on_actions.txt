@@ -1532,8 +1532,10 @@ on_actions = {
 							FROM = {
 								is_major = yes
 								NOT = { 
-									original_tag = POL
-									is_ai = yes
+									AND = {
+										original_tag = POL
+										is_ai = yes
+									}
 								}
 								NOT = { original_tag = SOV }
 							}
@@ -1543,10 +1545,13 @@ on_actions = {
 							ROOT = {
 								is_major = yes
 								NOT = { 
-									original_tag = POL
-									is_ai = yes
+									AND = {
+										original_tag = POL
+										is_ai = yes
+									}
 								}
 								NOT = { original_tag = SOV }
+							}
 						}
 					}
 				}
@@ -1595,8 +1600,10 @@ on_actions = {
 							FROM = {
 								is_major = yes
 								NOT = { 
-									original_tag = POL
-									is_ai = yes
+									AND = {
+										original_tag = POL
+										is_ai = yes
+									}
 								}
 								NOT = { original_tag = SOV }
 							}
@@ -1606,8 +1613,10 @@ on_actions = {
 							ROOT = {
 								is_major = yes
 								NOT = { 
-									original_tag = POL
-									is_ai = yes
+									AND = {
+										original_tag = POL
+										is_ai = yes
+									}
 								}
 								NOT = { original_tag = SOV }
 							}

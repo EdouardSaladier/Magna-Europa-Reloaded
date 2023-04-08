@@ -116,10 +116,25 @@ areas = {
 	
 	normandy_landing_zone = {
         strategic_regions = {
-            62 # france
-            89
-            5 # benelux
-			4
+            62 #Normandy
+			67 #Brittany
+            89 #Northern France
+            5 #Belgium
+			4 #Netherlands
+        }
+    }
+	
+	atlantik_wall_zone = {
+        strategic_regions = {
+            62 #Normandy
+			67 #Brittany
+            89 #Northern France
+			93 #Loire
+			87 #Aquitaine
+            5 #Belgium
+			4 #Netherlands
+			64 #Northern Germany
+			26 #Denmark
         }
     }
 

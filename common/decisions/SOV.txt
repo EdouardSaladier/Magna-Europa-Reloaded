@@ -9790,6 +9790,7 @@ SOV_great_patriotic_war = {
 				SOV_is_major_not_original_sov = yes
 			}
 			surrender_progress > 0.05
+			surrender_progress < 0.16
 		}
 
 		cost = 0
@@ -9834,6 +9835,7 @@ SOV_great_patriotic_war = {
 				SOV_is_major_not_original_sov = yes
 			}
 			surrender_progress > 0.15
+			surrender_progress < 0.31
 		}
 
 		cost = 0
@@ -9878,6 +9880,7 @@ SOV_great_patriotic_war = {
 				SOV_is_major_not_original_sov = yes
 			}
 			surrender_progress > 0.3
+			surrender_progress < 0.51
 		}
 
 		cost = 0
@@ -9983,7 +9986,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_offsite_building = { type = industrial_complex level = 10 } #Let's try without these for now
+			add_offsite_building = { type = industrial_complex level = 20 } #Let's try without these for now
 			add_offsite_building = { type = arms_factory level = 20 } #Let's try without these for now
 		}
 	}
@@ -10022,7 +10025,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_offsite_building = { type = industrial_complex level = 10 } #Let's try without these for now
+			add_offsite_building = { type = industrial_complex level = 20 } #Let's try without these for now
 			add_offsite_building = { type = arms_factory level = 20 } #Let's try without these for now
 		}
 	}
@@ -10061,7 +10064,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_offsite_building = { type = industrial_complex level = 20 } #Let's try without these for now
+			add_offsite_building = { type = industrial_complex level = 40 } #Let's try without these for now
 			add_offsite_building = { type = arms_factory level = 40 }
 		}
 	}
@@ -10100,7 +10103,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_offsite_building = { type = industrial_complex level = 20 } #Let's try without these for now
+			add_offsite_building = { type = industrial_complex level = 40 } #Let's try without these for now
 			add_offsite_building = { type = arms_factory level = 40 }
 		}
 	}
