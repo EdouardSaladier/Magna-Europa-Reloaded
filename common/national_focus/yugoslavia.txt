@@ -2437,6 +2437,7 @@ focus_tree = {
 					is_ai = yes
 					is_historical_focus_on = yes
 					date < 1940.11.1
+					FRA = { has_capitulated = no }
 				}
 			}
 		}
