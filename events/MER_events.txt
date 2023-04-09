@@ -254,3 +254,21 @@ country_event = {
 		GER = { set_faction_name = ROME_BERLIN_FACTION }
 	}
 }
+
+country_event = {
+	id = mer_event.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.8 FROM = [From.GetName]" }
+	title = mer_event.8.t
+	desc = mer_event.8.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	immediate = {
+		LIE = {
+			add_named_threat = { threat = 20 name = JAP_intervene_in_china }
+		}
+	}
+}

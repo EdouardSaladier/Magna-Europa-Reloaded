@@ -2147,9 +2147,9 @@ SOV_ohshitohfuckgermanyiscoming = {
 		date > 1941.1.1
 	}
 	ai_strategy = {
-		type = build_army
+		type = role_ratio
 		id = infantry
-		value = 400
+		value = 40
 	}
 	ai_strategy = {
 		type = force_build_armies

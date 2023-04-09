@@ -6091,7 +6091,7 @@ focus_tree = {
 				481 = { add_claim_by = GER }
 				2262 = { add_claim_by = GER }
 			}
-			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
+			add_named_threat = { threat = 5 name = GER_demand_memel_threat }
 			if = {
 				limit = {
 					LIT = { 
@@ -6289,7 +6289,7 @@ focus_tree = {
 		}	
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_danzig_or_war"
-			add_named_threat = { threat = 5 name = GER_danzig_or_war }
+			add_named_threat = { threat = 10 name = GER_danzig_or_war }
 			if = {
 				limit = {
 					287 = {
@@ -6735,7 +6735,7 @@ focus_tree = {
 				ENG = {
 					country_event = germany.40
 				}
-				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
+				add_named_threat = { threat = 5 name = GER_demand_sudetenland_threat }
 			}
 			if = {
 				limit = {
@@ -6762,7 +6762,7 @@ focus_tree = {
 				HOL = {
 					country_event = germany.40
 				}
-				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
+				add_named_threat = { threat = 5 name = GER_demand_sudetenland_threat }
 			}
 			custom_effect_tooltip = mer_GER_demand_sudetenland_claim_west # initially only claimed western sudetenland
 			hidden_effect = {
@@ -6795,7 +6795,7 @@ focus_tree = {
 						country_event = { id = germany.1041 days = 2 random_days = 10 }
 					}
 				}
-				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
+				add_named_threat = { threat = 5 name = GER_demand_sudetenland_threat }
 			}
 		}
 	}
@@ -6967,7 +6967,7 @@ focus_tree = {
 				limit = { NOT = { country_exists = CZE } }
 				country_event = { id = germany.55 hours = 6 }
 			}
-			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
+			add_named_threat = { threat = 10 name = GER_end_of_czechoslovakia }
 			custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		}
 	}
@@ -7323,7 +7323,7 @@ focus_tree = {
 		}	
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_war_with_france"
-			add_named_threat = { threat = 5 name = GER_war_with_france_threat }
+			add_named_threat = { threat = 10 name = GER_war_with_france_threat }
  			create_wargoal = {
  				type = take_state_focus
  				target = FRA
@@ -8491,7 +8491,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_demand_slovenia
 		prerequisite = { focus = GER_anschluss }"
-			add_named_threat = { threat = 2 name = GER_demand_slovenia_threat }
+			add_named_threat = { threat = 5 name = GER_demand_slovenia_threat }
 			YUG = { add_opinion_modifier = { target = GER modifier = GER_demand_slovenia_YUG } }
 			if = {
 				limit = {
@@ -8896,7 +8896,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_second_ljubljana_award
 		mutually_exclusive = { focus = GER_war_with_greece } 
 		prerequisite = { focus = GER_fate_of_yugoslavia }"
-			add_named_threat = { threat = 2 name = GER_second_ljubljana_award }
+			add_named_threat = { threat = 5 name = GER_second_ljubljana_award }
 			if = {
 				limit = {
 					GRE = {

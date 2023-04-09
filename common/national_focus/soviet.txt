@@ -12946,7 +12946,7 @@ ai_will_do = {
 			activate_targeted_decision = { target = LAT decision = SOV_send_ultimatum_to_country_baltic }
 			activate_targeted_decision = { target = LIT decision = SOV_send_ultimatum_to_country_baltic }
 
-			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
+			add_named_threat = { threat = 5 name = SOV_claims_in_baltic }
 		}
 	}
 
@@ -13165,7 +13165,7 @@ ai_will_do = {
 				}
 				add_claim_by = SOV
 			}
-			add_named_threat = { threat = 3 name = SOV_claims_on_poland }
+			add_named_threat = { threat = 10 name = SOV_claims_on_poland }
 
 			every_other_country = {
 				limit = { 
@@ -13403,7 +13403,7 @@ ai_will_do = {
 					set_country_flag = SOV_added_claimed_bessarabia
 					country_event = { id = romania.1 hours = 16 random_hours = 8 }
 			}
-			add_named_threat = { threat = 1 name = SOV_claim_on_bessarabia }
+			add_named_threat = { threat = 5 name = SOV_claim_on_bessarabia }
 			
 		}
 	}

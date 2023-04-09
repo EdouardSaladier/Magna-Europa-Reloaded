@@ -22,6 +22,12 @@ set_technology = {
 
 set_convoys = 10
 add_ideas = { neutrality_idea disarmed_nation civilian_economy }
+
+country_event = {
+    id = mer_event.8
+    days = 553
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

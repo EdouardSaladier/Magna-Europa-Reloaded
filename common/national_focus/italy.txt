@@ -13069,7 +13069,7 @@ focus_tree = {
 			effect_tooltip = {
 				custom_effect_tooltip = if_they_accept_tt
 				annex_country = { target = ALB }
-				add_named_threat = { threat = 2 name = ITA_albania_war_goal }
+				add_named_threat = { threat = 5 name = ITA_albania_war_goal }
 				# The king is an idea
 				if = {
 					limit = {
@@ -14021,7 +14021,7 @@ focus_tree = {
 			}
 			add_ideas = ITA_italian_irredentism_ns
 			#TODO_Manu: Might need to remove some/all of the claims below due to overlap with other focuses
-			add_named_threat = { threat = 4 name = ITA_italian_irredentism } #Comes from the old Claims in Yugoslavia focus
+			add_named_threat = { threat = 5 name = ITA_italian_irredentism } #Comes from the old Claims in Yugoslavia focus
 			every_state = {
 				limit = {
 					NOT = { 
