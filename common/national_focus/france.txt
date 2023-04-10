@@ -409,20 +409,14 @@
 		id = FRA_algerie_france
 		icon = GFX_focus_generic_industry_1
 		available = {
-		ALG = {
-			any_core_state = {
-				OWNER = {
-					OR = {
-						tag = ROOT
-						is_subject_of = ROOT
-					}
-				}
+			any_state = {
+				is_core_of = ALG
+				is_owned_or_subject_trigger = yes
 				free_building_slots = {
 					building = industrial_complex
 					size > 1
 					include_locked = yes
 				}
-			}
 			}
 		}
 		x = 2
@@ -437,48 +431,27 @@
 
 		bypass = {
 			
-		}		
-
-		complete_tooltip = {
-			every_state = {
-				limit = { 
-					OR = {
-						state = 459
-						state = 460
-						state = 513
-					}
-					is_owned_or_subject_trigger = yes	
-					OR = {	
-						has_state_flag = FRA_industrial_expansion_target
-						has_state_flag = FRA_colonial_industry_target
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_algerie_france"
-		ALG = {
-			random_core_state = {
+			random_state = {
 				limit = { 
-					NOT  = {
+					is_core_of = ALG
+					OWNER = { is_owned_or_subject_trigger = yes }
+					NOT = {
 						has_state_flag = FRA_industrial_expansion_target
 						has_state_flag = FRA_colonial_industry_target
 					}
-					is_owned_or_subject_trigger = yes	
 				}
 				add_extra_state_shared_building_slots = 2
 				set_state_flag = FRA_industrial_expansion_target
 				set_state_flag = FRA_colonial_industry_target
+				
 				random_neighbor_state = {
 					limit = { 
-						OR = {
-							state = 459
-							state = 460
-							state = 513
-						}
+						is_core_of = ALG
 						is_owned_or_subject_trigger = yes
 						NOT  = {
 							has_state_flag = FRA_industrial_expansion_target
@@ -491,7 +464,6 @@
 				}
 			}
 		}
-	}
 	}	
 	focus = {
 		id = FRA_invest_in_the_colonies
@@ -539,9 +511,8 @@
 		}
 	}
 	focus = {
-		id = FRA_invest_in_west_africa
+		id = FRA_invest_in_west_africa #Now Protectorates
 		icon = GFX_focus_generic_industry_1
-		allow_branch = { has_country_flag = NEVER }
 		x = 0
 		y = 1
 		offset = {
@@ -560,14 +531,8 @@
 		available = {
 			any_state = {
 				OR = {
-					state = 272
-					state = 780
-					state = 556
-					state = 779
-					state = 778
-					state = 781
-					state = 776
-					state = 777
+					is_core_of = MOR
+					is_core_of = TUN
 				}	
 				is_owned_or_subject_trigger = yes
 			}
@@ -584,32 +549,35 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_invest_in_west_africa"
-			random_state = {
-				limit = { 
-					OR = {
-						state = 272
-						state = 780
-						state = 556
-						state = 779
-						state = 778
-						state = 781
-						state = 776
-						state = 777
-					}	
-					OWNER = { is_owned_or_subject_trigger = yes }
-					NOT = {
-						has_state_flag = FRA_colonial_industry_target
+			MOR = {
+				random_core_state = {
+					limit = { 
+						OWNER = { is_owned_or_subject_trigger = yes }	
+						NOT = {
+							has_state_flag = FRA_colonial_industry_target
+						}
 					}
+					add_extra_state_shared_building_slots = 2
+					set_state_flag = FRA_colonial_industry_target
 				}
-				add_extra_state_shared_building_slots = 2
-				set_state_flag = FRA_colonial_industry_target
+			}
+			TUN = {
+				random_core_state = {
+					limit = { 
+						OWNER = { is_owned_or_subject_trigger = yes }	
+						NOT = {
+							has_state_flag = FRA_colonial_industry_target
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					set_state_flag = FRA_colonial_industry_target
+				}
 			}
 		}
 	}
 	focus = {
-		id = FRA_invest_in_indochina
+		id = FRA_invest_in_indochina #Now Lebanon
 		icon = GFX_focus_generic_industry_1
-		allow_branch = { has_country_flag = NEVER }
 		x = 2
 		y = 1
 		offset = {
@@ -627,11 +595,7 @@
 
 		available = {
 			any_state = {
-				OR = {
-					is_core_of = VIN
-					is_core_of = CAM
-					is_core_of = LAO
-				}
+				is_core_of = LEB
 				is_owned_or_subject_trigger = yes
 			}
 		}
@@ -647,21 +611,27 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_invest_in_indochina"
-			random_state = {
-				limit = { 
-					OR = {
-						state = 741
-						state = 286
-						state = 671
-						state = 670
+			LEB = {
+				random_core_state = {
+					limit = { 
+						OWNER = { is_owned_or_subject_trigger = yes }	
+						NOT = {
+							has_state_flag = FRA_colonial_industry_target
+						}
 					}
-					OWNER = { is_owned_or_subject_trigger = yes }	
-					NOT = {
-						has_state_flag = FRA_colonial_industry_target
+					add_extra_state_shared_building_slots = 2
+					set_state_flag = FRA_colonial_industry_target
+					random_neighbor_state = {
+						limit = { 
+							OWNER = { is_owned_or_subject_trigger = yes }	
+							NOT = {
+								has_state_flag = FRA_colonial_industry_target
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						set_state_flag = FRA_colonial_industry_target
 					}
 				}
-				add_extra_state_shared_building_slots = 2
-				set_state_flag = FRA_colonial_industry_target
 			}
 		}
 	}
@@ -685,10 +655,7 @@
 
 		available = {
 			any_state = {
-				OR = {
-					is_core_of = SYR
-					is_core_of = LEB
-				}
+				is_core_of = SYR
 				is_owned_or_subject_trigger = yes
 			}
 		}
@@ -704,17 +671,27 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_invest_in_syria"
-		SYR = {
-			random_core_state = {
-				limit = { 
-					OWNER = { is_owned_or_subject_trigger = yes }	
-					NOT = {
-						has_state_flag = FRA_colonial_industry_target
+			SYR = {
+				random_core_state = {
+					limit = { 
+						OWNER = { is_owned_or_subject_trigger = yes }	
+						NOT = {
+							has_state_flag = FRA_colonial_industry_target
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					set_state_flag = FRA_colonial_industry_target
+					random_neighbor_state = {
+						limit = { 
+							OWNER = { is_owned_or_subject_trigger = yes }	
+							NOT = {
+								has_state_flag = FRA_colonial_industry_target
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						set_state_flag = FRA_colonial_industry_target
 					}
 				}
-				add_extra_state_shared_building_slots = 2
-				set_state_flag = FRA_colonial_industry_target
-			}
 			}
 		}
 	}
@@ -1873,11 +1850,12 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_legal_equality"
 			FRA_right_wing_riot_effect = yes
 			add_popularity = { ideology = communism popularity = 0.05 }
+			remove_worker_shortage_effect = yes
 		}
 	}	
 	focus = {
@@ -3625,7 +3603,7 @@
 		}
 
 		available = {
-			
+			FRA_has_worker_shortage = yes
 		}
 		
 		bypass = {
@@ -4979,10 +4957,11 @@
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_stimulate_the_dynamic_market"
 			add_ideas = { FRA_market_dynamism }
+			remove_worker_shortage_effect = yes
 		}
 	}
 	focus = {
