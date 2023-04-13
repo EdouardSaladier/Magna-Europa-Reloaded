@@ -10,6 +10,7 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = RUS
+		add_core_of = SAP
 		buildings = {
 			infrastructure = 3
 			19708 = { naval_base = 4 }
@@ -18,7 +19,6 @@ state={
 			arms_factory = 1
 			dockyard = 1
 		}
-		add_core_of = SAP
 		victory_points = {
 			19708 20 
 		}
@@ -42,6 +42,6 @@ state={
 	}
 	manpower=129800
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 	local_supplies=0.000
 }
