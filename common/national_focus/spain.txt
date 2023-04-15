@@ -195,7 +195,7 @@ focus_tree = {
 			    ideology = neutrality
 			    popularity = 0.15
 			}
-			add_to_variable = { var = spa_civil_war_divisions_counter_var value = 5 }
+			add_to_variable = { var = spa_civil_war_divisions_counter_var value = 8 }
 			custom_effect_tooltip = SPA_negotiate_carlist_support_tt
 			custom_effect_tooltip = SPA_negotiate_carlist_support_tt_2
 		}
@@ -220,7 +220,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
 			army_experience = 10
-			add_to_variable = { var = spa_civil_war_divisions_counter_var value = 5 }
+			add_to_variable = { var = spa_civil_war_divisions_counter_var value = 8 }
 			custom_effect_tooltip = SPA_the_army_of_africa_tt
 		}
 	}
@@ -475,12 +475,12 @@ focus_tree = {
 				}
 				custom_effect_tooltip = SPR_secure_the_guardia_de_asalto_tt_2
 				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -10 }
-				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 5 }
+				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 8 }
 			}
 			else = {
 				custom_effect_tooltip = SPR_secure_the_guardia_de_asalto_tt
 				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -6 }
-				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 3 }
+				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 5 }
 			}
 			set_country_flag = SPR_secure_the_guardia_de_asalto_flag
 			custom_effect_tooltip = SPR_secure_the_guardia_get_both_types_tt
@@ -525,13 +525,13 @@ focus_tree = {
 					is_ai = no
 				}
 				custom_effect_tooltip = SPR_secure_the_guardia_civil_tt_2
-				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -5 }
-				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 10 }
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -8 }
+				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 14 }
 			}
 			else = {
 				custom_effect_tooltip = SPR_secure_the_guardia_civil_tt
-				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -3 }
-				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 6 }
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -5 }
+				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 10 }
 			}
 			set_country_flag = SPR_secure_the_guardia_civil_flag
 			custom_effect_tooltip = SPR_secure_the_guardia_get_both_types_tt
@@ -561,7 +561,7 @@ focus_tree = {
 			    ideology = communism
 			    popularity = 0.05
 			}
-			add_to_variable = { var = spr_civil_war_divisions_counter_var value = 5 }
+			add_to_variable = { var = spr_civil_war_divisions_counter_var value = 8 }
 			custom_effect_tooltip = SPR_train_the_union_youth_tt
 			custom_effect_tooltip = SPR_remove_after_civil_war_tt
 		}
@@ -614,7 +614,7 @@ focus_tree = {
 			    popularity = 0.05
 			}
 			add_political_power = 75
-			add_to_variable = { var = spr_civil_war_divisions_counter_var value = 10 }
+			add_to_variable = { var = spr_civil_war_divisions_counter_var value = 12 }
 			custom_effect_tooltip = SPR_distribute_arms_to_the_people_tt
 			custom_effect_tooltip = SPR_remove_after_civil_war_tt
 		}
