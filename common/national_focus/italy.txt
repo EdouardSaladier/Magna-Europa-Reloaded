@@ -8087,6 +8087,11 @@ focus_tree = {
 					}
 				}
 			}
+			add_ai_strategy = {
+				type = ignore_claim
+				id = TUN
+				value = 1
+			}
 		}
 	}
 
@@ -14064,6 +14069,11 @@ focus_tree = {
 					NOT = { has_rule = can_send_volunteers }
 				}
 				set_rule = { can_send_volunteers = yes }
+			}
+			add_ai_strategy = {
+				type = ignore_claim
+				id = TUN
+				value = 1
 			}
 		}
 	}
