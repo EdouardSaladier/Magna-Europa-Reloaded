@@ -1810,6 +1810,36 @@ ENG_USA_d_day = {
 
 }
 
+ENG_USA_more_landings = {
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = ENG
+		}
+	}
+	enable = {
+		date > 1944.6.1
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = atlantik_wall_zone
+		value = 80
+	}
+
+	ai_strategy = {
+		type = invasion_unit_request
+		area = atlantik_wall_zone
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 20
+	}
+
+}
+
 #ENG_we_hate_fighting_in_the_balkans = {
 #
 #	allowed = {

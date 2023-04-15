@@ -2608,7 +2608,7 @@ GER_atlantik_wall_buffer = {
 			314
 			316
 		}
-		ratio = 0.1
+		ratio = 0.05
 		area = atlantik_wall_zone
 		subtract_invasions_from_need = no
 		subtract_fronts_from_need = yes
@@ -2673,7 +2673,7 @@ GER_atlantik_wall_invasion_buffer = {
 			314
 			316
 		}
-		ratio = 0.15
+		ratio = 0.1
 		area = atlantik_wall_zone
 		subtract_invasions_from_need = no
 		subtract_fronts_from_need = yes
