@@ -29,6 +29,11 @@ if = {
 	}
 }
 
+if = {
+	limit = { has_dlc_lar = yes }
+	create_intelligence_agency = yes
+}
+
 set_research_slots = 3
 give_guarantee = DNZ
 # Starting tech

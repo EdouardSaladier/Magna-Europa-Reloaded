@@ -3411,6 +3411,8 @@ leader_traits = {
 		enemy_operative_detection_chance = 0.1
 		enemy_operative_capture_chance_factor = 0.05
 		civilian_intel_to_others = -5
+		operative_slot = 3
+		agency_upgrade_time = -0.1
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
 	}
 
@@ -3421,6 +3423,8 @@ leader_traits = {
 		enemy_operative_detection_chance = 0.1
 		enemy_operative_capture_chance_factor = 0.05
 		civilian_intel_to_others = -5
+		operative_slot = 3
+		agency_upgrade_time = -0.1
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_yagoda_tt
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
 	}
@@ -3432,6 +3436,8 @@ leader_traits = {
 		enemy_operative_detection_chance = 0.1
 		enemy_operative_capture_chance_factor = 0.05
 		civilian_intel_to_others = -5
+		operative_slot = 3
+		agency_upgrade_time = -0.1
 	}
 
 	head_of_the_nkvd_yezhov_initial = {
@@ -3441,7 +3447,8 @@ leader_traits = {
 		enemy_operative_detection_chance = 0.1
 		enemy_operative_capture_chance_factor = 0.1
 		civilian_intel_to_others = -10
-		agency_upgrade_time = -0.1
+		operative_slot = 3
+		agency_upgrade_time = -0.2
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
 	}
 
@@ -3452,7 +3459,8 @@ leader_traits = {
 		enemy_operative_detection_chance = 0.1
 		enemy_operative_capture_chance_factor = 0.1
 		civilian_intel_to_others = -10
-		agency_upgrade_time = -0.1
+		operative_slot = 3
+		agency_upgrade_time = -0.2
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_yezhov_tt
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
 	}
@@ -3464,7 +3472,8 @@ leader_traits = {
 		enemy_operative_detection_chance = 0.1
 		enemy_operative_capture_chance_factor = 0.1
 		civilian_intel_to_others = -10
-		agency_upgrade_time = -0.1
+		operative_slot = 3
+		agency_upgrade_time = -0.2
 	}
 
 	head_of_the_nkvd_beriya_initial = {
@@ -3475,6 +3484,8 @@ leader_traits = {
 		enemy_operative_capture_chance_factor = 0.15
 		civilian_intel_to_others = -10
 		intel_network_gain_factor = 0.1
+		operative_slot = 3
+		agency_upgrade_time = -0.1
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
 	}
 
@@ -3486,6 +3497,8 @@ leader_traits = {
 		enemy_operative_capture_chance_factor = 0.15
 		civilian_intel_to_others = -10
 		intel_network_gain_factor = 0.1
+		operative_slot = 3
+		agency_upgrade_time = -0.1
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_beriya_tt
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
 	}
@@ -3498,6 +3511,8 @@ leader_traits = {
 		enemy_operative_capture_chance_factor = 0.15
 		civilian_intel_to_others = -10
 		intel_network_gain_factor = 0.1
+		operative_slot = 3
+		agency_upgrade_time = -0.1
 	}
 
 	#Kaganovich

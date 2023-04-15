@@ -15,6 +15,11 @@ if = {
 	set_oob = "ITA_1936_nsb"
 }
 
+if = {
+	limit = { has_dlc_lar = yes }
+	create_intelligence_agency = yes
+}
+
 every_state = {
 	limit = {
 		is_core_of = ITA

@@ -10,6 +10,13 @@ if = {
 		set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
+
+if = {
+	limit = { has_dlc_lar = yes }
+	create_intelligence_agency = yes
+	add_ideas = usa_oss
+}
+
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "USA_1936_air_bba"

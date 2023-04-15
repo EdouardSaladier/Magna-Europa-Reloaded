@@ -15,6 +15,12 @@ if = {
 	set_oob = "GER_1936_nsb"
 }
 
+if = {
+	limit = { has_dlc_lar = yes }
+	create_intelligence_agency = yes
+	set_faction_spymaster = yes
+}
+
 every_owned_state = {
 	set_state_flag = GER_INITIAL_STATE
 }

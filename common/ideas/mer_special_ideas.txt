@@ -39,6 +39,42 @@ ideas = {
 			}
 		}
 		
+		usa_oss = {
+			picture = oss_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				operative_slot = 3
+			}
+		}
+		
+		eng_mi6 = {
+			picture = mi6_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				operative_slot = 4
+			}
+		}
+		
 		sov_manpower_from_east = {
 			picture = eng_imperial_conscription
 			

@@ -16,6 +16,12 @@ set_party_name = {
 	name = SOV_fascism_party_russian
 }
 
+if = {
+	limit = { has_dlc_lar = yes }
+	create_intelligence_agency = yes
+	set_faction_spymaster = yes
+}
+
 #COUNTRY LEADERS
 recruit_character = SOV_iosif_stalin
 recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus

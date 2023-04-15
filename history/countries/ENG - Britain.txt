@@ -15,6 +15,13 @@ if = {
 	set_oob = "ENG_1936_nsb"
 }
 
+if = {
+	limit = { has_dlc_lar = yes }
+	create_intelligence_agency = yes
+	set_faction_spymaster = yes
+	add_ideas = eng_mi6
+}
+
 starting_train_buffer = 4
 
 if = {
