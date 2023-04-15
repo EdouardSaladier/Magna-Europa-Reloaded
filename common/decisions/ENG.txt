@@ -6227,14 +6227,10 @@ ENG_move_to_secure_the_dominions = {
 		}
 
 		available = {
-			NOT = { army_manpower_in_state = { state = 467 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 469 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 470 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 473 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 465 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 464 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 468 amount < 28800 } }
-			NOT = { army_manpower_in_state = { state = 276 amount < 48000 } }
+			NOT = { army_manpower_in_state = { state = 1 amount < 28000 } }
+			NOT = { army_manpower_in_state = { state = 9 amount < 38000 } }
+			NOT = { army_manpower_in_state = { state = 6 amount < 38000 } }
+			NOT = { army_manpower_in_state = { state = 8 amount < 38000 } }
 		}
 
 		targets = { CAN }
@@ -6312,14 +6308,10 @@ ENG_move_to_secure_the_dominions = {
 		}
 
 		available = {
-			NOT = { army_manpower_in_state = { state = 467 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 469 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 470 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 473 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 465 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 464 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 468 amount < 28800 } }
-			NOT = { army_manpower_in_state = { state = 276 amount < 48000 } }
+			NOT = { army_manpower_in_state = { state = 1 amount < 28000 } }
+			NOT = { army_manpower_in_state = { state = 9 amount < 38000 } }
+			NOT = { army_manpower_in_state = { state = 6 amount < 38000 } }
+			NOT = { army_manpower_in_state = { state = 8 amount < 38000 } }
 			FROM = { has_country_flag = ENG_cannot_leave_faction }
 		}
 
@@ -6391,14 +6383,10 @@ ENG_move_to_secure_the_dominions = {
 		}
 
 		available = {
-			NOT = { army_manpower_in_state = { state = 467 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 469 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 470 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 473 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 465 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 464 amount < 9600 } }
-			NOT = { army_manpower_in_state = { state = 468 amount < 28800 } }
-			NOT = { army_manpower_in_state = { state = 276 amount < 48000 } }
+			NOT = { army_manpower_in_state = { state = 1 amount < 28000 } }
+			NOT = { army_manpower_in_state = { state = 9 amount < 38000 } }
+			NOT = { army_manpower_in_state = { state = 6 amount < 38000 } }
+			NOT = { army_manpower_in_state = { state = 8 amount < 38000 } }
 			FROM = { 
 				has_country_flag = ENG_cannot_leave_faction
 				fascism > 0.2

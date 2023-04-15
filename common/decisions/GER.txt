@@ -2501,6 +2501,7 @@ GER_reichskommissariats = {
 					
 				}
 			}
+			MVF = { is_subject_of = GER }
 		}
 
 		cost = 0
@@ -2527,30 +2528,36 @@ GER_reichskommissariats = {
 		}
 
 		complete_effect = {
-			FRA = {
-				every_core_state = {
-						limit = {
-							is_vichy_state = yes
-							is_controlled_by = GER
+			every_state = {
+				limit = {
+					is_vichy_state = yes
+					OR = {
+						is_controlled_by = GER
+						controller = { is_subject_of = GER }
+						controller = {
+							AND = {
+								is_in_faction_with = GER
+								is_ai = yes
+							}
 						}
-						add_claim_by = MVF
-						transfer_state_to = MVF
-						
 					}
-					
 				}
+				add_claim_by = MVF
+				transfer_state_to = MVF
+			}
 			MVF = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 30000
+					amount = 5000
 					producer = GER
 				}
-				add_manpower = 30000
 				every_owned_state = {
+					limit = {
+						is_vichy_state = yes
+					}
 					add_compliance  = 30
 				}
 			}
-			GER = { set_autonomy = { target = MVF autonomy_state = autonomy_integrated_puppet } }
 			if = {
 					limit = {
 						FRA = {
