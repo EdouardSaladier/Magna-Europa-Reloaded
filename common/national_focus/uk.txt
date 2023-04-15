@@ -1859,15 +1859,8 @@ focus_tree = {
 			num_subjects > 0
 		} 
 		icon = GFX_goal_generic_national_unity
-		x = 28
+		x = 22
 		y = 0
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1926,7 +1919,7 @@ focus_tree = {
 			}
 		} 
 		icon = GFX_goal_generic_construct_military
-		x = 5
+		x = 4
 		y = 1
 		relative_position_id = uk_service_focus
 		cost = 10
@@ -2654,7 +2647,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-		x = 33
+		x = 29
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -2694,7 +2687,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		icon = GFX_focus_chi_british_cooperation
-		x = 3
+		x = 0
 		y = 1
 		relative_position_id = ENG_revisit_colonial_policy
 		cost = 10
@@ -2774,7 +2767,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		icon = GFX_goal_tfv_sever_ties_with_uk
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = ENG_guide_the_colonies
 		cost = 10
@@ -2874,7 +2867,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		icon = GFX_goal_generic_position_armies
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ENG_guide_the_colonies
 		cost = 5
@@ -3637,7 +3630,7 @@ focus_tree = {
 		id = uk_colonial_focus 
 		prerequisite = { focus = uk_service_focus }
 		icon = GFX_focus_research2
-		x = -5
+		x = -2
 		y = 1
 		relative_position_id = uk_service_focus
 		cost = 10
@@ -3679,7 +3672,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 4
+		x = 0
 		y = 1
 		relative_position_id = uk_colonial_focus
 		cost = 10
@@ -5170,10 +5163,10 @@ focus_tree = {
 
 		icon = GFX_goal_support_democracy
 
-		x = 14
+		x = 10
 		y = 0
 		offset = {
-			x = -7
+			x = -4
 			y = 0
 			trigger = {
 				NOT = { has_dlc = "Man the Guns" }

@@ -464,12 +464,31 @@ country_event = {
 			random_list = {#north africa
 				25 = {
 					modifier = {
+						has_completed_focus = FRA_algerie_france
+						factor = 2
+					}
+					modifier = {
+						has_completed_focus = FRA_global_integration
+						factor = 2
+					}
+					modifier = {
 						has_country_flag = FRA_north_africa_promised_independence
 						factor = 0.25
 					}
 					country_event = lar_france_french_union.2 #accepts
+					set_country_flag = north_africa_yes
 				} 
-				75 = { country_event = lar_france_french_union.3 } #refuses
+				75 = {
+					modifier = {
+						has_completed_focus = FRA_algerie_france
+						factor = 0.25
+					}
+					modifier = {
+						has_completed_focus = FRA_global_integration
+						factor = 0.25
+					}
+					country_event = lar_france_french_union.3 #refuses
+				} 
 			}
 		}
 		if = {
@@ -477,29 +496,67 @@ country_event = {
 				FRA_controls_west_africa = yes
 			}
 			random_list = {#west africa
-				45 = {
+				25 = {
 					modifier = {
 						has_country_flag = FRA_west_africa_promised_independence
 						factor = 0.25
 					}
+					modifier = {
+						has_completed_focus = FRA_global_integration
+						factor = 2
+					}
+					modifier = {
+						has_completed_focus = FRA_algerie_france
+						factor = 2
+					}
 					country_event = lar_france_french_union.4 #accepts
+					set_country_flag = west_africa_yes
 				} 
-				55 = { country_event = lar_france_french_union.5 } #refuses
+				75 = { 
+					modifier = {
+						has_completed_focus = FRA_algerie_france
+						factor = 0.25
+					}
+					modifier = {
+						has_completed_focus = FRA_global_integration
+						factor = 0.25
+					}
+					country_event = lar_france_french_union.5 #refuses					
+				} 
 			}
 		}
 		if = {
 			limit = {
-				FRA_controls_central_africa = yes
+				FRA_controls_central_africa = yes #Now Protectorates
 			}
 			random_list = {#central africa
-				45 = {
+				25 = {
 					modifier = {
 						has_country_flag = FRA_central_africa_promised_independence
 						factor = 0.25
 					}
+					modifier = {
+						has_completed_focus = FRA_global_integration
+						factor = 2
+					}
+					modifier = {
+						has_completed_focus = FRA_invest_in_west_africa
+						factor = 2
+					}
 					country_event = lar_france_french_union.6 #accepts
+					set_country_flag = central_africa_yes
 				} 
-				55 = { country_event = lar_france_french_union.7 } #refuses
+				75 = { 
+					modifier = {
+						has_completed_focus = FRA_invest_in_west_africa
+						factor = 0.25
+					}
+					modifier = {
+						has_completed_focus = FRA_global_integration
+						factor = 0.25
+					}
+					country_event = lar_france_french_union.7 #refuses					
+				} 
 			}
 		}
 		if = {
@@ -507,36 +564,112 @@ country_event = {
 				FRA_controls_syria = yes
 			}
 			random_list = {#syria
-				15 = {
+				25 = {
+					modifier = {
+						has_completed_focus = FRA_invest_in_syria
+						factor = 2
+					}
+					modifier = {
+						has_completed_focus = FRA_global_integration
+						factor = 2
+					}
 					modifier = {
 						has_country_flag = FRA_syria_promised_independence
 						factor = 0.25
 					}
 					country_event = lar_france_french_union.8 #accepts
+					set_country_flag = syria_yes
 				} 
-				85 = { country_event = lar_france_french_union.9 } #refuses
+				75 = { 
+					modifier = {
+						has_completed_focus = FRA_invest_in_syria
+						factor = 0.25
+					}
+					modifier = {
+						has_completed_focus = FRA_global_integration
+						factor = 0.25
+					}
+					country_event = lar_france_french_union.9
+				} #refuses
 			}
 		}
 		if = {
 			limit = {
-				FRA_controls_indochina = yes
+				FRA_controls_indochina = yes #Now Lebanon
 			}
 			random_list = {#indochina
-				5 = {
+				25 = {
+					modifier = {
+						has_completed_focus = FRA_invest_in_indochina
+						factor = 2
+					}
+					modifier = {
+						has_completed_focus = FRA_global_integration
+						factor = 2
+					}
 					modifier = {
 						has_country_flag = FRA_indochina_promised_independence
 						factor = 0.25
 					}
 					country_event = lar_france_french_union.10 #accepts
+					set_country_flag = indochina_yes
 				} 
-				95 = { country_event = lar_france_french_union.11 } #refuses
+				75 = {
+					modifier = {
+						has_completed_focus = FRA_invest_in_indochina
+						factor = 0.25
+					}
+					modifier = {
+						has_completed_focus = FRA_global_integration
+						factor = 0.25
+					}
+					country_event = lar_france_french_union.11
+				} #refuses
 			}
 		}
 	}
 
 	option = {
-		name = lar_france_french_union.1.a 
-		
+		name = mer_event.9 
+		if = {
+			limit = {
+				AND = {
+					has_country_flag = north_africa_yes
+					has_country_flag = central_africa_yes
+					has_country_flag = west_africa_yes
+					has_country_flag = syria_yes
+					has_country_flag = indochina_yes
+				}
+				NOT = { has_cosmetic_tag = FRA_THIRD_EMPIRE }
+			}
+			set_cosmetic_tag = FRA_GREATER_FRENCH_UNION_TAG
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_country_flag = north_africa_yes
+					has_country_flag = central_africa_yes
+					has_country_flag = west_africa_yes
+					has_country_flag = syria_yes
+					has_country_flag = indochina_yes
+				}
+				NOT = { has_cosmetic_tag = FRA_THIRD_EMPIRE }
+			}
+			set_cosmetic_tag = FRA_FRENCH_UNION_TAG
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_country_flag = north_africa_yes
+					has_country_flag = central_africa_yes
+					has_country_flag = west_africa_yes
+					has_country_flag = syria_yes
+					has_country_flag = indochina_yes
+				}
+				has_cosmetic_tag = FRA_THIRD_EMPIRE
+			}
+			set_cosmetic_tag = FRA_FRENCH_UNION_THIRD_EMPIRE_TAG
+		}
 	}
 }
 #north africa agrees
@@ -558,31 +691,9 @@ country_event = {
 			}
 			annex_country = { target = ALG }
 		}
-		if = {
+		every_state = {
 			limit = {
-				TUN = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = TUN }
-		}
-		if = {
-			limit = {
-				MOR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = MOR }
-		}
-		every_owned_state = {
-			limit = {
-				OR = {
-					is_core_of = ALG
-					is_core_of = TUN
-					is_core_of = MOR
-				}
+				is_core_of = ALG
 			}
 			add_core_of = ROOT
 		}
@@ -612,44 +723,13 @@ country_event = {
 					autonomy_state = autonomy_free
 				}
 			}
+			ALG = { drop_cosmetic_tag = yes }
 		}
-		if = {
-			limit = {
-				TUN = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = TUN
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				MOR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = MOR
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		every_owned_state = {
+		every_state = {
 			limit = {
 				is_controlled_by = ROOT
 				NOT = { is_core_of = ROOT }
-				OR = {
-					is_core_of = ALG
-					is_core_of = TUN
-					is_core_of = MOR
-				}
+				is_core_of = ALG
 			}
 			add_resistance_target = {
 				amount = 55
@@ -679,11 +759,9 @@ country_event = {
 			}
 			annex_country = { target = MRT }
 		}
-		every_owned_state = {
+		every_state = {
 			limit = {
-				OR = {
-					is_core_of = MRT
-				}
+				is_core_of = MRT
 			}
 			add_core_of = ROOT
 		}
@@ -716,7 +794,7 @@ country_event = {
 			MRT = { drop_cosmetic_tag = yes }
 		}
 		
-		every_owned_state = {
+		every_state = {
 			limit = {
 				OR = {
 					is_core_of = MRT
@@ -740,7 +818,33 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.2.a
-		
+		if = {
+			limit = {
+				TUN = {
+					exists = yes
+					is_subject_of = ROOT
+				}
+			}
+			annex_country = { target = TUN }
+		}
+		if = {
+			limit = {
+				MOR = {
+					exists = yes
+					is_subject_of = ROOT
+				}
+			}
+			annex_country = { target = MOR }
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = TUN
+					is_core_of = MOR
+				}
+			}
+			add_core_of = ROOT
+		}
 	}
 }
 
@@ -754,7 +858,48 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.3.a
-		
+		if = {
+			limit = {
+				TUN = {
+					exists = yes
+					is_subject_of = ROOT
+				}
+			}
+			OVERLORD = {
+				set_autonomy = {
+					target = TUN
+					autonomy_state = autonomy_free
+				}
+			}
+			TUN = { drop_cosmetic_tag = yes }
+		}
+		if = {
+			limit = {
+				MOR = {
+					exists = yes
+					is_subject_of = ROOT
+				}
+			}
+			OVERLORD = {
+				set_autonomy = {
+					target = MOR
+					autonomy_state = autonomy_free
+				}
+			}
+			MOR = { drop_cosmetic_tag = yes }
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = MOR
+					is_core_of = TUN
+				}
+			}
+			add_resistance_target = {
+				amount = 55
+				tooltip = LAR_fra_voted_independence_tt
+			}
+		}
 	}
 }
 
@@ -779,19 +924,25 @@ country_event = {
 		}
 		if = {
 			limit = {
-				LEB = {
+				ALW = {
 					exists = yes
 					is_subject_of = ROOT
 				}
 			}
-			annex_country = { target = LEB }
+			annex_country = { target = ALW }
 		}
-		every_owned_state = {
+		if = {
 			limit = {
-				OR = {
-					is_core_of = SYR
-					is_core_of = LEB
+				JDZ = {
+					exists = yes
+					is_subject_of = ROOT
 				}
+			}
+			annex_country = { target = JDZ }
+		}
+		every_state = {
+			limit = {
+				is_core_of = SYR
 			}
 			add_core_of = ROOT
 		}
@@ -821,28 +972,42 @@ country_event = {
 					autonomy_state = autonomy_free
 				}
 			}
+			SYR = { drop_cosmetic_tag = yes }
 		}
 		if = {
 			limit = {
-				LEB = {
+				ALW = {
 					exists = yes
 					is_subject_of = ROOT
 				}
 			}
 			OVERLORD = {
 				set_autonomy = {
-					target = LEB
+					target = ALW
 					autonomy_state = autonomy_free
 				}
 			}
+			ALW = { drop_cosmetic_tag = yes }
 		}
-		every_owned_state = {
+		if = {
+			limit = {
+				JDZ = {
+					exists = yes
+					is_subject_of = ROOT
+				}
+			}
+			OVERLORD = {
+				set_autonomy = {
+					target = JDZ
+					autonomy_state = autonomy_free
+				}
+			}
+			JDZ = { drop_cosmetic_tag = yes }
+		}
+		every_state = {
 			limit = {
 				is_controlled_by = ROOT
-				OR = {
-					is_core_of = LEB
-					is_core_of = SYR
-				}
+				is_core_of = SYR
 			}
 			add_resistance_target = {
 				amount = 55
@@ -861,7 +1026,21 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.2.a
-		
+		if = {
+			limit = {
+				LEB = {
+					exists = yes
+					is_subject_of = ROOT
+				}
+			}
+			annex_country = { target = LEB }
+		}
+		every_state = {
+			limit = {
+				is_core_of = LEB
+			}
+			add_core_of = ROOT
+		}
 	}
 }
 
@@ -875,7 +1054,31 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.3.a
-		
+		if = {
+			limit = {
+				LEB = {
+					exists = yes
+					is_subject_of = ROOT
+				}
+			}
+			OVERLORD = {
+				set_autonomy = {
+					target = LEB
+					autonomy_state = autonomy_free
+				}
+			}
+			LEB = { drop_cosmetic_tag = yes }
+		}
+		every_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = LEB
+			}
+			add_resistance_target = {
+				amount = 55
+				tooltip = LAR_fra_voted_independence_tt
+			}
+		}
 	}
 }
 

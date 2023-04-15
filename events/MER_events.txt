@@ -268,7 +268,7 @@ country_event = {
 	hidden = yes
 	immediate = {
 		LIE = {
-			add_named_threat = { threat = 20 name = JAP_intervene_in_china }
+			add_named_threat = { threat = 15 name = JAP_intervene_in_china }
 		}
 	}
 }

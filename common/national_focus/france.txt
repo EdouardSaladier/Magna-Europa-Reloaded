@@ -365,9 +365,14 @@
 		}
 
 		complete_tooltip = {
-			every_owned_state = {
+			every_state = {
 				limit = {
-					is_controlled_by = ROOT
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = {
+							is_subject_of = ROOT
+						}
+					}
 					OR = {
 						has_state_flag = FRA_industrial_expansion_target
 						has_state_flag = FRA_colonial_industry_target
@@ -386,9 +391,14 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_military_factories"
 			custom_effect_tooltip = FRA_military_factories_effect_tt
-			every_owned_state = {
+			every_state = {
 				limit = {
-					is_controlled_by = ROOT
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = {
+							is_subject_of = ROOT
+						}
+					}
 					OR = {
 						has_state_flag = FRA_industrial_expansion_target
 						has_state_flag = FRA_colonial_industry_target
@@ -719,9 +729,14 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_colonial_industry"
 			custom_effect_tooltip = FRA_colonial_industry_effect_tt
-			every_owned_state = {
+			every_state = {
 				limit = {
-					is_controlled_by = ROOT
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = {
+							is_subject_of = ROOT
+						}
+					}
 					has_state_flag = FRA_colonial_industry_target
 				}
 				add_building_construction = {
