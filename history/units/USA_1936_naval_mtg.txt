@@ -101,12 +101,12 @@ units= {
 instant_effect = {
 
 	### Under Construction Notes ###
-	# CA: Quincy (New Orleans class, Comm. 9-Jun, 1936)
+	# CA: Quincy (Astoria class, Comm. 9-Jun, 1936)
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_cruiser_2
 			creator = "USA"
-			version_name = "New Orleans Class"
+			version_name = "Astoria Class"
 		}
 		name = "USS Quincy" 
 		requested_factories = 2
@@ -117,7 +117,7 @@ instant_effect = {
 		equipment = {
 			type = ship_hull_cruiser_2
 			creator = "USA"
-			version_name = "New Orleans Class"
+			version_name = "Astoria Class"
 		}
 		requested_factories = 1
 		progress = 0.50
@@ -159,7 +159,7 @@ instant_effect = {
 	# DD: Porter (x14) ("USS Porter" "USS Phelps" "USS Clark" "USS Moffett")
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
@@ -170,7 +170,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
@@ -181,7 +181,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
@@ -192,7 +192,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
@@ -204,7 +204,7 @@ instant_effect = {
 	# DD: Mahan class (x9) ("USS Mahan" "USS Cummings" "USS Flusser" "USS Case" "USS Conyngham" "USS Cassin" "USS Shaw" "USS Cushing" "USS Perkins")
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
@@ -215,7 +215,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
@@ -226,7 +226,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
@@ -237,7 +237,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
@@ -248,7 +248,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
@@ -259,7 +259,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
@@ -270,7 +270,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
@@ -281,7 +281,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
@@ -292,7 +292,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
+			type = ship_hull_light_2
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
