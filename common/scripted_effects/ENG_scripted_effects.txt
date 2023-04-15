@@ -150,6 +150,42 @@ ENG_imperial_conference_set_subject_counter = {
 			value = 1
 		}
 	}
+	if = {
+		limit = {
+			EGY = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			KUW = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			QAT = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
 }
 
 # Clear Imperial Conference flags

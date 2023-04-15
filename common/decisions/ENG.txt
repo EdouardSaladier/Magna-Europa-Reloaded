@@ -6825,6 +6825,14 @@ ENG_imperial_conference_decision = {
 							is_subject_of = ENG
 							tag = EGY
 						}
+						AND = {
+							is_subject_of = ENG
+							tag = KUW
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = QAT
+						}
 					}
 				}
 				remove_opinion_modifier = { target = ENG modifier = ENG_imperial_conference_opinion }
@@ -6971,6 +6979,8 @@ ENG_imperial_conference_decision = {
 			OR = {
 				CAN = { exists = yes }
 				EGY = { exists = yes }
+				KUW = { exists = yes }
+				QAT = { exists = yes }
 			}
 		}
 
