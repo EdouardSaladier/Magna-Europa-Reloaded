@@ -254,7 +254,15 @@ country_event = {
 		name = soviet.6.a
 		if = {
 			limit = {
-				FROM = { has_country_flag = cave_to_enemy_pressure_flag }
+				OR = {
+					is_historical_focus_on = no
+					FROM = {
+						is_ai = no
+					}
+				}
+				FROM = { 
+					has_country_flag = cave_to_enemy_pressure_flag 
+				}
 			}
 			puppet = FROM
 		}
@@ -297,7 +305,16 @@ country_event = {
 		name = soviet.8.a
 		if = {
 			limit = {
-				FROM = { has_country_flag = cave_to_enemy_pressure_flag }
+				OR = {
+					is_historical_focus_on = no
+					FROM = {
+						is_ai = no
+					}
+				}
+				FROM = { 
+					has_country_flag = cave_to_enemy_pressure_flag 
+					
+				}
 			}
 			puppet = FROM
 		}
@@ -340,7 +357,15 @@ country_event = {
 		name = soviet.10.a
 		if = {
 			limit = {
-				FROM = { has_country_flag = cave_to_enemy_pressure_flag }
+				OR = {
+					is_historical_focus_on = no
+					FROM = {
+						is_ai = no
+					}
+				}
+				FROM = { 
+					has_country_flag = cave_to_enemy_pressure_flag 
+				}
 			}
 			puppet = FROM
 		}

@@ -18,6 +18,10 @@ country_event = {
 		name = baltic.1.a
 		ai_chance = {
 			base = 10
+			modifier = {
+				factor = 1000
+				is_historical_focus_on = yes
+			}
 			modifier = { # Don't accept if in a faction that can protect them
 				factor = 0
 				NOT = { is_in_faction_with = FROM }
@@ -78,6 +82,10 @@ country_event = {
 					has_guaranteed = EST
 				}
 			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 
 		FROM = {
@@ -106,6 +114,10 @@ country_event = {
 		name = baltic.1.a
 		ai_chance = {
 			base = 10
+			modifier = {
+				factor = 1000
+				is_historical_focus_on = yes
+			}
 			modifier = { # Don't accept if in a faction that can protect them
 				factor = 0
 				NOT = { is_in_faction_with = FROM }
@@ -127,6 +139,7 @@ country_event = {
 					has_guaranteed = LAT
 				}
 			}
+			
 		}
 
 		FROM = {
@@ -195,6 +208,10 @@ country_event = {
 		name = baltic.1.a
 		ai_chance = {
 			base = 10
+			modifier = {
+				factor = 1000
+				is_historical_focus_on = yes
+			}
 			modifier = { # Don't accept if in a faction that can protect them
 				factor = 0
 				NOT = { is_in_faction_with = FROM }
