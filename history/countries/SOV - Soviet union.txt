@@ -17,7 +17,7 @@ set_party_name = {
 }
 
 if = {
-	limit = { has_dlc_lar = yes }
+	limit = { has_dlc = "La Resistance" }
 	create_intelligence_agency = yes
 	set_faction_spymaster = yes
 }
