@@ -534,7 +534,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = SOV_third_five_year_plan
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_shift_to_armaments_production }
 
@@ -738,7 +738,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_third_five_year_plan
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_reorganize_the_pc_of_heavy_industry}
 
@@ -3942,7 +3942,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = SOV_found_the_pcdi
-		cost = 10
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 229 #MOSCOW
@@ -4007,7 +4007,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 			if = {
@@ -4147,7 +4147,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -5744,6 +5744,12 @@ focus_tree = {
 		available = {
 			any_enemy_country = {
 				SOV_is_major_not_original_sov = yes
+				NOT = { 
+					AND = {
+						original_tag = POL
+						is_ai = yes
+					}
+				}
 			}
 		}
 		
@@ -5887,7 +5893,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_lessons_of_war
-		cost = 10
+		cost = 5
 
 		available = {
 			any_owned_state = {
@@ -5962,7 +5968,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_lessons_of_war
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -6587,7 +6593,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_zinovyevite_terrorist_center
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -6878,7 +6884,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_the_anti_soviet_trotskyist_center
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -6943,16 +6949,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_war_economy"
-			custom_effect_tooltip = SOV_war_economy_stability_tt
-			if = {
-				limit = {
-					has_war = no
-				}
-				add_stability = -0.1
-			}
-			else = {
-				custom_effect_tooltip = SOV_war_economy_stability_war_tt
-			}
+			
 			if = {
 				limit = {
 					NOT = { has_idea = war_economy }
@@ -7107,7 +7104,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_the_military_conspiracy
-		cost = 10
+		cost = 5
 
 		available = {
 			has_country_flag = {
@@ -7212,6 +7209,10 @@ focus_tree = {
 			has_government = communism
 		}
 		
+		ai_will_do = {
+			factor = 1000
+		}
+		
 		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
@@ -7219,6 +7220,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
+					is_ai = no
 				}
 				custom_effect_tooltip = SOV_behead_the_snake_lar_tt
 				create_operative_leader = {

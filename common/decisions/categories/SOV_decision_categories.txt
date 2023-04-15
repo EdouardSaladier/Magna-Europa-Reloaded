@@ -264,7 +264,10 @@ SOV_kill_trotsky_dec_cat = {
 
 	allowed = {
 		original_tag = SOV
-		NOT = { has_dlc = "La Resistance" }
+		OR = {
+			NOT = { has_dlc = "La Resistance" }
+			is_ai = yes
+		}
 	}
 
 	visible = {
