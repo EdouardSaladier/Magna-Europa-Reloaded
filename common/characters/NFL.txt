@@ -1,0 +1,20 @@
+characters={
+	NFL_frederick_alderdice={
+		name=NFL_frederick_alderdice
+		portraits={ civilian={ large=GFX_portrait_William_Thomas_Cosgrave } }
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	NFL_richard_squires={
+		name=NFL_richard_squires
+		portraits={ civilian={ large=GFX_portrait_Harry_S_Truman } }
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

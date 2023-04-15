@@ -8,7 +8,6 @@ characters={
 			id=-1
 		}
 	}
-
 	QBC_louis-alexandre_taschereau={
 		name=QBC_louis-alexandre_taschereau
 		portraits={ civilian={ large=GFX_portrait_Arthur_Seyss_Inquart } }
@@ -18,7 +17,6 @@ characters={
 			id=-1
 		}
 	}
-
 	QBC_paul_gouin={
 		name=QBC_paul_gouin
 		portraits={ civilian={ large="GFX_portrait_Pierre_Gemayel" } }
@@ -28,12 +26,11 @@ characters={
 			id=-1
 		}
 	}
-
 	QBC_maurice_duplessis={
 		name=QBC_maurice_duplessis
 		portraits={ civilian={ large=GFX_portrait_FRA_denis_guillaumat } }
 		country_leader={
-			ideology=oligarchism
+			ideology=despotism
 			expire="1965.1.1.1"
 			id=-1
 		}

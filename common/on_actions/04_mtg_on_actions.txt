@@ -567,7 +567,9 @@ on_actions = {
 				ENG = {
 					release = NFL
 					set_autonomy = { target = NFL autonomy_state = autonomy_dominion }
-				NFL = { set_cosmetic_tag = NFL_UK }
+				NFL = {
+					set_cosmetic_tag = NFL_UK
+					add_to_tech_sharing_group = commonwealth_research }
 				}
 			}
 			if = {

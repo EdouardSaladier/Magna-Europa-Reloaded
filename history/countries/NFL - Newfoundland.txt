@@ -1,6 +1,21 @@
 ﻿capital = 64
 
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_technology = {
+		aa_lmg = 1
+		engines_1 = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+		}
+	}
+
 set_research_slots = 1
+set_stability = 0.4
+set_war_support = 0.5
+
+recruit_character = NFL_frederick_alderdice
+recruit_character = NFL_richard_squires
 
 # Starting tech
 set_technology = {
@@ -15,9 +30,7 @@ set_technology = {
 	basic_train = 1
 }
 if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
+	limit = { NOT = { has_dlc = "By Blood Alone" } }
 	set_technology = {
 		early_fighter = 1
 		naval_bomber1 = 1
@@ -25,20 +38,15 @@ if = {
 		
 	}
 }
-
 if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
+	limit = { NOT = { has_dlc = "No Step Back" } }
 	set_technology = {
 		gwtank = 1
 		basic_light_tank = 1
 	}
 }
 if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
+	limit = { has_dlc = "No Step Back" }
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
@@ -67,18 +75,18 @@ if = {
 	}
 }
 
-set_convoys = 10
-
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
+	last_election = "1932.6.12"
+	election_frequency = 1
 	elections_allowed = yes
 }
 
 set_popularities = {
 	communism = 0
-	democratic = 100
+	democratic = 25
 	fascism = 0
-	neutrality = 0
+	neutrality = 75
 }
+
+set_convoys = 10
