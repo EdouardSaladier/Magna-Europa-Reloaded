@@ -43,7 +43,7 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = mountaineers
-		value = 2
+		value = 1
 	}
 
 	ai_strategy = {
@@ -73,13 +73,13 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 15
+		value = 20
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 70 #because doctrine 70
+		value = 80 #because doctrine 70
 	}
 
 	#Air unit factors
@@ -2120,10 +2120,7 @@ ALLIES_avoid_enemies_for_a_while_ww3 = {
 	enable = {
 		is_historical_focus_on = yes
 		date > 1943.1.1
-		OR = {
-			has_war_with = GER
-			has_war_with = JAP
-		}
+		has_war_with = GER
 	}
 
 	abort_when_not_enabled = yes
@@ -2146,18 +2143,45 @@ SOV_ohshitohfuckgermanyiscoming = {
 	enable = {
 		date > 1941.1.1
 	}
-	ai_strategy = {
-		type = build_army
-		id = infantry
-		value = 300
-	}
+	
+	abort_when_not_enabled = yes
+	
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
 		value = 40
 	}
 	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 160
+	}
+	ai_strategy = {
+		type = build_army
+		id = armor
+		value = 40
+	}
+	ai_strategy = {
 		type = force_build_armies
 		value = 60
+	}
+}
+
+SOV_we_need_more_troops = {
+	allowed = {
+		original_tag = SOV
+		has_war_with = GER
+	}
+	enable = {
+		date > 1941.1.1
+		surrender_progress > 0.1
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 200
 	}
 }

@@ -31,6 +31,15 @@ on_actions = {
 					add_ideas = ai_italy_dont_join_WW2_wars_until_BEL_has_capitulated
 				}
 			}
+			IRQ = { #Iraqi Oil concessions
+				give_resource_rights = { receiver = ENG state = 2206 }
+				give_resource_rights = { receiver = ENG state = 1102 }
+			}
+			PER = { #Persian Oil concessions
+				give_resource_rights = { receiver = ENG state = 1238 }
+				give_resource_rights = { receiver = ENG state = 2394 }
+				give_resource_rights = { receiver = ENG state = 1300 }
+			}
 		}
 	}
 }

@@ -500,7 +500,7 @@ GER_reichskommissariats = {
 				NOR = {
 					every_core_state = {
 						add_claim_by = RKG
-						set_state_controller_to	= RKG
+						transfer_state_to = RKG
 						add_compliance = 30
 					}
 				}
@@ -544,6 +544,7 @@ GER_reichskommissariats = {
 					}
 					transfer_state_to = RKG
 					add_claim_by = RKG
+					add_compliance = 30
 				}
 				GER = { set_autonomy = { target = RKG autonomy_state = autonomy_integrated_puppet } }
 			}
@@ -605,8 +606,9 @@ GER_reichskommissariats = {
 								state = 104
 							}
 						}
-						set_state_controller_to	 = RKD
+						transfer_state_to = RKD
 						add_compliance = 30
+						add_claim_by = RKD
 					}
 				}
 				RKD = {
@@ -644,6 +646,7 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = RKD
+					add_compliance = 30
 					add_claim_by = RKD
 				}
 				GER = { 
@@ -710,7 +713,7 @@ GER_reichskommissariats = {
 				HOL = {
 					every_core_state = {
 						add_claim_by = RKN
-						set_state_controller_to	= RKN
+						transfer_state_to = RKN
 						add_compliance = 30
 					}
 				}
@@ -730,7 +733,6 @@ GER_reichskommissariats = {
 						traits = {
 						}
 					}
-					transfer_state = 1974
 				}
 				set_autonomy = { target = RKN autonomy_state = autonomy_integrated_puppet }
 			}
@@ -753,6 +755,7 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = RKN
+					add_compliance = 30
 					add_claim_by = RKN
 				}
 				GER = { set_autonomy = { target = RKN autonomy_state = autonomy_integrated_puppet } }
@@ -861,7 +864,7 @@ GER_reichskommissariats = {
 						}
 					}
 					add_claim_by = RKB
-					set_state_controller_to	= RKB
+					transfer_state_to = RKB
 					add_compliance = 30
 				}
 				RKB = {
@@ -884,7 +887,6 @@ GER_reichskommissariats = {
 						traits = {
 						}
 					}
-					transfer_state = 2368
 				}
 				GER = { transfer_state = 485 }
 				set_autonomy = { target = RKB autonomy_state = autonomy_integrated_puppet }
@@ -911,6 +913,7 @@ GER_reichskommissariats = {
 					}
 					transfer_state_to = RKB
 					add_claim_by = RKB
+					add_compliance = 30
 				}
 				GER = { transfer_state = 485 }
 				GER = { set_autonomy = { target = RKB autonomy_state = autonomy_integrated_puppet } }

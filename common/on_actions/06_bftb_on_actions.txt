@@ -264,18 +264,6 @@ on_actions = {
 
 	on_startup = {
 		effect = {
-			#Iraqi oil concessions
-			if = {
-				limit = {
-					has_dlc = "Battle for the Bosporus"
-				}
-				IRQ = {
-					give_resource_rights = { receiver = ENG state = 2206 }
-					give_resource_rights = { receiver = ENG state = 1102 }
-				}
-			}
-		}
-		effect = {
 			#Greek faction set-up
 			if = {
 				limit = {
