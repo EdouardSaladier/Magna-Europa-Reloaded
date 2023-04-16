@@ -1662,14 +1662,16 @@ FRA_intervention_in_overseas_territories = {
 			}
 		} 
 
-		visible = { has_completed_focus = FRA_intervention_in_north_africa }
+		#visible = { has_completed_focus = FRA_intervention_in_north_africa }
 
 		complete_effect = { 
 			set_country_flag = FRA_north_africa_promised_independence
 			custom_effect_tooltip = FRA_promise_independence_tt
-			random_list = {
-				20 = {
-					VIC = { country_event = LaR_france_vichy_notification_events.5 }
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+				}
+				VIC = { country_event = LaR_france_vichy_notification_events.5 }
 					FRA_transfer_north_africa_effect = yes
 					every_owned_state = {
 						limit = {
@@ -1686,11 +1688,33 @@ FRA_intervention_in_overseas_territories = {
 						}
 						add_compliance = 5
 					}
+				else = {
+					random_list = {
+						20 = {
+							VIC = { country_event = LaR_france_vichy_notification_events.5 }
+							FRA_transfer_north_africa_effect = yes
+							every_owned_state = {
+								limit = {
+									is_controlled_by = ROOT
+									OR = {
+										state = 461
+										state = 462
+										state = 459
+										state = 513
+										state = 460
+										state = 458
+										state = 665
+									}
+								}
+								add_compliance = 5
+							}
+						}
+						80 = {
+						
+						}
+					}
 				}
-				80 = {
-
-				}
-			}
+			}	
 		}
 		fire_only_once = yes
 		cost = 25
@@ -1741,8 +1765,10 @@ FRA_intervention_in_overseas_territories = {
 		complete_effect = { 
 			set_country_flag = FRA_syria_promised_independence
 			custom_effect_tooltip = FRA_promise_independence_tt
-			random_list = {
-				30 = {
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+				}
 					VIC = { country_event = LaR_france_vichy_notification_events.1 }
 					FRA_transfer_syria_effect = yes
 					every_owned_state = {
@@ -1757,9 +1783,29 @@ FRA_intervention_in_overseas_territories = {
 						}
 						add_compliance = 5
 					}
+				else = {
+					random_list = {
+						30 = {
+							VIC = { country_event = LaR_france_vichy_notification_events.1 }
+							FRA_transfer_syria_effect = yes
+							every_owned_state = {
+								limit = {
+									is_controlled_by = ROOT
+									OR = {
+										state = 677
+										state = 680
+										state = 554
+										state = 553
+									}
+								}
+								add_compliance = 5
+							}
+						}
+						70 = {}
+					}
 				}
-				70 = {}
 			}
+			
 		}
 		fire_only_once = yes
 		cost = 25

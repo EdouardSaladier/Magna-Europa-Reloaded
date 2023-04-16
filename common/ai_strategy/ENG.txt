@@ -1973,3 +1973,50 @@ ENG_buff_pls = {
 		value = 100
 	}
 }
+ENG_and_EGY_push_through_libya = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = EGY
+		}
+	}
+	enable = {
+		1241 = {
+			controller = {
+				has_war_with = ENG
+			}
+		}
+		1889 = {
+			owner = {
+				is_in_faction_with = ENG
+			}
+		}
+	}
+	abort = {
+		1241 = {
+			controller = {
+				NOT = { has_war_with = ENG }
+			}
+		}
+	}
+	ai_strategy = {
+		type = area_priority
+		id = libya
+		value = 15
+	}
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			OR = {
+				region = 38
+				region = 39
+				region = 59
+			}
+		}
+		priority = 1
+		ratio = 0.2
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+}

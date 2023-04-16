@@ -1139,6 +1139,9 @@ USA_onto_the_beaches = {
 }
 
 USA_convoy_hungry = {
+	allowed = {
+		tag = USA
+	}
 	enable = {
 		date > 1940.1.1
 		has_equipment = {
