@@ -7220,25 +7220,21 @@ focus_tree = {
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
-					is_ai = no
 				}
-				custom_effect_tooltip = SOV_behead_the_snake_lar_tt
+				#custom_effect_tooltip = SOV_behead_the_snake_lar_tt
 				create_operative_leader = {
 					name = "Ramón Mercader"
 					GFX = GFX_portrait_SOV_ramon_mercader
 					traits = { operative_tough operative_infiltrator }
 					bypass_recruitment = no
 					available_to_spy_master = yes
-					nationalities = { SOV SPR MEX }
+					nationalities = { SOV SPR }
 				}
-
-				#Extra operative slot
 				set_variable = { SOV_the_politburo_operative_slot = 1 }
 				custom_effect_tooltip = SOV_behead_the_snake_ns_tt
 			}
-			else = {
-				custom_effect_tooltip = SOV_behead_the_snake_no_lar_tt
-			}
+			custom_effect_tooltip = SOV_behead_the_snake_no_lar_tt
+			
 
 			SOV_paranoia_high_decrease_effect = yes
 		}

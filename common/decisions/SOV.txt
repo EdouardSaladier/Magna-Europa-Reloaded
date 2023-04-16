@@ -8561,12 +8561,6 @@ SOV_kill_trotsky_dec_cat = {
 			}
 		}
 
-		target_trigger = {
-			FROM = {
-				owns_state = 277
-			}
-		}
-
 		allowed = {
 			original_tag = SOV
 		}
@@ -8610,37 +8604,10 @@ SOV_kill_trotsky_dec_cat = {
 		}
 
 		remove_effect = {
-			hidden_effect = {
-				clr_country_flag = SOV_attempting_to_kill_trotsky_flag
-				set_country_flag = SOV_raided_trotskys_villa_flag
-				random_list = {
-					50 = {
-						modifier = {
-							factor = 2
-							FROM = {
-								communism > 0.5
-							}
-						}
-						modifier = {
-							factor = 5
-							FROM = {
-								is_in_faction_with = ROOT
-							}
-						}
-						ROOT = { news_event = { id = nsb_news.100 } } #SUCCESS - Kill Trotsky and swap Trotskyite Plot NS
-					}
-					50 = {
-						modifier = {
-							factor = 0
-							FROM = {
-								is_subject_of = ROOT
-							}
-						}
-						ROOT = { news_event = { id = nsb_news.101 } } #FAILURE - Trotsky still alive
-					}
-				}
-			}
-			custom_effect_tooltip = SOV_raid_trotskys_villa_tt
+			clr_country_flag = SOV_attempting_to_kill_trotsky_flag
+			set_country_flag = SOV_raided_trotskys_villa_flag
+			ROOT = { news_event = { id = nsb_news.100 } } #SUCCESS - Kill Trotsky and swap Trotskyite Plot NS
+			
 		}
 	}
 
@@ -8655,15 +8622,6 @@ SOV_kill_trotsky_dec_cat = {
 				add = 200
 				date > 1940.6.1 #Historical 20/08/1940
 				has_country_flag = SOV_raided_trotskys_villa_flag
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				OR = {
-					owns_state = 277
-					owns_state = 110
-				}
 			}
 		}
 
@@ -8685,9 +8643,6 @@ SOV_kill_trotsky_dec_cat = {
 			NOT = { has_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico }
 			OR = {
 				AND = {
-					FROM = {
-						controls_state = 277 #MEXICO CITY
-					}
 					OR = {
 						has_global_flag = trotsky_exile_mexico
 						has_global_flag = flag_mexico_invited_trotsky_to_government
@@ -8695,7 +8650,7 @@ SOV_kill_trotsky_dec_cat = {
 				}
 				AND = {
 					FROM = {
-						controls_state = 110 #OSTLANDET (Oslo) -> Trotsky not accepted in Mexico (or Soviets being super fast to kill him, which should be impossible btw)
+						controls_state = 124 #OSTLANDET (Oslo) -> Trotsky not accepted in Mexico (or Soviets being super fast to kill him, which should be impossible btw)
 					}
 					NOT = {
 						has_global_flag = trotsky_exile_mexico
