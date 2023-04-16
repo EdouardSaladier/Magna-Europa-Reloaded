@@ -2806,7 +2806,7 @@ country_event = {
 						count = 3
 					}
 				}
-				41 = { # Extra 6 divisions to make Madrid harder to capture (as historically)
+				951 = { # Extra 6 divisions to make Madrid harder to capture (as historically)
 					create_unit = {
 						division = "division_template = \"Guarnición Republicana\" start_experience_factor = 0.1" 
 						owner = SPD
@@ -4532,6 +4532,23 @@ country_event = {
 						}
 					}
 					set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
+				}
+				if = {
+					limit = {
+						has_country_flag = SPR_bandaid_divisions
+					}
+					every_state = {
+						limit = {
+							is_owned_by = SPR
+							is_core_of = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Guarnición Republicana\" start_experience_factor = 0.1" 
+							owner = SPR
+							allow_spawning_on_enemy_provs = yes
+							count = 2
+						}
+					}
 				}
 				# We need to teleport the railway guns after capitals have been set. transfer_units_fraction will
 				# teleport them but to the wrong province.

@@ -4687,6 +4687,7 @@ SPR_opposition_civil_war_preparations = {
 		timeout_effect = {
 			custom_effect_tooltip = SPA_secure_the_northern_garrisons_mission_tt
 			set_country_flag = SPA_secure_the_northern_garrisons_flag
+			set_country_flag = SPR_bandaid_divisions
 			hidden_effect = {
 				random_list = {
 					10 = {
