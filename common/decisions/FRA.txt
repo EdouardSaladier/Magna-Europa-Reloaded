@@ -1669,7 +1669,10 @@ FRA_intervention_in_overseas_territories = {
 			custom_effect_tooltip = FRA_promise_independence_tt
 			if = {
 				limit = {
-					is_historical_focus_on = yes
+					OR = {
+						is_historical_focus_on = yes
+						is_ai = no
+					}
 				}
 				VIC = { country_event = LaR_france_vichy_notification_events.5 }
 					FRA_transfer_north_africa_effect = yes
@@ -1767,7 +1770,10 @@ FRA_intervention_in_overseas_territories = {
 			custom_effect_tooltip = FRA_promise_independence_tt
 			if = {
 				limit = {
-					is_historical_focus_on = yes
+					OR = {
+						is_historical_focus_on = yes
+						is_ai = no
+					}
 				}
 					VIC = { country_event = LaR_france_vichy_notification_events.1 }
 					FRA_transfer_syria_effect = yes
