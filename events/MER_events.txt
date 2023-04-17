@@ -272,3 +272,66 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = mer_event.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.9 FROM = [From.GetName]" }
+	title = mer_event.9.t
+	desc = mer_event.9.desc
+	trigger = {
+		OR = {
+			tag = SPA
+			tag = SPB 
+			tag = SPC 
+			tag = SPD
+		}
+		all_controlled_state = {
+			is_spanish_colony_groups = yes
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	immediate = {
+			random_country = {
+				limit = {
+					controls_state = 951
+					OR = {
+						tag = SPA
+						tag = SPB 
+						tag = SPC 
+						tag = SPD
+						tag = SPR
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { NOT = { has_war_with = PREV } }
+					}
+					every_state = {
+						limit = {
+							is_spanish_colony_groups = yes
+							controller = { 
+								OR = {
+									tag = ROOT 
+									tag = SPA
+									tag = SPB 
+									tag = SPC 
+									tag = SPD
+									tag = SPR
+								}
+							}
+						}
+						transfer_state_to = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						is_spanish_colony_groups = yes
+						controller = { tag = ROOT }
+					}
+					set_state_controller_to = PREV
+				}
+			}
+		add_ideas = decreased_surrender_idea_2
+	}
+	
+}
