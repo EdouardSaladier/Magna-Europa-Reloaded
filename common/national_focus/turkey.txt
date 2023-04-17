@@ -56,16 +56,7 @@ focus_tree = {
 		prerequisite = { focus = TUR_the_montreux_convention }
 		available = {
 			TUR = { has_government = neutrality }
-			GRE = {
- all_core_state = {
-  if = {
-    limit = {
-     NOT = { is_core_of = CRT }
-    }
-    is_owned_by = ROOT
-   }
- }
-}
+			
 		}
 		x = 3
 		y = 1
@@ -481,10 +472,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			base = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
+			
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
@@ -5248,7 +5236,7 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
-				date < 1945.1.1
+				date < 1944.1.1
 			}
 		}
 

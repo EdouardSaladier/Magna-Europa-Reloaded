@@ -13796,6 +13796,9 @@ ai_will_do = {
 			is_subject = no
 			any_enemy_country = { is_major = yes }
 		}
+		historical_ai = {
+			num_divisions > 240
+		}
 		
 		search_filters = {}
 
