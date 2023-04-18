@@ -309,7 +309,10 @@ country_event = {
 					every_state = {
 						limit = {
 							is_spanish_colony_groups = yes
-							controller = { 
+							controller = {
+								all_controlled_state = {
+									is_spanish_colony_groups = yes
+								}
 								OR = {
 									tag = ROOT 
 									tag = SPA

@@ -365,8 +365,11 @@
 			factor = 1
 		}
 		available = {
-			16 = {
-				is_controlled_by = GER
+			571 = {
+				OR = {
+					is_controlled_by = GER
+					is_controlled_by = MVF
+				}
 			}
 		}
 		
@@ -477,13 +480,13 @@
 			modifier = {
 				is_historical_focus_on = yes
 				NOT = {
-					GER = { owns_state = 219 } 
+					GER = { controls_state = 229 } 
 				}
 				factor = 0
 			}
 		}
 		available = {
-			16 = {
+			571 = {
 				NOT = {
 					is_controlled_by = ROOT
 				}
@@ -641,7 +644,7 @@
 			factor = 1
 		}
 		available = {
-			16 = { # Controller of paris is in a war against any communist major
+			571 = { # Controller of paris is in a war against any communist major
 				CONTROLLER = {
 					NOT = {
 						tag = ROOT
