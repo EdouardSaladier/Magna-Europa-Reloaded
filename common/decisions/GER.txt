@@ -755,7 +755,7 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = RKN
-					add_compliance = 30
+					add_compliance = 10
 					add_claim_by = RKN
 				}
 				GER = { set_autonomy = { target = RKN autonomy_state = autonomy_integrated_puppet } }
@@ -764,16 +764,8 @@ GER_reichskommissariats = {
 				limit = {
 					has_game_rule = { rule = kongs_secret_stuff option = SECRET_ENABLED }
 				}
-				every_state = {
-					limit = {
-						is_owned_by = RKN
-						OR = {
-							state = 2344
-							state = 2717
-						}
-					}
-					transfer_state_to = GER
-				}
+				2344 = { transfer_state_to = GER }
+				2717 = { transfer_state_to = GER }
 			}
 			hidden_effect = {
 				RKN = {

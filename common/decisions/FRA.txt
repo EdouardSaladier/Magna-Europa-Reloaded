@@ -1504,6 +1504,7 @@ political_actions = {
 					
 
 		}
+		fire_only_once = yes
 		available = {
 			always = no
 		}
@@ -1662,7 +1663,7 @@ FRA_intervention_in_overseas_territories = {
 			}
 		} 
 
-		#visible = { has_completed_focus = FRA_intervention_in_north_africa }
+		visible = { has_completed_focus = FRA_intervention_in_north_africa }
 
 		complete_effect = { 
 			set_country_flag = FRA_north_africa_promised_independence
@@ -1723,6 +1724,10 @@ FRA_intervention_in_overseas_territories = {
 		cost = 25
 		ai_will_do = {
 			factor = 3
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
 		}
 	}
 	FRA_prepare_coup_in_north_africa = {

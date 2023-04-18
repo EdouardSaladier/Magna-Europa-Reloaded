@@ -34,14 +34,13 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
 		y = 0
-		cost = 7
+		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus army_effort"
-			army_experience = 10
+			army_experience = 5
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -65,7 +64,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus equipment_effort"
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
 				bonus = 1.0
@@ -91,7 +89,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus motorization_effort"
 			add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 3.0
@@ -107,15 +104,14 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = army_effort
-		cost = 7
+		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus doctrine_effort"
-			army_experience = 10
+			army_experience = 5
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -139,7 +135,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus equipment_effort_2"
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
 				bonus = 1.0
@@ -164,7 +159,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus mechanization_effort"
 			add_tech_bonus = {
 				name = motorized_bonus
 				ahead_reduction = 2
@@ -181,15 +175,14 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = doctrine_effort
-		cost = 7
+		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus doctrine_effort_2"
-			army_experience = 10
+			army_experience = 5
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -213,7 +206,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus equipment_effort_3"
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
 				ahead_reduction = 2
@@ -238,7 +230,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus armor_effort"
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -264,7 +255,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus special_forces"
 			add_ideas = special_forces
 			add_tech_bonus = {
 				name = special_forces_bonus
@@ -310,7 +300,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus aviation_effort"
 			air_experience = 25
 
 			if = {
@@ -381,18 +370,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus fighter_focus"
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 1.0
 				uses = 2
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
+				category = light_fighter
+				category = cat_heavy_fighter
 			}
 		}
 	}
@@ -412,14 +395,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus bomber_focus"
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				technology = strategic_bomber3
+				category = cat_strategic_bomber
 				category = tactical_bomber
 			}
 		}
@@ -456,7 +436,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus aviation_effort_2"
 			air_experience = 25
 			if = {
 				limit = {
@@ -530,7 +509,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAS_effort"
 			add_tech_bonus = {
 				name = CAS_bonus
 				bonus = 1.0
@@ -556,7 +534,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus rocket_effort"
 			add_tech_bonus = {
 				name = jet_rocket_bonus
 				ahead_reduction = 2
@@ -590,7 +567,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NAV_effort"
 			add_tech_bonus = {
 				name = nav_bomber_bonus
 				bonus = 1.0
@@ -631,7 +607,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus naval_effort"
 			navy_experience = 25
 			if = {
 				limit = {
@@ -759,7 +734,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus flexible_navy"
 			add_doctrine_cost_reduction = {
 				name = sub_op_bonus
 				cost_reduction = 0.5
@@ -802,7 +776,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus large_navy"
 			add_doctrine_cost_reduction = {
 				name = fleet_in_being_bonus
 				cost_reduction = 0.25
@@ -840,7 +813,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus submarine_effort"
 			add_tech_bonus = {
 				name = ss_bonus
 				bonus = 1.0
@@ -879,7 +851,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus cruiser_effort"
 			add_tech_bonus = {
 				name = cr_bonus
 				bonus = 1.0
@@ -919,7 +890,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroyer_effort"
 			add_tech_bonus = {
 				name = dd_bonus
 				bonus = 1.0
@@ -957,7 +927,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus capital_ships_effort"
 			navy_experience = 25
 			add_tech_bonus = {
 				name = capital_ships_bonus
@@ -983,7 +952,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus industrial_effort"
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1.0
@@ -1057,7 +1025,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus construction_effort"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1098,7 +1065,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = industrial_effort
-		cost = 5
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -1132,7 +1099,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus production_effort"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1198,16 +1164,15 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}		
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus construction_effort_2"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1231,10 +1196,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1273,16 +1238,15 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}		
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus production_effort_2"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1306,10 +1270,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1323,7 +1287,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = construction_effort_2
-		cost = 5
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
@@ -1355,7 +1319,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus infrastructure_effort"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1406,61 +1369,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1508,7 +1417,6 @@ focus_tree = {
 		}		
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus production_effort_3"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1539,36 +1447,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -1579,7 +1457,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = infrastructure_effort
-		cost = 5
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
@@ -1611,7 +1489,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus infrastructure_effort_2"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1663,60 +1540,6 @@ focus_tree = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
 					instant_build = yes
 				}
 			}
@@ -1764,7 +1587,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus construction_effort_3"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1795,36 +1617,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 1
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -1842,7 +1634,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus nuclear_effort"
 			add_tech_bonus = {
 				name = nuclear_bonus
 				ahead_reduction = 2
@@ -1873,7 +1664,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus extra_tech_slot"
 			add_research_slot = 1
 		}
 	}
@@ -1897,7 +1687,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus extra_tech_slot_2"
 			add_research_slot = 1
 		}
 	}	
@@ -1916,7 +1705,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus secret_weapons"
 			add_tech_bonus = {
 				name = secret_bonus
 				bonus = 1.0
@@ -1948,7 +1736,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus political_effort"
 			add_political_power = 120
 		}
 	}
@@ -1994,7 +1781,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus collectivist_ethos"
 			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
 		}
 	}
@@ -2043,7 +1829,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus nationalism_focus"
 			add_timed_idea = {
 				idea = nationalism
 				days = 720
@@ -2097,7 +1882,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus internationalism_focus"
 			add_timed_idea = {
 				idea = internationalism
 				days = 720
@@ -2147,7 +1931,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus liberty_ethos"
 			add_ideas = liberty_ethos_focus
 		}
 	}
@@ -2166,7 +1949,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus militarism"
 			if = {
 				limit = { has_idea = neutrality_idea }
 				remove_ideas = neutrality_idea
@@ -2191,7 +1973,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus political_correctness"
 			if = {
 				limit = { has_idea = neutrality_idea }
 				remove_ideas = neutrality_idea
@@ -2230,7 +2011,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus neutrality_focus"
 			if = {
 				limit = { NOT = { has_idea = neutrality_idea } }
 				add_ideas = neutrality_idea
@@ -2263,7 +2043,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus interventionism_focus"
 			if = {
 				limit = { has_idea = neutrality_idea }
 				remove_ideas = neutrality_idea
@@ -2287,7 +2066,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus military_youth"
 			add_ideas = military_youth_focus
 			if = {
 				limit = { has_government = fascism }
@@ -2320,7 +2098,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus deterrence"
 			add_ideas = deterrence
 		}
 	}
@@ -2339,7 +2116,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus volunteer_corps"
 			add_ideas = volunteer_corps_focus
 		}
 	}
@@ -2358,7 +2134,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus paramilitarism"
 			add_ideas = paramilitarism_focus
 		}
 	}
@@ -2377,7 +2152,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus indoctrination_focus"
 			add_ideas = indoctrination_focus
 			add_political_power = 150
 		}
@@ -2397,7 +2171,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus foreign_expeditions"
 			add_ideas = foreign_expeditions_focus
 		}
 	}
@@ -2425,7 +2198,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus why_we_fight"
 			add_ideas = why_we_fight_focus
 			custom_effect_tooltip = why_we_fight_effect
 			hidden_effect = {
@@ -2453,7 +2225,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus political_commissars"
 			add_ideas = political_commissars_focus
 			if = {
 				limit = { has_government = fascism }
@@ -2487,7 +2258,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ideological_fanaticism"
 			add_ideas = ideological_fanaticism_focus
 			set_rule = {
 				can_create_factions = yes
@@ -2524,7 +2294,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus technology_sharing"
 			if = {
 				limit = {
 					original_research_slots < 3

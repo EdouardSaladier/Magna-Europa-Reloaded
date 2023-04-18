@@ -6805,9 +6805,25 @@ country_event = {
 		}
 		every_state = {
 			limit = {
+				OR = {
+					is_zakarpattia = yes
+					is_baltic_state = yes
+					is_east_poland = yes
+				}
+			}
+			add_core_of = SOV
+		}
+		every_state = {
+			limit = {
 				is_east_poland = yes
 			}
 			remove_core_of = POL
+		}
+		every_state = {
+			limit = {
+				is_bialystok_region = yes
+			}
+			remove_claim_by = SOV
 		}
 		every_state = {
 			limit = {

@@ -638,3 +638,10 @@ is_north_iran = {
 		state = 2355
 	}
 }
+is_baltic_state = {
+	OR = {
+		has_state_flag = EST_INITIAL_STATE
+		has_state_flag = LAT_INITIAL_STATE
+		has_state_flag = LIT_INITIAL_STATE
+	}
+}
