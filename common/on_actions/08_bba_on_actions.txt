@@ -305,21 +305,7 @@ on_actions = {
 	#on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first
 	on_war = { 
 		effect = {
-			IF = {
-				limit = {
-					original_tag = ETH
-					has_idea = ETH_chitet_law_peace_time
-				}
-				swap_ideas = {
-					remove_idea = ETH_chitet_law_peace_time
-					add_idea = ETH_chitet_law
-				}
-				set_division_force_allow_recruiting = {
-					division_template = "Chitet Sefari"
-					force_allow_recruiting = yes
-				}
-
-			}
+			
 			if = {
 				limit = {
 					original_tag = SWI
@@ -454,113 +440,12 @@ on_actions = {
 	#
 	on_daily_ITA = {
 		# war escalation effects
-		effect = {
-			IF = {
-				limit = {
-					is_tutorial = no
-					has_global_flag = second_italo_ethiopian_war_flag
-				}
-				# Italian Public Concerned
-				IF = {
-					limit = {
-						NOT = { has_country_flag = ITA_pulic_concerned_flag }
-						check_variable = { ETH.ETH_war_escalation_level > 3 }
-					}
-					set_country_flag = ITA_pulic_concerned_flag
-					country_event = {
-						id = BBA_italo_ethiopian_war_events.300
-						hours = 6
-						random_hours = 8
-					}
-				}
-				# Army of Africa Disheartened
-				IF = {
-					limit = {
-						NOT = { has_country_flag = ITA_army_of_africa_flag }
-						check_variable = { ETH.ETH_war_escalation_level > 4 }
-					}
-					set_country_flag = ITA_army_of_africa_flag
-					country_event = {
-						id = BBA_italo_ethiopian_war_events.301
-						hours = 6
-						random_hours = 8
-					}
-				}
-				# Unrest in the Colonies
-				IF = {
-					limit = {
-						NOT = { has_country_flag = ITA_unrest_in_the_colonies_flag }
-						check_variable = { ETH.ETH_war_escalation_level > 5 }
-					}
-					set_country_flag = ITA_unrest_in_the_colonies_flag
-					country_event = {
-						id = BBA_italo_ethiopian_war_events.302
-						hours = 6
-						random_hours = 8
-					}
-				}
-				# Italian Public Questions War Effort
-				IF = {
-					limit = {
-						NOT = { has_country_flag = ITA_war_effort_questioned_flag }
-						check_variable = { ETH.ETH_war_escalation_level > 6 }
-					}
-					set_country_flag = ITA_war_effort_questioned_flag
-					country_event = {
-						id = BBA_italo_ethiopian_war_events.303
-						hours = 6
-						random_hours = 8
-					}
-				}
-				# Mass Desertions
-				IF = {
-					limit = {
-						NOT = { has_country_flag = ITA_mass_desertions_flag }
-						check_variable = { ETH.ETH_war_escalation_level > 7 }
-					}
-					set_country_flag = ITA_mass_desertions_flag
-					country_event = {
-						id = BBA_italo_ethiopian_war_events.304
-						hours = 6
-						random_hours = 8
-					}
-				}
-				# Uproar in the Colonies
-				IF = {
-					limit = {
-						NOT = { has_country_flag = ITA_uproar_colonies_flag }
-						check_variable = { ETH.ETH_war_escalation_level > 9 }
-					}
-					set_country_flag = ITA_uproar_colonies_flag
-					country_event = {
-						id = BBA_italo_ethiopian_war_events.305
-						hours = 6
-						random_hours = 8
-					}
-				}
-			}
-		}
+		
 	}
 
 	#ROOT is winner #FROM is loser
 	on_peaceconference_ended = {
-		effect = {
-			IF = {
-				limit = {
-					OR = {
-						check_variable = { ETH.host_nation = ROOT }
-						ROOT = {
-							OR = {
-								tag = ETH
-								is_in_faction_with = ETH
-								ETH = { is_subject_of = ROOT }
-							}
-						}
-					}
-				}
-				ETH_transfer_promised_states = yes
-			}
-		}
+		
 		effect = {
 			if = {
 				limit = {
@@ -590,18 +475,7 @@ on_actions = {
 				set_country_flag = swi_you_shall_not_pass_achievement
 			}
 		}
-		effect = {
-			if = {
-				limit = {
-					tag = ETH
-					FROM = {
-						original_tag = ITA
-					}
-					is_in_faction = no
-				}
-				set_country_flag = ETH_forced_ITA_peace_achievement
-			}
-		}
+		
 		effect = {
 			SWI = {
 				set_variable = { cheese_states = 0 }

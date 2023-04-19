@@ -1170,11 +1170,7 @@ country_event = {
 			}
 			CRO = { transfer_state = 1563 }
 		}
-		every_state = {
-			limit = {
-				is_core_of = 
-			}
-		}
+		
 		if = {
 			limit = {
 				103 = { 
