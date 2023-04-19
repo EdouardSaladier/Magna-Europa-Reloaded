@@ -3392,8 +3392,8 @@ country_event = {
 			ruling_party = communism
 			ideology = neutrality
 			size = 0.85
-			capital = 797
-			states = { 924 955 964 970 963 }
+			capital = 932
+			states = { 2770 1933 1938 1934 2753 906 928 2754 2768 991 2948 945 2771 1939 948 1940 2767 }
 		}
 		hidden_effect = { 
 			random_other_country = {
@@ -3422,7 +3422,7 @@ country_event = {
 				ideology = communism
 				size = 0.1
 				capital = 49
-				states = { 49 342 343 356 346 345 348 798 355 349 344 354 353 800 352 350 }
+				states = { 2770 1933 1938 1934 2753 906 928 2754 2768 991 2948 945 2771 1939 948 1940 2767 }
 			}
 			add_timed_idea = {
 				idea = TUR_the_battle_for_our_nations_survival
@@ -3454,8 +3454,8 @@ country_event = {
 				ruling_party = fascism
 				ideology = communism
 				size = 0.15
-				capital = 49
-				states = { 49 342 343 356 346 345 348 798 355 349 344 354 353 800 352 350 }
+				capital = 932
+				states = { 2770 1933 1938 1934 2753 906 928 2754 2768 991 2948 945 2771 1939 948 1940 2767 }
 			}
 			add_timed_idea = {
 				idea = TUR_the_battle_for_our_nations_survival
@@ -3487,8 +3487,8 @@ country_event = {
 				ruling_party = democratic
 				ideology = communism
 				size = 0.2
-				capital = 49
-				states = { 49 342 343 356 346 345 348 798 355 349 344 354 353 800 352 350 }
+				capital = 932
+				states = { 2770 1933 1938 1934 2753 906 928 2754 2768 991 2948 945 2771 1939 948 1940 2767 }
 			}
 			add_timed_idea = {
 				idea = TUR_the_battle_for_our_nations_survival
@@ -3528,14 +3528,14 @@ country_event = {
 		start_border_war = {
 			change_state_after_war = no
 			attacker = {
-				state = 184
+				state = 1969
 				num_provinces = 1
 				on_win = bftb_greece.36 #greece wins
 				on_lose = bftb_greece.38 #greece loses
 			}
 			
 			defender = {
-				state = 341
+				state = 928
 				num_provinces = 2
 				on_win = bftb_greece.37 #turkey wins
 				on_lose = bftb_greece.39 #turkey loses
@@ -3562,7 +3562,7 @@ country_event = {
 		declare_war_on = { 
 			type = take_state_focus
 			target = TUR
-			generator = { 797 341 347 340 339 }
+			generator = { 928 2754 1938 906 2753 1934 1933 2770 932 945 }
 		}
 		SOV = { add_to_faction = GRE }
 	}	
@@ -3588,7 +3588,12 @@ country_event = {
 					id = bftb_greece.227
 					days = 1
 				}
-				add_state_claim = 797
+				add_state_claim = 932
+				add_state_claim = 945 
+				add_state_claim = 2770
+				add_state_claim = 2771
+				add_state_claim = 1939
+				add_state_claim = 948
 			}
 		}
 	}	
@@ -3607,7 +3612,12 @@ country_event = {
 		name = bftb_greece.227.a
 		add_war_support = 0.05
 		effect_tooltip = {
-			add_state_claim = 797
+			add_state_claim = 932
+				add_state_claim = 945 
+				add_state_claim = 2770
+				add_state_claim = 2771
+				add_state_claim = 1939
+				add_state_claim = 948
 		}
 		custom_effect_tooltip = TUR_border_conflicts_in_trabzon_tt
 	}	
@@ -3627,14 +3637,14 @@ country_event = {
 		start_border_war = {
 			change_state_after_war = no
 			attacker = {
-				state = 187
+				state = 1969
 				num_provinces = 1
 				on_win = bftb_greece.40 #greeks win
 				on_lose = bftb_greece.42 #greeks lose
 			}
 			
 			defender = {
-				state = 339
+				state = 928
 				num_provinces = 1
 				on_win = bftb_greece.41 #turks win
 				on_lose = bftb_greece.43 #turks lose
@@ -3643,14 +3653,14 @@ country_event = {
 		start_border_war = {
 			change_state_after_war = no
 			attacker = {
-				state = 231
+				state = 2005
 				num_provinces = 3
 				on_win = bftb_greece.44 #soviets win
 				on_lose = bftb_greece.46 #soviets lose
 			}
 			
 			defender = {
-				state = 354
+				state = 1938
 				num_provinces = 2
 				on_win = bftb_greece.45 #turks win
 				on_lose = bftb_greece.47 #turks lose
@@ -3693,7 +3703,7 @@ country_event = {
 		declare_war_on = { 
 			type = take_state_focus
 			target = TUR
-			generator = { 341 347 340 339 }
+			generator = { 928 2754 1938 906 2753 1934 1933 2770 932 945 }
 		}
 		hidden_effect = {
 			SOV = { add_to_faction = GRE }
@@ -3865,7 +3875,14 @@ country_event = {
 				ideology = communism
 				size = 0.2
 				capital = 108
-				states = { 108 106 802 803 }
+				states = all 
+				states_filter = {
+					OR = {
+						is_core_of = MAC 
+						is_core_of = KOS
+						is_core_of = MNT
+					}
+				}	
 			}
 			YUG = {
 				declare_war_on = {
