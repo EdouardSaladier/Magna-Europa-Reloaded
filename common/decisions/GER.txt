@@ -2872,6 +2872,7 @@ political_actions = {
 		}
 		visible = {
 			#is_historical_focus_on = yes
+			has_government = fascism
 			OR = {
 				YUG = {
 					has_war_with = GER
