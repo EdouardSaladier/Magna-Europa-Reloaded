@@ -3,62 +3,14 @@
 	
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = CAN
 			has_dlc = "Together for Victory"
 		}
-
-		#modifier = {
-		#	add = 10
-		#	original_tag = CAN
-		#	has_dlc = "Together for Victory"
-		#}
 	}
 	
 	default = no
-
-
-
-#	focus = {
-#		id = CAN_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
-
-
-
 
 	############################
 	##### INDUSTRY SECTION #####
@@ -237,6 +189,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_dollar_a_year_men"
+			add_ideas = CAN_dollar_a_year_men
 			add_tech_bonus = {
 				name = CAN_dollar_a_year_men
 				bonus = 1.0
@@ -261,14 +214,12 @@
 		}
 
 		available = {
-
+			1 = { owns_or_subject_of = yes }
+			controls_state = 9
 		}
 		
 		bypass = {
-			NOT = {
-				owns_state = 1
-				owns_state = 8
-			}
+		
 		}
 
 		cancel_if_invalid = yes
@@ -309,12 +260,15 @@
 					instant_build = yes
 				}
 			}
-		}
-		
-		build_railway = { #Ottawa-Saint John
-			level = 2
-			start_province = 19366
-			target_province = 19374
+			build_railway = { #Quebec - Kingston
+				path = { 19370 2648 19368 10 19366 3811 19365 }
+			}
+			build_railway = { #Montreal - Sherbrooke
+				path = { 10 19367 19372 19369 }
+			}
+			build_railway = { #Oshawa - West Canada
+				path = { 3811 9677 151 1578 }
+			}
 		}
 	}
 
@@ -335,7 +289,7 @@
 		available = {
 			controls_state = 8
 			controls_state = 6
-			controls_state = 9
+			1 = { owns_or_subject_of = yes }
 		}
 		
 		bypass = {
@@ -349,7 +303,16 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_maritime_colonial_railway"
-			
+
+			build_railway = { #Montreal - Halifax
+				path = { 19372 7831 19370 5655 313 1445 19379 7148 7747 19376 }
+			}
+			build_railway = { #Fredericton Connection
+				path = { 1445 19375 }
+			} 
+			build_railway = { #Moncton - Saint John
+				path = { 7148 19374 }
+			}
 
 			random_owned_state = {
 				limit = {
@@ -362,7 +325,7 @@
 
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -394,7 +357,7 @@
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 2
+						size < 1
 						include_locked = yes
 					}					
 				}
@@ -423,11 +386,10 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_retool_angus_shops"
 			random_owned_controlled_state = {
-				prioritize = { 285 517 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
-						size > 0
+						size > 1
 						include_locked = yes
 					}
 				}
@@ -457,7 +419,7 @@
 		}
 
 		available = {
-			controls_state = 1
+			controls_state = 9
 		}
 		
 		bypass = {
@@ -471,10 +433,10 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_imperial_oil"
-			1 = {
+			9 = {
 				add_resource = {
 					type = oil
-					amount = 18
+					amount = 14
 				}
 			}
 		}
