@@ -432,7 +432,7 @@ country_event = {
 			factor = 70
 		}	
 		trigger = {
-			NOT = { has_equipment = { fighter_equipment > 50 } }
+			NOT = { has_equipment = { small_plane_airframe > 50 } }
 		}
 		add_timed_idea = { idea = YUG_air_payment days = 180 }
 		add_timed_idea = { idea = YUG_fighter_production_diverted days = 120 }
@@ -447,7 +447,7 @@ country_event = {
 			factor = 70
 		}
 		trigger = {
-			NOT = { has_equipment = { tac_bomber_equipment > 25 } }
+			NOT = { has_equipment = { medium_plane_airframe > 25 } }
 		}
 		add_timed_idea = { idea = YUG_air_payment days = 180 }
 		add_timed_idea = { idea = YUG_bomber_production_diverted days = 120 }
@@ -535,7 +535,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = GER } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					GER = { 
 						has_tech = fighter1 
@@ -544,7 +544,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 producer = GER } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					GER = { 
 						has_tech = fighter2 
@@ -553,7 +553,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 50 producer = GER } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					GER = { 
 						has_tech = fighter3 
@@ -561,6 +561,13 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 50 producer = GER } 
 			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				set_variable = { fighter_buy_amount = 50 } 
+				bba_get_fighter_GER_effect = yes
+			}		
 		} 
 		if = {
 			limit = {
@@ -577,7 +584,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = ITA } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					ITA = { 
 						has_tech = fighter1 
@@ -586,7 +593,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 producer = ITA } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					ITA = { 
 						has_tech = fighter2 
@@ -595,13 +602,20 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 50 producer = ITA } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					ITA = { 
 						has_tech = fighter3 
 					} 
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 50 producer = ITA } 
+			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				set_variable = { fighter_buy_amount = 50 } 
+				bba_get_fighter_ITA_effect = yes
 			}
 		}
 
@@ -620,7 +634,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = FRA } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					FRA = { 
 						has_tech = fighter1 
@@ -629,7 +643,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 producer = FRA } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					FRA = { 
 						has_tech = fighter2 
@@ -638,7 +652,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 50 producer = FRA } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					FRA = { 
 						has_tech = fighter3 
@@ -646,6 +660,13 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 50 producer = FRA } 
 			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				set_variable = { fighter_buy_amount = 50 } 
+				bba_get_fighter_FRA_effect = yes
+			}		
 		}
 
 		if = {
@@ -663,7 +684,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = ENG } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					ENG = { 
 						has_tech = fighter1 
@@ -672,7 +693,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 producer = ENG } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					ENG = { 
 						has_tech = fighter2 
@@ -681,7 +702,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 50 producer = ENG } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					ENG = { 
 						has_tech = fighter3 
@@ -689,6 +710,13 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 50 producer = ENG } 
 			}
+		else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				set_variable = { fighter_buy_amount = 50 } 
+				bba_get_fighter_ENG_effect = yes
+			}		
 		}
 		add_opinion_modifier = { target = FROM modifier = YUG_sold_planes}	
 	}	
@@ -726,7 +754,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 25 producer = GER } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					GER = { 
 						has_tech = tactical_bomber1 
@@ -735,7 +763,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 25 producer = GER } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					GER = { 
 						has_tech = tactical_bomber2 
@@ -744,7 +772,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_2 amount = 25 producer = GER } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					GER = { 
 						has_tech = tactical_bomber3 
@@ -752,6 +780,13 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_3 amount = 25 producer = GER } 
 			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				set_variable = { tac_buy_amount = 25 } 
+				bba_get_tac_GER_effect = yes
+			}		
 		}
 		if = {
 			limit = {
@@ -768,7 +803,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 25 producer = ITA } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					ITA = { 
 						has_tech = tactical_bomber1 
@@ -777,7 +812,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 25 producer = ITA } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					ITA = { 
 						has_tech = tactical_bomber2 
@@ -786,7 +821,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_2 amount = 25 producer = ITA } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					ITA = { 
 						has_tech = tactical_bomber3 
@@ -794,6 +829,13 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_3 amount = 25 producer = ITA } 
 			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				set_variable = { tac_buy_amount = 25 } 
+				bba_get_tac_ITA_effect = yes
+			}		
 		}
 
 		if = {
@@ -811,7 +853,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 25 producer = FRA } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					FRA = { 
 						has_tech = tactical_bomber1 
@@ -820,7 +862,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 25 producer = FRA } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					FRA = { 
 						has_tech = tactical_bomber2 
@@ -829,13 +871,20 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_2 amount = 25 producer = FRA } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					FRA = { 
 						has_tech = tactical_bomber3 
 					} 
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_3 amount = 25 producer = FRA } 
+			}
+		else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				set_variable = { tac_buy_amount = 25 } 
+				bba_get_tac_FRA_effect = yes
 			}
 		}
 
@@ -854,7 +903,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 25 producer = ENG } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					ENG = { 
 						has_tech = tactical_bomber1 
@@ -863,7 +912,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 25 producer = ENG } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					ENG = { 
 						has_tech = tactical_bomber2 
@@ -872,13 +921,20 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_2 amount = 25 producer = ENG } 
 			}
-			if = {
+			else_if = {
 				limit = { 
 					ENG = { 
 						has_tech = tactical_bomber3 
 					} 
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_3 amount = 25 producer = ENG } 
+			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				set_variable = { tac_buy_amount = 25 } 
+				bba_get_tac_ENG_effect = yes
 			}
 		}
 		add_opinion_modifier = { target = FROM modifier = YUG_sold_planes}	
