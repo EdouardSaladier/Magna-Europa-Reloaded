@@ -1199,8 +1199,14 @@ GER_reichskommissariats = {
 				any_country = {
 					if = {
 						limit = {
-							tag = event_target:BLT_WITH_GER
+							OR = {
+								tag = LIT
+								tag = LAT
+								tag = EST
+							}
 						}
+						
+						is_in_faction_with = ROOT
 						has_country_flag = OSTLAND
 						exists = no
 					}
