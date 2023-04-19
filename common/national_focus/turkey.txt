@@ -1699,9 +1699,12 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = TUR_the_sun_language_theory focus = TUR_variant_turkish_tax_focus focus = TUR_restack_the_officer_corps }
 		available = {
-			owns_state = 354
-			owns_state = 800
-			owns_state = 353
+			owns_state = 933
+			owns_state = 925
+			owns_state = 953
+			owns_state = 2256
+			owns_state = 1001
+			owns_state = 2248
 		}
 		x = 0
 		y = 2
@@ -1713,68 +1716,42 @@ focus_tree = {
 
 		bypass = {
 			NOT = {
-				owns_state = 354
-				owns_state = 800
-				owns_state = 353
+				owns_state = 933
+				owns_state = 925
+				owns_state = 953
+				owns_state = 2256
+				owns_state = 1001
+				owns_state = 2248
 			}
 		}
 
 		search_filters = { FOCUS_FILTER_TUR_TRADITIONALISM FOCUS_FILTER_TUR_KEMALISM }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_pontic_redoubt"
-			354 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					custom_effect_tooltip = TUR_pontic_redoubt_trabzon_tt
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 11753
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 3714
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 6976
-							instant_build = yes
-						}
+			every_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						state = 933
+						state = 925
+						state = 953
+						state = 2256
+						state = 1001
+						state = 2248
 					}
 				}
-			}
-			800 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					custom_effect_tooltip = TUR_pontic_redoubt_van_tt
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 652
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 12376
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 4583
-							instant_build = yes
-						}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
 					}
+					instant_build = yes
 				}
 			}
-			354 = {
+			
+			973 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					custom_effect_tooltip = TUR_pontic_redoubt_erzurum_tt
@@ -1782,7 +1759,7 @@ focus_tree = {
 						add_building_construction = {
 							type = bunker
 							level = 3
-							province = 11853
+							province = 21522
 							instant_build = yes
 						}
 					}
