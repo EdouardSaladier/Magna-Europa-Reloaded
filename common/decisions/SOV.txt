@@ -15576,15 +15576,14 @@ SOV_panslavic_nationalism = {
 		icon = generic_form_nation
 
 		available = {
-			has_full_control_of_state = 9
-			has_full_control_of_state = 69
-			has_full_control_of_state = 70
-			has_full_control_of_state = 71
-			has_full_control_of_state = 72
-			has_full_control_of_state = 73
-			has_full_control_of_state = 74
-			has_full_control_of_state = 75
-			has_full_control_of_state = 664
+			all_state = {
+				if = {
+					limit = {
+						is_core_of = CZE
+					}
+					is_controlled_by = ROOT
+				}
+			}
 		}
 
 		visible = {
@@ -15599,15 +15598,12 @@ SOV_panslavic_nationalism = {
 		}
 
 		remove_effect = {
-			add_state_core = 9
-			add_state_core = 69
-			add_state_core = 70
-			add_state_core = 71
-			add_state_core = 72
-			add_state_core = 73
-			add_state_core = 74
-			add_state_core = 75
-			add_state_core = 664
+			every_state = {
+				limit = {
+					is_core_of = CZE
+				}
+				add_core_of = ROOT
+			}
 			set_country_flag = SOV_integrated_czechoslovakia_flag
 		}
 
@@ -15620,10 +15616,14 @@ SOV_panslavic_nationalism = {
 		icon = generic_form_nation
 
 		available = {
-			has_full_control_of_state = 48
-			has_full_control_of_state = 211
-			has_full_control_of_state = 212
-			has_full_control_of_state = 801
+			all_state = {
+				if = {
+					limit = {
+						has_state_flag = BUL_INITIAL_STATE
+					}
+					is_controlled_by = ROOT
+				}
+			}
 		}
 
 		visible = {
@@ -15638,10 +15638,12 @@ SOV_panslavic_nationalism = {
 		}
 
 		remove_effect = {
-			add_state_core = 48
-			add_state_core = 211
-			add_state_core = 212
-			add_state_core = 801
+			every_state = {
+				limit = {
+					has_state_flag = BUL_INITIAL_STATE
+				}
+				add_core_of = ROOT
+			}
 			set_country_flag = SOV_integrated_bulgaria_flag
 		}
 
@@ -15654,23 +15656,14 @@ SOV_panslavic_nationalism = {
 		icon = generic_form_nation
 
 		available = {
-			has_full_control_of_state = 97
-			has_full_control_of_state = 85
-			has_full_control_of_state = 762
-			has_full_control_of_state = 90
-			has_full_control_of_state = 88
-			has_full_control_of_state = 92
-			has_full_control_of_state = 91
-			has_full_control_of_state = 95
-			has_full_control_of_state = 94
-			has_full_control_of_state = 86
-			has_full_control_of_state = 98
-			has_full_control_of_state = 89
-			has_full_control_of_state = 10
-			has_full_control_of_state = 96
-			has_full_control_of_state = 784
-			has_full_control_of_state = 93
-			has_full_control_of_state = 87
+			all_state = {
+				if = {
+					limit = {
+						has_state_flag = POL_INITIAL_STATE
+					}
+					is_controlled_by = ROOT
+				}
+			}
 		}
 
 		visible = {
@@ -15685,23 +15678,12 @@ SOV_panslavic_nationalism = {
 		}
 
 		remove_effect = {
-			add_state_core = 97
-			add_state_core = 85
-			add_state_core = 762
-			add_state_core = 90
-			add_state_core = 88
-			add_state_core = 92
-			add_state_core = 91
-			add_state_core = 95
-			add_state_core = 94
-			add_state_core = 86
-			add_state_core = 98
-			add_state_core = 89
-			add_state_core = 10
-			add_state_core = 96
-			add_state_core = 784
-			add_state_core = 93
-			add_state_core = 87
+			every_state = {
+				limit = {
+					has_state_flag = POL_INITIAL_STATE
+				}
+				add_core_of = ROOT
+			}
 			set_country_flag = SOV_integrated_poland_flag
 		}
 
@@ -15714,23 +15696,14 @@ SOV_panslavic_nationalism = {
 		icon = generic_form_nation
 
 		available = {
-			has_full_control_of_state = 104
-			has_full_control_of_state = 109
-			has_full_control_of_state = 103
-			has_full_control_of_state = 804
-			has_full_control_of_state = 802
-			has_full_control_of_state = 106
-			has_full_control_of_state = 105
-			has_full_control_of_state = 108
-			has_full_control_of_state = 107
-			has_full_control_of_state = 102
-			has_full_control_of_state = 853
-			has_full_control_of_state = 803
-			has_full_control_of_state = 45
-			has_full_control_of_state = 764
-			has_full_control_of_state = 736
-			has_full_control_of_state = 852
-			has_full_control_of_state = 163
+			all_state = {
+				if = {
+					limit = {
+						has_state_flag = YUG_INITIAL_STATE
+					}
+					is_controlled_by = ROOT
+				}
+			}	
 		}
 
 		visible = {
@@ -15745,23 +15718,12 @@ SOV_panslavic_nationalism = {
 		}
 
 		remove_effect = {
-			add_state_core = 104
-			add_state_core = 109
-			add_state_core = 103
-			add_state_core = 804
-			add_state_core = 802
-			add_state_core = 106
-			add_state_core = 105
-			add_state_core = 108
-			add_state_core = 107
-			add_state_core = 102
-			add_state_core = 853
-			add_state_core = 803
-			add_state_core = 45
-			add_state_core = 764
-			add_state_core = 736
-			add_state_core = 852
-			add_state_core = 163
+			every_state = {
+				limit = {
+					has_state_flag = YUG_INITIAL_STATE
+				}
+				add_core_of = ROOT
+			}
 			set_country_flag = SOV_integrated_yugoslavia_flag
 		}
 
@@ -15778,50 +15740,20 @@ SOV_panslavic_nationalism = {
 			has_country_flag = SOV_integrated_bulgaria_flag
 			has_country_flag = SOV_integrated_poland_flag
 			has_country_flag = SOV_integrated_yugoslavia_flag
-			has_full_control_of_state = 9
-			has_full_control_of_state = 69
-			has_full_control_of_state = 70
-			has_full_control_of_state = 71
-			has_full_control_of_state = 72
-			has_full_control_of_state = 73
-			has_full_control_of_state = 74
-			has_full_control_of_state = 75
-			has_full_control_of_state = 664
-			has_full_control_of_state = 48
-			has_full_control_of_state = 211
-			has_full_control_of_state = 212
-			has_full_control_of_state = 801
-			has_full_control_of_state = 97
-			has_full_control_of_state = 85
-			has_full_control_of_state = 762
-			has_full_control_of_state = 90
-			has_full_control_of_state = 88
-			has_full_control_of_state = 92
-			has_full_control_of_state = 91
-			has_full_control_of_state = 95
-			has_full_control_of_state = 94
-			has_full_control_of_state = 86
-			has_full_control_of_state = 98
-			has_full_control_of_state = 89
-			has_full_control_of_state = 10
-			has_full_control_of_state = 96
-			has_full_control_of_state = 784
-			has_full_control_of_state = 93
-			has_full_control_of_state = 87
-			has_full_control_of_state = 104
-			has_full_control_of_state = 109
-			has_full_control_of_state = 103
-			has_full_control_of_state = 804
-			has_full_control_of_state = 802
-			has_full_control_of_state = 106
-			has_full_control_of_state = 105
-			has_full_control_of_state = 108
-			has_full_control_of_state = 107
-			has_full_control_of_state = 102
-			has_full_control_of_state = 853
-			has_full_control_of_state = 803
-			has_full_control_of_state = 45
-			has_full_control_of_state = 764
+			all_state = {
+				if = {
+					limit = {
+						OR = {
+							has_state_flag = YUG_INITIAL_STATE
+							has_state_flag = BUL_INITIAL_STATE
+							has_state_flag = POL_INITIAL_STATE
+							is_core_of = CZE
+						}
+					}
+					is_controlled_by = ROOT
+				}
+			}
+			
 		}
 
 		visible = {

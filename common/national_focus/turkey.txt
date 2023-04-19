@@ -3860,35 +3860,35 @@ focus_tree = {
 				limit = {
 					TUR = {
 						AND = {
-							controls_state = 49
-							controls_state = 347
-							controls_state = 797
-							controls_state = 341
+							controls_state = 979
+							controls_state = 1939
+							controls_state = 932
+							controls_state = 928
 						}
 					}
 				}
-				49 = {
+				979 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 						instant_build = yes
 					}	
 				}
-				347 = {
+				1939 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 						instant_build = yes
 					}
 				}
-				797 = {
+				932 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 						instant_build = yes
 					}
 				}
-				341 = {
+				928 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -3902,27 +3902,27 @@ focus_tree = {
 					GRE = {
 						is_in_faction_with = TUR
 						AND = {
-							controls_state = 47
-							controls_state = 731
-							controls_state = 184
+							controls_state = 2003
+							controls_state = 941
+							controls_state = 910
 						}
 					}
 				}
-				47 = {
+				2003 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 						instant_build = yes
 					}	
 				}
-				731 = {
+				941 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 						instant_build = yes
 					}
 				}
-				184 = {
+				910 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -3936,27 +3936,27 @@ focus_tree = {
 					YUG = {
 						is_in_faction_with = TUR
 						AND = {
-							controls_state = 106
-							controls_state = 108
-							controls_state = 107
+							controls_state = 790
+							controls_state = 858
+							controls_state = 1529
 						}
 					}
 				}
-				106 = {
+				790 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 						instant_build = yes
 					}	
 				}
-				108 = {
+				858 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 						instant_build = yes
 					}
 				}
-				107 = {
+				1529 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -3970,27 +3970,27 @@ focus_tree = {
 					ROM = {
 						is_in_faction_with = TUR
 						AND = {
-							controls_state = 82
-							controls_state = 81
-							controls_state = 46
+							controls_state = 801
+							controls_state = 793
+							controls_state = 797
 						}
 					}
 				}
-				82 = {
+				801 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 						instant_build = yes
 					}	
 				}
-				81 = {
+				793 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 						instant_build = yes
 					}
 				}
-				46 = {
+				797 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -4008,29 +4008,29 @@ focus_tree = {
 							has_completed_focus = GRE_clear_the_slums
 						}
 						AND = {
-							controls_state = 47
-							controls_state = 731
-							controls_state = 184
+							controls_state = 2003
+							controls_state = 941
+							controls_state = 910
 						}
 					}
 				}
 				custom_effect_tooltip = TUR_connect_capitals_greece_tt
 				hidden_effect = {
-					47 = {
+					2003 = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
 							instant_build = yes
 						}	
 					}
-					731 = {
+					941 = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
 							instant_build = yes
 						}
 					}
-					184 = {
+					910 = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -4046,29 +4046,29 @@ focus_tree = {
 						is_in_faction_with = TUR
 						has_completed_focus = ROM_danubian_transport_network
 						AND = {
-							controls_state = 82
-							controls_state = 81
-							controls_state = 46
+							controls_state = 801
+							controls_state = 793
+							controls_state = 797
 						}
 					}
 				}
 				custom_effect_tooltip = TUR_connect_capitals_romania_tt
 				hidden_effect = { 
-					82 = {
+					801 = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
 							instant_build = yes
 						}	
 					}
-					81 = {
+					793 = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
 							instant_build = yes
 						}
 					}
-					46 = {
+					797 = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -4087,29 +4087,29 @@ focus_tree = {
 							has_completed_focus = YUG_improve_serbian_rail_network
 						}
 						AND = {
-							controls_state = 106
-							controls_state = 108
-							controls_state = 107
+							controls_state = 790
+							controls_state = 858
+							controls_state = 1529
 						}
 					}
 				}
 				custom_effect_tooltip = TUR_connect_capitals_greece_tt
 				hidden_effect = { 
-					106 = {
+					1529 = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
 							instant_build = yes
 						}	
 					}
-					108 = {
+					858 = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
 							instant_build = yes
 						}
 					}
-					107 = {
+					790 = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
