@@ -933,7 +933,7 @@ country_event = {
 				is_owned_by = CZE
 			}
 		}
-		CZE = { any_core_state = { is_owned_by = CZE }
+		CZE = { any_core_state = { is_owned_by = CZE } }
 		NOT = { has_war_with = SLO }
 		NOT = { has_global_flag = CZE_became_czech }
 	}
