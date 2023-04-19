@@ -2422,4 +2422,38 @@ political_actions = {
 			factor = 0
 		}
 	}
+	drop_cosmetic_tag_im_not_a_subject_anymore = {
+
+		icon = GFX_decision_SOV_left_opposition_state
+		allowed = {
+			OR = {
+				original_tag = MOR
+				original_tag = TUN
+				original_tag = MRT
+				original_tag = PAL
+				original_tag = JOR
+				original_tag = KUW
+				original_tag = QAT
+				original_tag = UAE
+			}
+		}
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			drop_cosmetic_tag = yes 
+		}
+		
+		ai_will_do = {
+			factor = 500
+			
+		}
+	}
 }
