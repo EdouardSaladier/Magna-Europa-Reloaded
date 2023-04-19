@@ -1279,28 +1279,43 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus YUG_banat_for_support"
 			if = {
 				limit = {
-					controls_state = 764
+					controls_state = 738
+					controls_state = 1512
+					controls_state = 2933
+					controls_state = 2554
+					controls_state = 1513
 				}
 				ROM = {
 					add_opinion_modifier = { 
 						target = ROOT
 						modifier = huge_increase
 					}
-					transfer_state = 764
-				}
-				diplomatic_relation = {
+					diplomatic_relation = {
 						country = YUG
 						relation = non_aggression_pact
 						active = yes
+					}
 				}
-				764 = {
-					remove_core_of = ROOT
+				
+				every_state = {
+					limit  = {
+						OR = {
+							state = 738
+							state = 1512
+							state = 2933
+							state = 2554
+							state = 1513
+						}
+						is_controlled_by = ROOT 
+					}
+					transfer_state_to = ROM 
 					add_core_of = ROM
+					remove_core_of = ROOT
 				}
 			}
 			if = {
 				limit = {
-					controls_state = 45
+					controls_state = 1514
 				}
 				HUN = {
 					add_opinion_modifier = { 
@@ -1312,11 +1327,22 @@ focus_tree = {
 						relation = non_aggression_pact
 						active = yes
 					}
-					transfer_state = 45
 				}
-				45 = {
+				every_state = {
+					limit  = {
+						OR = {
+							state = 1514
+							state = 1516
+							state = 735
+							state = 1515
+							state = 2856
+							state = 1472
+						}
+						is_controlled_by = ROOT 
+					}
+					transfer_state_to = HUN 
+					add_core_of = HUN
 					remove_core_of = ROOT
-					add_core_of = ROM
 				}
 			}
 			hidden_effect = { 

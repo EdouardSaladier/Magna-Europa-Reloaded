@@ -5866,8 +5866,9 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWI_press_for_vorarlberg"
 			set_country_flag = SWI_requested_vorarlberg
-			add_state_claim = 848
-			848 = {
+			
+			add_state_claim = 654
+			654 = {
 				owner = {
 					country_event = {
 						id = BBA_swiss_expansion.6
@@ -5877,8 +5878,8 @@
 			}
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
-				add_state_core = 848
-				transfer_state = 848
+				add_state_core = 654
+				transfer_state = 654
 			}
 			AUS = {
 				add_timed_idea = { 
@@ -5917,20 +5918,19 @@
 		x = 2
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			democratic < 0.75
+			democratic < 0.80
 			fascism < 0.20
 			is_power_balance_in_range = {
 				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
+				range < SWI_centralization_bop_balanced
 			}
-			owns_state = 848
 		}
 		
 		bypass = {
@@ -5943,12 +5943,30 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWI_protect_liechtenstein"
+			if = {
+				limit = {
+					LIE = {
+						is_ai = yes
+					}
+				}
+				annex_country = {
+					target = LIE
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					target = LIE
+					type = annex_everything
+				}
+			}
+			add_state_core = 1460
 			add_manpower = 1000
 			add_popularity = {
 				ideology = neutrality 
 				popularity = 0.01 
 			}
-			654 = {
+			1460 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -5970,7 +5988,7 @@
 					} 
 				}
 				add_victory_points = {
-					province = 13689
+					province = 20107
 					value = 1
 				}
 			}				
