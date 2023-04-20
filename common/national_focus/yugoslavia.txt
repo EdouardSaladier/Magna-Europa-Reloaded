@@ -1011,6 +1011,7 @@ focus_tree = {
 					add_state_core = 1496
 					add_state_core = 2823
 					add_state_core = 2821
+					add_state_core = 1498
 					remove_state_core = 1502
 					remove_state_core = 2815
 					remove_state_core = 2820
@@ -1197,6 +1198,13 @@ focus_tree = {
 								state = 844
 								state = 2802
 								state = 2804
+								state = 1990
+								state = 1481
+								state = 2815
+								state = 1502
+								state = 2241
+								state = 2897
+								state = 1480
 							}
 						}
 						transfer_state_to = MNT
@@ -1548,6 +1556,23 @@ focus_tree = {
 								NOT = { is_controlled_by = YUG }
 							}
 							remove_core_of = PREV
+						}
+						if = {
+							limit = {
+								ROOT = { controls_state = 1470 }
+							}
+							transfer_state = 1470
+							transfer_state = 775
+							transfer_state = 2555
+							add_state_core = 1470
+							add_state_core = 2555
+							add_state_core = 775
+						}
+						else = {
+							ROOT = {
+								add_state_core = 2555
+								add_state_core = 775
+							}
 						}
 						transfer_state = 1514
 						transfer_state = 1515
