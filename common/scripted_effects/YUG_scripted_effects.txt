@@ -31,10 +31,22 @@ YUG_start_peters_coup = {
 		limit = {
 			has_completed_focus = YUG_dissolve_serbia
 		}
-		start_civil_war = { ideology = democratic size = 0.6 capital = 107 states = { 108 803 } }
+		start_civil_war = { ideology = democratic size = 0.6 capital = 790 states = { 2937 1507 1508 1992 1991 1510 1509 2960 1970 } }
 	}
 	else = {
-		start_civil_war = { ideology = democratic size = 0.6 capital = 107 states = { 108 803 802 106 105 } }
+		start_civil_war = { 
+			ideology = democratic 
+			size = 0.6 
+			capital = 790 
+			states = all
+			states_filter = {
+				OR = {
+					is_core_of = SER 
+					is_core_of = MAC
+					is_core_of = MNT
+				}
+			}
+		}
 	}
 	random_country = {
 		limit = {
