@@ -2764,9 +2764,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_extend_the_chinese_exclusion_acts"
 			USA_congress_large_support = yes
-			event_target:WTT_current_china_leader = {
-				add_opinion_modifier = { modifier = USA_extend_the_chinese_exclusion_acts target = ROOT }
-			}
+			
 		}
 	}
 	focus = {
