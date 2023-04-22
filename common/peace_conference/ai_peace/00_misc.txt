@@ -160,6 +160,30 @@ peace_ai_desires = {
         ai_desire = -2000
     }
 	
+	fucking_kill_the_rks_tags = {
+        peace_action_type = { liberate force_government puppet }
+        enable = {
+            ROOT.FROM = { 
+				OR = {
+					original_tag = RKN
+					original_tag = RKB
+					original_tag = RKU
+					original_tag = RKO
+					original_tag = RKM
+					original_tag = RKK
+					original_tag = RKS
+					original_tag = RKD
+					original_tag = RKT
+					original_tag = RKG
+					original_tag = MVF
+					original_tag = GGV
+					original_tag = MCS
+				}
+			}
+        }
+        ai_desire = -5000
+    }
+	
 	dont_liberate_mer_new_small_releasables = {
         peace_action_type = { liberate force_government puppet take_states }
         enable = {
