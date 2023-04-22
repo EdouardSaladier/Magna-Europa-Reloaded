@@ -5289,7 +5289,7 @@ ITA_diplomacy_balkan_decision_category = {
 
 		complete_effect = {
 			random_country = {
-				limit = { controls_state = 342 }
+				limit = { controls_state = 932 }
 				country_event = {
 				    id = BBA_italy_interaction_events.14
 				    days = 1
