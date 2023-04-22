@@ -2290,14 +2290,14 @@ country_event = {
 		tag = SOV
 		country_exists = UKR
 		country_exists = BLR
-		country_exists = GEO
-		country_exists = AZR
-		country_exists = ARM
-		country_exists = UZB
-		country_exists = TAJ
-		country_exists = KYR
-		country_exists = TMS
-		country_exists = KAZ
+		OR = {
+			AND = {
+				country_exists = GEO
+				country_exists = AZR
+				country_exists = ARM
+			}
+			country_exists = TCC
+		}
 		NOT = { has_global_flag = SOV_became_russia }
 	}
 
@@ -2320,18 +2320,22 @@ country_event = {
 		tag = SOV
 		NOT = { country_exists = UKR }
 		NOT = { country_exists = BLR }
-		NOT = { country_exists = GEO }
-		NOT = { country_exists = AZR }
-		NOT = { country_exists = ARM }
-		NOT = { country_exists = UZB }
-		NOT = { country_exists = TAJ }
-		NOT = { country_exists = KYR }
-		NOT = { country_exists = TMS }
-		NOT = { country_exists = KAZ }
+		
+		OR = {
+			AND = {
+				NOT = { country_exists = GEO }
+				NOT = { country_exists = AZR }
+				NOT = { country_exists = ARM }
+			}
+			NOT = { country_exists = TCC }
+		}
 		NOT = {
 			any_state = {
-				is_core_of = SOV
-				NOT = { state = 329 }
+				if = {
+					limit = {
+						is_core_of = SOV
+					}
+				}
 				NOT = { is_owned_by = SOV }
 			}
 		}
