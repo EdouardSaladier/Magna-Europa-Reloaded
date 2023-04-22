@@ -4446,6 +4446,12 @@ country_event = {
 		ITA_civil_war_deal_with_militias = yes
 
 		ITA_anti_fascist_civil_war_deal_with_fascist_side = yes
+		
+		if = {
+			limit = { has_cosmetic_tag = ITA_neutrality }
+			effect_tooltip = { set_cosmetic_tag = ITA_communism }
+			hidden_effect = { drop_cosmetic_tag = yes }
+		}
 	}
 	
 	#Mimimimi democratic

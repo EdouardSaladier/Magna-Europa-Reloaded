@@ -2848,17 +2848,19 @@ ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 		every_owned_state = {
 			limit = {
 				OR = {
-					state = 159 #LOMBARDIA
-					state = 850 #TRENTINO
-					state = 39 #ALTO ADIGE
-					state = 160 #VENETO
-					state = 736 #LITORALE
-					state = 852 #ISTRIA
+					has_state_flag = core_of_LOM #LOMBARDIA
+					has_state_flag = core_of_TIR #TRENTINO ALTO ADIGE
+					has_state_flag = core_of_VNT #VENETO
+					has_state_flag = core_of_FRI #FRIULI
+					has_state_flag = core_of_JUL #ISTRIA
+					state = 1476
 				}
+				NOT = { state = 1363 state = 2393 }
 				is_controlled_by = ROOT
 			}
 			set_state_flag = ITA_cw_state_split
 		}
+		set_capital = { state = 709 }
 	}
 	else_if = {
 		limit = {
@@ -2867,24 +2869,35 @@ ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 		every_owned_state = {
 			limit = {
 				OR = {
-					state = 2 #LAZIO
-					state = 849 #PUGLIA
-					state = 117 #CAMPANIA
-					state = 156 #CALABRIA
-					state = 114 #SARDEGNA
+					has_state_flag = core_of_LAZ #LAZIO
+					has_state_flag = core_of_PUG #PUGLIA
+					has_state_flag = core_of_NAP #CAMPANIA
+					has_state_flag = core_of_CAL #CALABRIA
+					has_state_flag = core_of_LUC #LUCANIA
+					has_state_flag = core_of_SRD #SARDEGNA
+					has_state_flag = core_of_MLS #MOLISE
+					has_state_flag = core_of_ABR #ABRUZZO
+					has_state_flag = core_of_SIC #SICILIA
+					state = 1394
+					state = 1534
 				}
+				NOT = { state = 1393 }
 				is_controlled_by = ROOT
 			}
 			set_state_flag = ITA_cw_state_split
 		}
+		set_capital = { state = 934 }
 	}
 	else = {
 		every_owned_state = {
 			limit = {
 				OR = {
-					state = 2 #LAZIO
-					state = 157 #ABRUZZO
-					state = 114 #SARDEGNA
+					has_state_flag = core_of_LAZ #LAZIO
+					has_state_flag = core_of_ABR #ABRUZZO
+					has_state_flag = core_of_SRD #SARDEGNA
+					has_state_flag = core_of_UMB #UMBRIA
+					has_state_flag = core_of_MAR #MARCHE
+					state = 920
 				}
 				is_controlled_by = ROOT
 			}
@@ -2993,7 +3006,14 @@ ITA_anti_fascist_civil_war_deal_with_fascist_side = {
 
 		#Manage NSs
 		ITA_manage_national_spirits_in_civil_war = yes
-
+		if = {
+			limit = {
+				NOT = {
+					ROOT = { has_completed_focus = ITA_organize_strikes_in_the_north }
+				}
+			}
+			hidden_effect = { transfer_state = 1370 }
+		}
 		#DAMAGE FROM ANTIFA FOCUSES
 		if = {
 			limit = {
@@ -3018,10 +3038,9 @@ ITA_anti_fascist_civil_war_deal_with_fascist_side = {
 						}
 						#Exclude small states with low development
 						NOT = {
-							state = 114 # SARDEGNA
-							state = 852 # ISTRIA
-							#state = 39 # ALTO ADIGE
-							state = 850 # TRENTINO
+							has_state_flag = core_of_SRD
+							has_state_flag = core_of_IST
+							has_state_flag = core_of_TIR
 						}
 					}
 					if = {
@@ -3088,10 +3107,9 @@ ITA_anti_fascist_civil_war_deal_with_fascist_side = {
 						}
 						#Exclude small states with low development
 						NOT = {
-							state = 114 # SARDEGNA
-							state = 852 # ISTRIA
-							state = 39 # ALTO ADIGE
-							state = 850 # TRENTINO
+							has_state_flag = core_of_SRD
+							has_state_flag = core_of_IST
+							has_state_flag = core_of_TIR
 						}
 					}
 					damage_building = {
@@ -3130,10 +3148,13 @@ ITA_anti_fascist_civil_war_deal_with_fascist_side = {
 					clr_state_flag = ITA_sabotaged_state_flag
 				}
 			}
-			set_capital = { state = 159 } # LOMBARDY (Milano)
+			set_capital = { state = 1359 } # LOMBARDY (Salò)
+			set_victory_points = { province = 7129 value = 20 }
+			
 		}
 		else = {
-			set_capital = { state = 159 } # LOMBARDY (Milano)
+			set_capital = { state = 1359 } # LOMBARDY (Salò)
+			set_victory_points = { province = 7129 value = 20 }
 		}
 
 		# SPAWN SOME BLACKSHIRTS TO HELP OUT AI
