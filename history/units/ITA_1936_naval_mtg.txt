@@ -21,7 +21,7 @@ units= {
 			ship = { name = "Alberico da Barbiano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Di Giussano/Cadorna Class" } } } 
 			ship = { name = "Alberto da Giussano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Di Giussano/Cadorna Class" } } } 
 			# Gruppo Incrociatori (Obsoleti)
-			ship = { name = "San Giorgio" definition = heavy_cruiser equipment = { ship_hull_cruiser_1= { amount = 1 owner = ITA version_name = "San Giorgio Class" } } } 
+			ship = { name = "San Giorgio" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "San Giorgio Class" } } } 
 			ship = { name = "Taranto" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Taranto Class" } } } 
 			ship = { name = "Bari" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Taranto Class" } } }	
 			ship = { name = "Ancona" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Ancona" } } }	

@@ -28,3 +28,11 @@ set_popularities = {
 	communism = 15
 	neutrality = 27
 }
+
+create_country_leader = {
+	name = "Victor Carey"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	ideology = conservatism
+	traits = {}
+}

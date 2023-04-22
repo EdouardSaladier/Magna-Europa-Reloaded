@@ -183,11 +183,11 @@ add_dynamic_modifier = { modifier = ITA_ricostruzione_industriale_dynamic_modifi
 #MILITARY INDUSTRY
 set_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = -0.05 }
 set_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = -0.1 }
+set_variable = { ITA_military_industry_dm_line_change_production_efficiency_factor = -0.1 }
 set_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = -0.05 }
 set_variable = { ITA_military_industry_dm_industrial_capacity_factory = -0.1 }
+set_variable = { ITA_military_industry_dm_production_lack_of_resource_penalty_factor = 0.25 }
 
-set_variable = { ITA_military_industry_dm_line_change_production_efficiency_factor = 0 }
-set_variable = { ITA_military_industry_dm_production_lack_of_resource_penalty_factor = 0 }
 set_variable = { ITA_military_industry_dm_equipment_upgrade_xp_cost = 0 }
 set_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0 }
 set_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = 0 }
@@ -332,7 +332,6 @@ set_technology = {
 	tech_military_police = 1
 	marines = 1
 	motorised_infantry = 1
-#	paratroopers = 1
 	gw_artillery = 1
 	interwar_artillery = 1
 	interwar_antiair = 1
@@ -361,9 +360,7 @@ if = {
 }
 if = {
 	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
+		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
 		gwtank = 1
@@ -372,9 +369,7 @@ if = {
 }
 if = {
 	limit = {
-		
 		has_dlc = "No Step Back"
-		
 	}
 	set_technology = {
 		gwtank_chassis = 1
@@ -387,7 +382,9 @@ if = {
 		add_tech_bonus = {
 			bonus = 0.5
 			uses = 1
+			ahead_reduction = 1
 			technology = basic_medium_tank_chassis
+			name = ita_m11_tt
 		}
 	}
 }
@@ -430,12 +427,17 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_battery = 1
 		improved_heavy_battery = 1
+		basic_heavy_shell = 1
 		basic_medium_battery = 1
+		basic_medium_shell = 1
+		improved_medium_battery = 1
 		basic_light_battery = 1
+		basic_light_shell = 1
 		basic_dp_light_battery = 1
 		basic_heavy_armor_scheme = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
+		cruiser_submarines = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
@@ -445,6 +447,7 @@ if = {
 		improved_ship_hull_heavy = 1
 		early_ship_hull_carrier = 1
 		mtg_transport = 1
+	#	panzerschiffe = 1
 		coastal_defense_ships = 1
 		improved_airplane_launcher = 1
 		midget_submarines = 1
@@ -459,6 +462,7 @@ if = {
 		set_technology = {
 			aa_lmg = 1
 			aa_hmg = 1
+			aa_cannon_1 = 1
 			early_bombs = 1
 			aircraft_construction = 1
 			engines_1 = 1
@@ -469,6 +473,20 @@ if = {
 			basic_small_airframe = 1
 			basic_medium_airframe = 1
 			photo_reconnaisance = 1
+			survivability_studies = 1
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			ahead_reduction = 3
+			technology = improved_medium_airframe
+			name = ita_z1007_tt
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			technology = basic_large_airframe
+			name = ita_p50_tt
 		}
 	else = {
 		set_air_oob = "ITA_1936_air_legacy"
@@ -488,6 +506,7 @@ if = {
 				bonus = 0.5
 				uses = 1
 				technology = fighter1
+				name = ita_c200_tt
 			}
 		}
 	}
@@ -502,6 +521,7 @@ if = {
 		ahead_reduction = 3
 		uses = 1
 		technology = artillery1
+		name = ita_cannone149_tt
 	}
 }
 
@@ -535,6 +555,7 @@ set_politics = {
 # DIPLOMACY / WAR 36
 
 give_guarantee = ALB
+give_guarantee = AUS
 give_guarantee = SMR
 give_guarantee = VAT
 
@@ -647,6 +668,7 @@ recruit_character = ITA_carlo_favagrossa
 recruit_character = ITA_alberto_beneduce
 recruit_character = ITA_guido_jung
 recruit_character = ITA_adelchi_serena
+recruit_character = ITA_carlo_sforza
 recruit_character = ITA_curzio_malaparte
 recruit_character = ITA_giuseppe_bottai
 recruit_character = ITA_antonio_pesenti
@@ -757,6 +779,7 @@ if = {
 			fixed_main_weapon_slot = light_mg_2x
 			fixed_auxiliary_weapon_slot_1 = empty
 			engine_type_slot = engine_1_1x
+			special_type_slot_1 = non_strategic_materials_small
 		}
 		obsolete = yes
 		icon = "GFX_ITA_iw_small_airframe_medium"
@@ -776,31 +799,43 @@ if = {
 		model = "ITA_fighter_equipment_0_entity"
 	}
 	create_equipment_variant = {
-		name = "CR.32" #
+		name = "CR.30" #
 		type = small_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
-			fixed_auxiliary_weapon_slot_1 = bomb_locks
 			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
+			special_type_slot_1 = non_strategic_materials_small
 		}
 		obsolete = yes
 		icon = "GFX_ITA_iw_small_airframe_medium"
 		model = "ITA_fighter_equipment_0_entity"
 	}
 	create_equipment_variant = {
-		name = "ICR.32" #
-		type = cv_small_plane_airframe_0
+		name = "CR.32" #
+		type = small_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
 			fixed_auxiliary_weapon_slot_1 = bomb_locks
 			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
+			special_type_slot_1 = non_strategic_materials_small
 		}
 		obsolete = yes
 		icon = "GFX_ITA_iw_small_airframe_medium"
 		model = "ITA_fighter_equipment_0_entity"
 	}
+#	create_equipment_variant = {
+#		name = "ICR.32" #
+#		type = cv_small_plane_airframe_0
+#		modules = {
+#			fixed_main_weapon_slot = light_mg_2x
+#			fixed_auxiliary_weapon_slot_1 = bomb_locks
+#			engine_type_slot = engine_1_1x
+#			special_type_slot_1 = empty
+#		}
+#		obsolete = yes
+#		icon = "GFX_ITA_iw_small_airframe_medium"
+#		model = "ITA_fighter_equipment_0_entity"
+#	}
 	create_equipment_variant = {
 		name = "CR.32bis" #
 		type = small_plane_airframe_0
@@ -808,23 +843,23 @@ if = {
 			fixed_main_weapon_slot = heavy_mg_2x
 			fixed_auxiliary_weapon_slot_1 = bomb_locks
 			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
+			special_type_slot_1 = non_strategic_materials_small
 		}
 		icon = "GFX_ITA_iw_small_airframe_medium"
 		model = "ITA_fighter_equipment_0_entity"
 	}
-	create_equipment_variant = {
-		name = "ICR.32bis" #
-		type = cv_small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = heavy_mg_2x
-			fixed_auxiliary_weapon_slot_1 = bomb_locks
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_ITA_iw_small_airframe_medium"
-		model = "ITA_fighter_equipment_0_entity"
-	}
+#	create_equipment_variant = {
+#		name = "ICR.32bis" #
+#		type = cv_small_plane_airframe_0
+#		modules = {
+#			fixed_main_weapon_slot = heavy_mg_2x
+#			fixed_auxiliary_weapon_slot_1 = bomb_locks
+#			engine_type_slot = engine_1_1x
+#			special_type_slot_1 = empty
+#		}
+#		icon = "GFX_ITA_iw_small_airframe_medium"
+#		model = "ITA_fighter_equipment_0_entity"
+#	}
 	create_equipment_variant = {
 		name = "Ba.27" #
 		type = small_plane_airframe_1
@@ -846,22 +881,23 @@ if = {
 			fixed_auxiliary_weapon_slot_1 = recon_camera
 			engine_type_slot = engine_2_1x
 			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_2 = non_strategic_materials_small
 		}
 		obsolete = yes
 		#icon = "GFX_ITA_CAS1_medium"
 	}
-	create_equipment_variant = {
-		name = "Ca.111 Idro" #
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = recon_camera
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = lmg_defense_turret_2x
-			special_type_slot_2 = floats
-		}
+#	create_equipment_variant = {
+#		name = "Ca.111 Idro" #
+#		type = small_plane_airframe_0
+#		modules = {
+#			fixed_main_weapon_slot = small_bomb_bay
+#			fixed_auxiliary_weapon_slot_1 = recon_camera
+#			engine_type_slot = engine_2_1x
+#			special_type_slot_1 = lmg_defense_turret_2x
+#			special_type_slot_2 = floats
+#		}
 		#icon = "GFX_ITA_CAS1_medium"
-	}
+#	}
 	create_equipment_variant = {
 		name = "Ca.101" #
 		type = medium_plane_airframe_0
@@ -869,6 +905,7 @@ if = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			engine_type_slot = engine_1_3x
 			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = non_strategic_materials_medium
 		}
 		obsolete = yes
 		icon = "GFX_ITA_early_bomber_old_medium"
@@ -895,6 +932,7 @@ if = {
 			engine_type_slot = engine_1_3x
 			special_type_slot_1 = lmg_defense_turret_2x
 			special_type_slot_2 = lmg_defense_turret_2x
+			special_type_slot_3 = self_sealing_fuel_tanks_medium
 		}
 		icon = "GFX_ITA_early_bomber_medium"
 	}
@@ -904,12 +942,14 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-			fixed_auxiliary_weapon_slot_2 = light_mg_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_3 = light_mg_2x
 			engine_type_slot = engine_2_3x
 			special_type_slot_1 = hmg_defense_turret_2x
-			special_type_slot_2 = hmg_defense_turret
+			special_type_slot_2 = self_sealing_fuel_tanks_medium
 		}
 		icon = "GFX_ITA_naval_bomber1_medium"
+		model = "ITA_interwar_bomber_entity"
 	}
 	create_equipment_variant = {
 		name = "SM.72" #
@@ -923,6 +963,7 @@ if = {
 			special_type_slot_2 = lmg_defense_turret_2x
 		}
 		#icon = "GFX_ITA_naval_bomber1_medium"
+		model = "ITA_interwar_bomber_entity"
 		obsolete = yes
 	}
 	create_equipment_variant = {
@@ -943,7 +984,7 @@ if = {
 			fixed_main_weapon_slot = small_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = light_mg_2x
 			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
+			special_type_slot_1 = non_strategic_materials_small
 		}
 		icon = "GFX_ITA_CAS1_medium"
 		obsolete = yes
@@ -953,11 +994,25 @@ if = {
 		type = small_plane_cas_airframe_1
 		modules = {
 			fixed_main_weapon_slot = small_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_2 = light_mg_2x
 			engine_type_slot = engine_2_1x
 			special_type_slot_1 = empty
 		}
 		icon = "GFX_ITA_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Ba.65bis" #
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_2 = light_mg_2x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = hmg_defense_turret
+		}
+		icon = "GFX_ITA_CAS1_medium"
+		model = "ITA_CAS_equipment_1_entity"
 	}
 
 }
@@ -966,6 +1021,39 @@ if = {
 if = {
 	limit = {
 		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "Fiat 2000/17"
+		type = heavy_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+			special_type_slot_2 = additional_machine_guns
+			special_type_slot_3 = additional_machine_guns
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "CR10"
+		type = medium_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon
+			turret_type_slot = tank_medium_casemate_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = secondary_turret_hmg
+		}
+			upgrades = {
+				tank_nsb_engine_upgrade = 2
+				tank_nsb_armor_upgrade = 1
+			}
 	}
 	create_equipment_variant = {
 		name = "Fiat 3000/21"
@@ -1067,8 +1155,8 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = additional_machine_guns
-			special_type_slot_2 = wet_ammo_storage
+			special_type_slot_1 = wet_ammo_storage
+		#	special_type_slot_2 = additional_machine_guns
 		}
 		upgrades = {
 			tank_nsb_engine_upgrade = 2
@@ -1274,7 +1362,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_3
 			fixed_ship_secondaries_slot = ship_secondaries_2
-			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_armor_slot = ship_armor_bb_3
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_secondaries_2
 			mid_2_custom_slot = ship_airplane_launcher_2
@@ -1284,20 +1372,21 @@ if = {
 	### Heavy Cruiser Variants	
 	create_equipment_variant = {
 		name = "San Giorgio Class"
-		type = ship_hull_cruiser_1
+		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = ITA_CA_HISTORICAL
 		parent_version = 0
+		role_icon_index = 2
 		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_2
-			fixed_ship_secondaries_slot = dp_ship_secondaries_1
-			mid_1_custom_slot = dp_ship_secondaries_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_anti_air_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_4
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_torpedo_1
+		#	rear_1_custom_slot = ship_medium_battery_1
 		}
 		obsolete = yes
 	}
@@ -1306,12 +1395,13 @@ if = {
 		type = ship_hull_cruiser_2
 		name_group = ITA_CA_HISTORICAL
 		parent_version = 0
+		role_icon_index = 1
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_engine_slot = cruiser_ship_engine_4
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			front_1_custom_slot = ship_anti_air_1
@@ -1326,18 +1416,19 @@ if = {
 		type = ship_hull_cruiser_2
 		name_group = ITA_CA_HISTORICAL
 		parent_version = 0
+		role_icon_index = 1
 		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_battery_slot = ship_medium_battery_3
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_armor_slot = ship_armor_cruiser_3
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_airplane_launcher_1
 			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_medium_battery_2
+			rear_1_custom_slot = ship_medium_battery_3
 		}
 	}
 	create_equipment_variant = {
@@ -1345,18 +1436,19 @@ if = {
 		type = ship_hull_cruiser_2
 		name_group = ITA_CA_HISTORICAL
 		parent_version = 0
+		role_icon_index = 1
 		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_battery_slot = ship_medium_battery_3
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_engine_slot = cruiser_ship_engine_4
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_airplane_launcher_2
-			rear_1_custom_slot = ship_medium_battery_2
+			rear_1_custom_slot = ship_medium_battery_3
 		}
 	}
 	### Light Cruiser Variants
@@ -1384,6 +1476,7 @@ if = {
 		type = ship_hull_cruiser_1
 		name_group = ITA_CL_HISTORICAL
 		parent_version = 0
+		role_icon_index = 2
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1404,6 +1497,7 @@ if = {
 		type = ship_hull_cruiser_1
 		name_group = ITA_CL_HISTORICAL
 		parent_version = 0
+		role_icon_index = 2
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1422,6 +1516,7 @@ if = {
 		type = ship_hull_cruiser_1
 		name_group = ITA_CL_HISTORICAL
 		parent_version = 0
+		role_icon_index = 2
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1440,8 +1535,9 @@ if = {
 		type = ship_hull_cruiser_1
 		name_group = ITA_CL_HISTORICAL
 		parent_version = 0
+		role_icon_index = 2
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1449,7 +1545,7 @@ if = {
 			fixed_ship_armor_slot = empty
 			mid_1_custom_slot = empty
 			mid_2_custom_slot = empty
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_light_battery_2
 		}
 		obsolete = yes
 	}
@@ -1459,6 +1555,7 @@ if = {
 		type = ship_hull_cruiser_2
 		name_group = ITA_CL_HISTORICAL
 		parent_version = 0
+		role_icon_index = 1
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_2
@@ -1478,12 +1575,13 @@ if = {
 		type = ship_hull_cruiser_2
 		name_group = ITA_CL_HISTORICAL
 		parent_version = 0
+		role_icon_index = 1
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_2
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_engine_slot = cruiser_ship_engine_3
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			front_1_custom_slot = ship_anti_air_2
@@ -1498,12 +1596,13 @@ if = {
 		type = ship_hull_cruiser_2
 		name_group = ITA_CL_HISTORICAL
 		parent_version = 0
+		role_icon_index = 1
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_2
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_engine_slot = cruiser_ship_engine_3
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			front_1_custom_slot = ship_anti_air_2
@@ -1517,18 +1616,19 @@ if = {
 		type = ship_hull_cruiser_2
 		name_group = ITA_CL_HISTORICAL
 		parent_version = 0
+		role_icon_index = 1
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_battery_slot = ship_light_medium_battery_3
 			fixed_ship_anti_air_slot = ship_anti_air_2
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_engine_slot = cruiser_ship_engine_3
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 			front_1_custom_slot = ship_anti_air_2
 			mid_1_custom_slot = ship_torpedo_2
 			mid_2_custom_slot = ship_airplane_launcher_2
-			rear_1_custom_slot = ship_light_medium_battery_2
+			rear_1_custom_slot = ship_light_medium_battery_3
 		}
 	}
 	### Destroyer Variants

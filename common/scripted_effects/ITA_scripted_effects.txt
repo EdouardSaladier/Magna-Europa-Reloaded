@@ -5086,7 +5086,7 @@ ITA_add_reggianes_exports_templates = {
 		modules = {
 			fixed_main_weapon_slot = heavy_mg_2x
 			fixed_auxiliary_weapon_slot_1 = bomb_locks
-			engine_type_slot = radial_engine_2_1x
+			engine_type_slot = engine_2_1x
 			special_type_slot_1 = fuel_tanks_small
 			special_type_slot_2 = fuel_tanks_small
 		}
@@ -5101,7 +5101,7 @@ ITA_add_reggianes_exports_templates = {
 		modules = {
 			fixed_main_weapon_slot = heavy_mg_2x
 			fixed_auxiliary_weapon_slot_1 = bomb_locks
-			engine_type_slot = radial_engine_3_1x
+			engine_type_slot = engine_3_1x
 			special_type_slot_1 = fuel_tanks_small
 			special_type_slot_2 = fuel_tanks_small
 		}
@@ -5421,14 +5421,14 @@ ITA_add_light_spg_templates = {
 			main_armament_slot = tank_high_velocity_cannon
 			turret_type_slot = tank_light_fixed_superstructure_turret
 			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_bolted_armor
+			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
 		}
 		upgrades = {
 			tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 1
 		}
-		icon = "gfx/interface/equipmentdesigner/tanks/designer/lamp_ITA/light_1/ita_semovente_47_32_l3.dds"
+	#	icon = "gfx/interface/equipmentdesigner/tanks/designer/lamp_ITA/light_1/ita_semovente_47_32_l3.dds"
 		model = "ITA_light_tank_destroyer_brigade_1_entity"
 	}
 
@@ -5726,7 +5726,7 @@ ITA_add_improved_medium_tank_templates = {
 			type = medium_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_medium_cannon_3
+				main_armament_slot = tank_medium_cannon_2
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
@@ -5746,7 +5746,7 @@ ITA_add_improved_medium_tank_templates = {
 			type = medium_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_medium_cannon_3
+				main_armament_slot = tank_medium_cannon_2
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
@@ -5961,7 +5961,7 @@ ITA_add_advanced_medium_tank_templates = {
 			type = medium_tank_artillery_chassis_3
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_heavy_howitzer_2
+				main_armament_slot = tank_heavy_howitzer
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor

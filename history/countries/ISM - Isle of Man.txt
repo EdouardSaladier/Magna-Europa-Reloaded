@@ -84,3 +84,11 @@ set_popularities = {
 	communism = 15
 	neutrality = 27
 }
+
+create_country_leader = {
+	name = "William Leveson-Gower"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	ideology = conservatism
+	traits = {}
+}

@@ -28,3 +28,11 @@ set_popularities = {
 	communism = 15
 	neutrality = 27
 }
+
+create_country_leader = {
+	name = "Alexander Coutanche"
+	desc = ""
+	picture = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
+	ideology = conservatism
+	traits = {}
+}
