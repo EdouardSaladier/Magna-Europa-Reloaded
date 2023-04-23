@@ -11079,6 +11079,10 @@ focus_tree = {
 				days = 720
 			}
 			set_party_name = { ideology = neutrality long_name = GER_neutrality_party_kaiserreich_long name = GER_neutrality_party_kaiserreich }
+			hidden_effect = { 
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = GER_republic
+			}
 		}
 	}
 
