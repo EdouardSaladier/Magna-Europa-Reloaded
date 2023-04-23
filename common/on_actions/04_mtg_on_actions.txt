@@ -523,12 +523,10 @@ on_actions = {
 						option = NEL_AUTONOMOUS
 					}
 				}
-				every_state = {
-					limit = { has_state_flag = NEL_CORE }
-				add_core_of = NEL
-				transfer_state_to = NEL
-				remove_core_of = USA
-				USA = { set_autonomy = { target = NEL autonomy_state = autonomy_integrated_puppet } }
+				USA = {
+					release = NEL
+					set_autonomy = { target = NEL autonomy_state = autonomy_integrated_puppet }
+					set_cosmetic_tag = USA_42
 				}
 			}
 			if = {
@@ -538,12 +536,9 @@ on_actions = {
 						option = NEL_INDEPENDENT
 					}
 				}
-				every_state = {
-					limit = { has_state_flag = NEL_CORE }
-				add_core_of = NEL
-				transfer_state_to = NEL
-				remove_core_of = USA
-				add_claim_by = USA
+				USA = {
+					release = NEL
+					set_cosmetic_tag = USA_42
 				}
 			}
 			if = {
