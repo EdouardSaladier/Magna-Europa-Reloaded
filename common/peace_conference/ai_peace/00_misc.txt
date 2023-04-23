@@ -11,6 +11,15 @@ peace_ai_desires = {
         }
         ai_desire = 100
     }
+	
+	give_cores_to_our_allies = {
+        peace_action_type = { take_states }
+        enable = {
+            ROOT = { is_in_faction_with = ROOT.FROM } #We are in a faction with the taker
+            ROOT.FROM.FROM.FROM = { is_core_of = ROOT.FROM } #It a core of the taker
+        }
+        ai_desire = 50
+    }
 
     generic_influence_cutoff = { #Only do force gov and liberate outside influence range
         peace_action_type = { take_states puppet }
@@ -106,9 +115,10 @@ peace_ai_desires = {
 	ai_do_annex_wargoal = {
         peace_action_type = take_states
         enable = {
-            FROM.FROM = {
+			ROOT = { tag = ROOT.FROM } #We are negotiating for ourselves
+            ROOT = {
                 has_war_with_wargoal_against = {
-                  target = ROOT
+                  target = FROM.FROM
                   type = annex_everything
                 }
             }
@@ -119,10 +129,11 @@ peace_ai_desires = {
 	ai_do_puppet_wargoal = {
         peace_action_type = puppet
         enable = {
-            FROM.FROM = {
+			ROOT = { tag = ROOT.FROM } #We are negotiating for ourselves
+            ROOT = {
                 has_war_with_wargoal_against = {
-                  target = ROOT
-                  type = puppet_wargoal_focus
+					target = FROM.FROM
+					type = puppet_wargoal_focus
                 }
             }
         }
@@ -163,7 +174,7 @@ peace_ai_desires = {
 	fucking_kill_the_rks_tags = {
         peace_action_type = { liberate force_government puppet }
         enable = {
-            ROOT.FROM = { 
+            FROM.FROM = { 
 				OR = {
 					original_tag = RKN
 					original_tag = RKB
@@ -218,6 +229,32 @@ peace_ai_desires = {
         ai_desire = 200
     }
 	
+	dont_let_germany_hold_on_shit = {
+        peace_action_type = { liberate force_government puppet take_states }
+        enable = {
+            is_historical_focus_on = yes
+            is_major = yes
+            ROOT.FROM = { original_tag = GER }
+            ROOT.FROM.FROM.FROM = { 
+				OR = { 
+					is_core_of = AUS 
+					is_core_of = CZE
+					is_core_of = YUG
+					is_core_of = DEN
+					is_core_of = FRA
+					is_core_of = HOL
+					is_core_of = BEL
+					is_core_of = POL
+					is_core_of = UKR
+					is_core_of = BEL
+					is_core_of = SOV
+					is_core_of = ITA
+				}
+			}
+        }
+        ai_desire = -2000
+    }
+	
 	liberate_free_city_of_trieste = {
         peace_action_type = { liberate }
         enable = {
@@ -249,7 +286,7 @@ peace_ai_desires = {
     }
 	
 	dont_leave_germany_if_yalta = {
-        peace_action_type = { liberate force_government puppet }
+        peace_action_type = { liberate force_government puppet take_states }
         enable = {
             has_global_flag = had_yalta_conference
             ROOT.FROM = { tag = GER }
@@ -266,7 +303,7 @@ peace_ai_desires = {
     }
 	
 	do_yalta_WGR = {
-        peace_action_type = { liberate force_government puppet }
+        peace_action_type = { liberate force_government puppet take_states }
         enable = {
 			has_government = democratic
             has_global_flag = had_yalta_conference
@@ -288,7 +325,7 @@ peace_ai_desires = {
     }
 	
 	do_yalta_DDR = {
-        peace_action_type = { puppet }
+        peace_action_type = { puppet take_states }
         enable = {
 			has_government = communism
             has_global_flag = had_yalta_conference
@@ -337,8 +374,7 @@ peace_ai_desires = {
     fascist_liberate_desire = {
         peace_action_type = liberate
         enable = {
-            ROOT = { 
-                NOT = { tag = JAP }            #We aren't Japan (special handling)
+            ROOT = {
                 is_major = yes                #We are big
                 has_government = fascism    #We are the baddies
                 tag = ROOT.FROM                #We are acting for ourselves
@@ -440,7 +476,7 @@ peace_ai_desires = {
                 }
             }
         }
-        ai_desire = -40
+        ai_desire = -60
     }
 
 

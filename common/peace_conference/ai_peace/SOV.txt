@@ -27,7 +27,7 @@ peace_ai_desires = {
             FROM.FROM.FROM = { state = 227 }  # Memel
         }
 
-        ai_desire = 50  # 50 percent higher desire
+        ai_desire = 500  # 50 percent higher desire
     }
      # If Lithuania is a Soviet Puppet, the Soviets want Memel for it
     SOV_wants_memel = {
@@ -39,7 +39,7 @@ peace_ai_desires = {
             FROM.FROM.FROM = { state = 227 }  # Memel
         }
 
-        ai_desire = 50  # 50 percent higher desire
+        ai_desire = 500  # 50 percent higher desire
     }
 
 
@@ -47,7 +47,8 @@ peace_ai_desires = {
         peace_action_type = puppet
         enable = {
             is_historical_focus_on = yes
-            ROOT.FROM = { tag = CZE }
+			ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = CZE }
             ROOT.FROM.FROM.FROM = { is_core_of = CZE }
             tag = SOV
         }
@@ -58,7 +59,8 @@ peace_ai_desires = {
         peace_action_type = take_state
         enable = {
 			tag = SOV  # Negotiatior is soviet union
-            ROOT.FROM = { tag = BLR }
+			ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = BLR }
             ROOT.FROM.FROM.FROM = { is_core_of = BLR }
         }
         ai_desire = 400
@@ -67,7 +69,8 @@ peace_ai_desires = {
         peace_action_type = take_state
         enable = {
 			tag = SOV  # Negotiatior is soviet union
-            ROOT.FROM = { OR = { tag = CZE tag = HUN } }
+			ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { OR = { tag = CZE tag = HUN } }
             ROOT.FROM.FROM.FROM = { is_zakarpattia = yes }
         }
         ai_desire = 400
@@ -77,7 +80,8 @@ peace_ai_desires = {
         peace_action_type = take_state
         enable = {
 			tag = SOV  # Negotiatior is soviet union
-            ROOT.FROM = { tag = BLR }
+			ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = BLR }
             ROOT.FROM.FROM.FROM = { is_core_of = UKR }
         }
         ai_desire = 400
@@ -87,7 +91,7 @@ peace_ai_desires = {
         peace_action_type = { take_states }
         enable = {
 			tag = SOV
-            ROOT.FROM = { tag = POL }
+            ROOT.FROM = { tag = ROOT }
             ROOT.FROM.FROM.FROM = {
 				is_east_poland = yes
 			}
@@ -99,8 +103,9 @@ peace_ai_desires = {
         peace_action_type = { take_states }
         enable = {
             tag = SOV
-            ROOT.FROM = { tag = POL }
+			ROOT.FROM = { tag = ROOT }
             ROOT.FROM.FROM.FROM = {
+				is_core_of = POL
 				NOT = { is_east_poland = yes }
 			}
         }
@@ -111,7 +116,8 @@ peace_ai_desires = {
         peace_action_type = { force_government puppet }
         enable = {
             tag = SOV
-            ROOT.FROM = { tag = POL }
+			ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = POL }
             ROOT.FROM.FROM.FROM = {
 				NOT = { is_east_poland = yes }
 			}
@@ -124,6 +130,7 @@ peace_ai_desires = {
         enable = {
             is_historical_focus_on = yes
             ROOT = { tag = SOV }
+			ROOT.FROM = { tag = ROOT }
             ROOT.FROM.FROM.FROM = { is_core_of = AUS }
         }
         ai_desire = -400
@@ -134,6 +141,7 @@ peace_ai_desires = {
         enable = {
             is_historical_focus_on = yes
             ROOT = { tag = SOV }
+			ROOT.FROM = { tag = ROOT }
             ROOT.FROM.FROM.FROM = { is_core_of = AUS }
         }
         ai_desire = 400
@@ -143,7 +151,8 @@ peace_ai_desires = {
         peace_action_type = { force_government puppet }
         enable = {
             tag = SOV
-            ROOT.FROM = { tag = HUN }
+			ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = HUN }
             ROOT.FROM.FROM.FROM = { is_core_of = HUN }
         }
         ai_desire = 400
@@ -153,7 +162,8 @@ peace_ai_desires = {
         peace_action_type = { take_states }
         enable = {
             tag = SOV
-            ROOT.FROM = { tag = HUN }
+			ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = HUN }
             ROOT.FROM.FROM.FROM = { is_core_of = HUN }
         }
         ai_desire = -400
@@ -163,7 +173,8 @@ peace_ai_desires = {
         peace_action_type = { take_states }
         enable = {
 			tag = SOV
-            ROOT.FROM = { tag = ROM }
+			ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = ROM }
             ROOT.FROM.FROM.FROM = {
 				is_claimed_by = SOV
 			}
@@ -176,7 +187,8 @@ peace_ai_desires = {
         enable = {
             is_historical_focus_on = yes
             tag = SOV
-            ROOT.FROM = { tag = ROM }
+			ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = ROM }
             ROOT.FROM.FROM.FROM = { 
 				is_core_of = ROM
 				NOT = {
@@ -191,7 +203,8 @@ peace_ai_desires = {
         peace_action_type = { take_states }
         enable = {
             tag = SOV
-            ROOT.FROM = { tag = ROM }
+			ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = ROM }
             ROOT.FROM.FROM.FROM = { 
 				is_core_of = ROM
 				NOT = {
@@ -205,7 +218,8 @@ peace_ai_desires = {
         peace_action_type = { force_government puppet }
         enable = {
             tag = SOV
-            ROOT.FROM = { tag = YUG }
+			ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = YUG }
             ROOT.FROM.FROM.FROM = { is_core_of = YUG }
         }
         ai_desire = 400
@@ -215,7 +229,8 @@ peace_ai_desires = {
         peace_action_type = { take_states }
         enable = {
             tag = SOV
-            ROOT.FROM = { tag = YUG }
+			ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = YUG }
             ROOT.FROM.FROM.FROM = { is_core_of = YUG }
         }
         ai_desire = -400
