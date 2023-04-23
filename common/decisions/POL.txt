@@ -698,14 +698,14 @@ POL_peasant_strike_category = {
 
 		available = {
 			divisions_in_state = {
-				state = 91	
+				state = 1292	
 				size > 4
 			}
 		}
 
 		highlight_states = {
 		 	highlight_state_targets = {
-					state = 91
+					state = 1292
 				} 
 		}
 		
@@ -765,14 +765,14 @@ POL_peasant_strike_category = {
 
 		available = {
 			divisions_in_state = {
-				state = 88	
+				state = 46	
 				size > 9
 			}
 		}
 
 		highlight_states = {
 		 	highlight_state_targets = {
-					state = 88
+					state = 46
 				} 
 		}
 		

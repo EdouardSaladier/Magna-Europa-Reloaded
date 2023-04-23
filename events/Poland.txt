@@ -18,9 +18,27 @@ country_event = {
 		name = poland.1.a
 		ai_chance = { factor = 10 }
 		add_ideas = fascist_influence
-		add_state_claim = 198
-		add_state_claim = 199
-		add_state_claim = 201
+		every_state = {
+			limit = {
+				NOT = {
+					is_core_of = POL 
+					state = 2038
+					state = 2681
+					state = 2682
+					state = 2065
+				}
+				OR = {
+					is_core_of = PLD
+					is_core_of = VLH
+					state = 2053
+					state = 436
+					state = 2687
+					state = 2070
+					state = 2100
+				}
+			}
+			add_claim_by = ROOT
+		}
 	}
 
 	option = {

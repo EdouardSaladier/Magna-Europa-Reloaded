@@ -634,27 +634,33 @@ focus_tree = {
 			}
 			build_railway = {
 				#level = 3
-				path = { 438 3483 6557 11543 }
+				start_province = 12912
+				target_province = 12237
 			}
 			build_railway = {
 				#level = 2
-				path = { 11543 6520 11503 560 6280 11341 9304 }
+				start_province = 12237
+				target_province = 8901
 			}
 			build_railway = {
 				#level = 2
-				path = { 9236 277 }
+				start_province = 8901
+				target_province = 10912
 			}
 			build_railway = {
 				#level = 2
-				path = { 277 406 11391 11342 }
+				start_province = 10912
+				target_province = 19928
 			}
 			build_railway = {
 				#level = 2
-				path = { 11550 3562 438 }
+				start_province = 12912
+				target_province = 19916
 			}
 			build_railway = {
 				#level = 2
-				path = { 11357 11329 9316 9290 }
+				start_province = 1178
+				target_province = 6901
 			}
 		}
 	}
@@ -8460,12 +8466,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_reclaim_west_slavia"
-			66 = { add_core_of = ROOT }
-			67 = { add_core_of = ROOT }
-			68 = { add_core_of = ROOT }
-			63 = { add_core_of = ROOT }
-			5 = { add_core_of = ROOT }
-			763 = { add_core_of = ROOT }
 			every_state = {
 				limit = {
 					OR = {
