@@ -36,17 +36,41 @@ on_actions = {
 				SOV = {
 					release = BLR
 					release = UKR
-					release = TCC
 					release = KAZ
 					release = UZB
 					release = TMS
+					release = CRI
+					release = KAL
+					release = AKN
+					release = DAG
+					release = DON
+					release = CIN
+					release = VRS
+					release = MOU
+					release = KRC
+					release = KUB
+					release = ABK
+					release = GEO
+					release = ARM
+					release = GEO
+					release = NGK
+					release = AZR
+					release = SLB
+					release = VGE
+					release = BSK
+					release = TAT
+					release = CHU
+					release = MEL
+					release = UDM
+					release = PEM
+					release = KOM
+					release = AKG
+					release = NEN
+					release = IGR
+					release = KAR
+					release = SAP
 				}
-				every_state = {
-					limit = {
-						is_core_of = RUS
-					}
-					transfer_state_to = SOV
-				}
+				
 			}
 			if = {
 				limit = {
