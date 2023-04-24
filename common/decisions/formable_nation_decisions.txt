@@ -1665,11 +1665,14 @@ form_ottoman_empire_category = {
 						is_core_of = QAT
 						is_core_of = UAE
 						is_core_of = OMA
-						is_core_of = SAU
-						NOT = {
-							is_core_of = JBS
-							is_core_of = NJD
+						AND = {
+							is_core_of = SAU
+								NOT = {
+									is_core_of = JBS
+									is_core_of = NJD
+								}
 						}
+						
 					}
 				}
 				add_core_of = ROOT
@@ -1787,7 +1790,7 @@ form_ottoman_empire_category = {
 			}
 			EGY = {
 				all_core_state = {
-					is_owned_by = EGY
+					is_owned_by = ROOT
 				}
 			}
 		}

@@ -5624,7 +5624,7 @@ ITA_vallo_alpino_del_littorio_dec_cat = {
 						type = bunker
 						level = 2
 						province = {
-							id = 1697
+							all_provinces = yes
 						}
 						instant_build = yes
 					}
@@ -5654,22 +5654,19 @@ ITA_vallo_alpino_del_littorio_dec_cat = {
 
 		visible = {
 			OR = {
-				850 = { #TRENTINO
+				683 = { #TRENTINO
 					any_province_building_level = {
 						province = {
-							id = 6631
-							id = 9598
+							all_provinces = yes
 						}
 						building = bunker
 						level < 10
 					}
 				}
-				39 = { #ALTO ADIGE
+				2535 = { #ALTO ADIGE
 					any_province_building_level = {
 						province = {
-							id = 11598
-							id = 656
-							id = 11615
+							all_provinces = yes
 						}
 						building = bunker
 						level < 10
@@ -5679,8 +5676,8 @@ ITA_vallo_alpino_del_littorio_dec_cat = {
 		}
 
 		available = {
-			has_full_control_of_state = 850 #TRENTINO
-			has_full_control_of_state = 39 #ALTO ADIGE
+			has_full_control_of_state = 683 #TRENTINO
+			has_full_control_of_state = 2535 #ALTO ADIGE
 			NOT = { has_country_flag = ITA_vallo_alpino_project_ongoing_flag }
 		}
 
@@ -5699,8 +5696,8 @@ ITA_vallo_alpino_del_littorio_dec_cat = {
 
 		cancel_trigger = {
 			OR = {
-				NOT = { has_full_control_of_state = 850 } #TRENTINO
-				NOT = { has_full_control_of_state = 39 } #ALTO ADIGE
+				NOT = { has_full_control_of_state = 2535 } #TRENTINO
+				NOT = { has_full_control_of_state = 683 } #ALTO ADIGE
 			}
 		}
 
@@ -5722,25 +5719,22 @@ ITA_vallo_alpino_del_littorio_dec_cat = {
 
 			custom_effect_tooltip = ITA_vallo_alpino_settentrionale_east_tt
 			hidden_effect = {
-				850 = { #TRENTINO
+				2535 = { #TRENTINO
 					add_building_construction = {
 						type = bunker
 						level = 2
 						province = {
-							id = 6631
-							id = 9598
+							all_provinces = yes
 						}
 						instant_build = yes
 					}
 				}
-				39 = { #ALTO ADIGE
+				683 = { #ALTO ADIGE
 					add_building_construction = {
 						type = bunker
 						level = 2
 						province = {
-							id = 11598
-							id = 656
-							id = 11615
+							all_provinces = yes
 						}
 						instant_build = yes
 					}
@@ -5760,43 +5754,33 @@ ITA_vallo_alpino_del_littorio_dec_cat = {
 
 		visible = {
 			OR = {
-				160 = { #VENETO
+				2953 = { #VENETO
 					any_province_building_level = {
 						province = {
-							id = 3657
-							id = 9613
+							all_provinces = yes
 						}
 						building = bunker
 						level < 10
 					}
 				}
-				736 = { #LITORALE
-					any_province_building_level = {
-						province = {
-							id = 11595
-							id = 599
+				JUL = {
+					all_core_state = { #ISTRIA
+						any_province_building_level = {
+							province = {
+								all_provinces = yes
+							}
+							building = bunker
+							level < 10
 						}
-						building = bunker
-						level < 10
-					}
-				}
-				852 = { #ISTRIA
-					any_province_building_level = {
-						province = {
-							id = 11735
-							id = 11564
-						}
-						building = bunker
-						level < 10
 					}
 				}
 			}
 		}
 
 		available = {
-			has_full_control_of_state = 160 #VENETO
-			has_full_control_of_state = 736 #LITORALE
-			has_full_control_of_state = 852 #ISTRIA
+			has_full_control_of_state = 2953 #VENETO
+			has_full_control_of_state = 755 #LITORALE
+			has_full_control_of_state = 1485 #ISTRIA
 			NOT = { has_country_flag = ITA_vallo_alpino_project_ongoing_flag }
 		}
 
@@ -5815,9 +5799,9 @@ ITA_vallo_alpino_del_littorio_dec_cat = {
 
 		cancel_trigger = {
 			OR = {
-				NOT = { has_full_control_of_state = 160 } #TRENTINO
-				NOT = { has_full_control_of_state = 736 } #ALTO ADIGE
-				NOT = { has_full_control_of_state = 852 } #ISTRIA
+				NOT = { has_full_control_of_state = 1485 } #TRENTINO
+				NOT = { has_full_control_of_state = 755 } #ALTO ADIGE
+				NOT = { has_full_control_of_state = 2953 } #ISTRIA
 			}
 		}
 
@@ -5839,37 +5823,26 @@ ITA_vallo_alpino_del_littorio_dec_cat = {
 
 			custom_effect_tooltip = ITA_vallo_alpino_orientale_tt
 			hidden_effect = {
-				160 = { #VENETO
+				1485 = { #VENETO
 					add_building_construction = {
 						type = bunker
 						level = 2
 						province = {
-							id = 3657
-							id = 9613
+							all_provinces = yes
 						}
 						instant_build = yes
 					}
 				}
-				736 = { #LITORALE
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = {
-							id = 11595
-							id = 599
+				JUL = {
+					all_core_state = { #LITORALE
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = {
+								all_provinces = yes
+							}
+							instant_build = yes
 						}
-						instant_build = yes
-					}
-				}
-				852 = { #ISTRIA
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = {
-							id = 11735
-							id = 11564
-						}
-						instant_build = yes
 					}
 				}
 			}
