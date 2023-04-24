@@ -174,7 +174,7 @@ peace_ai_desires = {
 	fucking_kill_the_rks_tags = {
         peace_action_type = { liberate force_government puppet }
         enable = {
-            FROM.FROM = { 
+            ROOT.FROM = { 
 				OR = {
 					original_tag = RKN
 					original_tag = RKB
@@ -222,7 +222,12 @@ peace_ai_desires = {
         peace_action_type = { liberate force_government puppet }
         enable = {
             is_historical_focus_on = yes
-            is_major = yes
+            ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
             ROOT.FROM = { tag = AUS }
             ROOT.FROM.FROM.FROM = { is_core_of = AUS }
         }
@@ -233,7 +238,12 @@ peace_ai_desires = {
         peace_action_type = { liberate force_government puppet take_states }
         enable = {
             is_historical_focus_on = yes
-            is_major = yes
+            ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
             ROOT.FROM = { original_tag = GER }
             ROOT.FROM.FROM.FROM = { 
 				OR = { 
@@ -258,7 +268,12 @@ peace_ai_desires = {
 	liberate_free_city_of_trieste = {
         peace_action_type = { liberate }
         enable = {
-            is_historical_focus_on = yes
+            ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
             ROOT.FROM = { tag = TST }
             ROOT.FROM.FROM.FROM = { is_core_of = TST }
         }
@@ -268,6 +283,12 @@ peace_ai_desires = {
 	dont_liberate_slovenia_if_yugo_exists = {
         peace_action_type = { liberate force_government puppet }
         enable = {
+			ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
             ROOT.FROM = { tag = SLV }
             ROOT.FROM.FROM.FROM = { is_core_of = SLV }
 			country_exists = YUG
@@ -278,6 +299,12 @@ peace_ai_desires = {
 	dont_liberate_croatia_if_yugo_exists = {
         peace_action_type = { liberate force_government puppet }
         enable = {
+			ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
             ROOT.FROM = { tag = CRO }
             ROOT.FROM.FROM.FROM = { is_core_of = CRO }
 			country_exists = YUG
@@ -285,9 +312,125 @@ peace_ai_desires = {
         ai_desire = -1000
     }
 	
+	force_puppet_croatia_if_YUG_dont_exist = {
+        peace_action_type = { force_government puppet }
+        enable = {
+			ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
+			is_historical_focus_on = no
+            ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = CRO }
+			ROOT.FROM.FROM.FROM = { is_core_of = CRO }
+			NOT = { country_exists = YUG }
+        }
+        ai_desire = 200
+    }
+	
+	force_kill_fascist_croatia = {
+        peace_action_type = { take_states }
+        enable = {
+			ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
+            ROOT.FROM = { original_tag = YUG }
+            FROM.FROM = { tag = CRO }
+			OR = {
+				country_exists = YUG
+				is_historical_focus_on = yes
+			}
+        }
+        ai_desire = 200
+    }
+	
+	force_kill_fascist_military_government_serbia = {
+        peace_action_type = { take_states }
+        enable = {
+			ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
+            ROOT.FROM = { original_tag = YUG }
+            FROM.FROM = { tag = MCS }
+			OR = {
+				country_exists = YUG
+				is_historical_focus_on = yes
+			}
+        }
+        ai_desire = 200
+    }
+	
+	force_puppet_serbia_if_YUG_dont_exist = {
+        peace_action_type = { force_government puppet }
+        enable = {
+			ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
+			is_historical_focus_on = no
+            ROOT.FROM = { tag = ROOT }
+			ROOT.FROM.FROM.FROM = { is_core_of = SER }
+			NOT = { country_exists = YUG }
+        }
+        ai_desire = 200
+    }
+	
+	force_kill_migov_serbia_if_YUG_dont_exist = {
+        peace_action_type = { take_states }
+        enable = {
+			ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
+			is_historical_focus_on = no
+            ROOT.FROM = { tag = SER }
+            FROM.FROM = { tag = MCS }
+			ROOT.FROM.FROM.FROM = { is_core_of = SER }
+			NOT = { country_exists = YUG }
+        }
+        ai_desire = 200
+    }
+	
+	give_YUG_its_core_back = {
+        peace_action_type = { take_states }
+        enable = {
+			ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
+            ROOT.FROM = { original_tag = YUG }
+			ROOT.FROM.FROM.FROM = { is_core_of = YUG }
+			OR = {
+				country_exists = YUG
+				is_historical_focus_on = yes
+			}
+        }
+        ai_desire = 100
+    }
+	
 	dont_leave_germany_if_yalta = {
         peace_action_type = { liberate force_government puppet take_states }
         enable = {
+			ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
             has_global_flag = had_yalta_conference
             ROOT.FROM = { tag = GER }
             ROOT.FROM.FROM.FROM = { 
@@ -299,7 +442,7 @@ peace_ai_desires = {
 				}
 			}
         }
-        ai_desire = -1000
+        ai_desire = -3000
     }
 	
 	do_yalta_WGR = {
