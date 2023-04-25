@@ -1,8 +1,10 @@
 
 state={
-	id=2640
-	name="STATE_2640"
-
+	id=2979
+	name="STATE_2979"
+	provinces={
+		744 4172 4860 9316 
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -11,18 +13,14 @@ state={
 			infrastructure = 3
 
 		}
-		add_core_of = CHU
+		add_core_of = MEL
 		victory_points = {
-			791 2 
+			744 2 
 		}
 
 	}
-
-	provinces={
-		432 791 4276 5433 10512 10608 10643 10660 
-	}
-	manpower=152679
+	manpower=37892
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 	local_supplies=0.000
 }
