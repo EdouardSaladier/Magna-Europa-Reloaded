@@ -1,0 +1,24 @@
+
+state={
+	id=2978
+	name="STATE_2978"
+	provinces={
+		1014 6411 13354 20074 
+	}
+	history = {
+		owner = CZE
+		add_core_of = CZE
+		add_core_of = SLO
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			13354 5 
+		}
+	}
+	manpower=58223
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}
