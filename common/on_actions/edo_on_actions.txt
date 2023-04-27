@@ -218,6 +218,10 @@ on_actions = {
 					set_state_flag = core_of_HUN
 				}
 				if = {
+					limit = { is_core_of = BAK }
+					set_state_flag = core_of_BAK
+				}
+				if = {
 					limit = { is_core_of = CZE }
 					set_state_flag = core_of_CZE
 				}
