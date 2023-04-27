@@ -8955,7 +8955,7 @@ focus_tree = {
 				NOT = { has_war_with = ROOT }
 				NOT = { is_in_faction_with = ROOT }
 			}
-			784 = {
+			241 = {
 				owns_or_subject_of = yes
 			}
 			has_army_manpower = { size > 399999 }
@@ -8972,7 +8972,7 @@ focus_tree = {
 						is_in_faction_with = ROOT
 					}
 				}
-				784 = {
+				241 = {
 					owns_or_subject_of = no
 				}
 			}
@@ -8993,17 +8993,11 @@ focus_tree = {
 				}
 			}
 			else = {
-				11 = {
-					add_claim_by = POL
-				}
-				814 = {
-					add_claim_by = POL
-				}
-				815 = {
-					add_claim_by = POL
-				}
-				189 = {
-					add_claim_by = POL
+				every_state = {
+					limit = {
+						has_state_flag = LIT_INITIAL_STATE
+					}
+					add_claim_by = ROOT
 				}
 				create_wargoal = {
 					type = annex_everything
@@ -12598,7 +12592,7 @@ focus_tree = {
 				NOT = { has_war_with = ROOT }
 				NOT = { is_in_faction_with = ROOT }
 			}
-			784 = {
+			241 = {
 				owns_or_subject_of = yes
 			}
 			has_army_manpower = { size > 399999 }
@@ -12614,7 +12608,7 @@ focus_tree = {
 					is_in_faction_with = ROOT
 				}
 			}
-			784 = {
+			241 = {
 				owns_or_subject_of = yes
 			}
 		}
@@ -12947,13 +12941,13 @@ focus_tree = {
 		}
 		
 		available = {
-			controls_state = 63
-			controls_state = 68
+			controls_state = 1631
+			controls_state = 339
 		}
 		
 		bypass = {
-			63 = { is_core_of = POL }
-			68 = { is_core_of = POL }
+			1631 = { is_core_of = POL }
+			339 = { is_core_of = POL }
 		}
 
 		available_if_capitulated = yes

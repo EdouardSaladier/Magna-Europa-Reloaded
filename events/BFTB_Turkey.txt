@@ -4186,35 +4186,20 @@ country_event = {
 		TUR = {
 			country_event = { id = bftb_turkey.104 hours = 6 }
 		}
-		if = {
+		every_state  = {
 			limit = {
-				ROOT = { controls_state = 677 }
+				OR = {
+					is_core_of = SYR 
+					is_core_of = ALW
+				}
+				controller = {
+					OR = {
+						tag = ROOT  
+						is_subject_of = ROOT 
+					}
+				}
 			}
-			TUR = { transfer_state = 677 }
-		}
-		if = {
-			limit = {
-				ROOT = { controls_state = 554 }
-			}
-			TUR = { transfer_state = 554 }
-		}
-		if = {
-			limit = {
-				ROOT = { controls_state = 553 }
-			}
-			TUR = { transfer_state = 553 }
-		}
-		if = {
-			limit = {
-				ROOT = { controls_state = 680 }
-			}
-			TUR = { transfer_state = 680 }
-		}
-		if = {
-			limit = {
-				ROOT = { controls_state = 1123 }
-			}
-			TUR = { transfer_state = 1123 }
+			transfer_state_to = TUR 
 		}
 	}
 	option = {
@@ -4235,15 +4220,15 @@ country_event = {
 	
 	option = {
 		name = bftb_turkey.103.a
-		add_state_claim = 677
-		add_state_claim = 554
-		add_state_claim = 553
-		add_state_claim = 680
-		if = {
+		every_state  = {
 			limit = {
-				ROOT = { NOT = { controls_state = 1123 } }
+				OR = {
+					is_core_of = SYR 
+					is_core_of = ALW
+				}
+				NOT = { is_controlled_by = TUR }
 			}
-			add_state_claim = 1123
+			add_claim_by = TUR  
 		}
 		create_wargoal = {
 			target = FROM
@@ -4264,32 +4249,8 @@ country_event = {
 
 	option = {
 		name = bftb_turkey.104.a #we shall merge the Eyalets of Damascus and Allepo!
-		release_puppet = SYR
-		if ={
-			limit = { controls_state = 677 }
-			SYR = {
-				transfer_state = 677
-			}
-		}
-		if ={
-			limit = { controls_state = 554 }
-			SYR = {
-				transfer_state = 554
-			}
-		}
-		if ={
-			limit = { controls_state = 553 }
-			SYR = {
-				transfer_state = 553
-				add_state_core = 553
-			}
-		}
-		if ={
-			limit = { controls_state = 680 }
-			SYR = {
-				transfer_state = 680
-			}
-		}
+		release_puppet_on_controlled = SYR
+		
 		if = {
 			limit = {
 				has_dlc = "Together for Victory"
