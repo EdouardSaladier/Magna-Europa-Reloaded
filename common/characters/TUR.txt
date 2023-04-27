@@ -67,23 +67,23 @@ characters={
 						tooltip = TUR_can_only_have_one_prime_minister_tt
 						NOT = {
 							OR = {
-							#	has_idea = TUR_ismet_inonu 
-							#	has_idea = TUR_fevzi_cakmak_prime_minister 
-							#	has_idea = TUR_sukru_saracoglu_prime_minister 
-							#	has_idea = TUR_celal_bayar 
-							#	has_idea = TUR_fethi_okyar 
-							#	has_idea = TUR_sevket_sureyya_aydemir 
-							#	has_idea = TUR_recep_peker 
-							#	has_idea = TUR_adnan_menderes 
-							#	has_idea = TUR_nuri_demirag_prime_minister 
-							#	has_idea = TUR_said_i_nursi 
-							#	has_idea = TUR_nihal_atsiz 
+								has_idea = TUR_ismet_inonu 
+								has_idea = TUR_fevzi_cakmak_prime_minister 
+								has_idea = TUR_sukru_saracoglu_prime_minister 
+								has_idea = TUR_celal_bayar 
+								has_idea = TUR_fethi_okyar 
+								has_idea = TUR_sevket_sureyya_aydemir 
+								has_idea = TUR_recep_peker 
+								has_idea = TUR_adnan_menderes 
+								has_idea = TUR_nuri_demirag_prime_minister 
+								has_idea = TUR_said_i_nursi 
+								has_idea = TUR_nihal_atsiz 
 							}
 						}
 					}
 				}
 				visible = {
-				#	has_completed_focus = TUR_lift_the_turkiye_komunist_partisis_exile 
+					has_completed_focus = TUR_lift_the_turkiye_komunist_partisis_exile 
 					NOT = {
 						has_country_leader = {
 							character = TUR_sefik_husnu
@@ -152,25 +152,25 @@ characters={
 						tooltip = TUR_can_only_have_one_prime_minister_tt
 						NOT = {
 							OR = {
-							#	has_idea = TUR_ismet_inonu 
-							#	has_idea = TUR_fevzi_cakmak_prime_minister 
-							#	has_idea = TUR_sukru_saracoglu_prime_minister 
-							#	has_idea = TUR_fethi_okyar 
-							#	has_idea = TUR_sevket_sureyya_aydemir 
-							#	has_idea = TUR_recep_peker 
-							#	has_idea = TUR_adnan_menderes 
-							#	has_idea = TUR_nuri_demirag_prime_minister 
-							#	has_idea = TUR_sefik_husnu 
-							#	has_idea = TUR_said_i_nursi 
-							#	has_idea = TUR_nihal_atsiz 
+								has_idea = TUR_ismet_inonu 
+								has_idea = TUR_fevzi_cakmak_prime_minister 
+								has_idea = TUR_sukru_saracoglu_prime_minister 
+								has_idea = TUR_fethi_okyar 
+								has_idea = TUR_sevket_sureyya_aydemir 
+								has_idea = TUR_recep_peker 
+								has_idea = TUR_adnan_menderes 
+								has_idea = TUR_nuri_demirag_prime_minister 
+								has_idea = TUR_sefik_husnu 
+								has_idea = TUR_said_i_nursi 
+								has_idea = TUR_nihal_atsiz 
 							}
 						}
 					}
-				#	has_completed_focus = TUR_fully_integrate_the_is_bank 
+					has_completed_focus = TUR_fully_integrate_the_is_bank 
 				}
 				visible = {
 					NOT = {
-					#	has_completed_focus = TUR_continue_the_policy_of_etatism 
+						has_completed_focus = TUR_continue_the_policy_of_etatism 
 						has_country_flag = TUR_menderes_rebellion 
 						has_country_leader = {
 							character = TUR_celal_bayar
@@ -228,26 +228,26 @@ characters={
 						tooltip = TUR_can_only_have_one_prime_minister_tt
 						NOT = {
 							OR = {
-							#	has_idea = TUR_fevzi_cakmak_prime_minister 
-							#	has_idea = TUR_sukru_saracoglu_prime_minister 
-							#	has_idea = TUR_celal_bayar 
-							#	has_idea = TUR_fethi_okyar 
-							#	has_idea = TUR_sevket_sureyya_aydemir 
-							#	has_idea = TUR_recep_peker 
-							#	has_idea = TUR_adnan_menderes 
-							#	has_idea = TUR_nuri_demirag_prime_minister 
-							#	has_idea = TUR_sefik_husnu 
-							#	has_idea = TUR_said_i_nursi 
-							#	has_idea = TUR_nihal_atsiz 
+								has_idea = TUR_fevzi_cakmak_prime_minister 
+								has_idea = TUR_sukru_saracoglu_prime_minister 
+								has_idea = TUR_celal_bayar 
+								has_idea = TUR_fethi_okyar 
+								has_idea = TUR_sevket_sureyya_aydemir 
+								has_idea = TUR_recep_peker 
+								has_idea = TUR_adnan_menderes 
+								has_idea = TUR_nuri_demirag_prime_minister 
+								has_idea = TUR_sefik_husnu 
+								has_idea = TUR_said_i_nursi 
+								has_idea = TUR_nihal_atsiz 
 							}
 						}
 					}
-				#	has_completed_focus = TUR_continue_the_policy_of_etatism 
+					has_completed_focus = TUR_continue_the_policy_of_etatism 
 				}
 				visible = {
 					NOT = {
 						OR = {
-						#	has_completed_focus = TUR_fully_integrate_the_is_bank 
+							has_completed_focus = TUR_fully_integrate_the_is_bank 
 							has_country_leader = {
 								character = TUR_ismet_inonu
 								ruling_only = yes 
@@ -720,34 +720,34 @@ characters={
 						tooltip = TUR_can_only_have_one_prime_minister_tt
 						NOT = {
 							OR = {
-							#	has_idea = TUR_ismet_inonu 
-							#	has_idea = TUR_sukru_saracoglu_prime_minister 
-							#	has_idea = TUR_celal_bayar 
-							#	has_idea = TUR_fethi_okyar 
-							#	has_idea = TUR_sevket_sureyya_aydemir 
-							#	has_idea = TUR_recep_peker 
-							#	has_idea = TUR_adnan_menderes 
-							#	has_idea = TUR_nuri_demirag_prime_minister 
-							#	has_idea = TUR_sefik_husnu 
-							#	has_idea = TUR_said_i_nursi 
-							#	has_idea = TUR_nihal_atsiz 
+								has_idea = TUR_ismet_inonu 
+								has_idea = TUR_sukru_saracoglu_prime_minister 
+								has_idea = TUR_celal_bayar 
+								has_idea = TUR_fethi_okyar 
+								has_idea = TUR_sevket_sureyya_aydemir 
+								has_idea = TUR_recep_peker 
+								has_idea = TUR_adnan_menderes 
+								has_idea = TUR_nuri_demirag_prime_minister 
+								has_idea = TUR_sefik_husnu 
+								has_idea = TUR_said_i_nursi 
+								has_idea = TUR_nihal_atsiz 
 							}
 						}
 					}
 					not_already_hired_except_as = political_advisor
 					OR = {
-					#	has_completed_focus = TUR_continue_the_policy_of_etatism 
-					#	has_completed_focus = TUR_holding_our_first_multi_party_election 
+						has_completed_focus = TUR_continue_the_policy_of_etatism 
+						has_completed_focus = TUR_holding_our_first_multi_party_election 
 					}
 				}
 				visible = {
 					NOT = {
 						OR = {
-						#	has_completed_focus = TUR_kemalist_socialist_theory 
-						#	has_completed_focus = TUR_readdress_the_montreux_convention 
-						#	has_completed_focus = TUR_anti_bolshevik_mediterranean_bloc 
+							has_completed_focus = TUR_kemalist_socialist_theory 
+							has_completed_focus = TUR_readdress_the_montreux_convention 
+							has_completed_focus = TUR_anti_bolshevik_mediterranean_bloc 
 							and = {
-							#	has_completed_focus = TUR_democratic_capstone_focus 
+								has_completed_focus = TUR_democratic_capstone_focus 
 								has_country_leader = {
 									character = TUR_celal_bayar
 									ruling_only = yes 
@@ -910,7 +910,7 @@ characters={
 					has_dlc = "Battle for the Bosporus"
 				}
 				available = {
-				#	has_completed_focus = TUR_hava_okulu
+					has_completed_focus = TUR_hava_okulu
 					NOT = {
 						has_country_flag = TUR_ottoman_officers_invited_back
 					}
@@ -1151,7 +1151,7 @@ characters={
 				has_country_flag = TUR_ottoman_officers_invited_back
 			}
 			traits = {
-				army_chief_planning_2
+				army_logistics_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -1777,7 +1777,7 @@ characters={
 				OR = {
 					has_government = fascism 
 					has_government = communism 
-				#	has_completed_focus = TUR_pivot_to_the_past 
+					has_completed_focus = TUR_pivot_to_the_past 
 					has_country_leader = {
 						character = TUR_adnan_menderes
 						ruling_only = yes 
@@ -1805,7 +1805,7 @@ characters={
 				has_dlc = "Battle for the Bosporus"
 			}
 			available = {
-			#	has_completed_focus = TUR_misak_i_milli 
+				has_completed_focus = TUR_misak_i_milli 
 			}
 			traits = {
 				avid_turanist 
@@ -1832,29 +1832,29 @@ characters={
 					tooltip = TUR_can_only_have_one_prime_minister_tt
 					NOT = {
 						OR = {
-						#	has_idea = TUR_ismet_inonu 
-						#	has_idea = TUR_fevzi_cakmak_prime_minister
-						#	has_idea = TUR_celal_bayar 
-						#	has_idea = TUR_fethi_okyar 
-						#	has_idea = TUR_sevket_sureyya_aydemir 
-						#	has_idea = TUR_recep_peker 
-						#	has_idea = TUR_adnan_menderes 
-						#	has_idea = TUR_nuri_demirag_prime_minister 
-						#	has_idea = TUR_sefik_husnu 
-						#	has_idea = TUR_said_i_nursi 
-						#	has_idea = TUR_nihal_atsiz 
+							has_idea = TUR_ismet_inonu 
+							has_idea = TUR_fevzi_cakmak_prime_minister
+							has_idea = TUR_celal_bayar 
+							has_idea = TUR_fethi_okyar 
+							has_idea = TUR_sevket_sureyya_aydemir 
+							has_idea = TUR_recep_peker 
+							has_idea = TUR_adnan_menderes 
+							has_idea = TUR_nuri_demirag_prime_minister 
+							has_idea = TUR_sefik_husnu 
+							has_idea = TUR_said_i_nursi 
+							has_idea = TUR_nihal_atsiz 
 						}
 					}
 				}
-			#	has_completed_focus = TUR_continue_the_policy_of_etatism 
+				has_completed_focus = TUR_continue_the_policy_of_etatism 
 			}
 			visible = {
 				has_government = neutrality 
 				NOT = {
 					OR = {
-					#	has_completed_focus = TUR_pivot_to_the_past 
-					#	has_completed_focus = TUR_rehabilitate_the_kadro_movement 
-					#	has_completed_focus = TUR_fully_integrate_the_is_bank 
+						has_completed_focus = TUR_pivot_to_the_past 
+						has_completed_focus = TUR_rehabilitate_the_kadro_movement 
+						has_completed_focus = TUR_fully_integrate_the_is_bank 
 					}
 				}
 			}
@@ -1887,24 +1887,24 @@ characters={
 					tooltip = TUR_can_only_have_one_prime_minister_tt
 					NOT = {
 						OR = {
-						#	has_idea = TUR_ismet_inonu 
-						#	has_idea = TUR_fevzi_cakmak_prime_minister 
-						#	has_idea = TUR_sukru_saracoglu_prime_minister 
-						#	has_idea = TUR_celal_bayar 
-						#	has_idea = TUR_fethi_okyar 
-						#	has_idea = TUR_sevket_sureyya_aydemir 
-						#	has_idea = TUR_recep_peker 
-						#	has_idea = TUR_nuri_demirag_prime_minister 
-						#	has_idea = TUR_sefik_husnu 
-						#	has_idea = TUR_said_i_nursi 
-						#	has_idea = TUR_nihal_atsiz 
+							has_idea = TUR_ismet_inonu 
+							has_idea = TUR_fevzi_cakmak_prime_minister 
+							has_idea = TUR_sukru_saracoglu_prime_minister 
+							has_idea = TUR_celal_bayar 
+							has_idea = TUR_fethi_okyar 
+							has_idea = TUR_sevket_sureyya_aydemir 
+							has_idea = TUR_recep_peker 
+							has_idea = TUR_nuri_demirag_prime_minister 
+							has_idea = TUR_sefik_husnu 
+							has_idea = TUR_said_i_nursi 
+							has_idea = TUR_nihal_atsiz 
 						}
 					}
 				}
 			}
 			visible = {
 				and = {
-				#	has_completed_focus = TUR_democratic_capstone_focus 
+					has_completed_focus = TUR_democratic_capstone_focus 
 					NOT = {
 						has_country_leader = {
 							character = TUR_adnan_menderes
@@ -1938,17 +1938,17 @@ characters={
 					tooltip = TUR_can_only_have_one_prime_minister_tt
 					NOT = {
 						OR = {
-						#	has_idea = TUR_ismet_inonu 
-						#	has_idea = TUR_fevzi_cakmak_prime_minister 
-						#	has_idea = TUR_sukru_saracoglu_prime_minister 
-						#	has_idea = TUR_celal_bayar 
-						#	has_idea = TUR_fethi_okyar 
-						#	has_idea = TUR_sevket_sureyya_aydemir 
-						#	has_idea = TUR_recep_peker 
-						#	has_idea = TUR_adnan_menderes 
-						#	has_idea = TUR_sefik_husnu 
-						#	has_idea = TUR_said_i_nursi 
-						#	has_idea = TUR_nihal_atsiz 
+							has_idea = TUR_ismet_inonu 
+							has_idea = TUR_fevzi_cakmak_prime_minister 
+							has_idea = TUR_sukru_saracoglu_prime_minister 
+							has_idea = TUR_celal_bayar 
+							has_idea = TUR_fethi_okyar 
+							has_idea = TUR_sevket_sureyya_aydemir 
+							has_idea = TUR_recep_peker 
+							has_idea = TUR_adnan_menderes 
+							has_idea = TUR_sefik_husnu 
+							has_idea = TUR_said_i_nursi 
+							has_idea = TUR_nihal_atsiz 
 						}
 					}
 				}
@@ -2040,25 +2040,25 @@ characters={
 					tooltip = TUR_can_only_have_one_prime_minister_tt
 					NOT = {
 						OR = {
-						#	has_idea = TUR_ismet_inonu 
-						#	has_idea = TUR_fevzi_cakmak_prime_minister 
-						#	has_idea = TUR_sukru_saracoglu_prime_minister 
-						#	has_idea = TUR_celal_bayar 
-						#	has_idea = TUR_sevket_sureyya_aydemir 
-						#	has_idea = TUR_recep_peker 
-						#	has_idea = TUR_adnan_menderes 
-						#	has_idea = TUR_nuri_demirag_prime_minister 
-						#	has_idea = TUR_sefik_husnu 
-						#	has_idea = TUR_said_i_nursi 
-						#	has_idea = TUR_nihal_atsiz 
+							has_idea = TUR_ismet_inonu 
+							has_idea = TUR_fevzi_cakmak_prime_minister 
+							has_idea = TUR_sukru_saracoglu_prime_minister 
+							has_idea = TUR_celal_bayar 
+							has_idea = TUR_sevket_sureyya_aydemir 
+							has_idea = TUR_recep_peker 
+							has_idea = TUR_adnan_menderes 
+							has_idea = TUR_nuri_demirag_prime_minister 
+							has_idea = TUR_sefik_husnu 
+							has_idea = TUR_said_i_nursi 
+							has_idea = TUR_nihal_atsiz 
 						}
 					}
 				}
 			}
 			visible = {
-			#	has_completed_focus = TUR_fully_integrate_the_is_bank 
+				has_completed_focus = TUR_fully_integrate_the_is_bank 
 				NOT = {
-				#	has_completed_focus = TUR_pivot_to_the_past 
+					has_completed_focus = TUR_pivot_to_the_past 
 				}
 			}
 			traits = {
@@ -2109,7 +2109,7 @@ characters={
 			}
 			visible = {
 				NOT = {
-				#	has_idea = TUR_sukru_saracoglu_prime_minister 
+					has_idea = TUR_sukru_saracoglu_prime_minister 
 				}
 			}
 			traits = {
@@ -2133,7 +2133,7 @@ characters={
 				has_dlc = "Battle for the Bosporus"
 			}
 			available = {
-			#	has_completed_focus = TUR_the_sun_language_theory 
+				has_completed_focus = TUR_the_sun_language_theory 
 			}
 			traits = {
 				feminist_ultranationalist 
@@ -2163,8 +2163,8 @@ characters={
 				available = {
 					NOT = {
 						OR = {
-						#	has_completed_focus = TUR_revive_turkish_revolutionism 
-						#	has_completed_focus = TUR_pivot_to_the_past 
+							has_completed_focus = TUR_revive_turkish_revolutionism 
+							has_completed_focus = TUR_pivot_to_the_past 
 						}
 					}
 				}
@@ -2221,30 +2221,30 @@ characters={
 				has_dlc = "Battle for the Bosporus"
 			}
 			available = {
-			#	has_completed_focus = TUR_kemalist_socialist_theory 
+				has_completed_focus = TUR_kemalist_socialist_theory 
 				custom_trigger_tooltip = {
 					tooltip = TUR_can_only_have_one_prime_minister_tt
 					NOT = {
 						OR = {
-						#	has_idea = TUR_ismet_inonu 
-						#	has_idea = TUR_fevzi_cakmak_prime_minister 
-						#	has_idea = TUR_sukru_saracoglu_prime_minister 
-						#	has_idea = TUR_celal_bayar 
-						#	has_idea = TUR_fethi_okyar 
-						#	has_idea = TUR_recep_peker 
-						#	has_idea = TUR_adnan_menderes 
-						#	has_idea = TUR_nuri_demirag_prime_minister 
-						#	has_idea = TUR_sefik_husnu 
-						#	has_idea = TUR_said_i_nursi 
-						#	has_idea = TUR_nihal_atsiz 
+							has_idea = TUR_ismet_inonu 
+							has_idea = TUR_fevzi_cakmak_prime_minister 
+							has_idea = TUR_sukru_saracoglu_prime_minister 
+							has_idea = TUR_celal_bayar 
+							has_idea = TUR_fethi_okyar 
+							has_idea = TUR_recep_peker 
+							has_idea = TUR_adnan_menderes 
+							has_idea = TUR_nuri_demirag_prime_minister 
+							has_idea = TUR_sefik_husnu 
+							has_idea = TUR_said_i_nursi 
+							has_idea = TUR_nihal_atsiz 
 						}
 					}
 				}
 			}
 			visible = {
-			#	has_completed_focus = TUR_revive_turkish_revolutionism 
+				has_completed_focus = TUR_revive_turkish_revolutionism 
 				NOT = {
-				#	has_completed_focus = TUR_kemalism_and_the_modern_movement 
+					has_completed_focus = TUR_kemalism_and_the_modern_movement 
 					has_country_leader = {
 						character = TUR_sevket_sureyya_aydemir
 						ruling_only = yes 
@@ -2273,8 +2273,8 @@ characters={
 			}
 			available = {
 				OR = {
-				#	has_completed_focus = TUR_revive_turkish_revolutionism 
-				#	has_completed_focus = TUR_reinvigorate_turkish_nationalism 
+					has_completed_focus = TUR_revive_turkish_revolutionism 
+					has_completed_focus = TUR_reinvigorate_turkish_nationalism 
 				}
 			}
 			traits = {
@@ -2321,7 +2321,7 @@ characters={
 				OR = {
 					is_in_faction_with = GER
 					has_government = fascism 
-				#	has_completed_focus = TUR_pivot_to_the_past 
+					has_completed_focus = TUR_pivot_to_the_past 
 					has_country_flag = TUR_sponsored_killigil_armaments_flag 
 				}
 			}
@@ -2350,23 +2350,23 @@ characters={
 					tooltip = TUR_can_only_have_one_prime_minister_tt
 					NOT = {
 						OR = {
-						#	has_idea = TUR_ismet_inonu 
-						#	has_idea = TUR_fevzi_cakmak_prime_minister 
-						#	has_idea = TUR_sukru_saracoglu_prime_minister 
-						#	has_idea = TUR_celal_bayar 
-						#	has_idea = TUR_fethi_okyar 
-						#	has_idea = TUR_sevket_sureyya_aydemir 
-						#	has_idea = TUR_recep_peker 
-						#	has_idea = TUR_adnan_menderes 
-						#	has_idea = TUR_nuri_demirag_prime_minister 
-						#	has_idea = TUR_sefik_husnu 
-						#	has_idea = TUR_nihal_atsiz 
+							has_idea = TUR_ismet_inonu 
+							has_idea = TUR_fevzi_cakmak_prime_minister 
+							has_idea = TUR_sukru_saracoglu_prime_minister 
+							has_idea = TUR_celal_bayar 
+							has_idea = TUR_fethi_okyar 
+							has_idea = TUR_sevket_sureyya_aydemir 
+							has_idea = TUR_recep_peker 
+							has_idea = TUR_adnan_menderes 
+							has_idea = TUR_nuri_demirag_prime_minister 
+							has_idea = TUR_sefik_husnu 
+							has_idea = TUR_nihal_atsiz 
 						}
 					}
 				}
 			}
 			visible = {
-			#	has_completed_focus = TUR_pivot_to_the_past 
+				has_completed_focus = TUR_pivot_to_the_past 
 			}
 			traits = {
 				grand_vizier_nursi 
@@ -2392,28 +2392,28 @@ characters={
 				has_dlc = "Battle for the Bosporus"
 			}
 			available = {
-			#	has_completed_focus = TUR_integrate_the_fascist_council 
+				has_completed_focus = TUR_integrate_the_fascist_council 
 				custom_trigger_tooltip = {
 					tooltip = TUR_can_only_have_one_prime_minister_tt
 					NOT = {
 						OR = {
-						#	has_idea = TUR_ismet_inonu 
-						#	has_idea = TUR_fevzi_cakmak_prime_minister 
-						#	has_idea = TUR_sukru_saracoglu_prime_minister 
-						#	has_idea = TUR_celal_bayar 
-						#	has_idea = TUR_fethi_okyar 
-						#	has_idea = TUR_sevket_sureyya_aydemir 
-						#	has_idea = TUR_adnan_menderes 
-						#	has_idea = TUR_nuri_demirag_prime_minister 
-						#	has_idea = TUR_sefik_husnu 
-						#	has_idea = TUR_said_i_nursi 
-						#	has_idea = TUR_nihal_atsiz 
+							has_idea = TUR_ismet_inonu 
+							has_idea = TUR_fevzi_cakmak_prime_minister 
+							has_idea = TUR_sukru_saracoglu_prime_minister 
+							has_idea = TUR_celal_bayar 
+							has_idea = TUR_fethi_okyar 
+							has_idea = TUR_sevket_sureyya_aydemir 
+							has_idea = TUR_adnan_menderes 
+							has_idea = TUR_nuri_demirag_prime_minister 
+							has_idea = TUR_sefik_husnu 
+							has_idea = TUR_said_i_nursi 
+							has_idea = TUR_nihal_atsiz 
 						}
 					}
 				}
 			}
 			visible = {
-			#	has_completed_focus = TUR_revive_turkish_revolutionism 
+				has_completed_focus = TUR_revive_turkish_revolutionism 
 				NOT = {
 					has_country_leader = {
 						character = TUR_mehmet_recep_peker
@@ -2505,23 +2505,23 @@ characters={
 					tooltip = TUR_can_only_have_one_prime_minister_tt
 					NOT = {
 						OR = {
-						#	has_idea = TUR_ismet_inonu 
-						#	has_idea = TUR_fevzi_cakmak_prime_minister 
-						#	has_idea = TUR_sukru_saracoglu_prime_minister 
-						#	has_idea = TUR_celal_bayar 
-						#	has_idea = TUR_fethi_okyar 
-						#	has_idea = TUR_sevket_sureyya_aydemir 
-						#	has_idea = TUR_recep_peker 
-						#	has_idea = TUR_adnan_menderes 
-						#	has_idea = TUR_nuri_demirag_prime_minister 
-						#	has_idea = TUR_sefik_husnu 
-						#	has_idea = TUR_said_i_nursi 
+							has_idea = TUR_ismet_inonu 
+							has_idea = TUR_fevzi_cakmak_prime_minister 
+							has_idea = TUR_sukru_saracoglu_prime_minister 
+							has_idea = TUR_celal_bayar 
+							has_idea = TUR_fethi_okyar 
+							has_idea = TUR_sevket_sureyya_aydemir 
+							has_idea = TUR_recep_peker 
+							has_idea = TUR_adnan_menderes 
+							has_idea = TUR_nuri_demirag_prime_minister 
+							has_idea = TUR_sefik_husnu 
+							has_idea = TUR_said_i_nursi 
 						}
 					}
 				}
 			}
 			visible = {
-			#	has_completed_focus = TUR_turanist_ambition 
+				has_completed_focus = TUR_turanist_ambition 
 			}
 			traits = {
 				prime_minister_atsiz 
@@ -2545,8 +2545,8 @@ characters={
 			}
 			available = {
 				OR = {
-				#	has_completed_focus = TUR_establish_the_committee_of_pan_turkism 
-				#	has_completed_focus = TUR_misak_i_milli 
+					has_completed_focus = TUR_establish_the_committee_of_pan_turkism 
+					has_completed_focus = TUR_misak_i_milli 
 				}
 			}
 			traits = {
@@ -2605,7 +2605,7 @@ characters={
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 75
-		#	visible = { has_completed_focus = TUR_invite_german_officers_to_izmir }
+			visible = { has_completed_focus = TUR_invite_german_officers_to_izmir }
 		}
 	}
 
@@ -2625,7 +2625,7 @@ characters={
 			defense_skill = 2
 			planning_skill = 4
 			logistics_skill = 2
-		#	visible = { has_completed_focus = TUR_invite_german_officers_to_izmir }
+			visible = { has_completed_focus = TUR_invite_german_officers_to_izmir }
 		}
 	}
 
@@ -2645,7 +2645,7 @@ characters={
 			defense_skill = 3
 			maneuvering_skill = 4
 			coordination_skill = 3
-		#	visible = { has_completed_focus = TUR_the_italo_turkish_naval_academy }
+			visible = { has_completed_focus = TUR_the_italo_turkish_naval_academy }
 		}
 	}
 }

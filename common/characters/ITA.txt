@@ -621,7 +621,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-			#	has_government = fascism
+				has_government = fascism
 			}
 			traits = {
 				army_infantry_2
@@ -640,7 +640,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-		#	visible = { has_government = fascism }
+			visible = { has_government = fascism }
 		}
 	}
 
@@ -806,7 +806,7 @@ characters = {
 			legacy_id = 0
 			visible = {
 				NOT = { has_government = communism }
-			#	has_completed_focus = ITA_paramilitary_training
+				has_completed_focus = ITA_paramilitary_training
 			}
 		}
 	}
@@ -2479,12 +2479,12 @@ characters = {
 			available = {
 				has_government = fascism
 				NOT = { has_completed_focus = ITA_pact_of_steel }
-			#	if = {
-			#		limit = {
-			#			has_dlc = "By Blood Alone"
-			#		}
-			#		NOT = { has_completed_focus = ITA_revoke_the_acerbo_law }
-			#	}
+				if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					NOT = { has_completed_focus = ITA_revoke_the_acerbo_law }
+				}
 			}
 			traits = {
 				financial_expert
@@ -2900,10 +2900,10 @@ characters = {
 			}
 			available = {
 				NOT = { has_completed_focus = ITA_pact_of_steel }
-			#	OR = {
-			#		has_completed_focus = ITA_meritocracy
-			#		has_completed_focus = ITA_bring_back_exiled_intellectuals
-			#	}
+				OR = {
+					has_completed_focus = ITA_meritocracy
+					has_completed_focus = ITA_bring_back_exiled_intellectuals
+				}
 			}
 			research_bonus = {
 				nuclear = 0.15
