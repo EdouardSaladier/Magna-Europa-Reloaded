@@ -1553,8 +1553,11 @@ focus_tree = {
 						ruling_party = neutrality
 						ideology = democratic
 						size = 0.45
-						capital = 797
-						states = { 797 341 354 339 340 }
+						capital = 932
+						states = all
+						states_filter = {
+							region = 60
+						}
 					}
 				}
 				if = { 
@@ -1567,8 +1570,11 @@ focus_tree = {
 						ruling_party = fascism
 						ideology = neutrality
 						size = 0.5
-						capital = 797
-						states = { 797 341 354 339 340 }
+						capital = 932
+						states = all
+						states_filter = {
+							region = 60
+						}
 					}
 				}
 			}
@@ -2479,8 +2485,8 @@ focus_tree = {
 		}
 
 		bypass = {
-			OR = {
-				GRE = { 
+			GRE = { 
+				OR = {
 					exists = no
 					is_subject_of = ROOT
 					has_capitulated = yes
@@ -5105,9 +5111,9 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_full_control_of_state = 797
+					has_full_control_of_state = 932
 				}
-				797 = {
+				932 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
@@ -6113,14 +6119,14 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = TUR_collaborative_civil_works_programme
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			base = 10
 		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_fortifying_the_bosporus"
-			797 = {
+			932 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					custom_effect_tooltip = TUR_fortifying_the_bosporus_istanbul_tt
@@ -6128,41 +6134,24 @@ focus_tree = {
 						add_building_construction = {
 							type = bunker
 							level = 3
-							province = 9833
+							province = 15010
 							instant_build = yes
 						}
 					}
 				}
 			}
-			341 = {
+			928 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					custom_effect_tooltip = TUR_fortifying_the_bosporus_edirne_tt
 					hidden_effect = {
 						add_building_construction = {
 							type = bunker
-							level = 2
-							province = 849
+							level = 4
+							province = 20370
 							instant_build = yes
 						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 3893
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 11842
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = coastal_bunker
-							level = 2
-							province = 849
-							instant_build = yes
-						}
+						
 					}
 				}
 			}
@@ -9108,7 +9097,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_expand_the_air_bases"
-			354 = {
+			2770 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -9124,7 +9113,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			49 = {
+			979 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -9140,7 +9129,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			344 = {
+			1059 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -9156,7 +9145,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			49 = {
+			1032 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -9252,7 +9241,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_kirikkale_tank"
-			49 = {
+			1948 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -9345,25 +9334,25 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_construct_the_cakmak_line"
-			341 = {
+			1933 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 3
-						province = 3893
+						province = 21468
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
 						level = 4
-						province = 11842
+						province = 21466
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
 						level = 3
-						province = 922
+						province = 15020
 						instant_build = yes
 					}
 				}
@@ -9468,21 +9457,21 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_turkish_air_defense_platforms"
-			797 = {
+			932 = {
 				add_building_construction = {
 					type = air_base
 					level = 3
 					instant_build = yes
 				}
 			}
-			354 = {
+			928 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			340 = {
+			1032 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
