@@ -2691,7 +2691,7 @@ focus_tree = {
 						every_state = {
 							limit = {
 								OR = {
-									state = 118
+									state = 882
 									has_state_flag = SPR_core_of_spain_flag
 								}
 							}
@@ -2726,7 +2726,7 @@ focus_tree = {
 					every_state = {
 						limit = {
 							OR = {
-								state = 118
+								state = 882
 								has_state_flag = SPR_core_of_spain_flag
 							}
 						}

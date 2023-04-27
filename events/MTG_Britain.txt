@@ -1889,7 +1889,7 @@ country_event = {
 	# Accept
 	option = {
 		name = mtg_britain.40.a
-		transfer_state = 118
+		transfer_state = 882
 		FROM = {
 			add_to_faction = ROOT
 			country_event = { id = mtg_britain.36 hours = 6 }
@@ -1954,7 +1954,7 @@ country_event = {
 	option = {
 		name = excellent
 		effect_tooltip = {
-			FROM = { transfer_state = 118 }
+			FROM = { transfer_state = 882 }
 			add_to_faction = FROM
 		}
 		hidden_effect = { news_event = { id = mtg_news.25 days = 1 } }

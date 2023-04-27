@@ -6505,9 +6505,9 @@ focus_tree = {
 			#ROME
 			if = {
 				limit = {
-					has_full_control_of_state = 2
+					has_full_control_of_state = 2599
 				}
-				2 = {
+				2599 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6519,9 +6519,9 @@ focus_tree = {
 			#PUGLIA
 			if = {
 				limit = {
-					has_full_control_of_state = 849
+					has_full_control_of_state = 1405
 				}
-				849 = {
+				1405 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6533,9 +6533,9 @@ focus_tree = {
 			#SICILIA
 			if = {
 				limit = {
-					has_full_control_of_state = 115
+					has_full_control_of_state = 1075
 				}
-				115 = {
+				1075 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6549,9 +6549,9 @@ focus_tree = {
 			#TRIPOLI
 			if = {
 				limit = {
-					has_full_control_of_state = 448
+					has_full_control_of_state = 1241
 				}
-				448 = {
+				1241 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6565,9 +6565,9 @@ focus_tree = {
 			#GIBRALTAR
 			if = {
 				limit = {
-					has_full_control_of_state = 118
+					has_full_control_of_state = 882
 				}
-				118 = {
+				882 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6579,9 +6579,9 @@ focus_tree = {
 			#ALGIERS
 			if = {
 				limit = {
-					has_full_control_of_state = 459
+					has_full_control_of_state = 1120
 				}
-				459 = {
+				1120 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6593,9 +6593,9 @@ focus_tree = {
 			#TUNISIA
 			if = {
 				limit = {
-					has_full_control_of_state = 458
+					has_full_control_of_state = 1109
 				}
-				458 = {
+				1109 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6607,9 +6607,9 @@ focus_tree = {
 			#ALEXANDRIA
 			if = {
 				limit = {
-					has_full_control_of_state = 447
+					has_full_control_of_state = 1895
 				}
-				447 = {
+				1895 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6621,9 +6621,9 @@ focus_tree = {
 			#LISBON
 			if = {
 				limit = {
-					has_full_control_of_state = 112
+					has_full_control_of_state = 1042
 				}
-				112 = {
+				1042 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6635,9 +6635,9 @@ focus_tree = {
 			#SEVILLA
 			if = {
 				limit = {
-					has_full_control_of_state = 169
+					has_full_control_of_state = 1115
 				}
-				169 = {
+				1115 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6649,9 +6649,9 @@ focus_tree = {
 			#BORDEAUX
 			if = {
 				limit = {
-					has_full_control_of_state = 19
+					has_full_control_of_state = 760
 				}
-				19 = {
+				760 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6663,9 +6663,9 @@ focus_tree = {
 			#BRITTANY
 			if = {
 				limit = {
-					has_full_control_of_state = 14
+					has_full_control_of_state = 583
 				}
-				14 = {
+				583 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -8438,7 +8438,7 @@ focus_tree = {
 					limit = {
 						1285 = {
 							controller = {
-								NOT = { controls_state = 118 } #Otherwise already received the wargoal above
+								NOT = { controls_state = 882 } #Otherwise already received the wargoal above
 								NOT = { has_war_with = ROOT }
 								NOT = { is_in_faction_with = ROOT }
 								NOT = { has_non_aggression_pact_with = ROOT }

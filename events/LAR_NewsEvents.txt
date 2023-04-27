@@ -149,7 +149,7 @@ news_event = {
 						remove_core_of = SPD
 						start_resistance = yes
 					}
-					118 = {
+					882 = {
 						if = {
 							limit = {
 								is_controlled_by = ROOT
@@ -191,7 +191,7 @@ news_event = {
 						remove_core_of = SPD
 						start_resistance = yes
 					}
-					118 = {
+					882 = {
 						if = {
 							limit = {
 								is_controlled_by = ROOT
@@ -405,7 +405,7 @@ news_event = {
 					remove_core_of = SPA
 					start_resistance = yes
 				}
-				118 = {
+				882 = {
 					if = {
 						limit = {
 							is_controlled_by = ROOT
@@ -429,7 +429,7 @@ news_event = {
 					remove_core_of = SPB
 					start_resistance = yes
 				}
-				118 = {
+				882 = {
 					if = {
 						limit = {
 							is_controlled_by = ROOT
@@ -623,7 +623,7 @@ news_event = {
 						remove_core_of = SPA
 						start_resistance = yes
 					}
-					118 = {
+					882 = {
 						if = {
 							limit = {
 								is_controlled_by = ROOT
@@ -665,7 +665,7 @@ news_event = {
 						remove_core_of = SPA
 						start_resistance = yes
 					}
-					118 = {
+					882 = {
 						if = {
 							limit = {
 								is_controlled_by = ROOT
@@ -1066,7 +1066,7 @@ news_event = {
 					remove_core_of = SPC
 					start_resistance = yes
 				}
-				118 = {
+				882 = {
 					if = {
 						limit = {
 							is_controlled_by = ROOT
@@ -1090,7 +1090,7 @@ news_event = {
 					remove_core_of = SPD
 					start_resistance = yes
 				}
-				118 = {
+				882 = {
 					if = {
 						limit = {
 							is_controlled_by = ROOT
@@ -2663,7 +2663,7 @@ news_event = {
 				remove_core_of = SPC
 				remove_core_of = SPD
 			}
-			118 = {
+			882= {
 				if = {
 					limit = {
 						is_controlled_by = ROOT
@@ -2804,7 +2804,7 @@ news_event = {
 				remove_core_of = SPB
 				remove_core_of = SPA
 			}
-			118 = {
+			882= {
 				if = {
 					limit = {
 						is_controlled_by = ROOT
