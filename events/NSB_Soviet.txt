@@ -9216,42 +9216,36 @@ country_event = {
 		}
 		# Stalingrad
 		set_province_name = {
-			id = 3529
+			id = 13216
 			name = SOV_Volgograd
 		}
-		hidden_effect = { 217 = { set_state_name = SOV_Volgograd } }
+		hidden_effect = { 457 = { set_state_name = SOV_Volgograd } }
 		# Stalino / Donetsk / Yuzovka / Trotsk 
 		set_province_name = {
-			id = 6474
+			id = 1709
 			name = SOV_Donetsk
 		}
-		hidden_effect = { 227 = { set_state_name = SOV_Donetsk } }
-		# Stalinabad / Dushanbe
-		set_province_name = {
-			id = 1384
-			name = SOV_Dushanbe
-		}
-		hidden_effect = { 742 = { set_state_name = SOV_Dushanbe set_state_flag = dushanbe_flag } }
+		hidden_effect = { 557 = { set_state_name = SOV_Donetsk } }
 		# Kalinin / Tver
 		IF = {
 			limit = { NOT = { has_character = SOV_mikhail_kalinin } }
 			set_province_name = {
-				id = 6245
+				id = 10472
 				name = SOV_Tver
 			}
-			hidden_effect = { 247 = { set_state_name = SOV_Tver } }
+			hidden_effect = { 154 = { set_state_name = SOV_Tver } }
 		}
 		# Leningrad / Petrograd / St. Petersburg
 		IF = {
 			limit = {
-				195 = { is_capital = no }
+				119 = { is_capital = no }
 				SOV_is_exiles = yes 
 			}
 			set_province_name = {
-				id = 3151
+				id = 9985
 				name = SOV_StPetersburg
 			}
-			hidden_effect = { 195 = { set_state_name = SOV_StPetersburg } }
+			hidden_effect = { 119 = { set_state_name = SOV_StPetersburg } }
 		}
 		# Engels / Pokrovsk / Kosakenstadt + Marksshtadt / Yekaterinograd / Baronsk
 		IF = {
@@ -9259,68 +9253,53 @@ country_event = {
 				SOV_is_exiles = yes 
 			}
 			set_province_name = {
-				id = 11523
+				id = 12105
 				name = SOV_Pokrovsk
 			}
 			set_province_name = {
-				id = 9432
+				id = 6937
 				name = SOV_Baronsk
 			}
-			hidden_effect = { 829 = { set_state_name = SOV_Pokrovsk } }
+			hidden_effect = { 2589 = { set_state_name = SOV_Pokrovsk } }
 		}
 		# Kirov / Vyatka
 		set_province_name = {
-			id = 6124
+			id = 10142
 			name = SOV_Vyatka
 		}
-		hidden_effect = { 400 = { set_state_name = SOV_Vyatka } }
+		hidden_effect = { 108 = { set_state_name = SOV_Vyatka } }
 
 
 		# Gorky / Nizhny Novgorod
 		set_province_name = {
-			id = 11375
+			id = 10482
 			name = SOV_Nizhny_Novgorod
 		}
-		hidden_effect = { 252 = { set_state_name = SOV_Nizhny_Novgorod } }
+		hidden_effect = { 171 = { set_state_name = SOV_Nizhny_Novgorod } }
 
 		# Ordzhonikidze / Vladikavkaz
 		IF = {
 			limit = { SOV_is_exiles = yes }
 			set_province_name = {
-				id = 9628
+				id = 8187
 				name = SOV_Vladikavkaz
-			}
-		}
-
-		# Frunze / Bishkek / Bishkek
-		IF = {
-			limit = { SOV_is_exiles = yes }
-			set_province_name = {
-				id = 12583
-				name = SOV_Bishkek
 			}
 		}
 		# Yoshkar-Ola / Tsaryovokokshaysk / Krasnokokshaysk
 		IF = {
 			limit = { SOV_is_exiles = yes }
 			set_province_name = {
-				id = 9402
+				id = 10418
 				name = SOV_Krasnokokshaysk
 			}
 		}
-		# Kyzil / Belotsarsk / Khem-Beldir
-		IF = {
-			limit = { SOV_is_exiles = yes }
-			set_province_name = {
-				id = 10627
-				name = SOV_Khem-Beldir
-			}
-		}
+		hidden_effect = { 186 = { set_state_name = SOV_Krasnokokshaysk } }
+		
 		# Makhachkala / Petrovskoye / Petrovsk-Port
 		IF = {
 			limit = { SOV_is_exiles = yes }
 			set_province_name = {
-				id = 6701
+				id = 608
 				name = SOV_Petrovsk-Port
 			}
 		}
@@ -9329,10 +9308,10 @@ country_event = {
 		IF = {
 			limit = { SOV_is_exiles = yes }
 			set_province_name = {
-				id = 1821
+				id = 13499
 				name = SOV_Yekaterinburg
 			}
-			hidden_effect = { 653 = { set_state_name = SOV_Yekaterinburg } }
+			hidden_effect = { 2309 = { set_state_name = SOV_Yekaterinburg } }
 		}
 
 	}
@@ -9348,41 +9327,35 @@ country_event = {
 		}
 		# Stalingrad
 		set_province_name = {
-			id = 3529
+			id = 13216
 			name = SOV_Tsaritsyn
 		}
-		hidden_effect = { 217 = { set_state_name = SOV_Tsaritsyn } }
+		hidden_effect = { 457 = { set_state_name = SOV_Tsaritsyn } }
 		# Stalino / Donetsk / Yuzovka / Trotsk 
 		set_province_name = {
-			id = 6474
+			id = 1709
 			name = SOV_Yuzovka
 		}
-		hidden_effect = { 227 = { set_state_name = SOV_Yuzovka } }
-		# Stalinabad / Dushanbe
-		set_province_name = {
-			id = 1384
-			name = SOV_Dushanbe
-		}
-		hidden_effect = { 742 = { set_state_name = SOV_Dushanbe set_state_flag = dushanbe_flag } }
+		hidden_effect = { 557 = { set_state_name = SOV_Yuzovka } }
 		# Kalinin / Tver
 		IF = {
 			set_province_name = {
-				id = 6245
+				id = 10472
 				name = SOV_Tver
 			}
-			hidden_effect = { 247 = { set_state_name = SOV_Tver } }
+			hidden_effect = { 154 = { set_state_name = SOV_Tver } }
 		}
 		# Leningrad / Petrograd / St. Petersburg
 		IF = {
 			limit = {
-				195 = { is_capital = no }
+				119 = { is_capital = no }
 				SOV_is_exiles = yes 
 			}
 			set_province_name = {
-				id = 3151
+				id = 9985
 				name = SOV_StPetersburg
 			}
-			hidden_effect = { 195 = { set_state_name = SOV_StPetersburg } }
+			hidden_effect = { 119 = { set_state_name = SOV_StPetersburg } }
 		}
 		# Engels / Pokrovsk / Kosakenstadt + Marksshtadt / Yekaterinograd / Baronsk
 		IF = {
@@ -9390,87 +9363,62 @@ country_event = {
 				SOV_is_exiles = yes 
 			}
 			set_province_name = {
-				id = 11523
+				id = 12105
 				name = SOV_Kosakenstadt
 			}
 			set_province_name = {
-				id = 9432
+				id = 6937
 				name = SOV_Yekaterinograd
 			}
-			hidden_effect = { 829 = { set_state_name = SOV_Yekaterinograd } }
+			hidden_effect = { 2589 = { set_state_name = SOV_Yekaterinograd } }
 		}
 		# Kirov / Vyatka
 		set_province_name = {
-			id = 6124
+			id = 10142
 			name = SOV_Vyatka
 		}
-		hidden_effect = { 400 = { set_state_name = SOV_Vyatka } }
+		hidden_effect = { 108 = { set_state_name = SOV_Vyatka } }
 
 		# Gorky / Nizhny Novgorod
 		set_province_name = {
-			id = 11375
+			id = 10482
 			name = SOV_Nizhny_Novgorod
 		}
-		hidden_effect = { 252 = { set_state_name = SOV_Nizhny_Novgorod } }
+		hidden_effect = { 171 = { set_state_name = SOV_Nizhny_Novgorod } }
 
 		# Ordzhonikidze / Vladikavkaz
 		IF = {
 			limit = { SOV_is_exiles = yes }
 			set_province_name = {
-				id = 9628
+				id = 8187
 				name = SOV_Vladikavkaz
-			}
-		}
-
-		# Frunze / Bishkek / Bishkek
-		IF = {
-			limit = { SOV_is_exiles = yes }
-			set_province_name = {
-				id = 12583
-				name = SOV_Bishkek
 			}
 		}
 		# Yoshkar-Ola / Tsaryovokokshaysk / Krasnokokshaysk
 		IF = {
 			limit = { SOV_is_exiles = yes }
 			set_province_name = {
-				id = 9402
+				id = 10418
 				name = SOV_Tsaryovokokshaysk
 			}
 		}
-		# Kyzil / Belotsarsk / Khem-Beldir
-		IF = {
-			limit = { SOV_is_exiles = yes }
-			set_province_name = {
-				id = 10627
-				name = SOV_Belotsarsk
-			}
-		}
+		hidden_effect = { 186 = { set_state_name = SOV_Tsaryovokokshaysk } }
 		# Makhachkala / Petrovskoye / Petrovsk-Port
 		IF = {
 			limit = { SOV_is_exiles = yes }
 			set_province_name = {
-				id = 6701
+				id = 608
 				name = SOV_Petrovskoye
 			}
 		}
-		# Anadyr / Novo-Mariinsk /
-		IF = {
-			limit = { SOV_is_exiles = yes }
-			set_province_name = {
-				id = 13063
-				name = SOV_Novo-Mariinsk
-			}
-		}
-
 		# Sverdlovsk / Yekaterinburg /  
 		IF = {
 			limit = { SOV_is_exiles = yes }
 			set_province_name = {
-				id = 1821
+				id = 13499
 				name = SOV_Yekaterinburg
 			}
-			hidden_effect = { 653 = { set_state_name = SOV_Yekaterinburg } }
+			hidden_effect = { 2309 = { set_state_name = SOV_Yekaterinburg } }
 		}
 	
 		
@@ -9488,55 +9436,49 @@ country_event = {
 		
 		# Stalingrad
 		set_province_name = {
-			id = 3529
+			id = 13216
 			name = SOV_Trotskygrad
 		}
-		hidden_effect = { 217 = { set_state_name = SOV_Trotskygrad } }
+		hidden_effect = { 457 = { set_state_name = SOV_Trotskygrad } }
 		
 		# Stalino / Donetsk / Yuzovka / Trotsk 
 		set_province_name = {
-			id = 6474
+			id = 1709
 			name = SOV_Trotsk
 		}
-		hidden_effect = { 227 = { set_state_name = SOV_Trotsk } }
-		# Stalinabad / Dushanbe
-		set_province_name = {
-			id = 1384
-			name = SOV_Smirnovabad
-		}
-		hidden_effect = { 742 = { set_state_name = SOV_Smirnovabad } }
+		hidden_effect = { 557 = { set_state_name = SOV_Trotsk } }
 		# Kalinin / Tver
 		IF = {
 			limit = { NOT = { has_character = SOV_mikhail_kalinin } }
 			IF = {
 				limit = { has_character = SOV_grigory_zinovyev}
 				set_province_name = {
-					id = 6245
+					id = 10472
 					name = SOV_zinovyev
 				}
-				hidden_effect = { 247 = { set_state_name = SOV_zinovyev } }
+				hidden_effect = { 154 = { set_state_name = SOV_zinovyev } }
 			}
 			ELSE = {
 				set_province_name = {
-					id = 6245
+					id = 10472
 					name = SOV_Tver
 				}
-				hidden_effect = { 247 = { set_state_name = SOV_Tver } }
+				hidden_effect = { 154 = { set_state_name = SOV_Tver } }
 			}
 		}
 		# Kirov / Vyatka
 		set_province_name = {
-			id = 6124
+			id = 10142
 			name = SOV_Vyatka
 		}
-		hidden_effect = { 400 = { set_state_name = SOV_Vyatka } }
+		hidden_effect = { 108 = { set_state_name = SOV_Vyatka } }
 
 		# Gorky / Nizhny Novgorod
 		set_province_name = {
-			id = 11375
+			id = 10482
 			name = SOV_Nizhny_Novgorod
 		}
-		hidden_effect = { 252 = { set_state_name = SOV_Nizhny_Novgorod } }
+		hidden_effect = { 171 = { set_state_name = SOV_Nizhny_Novgorod } }
 		
 	}
 	# Bukharino - Only if Right opposition, but Bukharin has been killed
@@ -9552,44 +9494,38 @@ country_event = {
 		}
 		# Stalingrad
 		set_province_name = {
-			id = 3529
+			id = 13216
 			name = SOV_Bukharino
 		}
-		hidden_effect = { 217 = { set_state_name = SOV_Bukharino } }
+		hidden_effect = { 457 = { set_state_name = SOV_Bukharino } }
 		# Stalino / Donetsk / Yuzovka / Trotsk 
 		set_province_name = {
-			id = 6474
+			id = 1709
 			name = SOV_Donetsk
 		}
-		hidden_effect = { 227 = { set_state_name = SOV_Donetsk }}
-		# Stalinabad / Dushanbe
-		set_province_name = {
-			id = 1384
-			name = SOV_Dushanbe
-		}
-		hidden_effect = { 742 = { set_state_name = SOV_Dushanbe set_state_flag = dushanbe_flag } }
+		hidden_effect = { 557 = { set_state_name = SOV_Donetsk }}
 		# Kalinin / Tver
 		IF = {
 			limit = { NOT = { has_character = SOV_mikhail_kalinin } }
 			set_province_name = {
-				id = 6245
+				id = 10472
 				name = SOV_Rykovgrad
 			}
-			hidden_effect = { 247 = { set_state_name = SOV_Rykovgrad } }
+			hidden_effect = { 154 = { set_state_name = SOV_Rykovgrad } }
 		}
 		# Kirov / Vyatka
 		set_province_name = {
-			id = 6124
+			id = 10142
 			name = SOV_Vyatka
 		}
-		hidden_effect = { 400 = { set_state_name = SOV_Vyatka } }		
+		hidden_effect = { 108 = { set_state_name = SOV_Vyatka } }		
 
 		# Gorky / Nizhny Novgorod
 		set_province_name = {
-			id = 11375
+			id = 10482
 			name = SOV_Nizhny_Novgorod
 		}
-		hidden_effect = { 252 = { set_state_name = SOV_Nizhny_Novgorod } }
+		hidden_effect = { 171 = { set_state_name = SOV_Nizhny_Novgorod } }
 	}
 }
 
