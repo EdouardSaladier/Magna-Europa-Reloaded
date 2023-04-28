@@ -2,19 +2,23 @@
 state={
 	id=2359
 	name="STATE_2359"
-	history = {
+
+	history={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = WLC
 		buildings = {
 			infrastructure = 1
+
 		}
+
 	}
+
 	provinces={
-		8765 14263 14301 17815 
+		14301 17815 
 	}
 	manpower=1056
-	state_category=wasteland
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=0.000
 }

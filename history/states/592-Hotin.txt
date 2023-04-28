@@ -2,24 +2,27 @@
 state={
 	id=592
 	name="STATE_592"
-	history = {
+
+	history={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = MOL
-		buildings = {
-			infrastructure = 2
+		victory_points = {
+			7390 2 
 		}
-        victory_points = { 7390 2 }
-    	}
+
+	}
+
 	provinces={
-		3787 7390 8123 13327 13426 19319 
+		7390 13327 13426 
 	}
 	manpower=415065
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

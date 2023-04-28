@@ -1,0 +1,25 @@
+
+state={
+	id=2980
+	name="STATE_2980"
+
+	history={
+		owner = ROM
+		add_core_of = ROM
+		add_core_of = UKR
+		add_core_of = MOL
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		3787 8123 19319 
+	}
+	manpower=13756
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
