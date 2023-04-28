@@ -611,6 +611,88 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
+						rule = rom_fragmentation_status
+						option = ROM_FRAGMENTED
+					}
+				}
+				ROM = {
+					release = WLC
+					release = MOL
+					release = TRA
+					transfer_units_fraction = {
+						target = WLC
+						size = 0.4
+					}
+					transfer_units_fraction = {
+						target = MOL
+						size = 0.3
+					}
+					transfer_units_fraction = {
+						target = TRA
+						size = 0.3
+					}
+				}
+				WLC = {
+					change_tag_from = ROM
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = rom_fragmentation_status
+						option = ROM_VERY_FRAGMENTED
+					}
+				}
+				ROM = {
+					release = BUC
+					release = SZE
+					release = DOB
+					release = GAG
+					release = BDZ
+					release = BNT
+					release = WLC
+					release = MOL
+					release = TRA
+					transfer_units_fraction = {
+						target = WLC
+						size = 0.2
+					}
+					transfer_units_fraction = {
+						target = DOB
+						size = 0.1
+					}
+					transfer_units_fraction = {
+						target = MOL
+						size = 0.2
+					}
+					transfer_units_fraction = {
+						target = BUC
+						size = 0.1
+					}
+					transfer_units_fraction = {
+						target = BDZ
+						size = 0.1
+					}
+					transfer_units_fraction = {
+						target = TRA
+						size = 0.1
+					}
+					transfer_units_fraction = {
+						target = BNT
+						size = 0.1
+					}
+					transfer_units_fraction = {
+						target = SZE
+						size = 0.1
+					}
+				}
+				WLC = {
+					change_tag_from = ROM
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
 						rule = spr_fragmentation_status
 						option = SPR_EU4
 					}
@@ -829,6 +911,13 @@ on_actions = {
 					release = RGE
 					release = SRU
 					release = SSD
+					transfer_units_fraction = {
+						target = PRE
+						size = 1
+					}
+				}
+				PRE = {
+					change_tag_from = GER
 				}
 			}
 			if = {
@@ -875,6 +964,13 @@ on_actions = {
 					release = BRW
 					release = SHL
 					release = LBK
+					transfer_units_fraction = {
+						target = BRN
+						size = 1
+					}
+				}
+				BRN = {
+					change_tag_from = GER
 				}
 			}
 			if = {
@@ -921,6 +1017,10 @@ on_actions = {
 					release = BRW
 					release = SHL
 					release = LBK
+					transfer_units_fraction = {
+						target = BRN
+						size = 1
+					}
 				}
 				WUR = {
 					annex_country = {
@@ -982,6 +1082,9 @@ on_actions = {
 						target = WPR
 						transfer_troops = no
 					}
+				}
+				BRN = {
+					change_tag_from = GER
 				}
 				SHL = {
 					transfer_state = 1704
