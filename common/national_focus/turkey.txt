@@ -6595,6 +6595,29 @@ focus_tree = {
 			add_state_claim = 184
 			add_state_claim = 731
 			add_state_claim = 187
+			every_state = {
+				limit = {
+					OR = {
+						state = 1556
+						state = 1552
+						state = 1553
+						state = 2839
+						state = 2757
+						state = 2564
+						state = 2949
+						state = 2950
+						state = 1555
+						state = 2004
+						state = 2751
+						state = 937
+						state = 910
+						state = 2005
+						state = 1969
+						state = 2006
+					}
+				}
+				add_claim_by = ROOT 
+			}
 			create_wargoal = {
 				type = annex_everything
 				target = GRE
@@ -6604,10 +6627,6 @@ focus_tree = {
 					ITA = { is_in_faction_with = TUR }
 				}
 				ITA = {
-					add_state_claim = 185
-					add_state_claim = 47
-					add_state_claim = 186
-					add_state_claim = 182
 					create_wargoal = {
 						type = annex_everything
 						target = GRE
@@ -7904,11 +7923,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_capitalise_on_rising_kurdish_nationalism"
-			add_state_claim = 680
-			add_state_claim = 676
-			add_state_claim = 291
-			add_state_claim = 419
-			add_state_claim = 421
+			every_state = {
+				limit = {
+					NOT = { has_state_flag = TUR_INITIAL_STATE }
+					is_core_of = KUR
+				}
+				add_claim_by = ROOT
+			}
 			create_wargoal = {
 				type = take_claimed_state
 				target = PER
