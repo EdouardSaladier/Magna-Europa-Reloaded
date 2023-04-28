@@ -1,8 +1,10 @@
 
 state={
-	id=2359
-	name="STATE_2359"
-
+	id=2981
+	name="STATE_2981"
+	provinces={
+		8765 14263 
+	}
 	history={
 		owner = ROM
 		add_core_of = ROM
@@ -13,11 +15,7 @@ state={
 		}
 
 	}
-
-	provinces={
-		14301 17815 
-	}
-	manpower=1056
+	manpower=3200
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000
