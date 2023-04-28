@@ -1728,6 +1728,31 @@ fra_fragmentation_status = {
 		desc = "RULE_OPTION_FRA_FRAGMENTED_DESC"
 	}
 }
+ger_fragmentation_status = {
+	name = "GER_FRAGMENTATION_STATUS"
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
+	}
+	option = {
+		name = GER_1870_FRAGMENTED
+		text = "RULE_OPTION_GER_1870_FRAGMENTED"
+		desc = "RULE_OPTION_GER_1870_FRAGMENTED_DESC"
+	}
+	option = {
+		name = GER_FRAGMENTED
+		text = "RULE_OPTION_GER_FRAGMENTED"
+		desc = "RULE_OPTION_GER_FRAGMENTED_DESC"
+	}
+	option = {
+		name = GER_FRAGMENTED_LARGE
+		text = "RULE_OPTION_GER_FRAGMENTED_LARGE"
+		desc = "RULE_OPTION_GER_FRAGMENTED_LARGE_DESC"
+	}
+}
 yug_fragmentation_status = {
 	name = "YUG_FRAGMENTATION_STATUS"
 	required_dlc = "Man the Guns"
@@ -1741,6 +1766,11 @@ yug_fragmentation_status = {
 		name = YUG_FRAGMENTED
 		text = "RULE_OPTION_YUG_FRAGMENTED"
 		desc = "RULE_OPTION_YUG_FRAGMENTED_DESC"
+	}
+	option = {
+		name = YUG_VERY_FRAGMENTED
+		text = "RULE_OPTION_YUG_VERY_FRAGMENTED"
+		desc = "RULE_OPTION_YUG_VERY_FRAGMENTED_DESC"
 	}
 }
 sov_fragmentation_status = {

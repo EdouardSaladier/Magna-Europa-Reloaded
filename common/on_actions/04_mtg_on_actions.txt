@@ -796,12 +796,305 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
+						rule = ger_fragmentation_status
+						option = GER_1870_FRAGMENTED
+					}
+				}
+				GER = {
+					every_controlled_state = {
+						set_demilitarized_zone = no
+					}
+					release = PRE
+					release = BAY
+					release = BDN
+					release = WUR
+					release = SAX
+					release = MKS
+					release = MKW
+					release = HES
+					release = WDK
+					release = LIP
+					release = ANH
+					release = SCL
+					release = OLD
+					release = BRE
+					release = HAM
+					release = BRW
+					release = LBK
+					release = SXW
+					release = SXA
+					release = SXC
+					release = SXM
+					release = RGR
+					release = RGE
+					release = SRU
+					release = SSD
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ger_fragmentation_status
+						option = GER_FRAGMENTED
+					}
+				}
+				GER = {
+					every_controlled_state = {
+						set_demilitarized_zone = no
+					}
+					release = ESP
+					release = WPR
+					release = POM
+					release = THU
+					release = BAY
+					release = SIL
+					release = BRN
+					release = BDN
+					release = HOZ
+					release = WUR
+					release = SAX
+					release = SXP
+					release = ANH
+					release = WSP
+					release = MKS
+					release = MKW
+					release = HES
+					release = HSN
+					release = NAS
+					release = HSK
+					release = RHN
+					release = WDK
+					release = WST
+					release = LIP
+					release = SCL
+					release = SAA
+					release = OLD
+					release = BRE
+					release = HAM
+					release = HAN
+					release = BRW
+					release = SHL
+					release = LBK
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ger_fragmentation_status
+						option = GER_FRAGMENTED_LARGE
+					}
+				}
+				GER = {
+					every_controlled_state = {
+						set_demilitarized_zone = no
+					}
+					release = ESP
+					release = WPR
+					release = POM
+					release = THU
+					release = BPA
+					release = BAY
+					release = SIL
+					release = BRN
+					release = BDN
+					release = HOZ
+					release = WUR
+					release = SAX
+					release = SXP
+					release = ANH
+					release = WSP
+					release = MEK
+					release = HES
+					release = HSN
+					release = NAS
+					release = HSK
+					release = RHN
+					release = WDK
+					release = WST
+					release = LIP
+					release = SCL
+					release = SAA
+					release = OLD
+					release = BRE
+					release = HAM
+					release = HAN
+					release = BRW
+					release = SHL
+					release = LBK
+				}
+				WUR = {
+					annex_country = {
+						target = HOZ
+						transfer_troops = no
+					}
+					every_controlled_state = {
+						add_core_of = WUR
+					}
+				}
+				HES = {
+					annex_country = {
+						target = HSN
+						transfer_troops = no
+					}
+					annex_country = {
+						target = WDK
+						transfer_troops = no
+					}
+					transfer_state = 2573
+					every_controlled_state = {
+						add_core_of = HES
+					}
+				}
+				RHN = {
+					annex_country = {
+						target = SAA
+						transfer_troops = no
+					}
+					annex_country = {
+						target = BPA
+						transfer_troops = no
+					}
+					transfer_state = 1758
+					every_controlled_state = {
+						add_core_of = RHN
+					}
+				}
+				WST = {
+					annex_country = {
+						target = LIP
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SCL
+						transfer_troops = no
+					}
+					transfer_state = 2563
+					every_controlled_state = {
+						add_core_of = WST
+					}
+				}
+				PRE = {
+					annex_country = {
+						target = ESP
+						transfer_troops = no
+					}
+					annex_country = {
+						target = WPR
+						transfer_troops = no
+					}
+				}
+				SHL = {
+					transfer_state = 1704
+					transfer_state = 1755
+					transfer_state = 1759
+					transfer_state = 2570
+					transfer_state = 1702
+					every_controlled_state = {
+						add_core_of = SHL
+					}
+				}
+				THU = {
+					transfer_state = 1689
+					transfer_state = 2533
+					transfer_state = 440
+					transfer_state = 1679
+					transfer_state = 1683
+					transfer_state = 1682
+					every_controlled_state = {
+						add_core_of = THU
+					}
+				}
+				SXP = {
+					annex_country = {
+						target = ANH
+						transfer_troops = no
+					}
+					transfer_state = 2551
+					transfer_state = 392
+					every_controlled_state = {
+						add_core_of = SXP
+					}
+				}
+				HAN = {
+					annex_country = {
+						target = OLD
+						transfer_troops = no
+					}
+					annex_country = {
+						target = BRE
+						transfer_troops = no
+					}
+					annex_country = {
+						target = BRW
+						transfer_troops = no
+					}
+					transfer_state = 2571
+					transfer_state = 2565
+					every_controlled_state = {
+						add_core_of = HAN
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
 						rule = yug_fragmentation_status
 						option = YUG_FRAGMENTED
 					}
 				}
 				YUG = {
 					release = SLV
+					release = BOS
+					release = MAC
+					release = KOS
+					release = SER
+					transfer_units_fraction = {
+						target = SER
+						size = 1
+					}
+					release = CRO
+					release = MNT
+				}
+				SER = {
+					change_tag_from = YUG
+				}
+				#SER = {
+				#	country_event = DOD_yugoslavia.166 # MM: Commented since it is a NON-EXISTENT EVENT
+				#}
+				CRO = {
+					set_political_party = {
+						ideology = democratic
+						popularity = 50
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1936.1.1"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = yug_fragmentation_status
+						option = YUG_VERY_FRAGMENTED
+					}
+				}
+				YUG = {
+					release = SDZ
+					release = DLM
+					release = BNT
+					release = VJV
+					release = SRP
+					release = KRJ
+					release = HZB
+					release = WBS
+					release = PKR
+					release = STR
+					release = KRT
+					release = SLV
+					release = UZC
 					release = BOS
 					release = MAC
 					release = KOS
