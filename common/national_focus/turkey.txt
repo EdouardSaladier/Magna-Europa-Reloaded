@@ -6592,9 +6592,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_rebuke_the_treaty_of_lausanne"
-			add_state_claim = 184
-			add_state_claim = 731
-			add_state_claim = 187
+			
 			every_state = {
 				limit = {
 					OR = {
@@ -7159,7 +7157,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_adana_to_baku_highway"
 			SOV = {
-				229 = {
+				2292 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -7167,7 +7165,7 @@ focus_tree = {
 					}
 					set_state_flag = TUR_baku_adana_highway
 				}
-				230 = {
+				2265 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -7176,7 +7174,7 @@ focus_tree = {
 					set_state_flag = TUR_baku_adana_highway
 				}
 			}
-			800 = {
+			973 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -7184,7 +7182,7 @@ focus_tree = {
 				}
 				set_state_flag = TUR_baku_adana_highway
 			}
-			352 = {
+			1011 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -7192,7 +7190,7 @@ focus_tree = {
 				}
 				set_state_flag = TUR_baku_adana_highway
 			}
-			353 = {
+			1036 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -7200,7 +7198,7 @@ focus_tree = {
 				}
 				set_state_flag = TUR_baku_adana_highway
 			}
-			350 = {
+			1098 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -7208,7 +7206,7 @@ focus_tree = {
 				}
 				set_state_flag = TUR_baku_adana_highway
 			}
-			344 = {
+			1066 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -7591,14 +7589,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_seize_religious_property"
-			798 = { add_extra_state_shared_building_slots = 1 }
-			345 = { add_extra_state_shared_building_slots = 1 }
-			344 = { add_extra_state_shared_building_slots = 1 }
-			342 = { add_extra_state_shared_building_slots = 1 }
-			356 = { add_extra_state_shared_building_slots = 1 }
-			349 = { add_extra_state_shared_building_slots = 2 }
-			348 = { add_extra_state_shared_building_slots = 2 }
-			355 = { add_extra_state_shared_building_slots = 2 }
+			every_state = {
+				limit = {
+					is_core_of = ROOT 
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 			add_popularity = { 
 				ideology = communism
 				popularity = 0.07
@@ -7620,79 +7620,30 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_guarding_our_western_frontiers"
-			339 = {
+			928 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 4
-						province = 4112
+						province = 16281
 						instant_build = yes
 					}
 				}
 			}
-			342 = {
+			1032 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 3
-						province = 10122
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 1005
-						instant_build = yes
-					}
-				}
-			}
-			340 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 6864
+						province = 21400
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
 						level = 2
-						province = 6864
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = coastal_bunker
-						level = 2
-						province = 9799
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = coastal_bunker
-						level = 2
-						province = 9887
-						instant_build = yes
-					}
-				}
-			}
-			341 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 849
-						instant_build = yes
-					}
-				}
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = coastal_bunker
-						level = 3
-						province = 849
+						province = 7595
 						instant_build = yes
 					}
 				}
@@ -7794,7 +7745,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_turkish_tank_project"
-			348 = {
+			932 = {
 				if = { 
 					limit = {
 						free_building_slots = {
@@ -7892,7 +7843,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = TUR_scrapping_our_debts
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			base = 10
 		}
@@ -7900,10 +7851,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_collectivising_our_agriculture"
-			random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
-			random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
-			random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
-			random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+			random_owned_controlled_state = { add_extra_state_shared_building_slots = 2 }
+			random_owned_controlled_state = { add_extra_state_shared_building_slots = 2 }
+			random_owned_controlled_state = { add_extra_state_shared_building_slots = 2 }
+			random_owned_controlled_state = { add_extra_state_shared_building_slots = 2 }
 		}
 	}
 
