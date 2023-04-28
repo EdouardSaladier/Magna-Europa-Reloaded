@@ -1300,6 +1300,163 @@ on_actions = {
 				limit = {
 					has_game_rule = {
 						rule = ita_fragmentation_status
+						option = ITA_FRAGMENTED_1815
+					}
+				}
+				ITA = {
+					delete_unit_template_and_units = {
+						division_template = "Camicie Nere"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Divisione Coloniale"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Banda Indigena Irregolare"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Truppe Irregolari a Cavallo"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Divisione Ascari Libica"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Divisione Ascari Eritrea"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Divisione Ascari Somala"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Banda Irregolare Libica"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Banda Irregolare Eritrea"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Banda Irregolare Somala"
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = PIE
+								is_core_of = LIG
+								is_core_of = AOS
+								is_core_of = SRD
+								is_core_of = SAV
+								is_core_of = NZA
+								state = 1363
+								state = 2393
+							}
+						}
+						add_core_of = PIE
+					}
+					PIE = { set_cosmetic_tag = PIE_SRD_UNION }
+					release = PIE
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = FRI
+								is_core_of = VNT
+								is_core_of = LOM
+							}
+							NOT = { state = 1616 state = 2970 state = 1533 state = 2536 }
+						}
+						add_core_of = LOM
+					}
+					1616 = { transfer_state_to = AUS add_core_of = AUS }
+					LOM = { set_cosmetic_tag = LOM_VEN_UNIFIED }
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = SIC
+								is_core_of = CAL
+								is_core_of = LUC
+								is_core_of = NAP
+								is_core_of = PUG
+								is_core_of = MLS
+								is_core_of = ABR
+							}
+							NOT = { state = 2914 }
+						}
+						add_core_of = NAP
+					}
+					release = ALB
+					release = NAP
+					NAP = { set_cosmetic_tag = NAP_KTS_UNIFIED }
+					every_owned_state = {
+						limit = { is_core_of = TIR }
+						add_core_of = AUS
+					}
+					release = AUS
+					release = GOR
+					release = LOM
+					2558 = { remove_core_of = PRM remove_core_of = MCR add_core_of = TUS }
+					2556 = { remove_core_of = MCR }
+					2883 = { add_core_of = TUS }
+					release = MCR
+					release = MDN
+					release = LCC
+					release = TUS
+					release = PRM
+					release = LBA
+					release = IST
+					release = TST
+					MDN = {
+						if = {
+							limit = { has_dlc = "No Step Back" }
+							set_autonomy = { target = MCR autonomy_state = autonomy_personal_union }
+							else_if = {
+								limit = { has_dlc = "Together for Victory" }
+								set_autonomy = { target = MCR autonomy_state = autonomy_dominion }
+							}
+							else = {
+								puppet = MCR
+							}
+						}
+					}
+					every_owned_state = {
+						limit = { OR = { is_core_of = SLV is_core_of = CRO } }
+						add_core_of = YUG
+					}
+					release = YUG
+					
+					every_state = {
+						limit = { is_owned_by = ITA }
+						transfer_state_to = VAT
+						add_core_of = VAT
+					}
+					VAT = { set_cosmetic_tag = papal_states set_capital = { state = 876 } give_guarantee = SMR }
+					transfer_units_fraction = {
+						target = LOM
+						size = 0.2
+					}
+					transfer_units_fraction = {
+						target = VAT
+						size = 0.1
+					}
+					transfer_units_fraction = {
+						target = TUS
+						size = 0.1
+					}
+					transfer_units_fraction = {
+						target = PIE
+						size = 0.3
+					}
+					transfer_units_fraction = {
+						target = NAP
+						size = 0.3
+					}
+					
+					every_core_state = { remove_core_of = ITA }
+					
+					1554 = {
+						transfer_state_to = GRE
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ita_fragmentation_status
 						option = ITA_FRAGMENTED
 					}
 				}
@@ -1390,6 +1547,7 @@ on_actions = {
 						limit = { is_core_of = TIR }
 						add_core_of = AUS
 					}
+					2883 = { add_core_of = TUS }
 					release = AUS
 					release = GOR
 					release = LOM
@@ -1404,15 +1562,11 @@ on_actions = {
 						add_core_of = YUG
 					}
 					release = YUG
-					
-					every_state = {
-						limit = {
-							is_owned_by = ITA
-						}
+					every_owned_state = {
 						transfer_state_to = VAT
 						add_core_of = VAT
 					}
-					VAT = { set_cosmetic_tag = papal_states set_capital = { state = 876 } }
+					VAT = { set_cosmetic_tag = papal_states set_capital = { state = 876 } give_guarantee = SMR }
 					transfer_units_fraction = {
 						target = LOM
 						size = 0.2
@@ -1440,6 +1594,115 @@ on_actions = {
 						transfer_state_to = GRE
 					}
 
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ita_fragmentation_status
+						option = ITA_REGIONS
+					}
+				}
+				ITA = {
+					release = PIE
+					release = AOS
+					release = LIG
+					release = LOM
+					release = VNT
+					release = TIR
+					release = FRI
+					1476 = { add_core_of = JUL }
+					1534 = { add_core_of = JUL }
+					release = JUL
+					every_state = {
+						limit = { is_core_of = MCR }
+						add_core_of = TUS
+					}
+					release = TUS
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = MDN
+								is_core_of = PRM
+								is_core_of = FRR
+								is_core_of = RMG
+							}
+							NOT = { is_core_of = MCR }
+						}
+						add_core_of = BLG
+					}
+					release = BLG
+					BLG = { set_cosmetic_tag = EMR_UNIFIED }
+					release = MAR
+					release = UMB
+					release = LAZ
+					release = SRD
+					release = ABR
+					release = MLS
+					release = NAP
+					release = ALB
+					release = PUG
+					release = LUC
+					release = CAL
+					release = SIC
+					release = LBA
+					transfer_units_fraction = {
+						target = LOM
+						size = 0.20
+					}
+					transfer_units_fraction = {
+						target = NAP
+						size = 0.15
+					}
+					transfer_units_fraction = {
+						target = SIC
+						size = 0.15
+					}
+					transfer_units_fraction = {
+						target = PIE
+						size = 0.075
+					}
+					transfer_units_fraction = {
+						target = VNT
+						size = 0.075
+					}
+					transfer_units_fraction = {
+						target = TUS
+						size = 0.075
+					}
+					transfer_units_fraction = {
+						target = BLG
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = PUG
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = LAZ
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = CAL
+						size = 0.025
+					}
+					transfer_units_fraction = {
+						target = SRD
+						size = 0.025
+					}
+					transfer_units_fraction = {
+						target = ABR
+						size = 0.025
+					}
+					transfer_units_fraction = {
+						target = MAR
+						size = 0.025
+					}
+					transfer_units_fraction = {
+						target = LIG
+						size = 0.025
+					}
+					release = GRE
 				}
 			}
 		}

@@ -1747,7 +1747,17 @@ on_actions = {
 					}
 					FROM.FROM = { reset_state_name = yes }
 				}
-				else = {
+				else_if = { #1938 reform
+					limit = {
+						ROOT = { original_tag = ITA has_completed_focus = ITA_new_industrialization_program }
+					}
+					FROM.FROM = { set_state_name = "Apuania" }
+					set_province_name = {
+						id = 14595
+						name = "Apuania"
+					}
+				}
+				else_if = {
 					reset_province_name = 14595
 					FROM.FROM = { reset_state_name = yes }
 				}

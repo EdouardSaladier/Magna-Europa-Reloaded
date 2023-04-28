@@ -1772,6 +1772,9 @@ focus_tree = {
 			else = {
 				custom_effect_tooltip = ITA_new_industrialization_program_generic_tt
 			}
+			1381 = { upgrade_state_category = yes set_state_name = "Apuania" }
+			set_victory_points = { province = 14595 value = 10 }
+			set_province_name = { id = 14595 name = "Apuania" }
 		}
 	}
 

@@ -639,30 +639,30 @@ on_actions = {
 					}
 					#log = "-20% BoP due to losing core [FROM.FROM.GetName]"
 				}
-				else = { #Colony -> Not great but hey, it could have been worse!
-					if = { #FIRST TIME LOSING A CORE PLAYER GETS EVENT (Effects are handled there)
-						limit = {
-							FROM = { check_variable = { ITA_lost_colony = 0 } }
-						}
-						FROM = {
-							set_variable = { ITA_lost_colony = FROM.FROM }
-							country_event = { id = BBA_italy_bop.2 hours = 1 }
-						}
-					}
-					if = {
-						limit = {
-							power_balance_value = {
-								id = ITA_power_balance
-								value > -0.3 # accepts <, > or =
-							}
-						}
-						ITA_bop_very_low_decrease_effect = yes
-						#log = "-5% BoP due to losing colony [FROM.FROM.GetName]"
-					}
+				#else = { #Colony -> Not great but hey, it could have been worse!
+				#	if = { #FIRST TIME LOSING A CORE PLAYER GETS EVENT (Effects are handled there)
+				#		limit = {
+				#			FROM = { check_variable = { ITA_lost_colony = 0 } }
+				#		}
+				#		FROM = {
+				#			set_variable = { ITA_lost_colony = FROM.FROM }
+				#			country_event = { id = BBA_italy_bop.2 hours = 1 }
+				#		}
+				#	}
+				#	if = {
+				#		limit = {
+				#			power_balance_value = {
+				#				id = ITA_power_balance
+				#				value > -0.3 # accepts <, > or =
+				#			}
+				#		}
+				#		ITA_bop_very_low_decrease_effect = yes
+				#		#log = "-5% BoP due to losing colony [FROM.FROM.GetName]"
+				#	}
 					#else = {
 					#	log = "Lost colony but no BoP impact"
 					#}
-				}
+				#}
 			}
 			else_if = { #Italy gets a core state back
 				limit = {
