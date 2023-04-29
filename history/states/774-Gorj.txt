@@ -6,6 +6,7 @@ state={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = WLC
+		add_core_of = OLT
 		buildings = {
 			infrastructure = 2
 		}

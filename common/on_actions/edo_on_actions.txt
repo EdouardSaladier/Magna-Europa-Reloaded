@@ -1653,6 +1653,26 @@ on_actions = {
 					limit = { is_core_of = MOU }
 					set_state_flag = core_of_MOU
 				}
+				if = {
+					limit = { is_core_of = MUN }
+					set_state_flag = core_of_MUN
+				}
+				if = {
+					limit = { is_core_of = OLT }
+					set_state_flag = core_of_OLT
+				}
+				if = {
+					limit = { is_core_of = CRS }
+					set_state_flag = core_of_CRS
+				}
+				if = {
+					limit = { is_core_of = MRM }
+					set_state_flag = core_of_MRM
+				}
+				if = {
+					limit = { is_core_of = BSR }
+					set_state_flag = core_of_BSR
+				}
 			}
 		}
 	}
