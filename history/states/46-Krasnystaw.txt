@@ -1,26 +1,22 @@
 
 state={
-	id=491
-	name="STATE_491"
+	id=46
+	name="STATE_46"
 
 	history={
 		owner = POL
 		add_core_of = POL
-		victory_points = {
-			2486 2 
-		}
 		buildings = {
 			infrastructure = 3
-
 		}
 
 	}
 
 	provinces={
-		661 2486 3114 7205 7788 8502 12348 12424 12440 12518 12530 12588 
+		1756 12341 12512 
 	}
-	manpower=251100
+	manpower=109100
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=rural
 	local_supplies=0.000
 }
