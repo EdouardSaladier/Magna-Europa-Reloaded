@@ -8,16 +8,22 @@ state={
 		add_core_of = NOR
 		buildings = {
 			infrastructure = 1
+			19517 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = SAP
 		victory_points = {
 			8701 2 
 		}
+		victory_points = {
+			19517 1 
+		}
 
 	}
 
 	provinces={
-		229 1465 7558 8701 19475 
+		229 1465 7558 8701 19475 19517 19519 
 	}
 	manpower=23400
 	buildings_max_level_factor=1.000
