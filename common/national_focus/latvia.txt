@@ -2518,11 +2518,14 @@ focus_tree = {
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = form_country_estonia_required_states_tt
-					controls_state = 13
-					controls_state = 191
-					controls_state = 811
-					controls_state = 812
-					controls_state = 813
+					all_state = {
+						if = {
+							limit = {
+								has_state_flag = EST_INITIAL_STATE
+							}
+							is_controlled_by = ROOT
+						}	
+					}
 				}
 				EST = { has_government = fascism }
 				EST = { is_subject_of = ROOT }
@@ -2531,10 +2534,14 @@ focus_tree = {
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = form_country_lithuania_required_states_tt
-					controls_state = 11
-					controls_state = 189
-					controls_state = 814
-					controls_state = 815
+					all_state = {
+						if = {
+							limit = {
+								has_state_flag = LIT_INITIAL_STATE
+							}
+							is_controlled_by = ROOT
+						}	
+					}
 				}
 				LIT = { has_government = fascism }
 				LIT = { is_subject_of = ROOT }
@@ -2556,29 +2563,30 @@ focus_tree = {
 				news_event = { id = wtt_news.60 hours = 6 }
 				set_global_flag = form_baltic_federation_flag
 				## coring ## 
-				# Estonia
-				13 = { add_core_of = ROOT }
-				191 = { add_core_of = ROOT }
-				811 = { add_core_of = ROOT }
-				812 = { add_core_of = ROOT }
-				813 = { add_core_of = ROOT }
-				# Lithuania
-				11 = { add_core_of = ROOT }
-				189 = { add_core_of = ROOT }
-				188 = { add_core_of = ROOT }
-				784 = { add_core_of = ROOT }
-				814 = { add_core_of = ROOT }
-				815 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						OR = {
+							has_state_flag = LIT_INITIAL_STATE
+							has_state_flag = EST_INITIAL_STATE
+							region = 43
+						}
+					}
+					add_core_of = ROOT 
+				}
 	
 			}			
 		custom_effect_tooltip = form_country_estonia_coring_states_tt
 		custom_effect_tooltip = form_country_lithuania_coring_states_tt
-				#Poland
-			784 = { add_core_of = ROOT }
-			96 = { add_core_of = ROOT }
-			95 = { add_core_of = ROOT }
-			94 = { add_core_of = ROOT }
-
+				every_state = {
+					limit = {
+						OR = {
+							region = 43
+							region = 96
+							state = 2485
+						}
+					}
+					add_core_of = ROOT 
+				}
 			set_cosmetic_tag = BAL_UNIFIED
 			if = { #Annexes any fascist Baltic states
 				limit = {

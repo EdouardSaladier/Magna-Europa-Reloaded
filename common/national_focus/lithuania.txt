@@ -1350,9 +1350,13 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_rapid_fortifications_in_the_east"
 			if = {
 				limit = {
-					owns_state = 784
+					owns_state = 241
 				}
-				784 = {
+				every_state = {
+					limit = {
+						is_owned_and_controlled_by = ROOT 
+						is_vilnius = yes 
+					}
 					add_building_construction = {
 						type = bunker
 						level = 3
@@ -1365,7 +1369,17 @@ focus_tree = {
 				}
 			}
 			else = {
-				11 = {
+				every_state = {
+					limit = {
+						is_owned_and_controlled_by = ROOT 
+						any_neighbor_state = {
+							NOT = { has_state_flag = LAT_INITIAL_STATE }
+							OR = {
+								is_controlled_by = POL  
+								is_controlled_by = SOV 
+							}
+						}
+					}
 					add_building_construction = {
 						type = bunker
 						level = 3
@@ -1648,122 +1662,29 @@ focus_tree = {
 			hidden_effect = {
 				set_cosmetic_tag = GREATER_LIT
 			}
-			#Belarus States
-			96 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			95 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			94 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			207 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			206 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			204 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			241 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			#Ukraine states
-			93 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			199 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			201 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			198 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			202 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			203 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			259 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			193 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			225 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			221 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			226 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			197 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			192 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			#Russian states
-			242 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			243 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			224 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			205 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			223 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			222 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			220 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			240 = {
-				add_claim_by = ROOT
-				set_state_flag = greater_lithuania_flag
-			}
-			194 = {
+			every_state = {
+				limit = {
+					OR = {
+						region = 29
+						region = 43
+						region = 96
+						state = 2485
+						region = 109
+						region = 132
+						region = 142
+						region = 140
+						region = 133
+						region = 108
+						region = 42
+						region = 99
+						region = 100
+						region = 107
+						region = 97
+						region = 98
+						region = 101
+						region = 106
+					}
+				}
 				add_claim_by = ROOT
 				set_state_flag = greater_lithuania_flag
 			}
@@ -2385,35 +2306,35 @@ focus_tree = {
 		}
 
 		available = {
-			242 = {
+			2189 = {
 				is_controlled_by = ROOT
 				compliance > 80
 			}
-			243 = {
+			2168 = {
 				is_controlled_by = ROOT
 				compliance > 80
 			}
-			224 = {
+			2183 = {
 				is_controlled_by = ROOT
 				compliance > 80
 			}
-			205 = {
+			251 = {
 				is_controlled_by = ROOT
 				compliance > 80
 			}
-			223 = {
+			265 = {
 				is_controlled_by = ROOT
 				compliance > 80
 			}
-			222 = {
+			318 = {
 				is_controlled_by = ROOT
 				compliance > 80
 			}
-			220 = {
+			388 = {
 				is_controlled_by = ROOT
 				compliance > 80
 			}
-			240 = {
+			450 = {
 				is_controlled_by = ROOT
 				compliance > 80
 			}
@@ -4382,19 +4303,13 @@ focus_tree = {
 		}
 		
 		available = {
-			815 = {
+			241 = {
 				controls_or_subject_of = yes
 			}
-			784 = {
+			242 = {
 				controls_or_subject_of = yes
 			}
-			11 = {
-				controls_or_subject_of = yes
-			}
-			814 = {
-				controls_or_subject_of = yes
-			}
-			97 = {
+			2371 = {
 				controls_or_subject_of = yes
 			}
 		}
@@ -4406,15 +4321,18 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_lithuanian_rail"
 			build_railway = {
 				#level = 3
-				path = { 11342 11226 9246 9374 530 6376 9483 }
+				start_province = 19927
+				target_province = 17371
 			}
 			build_railway = {
 				#level = 3
-				path = { 11357 400 3254 11312 }
+				start_province = 17371
+				target_province = 9185
 			}
 			build_railway = {
 				#level = 3
-				path = { 6296 9357 9438 9374 }
+				start_province = 9185
+				target_province = 5384
 			}
 		}
 	}
@@ -4750,49 +4668,21 @@ focus_tree = {
 						AND = {
 							is_core_of = UKR
 							NOT = {
-								is_core_of = SLO
-								is_core_of = POL
-								is_core_of = CRI
-								is_core_of = DNB
+								region = 21
+								region = 14
+								region = 41
+								region = 42
 							}
 						}
-						state = 2423
-						state = 2424
-						state = 450
+						region = 133
+						region = 108
+						region = 140
+						region = 142
+						region = 132
+						region = 109
 						state = 2426
-						state = 2428
-						state = 2425
-						state = 2422
-						state = 2742
-						state = 2392
-						state = 2510
-						state = 2421
-						state = 2735
-						state = 2734
-						state = 388
-						state = 318
-						state = 330
-						state = 2183
-						state = 2375
-						state = 2321
-						state = 2171
-						state = 2036
-						state = 2320
-						state = 2037
-						state = 298
-						state = 303
-						state = 2444
-						state = 2439
-						state = 2376
-						state = 2190
-						state = 2191
-						state = 2174
-						state = 2189
-						state = 2175
-						state = 2192
-						state = 2173
-						state = 2082
-						state = 511
+						state = 450
+						state = 2424
 					}
 				}
 				add_claim_by = ROOT
@@ -4817,8 +4707,13 @@ focus_tree = {
 		}
 		
 		available = {
-			any_owned_state = {
-				is_claimed_by = LIT
+			all_state = {
+				if = {
+					limit = {
+						is_claimed_by = ROOT 
+					}	
+					is_controlled_by = ROOT 
+				}
 			}
 		}
 
@@ -4829,8 +4724,13 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_greater_commonwealth"
 			every_state = {
 				limit = {
-					is_claimed_by = LIT
-					is_controlled_by = LIT
+					OR = {
+						AND = {
+							is_claimed_by = LIT
+							is_controlled_by = LIT
+						}
+						is_yalta_polish_state = yes 
+					}
 				}
 				add_core_of = ROOT
 			}

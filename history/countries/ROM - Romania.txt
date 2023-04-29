@@ -8,6 +8,9 @@ if = {
 	}
 	set_oob = "ROM_1936"
 }
+every_owned_state = {
+	set_state_flag = ROM_INITIAL_STATE
+}
 if = {
 	limit = {
 		has_dlc = "No Step Back"
