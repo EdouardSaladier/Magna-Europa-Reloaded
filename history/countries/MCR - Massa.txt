@@ -32,17 +32,27 @@ create_country_leader = {
 		
 	}
 }
+create_country_leader = {
+	name = "Carlo Sforza"
+	desc = ""
+	picture = "gfx/leaders/MCR/Portrait_MCR_Carlo_Sforza.png"
+	expire = "1952.9.4"
+	ideology = liberalism
+	traits = {
+		compassionate_gentleman
+	}
+}
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = democratic
+	last_election = "1934.3.25"
+	election_frequency = 60
+	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 15
+	democratic = 65
 	fascism = 10
-	communism = 0
-	neutrality = 75
+	communism = 5
+	neutrality = 20
 }

@@ -1705,6 +1705,145 @@ on_actions = {
 					release = GRE
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ita_fragmentation_status
+						option = ITA_MORE_FRAGMENTATION
+					}
+				}
+				ITA = {
+					release = AOS
+					release = PIE
+					release = LIG
+					release = PAV
+					release = MTV
+					2849 = { remove_claim_by = LDN add_core_of = LDN }
+					2905 = { remove_claim_by = LDN add_core_of = LDN }
+					release = LDN
+					release = FIU
+					release = IST
+					release = TST
+					release = GOR
+					release = FRI
+					2970 = { transfer_state_to = FRI }
+					release = VNT
+					release = LOM
+					release = BLG
+					release = TUS
+					TUS = { set_cosmetic_tag = FLO set_country_flag = TUS_florence_flag release = LCC release = PIS release = SNA }
+					release = MCR
+					release = MDN
+				#	MDN = {
+				#		if = {
+				#			limit = { has_dlc = "No Step Back" }
+				#			set_autonomy = { target = MCR autonomy_state = autonomy_personal_union }
+				#			else_if = {
+				#				limit = { has_dlc = "Together for Victory" }
+				#				set_autonomy = { target = MCR autonomy_state = autonomy_dominion }
+				#			}
+				#			else = {
+				#				puppet = MCR
+				#			}
+				#		}
+				#	}
+					release = PRM
+					release = FRR
+					release = BLG
+					release = RMG
+					release = MAR
+					release = UMB
+					release = ABR
+					release = SRD
+					release = SIC
+					release = NAP
+					release = MLS
+					release = ALB
+					release = PUG
+					release = LAZ
+					LAZ = { give_guarantee = VAT }
+					release = LUC
+					release = CAL
+					every_owned_state = {
+						limit = {
+							OR = {
+								is_core_of = SLV
+								is_core_of = CRO
+								is_core_of = DLM
+							}
+						}
+						add_core_of = YUG
+					}
+					release = YUG
+					create_dynamic_country = {
+						original_tag = ITA
+						copy_tag = TIR
+						set_capital = { state = 683 }
+						ITA = { release = PREV }
+						every_state = { limit = { is_core_of = TIR NOT = { is_owned_by = PREV } } remove_core_of = PREV }
+						set_cosmetic_tag = TIR_south
+					#	set_country_flag = TIR_south_flag
+					}
+					transfer_units_fraction = {
+						target = LOM
+						size = 0.20
+					}
+					transfer_units_fraction = {
+						target = NAP
+						size = 0.15
+					}
+					transfer_units_fraction = {
+						target = SIC
+						size = 0.15
+					}
+					transfer_units_fraction = {
+						target = PIE
+						size = 0.075
+					}
+					transfer_units_fraction = {
+						target = VNT
+						size = 0.075
+					}
+					transfer_units_fraction = {
+						target = TUS
+						size = 0.075
+					}
+					transfer_units_fraction = {
+						target = BLG
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = PUG
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = LAZ
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = CAL
+						size = 0.025
+					}
+					transfer_units_fraction = {
+						target = SRD
+						size = 0.025
+					}
+					transfer_units_fraction = {
+						target = ABR
+						size = 0.025
+					}
+					transfer_units_fraction = {
+						target = MAR
+						size = 0.025
+					}
+					transfer_units_fraction = {
+						target = LIG
+						size = 0.025
+					}
+					release = LBA
+					release = GRE
+				}
+			}
 		}
 	}
 
