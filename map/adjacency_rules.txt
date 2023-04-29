@@ -855,3 +855,42 @@ adjacency_rule =
 	icon = 18520
 	offset = { 0 0 0 }
 }
+adjacency_rule =
+{
+	name = "NOORDZEEKANAAL"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 11729 1045 7314 }
+	
+	icon = 7314
+	
+	offset = { 3 0 -3 }
+}

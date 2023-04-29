@@ -637,7 +637,7 @@ on_actions = {
 					FROM.FROM = { set_state_name = "Zára" }
 					set_province_name = { id = 14584 name = "Zára" }
 				}
-				else = { FROM.FROM = { reset_state_name = yes } }
+				else = { FROM.FROM = { reset_state_name = yes } reset_province_name = 14584 }
 			}
 			#Lagosta
 			if = {

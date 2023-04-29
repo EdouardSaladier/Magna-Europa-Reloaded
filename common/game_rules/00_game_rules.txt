@@ -1841,6 +1841,46 @@ ita_fragmentation_status = {
 		desc = "RULE_OPTION_ITA_MORE_FRAGMENTATION_DESC"
 	}
 }
+aus_fragmentation_status = {
+	name = "AUS_FRAGMENTATION_STATUS"
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
+	}
+	option = {
+		name = AUS_FRAGMENTED
+		text = "RULE_OPTION_AUS_FRAGMENTED"
+		desc = "RULE_OPTION_AUS_FRAGMENTED_DESC"
+	}
+}
+bel_fragmentation_status = {
+	name = "BEL_FRAGMENTATION_STATUS"
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
+	}
+	option = {
+		name = BEL_DISSOLVED
+		text = "RULE_OPTION_BEL_DISSOLVED"
+		desc = "RULE_OPTION_BEL_DISSOLVED_DESC"
+	}
+	option = {
+		name = BEL_PARTITIONED
+		text = "RULE_OPTION_BEL_PARTITIONED"
+		desc = "RULE_OPTION_BEL_PARTITIONED_DESC"
+	}
+	option = {
+		name = BEL_FRAGMENTED
+		text = "RULE_OPTION_BEL_FRAGMENTED"
+		desc = "RULE_OPTION_BEL_FRAGMENTED_DESC"
+	}
+}
 nel_status = {
 	name = "NEL_STATUS"
 	required_dlc = "Man the Guns"

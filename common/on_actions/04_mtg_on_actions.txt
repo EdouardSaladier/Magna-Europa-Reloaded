@@ -602,8 +602,25 @@ on_actions = {
 					release = SCO
 					release = WLS
 					release = NIR
-					release = MLT
 					release = CYP
+					set_autonomy = { target = MLT autonomy_state = autonomy_free }
+					set_autonomy = { target = EGY autonomy_state = autonomy_free }
+					set_autonomy = { target = PAL autonomy_state = autonomy_free }
+					set_autonomy = { target = JOR autonomy_state = autonomy_free }
+					set_autonomy = { target = KUW autonomy_state = autonomy_free }
+					set_autonomy = { target = UAE autonomy_state = autonomy_free }
+					set_autonomy = { target = BHR autonomy_state = autonomy_free }
+					set_autonomy = { target = QAT autonomy_state = autonomy_free }
+					set_autonomy = { target = CAN autonomy_state = autonomy_free }
+					remove_from_faction = MLT
+					remove_from_faction = EGY
+					remove_from_faction = PAL
+					remove_from_faction = JOR
+					remove_from_faction = KUW
+					remove_from_faction = UAE
+					remove_from_faction = BHR
+					remove_from_faction = QAT
+					remove_from_faction = CAN
 					set_cosmetic_tag = ENG_england
 					set_global_flag = ENG_became_england
 				}
@@ -693,6 +710,27 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
+						rule = fra_fragmentation_status
+						option = FRA_FRAGMENTED
+					}
+				}
+				FRA = {
+					release = CAT
+					release = NAV
+					release = ALS
+					release = BRI
+					release = COR
+				}
+				FRA = {
+					set_autonomy = { target = MOR autonomy_state = autonomy_free }
+					set_autonomy = { target = MRT autonomy_state = autonomy_free }
+					set_autonomy = { target = TUN autonomy_state = autonomy_free }
+					set_autonomy = { target = SYR autonomy_state = autonomy_free }
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
 						rule = spr_fragmentation_status
 						option = SPR_EU4
 					}
@@ -725,7 +763,6 @@ on_actions = {
 						}
 						transfer_state_to = ADU
 					}
-					set_cosmetic_tag = SPR_castille
 					set_politics = {
 						ruling_party = neutrality
 						elections_allowed = yes
@@ -815,64 +852,57 @@ on_actions = {
 					}
 				}
 				SPR = {
-					release = CAT
-					release = NAV
 					release = GLC
-				}
-				every_state = {
-					limit = {
-						OR = {
-							is_mainland_spain_vanilla_groups = yes
-							is_balearic_group = yes
-						}
-					}
-					add_core_of = SPR
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = fra_fragmentation_status
-						option = FRA_FRAGMENTED
-					}
-				}
-				FRA = {
-					release = OCC
-					release = BRI
-					release = COR
+					release = ATR
 					release = NAV
-					release = ARP
-					transfer_units_fraction = {
-						target = OCC
-						size = 0.3
-					}
-					transfer_units_fraction = {
-						target = ARP
-						size = 0.2
-					}
-					transfer_units_fraction = {
-						target = BRI
-						size = 0.1
-					}
-					transfer_units_fraction = {
-						target = COR
-						size = 0.001
-					}
-					transfer_units_fraction = {
-						target = NAV
-						size = 0.001
+					release = CAT
+					release = ARA
+					release = BAL
+					release = ADU
+					release = VAL
+					release = MOR
+					release = CNR
+					set_cosmetic_tag = SPR_castille
+					diplomatic_relation = {
+						country = ADR
+						relation = guarantee
+						active = no
 					}
 				}
-				every_state = {
+				SPA = {
+					set_cosmetic_tag = SPR_nationalist_castille
+				}
+				SPB = {
+					set_cosmetic_tag = SPR_carlist_castille
+				}
+				SPC = {
+					set_cosmetic_tag = SPR_anarchist_castille
+				}
+				SPD = {
+					set_cosmetic_tag = SPR_republican_castille
+				}
+				VAL = {
+					every_core_state = {
+						add_core_of = CAT
+					}
+				}
+				if = {
 					limit = {
-						OR = {
-							is_core_of = OCC
-							is_core_of = ARP
-							is_core_of = BRI
-							is_core_of = COR
+						OCC = {
+							exists = yes
 						}
 					}
-					add_core_of = FRA
+					CAT = { transfer_state = 871 }
+				}	
+				CAT = {
+					annex_country = {
+						target = VAL
+					}
+					annex_country = {
+						target = BAL
+					}
+					set_cosmetic_tag = CAT_GREATER
+					give_guarantee = ADR
 				}
 			}
 			if = {
@@ -1212,6 +1242,7 @@ on_actions = {
 				SER = {
 					change_tag_from = YUG
 				}
+				SLV = { set_cosmetic_tag = SLV_carniola }
 				#SER = {
 				#	country_event = DOD_yugoslavia.166 # MM: Commented since it is a NON-EXISTENT EVENT
 				#}
@@ -1236,16 +1267,18 @@ on_actions = {
 					}
 				}
 				SOV = {
-					release = UKR
 					release = BLR
-					release = GEO
-					release = AZR
-					release = ARM
-					release = UZB
-					release = TAJ
-					release = KYR
-					release = TMS
+					release = UKR
+					release = TCC
 					release = KAZ
+					release = UZB
+					release = TMS
+					set_autonomy = { target = BLR autonomy_state = autonomy_integrated_puppet }
+					set_autonomy = { target = UKR autonomy_state = autonomy_integrated_puppet }
+					set_autonomy = { target = TCC autonomy_state = autonomy_integrated_puppet }
+					set_autonomy = { target = KAZ autonomy_state = autonomy_integrated_puppet }
+					set_autonomy = { target = UZB autonomy_state = autonomy_integrated_puppet }
+					set_autonomy = { target = TMS autonomy_state = autonomy_integrated_puppet }
 					# retire_country_leader = yes
                     set_cosmetic_tag = SOV_russia
                     set_global_flag = SOV_became_russia
@@ -1259,8 +1292,15 @@ on_actions = {
 					}
 				}
 				SOV = {
-					release = CRI
 					release = UKR
+					every_state = {
+						limit = {
+							is_core_of = CRI
+							NOT = { is_core_of = DKR }
+						}
+						transfer_state_to = CRI
+					}
+					release = IGR
 					release = BLR
 					release = KAR
 					release = ABK
@@ -1272,8 +1312,8 @@ on_actions = {
 					release = NOA
 					release = KBK
 					release = KAL
-					release = KHI
 					release = KKP
+					release = KHI
 					release = UZB
 					release = KYR
 					release = TMS
@@ -1291,6 +1331,9 @@ on_actions = {
 					release = PEM
 					release = AKG
 					release = SAP
+					release = AKN
+					release = DON
+					release = MRD
 					# retire_country_leader = yes
                     set_cosmetic_tag = SOV_russia
                     set_global_flag = SOV_became_russia
@@ -1415,9 +1458,13 @@ on_actions = {
 					}
 					every_owned_state = {
 						limit = { OR = { is_core_of = SLV is_core_of = CRO } }
-						add_core_of = YUG
+						if = {
+							limit = { country_exists = YUG }
+							add_core_of = YUG
+							ITA = { release = YUG }
+							else = { release = SLV if = { limit = { country_exists = DLM } release = DLM else = { release = CRO } } }
+						}
 					}
-					release = YUG
 					
 					every_state = {
 						limit = { is_owned_by = ITA }
@@ -1559,9 +1606,13 @@ on_actions = {
 					release = TST
 					every_owned_state = {
 						limit = { OR = { is_core_of = SLV is_core_of = CRO } }
-						add_core_of = YUG
+						if = {
+							limit = { country_exists = YUG }
+							add_core_of = YUG
+							ITA = { release = YUG }
+							else = { release = SLV if = { limit = { country_exists = DLM } release = DLM else = { release = CRO } } }
+						}
 					}
-					release = YUG
 					every_owned_state = {
 						transfer_state_to = VAT
 						add_core_of = VAT
@@ -1608,8 +1659,12 @@ on_actions = {
 					release = AOS
 					release = LIG
 					release = LOM
+					every_owned_state = {
+						limit = { is_core_of = TIR }
+						add_core_of = SUT
+					}
 					release = VNT
-					release = TIR
+					release = SUT
 					release = FRI
 					1476 = { add_core_of = JUL }
 					1534 = { add_core_of = JUL }
@@ -1713,6 +1768,11 @@ on_actions = {
 					}
 				}
 				ITA = {
+					every_owned_state = {
+						limit = { is_core_of = TIR }
+						add_core_of = SUT
+					}
+					release = KRT
 					release = AOS
 					release = PIE
 					release = LIG
@@ -1722,6 +1782,7 @@ on_actions = {
 					2905 = { remove_claim_by = LDN add_core_of = LDN }
 					release = LDN
 					release = FIU
+					release = LBN
 					release = IST
 					release = TST
 					release = GOR
@@ -1764,26 +1825,44 @@ on_actions = {
 					LAZ = { give_guarantee = VAT }
 					release = LUC
 					release = CAL
-					every_owned_state = {
-						limit = {
-							OR = {
-								is_core_of = SLV
-								is_core_of = CRO
-								is_core_of = DLM
-							}
-						}
-						add_core_of = YUG
+					if = {
+						limit = { YUG = { owns_state = 743 } }
+						1485 = { add_core_of = YUG }
+						2901 = { add_core_of = YUG }
+						release = YUG
 					}
-					release = YUG
-					create_dynamic_country = {
-						original_tag = ITA
-						copy_tag = TIR
-						set_capital = { state = 683 }
-						ITA = { release = PREV }
-						every_state = { limit = { is_core_of = TIR NOT = { is_owned_by = PREV } } remove_core_of = PREV }
-						set_cosmetic_tag = TIR_south
+					else_if = {
+						limit = { SLV = { owns_state = 743 } }
+						release = SLV
+					}
+					if = {
+						limit = { YUG = { owns_state = 1988 } }
+						1476 = { add_core_of = YUG }
+						1534 = { add_core_of = YUG }
+						release = YUG
+					}
+					else_if = {
+						limit = { CRO = { owns_state = 1988 } }
+						release = CRO
+					}
+					else_if = {
+						limit = { DLM = { owns_state = 1988 } }
+						release = DLM
+					}
+				#	create_dynamic_country = {
+				#		original_tag = ITA
+				#		copy_tag = TIR
+				#		set_capital = { state = 683 }
+				#		ITA = { release = PREV }
+				#		every_state = { limit = { is_core_of = TIR NOT = { is_owned_by = PREV } } remove_core_of = PREV }
+				#		set_cosmetic_tag = TIR_south
 					#	set_country_flag = TIR_south_flag
+				#	}
+					every_owned_state = {
+						limit = { is_core_of = TIR }
+						add_core_of = SUT
 					}
+					release = SUT
 					transfer_units_fraction = {
 						target = LOM
 						size = 0.20
@@ -1842,6 +1921,108 @@ on_actions = {
 					}
 					release = LBA
 					release = GRE
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = aus_fragmentation_status
+						option = AUS_FRAGMENTED
+					}
+				}
+				AUS = {
+					release = VOR
+					release = TIR
+					release = SLZ
+					release = KRT
+					release = STR
+					release = BUR
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = bel_fragmentation_status
+						option = BEL_DISSOLVED
+					}
+				}
+				BEL = {
+					if = {
+						limit = { 460 = { is_owned_by = GER } }
+						release = GER
+					}
+					else_if = {
+						limit = { 460 = { is_owned_by = PRE } }
+						release = PRE
+					}
+					else_if = {
+						limit = { 460 = { is_owned_by = RHN } }
+						release = RHN
+					}
+					2969 = { add_core_of = FLA }
+					release = FLA
+					release = WLN
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = bel_fragmentation_status
+						option = BEL_PARTITIONED
+					}
+				}
+				BEL = {
+					if = {
+						limit = { 460 = { is_owned_by = GER } }
+						release = GER
+					}
+					else_if = {
+						limit = { 460 = { is_owned_by = PRE } }
+						release = PRE
+					}
+					else_if = {
+						limit = { 460 = { is_owned_by = RHN } }
+						release = RHN
+					}
+					2969 = { transfer_state_to = HOL add_core_of = HOL }
+					every_owned_state = {
+						limit = { is_core_of = FLA }
+						transfer_state_to = HOL
+					}
+					every_owned_state = {
+						limit = { is_core_of = WLN }
+						transfer_state_to = FRA
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = bel_fragmentation_status
+						option = BEL_FRAGMENTED
+					}
+				}
+				BEL = {
+					if = {
+						limit = { 460 = { is_owned_by = GER } }
+						release = GER
+					}
+					else_if = {
+						limit = { 460 = { is_owned_by = PRE } }
+						release = PRE
+					}
+					else_if = {
+						limit = { 460 = { is_owned_by = RHN } }
+						release = RHN
+					}
+					release = BRU
+					release = BRB
+					release = FLA
+					release = HNT
+					release = NMR
+					500 = { add_core_of = LUX }
+					2368 = { add_core_of = LUX }
+					release = LUX
 				}
 			}
 		}
