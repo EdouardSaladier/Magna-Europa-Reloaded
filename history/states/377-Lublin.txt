@@ -2,9 +2,7 @@
 state={
 	id=377
 	name="STATE_377"
-	provinces={
-		1631 1845 3195 4943 5461 6396 7467 8629 8999 12056 12094 12103 12124 12161 12173 12279 12295 12328 12431 12475 19913 
-	}
+
 	history={
 		owner = POL
 		add_core_of = POL
@@ -13,16 +11,20 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 		}
-        victory_points = {
-            19913 20 #Lublin
         }
 		victory_points = {
-			12328 2 #Kraśnik
+			19913 20 
 		}
 		victory_points = {
-			12103 2 #Puławy
+			12328 2 
 		}
-  	}
+		victory_points = {
+			12103 2 
+		}
+
+	provinces={
+		1631 1845 3195 4943 5461 5905 6396 7467 8629 8999 12024 12056 12094 12103 12124 12161 12173 12279 12295 12328 12431 12475 19913 
+	}
 	manpower=540300
 	buildings_max_level_factor=1.000
 	state_category=large_city

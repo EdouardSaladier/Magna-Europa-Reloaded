@@ -2,19 +2,23 @@
 state={
 	id=491
 	name="STATE_491"
-	provinces={
-		661 2486 7788 8502 12440 12518 12530 
-	}
+
 	history={
 		owner = POL
 		add_core_of = POL
 		victory_points = {
-			2486 2 #Tomaszów Lubelski
+			2486 2 
 		}
 		buildings = {
 			infrastructure = 3
+
 		}
-  	}
+
+	}
+
+	provinces={
+		661 2486 3114 7205 7788 8502 12348 12424 12440 12518 12530 12588 
+	}
 	manpower=251100
 	buildings_max_level_factor=1.000
 	state_category=city
