@@ -247,7 +247,6 @@ focus_tree = {
 				}
 				random_other_country = {
 					limit = {
-						impassable = yes
 						is_subject_of = ROOT
 						any_controlled_state = {
 							is_core_of = LBA
@@ -19977,7 +19976,7 @@ focus_tree = {
 						}
 						prioritize = { 550 559 448 450 271 } # ERITREA / SOMALILAND / TRIPOLI / BENGHASI / ADDIS ABABA
 						
-						else_if = {
+						if = {
 							limit = {
 								is_core_of = LBA
 							}

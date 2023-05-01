@@ -1462,7 +1462,18 @@ on_actions = {
 							limit = { country_exists = YUG }
 							add_core_of = YUG
 							ITA = { release = YUG }
-							else = { release = SLV if = { limit = { country_exists = DLM } release = DLM else = { release = CRO } } }
+							else = { 
+								ITA = { release = SLV }
+								if = { 
+									limit = { 
+										country_exists = DLM 
+									} 
+									ITA = { release = DLM } 
+									else = { 
+										ITA = { release = CRO }
+									} 
+								} 
+							}
 						}
 					}
 					
