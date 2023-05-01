@@ -384,13 +384,17 @@ GER_case_anton_category = {
 					}
 				}
 			}
-			all_state = {
-				VIC = { owns_state = 829 }
-				divisions_in_state = { state = 829 size < 1 }
+			if = {
+				limit = {
+					ITA = { owns_state = 829 }
+				}
+				ITA = { divisions_in_state = { state = 829 size < 1 } }
 			}
-			OR = {
-				ITA = { owns_state = 829 }
-				divisions_in_state = { state = 829 size < 1 }
+			if = {
+				limit = {
+					ITA = { owns_state = 829 }
+				}
+				ITA = { divisions_in_state = { state = 829 size < 1 } }
 			}
 		}
 
