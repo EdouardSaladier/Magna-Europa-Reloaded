@@ -110,7 +110,6 @@ focus_tree = {
 		id = ITA_ministry_of_italian_africa
 		icon = GFX_focus_ITA_ministry_of_italian_africa
 		prerequisite = { focus = ITA_italian_highways_bba }
-		prerequisite = { focus = ITA_ethiopian_war_logistics_bba }
 
 		x = -5
 		y = 1
@@ -14820,9 +14819,9 @@ focus_tree = {
 	focus = {
 		id = ITA_the_italian_liberation_war
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		x = -6
+		x = -12
 		y = 0
-		relative_position_id = ITA_ethiopian_war_logistics_bba
+		relative_position_id = ITA_italian_highways_bba
 		cost = 5
 		
 		allow_branch = {
@@ -15581,9 +15580,9 @@ focus_tree = {
  	focus = {
 		id = ITA_the_italian_social_republic
 		icon = GFX_goal_support_fascism
-		x = -6
+		x = -12
 		y = 0
-		relative_position_id = ITA_ethiopian_war_logistics_bba
+		relative_position_id = ITA_italian_highways_bba
 		cost = 5
 		
 		allow_branch = {
@@ -19992,14 +19991,15 @@ focus_tree = {
 									count = 1
 								}
 								add_to_variable = { ROOT.ITA_camelry_raised = 1 }
-							}
-							else = {
-								create_unit = {
-									division = "division_template = \"Banda Irregolare Libica\" start_experience_factor = 0.15 start_equipment_factor = 1.0"
-									owner = ROOT
-									count = 1
+								else = {
+									create_unit = {
+										division = "division_template = \"Banda Irregolare Libica\" start_experience_factor = 0.15 start_equipment_factor = 1.0"
+										owner = ROOT
+										count = 1
+									}
 								}
 							}
+							
 						}
 						else = {
 							create_unit = {
