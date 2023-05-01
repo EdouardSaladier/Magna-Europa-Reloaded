@@ -34,6 +34,7 @@ is_northern_italian = {
 		original_tag = RMG
 		original_tag = SMR
 		original_tag = VNT
+		original_tag = SUT
 	}
 }
 is_northern_italian_core = {
@@ -57,6 +58,8 @@ is_northern_italian_core = {
 		is_core_of = FRI
 		is_core_of = AOS
 		is_core_of = TST
+		is_core_of = SUT
+		is_core_of = JUL
 	}
 }
 is_central_italian = {
@@ -104,8 +107,8 @@ is_italian = {
 		original_tag = FIU
 		original_tag = LDN
 		original_tag = JUL
-		#original_tag = IST
-		#original_tag = GOR
+		original_tag = IST
+		original_tag = GOR
 	}
 }
 

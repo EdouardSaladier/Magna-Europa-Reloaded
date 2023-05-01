@@ -2136,6 +2136,168 @@ ITA_balance_of_power_category = {
 			}
 		}
 	}
+	
+	ITA_bop_promote_prince_umberto_fm = {
+		priority = 1116
+		icon = GFX_decision_generic_military
+		
+		allowed = { original_tag = ITA }
+		
+		visible = {
+			ITA_prince_umberto = { is_field_marshal = no is_country_leader = no }
+			ITA_has_rejected_monarchy = no
+			NOT = { has_country_flag = ITA_promoted_umberto_flag }
+		}
+		
+		available = {
+			ITA_prince_umberto = { is_field_marshal = no }
+		}
+		
+		ai_hint_pp_cost = 25
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		
+		complete_effect = {
+			ITA_prince_umberto = {
+				promote_leader = yes
+			}
+			hidden_effect = {
+				set_country_flag = ITA_promoted_umberto_flag
+			}
+			add_war_support = 0.1
+			if = {
+				limit = {
+					is_power_balance_side_active = {
+						id = ITA_power_balance
+						side = ITA_king_side
+					}
+				}
+				ITA_bop_medium_increase_effect = yes
+			}
+			else = { ITA_bop_medium_decrease_effect = yes }
+		}
+	}
+	
+	ITA_bop_promote_king_umberto_fm = {
+		priority = 1116
+		icon = GFX_decision_generic_monarchy
+		
+		allowed = { original_tag = ITA }
+		
+		visible = {
+			ITA_prince_umberto = { is_field_marshal = no is_country_leader = yes }
+			ITA_has_rejected_monarchy = no
+			NOT = { has_country_flag = ITA_promoted_umberto_flag }
+		}
+		
+		available = {
+			ITA_prince_umberto = { is_field_marshal = no }
+		}
+		
+		ai_hint_pp_cost = 25
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		
+		complete_effect = {
+			ITA_prince_umberto = {
+				promote_leader = yes
+			}
+			hidden_effect = {
+				set_country_flag = ITA_promoted_umberto_flag
+			}
+			add_war_support = 0.1
+			if = {
+				limit = {
+					is_power_balance_side_active = {
+						id = ITA_power_balance
+						side = ITA_king_umberto_side
+					}
+				}
+				ITA_bop_medium_increase_effect = yes
+			}
+			else = { ITA_bop_medium_decrease_effect = yes }
+		}
+	}
+	
+	ITA_bop_ve3_commander = {
+		priority = 1117
+		icon = GFX_decision_generic_monarchy
+		allowed = { original_tag = ITA }
+		visible = {
+			ITA_has_rejected_monarchy = no
+			ITA_prince_umberto = { is_country_leader = no }
+			NOT = { has_country_flag = ITA_ve3_field_command_flag }
+		}
+		
+		available = {	
+		}
+		ai_hint_pp_cost = 25
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		complete_effect = {
+			show_unit_leaders_tooltip = ITA_vittorio_emanuele_iii
+			hidden_effect = {
+				set_country_flag = ITA_ve3_field_command_flag
+			}
+			add_war_support = 0.1
+			if = {
+				limit = {
+					is_power_balance_side_active = {
+						id = ITA_power_balance
+						side = ITA_king_side
+					}
+				}
+				ITA_bop_high_increase_effect = yes
+			}
+			else = { ITA_bop_high_decrease_effect = yes }
+		}
+	}
+	
+	ITA_bop_ve3_abdicated_commander = {
+		priority = 1117
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = ITA }
+		visible = {
+			ITA_has_rejected_monarchy = no
+			ITA_prince_umberto = { is_country_leader = yes }
+			NOT = { has_country_flag = ITA_ve3_field_command_flag }
+		}
+		
+		available = {	
+		}
+		ai_hint_pp_cost = 25
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		complete_effect = {
+			show_unit_leaders_tooltip = ITA_vittorio_emanuele_iii
+			hidden_effect = {
+				set_country_flag = ITA_ve3_field_command_flag
+			}
+			add_war_support = 0.1
+			if = {
+				limit = {
+					is_power_balance_side_active = {
+						id = ITA_power_balance
+						side = ITA_king_umberto_side
+					}
+				}
+				ITA_bop_high_increase_effect = yes
+			}
+			else = { ITA_bop_high_decrease_effect = yes }
+		}
+	}
 
 	ITA_bop_military_parade = {
 		priority = 1115

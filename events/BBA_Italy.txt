@@ -3894,10 +3894,30 @@ country_event = {
 	# ok
 	option = { 
 		name = BBA_italy_bop.1.a
-
-		ITA_bop_medium_decrease_effect = yes
-		ITA_bop_increase_lost_core_modifier = yes
-		custom_effect_tooltip = ITA_losing_cores_tt
+		if = {
+			limit = { FROM.FROM = { OR = { has_state_category = megalopolis state = 876 } } } #Milan or Rome
+			ITA_bop_high_decrease_effect = yes
+			ITA_bop_increase_lost_core_modifier = yes
+		#	custom_effect_tooltip = ITA_losing_cores_tt
+		}
+		else_if = {
+			limit = { FROM.FROM = { OR = { has_state_category = metropolis has_state_category = large_city state = 742 } } } #Major cities and Venice
+			ITA_bop_medium_decrease_effect = yes
+			ITA_bop_increase_lost_core_modifier = yes
+		#	custom_effect_tooltip = ITA_losing_cores_tt
+		}
+		else_if = {
+			limit = { FROM.FROM = { OR = { has_state_category = city has_state_category = large_town } } }
+			ITA_bop_low_decrease_effect = yes
+			ITA_bop_increase_lost_core_modifier = yes
+		#	custom_effect_tooltip = ITA_losing_cores_tt
+		}
+		else_if = {
+			limit = { FROM.FROM = { OR = { has_state_category = town has_state_category = rural } } }
+			ITA_bop_very_low_decrease_effect = yes
+			ITA_bop_increase_lost_core_modifier = yes
+		#	custom_effect_tooltip = ITA_losing_cores_tt
+		}
 	}
 }
 
@@ -4012,6 +4032,7 @@ country_event = {
 		}
 
 		hidden_effect = {
+			if = { limit = { has_cosmetic_tag = ITA_neutrality } drop_cosmetic_tag = yes }
 			ITA_set_special_characters_as_fascist_effect = yes
 			ITA_start_civil_war_effect = yes
 			complete_national_focus = ITA_the_italian_social_republic
@@ -4073,6 +4094,7 @@ country_event = {
 		}
 
 		hidden_effect = {
+			if = { limit = { has_cosmetic_tag = ITA_neutrality } drop_cosmetic_tag = yes }
 			ITA_set_special_characters_as_monarchist_effect = yes #Should be enough for the split (Commies + Democ + Monarchists together)
 			ITA_start_civil_war_effect = yes
 			RDS = { change_tag_from = ROOT }

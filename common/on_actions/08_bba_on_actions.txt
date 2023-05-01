@@ -618,23 +618,34 @@ on_actions = {
 						is_owned_by = ITA
 					}
 				}
-				if = { #It's a core -> Non mi piazze!
-					limit = {
-						FROM.FROM = {
-							is_core_of = ITA
-						}
-					}
+				if = { #It's a core -> Non mi piace!
+					limit = { FROM.FROM = { is_core_of = ITA } }
 					if = { #FIRST TIME LOSING A CORE PLAYER GETS EVENT (Effects are handled there)
-						limit = {
-							FROM = { check_variable = { ITA_lost_core = 0 } }
-						}
+						limit = { FROM = { check_variable = { ITA_lost_core = 0 } } }
 						FROM = {
 							set_variable = { ITA_lost_core = FROM.FROM }
 							country_event = { id = BBA_italy_bop.1 hours = 1 }
 						}
 					}
-					else = { #Further cores lost will not trigger event
+					#Following times won't trigger the event
+					else_if = { #It's a big one. MAMMA MIA!
+						limit = { FROM.FROM = { OR = { has_state_category = megalopolis state = 876 } } } #Milan or Rome
+						ITA_bop_high_decrease_effect = yes
+						ITA_bop_increase_lost_core_modifier = yes
+					}
+					else_if = { #Oh shit it's a big city!
+						limit = { FROM.FROM = { OR = { has_state_category = metropolis has_state_category = large_city state = 742 } } } #Major cities and Venice
 						ITA_bop_medium_decrease_effect = yes
+						ITA_bop_increase_lost_core_modifier = yes
+					}
+					else_if = { #This is salvageable.
+						limit = { FROM.FROM = { OR = { has_state_category = city has_state_category = large_town } } }
+						ITA_bop_low_decrease_effect = yes
+						ITA_bop_increase_lost_core_modifier = yes
+					}
+					else_if = { #Could've been worse. Let's recover this.
+						limit = { FROM.FROM = { OR = {  has_state_category = town has_state_category = rural } }}
+						ITA_bop_very_low_decrease_effect = yes
 						ITA_bop_increase_lost_core_modifier = yes
 					}
 					#log = "-20% BoP due to losing core [FROM.FROM.GetName]"

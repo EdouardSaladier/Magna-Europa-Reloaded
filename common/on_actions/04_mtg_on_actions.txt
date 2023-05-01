@@ -1456,27 +1456,44 @@ on_actions = {
 							}
 						}
 					}
-					every_owned_state = {
-						limit = { OR = { is_core_of = SLV is_core_of = CRO } }
+					TUS = {
 						if = {
-							limit = { country_exists = YUG }
-							add_core_of = YUG
-							ITA = { release = YUG }
-							else = { 
-								ITA = { release = SLV }
-								if = { 
-									limit = { 
-										country_exists = DLM 
-									} 
-									ITA = { release = DLM } 
-									else = { 
-										ITA = { release = CRO }
-									} 
-								} 
+							limit = { has_dlc = "No Step Back" }
+							set_autonomy = { target = LCC autonomy_state = autonomy_personal_union }
+							else_if = {
+								limit = { has_dlc = "Together for Victory" }
+								set_autonomy = { target = LCC autonomy_state = autonomy_dominion }
+							}
+							else = {
+								puppet = LCC
+							}
+							LCC = {
+								create_country_leader = {
+									name = "Pietro Ferdinando d'Asburgo-Lorena"
+									desc = ""
+									picture = "gfx/leaders/TUS/Portrait_TUS_Pietro_Ferdinando.png"
+									expire = "1960.1.1"
+									ideology = despotism
+									traits = {}
+								}
 							}
 						}
 					}
-					
+					every_owned_state = {
+						limit = { OR = { is_core_of = SLV is_core_of = CRO } }
+						if = {
+							limit = { has_game_rule = { rule = yug_fragmentation_status option = DEFAULT } }
+							add_core_of = YUG
+							ITA = { release = YUG }
+						}
+						else_if = {
+							limit = { has_game_rule = { rule = yug_fragmentation_status option = YUG_FRAGMENTED } }
+							ITA = { release = SLV release = CRO }
+						}
+						else = {
+							ITA = { release = SLV release = DLM }
+						}
+					}
 					every_state = {
 						limit = { is_owned_by = ITA }
 						transfer_state_to = VAT
@@ -1618,10 +1635,16 @@ on_actions = {
 					every_owned_state = {
 						limit = { OR = { is_core_of = SLV is_core_of = CRO } }
 						if = {
-							limit = { country_exists = YUG }
+							limit = { has_game_rule = { rule = yug_fragmentation_status option = DEFAULT } }
 							add_core_of = YUG
 							ITA = { release = YUG }
-							else = { release = SLV if = { limit = { country_exists = DLM } release = DLM else = { release = CRO } } }
+						}
+						else_if = {
+							limit = { has_game_rule = { rule = yug_fragmentation_status option = YUG_FRAGMENTED } }
+							ITA = { release = SLV release = CRO }
+						}
+						else = {
+							ITA = { release = SLV release = DLM }
 						}
 					}
 					every_owned_state = {
@@ -1803,7 +1826,7 @@ on_actions = {
 					release = LOM
 					release = BLG
 					release = TUS
-					TUS = { set_cosmetic_tag = FLO set_country_flag = TUS_florence_flag release = LCC release = PIS release = SNA }
+					TUS = { set_cosmetic_tag = FLO set_country_flag = TUS_florence_flag release = LCC release = PIS release = SNA set_politics = { ruling_party = democratic } add_popularity = { ideology = democratic popularity = 0.4 } }
 					release = MCR
 					release = MDN
 				#	MDN = {
@@ -1959,15 +1982,15 @@ on_actions = {
 				}
 				BEL = {
 					if = {
-						limit = { 460 = { is_owned_by = GER } }
+						limit = { has_game_rule = { rule = ger_fragmentation_status option = DEFAULT } }
+						485 = { add_core_of = GER set_demilitarized_zone = yes }
 						release = GER
 					}
 					else_if = {
-						limit = { 460 = { is_owned_by = PRE } }
+						limit = { has_game_rule = { rule = ger_fragmentation_status option = GER_1870_FRAGMENTED } }
 						release = PRE
 					}
-					else_if = {
-						limit = { 460 = { is_owned_by = RHN } }
+					else = {
 						release = RHN
 					}
 					2969 = { add_core_of = FLA }
@@ -1984,15 +2007,15 @@ on_actions = {
 				}
 				BEL = {
 					if = {
-						limit = { 460 = { is_owned_by = GER } }
+						limit = { has_game_rule = { rule = ger_fragmentation_status option = DEFAULT } }
+						485 = { add_core_of = GER set_demilitarized_zone = yes }
 						release = GER
 					}
 					else_if = {
-						limit = { 460 = { is_owned_by = PRE } }
+						limit = { has_game_rule = { rule = ger_fragmentation_status option = GER_1870_FRAGMENTED } }
 						release = PRE
 					}
-					else_if = {
-						limit = { 460 = { is_owned_by = RHN } }
+					else = {
 						release = RHN
 					}
 					2969 = { transfer_state_to = HOL add_core_of = HOL }
@@ -2015,15 +2038,15 @@ on_actions = {
 				}
 				BEL = {
 					if = {
-						limit = { 460 = { is_owned_by = GER } }
+						limit = { has_game_rule = { rule = ger_fragmentation_status option = DEFAULT } }
+						485 = { add_core_of = GER set_demilitarized_zone = yes }
 						release = GER
 					}
 					else_if = {
-						limit = { 460 = { is_owned_by = PRE } }
+						limit = { has_game_rule = { rule = ger_fragmentation_status option = GER_1870_FRAGMENTED } }
 						release = PRE
 					}
-					else_if = {
-						limit = { 460 = { is_owned_by = RHN } }
+					else = {
 						release = RHN
 					}
 					release = BRU
@@ -2031,6 +2054,8 @@ on_actions = {
 					release = FLA
 					release = HNT
 					release = NMR
+					release = LIM
+					release = LEG
 					500 = { add_core_of = LUX }
 					2368 = { add_core_of = LUX }
 					release = LUX

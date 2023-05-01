@@ -134,6 +134,16 @@ characters = {
 			expire = "1965.1.1.1"
 			id = -1
 		}
+		
+		field_marshal = {
+			traits = { trait_ITA_monarchist trait_savoy trait_mountaineer trait_cautious career_officer inspirational_leader politically_connected old_guard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			visible = { has_country_flag = ITA_ve3_field_command_flag }
+		}
 	}
 
 	ITA_benedetto_croce={
@@ -292,7 +302,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = 0
-			#visible = { has_government = fascism }
+			visible = { NOT = { has_government = communism } }
 		}
 	}
 	ITA_gabriele_nasci={
@@ -310,6 +320,7 @@ characters = {
 			planning_skill=2
 			logistics_skill=1
 			legacy_id=-1
+			visible = { NOT = { has_government = communism } }
 		}
 	}
 	
@@ -497,9 +508,7 @@ characters = {
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
-			visible = {
-				has_country_flag = ITA_leone_del_sahara_flag
-			}
+			visible = { has_country_flag = ITA_leone_del_sahara_flag }
 		}
 	}
 
@@ -520,6 +529,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
+			NOT = { has_government = communism }
 		}
 	}
 
@@ -561,6 +571,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
+			visible = { NOT = { has_government = communism } }
 		}
 	}
 
@@ -621,7 +632,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_government = fascism
+				NOT = { has_government = communism }
 			}
 			traits = {
 				army_infantry_2
@@ -640,7 +651,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { has_government = fascism }
+			visible = { NOT = { has_government = communism } }
 		}
 	}
 
@@ -702,6 +713,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 1
 			legacy_id = 0
+			visible = { NOT = { has_government = communism } }
 		}
 	}
 
@@ -722,7 +734,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { has_government = fascism }
+			visible = { NOT = { has_government = communism } }
 		}
 	}
 
@@ -805,7 +817,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				NOT = { has_government = communism }
+				ITA_has_rejected_monarchy = no
 				has_completed_focus = ITA_paramilitary_training
 			}
 		}
@@ -828,7 +840,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_government = communism } }
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 	}
 
@@ -849,7 +861,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_government = communism } }
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 	}
 
@@ -972,6 +984,49 @@ characters = {
 			legacy_id = 0
 			visible = { has_completed_focus = ITA_comandante_diavolo }
 		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_amedeo_guillet
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+			available = {
+			}
+			traits = {
+				compassionate_gentleman
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1.000
+			}
+			visible = {
+				ITA_has_rejected_monarchy = yes
+				NOT = { has_government = communism }
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = ITA_amedeo_guillet
+			ledger = army
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+			available = {
+			}
+			traits = {
+				army_cavalry_3 # Cavalry commander
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1.000
+			}
+			visible = {
+				has_completed_focus = ITA_comandante_diavolo
+				ITA_has_rejected_monarchy = no
+			}
+		}
 	}
 
 	ITA_annibale_bergonzoli = {
@@ -1060,7 +1115,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { has_completed_focus = ITA_decima_flottiglia_mas }
+			visible = { ITA_government_is_really_fascist = yes has_completed_focus = ITA_decima_flottiglia_mas }
 		}
 	}
 
@@ -1092,6 +1147,12 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			available = {
+				NOT = {
+					has_government = communism
+					tag = RSI
+				}
+			}
 			traits = {
 				navy_chief_decisive_battle_1
 			}
@@ -1109,6 +1170,7 @@ characters = {
 			maneuvering_skill = 3
 			coordination_skill = 3
 			legacy_id = 0
+			visible = { NOT = { has_government = communism tag = RSI } }
 		}
 	}
 
@@ -1128,6 +1190,9 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			available = {
+				NOT = { has_government = communism }
+			}
 			traits = {
 				navy_anti_submarine_1
 			}
@@ -1145,6 +1210,7 @@ characters = {
 			maneuvering_skill = 3
 			coordination_skill = 2
 			legacy_id = 0
+			visible = { NOT = { has_government = communism } }
 		}
 	}
 
@@ -1168,7 +1234,7 @@ characters = {
 			maneuvering_skill = 2
 			coordination_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_government = communism } }
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 	}
 
@@ -1187,6 +1253,7 @@ characters = {
 			defense_skill = 1
 			maneuvering_skill = 2
 			coordination_skill = 2
+			visible = { NOT = { has_government = communism } }
 		}
 	}
 
@@ -1207,6 +1274,7 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			available = { ITA_has_rejected_monarchy = no }
 			traits = {
 				grand_fleet_proponent
 			}
@@ -1215,11 +1283,12 @@ characters = {
 		navy_leader = {
 			traits = { aviation_enthusiast blockade_runner }
 			skill = 3
-			attack_skill = 2
+			attack_skill = 3
 			defense_skill = 2
 			maneuvering_skill = 4
-			coordination_skill = 2
+			coordination_skill = 3
 			legacy_id = 0
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 	}
 
@@ -1239,6 +1308,9 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			available = {
+				ITA_has_rejected_monarchy = no
+			}
 			traits = {
 				navy_capital_ship_2
 			}
@@ -1256,6 +1328,7 @@ characters = {
 			maneuvering_skill = 2
 			coordination_skill = 1
 			legacy_id = 0
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 	}
 
@@ -1277,7 +1350,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_government = fascism
+				NOT = { has_government = communism }
 			}
 			traits = { naval_theorist }
 		}
@@ -1290,7 +1363,7 @@ characters = {
 			maneuvering_skill = 3
 			coordination_skill = 1
 			legacy_id = 0
-			visible = { has_government = fascism }
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 	}
 
@@ -1312,8 +1385,8 @@ characters = {
 			coordination_skill = 1
 			legacy_id = 0
 			visible = {
-				#has_government = fascism
-				#has_completed_focus = ITA_supermarina #Maybe Escort focus? Or maybe available from start
+				has_government = fascism
+				has_completed_focus = ITA_supermarina #Maybe Escort focus? Or maybe available from start
 			} 
 		}
 	}
@@ -1332,7 +1405,7 @@ characters = {
 			defense_skill=3
 			maneuvering_skill=4
 			coordination_skill=3
-			visible = { NOT = { has_government = communism } }
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 	}
 	ITA_giovanni_galati={
@@ -1350,6 +1423,7 @@ characters = {
 			maneuvering_skill=2
 			coordination_skill=3
 			legacy_id=-1
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 	}
 	ITA_angelo_parona={
@@ -1367,6 +1441,7 @@ characters = {
 			maneuvering_skill=2
 			coordination_skill=3
 			legacy_id=-1
+			visible = { NOT = { has_government = communism tag = RSI } }
 		}
 	}
 	ITA_bruno_brivonesi={
@@ -1384,6 +1459,7 @@ characters = {
 			maneuvering_skill=3
 			coordination_skill=3
 			legacy_id=-1
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 	}
 	ITA_bruto_brivonesi={
@@ -1401,6 +1477,7 @@ characters = {
 			maneuvering_skill=2
 			coordination_skill=1
 			legacy_id=-1
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 	}
 	ITA_antonio_legnani={
@@ -1418,7 +1495,7 @@ characters = {
 			maneuvering_skill=1
 			coordination_skill=1
 			legacy_id=-1
-			visible = { has_government = fascism }
+			visible = { ITA_government_is_really_fascist = yes }
 		}
 	}
 	ITA_carlo_fecia_cossato={
@@ -1436,6 +1513,7 @@ characters = {
 			maneuvering_skill=4
 			coordination_skill=3
 			legacy_id=-1
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 	}
 	
@@ -1454,7 +1532,7 @@ characters = {
 			maneuvering_skill=1
 			coordination_skill=1
 			legacy_id=-1
-			visible = { has_government = fascism }
+			visible = { ITA_government_is_really_fascist = yes }
 		}
 	}
 
@@ -1602,6 +1680,7 @@ characters = {
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
+			visible = { has_completed_focus = ITA_a_bandits_war }
 		}
 	}
 
@@ -1649,7 +1728,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_government = fascism
+				ITA_government_is_really_fascist = yes
 			}
 			traits = {
 				navy_chief_naval_aviation_1
@@ -1679,7 +1758,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
+				NOT = { has_government = communism tag = RSI }
 			}
 			traits = {
 				navy_chief_commerce_raiding_2
@@ -1697,6 +1776,7 @@ characters = {
 			maneuvering_skill=1
 			coordination_skill=1
 			legacy_id=-1
+			visible = { NOT = { has_government = communism tag = RSI } }
 		}
 	}
 	ITA_antonino_toscano={
@@ -1731,6 +1811,7 @@ characters = {
 			maneuvering_skill=1
 			coordination_skill=1
 			legacy_id=-1
+			visible = { NOT = { has_government = communism tag = RSI } }
 		}
 	}
 
@@ -2221,7 +2302,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				NOT = { has_government = communism }
 			}
 			traits = {
 				army_regrouping_2
@@ -2240,7 +2321,7 @@ characters = {
 			}
 			available = {
 				has_intelligence_agency = yes
-				ITA_government_is_really_fascist = yes
+				NOT = { has_government = communism }
 			}
 			traits = {
 				head_of_intelligence 
@@ -2260,7 +2341,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { politically_connected }
+			traits = { politically_connected career_officer harsh_leader }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -2353,6 +2434,7 @@ characters = {
 			defense_skill=4
 			maneuvering_skill=3
 			coordination_skill=4
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 
 		advisor = {
@@ -2362,7 +2444,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
+				NOT = { has_government = communism tag = RSI }
 			}
 			traits = {
 				quartermaster_general 
@@ -2479,12 +2561,12 @@ characters = {
 			available = {
 				has_government = fascism
 				NOT = { has_completed_focus = ITA_pact_of_steel }
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					NOT = { has_completed_focus = ITA_revoke_the_acerbo_law }
-				}
+			#	if = {
+			#		limit = {
+			#			has_dlc = "By Blood Alone"
+			#		}
+			#		NOT = { has_completed_focus = ITA_revoke_the_acerbo_law }
+			#	}
 			}
 			traits = {
 				financial_expert
@@ -2900,10 +2982,10 @@ characters = {
 			}
 			available = {
 				NOT = { has_completed_focus = ITA_pact_of_steel }
-				OR = {
-					has_completed_focus = ITA_meritocracy
-					has_completed_focus = ITA_bring_back_exiled_intellectuals
-				}
+			#	OR = {
+			#		has_completed_focus = ITA_meritocracy
+			#		has_completed_focus = ITA_bring_back_exiled_intellectuals
+			#	}
 			}
 			research_bonus = {
 				nuclear = 0.15
@@ -3573,7 +3655,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { militias_officer infantry_officer } #SCW + Partisan Commander
+			traits = { politically_connected militias_officer infantry_officer } #SCW + Partisan Commander
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1

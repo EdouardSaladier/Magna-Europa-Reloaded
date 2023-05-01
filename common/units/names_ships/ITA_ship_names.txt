@@ -269,8 +269,11 @@ ITA_EMPERORS = {
 	
 	for_countries = { ITA }
 	
+	type = ship
+	
 	unique = {
-		"Ottaviano Augusto" "Tiberio" "Caligola" "Claudio" "Flavio Vespasiano" "Tito" "Domiziano" "Galba" "Traiano" "Adriano" "Antonino Pio" "Marco Aurelio" "Lucio Vero" "Settimio Severo" "Aureliano" "Diocleziano" "Costantino" "Teodosio" "Maggioriano" "Giustiniano"
+		"Ottaviano Augusto" "Claudio Tiberio" "Caligola" "Claudio" "Flavio Vespasiano" "Tito" "Domiziano" "Galba" "Ulpio Traiano" "Adriano" "Antonino Pio"
+		"Marco Aurelio" "Lucio Vero" "Settimio Severo" "Domizio Aureliano" "Valerio Diocleziano" "Aurelio Costantino" "Teodosio Augusto" "Valerio Maggioriano" "Flavio Giustiniano"
 	}
 }
 

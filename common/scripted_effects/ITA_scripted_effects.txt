@@ -2179,14 +2179,22 @@ ITA_set_up_character_cw_flags_effect = { #Using Unit leader flags when necessary
 		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 		set_character_flag = ITA_cw_character_fascist_side_flag
 	}
-	ITA_ettore_bastico = {
-		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
-		set_character_flag = ITA_cw_character_fascist_side_flag
-	}
 	ITA_alfredo_guzzoni = {
 		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 		set_character_flag = ITA_cw_character_fascist_side_flag
 	}
+#	ITA_tito_agosti = {
+#		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+#		set_character_flag = ITA_cw_character_fascist_side_flag
+#	}
+#	ITA_mario_carloni = {
+#		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+#		set_character_flag = ITA_cw_character_fascist_side_flag
+#	}
+#	ITA_Enzo_Galbiati = {
+#		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+#		set_character_flag = ITA_cw_character_fascist_side_flag
+#	}
 	ITA_pietro_pintor = {
 		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 		set_character_flag = ITA_cw_character_fascist_side_flag
@@ -2199,15 +2207,15 @@ ITA_set_up_character_cw_flags_effect = { #Using Unit leader flags when necessary
 		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 		set_character_flag = ITA_cw_character_fascist_side_flag
 	}
-	ITA_alessandro_pirzio_biroli = {
-		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
-		set_character_flag = ITA_cw_character_fascist_side_flag
-	}
 	ITA_ettore_baldassarre = {
 		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 		set_character_flag = ITA_cw_character_fascist_side_flag
 	}
 	ITA_italo_balbo = {
+		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+		set_character_flag = ITA_cw_character_fascist_side_flag
+	}
+	ITA_gastone_gambara = {
 		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 		set_character_flag = ITA_cw_character_fascist_side_flag
 	}
@@ -2218,6 +2226,10 @@ ITA_set_up_character_cw_flags_effect = { #Using Unit leader flags when necessary
 		set_character_flag = ITA_cw_character_monarchist_side_flag
 	}
 	ITA_emilio_de_bono = {
+		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+		set_character_flag = ITA_cw_character_monarchist_side_flag
+	}
+	ITA_alessandro_pirzio_biroli = {
 		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
 		set_character_flag = ITA_cw_character_monarchist_side_flag
 	}
@@ -2281,6 +2293,10 @@ ITA_set_up_character_cw_flags_effect = { #Using Unit leader flags when necessary
 		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
 		set_character_flag = ITA_cw_character_antifascist_side_flag
 	}
+	ITA_ettore_bastico = {
+		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
 	#ITA_giovanni_duca = { #Goes with player
 	#
 	#}
@@ -2334,7 +2350,7 @@ ITA_set_up_character_cw_flags_effect = { #Using Unit leader flags when necessary
 
 	#ADMIRALS
 	#Fascist
-	ITA_angelo_iachino = {
+	ITA_antonio_legnani = {
 		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 		set_character_flag = ITA_cw_character_fascist_side_flag
 	}
@@ -2342,12 +2358,48 @@ ITA_set_up_character_cw_flags_effect = { #Using Unit leader flags when necessary
 		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 		set_character_flag = ITA_cw_character_fascist_side_flag
 	}
-	#ITA_junio_valerio_borghese = { #Goes with player
-	#	set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
-	#	set_character_flag = ITA_cw_character_fascist_side_flag
-	#}
+	ITA_junio_valerio_borghese = {
+		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+		set_character_flag = ITA_cw_character_fascist_side_flag
+	}
+	ITA_mario_falangola = {
+		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+		set_character_flag = ITA_cw_character_fascist_side_flag
+	}
 
 	#Monarchist
+	ITA_ferdinando = {
+		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+		set_character_flag = ITA_cw_character_monarchist_side_flag
+	}
+	ITA_romeo_oliva = {
+		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+		set_character_flag = ITA_cw_character_monarchist_side_flag
+	}
+	ITA_paolo_thaon_di_revel = {
+		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+		set_character_flag = ITA_cw_character_monarchist_side_flag
+	}
+	ITA_giovanni_galati = {
+		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+		set_character_flag = ITA_cw_character_monarchist_side_flag
+	}
+	ITA_angelo_parona = {
+		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+		set_character_flag = ITA_cw_character_monarchist_side_flag
+	}
+	ITA_bruno_brivonesi = {
+		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+		set_character_flag = ITA_cw_character_monarchist_side_flag
+	}
+	ITA_bruto_brivonesi = {
+		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+		set_character_flag = ITA_cw_character_monarchist_side_flag
+	}
+	ITA_carlo_fecia_cossato = {
+		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+		set_character_flag = ITA_cw_character_monarchist_side_flag
+	}
 	ITA_prince_aimone = {
 		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
 		set_character_flag = ITA_cw_character_monarchist_side_flag
@@ -2355,7 +2407,11 @@ ITA_set_up_character_cw_flags_effect = { #Using Unit leader flags when necessary
 	ITA_alberto_da_zara = {
 		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
 		set_character_flag = ITA_cw_character_monarchist_side_flag
-	}	
+	}
+	ITA_angelo_iachino = {
+		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+		set_character_flag = ITA_cw_character_monarchist_side_flag
+	}
 	ITA_giuseppe_fioravanzo = {
 		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
 		set_character_flag = ITA_cw_character_monarchist_side_flag
@@ -2367,6 +2423,10 @@ ITA_set_up_character_cw_flags_effect = { #Using Unit leader flags when necessary
 
 	#Anti-Fascsit
 	ITA_inigo_campioni = {
+		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+	ITA_luigi_sansonetti = {
 		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
 		set_character_flag = ITA_cw_character_antifascist_side_flag
 	}
@@ -2562,22 +2622,22 @@ ITA_set_up_character_cw_flags_effect = { #Using Unit leader flags when necessary
 
 ITA_set_special_characters_as_fascist_effect = {
 	#UNIT LEADERS
-	ITA_giovanni_messe = { #Goes with player
-		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
-		set_character_flag = ITA_cw_character_fascist_side_flag
-	}
+#	ITA_giovanni_messe = { #Goes with player
+#		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+#		set_character_flag = ITA_cw_character_fascist_side_flag
+#	}
 	ITA_giovanni_duca = { #Goes with player
 		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 		set_character_flag = ITA_cw_character_fascist_side_flag
 	}
-	ITA_amedeo_guillet = {
-		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
-		set_character_flag = ITA_cw_character_fascist_side_flag
-	}
-	ITA_annibale_bergonzoli = {
-		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
-		set_character_flag = ITA_cw_character_fascist_side_flag
-	}
+#	ITA_amedeo_guillet = {
+#		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+#		set_character_flag = ITA_cw_character_fascist_side_flag
+#	}
+#	ITA_annibale_bergonzoli = {
+#		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+#		set_character_flag = ITA_cw_character_fascist_side_flag
+#	}
 	ITA_hamid_idris_awate = {
 		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 		set_character_flag = ITA_cw_character_fascist_side_flag
@@ -2677,6 +2737,10 @@ ITA_set_special_characters_as_monarchist_effect = {
 		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
 		set_character_flag = ITA_cw_character_monarchist_side_flag
 	}
+	ITA_amedeo_savoy_aosta = {
+		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+		set_character_flag = ITA_cw_character_monarchist_side_flag
+	}
 	ITA_amedeo_guillet = {
 		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
 		set_character_flag = ITA_cw_character_monarchist_side_flag
@@ -2693,10 +2757,10 @@ ITA_set_special_characters_as_monarchist_effect = {
 		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
 		set_character_flag = ITA_cw_character_monarchist_side_flag
 	}
-	ITA_junio_valerio_borghese = { #Goes with player
-		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
-		set_character_flag = ITA_cw_character_monarchist_side_flag
-	}
+#	ITA_junio_valerio_borghese = { #Goes with player
+#		set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+#		set_character_flag = ITA_cw_character_monarchist_side_flag
+#	}
 
 	#CHARACTERS
 	ITA_gaetano_crocco = { #Goes with player
@@ -2781,10 +2845,10 @@ ITA_set_special_characters_as_antifascists_effect = {
 		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
 		set_character_flag = ITA_cw_character_antifascist_side_flag
 	}
-	ITA_junio_valerio_borghese = { #Goes with player
-		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
-		set_character_flag = ITA_cw_character_antifascist_side_flag
-	}
+#	ITA_junio_valerio_borghese = { #Goes with player
+#		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+#		set_character_flag = ITA_cw_character_antifascist_side_flag
+#	}
 
 	#CHARACTERS
 	ITA_gaetano_crocco = { #Goes with player
@@ -2795,6 +2859,7 @@ ITA_set_special_characters_as_antifascists_effect = {
 	}
 	ITA_alberto_pariani = { #Goes with player
 		set_character_flag = ITA_cw_character_antifascist_side_flag
+		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
 	}
 	ITA_francesco_pricolo = { #Goes with player
 		set_character_flag = ITA_cw_character_antifascist_side_flag
@@ -2819,7 +2884,7 @@ ITA_civil_war_deal_with_militias = {
 		}
 		capital_scope = {
 			create_unit = {
-				division = "division_template = \"Camicie Rosse\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+				division = "division_template = \"Guardie Rosse\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 				owner = ROOT
 				count = 3
 			}
@@ -2829,7 +2894,7 @@ ITA_civil_war_deal_with_militias = {
 				is_controlled_by = ROOT
 			}
 			create_unit = {
-				division = "division_template = \"Camicie Rosse\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+				division = "division_template = \"Guardie Rosse\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 				owner = ROOT
 				count = 2
 			}
@@ -6175,7 +6240,7 @@ ITA_add_hand_of_god_sh_tank_template_and_production = {
 ### TEMPLATES
 ITA_add_redshirts_div_template = {
 	division_template = { #Redshirts
-		name = "Camicie Rosse"
+		name = "Guardie Rosse"
 		division_names_group = ITA_INF_02 #TODO_Manu
 		override_model = ITA_militia_alt_0_entity
 		template_counter = 68
