@@ -160,7 +160,16 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			
+			random_other_country = {
+				limit = {
+					original_tag = GER
+					has_government = fascism
+				}
+				save_event_target_as = fascist_germany_civil_war
+				every_unit_leader = {
+					set_nationality = GER
+				}
+			}
 			GER = {
 				every_unit_leader = {
 					limit = {
