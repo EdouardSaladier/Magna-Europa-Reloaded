@@ -548,6 +548,26 @@ SOV_pp_spending = {
 	}
 }
 
+SOV_pp_spending_2 = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = -9999
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -9999
+	}
+}
+
 SOV_decision_pp_spending = {
 	allowed = {
 		original_tag = SOV
