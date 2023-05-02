@@ -18,8 +18,10 @@ ideas = {
 			modifier = {
 				army_morale_factor = 0.25
 				attrition = -0.1
+				winter_attrition_factor = -0.1
 				army_core_attack_factor = 0.2
 				army_core_defence_factor = 0.2
+				ai_get_ally_desire_factor = -100
 			}
 		}
 
@@ -42,8 +44,10 @@ ideas = {
 			modifier = {
 				conscription = 0.03
 				mobilization_speed = 0.85
+				defensive_war_stability_factor = 0.2
 				winter_attrition_factor = -0.1
 				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
 			}
 		}
 	}
