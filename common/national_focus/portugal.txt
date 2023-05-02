@@ -5312,6 +5312,7 @@ focus_tree = {
 	focus = {
 		id = POR_remember_olivenca
 		available = {
+			has_global_flag = scw_over
 		}
 
 		ai_will_do = {
@@ -5344,16 +5345,15 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POR_remember_olivenca"
-			add_state_claim = 2778
-
+			custom_effect_tooltip = POR_remember_olivenca_tt
 			hidden_effect = {
 				random_country = {
 					limit = { controls_state = 2778 }
 					ROOT = {
-						add_ai_strategy = {
-							type = prepare_for_war
-							id = PREV
-							value = 100
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							generator = { 2778 }
 						}
 					}
 				}
