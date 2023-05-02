@@ -317,8 +317,7 @@ country_event = {
 				add_claim_by = SOV
 			}
 		}
-		add_ideas = export_focus
-		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } }
+		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } remove_opinion_modifier = { target = GER modifier = pre_sov_ger_treaty_trade } }
 		GER = {
 			country_event = { days = 1 id = germany.12 }
 			effect_tooltip = {
@@ -380,6 +379,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = { hours = 6 id = news.32 }
+			remove_opinion_modifier = { target = SOV modifier = pre_sov_ger_treaty_trade } #added here as well because not sure which one is supposed to be scope and which target
 		}
 	}
 }

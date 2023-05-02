@@ -119,6 +119,11 @@ opinion_modifiers = {
 		trade = yes
 		value = 10
 	}
+	
+	pre_sov_ger_treaty_trade = {
+		trade = yes
+		value = -100
+	}
 
 	SOV_FRA_join_comintern_reject = {		
 		value = -30
