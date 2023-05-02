@@ -518,6 +518,8 @@ MTG_naval_treaties = {
 			always = no
 		}
 		available = {
+			NOT = { tag = ENG }
+			NOT = { tag = USA }
 			if = {
 				limit = { ENG = { has_naval_treaty_trigger = yes } }
 				naval_strength_comparison = {
@@ -545,8 +547,6 @@ MTG_naval_treaties = {
 					}
 				}
 			}
-			NOT = { tag = ENG }
-			NOT = { tag = USA }
 			else_if = {
 				limit = {
 					NOT = {
