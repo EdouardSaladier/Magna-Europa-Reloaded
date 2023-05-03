@@ -3912,6 +3912,7 @@ leader_traits = {
 	propaganda_expert = {
 		sprite = 13
 		war_support_factor = 0.10
+		weekly_bombing_war_support = 0.001
 
 		ai_will_do = {
 			factor = 1

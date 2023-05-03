@@ -362,8 +362,8 @@ set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index 
 set_variable = { SOV_default_propaganda_campaign_duration = 180 } #Duration days for propaganda campaigns
 set_variable = { SOV_default_propaganda_campaign_cooldown = 90 } #Days of cooldown after a Propaganda Campaign has been finished.
 set_variable = { SOV_default_propaganda_campaign_old_days = 150 } #A propaganda poster will age (change GFX) after this amount of days have passed since the campaign was activated
-set_variable = { SOV_propaganda_cost = 15 } #Used not only to set the rest of propaganda campaign costs here, but also used to increase each campaign cost after being activated
-set_variable = { SOV_propaganda_cost_increase = 2 } #This will multiply the regular propaganda_cost each time a propaganda campaign is activated, so that it's cost is increased
+set_variable = { SOV_propaganda_cost = 10 } #Used not only to set the rest of propaganda campaign costs here, but also used to increase each campaign cost after being activated
+set_variable = { SOV_propaganda_cost_increase = 1.5 } #This will multiply the regular propaganda_cost each time a propaganda campaign is activated, so that it's cost is increased
 set_variable = { SOV_propaganda_motherland_calls_cost = SOV_propaganda_cost } # ID = 2
 set_variable = { SOV_propaganda_victory_at_hand_cost = SOV_propaganda_cost } # ID = 3
 set_variable = { SOV_propaganda_defend_moscow_cost = SOV_propaganda_cost } # ID = 4

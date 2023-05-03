@@ -70,5 +70,5 @@ NDefines.NOperatives.INTEL_NETWORK_GAIN_DECAY_PER_STEP_FACTOR = 0.8				-- Factor
 NDefines.NOperatives.INTEL_NETWORK_STRENGTH_DECAY_WHEN_ABOVE_TARGET = -1.5			-- The amount of strength removed each tick from a state that has more strength than the target
 NDefines.NOperatives.INTEL_NETWORK_OPERATIVE_GAIN_STACKING_FACTOR = 0.9			-- When multiple operative are present in the same location, this factor is applied for each operative with a lower gain than the max. So if operatives have the gain [ 3, 1, 2 ] in the same location, it is sorted to [ 1, 2, 3 ] then converted to [ 1*D^2, 2*D^1, 3 ], with D being this define, so if D=0.5 we have [ 0.25, 1, 3 ] and the final gain from operative at this location will be 4.25. Putting this define to 0 is equivalent to considering the maximum value only.
 
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 36;	-- How many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 30;	-- How many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 36;	-- How many divisions a field marshall is limited to. 0 = inf, < 0 = blocked

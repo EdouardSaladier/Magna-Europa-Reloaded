@@ -1106,6 +1106,7 @@ propaganda_efforts = {
 				factor = 0
 				has_manpower < 100000
 				has_political_power < 250
+				has_war_support > 0.2
 				OR = {
 					has_idea = volunteer_only
 					has_idea = limited_conscription
@@ -1231,6 +1232,7 @@ propaganda_efforts = {
 				factor = 0
 				has_manpower < 100000
 				has_political_power < 250
+				has_war_support > 0.2
 				OR = {
 					has_idea = volunteer_only
 					has_idea = limited_conscription

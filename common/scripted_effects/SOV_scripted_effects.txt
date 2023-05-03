@@ -3952,6 +3952,20 @@ SOV_relocate_industry_in_appropriate_state_effect = {
 				add_offsite_building = { type = industrial_complex level = 1 }
 				FROM = { modify_state_flag = { flag = SOV_civs_removed_flag value = -1 } }
 			}
+			if = {
+				limit = {
+					FROM = { has_state_flag = SOV_mils_removed_flag }
+					is_ai = yes
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+			else_if = {
+				limit = {
+					FROM = { has_state_flag = SOV_civs_removed_flag }
+					is_ai = yes
+				}
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
 			#SECOND FACTORY - Prio Civ
 			if = {
 				limit = {
@@ -3966,6 +3980,20 @@ SOV_relocate_industry_in_appropriate_state_effect = {
 				}
 				add_offsite_building = { type = arms_factory level = 1 }
 				FROM = { modify_state_flag = { flag = SOV_mils_removed_flag value = -1 } }
+			}
+			if = {
+				limit = {
+					FROM = { has_state_flag = SOV_civs_removed_flag }
+					is_ai = yes
+				}
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+			else_if = {
+				limit = {
+					FROM = { has_state_flag = SOV_mils_removed_flag }
+					is_ai = yes
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
 			}
 		}
 	}

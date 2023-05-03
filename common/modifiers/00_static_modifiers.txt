@@ -178,8 +178,9 @@ resistance_effect = {
 	#local_supplies = -0.5
 	#local_intel_to_enemies = 10
 	#local_factory_sabotage = 0.75
-	#attrition = 0.25
-	local_supplies = -0.2
+	#attrition = 0.2
+	#local_supplies = -0.2
+	#local_org_regain = -0.2
 }
 
 # For compliance base + effect * compliance_level will be applied as a modifier.
