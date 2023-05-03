@@ -10,6 +10,7 @@ state={
 			air_base = 6
 			12923 = { naval_base = 3 }
 			industrial_complex = 1
+			299 = { naval_base = 1 }
 		}
 		add_core_of = NMD
         victory_points = {
@@ -17,6 +18,9 @@ state={
         }
         victory_points = {
             7592 2 #Saint-Lô
+        }
+		victory_points = {
+            299 1 #Avranches
         }
     }
 	provinces={

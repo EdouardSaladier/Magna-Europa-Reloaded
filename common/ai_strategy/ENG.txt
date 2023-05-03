@@ -1040,7 +1040,7 @@ ENG_lifeline_of_the_empire = {
 	ai_strategy = {
 		type = front_unit_request
 		id = "ITA"
-		value = 100
+		value = 200
 	}
 }
 
@@ -2001,8 +2001,8 @@ ENG_and_EGY_push_through_libya = {
 	}
 	ai_strategy = {
 		type = area_priority
-		id = libya
-		value = 15
+		id = egypt_front
+		value = 50
 	}
 	ai_strategy = {
 		type = front_control
@@ -2010,11 +2010,15 @@ ENG_and_EGY_push_through_libya = {
 			OR = {
 				region = 38
 				region = 39
+				region = 49
+				region = 50
+				region = 57
+				region = 58
 				region = 59
 			}
 		}
 		priority = 1
-		ratio = 0.2
+		ratio = 0.1
 		ordertype = front
 		execution_type = rush
 		execute_order = yes
