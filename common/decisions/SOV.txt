@@ -8575,23 +8575,18 @@ SOV_kill_trotsky_dec_cat = {
 
 		available = {
 			has_equipment = { infantry_equipment > 49 }
-			has_equipment = { support_equipment > 49 }
 			NOT = { has_country_flag = SOV_attempting_to_kill_trotsky_flag }
 		}
 
 		visible = {
 			has_completed_focus = SOV_behead_the_snake
-			OR = {
-				has_global_flag = trotsky_exile_mexico
-				has_global_flag = flag_mexico_invited_trotsky_to_government
-			}
 			NOT = { has_global_flag = flag_trotsky_dead }
 			NOT = { has_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico }
 		}
 
-		cost = 75
+		cost = 10
 
-		days_remove = 60
+		days_remove = 50
 
 		modifier = {
 			political_power_factor = -0.1
@@ -8604,18 +8599,14 @@ SOV_kill_trotsky_dec_cat = {
 				amount = -50
 				producer = SOV
 			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = -50
-				producer = SOV
-			}
 		}
 
 		remove_effect = {
 			clr_country_flag = SOV_attempting_to_kill_trotsky_flag
 			set_country_flag = SOV_raided_trotskys_villa_flag
-			ROOT = { news_event = { id = nsb_news.100 } } #SUCCESS - Kill Trotsky and swap Trotskyite Plot NS
-			
+			hidden_effect = {
+				ROOT = { news_event = { id = nsb_news.101 } } #FAILURE - Trotsky still alive
+			}
 		}
 	}
 
@@ -8629,7 +8620,6 @@ SOV_kill_trotsky_dec_cat = {
 			modifier = {
 				add = 200
 				date > 1940.6.1 #Historical 20/08/1940
-				has_country_flag = SOV_raided_trotskys_villa_flag
 			}
 		}
 
@@ -8649,30 +8639,16 @@ SOV_kill_trotsky_dec_cat = {
 		visible = {
 			NOT = { has_global_flag = flag_trotsky_dead }
 			NOT = { has_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico }
-			OR = {
-				AND = {
-					OR = {
-						has_global_flag = trotsky_exile_mexico
-						has_global_flag = flag_mexico_invited_trotsky_to_government
-					}
-				}
-				AND = {
-					FROM = {
-						controls_state = 124 #OSTLANDET (Oslo) -> Trotsky not accepted in Mexico (or Soviets being super fast to kill him, which should be impossible btw)
-					}
-					NOT = {
-						has_global_flag = trotsky_exile_mexico
-						has_global_flag = flag_mexico_invited_trotsky_to_government
-					}
-				}
+			FROM = {
+				controls_state = 124 #OSTLANDET (Oslo) -> Trotsky not accepted in Mexico (or Soviets being super fast to kill him, which should be impossible btw)
 			}
 		}
 
-		cost = 100
+		cost = 10
 
 		fire_only_once = yes
 
-		days_remove = 270
+		days_remove = 100
 
 		modifier = {
 			political_power_factor = -0.1
@@ -8685,59 +8661,8 @@ SOV_kill_trotsky_dec_cat = {
 		remove_effect = {
 			hidden_effect = {
 				clr_country_flag = SOV_attempting_to_kill_trotsky_flag
-				random_list = {
-					50 = {
-						modifier = {
-							factor = 1.5
-							FROM = {
-								communism > 0.25
-							}
-						}
-						modifier = {
-							factor = 1.5
-							FROM = {
-								communism > 0.5
-							}
-						}
-						modifier = {
-							factor = 1.5
-							FROM = {
-								communism > 0.75
-							}
-						}
-						modifier = {
-							factor = 2
-							FROM = {
-								has_opinion = {
-									target = ROOT
-									value > 50
-								}
-							}
-						}
-						modifier = {
-							factor = 2.5
-							FROM = {
-								is_in_faction_with = ROOT
-							}
-						}
-						modifier = {
-							factor = 2
-							has_country_flag = SOV_raided_trotskys_villa_flag
-						}
-						ROOT = { news_event = { id = news.37 } } #SUCCESS - Kill Trotsky and swap Trotskyite Plot NS
-					}
-					50 = {
-						modifier = {
-							factor = 0.5
-							FROM = {
-								is_subject_of = ROOT
-							}
-						}
-						ROOT = { news_event = { id = news.38 } } #FAILURE - Trotsky still alive
-					}
-				}
+				ROOT = { news_event = { id = news.37 } } #SUCCESS - Kill Trotsky and swap Trotskyite Plot NS
 			}
-			custom_effect_tooltip = SOV_carefully_planned_assassination_tt
 		}
 	}
 }
@@ -9946,6 +9871,7 @@ SOV_great_patriotic_war = {
 
 		modifier = {
 			mobilization_speed = 0.5
+			training_time_army_factor = -0.15
 		}
 
 		complete_effect = {
@@ -9990,12 +9916,23 @@ SOV_great_patriotic_war = {
 
 		modifier = {
 			mobilization_speed = 0.5
+			training_time_army_factor = -0.15
 		}
 
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 15000
+				amount = 20000
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 500
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 50
 				producer = SOV
 			}
 			add_offsite_building = { type = industrial_complex level = 20 } #Let's try without these for now
@@ -10034,12 +9971,23 @@ SOV_great_patriotic_war = {
 
 		modifier = {
 			mobilization_speed = 0.5
+			training_time_army_factor = -0.15
 		}
 
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 25000
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 1000
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 100
 				producer = SOV
 			}
 			add_offsite_building = { type = industrial_complex level = 40 } #Let's try without these for now
@@ -10078,12 +10026,23 @@ SOV_great_patriotic_war = {
 
 		modifier = {
 			mobilization_speed = 0.5
+			training_time_army_factor = -0.15
 		}
 
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 50000
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 5000
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 500
 				producer = SOV
 			}
 			add_offsite_building = { type = industrial_complex level = 40 } #Let's try without these for now

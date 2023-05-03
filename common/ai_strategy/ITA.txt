@@ -927,7 +927,13 @@ ITA_hold_africa = {
 	ai_strategy = {
 		type = area_priority
 		id = egypt_front
-		value = 50
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+		area = egypt_front
+		value = 25
 	}
 	
 	ai_strategy = {
@@ -944,10 +950,8 @@ ITA_hold_africa = {
 			}
 		}
 		priority = 1
-		ratio = 0.1
 		ordertype = front
-		execution_type = rush
-		execute_order = yes
+		execution_type = balanced
 	}
 }
 

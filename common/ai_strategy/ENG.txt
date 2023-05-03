@@ -1040,7 +1040,7 @@ ENG_lifeline_of_the_empire = {
 	ai_strategy = {
 		type = front_unit_request
 		id = "ITA"
-		value = 200
+		value = 100
 	}
 }
 
@@ -1482,6 +1482,20 @@ ENG_Defends_Mediterranean = {
 		# states to put garrison orders (if no state is friendly, strat is invalid)
 		states = {
 			1622
+		}
+
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+	
+	ai_strategy = {
+		type = put_unit_buffers
+
+		ratio = 0.05
+
+		# states to put garrison orders (if no state is friendly, strat is invalid)
+		states = {
+			1285
 		}
 
 		subtract_invasions_from_need = no
@@ -1978,6 +1992,7 @@ ENG_and_EGY_push_through_libya = {
 		OR = {
 			original_tag = ENG
 			original_tag = EGY
+			original_tag = PAL
 		}
 	}
 	enable = {
@@ -2002,7 +2017,7 @@ ENG_and_EGY_push_through_libya = {
 	ai_strategy = {
 		type = area_priority
 		id = egypt_front
-		value = 50
+		value = 80
 	}
 	ai_strategy = {
 		type = front_control
@@ -2018,9 +2033,12 @@ ENG_and_EGY_push_through_libya = {
 			}
 		}
 		priority = 1
-		ratio = 0.1
 		ordertype = front
-		execution_type = rush
-		execute_order = yes
+		execution_type = balanced
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = egypt_front
+		value = 50
 	}
 }

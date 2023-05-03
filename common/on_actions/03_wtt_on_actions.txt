@@ -46,7 +46,14 @@ on_actions = {
 						add_timed_idea = { idea = GER_barbarossa days = 150 }
 						activate_mission = GER_barbarossa_mission
 					}
+					ROM = { 
+						add_timed_idea = { idea = GER_barbarossa days = 150 }
+					}
+					HUN = { 
+						add_timed_idea = { idea = GER_barbarossa days = 150 }
+					}
 					SOV = { 
+						add_timed_idea = { idea = SOV_barbarossa days = 30 }
 						add_ideas = { 
 							war_economy
 							extensive_conscription

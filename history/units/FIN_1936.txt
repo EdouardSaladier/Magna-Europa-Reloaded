@@ -58,8 +58,8 @@ units = {
 		}
 		location = 9865 # Tampere
 		division_template = "Jalkaväkidivisioona"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -70,8 +70,8 @@ units = {
 		}
 		location = 19666 # Oulu
 		division_template = "Jalkaväkidivisioona"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -83,7 +83,7 @@ units = {
 		location = 9705 # Salla
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -95,7 +95,7 @@ units = {
 		location = 19669 # Uimaharju 
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 	
@@ -108,8 +108,8 @@ units = {
 		}
 		location = 19669 # Joensuu
 		division_template = "Jalkaväkidivisioona"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -120,8 +120,8 @@ units = {
 		}
 		location = 19681 # Kuopio
 		division_template = "Jalkaväkidivisioona"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -133,7 +133,7 @@ units = {
 		location = 2645 # Suojärvi
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 
@@ -147,8 +147,8 @@ units = {
 		}
 		location = 19664 # Viipuri
 		division_template = "Jalkaväkidivisioona"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -159,8 +159,8 @@ units = {
 		}
 		location = 9966 # Helsinki
 		division_template = "Jalkaväkidivisioona"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -171,8 +171,8 @@ units = {
 		}
 		location = 19662 # Turku
 		division_template = "Jalkaväkidivisioona"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -183,8 +183,8 @@ units = {
 		}
 		location = 19678 # Kotka
 		division_template = "Jalkaväkidivisioona"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -196,7 +196,7 @@ units = {
 		location = 19712 # Lappeenranta
 		division_template = "Ratsuväkiprikaati" 
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -208,7 +208,7 @@ units = {
 		location = 1791 # Salmi
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -220,7 +220,7 @@ units = {
 		location = 19678 # Kotka
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -232,7 +232,7 @@ units = {
 		location = 9482 # Salmi
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 	# III Corps
@@ -244,8 +244,8 @@ units = {
 		}
 		location = 4594
 		division_template = "Jalkaväkidivisioona"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -256,8 +256,8 @@ units = {
 		}
 		location = 19667 # Jyväskylä
 		division_template = "Jalkaväkidivisioona"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
+		start_equipment_factor = 1.0
 
 	}
 	division = {
@@ -269,7 +269,7 @@ units = {
 		location = 3262 # Ilomantsi
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 }
@@ -283,7 +283,7 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "FIN"
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0.66
 		efficiency = 100
 	}
