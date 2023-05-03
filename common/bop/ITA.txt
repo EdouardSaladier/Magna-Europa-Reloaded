@@ -101,6 +101,16 @@ ITA_power_balance = {
 				if = {
 					limit = {
 						NOT = { has_completed_focus = ITA_crush_opposition }
+						is_in_faction_with = GER
+						any_neighbor_country = { original_tag = GER }
+						hidden_trigger = {
+							any_owned_state = {
+								is_controlled_by = ROOT
+								any_neighbor_state = {
+									is_controlled_by = GER
+								}
+							}
+						}
 					}
 					hidden_effect = {
 						country_event = BBA_italy_civil_war.1
