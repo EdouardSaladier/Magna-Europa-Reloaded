@@ -2744,6 +2744,17 @@ country_event = {
 				}
 				SLO = { transfer_state = 562 }
 			}
+			if = {
+				limit = {
+					2978 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 2978 }
+			}
 		}
 		if = {
 			limit = {
@@ -3083,6 +3094,7 @@ country_event = {
 			transfer_state = 1437
 			transfer_state = 591
 			transfer_state = 555
+			transfer_state = 2978
 			transfer_state = 2662
 			transfer_state = 586
 			transfer_state = 2663
@@ -3178,6 +3190,17 @@ country_event = {
 					}
 				}
 				SLO = { transfer_state = 555 }
+			}
+			if = {
+				limit = {
+					2978 = {
+						OR = {
+							is_owned_by = CZE
+							is_owned_by = GER
+						}
+					}
+				}
+				SLO = { transfer_state = 2978 }
 			}
 			if = {
 				limit = {
@@ -4734,6 +4757,14 @@ country_event = {
 					}
 				}
 				POL = { transfer_state = 555 }
+			}
+			if = {
+				limit = {
+					2978 = {
+						is_owned_by = GER
+					}
+				}
+				POL = { transfer_state = 2978 }
 			}
 			if = {
 				limit = {
