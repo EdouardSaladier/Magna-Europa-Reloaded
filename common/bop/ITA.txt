@@ -101,14 +101,11 @@ ITA_power_balance = {
 				if = {
 					limit = {
 						NOT = { has_completed_focus = ITA_crush_opposition }
-						is_in_faction_with = GER
-						any_neighbor_country = { original_tag = GER }
-						hidden_trigger = {
-							any_owned_state = {
-								is_controlled_by = ROOT
-								any_neighbor_state = {
-									is_controlled_by = GER
-								}
+						any_neighbor_country = { original_tag = GER is_in_faction_with = ROOT } #Can't have a German occupation if not in the Axis
+						any_owned_state = {
+							is_controlled_by = ROOT
+							any_neighbor_state = {
+								is_controlled_by = GER #Can't be occupied by Germans if the Germans can't reach you
 							}
 						}
 					}

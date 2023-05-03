@@ -1674,6 +1674,18 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 		}
 		var:RDS.ITA_rds_overlord = {
 			#log = "I am [THIS.GetName] and I am going to puppet [RDS.GetName]"
+			#Lollo's much superior and much more historically accurate rework, blobbers be damned
+		#	if = {
+		#		limit = {
+		#			is_in_faction = no
+		#		}
+		#		RDS = { give_military_access = PREV }
+		#	}
+		#	else = {
+		#		faction_leader = {
+		#			add_to_faction = RDS
+		#		}
+		#	}
 			puppet = {
 				target = RDS
 				end_civil_wars = no
@@ -1874,7 +1886,14 @@ ITA_cw_manage_states_split_effect = {
 			set_state_flag = ITA_cw_state_split
 			if = {
 				limit = {
-					state = 849 #PUGLIA (Brindisi - Although Taranto)
+					state = 934
+					is_controlled_by = ROOT
+				}
+				ROOT = { set_variable = { ITA_cw_rds_capital = PREV } }
+			}
+			else_if = {
+				limit = {
+					state = 1406 #BRINDISI
 				}
 				ROOT = { set_variable = { ITA_cw_rds_capital = PREV } }
 			}
@@ -1894,7 +1913,14 @@ ITA_cw_manage_states_split_effect = {
 			set_state_flag = ITA_cw_state_split
 			if = {
 				limit = {
-					state = 158 #PIEMONTE
+					state = 718 #TORINO
+					is_controlled_by = ROOT
+				}
+				ROOT = { set_variable = { ITA_cw_rds_capital = PREV } }
+			}
+			else_if = {
+				limit = {
+					state = 798 #GENOVA
 				}
 				ROOT = { set_variable = { ITA_cw_rds_capital = PREV } }
 			}
@@ -1914,7 +1940,14 @@ ITA_cw_manage_states_split_effect = {
 			set_state_flag = ITA_cw_state_split
 			if = {
 				limit = {
-					state = 736 #LITORALE (Trieste)
+					state = 742 #VENEZIA
+					is_controlled_by = ROOT
+				}
+				ROOT = { set_variable = { ITA_cw_rds_capital = PREV } }
+			}
+			else_if = {
+				limit = {
+					state = 744 #TRIESTE
 				}
 				ROOT = { set_variable = { ITA_cw_rds_capital = PREV } }
 			}
@@ -1934,7 +1967,7 @@ ITA_cw_manage_states_split_effect = {
 			set_state_flag = ITA_cw_state_split
 			if = {
 				limit = {
-					state = 2 #LATIUM (Rome)
+					state = 876 #ROMA
 				}
 				ROOT = { set_variable = { ITA_cw_rds_capital = PREV } }
 			}

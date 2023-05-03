@@ -4419,6 +4419,7 @@ country_event = {
 							has_state_flag = ITA_cw_state_split
 							is_owned_by = RSI
 						}
+						NOT = { is_claimed_by = FROM is_core_of = FROM }
 					}
 					ROOT = { transfer_state = PREV }
 				}
