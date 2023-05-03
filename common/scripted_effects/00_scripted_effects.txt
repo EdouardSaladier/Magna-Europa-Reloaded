@@ -3991,3 +3991,14 @@ upgrade_state_category = {
 		set_state_category = large_city
 	}
 }
+
+force_peace_usa = {
+	USA = {
+		leave_faction = yes
+		white_peace = GER
+	}
+	CAN = {
+		leave_faction = yes
+		white_peace = GER
+	}
+}

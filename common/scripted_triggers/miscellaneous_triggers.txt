@@ -310,3 +310,26 @@ is_mer_country_to_not_release = {
 		original_tag = BSR
 	}
 }
+
+completely_defeated_allies = {
+	has_war_with = USA
+	NOT = {
+		any_state = {
+			OR = {
+				is_on_continent = europe
+				is_on_continent = africa
+				is_on_continent = middle_east
+				is_on_continent = asia
+			}
+			NOT = {
+				OR = {
+					state = 2974
+					state = 2975
+				}
+			}
+			controller = {
+				is_in_faction_with = USA
+			}
+		}
+	}
+}

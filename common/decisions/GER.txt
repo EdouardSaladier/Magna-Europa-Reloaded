@@ -310,6 +310,40 @@ GER_mefo_bills_category = {
 
 operations = {
 
+	GER_expell_USA_from_Europe = {
+
+		icon = generic_operation
+
+		activation = {
+			custom_trigger_tooltip = {
+				tooltip = completely_defeated_allies_tt
+				completely_defeated_allies = yes
+			}
+		}
+
+		days_mission_timeout = 720
+
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = completely_defeated_allies_fail_tt
+				completely_defeated_allies = no
+			}
+		}
+
+		is_good = yes
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			force_peace_usa = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	GER_barbarossa_mission = {
 
 		icon = generic_operation
