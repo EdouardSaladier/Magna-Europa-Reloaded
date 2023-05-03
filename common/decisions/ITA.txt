@@ -4927,37 +4927,58 @@ ITA_diplomacy_balkan_decision_category = {
 		cost = 50
 
 		complete_effect = {
-			ALB = {
-				every_core_state = {
-					limit = {
-						NOT = { is_core_of = KOS }
-					}
-					transfer_state_to = ALB
-				}
-				IF = {
-					limit = {
-						KOS = {
-							all_core_state = {
-								is_controlled_by = ROOT
-							}
-						}
-					}
-					every_state = {
-						limit = {
-							is_core_of = KOS
-						}
-						transfer_state_to = ROOT
-					}
-				}
-				add_ideas = ITA_ALB_italian_settlers
+			KOS = {
+				every_core_state = { add_core_of = ALB }
 			}
-			every_state = {
+			every_owned_state = {
 				limit = {
-					is_core_of = KOS
+					is_core_of = ALB
+					NOT = { state = 2914 }
 				}
-				add_core_of = ALB
+				transfer_state_to = ALB
 			}
-			IF = {
+			ALB = {	add_ideas = ITA_ALB_italian_settlers }
+		#	ALB = {
+		#		every_core_state = {
+		#			limit = {
+		#				NOT = { is_core_of = KOS }
+		#			}
+		#			transfer_state_to = ALB
+		#		}
+		#		IF = {
+		#			limit = {
+		#				KOS = {
+		#					all_core_state = {
+		#						is_controlled_by = ROOT
+		#					}
+		#				}
+		#			}
+		#			every_state = {
+		#				limit = {
+		#					is_core_of = KOS
+		#				}
+		#				transfer_state_to = ROOT
+		#			}
+		#		}
+		#	}
+		#	every_state = {
+		#		limit = {
+		#			is_core_of = KOS
+		#		}
+		#		add_core_of = ALB
+		#	}
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				set_autonomy = {
+					target = ALB
+					autonomy_state = autonomy_personal_union
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			else_if = {
 				limit = {
 					has_dlc = "Together for Victory"
 				}
@@ -4970,15 +4991,14 @@ ITA_diplomacy_balkan_decision_category = {
 					}
 				}
 			}
-			IF = {
-				limit = {
-					NOT = {
-						has_dlc = "Together for Victory"
-					}
-				}
+			else = {
 				ITA = {
 					puppet = ALB
 				}
+			}
+			if = {
+				limit = { has_government = fascism }
+				hidden_effect = { ALB = { set_cosmetic_tag = ALB_IT } }
 			}
 			hidden_effect = {
 				set_country_flag = ITA_established_albania

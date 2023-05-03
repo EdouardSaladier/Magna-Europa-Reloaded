@@ -203,6 +203,40 @@ on_actions = {
 				}
 				drop_cosmetic_tag = yes
 			}
+			if = {
+				limit = {
+					ROOT = { original_tag = ALB }
+					FROM = { original_tag = ITA has_government = fascism }
+				}
+				set_cosmetic_tag = ALB_IT
+			}
+		}
+	}
+	
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = { original_tag = ALB has_cosmetic_tag = ALB_IT }
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	
+	on_subject_autonomy_level_change = {
+		effect = {
+			if = {
+				limit = { original_tag = ALB has_cosmetic_tag = ALB_IT has_autonomy_state = autonomy_free }
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	
+	on_subject_annexed = {
+		effect = {
+			if = {
+				limit = { original_tag = ALB has_cosmetic_tag = ALB_IT }
+				drop_cosmetic_tag = yes
+			}
 		}
 	}
 	
@@ -215,6 +249,13 @@ on_actions = {
 					FROM = { has_government = communism }
 				}
 				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = ALB }
+					FROM = { original_tag = ITA has_government = fascism }
+				}
+				set_cosmetic_tag = ALB_IT
 			}
 		}
 	}
