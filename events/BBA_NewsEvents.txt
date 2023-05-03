@@ -400,8 +400,16 @@ news_event = {
 	}
 
 	trigger = {
-		original_tag = ITA
-		has_character = ITA_papa_pio_xi
+		OR = {
+			AND = {
+				original_tag = ITA
+				has_character = ITA_papa_pio_xi
+			}
+			AND = {
+				original_tag = VAT
+				has_character = VAT_papa_pio_xi
+			}
+		}
 		date > 1939.01.20
 	}
 
@@ -420,6 +428,7 @@ news_event = {
 
 		if = { # Tooltip about retiring the character if he is already a country leader (even if not ruling)
 			limit = {
+				original_tag = ITA
 				has_country_leader = {
 					character = ITA_papa_pio_xi
 					ruling_only = no
@@ -432,6 +441,7 @@ news_event = {
 
 		if = {
 			limit = {
+				original_tag = ITA
 				has_country_leader = {
 					character = ITA_papa_pio_xi
 					ruling_only = yes
@@ -440,8 +450,22 @@ news_event = {
 			ITA_pope_takes_over = yes
 		}
 
+		if = {
+			limit = {
+				original_tag = VAT
+				has_country_leader = {
+					character = VAT_papa_pio_xi
+					ruling_only = yes
+				}
+			}
+			promote_character = { character = VAT_papa_pio_xii ideology = oligarchism }
+		}
+
 		hidden_effect = {
-			retire_character = ITA_papa_pio_xi
+			if = {
+				limit = { original_tag = ITA }
+				retire_character = ITA_papa_pio_xi
+			}
 		}
 	}
 }

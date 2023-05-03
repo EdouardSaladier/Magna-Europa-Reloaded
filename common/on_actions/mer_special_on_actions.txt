@@ -155,7 +155,7 @@ on_actions = {
 			}
 		}
 	}
-	#ROOT is subject FROM is previous overlord
+	#ROOT is subject FROM is overlord
 	on_puppet = {
 		effect = {
 			#make sure Dominions lose the dominion tag
@@ -192,6 +192,27 @@ on_actions = {
 						original_tag = UAE
 						original_tag = IRE
 					}
+				}
+				drop_cosmetic_tag = yes
+			}
+			#Communist kingdom of Italy makes no sense
+			if = {
+				limit = {
+					ROOT = { original_tag = ITA has_cosmetic_tag = ITA_neutrality }
+					FROM = { has_government = communism }
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	
+	on_release_as_puppet = {
+		effect = {
+			#Read to line 198
+			if = {
+				limit = {
+					ROOT = { original_tag = ITA has_cosmetic_tag = ITA_neutrality }
+					FROM = { has_government = communism }
 				}
 				drop_cosmetic_tag = yes
 			}

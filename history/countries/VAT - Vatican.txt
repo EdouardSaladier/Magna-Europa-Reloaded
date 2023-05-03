@@ -2,6 +2,9 @@
 
 set_research_slots = 2
 
+recruit_character = VAT_papa_pio_xi
+recruit_character = VAT_papa_pio_xii
+
 give_military_access = ITA
 # Starting tech
 set_technology = {
@@ -34,16 +37,4 @@ set_popularities = {
 	fascism = 5
 	communism = 0
 	neutrality = 85
-}
-
-create_country_leader = {
-	name = "Pius XI"
-	desc = ""
-	picture = GFX_portrait_ITA_papa_pio_xi
-	expire = "1939.2.3"
-	ideology = despotism
-	traits = {
-		supreme_pontiff
-		temperamental
-	}
 }
