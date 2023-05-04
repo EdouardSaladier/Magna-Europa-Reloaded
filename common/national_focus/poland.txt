@@ -1242,7 +1242,7 @@ focus_tree = {
 					}
 				}
 				if = {
-					limit = { ROOT = { controls_state = 280 } }
+					limit = { ROOT = { has_military_access_to = DNZ } }
 			
 					build_railway = { #Warsaw to Danzig 
 						level = 2 
