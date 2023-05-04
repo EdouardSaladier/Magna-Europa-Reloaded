@@ -137,7 +137,7 @@ focus_tree = {
 				value = 1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 10 }
+				prioritize = { 508 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -154,7 +154,7 @@ focus_tree = {
 				set_state_flag = POL_start_central_industrial_region_1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 90 }
+				prioritize = { 867 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -171,12 +171,12 @@ focus_tree = {
 				set_state_flag = POL_start_central_industrial_region_1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 92 }
+				prioritize = { 377 }
 				add_extra_state_shared_building_slots = 2
 				set_state_flag = POL_start_central_industrial_region_1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 87 }
+				prioritize = { 381 }
 				add_extra_state_shared_building_slots = 2
 				set_state_flag = POL_start_central_industrial_region_1
 			}
@@ -238,7 +238,7 @@ focus_tree = {
 				value = 1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 86 }
+				prioritize = { 122 }
 				limit = {									
 					free_building_slots = {
 						building = arms_factory
@@ -256,7 +256,7 @@ focus_tree = {
 				set_state_flag = POL_expansion_of_new_towns_1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 807 }
+				prioritize = { 549 }
 				limit = {									
 					free_building_slots = {
 						building = arms_factory
@@ -327,7 +327,7 @@ focus_tree = {
 				value = 1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 88 }
+				prioritize = { 1157 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -401,7 +401,7 @@ focus_tree = {
 				value = 1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 89 }
+				prioritize = { 1164 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -418,7 +418,7 @@ focus_tree = {
 				set_state_flag = POL_start_central_industrial_region_1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 91 }
+				prioritize = { 1292 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -770,7 +770,7 @@ focus_tree = {
 				value = 1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 762 }
+				prioritize = { 481 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -918,7 +918,7 @@ focus_tree = {
 				value = 1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 93 }
+				prioritize = { 992 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -935,7 +935,7 @@ focus_tree = {
 				set_state_flag = POL_develop_east_poland_1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 94 }
+				prioritize = { 1163 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -952,7 +952,7 @@ focus_tree = {
 				set_state_flag = POL_develop_east_poland_2
 			}
 			random_owned_controlled_state = {
-				prioritize = { 95 }
+				prioritize = { 292 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -969,7 +969,7 @@ focus_tree = {
 				set_state_flag = POL_develop_east_poland_3
 			}
 			random_owned_controlled_state = {
-				prioritize = { 96 }
+				prioritize = { 1198 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1028,7 +1028,7 @@ focus_tree = {
 				value = 1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 88 }
+				prioritize = { 496 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1110,7 +1110,7 @@ focus_tree = {
 				value = 1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 10 }
+				prioritize = { 508 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1132,7 +1132,7 @@ focus_tree = {
 				set_state_flag = POL_modernize_congressional_factories_1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 90 }
+				prioritize = { 867 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1149,7 +1149,7 @@ focus_tree = {
 				set_state_flag = POL_modernize_congressional_factories_2
 			}
 			random_owned_controlled_state = {
-				prioritize = { 98 }
+				prioritize = { 311 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -1192,7 +1192,7 @@ focus_tree = {
 				value = 1
 			}
 			random_state = {
-				prioritize = { 10 }
+				prioritize = { 508 }
 				limit = { has_state_flag = POL_warsaw_main_railway_station_1 }
 				add_building_construction = {
 					type = infrastructure
@@ -1209,7 +1209,7 @@ focus_tree = {
 				value = 1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 10 }
+				prioritize = { 508 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -1224,39 +1224,39 @@ focus_tree = {
 						instant_build = yes
 				}
 				if = {
-					limit = { ROOT = { controls_state = 88 } }
+					limit = { ROOT = { controls_state = 1157 } }
 					
 					build_railway = { #Warsaw to Krakow 
 						level = 2 
 						start_state = THIS
-						target_state = 88
+						target_state = 1157
 					}
 				}			
 				if = {
-					limit = { ROOT = { controls_state = 92 } }
+					limit = { ROOT = { controls_state = 377 } }
 
 					build_railway = { #Warsaw to Lublin
 						level = 2 
 						start_state = THIS
-						target_state = 92
+						target_state = 377
 					}
 				}
 				if = {
-					limit = { ROOT = { controls_state = 85 } }
+					limit = { ROOT = { controls_state = 280 } }
 			
 					build_railway = { #Warsaw to Danzig 
 						level = 2 
 						start_state = THIS
-						target_state = 85
+						target_state = 280
 					}
 				}	
 				if = {
-					limit = { ROOT = { controls_state = 784 } }
+					limit = { ROOT = { controls_state = 241 } }
 
 					build_railway = { #Warsaw to Wilno
 						level = 2 
 						start_state = THIS
-						target_state = 784
+						target_state = 241
 					}
 				}
 				set_state_flag = POL_warsaw_main_railway_station_1
@@ -1673,7 +1673,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_air_base_expansion"
 			random_owned_controlled_state = {
-				prioritize = { 10 }
+				prioritize = { 508 }
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -2183,7 +2183,7 @@ focus_tree = {
 			POL_sanation_left_opposition_down = yes 
 			POL_sanation_right_opposition_down = yes
 			random_owned_controlled_state = {
-				prioritize = { 89 }
+				prioritize = { 1164 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = synthetic_refinery
@@ -3566,7 +3566,7 @@ focus_tree = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 807 }
+				prioritize = { 549 }
 				limit = { PREV = { has_full_control_of_state = PREV } }
 				create_unit = {
 					division = "name = \"Pruska Straż Graniczna\" division_template = \"Pruska Straż Graniczna\" start_experience_factor = 0.9" 
@@ -3999,7 +3999,7 @@ focus_tree = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 95 }
+				prioritize = { 292 }
 				limit = { PREV = { has_full_control_of_state = PREV } }
 				create_unit = {
 					division = "name = \"Białoruska Dywizja Milicji\" division_template = \"Białoruska Dywizja Milicji\" start_experience_factor = 0.5" 
@@ -4048,7 +4048,7 @@ focus_tree = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 91 }
+				prioritize = { 1292 }
 				limit = { PREV = { has_full_control_of_state = PREV } }
 				create_unit = {
 					division = "name = \"Ukraińska Dywizja Milicji\" division_template = \"Ukraińska Dywizja Milicji\" start_experience_factor = 0.5" 
@@ -5831,7 +5831,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_soviet_industry"
 			random_owned_controlled_state = {
-				prioritize = { 10 }
+				prioritize = { 508 }
 				limit = {					
 					is_in_home_area = yes					
 					free_building_slots = {
@@ -5849,7 +5849,7 @@ focus_tree = {
 				set_state_flag = POL_soviet_factory
 			}
 			random_owned_controlled_state = {
-				prioritize = { 10 }
+				prioritize = { 508 }
 				limit = {					
 					is_in_home_area = yes					
 					free_building_slots = {
@@ -5959,7 +5959,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 10 }
+				prioritize = { 508 }
 				create_unit = {
 					division = "name = \"1 Czerwona Dywizja Piechoty\" division_template = \"Czerwona Dywizja Piechoty\" start_experience_factor = 1.0" 
 					owner = POL
@@ -5979,7 +5979,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 88 }
+				prioritize = { 1157 }
 				create_unit = {
 					division = "name = \"5 Czerwona Dywizja Piechoty\" division_template = \"Czerwona Dywizja Piechoty\" start_experience_factor = 1.0" 
 					owner = POL
@@ -7362,7 +7362,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 10 }
+				prioritize = { 508 }
 				create_unit = {
 					division = "name = \"1 Armia Ludowa\" division_template = \"Armia Ludowa\" start_experience_factor = 1.0" 
 					owner = POL
@@ -7374,7 +7374,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 88 }
+				prioritize = { 1157 }
 				create_unit = {
 					division = "name = \"3 Armia Ludowa\" division_template = \"Armia Ludowa\" start_experience_factor = 1.0" 
 					owner = POL
@@ -7853,7 +7853,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 94 }
+				prioritize = { 1163 }
 				create_unit = {
 					division = "name = \"1 Królewska Dywizja Husarii\" division_template = \"Królewska Dywizja Husarii\" start_experience_factor = 1.0" 
 					owner = POL
@@ -7861,7 +7861,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 96 }
+				prioritize = { 1198 }
 				create_unit = {
 					division = "name = \"2 Królewska Dywizja Husarii\" division_template = \"Królewska Dywizja Husarii\" start_experience_factor = 1.0" 
 					owner = POL
@@ -7869,7 +7869,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 88 }
+				prioritize = { 1157 }
 				create_unit = {
 					division = "name = \"3 Królewska Dywizja Husarii\" division_template = \"Królewska Dywizja Husarii\" start_experience_factor = 1.0" 
 					owner = POL
@@ -7877,7 +7877,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 88 }
+				prioritize = { 1157 }
 				create_unit = {
 					division = "name = \"4 Królewska Dywizja Husarii\" division_template = \"Królewska Dywizja Husarii\" start_experience_factor = 1.0" 
 					owner = POL
@@ -8182,7 +8182,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 88 } #Krakow
+				prioritize = { 1157 } #Krakow
 				create_unit = {
 					division = "name = \"Oddział Gwardii Królewskiej\" division_template = \"Oddział Gwardii Królewskiej\" start_experience_factor = 1.0" 
 					owner = POL
@@ -8659,7 +8659,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_join_CZE_military"
 			random_owned_state = {
-				prioritize = { 9 }
+				prioritize = { 513 }
 				limit = {
 					is_controlled_by = ROOT
 					free_building_slots = {
@@ -8676,7 +8676,7 @@ focus_tree = {
 				}
 			}
 			random_owned_state = {
-				prioritize = { 88 }
+				prioritize = { 1157 }
 				limit = {
 					is_controlled_by = ROOT
 					free_building_slots = {
@@ -8851,7 +8851,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 91 }
+				prioritize = { 1292 }
 				create_unit = {
 					division = "name = \"1 Oddział im. Bermonta\" division_template = \"Oddział im. Bermonta\" start_experience_factor = 1.0" 
 					owner = POL
@@ -8859,7 +8859,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 95 }
+				prioritize = { 292 }
 				create_unit = {
 					division = "name = \"2 Oddział im. Bermonta\" division_template = \"Oddział im. Bermonta\" start_experience_factor = 1.0" 
 					owner = POL
@@ -8885,7 +8885,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 94 }
+				prioritize = { 1163 }
 				create_unit = {
 					division = "name = \"1 Kozacy Bermontowie\" division_template = \"Kozacy Bermontowie\" start_experience_factor = 1.0" 
 					owner = POL
@@ -8893,7 +8893,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 96 }
+				prioritize = { 1198 }
 				create_unit = {
 					division = "name = \"2 Kozacy Bermontowie\" division_template = \"Kozacy Bermontowie\" start_experience_factor = 1.0" 
 					owner = POL
@@ -9845,7 +9845,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 10 } #Warsaw
+				prioritize = { 508 } #Warsaw
 				create_unit = {
 					division = "name = \"Oddział Gwardii Królewskiej\" division_template = \"Oddział Gwardii Królewskiej\" start_experience_factor = 1.0" 
 					owner = POL
@@ -10472,7 +10472,7 @@ focus_tree = {
 				target_province = 3523
 			}
 			random_core_state = {
-				prioritize = {93} 
+				prioritize = {671} 
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
