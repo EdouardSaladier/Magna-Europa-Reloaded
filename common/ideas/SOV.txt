@@ -10,6 +10,25 @@ ideas = {
 
 
 	country= {
+	
+		SOV_barbarossa = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_ground_based_training
+			
+			modifier = {
+				army_morale_factor = -0.2
+				army_defence_factor = -0.1
+				army_org_factor = -0.2
+				org_loss_when_moving = 0.2
+				air_mission_efficiency = -0.9
+				air_accidents_factor = 1
+			}
+		}
 
 		SOV_second_five_year_plan_fake_1936_ns = { #Only used for 1936 bookmark (dynamic modifiers don't show up there)
 			name = SOV_second_five_year_plan_dynamic_modifier
@@ -10176,24 +10195,4 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 			}
 		}
-		
-		SOV_barbarossa = {
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = SOV_ground_based_training
-			
-			modifier = {
-				army_morale_factor = -0.2
-				army_defence_factor = -0.1
-				army_org_factor = -0.2
-				org_loss_when_moving = 0.2
-				air_mission_efficiency = -0.9
-				air_accidents_factor = 1
-			}
-		}
-
 }
