@@ -3577,7 +3577,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 798 #PIEDMONT (Genova)
+				controls_state = 798 #PIEDMONT (Genova)
 				ITA_is_northern_designer = yes
 			}
 						
@@ -3603,7 +3603,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 798 #PIEDMONT (Genova)
+				controls_state = 798 #PIEDMONT (Genova)
 				ITA_is_northern_designer_improved = yes
 			}
 						
@@ -3637,7 +3637,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 934 # CAMPAGNA (Napoli)
+				controls_state = 934 # CAMPAGNA (Napoli)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -3663,7 +3663,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 934 # CAMPAGNA (Napoli)
+				controls_state = 934 # CAMPAGNA (Napoli)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -3698,7 +3698,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 823 # ABRUZZO (Ancona)
+				controls_state = 823 # ABRUZZO (Ancona)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -3724,7 +3724,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 823 # ABRUZZO (Ancona)
+				controls_state = 823 # ABRUZZO (Ancona)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -3756,7 +3756,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 1405 # PUGLIA (Taranto)
+				controls_state = 1405 # PUGLIA (Taranto)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -3782,7 +3782,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 1405 # PUGLIA (Taranto)
+				controls_state = 1405 # PUGLIA (Taranto)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -3813,7 +3813,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 1361 #LOMBARDIA (Varese)
+				controls_state = 1361 #LOMBARDIA (Varese)
 				ITA_is_northern_designer = yes
 			}
 			
@@ -3839,7 +3839,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 1361 #LOMBARDIA (Varese)
+				controls_state = 1361 #LOMBARDIA (Varese)
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -3869,7 +3869,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 709 #LOMBARDIA (Milano)
+				controls_state = 709 #LOMBARDIA (Milano)
 				ITA_is_northern_designer = yes
 			}
 
@@ -3899,7 +3899,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 709 #LOMBARDIA (Milano)
+				controls_state = 709 #LOMBARDIA (Milano)
 				ITA_is_northern_designer_improved = yes
 			}
 
@@ -3930,7 +3930,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 709 #LOMBARDIA (Milano)
+				controls_state = 1361 #LOMBARDIA (Varese)
 				ITA_is_northern_designer = yes
 			}
 						
@@ -3956,7 +3956,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 709 #LOMBARDIA (Milano)
+				controls_state = 1361 #LOMBARDIA (Varese)
 				ITA_is_northern_designer_improved = yes
 			}
 						
@@ -3986,7 +3986,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 1387 #TUSCANY (Pisa)
+				controls_state = 1387 #TUSCANY (Pisa)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -4012,7 +4012,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 1387 #TUSCANY (Pisa)
+				controls_state = 1387 #TUSCANY (Pisa)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -4044,7 +4044,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 934 #CAMPANIA (Napoli)
+				controls_state = 934 #CAMPANIA (Napoli)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -4070,7 +4070,7 @@ ideas = {
 			}
 
 			available = {
-				controls_State = 934 #CAMPANIA (Napoli)
+				controls_state = 934 #CAMPANIA (Napoli)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -4110,7 +4110,7 @@ ideas = {
 						has_idea = ITA_crda_improved
 					}
 				}
-				controls_State = 744 #LITORALE (Trieste)
+				controls_state = 744 #LITORALE (Trieste)
 				ITA_is_northern_designer = yes
 			}
 
@@ -4145,7 +4145,7 @@ ideas = {
 						has_idea = ITA_crda_improved
 					}
 				}
-				controls_State = 744 #LITORALE (Trieste)
+				controls_state = 744 #LITORALE (Trieste)
 				ITA_is_northern_designer_improved = yes
 			}
 
@@ -4186,7 +4186,7 @@ ideas = {
 						has_idea = ITA_fiat_improved
 					}
 				}
-				controls_State = 718 #PIEDMONT (Torino)
+				controls_state = 718 #PIEDMONT (Torino)
 				ITA_is_northern_designer = yes
 			}
 
@@ -4218,7 +4218,7 @@ ideas = {
 					has_idea = fiat
 					has_idea = ITA_fiat_improved
 				}
-				controls_State = 718 #PIEDMONT (Torino)
+				controls_state = 718 #PIEDMONT (Torino)
 				ITA_is_northern_designer_improved = yes
 			}
 
