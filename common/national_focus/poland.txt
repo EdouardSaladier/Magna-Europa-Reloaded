@@ -5100,7 +5100,7 @@ focus_tree = {
 			}
 			POL_sanation_left_opposition_remove = yes
 			POL_sanation_right_opposition_remove = yes
-			hidden_effect = { 88 = { set_state_flag = POL_added_to_strike_flag } } #Krakow is always part of the strike
+			hidden_effect = { 1157 = { set_state_flag = POL_added_to_strike_flag } } #Krakow is always part of the strike
 			custom_effect_tooltip = peasant_strike_organizing_tt
 			unlock_decision_category_tooltip = POL_organize_the_peasants_strike
 		}
@@ -12662,27 +12662,51 @@ focus_tree = {
 			# Lithuania
 			custom_trigger_tooltip = {
 				tooltip = form_country_lithuania_required_states_tt
-				controls_state = 11
-				controls_state = 189
+				OR = {
+					AND = {
+						LIT = {
+							is_subject_of = POL
+						}
+						NOT = {
+							any_state = {
+								is_core_of = LIT
+								NOT = { is_core_of = PRE }
+								NOT = { is_core_of = POL }
+								controller = {
+									NOT = {
+										original_tag = LIT
+									}
+								}
+							}
+						}
+					}
+					NOT = {
+						any_state = {
+							is_core_of = LIT
+							NOT = { is_core_of = PRE }
+							controller = {
+								NOT = {
+									original_tag = POL
+								}
+							}
+						}
+					}
+				}
 			}
 			# Poland
 			custom_trigger_tooltip = {
 				tooltip = form_country_poland_required_states_tt
-				controls_state = 86
-				controls_state = 87
-				controls_state = 88
-				controls_state = 90
-				controls_state = 98
-				controls_state = 10
-				controls_state = 97
-				controls_state = 92
-				controls_state = 91
-				controls_state = 89
-				controls_state = 93
-				controls_state = 94
-				controls_state = 95
-				controls_state = 96
-				controls_state = 784
+				NOT = {
+					any_state = {
+						is_core_of = POL
+						NOT = { is_core_of = CZE }
+						controller = {
+							NOT = {
+								original_tag = POL
+							}
+						}
+					}
+				}
 			}
 			OR = {
 				core_compliance = {

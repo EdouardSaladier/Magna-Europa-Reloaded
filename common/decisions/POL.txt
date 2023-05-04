@@ -705,8 +705,8 @@ POL_peasant_strike_category = {
 
 		highlight_states = {
 		 	highlight_state_targets = {
-					state = 1292
-				} 
+				state = 1292
+			} 
 		}
 		
 		on_map_mode = map_and_decisions_view
@@ -765,15 +765,15 @@ POL_peasant_strike_category = {
 
 		available = {
 			divisions_in_state = {
-				state = 46	
+				state = 491	
 				size > 9
 			}
 		}
 
 		highlight_states = {
 		 	highlight_state_targets = {
-					state = 46
-				} 
+				state = 491
+			} 
 		}
 		
 		visible = {
@@ -818,18 +818,10 @@ POL_peasant_strike_category = {
 						OR = {
 							is_core_of = UKR
 							is_core_of = BLR
-							is_core_of = VLH
-							is_core_of = SVK
-							state = 1287
-							state = 319
-							state = 2485
-							state = 312
-							state = 2026
-							state = 2345
-							state = 501
-							state = 491
-							state = 46
-							state = 377
+							has_state_category = pastoral
+							has_state_category = rural
+							has_state_category = town
+							has_state_category = large_town
 						}
 					}
 					PREV = {
@@ -866,8 +858,8 @@ POL_peasant_strike_category = {
 
 		highlight_states = {
 		 	highlight_state_targets = {
-					state = var:peasant_state_var
-				} 
+				state = var:peasant_state_var
+			} 
 		}
 		
 		visible = {
@@ -920,18 +912,10 @@ POL_peasant_strike_category = {
 						OR = {
 							is_core_of = UKR
 							is_core_of = BLR
-							is_core_of = VLH
-							is_core_of = SVK
-							state = 1287
-							state = 319
-							state = 2485
-							state = 312
-							state = 2026
-							state = 2345
-							state = 501
-							state = 491
-							state = 46
-							state = 377
+							has_state_category = pastoral
+							has_state_category = rural
+							has_state_category = town
+							has_state_category = large_town
 						}
 						NOT = {
 							state = var:peasant_state_var #Prevent the same state from being targeted twice
@@ -1175,8 +1159,6 @@ POL_organize_the_peasants_strike = {
 		}
 
 		state_target = yes
-		
-		targets = { 96 784 95 94 93 91 89 90 88 92 97 98 87 86 807 85 762 }
 
 		available = {
 			NOT = { has_country_flag = adding_state_to_strike_flag }
@@ -1187,45 +1169,41 @@ POL_organize_the_peasants_strike = {
 				is_demilitarized_zone = no #Danzig should not be added unless it has been dealt with
 			}
 		}
+		
 		target_trigger = {
 			FROM = {
-				is_core_of = POL
+				is_owned_by = ROOT
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+				is_on_continent = europe
 				OR = {
 					owner = { has_country_flag = POL_expanded_to_factories }
 					is_core_of = UKR
-							is_core_of = BLR
-							is_core_of = VLH
-							is_core_of = SVK
-							state = 1287
-							state = 319
-							state = 2485
-							state = 312
-							state = 2026
-							state = 2345
-							state = 501
-							state = 491
-							state = 46
-							state = 377
+					is_core_of = BLR
+					has_state_category = pastoral
+					has_state_category = rural
+					has_state_category = town
+					has_state_category = large_town
 				}
 			}
 		}
+		
+		target_root_trigger = {
+			original_tag = POL
+		}
+		
 		visible = {
 		}
 
 		fire_only_once = no
-		custom_cost_trigger = {
-			command_power > 4
-			has_political_power > 24
-		}
-		custom_cost_text = decision_cost_CP_5_pp_25
+		
+		cost = 10
 
-		days_remove = 30
+		days_remove = 15
 		on_map_mode = map_only
 		complete_effect = {
 			hidden_effect = {
 				FROM = { set_state_flag = POL_currently_being_added_to_strike_flag }
-				add_political_power = -25
-				add_command_power = -5
 			}
 			set_country_flag = adding_state_to_strike_flag
 		}
@@ -1234,19 +1212,31 @@ POL_organize_the_peasants_strike = {
 			if = {
 				limit = {
 					has_active_mission = POL_looming_peasants_strike_mission
+					FROM = {
+						NOT = {
+							has_state_category = pastoral
+							has_state_category = rural
+						}
+					}
 				}
 				add_days_mission_timeout  = {
 					mission = POL_looming_peasants_strike_mission
-					days = -10
+					days = -5
 				}
 			}
 			if = {
 				limit = {
 					has_active_mission = POL_peasants_strike
+					FROM = {
+						NOT = {
+							has_state_category = pastoral
+							has_state_category = rural
+						}
+					}
 				}
 				add_days_mission_timeout  = {
 					mission = POL_peasants_strike
-					days = -20
+					days = -10
 				}
 			}
 			clr_country_flag = adding_state_to_strike_flag
@@ -1279,6 +1269,13 @@ POL_organize_the_peasants_strike = {
 					industrial_complex > 0
 				}
 			}
+			modifier = { #Expand into rural territory too
+				factor = 2
+				FROM = {
+					has_state_category = pastoral
+					has_state_category = rural
+				}
+			}
 		}
 	}
 	POL_expand_strikes_to_factories = {
@@ -1289,8 +1286,10 @@ POL_organize_the_peasants_strike = {
 			NOT = { has_country_flag = POL_interacting_with_peasants_flag }
 			any_owned_state = {
 				OR = {
-					is_core_of = UKR
-					is_core_of = BLR
+					has_state_category = pastoral
+					has_state_category = rural
+					has_state_category = town
+					has_state_category = large_town
 				}
 				has_state_flag = POL_added_to_strike_flag
 			}
