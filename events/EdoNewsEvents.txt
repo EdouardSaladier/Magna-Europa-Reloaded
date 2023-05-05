@@ -1,0 +1,50 @@
+﻿###########################
+# Edo Events
+###########################
+
+add_namespace = edo_news
+
+news_event = {
+	id = edo_news.1
+	title = edo_news.1.t
+	desc = edo_news.1.d
+	picture = GFX_news_event_020
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = edo_news.1.a
+	}
+}
+
+news_event = {
+	id = edo_news.2
+	title = edo_news.2.t
+	desc = edo_news.2.d
+	picture = GFX_news_event_020
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = edo_news.2.a
+	}
+}
+
+news_event = {
+	id = edo_news.3
+	title = edo_news.3.t
+	desc = edo_news.3.d
+	picture = GFX_news_event_020
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = edo_news.3.a
+	}
+}
