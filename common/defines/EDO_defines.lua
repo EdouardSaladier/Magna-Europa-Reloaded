@@ -7,6 +7,7 @@ NDefines.NGraphics.PROVINCE_NAME_DRAW_DISTANCE = 1000.0 			-- Remove province na
 
 NDefines.NGame.MAP_SCALE_PIXEL_TO_KM = 1.74
 NDefines.NGame.SAVE_VERSION = 7
+NDefines.NGame.HANDS_OFF_START_TAG = "LIE"
 
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.18
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.01				-- after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
@@ -28,13 +29,30 @@ NDefines.NSupply.NAVAL_BASE_INITIAL_SUPPLY_FLOW = 0.8
 NDefines.NSupply.NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 0.6
 NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 0.6
 NDefines.NSupply.FLOATING_HARBOR_INITIAL_SUPPLY_FLOW = 0.8
-NDefines.NSupply.NUM_RAILWAYS_TRAIN_FACTOR = 0.12  --Distance should matter much more now
+NDefines.NSupply.NUM_RAILWAYS_TRAIN_FACTOR = 0.13  --Distance should matter much more now
 NDefines.NSupply.DEFAULT_STARTING_TRAIN_RATIO = 2.0
 NDefines.NSupply.TRUCK_ATTRITION = 0.01  --More supply truck attrition
 NDefines.NSupply.AVAILABLE_MANPOWER_STATE_SUPPLY = 0.1
 NDefines.NSupply.NON_CORE_MANPOWER_STATE_SUPPLY = 0.05
 
+NDefines.NBuildings.RADAR_RANGE_BASE = 0				-- Radar range base, first level radar will be this + min, best radar will be this + max
+NDefines.NBuildings.RADAR_RANGE_MIN = 100				-- Radar range (from state center to province center) in measure of map pixels. Exluding techs.
+NDefines.NBuildings.RADAR_RANGE_MAX = 500				-- Range is interpolated between building levels 1-15.
+
 NDefines.NAir.AIR_REGION_SUPERIORITY_PIXEL_SCALE = 0.02
+
+NDefines.NAI.WANTED_UNITS_INDUSTRY_FACTOR = 1.50                        -- How many units a country wants is partially based on how much military industry that is available
+NDefines.NAI.WANTED_UNITS_THREAT_BASE = 0.7                             -- If no threat, multiply min wanted units by this
+NDefines.NAI.WANTED_UNITS_THREAT_MAX = 25.0                             -- Normalized threat is clamped to this
+NDefines.NAI.WANTED_UNITS_WAR_THREAT_FACTOR = 1.5                      -- Factor threat with this if country is at war. this value is overriden by the value in ideology database if that value exceedes this.
+NDefines.NAI.WANTED_UNITS_DANGEROUS_NEIGHBOR_FACTOR = 1.25              -- Factor if has dangerous neighbor
+NDefines.NAI.WANTED_UNITS_MANPOWER_DIVISOR = 22000                      -- Normalizing divisor for AI manpower. (for each x max available manpower, they want one division)
+NDefines.NAI.WANTED_UNITS_WEIGHT_FRONTS_WANT = 0.40                      -- Weight of front needs when computing final nr wanted units
+NDefines.NAI.WANTED_UNITS_WEIGHT_FACTORIES = 0.5                        -- Weight of military factories when computing final nr wanted units
+NDefines.NAI.WANTED_UNITS_WEIGHT_MANPOWER = 0.3                         -- Weight of manpower availability when computing final nr wanted units
+NDefines.NAI.WANTED_UNITS_MIN_DEFENCE_FACTOR = 0.4						-- Factor on units required for min defence
+-- End of calculating wanted nr of divisions
+NDefines.NAI.WANTED_UNITS_MAX_WANTED_CAP = 1000	-- Maximum wanted divisions for a country. This can be exceeded by certain hardcoded multipliers, but not by base calculation logic.
 
 NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.3
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 12
