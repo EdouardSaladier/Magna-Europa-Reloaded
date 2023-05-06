@@ -158,9 +158,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 19109;15141;sea;16926;-1;-1;-1;-1;;Sazan-Albania
 15010;15013;sea;17867;-1;-1;-1;-1;;Bosphorus crossing
 17001;17867;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus strait
+15164;21437;sea;17398;-1;-1;-1;-1;;Dardanelles crossing
 18036;17398;;-1;-1;-1;-1;-1;DARDANELLES_STRAIT;Dardanelles strait
 18503;17500;;-1;-1;-1;-1;-1;SUEZ_CANAL;Suez canal duh
 18465;17429;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Strait of Gibraltar
+15693;21020;sea;17201;-1;-1;-1;-1;;Tunisia crossing
+15703;21020;sea;16204;-1;-1;-1;-1;;Tunisia crossing 2
 7289;20291;sea;16994;-1;-1;-1;-1;;Canakkale-Lesbos
 20293;7595;sea;17626;-1;-1;-1;-1;;Chios-Izmir
 20295;20296;sea;16439;-1;-1;-1;-1;;Samos 1-Samos 2
@@ -168,6 +171,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 21356;20297;sea;16887;-1;-1;-1;-1;;Rhodes-Mainland
 20316;20297;sea;17475;-1;-1;-1;-1;;Rhodes-Dodecanese 1
 20317;21364;sea;17049;-1;-1;-1;-1;;Dodecanese2-Mainland
+20318;21364;sea;16439;-1;-1;-1;-1;;Dodecanese3-Mainland
+20318;20317;sea;16439;-1;-1;-1;-1;;Dodecanese3-Dodecanese
 19405;19408;sea;16263;-1;-1;-1;-1;;Faero 1
 19405;19407;sea;17794;-1;-1;-1;-1;;Faero 2
 19406;19407;sea;17794;-1;-1;-1;-1;;Faero 3

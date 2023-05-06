@@ -659,43 +659,60 @@ careful_with_early_invasions = {
 	ai_strategy = {
 		type = invade
 		id = "ITA"
-		value = -500
+		value = -5000
 	}
 
 	ai_strategy = {
 		type = invade
 		id = "GER"
-		value = -500
+		value = -5000
 	}
 	
 	ai_strategy = {
 		type = invade
 		id = "RKN"
-		value = -500
+		value = -5000
+	}
+	
+	ai_strategy = {
+		type = invade
+		id = "FRA"
+		value = -5000
 	}
 	
 	ai_strategy = {
 		type = invade
 		id = "RKB"
-		value = -500
+		value = -5000
 	}
 	
 	ai_strategy = {
 		type = invade
 		id = "MVF"
-		value = -500
+		value = -5000
 	}
 
 	ai_strategy = {
 		type = invade
 		id = "VIC"
-		value = -500
+		value = -5000
 	}
 
 	ai_strategy = {
 		type = area_priority
 		id = scandinavia
 		value = -300
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = atlantik_wall_zone
+		value = -5000
+	}
+	
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = -5000
 	}
 }
 
@@ -2052,4 +2069,24 @@ ENG_and_EGY_push_through_libya = {
 		area = egypt_front
 		value = 50
 	}
+}
+
+ENG_build_radars = {
+
+	allowed = {	original_tag = ENG }
+	
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = radar_station
+		target = 446
+		value = 100
+	}
+
 }

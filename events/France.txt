@@ -911,15 +911,6 @@ country_event = {
 					}
 					event_target:vichy_france = { transfer_state = PREV }
 				}
-				every_country = {
-					limit = {
-						is_subject_of = FRA
-						capital_scope = {
-							is_on_continent = africa
-						}
-					}
-					event_target:vichy_france = { set_autonomy = { target = PREV autonomy_state = autonomy_dominion } }
-				}
 				every_state = {
 					limit = { #set up Vichy continental holdings
 						is_vichy_state = yes
@@ -942,6 +933,28 @@ country_event = {
 					}
 					add_core_of = PREV
 				}
+				
+				every_country = {
+					limit = {
+						is_subject_of = FRA
+						NOT = { original_tag = MRT }
+						capital_scope = {
+							OR = {
+								is_on_continent = africa
+								is_on_continent = middle_east
+								is_on_continent = asia
+							}
+						}
+					}
+					if = {
+						limit = { has_dlc = "Together for Victory" }
+						event_target:vichy_france = { set_autonomy = { target = PREV autonomy_state = autonomy_colony } }
+					}
+					else = {
+						event_target:vichy_france = { puppet = PREV }
+					}
+				}
+				
 				# Italian Occupation Zone PART 1
 				every_state = {
 					limit = {
@@ -1077,29 +1090,29 @@ country_event = {
 				FRA = {
 					transfer_units_fraction = {
 						target = event_target:vichy_france
-						size = 0.9
-						stockpile_ratio = 0.7
-						army_ratio = 0.5
+						size = 0.8
+						stockpile_ratio = 0.8
+						army_ratio = 0.8
 						navy_ratio = 0.85
 						air_ratio = 1.0
 					}
 				}
 				transfer_units_fraction = {
 					target = SYR
-					size = 0.1
-					stockpile_ratio = 0.1
-					army_ratio = 0.1
+					size = 0.2
+					stockpile_ratio = 0.2
+					army_ratio = 0.2
 					navy_ratio = 0
-					air_ratio = 0.1
+					air_ratio = 0.2
 					keep_unit_leaders_trigger = { always = yes }
 				}
 				transfer_units_fraction = {
 					target = LEB
-					size = 0.1
-					stockpile_ratio = 0.1
-					army_ratio = 0.1
+					size = 0.2
+					stockpile_ratio = 0.2
+					army_ratio = 0.2
 					navy_ratio = 0
-					air_ratio = 0.1
+					air_ratio = 0.2
 					keep_unit_leaders_trigger = { always = yes }
 				}
 				transfer_units_fraction = {
@@ -1124,64 +1137,6 @@ country_event = {
 				if = {
 					limit = { FRA = { has_country_flag = become_vichy } }
 					change_tag_from = FRA
-				}
-				FRA = {
-					every_subject_country = {
-						limit = {
-							original_tag = SYR
-							original_tag = LEB
-							original_tag = TUN
-							original_tag = MOR
-						}
-						if = {
-							limit = {
-								has_autonomy_state = autonomy_dominion
-							}
-							VIC = {
-								set_autonomy = {
-									target = PREV
-									autonomy_state = autonomy_dominion
-									end_wars = yes
-								}
-							}
-						}
-						if = {
-							limit = {
-								has_autonomy_state = autonomy_colony
-							}
-							VIC = {
-								set_autonomy = {
-									target = PREV
-									autonomy_state = autonomy_colony
-									end_wars = yes
-								}
-							}
-						}
-						if = {
-							limit = {
-								has_autonomy_state = autonomy_puppet
-							}
-							VIC = {
-								set_autonomy = {
-									target = PREV
-									autonomy_state = autonomy_puppet
-									end_wars = yes
-								}
-							}
-						}
-						if = {
-							limit = {
-								has_autonomy_state = autonomy_integrated_puppet
-							}
-							VIC = {
-								set_autonomy = {
-									target = PREV
-									autonomy_state = autonomy_integrated_puppet
-									end_wars = yes
-								}
-							}
-						}
-					}
 				}
 			}
 		}

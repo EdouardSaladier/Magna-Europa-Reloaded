@@ -664,16 +664,28 @@ economy_decisions = {
 
 		available = {
 			any_owned_state = {
+				OR = {
 					free_building_slots = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
 					}
-					OR = {
-						arms_factory > 1
-						industrial_complex > 1
-						dockyard > 1
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
 					}
+					free_building_slots = {
+						building = dockyard
+						size < 1
+						include_locked = yes
+					}
+				}
+				OR = {
+					arms_factory > 1
+					industrial_complex > 1
+					dockyard > 1
+				}
 			}
 		}
 
@@ -688,6 +700,36 @@ economy_decisions = {
 		cost = 0
 
 		complete_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					arms_factory > 0
+				}
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				USA = { add_offsite_building = { type = arms_factory level = 1 } }
+			}
+			random_owned_controlled_state = {
+				limit = {
+					industrial_complex > 0
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				USA = { add_offsite_building = { type = industrial_complex level = 1 } }
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+				}
+				remove_building = {
+					type = dockyard
+					level = 1
+				}
+				USA = { add_offsite_building = { type = dockyard level = 1 } }
+			}
 			random_owned_controlled_state = {
 				limit = {
 					arms_factory > 0
