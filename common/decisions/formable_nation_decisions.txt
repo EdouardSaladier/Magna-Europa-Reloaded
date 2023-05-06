@@ -6725,11 +6725,11 @@ form_turan_category = {
 			every_state = {
 				limit = {
 					OR = {
-							is_southern_slovakia = yes 
-							is_transylvania_proper = yes 
-							is_hungarian_vojvodina = yes 
-							has_state_flag = HUN_INITIAL_STATE
-						}
+						is_southern_slovakia = yes 
+						is_transylvania_proper = yes 
+						is_hungarian_vojvodina = yes 
+						has_state_flag = HUN_INITIAL_STATE
+					}
 				}
 				add_dynamic_modifier = { modifier = turanist_assimilation }
 			}

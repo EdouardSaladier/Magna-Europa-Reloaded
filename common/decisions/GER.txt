@@ -2962,7 +2962,7 @@ political_actions = {
 					}
 				}
 				transfer_state_to = CRO
-				add_core_of = CRO
+				add_claim_by = CRO
 				GER = {
 					puppet = CRO
 					set_autonomy = { target = CRO autonomy_state = autonomy_integrated_puppet }
@@ -3123,86 +3123,77 @@ political_actions = {
 				}
 			}
 			
-				if = {
-					limit = {
-						always = no
-						790 = {	
-							owner = {
-								has_war_with = ROOT
-							}
+			if = {
+				limit = {
+					always = no
+					790 = {	
+						owner = {
+							has_war_with = ROOT
 						}
 					}
-					every_state = {
-						limit = {
-								OR = {
-									is_core_of = SER
-									is_core_of = MAC
-									is_core_of = MNT
-								}
-								NOT = {
-									is_owned_by = BUL
-									is_owned_by = ITA
-									is_owned_by = HUN
-									is_owned_by = CRO
-									is_owned_by = MNT
-									is_owned_by = ALB
-								}
-							}
-						add_claim_by = MCS
-						set_state_controller_to	= MCS
-						add_compliance = 30
-					}
-					MCS = {
-						declare_war_on = {
-							target = YUG
-							type = civil_war
-						}
-					}	
-					MCS = {
-						transfer_state = 2810
-					}
-					set_autonomy = { target = MCS autonomy_state = autonomy_integrated_puppet }
 				}
-				if = {
+				every_state = {
 					limit = {
-						#790 = {	
-						#	owner = {
-						#		NOT = { has_war_with = ROOT }
-						#	}
-						#}
-					}
-					every_state = {
-						limit = {
-								OR = {
-									is_core_of = SER
-									is_core_of = MAC
-									is_core_of = MNT
-								}
-								NOT = {
-									is_owned_by = BUL
-									is_owned_by = ITA
-									is_owned_by = HUN
-									is_owned_by = CRO
-									is_owned_by = MNT
-									is_owned_by = ALB
-								}
+							OR = {
+								is_core_of = SER
+								is_core_of = MAC
+								is_core_of = MNT
 							}
-						transfer_state_to = MCS
-						add_claim_by = MCS
-						add_compliance = 30
+							NOT = {
+								is_owned_by = BUL
+								is_owned_by = ITA
+								is_owned_by = HUN
+								is_owned_by = CRO
+								is_owned_by = MNT
+								is_owned_by = ALB
+							}
+						}
+					add_claim_by = MCS
+					set_state_controller_to	= MCS
+					add_compliance = 30
+				}
+				MCS = {
+					declare_war_on = {
+						target = YUG
+						type = civil_war
 					}
-					GER = { set_autonomy = { target = MCS autonomy_state = autonomy_integrated_puppet } }
+				}	
+				MCS = {
+					transfer_state = 2810
 				}
-				GER = {
-					puppet = MCS
-					set_autonomy = { target = MCS autonomy_state = autonomy_integrated_puppet }
+			}
+			else = {
+				every_state = {
+					limit = {
+							OR = {
+								is_core_of = SER
+								is_core_of = MAC
+								is_core_of = MNT
+							}
+							NOT = {
+								is_owned_by = BUL
+								is_owned_by = ITA
+								is_owned_by = HUN
+								is_owned_by = CRO
+								is_owned_by = MNT
+								is_owned_by = ALB
+							}
+						}
+					transfer_state_to = MCS
+					add_claim_by = MCS
+					add_compliance = 30
 				}
-				hidden_effect = {
-					MCS = {
-						load_focus_tree = rk_tree
-						add_ideas = GER_military_regime
-					}
+			}
+			GER = {
+				puppet = MCS
+				set_autonomy = { target = MCS autonomy_state = autonomy_integrated_puppet }
+			}
+			hidden_effect = {
+				MCS = {
+					load_focus_tree = rk_tree
+					add_ideas = GER_military_regime
 				}
+			}
 			
 			every_state = {
 				limit = {

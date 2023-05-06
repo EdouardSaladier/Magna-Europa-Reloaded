@@ -14030,22 +14030,44 @@ focus_tree = {
 			add_ideas = ITA_italian_irredentism_ns
 			#TODO_Manu: Might need to remove some/all of the claims below due to overlap with other focuses
 			add_named_threat = { threat = 5 name = ITA_italian_irredentism } #Comes from the old Claims in Yugoslavia focus
-			every_state = {
+			
+			if = {
 				limit = {
-					NOT = { 
-						is_claimed_by = ITA 
-						has_state_flag = ITA_INITIAL_STATE
-					}
-					OR = {
-						is_dalmatia = yes
-						is_core_of = SLV
-						is_core_of = TUN
-						is_core_of = MLT
-						is_core_of = COR
-					}	
-
+					YUG = { has_completed_focus = YUG_surrender_italian_claims }
 				}
-				add_claim_by = ROOT
+				every_state = {
+					limit = {
+						NOT = { 
+							is_claimed_by = ITA 
+							has_state_flag = ITA_INITIAL_STATE
+						}
+						OR = {
+							is_core_of = TUN
+							is_core_of = MLT
+							is_core_of = COR
+						}
+					}
+					add_claim_by = ROOT
+				}
+			}
+			else = {
+				every_state = {
+					limit = {
+						NOT = { 
+							is_claimed_by = ITA 
+							has_state_flag = ITA_INITIAL_STATE
+						}
+						OR = {
+							is_dalmatia = yes
+							is_core_of = SLV
+							is_core_of = TUN
+							is_core_of = MLT
+							is_core_of = COR
+						}	
+
+					}
+					add_claim_by = ROOT
+				}
 			}
 
 			if = {

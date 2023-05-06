@@ -5689,16 +5689,36 @@ country_event = {
 		
 		if = {
 			limit = {
-				is_faction_leader = yes
+				ITA = { is_faction_leader = yes }
 			}
-			add_to_faction = YUG
+			ITA = { add_to_faction = YUG }
 		}
-		else = {
+		else_if = {
+			limit = {
+				ITA = { is_in_faction = yes }
+			}
 			random_country = {
 				limit = {
 					is_in_faction_with = ITA
 					is_faction_leader = yes
 				}
+				add_to_faction = YUG
+			}
+		}
+		else_if = {
+			limit = {
+				GER = {
+					exists = yes
+					has_capitulated = no
+					has_government = fascism
+					is_faction_leader = yes
+				}
+			}
+			GER = { add_to_faction = YUG }
+		}
+		else = {
+			get_best_alliance_match_fascism_effect = yes
+			var:best_leader = {
 				add_to_faction = YUG
 			}
 		}
@@ -5795,8 +5815,44 @@ country_event = {
 	
 	option = {
 		name = DOD_yugoslavia.801.a #I'mma join anyway
-		ITA = { transfer_state = 103 }
+		ITA = {
+			transfer_state = 2827
+			transfer_state = 2826
+			transfer_state = 1988
+			transfer_state = 811
+			transfer_state = 1475
+			transfer_state = 2651
+			transfer_state = 1998
+			transfer_state = 2895
+			transfer_state = 2916
+			transfer_state = 2896
+			transfer_state = 1491
+			transfer_state = 1480
+			transfer_state = 2897
+			transfer_state = 2241
+			transfer_state = 1473
+			transfer_state = 1990
+			transfer_state = 884
+		}
 		if = {
+			limit = {
+				ITA = { is_faction_leader = yes }
+			}
+			ITA = { add_to_faction = YUG }
+		}
+		else_if = {
+			limit = {
+				ITA = { is_in_faction = yes }
+			}
+			random_country = {
+				limit = {
+					is_in_faction_with = ITA
+					is_faction_leader = yes
+				}
+				country_event = generic.2
+			}
+		}
+		else_if = {
 			limit = {
 				GER = {
 					exists = yes
@@ -5835,7 +5891,7 @@ country_event = {
 	option = {
 		name = DOD_yugoslavia.802.a #Epic
 		effect_tooltip = {
-			transfer_state = 163
+			transfer_state = 1476
 			if = {
 				limit = {
 					FROM = { is_faction_leader = yes }

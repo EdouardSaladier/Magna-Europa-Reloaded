@@ -518,9 +518,8 @@ country_event = {
 		trigger = { 
 			YUG = { 
 				OR = { 
-					owns_state = 103
-					owns_state = 104
-					owns_state = 109
+					owns_state = 1563
+					owns_state = 1464
 				} 
 			} 
 		}
@@ -529,62 +528,235 @@ country_event = {
 			add_political_power = -25
 			add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
 			
-			CRO = {
-				if = {
-					limit = { YUG = { owns_state = 1464 } }
-					transfer_state = 1464
-					transfer_state = 1462
-					transfer_state = 1461
-					transfer_state = 1463
-					transfer_state = 1464
-					transfer_state = 1466
-					transfer_state = 712
-					transfer_state = 1467
-					transfer_state = 2831
-					transfer_state = 1465
-					transfer_state = 1503
-					transfer_state = 1468
-					transfer_state = 2832
-					transfer_state = 2830
-					transfer_state = 1469
-					transfer_state = 721
-					transfer_state = 1472
-					transfer_state = 2881
-					transfer_state = 1471
+			if = {
+				limit = {
+					is_in_faction_with = ITA
 				}
-				if = {
-					limit = { YUG = { owns_state = 1563 } }
-					transfer_state = 1473
-					transfer_state = 1477
-					transfer_state = 2651
-					transfer_state = 754
-					transfer_state = 1478
-					transfer_state = 2829
-					transfer_state = 1999
-					transfer_state = 2828
-					transfer_state = 2827
-					transfer_state = 1998
-					transfer_state = 2826
-					transfer_state = 1988
-					transfer_state = 811
-					transfer_state = 815
-					transfer_state = 1479
-					transfer_state = 1563
-					transfer_state = 1491
-					transfer_state = 1481
-					transfer_state = 1990
-					transfer_state = 2241
-					transfer_state = 1480
-					transfer_state = 1475
-				}					
+				if = { #If Albania do not exists, ITA grabs the stuff
+					limit = {
+						ALB = {
+							exists = no
+						}
+					}
+					every_state = {
+						limit = {
+							is_owned_by = YUG
+							OR = {
+								AND = {
+									is_core_of = KOS
+									NOT = {
+										OR = {
+											state = 1517
+											state = 1997
+											state = 1996
+										}
+									}
+								}
+								state = 2795
+								state = 989
+								state = 904
+								state = 2796
+								state = 1986
+								state = 1987
+								state = 2007
+							}
+						}
+						transfer_state_to = ITA
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = YUG
+						OR = {
+							state = 811
+							state = 1988
+							state = 2826
+							state = 2827
+							state = 1988
+							state = 1475
+							state = 2651
+							state = 1480
+							state = 2897
+							state = 2916
+							state = 1990
+							state = 884
+							state = 1473
+							state = 2825
+							state = 1486
+							state = 743
+						}
+					}
+					transfer_state_to = ITA
+				}
+				every_state = {
+					limit = {
+						is_owned_by = YUG
+						OR = {
+							is_core_of = MNT
+							state = 2802
+							state = 844
+						}
+						NOT = { is_owned_by = ITA }
+					}
+					transfer_state_to = MNT
+					ITA = {
+						puppet = MNT
+						set_autonomy = { target = MNT autonomy_state = autonomy_integrated_puppet }
+					}
+				}
 			}
-			puppet = CRO
-			annex_country = { target = YUG transfer_troops = no }
-
-			hidden_effect = {
-				set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_annex_YUG
-				news_event = { hours = 6 id = news.169 }
+			if = {
+				limit = {
+					is_in_faction_with = HUN
+				}
+				every_state = {
+					limit = {
+						is_owned_by = YUG
+						is_core_of = VJV
+						NOT = { 
+							is_core_of = BNT 
+							state = 2555
+							state = 775
+							state = 1470
+						}
+					}
+					transfer_state_to = HUN
+				}
 			}
+			if = {
+				limit = {
+					is_in_faction_with = BUL
+				}
+				every_state = {
+					limit = {
+						is_owned_by = YUG
+						OR = {
+							is_core_of = MAC
+							state = 846
+							state = 1972
+							state = 865
+							state = 1971
+							state = 2805
+						}
+						NOT = {
+							state = 904
+							state = 2796
+						}
+					}
+					transfer_state_to = BUL
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction_with = ALB
+				}
+				every_state = {
+					limit = {
+						is_owned_by = YUG
+						OR = {
+							AND = {
+								is_core_of = KOS
+								NOT = {
+									OR = {
+										state = 1517
+										state = 1997
+										state = 1996
+									}
+								}
+							}
+							state = 2795
+							state = 989
+							state = 904
+							state = 2796
+							state = 1986
+							state = 1987
+							state = 2007
+						}
+					}
+					transfer_state_to = ALB
+					add_core_of = ALB
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction_with = BUL
+					NOT = { is_in_faction_with = ALB }
+				}
+				BUL = {
+					transfer_state = 904
+					transfer_state = 2796
+				}
+			}
+		}
+		YUG = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = CRO
+						is_core_of = BOS
+						state = 1470
+						state = 775
+						state = 2555
+					}
+					NOT = {
+						state = 1472
+						is_core_of = ITA
+						is_core_of = HUN
+					}
+				}
+				transfer_state_to = CRO
+				add_claim_by = CRO
+				GER = {
+					puppet = CRO
+					set_autonomy = { target = CRO autonomy_state = autonomy_integrated_puppet }
+				}
+			}
+			
+			every_owned_state = {
+				limit = {
+					is_core_of = SLV
+					NOT = {
+						is_owned_by = ITA 
+						is_owned_by = HUN 
+					}
+				}
+				transfer_state_to = GER
+			}
+			
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = SER
+						is_core_of = MAC
+						is_core_of = MNT
+					}
+					NOT = {
+						is_owned_by = BUL
+						is_owned_by = ITA
+						is_owned_by = HUN
+						is_owned_by = CRO
+						is_owned_by = MNT
+						is_owned_by = ALB
+					}
+				}
+				transfer_state_to = MCS
+				add_claim_by = MCS
+				add_compliance = 30
+			}
+		}
+		GER = {
+			puppet = MCS
+			set_autonomy = { target = MCS autonomy_state = autonomy_integrated_puppet }
+		}
+		hidden_effect = {
+			MCS = {
+				load_focus_tree = rk_tree
+				add_ideas = GER_military_regime
+			}
+		}
+		hidden_effect = {
+			set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_annex_YUG
+			news_event = { hours = 6 id = news.169 }
 		}
 	}
 }
@@ -641,58 +813,205 @@ country_event = {
 
 			add_named_threat = { threat = 2 name = GER_fate_of_yugoslavia }
 			
-			CRO = {
-				if = {
-					limit = { YUG = { owns_state = 1464 } }
-					transfer_state = 1464
-					transfer_state = 1462
-					transfer_state = 1461
-					transfer_state = 1463
-					transfer_state = 1464
-					transfer_state = 1466
-					transfer_state = 712
-					transfer_state = 1467
-					transfer_state = 2831
-					transfer_state = 1465
-					transfer_state = 1503
-					transfer_state = 1468
-					transfer_state = 2832
-					transfer_state = 2830
-					transfer_state = 1469
-					transfer_state = 721
-					transfer_state = 1472
-					transfer_state = 2881
-					transfer_state = 1471
+			if = {
+				limit = {
+					is_in_faction_with = ITA
 				}
-				if = {
-					limit = { YUG = { owns_state = 1563 } }
-					transfer_state = 1473
-					transfer_state = 1477
-					transfer_state = 2651
-					transfer_state = 754
-					transfer_state = 1478
-					transfer_state = 2829
-					transfer_state = 1999
-					transfer_state = 2828
-					transfer_state = 2827
-					transfer_state = 1998
-					transfer_state = 2826
-					transfer_state = 1988
-					transfer_state = 811
-					transfer_state = 815
-					transfer_state = 1479
-					transfer_state = 1563
-					transfer_state = 1491
-					transfer_state = 1481
-					transfer_state = 1990
-					transfer_state = 2241
-					transfer_state = 1480
-					transfer_state = 1475
-				}						
+				if = { #If Albania do not exists, ITA grabs the stuff
+					limit = {
+						ALB = {
+							exists = no
+						}
+					}
+					every_state = {
+						limit = {
+							is_owned_by = YUG
+							OR = {
+								AND = {
+									is_core_of = KOS
+									NOT = {
+										OR = {
+											state = 1517
+											state = 1997
+											state = 1996
+										}
+									}
+								}
+								state = 2795
+								state = 989
+								state = 904
+								state = 2796
+								state = 1986
+								state = 1987
+								state = 2007
+							}
+						}
+						transfer_state_to = ITA
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = YUG
+						OR = {
+							state = 811
+							state = 1988
+							state = 2826
+							state = 2827
+							state = 1988
+							state = 1475
+							state = 2651
+							state = 1480
+							state = 2897
+							state = 2916
+							state = 1990
+							state = 884
+							state = 1473
+							state = 2825
+							state = 1486
+							state = 743
+						}
+					}
+					transfer_state_to = ITA
+				}
+				every_state = {
+					limit = {
+						is_owned_by = YUG
+						OR = {
+							is_core_of = MNT
+							state = 2802
+							state = 844
+						}
+						NOT = { is_owned_by = ITA }
+					}
+					transfer_state_to = MNT
+					ITA = {
+						puppet = MNT
+						set_autonomy = { target = MNT autonomy_state = autonomy_integrated_puppet }
+					}
+				}
 			}
-			puppet = CRO
+			if = {
+				limit = {
+					is_in_faction_with = HUN
+				}
+				every_state = {
+					limit = {
+						is_owned_by = YUG
+						is_core_of = VJV
+						NOT = { 
+							is_core_of = BNT 
+							state = 2555
+							state = 775
+							state = 1470
+						}
+					}
+					transfer_state_to = HUN
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction_with = BUL
+				}
+				every_state = {
+					limit = {
+						is_owned_by = YUG
+						OR = {
+							is_core_of = MAC
+							state = 846
+							state = 1972
+							state = 865
+							state = 1971
+							state = 2805
+						}
+						NOT = {
+							state = 904
+							state = 2796
+						}
+					}
+					transfer_state_to = BUL
+				}
+			}
+			
+			if = {
+				limit = {
+					is_in_faction_with = ALB
+				}
+				every_state = {
+					limit = {
+						is_owned_by = YUG
+						OR = {
+							AND = {
+								is_core_of = KOS
+								NOT = {
+									OR = {
+										state = 1517
+										state = 1997
+										state = 1996
+									}
+								}
+							}
+							state = 2795
+							state = 989
+							state = 904
+							state = 2796
+							state = 1986
+							state = 1987
+							state = 2007
+						}
+					}
+					transfer_state_to = ALB
+					add_core_of = ALB
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction_with = BUL
+					NOT = { is_in_faction_with = ALB }
+				}
+				BUL = {
+					transfer_state = 904
+					transfer_state = 2796
+				}
+			}
+		}
+		YUG = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = CRO
+						is_core_of = BOS
+						state = 1470
+						state = 775
+						state = 2555
+					}
+					NOT = {
+						state = 1472
+						is_core_of = ITA
+						is_core_of = HUN
+					}
+				}
+				transfer_state_to = CRO
+				add_claim_by = CRO
+				GER = {
+					puppet = CRO
+					set_autonomy = { target = CRO autonomy_state = autonomy_integrated_puppet }
+				}
+			}
+			
+			every_owned_state = {
+				limit = {
+					is_core_of = SLV
+					NOT = {
+						is_owned_by = ITA 
+						is_owned_by = HUN 
+					}
+				}
+				transfer_state_to = GER
+			}
+		}
+		GER = {
 			puppet = YUG
-
+			set_autonomy = { target = YUG autonomy_state = autonomy_integrated_puppet }
 
 			hidden_effect = {
 				set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_YUG
