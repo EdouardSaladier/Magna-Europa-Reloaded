@@ -4293,54 +4293,127 @@ BUL_macedonian_revolutionary_organizations = {
 			NOT = { has_country_flag = BUL_macedonian_affairs_ongoing_flag }
 			has_war = no
 			divisions_in_border_state = { #SOFIA - Macedonia
-				size > 1
-				state = 48
-				border_state = 106
+				size > 0
+				state = 905
+				border_state = 1531
+			}
+			divisions_in_border_state = { #SOFIA - Macedonia
+				size > 0
+				state = 905
+				border_state = 1532
+			}
+			divisions_in_border_state = { #SOFIA - Macedonia
+				size > 0
+				state = 1568
+				border_state = 1530
+			}
+			divisions_in_border_state = { #SOFIA - Macedonia
+				size > 0
+				state = 1568
+				border_state = 1531
 			}
 			divisions_in_border_state = { #PLOVDIV - Central Macedonia
-				size > 3
-				state = 212
-				border_state = 731
+				size > 0
+				state = 2524
+				border_state = 929
+			}
+			divisions_in_border_state = { #PLOVDIV - Central Macedonia
+				size > 0
+				state = 905
+				border_state = 929
+			}
+			divisions_in_border_state = { #PLOVDIV - Central Macedonia
+				size > 0
+				state = 905
+				border_state = 1549
 			}
 			divisions_in_border_state = { #PLOVDIV - Thrace
-				size > 3
-				state = 212
-				border_state = 184
-			}		
+				size > 0
+				state = 1569
+				border_state = 2840
+			}
+			divisions_in_border_state = { #PLOVDIV - Thrace
+				size > 0
+				state = 1569
+				border_state = 937
+			}
+			divisions_in_border_state = { #PLOVDIV - Thrace
+				size > 0
+				state = 2833
+				border_state = 937
+			}
 		}
 
 		days_remove = 60
 
 		visible = {
 			has_country_flag = { flag = BUL_repress_imro_flag value = 2 }
-			owns_state = 212
-			owns_state = 48
+			owns_state = 905
+			owns_state = 1568
+			owns_state = 1569
+			owns_state = 2524
+			owns_state = 2833
 		}
 
 		cancel_trigger = {
 			OR = {
 				custom_trigger_tooltip = { #SOFIA - Macedonia
 					tooltip = BUL_destroy_imro_divisions_macedonia_tt
-					divisions_in_border_state = {
-						size < 2
-						state = 48
-						border_state = 106
+					divisions_in_border_state = { #SOFIA - Macedonia
+						size < 1
+						state = 905
+						border_state = 1531
+					}
+					divisions_in_border_state = { #SOFIA - Macedonia
+						size < 1
+						state = 905
+						border_state = 1532
+					}
+					divisions_in_border_state = { #SOFIA - Macedonia
+						size < 1
+						state = 1568
+						border_state = 1530
+					}
+					divisions_in_border_state = { #SOFIA - Macedonia
+						size < 1
+						state = 1568
+						border_state = 1531
 					}
 				}
 				custom_trigger_tooltip = { #PLOVDIV - Central Macedonia
 					tooltip = BUL_destroy_imro_divisions_central_macedonia_tt
-					divisions_in_border_state = {
-						size < 4
-						state = 212
-						border_state = 731
+					divisions_in_border_state = { #PLOVDIV - Central Macedonia
+						size < 1
+						state = 2524
+						border_state = 929
+					}
+					divisions_in_border_state = { #PLOVDIV - Central Macedonia
+						size < 1
+						state = 905
+						border_state = 929
+					}
+					divisions_in_border_state = { #PLOVDIV - Central Macedonia
+						size < 1
+						state = 905
+						border_state = 1549
 					}
 				}
 				custom_trigger_tooltip = { #PLOVDIV - Thrace
 					tooltip = BUL_destroy_imro_divisions_thrace_tt
-					divisions_in_border_state = {
-						size < 4
-						state = 212
-						border_state = 184
+					divisions_in_border_state = { #PLOVDIV - Thrace
+						size < 1
+						state = 1569
+						border_state = 2840
+					}
+					divisions_in_border_state = { #PLOVDIV - Thrace
+						size < 1
+						state = 1569
+						border_state = 937
+					}
+					divisions_in_border_state = { #PLOVDIV - Thrace
+						size < 1
+						state = 2833
+						border_state = 937
 					}
 				}
 			}
@@ -4348,10 +4421,19 @@ BUL_macedonian_revolutionary_organizations = {
 
 		cancel_effect = {
 			clr_country_flag = BUL_macedonian_affairs_ongoing_flag
-			48 = {
+			905 = {
 				remove_dynamic_modifier = { modifier = skirmishes_against_imro }
 			}
-			212 = {
+			1568 = {
+				remove_dynamic_modifier = { modifier = skirmishes_against_imro }
+			}
+			1569 = {
+				remove_dynamic_modifier = { modifier = skirmishes_against_imro }
+			}
+			2524 = {
+				remove_dynamic_modifier = { modifier = skirmishes_against_imro }
+			}
+			2833 = {
 				remove_dynamic_modifier = { modifier = skirmishes_against_imro }
 			}
 		}
@@ -4361,10 +4443,19 @@ BUL_macedonian_revolutionary_organizations = {
 		complete_effect = {
 			set_country_flag = BUL_macedonian_affairs_ongoing_flag
 
-			48 = {
+			905 = {
 				add_dynamic_modifier = { modifier = skirmishes_against_imro }
 			}
-			212 = {
+			1568 = {
+				add_dynamic_modifier = { modifier = skirmishes_against_imro }
+			}
+			1569 = {
+				add_dynamic_modifier = { modifier = skirmishes_against_imro }
+			}
+			2524 = {
+				add_dynamic_modifier = { modifier = skirmishes_against_imro }
+			}
+			2833 = {
 				add_dynamic_modifier = { modifier = skirmishes_against_imro }
 			}
 		}
@@ -4376,10 +4467,19 @@ BUL_macedonian_revolutionary_organizations = {
 			add_stability = 0.1
 			add_political_power = 70
 
-			48 = {
+			905 = {
 				remove_dynamic_modifier = { modifier = skirmishes_against_imro }
 			}
-			212 = {
+			1568 = {
+				remove_dynamic_modifier = { modifier = skirmishes_against_imro }
+			}
+			1569 = {
+				remove_dynamic_modifier = { modifier = skirmishes_against_imro }
+			}
+			2524 = {
+				remove_dynamic_modifier = { modifier = skirmishes_against_imro }
+			}
+			2833 = {
 				remove_dynamic_modifier = { modifier = skirmishes_against_imro }
 			}
 		}
@@ -4522,7 +4622,7 @@ BUL_macedonian_revolutionary_organizations = {
 				start_resistance = BUL
 				hidden_effect = {
 					if = {
-						limit = { state = 106 }
+						limit = { state = 1529 }
 						set_compliance = 15
 						set_resistance = 15
 					}
@@ -4543,7 +4643,7 @@ BUL_macedonian_revolutionary_organizations = {
 					}
 					if = {
 						limit = {
-							state = 106 #MACEDONIA
+							state = 1529 #MACEDONIA
 						}
 						controller = {
 							set_country_flag = BUL_imro_awakened_in_macedonia_flag
@@ -4551,13 +4651,16 @@ BUL_macedonian_revolutionary_organizations = {
 					}
 					else_if = {
 						limit = {
-							state = 731 #CENTRAL MACEDONIA
+							state = 941 #CENTRAL MACEDONIA
 						}
 						controller = {
 							set_country_flag = BUL_imro_awakened_in_central_macedonia_flag
 						}
 					}
-					else = { #THRACE
+					else_if = {
+						limit = {
+							state = 1548 #THRACE
+						}
 						controller = {
 							set_country_flag = BUL_imro_awakened_in_thrace_flag
 						}
@@ -4695,9 +4798,9 @@ BUL_macedonian_revolutionary_organizations = {
 			}
 			if = {
 				limit = {
-					106 = {	is_fully_controlled_by = ROOT }
+					1529 = {	is_fully_controlled_by = ROOT }
 				}
-				106 = {
+				1529 = {
 					create_unit = {
 						division = "division_template = \"Makedonska Revolyutsionna Militsiya\" start_experience_factor = 0.4" 
 						owner = ROOT
@@ -4715,7 +4818,7 @@ BUL_macedonian_revolutionary_organizations = {
 					limit = {
 						BUL_is_macedonian_state = yes
 						is_fully_controlled_by = BUL
-						NOT = { state = 106 }
+						NOT = { state = 1529 }
 					}
 					create_unit = {
 						division = "division_template = \"Makedonska Revolyutsionna Militsiya\" start_experience_factor = 0.4" 
@@ -4917,32 +5020,32 @@ BUL_macedonian_revolutionary_organizations_foreign = {
 			has_country_flag = BUL_repress_imro_flag
 			NOT = { has_country_flag = BUL_macedonian_affairs_ongoing_flag }
 			OR = {
-				has_full_control_of_state = 106
-				has_full_control_of_state = 731
-				has_full_control_of_state = 184
+				has_full_control_of_state = 1529
+				has_full_control_of_state = 941
+				has_full_control_of_state = 1548
 			}
 			OR = {
-				NOT = { has_full_control_of_state = 106 }
+				NOT = { has_full_control_of_state = 1529 }
 				divisions_in_state = {
 					type = infantry
 					size > 8
-					state = 106
+					state = 1529
 				}
 			}
 			OR = {
-				NOT = { has_full_control_of_state = 731 }
+				NOT = { has_full_control_of_state = 941 }
 				divisions_in_state = {
 					type = infantry
 					size > 3
-					state = 731
+					state = 941
 				}
 			}
 			OR = {
-				NOT = { has_full_control_of_state = 184 }
+				NOT = { has_full_control_of_state = 1548 }
 				divisions_in_state = {
 					type = infantry
 					size > 2
-					state = 184
+					state = 1548
 				}
 			}
 		}
@@ -4960,7 +5063,7 @@ BUL_macedonian_revolutionary_organizations_foreign = {
 				OR = {
 					AND = {
 						has_country_flag = BUL_imro_awakened_in_macedonia_flag
-						106 = {
+						1529 = {
 							has_dynamic_modifier = { modifier = skirmishes_against_imro }
 							OR = {
 								NOT = { is_fully_controlled_by = ROOT }	
@@ -4970,7 +5073,7 @@ BUL_macedonian_revolutionary_organizations_foreign = {
 										divisions_in_state = {
 											type = infantry
 											size < 9
-											state = 106
+											state = 1529
 										}
 									}
 								}
@@ -4979,7 +5082,7 @@ BUL_macedonian_revolutionary_organizations_foreign = {
 					}
 					AND = {
 						has_country_flag = BUL_imro_awakened_in_central_macedonia_flag
-						731 = {
+						941 = {
 							has_dynamic_modifier = { modifier = skirmishes_against_imro }
 							OR = {
 								NOT = { is_fully_controlled_by = ROOT }	
@@ -4989,7 +5092,7 @@ BUL_macedonian_revolutionary_organizations_foreign = {
 										divisions_in_state = {
 											type = infantry
 											size < 4
-											state = 731
+											state = 941
 										}
 									}
 								}
@@ -4998,7 +5101,7 @@ BUL_macedonian_revolutionary_organizations_foreign = {
 					}
 					AND = {
 						has_country_flag = BUL_imro_awakened_in_thrace_flag
-						184 = {
+						1548 = {
 							has_dynamic_modifier = { modifier = skirmishes_against_imro }
 							OR = {
 								NOT = { is_fully_controlled_by = ROOT }	
@@ -5008,7 +5111,7 @@ BUL_macedonian_revolutionary_organizations_foreign = {
 										divisions_in_state = {
 											type = infantry
 											size < 3
-											state = 184
+											state = 1548
 										}
 									}
 								}
