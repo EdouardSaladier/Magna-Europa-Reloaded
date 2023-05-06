@@ -919,6 +919,7 @@ focus_tree = {
 
 		available = {
 			NOT = { has_country_flag = soviets_true_enemy_flag }
+			is_subject = no
 		}
 
 		bypass = {
@@ -966,6 +967,7 @@ focus_tree = {
 
 		available = {
 			NOT = { has_country_flag = germans_true_enemy_flag }
+			is_subject = no
 		}
 
 		bypass = {
@@ -1011,7 +1013,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			is_subject = no
 		}
 
 		bypass = {
@@ -1111,6 +1113,7 @@ focus_tree = {
 
 		available = {
 			is_in_faction = no
+			is_subject = no
 		}
 
 		bypass = {
