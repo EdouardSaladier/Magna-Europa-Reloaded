@@ -1022,7 +1022,7 @@ propaganda_efforts = {
 		days_remove = 90
 		days_re_enable = 180
 
-		cost = 150
+		cost = 100
 
 		modifier = {
 			war_support_weekly = 0.005
@@ -1040,6 +1040,12 @@ propaganda_efforts = {
 			modifier = {
 				add = 1
 				has_war_support < 0.4
+				has_war = yes
+			}
+			modifier = {
+				add = 1
+				has_war_support < 0.8
+				tag = USA
 				has_war = yes
 			}
 		}
@@ -1070,7 +1076,7 @@ propaganda_efforts = {
 		cost = 100
 
 		modifier = {
-			weekly_casualties_war_support = 0.006
+			weekly_casualties_war_support = 0.008
 		}
 
 		#complete_effect = {
@@ -1110,8 +1116,14 @@ propaganda_efforts = {
 				OR = {
 					has_idea = volunteer_only
 					has_idea = limited_conscription
-					has_idea = extensive_conscription
 				}
+			}
+			modifier = {
+				factor = 0
+				has_manpower < 100000
+				has_political_power < 250
+				has_war_support > 0.6
+				has_idea = extensive_conscription
 			}
 		}
 	}
@@ -1141,7 +1153,7 @@ propaganda_efforts = {
 		cost = 100
 
 		modifier = {
-			weekly_convoys_war_support = 0.006
+			weekly_convoys_war_support = 0.008
 		}
 
 		#complete_effect = {
@@ -1162,11 +1174,18 @@ propaganda_efforts = {
 				factor = 0
 				has_manpower < 100000
 				has_political_power < 250
+				has_war_support > 0.2
 				OR = {
 					has_idea = volunteer_only
 					has_idea = limited_conscription
-					has_idea = extensive_conscription
 				}
+			}
+			modifier = {
+				factor = 0
+				has_manpower < 100000
+				has_political_power < 250
+				has_war_support > 0.6
+				has_idea = extensive_conscription
 			}
 		}
 	}
@@ -1196,7 +1215,7 @@ propaganda_efforts = {
 		cost = 100
 
 		modifier = {
-			weekly_bombing_war_support = 0.006
+			weekly_bombing_war_support = 0.008
 		}
 
 		#complete_effect = {
@@ -1236,8 +1255,14 @@ propaganda_efforts = {
 				OR = {
 					has_idea = volunteer_only
 					has_idea = limited_conscription
-					has_idea = extensive_conscription
 				}
+			}
+			modifier = {
+				factor = 0
+				has_manpower < 100000
+				has_political_power < 250
+				has_war_support > 0.6
+				has_idea = extensive_conscription
 			}
 		}
 	}

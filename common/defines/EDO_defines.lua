@@ -8,7 +8,7 @@ NDefines.NGraphics.PROVINCE_NAME_DRAW_DISTANCE = 1000.0 			-- Remove province na
 NDefines.NGame.MAP_SCALE_PIXEL_TO_KM = 1.74
 NDefines.NGame.SAVE_VERSION = 7
 
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.15
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.18
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.01				-- after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
 
 NDefines.NProduction.EQUIPMENT_BASE_LEND_LEASE_WEIGHT = 0.5
@@ -36,8 +36,8 @@ NDefines.NSupply.NON_CORE_MANPOWER_STATE_SUPPLY = 0.05
 
 NDefines.NAir.AIR_REGION_SUPERIORITY_PIXEL_SCALE = 0.02
 
---NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.3
---NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 6
+NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.3
+NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 12
 NDefines.NNavy.NAVAL_RANGE_TO_INGAME_DISTANCE = 0.24							-- Scale the ship stats "naval_range" to the ingame distance
 
 NDefines.NGraphics.MINIMUM_PROVINCE_SIZE_IN_PIXELS = 4

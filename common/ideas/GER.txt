@@ -839,9 +839,9 @@ ideas = {
 			}
 			
 			modifier = {
-				army_speed_factor = 0.4
-				army_morale_factor = 0.25
-				org_loss_when_moving = -0.25
+				army_speed_factor = 0.5
+				army_morale_factor = 0.5
+				org_loss_when_moving = -0.5
 				equipment_capture = 0.5
 			}
 

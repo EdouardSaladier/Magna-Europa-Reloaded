@@ -43,17 +43,17 @@ on_actions = {
 				}
 				hidden_effect = {
 					GER = { 
-						add_timed_idea = { idea = GER_barbarossa days = 150 }
+						add_timed_idea = { idea = GER_barbarossa days = 200 }
 						activate_mission = GER_barbarossa_mission
 					}
 					ROM = { 
-						add_timed_idea = { idea = GER_barbarossa days = 150 }
+						add_timed_idea = { idea = GER_barbarossa days = 200 }
 					}
 					HUN = { 
-						add_timed_idea = { idea = GER_barbarossa days = 150 }
+						add_timed_idea = { idea = GER_barbarossa days = 200 }
 					}
 					SOV = { 
-						add_timed_idea = { idea = SOV_barbarossa days = 30 }
+						add_timed_idea = { idea = SOV_barbarossa days = 100 }
 						add_ideas = { 
 							war_economy
 							extensive_conscription

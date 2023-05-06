@@ -481,11 +481,11 @@ ideas = {
 
 			modifier = {
 				conscription = 0.2
-				industrial_capacity_factory = -0.3
-				industrial_capacity_dockyard = -0.3
-				production_speed_buildings_factor = -0.3
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				production_speed_buildings_factor = -0.5
 				#XP from reinforcement penalty (small)
-				training_time_factor = 0.3
+				training_time_factor = 0.5
 			}
 
 			cancel_if_invalid = no
@@ -581,10 +581,10 @@ ideas = {
 
 			modifier = {
 				conscription = 0.25
-				industrial_capacity_factory = -0.4
-				industrial_capacity_dockyard = -0.4
-				production_speed_buildings_factor = -0.4
-				training_time_factor = 0.5
+				industrial_capacity_factory = -0.8
+				industrial_capacity_dockyard = -0.8
+				production_speed_buildings_factor = -0.8
+				training_time_factor = 0.8
 			}
 
 			cancel_if_invalid = no
