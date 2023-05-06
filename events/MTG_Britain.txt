@@ -1544,51 +1544,45 @@ country_event = {
 			event_target:democratic_uk_civil_war = {
 				if = {
 					limit = {
+						has_full_control_of_state = 2475
+					}
+					set_capital = { state = 2475 }
+				}
+				else_if = {
+					limit = {
+						has_full_control_of_state = 293
+					}
+					set_capital = { state = 293 }
+				}
+				else_if = {
+					limit = {
+						has_full_control_of_state = 344
+					}
+					set_capital = { state = 344 }
+				}
+				else_if = {
+					limit = {
+						has_full_control_of_state = 453
+					}
+					set_capital = { state = 453 }
+				}
+				else_if = {
+					limit = {
+						has_full_control_of_state = 271
+					}
+					set_capital = { state = 271 }
+				}
+				else_if = {
+					limit = {
+						has_full_control_of_state = 221
+					}
+					set_capital = { state = 221 }
+				}
+				else_if = {
+					limit = {
 						has_full_control_of_state = 126
 					}
 					set_capital = { state = 126 }
-				}
-				else_if = {
-					limit = {
-						has_full_control_of_state = 132
-					}
-					set_capital = { state = 132 }
-				}
-				else_if = {
-					limit = {
-						has_full_control_of_state = 128
-					}
-					set_capital = { state = 128 }
-				}
-				else_if = {
-					limit = {
-						has_full_control_of_state = 127
-					}
-					set_capital = { state = 127 }
-				}
-				else_if = {
-					limit = {
-						has_full_control_of_state = 132
-					}
-					set_capital = { state = 132 }
-				}
-				else_if = {
-					limit = {
-						has_full_control_of_state = 130
-					}
-					set_capital = { state = 130 }
-				}
-				else_if = {
-					limit = {
-						has_full_control_of_state = 121
-					}
-					set_capital = { state = 121 }
-				}
-				else_if = {
-					limit = {
-						has_full_control_of_state = 133
-					}
-					set_capital = { state = 133 }
 				}
 				else = {
 					random_owned_state = {
@@ -1632,9 +1626,6 @@ country_event = {
 	option = {
 		name = mtg_britain.33.a
 		custom_effect_tooltip = ENG_democratic_civil_war_tt
-		hidden_effect = {
-			RAJ = { retire_country_leader = yes }
-		}
 		hidden_effect = { news_event = { id = mtg_news.41 days = 1 } }
 		division_template = {
 			name = "Blackshirt Brigade"
@@ -2740,7 +2731,12 @@ country_event = {
 			}
 			add_stability = -0.041
 			add_popularity = { ideology = fascism popularity = 0.027 }
-			119 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_NIR
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2749,7 +2745,13 @@ country_event = {
 			}
 			add_stability = -0.009
 			add_popularity = { ideology = fascism popularity = 0.006 }
-			120 = { set_state_flag = ENG_has_blackshirt_support }
+			158 = { set_state_flag = ENG_has_blackshirt_support }
+			161 = { set_state_flag = ENG_has_blackshirt_support }
+			169 = { set_state_flag = ENG_has_blackshirt_support }
+			183 = { set_state_flag = ENG_has_blackshirt_support }
+			199 = { set_state_flag = ENG_has_blackshirt_support }
+			2780 = { set_state_flag = ENG_has_blackshirt_support }
+			2781 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2758,7 +2760,13 @@ country_event = {
 			}
 			add_stability = -0.026
 			add_popularity = { ideology = fascism popularity = 0.017 }
-			136 = { set_state_flag = ENG_has_blackshirt_support }
+			176 = { set_state_flag = ENG_has_blackshirt_support }
+			179 = { set_state_flag = ENG_has_blackshirt_support }
+			180 = { set_state_flag = ENG_has_blackshirt_support }
+			182 = { set_state_flag = ENG_has_blackshirt_support }
+			191 = { set_state_flag = ENG_has_blackshirt_support }
+			193 = { set_state_flag = ENG_has_blackshirt_support }
+			194 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2767,7 +2775,15 @@ country_event = {
 			}
 			add_stability = -0.077
 			add_popularity = { ideology = fascism popularity = 0.051 }
-			133 = { set_state_flag = ENG_has_blackshirt_support }
+			126 = { set_state_flag = ENG_has_blackshirt_support }
+			210 = { set_state_flag = ENG_has_blackshirt_support }
+			213 = { set_state_flag = ENG_has_blackshirt_support }
+			219 = { set_state_flag = ENG_has_blackshirt_support }
+			222 = { set_state_flag = ENG_has_blackshirt_support }
+			230 = { set_state_flag = ENG_has_blackshirt_support }
+			245 = { set_state_flag = ENG_has_blackshirt_support }
+			249 = { set_state_flag = ENG_has_blackshirt_support }
+			257 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2776,7 +2792,16 @@ country_event = {
 			}
 			add_stability = -0.048
 			add_popularity = { ideology = fascism popularity = 0.032 }
-			121 = { set_state_flag = ENG_has_blackshirt_support }
+			204 = { set_state_flag = ENG_has_blackshirt_support }
+			211 = { set_state_flag = ENG_has_blackshirt_support }
+			214 = { set_state_flag = ENG_has_blackshirt_support }
+			217 = { set_state_flag = ENG_has_blackshirt_support }
+			220 = { set_state_flag = ENG_has_blackshirt_support }
+			221 = { set_state_flag = ENG_has_blackshirt_support }
+			224 = { set_state_flag = ENG_has_blackshirt_support }
+			233 = { set_state_flag = ENG_has_blackshirt_support }
+			237 = { set_state_flag = ENG_has_blackshirt_support }
+			239 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2785,7 +2810,10 @@ country_event = {
 			}
 			add_stability = -0.072
 			add_popularity = { ideology = fascism popularity = 0.048 }
-			131 = { set_state_flag = ENG_has_blackshirt_support }
+			234 = { set_state_flag = ENG_has_blackshirt_support }
+			258 = { set_state_flag = ENG_has_blackshirt_support }
+			256 = { set_state_flag = ENG_has_blackshirt_support }
+			269 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2794,7 +2822,12 @@ country_event = {
 			}
 			add_stability = -0.157
 			add_popularity = { ideology = fascism popularity = 0.101 }
-			130 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_YOR
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2803,7 +2836,8 @@ country_event = {
 			}
 			add_stability = -0.195
 			add_popularity = { ideology = fascism popularity = 0.13 }
-			132 = { set_state_flag = ENG_has_blackshirt_support }
+			293 = { set_state_flag = ENG_has_blackshirt_support }
+			324 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2812,7 +2846,12 @@ country_event = {
 			}
 			add_stability = -0.078
 			add_popularity = { ideology = fascism popularity = 0.052 }
-			122 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_WLS
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2821,7 +2860,11 @@ country_event = {
 			}
 			add_stability = -0.125
 			add_popularity = { ideology = fascism popularity = 0.083 }
-			128 = { set_state_flag = ENG_has_blackshirt_support }
+			344 = { set_state_flag = ENG_has_blackshirt_support }
+			355 = { set_state_flag = ENG_has_blackshirt_support }
+			374 = { set_state_flag = ENG_has_blackshirt_support }
+			390 = { set_state_flag = ENG_has_blackshirt_support }
+			396 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2830,7 +2873,12 @@ country_event = {
 			}
 			add_stability = -0.075
 			add_popularity = { ideology = fascism popularity = 0.05 }
-			129 = { set_state_flag = ENG_has_blackshirt_support }
+			313 = { set_state_flag = ENG_has_blackshirt_support }
+			325 = { set_state_flag = ENG_has_blackshirt_support }
+			328 = { set_state_flag = ENG_has_blackshirt_support }
+			357 = { set_state_flag = ENG_has_blackshirt_support }
+			369 = { set_state_flag = ENG_has_blackshirt_support }
+			375 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2839,7 +2887,21 @@ country_event = {
 			}
 			add_stability = -0.047
 			add_popularity = { ideology = fascism popularity = 0.031 }
-			125 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_ESX
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_EAG
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			379 = { set_state_flag = ENG_has_blackshirt_support }
+			403 = { set_state_flag = ENG_has_blackshirt_support }
+			416 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2848,7 +2910,8 @@ country_event = {
 			}
 			add_stability = -0.062
 			add_popularity = { ideology = fascism popularity = 0.041 }
-			338 = { set_state_flag = ENG_has_blackshirt_support }
+			410 = { set_state_flag = ENG_has_blackshirt_support }
+			437 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2857,7 +2920,12 @@ country_event = {
 			}
 			add_stability = -0.333
 			add_popularity = { ideology = fascism popularity = 0.222 }
-			126 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_LND
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2866,7 +2934,18 @@ country_event = {
 			}
 			add_stability = -0.042
 			add_popularity = { ideology = fascism popularity = 0.028 }
-			123 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_WSX
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_KER
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2875,7 +2954,20 @@ country_event = {
 			}
 			add_stability = -0.108
 			add_popularity = { ideology = fascism popularity = 0.072 }
-			127 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_SSX
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_KNT
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			405 = { set_state_flag = ENG_has_blackshirt_support }
+			408 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		clr_country_flag = ENG_march_temp_northern_ireland
@@ -2918,7 +3010,12 @@ country_event = {
 			}
 			add_stability = -0.054
 			add_popularity = { ideology = fascism popularity = 0.027 }
-			119 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_NIR
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2927,7 +3024,13 @@ country_event = {
 			}
 			add_stability = -0.012
 			add_popularity = { ideology = fascism popularity = 0.006 }
-			120 = { set_state_flag = ENG_has_blackshirt_support }
+			158 = { set_state_flag = ENG_has_blackshirt_support }
+			161 = { set_state_flag = ENG_has_blackshirt_support }
+			169 = { set_state_flag = ENG_has_blackshirt_support }
+			183 = { set_state_flag = ENG_has_blackshirt_support }
+			199 = { set_state_flag = ENG_has_blackshirt_support }
+			2780 = { set_state_flag = ENG_has_blackshirt_support }
+			2781 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2936,7 +3039,13 @@ country_event = {
 			}
 			add_stability = -0.034
 			add_popularity = { ideology = fascism popularity = 0.017 }
-			136 = { set_state_flag = ENG_has_blackshirt_support }
+			176 = { set_state_flag = ENG_has_blackshirt_support }
+			179 = { set_state_flag = ENG_has_blackshirt_support }
+			180 = { set_state_flag = ENG_has_blackshirt_support }
+			182 = { set_state_flag = ENG_has_blackshirt_support }
+			191 = { set_state_flag = ENG_has_blackshirt_support }
+			193 = { set_state_flag = ENG_has_blackshirt_support }
+			194 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2945,7 +3054,15 @@ country_event = {
 			}
 			add_stability = -0.102
 			add_popularity = { ideology = fascism popularity = 0.051 }
-			133 = { set_state_flag = ENG_has_blackshirt_support }
+			126 = { set_state_flag = ENG_has_blackshirt_support }
+			210 = { set_state_flag = ENG_has_blackshirt_support }
+			213 = { set_state_flag = ENG_has_blackshirt_support }
+			219 = { set_state_flag = ENG_has_blackshirt_support }
+			222 = { set_state_flag = ENG_has_blackshirt_support }
+			230 = { set_state_flag = ENG_has_blackshirt_support }
+			245 = { set_state_flag = ENG_has_blackshirt_support }
+			249 = { set_state_flag = ENG_has_blackshirt_support }
+			257 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2954,7 +3071,16 @@ country_event = {
 			}
 			add_stability = -0.064
 			add_popularity = { ideology = fascism popularity = 0.032 }
-			121 = { set_state_flag = ENG_has_blackshirt_support }
+			204 = { set_state_flag = ENG_has_blackshirt_support }
+			211 = { set_state_flag = ENG_has_blackshirt_support }
+			214 = { set_state_flag = ENG_has_blackshirt_support }
+			217 = { set_state_flag = ENG_has_blackshirt_support }
+			220 = { set_state_flag = ENG_has_blackshirt_support }
+			221 = { set_state_flag = ENG_has_blackshirt_support }
+			224 = { set_state_flag = ENG_has_blackshirt_support }
+			233 = { set_state_flag = ENG_has_blackshirt_support }
+			237 = { set_state_flag = ENG_has_blackshirt_support }
+			239 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2963,7 +3089,10 @@ country_event = {
 			}
 			add_stability = -0.096
 			add_popularity = { ideology = fascism popularity = 0.048 }
-			131 = { set_state_flag = ENG_has_blackshirt_support }
+			234 = { set_state_flag = ENG_has_blackshirt_support }
+			258 = { set_state_flag = ENG_has_blackshirt_support }
+			256 = { set_state_flag = ENG_has_blackshirt_support }
+			269 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2972,7 +3101,12 @@ country_event = {
 			}
 			add_stability = -0.202
 			add_popularity = { ideology = fascism popularity = 0.101 }
-			130 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_YOR
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2981,7 +3115,8 @@ country_event = {
 			}
 			add_stability = -0.26
 			add_popularity = { ideology = fascism popularity = 0.13 }
-			132 = { set_state_flag = ENG_has_blackshirt_support }
+			293 = { set_state_flag = ENG_has_blackshirt_support }
+			324 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2990,7 +3125,12 @@ country_event = {
 			}
 			add_stability = -0.104
 			add_popularity = { ideology = fascism popularity = 0.052 }
-			122 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_WLS
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -2999,7 +3139,11 @@ country_event = {
 			}
 			add_stability = -0.166
 			add_popularity = { ideology = fascism popularity = 0.083 }
-			128 = { set_state_flag = ENG_has_blackshirt_support }
+			344 = { set_state_flag = ENG_has_blackshirt_support }
+			355 = { set_state_flag = ENG_has_blackshirt_support }
+			374 = { set_state_flag = ENG_has_blackshirt_support }
+			390 = { set_state_flag = ENG_has_blackshirt_support }
+			396 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3008,7 +3152,12 @@ country_event = {
 			}
 			add_stability = -0.1
 			add_popularity = { ideology = fascism popularity = 0.05 }
-			129 = { set_state_flag = ENG_has_blackshirt_support }
+			313 = { set_state_flag = ENG_has_blackshirt_support }
+			325 = { set_state_flag = ENG_has_blackshirt_support }
+			328 = { set_state_flag = ENG_has_blackshirt_support }
+			357 = { set_state_flag = ENG_has_blackshirt_support }
+			369 = { set_state_flag = ENG_has_blackshirt_support }
+			375 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3017,7 +3166,21 @@ country_event = {
 			}
 			add_stability = -0.062
 			add_popularity = { ideology = fascism popularity = 0.031 }
-			125 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_ESX
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_EAG
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			379 = { set_state_flag = ENG_has_blackshirt_support }
+			403 = { set_state_flag = ENG_has_blackshirt_support }
+			416 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3026,7 +3189,8 @@ country_event = {
 			}
 			add_stability = -0.082
 			add_popularity = { ideology = fascism popularity = 0.041 }
-			338 = { set_state_flag = ENG_has_blackshirt_support }
+			410 = { set_state_flag = ENG_has_blackshirt_support }
+			437 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3035,7 +3199,12 @@ country_event = {
 			}
 			add_stability = -0.444
 			add_popularity = { ideology = fascism popularity = 0.222 }
-			126 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_LND
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3044,7 +3213,18 @@ country_event = {
 			}
 			add_stability = -0.056
 			add_popularity = { ideology = fascism popularity = 0.028 }
-			123 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_WSX
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_KER
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3053,7 +3233,20 @@ country_event = {
 			}
 			add_stability = -0.144
 			add_popularity = { ideology = fascism popularity = 0.072 }
-			127 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_SSX
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_KNT
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			405 = { set_state_flag = ENG_has_blackshirt_support }
+			408 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		clr_country_flag = ENG_march_temp_northern_ireland
@@ -3096,7 +3289,12 @@ country_event = {
 			}
 			add_stability = -0.081
 			add_popularity = { ideology = fascism popularity = 0.027 }
-			119 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_NIR
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3105,7 +3303,13 @@ country_event = {
 			}
 			add_stability = -0.018
 			add_popularity = { ideology = fascism popularity = 0.006 }
-			120 = { set_state_flag = ENG_has_blackshirt_support }
+			158 = { set_state_flag = ENG_has_blackshirt_support }
+			161 = { set_state_flag = ENG_has_blackshirt_support }
+			169 = { set_state_flag = ENG_has_blackshirt_support }
+			183 = { set_state_flag = ENG_has_blackshirt_support }
+			199 = { set_state_flag = ENG_has_blackshirt_support }
+			2780 = { set_state_flag = ENG_has_blackshirt_support }
+			2781 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3114,7 +3318,13 @@ country_event = {
 			}
 			add_stability = -0.051
 			add_popularity = { ideology = fascism popularity = 0.017 }
-			136 = { set_state_flag = ENG_has_blackshirt_support }
+			176 = { set_state_flag = ENG_has_blackshirt_support }
+			179 = { set_state_flag = ENG_has_blackshirt_support }
+			180 = { set_state_flag = ENG_has_blackshirt_support }
+			182 = { set_state_flag = ENG_has_blackshirt_support }
+			191 = { set_state_flag = ENG_has_blackshirt_support }
+			193 = { set_state_flag = ENG_has_blackshirt_support }
+			194 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3123,7 +3333,15 @@ country_event = {
 			}
 			add_stability = -0.153
 			add_popularity = { ideology = fascism popularity = 0.051 }
-			133 = { set_state_flag = ENG_has_blackshirt_support }
+			126 = { set_state_flag = ENG_has_blackshirt_support }
+			210 = { set_state_flag = ENG_has_blackshirt_support }
+			213 = { set_state_flag = ENG_has_blackshirt_support }
+			219 = { set_state_flag = ENG_has_blackshirt_support }
+			222 = { set_state_flag = ENG_has_blackshirt_support }
+			230 = { set_state_flag = ENG_has_blackshirt_support }
+			245 = { set_state_flag = ENG_has_blackshirt_support }
+			249 = { set_state_flag = ENG_has_blackshirt_support }
+			257 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3132,7 +3350,16 @@ country_event = {
 			}
 			add_stability = -0.096
 			add_popularity = { ideology = fascism popularity = 0.032 }
-			121 = { set_state_flag = ENG_has_blackshirt_support }
+			204 = { set_state_flag = ENG_has_blackshirt_support }
+			211 = { set_state_flag = ENG_has_blackshirt_support }
+			214 = { set_state_flag = ENG_has_blackshirt_support }
+			217 = { set_state_flag = ENG_has_blackshirt_support }
+			220 = { set_state_flag = ENG_has_blackshirt_support }
+			221 = { set_state_flag = ENG_has_blackshirt_support }
+			224 = { set_state_flag = ENG_has_blackshirt_support }
+			233 = { set_state_flag = ENG_has_blackshirt_support }
+			237 = { set_state_flag = ENG_has_blackshirt_support }
+			239 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3141,7 +3368,10 @@ country_event = {
 			}
 			add_stability = -0.144
 			add_popularity = { ideology = fascism popularity = 0.048 }
-			131 = { set_state_flag = ENG_has_blackshirt_support }
+			234 = { set_state_flag = ENG_has_blackshirt_support }
+			258 = { set_state_flag = ENG_has_blackshirt_support }
+			256 = { set_state_flag = ENG_has_blackshirt_support }
+			269 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3150,7 +3380,12 @@ country_event = {
 			}
 			add_stability = -0.303
 			add_popularity = { ideology = fascism popularity = 0.101 }
-			130 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_YOR
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3159,7 +3394,8 @@ country_event = {
 			}
 			add_stability = -0.39
 			add_popularity = { ideology = fascism popularity = 0.13 }
-			132 = { set_state_flag = ENG_has_blackshirt_support }
+			293 = { set_state_flag = ENG_has_blackshirt_support }
+			324 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3168,7 +3404,12 @@ country_event = {
 			}
 			add_stability = -0.156
 			add_popularity = { ideology = fascism popularity = 0.052 }
-			122 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_WLS
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3177,7 +3418,11 @@ country_event = {
 			}
 			add_stability = -0.249
 			add_popularity = { ideology = fascism popularity = 0.083 }
-			128 = { set_state_flag = ENG_has_blackshirt_support }
+			344 = { set_state_flag = ENG_has_blackshirt_support }
+			355 = { set_state_flag = ENG_has_blackshirt_support }
+			374 = { set_state_flag = ENG_has_blackshirt_support }
+			390 = { set_state_flag = ENG_has_blackshirt_support }
+			396 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3186,7 +3431,12 @@ country_event = {
 			}
 			add_stability = -0.15
 			add_popularity = { ideology = fascism popularity = 0.05 }
-			129 = { set_state_flag = ENG_has_blackshirt_support }
+			313 = { set_state_flag = ENG_has_blackshirt_support }
+			325 = { set_state_flag = ENG_has_blackshirt_support }
+			328 = { set_state_flag = ENG_has_blackshirt_support }
+			357 = { set_state_flag = ENG_has_blackshirt_support }
+			369 = { set_state_flag = ENG_has_blackshirt_support }
+			375 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3195,7 +3445,21 @@ country_event = {
 			}
 			add_stability = -0.093
 			add_popularity = { ideology = fascism popularity = 0.031 }
-			125 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_ESX
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_EAG
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			379 = { set_state_flag = ENG_has_blackshirt_support }
+			403 = { set_state_flag = ENG_has_blackshirt_support }
+			416 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3204,7 +3468,8 @@ country_event = {
 			}
 			add_stability = -0.123
 			add_popularity = { ideology = fascism popularity = 0.041 }
-			338 = { set_state_flag = ENG_has_blackshirt_support }
+			410 = { set_state_flag = ENG_has_blackshirt_support }
+			437 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3213,7 +3478,12 @@ country_event = {
 			}
 			add_stability = -0.666
 			add_popularity = { ideology = fascism popularity = 0.222 }
-			126 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_LND
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3222,7 +3492,18 @@ country_event = {
 			}
 			add_stability = -0.084
 			add_popularity = { ideology = fascism popularity = 0.028 }
-			123 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_WSX
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_KER
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		if = {
@@ -3231,7 +3512,20 @@ country_event = {
 			}
 			add_stability = -0.216
 			add_popularity = { ideology = fascism popularity = 0.072 }
-			127 = { set_state_flag = ENG_has_blackshirt_support }
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_SSX
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			every_owned_state = {
+				limit = {
+					has_state_flag = core_of_KNT
+				}
+				set_state_flag = ENG_has_blackshirt_support
+			}
+			405 = { set_state_flag = ENG_has_blackshirt_support }
+			408 = { set_state_flag = ENG_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
 		clr_country_flag = ENG_march_temp_northern_ireland
