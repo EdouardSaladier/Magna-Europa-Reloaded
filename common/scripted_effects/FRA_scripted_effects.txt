@@ -187,7 +187,7 @@ FRA_transfer_syria_effect = {
 			}
 		}
 		puppet = LEB
-		set_cosmetic_tag = LEB_FR
+		LEB = { set_cosmetic_tag = LEB_FR }
 	}
 	every_state = {
 		limit = {
@@ -210,7 +210,7 @@ FRA_transfer_syria_effect = {
 			}
 		}
 		puppet = ALW
-		set_cosmetic_tag = ALW_FR
+		ALW = { set_cosmetic_tag = ALW_FR }
 	}
 	if = {
 		limit = {
@@ -223,7 +223,7 @@ FRA_transfer_syria_effect = {
 			}
 		}
 		puppet = JDZ
-		set_cosmetic_tag = JDZ_FR
+		JDZ = { set_cosmetic_tag = JDZ_FR }
 	}
 	if = {
 		limit = {
@@ -236,7 +236,7 @@ FRA_transfer_syria_effect = {
 			}
 		}
 		puppet = SYR
-		set_cosmetic_tag = SYR_FR
+		SYR = { set_cosmetic_tag = SYR_FR }
 	}
 }
 
@@ -252,7 +252,7 @@ FRA_transfer_north_africa_effect = {
 			}
 		}
 		puppet = TUN
-		set_cosmetic_tag = TUN_FR
+		TUN = { set_cosmetic_tag = TUN_FR }
 	}
 	if = {
 		limit = {
@@ -265,7 +265,7 @@ FRA_transfer_north_africa_effect = {
 			}
 		}
 		puppet = MOR
-		set_cosmetic_tag = MOR_FR
+		MOR = { set_cosmetic_tag = MOR_FR }
 	}
 	if = {
 		limit = {
