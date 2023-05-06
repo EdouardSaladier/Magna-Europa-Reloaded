@@ -419,20 +419,23 @@ form_austria_hungary_category = {
 
 		available = {
 			is_subject = no
-			all_state = {
-				if = {
-					limit = {
-						AND = {
-							has_state_flag = YUG_INITIAL_STATE
-							NOT = {
-								has_state_flag = ITA_INITIAL_STATE
-								is_core_of = SER
-								is_core_of = MNT
+			custom_trigger_tooltip = {
+				tooltip = mer_illyria_controlled_states_tt
+				all_state = {
+					if = {
+						limit = {
+							AND = {
+								has_state_flag = YUG_INITIAL_STATE
+								NOT = {
+									has_state_flag = ITA_INITIAL_STATE
+									is_core_of = SER
+									is_core_of = MNT
+								}
+								is_core_of = VJV
 							}
-							is_core_of = VJV
 						}
+						is_controlled_by = ROOT
 					}
-					is_controlled_by = ROOT
 				}
 			}
 			# Austria
@@ -475,11 +478,13 @@ form_austria_hungary_category = {
 
 		complete_effect = {
 			set_cosmetic_tag = HUN_EMPIRE
-			if = {
-				limit = {
-					NOT = { tag = AUS }
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { tag = AUS }
+					}
+					AUS = { set_cosmetic_tag = AUS_NOT_WHITE }
 				}
-				AUS = { set_cosmetic_tag = AUS_NOT_WHITE }
 			}
 			every_state = {
 					limit =  {
@@ -619,6 +624,18 @@ form_austria_hungary_category = {
 					add_core_of = ROOT
 				}
 			}
+			every_state = {
+					limit =  {
+						OR = {
+							region = 12
+							region = 23
+							region = 24
+							is_core_of = JUL 
+							is_core_of = TIR 
+						}
+					}
+					add_core_of = ROOT
+				}
 			set_global_flag = reintegrate_the_empire_flag
 		}
 
