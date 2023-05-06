@@ -507,7 +507,20 @@ on_actions = {
 					remove_core_of = BUL
 					remove_claim_by = BUL
 				}
-				
+				every_state = {
+					limit = {
+						owner = { original_tag = BUL }
+						is_core_of = GRE
+					}
+					transfer_state_to = GRE
+				}
+				every_state = {
+					limit = {
+						owner = { original_tag = BUL }
+						is_core_of = YUG
+					}
+					transfer_state_to = YUG
+				}
 			}
 		}
 	}

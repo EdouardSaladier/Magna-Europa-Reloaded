@@ -199,6 +199,23 @@ peace_ai_desires = {
         ai_desire = 400
     }
 	
+	SOV_give_romania_translyvania_back = {
+        peace_action_type = { take_states }
+        enable = {
+            is_historical_focus_on = yes
+            tag = SOV
+			ROOT.FROM = { tag = ROM }
+            FROM.FROM = { tag = HUN }
+            ROOT.FROM.FROM.FROM = { 
+				is_core_of = ROM
+				NOT = {
+					is_claimed_by = SOV
+				}
+			}
+        }
+        ai_desire = 400
+    }
+	
 	SOV_dont_eat_all_of_romania = {
         peace_action_type = { take_states }
         enable = {

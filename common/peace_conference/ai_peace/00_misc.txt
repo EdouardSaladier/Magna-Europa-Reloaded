@@ -281,7 +281,7 @@ peace_ai_desires = {
     }
 	
 	dont_liberate_slovenia_if_yugo_exists = {
-        peace_action_type = { liberate force_government puppet }
+        peace_action_type = { liberate force_government puppet take_states }
         enable = {
 			ROOT = {
                 OR = { 
@@ -297,7 +297,7 @@ peace_ai_desires = {
     }
 	
 	dont_liberate_croatia_if_yugo_exists = {
-        peace_action_type = { liberate force_government puppet }
+        peace_action_type = { liberate force_government puppet take_states }
         enable = {
 			ROOT = {
                 OR = { 
@@ -346,7 +346,22 @@ peace_ai_desires = {
 				is_historical_focus_on = yes
 			}
         }
-        ai_desire = 200
+        ai_desire = 400
+    }
+	
+	give_yugo_its_stuff_back = {
+        peace_action_type = { take_states }
+        enable = {
+			ROOT = {
+                OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+            }
+            ROOT.FROM = { original_tag = YUG }
+            ROOT.FROM.FROM.FROM = { is_core_of = YUG }
+        }
+        ai_desire = 400
     }
 	
 	force_kill_fascist_military_government_serbia = {
@@ -365,11 +380,11 @@ peace_ai_desires = {
 				is_historical_focus_on = yes
 			}
         }
-        ai_desire = 200
+        ai_desire = 400
     }
 	
 	force_puppet_serbia_if_YUG_dont_exist = {
-        peace_action_type = { force_government puppet }
+        peace_action_type = { force_government puppet take_states }
         enable = {
 			ROOT = {
                 OR = { 
