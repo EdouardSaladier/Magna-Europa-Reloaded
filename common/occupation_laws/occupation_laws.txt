@@ -159,6 +159,13 @@ foreign_civilian_oversight = {
 			check_variable  = { resistance_target_without_law > 0.29}
 			add = 100
 		}
+		
+		modifier = {
+			FROM = {
+				has_government = fascism
+			}
+			factor = 0
+		}
 	}
 }
 
@@ -196,6 +203,13 @@ local_police_force_garrison = {
 			check_variable = { garrison_min_support_ratio < requirement_limit }
 
 			add = 350
+		}
+		
+		modifier = {
+			FROM = {
+				has_government = fascism
+			}
+			factor = 0
 		}
 	}
 }
