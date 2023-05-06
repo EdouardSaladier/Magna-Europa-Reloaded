@@ -429,7 +429,7 @@ political_actions = {
 			original_tag = ROM
 		}
 		visible = {
-			any_state = {
+			all_state = {
 				if = {
 					limit = {
 						is_transnistria = yes
@@ -459,6 +459,7 @@ political_actions = {
 					limit = {
 						is_in_faction_with = GER
 						has_war_with = SOV
+						is_ai = yes 
 					}
 					every_state = {
 						limit = {
