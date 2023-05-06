@@ -6935,7 +6935,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_the_batumi_accord"
-			354 = {
+			938 = {
 				if = {
 					limit = {
 						free_building_slots = {
@@ -6958,7 +6958,7 @@ focus_tree = {
 				}
 			}
 			SOV = {
-				231 = {
+				916 = {
 					if = {
 						limit = {
 							free_building_slots = {
