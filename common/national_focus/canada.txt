@@ -790,7 +790,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_mine_the_shield"
 			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
+				prioritize = { 9 }
 				limit = {
 					is_in_home_area = yes
 				}
@@ -800,7 +800,7 @@
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
+				prioritize = { 9 }
 				limit = {
 					is_in_home_area = yes
 				}
@@ -810,7 +810,7 @@
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
+				prioritize = { 9 }
 				limit = {
 					is_in_home_area = yes
 				}
@@ -930,7 +930,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_victory_aircraft_limited"
 			random_owned_controlled_state = {
-				prioritize = { 276 682 }
+				prioritize = { 9 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -947,7 +947,7 @@
 				set_state_flag = CAN_victory_aircraft_limited_AF1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 276 682 }
+				prioritize = { 9 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1020,7 +1020,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_alberta_coal_towns"
 			random_owned_controlled_state = {
-				prioritize = { 470 }
+				prioritize = { 1 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -1140,7 +1140,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_john_inglis_and_company"
 			random_owned_controlled_state = {
-				prioritize = { 276 682 }
+				prioritize = { 9 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1157,7 +1157,7 @@
 				set_state_flag = CAN_john_inglis_and_company_AF1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 276 682 }
+				prioritize = { 9 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1260,7 +1260,7 @@
 				set_country_flag = CAN_polymer_corporation_unlock
 				effect_tooltip = {
 					random_owned_controlled_state = {
-						prioritize = { 682 }
+						prioritize = { 1 }
 						limit = {
 						}
 						add_extra_state_shared_building_slots = 1
@@ -1272,7 +1272,7 @@
 						set_state_flag = CAN_polymer_corporation_1
 					}
 					random_owned_controlled_state = {
-						prioritize = { 276 }
+						prioritize = { 9 }
 						limit = {
 						}
 						add_extra_state_shared_building_slots = 1
@@ -1295,7 +1295,7 @@
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 682 }
+				prioritize = { 1 }
 				limit = {
 					free_building_slots = {
 						building = synthetic_refinery
@@ -1311,7 +1311,7 @@
 				set_state_flag = CAN_polymer_corporation_1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 276 }
+				prioritize = { 9 }
 				limit = {
 					free_building_slots = {
 						building = synthetic_refinery
@@ -3424,12 +3424,13 @@
 			}
 		}
 	}
+
 	focus = {
 		id = CAN_mend_relations_with_the_trotskyites
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = CAN_communist_labor_total_war_committee }
-		mutually_exclusive = { focus = CAN_supply_the_red_army focus = CAN_canada_united }
-		x = -3
+		mutually_exclusive = { focus = CAN_supply_the_red_army focus = CAN_defence_scheme_no_2 }
+		x = -2
 		y = 2
 		relative_position_id = CAN_burn_the_royal_portraits
 
@@ -3484,7 +3485,7 @@
 		id = CAN_reject_authoritarianism
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = CAN_mend_relations_with_the_trotskyites }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = CAN_mend_relations_with_the_trotskyites
 
@@ -3559,7 +3560,7 @@
 		id = CAN_reactivate_farmers_unity_league
 		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = CAN_mend_relations_with_the_trotskyites }
-		x = 1
+		x = -2
 		y = 1
 		relative_position_id = CAN_mend_relations_with_the_trotskyites
 
@@ -3625,11 +3626,77 @@
 	}
 
 	focus = {
+		id = CAN_defence_scheme_no_2
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = CAN_communist_labor_total_war_committee }
+		mutually_exclusive = { focus = CAN_supply_the_red_army focus = CAN_mend_relations_with_the_trotskyites }
+		x = 0
+		y = 2
+		relative_position_id = CAN_burn_the_royal_portraits
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+			OR = {
+			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					any_neighbor_state = {
+						controller = { NOT = { is_in_faction_with = CAN } }
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_coastal = yes
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = CAN_supply_the_red_army
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = CAN_communist_labor_total_war_committee }
-		mutually_exclusive = { focus = CAN_mend_relations_with_the_trotskyites focus = CAN_canada_united }
-		x = 1
+		mutually_exclusive = { focus = CAN_defence_scheme_no_2 focus = CAN_mend_relations_with_the_trotskyites }
+		x = 2
 		y = 2
 		relative_position_id = CAN_burn_the_royal_portraits
 
@@ -3717,11 +3784,11 @@
 	focus = {
 		id = CAN_canada_united
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = CAN_communist_labor_total_war_committee }
-		x = -1
-		y = 2
+		prerequisite = { focus = CAN_defence_scheme_no_2 }
+		x = 0
+		y = 3
 		relative_position_id = CAN_burn_the_royal_portraits
-		mutually_exclusive = { focus = CAN_supply_the_red_army focus = CAN_mend_relations_with_the_trotskyites  }
+
 		cost = 10
 
 		ai_will_do = {
@@ -3752,7 +3819,7 @@
 		id = CAN_join_comintern
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = CAN_supply_the_red_army }
-		x = 1
+		x = 2
 		y = 3
 		relative_position_id = CAN_burn_the_royal_portraits
 
@@ -3813,7 +3880,7 @@
 		id = CAN_support_the_world_revolution
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = CAN_canada_united focus = CAN_join_comintern }
-		x = 0
+		x = 1
 		y = 4
 		relative_position_id = CAN_burn_the_royal_portraits
 
@@ -3853,7 +3920,7 @@
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 38
+		x = 39
 		y = 0
 
 		cost = 10
@@ -4365,7 +4432,7 @@
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 42
+		x = 43
 		y = 0
 
 		cost = 10
@@ -4406,7 +4473,7 @@
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_halifax_shipyards"
 			navy_experience = 50
 			random_owned_controlled_state = {
-				prioritize = { 464 }
+				prioritize = { 8 }
 				limit = {
 					is_coastal = yes
 					free_building_slots = {
