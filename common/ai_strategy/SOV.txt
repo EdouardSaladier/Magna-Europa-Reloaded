@@ -816,7 +816,7 @@ SOV_have_some_train_production = {
 	ai_strategy = {
 		type = equipment_production_min_factories
 		id = train
-		value = 3
+		value = 5
 	}
 }
 

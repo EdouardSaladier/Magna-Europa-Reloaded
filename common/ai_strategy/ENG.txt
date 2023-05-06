@@ -1042,6 +1042,17 @@ ENG_lifeline_of_the_empire = {
 		id = "ITA"
 		value = 100
 	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = floating_harbor
+		value = 15
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = floating_harbor
+		value = 10
+	}
 }
 
 ENG_USA_focus_on_europe = {

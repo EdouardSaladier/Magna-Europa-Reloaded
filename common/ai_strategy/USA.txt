@@ -1139,7 +1139,12 @@ USA_onto_the_beaches = {
 	ai_strategy = {
 		type = unit_ratio
 		id = floating_harbor
-		value = 5
+		value = 15
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = floating_harbor
+		value = 10
 	}
 }
 
@@ -1260,7 +1265,7 @@ USA_produce_floating_harbors = {
 	ai_strategy = {
 		type = unit_ratio
 		id = floating_harbor # for floating harbors, 'unit_ratio' is actually not a ratio but an absolute desired number
-		value = 10
+		value = 15
 	}
 }
 
@@ -1288,6 +1293,12 @@ USA_buff_pls = {
 	}
 
 	abort = {
+	}
+	
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = motorized
+		value = 10
 	}
 	
 	ai_strategy = {
