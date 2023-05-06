@@ -98,13 +98,7 @@ is_polish_ostprusen = {
 }
 is_transylvania_proper = {
 	OR = {
-		is_core_of = TRA
-		AND = {
-			is_core_of = BNT
-			NOT = {
-				is_core_of = SER
-			}
-		}
+		region = 12
 	}
 }
 is_western_rhine = {
@@ -690,5 +684,15 @@ is_kurdish_group = {
 		is_van_group = yes 
 		is_hakkari_group = yes
 		is_diyabakir_group = yes
+	}
+}
+is_northern_ireland = {
+	OR = {
+		state = 272
+		state = 262
+		state = 254
+		state = 253
+		state = 276
+		state = 268
 	}
 }

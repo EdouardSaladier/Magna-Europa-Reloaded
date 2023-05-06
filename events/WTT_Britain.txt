@@ -26,7 +26,7 @@ country_event = {
 		name = wtt_britain.24.a
 		every_state = {
 			limit = {
-				is_core_of = NIR
+				is_northern_ireland = yes 
 			}
 			transfer_state_to = IRE
 		}	
