@@ -1,5 +1,19 @@
 ideas = {
 	hidden_ideas = {
+		ITA_hidden_bleak_situation = {
+			name = ITA_bleak_situation
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			allowed = {
+				original_tag = ITA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				surrender_limit = -0.2
+			}
+		}
 		ITA_hidden_research_penalties_ns = { #Hidden idea to apply research penalties to certain military techs. Communicated in ITA_military_industry_dynamic_modifier (used as NS)
  			name = ITA_military_industry_dynamic_modifier #Just in case it shows up anywhere
 			removal_cost = -1
