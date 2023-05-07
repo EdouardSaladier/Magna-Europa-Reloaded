@@ -4856,9 +4856,9 @@ form_byzantine_empire_category = {
 			NOT = { has_global_flag = triumph_for_egypt_and_tunis }
 			if = {
 				limit = {
-					#has_dlc = "Battle for the Bosporus"
+					has_dlc = "Battle for the Bosporus"
 				}
-				#has_completed_focus = GRE_byzantine_themata
+				has_completed_focus = GRE_byzantine_themata
 			}
 		}
 

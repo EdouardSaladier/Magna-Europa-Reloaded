@@ -85,31 +85,31 @@ add_ideas = {
 	anti_german_military
 }
 
-#if = {
-#	limit = {
-#		#has_dlc = Battle for the Bosporus
-#	}
-#	add_opinion_modifier = { 
-#		target = GRE
-#		modifier = BFTB_balkan_pact_ally
-#	}
-#	add_opinion_modifier = { 
-#		target = ROM
-#		modifier = BFTB_balkan_pact_ally
-#	}
-#	add_opinion_modifier = { 
-#		target = TUR
-#		modifier = BFTB_balkan_pact_ally
-#	}
-#	add_opinion_modifier = { 
-#		target = BUL
-#		modifier = BFTB_balkan_pact_enemy
-#	}
-#	add_opinion_modifier = { 
-#		target = HUN
-#		modifier = BFTB_balkan_pact_enemy
-#	}
-#}
+if = {
+	limit = {
+		has_dlc = Battle for the Bosporus
+	}
+	add_opinion_modifier = { 
+		target = GRE
+		modifier = BFTB_balkan_pact_ally
+	}
+	add_opinion_modifier = { 
+		target = ROM
+		modifier = BFTB_balkan_pact_ally
+	}
+	add_opinion_modifier = { 
+		target = TUR
+		modifier = BFTB_balkan_pact_ally
+	}
+	add_opinion_modifier = { 
+		target = BUL
+		modifier = BFTB_balkan_pact_enemy
+	}
+	add_opinion_modifier = { 
+		target = HUN
+		modifier = BFTB_balkan_pact_enemy
+	}
+}
 
 set_technology = {
 	tech_support = 1		
