@@ -48,9 +48,7 @@ ITA_missiolinis_weigh_mussolini_feels_safe = {
 }
 
 ETH_is_in_exile = { #Add any more stuff needed here
-	ETH = {
-		is_government_in_exile = yes
-	}
+	always = no
 }
 
 ITA_is_italian_colony = { #State scope

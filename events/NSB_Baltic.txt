@@ -1478,7 +1478,7 @@ country_event = {
 					limit = {
 						has_country_flag = BLT_soviets_said_yes_to_belarus_flag
 					}
-					transfer_state_to = THIS
+					transfer_state = PREV
 				}
 			}
 		}
@@ -1515,16 +1515,13 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-			every_state = {
-				limit = {
-					is_core_of = BLR
-					is_soviet_mr = yes
-					is_owned_by = SOV
-				}
-				
-				transfer_state_to = ROOT
-				
+		every_state = {
+			limit = {
+				is_core_of = BLR
+				is_soviet_mr = yes
+				is_owned_by = SOV
 			}
-		
+			transfer_state_to = ROOT
+		}
 	}
 }

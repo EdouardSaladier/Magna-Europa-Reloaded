@@ -302,69 +302,6 @@ governments_in_exile = {
 		}
 	}
 
-	purge_infiltrators = {
-
-		icon = generic_political_discourse
-
-		available = {
-		    FROM = {
-		    	has_legitimacy > 50
-		    	OR = {
-		    		fascism > 0.1
-		    		communism > 0.1
-		    	}
-		    }
-		}
-
-		visible = {
-			FROM = {
-				is_exiled_in = ROOT
-		    	has_legitimacy > 40
-		    	OR = {
-		    		fascism > 0.05
-		    		communism > 0.05
-		    	}
-		    }
-		}
-
-		target_array = exiles
-
-		target_trigger = {
-			FROM = {
-				is_exiled_in = ROOT
-		    	has_legitimacy > 40
-		    	OR = {
-		    		fascism > 0.05
-		    		communism > 0.05
-		    	}
-		    }
-		}
-
-		#targeted_modifier = {
-		#	tag = ETH
-		#	targeted_legitimacy_daily = -1
-		#	democratic_drift = 0.05
-		#}
-		complete_effect = {
-			FROM = {
-				add_timed_idea = {
-					idea = ETH_purge_ideology_boost_idea
-					days = 30
-				}
-			}			
-		}
-
-		remove_effect = {
-			add_political_power = 50
-		}  
-
-		days_remove = 30
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
 	expatriate_donations = {
 
 		icon = ger_military_buildup

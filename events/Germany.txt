@@ -6836,10 +6836,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 0
-	}
-
 	option ={
 		name = germany.121.a
 		if = {

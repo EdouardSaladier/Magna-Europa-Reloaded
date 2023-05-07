@@ -3091,7 +3091,7 @@ focus_tree = {
 
 	focus = {
 		id = HOL_modernize_the_air_fleet
-		prerequisite = { focus = HOL_protect_the_mainland focus = HOL_protect_the_colonies }
+		prerequisite = { focus = HOL_protect_the_mainland }
 		icon = GFX_goal_generic_air_production
 		x = 1
 		y = 1
@@ -3101,8 +3101,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_modernize_the_air_fleet
-		prerequisite = { focus = HOL_protect_the_mainland focus = HOL_protect_the_colonies }"
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_modernize_the_air_fleet"
 			add_timed_idea = { idea = HOL_modernize_the_air_fleet days = 365 }
 		}
 	}
@@ -3122,11 +3121,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HOL_strategic_bombing_defense
-		available = {
-			has_full_control_of_state = 358
-		}
-		prerequisite = { focus = HOL_modernize_the_air_fleet }"
+			log = "[GetDateText]: [Root.GetName]: Focus HOL_strategic_bombing_defense"
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HOL_strategic_bombing_defense

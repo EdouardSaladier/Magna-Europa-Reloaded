@@ -243,15 +243,6 @@ on_actions = {
 		}
 	}
 	
-	on_subject_autonomy_level_change = {
-		effect = {
-			if = {
-				limit = { original_tag = ALB has_cosmetic_tag = ALB_IT has_autonomy_state = autonomy_free }
-				drop_cosmetic_tag = yes
-			}
-		}
-	}
-	
 	on_subject_annexed = {
 		effect = {
 			if = {
