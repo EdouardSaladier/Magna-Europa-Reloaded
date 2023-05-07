@@ -1973,15 +1973,25 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = GAME_OVER_TT
-		every_state = {
+		every_owned_state = {
 			limit = {
-				is_core_of = BOH
+				is_core_of = SLO
+				NOT = {
+					state = 1438
+					state = 1442
+					state = 1439
+					state = 610
+					state = 580
+				}
 			}
-			transfer_state_to = GER
+			transfer_state_to = SLO
 		}
-		every_state = {
+		FROM = {
+			puppet = SLO
+		}
+		every_owned_state = {
 			limit = {
-				is_core_of = MRV
+				region = 8
 			}
 			transfer_state_to = GER
 		}
@@ -1995,44 +2005,23 @@ country_event = {
 				transfer_state = 1439
 				transfer_state = 610
 				transfer_state = 580
-			}
-			else = { #Need to get rid of everything
-				SLO = { 
-					transfer_state = 1438
-					transfer_state = 1442
-					transfer_state = 1439
-					transfer_state = 610
-					transfer_state = 580 
+				if = {
+					limit = { is_subject_of = FROM }
+					transfer_state = 562
+					transfer_state = 1607
+					transfer_state = 1608
+					transfer_state = 564
+					transfer_state = 2247
 				}
 			}
 		}
-		SLO = {
-			transfer_state = 70
-			transfer_state = 71
-			transfer_state = 72
-			transfer_state = 73
-			add_state_core = 70
-			add_state_core = 71
-			add_state_core = 72
-			add_state_core = 73
-
-		}
-		every_state = {
+		if = {
 			limit = {
-				is_core_of = SLO
-				NOT = {
-					state = 1438
-					state = 1442
-					state = 1439
-					state = 610
-					state = 580
-				}
+				country_exists = POL
 			}
-			transfer_state_to = SLO
-		}	
-		ROM = {
-			puppet = SLO
-			annex_country = { target = CZE } #cleanup
+			POL = {
+				transfer_state = 526
+			}
 		}
 	}
 	option = {# refuse
@@ -2056,7 +2045,7 @@ country_event = {
 			create_wargoal = {
 				type = take_state_focus
 				target = CZE
-				generator = { 9 69 75 74 }
+				generator = { 513 1434 473 507 499 }
 			}
 			country_event = DOD_romania.115
 		}
@@ -2064,7 +2053,7 @@ country_event = {
 			create_wargoal = {
 				type = take_state_focus
 				target = CZE
-				generator = { 664 }
+				generator = { 1442 593 580 610 1439 }
 			}
 			country_event = DOD_romania.115
 		}
@@ -2072,7 +2061,7 @@ country_event = {
 			create_wargoal = {
 				type = take_state_focus
 				target = CZE
-				generator = { 70 71 72 73 }
+				generator = { 1437 550 574 586 569 }
 			}
 			country_event = DOD_romania.115
 		}

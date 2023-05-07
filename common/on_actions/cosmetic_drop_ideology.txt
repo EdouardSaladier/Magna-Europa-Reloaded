@@ -38,6 +38,16 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					original_tag = HUN
+					has_government = communism
+					has_cosmetic_tag = HUN_neutrality
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = {
 					original_tag = BUL
 					has_government = communism
 					has_cosmetic_tag = BUL_neutrality
