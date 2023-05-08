@@ -621,28 +621,28 @@ adjacency_rule =
 
 	contested =
 	{
-		army = no
+		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
 	enemy =
 	{
-		army = no
+		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
 	friend =
 	{
-		army = no
+		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
 	neutral =
 	{
-		army = no
+		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
@@ -665,28 +665,28 @@ adjacency_rule =
 
 	contested =
 	{
-		army = no
+		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
 	enemy =
 	{
-		army = no
+		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
 	friend =
 	{
-		army = no
+		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
 	neutral =
 	{
-		army = no
+		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
