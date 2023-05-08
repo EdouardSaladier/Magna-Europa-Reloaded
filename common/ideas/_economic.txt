@@ -645,6 +645,12 @@ ideas = {
 					has_war = no
 					has_large_ally_not_pick_closed_economy = no
 				}
+				
+				modifier = {
+					factor = 0
+					tag = USA
+					date > 1943.1.1
+				}
 
 				# Oil for hitlers oil throne!
 				modifier = {
@@ -712,6 +718,12 @@ ideas = {
 						tag = IRQ
 						tag = UAE
 					}
+				}
+				
+				modifier = {
+					factor = 100
+					tag = USA
+					date > 1943.1.1
 				}
 				
 				modifier = {
