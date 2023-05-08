@@ -146,21 +146,6 @@ characters = {
 		}
 	}
 
-	ITA_benedetto_croce={
-		name=ITA_benedetto_croce
-		portraits={
-			civilian={
-				large="gfx/leaders/ITA/Portrait_ITA_Benedetto_Croce.dds"
-			}
-		}
-		country_leader={
-			traits = {}
-			ideology=moderatism
-			expire="1947.12.28.1"
-			id=-1
-		}
-	}
-
 	# Palmiro Togliatti and Sandro Pertini (communist leaders) are further down to keep order.
 
 
@@ -818,7 +803,7 @@ characters = {
 			legacy_id = 0
 			visible = {
 				ITA_has_rejected_monarchy = no
-				has_completed_focus = ITA_paramilitary_training
+				#has_completed_focus = ITA_paramilitary_training
 			}
 		}
 	}
@@ -951,7 +936,7 @@ characters = {
 		name = ITA_amedeo_savoy_aosta
 		portraits = {
 			army={
-				large ="gfx/leaders/ITA/Portrait_Italy_Amedeo_Savoia_Aosta.dds"
+				large ="gfx/leaders/ITA/portrait_AOI_amedeo_di_savoia_aosta.dds"
 			}
 		}
 		corps_commander = {
@@ -961,7 +946,7 @@ characters = {
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 3
-			visible = { NOT = { has_government = communism } }
+			visible = { ITA_has_rejected_monarchy = no }
 		}
 	}
 
@@ -1385,6 +1370,7 @@ characters = {
 			coordination_skill = 1
 			legacy_id = 0
 			visible = {
+				tag = RSI
 				has_government = fascism
 				has_completed_focus = ITA_supermarina #Maybe Escort focus? Or maybe available from start
 			} 
@@ -1395,7 +1381,7 @@ characters = {
 		name = ITA_Ferdinando_Genova
 		portraits={
 			navy={
-				large="gfx/leaders/ITA/portrait_ITA_ferdinando_adalberto.dds"
+				large="gfx/leaders/ITA/Portrait_Italy_Ferdinando_di_Savoia-Genova.dds"
 			}
 		}
 		navy_leader={
@@ -1448,7 +1434,7 @@ characters = {
 		name=ITA_bruno_brivonesi
 		portraits={
 			navy={
-				large="gfx/leaders/ITA/Portrait_Italy_Bruno_Brivonesi_01.dds"
+				large="gfx/leaders/ITA/Portrait_Italy_Bruno_Brivonesi.dds"
 			}
 		}
 		navy_leader={
@@ -1466,7 +1452,7 @@ characters = {
 		name=ITA_bruto_brivonesi
 		portraits={
 			navy={
-				large="gfx/leaders/ITA/Portrait_Italy_Bruto_Brivonesi_01.dds"
+				large="gfx/leaders/ITA/Portrait_Italy_Bruto_Brivonesi.dds"
 			}
 		}
 		navy_leader={
@@ -1514,25 +1500,6 @@ characters = {
 			coordination_skill=3
 			legacy_id=-1
 			visible = { ITA_has_rejected_monarchy = no }
-		}
-	}
-	
-	ITA_mario_falangola={
-		name=ITA_mario_falangola
-		portraits={
-			navy={
-				large="gfx/leaders/ITA/Portrait_ITA_Mario_Falangola.dds"
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-			visible = { ITA_government_is_really_fascist = yes }
 		}
 	}
 
@@ -1747,7 +1714,7 @@ characters = {
 				small = GFX_portrait_ITA_raffaele_de_courten_small
 			}
 			navy={
-				large="gfx/leaders/ITA/Portrait_ITA_Raffaele_Courten.dds"
+				large="gfx/leaders/ITA/Portrait_ITA_Raffaele_de_Courten.dds"
 			}
 		}
 
@@ -2425,6 +2392,7 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_paolo_thaon_di_revel_small
+				large = "gfx/leaders/ITA/Portrait_Italy_Paolo_Thaon_di_Revel.dds"
 			}
 		}
 		navy_leader={
@@ -2745,7 +2713,7 @@ characters = {
 	ITA_carlo_sforza={
 		name=ITA_carlo_sforza
 		portraits = {
-			army = { small="gfx/interface/ideas/idea_carlo_sforza.dds" }
+			army = { small="gfx/interface/ideas/idea_generic_political_advisor_europe_4.dds" }
 		}
 		advisor={
 			slot = political_advisor

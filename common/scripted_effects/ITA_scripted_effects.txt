@@ -2395,10 +2395,6 @@ ITA_set_up_character_cw_flags_effect = { #Using Unit leader flags when necessary
 		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 		set_character_flag = ITA_cw_character_fascist_side_flag
 	}
-	ITA_mario_falangola = {
-		set_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
-		set_character_flag = ITA_cw_character_fascist_side_flag
-	}
 
 	#Monarchist
 	ITA_ferdinando = {

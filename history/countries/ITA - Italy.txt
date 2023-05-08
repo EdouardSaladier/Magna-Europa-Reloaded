@@ -623,7 +623,7 @@ recruit_character = ITA_giuseppe_fioravanzo
 recruit_character = ITA_carlo_bergamini
 recruit_character = ITA_angelo_iachino
 recruit_character = ITA_carlo_fecia_cossato
-#recruit_character = ITA_giuseppe_di_bartolo
+recruit_character = ITA_giuseppe_di_bartolo
 recruit_character = ITA_junio_valerio_borghese
 recruit_character = ITA_luigi_sansonetti
 recruit_character = ITA_ferdinando
@@ -632,7 +632,6 @@ recruit_character = ITA_angelo_parona
 recruit_character = ITA_bruno_brivonesi
 recruit_character = ITA_bruto_brivonesi
 recruit_character = ITA_antonio_legnani
-recruit_character = ITA_mario_falangola
 
 recruit_character = ITA_alfredo_guzzoni
 recruit_character = ITA_renato_sandalli
@@ -877,7 +876,7 @@ if = {
 	}
 	create_equipment_variant = {
 		name = "Ca.111" #
-		type = small_plane_airframe_0
+		type = small_plane_cas_airframe_0
 		modules = {
 			fixed_main_weapon_slot = small_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = recon_camera
@@ -1012,7 +1011,6 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = small_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
-			fixed_auxiliary_weapon_slot_2 = light_mg_2x
 			engine_type_slot = engine_2_1x
 			special_type_slot_1 = empty
 		}
@@ -1024,7 +1022,6 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = small_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
-			fixed_auxiliary_weapon_slot_2 = light_mg_2x
 			engine_type_slot = engine_2_1x
 			special_type_slot_1 = hmg_defense_turret
 		}
@@ -1284,9 +1281,9 @@ if = {
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
 			front_1_custom_slot = ship_anti_air_1
-			mid_1_custom_slot = ship_heavy_battery_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
 		}
 		obsolete = yes
 	}
@@ -1304,9 +1301,9 @@ if = {
 			fixed_ship_secondaries_slot = dp_ship_secondaries_3
 			fixed_ship_armor_slot = ship_armor_bb_1
 			front_1_custom_slot = ship_anti_air_2
-			mid_1_custom_slot = ship_heavy_battery_2
-			mid_2_custom_slot = ship_airplane_launcher_1
-			rear_1_custom_slot = dp_ship_secondaries_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = dp_ship_secondaries_2
+			rear_1_custom_slot = ship_heavy_battery_2
 		}
 	}
 	create_equipment_variant = {
@@ -1323,9 +1320,9 @@ if = {
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
 			front_1_custom_slot = empty
-			mid_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
 		}
 		obsolete = yes
 	}
@@ -1343,9 +1340,9 @@ if = {
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
 			front_1_custom_slot = ship_anti_air_2
-			mid_1_custom_slot = ship_heavy_battery_2
-			mid_2_custom_slot = ship_airplane_launcher_1
-			rear_1_custom_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_2
 		}
 	}
 	create_equipment_variant = {
@@ -1382,8 +1379,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_bc_2
 			front_1_custom_slot = empty
 			mid_1_custom_slot = ship_airplane_launcher_1
-			mid_2_custom_slot = dp_ship_secondaries_1
-			mid_3_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = ship_heavy_battery_3
 		}
 	}
@@ -1420,9 +1416,9 @@ if = {
 			fixed_ship_secondaries_slot = dp_ship_secondaries_2
 			fixed_ship_armor_slot = ship_armor_bb_3
 			front_1_custom_slot = ship_anti_air_2
-			mid_1_custom_slot = ship_heavy_battery_3
 			mid_2_custom_slot = ship_airplane_launcher_2
-			rear_1_custom_slot = ship_secondaries_2
+			mid_3_custom_slot = ship_secondaries_2
+			rear_1_custom_slot = ship_heavy_battery_3
 		}
 	}
 	### Heavy Cruiser Variants	
@@ -1748,7 +1744,7 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_light_battery_3
+			rear_1_custom_slot = empty
 		}
 		obsolete = yes
 	}
@@ -1765,7 +1761,7 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = empty
 		}
 		obsolete = yes
 	}
@@ -1867,7 +1863,7 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = empty
 		}
 		obsolete = yes
 	}
@@ -2034,7 +2030,7 @@ if = {
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
 			fixed_ship_engine_slot = sub_ship_engine_1
-			front_1_custom_slot = ship_light_battery_2
+			front_1_custom_slot = empty
 			rear_1_custom_slot = ship_torpedo_sub_2
 		}
 	}
