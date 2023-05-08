@@ -164,28 +164,6 @@ characters = {
 		}
 	}
 
-	POL_adrian_wiart = {
-		name = POL_adrian_wiart
-		portraits = {
-			army = {
-				large = "gfx/leaders/POL/Portrait_Poland_Adrian_Wiart.png"
-				small = "gfx/interface/ideas/POL_adrian_carton_de_wiart.png"
-			}
-		}
-		corps_commander = {
-			traits = { trickster commando inspirational_leader harsh_leader trait_reckless }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=2
-			legacy_id=-1
-			visible = {
-			#	has_country_flag = POL_recalled_wiart_flag
-			}
-		}
-	}
-
 	POL_ignacy_moscicki = {
 		name=POL_ignacy_moscicki
 		portraits = {
