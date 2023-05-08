@@ -4708,9 +4708,9 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_full_control_of_state = 195
+					has_full_control_of_state = 119
 				}
-				195 = { #Leningrad
+				119 = { #Leningrad
 					remove_building = {
 						type = arms_factory
 						level = 1
@@ -4723,9 +4723,9 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_full_control_of_state = 202
+					has_full_control_of_state = 2081
 				}
-				202 = { #Kiev
+				2081 = { #Kiev
 					remove_building = {
 						type = arms_factory
 						level = 1
@@ -4763,9 +4763,9 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 195
+						has_full_control_of_state = 119
 					}
-					195 = { #Leningrad
+					119 = { #Leningrad
 						remove_building = {
 							type = arms_factory
 							level = 1
@@ -4778,9 +4778,9 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_full_control_of_state = 202
+						has_full_control_of_state = 2081
 					}
-					202 = { #Kiev
+					2081 = { #Kiev
 						remove_building = {
 							type = arms_factory
 							level = 1
@@ -4820,7 +4820,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					ROOT = { has_full_control_of_state = 195 } #Leningrad
+					ROOT = { has_full_control_of_state = 119 } #Leningrad
 				}
 				random_controlled_state = { #Different State please thanks
 					limit = {
@@ -4847,7 +4847,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					ROOT = { has_full_control_of_state = 202 } #Leningrad
+					ROOT = { has_full_control_of_state = 2081 } #Leningrad
 				}
 				random_controlled_state = { #Different State please thanks
 					limit = {
@@ -5302,10 +5302,10 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_full_control_of_state = 215 #ONEGA
-			has_full_control_of_state = 216 #OLONETS
-			has_full_control_of_state = 264 #TIKHVIN
-			has_full_control_of_state = 195 #LENINGRAD
+			has_full_control_of_state = 57 #ONEGA
+			has_full_control_of_state = 2458 #OLONETS
+			has_full_control_of_state = 102 #TIKHVIN
+			has_full_control_of_state = 119 #LENINGRAD
 		}
 		
 		search_filters = {}
@@ -5314,9 +5314,9 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_protect_the_white_sea_baltic_canal"
 			if = {
 				limit = {
-					has_full_control_of_state = 215 #ONEGA
+					has_full_control_of_state = 2458 #ONEGA
 				}
-				215 = { #ONEGA
+				2458 = { #ONEGA
 					add_building_construction = {
 						type = anti_air_building
 						level = 1
@@ -5326,25 +5326,35 @@ focus_tree = {
 						type = bunker
 						level = 1
 						province = {
-							id = 9045
-							id = 3078
-							id = 11212
+							id = 1923
 						}
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
 						level = 1
-						province = 9045
+						province = 1923
 						instant_build = yes
 					}
 				}
 			}
 			if = {
 				limit = {
-					has_full_control_of_state = 216 #OLONETS
+					has_full_control_of_state = 57 #OLONETS
 				}
-				216 = { #OLONETS
+				57 = { #OLONETS
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 102 #TIKHVIN
+				}
+				102 = { #TIKHVIN
 					add_building_construction = {
 						type = anti_air_building
 						level = 1
@@ -5354,8 +5364,9 @@ focus_tree = {
 						type = bunker
 						level = 1
 						province = {
-							id = 92
-							id = 11092
+							id = 7494
+							id = 16915
+							id = 18175
 						}
 						instant_build = yes
 					}
@@ -5363,9 +5374,9 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_full_control_of_state = 264 #TIKHVIN
+					has_full_control_of_state = 119 #LENINGRAD
 				}
-				264 = { #TIKHVIN
+				119 = { #LENINGRAD
 					add_building_construction = {
 						type = anti_air_building
 						level = 1
@@ -5375,198 +5386,14 @@ focus_tree = {
 						type = bunker
 						level = 1
 						province = {
-							id = 9082
-							id = 9190
-							id = 11059
+							id = 9985
+							id = 6617
+							id = 18223
 						}
 						instant_build = yes
 					}
 				}
 			}
-			if = {
-				limit = {
-					has_full_control_of_state = 195 #LENINGRAD
-				}
-				195 = { #LENINGRAD
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 1
-						province = {
-							id = 149
-							id = 11068
-							id = 79
-						}
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_far_east_fortification
-		icon = GFX_goal_fortify_the_westwall
-		prerequisite = { focus = SOV_military_engineering_university }
-		x = 3
-		y = 1
-		relative_position_id = SOV_military_engineering_university
-		cost = 10
-
-		available = {
-			OR = {
-				has_full_control_of_state = 563
-				has_full_control_of_state = 561
-				has_full_control_of_state = 657
-				has_full_control_of_state = 409
-				has_full_control_of_state = 408
-			}
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_far_east_fortification"
-			563 = { #CHITA
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_far_east_fortification_forts_4
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 4719
-								id = 12622
-							}
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = {
-								id = 10559
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			561 = { #AMUR
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_far_east_fortification_forts_4
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 12543
-								id = 7851
-								id = 10678
-							}
-							instant_build = yes
-						}
-						add_building_construction = { #Set like this for stupid tooltip purposes
-							type = bunker
-							level = 1
-							province = {
-								id = 12657
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			657 = { #BIROBIDZHAN
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_far_east_fortification_forts_10
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 10655
-								id = 7801
-								id = 10722
-								id = 7672
-							}
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = {
-								id = 7763
-								id = 4725
-								id = 4805
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			409 = { #KHABAROVSK
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_far_east_fortification_forts_4
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = {
-								id = 12189
-							}
-							instant_build = yes
-						}
-						add_building_construction = {  #Set like this for stupid tooltip purposes
-							type = bunker
-							level = 2
-							province = {
-								id = 10466
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			408 = { #VLADIVOSTOK
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_far_east_fortification_forts_10
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 11643
-								id = 6686
-								id = 664
-								id = 6684
-								id = 3787
-								id = 6838
-							}
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = {
-								id = 3977
-								id = 957
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			# Other possible Provinces
-			#11879 (Border Conflict with Japan) 1755 (North Sakhalin)
 		}
 	}
 
