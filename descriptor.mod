@@ -1,7 +1,10 @@
-name="Magna Europa Reloaded"
+name="Magna Europa: Reloaded"
 version="1"
 tags={
 	"Map"
+	"Historical"
+	"Utilities"
+	"Gameplay"
 }
 replace_path="history/countries"
 replace_path="history/states"
@@ -47,4 +50,4 @@ replace_path="common/peace_conference/ai_peace"
 replace_path="events"
 picture="thumbnail.png"
 supported_version="1.12.*"
-remote_file_id="2955331364"
+remote_file_id="2973126210"
