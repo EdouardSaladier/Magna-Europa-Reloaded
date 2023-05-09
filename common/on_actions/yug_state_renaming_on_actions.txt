@@ -1386,6 +1386,25 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
+			#Peljesac
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2241 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								is_italian = yes
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Sabbioncello" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 			#Hvar
 		   if = {
 				limit = {

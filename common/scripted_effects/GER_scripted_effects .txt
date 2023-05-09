@@ -198,6 +198,27 @@ GER_remove_mefo_bills = {
 	}
 }
 
+GER_rename_alsace_lorraine = {
+	606 = { set_state_name = STATE_606_GER }
+	set_province_name = { id = 19849 name = "Mülhausen" }
+	set_province_name = { id = 19848 name = "Kolmer" }
+	566 = { set_state_name = STATE_566_GER }
+	set_province_name = { id = 13296 name = "Straßburg" }
+	set_province_name = { id = 9043 name = "Hagenau" }
+	2747 = { set_state_name = STATE_2747_GER }
+	547 = { set_state_name = STATE_547_GER }
+	512 = { set_state_name = STATE_512_GER }
+	set_province_name = { id = 12895 name = "Stadt Luxemburg" }
+	485 = {
+		if = {
+			limit = {
+				is_controlled_by = ROOT
+			}
+			set_state_name = STATE_485_GER
+		}
+	}
+}
+
 # Like the level up effect except it runs in reverse
 # For use when annexing the gold reserves of Austria, Czechoslovakia and Yugoslavia
 

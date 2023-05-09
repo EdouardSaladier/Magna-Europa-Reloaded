@@ -34,10 +34,10 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Hashim al-Atassi"
+	name = "Émile Eddé"
 	desc = ""
-	picture = GFX_portrait_Hashim_al_Atassi
-	ideology = liberalism
+	picture = "gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+	ideology = conservatism
 	traits = {
 		#
 	}

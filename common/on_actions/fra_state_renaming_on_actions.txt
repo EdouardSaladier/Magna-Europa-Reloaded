@@ -237,6 +237,54 @@ on_actions = {
 					reset_province_name = 5137
 				}
 			}
+			#Alsace
+			if = {
+				limit = { FROM.FROM = { state = 566 } }
+				if = {
+					limit = { ROOT = { is_german = yes if = { limit = { original_tag = GER has_government = fascism } has_completed_focus = GER_reintegrate_luxemburg_and_alsace_lorraine } } }
+					FROM.FROM = { set_state_name = "STATE_566_GER" }
+					set_province_name = { id = 13296 name = "Straßburg" }
+					set_province_name = { id = 9043 name = "Hagenau" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } reset_province_name = 13296 reset_province_name = 9043 }
+			}
+			if = {
+				limit = { FROM.FROM = { state = 606 } }
+				if = {
+					limit = { ROOT = { is_german = yes if = { limit = { original_tag = GER has_government = fascism } has_completed_focus = GER_reintegrate_luxemburg_and_alsace_lorraine } } }
+					FROM.FROM = { set_state_name = "STATE_606_GER" }
+					set_province_name = { id = 19848 name = "Kolmer" }
+					set_province_name = { id = 19849 name = "Mülhausen" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } reset_province_name = 19848 reset_province_name = 19849 }
+			}
+			#Lorraine
+			if = {
+				limit = { FROM.FROM = { state = 547 } }
+				if = {
+					limit = { ROOT = { is_german = yes if = { limit = { original_tag = GER has_government = fascism } has_completed_focus = GER_reintegrate_luxemburg_and_alsace_lorraine } } }
+					FROM.FROM = { set_state_name = "STATE_547_GER" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } }
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2747 } }
+				if = {
+					limit = { ROOT = { is_german = yes if = { limit = { original_tag = GER has_government = fascism } has_completed_focus = GER_reintegrate_luxemburg_and_alsace_lorraine } } }
+					FROM.FROM = { set_state_name = "STATE_2747_GER" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } } 
+			}
+			#LuxemBRUH
+			if = {
+				limit = { FROM.FROM = { state = 512 } }
+				if = {
+					limit = { ROOT = { is_german = yes if = { limit = { original_tag = GER has_government = fascism } has_completed_focus = GER_reintegrate_luxemburg_and_alsace_lorraine } } }
+					FROM.FROM = { set_state_name = "STATE_512_GER" }
+					set_province_name = { id = 12895 name = "Stadt Luxemburg" }
+				}
+				else = { FROM.FROM = { reset_state_name = yes } reset_province_name = 12895 } 
+			}
 		}
 	}
 }
