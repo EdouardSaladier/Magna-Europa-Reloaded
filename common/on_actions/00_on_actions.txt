@@ -2612,6 +2612,14 @@ on_actions = {
 						has_government = fascism
 						has_civil_war = yes
 					}
+					FROM.FROM = {
+						NOT = {
+							has_state_category = tiny_island
+							has_state_category = wasteland
+							has_state_category = enclave
+							has_state_category = pastoral
+						}
+					}
 				}
 				FROM.FROM = {
 					set_state_flag = nazi_state_withdrawn
