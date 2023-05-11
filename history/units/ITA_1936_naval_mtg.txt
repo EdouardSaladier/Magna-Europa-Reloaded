@@ -43,20 +43,20 @@ units= {
 			ship = { name = "Francesco Stocco" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
 			ship = { name = "Giuseppe Sirtori" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
 			# VII Squadriglia Cacciatorpediniere
-			ship = { name = "Dardo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
-			ship = { name = "Freccia" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
-			ship = { name = "Saetta" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
-			ship = { name = "Strale" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
+			ship = { name = "Dardo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
+			ship = { name = "Freccia" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
+			ship = { name = "Saetta" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
+			ship = { name = "Strale" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
 			# VII Squadriglia Torpediniere
 			ship = { name = "Angelo Bassini" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
 			ship = { name = "Enrico Cosenz" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
 			ship = { name = "Giacomo Medici" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
 			ship = { name = "Nicola Fabrizi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
 			# VIII Squadriglia Cacciatorpediniere
-			ship = { name = "Baleno" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
-			ship = { name = "Folgore" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
-			ship = { name = "Fulmine" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
-			ship = { name = "Lampo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
+			ship = { name = "Baleno" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
+			ship = { name = "Folgore" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
+			ship = { name = "Fulmine" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
+			ship = { name = "Lampo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Freccia/Folgore Class" } } } 
 			# IX Squadriglia Cacciatorpediniere
 			ship = { name = "Nicoloso da Recco" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } } 
 			ship = { name = "Emanuele Pessagno" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } } 
@@ -446,6 +446,30 @@ instant_effect = {
 			progress = 0.60 
 			amount = 1 
 		} 
+		
+		#DD: "Alfredo Oriani, Vittorio Alfieri"
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "ITA"
+				version_name = "Oriani Class"
+			}
+			name = "Alfredo Oriani"
+			requested_factories = 1
+			progress = 0.7
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "ITA"
+				version_name = "Oriani Class"
+			}
+			name = "Vittorio Alfieri"
+			requested_factories = 1
+			progress = 0.7
+			amount = 1
+		}
 
 		# SS: "Enrico Tazzoli"
 		add_equipment_production = { 
@@ -601,7 +625,7 @@ instant_effect = {
 			requested_factories = 1 
 			progress = 0.50 
 			amount = 1 
-		} 
+		}
 	} 
 }
 

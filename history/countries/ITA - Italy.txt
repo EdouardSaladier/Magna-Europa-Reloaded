@@ -632,6 +632,7 @@ recruit_character = ITA_angelo_parona
 recruit_character = ITA_bruno_brivonesi
 recruit_character = ITA_bruto_brivonesi
 recruit_character = ITA_antonio_legnani
+recruit_character = ITA_romeo_oliva
 
 recruit_character = ITA_alfredo_guzzoni
 recruit_character = ITA_renato_sandalli
@@ -1783,23 +1784,6 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Freccia/Folgore Class"
-		type = ship_hull_light_1
-		name_group = ITA_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
 		name = "Spica Class"
 		type = ship_hull_light_1
 		name_group = ITA_DD_HISTORICAL
@@ -1885,12 +1869,12 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Navigatori Class"			#Represents the following WWI/1920s Heavy DDs: Mirabello, (Aquila,) Leone, Navigatori
+		name = "Navigatori Class"
 		type = ship_hull_light_2
 		name_group = ITA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_3
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1902,16 +1886,65 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Maestrale Class" 			#Represents the following WWI/1920s DDs: Freccia, Foglore, Mastrale, Oriani, Spica (and subclasses)
+		name = "Freccia/Folgore Class"
 		type = ship_hull_light_2
 		name_group = ITA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Maestrale Class"
+		type = ship_hull_light_2
+		name_group = ITA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Oriani Class"
+		type = ship_hull_light_2
+		name_group = ITA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_anti_air_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Soldati Class"
+		type = ship_hull_light_2
+		name_group = ITA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_3
 			fixed_ship_torpedo_slot = ship_torpedo_2
 			mid_1_custom_slot = ship_mine_layer_1
 			rear_1_custom_slot = ship_depth_charge_1
