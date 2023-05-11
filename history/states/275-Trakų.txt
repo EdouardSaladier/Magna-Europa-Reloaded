@@ -2,18 +2,23 @@
 state={
 	id=275
 	name="STATE_275"
-	provinces={
-		6467 7360 7685 10951 19950 
-	}
+
 	history={
 		owner = LIT
 		add_core_of = LIT
+		add_core_of = DKJ
 		buildings = {
 			infrastructure = 2
+
 		}
-  	}
+
+	}
+
+	provinces={
+		2938 4651 5439 6467 7360 7685 10915 10951 18139 19950 
+	}
 	manpower=99400
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }

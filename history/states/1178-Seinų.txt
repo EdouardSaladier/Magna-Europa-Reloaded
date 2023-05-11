@@ -6,15 +6,17 @@ state={
 	history={
 		owner = LIT
 		add_core_of = LIT
+		add_core_of = DKJ
 		add_core_of = SVK
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
 		}
+
 	}
 
 	provinces={
-		3745 10872 10942 11006 
+		3745 10942 11006 
 	}
 	manpower=48000
 	buildings_max_level_factor=1.000
