@@ -1684,6 +1684,7 @@ on_actions = {
 				if = {
 					limit = { is_core_of = ERZ }
 					set_state_flag = core_of_ERZ
+				}
 				if = {
 					limit = { is_core_of = NOV }
 					set_state_flag = core_of_NOV
