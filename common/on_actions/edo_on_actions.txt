@@ -1673,6 +1673,21 @@ on_actions = {
 					limit = { is_core_of = BSR }
 					set_state_flag = core_of_BSR
 				}
+				if = {
+					limit = { is_core_of = CRZ }
+					set_state_flag = core_of_CRZ
+				}
+				if = {
+					limit = { is_core_of = MOK }
+					set_state_flag = core_of_MOK
+				}
+				if = {
+					limit = { is_core_of = ERZ }
+					set_state_flag = core_of_ERZ
+				if = {
+					limit = { is_core_of = NOV }
+					set_state_flag = core_of_NOV
+				}
 			}
 		}
 	}
