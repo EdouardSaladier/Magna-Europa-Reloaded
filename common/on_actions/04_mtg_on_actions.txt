@@ -628,6 +628,67 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
+						rule = eng_fragmentation_status
+						option = ENG_UTTERLY_FRAGMENTED
+					}
+				}
+				ENG = {
+					release = CYP
+					release = KER
+					release = ESX
+					release = SSX
+					release = KNT
+					release = WSX
+					release = MER
+					release = EAG
+					release = YOR
+					release = CMB
+					release = LCS
+					release = NRT
+					release = LND
+					release = EGY
+					release = SHT
+					release = ORK
+					release = SCO
+					release = WLS
+					release = NIR
+					882 = { add_core_of = SPR }
+					release = SPR
+					release = NFL
+					set_autonomy = { target = MLT autonomy_state = autonomy_free }
+					set_autonomy = { target = EGY autonomy_state = autonomy_free }
+					set_autonomy = { target = PAL autonomy_state = autonomy_free }
+					set_autonomy = { target = JOR autonomy_state = autonomy_free }
+					set_autonomy = { target = KUW autonomy_state = autonomy_free }
+					set_autonomy = { target = UAE autonomy_state = autonomy_free }
+					set_autonomy = { target = BHR autonomy_state = autonomy_free }
+					set_autonomy = { target = QAT autonomy_state = autonomy_free }
+					set_autonomy = { target = CAN autonomy_state = autonomy_free }
+					set_autonomy = { target = JER autonomy_state = autonomy_free }
+					set_autonomy = { target = GUE autonomy_state = autonomy_free }
+					set_autonomy = { target = ISM autonomy_state = autonomy_free }
+					remove_from_faction = MLT
+					remove_from_faction = EGY
+					remove_from_faction = PAL
+					remove_from_faction = JOR
+					remove_from_faction = KUW
+					remove_from_faction = UAE
+					remove_from_faction = BHR
+					remove_from_faction = QAT
+					remove_from_faction = CAN
+					remove_from_faction = JER
+					remove_from_faction = GUE
+					remove_from_faction = ISM
+				}
+				LND = {
+					annex_country = {
+						target = ENG
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
 						rule = rom_fragmentation_status
 						option = ROM_FRAGMENTED
 					}
@@ -726,6 +787,78 @@ on_actions = {
 					set_autonomy = { target = MRT autonomy_state = autonomy_free }
 					set_autonomy = { target = TUN autonomy_state = autonomy_free }
 					set_autonomy = { target = SYR autonomy_state = autonomy_free }
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = fra_fragmentation_status
+						option = FRA_REGIONS
+					}
+				}
+				FRA = {
+					release = CAT
+					release = NAV
+					release = ALS
+					release = LOR
+					release = CMP
+					release = PIC
+					release = ATI
+					release = LYO
+					release = BGN
+					release = SAV
+					release = DAU
+					release = PRV
+					release = AVG
+					release = AQT
+					release = POI
+					release = LMS
+					release = ORL
+					release = ANJ
+					release = NMD
+					release = OCC
+					release = BRI
+					release = COR
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = bel_fragmentation_status
+								option = DEFAULT
+							}
+						}
+						466 = { add_core_of = BEL }
+						1342 = { add_core_of = BEL }
+						2333 = { add_core_of = BEL }
+						release = BEL
+					}
+					else_if = {
+						limit = {
+							has_game_rule = {
+								rule = bel_fragmentation_status
+								option = BEL_DISSOLVED
+							}
+						}
+						release = FLA
+						release = WLN
+						
+					}
+					else_if = {
+						limit = {
+							has_game_rule = {
+								rule = bel_fragmentation_status
+								option = BEL_FRAGMENTED
+							}
+						}
+						1342 = { add_core_of = FLA }
+						release = FLA
+						release = HNT
+						
+					}
+					set_autonomy = { target = MOR autonomy_state = autonomy_free }
+					set_autonomy = { target = MRT autonomy_state = autonomy_free }
+					set_autonomy = { target = TUN autonomy_state = autonomy_free }
+					set_autonomy = { target = SYR autonomy_state = autonomy_free }
+					set_cosmetic_tag = FRA_ile_de_france
 				}
 			}
 			if = {
@@ -2019,13 +2152,42 @@ on_actions = {
 						release = RHN
 					}
 					2969 = { transfer_state_to = HOL add_core_of = HOL }
-					every_owned_state = {
-						limit = { is_core_of = FLA }
-						transfer_state_to = HOL
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = hol_fragmentation_status
+								option = DEFAULT
+							}
+						}
+						every_owned_state = {
+							limit = { is_core_of = FLA }
+							transfer_state_to = HOL
+						}
 					}
-					every_owned_state = {
-						limit = { is_core_of = WLN }
-						transfer_state_to = FRA
+					else = {
+						release = BRB
+						release = LIM
+						release = FLA
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = fra_fragmentation_status
+								option = FRA_REGIONS
+							}
+						}
+						release = HNT
+						release = NMR
+						release = LEG
+						500 = { add_core_of = LUX }
+						2368 = { add_core_of = LUX }
+						release = LUX
+					}
+					else = {
+						every_owned_state = {
+							limit = { is_core_of = WLN }
+							transfer_state_to = FRA
+						}
 					}
 				}
 			}
@@ -2051,14 +2213,28 @@ on_actions = {
 					}
 					release = BRU
 					release = BRB
-					release = FLA
+					release = LIM
 					release = HNT
 					release = NMR
-					release = LIM
 					release = LEG
+					release = FLA
 					500 = { add_core_of = LUX }
 					2368 = { add_core_of = LUX }
 					release = LUX
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = hol_fragmentation_status
+						option = HOL_FRAGMENTED
+					}
+				}
+				HOL = {
+					release = BRB
+					release = LIM
+					release = FLA
+					release = WFR
 				}
 			}
 		}

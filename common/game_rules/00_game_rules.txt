@@ -1692,6 +1692,11 @@ eng_fragmentation_status = {
 		text = "RULE_OPTION_ENG_FRAGMENTED"
 		desc = "RULE_OPTION_ENG_FRAGMENTED_DESC"
 	}
+	option = {
+		name = ENG_UTTERLY_FRAGMENTED
+		text = "RULE_OPTION_ENG_UTTERLY_FRAGMENTED"
+		desc = "RULE_OPTION_ENG_UTTERLY_FRAGMENTED_DESC"
+	}
 }
 rom_fragmentation_status = {
 	name = "ROM_FRAGMENTATION_STATUS"
@@ -1745,6 +1750,11 @@ fra_fragmentation_status = {
 		name = FRA_FRAGMENTED
 		text = "RULE_OPTION_FRA_FRAGMENTED"
 		desc = "RULE_OPTION_FRA_FRAGMENTED_DESC"
+	}
+	option = {
+		name = FRA_REGIONS
+		text = "RULE_OPTION_FRA_REGIONS"
+		desc = "RULE_OPTION_FRA_REGIONS_DESC"
 	}
 }
 ger_fragmentation_status = {
@@ -1879,6 +1889,21 @@ bel_fragmentation_status = {
 		name = BEL_FRAGMENTED
 		text = "RULE_OPTION_BEL_FRAGMENTED"
 		desc = "RULE_OPTION_BEL_FRAGMENTED_DESC"
+	}
+}
+hol_fragmentation_status = {
+	name = "HOL_FRAGMENTATION_STATUS"
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT_STATUS"
+		desc = "RULE_OPTION_DEFAULT_STATUS_DESC"
+	}
+	option = {
+		name = HOL_FRAGMENTED
+		text = "RULE_OPTION_HOL_FRAGMENTED"
+		desc = "RULE_OPTION_HOL_FRAGMENTED_DESC"
 	}
 }
 nel_status = {
