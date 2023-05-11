@@ -82,8 +82,8 @@ NDefines.NDiplomacy.TENSION_CB_WAR = 4 -- VANILLA: 7
 NDefines.NDiplomacy.TENSION_DECAY_DAILY = 0.01 -- VANILLA: 0.005
 NDefines.NDiplomacy.TENSION_SIZE_FACTOR = 0.9 --VANILLA: 1
 NDefines.NDiplomacy.PEACE_SCORE_SCALE_FACTOR = 2.0 --Vanilla 1.35
-NDefines.NDiplomacy.TENSION_ANNEX_NO_CLAIM = 0.5,	-- VANILLA: 2
-NDefines.NDiplomacy.TENSION_ANNEX_CLAIM = 0.1,	-- VANILLA: 0.5
+NDefines.NDiplomacy.TENSION_ANNEX_NO_CLAIM = 0.5	-- VANILLA: 2
+NDefines.NDiplomacy.TENSION_ANNEX_CLAIM = 0.1	-- VANILLA: 0.5
 
 NDefines.NOperatives.INTEL_NETWORK_GAIN_RATE_ON_OUT_OF_RANGE = -0.5				-- Amount of network strength lost in a state that has the right controller but is out of range of any operative
 NDefines.NOperatives.INTEL_NETWORK_GAIN_DECAY_PER_STEP_FACTOR = 0.8				-- Factor multiplied to the gain of the previous node in the netowrk initially contributed by the agent. In other words, before adjacency, the strength gain in a state would be GainFromOperative * ( INTEL_NETWORK_GAIN_DECAY_PER_STEP_FACTOR ^ NodeDepth ) where NodeDepth is the distance between the state and the operative's location.
