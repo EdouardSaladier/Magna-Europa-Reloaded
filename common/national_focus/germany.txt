@@ -6698,10 +6698,10 @@ focus_tree = {
 					has_dlc = "Death or Dishonor"
 					CZE = { NOT = { is_in_faction_with = GER } } #in case AH is in faction with GER and dragged a subject CZE along.
 					OR = {
-						69 = { is_owned_by = HUN } #AH restored
+						473 = { is_owned_by = HUN } #AH restored
 						AND = {
 							CZE = { is_subject_of = HUN }
-							69 = { is_owned_by = CZE }
+							473 = { is_owned_by = CZE }
 						}
 					}
 				}
@@ -6753,7 +6753,7 @@ focus_tree = {
 					NOT = { has_war_with = FRA }
 					CZE = { is_subject = no }
 					CZE = { is_in_faction_with = HOL }
-					CZE = { controls_state = 69 }
+					CZE = { controls_state = 473 }
 					OR = {
 						HUN = {
 							NOT = {
