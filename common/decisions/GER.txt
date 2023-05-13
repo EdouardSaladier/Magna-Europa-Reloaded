@@ -1523,15 +1523,11 @@ GER_reichskommissariats = {
 							OR = {
 								AND = {
 									region = 100
-									NOT = {
-										is_transnistria = yes
-									}
+									is_transnistria = no
 								}
 								AND = {
 									region = 99
-									NOT = {
-										is_transnistria = yes
-									}
+									is_transnistria = no
 								 }
 								AND = {
 									region = 42
@@ -1608,15 +1604,11 @@ GER_reichskommissariats = {
 					OR = {
 							AND = {
 								region = 100
-								NOT = {
-									is_transnistria = yes
-								}
+								is_transnistria = no
 							}
 							AND = {
 								region = 99
-								NOT = {
-									is_transnistria = yes
-								}
+								is_transnistria = no
 							 }
 							AND = {
 								region = 42
@@ -1653,7 +1645,20 @@ GER_reichskommissariats = {
 				add_claim_by = RKU
 				transfer_state_to = RKU
 				add_compliance = 30
-			}	
+			}
+			random_other_country = {
+				limit = {
+					original_tag = ROM
+					has_war_together_with = ROOT
+				}
+				every_state = {
+					limit = {
+						is_controlled_by = ROOT
+						is_transnistria = yes
+					}
+					set_state_controller_to = PREV
+				}
+			}
 			RKU = {
 				set_cosmetic_tag = HOL_reichskommissariat
 				create_country_leader = {

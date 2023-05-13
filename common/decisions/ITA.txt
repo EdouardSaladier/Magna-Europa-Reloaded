@@ -5044,7 +5044,7 @@ ITA_diplomacy_balkan_decision_category = {
 					has_government = fascism
 				}
 			}
-			881 = {
+			2798 = {
 				is_controlled_by = ITA
 			}
 			NOT = {
@@ -5057,6 +5057,14 @@ ITA_diplomacy_balkan_decision_category = {
 		complete_effect = {
 			MNT = {
 				every_core_state = {
+					limit = {
+						NOT = {
+							state = 884
+							state = 2795
+							state = 989
+							state = 1986
+						}
+					}
 					transfer_state_to = MNT
 				}
 			}
@@ -5098,7 +5106,7 @@ ITA_diplomacy_balkan_decision_category = {
 				    }
 				}
 			}
-			881 = {
+			2798 = {
 				create_unit = {
 				    division = "name = \"First Montenegrin Chetnik Brigade\" division_template = \"Montenegrin Chetniks\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
 				    owner = MNT
@@ -5112,6 +5120,14 @@ ITA_diplomacy_balkan_decision_category = {
 				create_unit = {
 				    division = "name = \"Third Montenegrin Chetnik Brigade\" division_template = \"Montenegrin Chetniks\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
 				    owner = MNT
+				}
+			}
+			ALB = {
+				if = {
+					limit = { is_subject_of = ROOT }
+					set_state_owner = 2795
+					set_state_owner = 989
+					set_state_owner = 1986
 				}
 			}
 
