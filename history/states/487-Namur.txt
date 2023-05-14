@@ -8,17 +8,18 @@ state={
 		add_core_of = BEL
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = WLN
 		add_core_of = NMR
 		victory_points = {
-			19890 10 #Namur
+			19890 10 
 		}
 
 	}
 
 	provinces={
-		1891 4555 12516 12620 19890 
+		1891 4555 11829 12516 12620 19890 
 	}
 	manpower=257000
 	buildings_max_level_factor=1.000
