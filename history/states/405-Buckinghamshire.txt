@@ -1,15 +1,15 @@
+
 state={
 	id=405
 	name="STATE_405"
-	provinces={
-		2445 3966 8946 11829 11872 11918 
-	}
+
 	history={
 		owner = ENG
 		add_core_of = ENG
 		add_core_of = MER
 		buildings = {
 			infrastructure = 4
+
 		}
 		victory_points = {
 			11918 5
@@ -17,5 +17,6 @@ state={
     }
 	manpower=309600
 	buildings_max_level_factor=1.000
-	state_category = city
+	state_category=city
+	local_supplies=0.000
 }
