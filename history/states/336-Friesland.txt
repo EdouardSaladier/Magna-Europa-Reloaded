@@ -2,9 +2,7 @@
 state={
 	id=336
 	name="STATE_336"
-	provinces={
-		807 5944 6763 7212 11351 11416 11445 11446 11498 19875 19876 19877 19878 19902 
-	}
+
 	history={
 		owner = HOL
 		add_core_of = HOL
@@ -14,15 +12,20 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = WFR
-        victory_points = {
-            11351 5 #Leeuwarden
-        }
-        victory_points = {
-            7212 2 #Sneek
-        }
-    }
+		victory_points = {
+			11351 5 
+		}
+		victory_points = {
+			7212 2 
+		}
+
+	}
+
+	provinces={
+		807 5944 6763 7212 11351 11364 11416 11445 11446 11498 19875 19876 19877 19878 19902 
+	}
 	manpower=414000
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

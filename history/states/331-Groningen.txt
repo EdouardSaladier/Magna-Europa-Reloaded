@@ -2,9 +2,7 @@
 state={
 	id=331
 	name="STATE_331"
-	provinces={
-		5009 6601 8761 11312 11352 11364 11371 11382 11488 19900 
-	}
+
 	history={
 		owner = HOL
 		add_core_of = HOL
@@ -13,12 +11,17 @@ state={
 			industrial_complex = 1
 			19900 = { naval_base = 1 }
 		}
-        victory_points = {
-            11312 10 #Groningen
-        }
-    }
+		victory_points = {
+			11312 10 
+		}
+
+	}
+
+	provinces={
+		5009 6601 8761 11312 11352 11371 11382 11488 19900 
+	}
 	manpower=409500
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }
