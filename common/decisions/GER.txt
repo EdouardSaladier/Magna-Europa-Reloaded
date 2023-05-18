@@ -4274,6 +4274,7 @@ GER_ordenstaats = {
 			controls_state = 738
 			controls_state = 1512
 			controls_state = 2554
+			controls_state = 2933
 		}
 
 		cost = 0
@@ -4334,12 +4335,13 @@ GER_ordenstaats = {
 					transfer_state = 738
 					transfer_state = 1512
 					transfer_state = 2554 
+					transfer_state = 2933
 					set_capital = { state = 1512 }
 				}
 			
-			BNT = {
-				set_cosmetic_tag = BNT_GER_ORDENSSTAAT
-			}
+				BNT = {
+					set_cosmetic_tag = BNT_GER_ORDENSSTAAT
+				}
 				set_autonomy = { target = BNT autonomy_state = autonomy_integrated_puppet }
 			}
 		}
