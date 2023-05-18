@@ -8928,13 +8928,13 @@ country_event = {
 			}
 		}
 		trigger = {
-			195 = { 
+			119 = { 
 				is_owned_by = ROOT 
 				is_controlled_by = ROOT
 			}
 			NOT = { SOV_is_exiles = yes }
 		}
-		set_capital = { state = 195 }
+		set_capital = { state = 119 }
 	}
 	# Petrograd
 	option = {
@@ -8947,18 +8947,18 @@ country_event = {
 			}
 		}
 		trigger = {
-			195 = { 
+			119 = { 
 				is_owned_by = ROOT 
 				is_controlled_by = ROOT
 			}
 			NOT = { SOV_is_exiles = yes }
 		}
-		195 = { set_state_name = SOV_petrograd }
+		119 = { set_state_name = SOV_petrograd }
 		set_province_name = {
-			id = 3151
+			id = 9985
 			name = SOV_petrograd
 		}
-		set_capital = { state = 195 }
+		set_capital = { state = 119 }
 	}
 	# Keep the one we have
 	option = {
@@ -8971,21 +8971,6 @@ country_event = {
 		}
 		set_capital = { state = var:SOV_civil_war_start_state }
 	}
-	# Vladivostok
-	option = {
-		name = NSB_soviet_civil_war_common.002.e
-		ai_chance = {
-			base = 2
-		}
-		trigger = {
-			408 = { 
-				is_owned_by = ROOT 
-				is_controlled_by = ROOT
-			}
-			SOV_is_exiles = yes
-		}
-		set_capital = { state = 408 }
-	}
 	# St. Petersburg
 	option = {
 		name = NSB_soviet_civil_war_common.002.f
@@ -8993,18 +8978,18 @@ country_event = {
 			base = 10
 		}
 		trigger = {
-			195 = { 
+			119 = { 
 				is_owned_by = ROOT 
 				is_controlled_by = ROOT
 			}
 			SOV_is_exiles = yes
 		}
-		195 = { set_state_name = SOV_StPetersburg }
+		119 = { set_state_name = SOV_StPetersburg }
 		set_province_name = {
-			id = 3151
+			id = 9985
 			name = SOV_StPetersburg
 		}
-		set_capital = { state = 195 }
+		set_capital = { state = 119 }
 	}
 }
 
@@ -9225,7 +9210,7 @@ country_event = {
 			id = 1709
 			name = SOV_Donetsk
 		}
-		hidden_effect = { 557 = { set_state_name = SOV_Donetsk } }
+		hidden_effect = { 154 = { set_state_name = SOV_Donetsk } }
 		# Kalinin / Tver
 		IF = {
 			limit = { NOT = { has_character = SOV_mikhail_kalinin } }
