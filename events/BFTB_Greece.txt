@@ -3874,7 +3874,7 @@ country_event = {
 				ruling_party = neutrality
 				ideology = communism
 				size = 0.2
-				capital = 108
+				capital = 1529
 				states = all 
 				states_filter = {
 					OR = {
@@ -5160,9 +5160,9 @@ country_event = {
 		has_country_flag = GRE_an_invite_for_an_emperor
 		has_global_flag = form_byzantine_empire_flag
 		has_civil_war = no
-		controls_state = 797
-		controls_state = 183
-		controls_state = 805
+		controls_state = 932
+		controls_state = 1962
+		controls_state = 885
 	}
 
 	fire_only_once = yes
@@ -5362,7 +5362,7 @@ country_event = {
 		random_owned_state = {
 			limit = {
 				is_fully_controlled_by = ROOT
-				state = 186
+				state = 2003
 			}
 			damage_building = {
 				type = infrastructure
@@ -5372,7 +5372,7 @@ country_event = {
 		random_owned_state = {
 			limit = {
 				is_fully_controlled_by = ROOT
-				state = 184
+				state = 1015
 			}
 			damage_building = {
 				type = infrastructure
@@ -5382,7 +5382,7 @@ country_event = {
 		random_owned_state = {
 			limit = {
 				is_fully_controlled_by = ROOT
-				state = 731
+				state = 941
 			}
 			damage_building = {
 				type = infrastructure
@@ -5392,7 +5392,7 @@ country_event = {
 		random_owned_state = {
 			limit = {
 				is_fully_controlled_by = ROOT
-				state = 187
+				state = 910
 			}
 			damage_building = {
 				type = infrastructure
@@ -5422,8 +5422,14 @@ country_event = {
 			ruling_party = neutrality
 			ideology = democratic
 			size = 0.5
-			capital = 186
-			states = { 186 184 731 187 }
+			capital = 941
+			states = all
+			states_filter = {
+				OR = {
+					region = 75
+					region = 33
+				}
+			}
 			keep_unit_leaders = {
 			   300 304 306
 			}
@@ -7220,9 +7226,13 @@ country_event = {
 				ruling_party = democratic
 				ideology = fascism
 				size = 0.5
-				capital = 731
-				states = { 
-					187 731 184 185
+				capital = 941
+				states = all 
+			    states_filter = {
+					OR = {
+						region = 33
+						region = 75
+					}
 				}
 				keep_unit_leaders = {
 				    301 307 302
@@ -7241,9 +7251,13 @@ country_event = {
 				ruling_party = democratic
 				ideology = fascism
 				size = 0.3
-				capital = 731
-				states = { 
-			    	731 185 186
+				capital = 941
+				states = all 
+			    states_filter = {
+					OR = {
+						region = 33
+						region = 75
+					}
 				}
 			    keep_unit_leaders = {
 			        301 307 302
@@ -7258,9 +7272,12 @@ country_event = {
 				ruling_party = democratic
 				ideology = fascism
 				size = 0.15
-				capital = 47
-				states = { 
-					731 185
+				capital = 941
+				states = all 
+			    states_filter = {
+					OR = {
+						region = 33
+					}
 				}
 				keep_unit_leaders = {
 				    301 307 302
@@ -7298,9 +7315,9 @@ country_event = {
 				ruling_party = fascism
 				ideology = democratic
 				size = 0.25
-				capital = 47
+				capital = 2003
 				states = { 
-					47
+					2003 1074 1052 1555 1045 2018
 				}
 				keep_unit_leaders = {
 				    303 309 302
@@ -7319,9 +7336,9 @@ country_event = {
 				ruling_party = fascism
 				ideology = democratic
 				size = 0.5
-				capital = 47
+				capital = 2003
 				states = { 
-			    	47 186
+					2003 1074 1052 1555 1045 2018 2021 1044 1561 1551 1061
 				}
 			    keep_unit_leaders = {
 			        303 309 302
@@ -7336,9 +7353,9 @@ country_event = {
 				ruling_party = fascism
 				ideology = democratic
 				size = 0.6
-				capital = 47
+				capital = 2003
 				states = { 
-					47 187 731 184 185 186 182
+					2003 1074 1052 1555 1045 2018 2021 1044 1561 1551 1061
 				}
 				keep_unit_leaders = {
 				    303 309 302
