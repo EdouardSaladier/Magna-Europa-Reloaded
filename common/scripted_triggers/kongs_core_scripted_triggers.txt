@@ -1,4 +1,4 @@
-is_yalta_polish_state = {
+is_yalta_polish_state = { #Annexed by Poland after Yalta Conference
 	OR = {
 		AND = {
 		is_core_of = SIL
@@ -59,7 +59,7 @@ is_southern_slovakia = {
 	
 	}
 }
-is_north_transylvania = {
+is_north_transylvania = { #Annexed by Hungary in 1941
 	OR = {
 		is_core_of = SZE
 		state = 649
@@ -81,7 +81,7 @@ is_north_transylvania = {
 		
 	}
 }
-is_polish_ostprusen = {
+is_polish_ostprusen = { #East prussian states annexed by Poland after Yalta
 	OR = {
 		state = 282
 		state = 1613
@@ -96,12 +96,12 @@ is_polish_ostprusen = {
 		state = 2342
 	}
 }
-is_transylvania_proper = {
+is_transylvania_proper = { #Leftover from before the use of regions
 	OR = {
 		region = 12
 	}
 }
-is_western_rhine = {
+is_western_rhine = { #German states west of the Rhine
 	OR = {
 		AND = {
 			is_core_of = RHN
@@ -125,7 +125,7 @@ is_western_rhine = {
 		state = 524
 	}
 }
-is_southern_netherlands = {
+is_southern_netherlands = { #Below the Rhine river
 	OR = {
 		state = 2344
 		state = 2717
@@ -140,7 +140,7 @@ is_southern_netherlands = {
 		state = 432
 	}
 }
-is_greek_anatolia = {
+is_greek_anatolia = { #According to Megali Idea in vanilla
 	OR = {
 		state = 945
 		state = 2771
@@ -182,7 +182,7 @@ is_east_prussia = {
 		state = 1609
 	}
 }
-is_polish_german_empire = {
+is_polish_german_empire = { #1936 Polish states that were owned by the German Empire
 	OR = {
 		AND = {
 			has_state_flag = POL_INITIAL_STATE
@@ -206,7 +206,7 @@ is_polish_german_empire = {
 		state = 1979
 	}
 }
-is_vilnius = {
+is_vilnius = { #Vanilla Vilnius state parts
 	OR = {
 		state = 294
 		state = 1304
@@ -249,13 +249,13 @@ is_bessarabia = {
 		state = 2980
 	}
 }
-is_east_poland = {
+is_east_poland = { #Regions of former Poland now owned by LIT, UKR & BLR
 	OR = {
 		has_state_flag = SOV_POL_STATE
 		is_vilnius = yes
 	}
 }
-is_west_poland = {
+is_west_poland = { #All polish cores except east poland or yalta poland 
 	is_core_of = POL
 	is_east_poland = no
 	is_yalta_polish_state = no
@@ -319,7 +319,7 @@ is_transnistria = {
 		state = 2039
 	}
 }
-is_ggv_state = {
+is_ggv_state = { #States owned by the generalgouvernment before invasion of SOV 
 	OR = {
 		AND = {
 			is_core_of = MLP
@@ -346,7 +346,7 @@ is_ggv_state = {
 		state = 407
 	}
 }
-is_nationalist_state = {
+is_nationalist_state = { #Initial states owned by Nationalist Spain
 	OR = {
 		state = 830
 		state = 833
@@ -425,7 +425,7 @@ is_mainland_spain = {
 		
 	}
 }
-is_westland_state = {
+is_westland_state = { #States used by the "Westland" releasable for Germany
 	OR = {
 		state = 668
 		state = 658
@@ -451,7 +451,7 @@ is_westland_state = {
 		state = 2609
 	}
 }
-is_ddr_state = {
+is_ddr_state = { #East Germany States
 	OR = {
 		is_core_of = THU
 		is_core_of = SXP
@@ -492,7 +492,7 @@ is_ddr_state = {
 	}
 }	
 
-is_wgr_state = {
+is_wgr_state = { #West Germany States
 	is_core_of = GER
 	NOT = {
 		OR = {
@@ -514,7 +514,7 @@ is_wgr_state = {
 	}
 }
 
-is_yugoslav_istria = {
+is_yugoslav_istria = { 
 	is_core_of = ITA
 	OR = {
 		is_core_of = SLV
@@ -535,7 +535,7 @@ is_kaliningrad = {
 		state = 2334
 	}
 }
-is_dalmatia = {
+is_dalmatia = { #Coastal states in Yugoslavia, excluding MNT and Istria
 	OR = {
 		is_core_of = DLM
 		state = 2924
@@ -549,7 +549,7 @@ is_dalmatia = {
 		state = 2825
 	}
 }
-is_italian_dalmatia = {
+is_italian_dalmatia = { #States annexed by Italy in 1941 in Dalmatia
 	OR = {
 		state = 1473
 		state = 2825
@@ -580,7 +580,7 @@ is_hungarian_vojvodina = {
 		}
 	}
 }
-is_albanian_italian_irredentist_state = {
+is_albanian_italian_irredentist_state = { #Annexed by Albania after YUG partition
 	OR = {
 		AND = {
 			is_core_of = KOS
@@ -601,7 +601,7 @@ is_albanian_italian_irredentist_state = {
 		state = 2007
 	}
 }
-is_zakarpattia = {
+is_zakarpattia = { #Carpathian Ukraine
 	OR = {
 		state = 2929
 		state = 1607
@@ -613,7 +613,7 @@ is_zakarpattia = {
 		state = 2246
 	}
 }
-is_mezzogiorno = {
+is_mezzogiorno = { #Southern Italy
 	OR = {
 		region = 17
 		region = 18
@@ -621,7 +621,7 @@ is_mezzogiorno = {
 		is_core_of = ABR
 	}
 }
-is_north_iran = {
+is_north_iran = { #Annexed by SOV
 	OR = {
 		state = 1040
 		state = 2919
@@ -640,6 +640,18 @@ is_baltic_state = {
 		has_state_flag = LIT_INITIAL_STATE
 	}
 }
+is_northern_ireland = {
+	OR = {
+		state = 272
+		state = 262
+		state = 254
+		state = 253
+		state = 276
+		state = 268
+	}
+}
+
+## KURDISTAN CORE GROUPS ##
 is_diyabakir_group = {
 	OR = {
 		state = 1085
@@ -684,15 +696,5 @@ is_kurdish_group = {
 		is_van_group = yes 
 		is_hakkari_group = yes
 		is_diyabakir_group = yes
-	}
-}
-is_northern_ireland = {
-	OR = {
-		state = 272
-		state = 262
-		state = 254
-		state = 253
-		state = 276
-		state = 268
 	}
 }
