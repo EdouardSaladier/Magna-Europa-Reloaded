@@ -8356,8 +8356,15 @@ focus_tree = {
 						is_core_of = TCC
 						is_core_of = SOC
 					}
+					NOT = { is_core_of = SWC }
 				}
 				add_claim_by = TUR
+			}
+			every_state = {
+				limit = {
+					is_core_of = SWC
+				}
+				add_core_of = ROOT
 			}
 			if = {
 				limit = {
@@ -8462,6 +8469,7 @@ focus_tree = {
 					OR = {
 						is_core_of = AZR
 						is_core_of = TBZ
+						state = 1019
 					}
 					
 				}
@@ -8576,7 +8584,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_konfederasyon"
 			every_state = {
 				limit = {
-					is_core_of = AZR
+					OR = {
+						is_core_of = AZR
+						state = 1019
+					}
 				}
 				add_core_of = TUR
 				add_extra_state_shared_building_slots = 3

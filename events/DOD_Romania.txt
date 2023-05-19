@@ -513,6 +513,17 @@ country_event = {
 			type = puppet_wargoal_focus
 			target = HUN
 		}
+		every_state = {
+			limit = {
+				is_owned_by = HUN
+				OR = {
+					is_core_of = CRS
+					is_core_of = BNT
+				}
+				NOT = { is_core_of = ROOT }
+			}
+			add_claim_by = ROOT
+		}
 		set_country_flag = HUN_ROM_puppet_war
 	}
 
@@ -547,6 +558,17 @@ country_event = {
 				has_war = yes
 				factor = 0
 			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = HUN
+				OR = {
+					is_core_of = CRS
+					is_core_of = BNT
+				}
+				NOT = { is_core_of = ROOT }
+			}
+			add_claim_by = ROOT
 		}
 		create_wargoal = {
 			type = puppet_wargoal_focus
