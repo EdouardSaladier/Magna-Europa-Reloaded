@@ -2618,27 +2618,6 @@ focus_tree = {
 				category = motorized_equipment
 				category = recon_tech
 			}
-			custom_effect_tooltip = ita_fanteria_moderna_tt
-			hidden_effect = {
-				division_template = {
-					name = "Divisione di Fanteria (Modernizzata)"
-					division_names_group = ITA_INF_01
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						mot_artillery_brigade = { x = 2 y = 0 }
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-						anti_air = { x = 0 y = 1 }
-						anti_tank = { x = 0 y = 2 }
-					}
-				}
-			}
 
 			if = {
 				limit = {
@@ -2654,6 +2633,53 @@ focus_tree = {
 			}
 			else = {
 				add_ideas = ITA_bandits_war_no_lar
+			}
+			
+			custom_effect_tooltip = ita_fanteria_moderna_tt
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_completed_focus = ITA_battaglioni_d_assalto } }
+					division_template = {
+						name = "Divisione di Fanteria (Modernizzata)"
+						division_names_group = ITA_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							mot_artillery_brigade = { x = 2 y = 0 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+							anti_air = { x = 0 y = 1 }
+							anti_tank = { x = 0 y = 2 }
+						}
+					}
+				}
+				else = {
+					division_template = {
+						name = "Divisione di Fanteria (Modernizzata)"
+						division_names_group = ITA_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							mot_artillery_brigade = { x = 2 y = 0 }
+							militia = { x = 3 y = 0 }
+							militia = { x = 3 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+							anti_air = { x = 0 y = 1 }
+							anti_tank = { x = 0 y = 2 }
+						}
+					}
+				}
 			}
 
 			# AI will never swap to another doctrine tree once they have started one, regardless of the AI weights, so AI needs to have it replaced manually
@@ -3261,7 +3287,7 @@ focus_tree = {
 					ITA_add_improved_medium_tank_templates = yes
 				}
 				else = {
-					custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_medium_templates_tt
+				#	custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_medium_templates_tt
 					effect_tooltip = {
 						ITA_add_improved_medium_tank_templates = yes
 					}
@@ -3273,7 +3299,7 @@ focus_tree = {
 					ITA_add_improved_heavy_tank_templates = yes
 				}
 				else = {
-					custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_heavy_templates_tt
+				#	custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_heavy_templates_tt
 					effect_tooltip = {
 						ITA_add_improved_heavy_tank_templates = yes
 					}
@@ -3361,7 +3387,7 @@ focus_tree = {
 					ITA_add_improved_medium_tank_templates = yes
 				}
 				else = {
-					custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_medium_templates_tt
+				#	custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_medium_templates_tt
 					effect_tooltip = {
 						ITA_add_improved_medium_tank_templates = yes
 					}
@@ -3373,7 +3399,7 @@ focus_tree = {
 					ITA_add_improved_heavy_tank_templates = yes
 				}
 				else = {
-					custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_heavy_templates_tt
+				#	custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_heavy_templates_tt
 					effect_tooltip = {
 						ITA_add_improved_heavy_tank_templates = yes
 					}
@@ -3443,7 +3469,7 @@ focus_tree = {
 					ITA_add_advanced_medium_tank_templates = yes
 				}
 				else = {
-					custom_effect_tooltip = ITA_ferrea_mole_ferreo_cuore_medium_tempaltes_tt
+				#	custom_effect_tooltip = ITA_ferrea_mole_ferreo_cuore_medium_tempaltes_tt
 					effect_tooltip = {
 						ITA_add_advanced_medium_tank_templates = yes
 					}
@@ -3455,7 +3481,7 @@ focus_tree = {
 					ITA_add_advanced_heavy_tank_templates = yes
 				}
 				else = {
-					custom_effect_tooltip = ITA_ferrea_mole_ferreo_cuore_heavy_tempaltes_tt
+				#	custom_effect_tooltip = ITA_ferrea_mole_ferreo_cuore_heavy_tempaltes_tt
 					effect_tooltip = {
 						ITA_add_advanced_heavy_tank_templates = yes
 					}
@@ -7896,8 +7922,22 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_battaglioni_d_assalto"
 			custom_effect_tooltip = ITA_battaglioni_d_assalto_tt
+			if = {
+				limit = { has_template = "Divisione di Fanteria (Modernizzata)" }
+				custom_effect_tooltip = ITA_strengthen_binary_div_mod_tt
+			}
 			hidden_effect = {
 				set_technology = { blackshirt_assault_battalion_tech = 1 popup = no }
+				if = {
+					limit = { has_template = "Divisione di Fanteria (Modernizzata)" }
+					add_units_to_division_template = {
+						template_name = "Divisione di Fanteria (Modernizzata)"
+						regiments = {
+							militia = 3
+							militia = 3
+						}
+					}
+				}
 			}
 		}
 	}
