@@ -8471,6 +8471,7 @@ focus_tree = {
 					OR = {
 						is_yalta_polish_state = yes
 						is_core_of = ESP
+						is_core_of = LUS
 					}
 					NOT = {
 						state = 227
