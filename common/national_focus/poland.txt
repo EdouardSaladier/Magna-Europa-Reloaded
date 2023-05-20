@@ -10517,6 +10517,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_claim_livonia"
+			every_state = {
+				limit = {
+					is_core_of = LIV
+					NOT = { is_core_of = ROOT }
+				}
+				add_core_of = ROOT
+			}
 			if = {
 				limit = {
 					EST = {
@@ -10605,6 +10612,32 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_claim_greater_lithuania"
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = BLR
+						AND = {
+							is_core_of = UKR
+							NOT = {
+								region = 21
+								region = 14
+								region = 41
+								region = 42
+							}
+						}
+						region = 133
+						region = 108
+						region = 140
+						region = 142
+						region = 132
+						region = 109
+						state = 2426
+						state = 450
+						state = 2424
+					}
+				}
+				add_claim_by = ROOT
+			}
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = SOV
