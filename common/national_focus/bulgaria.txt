@@ -7498,7 +7498,45 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus BUL_amend_old_grudges
 
 		prerequisite = { focus = BUL_the_return_of_ferdinand_i }
-"
+"			
+			every_state = {
+				limit = {
+					OR = {
+						state = 796
+						state = 862
+						state = 1509
+						state = 2960
+						state = 1992
+						state = 1508
+						state = 1991
+						state = 2806
+						state = 2596
+						state = 1996
+						state = 2013
+						state = 2940
+						state = 2000
+						state = 941
+						state = 1547
+						state = 1557
+						state = 2372
+						state = 885
+						state = 2001
+						state = 2002
+						state = 2922
+						state = 969
+						state = 2923
+						state = 1544
+						state = 2020
+						is_core_of = THR
+						is_core_of = DOB
+					}
+					NOT = { 
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				add_claim_by = ROOT
+			}
 			if = {
 				limit = {
 					country_exists = ENG
