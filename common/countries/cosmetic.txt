@@ -627,23 +627,23 @@ UBF_united_balkan_federation_neutrality = {
 }
 
 TBE_third_bulgarian_empire_communism = {
-	color = rgb { 138 249 195 }
-	color_ui = rgb { 138 249 195 }
+	color = rgb { 0 150 110 }
+	color_ui = rgb { 0 150 110 }
 }
 
 TBE_third_bulgarian_empire_democratic = {
-	color = rgb { 138 249 195 }
-	color_ui = rgb { 138 249 195 }
+	color = rgb { 0 150 110 }
+	color_ui = rgb { 0 150 110 }
 }
 
 TBE_third_bulgarian_empire_fascism = {
-	color = rgb { 138 249 195 }
-	color_ui = rgb { 138 249 195 }
+	color = rgb { 0 150 110 }
+	color_ui = rgb { 0 150 110 }
 }
 
 TBE_third_bulgarian_empire_neutrality = {
-	color = rgb { 138 249 195 }
-	color_ui = rgb { 138 249 195 }
+	color = rgb { 0 150 110 }
+	color_ui = rgb { 0 150 110 }
 }
 
 POL_SANATION = {
@@ -675,6 +675,10 @@ POL_ROM_UNION = {
 GREATER_LIT = {
 	color = rgb { 154  69  116 }
 	color_ui = rgb { 154  69  116 }
+}
+LIVONIA = {
+	color = rgb { 110 80 168 }
+	color_ui = rgb { 110 80 168 }
 }
 OSTLAND = {
 	color = rgb { 86  78  112 }
