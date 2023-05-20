@@ -728,12 +728,20 @@ on_actions = {
 					release = GAG
 					release = BDZ
 					release = BNT
-					release = WLC
+					release = OLT
+					release = MUN
+					release = BSR
 					release = MOL
+					release = CRS
+					release = MRM
 					release = TRA
 					transfer_units_fraction = {
-						target = WLC
-						size = 0.2
+						target = MUN
+						size = 0.1
+					}
+					transfer_units_fraction = {
+						target = OLT
+						size = 0.1
 					}
 					transfer_units_fraction = {
 						target = DOB
@@ -741,7 +749,11 @@ on_actions = {
 					}
 					transfer_units_fraction = {
 						target = MOL
-						size = 0.2
+						size = 0.1
+					}
+					transfer_units_fraction = {
+						target = BSR
+						size = 0.1
 					}
 					transfer_units_fraction = {
 						target = BUC
