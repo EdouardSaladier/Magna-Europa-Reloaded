@@ -342,9 +342,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14033;14000;impassable;-1;-1;-1;-1;-1;;Gorenjska-Klagenfurt
 14033;14001;impassable;-1;-1;-1;-1;-1;;Gorenjska-Volkermarkt
 8093;14257;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
-17789;1252;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
-17789;7706;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
+12457;1252;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
 17789;17540;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
+17789;7706;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
 14165;14257;impassable;-1;-1;-1;-1;-1;;Postumia-Ljubljana
 2187;14474;impassable;-1;-1;-1;-1;-1;;Genova-Alessandria
 2187;14486;impassable;-1;-1;-1;-1;-1;;Genova-Alessandria
@@ -772,6 +772,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2714;6978;impassable;-1;-1;-1;-1;-1;;Sankt Polten
 6978;13573;impassable;-1;-1;-1;-1;-1;;Sankt Polten
 13648;13573;impassable;-1;-1;-1;-1;-1;;Sankt Polten
+7706;17540;impassable;-1;-1;-1;-1;-1;;Dinaric Alps 1
+2438;5038;impassable;-1;-1;-1;-1;-1;;Dinaric Alps 2
+5038;20146;impassable;-1;-1;-1;-1;-1;;Dinaric Alps 3
+5038;19059;impassable;-1;-1;-1;-1;-1;;Dinaric Alps 4
+20194;14458;impassable;-1;-1;-1;-1;-1;;Dinaric Alps 5
+20194;20125;impassable;-1;-1;-1;-1;-1;;Dinaric Alps 6
+1328;4403;impassable;-1;-1;-1;-1;-1;;Dinaric Alps 7
+1328;14530;impassable;-1;-1;-1;-1;-1;;Dinaric Alps 8
 18266;2223;sea;17027;-1;-1;-1;-1;;Clarence Strait
 19160;19165;sea;18500;-1;-1;-1;-1;;Al-Sabiyyah Channel
 7148;19383;sea;18108;-1;-1;-1;-1;;Northumberland Strait
