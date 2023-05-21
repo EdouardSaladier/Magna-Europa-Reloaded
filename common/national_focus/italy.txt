@@ -12004,7 +12004,14 @@ focus_tree = {
 		relative_position_id = ITA_the_italian_legions
 		cost = 10
 		available = {
-			has_full_control_of_state = 2
+			custom_trigger_tooltip = {
+				tooltip = mer_ITA_controls_rome
+				has_full_control_of_state = 876
+				has_full_control_of_state = 2601
+				has_full_control_of_state = 2602
+				has_full_control_of_state = 2600
+				has_full_control_of_state = 2607
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
