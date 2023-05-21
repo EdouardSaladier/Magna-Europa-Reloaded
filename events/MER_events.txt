@@ -484,7 +484,7 @@ country_event = { #Macedonia borders for Bulgaria claims
 		ai_chance = {
 			factor = 50
 			modifier = {
-				is_historical_focus_on = no
+				is_historical_focus_on = yes
 				factor = 0
 			}
 			modifier = {
@@ -531,7 +531,7 @@ country_event = { #Macedonia borders for Bulgaria claims
 		ai_chance = {
 			factor = 50
 			modifier = {
-				is_historical_focus_on = no
+				is_historical_focus_on = yes
 				factor = 0
 			}
 			modifier = {
@@ -578,7 +578,7 @@ country_event = { #Dobrudja borders for Bulgaria claims
 		ai_chance = {
 			factor = 50
 			modifier = {
-				is_historical_focus_on = no
+				is_historical_focus_on = yes
 				factor = 0
 			}
 			modifier = {
@@ -626,7 +626,7 @@ country_event = { #Thrace borders for Bulgaria claims
 		ai_chance = {
 			factor = 50
 			modifier = {
-				is_historical_focus_on = no
+				is_historical_focus_on = yes
 				factor = 0
 			}
 			modifier = {
@@ -671,7 +671,7 @@ country_event = { #Thrace borders for Bulgaria claims
 		ai_chance = {
 			factor = 50
 			modifier = {
-				is_historical_focus_on = no
+				is_historical_focus_on = yes
 				factor = 0
 			}
 			modifier = {
@@ -718,7 +718,7 @@ country_event = { #Include parts of Eastern Thrace?
 		ai_chance = {
 			factor = 50
 			modifier = {
-				is_historical_focus_on = no
+				is_historical_focus_on = yes
 				factor = 0
 			}
 		}
