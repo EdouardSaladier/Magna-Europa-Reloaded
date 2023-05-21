@@ -4134,23 +4134,23 @@ country_event = {
 				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
-
-		every_state = {
-			limit = {
-				has_state_flag = BUL_historical_bulgarian_claim_flag
-				controller = {
-					OR = {
-						tag = GER
-						AND = {
-							NOT = { is_in_faction_with = GER }
-							NOT = { tag = BUL }
-						}
-					}
-				}
-			}
-			set_state_flag = BUL_bulgarian_claim_warranted_flag
-			add_dynamic_modifier = { modifier = bulgarian_territorial_expansion_arranged }
-		}
+		country_event = { id = mer_event.13 hours = 3 random_hours = 3 } #Begin negotiations event chain
+		#every_state = {
+		#	limit = {
+		#		has_state_flag = BUL_historical_bulgarian_claim_flag
+		#		controller = {
+		#			OR = {
+		#				tag = GER
+		#				AND = {
+		#					NOT = { is_in_faction_with = GER }
+		#					NOT = { tag = BUL }
+		#				}
+		#			}
+		#		}
+		#	}
+		#	set_state_flag = BUL_bulgarian_claim_warranted_flag
+		#	add_dynamic_modifier = { modifier = bulgarian_territorial_expansion_arranged }
+		#}
 		effect_tooltip = {
 			BUL = {
 				add_opinion_modifier = { 
@@ -4159,7 +4159,7 @@ country_event = {
 				}
 			}
 		}
-		BUL = { country_event = { id = bftb_bulgarian_claims.2 hours = 16 random_hours = 8 } }
+		#BUL = { country_event = { id = bftb_bulgarian_claims.2 hours = 16 random_hours = 8 } }
 
 		set_global_flag = BUL_germany_recognizes_bulgarian_claims_flag
 		custom_effect_tooltip = bftb_bulgarian_claims.1.a_tt
@@ -4206,19 +4206,17 @@ country_event = {
 		effect_tooltip = {
 			every_state = {
 				limit = {
-					has_state_flag = BUL_historical_bulgarian_claim_flag
+					OR = {
+						has_state_flag = BUL_historical_bulgarian_claim_flag
+						has_state_flag = BUL_nonclaim_included
+					}
+					NOT = { has_state_flag = BUL_claim_excluded }
 					controller = {
-						OR = {
-							tag = GER
-							AND = {
-								NOT = { is_in_faction_with = GER }
-								NOT = { tag = BUL }
-							}
-						}
+						NOT = { tag = BUL }
 					}
 				}
+				set_state_flag = BUL_bulgarian_claim_warranted_flag
 				add_dynamic_modifier = { modifier = bulgarian_territorial_expansion_arranged }
-				custom_effect_tooltip = BUL_germany_recognizes_our_claim_tt
 			}
 		}
 

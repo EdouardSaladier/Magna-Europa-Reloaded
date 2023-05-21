@@ -447,3 +447,312 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #Macedonia borders for Bulgaria claims
+	id = mer_event.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.13 FROM = [From.GetName]" }
+	title = mer_event.13.t
+	desc = mer_event.13.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = { #Historical
+		name = mer_event.13.a 
+		country_event = { id = mer_event.14 hours = 3 random_hours = 3 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 904
+						state = 959
+						state = 2796
+					}
+				}
+				set_state_flag = BUL_claim_excluded
+			}
+			888 = { set_state_flag = BUL_nonclaim_included }
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = { #Ahistorical - stick w/ claims
+		name = mer_event.13.b
+		country_event = { id = mer_event.14 hours = 3 random_hours = 3 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = no
+				factor = 0
+			}
+			modifier = {
+				OR = {
+					NOT = { has_government = fascism }
+					has_country_flag = ENG_ditched_the_italians_flag
+					ITA = { 
+						NOT = {  
+							has_country_leader = {
+								character = ITA_benito_mussolini
+								ruling_only = yes
+							}
+						} 
+					}
+				}
+				factor = 3
+			}
+		}
+	}
+	
+	option = { #Ahistorical - go out with WWI occupation
+		name = mer_event.13.a 
+		country_event = { id = mer_event.14 hours = 3 random_hours = 3 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 796
+						state = 862
+						state = 1509
+						state = 2960
+						state = 1992
+						state = 1508
+						state = 1991
+						state = 2806
+						state = 2596
+						state = 1996
+						state = 2013
+					}
+				}
+				set_state_flag = BUL_nonclaim_included
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = no
+				factor = 0
+			}
+			modifier = {
+				has_government = neutrality
+				factor = 4
+			}
+		}
+	}
+}
+
+country_event = { #Dobrudja borders for Bulgaria claims
+	id = mer_event.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.14 FROM = [From.GetName]" }
+	title = mer_event.14.t
+	desc = mer_event.14.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = { #Historical
+		name = mer_event.14.a 
+		country_event = { id = mer_event.15 hours = 3 random_hours = 3 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = { #Ahistorical - give northern too w/ exceptions
+		name = mer_event.13.b
+		country_event = { id = mer_event.15 hours = 3 random_hours = 3 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = DOB
+					NOT = {
+						has_state_flag = BUL_historical_bulgarian_claim_flag
+						state = 2886
+						state = 2902
+					}
+				}
+				set_state_flag = BUL_nonclaim_included
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = no
+				factor = 0
+			}
+			modifier = {
+				has_government = neutrality
+				factor = 4
+			}
+		}
+	}
+}
+
+country_event = { #Thrace borders for Bulgaria claims
+	id = mer_event.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.15 FROM = [From.GetName]" }
+	title = mer_event.15.t
+	desc = mer_event.15.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = { #Historical
+		name = mer_event.15.a 
+		country_event = { id = mer_event.16 hours = 3 random_hours = 3 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 1969
+						state = 2005
+						state = 1545
+						state = 1546
+						state = 2748
+					}
+				}
+				set_state_flag = BUL_claim_excluded
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = { #Ahistorical - stick w/ claims
+		name = mer_event.15.b
+		country_event = { id = mer_event.16 hours = 3 random_hours = 3 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = no
+				factor = 0
+			}
+			modifier = {
+				OR = {
+					NOT = { has_government = fascism }
+					has_country_flag = ENG_ditched_the_italians_flag
+					ITA = { 
+						NOT = {  
+							has_country_leader = {
+								character = ITA_benito_mussolini
+								ruling_only = yes
+							}
+						} 
+					}
+				}
+				factor = 3
+			}
+		}
+	}
+	
+	option = { #Ahistorical - go all out
+		name = mer_event.15.a 
+		country_event = { id = mer_event.16 hours = 3 random_hours = 3 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 2000
+						state = 2940
+						state = 941
+						state = 1547
+						state = 1557
+						state = 969
+						state = 2923
+						state = 2020
+						state = 1544
+					}
+				}
+				set_state_flag = BUL_nonclaim_included
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = no
+				factor = 0
+			}
+			modifier = {
+				has_government = neutrality
+				factor = 4
+			}
+		}
+	}
+}
+
+country_event = { #Include parts of Eastern Thrace?
+	id = mer_event.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.16 FROM = [From.GetName]" }
+	title = mer_event.16.t
+	desc = mer_event.16.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = { #No
+		name = mer_event.16.a 
+		country_event = { id = mer_event.17 hours = 12 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = { #Yes
+		name = mer_event.16.b
+		country_event = { id = mer_event.17 hours = 12 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 928
+						state = 906
+						state = 2753
+						state = 2754
+					}
+				}
+				set_state_flag = BUL_nonclaim_included
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = no
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event = { #Finalization
+	id = mer_event.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.17 FROM = [From.GetName]" }
+	title = mer_event.17.t
+	desc = mer_event.17.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = mer_event.17.a 
+		every_state = {
+			limit = {
+				OR = {
+					has_state_flag = BUL_historical_bulgarian_claim_flag
+					has_state_flag = BUL_nonclaim_included
+				}
+				NOT = { has_state_flag = BUL_claim_excluded }
+				controller = {
+					NOT = { tag = BUL }
+				}
+			}
+			set_state_flag = BUL_bulgarian_claim_warranted_flag
+			add_dynamic_modifier = { modifier = bulgarian_territorial_expansion_arranged }
+		}
+		BUL = { country_event = { id = bftb_bulgarian_claims.2 hours = 16 random_hours = 8 } }
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
