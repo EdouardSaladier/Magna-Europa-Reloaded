@@ -7402,7 +7402,7 @@ SOV_set_up_civil_war_capital = {
 		limit = {
 			check_variable = { ROOT.SOV_stalinist_civil_war_start_state = 0 }
 		}
-		set_variable = { ROOT.SOV_stalinist_civil_war_start_state = 219 }
+		set_variable = { ROOT.SOV_stalinist_civil_war_start_state = 228 }
 	}
 	# Increase importance of Chita if capital, and add hub (for supply and surrender)
 	IF = {

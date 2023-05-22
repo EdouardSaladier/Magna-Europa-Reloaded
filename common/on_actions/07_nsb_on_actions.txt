@@ -1903,7 +1903,7 @@ on_actions = {
 				# nationalist uprisings 
 				IF = { 
 					limit = { 
-						check_variable = { SOV.SOV_civil_war_months > 2 }
+						check_variable = { SOV.SOV_civil_war_months > 1 } #civil war takes less time so pump breakaways out quicker
 						SOV = { SOV_is_exiles = yes } # currently exiles only
 					}
 					SOV = {
