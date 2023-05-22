@@ -7272,6 +7272,7 @@ focus_tree = {
 			}
 			hidden_effect = {
 				ITA_prince_umberto = { add_country_leader_trait = emperor_of_ethiopia }
+				remove_ideas = league_of_nations_member_idea
 			}
 
 			add_popularity = {
