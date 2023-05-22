@@ -722,7 +722,7 @@ is_alpine_state = {
 				is_core_of = PRV
 				NOT = {
 					state = 808
-					state = 824i
+					state = 824
 				}
 			}
 		}
