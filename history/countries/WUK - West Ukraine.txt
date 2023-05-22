@@ -26,3 +26,14 @@ set_popularities = {
 	communism = 15
 	neutrality = 50
 }
+
+create_country_leader = {
+	name = "Kost Levytsky"
+	desc = ""
+	picture = GFX_portrait_Kost_Levytsky
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
