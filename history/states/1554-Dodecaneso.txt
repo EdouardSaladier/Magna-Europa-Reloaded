@@ -1,25 +1,39 @@
+
 state={
 	id=1554
 	name="STATE_1554"
+
 	history={
 		owner = ITA
 		add_core_of = GRE
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_claim_by = ITA
-		victory_points = { 20297 5 }
+		victory_points = {
+			20297 5 
+		}
 		buildings = {
 			infrastructure = 3
-			20297 = { naval_base = 4 }
-			20317 = { naval_base = 1 }
+			20297 = {
+				naval_base = 4
+
+			}
+			20317 = {
+				naval_base = 1
+
+			}
+
 		}
+
 	}
+
 	provinces={
-		20297 20316 20317 20318 20321 20322 20323 20324 20325 
+		20297 20316 20317 20318 20321 20322 20323 20325 
 	}
 	manpower=120247
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

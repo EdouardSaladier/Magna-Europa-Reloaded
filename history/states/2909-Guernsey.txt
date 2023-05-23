@@ -1,3 +1,4 @@
+
 state={
 	id=2909
 	name="STATE_2909"
@@ -8,7 +9,9 @@ state={
 		buildings = {
 			19868 = {
 				naval_base = 1
-
+			}
+			20324 = {
+				naval_base = 1
 			}
 			infrastructure = 3
 
@@ -17,7 +20,7 @@ state={
 	}
 
 	provinces={
-		19868 
+		19868 20324 
 	}
 	manpower=42314
 	buildings_max_level_factor=1.000
