@@ -735,14 +735,18 @@ stalinist_soviet_union = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 163 17 31 }
 }
+SOV_stalinist_with_name = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
+}
 
 SOV_left_opposition = {
-    color = rgb { 224 5 5 }
+    color = rgb { 175 16 16 }
     color_ui = rgb { 193 81 81 }
 }
 
 SOV_right_opposition = {
-	color = rgb { 230 0 0 }
+	color = rgb { 175 16 16 }
 	color_ui = rgb { 255 51 51 }
 }
 russian_empire = {

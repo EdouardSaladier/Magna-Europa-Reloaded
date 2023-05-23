@@ -540,19 +540,31 @@ on_actions = {
 					remove_core_of = BUL
 					remove_claim_by = BUL
 				}
-				every_state = {
+				if = {
 					limit = {
-						owner = { original_tag = BUL }
-						is_core_of = GRE
+						country_exists = GRE
+						GRE = { is_subject = no }
 					}
-					transfer_state_to = GRE
+					every_state = {
+						limit = {
+							owner = { original_tag = BUL }
+							is_core_of = GRE
+						}
+						transfer_state_to = GRE
+					}
 				}
-				every_state = {
+				if = {
 					limit = {
-						owner = { original_tag = BUL }
-						is_core_of = YUG
+						country_exists = YUG
+						YUG = { is_subject = no }
 					}
-					transfer_state_to = YUG
+					every_state = {
+						limit = {
+							owner = { original_tag = BUL }
+							is_core_of = YUG
+						}
+						transfer_state_to = YUG
+					}
 				}
 			}
 		}
@@ -561,6 +573,22 @@ on_actions = {
 	on_join_faction = {
 		effect = {
 			
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					has_cosmetic_tag = SOV_right_opposition
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					has_cosmetic_tag = SOV_stalinist_with_name
+				}
+				set_cosmetic_tag = stalinist_soviet_union
+			}
 		}
 	}
 }

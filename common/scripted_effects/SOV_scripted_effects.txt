@@ -7693,7 +7693,15 @@ SOV_start_civil_war = {
 			has_war_with = ROOT
 			has_government = communism
 		}
-		set_cosmetic_tag = stalinist_soviet_union
+		if = {
+			limit = { 
+				SOV_is_right_opposition = yes 
+			}
+			set_cosmetic_tag = SOV_stalinist_with_name
+		}
+		else = {
+			set_cosmetic_tag = stalinist_soviet_union
+		}
 		set_popularities = {
 			communism = SOV.SOV_communist_support_before_civil_war
 			democratic = SOV.SOV_democratic_support_before_civil_war
