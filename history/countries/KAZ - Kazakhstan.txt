@@ -1,6 +1,8 @@
 ﻿capital = 586 #Almaty
 
-set_research_slots = 3
+oob = "KAZ_1936"
+
+set_research_slots = 2
 
 # Starting tech
 set_technology = {
@@ -14,15 +16,20 @@ set_technology = {
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
-
-
-#	early_fighter = 1
-#	fighter1 = 1
-#	early_bomber = 1
-#	strategic_bomber1 = 1
-#	naval_bomber1 = 1
 	mass_assault = 1
 	fleet_in_being = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+		fighter1 = 1
+		early_bomber = 1
+		strategic_bomber1 = 1
+		naval_bomber1 = 1
+	}
 }
 if = {
 	limit = {
@@ -82,3 +89,50 @@ set_popularities = {
 	communism = 40
 }
 
+set_politics = {
+	ruling_party = communism
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Nikolay Aleksandrovich Skvortsov"
+	desc = ""
+	picture = GFX_portrait_Nikolay_Aleksandrovich_Skvortsov
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ilyas Zhansugurov"
+	desc = ""
+	picture = GFX_portrait_Ilyas_Zhansugurov
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+recruit_character = KAZ_awt
+recruit_character = KAZ_acd2
+recruit_character = KAZ_nt
+recruit_character = KAZ_aco2
+recruit_character = KAZ_acas
+recruit_character = KAZ_acr
+recruit_character = KAZ_mt
+recruit_character = KAZ_stc
+recruit_character = KAZ_aa2
+recruit_character = KAZ_ncm
+recruit_character = KAZ_communist_guy
+recruit_character = KAZ_ncs
+recruit_character = KAZ_pot
+recruit_character = KAZ_nccr
+recruit_character = KAZ_fascist_guy
+recruit_character = KAZ_coi
+recruit_character = KAZ_ai2
+recruit_character = KAZ_democratic_guy
+recruit_character = KAZ_ar
+recruit_character = KAZ_acgs

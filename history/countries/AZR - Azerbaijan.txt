@@ -1,5 +1,7 @@
 ﻿capital = 2292
 
+oob = "AZR_1936"
+
 set_research_slots = 3
 
 # Starting tech
@@ -74,7 +76,11 @@ set_popularities = {
 	communism = 40
 	neutrality = 30
 }
-set_politics = { ruling_party = neutrality }
+
+set_politics = {
+	ruling_party = communism
+	elections_allowed = no
+}
 
 create_country_leader = {
 	name = "Mir Jafar Baghirov"
@@ -82,7 +88,9 @@ create_country_leader = {
 	picture = GFX_portrait_Mir_Jafar_Baghirov
 	expire = "1953.3.1"
 	ideology = stalinism
-	traits = { }
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -91,7 +99,9 @@ create_country_leader = {
 	picture = GFX_portrait_Mammad_Amin_Rasulzade
 	expire = "1953.3.1"
 	ideology = conservatism
-	traits = { }
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -100,5 +110,7 @@ create_country_leader = {
 	picture = GFX_portrait_Gara_Garabeyov
 	expire = "1953.3.1"
 	ideology = moderatism
-	traits = { }
+	traits = {
+		
+	}
 }
