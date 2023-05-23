@@ -2,9 +2,7 @@
 state={
 	id=725
 	name="STATE_725"
-	provinces={
-		202 5728 6444 6464 7184 14156 14260 14318 19842 19843 19859 19869 
-	}
+
 	history={
 		owner = FRA
 		add_core_of = FRA
@@ -14,18 +12,23 @@ state={
 			19859 = { naval_base = 3 }
 			industrial_complex = 1
 		}
-        victory_points = {
-            19859 5 #La Rochelle
-        }
-        victory_points = {
-            14156 2 #Rochefort
-        }
-        victory_points = {
-            6444 2 #Saintes
-        }
-    }
+		victory_points = {
+			19859 5 
+		}
+		victory_points = {
+			14156 2 
+		}
+		victory_points = {
+			6444 2 
+		}
+
+	}
+
+	provinces={
+		202 5728 6444 6464 7184 14156 14260 14318 19842 19843 19859 19869 19884 
+	}
 	manpower=419000
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }
