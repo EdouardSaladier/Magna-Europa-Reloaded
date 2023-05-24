@@ -106,6 +106,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 19656;19663;sea;16755;-1;-1;-1;-1;;Finland Islands 3
 19656;19655;sea;16810;-1;-1;-1;-1;;Finland Islands 4
 19654;19655;sea;16810;-1;-1;-1;-1;;Finland Islands 5
+9909;19648;sea;16826;-1;-1;-1;-1;;Finland Islands 6
+19649;19648;sea;16622;-1;-1;-1;-1;;Finland Islands 7
 9672;19985;sea;17665;-1;-1;-1;-1;;Laane-Saaremaa
 19990;19985;sea;17665;-1;-1;-1;-1;;Saaremaa
 4973;19983;sea;17719;-1;-1;-1;-1;;Laane-Hiiumaa
@@ -119,11 +121,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4894;19646;sea;17502;-1;-1;-1;-1;;Eiderstadt 2
 10830;19644;sea;17502;-1;-1;-1;-1;;Eiderstadt 3
 20128;14458;sea;16992;-1;-1;-1;-1;;Rab-Iablanaz
+20126;20128;sea;16992;-1;-1;-1;-1;;Krk-Rab
+20134;20125;sea;16992;-1;-1;-1;-1;;Pag-Karlobag
 20134;2213;sea;16992;-1;-1;-1;-1;;Pag Bridge
 14584;20135;sea;16992;-1;-1;-1;-1;;Ugljan-Zara
 7255;20136;sea;16857;-1;-1;-1;-1;;Morter Bridge
 20137;7536;sea;16857;-1;-1;-1;-1;;Sibenik Islands
 20140;20139;sea;16683;-1;-1;-1;-1;;Brac-Hvar
+20139;20138;sea;16683;-1;-1;-1;-1;;Korcula-Hvar
+20147;20139;sea;16683;-1;-1;-1;-1;;Pelijesac-Hvar
 20147;20138;sea;16538;-1;-1;-1;-1;;Orebic-Korcula
 20142;20147;sea;16538;-1;-1;-1;-1;;Mljet-Dubrovnik
 20535;20536;sea;17521;-1;-1;-1;-1;;Malta-Gozo
