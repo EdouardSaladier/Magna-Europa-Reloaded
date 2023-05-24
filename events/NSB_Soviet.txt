@@ -11513,8 +11513,17 @@ country_event = {
 					}
 					is_locked = yes 
 				}
+				set_temp_variable = { temp_manpower = 0 }
+				every_owned_state = {
+					add_to_temp_variable = { temp_manpower = state_population_k }
+				}     
+				set_temp_variable = { average_population_per_state = temp_manpower }   
+				divide_temp_variable = { average_population_per_state = num_owned_states }
+				set_temp_variable = { for_loop_times = average_population_per_state }   
+				divide_temp_variable = { for_loop_times = 50 }
+				round_variable = for_loop_times
 				for_loop_effect = {
-					end = 9
+					end = var:for_loop_times
 					value = temp_for_loop
 					random_owned_state = {
 						limit = { 
