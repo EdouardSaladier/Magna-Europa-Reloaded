@@ -5509,6 +5509,7 @@
 			NOT = {
 				any_other_country = {
 					OR = {
+						tag = BEL
 						tag = POL
 						tag = CZE
 						tag = YUG
@@ -5529,6 +5530,7 @@
 			every_other_country = {
 				limit = {
 					OR = {
+						tag = BEL
 						tag = POL
 						tag = CZE
 						tag = YUG
