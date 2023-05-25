@@ -1204,6 +1204,10 @@ ARM = {
 	color = rgb { 247 133 39 }
 	color_ui = rgb { 247 133 39 }
 }
+AZR = {
+	color = rgb { 69 151 49 }
+	color_ui = rgb { 69 151 49 }
+}
 NGK = {
 	color = rgb { 240 118 74 }
 	color_ui = rgb { 240 118 74}
@@ -1225,8 +1229,8 @@ ADJ = {
 	color_ui = rgb { 79 127 168 }
 }
 TCC = {
-	color = rgb { 201 201 109 }
-	color_ui = rgb { 201 201 109 }
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 255 204 0 }
 }
 TMG = {
 	color = rgb { 181 113 96 }
