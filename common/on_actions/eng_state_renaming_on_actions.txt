@@ -1,0 +1,99 @@
+#TO-DO: ITALIAN NAMES, GREEK NORTHERN EPIRUS, YUGOSLAV NAMES
+
+on_actions = {
+
+	on_state_control_changed = {
+		effect = {
+			#Antrim
+			if = {
+				limit = { FROM.FROM = { state = 253 } }
+				if = {
+					limit = { ROOT = { original_tag = IRE } }
+					FROM.FROM = { set_state_name = STATE_253_IRE }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = NIR } }
+					FROM.FROM = { set_state_name = STATE_253_NIR }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Derry
+			if = {
+				limit = { FROM.FROM = { state = 254 } }
+				if = {
+					limit = { ROOT = { original_tag = IRE } }
+					FROM.FROM = { set_state_name = STATE_254_IRE }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = NIR } }
+					FROM.FROM = { set_state_name = STATE_254_NIR }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Tyrone
+			if = {
+				limit = { FROM.FROM = { state = 262 } }
+				if = {
+					limit = { ROOT = { original_tag = IRE } }
+					FROM.FROM = { set_state_name = STATE_262_IRE }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = NIR } }
+					FROM.FROM = { set_state_name = STATE_262_NIR }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Down
+			if = {
+				limit = { FROM.FROM = { state = 268 } }
+				if = {
+					limit = { ROOT = { original_tag = IRE } }
+					FROM.FROM = { set_state_name = STATE_268_IRE }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = NIR } }
+					FROM.FROM = { set_state_name = STATE_268_NIR }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Fermanagh
+			if = {
+				limit = { FROM.FROM = { state = 272 } }
+				if = {
+					limit = { ROOT = { original_tag = IRE } }
+					FROM.FROM = { set_state_name = STATE_272_IRE }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = NIR } }
+					FROM.FROM = { set_state_name = STATE_272_NIR }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Armagh
+			if = {
+				limit = { FROM.FROM = { state = 276 } }
+				if = {
+					limit = { ROOT = { original_tag = IRE } }
+					FROM.FROM = { set_state_name = STATE_276_IRE }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = NIR } }
+					FROM.FROM = { set_state_name = STATE_276_NIR }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+		}
+	}
+}
