@@ -9286,11 +9286,13 @@ SOV_set_up_dynamic_modifiers_civil_war = { #Used for Stalinist side in the CW
 	}
 	if = {
 		limit = {
-			SOV_is_exiles = yes
+			SOV = { SOV_is_exiles = yes }
 		}
-		set_variable = { SOV_speed_modifier = -0.12 }
-		add_dynamic_modifier = {
-			modifier = SOV_marching_from_siberia
+		set_variable = { SOV.SOV_speed_modifier = -0.12 }
+		SOV = {
+			add_dynamic_modifier = {
+				modifier = SOV_marching_from_siberia
+			}
 		}
 	}
 
