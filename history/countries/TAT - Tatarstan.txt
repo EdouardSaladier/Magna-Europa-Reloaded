@@ -68,6 +68,8 @@ if = {
 	}
 }
 
+recruit_character = TAT_alexandr_alemasov
+
 set_politics = {
 	ruling_party = communism
 	elections_allowed = no
@@ -78,5 +80,3 @@ set_popularities = {
 	fascism = 10
 	communism = 20
 }
-
-recruit_character = TAT_alexandr_alemasov

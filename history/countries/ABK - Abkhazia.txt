@@ -68,6 +68,8 @@ if = {
 	}
 }
 
+recruit_character = ABK_kirill_bechvaya
+
 set_politics = {
 	ruling_party = communism
 	elections_allowed = no
@@ -79,5 +81,3 @@ set_popularities = {
 	communism = 60
 	fascism = 5
 }
-
-recruit_character = ABK_kirill_bechvaya

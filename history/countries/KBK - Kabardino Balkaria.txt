@@ -68,6 +68,8 @@ if = {
 	}
 }
 
+recruit_character = KBK_betal_kalmyk
+
 set_politics = {
 	ruling_party = communism
 	elections_allowed = no
@@ -79,5 +81,3 @@ set_popularities = {
 	communism = 0
 	neutrality = 0
 }
-
-recruit_character = KBK_betal_kalmyk

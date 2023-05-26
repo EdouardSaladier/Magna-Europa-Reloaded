@@ -68,6 +68,8 @@ if = {
 	}
 }
 
+recruit_character = CRI_ilyas_tarkhan
+
 set_politics = {
 	ruling_party = communism
 	elections_allowed = no
@@ -78,5 +80,3 @@ set_popularities = {
 	fascism = 20
 	communism = 30
 }
-
-recruit_character = CRI_ilyas_tarkhan

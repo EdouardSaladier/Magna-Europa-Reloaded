@@ -69,6 +69,8 @@ if = {
 	}
 }
 
+recruit_character = KOM_pavel_murashev
+
 set_politics = {
 	ruling_party = communism
 	elections_allowed = no
@@ -79,5 +81,3 @@ set_popularities = {
 	fascism = 10
 	communism = 40
 }
-
-recruit_character = KOM_pavel_murashev

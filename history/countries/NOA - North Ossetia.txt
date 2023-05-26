@@ -68,6 +68,8 @@ if = {
 	}
 }
 
+recruit_character = NOA_vasily_lemayev
+
 set_politics = {
 	ruling_party = communism
 	elections_allowed = no
@@ -79,5 +81,3 @@ set_popularities = {
 	communism = 20
 	neutrality = 10
 }
-
-recruit_character = NOA_vasily_lemayev

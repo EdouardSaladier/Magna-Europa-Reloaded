@@ -68,6 +68,8 @@ if = {
 	}
 }
 
+recruit_character = CHU_gerasim_ivanov
+
 set_politics = {
 	ruling_party = communism
 	elections_allowed = no
@@ -79,5 +81,3 @@ set_popularities = {
 	communism = 10
 	neutrality = 40
 }
-
-recruit_character = CHU_gerasim_ivanov

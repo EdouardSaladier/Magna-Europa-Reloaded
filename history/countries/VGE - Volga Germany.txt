@@ -68,6 +68,9 @@ if = {
 	}
 }
 
+recruit_character = VGE_heinrich_luft
+recruit_character = VGE_aleksander_heck
+
 set_politics = {
 	ruling_party = communism
 	elections_allowed = no
@@ -79,6 +82,3 @@ set_popularities = {
 	communism = 30
 	neutrality = 0
 }
-
-recruit_character = VGE_heinrich_luft
-recruit_character = VGE_aleksander_heck
