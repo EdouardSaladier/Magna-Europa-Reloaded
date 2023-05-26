@@ -7878,6 +7878,7 @@ SOV_start_civil_war = {
 			max = 0.9
 		}
 		multiply_variable = { SOV_surrender_modifier = -1 } # make negative
+		add_to_variable = { SOV_surrender_modifier = 0.2 } #add 20% to offset it
 		SOV_set_up_dynamic_modifiers_civil_war = yes # Add Modifiers and Copy variables
 
 		# Ensure no Stalinist Leaders side with the Opposition
