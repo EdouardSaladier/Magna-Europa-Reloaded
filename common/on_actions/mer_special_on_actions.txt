@@ -591,4 +591,20 @@ on_actions = {
 			}
 		}
 	}
+	on_monthly_SOV = {
+		effect = { 
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = SOV_speed_modifier }
+				}
+				add_to_variable = { SOV_speed_modifier = 0.01 }
+				if = {
+					limit = {
+						check_variable = { SOV_speed_modifier < 0.01 }
+					}
+					remove_dynamic_modifier = { modifier = SOV_speed_modifier }
+				}
+			}
+		} 
+	}
 }

@@ -7810,7 +7810,7 @@ SOV_start_civil_war = {
 		load_focus_tree = { tree = soviet_focus keep_completed = yes }
 		if = {
 			limit = { has_completed_focus = SOV_the_left_opposition }
-			uncomplete_national_focus = { # That was Trotzky's doing, not Stalin's
+			uncomplete_national_focus = { # That was Trotsky's doing, not Stalin's
 				focus = SOV_the_left_opposition
 				uncomplete_children = yes
 			}
@@ -9283,6 +9283,15 @@ SOV_set_up_dynamic_modifiers_civil_war = { #Used for Stalinist side in the CW
 	# AirForce, always present as well
 	add_dynamic_modifier = {
 		modifier = SOV_soviet_airforce_dynamic_modifier
+	}
+	if = {
+		limit = {
+			SOV_is_exiles = yes
+		}
+		set_variable = { SOV_speed_modifier = -0.12 }
+		add_dynamic_modifier = {
+			modifier = SOV_marching_from_siberia
+		}
 	}
 
 
