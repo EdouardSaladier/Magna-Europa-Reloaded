@@ -172,9 +172,9 @@ bookmarks = {
 				SOV_politicized_military
 			}
 			focuses = {
-		#		SOV_behead_the_snake
-		#		SOV_the_supreme_soviet
-		#		SOV_reconvene_the_zemsky_sobor
+				SOV_behead_the_snake
+				SOV_the_supreme_soviet
+				SOV_reconvene_the_zemsky_sobor
 			}
 		}
 		
@@ -188,9 +188,9 @@ bookmarks = {
 				SOV_politicized_military
 			}
 			focuses = {
-		#		SOV_behead_the_snake
-		#		SOV_father_of_nations
-		#		SOV_the_supreme_soviet
+				SOV_behead_the_snake
+				SOV_father_of_nations
+				SOV_the_supreme_soviet
 			}
 		}
 
@@ -269,9 +269,9 @@ bookmarks = {
 				YUG_idea_serbian_general_staff
 			}
 			focuses = {
-		#		YUG_end_the_regency
-		#		YUG_abolish_the_monarchy
-		#		YUG_dissolve_serbia
+				YUG_end_the_regency
+				YUG_abolish_the_monarchy
+				YUG_dissolve_serbia
 			}
 		}
 
@@ -395,9 +395,9 @@ bookmarks = {
 				democratic_opposition
 			}
 			focuses = {
-		#		LAT_military_dictatorship
-		#		LAT_womens_aizsargi
-		#		LAT_the_old_ways
+				LAT_military_dictatorship
+				LAT_womens_aizsargi
+				LAT_the_old_ways
 			}
 		}
 		
@@ -421,13 +421,13 @@ bookmarks = {
 			history = "SWI_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			#	SWI_swiss_neutrality
-			#	SWI_foreign_fascist_propaganda
+				SWI_swiss_neutrality
+				SWI_foreign_fascist_propaganda
 			}
 			focuses = {
-			#	EST_era_of_silence
-			#	EST_fight_the_vaps
-			#	EST_unite_our_nations
+				EST_era_of_silence
+				EST_fight_the_vaps
+				EST_unite_our_nations
 			}
 		}
 
