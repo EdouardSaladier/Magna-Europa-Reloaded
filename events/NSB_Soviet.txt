@@ -11118,7 +11118,7 @@ country_event = {
 						damage = 2
 					}
 				}
-				add_to_variable = { SOV_surrender_modifier = -0.05 }
+				add_to_variable = { SOV_surrender_modifier = -0.01 }
 			}
 			SOV = { clr_country_flag = SOV_civilian_unrest_flag }
 		}
