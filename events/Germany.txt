@@ -3584,6 +3584,7 @@ country_event = {
 			every_other_country = {
 				limit = { is_in_faction_with = FRA NOT = { has_war_with = ENG } }
 				ENG = { add_to_faction = PREV }
+				ENG = { add_to_faction = BEL }
 				add_ai_strategy = {
 					type = alliance
 					id = "ENG"
@@ -3594,7 +3595,15 @@ country_event = {
 		if = {
 			limit = { FRA = { is_in_faction = no } }
 			add_to_faction = FRA
+			add_to_faction = BEL
 			FRA = {
+				add_ai_strategy = {
+					type = alliance
+					id = "ENG"
+					value = 200
+				}
+			}
+			BEL = {
 				add_ai_strategy = {
 					type = alliance
 					id = "ENG"
@@ -3615,9 +3624,9 @@ country_event = {
 	title = germany.60.t
 	desc = germany.62.d
 	picture = GFX_report_event_german_troops
-
+	
 	is_triggered_only = yes
-
+	
 	option = {
 		name = germany.62.a
 		trigger = {
@@ -3629,6 +3638,30 @@ country_event = {
 		add_opinion_modifier = { target = GER modifier = protest_action }
 		GER = {
 			add_war_support = 0.1
+		}
+		BEL = {
+			diplomatic_relation = {
+				country = FRA
+				relation = military_access
+				active = no
+			}
+			diplomatic_relation = {
+				country = FRA
+				relation = guarantee
+				active = no
+			}
+		}
+		FRA = {
+			diplomatic_relation = {
+				country = BEL
+				relation = military_access
+				active = no
+			}
+			diplomatic_relation = {
+				country = BEL
+				relation = guarantee
+				active = no
+			}
 		}
 	}
 
@@ -3704,6 +3737,28 @@ country_event = {
 		ai_chance = { factor = 40 }
 		ENG = { country_event = germany.67 }
 		add_opinion_modifier = { target = GER modifier = protest_action }
+		BEL = {
+			diplomatic_relation = {
+				country = FRA
+				relation = military_access
+				active = no
+			}
+			diplomatic_relation = {
+				country = FRA
+				relation = guarantee
+				active = no
+			}
+		}
+		diplomatic_relation = {
+			country = BEL
+			relation = military_access
+			active = no
+		}
+		diplomatic_relation = {
+			country = BEL
+			relation = guarantee
+			active = no
+		}
 	}
 }
 
@@ -3773,6 +3828,10 @@ country_event = {
 					ratio < 1
 				}
 			}
+			modifier = {
+				factor = 0.2
+				is_historical_focus_on = yes
+			}
 		}
 		name = germany.65.a
 		FRA = {
@@ -3803,6 +3862,13 @@ country_event = {
 				}
 			}
 		}
+		BEL = {
+			add_to_war = {
+				targeted_alliance = FRA
+				enemy = GER
+				hostility_reason = ally
+			}
+		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.26 }
 		}
@@ -3821,6 +3887,10 @@ country_event = {
 					tag = ENG
 					ratio > 1
 				}
+			}
+			modifier = {
+				factor = 80
+				is_historical_focus_on = yes
 			}
 		}
 		hidden_effect = {
@@ -3897,6 +3967,20 @@ country_event = {
 	option = {
 		name = germany.65.a
 		add_war_support = 0.1 #original German clay
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = FRA
+					ratio < 1
+				}
+			}
+			modifier = {
+				factor = 0.2
+				is_historical_focus_on = yes
+			}
+		}
 		ENG = {
 			country_event = germany.68
 			if = {
@@ -3910,11 +3994,16 @@ country_event = {
 			}
 		}
 		FRA = {
+			set_rule = {
+				can_create_factions = yes
+			}
 			declare_war_on = {
 				target = GER
 				type = take_state_focus
 				generator = { 537 }
 			}
+			create_faction = french_alliance
+			add_to_faction = BEL
 			country_event = germany.92
 			if = {
 				limit = {
@@ -3937,6 +4026,13 @@ country_event = {
 				}
 			}
 		}
+		BEL = {
+			add_to_war = {
+				targeted_alliance = FRA
+				enemy = GER
+				hostility_reason = ally
+			}
+		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.27 }
 		}
@@ -3944,6 +4040,20 @@ country_event = {
 
 	option = {
 		name = germany.65.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = FRA
+					ratio > 1
+				}
+			}
+			modifier = {
+				factor = 80
+				is_historical_focus_on = yes
+			}
+		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.152 }
 		}
@@ -4063,8 +4173,15 @@ country_event = {
 			country_exists = CZE # Should only trigger if CZE hasn't fallen
 		}
 		has_war_with = CZE
-		has_war_with = FRA
-		has_war_with = ENG
+		any_other_country = {
+			NOT = { tag = CZE }
+			OR = {
+				is_major = yes
+				is_neighbor_of = CZE
+				is_neighbor_of = ROOT
+			}
+			has_war_with = ROOT
+		}
 		has_country_flag = allies_support_czechs
 	}
 
