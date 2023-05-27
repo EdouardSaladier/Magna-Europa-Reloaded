@@ -3650,6 +3650,7 @@ country_event = {
 				relation = guarantee
 				active = no
 			}
+			hidden_effect = { set_country_flag = bel_neutrality_flag }
 		}
 		FRA = {
 			diplomatic_relation = {
@@ -3748,6 +3749,7 @@ country_event = {
 				relation = guarantee
 				active = no
 			}
+			hidden_effect = { set_country_flag = bel_neutrality_flag }
 		}
 		diplomatic_relation = {
 			country = BEL

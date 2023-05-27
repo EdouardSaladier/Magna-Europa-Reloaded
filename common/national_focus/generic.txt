@@ -2008,6 +2008,11 @@ focus_tree = {
 				is_in_faction_with = SOV
 				SOV = { has_government = communism }
 			}
+			modifier = {
+				factor = 100
+				tag = BEL
+				has_country_flag = bel_neutrality_flag
+			}
 		}
 
 		completion_reward = {
