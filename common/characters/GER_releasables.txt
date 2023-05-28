@@ -1,0 +1,54 @@
+characters={
+	BAY_crown_prince_rupprecht={
+		name="Rupprecht"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Germany_Rupprecht_Bayern_kr"
+			}	
+			army={
+				large="GFX_Portrait_Germany_Rupprecht_Bayern_kr"
+			}	
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		field_marshal={
+			traits={ politically_connected }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=4
+		}
+	}
+	BRW_ernest_augustus={
+		name="Ernest Augustus"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_6"
+			}	
+			army={
+				large="GFX_portrait_europe_generic_6"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		field_marshal={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+}

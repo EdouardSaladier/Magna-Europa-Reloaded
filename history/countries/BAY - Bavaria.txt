@@ -2,6 +2,7 @@
 
 set_research_slots = 3
 
+recruit_character = BAY_crown_prince_rupprecht
 
 # Starting tech
 set_technology = {
@@ -19,6 +20,7 @@ set_technology = {
 	transport = 1
 	trench_warfare = 1
 }
+
 
 set_politics = {
 	ruling_party = neutrality
