@@ -1093,6 +1093,14 @@ on_actions = {
 				}
 				LIE = {
 					transfer_units_fraction = {
+						target = BAY
+						size = 0.2
+					}
+					transfer_units_fraction = {
+						target = SAX
+						size = 0.1
+					}
+					transfer_units_fraction = {
 						target = PRE
 						size = 1
 					}
