@@ -560,7 +560,7 @@ country_event = { #Dobrudja borders for Bulgaria claims
 	}
 	
 	option = { #Ahistorical - give northern too w/ exceptions
-		name = mer_event.13.b
+		name = mer_event.14.b
 		country_event = { id = mer_event.15 hours = 3 random_hours = 3 }
 		hidden_effect = {
 			every_state = {
