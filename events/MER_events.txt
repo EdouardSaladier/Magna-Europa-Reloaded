@@ -506,7 +506,7 @@ country_event = { #Macedonia borders for Bulgaria claims
 	}
 	
 	option = { #Ahistorical - go out with WWI occupation
-		name = mer_event.13.a 
+		name = mer_event.13.c
 		country_event = { id = mer_event.14 hours = 3 random_hours = 3 }
 		hidden_effect = {
 			every_state = {
@@ -648,7 +648,7 @@ country_event = { #Thrace borders for Bulgaria claims
 	}
 	
 	option = { #Ahistorical - go all out
-		name = mer_event.15.a 
+		name = mer_event.15.c
 		country_event = { id = mer_event.16 hours = 3 random_hours = 3 }
 		hidden_effect = {
 			every_state = {
