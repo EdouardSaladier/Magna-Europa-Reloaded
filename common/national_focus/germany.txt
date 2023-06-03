@@ -7591,7 +7591,8 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_reintegrate_luxemburg_and_alsace_lorraine"
-			custom_effect_tooltip = mer_GER_reintegrate_luxemburg_and_alsace_lorraine_core_tt
+			custom_effect_tooltip = mer_GER_reintegrate_luxemburg_and_alsace_lorraine_core_tt_alslor
+			custom_effect_tooltip = mer_GER_reintegrate_luxemburg_and_alsace_lorraine_core_tt_lux
 			hidden_effect = {
 				add_state_core = 606
 				add_state_core = 2746
@@ -7603,7 +7604,6 @@ focus_tree = {
 				add_state_core = 427
 				add_state_core = 404
 			}
-			custom_effect_tooltip = mer_GER_reintegrate_luxemburg_and_alsace_lorraine_ownership_tt
 			hidden_effect = {
 				if = {
 					limit = {
@@ -10327,12 +10327,7 @@ focus_tree = {
 				has_full_control_of_state = 2608
 				has_full_control_of_state = 547
 			}
-			custom_trigger_tooltip = {
-				tooltip = mer_GER_reintegrate_luxemburg_and_alsace_lorraine_controls_lux_tt
-				has_full_control_of_state = 512
-				has_full_control_of_state = 427
-				has_full_control_of_state = 404
-			}
+			has_full_control_of_state = 485
 			OR = {
 				FRA = { has_capitulated = yes }
 				FRA = { is_subject_of = GER }
@@ -10353,15 +10348,6 @@ focus_tree = {
 					owns_state = 512
 					owns_state = 427
 					owns_state = 404
-				}
-			}
-			OR = {
-				LUX = { has_capitulated = yes }
-				NOT = {
-					any_country = {
-						original_tag = LUX
-						exists = yes
-					}
 				}
 			}
 		}
@@ -10386,11 +10372,9 @@ focus_tree = {
 				add_state_core = 2747
 				add_state_core = 2608
 				add_state_core = 547
-				add_state_core = 512
-				add_state_core = 427
-				add_state_core = 404
 			}
-			custom_effect_tooltip = mer_GER_reintegrate_luxemburg_and_alsace_lorraine_ownership_tt
+			custom_effect_tooltip = mer_GER_reintegrate_luxemburg_and_alsace_lorraine_core_tt_alslor
+			add_state_core = 485
 			hidden_effect = {
 				if = {
 					limit = {
@@ -10401,6 +10385,7 @@ focus_tree = {
 							owns_state = 2747
 							owns_state = 2608
 							owns_state = 547
+							owns_state = 485
 						}
 					}
 					transfer_state = 606
@@ -10409,6 +10394,7 @@ focus_tree = {
 					transfer_state = 2747
 					transfer_state = 2608
 					transfer_state = 547
+					transfer_state = 485
 				}
 			}
 			# take care of this later
@@ -10417,9 +10403,6 @@ focus_tree = {
 			#set_province_name = { id = 19849 name = "Mulhausen" }
 			FRA = {
 				country_event = { id = wtt_germany.63 }
-			}
-			LUX = {
-				country_event = { id = wtt_germany.64 }
 			}
 		}
 	}
