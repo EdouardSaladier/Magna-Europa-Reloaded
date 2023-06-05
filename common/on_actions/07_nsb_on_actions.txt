@@ -747,6 +747,13 @@ on_actions = {
 						autonomy_state = autonomy_personal_union
 					}
 				}
+				every_state = {
+					limit = {
+						OWNER = { has_country_flag = POL_czech_personal_union_flag }
+						is_core_of = WUK
+					}
+					transfer_state_to = POL
+				}
 			}
 			#Puppet Poland when civil war ends
 			if = {
@@ -762,6 +769,18 @@ on_actions = {
 						target = PREV
 						autonomy_state = autonomy_personal_union
 					}
+				}
+				every_state = {
+					limit = {
+						OWNER = { has_country_flag = LIT_poland_personal_union_flag }
+						OR = {
+							is_core_of = BLR
+							is_core_of = LIT
+							region = 96
+							state = 2485
+						}
+					}
+					transfer_state_to = LIT
 				}
 			}
 			if = {
