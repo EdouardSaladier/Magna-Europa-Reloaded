@@ -8,16 +8,17 @@ state={
 		add_core_of = GER
 		buildings = {
 			infrastructure = 4
+
 		}
 		add_core_of = HAM
 		victory_points = {
-			11075 5 #Cuxhaven
+			11075 5 
 		}
 
 	}
 
 	provinces={
-		11075 
+		11075 14142 
 	}
 	manpower=104273
 	buildings_max_level_factor=1.000

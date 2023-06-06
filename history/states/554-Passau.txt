@@ -2,22 +2,26 @@
 state={
 	id=554
 	name="STATE_554"
+
 	history={
 		owner = GER
 		add_core_of = GER
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = BAY
 		victory_points = {
-			4897 5 #Passau
+			4897 5 
 		}
-    }
+
+	}
+
 	provinces={
-		642 1475 4897 7845 13200 13341 20783 20788 20807 
+		642 1475 4897 7845 13200 13341 20783 20788 
 	}
 	manpower=241306
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = large_town
 }

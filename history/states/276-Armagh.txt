@@ -1,22 +1,28 @@
+
 state={
 	id=276
 	name="STATE_276"
+
 	history={
 		owner = ENG
 		add_core_of = ENG
 		buildings = {
 			infrastructure = 3
+
 		}
 		victory_points = {
-            10897 2
-        }
+			10897 2 
+		}
 		add_core_of = NIR
 		add_core_of = IRE
+
 	}
+
 	provinces={
-		1890 10897 10909
+		1890 10897 
 	}
 	manpower=108800
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category=rural
+	local_supplies=0.000
 }

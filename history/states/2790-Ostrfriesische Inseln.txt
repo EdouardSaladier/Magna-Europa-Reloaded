@@ -2,9 +2,7 @@
 state={
 	id=2790
 	name="STATE_2790"
-	provinces={
-		19879 
-	}
+
 	history={
 		owner = GER
 		add_core_of = GER
@@ -13,11 +11,16 @@ state={
 		add_core_of = EFR
 		buildings = {
 			infrastructure = 3
-			19879 = { naval_base = 1 }
+
 		}
-    }
-	manpower=5000
+
+	}
+
+	provinces={
+		10909 11866 19879 20807 20863 
+	}
+	manpower=25000
 	buildings_max_level_factor=1.000
+	state_category=small_island
 	local_supplies=0.000
-	state_category = pastoral
 }
