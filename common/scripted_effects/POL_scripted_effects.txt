@@ -810,6 +810,12 @@ POL_basic_form_commonwealth = {
 			}
 			add_core_of = ROOT
 		}
+		every_state = {
+			limit = {
+				is_core_of = WSP
+			}
+			add_claim_by = ROOT
+		}
 	}
 	custom_effect_tooltip = form_country_lithuania_coring_states_tt
 	custom_effect_tooltip = form_country_poland_coring_states_tt
