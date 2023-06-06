@@ -72,9 +72,6 @@ POL_danzig_decisions = {
 		icon = infiltrate_state
 
 		available = {
-			DNZ = { 
-				NOT = { has_idea = POL_raid_nazi_resistance }
-			}
 		}
 
 		custom_cost_trigger = {
@@ -97,9 +94,13 @@ POL_danzig_decisions = {
 				add_political_power = -50
 			}
 			DNZ = { 
-				add_timed_idea = {
-					idea = POL_raid_nazi_resistance
-					days = 60
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.05
+				}
+				add_autonomy_score = {
+					value = -75
+					localization = POL_raid_nazi_resistance
 				}
 			}
 		}

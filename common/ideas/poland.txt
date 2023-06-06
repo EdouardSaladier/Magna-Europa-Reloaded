@@ -1970,26 +1970,6 @@ country = {
 			command_power_gain_mult = -0.15
 		}
 	}
-
-	POL_raid_nazi_resistance = {
-
-		allowed = {
-			original_tag = DNZ
-		}
-
-		allowed_civil_war = {
-			always = no
-		}
-
-		picture = generic_fascism_banned
-
-		removal_cost = -1
-
-		modifier = {	
-			autonomy_gain = -0.25
-			fascism_drift = -0.05
-		}
-	}
 }
 
 
