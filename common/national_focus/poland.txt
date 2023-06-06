@@ -15394,13 +15394,20 @@ focus_tree = {
 		
 		available = {
 			DNZ = { 
-				is_subject_of = POL
+				is_subject_of = ROOT
 				compare_autonomy_progress_ratio < 0.05
 			}
 		}
 		
 		bypass = {
-			
+			280 = {
+				is_owned_by = ROOT
+				is_core_of = ROOT
+			}
+			2729 = {
+				is_owned_by = ROOT
+				is_core_of = ROOT
+			}
 		}
 
 		available_if_capitulated = yes
