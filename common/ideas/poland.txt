@@ -1931,6 +1931,65 @@ country = {
 			training_time_factor = -0.1
 		}
 	}
+
+	POL_unification_propaganda = {
+
+		allowed = {
+			original_tag = DNZ
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		picture = generic_pp_unity_bonus
+
+		removal_cost = -1
+
+		modifier = {	
+			autonomy_gain = -0.5
+		}
+	}
+
+	POL_military_appeasement = {
+
+		allowed = {
+			original_tag = DNZ
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		picture = tur_kemalist_officers
+
+		removal_cost = -1
+
+		modifier = {	
+			autonomy_gain = -0.25
+			command_power_gain_mult = -0.15
+		}
+	}
+
+	POL_raid_nazi_resistance = {
+
+		allowed = {
+			original_tag = DNZ
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		picture = generic_fascism_banned
+
+		removal_cost = -1
+
+		modifier = {	
+			autonomy_gain = -0.25
+			fascism_drift = -0.05
+		}
+	}
 }
 
 

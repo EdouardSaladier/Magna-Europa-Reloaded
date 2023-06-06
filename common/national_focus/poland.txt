@@ -15395,7 +15395,7 @@ focus_tree = {
 		available = {
 			DNZ = { 
 				is_subject_of = ROOT
-				compare_autonomy_progress_ratio < 0.05
+				compare_autonomy_state < autonomy_puppet
 			}
 		}
 		
@@ -15524,15 +15524,6 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_expand_gdynia_seaport"
-			if = {
-				limit = {
-					has_idea = uncontrolled_exports
-				}
-				swap_ideas = {
-					remove_idea = uncontrolled_exports
-					add_idea = export_focus
-				}
-			}
 			random_owned_controlled_state = {
 				prioritize = { 807 }
 				limit = {
@@ -15574,15 +15565,6 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_integrate_gdansk_industries"
-			if = {
-				limit = {
-					has_idea = uncontrolled_exports
-				}
-				swap_ideas = {
-					remove_idea = uncontrolled_exports
-					add_idea = export_focus
-				}
-			}
 			random_owned_controlled_state = {
 				prioritize = { 280 }
 				limit = {

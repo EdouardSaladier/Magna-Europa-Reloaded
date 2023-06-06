@@ -5,10 +5,8 @@ POL_danzig_decisions = {
 		icon = infiltrate_state
 
 		available = {
-			280 = {
-				NOT = {
-					has_dynamic_modifier = { modifier = unity_propaganda }
-				}
+			DNZ = { 
+				NOT = { has_idea = POL_unification_propaganda }
 			}
 		}
 
@@ -22,15 +20,9 @@ POL_danzig_decisions = {
 			political_power_gain = -0.1
 		}
 		complete_effect = {
-			280 = {
-				add_dynamic_modifier = {
-					modifier = unity_propaganda
-					days = 60
-				}
-			}
-			2729 = {
-				add_dynamic_modifier = {
-					modifier = unity_propaganda
+			DNZ = { 
+				add_timed_idea = {
+					idea = POL_unification_propaganda
 					days = 60
 				}
 			}
@@ -42,10 +34,8 @@ POL_danzig_decisions = {
 		icon = infiltrate_state
 
 		available = {
-			280 = {
-				NOT = {
-					has_dynamic_modifier = { modifier = military_appeasement }
-				}
+			DNZ = { 
+				NOT = { has_idea = POL_military_appeasement }
 			}
 		}
 
@@ -67,13 +57,9 @@ POL_danzig_decisions = {
 				add_command_power = -25
 				add_political_power = -50
 			}
-			every_state = {
-		limit = { 
-			state = 280
-			state = 2729
-		}
-				add_dynamic_modifier = {
-					modifier = military_appeasement
+			DNZ = { 
+				add_timed_idea = {
+					idea = POL_military_appeasement
 					days = 60
 				}
 			}
@@ -86,6 +72,9 @@ POL_danzig_decisions = {
 		icon = infiltrate_state
 
 		available = {
+			DNZ = { 
+				NOT = { has_idea = POL_raid_nazi_resistance }
+			}
 		}
 
 		custom_cost_trigger = {
@@ -107,15 +96,11 @@ POL_danzig_decisions = {
 				add_command_power = -50
 				add_political_power = -50
 			}
-			every_state = {
-				limit = {
-					OR = {
-						state = 280
-						state = 2729
-					}
+			DNZ = { 
+				add_timed_idea = {
+					idea = POL_raid_nazi_resistance
+					days = 60
 				}
-				add_resistance = -15
-				add_compliance = 10
 			}
 		}
 	}
@@ -127,6 +112,10 @@ POL_danzig_decisions = {
 		available = {
 			280 = { compliance > 40 }
 			2729 = { compliance > 40 }
+		}
+
+		visible = {
+			always = no
 		}
 
 		custom_cost_trigger = {
