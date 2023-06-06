@@ -2,21 +2,25 @@
 state={
 	id=399
 	name="STATE_399"
-	provinces={
-		4840 6955 11821 11842 11866 
-	}
+
 	history={
 		owner = HOL
 		add_core_of = HOL
 		buildings = {
 			infrastructure = 4
+
 		}
-        victory_points = {
-            11821 20 #Utrecht
-        }
-    }
+		victory_points = {
+			11821 20 
+		}
+
+	}
+
+	provinces={
+		4840 6955 11821 11842 
+	}
 	manpower=448500
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

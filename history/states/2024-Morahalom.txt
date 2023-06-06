@@ -2,16 +2,20 @@
 state={
 	id=2024
 	name="STATE_2024"
-	history = {
+
+	history={
 		owner = ROM
 		add_core_of = ROM
 		add_core_of = TRA
 		buildings = {
 			infrastructure = 1
+
 		}
+
 	}
+
 	provinces={
-		14142 14167 14196 
+		14167 14196 
 	}
 	manpower=36204
 	buildings_max_level_factor=1.000

@@ -31,27 +31,33 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8810;19457;sea;18361;-1;-1;-1;-1;;Isle of Wight
 19884;19859;sea;17542;-1;-1;-1;-1;;La Rochelle-Île de Ré
 19869;5728;sea;17542;-1;-1;-1;-1;;Île d'Oléron-Bourcefranc
-19879;20661;sea;16134;-1;-1;-1;-1;;BorkumGermany
 4251;19871;sea;16785;-1;-1;-1;-1;;Zeeland 2
 4251;19871;sea;16785;-1;-1;-1;-1;;Zeeland 3
 19854;19870;sea;16785;-1;-1;-1;-1;;Zeeland 5
 19873;19871;sea;16785;-1;-1;-1;-1;;Zeeland 6
 19872;19871;sea;16785;-1;-1;-1;-1;;Zeeland 7
-11364;11445;sea;17256;-1;-1;-1;-1;;Afsluitdijk
-16996;17256;impassable;;-1;-1;-1;-1;;Afsluitdijk
 16996;17462;;-1;-1;-1;-1;-1;NOORDZEEKANAAL;Noordzeekanaal
 4251;19872;sea;16785;-1;-1;-1;-1;;Zeeland 10
 11951;19872;sea;16785;-1;-1;-1;-1;;South Holland Island 1
 19416;2352;sea;17946;-1;-1;-1;-1;;Anglesey
 6618;19872;sea;16785;-1;-1;-1;-1;;South Holland Island 4
 19895;19872;sea;17639;-1;-1;-1;-1;;South Holland Island 5
-19874;8961;sea;17256;-1;-1;-1;-1;;Netherlands islands 0
-19874;19875;sea;17256;-1;-1;-1;-1;;Netherlands islands 1
-19876;19875;sea;17256;-1;-1;-1;-1;;Netherlands islands 2
-19876;19877;sea;16080;-1;-1;-1;-1;;Netherlands islands 3
-6763;19877;sea;17819;-1;-1;-1;-1;;Netherlands islands 4
-6763;19878;sea;17819;-1;-1;-1;-1;;Netherlands islands 5
-19900;19879;sea;17819;-1;-1;-1;-1;;Netherlands islands 6
+11445;11364;sea;16996;-1;-1;-1;-1;;Afsluitdijk
+17256;16996;impassable;-1;-1;-1;-1;-1;;Afsluitdijk impassable
+19874;8961;sea;17256;-1;-1;-1;-1;;West Frisian islands 0
+19874;19875;sea;17256;-1;-1;-1;-1;;West Frisian islands 1
+19876;19875;sea;17256;-1;-1;-1;-1;;West Frisian islands 2
+19876;19877;sea;16080;-1;-1;-1;-1;;West Frisian islands 3
+6763;19877;sea;17819;-1;-1;-1;-1;;West Frisian islands 4
+19878;19877;sea;17819;-1;-1;-1;-1;;West Frisian islands 5
+6763;19878;sea;17819;-1;-1;-1;-1;;West Frisian islands 6
+19879;19878;sea;17819;-1;-1;-1;-1;;West Frisian islands 7
+19879;11866;sea;16134;-1;-1;-1;-1;;East Frisian Islands 1
+20863;11866;sea;16134;-1;-1;-1;-1;;East Frisian Islands 2
+20863;20807;sea;16134;-1;-1;-1;-1;;East Frisian Islands 3
+10909;20807;sea;17720;-1;-1;-1;-1;;East Frisian Islands 4
+20863;11232;sea;16134;-1;-1;-1;-1;;East Frisian Islands-Emden
+14142;11075;sea;16373;-1;-1;-1;-1;;Cuxhaven Island
 8755;19642;sea;17967;-1;-1;-1;-1;;West Jutland Isles 1
 19643;19642;sea;17967;-1;-1;-1;-1;;West Jutland Isles 2
 19643;10671;sea;17967;-1;-1;-1;-1;;West Jutland Isles 3
