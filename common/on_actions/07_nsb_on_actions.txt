@@ -58,29 +58,39 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					FROM.FROM = { state = 280 }
-				}
-				280 = { POL_remove_danzig_effect = yes }
-				if = {
-					limit = {
-						ROOT = {
-							OR = {
-								original_tag = GER
-								original_tag = DNZ
-							}
+					FROM.FROM = { 
+						OR = {
+							state = 280 
+							state = 2729
 						}
 					}
-					280 = {
-						reset_state_name = yes
-					}
-					reset_province_name = 362
 				}
+				FROM.FROM = { POL_remove_danzig_effect = yes }
 				if = {
-					limit = { ROOT = { original_tag = POL } }
-					280 = { set_state_name = "Gdańsk" }
-					set_province_name = {
-						id = 362
-						name = "Gdańsk"
+					limit = {
+						FROM.FROM = { state = 280 }
+					}
+					if = {
+						limit = {
+							ROOT = {
+								OR = {
+									original_tag = GER
+									original_tag = DNZ
+								}
+							}
+						}
+						280 = {
+							reset_state_name = yes
+						}
+						reset_province_name = 362
+					}
+					if = {
+						limit = { ROOT = { original_tag = POL } }
+						280 = { set_state_name = "Gdańsk" }
+						set_province_name = {
+							id = 362
+							name = "Gdańsk"
+						}
 					}
 				}
 			}

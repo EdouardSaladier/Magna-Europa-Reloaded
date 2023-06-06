@@ -15263,33 +15263,11 @@ focus_tree = {
 		}
 		
 		available = {
-			OR = {
-				DNZ = {
-					all_core_state = {
-						is_owned_by = DNZ
-					}
-				}
-				DNZ = {
-					all_core_state = {
-						is_owned_by = POL
-					}
-				}
-			}
+			country_exists = DNZ
 		}
 		
 		bypass = {
-			OR = {
-				NOT = {
-					has_idea = uncontrolled_exports
-				}
-				DNZ = {
-					all_core_state = {
-						NOT = { is_owned_by = DNZ }
-						NOT = { is_owned_by = POL }
-					}
-				}
-			}
-			has_civil_war = no
+			
 		}
 
 		available_if_capitulated = yes
@@ -15300,38 +15278,7 @@ focus_tree = {
 			unlock_decision_category_tooltip = POL_danzig_decisions
 			add_political_power = 75
 			add_command_power = 50
-			POL = {
-				annex_country = {
-					target = DNZ
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						state = 2729
-						state = 280
-					}
-				}
-				remove_dynamic_modifier = {
-					modifier = international_city
-				}
-				add_dynamic_modifier = {
-					modifier = international_city_2
-				}
-				set_demilitarized_zone = yes
-				force_enable_resistance = { 
-					clear = no
-					occupier = POL
-					occupied = DNZ
-				}
-				start_resistance = DNZ
-				set_resistance = 40
-				set_compliance = 30
-				add_resistance_target = { 
-					amount = 30
-					tooltip = clamp_down_on_danzig_tt
-				}
-			}
+			puppet = DNZ
 			hidden_effect = {
 				news_event = {
 					id = nsb_news.4
@@ -15446,35 +15393,23 @@ focus_tree = {
 		}
 		
 		available = {
-			owns_state = 280
-			controls_state = 280
-			280 = {
-				OR = {
-					AND = {
-						compliance > 80
-						resistance < 50
-					}
-					NOT = { is_core_of = DNZ }
-				}
+			DNZ = { 
+				is_subject_of = POL
+				compare_autonomy_progress_ratio < 0.05
 			}
 		}
 		
 		bypass = {
-			OR = {
-				NOT = {
-					has_idea = uncontrolled_exports
-				}
-				NOT = {
-					controls_state = 280
-				}
-				280 = { is_demilitarized_zone = no }
-			}
-			has_civil_war = no
+			
 		}
 
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_ban_the_nazi_party"
+			annex_country = {
+				target = DNZ
+				transfer_troops = no
+			}
 			280 = {
 				force_enable_resistance = { 
 					clear = yes

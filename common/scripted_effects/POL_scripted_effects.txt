@@ -43,7 +43,7 @@ POL_increase_danzig_control = {
 }
 
 POL_remove_danzig_effect = {
-	remove_core_of = DNZ
+	#remove_core_of = DNZ
 	set_demilitarized_zone = no
 	controller = { save_event_target_as = danzig_occupier }
 	if = {
