@@ -1551,6 +1551,12 @@ country_event = {
 						promote_leader = yes
 					}
 				}
+				every_owned_state = {
+					limit = {
+						is_core_of = WUK
+					}
+					transfer_state_to = FROM
+				}
 				
 			}
 			news_event = { id = nsb_news.7 }
