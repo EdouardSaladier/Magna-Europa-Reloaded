@@ -633,11 +633,6 @@ SOV_ai_behavior = {
 		allow_achievements = yes
 	}
 	option = {
-		name = ALTERNATE
-		text = "RULE_OPTION_ALTERNATE"
-		desc = "RULE_OPTION_ALTERNATE_SOV_AI_DESC"
-	}
-	option = {
 		name = LEFT_OPPOSITION
 		text = "RULE_OPTION_LEFT_OPPOSITION"
 		desc = "RULE_OPTION_LEFT_OPPOSITION_SOV_AI_DESC"
@@ -1882,8 +1877,8 @@ swi_fragmentation_status = {
 	}
 	option = {
 		name = SWI_FRAGMENTED
-		text = "RULE_OPTION_AUS_FRAGMENTED"
-		desc = "RULE_OPTION_AUS_FRAGMENTED_DESC"
+		text = "RULE_OPTION_SWI_FRAGMENTED"
+		desc = "RULE_OPTION_SWI_FRAGMENTED_DESC"
 	}
 }
 bel_fragmentation_status = {
