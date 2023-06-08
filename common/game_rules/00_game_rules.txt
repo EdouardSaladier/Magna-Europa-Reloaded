@@ -1866,6 +1866,26 @@ aus_fragmentation_status = {
 		desc = "RULE_OPTION_AUS_FRAGMENTED_DESC"
 	}
 }
+swi_fragmentation_status = {
+	name = "SWI_FRAGMENTATION_STATUS"
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
+	}
+	option = {
+		name = SWI_PARTITIONED
+		text = "RULE_OPTION_SWI_PARTITIONED"
+		desc = "RULE_OPTION_SWI_PARTITIONED_DESC"
+	}
+	option = {
+		name = SWI_FRAGMENTED
+		text = "RULE_OPTION_AUS_FRAGMENTED"
+		desc = "RULE_OPTION_AUS_FRAGMENTED_DESC"
+	}
+}
 bel_fragmentation_status = {
 	name = "BEL_FRAGMENTATION_STATUS"
 	required_dlc = "Man the Guns"

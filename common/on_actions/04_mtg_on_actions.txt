@@ -2193,6 +2193,98 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
+						rule = swi_fragmentation_status
+						option = SWI_PARTITIONED
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = fra_fragmentation_status
+							option = FRA_REGIONS
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RMD
+						}
+						add_core_of = BGN
+					}
+				}
+				else = {
+					every_state = {
+						limit = {
+							is_core_of = FRA
+						}
+						add_core_of = FRA
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = ita_fragmentation_status
+							option = DEFAULT
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = LOM
+							is_core_of = SWI
+						}
+						add_core_of = ITA
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = ger_fragmentation_status
+							option = DEFAULT
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SWI
+							NOT = { 
+								is_core_of = RMD 
+								is_core_of = LOM
+								state = 1447
+							}
+						}
+						add_core_of = GER
+					}
+				}
+				SWI = {
+					every_owned_state = {
+						delete_unit = { 
+							state = PREV 
+							disband = no 
+						}
+					}
+					release = FRA
+					release = BGN
+					release = ITA
+					release = LOM
+					release = GER
+					release = GRS
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = swi_fragmentation_status
+						option = SWI_FRAGMENTED
+					}
+				}
+				SWI = {
+					release = VLS
+					release = RMD
+					release = GRS
+					release = TIC
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
 						rule = bel_fragmentation_status
 						option = BEL_DISSOLVED
 					}
