@@ -1,18 +1,9 @@
-# AI Ship Designs for His Majesty the King
-
 ENG_destroyers = {
 	category = naval
 	
-	blocked_for = {
-	}
+	available_for = { ENG }
 	
-	available_for = {
-		ENG
-	}
-	
-	roles = {
-		naval_screen
-	}
+	roles = { naval_screen }
 	
 	priority = {
 		factor = 500
@@ -24,12 +15,8 @@ ENG_destroyers = {
 	
 	destroyer_default = {
 	
-		priority = {
-			factor = 1
-		}
-		enable = {
-			not = { has_tech = basic_ship_hull_light }
-		}
+		priority = { factor = 1 }
+		enable = { not = { has_tech = basic_ship_hull_light } }
 		role_icon_index = 2
 		
 		target_variant = {
@@ -67,9 +54,7 @@ ENG_destroyers = {
 				has_war = yes
 			}
 		}
-		enable = {
-			not = { has_tech = basic_ship_hull_light }
-		}
+		enable = { not = { has_tech = basic_ship_hull_light } }
 		role_icon_index = 2
 		
 		target_variant = {
@@ -110,7 +95,7 @@ ENG_destroyers = {
 			}
 			modifier = { 
 				has_tech = improved_ship_hull_light 
-				factor = 0 #let's not waste XP here
+				factor = 0
 			}
 		}
 		enable = { not = { has_tech = improved_ship_hull_light } }
@@ -194,7 +179,7 @@ ENG_destroyers = {
 			}
 			modifier = { 
 				has_tech = advanced_ship_hull_light 
-				factor = 0 #let's not waste XP here
+				factor = 0
 			}
 		}
 
@@ -280,9 +265,7 @@ ENG_destroyers = {
 				has_war = yes
 			}
 		}
-		enable = {
-			has_tech = advanced_dp_light_battery
-		}
+		enable = { has_tech = advanced_dp_light_battery }
 		role_icon_index = 2
 		
 		target_variant = {
@@ -319,16 +302,9 @@ ENG_destroyers = {
 ENG_escorts = {
 	category = naval
 	
-	blocked_for = {
-	}
+	available_for = { ENG }
 	
-	available_for = {
-		ENG
-	}
-	
-	roles = {
-		naval_escort
-	}
+	roles = { naval_escort }
 	
 	priority = {
 		factor = 100
@@ -337,7 +313,7 @@ ENG_escorts = {
 			anti_submarine_strategy_required_trigger = yes
 		}
 		modifier = {
-			convoy_threat > 0.5 #churchill panic attack
+			convoy_threat > 0.5
 			factor = 50
 		}
 	}
@@ -430,25 +406,14 @@ ENG_naval_light_cruiser = {
 
 	category = naval
 	
-	blocked_for = {
-	}
+	available_for = { ENG }
 	
-	available_for = {
-		ENG
-	}
+	roles = { naval_cruiser_light }
 	
-	roles = {
-		naval_cruiser_light
-	}
-	
-	priority = {
-		factor = 300
-	}
+	priority = { factor = 300 }
 	cruiser_light_early = {
 		
-		priority = {
-			factor = 1
-		}
+		priority = { factor = 1 }
 
 		role_icon_index = 2
 		
@@ -535,9 +500,7 @@ ENG_naval_light_cruiser = {
 		}
 		role_icon_index = 2
 
-		enable = {
-			has_tech = advanced_dp_light_battery
-		}
+		enable = { has_tech = advanced_dp_light_battery }
 		
 		target_variant = {
 			match_value = 1200.0
@@ -570,13 +533,9 @@ ENG_naval_light_cruiser = {
 	}
 	cruiser_light_basic = {
 		
-		priority = {
-			factor = 200
-		}
+		priority = { factor = 200 }
 		role_icon_index = 2
-		enable = {
-			not = { has_tech = improved_ship_hull_cruiser }
-		}
+		enable = { not = { has_tech = improved_ship_hull_cruiser } }
 		target_variant = {
 			match_value = 2000.0
 			
@@ -619,9 +578,7 @@ ENG_naval_light_cruiser = {
 				has_war = yes
 			}
 		}
-		enable = {
-			not = { has_tech = improved_ship_hull_cruiser }
-		}
+		enable = { not = { has_tech = improved_ship_hull_cruiser } }
 		role_icon_index = 2
 		
 		target_variant = {
@@ -658,14 +615,10 @@ ENG_naval_light_cruiser = {
 	}
 	cruiser_light_improved = {
 		
-		priority = {
-			factor = 450
-		}
+		priority = { factor = 450 }
 		role_icon_index = 2
 		
-		enable = {
-			not = { has_tech = advanced_ship_hull_cruiser }
-		}
+		enable = { not = { has_tech = advanced_ship_hull_cruiser } }
 		target_variant = {
 			match_value = 3000.0
 			type = ship_hull_cruiser_2
@@ -707,9 +660,7 @@ ENG_naval_light_cruiser = {
 			}
 		}
 		role_icon_index = 2
-		enable = {
-			not = { has_tech = advanced_ship_hull_cruiser }
-		}
+		enable = { not = { has_tech = advanced_ship_hull_cruiser } }
 		target_variant = {
 			match_value = 3100.0
 			
@@ -745,14 +696,10 @@ ENG_naval_light_cruiser = {
 
 	cruiser_light_improved_2 = {
 		
-		priority = {
-			factor = 500
-		}
+		priority = { factor = 500 }
 		role_icon_index = 2
 		
-		enable = {
-			not = { has_tech = advanced_ship_hull_cruiser }
-		}
+		enable = { not = { has_tech = advanced_ship_hull_cruiser } }
 		target_variant = {
 			match_value = 4000.0
 			type = ship_hull_cruiser_3
@@ -794,9 +741,7 @@ ENG_naval_light_cruiser = {
 			}
 		}
 		role_icon_index = 2
-		enable = {
-			not = { has_tech = advanced_ship_hull_cruiser }
-		}
+		enable = { not = { has_tech = advanced_ship_hull_cruiser } }
 		target_variant = {
 			match_value = 4500.0
 			
@@ -832,9 +777,7 @@ ENG_naval_light_cruiser = {
 	}
 	cruiser_light_advanced = {
 		
-		priority = {
-			factor = 250
-		}
+		priority = { factor = 250 }
 		role_icon_index = 2
 		
 		target_variant = {
@@ -876,16 +819,9 @@ ENG_naval_light_AA_cruiser = {
 
 	category = naval
 	
-	blocked_for = {
-	}
+	available_for = { ENG }
 	
-	available_for = {
-		ENG
-	}
-	
-	roles = {
-		naval_cruiser_light
-	}
+	roles = { naval_cruiser_light }
 	
 	priority = {
 		factor = 50
@@ -893,7 +829,6 @@ ENG_naval_light_AA_cruiser = {
 			factor = 20
 			OR = {
 				has_war_with = USA
-				has_war_with = JAP
 			}
 		}
 	}
@@ -909,9 +844,7 @@ ENG_naval_light_AA_cruiser = {
 		
 		role_icon_index = 2
 
-		enable = {
-			has_tech = advanced_dp_light_battery
-		}
+		enable = { has_tech = advanced_dp_light_battery }
 		
 		target_variant = {
 			match_value = 2500.0
@@ -949,28 +882,17 @@ ENG_naval_light_AA_cruiser = {
 ENG_naval_cruiser_heavy = {
 	category = naval
 	
-	blocked_for = {
-	}
+	available_for = { ENG }
 	
-	available_for = {
-		ENG
-	}
+	roles = { naval_cruiser_heavy }
 	
-	roles = {
-		naval_cruiser_heavy
-	}
-	
-	priority = {
-		factor = 10
-	}
+	priority = { factor = 10 }
 
 	capital_cruiser_early = {
 	
 		priority = {
 			factor = 10
-			modifier = {
-				factor = 1
-			}
+			modifier = { factor = 1 }
 		}
 
 		role_icon_index = 1
@@ -1043,9 +965,7 @@ ENG_naval_cruiser_heavy = {
 	
 		priority = {
 			factor = 10
-			modifier = {
-				factor = 1
-			}
+			modifier = { factor = 1 }
 		}
 
 		role_icon_index = 1
@@ -1122,9 +1042,7 @@ ENG_naval_cruiser_heavy = {
 	
 		priority = {
 			factor = 1
-			modifier = {
-				factor = 50
-			}
+			modifier = { factor = 50 }
 		}
 
 		role_icon_index = 1
@@ -1161,9 +1079,7 @@ ENG_naval_cruiser_heavy = {
 	}
 	capital_cruiser_advanced = {
 	
-		priority = {
-			factor = 1
-		}
+		priority = { factor = 1 }
 
 		role_icon_index = 1
 		
@@ -1202,16 +1118,9 @@ ENG_naval_cruiser_heavy = {
 ENG_naval_capital_battleship = {
 	category = naval
 	
-	blocked_for = {
-	}
+	available_for = { ENG }
 	
-	available_for = {
-		ENG
-	}
-	
-	roles = {
-		naval_capital_bb
-	}
+	roles = { naval_capital_bb }
 	
 	priority = {
 		factor = 100
@@ -1224,9 +1133,7 @@ ENG_naval_capital_battleship = {
 	
 	capital_battleship_early = { 
 	
-		priority = {
-			factor = 1
-		}
+		priority = { factor = 1 }
 		enable = { not = { has_tech = basic_ship_hull_heavy } }
 		role_icon_index = 1
 		
@@ -1303,11 +1210,9 @@ ENG_naval_capital_battleship = {
 		}
 	}
 
-	capital_battleship_basic = { #KGV
+	capital_battleship_basic = {
 	
-		priority = {
-			factor = 25
-		}
+		priority = { factor = 25 }
 		enable = { not = { has_tech = improved_ship_hull_heavy } }
 		role_icon_index = 1
 
@@ -1343,7 +1248,7 @@ ENG_naval_capital_battleship = {
 		}
 	}
 
-	capital_battleship_basic_aa_upgrade = { #KGV now with AA
+	capital_battleship_basic_aa_upgrade = {
 	
 		priority = {
 			factor = 5
@@ -1384,11 +1289,9 @@ ENG_naval_capital_battleship = {
 			ship_airplane_launcher
 		}
 	}
-	capital_battleship_improved = {  #Lion
+	capital_battleship_improved = {
 	
-		priority = {
-			factor = 2000
-		}
+		priority = { factor = 2000 }
 		enable = { not = { has_tech = improved_ship_hull_heavy } }
 		role_icon_index = 1
 		
@@ -1422,11 +1325,9 @@ ENG_naval_capital_battleship = {
 			ship_heavy_armor
 		}
 	}
-	capital_battleship_improved_upgrade = { #Lion
+	capital_battleship_improved_upgrade = {
 	
-		priority = {
-			factor = 10
-		}
+		priority = { factor = 10 }
 		role_icon_index = 1
 		
 		target_variant = {
@@ -1459,11 +1360,9 @@ ENG_naval_capital_battleship = {
 			ship_heavy_armor
 		}
 	}
-	capital_battleship_advanced = { #Vanguard
+	capital_battleship_advanced = {
 	
-		priority = {
-			factor = 10
-		}
+		priority = { factor = 10 }
 		role_icon_index = 1
 		
 		target_variant = {
@@ -1502,27 +1401,15 @@ ENG_naval_capital_battleship = {
 ENG_naval_capital_bc = {
 	category = naval
 	
-	blocked_for = {
-		
-	}
+	available_for = { ENG }
 	
-	available_for = {
-		ENG
-	}
+	roles = { naval_capital_bc }
 	
-	roles = {
-		naval_capital_bc
-	}
-	
-	priority = {
-		factor = 25
-	}
+	priority = { factor = 25 }
 
 	battlecruiser_early = {
 	
-		priority = {
-			factor = 1
-		}
+		priority = { factor = 1 }
 		role_icon_index = 1
 		
 		target_variant = {
@@ -1564,7 +1451,7 @@ ENG_naval_capital_bc = {
 				has_war = yes
 				has_navy_size = {
 					unit = battle_cruiser 
-					size > 0 # at least one BC built
+					size > 0
 				}
 			}
 		}
@@ -1602,9 +1489,7 @@ ENG_naval_capital_bc = {
 	}
 	battlecruiser_improved = {
 	
-		priority = {
-			factor = 10
-		}
+		priority = { factor = 10 }
 		role_icon_index = 1
 		
 		target_variant = {
@@ -1683,20 +1568,11 @@ ENG_naval_capital_bc = {
 ENG_naval_carrier = {
 	category = naval
 	
-	blocked_for = {
-	}
+	available_for = { ENG }
 	
-	available_for = {
-		ENG
-	}
+	roles = { naval_carrier }
 	
-	roles = {
-		naval_carrier
-	}
-	
-	priority = {
-		factor = 750
-	}
+	priority = { factor = 750 	}
 
 	carrier_early = {
 	
@@ -1779,9 +1655,7 @@ ENG_naval_carrier = {
 
 	carrier_basic = {
 	
-		priority = {
-			factor = 2000
-		}
+		priority = { factor = 2000 }
 		enable = { not = { has_tech = improved_ship_hull_carrier } }
 		role_icon_index = 7
 		
@@ -1812,9 +1686,7 @@ ENG_naval_carrier = {
 
 	carrier_improved = {
 	
-		priority = {
-			factor = 1500
-		}
+		priority = { factor = 1500 }
 		role_icon_index = 7
 		
 		target_variant = {
@@ -1844,9 +1716,7 @@ ENG_naval_carrier = {
 	}
 	carrier_advanced = {
 	
-		priority = {
-			factor = 200
-		}
+		priority = { factor = 200 }
 		role_icon_index = 7
 		
 		target_variant = {
@@ -1880,16 +1750,9 @@ ENG_naval_carrier = {
 naval_carrier_light = {
 	category = naval
 	
-	blocked_for = {
-	}
+	available_for = { ENG }
 	
-	available_for = {
-		ENG
-	}
-	
-	roles = {
-		naval_carrier_light
-	}
+	roles = { naval_carrier_light }
 	
 	priority = {
 		factor = 50
@@ -1902,9 +1765,7 @@ naval_carrier_light = {
 
 	CVL_carrier = {
 	
-		priority = {
-			factor = 1
-		}
+		priority = { factor = 1 }
 		role_icon_index = 7		
 		
 		target_variant = {
@@ -1937,16 +1798,9 @@ naval_carrier_light = {
 naval_submarine = {
 	category = naval
 	
-	blocked_for = {
-	}
+	available_for = { ENG }
 	
-	available_for = {
-		ENG
-	}
-	
-	roles = {
-		naval_submarine
-	}
+	roles = { naval_submarine }
 	
 	priority = {
 		factor = 50
@@ -1960,9 +1814,7 @@ naval_submarine = {
 	
 		priority = {
 			factor = 10
-			modifier = {
-				factor = 1
-			}
+			modifier = { factor = 1 }
 		}
 		role_icon_index = 6
 		
@@ -1989,9 +1841,7 @@ naval_submarine = {
 	
 		priority = {
 			factor = 20
-			modifier = {
-				factor = 1
-			}
+			modifier = { factor = 1 }
 		}
 		role_icon_index = 6
 
@@ -2018,9 +1868,7 @@ naval_submarine = {
 	
 		priority = {
 			factor = 20
-			modifier = {
-				factor = 1
-			}
+			modifier = { factor = 1 }
 		}
 		role_icon_index = 6
 		
@@ -2051,7 +1899,7 @@ naval_submarine = {
 			factor = 50
 			modifier = {
 				factor = 15
-				has_war_with = JAP
+				has_war_with = USA
 			}
 		}
 		role_icon_index = 6
@@ -2082,16 +1930,9 @@ naval_submarine = {
 naval_mine_sweeper = {
 	category = naval
 	
-	blocked_for = {
-	}
+	available_for = { ENG }
 	
-	available_for = {
-		ENG
-	}
-	
-	roles = {
-		naval_mine_sweeper
-	}
+	roles = { naval_mine_sweeper }
 	
 	priority = {
 		factor = 2
@@ -2101,13 +1942,11 @@ naval_mine_sweeper = {
 		}
 	}
 	
-	mine_sweeper_light_early = { # base variant
+	mine_sweeper_light_early = {
 	
 		priority = {
 			factor = 100
-			modifier = {
-				factor = 1
-			}
+			modifier = { factor = 1 }
 		}
 		role_icon_index = 5
 		enable = { has_tech = basic_naval_mines }
@@ -2123,9 +1962,7 @@ naval_mine_sweeper = {
 				fixed_ship_fire_control_system_slot = empty
 			}
 		}
-		requirements = {
-			module = ship_mine_sweeper_1
-		}
+		requirements = { module = ship_mine_sweeper_1 }
 		allowed_modules = {
 			ship_mine_warfare
 			dp_light_battery
@@ -2137,13 +1974,11 @@ naval_mine_sweeper = {
 			ship_sonar
 		}
 	}
-	mine_sweeper_light_late = { #improved variant for late war
+	mine_sweeper_light_late = {
 	
 		priority = {
 			factor = 120
-			modifier = {
-				factor = 1
-			}
+			modifier = { factor = 1 }
 		}
 		role_icon_index = 5
 
@@ -2171,9 +2006,7 @@ naval_mine_sweeper = {
 			}
 		}
 		
-		requirements = {
-			module = ship_mine_sweeper_1
-		}
+		requirements = { module = ship_mine_sweeper_1 }
 		allowed_modules = {
 			ship_mine_sweeper_1
 			ship_mine_warfare
@@ -2191,16 +2024,9 @@ naval_mine_sweeper = {
 naval_mine_layer = {
 	category = naval
 	
-	blocked_for = {
-	}
+	available_for = { ENG }
 	
-	available_for = {
-		ENG
-	}
-	
-	roles = {
-		naval_mine_layer
-	}
+	roles = { naval_mine_layer }
 	
 	priority = {
 		factor = 3
@@ -2214,9 +2040,7 @@ naval_mine_layer = {
 	
 		priority = {
 			factor = 20
-			modifier = {
-				factor = 10
-			}
+			modifier = { factor = 10 }
 		}
 		role_icon_index = 4
 		
@@ -2236,9 +2060,7 @@ naval_mine_layer = {
 			}
 		}
 		
-		requirements = {
-			module = ship_mine_layer_1
-		}
+		requirements = { module = ship_mine_layer_1 }
 		allowed_modules = {
 			ship_mine_layer_1
 			ship_anti_air
@@ -2271,9 +2093,7 @@ naval_mine_layer = {
 			}
 		}
 		
-		requirements = {
-			module = ship_mine_layer_sub
-		}
+		requirements = { module = ship_mine_layer_sub }
 		allowed_modules = {
 			
 			ship_torpedo_sub
@@ -2313,9 +2133,7 @@ naval_mine_layer = {
 			}
 		}
 		
-		requirements = {
-			module = ship_mine_layer_1
-		}
+		requirements = { module = ship_mine_layer_1 }
 		allowed_modules = {
 			ship_mine_layer_1
 			ship_anti_air

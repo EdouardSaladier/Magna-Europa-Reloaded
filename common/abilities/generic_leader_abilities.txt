@@ -10,7 +10,6 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
-			OWNER = { if = { limit = { has_dlc = "Waking the Tiger" } } }
 		}
 		
 		ai_will_do = {
@@ -233,9 +232,7 @@ ability = {
 		
 		unit_modifiers = {
 			river_crossing_factor = -0.4
-			river = {
-				attack = 0.2
-			}
+			river = { attack = 0.2 }
 		}
 		
 		cost = 0.1

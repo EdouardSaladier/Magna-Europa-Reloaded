@@ -1,30 +1,22 @@
-# AI tank design for testing
-
 FRA_light_tanks = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_light_tank
-	}
+	roles = { land_light_tank }
 
-	priority = {
-		factor = 1000
-	}
+	priority = { factor = 1000 }
 
 	great_war_tank_default = {
 		priority = {
 			factor = 1
 			modifier = { 
 				has_tech = basic_light_tank_chassis
-				factor = 0 #let's not waste XP here
+				factor = 0
 			}
 		}
 
-		target_variant = { #FT-17
+		target_variant = {
 			match_value = 1000
 			type = light_tank_chassis_0
 			modules = {
@@ -59,12 +51,12 @@ FRA_light_tanks = {
 		}
 	}
 
-	basic_light_tank_default = { #H35
+	basic_light_tank_default = {
 		priority = {
 			factor = 100
 			modifier = { 
 				has_tech = improved_light_tank_chassis 
-				factor = 0 #let's not waste XP here
+				factor = 0
 			}
 		}
 
@@ -77,7 +69,6 @@ FRA_light_tanks = {
 						tank_close_support_gun 
 						tank_small_cannon_2 
 						tank_small_cannon 
-
 					} 
 				}
 				turret_type_slot = tank_light_one_man_tank_turret
@@ -102,7 +93,6 @@ FRA_light_tanks = {
 		}
 
 		allowed_modules = {
- 
 			tank_small_cannon 
 			tank_small_cannon_2 
 			tank_close_support_gun 
@@ -114,12 +104,12 @@ FRA_light_tanks = {
 		}
 	}
 
-	improved_light_tank_default = { #FCM36
+	improved_light_tank_default = {
 		priority = {
 			factor = 100
 			modifier = { 
 				has_tech = advanced_light_tank_chassis 
-				factor = 0 #let's not waste XP here
+				factor = 0
 			}
 		}
 
@@ -133,7 +123,6 @@ FRA_light_tanks = {
 						tank_close_support_gun 
 						tank_high_velocity_cannon 
 						tank_small_cannon 
-						 
 					} 
 				}
 				turret_type_slot = tank_light_one_man_tank_turret
@@ -174,9 +163,7 @@ FRA_light_tanks = {
 	}
 
 	advanced_light_tank_default = {
-		priority = {
-			factor = 10
-		}
+		priority = {factor = 10}
 
 		target_variant = {
 			match_value = 4000
@@ -229,32 +216,21 @@ FRA_light_tanks = {
 FRA_light_tank_destroyers = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_light_tank_destroyer
-	}
+	roles = { land_light_tank_destroyer }
 
 	priority = {
 		factor = 10
 		modifier = {
 			NOT = { has_tech = basic_medium_tank_chassis } 
-			any_enemy_country = {
-				has_tech = basic_medium_tank_chassis
-			}
+			any_enemy_country = { has_tech = basic_medium_tank_chassis }
 			factor = 15
 		}
 	}
 	light_tank_destroyer_1 = {
-		priority = {
-			factor = 10
-			
-		}
-		enable = {
-			has_tech = interwar_antitank
-		}
+		priority = { factor = 10 }
+		enable = { has_tech = interwar_antitank }
 
 		target_variant = {
 			match_value = 1000
@@ -291,10 +267,7 @@ FRA_light_tank_destroyers = {
 		}
 	}
 	light_tank_destroyer_2 = {
-		priority = {
-			factor = 20
-			
-		}
+		priority = { factor = 20 }
 		enable = {
 			OR = {
 				has_tech = interwar_antitank
@@ -355,25 +328,14 @@ FRA_light_tank_destroyers = {
 FRA_light_tank_artillery = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_light_tank_artillery
-	}
+	roles = { land_light_tank_artillery }
 
-	priority = {
-		factor = 50
-	}
+	priority = { factor = 50 }
 	light_tank_artillery_1 = {
-		priority = {
-			factor = 10
-			
-		}
-		enable = {
-			has_tech = interwar_artillery
-		}
+		priority = { factor = 10 }
+		enable = { has_tech = interwar_artillery }
 
 		target_variant = {
 			match_value = 1000
@@ -410,13 +372,8 @@ FRA_light_tank_artillery = {
 		}
 	}
 	light_tank_artillery_2 = {
-		priority = {
-			factor = 20
-			
-		}
-		enable = {
-				has_tech = interwar_artillery
-		}
+		priority = { factor = 20 }
+		enable = { has_tech = interwar_artillery }
 
 		target_variant = {
 			match_value = 1500
@@ -454,13 +411,8 @@ FRA_light_tank_artillery = {
 	}
 
 	light_tank_artillery_3 = {
-		priority = {
-			factor = 20
-			
-		}
-		enable = {
-			has_tech = artillery1
-		}
+		priority = { factor = 20 }
+		enable = { has_tech = artillery1 }
 
 		target_variant = {
 			match_value = 2000
@@ -502,32 +454,21 @@ FRA_light_tank_artillery = {
 FRA_light_tank_anti_air = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_light_tank_anti_air
-	}
+	roles = { land_light_tank_anti_air }
 
 	priority = {
 		factor = 5
 		modifier = {
-			NOT = { has_tech = fighter2 } #we should probably do something about that air superiority...
-			any_enemy_country = {
-				has_tech = fighter2
-			}
+			NOT = { has_tech = fighter2 }
+			any_enemy_country = { has_tech = fighter2 }
 			factor = 3
 		}
 	}
 	light_tank_anti_air_1 = {
-		priority = {
-			factor = 1
-			
-		}
-		enable = {
-			has_tech = interwar_antiair
-		}
+		priority = { factor = 1 }
+		enable = { has_tech = interwar_antiair }
 
 		target_variant = {
 			match_value = 1000
@@ -564,13 +505,8 @@ FRA_light_tank_anti_air = {
 		}
 	}
 	light_tank_anti_air_2 = {
-		priority = {
-			factor = 2
-			
-		}
-		enable = {
-			has_tech = antiair2
-		}
+		priority = { factor = 2 }
+		enable = { has_tech = antiair2 }
 
 		target_variant = {
 			match_value = 1500
@@ -608,13 +544,8 @@ FRA_light_tank_anti_air = {
 	}
 
 	light_tank_anti_air_3 = {
-		priority = {
-			factor = 2
-			
-		}
-		enable = {
-			has_tech = antiair5
-		}
+		priority = { factor = 2 }
+		enable = { has_tech = antiair5 }
 
 		target_variant = {
 			match_value = 2500
@@ -655,24 +586,18 @@ FRA_light_tank_anti_air = {
 FRA_medium_tanks = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_medium_tank
-	}
+	roles = { land_medium_tank }
 
-	priority = {
-		factor = 2000
-	}
+	priority = { factor = 2000 }
 
-	basic_medium_tank_default = { #Somua S35
+	basic_medium_tank_default = {
 		priority = {
 			factor = 100
 			modifier = { 
 				has_tech = improved_medium_tank_chassis
-				factor = 0 #let's not waste XP here
+				factor = 0
 			}
 		}
 
@@ -709,7 +634,6 @@ FRA_medium_tanks = {
 		}
 
 		allowed_modules = {
-			
 			tank_small_cannon 
 			tank_small_cannon_2 
 			tank_close_support_gun 
@@ -721,12 +645,12 @@ FRA_medium_tanks = {
 		}
 	}
 
-	improved_medium_tank_default = {#AMC 35
+	improved_medium_tank_default = {
 		priority = {
 			factor = 100
 			modifier = { 
 				has_tech = advanced_medium_tank_chassis 
-				factor = 0 #let's not waste XP here
+				factor = 0
 			}
 		}
 
@@ -778,10 +702,8 @@ FRA_medium_tanks = {
 		}
 	}
 
-	advanced_medium_tank_default = { #SARL42
-		priority = {
-			factor = 200
-		}
+	advanced_medium_tank_default = {
+		priority = { factor = 200 }
 
 		target_variant = {
 			match_value = 4000
@@ -819,9 +741,7 @@ FRA_medium_tanks = {
 					}
 					modifier = {
 						add = 3
-						any_enemy_country = {
-							is_major = yes
-						}
+						any_enemy_country = { is_major = yes }
 					}
 				}
 			}
@@ -846,32 +766,21 @@ FRA_medium_tanks = {
 FRA_medium_tank_destroyer = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_medium_tank_destroyer
-	}
+	roles = { land_medium_tank_destroyer }
 
 	priority = {
 		factor = 50
 		modifier = {
 			NOT = { has_tech = basic_heavy_tank_chassis } 
-			any_enemy_country = {
-				has_tech = basic_heavy_tank_chassis
-			}
+			any_enemy_country = { has_tech = basic_heavy_tank_chassis }
 			factor = 3
 		}
 	}
 	medium_tank_destroyer_1 = {
-		priority = {
-			factor = 10
-			
-		}
-		enable = {
-			has_tech = interwar_antitank
-		}
+		priority = { factor = 10 }
+		enable = { has_tech = interwar_antitank }
 
 		target_variant = {
 			match_value = 1000
@@ -916,10 +825,7 @@ FRA_medium_tank_destroyer = {
 		}
 	}
 	medium_tank_destroyer_2 = {
-		priority = {
-			factor = 20
-			
-		}
+		priority = { factor = 20 }
 		enable = {
 			OR = {
 				has_tech = interwar_antitank
@@ -976,10 +882,7 @@ FRA_medium_tank_destroyer = {
 	}
 
 	medium_tank_destroyer_3 = {
-		priority = {
-			factor = 20
-			
-		}
+		priority = { factor = 20 }
 		enable = {
 			OR = {
 				has_tech = antitank3
@@ -1043,25 +946,14 @@ FRA_medium_tank_destroyer = {
 FRA_medium_tank_artillery = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_medium_tank_artillery
-	}
+	roles = { land_medium_tank_artillery }
 
-	priority = {
-		factor = 50
-	}
+	priority = { factor = 50 }
 	medium_tank_artillery_1 = {
-		priority = {
-			factor = 10
-			
-		}
-		enable = {
-			has_tech = interwar_artillery
-		}
+		priority = { factor = 10 }
+		enable = { has_tech = interwar_artillery }
 
 		target_variant = {
 			match_value = 1000
@@ -1098,13 +990,8 @@ FRA_medium_tank_artillery = {
 		}
 	}
 	medium_tank_artillery_2 = {
-		priority = {
-			factor = 20
-			
-		}
-		enable = {
-				has_tech = interwar_artillery
-		}
+		priority = { factor = 20 }
+		enable = { has_tech = interwar_artillery }
 
 		target_variant = {
 			match_value = 1500
@@ -1142,13 +1029,8 @@ FRA_medium_tank_artillery = {
 	}
 
 	medium_tank_artillery_3 = {
-		priority = {
-			factor = 20
-			
-		}
-		enable = {
-			has_tech = artillery1
-		}
+		priority = { factor = 20 }
+		enable = { has_tech = artillery1 }
 
 		target_variant = {
 			match_value = 2000
@@ -1190,32 +1072,21 @@ FRA_medium_tank_artillery = {
 FRA_medium_tank_anti_air = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_medium_tank_anti_air
-	}
+	roles = { land_medium_tank_anti_air }
 
 	priority = {
 		factor = 5
 		modifier = {
-			NOT = { has_tech = fighter2 } #we should probably do something about that air superiority...
-			any_enemy_country = {
-				has_tech = fighter2
-			}
+			NOT = { has_tech = fighter2 }
+			any_enemy_country = { has_tech = fighter2 }
 			factor = 3
 		}
 	}
 	medium_tank_anti_air_1 = {
-		priority = {
-			factor = 1
-			
-		}
-		enable = {
-			has_tech = interwar_antiair
-		}
+		priority = { factor = 1 }
+		enable = { has_tech = interwar_antiair }
 
 		target_variant = {
 			match_value = 1000
@@ -1252,13 +1123,8 @@ FRA_medium_tank_anti_air = {
 		}
 	}
 	medium_tank_anti_air_2 = {
-		priority = {
-			factor = 2
-			
-		}
-		enable = {
-			has_tech = antiair2
-		}
+		priority = { factor = 2 }
+		enable = { has_tech = antiair2 }
 
 		target_variant = {
 			match_value = 1500
@@ -1296,13 +1162,8 @@ FRA_medium_tank_anti_air = {
 	}
 
 	medium_tank_anti_air_3 = {
-		priority = {
-			factor = 2
-			
-		}
-		enable = {
-			has_tech = antiair5
-		}
+		priority = { factor = 2 }
+		enable = { has_tech = antiair5 }
 
 		target_variant = {
 			match_value = 2500
@@ -1339,17 +1200,13 @@ FRA_medium_tank_anti_air = {
 		}
 	}
 }
-###HEAVY TANKS
+
 FRA_heavy_tanks = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_heavy_tank
-	}
+	roles = { land_heavy_tank }
 
 	priority = {
 		factor = 200
@@ -1359,18 +1216,17 @@ FRA_heavy_tanks = {
 		}
 	}
 
-	basic_heavy_tank_default = { #Char B1 Bis
+	basic_heavy_tank_default = {
 		priority = {
 			factor = 10
 			modifier = { 
 				has_tech = improved_heavy_tank_chassis 
-				factor = 0 #let's not waste XP here
+				factor = 0
 			}
 			modifier = {
 				has_completed_focus = FRA_division_cuirassee
 				factor = 25
 			}
-			
 		}
 
 		target_variant = {
@@ -1394,7 +1250,6 @@ FRA_heavy_tanks = {
 		}
 
 		allowed_modules = {
-			
 			tank_medium_howitzer
 			tank_heavy_fixed_superstructure_turret
 			tank_bogie_suspension
@@ -1414,7 +1269,7 @@ FRA_heavy_tanks = {
 			factor = 10
 			modifier = { 
 				has_tech = advanced_heavy_tank_chassis 
-				factor = 0 #let's not waste XP here
+				factor = 0
 			}
 		}
 
@@ -1454,9 +1309,7 @@ FRA_heavy_tanks = {
 						has_war = yes
 					}
 					modifier = {
-						any_enemy_country = {
-							is_major = yes
-						}
+						any_enemy_country = { is_major = yes }
 						add = 3
 					}
 				}
@@ -1481,10 +1334,8 @@ FRA_heavy_tanks = {
 		}
 	}
 
-	advanced_heavy_tank_default = { #ARL44
-		priority = {
-			factor = 10
-		}
+	advanced_heavy_tank_default = {
+		priority = { factor = 10 }
 
 		target_variant = {
 			match_value = 4000
@@ -1546,32 +1397,21 @@ FRA_heavy_tanks = {
 FRA_heavy_tank_destroyer = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_heavy_tank_destroyer
-	}
+	roles = { land_heavy_tank_destroyer }
 
 	priority = {
 		factor = 50
 		modifier = {
 			NOT = { has_tech = basic_heavy_tank_chassis } 
-			any_enemy_country = {
-				has_tech = basic_heavy_tank_chassis
-			}
+			any_enemy_country = { has_tech = basic_heavy_tank_chassis }
 			factor = 3
 		}
 	}
 	heavy_tank_destroyer_1 = {
-		priority = {
-			factor = 10
-			
-		}
-		enable = {
-			has_tech = antitank2
-		}
+		priority = { factor = 10 }
+		enable = { has_tech = antitank2 }
 
 		target_variant = {
 			match_value = 1000
@@ -1616,10 +1456,7 @@ FRA_heavy_tank_destroyer = {
 		}
 	}
 	heavy_tank_destroyer_2 = {
-		priority = {
-			factor = 20
-			
-		}
+		priority = { factor = 20 }
 		enable = {
 			OR = {
 				has_tech = interwar_antitank
@@ -1679,10 +1516,7 @@ FRA_heavy_tank_destroyer = {
 	}
 
 	heavy_tank_destroyer_3 = {
-		priority = {
-			factor = 20
-			
-		}
+		priority = { factor = 20 }
 		enable = {
 			OR = {
 				has_tech = antitank3
@@ -1745,25 +1579,14 @@ FRA_heavy_tank_destroyer = {
 FRA_heavy_tank_artillery = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_heavy_tank_artillery
-	}
+	roles = { land_heavy_tank_artillery }
 
-	priority = {
-		factor = 50
-	}
+	priority = { factor = 50 }
 	heavy_tank_artillery_1 = {
-		priority = {
-			factor = 10
-			
-		}
-		enable = {
-			has_tech = interwar_artillery
-		}
+		priority = { factor = 10 }
+		enable = { has_tech = interwar_artillery }
 
 		target_variant = {
 			match_value = 1000
@@ -1800,13 +1623,8 @@ FRA_heavy_tank_artillery = {
 		}
 	}
 	heavy_tank_artillery_2 = {
-		priority = {
-			factor = 20
-			
-		}
-		enable = {
-				has_tech = interwar_artillery
-		}
+		priority = { factor = 20 }
+		enable = { has_tech = interwar_artillery }
 
 		target_variant = {
 			match_value = 1500
@@ -1845,13 +1663,8 @@ FRA_heavy_tank_artillery = {
 	}
 
 	heavy_tank_artillery_3 = {
-		priority = {
-			factor = 20
-			
-		}
-		enable = {
-			has_tech = artillery5
-		}
+		priority = { factor = 20 }
+		enable = { has_tech = artillery5 }
 
 		target_variant = {
 			match_value = 2000
@@ -1893,32 +1706,21 @@ FRA_heavy_tank_artillery = {
 FRA_heavy_tank_anti_air = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_heavy_tank_anti_air
-	}
+	roles = { land_heavy_tank_anti_air }
 
 	priority = {
 		factor = 5
 		modifier = {
-			NOT = { has_tech = fighter2 } #we should probably do something about that air superiority...
-			any_enemy_country = {
-				has_tech = fighter2
-			}
+			NOT = { has_tech = fighter2 }
+			any_enemy_country = { has_tech = fighter2 }
 			factor = 3
 		}
 	}
 	heavy_tank_anti_air_1 = {
-		priority = {
-			factor = 1
-			
-		}
-		enable = {
-			has_tech = interwar_antiair
-		}
+		priority = { factor = 1 }
+		enable = { has_tech = interwar_antiair }
 
 		target_variant = {
 			match_value = 1000
@@ -1955,13 +1757,8 @@ FRA_heavy_tank_anti_air = {
 		}
 	}
 	heavy_tank_anti_air_2 = {
-		priority = {
-			factor = 2
-			
-		}
-		enable = {
-			has_tech = antiair2
-		}
+		priority = { factor = 2 }
+		enable = { has_tech = antiair2 }
 
 		target_variant = {
 			match_value = 1500
@@ -1999,13 +1796,8 @@ FRA_heavy_tank_anti_air = {
 	}
 
 	heavy_tank_anti_air_3 = {
-		priority = {
-			factor = 2
-			
-		}
-		enable = {
-			has_tech = antiair5
-		}
+		priority = { factor = 2 }
+		enable = { has_tech = antiair5 }
 
 		target_variant = {
 			match_value = 2500
@@ -2046,13 +1838,9 @@ FRA_heavy_tank_anti_air = {
 FRA_super_heavy_tanks = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_super_heavy_tank
-	}
+	roles = { land_super_heavy_tank }
 
 	priority = {
 		factor = 10
@@ -2104,9 +1892,7 @@ FRA_super_heavy_tanks = {
 						has_war = yes
 					}
 					modifier = {
-						any_enemy_country = {
-							is_major = yes
-						}
+						any_enemy_country = { is_major = yes }
 						add = 5
 					}
 				}
@@ -2114,7 +1900,6 @@ FRA_super_heavy_tanks = {
 		}
 
 		allowed_modules = {
-			
 			tank_high_velocity_cannon_2 
 			tank_high_velocity_cannon_3 
 			tank_heavy_cannon 
@@ -2138,13 +1923,9 @@ FRA_super_heavy_tanks = {
 FRA_modern_tanks = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_modern_tank
-	}
+	roles = { land_modern_tank }
 
 	priority = {
 		factor = 200
@@ -2155,9 +1936,7 @@ FRA_modern_tanks = {
 	}
 
 	basic_modern_tank_default = {
-		priority = {
-			factor = 100
-		}
+		priority = { factor = 100 }
 
 		target_variant = {
 			match_value = 1000
@@ -2190,9 +1969,7 @@ FRA_modern_tanks = {
 						has_war = yes
 					}
 					modifier = {
-						any_enemy_country = {
-							is_major = yes
-						}
+						any_enemy_country = { is_major = yes }
 						add = 1
 					}
 				}
@@ -2200,7 +1977,6 @@ FRA_modern_tanks = {
 		}
 
 		allowed_modules = {
-			
 			tank_high_velocity_cannon_2 
 			tank_high_velocity_cannon_3 
 			tank_heavy_cannon 
@@ -2223,13 +1999,9 @@ FRA_modern_tanks = {
 FRA_modern_tank_destroyer = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_modern_tank_destroyer
-	}
+	roles = { land_modern_tank_destroyer }
 
 	priority = {
 		factor = 200
@@ -2240,10 +2012,7 @@ FRA_modern_tank_destroyer = {
 	}
 
 	basic_modern_tank_destroyer_default = {
-		priority = {
-			factor = 10
-			
-		}
+		priority = { factor = 10 }
 
 		target_variant = {
 			match_value = 1000
@@ -2276,9 +2045,7 @@ FRA_modern_tank_destroyer = {
 						has_war = yes
 					}
 					modifier = {
-						any_enemy_country = {
-							is_major = yes
-						}
+						any_enemy_country = { is_major = yes }
 						add = 2
 					}
 				}
@@ -2286,7 +2053,6 @@ FRA_modern_tank_destroyer = {
 		}
 
 		allowed_modules = {
-			
 			tank_high_velocity_cannon_2 
 			tank_high_velocity_cannon_3 
 			tank_heavy_cannon 
@@ -2309,26 +2075,17 @@ FRA_modern_tank_destroyer = {
 FRA_amphibious_tanks = {
 	category = land
 
-	blocked_for = {}
-
 	available_for = {FRA}
 
-	roles = {
-		land_amphibious_tank
-	}
+	roles = { land_amphibious_tank }
 
-	priority = {
-		factor = 20
-	}
+	priority = { factor = 20 }
 
 	basic_amphibious_tank_default = {
 		priority = {
 			factor = 10
 			modifier = { 
-				OR = {
-					TAG = USA
-					TAG = JAP
-				}
+				OR = { TAG = USA }
 				factor = 5
 			}
 			
@@ -2363,9 +2120,7 @@ FRA_amphibious_tanks = {
 						has_war = yes
 					}
 					modifier = {
-						any_enemy_country = {
-							is_major = yes
-						}
+						any_enemy_country = { is_major = yes }
 						add = 3
 					}
 				}
