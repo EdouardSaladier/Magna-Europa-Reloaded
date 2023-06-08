@@ -2211,7 +2211,15 @@ on_actions = {
 						add_core_of = BGN
 					}
 				}
-				else = {
+				else_if = {
+					limit = {
+						NOT = {
+							has_game_rule = {
+								rule = fra_fragmentation_status
+								option = FRA_REGIONS
+							}
+						}
+					}
 					every_state = {
 						limit = {
 							is_core_of = FRA
