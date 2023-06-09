@@ -756,3 +756,154 @@ country_event = { #Finalization
 		}
 	}
 }
+
+country_event = { #A call for help
+	id = mer_event.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.18 FROM = [From.GetName]" }
+	title = mer_event.18.t
+	desc = mer_event.18.desc
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mer_event.18.a 
+		GER = { country_event = { id = mer_event.19 hours = 1 } }
+	}
+}
+
+country_event = { #Response to Carpatho-Ukraine call for help
+	id = mer_event.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.19 FROM = [From.GetName]" }
+	title = mer_event.19.t
+	desc = mer_event.19.desc
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { #Ok
+		name = mer_event.19.a 
+		puppet = CRP
+		CRP = { country_event = { id = mer_event.22 hours = 1 } }
+		HUN = { country_event = { id = mer_event.23 hours = 1 } }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+	option = { #No
+		name = mer_event.19.b 
+		CRP = { country_event = { id = mer_event.20 hours = 1 } }
+		HUN = { country_event = { id = mer_event.21 hours = 1 } }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				HUN = { is_friend_or_potential_friend_of_GER = yes }
+				factor = 0.02
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mer_event.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.20 FROM = [From.GetName]" }
+	title = mer_event.20.t
+	desc = mer_event.20.desc
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { #We are screwed
+		name = mer_event.20.a 
+	}
+}
+
+country_event = {
+	id = mer_event.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.21 FROM = [From.GetName]" }
+	title = mer_event.21.t
+	desc = mer_event.21.desc
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { #Move in
+		name = mer_event.21.a 
+		declare_war_on = {
+			target = CRP
+			type = annex_everything
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = { #No
+		name = mer_event.21.b 
+		ai_chance = {
+			factor = 25
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mer_event.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.22 FROM = [From.GetName]" }
+	title = mer_event.22.t
+	desc = mer_event.22.desc
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { #Thank goodness
+		name = mer_event.22.a 
+		effect_tooltip = {
+			FROM = { puppet = ROOT }
+		}
+	}
+}
+
+country_event = {
+	id = mer_event.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.23 FROM = [From.GetName]" }
+	title = mer_event.23.t
+	desc = mer_event.23.desc
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { #Really Germany
+		name = mer_event.23.a 
+		add_opinion_modifier = {
+			target = GER
+			modifier = large_decrease
+		}
+		ai_chance = {
+			factor = 75
+			modifier = {
+				HUN = { is_friend_or_potential_friend_of_GER = yes }
+				factor = 1.5
+			}
+		}
+	}
+	
+	option = { #Don't respond
+		name = mer_event.23.b 
+		ai_chance = {
+			factor = 25
+		}
+	}
+}

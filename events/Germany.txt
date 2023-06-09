@@ -1950,6 +1950,7 @@ country_event = {
 				factor = 2.0
 			}
 		}
+		set_cosmetic_tag = CZE_hyphen #would be a separate flavor event dealing with edward benes resigning
 		GER = { country_event = germany.50 }
 	}
 	option = { # Refuse anyway
@@ -2281,6 +2282,20 @@ country_event = {
 				}
 			}
 		}
+		hidden_effect = {
+			CRP = {
+				add_state_core = 2929
+				add_state_core = 2930
+			}
+			every_core_state = {
+				limit = {
+					is_core_of = CRP
+				}
+				remove_core_of = ROOT
+			}
+		}
+		release = CRP
+		CRP = { country_event = mer_event.18 }
 		GER = { country_event = germany.55 }
 		if = {
 			limit = {
@@ -2754,109 +2769,6 @@ country_event = {
 					}
 				}
 				SLO = { transfer_state = 2978 }
-			}
-		}
-		if = {
-			limit = {
-				593 = { is_owned_by = HUN }
-				HUN = {
-					is_friend_or_potential_friend_of_GER = yes
-				}
-				AND = {
-					2929 = {
-						OR = {
-							is_owned_by = CZE
-							is_owned_by = GER
-						}
-					}
-					1607 = {
-						OR = {
-							is_owned_by = CZE
-							is_owned_by = GER
-						}
-					}
-					1608 = {
-						OR = {
-							is_owned_by = CZE
-							is_owned_by = GER
-						}
-					}
-					2247 = {
-						OR = {
-							is_owned_by = CZE
-							is_owned_by = GER
-						}
-					}
-					564 = {
-						OR = {
-							is_owned_by = CZE
-							is_owned_by = GER
-						}
-					}
-				}
-				country_exists = HUN
-			}
-			HUN = {
-				custom_effect_tooltip = mer_transfer_transcarpathia
-				hidden_effect = {
-					transfer_state = 2929
-					transfer_state = 1607
-					transfer_state = 1608
-					transfer_state = 2247
-					transfer_state = 564
-				}
-			}
-		}
-
-
-		if = {
-			limit = {
-				OR = {
-					NOT = { 593 = { is_owned_by = HUN } }
-					HUN = { is_friend_or_potential_friend_of_GER = no }
-				}
-				AND = {
-					2929 = {
-						OR = {
-							is_owned_by = CZE
-							is_owned_by = GER
-						}
-					}
-					1607 = {
-						OR = {
-							is_owned_by = CZE
-							is_owned_by = GER
-						}
-					}
-					1608 = {
-						OR = {
-							is_owned_by = CZE
-							is_owned_by = GER
-						}
-					}
-					2247 = {
-						OR = {
-							is_owned_by = CZE
-							is_owned_by = GER
-						}
-					}
-					564 = {
-						OR = {
-							is_owned_by = CZE
-							is_owned_by = GER
-						}
-					}
-				}
-			}
-			SLO = {
-				custom_effect_tooltip = mer_transfer_transcarpathia
-				hidden_effect = {
-					transfer_state = 2929
-					transfer_state = 1607
-					transfer_state = 1608
-					transfer_state = 2247
-					transfer_state = 564
-				}
 			}
 		}
 
