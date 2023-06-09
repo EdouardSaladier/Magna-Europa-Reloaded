@@ -2295,7 +2295,10 @@ country_event = {
 			}
 		}
 		release = CRP
-		CRP = { country_event = mer_event.18 }
+		CRP = { 
+			set_cosmetic_tag = CRP_ukraine
+			country_event = mer_event.18 
+		}
 		GER = { country_event = germany.55 }
 		if = {
 			limit = {
