@@ -805,10 +805,6 @@ country_event = { #Response to Carpatho-Ukraine call for help
 				HUN = { is_friend_or_potential_friend_of_GER = yes }
 				factor = 0.02
 			}
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
 		}
 	}
 }
