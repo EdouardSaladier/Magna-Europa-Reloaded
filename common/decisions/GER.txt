@@ -3054,7 +3054,11 @@ political_actions = {
 				}
 				every_state = {
 					limit = {
-						is_core_of = VJV
+						OR = {
+							is_core_of = VJV
+							state = 695
+							state = 712
+						}
 						NOT = { 
 							is_core_of = BNT 
 							state = 2555
