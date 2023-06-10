@@ -7861,6 +7861,12 @@ country_event = {
 		every_state = {
 			limit = {
 				is_core_of = MNT
+				owner = {
+					OR = {
+						tag = PREV
+						is_subject_of = PREV
+					}	
+				}
 			}
 			add_compliance = 15
 			transfer_state_to = ROOT
