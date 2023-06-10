@@ -4938,6 +4938,7 @@ country_event = {
 			2341 = { transfer_state_to = GER }
 			264 = { transfer_state_to = GER }
 			267 = { transfer_state_to = GER }
+			1979 = { transfer_state_to = GER }
 		}
 		if = {
 			limit = {
@@ -4986,7 +4987,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = POL
-			generator = { 287 310 2567 546 2341 264 267 }
+			generator = { 287 310 2567 546 2341 264 267 1979 }
 		}
 	}
 }
