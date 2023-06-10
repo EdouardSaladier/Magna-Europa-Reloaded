@@ -6813,6 +6813,19 @@ country_event = {
 			}
 			add_core_of = YUG
 		}
+		if = {
+			limit = {
+				any_country_with_original_tag = {
+					original_tag_to_check = ITA
+					is_in_faction_with = GER
+				}
+			}
+			FRA = {
+				add_state_core = 1983
+				add_state_core = 1984
+				add_state_core = 1985
+			}
+		}
 		hidden_effect = {
 			news_event = { days = 1 id = news.236 }
 		}

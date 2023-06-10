@@ -199,22 +199,13 @@ on_actions = {
 					right_side = ITA_king_side
 					set_default = yes
 				}
-
-				#Drop cosmetic tag so that Regno del Sud becomes Italy again
 				if = {
 					limit = {
-						has_cosmetic_tag = ITA_rds
-					}
-					drop_cosmetic_tag = yes
-					#Move capital back to Rome if necessary
-					if = {
-						limit = {
-							capital_scope = {
-								NOT = { state = 876 } #ROME
-							}
+						capital_scope = {
+							NOT = { state = 876 } #ROME
 						}
-						set_capital = { state = 876 }
 					}
+					set_capital = { state = 876 }
 				}
 			}
 		}
