@@ -633,7 +633,10 @@ focus_tree = {
 				}
 				if = { 
 					limit = { 
-						354 = { is_claimed_by = ENG }
+						any_state = {
+							is_core_of = WAM
+							is_claimed_by = ENG
+						}
 					}
 					ENG = {
 						country_event = { id = bftb_greece.229 }
@@ -641,11 +644,10 @@ focus_tree = {
 				}
 				if = { 
 					limit = { 
-						344 = { is_claimed_by = FRA }
-						350 = { is_claimed_by = FRA }
-						352 = { is_claimed_by = FRA }
-						353 = { is_claimed_by = FRA }
-						800 = { is_claimed_by = FRA }
+						any_state = {
+							is_core_of = ART
+							is_claimed_by = FRA
+						}
 					}
 					FRA = { 
 						country_event = { id = bftb_greece.229 }
