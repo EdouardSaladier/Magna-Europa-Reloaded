@@ -8717,14 +8717,44 @@
 				}
 				every_state = {
 					limit = {
-						is_core_of = SAX
+						OR = {
+							is_core_of = SAX
+							is_core_of = LUS
+							state = 1645
+							state = 411
+							state = 1677
+							state = 1678
+							state = 1679
+							state = 440
+						}
 						is_controlled_by = FRA
 					}
 					transfer_state_to = SAX
+					add_core_of = SAX
 				}
 				puppet = SAX
 			}
-			if = { #set up Mecklenburg puppet
+			if = { #set up Thuringia puppet
+				limit = {
+					1685  = { is_owned_or_subject_trigger = yes }
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = THU
+							state = 1689
+							state = 2533
+							state = 1682
+							state = 1683
+						}
+						is_controlled_by = FRA
+					}
+					transfer_state_to = THU
+					add_core_of = THU
+				}
+				puppet = THU
+			}
+			if = { #set up Mecklenburg puppets
 				limit = {
 					289  = { is_owned_or_subject_trigger = yes }
 				}
@@ -8739,15 +8769,16 @@
 			}
 			if = { 
 				limit = {
-					1759 = { is_owned_or_subject_trigger = yes }
-					MKW = {
-						exists = yes
+					1697 = { is_owned_or_subject_trigger = yes }
+				}
+				every_state = {
+					limit = {
+						is_core_of = MKS
+						is_controlled_by = FRA
 					}
+					transfer_state_to = MKS
 				}
-				MKW = {
-					transfer_state = 1759
-					add_state_core = 1759
-				}
+				puppet = MKS
 			}
 			if = { #set up Schleswig-Holstein puppet
 				limit = {
@@ -8789,6 +8820,19 @@
 				}
 				puppet = BAY
 			}
+			if = { #set up anhalt puppet
+				limit = {
+					353 = { is_owned_or_subject_trigger = yes }
+				}
+				every_state = {
+					limit = {
+						is_core_of = ANH
+					}
+					transfer_state_to = ANH
+					add_core_of = ANH
+				}
+				puppet = ANH
+			}
 			if = { #set up Westphalen puppet
 				limit = {
 					391 = { is_owned_or_subject_trigger = yes }
@@ -8813,12 +8857,15 @@
 							is_core_of = RHN
 							is_core_of = LIP
 							is_core_of = WDK
+							is_core_of = BRW
+							is_core_of = SXP
 						}
 						is_controlled_by = FRA
 						NOT = { 
 							has_state_flag = FRA_ANNEX_FLAG 
 							state = 485
 							state = 2337
+							state = 1692
 						}
 					}
 					transfer_state_to = WST
@@ -8870,7 +8917,6 @@
 						is_controlled_by = FRA
 						NOT = { 
 							has_state_flag = FRA_ANNEX_FLAG 
-							state = 2566
 						}
 					}
 					transfer_state_to = WST
@@ -8967,12 +9013,16 @@
 								tag = BDN
 								tag = WST
 								tag = HSN
+								tag = ANH
+								tag = MKS
+								tag = THU
 							}
 						}
 					}
 					NOT = {
 						has_state_flag = FRA_ANNEX_FLAG
 						state = 2337
+						state = 280
 					}
 				}
 				PRE = {
