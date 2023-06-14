@@ -15,7 +15,27 @@ news_event = {
 	is_triggered_only = yes
 	
 	option = {
+		trigger = {
+			tag = GER
+		}
 		name = edo_news.1.a
+	}
+	
+	option = {
+		trigger = {
+			tag = ENG
+		}
+		name = edo_news.1.b
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				tag = GER
+				tag = ENG
+			}
+		}
+		name = edo_news.1.c
 	}
 }
 
@@ -46,5 +66,64 @@ news_event = {
 	
 	option = {
 		name = edo_news.3.a
+	}
+}
+
+news_event = {
+	id = edo_news.4
+	title = edo_news.4.t
+	desc = edo_news.4.desc
+	picture = GFX_news_event_020
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			OR = {
+				tag = USA
+				tag = ENG
+			}
+		}
+		name = edo_news.4.a
+	}
+	
+	option = {
+		trigger = {
+			tag = HOL
+		}
+		name = edo_news.4.b
+	}
+	
+	option = {
+		trigger = {
+			OR = {
+				tag = GER
+				tag = ITA
+			}
+			has_capitulated = no
+			has_government = fascism
+		}
+		name = edo_news.4.c
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				tag = USA
+				tag = ENG
+				tag = HOL
+				AND = {
+					OR = {
+						tag = GER
+						tag = ITA
+					}
+					has_capitulated = no
+					has_government = fascism
+				}
+			}
+		}
+		name = edo_news.4.d
 	}
 }

@@ -20,9 +20,12 @@ country_event = {
 			exists = yes
 			has_government = democratic
 			is_faction_leader = yes
-			has_war = yes
+			has_war_with = GER
 		}
 		NOT = { is_in_faction_with = ENG }
+	}
+	mean_time_to_happen = {
+		days = 7
 	}
 	
 	fire_only_once = yes
@@ -35,6 +38,16 @@ country_event = {
 		ENG = { add_to_faction = USA }
 		hidden_effect = {
 			news_event = { days = 1 id = edo_news.1 }
+			if = {
+				limit = {
+					HOL = {
+						is_in_faction_with = ENG
+						has_capitulated = yes
+					}
+				}
+				HOL = { set_country_flag = indonesia_will_fall }
+				news_event = { days = 3 id = edo_news.2 }
+			}
 		}
 	}
 	option = {
@@ -382,6 +395,7 @@ country_event = {
 	picture = GFX_report_event_ast_navy
 	trigger = {
 		tag = HOL
+		has_country_flag = indonesia_will_fall
 		has_capitulated = yes
 		date > 1942.03.07
 	}
@@ -407,7 +421,7 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			news_event = { days = 1 id = edo_news.2 }
+			news_event = { days = 1 id = edo_news.3 }
 			country_event = { days = 1256 id = mer_event.12 }
 		}
 	}
@@ -443,7 +457,7 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			news_event = { days = 1 id = edo_news.3 }
+			news_event = { days = 1 id = edo_news.4 }
 		}
 	}
 }
