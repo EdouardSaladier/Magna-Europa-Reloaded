@@ -4905,7 +4905,7 @@ focus_tree = {
 	focus = {
 		id = SPA_the_tangiers_enclave
 		available = {
-			has_full_control_of_state = 290
+			has_full_control_of_state = 1160
 		}
 		bypass = {
 		}
@@ -4921,16 +4921,20 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			annex_country = {
+				target = TNG
+				transfer_troops = no
+			}
 			if = {
 				limit = {
 					ENG = { has_government = democratic }
 				}
 				effect_tooltip = {
-					290 = {
-						add_extra_state_shared_building_slots = 3
+					1851 = {
+						add_extra_state_shared_building_slots = 2
 						add_building_construction = {
 							type = industrial_complex
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 					}
@@ -4939,11 +4943,11 @@ focus_tree = {
 				ENG = { country_event = { id = lar_spain.36 hours = 6 random_hours = 18 } }
 			}
 			else = {
-				290 = {
-					add_extra_state_shared_building_slots = 3
+				1851 = {
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
