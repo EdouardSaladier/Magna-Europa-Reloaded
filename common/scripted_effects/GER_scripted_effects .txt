@@ -490,6 +490,27 @@ MR_pact_transfer_state_effect = {
 		}
 		if = {
 			limit = {
+				OR = {
+					has_global_flag = LIT_gets_vilnius
+					LIT = { controls_state = 241 }
+					LIT = { is_in_faction_with = SOU }
+				}
+				LIT = { exists = yes }
+			}
+			every_state = {
+				limit = {
+					is_vilnius = yes
+					NOT = {
+						state = 294
+						state = 1135
+						state = 236
+					}
+				}
+				transfer_state_to = LIT
+			}
+		}
+		else_if = {
+			limit = {
 				NOT = {
 					any_other_country = {
 						is_in_faction_with = SOU
@@ -604,6 +625,27 @@ MR_pact_transfer_faction_state_effect = {
 			}
 		}
 		if = {
+			limit = {
+				OR = {
+					has_global_flag = LIT_gets_vilnius
+					LIT = { controls_state = 241 }
+					LIT = { is_in_faction_with = SOU }
+				}
+				LIT = { exists = yes }
+			}
+			every_state = {
+				limit = {
+					is_vilnius = yes
+					NOT = {
+						state = 294
+						state = 1135
+						state = 236
+					}
+				}
+				transfer_state_to = LIT
+			}
+		}
+		else_if = {
 			limit = {
 				NOT = {
 					any_other_country = {
