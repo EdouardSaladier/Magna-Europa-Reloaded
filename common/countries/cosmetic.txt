@@ -191,31 +191,6 @@ BAL_UNIFIED = {
 	color_ui = rgb { 0 102 102 }
 }
 
-OTT_UNIFIED = { #WTT
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
-}
-
-OTT_UNIFIED_communism = { #BftB
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
-}
-
-OTT_UNIFIED_democratic = { #BftB
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
-}
-
-OTT_UNIFIED_fascism = { #BftB
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
-}
-
-OTT_UNIFIED_neutrality = { #BftB
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
-}
-
 SYR_EYALET = {
 	color = rgb { 26 138 4 }
 	color_ui = rgb { 26 138 4 }
@@ -539,26 +514,6 @@ ARM_UK = {
 CYP_UK = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 201 56 93 }
-}
-
-OTT_SULTANATE_communism = {
-	color = rgb { 227 10 23 }
-	color_ui = rgb { 227 10 23 }
-}
-
-OTT_SULTANATE_democratic = {
-	color = rgb { 227 10 23 }
-	color_ui = rgb { 227 10 23 }
-}
-
-OTT_SULTANATE_fascism = {
-	color = rgb { 227 10 23 }
-	color_ui = rgb { 227 10 23 }
-}
-
-OTT_SULTANATE_neutrality = {
-	color = rgb { 227 10 23 }
-	color_ui = rgb { 227 10 23 }
 }
 
 TUR_GREATER_TURKEY_communism = {
