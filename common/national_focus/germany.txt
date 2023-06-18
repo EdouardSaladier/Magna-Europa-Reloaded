@@ -7923,6 +7923,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.25
 		}	
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Waking the Tiger"
+				}
+				NOT = { 
+					has_completed_focus = GER_revive_the_kaiserreich
+				}
+			}
+		}
 
 		available_if_capitulated = yes
 
@@ -8019,6 +8029,16 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Waking the Tiger"
+				}
+				NOT = { 
+					has_completed_focus = GER_revive_the_kaiserreich
+				}
+			}
 		}
 
 		available_if_capitulated = yes
@@ -9485,6 +9505,7 @@ focus_tree = {
 				category = shbb_tech
 			}
 			add_ideas = GER_rebuild_the_high_seas_fleet
+			hidden_effect = { unlock_national_focus = GER_plan_z }
 		}
 	}
 
