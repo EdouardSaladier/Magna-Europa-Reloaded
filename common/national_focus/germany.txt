@@ -8164,7 +8164,6 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_weserubung }
 
 		available = {
-			has_government = fascism
 			country_exists = DEN
 			NOT = {
 				has_war_with = DEN
@@ -8184,7 +8183,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_plan_z
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8229,7 +8228,6 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = GER_denmark_friend }
 		available = {
-			has_government = fascism
 			NOT = { has_war_with = NOR }
 			NOR = {
 				custom_trigger_tooltip = {
@@ -8247,7 +8245,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_denmark_friend
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -8317,7 +8315,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_denmark_friend
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8380,7 +8378,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_norway_friend
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
