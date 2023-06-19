@@ -7208,7 +7208,7 @@ focus_tree = {
 						state = 93 
 						state = 91 
 						state = 89 
-						state = 88  
+						state = 1157  
 						state = 97
 					} 
 				}
@@ -7703,16 +7703,21 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_restore_the_diet_of_galicia"
 			if = {
 				limit = {
-					controls_state = 88
+					controls_state = 1157
 				}
-				set_capital = { state = 88 } #Krakow was the seat of Habsburg rule in Poland
+				set_capital = { state = 1157 } #Krakow was the seat of Habsburg rule in Poland
 			}
 			add_ideas = { POL_royal_sejm_idea }
 			POL_karl_albrecht = {
 				add_country_leader_trait = king_of_galicia_and_lodomeria
 			}
 			hidden_effect = {
-				80 = { add_core_of = ROOT }
+				every_state = {
+					limit = {
+						is_core_of = BUC
+					}
+					add_core_of = POL
+				}
 			}
 		}
 	}
