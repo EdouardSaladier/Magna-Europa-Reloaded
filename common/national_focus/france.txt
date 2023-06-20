@@ -6003,6 +6003,9 @@
 		}
 
 		available = {
+			GER = {
+				has_government = ROOT
+			}
 			OR = { 
 				is_subject = no
 				is_subject_of = GER
