@@ -7110,7 +7110,6 @@
 				name = FRA_orleanist_party
 			}
 			set_politics = { ruling_party = neutrality }
-			set_cosmetic_tag = FRA_ORLEANS
 			hidden_effect = {
 				news_event = { id = lar_news.8 days = 3 random_days = 5 }
 			}
