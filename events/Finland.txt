@@ -324,12 +324,25 @@ country_event = {
 	trigger = {
 		tag = FIN
 		has_war_with = SOV
-		surrender_progress > 0.25
+		SOV = { has_government = communism }
+		OR = {
+			surrender_progress > 0.25
+			casualties_inflicted_by = {
+				opponent = SOV
+				thousands > 65
+			}
+		}
 		has_civil_war = no
 		is_in_faction = no
+		NOT = {
+			any_controlled_state = {
+				is_owned_by = SOV
+			}
+		}
+		NOT = { has_global_flag = FIN_surrendered_territory_to_SOV }
 	}
 
-	mean_time_to_happen = { days = 20 }
+	mean_time_to_happen = { days = 7 }
 
 	fire_only_once = yes
 
@@ -416,6 +429,9 @@ country_event = {
 							state = 77
 							state = 113
 							state = 2783
+							state = 33
+							state = 2786
+							state = 105
 						}
 					}
 					transfer_state_to = SOV
@@ -425,8 +441,6 @@ country_event = {
 					is_claimed_by = SOV
 					OR = {
 						state = 17
-						state = 2786
-						state = 33
 					}
 				}
 				remove_claim_by = SOV
@@ -462,6 +476,7 @@ country_event = {
 		}
 		add_political_power = 75 #Good Propaganda to win "fast"
 		SOV_paranoia_medium_decrease_effect = yes #Stalin likes this has been dealt with in a timely fashion
+		set_global_flag = FIN_surrendered_territory_to_SOV
 	}
 
 	#Take it all
