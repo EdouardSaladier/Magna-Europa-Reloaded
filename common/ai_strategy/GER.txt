@@ -3312,3 +3312,32 @@ GER_dont_act_on_danzig_if_things_went_south = {
 		value = -2000
 	}
 }
+
+GER_deal_with_the_civil_war_stupid = {
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		has_completed_focus = GER_oppose_hitler
+		has_civil_war = yes
+		all_enemy_country = {
+			original_tag = GER
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			OR = {
+				region = 40
+				region = 68
+				region = 69
+				region = 11
+				region = 35
+			}
+		}
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+}
