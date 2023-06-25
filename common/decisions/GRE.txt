@@ -973,7 +973,7 @@ GRE_investment_decisions_category = {
 			}
 			FRA = {
 				NOT = { has_capitulated = yes }
-				owns_state = 16 
+				owns_state = 571 
 				is_puppet = no
 				OR = { 
 					NOT = { has_government = fascism }

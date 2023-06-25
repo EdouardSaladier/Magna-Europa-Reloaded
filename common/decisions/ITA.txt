@@ -4883,10 +4883,10 @@ ITA_diplomacy_balkan_decision_category = {
 				factor = 0.2
 				ITA_is_historical_ai = yes
 			}
-			modifier = {
-				factor = 0
-				ITA_is_monarchist_ai = yes
-			}
+			#modifier = {
+			#	factor = 0
+			#	ITA_is_monarchist_ai = yes
+			#}
 		}
 
 		allowed = {
@@ -5125,15 +5125,16 @@ ITA_diplomacy_balkan_decision_category = {
 			ALB = {
 				if = {
 					limit = { is_subject_of = ROOT }
-					set_state_owner = 2795
-					set_state_owner = 989
-					set_state_owner = 1986
+					transfer_state = 2795
+					transfer_state = 989
+					transfer_state = 1986
 				}
 			}
 
 			hidden_effect = {
 				set_country_flag = ITA_established_montenegro
 				MNT = {
+					set_cosmetic_tag = MNT_GOVERNORATE
 					country_event = {
 					    id = BBA_italy_interaction_events.7
 					    days = 0
