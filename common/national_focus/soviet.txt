@@ -12800,7 +12800,7 @@ ai_will_do = {
 		}
 
 		bypass = {
-			has_full_control_of_state = 146
+			has_full_control_of_state = 2783
 		}
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}
@@ -12818,7 +12818,7 @@ ai_will_do = {
 				}
 				add_claim_by = ROOT
 			}
-			77 = {
+			2783 = {
 				controller = {
 					set_country_flag = SOV_ultimatum_sent_flag #Add it for AI strats reasons
 					add_timed_idea = {

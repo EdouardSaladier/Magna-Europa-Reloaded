@@ -917,3 +917,176 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #Karelia - confirm or continue
+	id = mer_event.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.24 FROM = [From.GetName]" }
+	title = mer_event.24.t
+	desc = mer_event.24.desc
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { #Confirm
+		name = mer_event.24.a 
+		every_state = {
+			limit = {
+				OR = {
+					state = 2783
+					state = 36
+					state = 29
+				}
+			}
+			transfer_state_to = SOV
+			add_core_of = SOV
+		}
+		transfer_state = 105
+		every_state = {
+			limit = {
+				OR = {
+					state = 62
+					state = 74
+				}
+			}
+			transfer_state_to = FIN
+			add_core_of = FIN
+		}
+		every_state = {
+			limit = {
+				is_core_of = FIN
+				is_claimed_by = SOV
+			}
+			remove_claim_by = SOV
+		}
+		hidden_effect = {
+			SOV = {
+				country_event = { hours = 18 id = news.13 }
+			}
+		}
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = { #Continue
+		name = mer_event.24.b 
+		FIN = {
+			country_event = { id = mer_event.25 hours = 16 random_hours = 8 }
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+# Soviet Ultimatum number 2
+country_event = {
+	id = mer_event.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.25 FROM = [From.GetName]" }
+	title = mer_event.25.t
+	desc = mer_event.25.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Accept new demands
+		name = finland.1.a
+		ai_chance = { 
+			base = 10
+			modifier = { # Don't accept if in a faction that can protect them
+				factor = 0
+				NOT = { is_in_faction_with = FROM }
+				OR = {
+					any_other_country = {
+						is_major = yes
+						OR = {
+							is_in_faction_with = FIN
+							has_guaranteed = FIN
+						}
+					}
+					has_idea = anti_soviet_pact
+				}
+			}
+		}
+		FROM = {
+			country_event = { days = 2 id = mer_event.26 }
+		}
+		effect_tooltip = {
+			FROM = {
+				transfer_state = 2783
+				transfer_state = 36
+				transfer_state = 105
+				transfer_state = 77
+				transfer_state = 100
+				transfer_state = 113
+				transfer_state = 29
+			}
+		}
+	}
+	option = { # Refuse
+		name = finland.1.b
+		ai_chance = {
+			base = 90
+			modifier = {
+				factor = 0
+				is_in_faction_with = FROM
+			}
+		}
+		FROM = {
+			country_event = { days = 2 id = mer_event.27 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_claimed_state
+					target = FIN
+				}
+			}
+		}
+	}
+}
+
+# Finland Accepts Demands
+country_event = {
+	id = mer_event.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.26 FROM = [From.GetName]" }
+	title = soviet.12.t
+	desc = mer_event.26.d
+	picture = GFX_report_event_soviet_finnish_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mer_event.26.a
+		SOV = {
+			transfer_state = 2783
+			transfer_state = 36
+			transfer_state = 105
+			transfer_state = 77
+			transfer_state = 100
+			transfer_state = 113
+			transfer_state = 29
+		}
+	}
+}
+
+# Finland Refuses Demands
+country_event = {
+	id = mer_event.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.27 FROM = [From.GetName]" }
+	title = soviet.13.t
+	desc = soviet.13.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.13.a
+		create_wargoal = {
+			type = take_claimed_state
+			target = FIN
+		}				
+		hidden_effect = {
+			SOV = {
+				country_event = { days = 1 id = news.12 }				
+			}
+		}
+	}
+}

@@ -406,15 +406,10 @@ country_event = {
 	
 	option = {
 		name = soviet.12.a
-		SOV = { 
-			transfer_state = 100
-			transfer_state = 77
-			transfer_state = 113
-			transfer_state = 2783
-		}
+		custom_effect_tooltip = karelia_momentum_tt
 		hidden_effect = {
 			SOV = {
-				country_event = { days = 1 id = news.13 }
+				country_event = { hours = 6 id = mer_event.24 }
 			}
 		}
 	}

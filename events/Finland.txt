@@ -35,18 +35,17 @@ country_event = {
 		}
 		FROM = {
 			country_event = { days = 5 id = soviet.12 }
-			effect_tooltip = {
-				every_state = {
-					limit = {
-						OR = {
-							state = 100
-							state = 77
-							state = 113
-							state = 2783
-						}
-					}
-					transfer_state_to = SOV
-				}
+		}
+		effect_tooltip = {
+			FROM = {
+				transfer_state = 2783
+				transfer_state = 36
+				transfer_state = 105
+				transfer_state = 29
+			}	
+			ROOT = {
+				transfer_state = 62
+				transfer_state = 74
 			}
 		}
 	}
@@ -433,6 +432,7 @@ country_event = {
 							state = 36
 							state = 2786
 							state = 105
+							state = 29
 						}
 					}
 					transfer_state_to = SOV
