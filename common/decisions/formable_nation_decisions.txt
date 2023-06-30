@@ -1359,7 +1359,7 @@ form_ottoman_empire_category = {
 		}
 	}
 
-	ott_enlarge_the_vilayet_of_bosnia = { #Bosnia + Croatia
+	ott_enlarge_the_vilayet_of_bosnia = {
 
 		icon = generic_form_nation
 
@@ -1380,10 +1380,37 @@ form_ottoman_empire_category = {
 					ruling_only = yes
 				}
 			}
-			DLM = {
- 				all_core_state = {
-				   	is_owned_by = ROOT
+			owns_state = 811
+			owns_state = 815
+			owns_state = 1999
+			custom_trigger_tooltip = {
+				tooltip = mer_ott_owns_krajina
+				KRJ = {
+					all_core_state = {
+						if = {
+							limit = {
+								NOT = {
+									state = 1468
+									state = 1471
+									state = 1472
+									state = 2881
+								}
+							}
+							is_owned_by = ROOT
+						}
+					}
 				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = mer_ott_owns_slavonia
+				owns_state = 1468
+				owns_state = 1471
+				owns_state = 1472
+				owns_state = 2881
+				owns_state = 721
+				owns_state = 1469
+				owns_state = 2830
+				owns_state = 2832
 			}
 			BOS = {
  				all_core_state = {
@@ -1403,11 +1430,17 @@ form_ottoman_empire_category = {
 				limit = {
 					OR = {
 						is_core_of = BOS
-						is_core_of = DLM
+						is_core_of = KRJ
+						state = 721
+						state = 811
+						state = 815
+						state = 1469
+						state = 1999
+						state = 2830
+						state = 2832
 					}
 				}
-				
-					add_core_of = ROOT
+				add_core_of = ROOT
 			}
 			hidden_effect = {
 				set_global_flag = ottoman_bosnia_flag
@@ -1444,7 +1477,28 @@ form_ottoman_empire_category = {
 					ruling_only = yes
 				}
 			}
-			ROM = {
+			owns_state = 1603
+			owns_state = 2744
+			owns_state = 2745
+			custom_trigger_tooltip = {
+				tooltip = mer_ott_owns_rom_banat
+				BNT = {
+					all_core_state = {
+						if = {
+							limit = {
+								is_core_of = ROM
+							}
+							is_owned_by = ROOT
+						}
+					}
+				}
+			}
+			DOB = {
+ 				all_core_state = {
+				   	is_owned_by = ROOT
+				}
+			}
+			BDZ = {
  				all_core_state = {
 				   	is_owned_by = ROOT
 				}
@@ -1460,7 +1514,17 @@ form_ottoman_empire_category = {
 		complete_effect = {
 			every_state = {
 				limit = {
-					is_core_of = ROM
+					OR = {
+						is_core_of = DOB
+						is_core_of = BDZ
+						AND = {
+							is_core_of = BNT
+							is_core_of = ROM
+						}
+						state = 1603
+						state = 2744
+						state = 2745
+					}
 				}
 				add_core_of = ROOT
 			}
