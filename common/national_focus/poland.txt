@@ -11140,16 +11140,8 @@ focus_tree = {
 							is_in_faction_with = ROOT
 						}
 						SLO = {
-							all_core_state = {
-								if = {
-									limit = {
-										NOT = {
-											state = 1440
-											state = 1441
-										}
-									}
-									is_owned_by = CZE
-								}
+							any_core_state = {
+								is_owned_by = CZE
 							}
 						}
 					}
