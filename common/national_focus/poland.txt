@@ -11141,7 +11141,15 @@ focus_tree = {
 						}
 						SLO = {
 							all_core_state = {
-								is_owned_by = CZE
+								if = {
+									limit = {
+										NOT = {
+											state = 1440
+											state = 1441
+										}
+									}
+									is_owned_by = CZE
+								}
 							}
 						}
 					}
@@ -11171,6 +11179,7 @@ focus_tree = {
 			every_state = {
 				limit = {
 					is_core_of = SLO
+					NOT = { is_core_of = ROOT }
 				}
 				add_claim_by = POL
 			}
