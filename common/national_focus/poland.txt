@@ -15627,7 +15627,8 @@ focus_tree = {
 				}
 				build_railway = {
 					#level = 3
-					path = { 6321 3295 3324 389 362 }
+					start_province = 19920
+					target_province = 10923
 				}
 			}
 			else_if = {
@@ -15636,7 +15637,8 @@ focus_tree = {
 				}
 				build_railway = {
 					#level = 3
-					path = { 279 3324 389 9263 }
+					start_province = 19920
+					target_province = 10920
 				}
 			}
 
