@@ -4057,6 +4057,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus YUG_form_the_federal_republic"
+			set_cosmetic_tag = FPR_YUG
 			remove_ideas = YUG_idea_croatian_opposition
 			remove_ideas = YUG_idea_macedonian_opposition
 			remove_ideas = YUG_idea_slovene_nationalism
