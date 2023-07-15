@@ -703,3 +703,28 @@ is_kurdish_group = {
 		is_diyabakir_group = yes
 	}
 }
+
+is_hun_larp = {
+	OR = {
+		region = 12
+		region = 21
+		state = 621
+		state = 1805
+		state = 695
+		is_core_of = VJV
+		AND = {
+			is_core_of = CRO
+			NOT = { 
+				is_core_of = DLM 
+				state = 2908
+				state = 2330
+				state = 2971
+				state = 1482
+				state = 762
+				state = 2561
+				state = 1474
+			}
+			
+		}
+	}
+}
