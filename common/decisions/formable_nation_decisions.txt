@@ -920,7 +920,7 @@ form_baltic_federation_category = {
 				all_state = {
 					if = {
 						limit = {
-							is_core_of = EST
+							has_state_flag = EST_INITIAL_STATE
 						}
 						is_controlled_by = ROOT
 					}
@@ -932,7 +932,7 @@ form_baltic_federation_category = {
 				all_state = {
 					if = {
 						limit = {
-							is_core_of = LAT
+							has_state_flag = LAT_INITIAL_STATE
 						}
 						is_controlled_by = ROOT
 					}
@@ -944,7 +944,7 @@ form_baltic_federation_category = {
 				all_state = {
 					if = {
 						limit = {
-							is_core_of = LIT
+							has_state_flag = LIT_INITIAL_STATE
 							NOT = { state = 227 }
 						}
 						is_controlled_by = ROOT
@@ -4690,8 +4690,8 @@ form_byzantine_empire_category = {
 
 		visible = {
 			if = {
-				limit = { has_dlc = "Battle for the Bosporus" }
-				has_completed_focus = GRE_byzantine_themata
+			#	limit = { has_dlc = "Battle for the Bosporus" }
+			#	has_completed_focus = GRE_byzantine_themata
 			}
 			NOT = { has_global_flag = triumph_for_the_balkans }
 		}
