@@ -1323,19 +1323,19 @@ country_event = {
 		trigger = {
 			OR = {
 				GER = {
-					is_available_fighter_YUG = yes
+					is_available_fighter_HUN = yes
 				}
 				FRA = {
-					is_available_fighter_YUG = yes
+					is_available_fighter_HUN = yes
 				}
 				ITA = {
-					is_available_fighter_YUG = yes
+					is_available_fighter_HUN = yes
 				}
 				ENG = {
-					is_available_fighter_YUG = yes
+					is_available_fighter_HUN = yes
 				}
 				USA = {
-					is_available_fighter_YUG = yes
+					is_available_fighter_HUN = yes
 				}
 			}
 		}
@@ -1410,7 +1410,7 @@ country_event = {
 			country_event = DOD_romania.152
 		}
 		else = {
-			country_event = DOD_romania.1521	
+			country_event = DOD_hungary.1521	
 		}
 		ai_chance = {
 			factor = 50
