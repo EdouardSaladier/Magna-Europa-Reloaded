@@ -1981,6 +1981,20 @@ qbc_status = {
 		desc = "RULE_OPTION_QBC_INDEPENDENT_DESC"
 	}
 }
+remove_redundant_cores = {
+	name = "Remove Redundant Releasable Realms"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_REDUNDANT_DESC"
+	}
+	option = {
+		name = CORE_REMOVED_ENABLED
+		text = "RULE_OPTION_CORE_REMOVED_ENABLED"
+		desc = "RULE_OPTION_CORE_REMOVED_ENABLED_DESC"
+	}
+}
 kongs_secret_stuff = {
 	name = "FBKong's Secret Stuff"
 	group = "RULE_GROUP_GAME_SETUP"
