@@ -122,69 +122,24 @@ country_event = {
 		ai_chance = {
 			base = 90
 		}
-		if = {
+		every_owned_state = {
 			limit = {
-				96 = {
-					is_controlled_by = POL
+				OR = {
+					is_core_of = LIT
+					is_claimed_by = LIT
 				}
 			}
-			SOV = { transfer_state = 96 }
+			transfer_state_to = LIT
 		}
-		if = {
+		every_owned_state = {
 			limit = {
-				95 = {
-					is_controlled_by = POL
+				is_soviet_mr = yes
+				NOT = {
+					is_core_of = LIT
+					is_claimed_by = LIT
 				}
 			}
-			SOV = { transfer_state = 95 }
-		}
-		if = {
-			limit = {
-				94 = {
-					is_controlled_by = POL
-				}
-			}
-			SOV = { transfer_state = 94 }
-		}
-		if = {
-			limit = {
-				93 = {
-					is_controlled_by = POL
-				}
-			}
-			SOV = { transfer_state = 93 }
-		}
-		if = {
-			limit = {
-				91 = {
-					is_controlled_by = POL
-				}
-			}
-			SOV = { transfer_state = 91 }
-		}
-		if = {
-			limit = {
-				97 = {
-					is_controlled_by = POL
-				}
-			}
-			SOV = { transfer_state = 97 }
-		}
-		if = {
-			limit = {
-				89 = {
-					is_controlled_by = POL
-				}
-			}
-			SOV = { transfer_state = 89 }
-		}
-		if = {
-			limit = {
-				784 = {
-					is_controlled_by = POL
-				}
-			}
-			LIT = { transfer_state = 784 }
+			transfer_state_to = SOV
 		}
 	}
 	option = { #Nah
@@ -207,6 +162,12 @@ country_event = {
 				add = 60
 				any_other_country = { 
 					has_guaranteed = ROOT 
+					if = {
+						limit = {
+							original_tag = FRA
+						}
+						date > 1939.01.01
+					}
 				}
 			}
 			modifier = { #I could beat SOV
