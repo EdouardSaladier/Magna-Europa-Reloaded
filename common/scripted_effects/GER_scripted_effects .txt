@@ -546,7 +546,152 @@ MR_pact_transfer_state_effect = {
 		}
 	}
 }
-
+MR_pact_transfer_state_effect_OG = {
+	if = {
+		limit = {
+			any_state = {
+				if = {
+					limit = {
+						is_OG_soviet_mr = yes
+					}
+					OR = {
+						is_controlled_by = GER
+						controller = {
+							is_in_faction_with = GER
+							GER = {
+								is_faction_leader = yes
+							}
+						}
+					}
+								
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_other_country = {
+						is_in_faction_with = SOU
+						has_country_flag = BLT_soviets_said_yes_to_belarus_flag
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_OG_soviet_mr = yes
+				}
+				transfer_state_to = SOV
+			}
+		}
+		else = {
+			random_other_country = {
+				limit = {
+					is_in_faction_with = SOU
+					OR = {
+						has_cosmetic_tag = LIT_belarus
+						has_cosmetic_tag = LAT_belarus
+						has_cosmetic_tag = EST_belarus
+						has_cosmetic_tag = BAL_UNIFIED
+					}
+				}
+				every_state = {
+					limit = {
+						is_OG_soviet_mr = yes
+					}
+					transfer_state_to = SOV
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_state = {
+				if = {
+					limit = {
+						is_vilnius = yes
+					}
+					OR = {
+						is_controlled_by = GER
+						controller = {
+							is_in_faction_with = GER
+							GER = {
+								is_faction_leader = yes
+							}
+							tag = SOV  
+						}
+					}
+								
+				}
+			}
+		}
+		if = {
+			limit = {
+				LIT = { exists = yes }
+			}
+			every_state = {
+				limit = {
+					is_vilnius = yes
+					NOT = {
+						state = 1135
+						state = 236
+					}
+				}
+				transfer_state_to = LIT
+			}
+		}
+		else_if = {
+			limit = {
+				RKL = { exists = yes }
+				
+			}
+			every_state = {
+				limit = {
+					is_vilnius = yes
+					NOT = {
+						state = 1135
+						state = 236
+					}
+				}
+				transfer_state_to = LIT
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					any_other_country = {
+						is_in_faction_with = SOU
+						has_country_flag = BLT_soviets_said_yes_to_belarus_flag
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_vilnius = yes
+				}
+				transfer_state_to = SOV
+			}
+		}
+		else = {
+			random_other_country = {
+				limit = {
+					is_in_faction_with = SOU
+					OR = {
+						has_cosmetic_tag = LIT_belarus
+						has_cosmetic_tag = LAT_belarus
+						has_cosmetic_tag = EST_belarus
+						has_cosmetic_tag = BAL_UNIFIED
+					}
+				}
+				every_state = {
+					limit = {
+						is_vilnius = yes
+					}
+					transfer_state_to = SOV
+				}
+			}
+		}
+	}
+}
 MR_pact_transfer_faction_state_effect = {
 	if = {
 		limit = {

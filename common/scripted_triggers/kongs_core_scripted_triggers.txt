@@ -182,7 +182,7 @@ is_east_prussia = {
 		state = 1609
 	}
 }
-is_polish_german_empire = { #1936 Polish states that were owned by the German Empire
+is_polish_german_empire = { #1936 Polish states that were previously owned by the German Empire
 	OR = {
 		AND = {
 			has_state_flag = POL_INITIAL_STATE
@@ -304,7 +304,7 @@ is_bialystok_region = {
 	state = 306
 	state = 2522
 }
-is_transnistria = {
+is_transnistria = { #Annexed by Romania in 1941 (?)
 	OR = {
 		state = 618
 		state = 2063
@@ -322,7 +322,7 @@ is_transnistria = {
 		state = 2039
 	}
 }
-is_ggv_state = { #States owned by the generalgouvernment before invasion of SOV 
+is_ggv_state = { #States owned by the generalgouvernment before GER invasion of SOV 
 	OR = {
 		AND = {
 			is_core_of = MLP
@@ -656,54 +656,6 @@ is_northern_ireland = {
 	}
 }
 
-## KURDISTAN CORE GROUPS ##
-is_diyabakir_group = {
-	OR = {
-		state = 1085
-		state = 1960
-		state = 1091
-		state = 1059
-		state = 1065
-	}
-}
-is_hakkari_group = {
-	OR = {
-		state = 1092
-		state = 1077
-		state = 1071
-		state = 1957
-		state = 1062
-	}
-}
-is_van_group = {
-	OR = {
-		state = 1039
-		state = 1051
-		state = 1033
-		state = 1018
-		state = 1013
-		state = 1004
-		state = 1001
-		state = 2248
-	}
-}
-is_tunceli_group = {
-	OR = {
-		state = 1047
-		state = 1031
-		state = 1958
-		state = 1012
-	}
-}
-is_kurdish_group = {
-	OR = {
-		is_tunceli_group = yes 
-		is_van_group = yes 
-		is_hakkari_group = yes
-		is_diyabakir_group = yes
-	}
-}
-
 is_hun_larp = {
 	OR = {
 		region = 12
@@ -726,5 +678,28 @@ is_hun_larp = {
 			}
 			
 		}
+	}
+}
+
+is_OG_soviet_mr = {
+	OR = {
+		is_soviet_mr = yes
+		state = 2346
+		state = 2347
+		state = 491
+		state = 46
+		state = 2692
+		state = 377
+		state = 1002
+		state = 1131
+		state = 1070
+		state = 982
+		state = 1981
+		state = 2928
+		state = 351
+		state = 2927
+		state = 1982
+		state = 284
+		state = 2766
 	}
 }

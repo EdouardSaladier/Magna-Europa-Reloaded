@@ -206,3 +206,51 @@ is_anarchist_group = {
 		is_catalonia_group = yes
 	}
 }
+
+## KURDISTAN CORE GROUPS ##
+is_diyabakir_group = {
+	OR = {
+		state = 1085
+		state = 1960
+		state = 1091
+		state = 1059
+		state = 1065
+	}
+}
+is_hakkari_group = {
+	OR = {
+		state = 1092
+		state = 1077
+		state = 1071
+		state = 1957
+		state = 1062
+	}
+}
+is_van_group = {
+	OR = {
+		state = 1039
+		state = 1051
+		state = 1033
+		state = 1018
+		state = 1013
+		state = 1004
+		state = 1001
+		state = 2248
+	}
+}
+is_tunceli_group = {
+	OR = {
+		state = 1047
+		state = 1031
+		state = 1958
+		state = 1012
+	}
+}
+is_kurdish_group = {
+	OR = {
+		is_tunceli_group = yes 
+		is_van_group = yes 
+		is_hakkari_group = yes
+		is_diyabakir_group = yes
+	}
+}

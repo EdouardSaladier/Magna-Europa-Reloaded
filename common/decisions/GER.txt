@@ -3217,6 +3217,35 @@ political_actions = {
 			}
 		}
 	}
+	GER_lithuanian_ultimatum = {
+		available = {
+			LIT = { 
+				exists = yes 
+				is_subject = no 
+			}
+		}
+		allowed = {
+			original_tag = GER
+		}
+		visible = {
+			has_global_flag = mr_honoured_but_cool
+			LIT = { 
+				exists = yes 
+				NOT = { is_subject_of = GER }
+			}
+			has_government = fascism 
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			annex_country = {
+				target = LIT
+				transfer_troops = yes
+			}
+		}
+	}
 	
 }
 

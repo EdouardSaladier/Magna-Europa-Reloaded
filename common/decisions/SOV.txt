@@ -5188,7 +5188,14 @@ SOV_diplomacy_baltic_decision_category = {
 			FROM = {
 				NOT = { has_war_with = ROOT }
 				is_subject = no
+				if = {
+					limit = {
+						TAG = LIT 
+					}
+					NOT = { has_global_flag = mr_honoured_but_cool }
+				}
 			}
+			
 		}
 
 		visible = {

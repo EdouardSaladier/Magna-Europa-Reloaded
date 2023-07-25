@@ -559,6 +559,69 @@ country_event = {
 		}
 		set_global_flag = mr_honoured
 	}
+	option = { #MR Pact but how it was originally planned
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				NOT = {
+					POL = {
+						is_ai = no
+						has_civil_war = no
+					}
+					is_in_faction_with = POL
+				}
+				is_historical_focus_on = no
+			}
+		}
+		trigger = {
+			LIT = {
+				OR = {
+					exists = yes 
+					is_subject = no 
+				}
+			}
+		}
+		name = germany.14.c
+		if = { 
+			limit = {
+				GER = { is_faction_leader = yes }
+				any_allied_country = {
+					NOT = { is_subject_of = GER }
+					NOT = { tag = SOU }
+					any_owned_state = {
+						is_OG_soviet_mr = yes
+					}
+				}
+			}
+			random_country = {
+				limit = {
+					is_in_faction_with = ROOT
+					NOT = { is_subject_of = GER }
+					NOT = { tag = SOU }
+					any_controlled_state = {
+						is_OG_soviet_mr = yes
+					}
+				}
+				if = {
+					limit = {
+						is_subject = yes
+					}
+					OVERLORD = { country_event = germany.1002 }
+				}
+				else = {
+					country_event = { id = germany.1002 hours = 3 }
+				}
+			}
+		}
+		else = { #MR Pact as OG
+			MR_pact_transfer_state_effect_OG = yes
+			SOU = { country_event = { id = germany.15 hours = 3 } }
+		}
+		unlock_decision_tooltip = GER_lithuanian_ultimatum
+		set_global_flag = mr_honoured
+		set_global_flag = mr_honoured_but_cool
+	}
 	option = {
 		name = germany.14.b
 		ai_chance = {
