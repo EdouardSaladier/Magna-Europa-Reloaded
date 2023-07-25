@@ -1,21 +1,27 @@
+
 state={
 	id=2701
 	name="STATE_2701"
-	provinces={
-		639 1529 2592 4083 7335 19438 
-	}
+
 	history={
 		owner = NOR
 		add_core_of = NOR
 		buildings = {
 			infrastructure = 1
-			19438 = { naval_base = 1 }
+			19438 = {
+				naval_base = 1
+			}
 		}
+		victory_points = { 7335 1 }
 		add_core_of = SAP
 
 	}
+
+	provinces={
+		533 639 1529 2592 4083 7335 19438 
+	}
 	manpower=10868
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

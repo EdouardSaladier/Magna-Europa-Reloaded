@@ -8,18 +8,17 @@ state={
 		add_core_of = FIN
 		buildings = {
 			infrastructure = 2
-			533 = {
+			2375 = {
 				naval_base = 1
-
 			}
-
 		}
+		victory_points = { 2375 1 }
 		add_core_of = SAP
 
 	}
 
 	provinces={
-		533 1004 2127 2375 4954 9691 17121 18109 19561 19671 19672 
+		1004 2127 2375 4954 9691 17121 18109 19561 19671 19672 
 	}
 	manpower=118000
 	buildings_max_level_factor=1.000
