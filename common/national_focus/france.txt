@@ -7435,6 +7435,12 @@
 					}
 				}
 			}
+			effect_tooltip = {
+				set_cosmetic_tag = FRA_LEGITIMIST_neutrality
+			}
+			hidden_effect = {
+				set_cosmetic_tag = FRA_LEGITIMIST
+			}
 			set_party_name = {
 				ideology = neutrality
 				long_name = FRA_legitimist_party_long
