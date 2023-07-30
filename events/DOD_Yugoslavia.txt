@@ -308,67 +308,72 @@ country_event = {
 				}
 				1464 = { is_owned_and_controlled_by = YUG }
 			}
-			CRO = { 
-				transfer_state = 1464
-					transfer_state = 1462
-					transfer_state = 1461
-					transfer_state = 1463
-					transfer_state = 1464
-					transfer_state = 1466
-					transfer_state = 712
-					transfer_state = 1467
-					transfer_state = 2831
-					transfer_state = 1465
-					transfer_state = 1503
-					transfer_state = 1468
-					transfer_state = 2832
-					transfer_state = 2830
-					transfer_state = 1469
-					transfer_state = 721
-					transfer_state = 1472
-					transfer_state = 2881
-					transfer_state = 1471
-			}
-			if = {
-				limit = {
-					1583 = { is_owned_and_controlled_by = YUG }
-				}
-				CRO = { 
-					transfer_state = 1473
-					transfer_state = 1477
-					transfer_state = 2651
-					transfer_state = 754
-					transfer_state = 1478
-					transfer_state = 2829
-					transfer_state = 1999
-					transfer_state = 2828
-					transfer_state = 2827
-					transfer_state = 1998
-					transfer_state = 2826
-					transfer_state = 1988
-					transfer_state = 811
-					transfer_state = 815
-					transfer_state = 1479
-					transfer_state = 1563
-					transfer_state = 1491
-					transfer_state = 1481
-					transfer_state = 1990
-					transfer_state = 2241
-					transfer_state = 1480
-					transfer_state = 1475
-				}
-			}
 			CRO = {
+				every_core_state = {
+					limit = { is_owned_and_controlled_by = YUG }
+					transfer_state_to = PREV
+				}
+			}
+	#		CRO = { 
+	#			transfer_state = 1464
+	#				transfer_state = 1462
+	#				transfer_state = 1461
+	#				transfer_state = 1463
+	#				transfer_state = 1464
+	#				transfer_state = 1466
+	#				transfer_state = 712
+	#				transfer_state = 1467
+	#				transfer_state = 2831
+	#				transfer_state = 1465
+	#				transfer_state = 1503
+	#				transfer_state = 1468
+	#				transfer_state = 2832
+	#				transfer_state = 2830
+	#				transfer_state = 1469
+	#				transfer_state = 721
+	#				transfer_state = 1472
+	#				transfer_state = 2881
+	#				transfer_state = 1471
+	#		}
+	#		if = {
+	#			limit = {
+	#				1583 = { is_owned_and_controlled_by = YUG }
+	#			}
+	#			CRO = { 
+	#				transfer_state = 1473
+	#				transfer_state = 1477
+	#				transfer_state = 2651
+	#				transfer_state = 754
+	#				transfer_state = 1478
+	#				transfer_state = 2829
+	#				transfer_state = 1999
+	#				transfer_state = 2828
+	#				transfer_state = 2827
+	#				transfer_state = 1998
+	#				transfer_state = 2826
+	#				transfer_state = 1988
+	#				transfer_state = 811
+	#				transfer_state = 815
+	#				transfer_state = 1479
+	#				transfer_state = 1563
+	#				transfer_state = 1491
+	#				transfer_state = 1481
+	#				transfer_state = 1990
+	#				transfer_state = 2241
+	#				transfer_state = 1480
+	#				transfer_state = 1475
+	#			}
+	#		}
+			CRO = {
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.3
+				}
 				set_politics = {
 					ruling_party = fascism
 					elections_allowed = no
 				}
-				set_popularities = {
-					democratic = 15
-					neutrality = 15
-					fascism = 60
-					communism = 10
-				}
+				effect_tooltip = { set_cosmetic_tag = CRO_fascism }
 				declare_war_on = {
 					target = YUG
 					type = annex_everything
