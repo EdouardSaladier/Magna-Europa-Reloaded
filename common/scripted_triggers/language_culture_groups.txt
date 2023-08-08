@@ -372,3 +372,30 @@ is_balkan = {
 		is_greek = yes
 	}
 }
+
+is_polish = {
+	OR = {
+		original_tag = POL
+		original_tag = UPS
+		original_tag = CSN
+		original_tag = GAL
+		original_tag = MLP
+		original_tag = WKP
+		original_tag = MZV
+	}
+}
+
+is_czech = {
+	OR = {
+		original_tag = BOH
+		original_tag = MRV
+	}
+}
+
+is_czechoslovak = {
+	OR = {
+		is_czech = yes
+		original_tag = SLO
+		original_tag = CZE
+	}
+}
