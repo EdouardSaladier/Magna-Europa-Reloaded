@@ -1,0 +1,30 @@
+on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				FROM.FROM = {	
+					do_all_renames = yes
+				}
+			}
+		}
+	}
+	on_government_change = {
+		effect = {
+			if = {
+				every_owned_state = {
+					do_all_renames = yes
+				}
+			}
+		}
+	}
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				every_owned_state = {
+					do_all_renames = yes
+				}
+			}
+		}
+	}
+}

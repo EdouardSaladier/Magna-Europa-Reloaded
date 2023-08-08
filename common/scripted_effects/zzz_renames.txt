@@ -1,0 +1,415 @@
+do_czech_renames = {
+	#Sudetenland
+	if = {
+		limit = {
+			state = 498
+		}	
+		
+		set_province_name = {
+			id = 4097
+			name = "Cheb"
+		}
+		
+		498 = { 
+			set_state_name = "Cheb" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 522
+		}	
+		
+		522 = { 
+			set_state_name = "Tachov" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1430
+		}	
+		
+		1430 = { 
+			set_state_name = "Prachatice" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1431
+		}	
+		
+		1431 = { 
+			set_state_name = "Český Krumlov" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1432
+		}	
+		
+		1432 = { 
+			set_state_name = "Nová Bystřice" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1433
+		}	
+		
+		set_province_name = {
+			id = 2195
+			name = "Znojmo"
+		}
+		
+		1433 = { 
+			set_state_name = "Znojmo" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1434
+		}	
+		
+		set_province_name = {
+			id = 12640
+			name = "Karlovy Vary"
+		}
+		
+		1434 = { 
+			set_state_name = "Karlovy Vary" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 471
+		}	
+		
+		set_province_name = {
+			id = 907
+			name = "Most"
+		}
+		
+		set_province_name = {
+			id = 20061
+			name = "Ústí nad Labem"
+		}
+		
+		set_province_name = {
+			id = 12393
+			name = "Děčín"
+		}
+		
+		471 = { 
+			set_state_name = "Ústí nad Labem" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 473
+		}	
+		
+		set_province_name = {
+			id = 4177
+			name = "Liberec"
+		}
+		
+		473 = { 
+			set_state_name = "Liberec" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1435
+		}	
+		
+		set_province_name = {
+			id = 9313
+			name = "Trutnov"
+		}
+		
+		1435 = { 
+			set_state_name = "Trutnov" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 504
+		}	
+		
+		set_province_name = {
+			id = 6771
+			name = "Svitavy"
+		}
+		
+		504 = { 
+			set_state_name = "Svitavy" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 499
+		}	
+		
+		set_province_name = {
+			id = 4683
+			name = "Šternberk"
+		}
+		
+		499 = { 
+			set_state_name = "Šternberk" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1428
+		}	
+		
+		1428 = { 
+			set_state_name = "Krnov" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 507
+		}	
+		
+		set_province_name = {
+			id = 12762
+			name = "Opava"
+		}
+		
+		507 = { 
+			set_state_name = "Opava" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1977
+		}	
+		
+		1977 = { 
+			set_state_name = "Hlučín" 
+		}
+	}
+}
+
+do_german_renames = {
+	#Sudetenland
+	if = {
+		limit = {
+			state = 498
+		}	
+		
+		set_province_name = {
+			id = 4097
+			name = "Eger"
+		}
+		
+		498 = { 
+			set_state_name = "Eger" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 522
+		}	
+		
+		522 = { 
+			set_state_name = "Tachau" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1430
+		}	
+		
+		1430 = { 
+			set_state_name = "Prachatitz" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1431
+		}	
+		
+		1431 = { 
+			set_state_name = "Krumau" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1432
+		}	
+		
+		1432 = { 
+			set_state_name = "Neubistritz" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1433
+		}	
+		
+		set_province_name = {
+			id = 2195
+			name = "Znaim"
+		}
+		
+		1433 = { 
+			set_state_name = "Znaim" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1434
+		}	
+		
+		set_province_name = {
+			id = 12640
+			name = "Karlsbad"
+		}
+		
+		1434 = { 
+			set_state_name = "Karlsbad" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 471
+		}	
+		
+		set_province_name = {
+			id = 907
+			name = "Brüx"
+		}
+		
+		set_province_name = {
+			id = 20061
+			name = "Aussig"
+		}
+		
+		set_province_name = {
+			id = 12393
+			name = "Tetschen"
+		}
+		
+		471 = { 
+			set_state_name = "Aussig" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 473
+		}	
+		
+		set_province_name = {
+			id = 4177
+			name = "Reichenberg"
+		}
+		
+		473 = { 
+			set_state_name = "Reichenberg" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1435
+		}	
+		
+		set_province_name = {
+			id = 9313
+			name = "Trautenau"
+		}
+		
+		1435 = { 
+			set_state_name = "Trautenau" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 504
+		}	
+		
+		set_province_name = {
+			id = 6771
+			name = "Zwittau"
+		}
+		
+		504 = { 
+			set_state_name = "Zwittau" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 499
+		}	
+		
+		set_province_name = {
+			id = 4683
+			name = "Sternberg"
+		}
+		
+		499 = { 
+			set_state_name = "Sternberg" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1428
+		}	
+		
+		1428 = { 
+			set_state_name = "Jägerndorf" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 507
+		}	
+		
+		set_province_name = {
+			id = 12762
+			name = "Troppau"
+		}
+		
+		507 = { 
+			set_state_name = "Troppau" 
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1977
+		}	
+		
+		1977 = { 
+			set_state_name = "Hultschin" 
+		}
+	}
+}
