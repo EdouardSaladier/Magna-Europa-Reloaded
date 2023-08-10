@@ -120,6 +120,10 @@ on_actions = {
 					limit = { ROOT = { OR = { is_polish = yes original_tag = SIL } } }
 					FROM.FROM = { set_state_name = "Głubczyce" }
 				}
+				else_if = {
+					limit = { ROOT = { is_czechoslovak = yes } }
+					FROM.FROM = { set_state_name = "Hlubčice" }
+				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
 				}
@@ -161,6 +165,884 @@ on_actions = {
 				else_if = {
 					limit = { ROOT = { is_polish = yes } }
 					FROM.FROM = { set_state_name = "Niemodlin" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2664 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Namysłów" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2482 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Milicz" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1659 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Oleśnica" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1669 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Brzeg" }
+					set_province_name = { id = 12313 name = "Oława" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12313
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1662 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Ząbkowice" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1660 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Trzebnica" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 425 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Świdnica" }
+					set_province_name = { id = 5693 name = "Świdnica" }
+					set_province_name = { id = 8402 name = "Wałbrzych" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 5693
+					reset_province_name = 8402
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 425 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Świdnica" }
+					set_province_name = { id = 5693 name = "Świdnica" }
+					set_province_name = { id = 8402 name = "Wałbrzych" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 5693
+					reset_province_name = 8402
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1663 }
+				}
+				if = {
+					limit = { ROOT = { original_tag = UPS } }
+					FROM.FROM = { set_state_name = "Wrocłow" }
+					set_province_name = { id = 9490 name = "Wrocłow" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Wrocław" }
+					set_province_name = { id = 9490 name = "Wrocław" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 9490
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1661 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Góra" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2562 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Wschowa" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1668 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Sława" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1666 }
+				}
+				if = {
+					limit = { ROOT = { original_tag = UPS } }
+					FROM.FROM = { set_state_name = "Głogůw" }
+					set_province_name = { id = 20607 name = "Głogůw" }
+					set_province_name = { id = 6045 name = "Lubin" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Głogów" }
+					set_province_name = { id = 20607 name = "Głogów" }
+					set_province_name = { id = 6045 name = "Lubin" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1665 }
+				}
+				if = {
+					limit = { ROOT = { original_tag = UPS } }
+					FROM.FROM = { set_state_name = "Ligńica" }
+					set_province_name = { id = 8274 name = "Ligńica" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Legnica" }
+					set_province_name = { id = 8274 name = "Legnica" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1664 }
+				}
+				if = {
+					limit = { ROOT = { original_tag = UPS } }
+					FROM.FROM = { set_state_name = "Jelyńo Gůra" }
+					set_province_name = { id = 12364 name = "Jelyńo Gůra" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Jelenia Góra" }
+					set_province_name = { id = 12364 name = "Jelenia Góra" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 415 }
+				}
+				if = {
+					limit = { ROOT = { original_tag = UPS } }
+					FROM.FROM = { set_state_name = "Bolesławjec" }
+					set_province_name = { id = 8095 name = "Bolesławjec" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Bolesławiec" }
+					set_province_name = { id = 8095 name = "Bolesławiec" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2593 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Lubań" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1980 } #Reichenau
+				}
+				if = {
+					limit = { ROOT = { OR = { is_polish = yes original_tag = LUS } } }
+					FROM.FROM = { set_state_name = "Bogatynia" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1667 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Zielona Góra" }
+					set_province_name = { id = 5425 name = "Zielona Góra" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1646 }
+				}
+				if = {
+					limit = { ROOT = { original_tag = LUS } }
+					FROM.FROM = { set_state_name = "Žarow" }
+					set_province_name = { id = 1579 name = "Žarow" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Żary" }
+					set_province_name = { id = 1579 name = "Żary" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 1579
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2595 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Dychów" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1647 }
+				}
+				if = {
+					limit = { ROOT = { original_tag = LUS } }
+					FROM.FROM = { set_state_name = "Krosyn" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Krosno Odrzańskie" }
+					set_province_name = { id = 20578 name = "Świebodzin" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 20578
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1648 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Torzym" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1649 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Międzyrzecz" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2666 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Noteć" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1624 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Człuchów" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1623 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Lęborsko-bytowska" }
+					set_province_name = { id = 8562 name = "Lębork" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 8562
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 301 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Piła" }
+					set_province_name = { id = 748 name = "Piła" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 748
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2568 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Potęgowo" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2559 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Koczała" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2561 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Mirosławiec" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 263 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Słupsk" }
+					set_province_name = { id = 5107 name = "Słupsk" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 5107
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 280 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Gdańsk" }
+					set_province_name = { id = 10923 name = "Gdańsk" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 10923
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2729 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Nowy Dwór Gdański" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 339 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Gorzów Wielkopolski" }
+					set_province_name = { id = 20551 name = "Gorzów Wielkopolski" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 20551
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1627 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Choszczno" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1625 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Koszalin" }
+					set_province_name = { id = 6762 name = "Koszalin" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 6762
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1628 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Szczecinek" }
+					set_province_name = { id = 3207 name = "Szczecinek" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 3207
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2560 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Białogard" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1629 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Gryfino" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1630 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Stargard Szczeciński" }
+					set_province_name = { id = 9655 name = "Stargard Szczeciński" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 9655
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 273 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Kołobrzeg" }
+					set_province_name = { id = 9308 name = "Kołobrzeg" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 9308
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1626 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Resko" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 295 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Nowogard" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1636 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Wolin" }
+					set_province_name = { id = 20563 name = "Świnoujście" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 20563
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1631 }
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Szczecin" }
+					set_province_name = { id = 11257 name = "Szczecin" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 11257
+				}
+			}
+			#Warmia-Masuria
+			if = {
+				limit = {
+					FROM.FROM = { state = 2342 } #Elbing
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Elbląg" }
+					set_province_name = { id = 19905 name = "Elbląg" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 19905
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2691 } #Marienburg
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Malbork" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1609 } #Marienwerder
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Kwidzyn" }
+					set_province_name = { id = 11171 name = "Kwidzyn" }
+					set_province_name = { id = 11210 name = "Iława" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 11171
+					reset_province_name = 11210
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1610 } #Braunsberg
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Braniewo" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2689 } #Preussisch Holland
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Holąd Pruski" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2690 } #Osterode
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Ostróda" }
+					set_province_name = { id = 11161 name = "Ostróda" }
+					set_province_name = { id = 11248 name = "Szczytno" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 11161
+					reset_province_name = 11248
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1611 } #Allenstein
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Olsztyn" }
+					set_province_name = { id = 1577 name = "Ostróda" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 1577
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2483 } #Heilsberg
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Lidzbark Warmiński" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1612 } #Lyck
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Ełk" }
+					set_province_name = { id = 11094 name = "Ełk" }
+					set_province_name = { id = 11034 name = "Giżycko" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 11094
+					reset_province_name = 11034
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 282 } #Rastenburg
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Kętrzyn" }
+					set_province_name = { id = 20478 name = "Kętrzyn" }
+					set_province_name = { id = 2421 name = "Bartoszyce" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 20478
+					reset_province_name = 2421
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1613 } #Angersburg
+				}
+				if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Węgorzewo" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Lusatia
+			if = {
+				limit = {
+					FROM.FROM = { state = 2594 } #Guben
+				}
+				if = {
+					limit = { ROOT = { OR = { is_polish = yes original_tag = LUS } } }
+					FROM.FROM = { set_state_name = "Gubin" }
+					set_province_name = { id = 2247 name = "Gubin" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 2247
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 441 } #Gorlitz
+				}
+				if = {
+					limit = { ROOT = { original_tag = LUS } }
+					FROM.FROM = { set_state_name = "Zhorjelc" }
+					set_province_name = { id = 12220 name = "Zhorjelc" }
+					set_province_name = { id = 7811 name = "Wórjejce" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Zgorzelec" }
+					set_province_name = { id = 12220 name = "Zgorzelec" }
+					set_province_name = { id = 7811 name = "Wojerecy" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12220
+					reset_province_name = 7811
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1670 } #Bautzen
+				}
+				if = {
+					limit = { ROOT = { original_tag = LUS } }
+					FROM.FROM = { set_state_name = "Budyšin" }
+					set_province_name = { id = 12210 name = "Budyšin" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Budziszyn" }
+					set_province_name = { id = 12210 name = "Budziszyn" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12210
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 2591 } #Kamenz
+				}
+				if = {
+					limit = { ROOT = { original_tag = LUS } }
+					FROM.FROM = { set_state_name = "Kamjenc" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1644 } #Cottbus
+				}
+				if = {
+					limit = { ROOT = { original_tag = LUS } }
+					FROM.FROM = { set_state_name = "Chóśebuz" }
+					set_province_name = { id = 20565 name = "Chóśebuz" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 20565
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 365 } #Luckau
+				}
+				if = {
+					limit = { ROOT = { original_tag = LUS } }
+					FROM.FROM = { set_state_name = "Łukow" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
