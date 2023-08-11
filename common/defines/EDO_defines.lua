@@ -10,7 +10,8 @@ NDefines.NGame.SAVE_VERSION = 7
 NDefines.NGame.HANDS_OFF_START_TAG = "LIE"
 
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.18
-NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.01				-- after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
+NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.01			-- after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
+NDefines.NMilitary.MIN_SUPPLY_CONSUMPTION = 0.025
 
 NDefines.NProduction.EQUIPMENT_BASE_LEND_LEASE_WEIGHT = 0.5
 NDefines.NProduction.LEND_LEASE_DELIVERY_TOTAL_DAYS = 10 -- Nr of days between lend lease deliveries
