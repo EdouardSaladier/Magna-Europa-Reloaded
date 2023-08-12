@@ -1,40 +1,38 @@
 is_tuscan = {
 	OR = {
-		original_tag = TUS
-		original_tag = LCC
-		original_tag = SNA
-		original_tag = PIS
+		original_tag = TUS #Tuscany
+		original_tag = LCC #Lucca
+		original_tag = SNA #Siena
+		original_tag = PIS #Pisa
 	}
 }
 is_emilian = {
 	OR = {
-		original_tag = MCR
-		original_tag = MDN
-		original_tag = BLG
-		original_tag = FRR
-		original_tag = PRM
-		original_tag = MTV
+		original_tag = MCR #Massa-Carrara
+		original_tag = MDN #Modena
+		original_tag = BLG #Bologna
+		original_tag = FRR #Ferrara
+		original_tag = PRM #Parma
+		original_tag = MTV #Mantova
 	}
 }
 is_lombard = {
 	OR = {
-		original_tag = LOM
-		original_tag = PAV
-		original_tag = MTV
+		original_tag = LOM #Lombardy
+		original_tag = PAV #Pavia
 	}
 }
 is_northern_italian = {
 	OR = {
 		is_emilian = yes
 		is_lombard = yes
-		original_tag = PIE
-		original_tag = VOS
-		original_tag = LOM
-		original_tag = LIG
-		original_tag = RMG
-		original_tag = SMR
-		original_tag = VNT
-		original_tag = SUT
+		original_tag = PIE #Piedmont
+		original_tag = VOS #Val d'Ossola (Partisan Republic)
+		original_tag = LIG #Liguria
+		original_tag = RMG #Romagna
+		original_tag = SMR #San Marino
+		original_tag = VNT #Veneto
+		original_tag = SUT #South Tyrol (Entirety of Tridentine Venetia, slight majority Italian)
 	}
 }
 is_northern_italian_core = {
@@ -65,33 +63,33 @@ is_northern_italian_core = {
 is_central_italian = {
 	OR = {
 		is_tuscan = yes
-		original_tag = LAZ
-		original_tag = VAT
-		original_tag = UMB
-		original_tag = MAR
-		original_tag = COR
+		original_tag = LAZ #Lazio
+		original_tag = VAT #Vatican
+		original_tag = UMB #Umbria
+		original_tag = MAR #Marches
+		original_tag = COR #Corsica
 	}
 }
 
 is_southern_italian = {
 	OR = {
-		original_tag = ABR
-		original_tag = MLS
-		original_tag = NAP
-		original_tag = PUG
-		original_tag = LUC
-		original_tag = CAL
+		original_tag = ABR #Abruzzo
+		original_tag = MLS #Molise
+		original_tag = NAP #Naples
+		original_tag = PUG #Apulia
+		original_tag = LUC #Lucania (Basilicata)
+		original_tag = CAL #Calabria
 	}
 }
 is_southern_italian_core = {
 	OR = {
-		is_core_of = ABR
-		is_core_of = MLS
-		is_core_of = NAP
-		is_core_of = PUG
-		is_core_of = LUC
-		is_core_of = CAL
-		is_core_of = SIC
+		is_core_of = ABR #Abruzzo
+		is_core_of = MLS #Molise
+		is_core_of = NAP #Naples
+		is_core_of = PUG #Apulia
+		is_core_of = LUC #Lucania (Basilicata)
+		is_core_of = CAL #Calabria
+		is_core_of = SIC #Sicily
 	}
 }
 is_italian = {
@@ -99,16 +97,16 @@ is_italian = {
 		is_northern_italian = yes
 		is_central_italian = yes
 		is_southern_italian = yes
-		original_tag = ITA
-		original_tag = SIC
-		original_tag = SRD
-		original_tag = TST
-		original_tag = FRI
-		original_tag = FIU
-		original_tag = LDN
-		original_tag = JUL
-		original_tag = IST
-		original_tag = GOR
+		original_tag = ITA #Italy
+		original_tag = SIC #Sicily
+		original_tag = SRD #Sardinia
+		original_tag = TST #Trieste
+		original_tag = FRI #Friuli
+		original_tag = FIU #Fiume
+		original_tag = LDN #Ladinia
+		original_tag = JUL #Julian March
+		original_tag = IST #Istria
+		original_tag = GOR #Gorizia
 	}
 }
 
@@ -226,16 +224,28 @@ is_austrian = {
 }
 
 is_swiss = {
+	OR = {
 		original_tag = SWI
 		original_tag = VOR
 		original_tag = LIE
+	}
+}
+
+is_prussian = {
+	OR = {
+		original_tag = PRE
+		original_tag = ESP
+		original_tag = WPR
+		original_tag = WSP
+		original_tag = WRM
+	}
 }
 
 is_high_german = {
 	OR = {
-		original_tag = BVR
+		original_tag = BAY
 		original_tag = FRN
-		original_tag = WRT
+		original_tag = WUR
 		original_tag = BDN
 		original_tag = HOZ
 		original_tag = ALS
@@ -267,12 +277,12 @@ is_middle_german = {
 		original_tag = SXN
 		original_tag = BRL
 		original_tag = SLS
-		original_tag = UPS
 		original_tag = RHN
 	}
 }
 is_low_german = {
 	OR = {
+		is_prussian = yes
 		original_tag = BRN
 		original_tag = HNV
 		original_tag = SLH
@@ -375,13 +385,16 @@ is_balkan = {
 
 is_polish = {
 	OR = {
-		original_tag = POL
-		original_tag = UPS
-		original_tag = CSN
-		original_tag = GAL
-		original_tag = MLP
-		original_tag = WKP
-		original_tag = MZV
+		original_tag = POL #Poland
+		original_tag = UPS #Upper Silesia
+		original_tag = CSN #Cieszyn
+		original_tag = GAL #Galicia
+		original_tag = MLP #Malopolska
+		original_tag = WKP #Wielkopolska
+		original_tag = MZV #Mazovia
+		original_tag = MAS #Masuria
+		original_tag = PML #Pomerelia
+		original_tag = CLT #Central Lithuania
 	}
 }
 
@@ -397,5 +410,16 @@ is_czechoslovak = {
 		is_czech = yes
 		original_tag = SLO
 		original_tag = CZE
+	}
+}
+
+is_lithuanian = {
+	OR = {
+		original_tag = LIT #Lithuania
+		original_tag = DKJ #Dzukija
+		original_tag = AKS #Aukstatija
+		original_tag = SVK #Suvalkija
+		original_tag = SMG #Samogitia
+		original_tag = LTM #Lithuania Minor (Prussian Lit)
 	}
 }

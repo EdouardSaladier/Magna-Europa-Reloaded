@@ -1229,7 +1229,7 @@ on_actions = {
 				if = {
 					limit = { ROOT = { is_polish = yes } }
 					FROM.FROM = { set_state_name = "Olsztyn" }
-					set_province_name = { id = 1577 name = "Ostróda" }
+					set_province_name = { id = 1577 name = "Olsztyn" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
@@ -1282,11 +1282,15 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					FROM.FROM = { state = 1613 } #Angersburg
+					FROM.FROM = { state = 1613 } #Angerburg
 				}
 				if = {
 					limit = { ROOT = { is_polish = yes } }
 					FROM.FROM = { set_state_name = "Węgorzewo" }
+				}
+				else_if = {
+					limit = { ROOT = { is_lithuanian = yes } }
+					FROM.FROM = { set_state_name = "Ungura" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
@@ -1381,6 +1385,149 @@ on_actions = {
 				if = {
 					limit = { ROOT = { original_tag = LUS } }
 					FROM.FROM = { set_state_name = "Łukow" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Northern East Prussia
+			if = {
+				limit = {
+					FROM.FROM = { state = 252 } #Königsberg
+				}
+				if = {
+					limit = {
+						ROOT = { original_tag = SOV NOT = { has_character = SOV_mikhail_kalinin } }
+					}
+					FROM.FROM = { set_state_name = "Kjonigsberg" }
+					set_province_name = { id = 19906 name = "Kjonigsberg" }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = SOV } }
+					FROM.FROM = { set_state_name = "Kaliningrad" }
+					set_province_name = { id = 19906 name = "Kaliningrad" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Królewiec" }
+					set_province_name = { id = 19906 name = "Królewiec" }
+				}
+				else_if = {
+					limit = { ROOT = { is_lithuanian = yes } }
+					FROM.FROM = { set_state_name = "Karaliaučius" }
+					set_province_name = { id = 19906 name = "Karaliaučius" }
+				}
+				else_if = {
+					limit = { ROOT = { is_czechoslovak = yes } }
+					FROM.FROM = { set_state_name = "Královec" }
+					set_province_name = { id = 19906 name = "Královec" }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = ITA has_cosmetic_tag = SPQR_unified } }
+					FROM.FROM = { set_state_name = "Regiomontium in Prussia" }
+					set_province_name = { id = 19906 name = "Regiomontium in Prussia" }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = GRE has_cosmetic_tag = BYZ_unified } }
+					FROM.FROM = { set_state_name = "Vasilovouno" }
+					set_province_name = { id = 19906 name = "Vasilovouno" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 19906
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 1614 } #Tilsit
+				}
+				if = {
+					limit = { ROOT = { is_lithuanian = yes } }
+					FROM.FROM = { set_state_name = "Tilžė" }
+					set_province_name = { id = 10752 name = "Tilžė" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Tylża" }
+					set_province_name = { id = 10752 name = "Tylża" }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = SOV has_government = communism } }
+					FROM.FROM = { set_state_name = "Sovetsk" }
+					set_province_name = { id = 10752 name = "Sovetsk" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 10752
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2335 } } #Gumbinnen
+				if = {
+					limit = { ROOT = { is_lithuanian = yes } }
+					FROM.FROM = { set_state_name = "Gumbinė" }
+					set_province_name = { id = 10853 name = "Gumbinė" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Gąbin" }
+					set_province_name = { id = 10853 name = "Gąbin" }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = SOV } }
+					FROM.FROM = { set_state_name = "Gusev" }
+					set_province_name = { id = 10853 name = "Gusev" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 10853
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 1615 } } #Insterburg
+				if = {
+					limit = { ROOT = { is_lithuanian = yes } }
+					FROM.FROM = { set_state_name = "Įsrutis" }
+					set_province_name = { id = 10893 name = "Įsrutis" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Wystruć" }
+					set_province_name = { id = 10893 name = "Wystruć" }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = SOV } }
+					FROM.FROM = { set_state_name = "Černjachovsk" }
+					set_province_name = { id = 10893 name = "Černjachovsk" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 10893
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2484 } } #Labiau
+				if = {
+					limit = { ROOT = { is_lithuanian = yes } }
+					FROM.FROM = { set_state_name = "Labguva" }
+				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Labiawa" }
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = SOV } }
+					FROM.FROM = { set_state_name = "Polessk" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2334 } } #Heilingenbeil
+				if = {
+					limit = { ROOT = { original_tag = SOV } }
+					FROM.FROM = { set_state_name = "Mamonovo" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
