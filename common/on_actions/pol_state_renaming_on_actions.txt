@@ -3,6 +3,44 @@ on_actions = {
 
 	on_state_control_changed = {
 		effect = {
+			#Slovak states
+			if = {
+				limit = { FROM.FROM = { state = 1440 } } #Jablonka
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								is_czechoslovak = yes
+								original_tag = HUN
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Jablonka" }
+					else = { FROM.FROM = { reset_state_name = yes } }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 1441 } } #Nowa Biala
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								is_czechoslovak = yes
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Nová Belá" }
+					else_if = {
+						limit = { ROOT = { original_tag = HUN } }
+						FROM.FROM = { set_state_name = "Újbéla" }
+					}
+					else_if = {
+						limit = { ROOT = { is_german = yes } }
+						FROM.FROM = { set_state_name = "Neubela" }
+					}
+					else = { FROM.FROM = { reset_state_name = yes } }
+				}
+			}
 			#Pomerania
 			if = {
 				limit = { FROM.FROM = { state = 267 } } #Gdynia
@@ -252,39 +290,32 @@ on_actions = {
 							is_subject = no
 						}
 					}
-					FROM.FROM = { set_state_flag = cieszyn_independent_flag }
 					set_province_name = { id = 12829 name = "Cieszyn" }
 					set_victory_points = { province = 12829 value = 6 }
 				}
 				else_if = {
 					limit = {
 						ROOT = {
-							OR = {
-								is_german = yes
-								AND = {
-									original_tag = CSN
-									is_subject = yes
-									overlord = { is_german = yes }
-								}
-							}
+							original_tag = CSN
+							is_subject = yes
+							overlord = { is_german = yes }
 						}
+					}
+					set_province_name = { id = 12829 name = "Teschen" }
+					set_province_name = { id = 12818 name = "Bielitz" }
+					set_victory_points = { province = 12829 value = 6 }
+				}
+				else_if = {
+					limit = {
+						ROOT = { is_german = yes }
 					}
 					FROM.FROM = { set_state_name = "Teschen" }
 					set_province_name = { id = 12818 name = "Bielitz" }
-					if = {
-						limit = {
-							ROOT = {
-								original_tag = CSN
-							}
-						}
-						set_province_name = { id = 12829 name = "Teschen" }
-						set_victory_points = { province = 12829 value = 6 }
-					}
 				}
 				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12818
 					reset_province_name = 12829
-					set_victory_points = { province = 12829 value = 0 }
-					FROM.FROM = { clr_state_flag = cieszyn_independent_flag }
 				}
 			}
 			if = {
@@ -328,7 +359,282 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = { FROM.FROM = { state = 2932 } } #Chrzanow
+				if = {
+					limit = {
+						ROOT = { is_german = yes }
+					}
+					FROM.FROM = { set_state_name = "Krenau" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
 			#Lesser Poland (Kielce)
+			if = {
+				limit = { FROM.FROM = { state = 467 } } #Sosnowiec
+				if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Sosnowitz" }
+					set_province_name = { id = 12622 name = "Sosnowitz" }
+					set_province_name = { id = 12568 name = "Mischkau" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 12622
+						reset_province_name = 12568
+					}
+				}
+			}
+			#Masovia (Plock)
+			if = {
+				limit = { FROM.FROM = { state = 752 } } #Wroclawek
+				if = {
+					limit = {
+						ROOT = { is_german = yes }
+					}
+					FROM.FROM = { set_state_name = "Leslau" }
+					set_province_name = { id = 11589 name = "Leslau" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 11589
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 651 } } #Mlawa
+				if = {
+					limit = {
+						ROOT = { is_german = yes }
+					}
+					FROM.FROM = { set_state_name = "Mielau" }
+					set_province_name = { id = 9350 name = "Mielau" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 9350
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 311 } } #Plock
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = GER
+							OR = {
+								has_country_leader = { character = GER_adolf_hitler ruling_only = yes }
+								has_country_leader = { character = GER_heinrich_himmler ruling_only = yes }
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Schröttersburg" }
+					set_province_name = { id = 19920 name = "Schröttersburg" }
+					set_province_name = { id = 9098 name = "Plöhnen" }
+					else_if = {
+						limit = { ROOT = { is_german = yes } }
+						FROM.FROM = { set_state_name = "Plotzk" }
+						set_province_name = { id = 19920 name = "Plotzk" }
+						set_province_name = { id = 9098 name = "Plöhnen" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 19920
+						reset_province_name = 9098
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 5 } } #Pulutsk
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = GER
+							OR = {
+								has_country_leader = { character = GER_adolf_hitler ruling_only = yes }
+								has_country_leader = { character = GER_heinrich_himmler ruling_only = yes }
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Ostenburg" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 5 } } #Przasnysz
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = GER
+							OR = {
+								has_country_leader = { character = GER_adolf_hitler ruling_only = yes }
+								has_country_leader = { character = GER_heinrich_himmler ruling_only = yes }
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Praschnitz" }
+					set_province_name = { id = 11547 name = "Praschnitz" }
+					else_if = {
+						limit = {
+							ROOT = { is_german = yes }
+						}
+						FROM.FROM = { set_state_name = "Pezaßnitz" }
+						set_province_name = { id = 11547 name = "Pezaßnitz" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 11547
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 1982 } } #Rzasnik
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = GER
+							OR = {
+								has_country_leader = { character = GER_adolf_hitler ruling_only = yes }
+								has_country_leader = { character = GER_heinrich_himmler ruling_only = yes }
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Scharfenwiese" }
+					set_province_name = { id = 11466 name = "Scharfenwiese" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 11547
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 329 } } #Gostynin
+				if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Gasten" }
+					set_province_name = { id = 1216 name = "Gasten" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 1216
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 381 } } #Lodz
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = GER
+							OR = {
+								has_country_leader = { character = GER_adolf_hitler ruling_only = yes }
+								has_country_leader = { character = GER_heinrich_himmler ruling_only = yes }
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Litzmannstadt" }
+					set_province_name = { id = 19908 name = "Litzmannstadt" }
+					else_if = {
+						limit = { ROOT = { is_german = yes } }
+						FROM.FROM = { set_state_name = "Lodsch" }
+						set_province_name = { id = 19908 name = "Lodsch" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 19908
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 693 } } #Leczyka
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = GER
+							OR = {
+								has_country_leader = { character = GER_adolf_hitler ruling_only = yes }
+								has_country_leader = { character = GER_heinrich_himmler ruling_only = yes }
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Lentschütz" }
+					set_province_name = { id = 5931 name = "Lentschütz" }
+					else_if = {
+						limit = { ROOT = { is_german = yes } }
+						FROM.FROM = { set_state_name = "Lentschitza" }
+						set_province_name = { id = 5931 name = "Lentschitza" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 19908
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 594 } } #Kalisz
+				if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Kalisch" }
+					set_province_name = { id = 11945 name = "Kalisch" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 11945
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 656 } } #Sieradz
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = GER
+							OR = {
+								has_country_leader = { character = GER_adolf_hitler ruling_only = yes }
+								has_country_leader = { character = GER_heinrich_himmler ruling_only = yes }
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Schieratz" }
+					set_province_name = { id = 8862 name = "Burgstadt" }
+					set_province_name = { id = 9574 name = "Belchental" }
+					else_if = {
+						limit = { ROOT = { is_german = yes } }
+						FROM.FROM = { set_state_name = "Schieratz" }
+						set_province_name = { id = 5931 name = "Pabianitz" }
+						set_province_name = { id = 9574 name = "Belchatow" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 5931
+						reset_province_name = 9574
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 612 } } #Wielun
+				if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Welun" }
+					set_province_name = { id = 12160 name = "Welun" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 12160
+					}
+				}
+			}
+			#Bialystok
+			if = {
+				limit = { FROM.FROM = { state = 284 } } #Suwalki
+				if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Sudauen" }
+					set_province_name = { id = 19931 name = "Sudauen" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 19931
+					}
+				}
+			}
 		}
 	}
 }
