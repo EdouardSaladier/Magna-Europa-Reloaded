@@ -1,0 +1,47 @@
+
+#			if = {
+#				limit = { FROM.FROM = { state = 1 } }
+#				if = {
+#					limit = {
+#						ROOT = {
+#							condition
+#						}
+#					}
+#					FROM.FROM = { set_state_name = "Name" }
+#					else_if = {
+#						limit = { condition 2 }
+#						FROM.FROM = { set_state_name = "Name2" }
+#					}
+#					else = { FROM.FROM = { reset_state_name = yes } }
+#				}
+#			}
+
+
+on_actions = {
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 	227 }
+				}
+				if = {
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Memelland" }
+					set_province_name = { id = 19907 name = "Memelburg" }
+					set_province_name = { id = 136 name = "Heydekrug" }
+					else_if = {
+						limit = { ROOT = { is_polish = yes } }
+						FROM.FROM = { set_state_name = "Kłajpedzki" }
+						set_province_name = { id = 19907 name = "Kłajpeda" }
+						set_province_name = { id = 136 name = "Szyłokarczma" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 19907
+						reset_province_name = 136
+					}
+				}
+			}
+		}
+	}
