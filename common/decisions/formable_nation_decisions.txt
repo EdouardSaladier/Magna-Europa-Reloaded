@@ -452,6 +452,7 @@ form_austria_hungary_category = {
 				tooltip = form_country_czechoslovakia_required_states_tt
 				CZE = {
 					all_core_state = {
+						limit = { NOT = { state = 1977 } }
 						is_controlled_by = ROOT
 					}
 				}

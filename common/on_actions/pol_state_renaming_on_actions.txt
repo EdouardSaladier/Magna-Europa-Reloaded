@@ -934,10 +934,22 @@ on_actions = {
 				if = {
 					limit = {
 						ROOT = {
-							is_lithuanian = yes	
+							original_tag = GER
+							OR = {
+								has_country_leader = { character = GER_adolf_hitler ruling_only = yes }
+								has_country_leader = { character = GER_heinrich_himmler ruling_only = yes }
+							}	
 						}
 					}
-					FROM.FROM = { set_state_name = "Augustavas" }
+					FROM.FROM = { set_state_name = "Augustau" }
+					else_if = {
+						limit = {
+							ROOT = {
+								is_lithuanian = yes	
+							}
+						}
+						FROM.FROM = { set_state_name = "Augustavas" }
+					}
 					else = {
 						FROM.FROM = { reset_state_name = yes }
 					}
@@ -990,10 +1002,22 @@ on_actions = {
 				if = {
 					limit = {
 						ROOT = {
-							is_lithuanian = yes	
+							original_tag = GER
+							OR = {
+								has_country_leader = { character = GER_adolf_hitler ruling_only = yes }
+								has_country_leader = { character = GER_heinrich_himmler ruling_only = yes }
+							}	
 						}
 					}
-					FROM.FROM = { set_state_name = "Račkos" }
+					FROM.FROM = { set_state_name = "Ratschki" }
+					else_if = {
+						limit = {
+							ROOT = {
+								is_lithuanian = yes	
+							}
+						}
+						FROM.FROM = { set_state_name = "Račkos" }
+					}
 					else = {
 						FROM.FROM = { reset_state_name = yes }
 					}
