@@ -2458,22 +2458,11 @@ focus_tree = {
 						is_in_faction_with = ROOT
 						OR = {
 							#Lithuania States
-							controls_state = 814
-							controls_state = 11
-							controls_state = 815
-							controls_state = 189
-							controls_state = 188
+							any_owned_state = { has_state_flag = LIT_INITIAL_STATE }
 							#Estonia States
-							controls_state = 811
-							controls_state = 812
-							controls_state = 13
-							controls_state = 813
-							controls_state = 191
+							any_owned_state = { has_state_flag = EST_INITIAL_STATE }
 							#Belarus States
-							controls_state = 784
-							controls_state = 96
-							controls_state = 95
-							controls_state = 94
+							any_owned_state = { is_core_of = BLR }
 						}
 					}
 				}
