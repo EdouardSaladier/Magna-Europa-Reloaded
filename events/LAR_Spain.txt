@@ -659,6 +659,9 @@ country_event = {
 							state = 1858
 							state = 1824
 							state = 1976
+							state = 1857
+							state = 893
+							state = 1852
 						}
 					}
 					# Transfer states and set flag to prepare for post-Civil War de-coring
@@ -2596,12 +2599,16 @@ country_event = {
 					limit = {
 						has_country_flag = SPA_the_army_of_africa_flag
 					}
-					every_state = {
+					every_owned_state = {
 						limit = {
-							is_spanish_africa = yes
+							OR = {
+								is_core_of = RIF
+								state = 893
+								state = 1852
+							}
 						}
 						transfer_state_to = SPA
-						 set_state_flag = SPR_sided_with_nationalists_flag
+						set_state_flag = SPR_sided_with_nationalists_flag
 					}
 					SPA = {
 						division_template = {
