@@ -1733,19 +1733,38 @@ if = {
 	}
 	### Destroyer Variants
 	create_equipment_variant = {
+		name = "Azio Class"		#Minelayers
+		type = ship_hull_light_1
+		name_group = ITA_MINELAYERS_HISTORICAL
+		role_icon_index = 4
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
 		name = "Aquila Class"			
 		type = ship_hull_light_1
 		name_group = ITA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_3
+			fixed_ship_battery_slot = ship_light_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 		obsolete = yes
 	}
@@ -1762,7 +1781,7 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 		obsolete = yes
 	}
@@ -1835,7 +1854,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Mirabello/Leone Class"
+		name = "Mirabello Class"
 		type = ship_hull_light_1
 		name_group = ITA_DD_HISTORICAL
 		parent_version = 0
@@ -1844,15 +1863,32 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Curtatone Class" 		#Represents the following WWI/1920s DDs/DEs: Curtatone, Sauro/Sella, Turbine, Pilo, Audace, Siritori, La Masa, Palestro, Cantore
+		name = "Leone Class"
+		type = ship_hull_light_1
+		name_group = ITA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Curtatone Class" 		#Represents the following WWI/1920s DDs/DEs: Curtatone, Pilo, Audace, Siritori, La Masa, Palestro
 		type = ship_hull_light_1
 		name_group = ITA_DD_HISTORICAL
 		parent_version = 0
@@ -1872,6 +1908,7 @@ if = {
 		name = "Navigatori Class"
 		type = ship_hull_light_2
 		name_group = ITA_DD_HISTORICAL
+		role_icon_index = 3
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_2
@@ -1881,12 +1918,12 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_2
 			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Freccia/Folgore Class"
+		name = "Dardo Class"
 		type = ship_hull_light_2
 		name_group = ITA_DD_HISTORICAL
 		parent_version = 0
@@ -1925,19 +1962,20 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_anti_air_slot = ship_anti_air_3
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_3
 			fixed_ship_torpedo_slot = ship_torpedo_2
 			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
 	create_equipment_variant = {
 		name = "Soldati Class"
 		type = ship_hull_light_2
 		name_group = ITA_DD_HISTORICAL
+		role_icon_index = 1
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_2
@@ -1947,7 +1985,7 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_3
 			fixed_ship_torpedo_slot = ship_torpedo_2
 			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = ship_depth_charge_2
 		}
 	}
 	### Carrier Variants
@@ -1982,31 +2020,7 @@ if = {
 #			fixed_ship_armor_slot = empty
 #		}
 #	}
-	### Submarine Variants	
-	create_equipment_variant = {
-		name = "Archimede Class"
-		type = ship_hull_submarine_2
-		name_group = SPR_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = ship_torpedo_sub_1
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Mameli Class"
-		type = ship_hull_submarine_2
-		name_group = ITA_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}	
+	### Submarine Variants		
 	create_equipment_variant = {
 		name = "H Class"
 		type = ship_hull_submarine_1
@@ -2032,6 +2046,30 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
+		name = "Archimede Class"
+		type = ship_hull_submarine_2
+		name_group = SPR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Mameli Class"
+		type = ship_hull_submarine_2
+		name_group = ITA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
 		name = "Bragadin Class"
 		type = ship_hull_submarine_2
 		name_group = ITA_SS_HISTORICAL
@@ -2050,7 +2088,7 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_engine_slot = sub_ship_engine_3
 			rear_1_custom_slot = empty
 		}
 		obsolete = yes
@@ -2061,10 +2099,10 @@ if = {
 		name_group = ITA_SS_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_4
 			front_1_custom_slot = empty
-			rear_1_custom_slot = ship_torpedo_sub_2
+			rear_1_custom_slot = ship_torpedo_sub_1
 		}
 	}
 	create_equipment_variant = {
@@ -2086,7 +2124,7 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_engine_slot = sub_ship_engine_2
 			rear_1_custom_slot = ship_torpedo_sub_1
 		}
 	}
