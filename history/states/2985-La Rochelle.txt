@@ -1,0 +1,33 @@
+state={
+	id=2985
+	name="STATE_2985"
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = POI
+		add_core_of = ANS
+		buildings = {
+			infrastructure = 4
+			19859 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			19859 5 
+		}
+		victory_points = {
+			14156 2 
+		}
+
+	}
+	provinces={
+		202 14156 19859 19869 19884 
+	}
+	manpower=152364
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

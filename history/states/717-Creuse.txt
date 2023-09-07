@@ -6,8 +6,12 @@ state={
 		add_core_of = FRA
 		add_core_of = LMS
 		add_core_of = OCC
+		add_core_of = MCH
 		buildings = {
 			infrastructure = 3
+		}
+		victory_points = {
+			14111 1 #Guéret
 		}
     }
 	provinces={

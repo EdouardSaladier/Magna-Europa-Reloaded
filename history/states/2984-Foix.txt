@@ -1,0 +1,27 @@
+state={
+	id=2984
+	name="STATE_2984"
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = OCC
+		add_core_of = FIX
+		add_core_of = LDC
+		victory_points = {
+			8397 2 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+	provinces={
+		1217 6859 8397 14793 
+	}
+	manpower=113068
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
