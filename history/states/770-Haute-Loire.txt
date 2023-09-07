@@ -1,22 +1,29 @@
+
 state={
 	id=770
 	name="STATE_770"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = AVG
 		add_core_of = OCC
-        victory_points = {
-            3998 2 #Le Puy
-        }
+		add_core_of = LDC
+		victory_points = {
+			3998 2 
+		}
 		buildings = {
 			infrastructure = 3
+
 		}
-    }
-	provinces={
-		3998 5415 8715 14352 14366 14395 14400 
+
 	}
-	manpower=245300
+
+	provinces={
+		3998 8715 14366 14400 
+	}
+	manpower=205207
 	buildings_max_level_factor=1.000
-	state_category = large_town
+	state_category=large_town
+	local_supplies=0.000
 }

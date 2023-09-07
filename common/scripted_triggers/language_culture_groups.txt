@@ -114,10 +114,14 @@ is_occitan = {
 	OR = {
 		original_tag = OCC
 		original_tag = AVG
+		original_tag = GAS
+		original_tag = GYE
+		original_tag = BEA
+		original_tag = FIX
+		original_tag = LDC
 		original_tag = AQT
 		original_tag = PRV
 		original_tag = NZA
-		original_tag = DAU
 		original_tag = LMS
 	}
 }
@@ -138,6 +142,16 @@ is_d_oil = {
 		original_tag = HNT
 		original_tag = LEG
 		original_tag = NMR
+		original_tag = DAU
+		original_tag = ANS
+		original_tag = SNT
+		original_tag = AGM
+		original_tag = MNE
+		original_tag = TNE
+		original_tag = FRC
+		original_tag = BRY
+		original_tag = BBN
+		original_tag = NVN
 	}
 }
 

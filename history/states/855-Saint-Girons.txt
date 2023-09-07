@@ -1,21 +1,25 @@
+
 state={
 	id=855
 	name="STATE_855"
+
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = OCC
-		victory_points = {
-            8397 2 #Pamiers
-        }
+		add_core_of = GAS
 		buildings = {
 			infrastructure = 2
+
 		}
-    }
-	provinces={
-		1217 6233 6859 8397 8650 14793 
+
 	}
-	manpower=155100
+
+	provinces={
+		6233 8650 
+	}
+	manpower=42032
 	buildings_max_level_factor=1.000
-	state_category = town
+	state_category=pastoral
+	local_supplies=0.000
 }

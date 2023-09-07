@@ -2,9 +2,7 @@
 state={
 	id=723
 	name="STATE_723"
-	provinces={
-		1366 3623 6256 6889 7069 7948 14106 14141 19816 20494 
-	}
+
 	history={
 		owner = FRA
 		add_core_of = FRA
@@ -12,13 +10,19 @@ state={
 		add_core_of = OCC
 		buildings = {
 			infrastructure = 3
+
 		}
-        victory_points = {
-            19816 10 #Limoges
-        }
-    }
-	manpower=333600
+		victory_points = {
+			19816 10 
+		}
+
+	}
+
+	provinces={
+		1366 7069 7948 19816 20494 
+	}
+	manpower=221600
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_town
 	local_supplies=0.000
 }
