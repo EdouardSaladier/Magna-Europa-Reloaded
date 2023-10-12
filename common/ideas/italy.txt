@@ -1,19 +1,5 @@
 ideas = {
 	hidden_ideas = {
-		ITA_hidden_bleak_situation = {
-			name = ITA_bleak_situation
-			removal_cost = -1
-			picture = generic_disjointed_gov
-			allowed = {
-				original_tag = ITA
-			}
-			allowed_civil_war = {
-				always = no
-			}
-			modifier = {
-				surrender_limit = -0.2
-			}
-		}
 		ITA_hidden_research_penalties_ns = { #Hidden idea to apply research penalties to certain military techs. Communicated in ITA_military_industry_dynamic_modifier (used as NS)
  			name = ITA_military_industry_dynamic_modifier #Just in case it shows up anywhere
 			removal_cost = -1
@@ -30,10 +16,10 @@ ideas = {
 					
 			research_bonus = { # WARNING!! Any changes here need to be applied in the Dynamic Modifier custom tooltip. Thanks for your attention.
 				armor = -0.15
-				infantry_weapons = -0.05
-				artillery = -0.05
-				air_equipment = -0.1
-			#	naval_equipment = -0.15
+				infantry_weapons = -0.15
+				artillery = -0.15
+				air_equipment = -0.15
+				naval_equipment = -0.15
 			}
 		}
 
@@ -77,12 +63,6 @@ ideas = {
 				always = yes
 			}
 					
-		#	modifier = {
-		#		modifier_army_sub_unit_light_tank_recon_defence_factor = -0.05
-		#		modifier_army_sub_unit_light_tank_recon_speed_factor = 0.05
-		#		modifier_army_sub_unit_light_tank_recon_max_org_factor = 0.05
-		#	}
-
 			equipment_bonus = { # WARNING!! Any changes here need to be applied in the Dynamic Modifier custom tooltip. Thanks for your attention.
 				light_tank_chassis = {
 					instant = yes
@@ -352,8 +332,9 @@ ideas = {
 			equipment_bonus = { # WARNING!! Any changes here need to be applied in the Dynamic Modifier custom tooltip. Thanks for your attention.
 				carrier = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.2
 					armor_value = -0.1
+					carrier_size = -1
 				}
 			}
 		}
@@ -568,7 +549,8 @@ ideas = {
 				communism_acceptance = -10
 				democratic_acceptance = -10
 				fascism_acceptance = 10
-				justify_war_goal_time = -0.1
+				ai_focus_aggressive_factor = 0.5
+				justify_war_goal_time = -0.05
 			}
 		}
 
@@ -606,8 +588,8 @@ ideas = {
 			removal_cost = -1	
 
 			modifier = {
-				land_doctrine_cost_factor = -0.1
-				air_doctrine_cost_factor = -0.1
+				land_doctrine_cost_factor = -0.05
+				air_doctrine_cost_factor = -0.05
 			}
 			
 		}
@@ -654,10 +636,7 @@ ideas = {
 
  			modifier = {
  				max_dig_in_factor = 0.1
-				cat_mobile_warfare_cost_factor = 0.1
-				cat_superior_firepower_cost_factor = -0.1
-				cat_mass_assault_cost_factor = 0.1
-				cat_grand_battle_plan_cost_factor = -0.1
+				land_doctrine_cost_factor = 0.1
 				army_speed_factor = -0.1
 				army_org_factor = -0.1
 				org_loss_when_moving = 0.15
@@ -671,11 +650,7 @@ ideas = {
 
 			available = {
 				NOT = {
-					has_country_leader = {
-						character = ITA_vittorio_emanuele_iii 
-						ruling_only = yes
-					}
-					has_government = communism
+					has_government = neutrality #remove if King in power
 				}
 			}
 
@@ -687,7 +662,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.05
-				war_support_factor = 0.05
 			}
 		}
 
@@ -702,11 +676,7 @@ ideas = {
 
 			available = {
 				NOT = {
-					has_country_leader = {
-						character = ITA_vittorio_emanuele_iii 
-						ruling_only = yes
-					}
-					has_government = communism
+					has_government = neutrality #remove if King in power
 				}
 			}
 
@@ -718,7 +688,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.06
-				war_support_factor = 0.06
 				party_popularity_stability_factor = 0.1
 				compliance_growth = 0.1
 			}
@@ -735,11 +704,7 @@ ideas = {
 
 			available = {
 				NOT = {
-					has_country_leader = {
-						character = ITA_vittorio_emanuele_iii 
-						ruling_only = yes
-					}
-					has_government = communism
+					has_government = neutrality #remove if King in power
 				}
 			}
 
@@ -751,7 +716,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.06
-				war_support_factor = 0.06
 				party_popularity_stability_factor = 0.1
 				compliance_growth = 0.1
 			}
@@ -780,17 +744,12 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.07
-				war_support_factor = 0.07
 				party_popularity_stability_factor = 0.2
 				compliance_growth = 0.2
 			}
 		}
                         
 
-		
-		king_umberto = {
-		}
-		
 		ITA_offensive_in_ethiopia = {
 			removal_cost = -1
 
@@ -867,7 +826,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				supply_node_range = 0.1
 				supply_consumption_factor = -0.1
 			}
@@ -1003,7 +962,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 			}
 		}
 
@@ -1021,7 +980,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				political_power_factor = -0.15
 				out_of_supply_factor = -0.1
 			}
@@ -1041,7 +1000,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 				political_power_factor = 0.1
 			}
 		}
@@ -1245,7 +1204,6 @@ ideas = {
 
 			modifier = {
 				modifier_army_sub_unit_armored_car_max_org_factor = 0.1
-				modifier_army_sub_unit_armored_car_recon_max_org_factor = 0.1
 			}
 		}
 
@@ -1358,7 +1316,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.01
+				consumer_goods_factor = -0.03
 			}
 		}
 
@@ -1930,7 +1888,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				industrial_capacity_factory = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				surrender_limit = 0.1
 			}
 		}
@@ -1988,7 +1946,7 @@ ideas = {
 			modifier = {
 				weekly_manpower = 1000
 				communism_drift = 0.1
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 				custom_modifier_tooltip = ITA_grande_rivolta_rurale_terrain_bonus_tt
 			}
 		}
@@ -2410,7 +2368,7 @@ ideas = {
 				offence = 0.05
 				offensive_war_stability_factor = 0.5
 				weekly_manpower = 500
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.05
 				guarantee_cost = -0.35
 				guarantee_tension = -0.35
 				custom_modifier_tooltip = ITA_papal_state_catholic_dominion_puppet_discount_tt
@@ -2444,7 +2402,7 @@ ideas = {
 				offence = 0.05
 				offensive_war_stability_factor = 0.5
 				weekly_manpower = 500
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 				guarantee_cost = -0.35
 				guarantee_tension = -0.35
 				custom_modifier_tooltip = ITA_papal_state_catholic_dominion_puppet_discount_tt
@@ -2465,7 +2423,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -2530,10 +2488,6 @@ ideas = {
 				has_government = communism
 			}
 
-		#	cancel = {
-		#		has_global_flag = scw_over
-		#	}
-
 			modifier = {
 				weekly_manpower = 400
 				communism_drift = 0.01
@@ -2555,10 +2509,6 @@ ideas = {
 
 			allowed_civil_war = {
 				has_government = communism
-			}
-
-			cancel = {
-				has_global_flag = scw_over
 			}
 
 			modifier = {
@@ -2834,7 +2784,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 				subjects_autonomy_gain = -0.2
 			}
 		}
@@ -2860,7 +2810,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				subjects_autonomy_gain = -0.3
 				research_speed_factor = 0.05
 			}
@@ -2907,7 +2857,7 @@ ideas = {
 				global_building_slots_factor = 0.4
 				stability_factor = 0.05
 				political_power_factor = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				production_speed_buildings_factor = 0.1
 				cic_to_overlord_factor = 0.3
 				mic_to_overlord_factor = 0.3
@@ -3242,7 +3192,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 				industrial_capacity_factory = -0.025
 				production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = -0.05
@@ -3314,7 +3264,7 @@ ideas = {
 				resistance_damage_to_garrison = -0.15
 				non_core_manpower = 0.25
 				industry_repair_factor = 0.3
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				weekly_manpower = 150 
 			}
 		}
@@ -3464,7 +3414,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 718 #PIEMONT (Torino)
+				controls_state = 158 #PIEMONT (Torino)
 				ITA_is_northern_designer = yes
 			}
 			
@@ -3472,7 +3422,7 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { fast_tank_manufacturer }
+			traits = { tank_manufacturer }
 		}
 
 		ITA_fiat_improved = { #NORTH
@@ -3490,7 +3440,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 718 #PIEMONT (Torino)
+				controls_state = 158 #PIEMONT (Torino)
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -3498,7 +3448,7 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { fast_tank_manufacturer }
+			traits = { tank_manufacturer }
 
 			equipment_bonus = {
 				armor = {
@@ -3530,7 +3480,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 744 #LITORALE (Trieste)
+				controls_state = 736 #LITORALE (Trieste)
 				ITA_is_northern_designer = yes
 			}
 						
@@ -3556,7 +3506,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 744 #LITORALE (Trieste)
+				controls_state = 736 #LITORALE (Trieste)
 				ITA_is_northern_designer_improved = yes
 			}
 						
@@ -3591,7 +3541,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 798 #PIEDMONT (Genova)
+				controls_State = 158 #PIEDMONT (Genova)
 				ITA_is_northern_designer = yes
 			}
 						
@@ -3617,7 +3567,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 798 #PIEDMONT (Genova)
+				controls_State = 158 #PIEDMONT (Genova)
 				ITA_is_northern_designer_improved = yes
 			}
 						
@@ -3651,7 +3601,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 934 # CAMPAGNA (Napoli)
+				controls_State = 117 # CAMPAGNA (Napoli)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -3677,7 +3627,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 934 # CAMPAGNA (Napoli)
+				controls_State = 117 # CAMPAGNA (Napoli)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -3712,7 +3662,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 823 # ABRUZZO (Ancona)
+				controls_State = 157 # ABRUZZO (Ancona)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -3738,7 +3688,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 823 # ABRUZZO (Ancona)
+				controls_State = 157 # ABRUZZO (Ancona)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -3770,7 +3720,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 1405 # PUGLIA (Taranto)
+				controls_State = 849 # PUGLIA (Taranto)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -3796,7 +3746,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 1405 # PUGLIA (Taranto)
+				controls_State = 849 # PUGLIA (Taranto)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -3827,7 +3777,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 1361 #LOMBARDIA (Varese)
+				controls_State = 159 #LOMBARDIA
 				ITA_is_northern_designer = yes
 			}
 			
@@ -3853,7 +3803,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 1361 #LOMBARDIA (Varese)
+				controls_State = 159 #LOMBARDIA
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -3861,7 +3811,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { light_aircraft_manufacturer_2 }
+			traits = { light_aircraft_manufacturer }
 
 			modifier = {
 				air_superiority_efficiency = 0.05
@@ -3883,7 +3833,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 709 #LOMBARDIA (Milano)
+				controls_State = 159 #LOMBARDIA
 				ITA_is_northern_designer = yes
 			}
 
@@ -3913,7 +3863,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 709 #LOMBARDIA (Milano)
+				controls_State = 159 #LOMBARDIA
 				ITA_is_northern_designer_improved = yes
 			}
 
@@ -3944,7 +3894,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 1361 #LOMBARDIA (Varese)
+				controls_State = 159 #LOMBARDIA
 				ITA_is_northern_designer = yes
 			}
 						
@@ -3970,7 +3920,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 1361 #LOMBARDIA (Varese)
+				controls_State = 159 #LOMBARDIA
 				ITA_is_northern_designer_improved = yes
 			}
 						
@@ -3985,7 +3935,7 @@ ideas = {
 			}
 		}
 		
-		piaggio = { #SOUTH
+		piaggio = { #NORTH		
 			allowed = {
 				original_tag = ITA
 			}
@@ -3994,14 +3944,14 @@ ideas = {
 				NOT = {
 					AND = {
 						has_completed_focus = ITA_new_industrialization_program
-						has_completed_focus = ITA_modernize_the_mezzogiorno
+						has_completed_focus = ITA_strengthen_northern_industry
 					}
 				}
 			}
 
 			available = {
-				controls_state = 1387 #TUSCANY (Pisa)
-				ITA_is_southern_designer = yes
+				controls_State = 158 #PIEMONTE
+				ITA_is_northern_designer = yes
 			}
 						
 			research_bonus = {
@@ -4022,12 +3972,12 @@ ideas = {
 
 			visible = {
 				has_completed_focus = ITA_new_industrialization_program
-				has_completed_focus = ITA_modernize_the_mezzogiorno
+				has_completed_focus = ITA_strengthen_northern_industry
 			}
 
 			available = {
-				controls_state = 1387 #TUSCANY (Pisa)
-				ITA_is_southern_designer_improved = yes
+				controls_State = 158 #PIEMONTE
+				ITA_is_northern_designer_improved = yes
 			}
 						
 			research_bonus = {
@@ -4058,7 +4008,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 934 #CAMPANIA (Napoli)
+				controls_State = 117 #CAMPANIA (Napoli)
 				ITA_is_southern_designer = yes
 			}
 						
@@ -4084,7 +4034,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 934 #CAMPANIA (Napoli)
+				controls_State = 117 #CAMPANIA (Napoli)
 				ITA_is_southern_designer_improved = yes
 			}
 						
@@ -4124,7 +4074,7 @@ ideas = {
 						has_idea = ITA_crda_improved
 					}
 				}
-				controls_state = 744 #LITORALE (Trieste)
+				controls_State = 736 #LITORALE (Trieste)
 				ITA_is_northern_designer = yes
 			}
 
@@ -4159,7 +4109,7 @@ ideas = {
 						has_idea = ITA_crda_improved
 					}
 				}
-				controls_state = 744 #LITORALE (Trieste)
+				controls_State = 736 #LITORALE (Trieste)
 				ITA_is_northern_designer_improved = yes
 			}
 
@@ -4200,7 +4150,7 @@ ideas = {
 						has_idea = ITA_fiat_improved
 					}
 				}
-				controls_state = 718 #PIEDMONT (Torino)
+				controls_State = 158 #PIEDMONT (Torino)
 				ITA_is_northern_designer = yes
 			}
 
@@ -4232,7 +4182,7 @@ ideas = {
 					has_idea = fiat
 					has_idea = ITA_fiat_improved
 				}
-				controls_state = 718 #PIEDMONT (Torino)
+				controls_State = 158 #PIEDMONT (Torino)
 				ITA_is_northern_designer_improved = yes
 			}
 
@@ -4269,7 +4219,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 1359 #LOMBARDIA (Brescia)
+				controls_state = 159 #LOMBARDIA
 				ITA_is_northern_designer = yes
 			}
 			
@@ -4295,7 +4245,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 1359 #LOMBARDIA (Brescia)
+				controls_state = 159 #LOMBARDIA
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -4328,7 +4278,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 718 #PIEDMONT (Torino)
+				controls_state = 159 #LOMBARDIA
 				ITA_is_northern_designer = yes
 			}
 			
@@ -4354,7 +4304,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 718 #PIEDMONT (Torino)
+				controls_state = 159 #LOMBARDIA
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -4391,7 +4341,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 709 #LOMBARDIA (Milano)
+				controls_state = 159 #LOMBARDIA
 				ITA_is_northern_designer = yes
 			}
 			
@@ -4417,7 +4367,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 709 #LOMBARDIA (Milano)
+				controls_state = 159 #LOMBARDIA
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -4452,7 +4402,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 1359 #LOMBARDY (Brescia)
+				controls_state = 159 #LOMBARDY (Brescia)
 				ITA_is_northern_designer = yes
 			}
 			
@@ -4478,7 +4428,7 @@ ideas = {
 			}
 			
 			available = {
-				controls_state = 1359 #LOMBARDY (Brescia)
+				controls_state = 159 #LOMBARDY (Brescia)
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -4582,7 +4532,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 706 #FRIULI (Udine)
+				controls_state = 160 #VENETO
 				ITA_is_northern_designer = yes
 			}
 			
@@ -4608,7 +4558,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 706 #FRIULI (Udine)
+				controls_state = 160 #VENETO
 				ITA_is_northern_designer_improved = yes
 			}
 			
@@ -4642,7 +4592,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 1392 #UMBRIA (Terni)
+				controls_state = 162 #TUSCANY (actually Terni)
 				ITA_is_southern_designer = yes
 			}
 			
@@ -4668,7 +4618,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 1392 #UMBRIA (Terni)
+				controls_state = 162 #TUSCANY (actually Terni)
 				ITA_is_southern_designer_improved = yes
 			}
 			
@@ -4698,7 +4648,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 1365 #LOMBARDY (Bergamo)
+				controls_state = 158 #PIEDMONT
 				ITA_is_northern_designer = yes
 			}
 
@@ -4720,7 +4670,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 1365 #LOMBARDY (Bergamo)
+				controls_state = 158 #PIEDMONT
 				ITA_is_northern_designer_improved = yes
 			}
 
@@ -4749,7 +4699,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 2607 #LATIUM (Roma)
+				controls_state = 2 #LATIUM
 				ITA_is_southern_designer = yes
 			}
 
@@ -4771,7 +4721,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 2607 #LATIUM (Roma)
+				controls_state = 2 #LATIUM
 				ITA_is_southern_designer_improved = yes
 			}
 
@@ -4806,7 +4756,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 779 #EMILIA ROMAGNA (Bologna)
+				controls_state = 161 #EMILIA ROMAGNA
 				ITA_is_northern_designer = yes
 			}
 
@@ -4832,7 +4782,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 779 #EMILIA ROMAGNA (Bologna)
+				controls_state = 161 #EMILIA ROMAGNA
 				ITA_is_northern_designer_improved = yes
 			}
 

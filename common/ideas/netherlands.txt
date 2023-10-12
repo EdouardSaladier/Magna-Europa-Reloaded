@@ -317,6 +317,57 @@ ideas = {
 			}
 		}
 
+		HOL_curtail_colonial_autonomy_overlord = {
+
+			name = HOL_curtail_colonial_autonomy
+
+			picture = generic_pp_unity_bonus
+
+			available = {
+				country_exists = INS
+				INS = { is_subject_of = HOL }
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				political_power_cost = 0.33
+			}
+		}
+
+		HOL_curtail_colonial_autonomy_subject = {
+
+			name = HOL_curtail_colonial_autonomy
+
+			picture = hol_lead_the_minor_democracies
+
+			available = {
+				is_subject = yes
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				autonomy_gain = -2
+			}
+		}
+
 		HOL_expand_the_colonial_army = {
 
 			picture = hol_expand_the_colonial_army
@@ -530,7 +581,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -1903,7 +1954,7 @@ ideas = {
 
 		koolhoven = {
 			
-			picture = koolhoven
+			picture = generic_air_manufacturer_3
 
 			
 			allowed = {

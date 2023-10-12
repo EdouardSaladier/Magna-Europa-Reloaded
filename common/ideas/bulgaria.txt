@@ -78,6 +78,68 @@ ideas = {
 			}
 		}
 
+		BUL_army_restrictions_aat = {
+			name = BUL_army_restrictions
+			picture = tfv_can_conscription_crisis
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				tag = BUL
+			}
+			removal_cost = -1
+
+			cancel = {
+				has_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag
+				OR = {
+					has_non_aggression_pact_with = GRE
+					has_non_aggression_pact_with = YUG
+					has_non_aggression_pact_with = ROM
+					has_non_aggression_pact_with = TUR
+				}
+			}
+
+			on_remove = {
+				if = {
+					limit = {
+						has_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag
+						NOT = { has_country_flag = BUL_refused_arms_restrictions_flag }
+						NOT = { has_country_flag = BUL_uk_gives_in_to_pressure_flag }
+					}
+					country_event = bftb_bulgaria_rearmament.4
+					ENG = { country_event = bftb_bulgaria_rearmament.5 }
+				}
+				if = {
+					limit = { has_country_flag = BUL_refused_arms_restrictions_flag }
+					clr_country_flag = BUL_refused_arms_restrictions_flag
+				}
+				if = {
+					limit = { has_country_flag = BUL_uk_gives_in_to_pressure_flag }
+					clr_country_flag = BUL_uk_gives_in_to_pressure_flag
+				}
+				if = {
+					limit = { has_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag }
+					clr_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag
+				}
+				country_lock_all_division_template = no
+				set_rule = {
+					can_not_declare_war = no
+				}
+			}
+
+			rule = {
+				can_access_market = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				custom_modifier_tooltip = BUL_army_restrictions_mobilization_law_tt
+			}
+		}
+
 		BUL_second_national_catastrophe = {
 			picture = bul_second_national_catastrophe
 
@@ -556,7 +618,7 @@ ideas = {
 			
 			modifier = {
 				trade_laws_cost_factor = -0.50
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -612,7 +674,7 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.02
 				production_factory_max_efficiency_factor = 0.02
-				consumer_goods_factor = 0.04
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -633,7 +695,7 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = 0.08
+				consumer_goods_factor = 0.15
 			}
 		}
 
@@ -655,7 +717,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				global_building_slots_factor = 0.2
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.06
 			}
 		}
 
@@ -672,7 +734,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -1116,7 +1178,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -1230,7 +1292,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				conscription = 0.02
 			} 
 		}
@@ -1250,7 +1312,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				conscription = 0.02
 				industrial_capacity_factory = 0.1
 			} 
@@ -1385,7 +1447,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				trade_laws_cost_factor = -0.35
 				economy_cost_factor = -0.35
 			}
@@ -1543,7 +1605,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				war_support_weekly = 0.005
+				war_support_factor = 0.05
 				weekly_manpower = 500
 				neutrality_drift = 0.1
 			}
@@ -1565,7 +1627,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				war_support_weekly = 0.005
+				war_support_factor = 0.05
 				weekly_manpower = 500
 				fascism_drift = 0.1
 			}
@@ -1684,7 +1746,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				war_support_weekly = 0.005
+				war_support_weekly = 0.001
 				conscription = 0.01
 			}
 		}
@@ -1749,7 +1811,7 @@ ideas = {
 			modifier = {
 				economy_cost_factor = -0.5
 				production_speed_industrial_complex_factor = 0.15
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.10
 				trade_laws_cost_factor = 0.5
 				min_export = -0.15
 			} 
@@ -1772,7 +1834,7 @@ ideas = {
 			modifier = {
 				economy_cost_factor = -0.5
 				production_speed_industrial_complex_factor = 0.2
-				consumer_goods_factor = -0.07
+				consumer_goods_factor = -0.15
 				trade_laws_cost_factor = 0.5
 				min_export = -0.15
 				local_resources_factor = 0.15
@@ -1813,7 +1875,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				production_speed_buildings_factor = 0.05
 				global_building_slots_factor = 0.1
 			} 
@@ -1921,7 +1983,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				drift_defence_factor = -0.5
 				democratic_drift = 0.05
 			}

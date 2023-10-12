@@ -16,7 +16,7 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.50
 				industrial_capacity_factory = -0.20
 				industrial_capacity_dockyard = -0.20
 			}
@@ -37,7 +37,7 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.25
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
@@ -70,10 +70,6 @@ ideas = {
 				always = no
 			}
 
-			available = {
-				owns_state = 1
-			}
-
 			allowed_civil_war = {
 				always = yes
 			}
@@ -91,10 +87,6 @@ ideas = {
 
 			allowed = {
 				always = no
-			}
-
-			available = {
-				owns_state = 1
 			}
 
 			allowed_civil_war = {
@@ -188,7 +180,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 			}
 		}
 
@@ -207,7 +199,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.08
+				consumer_goods_factor = -0.20
 			}
 		}
 
@@ -567,7 +559,7 @@ ideas = {
 				}
 			}
 		}
-
+		
 		CAN_dollar_a_year_men = {
 			allowed = {
 				always = no
@@ -648,6 +640,24 @@ ideas = {
 			}
 		}
 		
+		CAN_booming_economy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				production_speed_buildings_factor = 0.20
+			}
+		}
+		
 	}
 
 	# TECHNOLOGY
@@ -657,8 +667,11 @@ ideas = {
 
 		vickers_armstrong_can = {
 
+			picture = generic_tank_manufacturer_2
+
 			allowed = {
 				original_tag = CAN
+				has_dlc = "Together for Victory"
 			}
 
 			research_bonus = {
