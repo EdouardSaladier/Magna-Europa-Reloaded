@@ -30,22 +30,46 @@ if = {
 
 set_research_slots = 3
 
-add_ideas = {
-	en_svensk_tiger
-	neutrality_idea
+if = {
+	limit = { has_dlc = "Arms Against Tyranny" }
+	add_ideas = {
+#		SWE_historical_trade_with_Germany CUT
+		SWE_hungershield
+		SWE_severe_lack_of_ammunition
+		#SWE_standardized_equipment
+		SWE_gustaf_v_idea
+	}
+
+
+	add_dynamic_modifier = { modifier = SWE_folkhemmet }
+	set_stability = 0.43
+	set_war_support = 0.1
 }
-set_stability = 0.9
-set_war_support = 0.1
+if = {
+	limit = {
+		NOT = { has_dlc = "Arms Against Tyranny" }
+	}
+	add_ideas = { 
+		en_svensk_tiger 
+		neutrality_idea
+	}
+	set_stability = 0.9
+	set_war_support = 0.1
+}
+
+
 
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	tech_trucks = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
 	basic_train = 1
+	interwar_antitank = 1 # 
 }
 
 if = {
@@ -93,6 +117,156 @@ if = {
 		basic_depth_charges = 1
 		coastal_defense_ships = 1
 		mtg_transport = 1
+		early_ship_hull_carrier = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	add_command_power = 100
+	
+	#generic focuses
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		complete_national_focus = army_effort
+		complete_national_focus = equipment_effort
+		complete_national_focus = motorization_effort
+		complete_national_focus = aviation_effort
+		complete_national_focus = naval_effort
+		complete_national_focus = large_navy
+		complete_national_focus = industrial_effort
+		complete_national_focus = construction_effort
+		complete_national_focus = production_effort
+	}
+	if = {
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+		}
+		complete_national_focus = SWE_defense_act #35
+		complete_national_focus = SWE_urbanization #70
+		complete_national_focus = SWE_hygenic_housing #70
+		every_core_state = { #Apply effect from focus above
+			limit =  { is_fully_controlled_by = SWE }
+			add_dynamic_modifier = { modifier = SWE_hygenic_housing_output_bonus }
+		}
+
+		complete_national_focus = SWE_radiojanst #70
+		complete_national_focus = SWE_individual_liberty_and_prosperity_for_all #35
+		complete_national_focus = SWE_paid_holidays #35
+		complete_national_focus = SWE_saltsjobaden_agreement #70
+		complete_national_focus = SWE_research_slot_1 #70
+		complete_national_focus = SWE_education_reform #35
+		complete_national_focus = SWE_license_skf_ball_bearings #35
+		complete_national_focus = SWE_government_weapons_contract #35
+		complete_national_focus = SWE_husqvarna_vapenfabrik #70
+		complete_national_focus = SWE_norma_projektilfabrik #70
+		complete_national_focus = SWE_bofors_fly_swatter #35
+		complete_national_focus = SWE_form_saab #70
+		complete_national_focus = SWE_bofors_anti_tank_gun #70
+		complete_national_focus = SWE_gotaverken #70
+		complete_national_focus = SWE_refit_gotaverken_for_rapid_repairs #70
+		complete_national_focus = SWE_domestic_designs #70
+	}
+	
+	oob = "SWE_1939"
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+			set_naval_oob = "SWE_1939_naval_mtg"
+		else = {
+			set_naval_oob = "SWE_1939_naval_legacy"
+		}
+	}
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "SWE_1939_air_bba"
+		else = {
+			set_air_oob = "SWE_1939_air_legacy"
+			set_technology = {
+				early_bomber = 1
+				tactical_bomber1 = 1
+			}
+		}
+	}
+
+	set_technology = {
+		gw_artillery = 1
+		interwar_artillery = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		fuel_silos = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+			improved_light_tank = 1
+			basic_medium_tank = 1
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+			
+			
+			improved_light_tank_chassis = 1
+			basic_medium_tank_chassis = 1
+		}
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			basic_submarine = 1
+			early_carrier = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_ship_hull_cruiser = 1
+			early_ship_hull_carrier = 1
+		}
 	}
 }
 
@@ -110,15 +284,13 @@ set_popularities = {
 }
 
 set_convoys = 25
-set_stability = 0.9
 
 
 recruit_character = SWE_per_albin_hansson
 recruit_character = SWE_sven_olov_lindholm
-recruit_character = SWE_sven_linderot
-recruit_character = SWE_axel_pehrssonbramstorp
-recruit_character = SWE_folke_hogberg
-recruit_character = SWE_erik_af_edholm
+recruit_character = SWE_sven_linderot 
+recruit_character = SWE_folke_hogberg #NOT U
+recruit_character = SWE_erik_af_edholm #NOT U
 recruit_character = SWE_claes_lindstrom
 recruit_character = SWE_per_sylvan
 recruit_character = SWE_gosta_ehrensvard
@@ -126,7 +298,6 @@ recruit_character = SWE_torsten_friis
 recruit_character = SWE_erik_palmstierna
 recruit_character = SWE_helge_stromback
 recruit_character = SWE_helge_jung
-recruit_character = SWE_olof_thornell
 recruit_character = SWE_bengt_nordenskiold
 recruit_character = SWE_ivar_holmquist
 recruit_character = SWE_fabian_tamm
@@ -138,6 +309,7 @@ recruit_character = SWE_archibald_douglas
 recruit_character = SWE_ernst_wigforss
 recruit_character = SWE_thorwald_bergquist
 recruit_character = SWE_osten_unden
+
 
 
 ### VARIANTS ###
@@ -208,6 +380,7 @@ if = {
 			tank_nsb_armor_upgrade = 2
 			tank_nsb_engine_upgrade = 3
 		}
+		icon = "GFX_generic_light_AAB"
 	}
 }
 
@@ -409,5 +582,17 @@ if = {
 			mid_2_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = empty
 		}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+		has_dlc = "Arms Against Tyranny"
 	}
+
+	create_operative_leader = {
+		name = "Raoul Wallenberg"
+		GFX = GFX_portrait_SWE_raoul_wallenberg
+		traits = { operative_seducer operative_infiltrator operative_tough }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SWE HUN }	}
 }
