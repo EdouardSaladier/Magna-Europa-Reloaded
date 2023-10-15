@@ -1,4 +1,5 @@
 ﻿capital = 124
+every_owned_state = { set_state_flag = NOR_INITIAL_STATE }
 oob = "NOR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
