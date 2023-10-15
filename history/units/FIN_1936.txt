@@ -58,7 +58,7 @@ units = {
 		}
 		location = 9865 # Tampere
 		division_template = "Jalkaväkidivisioona"
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -70,7 +70,7 @@ units = {
 		}
 		location = 19666 # Oulu
 		division_template = "Jalkaväkidivisioona"
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -108,7 +108,7 @@ units = {
 		}
 		location = 19669 # Joensuu
 		division_template = "Jalkaväkidivisioona"
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -120,7 +120,7 @@ units = {
 		}
 		location = 19681 # Kuopio
 		division_template = "Jalkaväkidivisioona"
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -147,7 +147,7 @@ units = {
 		}
 		location = 19664 # Viipuri
 		division_template = "Jalkaväkidivisioona"
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -159,7 +159,7 @@ units = {
 		}
 		location = 9966 # Helsinki
 		division_template = "Jalkaväkidivisioona"
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -171,7 +171,7 @@ units = {
 		}
 		location = 19662 # Turku
 		division_template = "Jalkaväkidivisioona"
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -183,7 +183,7 @@ units = {
 		}
 		location = 19678 # Kotka
 		division_template = "Jalkaväkidivisioona"
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -244,7 +244,7 @@ units = {
 		}
 		location = 4594
 		division_template = "Jalkaväkidivisioona"
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -256,7 +256,7 @@ units = {
 		}
 		location = 19667 # Jyväskylä
 		division_template = "Jalkaväkidivisioona"
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -283,9 +283,10 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "FIN"
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.66
 		efficiency = 100
+		industrial_manufacturer = mio:FIN_valtion_kivaaritehdas_organization
 	}
 	add_equipment_production = {
 		equipment = {
