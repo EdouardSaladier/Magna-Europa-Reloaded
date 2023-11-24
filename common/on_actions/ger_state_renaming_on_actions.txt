@@ -619,6 +619,11 @@ on_actions = {
 					FROM.FROM = { state = 1663 }
 				}
 				if = {
+					limit = { ROOT = { original_tag = SIL } }
+					FROM.FROM = { set_state_name = "Brassel" }
+					set_province_name = { id = 9490 name = "Brassel" }
+				}
+				if = {
 					limit = { ROOT = { original_tag = UPS } }
 					FROM.FROM = { set_state_name = "Wrocłow" }
 					set_province_name = { id = 9490 name = "Wrocłow" }
