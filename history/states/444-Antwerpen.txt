@@ -10,12 +10,11 @@ state={
 		add_core_of = BEL
 		buildings = {
 			infrastructure = 4
-			12165 = { naval_base = 8 }
-			12205 = { bunker = 7 }
-			3980 = { bunker = 2 }
-			12206 = { bunker = 2 }
+			12165 = { naval_base = 8 bunker = 6 }
+			12205 = { bunker = 8 }
 			8880 = { bunker = 2 }
-			3284 = { bunker = 1 }
+			3284 = { bunker = 2 }
+			4708 = { bunker = 2 }
 		}
 		add_core_of = FLA
 		add_core_of = BRB

@@ -314,6 +314,16 @@ on_actions = {
 					FROM.FROM = { set_state_name = "Teschen" }
 					set_province_name = { id = 12818 name = "Bielitz" }
 				}
+				else_if = {
+					limit = {
+						ROOT = { is_polish = yes }
+						CSN = { exists = no }
+					}
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12818
+					reset_province_name = 12829
+					set_victory_points = { province = 12829 value = 0 }
+				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
 					reset_province_name = 12818
