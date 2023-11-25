@@ -1,22 +1,30 @@
+
 state={
 	id=2332
 	name="STATE_2332"
-	provinces={
-		6838 8539 11951 19872 19895 
-	}
+
 	history={
 		owner = HOL
 		add_core_of = HOL
 		buildings = {
 			infrastructure = 4
-			11951 = { naval_base = 2 }
+			11951 = {
+				naval_base = 2
+
+			}
+
 		}
 		victory_points = {
-			11951 10 #Dordrecht
+			11951 10 
 		}
-    }
+
+	}
+
+	provinces={
+		6838 11951 19872 19895 
+	}
 	manpower=413200
-	state_category=city
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
 }
