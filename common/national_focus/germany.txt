@@ -3320,6 +3320,10 @@ focus_tree = {
 				}
 				set_state_flag = GER_industrial_effort_2IC
 			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 100
+			}
 		}
 	}
 
@@ -5270,6 +5274,21 @@ focus_tree = {
 		x = 25
 		y = 0
 		cost = 10
+		
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = GER_oppose_hitler
+				}
+			}
+		}
+		
 		available = {
 			is_subject = no
 		}
@@ -5394,6 +5413,17 @@ focus_tree = {
 					custom_effect_tooltip = may_provoke_hostility
 				}
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}		
 	}
 
@@ -5494,6 +5524,82 @@ focus_tree = {
 			
 		}
 	}
+	
+	focus = {
+		id = GER_swedish_trade_agreement
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = GER_rhineland }
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = SWE
+				SWE = { is_subject = no }
+				NOT = { has_war_with = SWE }
+				SWE = {
+					custom_trigger_tooltip = {
+						tooltip = GER_alone_or_peace_faction_tt
+						is_alone_or_in_faction_at_peace_with_GER = yes
+					}
+				}
+			}
+		}
+		x = -2
+		y = 1
+		relative_position_id = GER_rhineland
+		cost = 10
+		ai_will_do = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SWE = {
+				country_event = { id = AAT_germany.1 hours = 5 random_hours = 5 }
+			}
+
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				SWE = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 2
+					}
+
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+
+					add_timed_idea = {
+						idea = GER_german_swedish_trade_agreement
+						days = 480
+					}
+
+					give_resource_rights = {
+						receiver = ROOT 
+						state = 2707 #Västerbotten 
+					}
+					give_resource_rights = {
+						receiver = ROOT 
+						state = 45 #Västerbotten 
+					}
+					give_resource_rights = {
+						receiver = ROOT 
+						state = 2706#Västerbotten 
+					}
+					give_resource_rights = {
+						receiver = ROOT 
+						state = 2710 #Västerbotten 
+					}
+				}
+
+				add_opinion_modifier = {
+					target = SWE # target of the relation
+					modifier = GER_SWE_historic_trade_Partners
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = GER_anti_comitern_pact
@@ -5503,6 +5609,30 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_rhineland
 		cost = 10
+		historical_ai = {
+			any_home_area_neighbor_country = {
+				OR = {
+					NOT = { has_war_with = ROOT	}
+					AND = {
+						is_ai = no
+						has_war_with = ROOT
+						OR = {
+							original_tag = DEN
+							original_tag = NOR
+							AND = {
+								original_tag = HOL
+								FRA = {
+									has_capitulated = yes
+								}
+								BEL = {
+									has_capitulated = yes
+								}
+							}
+						}
+					}
+				}
+			}		
+		}
 		available = {
 			is_subject = no
 			NOT = { has_government = communism }
@@ -5811,6 +5941,11 @@ focus_tree = {
 			is_subject = no
 			OR = {
 				has_army_manpower = { size > 499999 }
+				check_variable = { num_equipment_in_armies_k@infantry_equipment > 40 }
+				custom_trigger_tooltip = {
+					tooltip = GER_anschluss_eq_trigger_tt
+					check_variable = { num_equipment_in_armies_k@infantry_equipment > 40 }
+				}
 				AND = {
 					is_historical_focus_on = yes
 					date > 1938.1.1
@@ -6097,15 +6232,15 @@ focus_tree = {
 				2262 = { add_claim_by = GER }
 			}
 			add_named_threat = { threat = 5 name = GER_demand_memel_threat }
-			if = {
+			random_other_country = {
 				limit = {
-					LIT = { 
-						owns_state = 227
-						controls_state = 227 
-					}
+					owns_state = 227
+					controls_state = 227 
 				}
-				LIT = {
-					country_event = { id = baltic.4 }
+				country_event = { 
+					id = baltic.4 
+					days = 1
+					random_days = 3
 				}
 			}
 		}
@@ -7629,11 +7764,35 @@ focus_tree = {
 			#28 = { set_state_name = "Elsass-Lothringen" }
 			#set_province_name = { id = 13296 name = "Strassburg" }
 			#set_province_name = { id = 19849 name = "Mulhausen" }
-			FRA = {
-				country_event = { id = wtt_germany.63 }
+			if = {
+				limit = {
+					has_global_flag = flag_franco_british_union
+				}
+				ENG = {
+					country_event = { id = wtt_germany.63 }
+				}
 			}
-			LUX = {
-				country_event = { id = wtt_germany.64 }
+			else_if = {
+				limit = {
+					any_country = {
+						original_tag = FRA
+						exists = yes
+					}
+				}
+				FRA = {
+					country_event = { id = wtt_germany.63 }
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						original_tag = LUX
+						exists = yes
+					}
+				}
+				LUX = {
+					country_event = { id = wtt_germany.64 }
+				}
 			}
 		}
 	}
@@ -7644,6 +7803,19 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 35
 		y = 1
+		
+		offset = {
+			x = -8
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_oppose_hitler
+			}
+		}
+		
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -7692,6 +7864,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
+					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
 						size > 1
@@ -7717,6 +7890,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
+					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
 						size > 0
@@ -9054,6 +9228,17 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Waking the Tiger"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = GER_rhineland
+				}
+			}
 		}
 
 		available = {
@@ -9062,6 +9247,40 @@ focus_tree = {
 		}
 		x = 47
 		y = 0
+		offset = {
+			x = -8
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_oppose_hitler
+			}
+		}
+		offset = {
+			x = -8
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_reestablish_free_elections
+			}
+		}
+
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_revive_the_kaiserreich
+			}
+		}
 		cost = 10
 		ai_will_do = {
 			factor = 7
@@ -9140,6 +9359,17 @@ focus_tree = {
 			add_political_power = 120
 			add_named_threat = { threat = 5 name = GER_oppose_hitler }
 			country_event = { id = wtt_germany.1 }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 
@@ -9185,6 +9415,37 @@ focus_tree = {
 			has_country_flag = GER_mackensen_dead
 			NOT = { has_government = democratic }
 		}
+		
+		allow_branch = {
+			has_dlc = "Waking the Tiger"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = GER_rhineland
+						has_completed_focus = GER_reestablish_free_elections
+					}
+				}
+			}
+		}
+
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_revive_the_kaiserreich
+			}
+		}
+		
 		available = {
 			is_subject = no
 		}
@@ -9204,6 +9465,17 @@ focus_tree = {
 			set_party_name = { ideology = neutrality long_name = GER_neutrality_party_kaiserreich_long name = GER_neutrality_party_kaiserreich }
 			set_rule = { can_send_volunteers = yes }
 			add_named_threat = { threat = 5 name = GER_revive_the_kaiserreich }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 
@@ -9232,6 +9504,22 @@ focus_tree = {
 		id = GER_fan_the_prussian_militarism
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = GER_rebuild_the_nation }
+		
+		allow_branch = {
+			has_dlc = "Waking the Tiger"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = GER_rhineland
+				}
+			}
+		}
+		
 		available = {
 		}
 		x = -1
@@ -9802,9 +10090,9 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = yes
-		x = -2
-		y = 1
-		relative_position_id = GER_break_the_anglo_french_colonial_hegemony
+		x = -1
+		y = 3
+		relative_position_id = GER_modular_construction
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -9999,6 +10287,14 @@ focus_tree = {
 		available = {
 			is_subject = no
 			NOT = { has_war_with = ITA }
+			ITA = { has_country_leader = { ruling_only = yes character = ITA_benito_mussolini } }
+			NOT = {	ITA = {	has_completed_focus = ITA_banda_carita } }
+			custom_trigger_tooltip = {
+				tooltip = GER_italy_declined_assassination_tt
+				NOT = {
+					has_country_flag = GER_italy_declined_assassination_of_mussolini_flag
+				}
+			}
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -10419,8 +10715,15 @@ focus_tree = {
 			#28 = { set_state_name = "Elsass-Lothringen" }
 			#set_province_name = { id = 13296 name = "Strassburg" }
 			#set_province_name = { id = 19849 name = "Mulhausen" }
-			FRA = {
-				country_event = { id = wtt_germany.63 }
+			if = {
+				limit = {
+					FRA = {
+						exists = yes
+					}	
+				}
+				FRA = {
+					country_event = { id = wtt_germany.63 }
+				}
 			}
 		}
 	}
@@ -10432,6 +10735,12 @@ focus_tree = {
 		available = { 
 			is_subject = no
 			has_full_control_of_state = 252
+		}
+		bypass = {
+			any_country = {
+				owns_state = 227
+				is_in_faction_with = GER
+			}	
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -10451,7 +10760,11 @@ focus_tree = {
 					owns_state = 227
 					controls_state = 227 
 				}
-				country_event = { id = baltic.4 }
+				country_event = { 
+					id = baltic.4 
+					days = 1
+					random_days = 3
+				}
 			}
 			custom_effect_tooltip = mer_GER_see_to_the_eastern_front_tt
 			if = {
@@ -10622,6 +10935,7 @@ focus_tree = {
 			is_subject = no
 			NOT = { has_war_with = POL }
 			NOT = { is_in_faction_with = POL }
+			POL = { has_civil_war = no }
 		}
 		bypass = {
 			OR = {
@@ -11072,6 +11386,37 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GER_secure_the_new_state }
 		mutually_exclusive = { focus = GER_revive_the_kaiserreich }
+		
+		allow_branch = {
+			has_dlc = "Waking the Tiger"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = GER_rhineland
+						has_completed_focus = GER_revive_the_kaiserreich
+					}
+				}
+			}
+		}
+
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_reestablish_free_elections
+			}
+		}
+		
 		available = {
 			is_subject = no
 		}
@@ -11091,7 +11436,16 @@ focus_tree = {
 				days = 720
 			}
 			set_party_name = { ideology = neutrality long_name = GER_neutrality_party_kaiserreich_long name = GER_neutrality_party_kaiserreich }
-			hidden_effect = { 
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
 				drop_cosmetic_tag = yes
 				set_cosmetic_tag = GER_republic
 			}
