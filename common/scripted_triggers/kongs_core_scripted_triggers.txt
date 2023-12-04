@@ -703,3 +703,40 @@ is_OG_soviet_mr = {
 		state = 2766
 	}
 }
+is_sov_claim_on_fin_not_islands = {
+	OR = {
+		state = 22
+		state = 17
+		state = 2786
+		state = 33
+		state = 100
+		state = 77
+		state = 113
+		state = 2783
+	}
+}
+is_fin_claim_on_sov_large = {
+	OR = {
+		state = 2709
+		state = 16
+		state = 19
+		state = 38
+		state = 39
+		state = 52
+		state = 62
+		state = 74
+		state = 59
+		state = 24
+		state = 57
+		state = 2437
+		state = 30
+	}
+}
+extra_states_for_this_one_dumbass_trigger = {
+	OR = {
+		state = 61
+		state = 2458
+		state = 2459
+		state = 41
+	}
+}
