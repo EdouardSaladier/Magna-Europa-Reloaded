@@ -722,6 +722,72 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = tfv_canada.63
+	title = tfv_canada.63.t # Fascist CAN offers concessions for Labrador and Newfoundland from ENG
+	desc = tfv_canada.63.d	#
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { # Agree to demands
+		name = tfv_canada.63.a
+		
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+					target = CAN
+					value > 50
+				}
+			}
+			modifier = {
+				factor = 1.25
+				CAN = { has_same_ideology = yes }
+			}
+		}
+		
+		effect_tooltip = {
+			CAN = {
+				transfer_state = 64
+			}
+		}
+		
+		CAN = {
+			give_resource_rights = { receiver = ENG state = 64 }
+		}
+		
+		hidden_effect = {
+			CAN = {
+				country_event = { id = tfv_canada.61 }
+			}
+		}
+	}
+	
+	option = { # Refuse
+		name = tfv_canada.63.b
+		
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0.25
+				surrender_progress > 0.25
+			}
+		}
+		
+		hidden_effect = {
+			CAN = {
+				country_event = { id = tfv_canada.62 }
+			}
+		}
+	}
+}
+
 # Ronnie the Bren Gun Girl
 # Triggered by Women in the Workforce decision
 

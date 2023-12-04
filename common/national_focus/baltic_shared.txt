@@ -752,6 +752,16 @@ shared_focus = {
 			GER = { 
 				give_fascist_tank_licences = yes
 			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = light_tank_chassis
+					seller_tags  = { GER }
+				}
+			}
 		}
 		else_if = {
 			limit = {
@@ -768,18 +778,15 @@ shared_focus = {
 				}
 				give_fascist_tank_licences = yes
 			}
-		}
-		else_if = { 
-			limit = {
-				JAP = {
-					exists = yes
-					has_capitulated = no
-					has_government = fascism
-					NOT = { has_war_with = ROOT }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
 				}
-			}
-			JAP = {
-				give_fascist_tank_licences = yes
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = light_tank_chassis
+					seller_trigger = is_fascist_seller_trigger
+				}
 			}
 		}
 		else = {
@@ -1149,7 +1156,7 @@ shared_focus = {
 			}
 			add_tech_bonus = {
 				name = BALTIC_ford
-				bonus = 3.0
+				bonus = 1.0
 				uses = 1
 				category = motorized_equipment
 			}
@@ -1158,12 +1165,21 @@ shared_focus = {
 			add_tech_bonus = {
 				name = BALTIC_ford
 				ahead_reduction = 2
-				bonus = 3.0
+				bonus = 1.0
 				uses = 1
 				category = motorized_equipment
 			}
 		}
-		show_ideas_tooltip = BALTIC_ford
+		IF = {
+			limit = {
+					has_dlc = "Arms Against Tyranny"
+			}	
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = USA_ford_motor_company_organization
+		}
+		ELSE = {
+			show_ideas_tooltip = BALTIC_ford
+		}
 	}
 }
 
@@ -1243,9 +1259,30 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus BALTIC_british_designers"
 		add_offsite_building = { type = industrial_complex level = 1 }
 		add_offsite_building = { type = arms_factory level = 1 }
-		show_ideas_tooltip = BALTIC_RAF
-		show_ideas_tooltip = BALTIC_RSAF_enfield
-		show_ideas_tooltip = BALTIC_royal_arsenal
+		IF = {
+			limit = {
+					has_dlc = "Arms Against Tyranny"
+			}	
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = BALTIC_RAF_organization
+			show_mio_tooltip = ENG_royal_arsenal_organization
+			show_mio_tooltip = ENG_rsaf_enfield_organization
+
+			mio:BALTIC_RAF_organization = {
+				add_mio_size = 1
+			}
+			mio:ENG_royal_arsenal_organization = {
+				add_mio_size = 1
+			}
+			mio:ENG_rsaf_enfield_organization = {
+				add_mio_size = 1
+			}
+		}
+		ELSE = {
+			show_ideas_tooltip = BALTIC_RAF
+			show_ideas_tooltip = BALTIC_RSAF_enfield
+			show_ideas_tooltip = BALTIC_royal_arsenal
+		}
 	}
 }
 
@@ -1300,6 +1337,16 @@ shared_focus = {
 			ENG = {
 				give_aircraft_and_licences = yes
 			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = small_plane_airframe
+					seller_tags  = { ENG }
+				}
+			}
 		}
 		else_if = { # (Allied) Fallback to France 
 			limit = {
@@ -1314,6 +1361,16 @@ shared_focus = {
 			FRA = {
 				give_aircraft_and_licences = yes
 			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = small_plane_airframe
+					seller_tags  = { FRA }
+				}
+			}
 		}
 		else_if = { # (American) Fallback to USA
 			limit = {
@@ -1326,6 +1383,16 @@ shared_focus = {
 			}
 			USA = {
 				give_aircraft_and_licences = yes
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = small_plane_airframe
+					seller_tags  = { USA }
+				}
 			}
 		}
 		else_if = { # (European) Fallback to another European Democracy
@@ -1340,6 +1407,16 @@ shared_focus = {
 					NOT = { has_war_with = ROOT }
 				}
 				give_aircraft_and_licences = yes
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = small_plane_airframe
+					seller_trigger = is_democracy_seller_trigger
+				}
 			}
 		}
 		else = { # (International) Fallback to any democratic faction leader. 
@@ -1399,6 +1476,16 @@ shared_focus = {
 			ENG = {
 				baltic_give_allied_equipment = yes
 			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 250
+					equipment_type = infantry_equipment
+					seller_tags  = { ENG }
+				}
+			}
 		}
 		else_if = { # (Allied) Fallback to France 
 			limit = {
@@ -1413,6 +1500,16 @@ shared_focus = {
 			FRA = {
 				baltic_give_allied_equipment = yes
 			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 250
+					equipment_type = infantry_equipment
+					seller_tags  = { FRA }
+				}
+			}
 		}
 		else_if = { # (American) Fallback to USA
 			limit = {
@@ -1425,6 +1522,16 @@ shared_focus = {
 			}
 			USA = {
 				baltic_give_allied_equipment = yes
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 250
+					equipment_type = infantry_equipment
+					seller_tags  = { USA }
+				}
 			}
 		}
 		else_if = { # (European) Fallback to another European Democracy
@@ -1439,6 +1546,16 @@ shared_focus = {
 					NOT = { has_war_with = ROOT }
 				}
 				baltic_give_allied_equipment = yes
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 250
+					equipment_type = infantry_equipment
+					seller_trigger = is_democracy_seller_trigger
+				}
 			}
 		}
 		else = { # (International) Fallback to any democratic faction leader. 
