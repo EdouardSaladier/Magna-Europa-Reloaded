@@ -136,11 +136,6 @@ set_variable = { FIN_mineral_wealth_development_aluminium_amount = 6 } #6 by def
 set_variable = { FIN_prioritize_light_industry_dec_cost = 50 } #Will be duplicated if the opposite NS is active
 set_variable = { FIN_prioritize_heavy_industry_dec_cost = 50 } #Will be duplicated if the opposite NS is active
 
-
-145 = {
-	set_demilitarized_zone = yes
-}
-
 # 1936 BoP (1939 BoP set up below)
 if = {
 	limit = {
