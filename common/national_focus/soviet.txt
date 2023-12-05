@@ -90,8 +90,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_infrastructure_effort_nsb
-" #TODO_Manu: This is just copy-pasted from the old focus -> Is this what we want?
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_infrastructure_effort_nsb"
+ #TODO_Manu: This is just copy-pasted from the old focus -> Is this what we want?
 			if = {
 				limit = {
 					all_owned_state = {
@@ -208,8 +208,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_heavy_industry
-" #TODO_Manu: This is just copy-pasted from the old focus -> Is this what we want?
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_heavy_industry"
+ #TODO_Manu: This is just copy-pasted from the old focus -> Is this what we want?
 			IF = {
 				limit = {
 					any_owned_state = {
@@ -352,8 +352,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_finish_the_five_year_plan
-" #TODO_Manu: This is just copy-pasted from the old focus -> Is this what we want?
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_finish_the_five_year_plan"
+ #TODO_Manu: This is just copy-pasted from the old focus -> Is this what we want?
 			random_owned_controlled_state = {
 				limit = {
 					industrial_complex > 0
@@ -415,8 +415,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_improve_railway_network
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_improve_railway_network"
+
 			# Moscow - Rostov on Don
 			build_railway = {
 				path = { 9330 3356 6279 6230 6398 6341 413 3527 11475 11412 6591 3540 3519 11459 11450 11434 9417 }
@@ -484,11 +484,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_third_five_year_plan
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_third_five_year_plan"
+
 			hidden_effect = {
 				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
-				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.025 }
+				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.010 }
 			}
 			if = {
 				limit = {
@@ -550,8 +550,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_reorganize_the_pc_of_heavy_industry
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_reorganize_the_pc_of_heavy_industry"
+
 			hidden_effect = {
 				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.025 }
 			}
@@ -614,8 +614,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_industrial_modernization
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_industrial_modernization"
+
 			add_to_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 }
 			add_to_variable = { SOV_fyp_line_change_production_efficiency_factor = 0.1 }
 			custom_effect_tooltip = SOV_industrial_modernization_ns_tt
@@ -648,8 +648,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_increase_state_reserves
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_increase_state_reserves"
+
 			#Modify Third Year Plan NS
 			set_variable = { SOV_fyp_local_resources_factor = 0.1 }
 			custom_effect_tooltip = SOV_increase_state_reserves_ns_tt
@@ -754,8 +754,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_shift_to_armaments_production
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_shift_to_armaments_production"
+
 			hidden_effect = {
 				set_variable = { SOV_fyp_production_speed_industrial_complex_factor = 0 } #Remove Civ constr speed
 			}
@@ -809,8 +809,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_optimize_production_lines
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_optimize_production_lines"
+
 			add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 } #Add efficiency gain
 			add_to_variable = { SOV_fyp_production_factory_start_efficiency_factor = 0.05 } #Add efficiency start
 			add_to_variable = { SOV_fyp_industrial_capacity_factory = 0.02 } #Add small output bonus
@@ -854,8 +854,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_steel_casting_industry
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_steel_casting_industry"
+
 			set_variable = { SOV_fyp_industrial_capacity_factory = 0.05 }
 			set_variable = { SOV_fyp_industrial_capacity_dockyard = 0.05 }
 
@@ -953,8 +953,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_synthetic_rubber
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_synthetic_rubber"
+
 			# ADD SYNTHETICS IN HISTORICAL STATES (VORONEZH AND TULA)
 			if = {
 				limit = {
@@ -1023,8 +1023,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_oil_production
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_oil_production"
+
 			set_variable = { SOV_fyp_fuel_gain_factor_from_states = 0.05 }
 			set_variable = { SOV_fyp_production_oil_factor = 0.05 }
 			custom_effect_tooltip = SOV_oil_production_ns_tt
@@ -1104,8 +1104,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PROPAGANDA}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_restoration_and_development
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_restoration_and_development"
+
 			add_timed_idea = {
 				idea = SOV_restoration_and_development_idea
 				days = 365
@@ -1145,8 +1145,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_fourth_five_year_plan
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_fourth_five_year_plan"
+
 			hidden_effect = {
 				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.025 } #Bonus to CG
 				add_to_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 } #Bonus to max efficicency
@@ -1224,8 +1224,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_found_the_comecon
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_found_the_comecon"
+
 			if = {
 				limit = {
 					num_subjects > 0
@@ -1286,8 +1286,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_the_common_economic_space_initiative
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_the_common_economic_space_initiative"
+
 			if = {
 				limit = {
 					num_subjects > 0
@@ -1345,8 +1345,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_no_time_for_peace
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_no_time_for_peace"
+
 			add_tech_bonus = {
 				name = SOV_no_time_for_peace
 				bonus = 0.75
@@ -1378,8 +1378,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_national_specialists
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_national_specialists"
+
 			custom_effect_tooltip = SOV_national_specialists_tt
 
 			SOV_replace_industrial_designer = yes #"National" Industrial Designers get +5% research bonus
@@ -1408,8 +1408,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_foreign_experts
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_foreign_experts"
+
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = SOV_gosproyektstroy_1
 		}
@@ -1465,8 +1465,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_eastern_development
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_eastern_development"
+
 			set_temp_variable = { SOV_states_targeted_eastern_development = 0 } #Used this way to prioritize between desirable states
 			if = {
 				limit = {
@@ -1576,8 +1576,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_develop_the_urals
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_develop_the_urals"
+
 			set_temp_variable = { SOV_states_targeted_eastern_development = 0 } #Used this way to prioritize between desirable states
 			if = {
 				limit = {
@@ -1655,8 +1655,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_the_ussr_academy_of_sciences
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_the_ussr_academy_of_sciences"
+
 			add_research_slot = 1
 			if = {
 				limit = {
@@ -1721,8 +1721,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_national_academies_of_sciences
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_national_academies_of_sciences"
+
 			if = { 
 				limit = { #DEFAULT COMMUNISM
 					has_government = communism
@@ -1757,8 +1757,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_transformation_of_nature
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_transformation_of_nature"
+
 			add_ideas = SOV_transformation_of_nature
 		}
 	}
@@ -1785,8 +1785,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_transformation_of_nature_alt
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_transformation_of_nature_alt"
+
 			add_ideas = SOV_transformation_of_nature
 		}
 	}
@@ -1822,8 +1822,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_transpolar_flights
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_transpolar_flights"
+
 			air_experience = 50
 		}
 	}
@@ -1852,8 +1852,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_expand_the_aircraft_industry
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_expand_the_aircraft_industry"
+
 			set_variable = { SOV_soviet_airforce_aircraft_manufacturer_cost_factor = -0.25 }
 			custom_effect_tooltip = SOV_expand_the_aircraft_industry_ns_tt
 
@@ -1916,8 +1916,8 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_modernize_aircraft_facilities
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_modernize_aircraft_facilities"
+
 			add_to_variable = { SOV_soviet_airforce_air_fuel_consumption_factor = -0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_range_factor = 0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_agility_factor = 0.05 }
@@ -1942,9 +1942,24 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_merge_aircraft_plants
-"
-			custom_effect_tooltip = SOV_merge_aircraft_plants_tt
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_merge_aircraft_plants"
+			
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				every_military_industrial_organization = {
+					limit = {
+						has_mio_trait = SOV_mio_trait_merge_plant_no_28 #All Aircraft MIOs have this trait
+					}
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_28
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_150
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_vef_plant
+				}
+			}
+			else = {
+				custom_effect_tooltip = SOV_merge_aircraft_plants_tt
+			}
 		}
 	}
 
@@ -1966,8 +1981,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_found_the_jet_institute
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_found_the_jet_institute"
 			add_tech_bonus = {
 				name = SOV_found_the_jet_institute
 				bonus = 1.0
@@ -1996,8 +2010,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_increase_aircraft_production
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_increase_aircraft_production"
+
 			hidden_effect = {
 				#This handles the equipment bonus that's not supported by dynamic modifiers
 				add_ideas = SOV_increased_aircraft_production_ns_bonus
@@ -2048,8 +2062,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_foster_flying_clubs
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_foster_flying_clubs"
+
 			add_to_variable = { SOV_soviet_airforce_air_accidents_factor = -0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_ace_generation_chance_factor = 0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.1 }
@@ -2080,8 +2094,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_women_in_aviation
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_women_in_aviation"
+
 			add_to_variable = { SOV_soviet_airforce_air_ace_generation_chance_factor = 0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_mission_xp_gain_factor = 0.05 }
@@ -2115,8 +2129,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_raskovas_aviation_group
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_raskovas_aviation_group"
+
 			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.2 }
 			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.1 }
 			set_variable = { SOV_soviet_airforce_air_strategic_bomber_night_penalty = -0.1 }
@@ -2203,8 +2217,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_intensify_pilot_training_program
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_intensify_pilot_training_program"
+
 			add_to_variable = { SOV_soviet_airforce_air_accidents_factor = -0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_ace_generation_chance_factor = 0.15 }
 			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
@@ -2234,8 +2248,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_expand_aviation_institutes
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_expand_aviation_institutes"
+
 			add_to_variable = { SOV_soviet_airforce_air_accidents_factor = -0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.1 }
 			add_to_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = 0.05 }
@@ -2263,8 +2277,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_ground_support
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_ground_support"
+
 			add_to_variable = { SOV_soviet_airforce_air_cas_present_factor = 0.1 }
 			custom_effect_tooltip = SOV_ground_support_ns_tt
 
@@ -2297,8 +2311,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_long_range_aircraft
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_long_range_aircraft"
+
 			add_to_variable = { SOV_soviet_airforce_strategic_bomb_visibility = -0.1 }
 			custom_effect_tooltip = SOV_long_range_aircraft_ns_tt
 
@@ -2330,8 +2344,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_the_modern_war_in_the_skies
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_the_modern_war_in_the_skies"
+
 			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
 			add_to_variable = { SOV_soviet_airforce_air_mission_efficiency = 0.1 } 
 			custom_effect_tooltip = SOV_the_modern_war_in_the_skies_ns_tt
@@ -2371,8 +2385,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_expand_the_red_fleet
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_expand_the_red_fleet"
+
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -2418,8 +2432,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_reinforce_western_naval_bases
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_reinforce_western_naval_bases"
+
 			119 = { #LENINGRAD
 				if = {
 					limit = {
@@ -2569,8 +2583,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_reinforce_northern_naval_bases
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_reinforce_northern_naval_bases"
+
 			if = { #MURMANSK - Improved naval base + AA + coastal fort
 				limit = {
 					has_full_control_of_state = 19
@@ -2666,8 +2680,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_reinforce_southern_naval_bases
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_reinforce_southern_naval_bases"
+
 			if = { #ODESSA - Improved naval base + AA + coastal fort
 				limit = {
 					has_full_control_of_state = 2045
@@ -2790,8 +2804,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_reinforce_eastern_naval_bases
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_reinforce_eastern_naval_bases"
+
 			if = { #VLADIVOSTOK - Improved naval base + AA + coastal fort
 				limit = {
 					has_full_control_of_state = 408
@@ -2872,8 +2886,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_expand_shipbuilding_plants
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_expand_shipbuilding_plants"
+
 			custom_effect_tooltip = SOV_expand_shipbuilding_plants_tt
 			every_owned_state = {
 				limit = {
@@ -2931,9 +2945,66 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_merge_naval_plants
-"
-			custom_effect_tooltip = SOV_merge_naval_plants_tt
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_merge_naval_plants"
+
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					mio:SOV_nevskoye_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_5
+					}
+
+					mio:SOV_rubin_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_363
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_190
+					}
+
+					mio:SOV_black_sea_shipyard_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_leninskaya_kuznitsa_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_340
+					}
+
+					mio:SOV_sevastopol_marine_plant_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_200
+					}
+				}
+				else = {
+					mio:SOV_nevskoye_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_5
+					}
+
+					mio:SOV_rubin_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_363
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_190
+					}
+
+					mio:SOV_black_sea_shipyard_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_leninskaya_kuznitsa_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_340
+					}
+
+					mio:SOV_sevastopol_marine_plant_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_200
+					}
+				}
+
+			}
+			else = {
+				custom_effect_tooltip = SOV_merge_naval_plants_tt
+			}
 		}
 	}
 
@@ -2955,8 +3026,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_pc_of_the_ussr_navy
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_pc_of_the_ussr_navy"
+
 			hidden_effect = {
 				if = {
 					limit = {
@@ -3012,8 +3083,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_surface_warfare
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_surface_warfare"
+
 			hidden_effect = {
 				if = { #DEFAULT COMMIE
 					limit = {
@@ -3063,8 +3134,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_submarine_warfare
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_submarine_warfare"
+
 			hidden_effect = {
 				if = { #DEFAULT COMMIE
 					limit = {
@@ -3118,8 +3189,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_offensive_maritime_strategy
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_offensive_maritime_strategy"
+
 			hidden_effect = {
 				if = { #DEFAULT COMMIE
 					limit = {
@@ -3238,8 +3309,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_an_oceangoing_navy
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_an_oceangoing_navy"
+
 			navy_experience = 25
 			add_tech_bonus = {
 				name = SOV_an_oceangoing_navy
@@ -3348,8 +3419,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_mine_warfare
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_mine_warfare"
+
 			add_ideas = SOV_mine_warfare_ns
 
 			add_tech_bonus = {
@@ -3378,8 +3449,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_long_range_raiders
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_long_range_raiders"
+
 			hidden_effect = {
 				if = { #DEFAULT COMMIE
 					limit = {
@@ -3553,8 +3624,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_advanced_maneuvers
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_advanced_maneuvers"
+
 			set_variable = { SOV_red_fleet_naval_coordination = 0.1 }
 			set_variable = { SOV_red_fleet_navy_visibility = -0.05 }
 			set_variable = { SOV_red_fleet_positioning = 0.1 }
@@ -3583,8 +3654,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_expand_the_morskaya_aviatsiya
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_expand_the_morskaya_aviatsiya"
+
 			navy_experience = 25
 			air_experience = 25
 			add_tech_bonus = {
@@ -3874,12 +3945,33 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_naval_infantry
-"
-			set_variable = { SOV_red_fleet_naval_invasion_capacity = 10 }
-			set_variable = { SOV_red_fleet_invasion_preparation = -0.1 }
-			set_variable = { SOV_red_fleet_special_forces_cap = 0.1 }
-			custom_effect_tooltip = SOV_naval_infantry_ns_tt
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_naval_infantry"
+			
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_potential_special_forces_tree = yes
+				add_doctrine_cost_reduction = {
+					name = SOV_naval_infantry
+					cost_reduction = 0.25
+					uses = 2
+					category = special_forces_doctrine
+				}
+			}
+			else = {
+				set_variable = { SOV_red_fleet_naval_invasion_capacity = 10 }
+				set_variable = { SOV_red_fleet_invasion_preparation = -0.1 }
+				set_variable = { SOV_red_fleet_special_forces_cap = 0.1 }
+				custom_effect_tooltip = SOV_naval_infantry_ns_tt
+
+				add_tech_bonus = {
+					name = SOV_naval_infantry
+					bonus = 1
+					uses = 1
+					category = marine_tech
+				}
+			}
 
 			navy_experience = 25
 			army_experience = 25
@@ -3925,8 +4017,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_found_the_pcdi
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_found_the_pcdi"
+
 			hidden_effect = {
 				add_dynamic_modifier = { modifier = SOV_defense_industry_dynamic_modifier }
 			}
@@ -3951,8 +4043,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_pc_of_mechanical_engineering
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_pc_of_mechanical_engineering"
+
 			add_to_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.05 }
 			add_to_variable = { SOV_defense_industry_production_factory_efficiency_gain_factor = -0.05 }
 			custom_effect_tooltip = SOV_pc_of_mechanical_engineering_ns_tt
@@ -4024,8 +4116,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_superior_war_machines
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_superior_war_machines"
+
 			set_variable = { SOV_defense_industry_tank_manufacturer_cost_factor = -0.25 }
 			custom_effect_tooltip = SOV_superior_war_machines_ns_tt
 
@@ -4156,8 +4248,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_the_means_to_wage_war
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_the_means_to_wage_war"
+
 			set_variable = { SOV_defense_industry_materiel_manufacturer_cost_factor = -0.25 }
 			custom_effect_tooltip = SOV_the_means_to_wage_war_ns_tt
 
@@ -4186,8 +4278,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_soviet_artillery
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_soviet_artillery"
+
 			if = {
 				limit = {
 					has_government = communism
@@ -4435,8 +4527,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_pc_of_mortar_armament
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_pc_of_mortar_armament"
+
 			add_to_variable = { SOV_defense_industry_breakthrough_factor = 0.05 }
 			add_to_variable = { SOV_defense_industry_army_artillery_defence_factor = 0.05 }
 			custom_effect_tooltip = SOV_pc_of_mortar_armament_ns_tt
@@ -4505,8 +4597,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_development_of_tankograd
-"
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_development_of_tankograd"
+
 			add_to_variable = { SOV_defense_industry_land_equipment_upgrade_xp_cost = -0.1 }
 			#Actual effects
 			if = {
@@ -4537,9 +4629,43 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SOV_merge_tank_and_materiel_plants
-"
-			custom_effect_tooltip = SOV_merge_tank_and_materiel_plants_tt
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_merge_tank_and_materiel_plants"
+
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				#TANKS
+				every_military_industrial_organization = {
+					limit = {
+						has_mio_trait = SOV_mio_trait_merge_plant_no_174 #All Tank MIOs have this trait
+					}
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_174
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_112
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_ural_heavy_machine_building_plant
+				}
+
+				#MATERIEL
+				every_military_industrial_organization = {
+					limit = {
+						has_mio_trait = SOV_mio_trait_merge_nkmz_plant #All Materiel MIOs have this trait
+					}
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_nkmz_plant
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_magnitogorsk_metallurgical_plant
+				}
+				mio:SOV_grabin_design_bureau_organization = {
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_172
+				}
+				mio:SOV_tula_arms_plant_organization = {
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_622
+				}
+				mio:SOV_gaz_organization = {
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_automobile_tool_plant
+				}
+			}
+			else = {
+				custom_effect_tooltip = SOV_merge_tank_and_materiel_plants_tt
+			}
 		}
 	}
 
@@ -5760,7 +5886,7 @@ focus_tree = {
 			#Spawn Penal divisions
 			custom_effect_tooltip = SOV_penal_battalions_spawn_tt
 			hidden_effect = {
-				set_technology = { penal_infantry = 1 popup = no }
+				#set_technology = { penal_infantry = 1 popup = no }
 
 				division_template = {
 					name = "Shtrafnaya Chast"
@@ -5978,6 +6104,9 @@ focus_tree = {
 					add_idea = SOV_politicized_military_battle_priests
 				}
 			}
+			else = {	
+				add_ideas = SOV_politicized_military_battle_priests
+			}
 		}
 	}
 
@@ -6175,8 +6304,14 @@ focus_tree = {
 			add_political_power = 25
 
 			SOV_paranoia_low_decrease_effect = yes	
-			IF = {
-				limit = { has_dlc = "No Step Back"}
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
 				mark_focus_tree_layout_dirty = yes
 			}
 		}
@@ -6251,7 +6386,16 @@ focus_tree = {
 			}
 
 			SOV_paranoia_low_decrease_effect = yes
-			mark_focus_tree_layout_dirty = yes
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 
@@ -7034,6 +7178,8 @@ focus_tree = {
 
 		available = {
 			has_government = communism
+			NOT = { has_global_flag = AAT_trotsky_sent_to_stalin }
+			has_global_flag = AAT_trotsky_in_mexico
 		}
 		
 		ai_will_do = {
@@ -8208,7 +8354,15 @@ focus_tree = {
 					remove_ideas = trotskyite_plot_nsb
 				}
 			}
-			mark_focus_tree_layout_dirty = yes
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 
@@ -9437,7 +9591,15 @@ focus_tree = {
 			}
 			custom_effect_tooltip = SOV_exiled_advisors_available_tt
 
-			mark_focus_tree_layout_dirty = yes
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 
@@ -9972,6 +10134,7 @@ focus_tree = {
 						NOT = { has_country_leader_ideology = stalinism }
 						is_in_faction = no
 						NOT = { has_war_with = ROOT }
+						is_subject = no
 					}
 					add_opinion_modifier = { modifier = SOV_international_socialist_association target = ROOT }
 					country_event = { id = generic.5 hours = 8 random_hours = 8 }
@@ -9986,6 +10149,7 @@ focus_tree = {
 							NOT = { has_country_leader_ideology = stalinism }
 							is_in_faction = no
 							NOT = { has_war_with = ROOT }
+							is_subject = no
 						}
 						add_opinion_modifier = { modifier = SOV_international_socialist_association target = ROOT }
 						country_event = { id = generic.5 hours = 8 random_hours = 8 }
@@ -12800,7 +12964,11 @@ ai_will_do = {
 		}
 
 		bypass = {
-			has_full_control_of_state = 2783
+			OR = {
+				has_full_control_of_state = 2783
+				is_in_faction_with = FIN
+				has_country_flag = FIN_finno_soviet_pact_flag
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}
@@ -12828,6 +12996,8 @@ ai_will_do = {
 					country_event = { id = finland.1 hours = 16 random_hours = 8 }
 				}
 			}
+			custom_effect_tooltip = if_they_accept_tt
+			event_option_tooltip = soviet.12.a
 		}
 	}
 
@@ -13198,6 +13368,7 @@ ai_will_do = {
 			OR = {
 				any_owned_state = {
 					is_bessarabia = yes
+					OWNER = { has_war_with = ROOT }
 				}
 				any_allied_country = {
 					any_owned_state = {
@@ -13735,7 +13906,15 @@ ai_will_do = {
 				SOV_launch_stalinist_counter_measure = yes 
 				SOV_get_centre_military_support = yes
 			}
-			mark_focus_tree_layout_dirty = yes
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 
@@ -14262,7 +14441,15 @@ ai_will_do = {
 			SOV_increase_opposition_army_support = yes
 			custom_effect_tooltip = SOV_the_hands_do_tt
 
-			mark_focus_tree_layout_dirty = yes
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 	focus = {

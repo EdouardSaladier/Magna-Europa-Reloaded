@@ -70,41 +70,41 @@ country_event = {
 	}
 }
 
-# Request Swedish Assistance?
-country_event = {
-	id = finland.2
-	immediate = { log = "[GetDateText]: [Root.GetName]: event finland.2 FROM = [From.GetName]" }
-	title = finland.2.t
-	desc = finland.2.d
-	picture = GFX_report_event_soviet_finnish_pact
-	
-	fire_only_once = yes
-
-	trigger = {
-		tag = FIN
-		has_war_with = SOV
-		SWE = {
-			NOT = { has_war_with = FIN }
-			NOT = { is_in_faction_with = SOV }
-			exists = yes
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		name = finland.2.a
-		SWE = {
-			country_event = { id = finland.3 }
-		}
-	}
-
-	option = {
-		name = finland.2.b
-	}
-}
+# Request Swedish Assistance? - Event for FIN -> Used before AAT now it is triggered via Finnish Focus - which is free for everyone
+#country_event = {
+#	id = finland.2
+#	title = finland.2.t
+#	desc = finland.2.d
+#	picture = GFX_report_event_soviet_finnish_pact
+#	
+#	fire_only_once = yes
+#
+#	trigger = {
+#		NOT = { has_dlc = "Arms Against Tyranny" } #Equivalent event triggered via focus with AAT
+#		tag = FIN
+#		has_war_with = SOV
+#		SWE = {
+#			NOT = { has_war_with = FIN }
+#			NOT = { is_in_faction_with = SOV }
+#			exists = yes
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#	option = {
+#		name = finland.2.a
+#		SWE = {
+#			country_event = { id = finland.3 }
+#		}
+#	}
+#
+#	option = {
+#		name = finland.2.b
+#	}
+#}
 
 # Swedish Support in Winter War
 country_event = {
@@ -362,32 +362,35 @@ country_event = {
 					message = FIN_agree_peace 
 				} 
 			}
-			transfer_state = 146
-			transfer_state = 147
 			every_state = {
 				limit = {
 					is_claimed_by = SOV
 					OR = {
 						state = 17
-						state = 2786
-						state = 33
 					}
 				}
 				remove_claim_by = SOV
 			}
 			every_state = {
-					limit = {
-						OR = {
-							state = 22
-							state = 100
-							state = 77
-							state = 113
-							state = 2783
-						}
+				limit = {
+					OR = {
+						state = 22
+						state = 100
+						state = 77
+						state = 113
+						state = 2783
+						state = 33
+						state = 36
+						state = 2786
+						state = 105
+						state = 29
 					}
-					transfer_state_to = SOV
 				}
+				transfer_state_to = SOV
+			}
 		}
+		
+		set_country_flag = FIN_reached_out_to_soviets_to_surrender_flag
 	}
 
 	#Never give up!
@@ -400,6 +403,9 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
+		
+		set_country_flag = FIN_available_decision_to_surrender_to_soviets_flag
+		unlock_decision_tooltip = FIN_surrender_to_the_soviet_union
 	}
 }
 
@@ -474,6 +480,15 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				SWE = {
+					has_war_with = ROOT
+					has_idea = SWE_gateway_to_peace
+				}
+			}
+			white_peace = SWE
+		}
 		add_political_power = 75 #Good Propaganda to win "fast"
 		SOV_paranoia_medium_decrease_effect = yes #Stalin likes this has been dealt with in a timely fashion
 		set_global_flag = FIN_surrendered_territory_to_SOV
@@ -522,5 +537,7 @@ country_event = {
 		name = finland.10.a
 
 		add_ideas = winter_war_ns
+		
+		custom_effect_tooltip = FIN_winter_war_push_back_tt
 	}
 }
