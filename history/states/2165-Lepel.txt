@@ -2,16 +2,20 @@
 state={
 	id=2165
 	name="STATE_2165"
-	provinces={
-		1159 3484 5692 9037 10638 10682 10746 10828 19043 
-	}
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = BLR
 		buildings = {
 			infrastructure = 3
+
 		}
+
+	}
+
+	provinces={
+		1159 3484 5692 9037 10682 10746 10828 19043 
 	}
 	manpower=62651
 	buildings_max_level_factor=1.000
