@@ -4339,6 +4339,25 @@ focus_tree = {
 			else = {
 				remove_ideas = GRE_foreign_monopolies_4
 			}
+			
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = GRE_biamax_organization
+				show_mio_tooltip = GRE_pyrkal_organization
+				show_mio_tooltip = GRE_petropoulos_organization
+				mio:GRE_biamax_organization = {
+					add_mio_size = 1
+				}
+				mio:GRE_pyrkal_organization = {
+					add_mio_size = 1
+				}
+				mio:GRE_petropoulos_organization = {
+					add_mio_size = 1
+				}
+			}
 		}
 	}	
 
@@ -4543,6 +4562,13 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRE_rapprochement_with_the_italians"
 			unlock_decision_tooltip = GRE_request_italian_assistance_with_industrialisation
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ITA_fiat_organization
+			}
 		}
 	}	
 
@@ -4652,6 +4678,13 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRE_appeal_to_the_soviet_union"
 			unlock_decision_tooltip = GRE_attend_talks_with_the_presidium
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = SOV_grabin_design_bureau_organization
+			}
 		}
 	}
 

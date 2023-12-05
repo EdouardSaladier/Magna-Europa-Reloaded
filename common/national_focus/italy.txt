@@ -1419,24 +1419,23 @@ focus_tree = {
 				uses = 2
 				category = cat_synth_oil
 			}
-
 			
-				random_core_state = {
-					limit = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = synthetic_refinery
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 1
-						instant_build = yes
+			random_core_state = {
+				limit = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 0
+						include_locked = yes
 					}
 				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
 			
 		}
 	}
@@ -1750,7 +1749,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_new_industrialization_program"
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			if = {
@@ -2171,7 +2170,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_redirect_alfa_romeo_production
-				bonus = 0.75
+				bonus = 0.50
 				uses = 2
 				category = motorized_equipment
 				category = light_air
@@ -2202,7 +2201,7 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = -0.04 }
 			custom_effect_tooltip = ITA_increase_production_military_industry_tt
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 		}
 	}
@@ -2230,7 +2229,7 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_line_change_production_efficiency_factor = -0.2 }
 			custom_effect_tooltip = ITA_keep_specialization_military_industry_tt
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 		}
 	}
@@ -2253,13 +2252,13 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_thermojet_research"
 			add_tech_bonus = {
 				name = ITA_thermojet_research
-				bonus = 0.75
-				uses = 2
+				bonus = 1
+				uses = 1
 				category = air_equipment
 			}
 			add_tech_bonus = {
 				name = ITA_thermojet_research
-				ahead_reduction = 2
+				ahead_reduction = 1
 				bonus = 1.0
 				category = jet_technology
 				category = rocketry
@@ -2968,6 +2967,7 @@ focus_tree = {
 						ITA_add_improved_light_tank_templates = yes
 					}
 				}
+				ITA_add_basic_light_tank_destroyer_template = yes
 			}
 		}
 	}
@@ -3272,7 +3272,7 @@ focus_tree = {
 				remove_ideas = ITA_hidden_research_penalties_ns
 			}
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			if = {
@@ -3331,7 +3331,7 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0.05 }
 			custom_effect_tooltip = ITA_modernize_ansaldo_facilities_military_industry_tt
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			if = {
@@ -3519,7 +3519,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_air_innovations_bba #fighter_bonus
-				bonus = 0.75
+				bonus = 0.5
 				uses = 1
 				category = light_fighter
 			}
@@ -3599,8 +3599,8 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_citta_dell_aria"
 			add_tech_bonus = {
 				name = ITA_citta_dell_aria
-				bonus = 0.5
-				uses = 3
+				bonus = 0.25
+				uses = 4
 				category = air_equipment
 			}
 
@@ -3696,7 +3696,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_reggianes_exports"
-			add_to_variable = { ITA_iri_consumer_goods_factor = -0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = -0.02 }
 			custom_effect_tooltip = ITA_reggianes_exports_ricostruzione_industriale_tt
 
 			if = {
@@ -3740,8 +3740,8 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_reggianes_exports
-				bonus = 0.75
-				uses = 2
+				bonus = 0.5
+				uses = 1
 				category = air_equipment #Maybe more specific stuff? (Light/Medium bombers, fighters...)
 			}
 
@@ -3908,13 +3908,13 @@ focus_tree = {
 				add_ideas = ITA_hidden_standardization_ns
 			}
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 		
 			add_tech_bonus = {
 				name = ITA_standardization
 				bonus = 0.75
-				uses = 2
+				uses = 1
 				category = tactical_bomber
 				category = light_fighter
 				category = cat_strategic_bomber
@@ -3966,7 +3966,7 @@ focus_tree = {
 				add_ideas = ITA_hidden_specialization_ns
 			}
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			air_experience = 15
@@ -3974,7 +3974,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_specialization
 				bonus = 0.5
-				uses = 3
+				uses = 2
 				category = air_equipment
 			}
 
@@ -4575,12 +4575,18 @@ focus_tree = {
 				}
 			}
 
-			add_tech_bonus = {
-				name = ITA_oto_naval_guns
-				bonus = 1.0
-				uses = 2
-				category = cat_ship_medium_battery
-				category = cat_ship_heavy_battery
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				add_tech_bonus = {
+					name = ITA_oto_naval_guns
+					bonus = 1.0
+					uses = 2
+					category = cat_ship_medium_battery
+					category = cat_ship_heavy_battery
+				}
+			}
+			else = {
+				navy_experience = 15
 			}
 		}
 	}
@@ -5121,7 +5127,7 @@ focus_tree = {
 				add_ideas = ITA_hidden_light_cruisers_production_ns
 			}
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			navy_experience = 25
@@ -5129,7 +5135,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = ITA_incrociatori_leggeri
 				cost_reduction = 0.75
-				uses = 3
+				uses = 2
 				category = cat_trade_interdiction
 			}
 
@@ -5166,7 +5172,7 @@ focus_tree = {
 				add_ideas = ITA_hidden_heavy_cruisers_production_ns
 			}			
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			navy_experience = 25
@@ -5174,7 +5180,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = ITA_incrociatori_pesanti
 				cost_reduction = 0.75
-				uses = 3
+				uses = 2
 				category = cat_fleet_in_being
 			}
 
@@ -5270,8 +5276,8 @@ focus_tree = {
 			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				name = ITA_cruiser_submarines
-				cost_reduction = 0.75
-				uses = 2
+				cost_reduction = 0.5
+				uses = 1
 				category = trade_interdiction_tree
 			}
 
@@ -5384,8 +5390,8 @@ focus_tree = {
 			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				name = ITA_midget_submarines
-				cost_reduction = 0.75
-				uses = 2
+				cost_reduction = 0.5
+				uses = 1
 				category = trade_interdiction_tree
 			}
 
@@ -5517,7 +5523,7 @@ focus_tree = {
 			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				name = ITA_cacciatorpediniere_di_scorta
-				cost_reduction = 0.75
+				cost_reduction = 0.50
 				uses = 2
 				category = convoy_defense_tree
 			}
@@ -5817,7 +5823,7 @@ focus_tree = {
 			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				name = ITA_navi_da_battaglia
-				cost_reduction = 0.75
+				cost_reduction = 0.5
 				uses = 2
 				category = fleet_in_being_tree
 			}
@@ -6200,6 +6206,15 @@ focus_tree = {
 		relative_position_id = ITA_ispettorato_dei_mezzi_antisommergibili
 		cost = 10
 		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				has_tech = basic_ship_hull_cruiser
+			}
+			else = {
+				has_tech = basic_light_cruiser
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP}
@@ -7146,7 +7161,15 @@ focus_tree = {
 
 			ITA_bop_low_decrease_effect = yes	
 
-			mark_focus_tree_layout_dirty = yes
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 
@@ -7322,7 +7345,15 @@ focus_tree = {
 
 			ITA_bop_very_low_increase_effect = yes
 
-			mark_focus_tree_layout_dirty = yes
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 	
@@ -9613,7 +9644,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_novus_ordo"
-			add_to_variable = { ITA_iri_consumer_goods_factor = -0.025 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = -0.05 }
 			custom_effect_tooltip = ITA_novus_ordo_ricostruzione_industriale_tt
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = 0.05 }
@@ -9837,6 +9868,16 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_seek_british_military_cooperation"
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 1000
+					equipment_type = small_plane_airframe
+					seller_tags = { ENG }
+				}
+			}
 			ENG = { 
 				country_event = { id = BBA_italy_research_agreement.1 hours = 6 random_hours = 2 } 
 			}
@@ -9912,6 +9953,21 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_invite_france_to_military_partnership"
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = light_tank_chassis
+					seller_tags = { FRA }
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = infantry_equipment
+					seller_tags = { FRA }
+				}
+			}
 			FRA = { 
 				country_event = { id = BBA_italy_research_agreement.1 hours = 6 random_hours = 2 } 
 			}
@@ -10109,7 +10165,8 @@ focus_tree = {
 		#	custom_effect_tooltip = available_political_advisor
 		#	show_ideas_tooltip = ITA_enrico_fermi
 
-			custom_effect_tooltip = available_political_advisor
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = ITA_giovanni_duca
 			show_ideas_tooltip = ITA_vittorio_emanuele_orlando
 
 			show_unit_leaders_tooltip = ITA_giovanni_duca
@@ -10148,7 +10205,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_economic_reforms"
-			add_to_variable = { ITA_iri_consumer_goods_factor = -0.025 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = -0.05 }
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
 			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.05 }
 			custom_effect_tooltip = ITA_economic_reforms_ricostruzione_industriale_tt
@@ -13414,20 +13471,20 @@ focus_tree = {
 						tooltip = ITA_ENG_must_control_necessary_states_tt
 						ENG = {
 							NOT = {
-								controls_state = 269 
-								controls_state = 903
-								controls_state = 906
-								controls_state = 116 
+								controls_state = 1622
 							}
 						}
 					}
 					custom_trigger_tooltip = {
 						tooltip = ITA_FRA_must_control_necessary_states_tt
-						FRA = {
-							NOT = {
-								controls_state = 268
-								controls_state = 458
-								controls_state = 665
+						NOT = {
+							TUN = {
+								all_core_state = {
+									OR = {
+										is_owned_by = FRA 
+										owner = { is_subject_of = FRA }
+									}
+								}
 							}
 						}
 					}
@@ -13883,6 +13940,21 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_treaty_with_germany"
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = light_tank_chassis
+					seller_tags = { GER }
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = medium_tank_chassis
+					seller_tags = { GER }
+				}
+			}
 			GER = {
 				country_event = { id = italy.5 days = 1 }
 				custom_effect_tooltip = needs_approval
@@ -17325,15 +17397,30 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_new_ricostruzione_industriale"
 			add_stability = -0.05
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = -0.02 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = -0.04 }
 			custom_effect_tooltip = ITA_new_ricostruzione_industriale_iri_tt
 
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0.05 }
 			custom_effect_tooltip = ITA_new_ricostruzione_industriale_military_industry_dm_tt
 
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ITA_officine_meccaniche
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ITA_officine_meccaniche_organization
+				mio:ITA_officine_meccaniche_organization = {
+					complete_mio_trait = ITA_mio_trait_new_ricostruzione_iundustriale_motorized
+					complete_mio_trait = ITA_mio_trait_new_ricostruzione_iundustriale_mechanized
+					complete_mio_trait = ITA_mio_trait_new_ricostruzione_iundustriale_train
+					add_mio_size = 3
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = ITA_officine_meccaniche
+			}
 		}
 	}
 
@@ -18940,7 +19027,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_peace_preservation"
 			hidden_effect = { #GUARANTEES
 				set_variable = { ITA_num_of_countries_guaranteed = 0 }
-				set_variable = { ITA_peace_keepers_consumer_goods_factor = 0.005 }
+				set_variable = { ITA_peace_keepers_consumer_goods_factor = 0.01 }
 				set_variable = { ITA_peace_keepers_war_support_factor = 0.01 }
 				set_variable = { ITA_peace_keepers_weekly_manpower = 100 }
 				every_other_country = {
