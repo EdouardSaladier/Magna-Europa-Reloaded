@@ -10,7 +10,10 @@ form_scandinavia_category = {
 				original_tag = DEN
 				original_tag = SWE
 			}
-			has_dlc = "Waking the Tiger"
+			OR = {
+				has_dlc = "Waking the Tiger"
+				has_dlc = "Arms Against Tyranny"
+			}
 		}
 
 		available = {
@@ -27,7 +30,12 @@ form_scandinavia_category = {
 								region = 120
 							}
 						}
-						is_controlled_by = ROOT
+						OR = {
+							is_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+							}
+						}
 					}
 				}
 			}
@@ -43,13 +51,18 @@ form_scandinavia_category = {
 								region = 119
 							}
 						}
-						is_controlled_by = ROOT
+						OR = {
+							is_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+							}
+						}
 					}
 				}
 			}
 			# Denmark / European Mainland
 			custom_trigger_tooltip = {
-				tooltip = form_scandinavia_denmark_required_states_tt
+				tooltip = form_country_denmark_required_states_tt
 				all_state = {
 					if = {
 						limit = {
@@ -57,7 +70,12 @@ form_scandinavia_category = {
 								region = 26
 							}
 						}
-						is_controlled_by = ROOT
+						OR = {
+							is_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+							}
+						}
 					}
 				}
 			}
@@ -84,6 +102,24 @@ form_scandinavia_category = {
 					add_core_of = ROOT
 				}
 			}
+			if = {
+				limit = {
+					NOR = {
+						is_subject_of = ROOT
+					}
+				}
+				
+				NOR = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
+				}
+				
+				annex_country = {
+					target = NOR
+					transfer_troops = yes
+				}
+			}
 			# Sweden
 			custom_effect_tooltip = form_country_sweden_coring_states_tt
 			hidden_effect = {
@@ -94,6 +130,24 @@ form_scandinavia_category = {
 					add_core_of = ROOT
 				}
 			}
+			if = {
+				limit = {
+					SWE = {
+						is_subject_of = ROOT
+					}
+				}
+				
+				SWE = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
+				}
+				
+				annex_country = {
+					target = SWE
+					transfer_troops = yes
+				}
+			}
 			# Denmark / European Mainland
 			custom_effect_tooltip = form_scandinavia_denmark_coring_states_tt
 			hidden_effect = {
@@ -102,6 +156,42 @@ form_scandinavia_category = {
 						is_core_of = DEN
 					}
 					add_core_of = ROOT
+				}
+			}
+			if = {
+				limit = {
+					DEN = {
+						is_subject_of = ROOT
+					}
+				}
+				
+				DEN = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
+				}
+				
+				annex_country = {
+					target = DEN
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = {
+					ICE = {
+						is_subject_of = ROOT
+					}
+				}
+				
+				ICE = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
+				}
+				
+				annex_country = {
+					target = ICE
+					transfer_troops = yes
 				}
 			}
 			hidden_effect = {
@@ -134,12 +224,28 @@ form_nordic_league_category = {
 				original_tag = FIN
 				original_tag = ICE
 				original_tag = EST
+				original_tag = GRN
+				original_tag = SMI
+				original_tag = KAR
 			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				AND = {
 					has_dlc = "No Step Back"
 					original_tag = EST
+				}
+				AND = {
+					has_dlc = "Arms Against Tyranny"
+					OR = {
+						original_tag = NOR
+						original_tag = DEN
+						original_tag = SWE
+						original_tag = FIN
+						original_tag = ICE
+						original_tag = GRN
+						original_tag = SMI
+						original_tag = KAR
+					}
 				}
 			}
 		}
@@ -154,17 +260,22 @@ form_nordic_league_category = {
 				custom_trigger_tooltip = {
 					tooltip = form_country_norway_required_states_tt
 					all_state = {
-					if = {
-						limit = {
+						if = {
+							limit = {
+								OR = {
+									region = 122
+									region = 121
+									region = 120
+								}
+							}
 							OR = {
-								region = 122
-								region = 121
-								region = 120
+								is_controlled_by = ROOT
+								controller = {
+									is_subject_of = ROOT
+								}
 							}
 						}
-						is_controlled_by = ROOT
 					}
-				}
 				}
 				# Sweden
 				custom_trigger_tooltip = {
@@ -178,7 +289,12 @@ form_nordic_league_category = {
 									region = 119
 								}
 							}
-							is_controlled_by = ROOT
+							OR = {
+								is_controlled_by = ROOT
+								controller = {
+									is_subject_of = ROOT
+								}
+							}
 						}
 					}
 				}
@@ -192,7 +308,12 @@ form_nordic_league_category = {
 									region = 26
 								}
 							}
-							is_controlled_by = ROOT
+							OR = {
+								is_controlled_by = ROOT
+								controller = {
+									is_subject_of = ROOT
+								}
+							}
 						}
 					}
 				}
@@ -209,7 +330,29 @@ form_nordic_league_category = {
 									region = 117
 								}
 							}
-							is_controlled_by = ROOT
+							OR = {
+								is_controlled_by = ROOT
+								controller = {
+									is_subject_of = ROOT
+								}
+							}
+						}
+					}
+				}
+				# Iceland
+				custom_trigger_tooltip = {
+					tooltip = form_country_iceland_required_states_tt
+					all_state = {
+						if = {
+							limit = {
+								region = 219
+							}
+							OR = {
+								is_controlled_by = ROOT
+								controller = {
+									is_subject_of = ROOT
+								}
+							}
 						}
 					}
 				}
@@ -243,6 +386,10 @@ form_nordic_league_category = {
 				original_tag = DEN
 				original_tag = SWE
 				original_tag = FIN
+				original_tag = ICE
+				original_tag = GRN
+				original_tag = SMI
+				original_tag = KAR
 				AND = {
 					original_tag = EST
 					has_completed_focus = EST_form_scandinavia
@@ -380,6 +527,44 @@ form_nordic_league_category = {
 				}
 			}
 			
+			# Iceland
+			custom_effect_tooltip = form_country_iceland_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = ICE
+					}
+					add_core_of = ROOT
+				}
+			}
+			
+			if = {
+				limit = {
+					ICE = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of = ROOT
+							all_core_state = {
+								controller = {
+									tag = ROOT
+								} 
+							}
+						}
+					}
+				}
+				
+				ICE = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
+				}
+
+				annex_country = {
+					target = ICE
+					transfer_troops = yes
+				}
+			}
+			
 			hidden_effect = {
 				if = {
 					limit = { NOT = { original_tag = EST } }
@@ -389,6 +574,488 @@ form_nordic_league_category = {
 					news_event = { id = EST_events.3 hours = 6 }
 				}
 				set_global_flag = form_nordic_league_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+} 
+
+form_north_sea_category = {
+
+	form_north_sea_empire = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = NOR
+				original_tag = DEN
+			}
+			has_dlc = "Arms Against Tyranny"
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = form_baltic_sea_empire_flag }
+			# Norway
+			custom_trigger_tooltip = {
+				tooltip = form_north_sea_empire_norway_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 122
+								region = 121
+								region = 120
+							}
+						}
+						OR = {
+							is_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+			}
+			# Sweden
+			custom_trigger_tooltip = {
+				tooltip = form_north_sea_empire_swedish_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								state = 184
+								state = 202
+								state = 203
+								state = 212
+								state = 2885
+							}
+						}
+						OR = {
+							is_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+			}
+			# Denmark
+			custom_trigger_tooltip = {
+				tooltip = form_country_denmark_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 26
+							}
+						}
+						OR = {
+							is_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+			}
+			# England
+			custom_trigger_tooltip = {
+				tooltip = form_north_sea_empire_english_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 45
+								region = 46
+							}
+						}
+						OR = {
+							is_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = NOR
+				original_tag = DEN
+			}
+			hidden_trigger = {
+				NOT = { has_global_flag = form_north_sea_empire_flag }
+			}
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = NSE_UNIFIED
+			# Norway
+			custom_effect_tooltip = form_country_norway_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = NOR
+					}
+					add_core_of = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOR = {
+						is_subject_of = ROOT
+					}
+				}
+				
+				NOR = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
+				}				
+				
+				annex_country = {
+					target = NOR
+					transfer_troops = yes
+				}
+			}
+			# Denmark / European Mainland
+			custom_effect_tooltip = form_scandinavia_denmark_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = DEN
+					}
+					add_core_of = ROOT
+				}
+			}
+			if = {
+				limit = {
+					DEN = {
+						is_subject_of = ROOT
+					}
+				}
+				
+				DEN = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
+				}				
+				
+				annex_country = {
+					target = DEN
+					transfer_troops = yes
+				}
+			}
+			# Sweden
+			custom_effect_tooltip =  form_north_sea_empire_swedish_coring_states_tt
+			hidden_effect = {
+				184 = { add_core_of = ROOT }
+				202 = { add_core_of = ROOT }
+				203 = { add_core_of = ROOT }
+				212 = { add_core_of = ROOT }
+				2885 = { add_core_of = ROOT }
+				transfer_state = 184
+				transfer_state = 202
+				transfer_state = 203
+				transfer_state = 212
+				transfer_state = 2885
+			}
+			# England
+			custom_effect_tooltip = form_north_sea_empire_english_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							region = 45
+							region = 46
+						}
+					}
+					add_core_of = ROOT
+					transfer_state_to = ROOT
+				}
+			}
+			hidden_effect = {
+				# news_event = { id = aat_news.666 hours = 6 }
+				set_global_flag = form_north_sea_empire_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+form_baltic_sea_empire_category = {
+
+	form_baltic_sea_empire = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = DEN
+			has_dlc = "Arms Against Tyranny"
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_global_flag = form_north_sea_empire_flag }
+			# Sweden
+			custom_trigger_tooltip = {
+				tooltip = form_country_sweden_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 123
+								region = 124
+								region = 119
+							}
+						}
+						OR = {
+							is_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+			}
+			# Denmark
+			custom_trigger_tooltip = {
+				tooltip = form_country_denmark_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 26
+							}
+						}
+						OR = {
+							is_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+			}
+			# Finland
+			custom_trigger_tooltip = {
+				tooltip = form_country_finland_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 116
+								region = 118
+								region = 112
+								region = 117
+							}
+						}
+						OR = {
+							is_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+			}
+			# Estonia
+			custom_trigger_tooltip = {
+				tooltip = form_country_estonia_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							has_state_flag = EST_INITIAL_STATE
+						}
+						is_controlled_by = ROOT
+					}
+				}
+			}
+			# Latvia
+			custom_trigger_tooltip = {
+				tooltip = form_country_latvia_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							has_state_flag = LAT_INITIAL_STATE
+						}
+						is_controlled_by = ROOT
+					}
+				}
+			}
+			# Lithuania
+			custom_trigger_tooltip = {
+				tooltip = form_country_lithuania_required_states_tt
+				all_state = {
+					if = {
+						limit = {
+							has_state_flag = LIT_INITIAL_STATE
+							NOT = { state = 227 }
+						}
+						is_controlled_by = ROOT
+					}
+				}
+			}
+		}
+
+		visible = {
+			original_tag = DEN
+			hidden_trigger = {
+				NOT = { has_global_flag = form_baltic_sea_empire_flag }
+			}
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = DEN_imperial
+			# Sweden
+			custom_effect_tooltip = form_country_sweden_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = SWE
+					}
+					add_core_of = ROOT
+				}
+
+			}
+
+			if = {
+				limit = {
+					SWE = {
+						is_subject_of = ROOT
+					}
+				}
+				
+				SWE = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
+				}
+				
+				annex_country = {
+					target = SWE
+					transfer_troops = yes
+				}
+			}
+			# Denmark
+			custom_effect_tooltip = form_country_denmark_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = DEN
+					}
+					add_core_of = ROOT
+				}
+			}
+
+			if = {
+				limit = {
+					DEN = {
+						is_subject_of = ROOT
+					}
+				}
+				
+				DEN = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
+				}				
+				
+				annex_country = {
+					target = DEN
+					transfer_troops = yes
+				}
+			}
+			
+			# Finland
+			custom_effect_tooltip = form_country_finland_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FIN
+					}
+					add_core_of = ROOT
+				}
+			}
+			
+			if = {
+				limit = {
+					FIN = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of = ROOT
+							all_core_state = {
+								controller = {
+									tag = ROOT
+								} 
+							}
+						}
+					}
+				}
+				
+				FIN = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
+				}
+
+				annex_country = {
+					target = FIN
+					transfer_troops = yes
+				}
+			}
+			# Estonia
+			custom_effect_tooltip = form_country_estonia_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit =  {
+						is_core_of = EST
+					}
+					add_core_of = ROOT
+				}
+			}
+			# Latvia
+			custom_effect_tooltip = form_country_latvia_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit =  {
+						is_core_of = LAT
+					}
+					add_core_of = ROOT
+				}
+			}
+			# Lithuania
+			custom_effect_tooltip = form_country_lithuania_coring_states_tt
+			hidden_effect = {
+				every_state = {
+					limit =  {
+						is_core_of = LIT
+					}
+					add_core_of = ROOT
+				}
+			}
+
+			hidden_effect = {
+				news_event = { id = aat_news.777 hours = 6 }
+				set_global_flag = form_baltic_sea_empire_flag
 			}
 		}
 
