@@ -656,7 +656,7 @@ is_northern_ireland = {
 	}
 }
 
-is_hun_larp = {
+is_hun_larp = { #Total hungarian territorial claims
 	OR = {
 		region = 12
 		region = 21
@@ -681,7 +681,7 @@ is_hun_larp = {
 	}
 }
 
-is_OG_soviet_mr = {
+is_OG_soviet_mr = { #Original planned borders for the molotov ribbentrop pact, before they were changed in OTL
 	OR = {
 		is_soviet_mr = yes
 		state = 2346
@@ -713,6 +713,13 @@ is_sov_claim_on_fin_not_islands = {
 		state = 77
 		state = 113
 		state = 2783
+	}
+}
+is_sov_claim_on_fin_and_islands = {
+	OR = {
+		is_sov_claim_on_fin_not_islands = yes 
+		state = 29
+		state = 36
 	}
 }
 is_fin_claim_on_sov_large = {
