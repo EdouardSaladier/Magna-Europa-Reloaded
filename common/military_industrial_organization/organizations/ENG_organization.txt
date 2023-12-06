@@ -23,6 +23,11 @@ ENG_vickers_armstrong_eng_organization = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+
 		}
 	}
 	
@@ -37,7 +42,7 @@ ENG_vickers_armstrong_eng_organization = {
 
 		IF = {
 			limit = { 
-				FROM = { original_tag = BUL }
+				FROM = { NOT = { original_tag = ENG } }
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
@@ -125,6 +130,11 @@ ENG_vauxhall_organization = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+
 		}
 	}
 
@@ -151,7 +161,7 @@ ENG_vauxhall_organization = {
 
 		IF = {
 			limit = { 
-				FROM = { original_tag = BUL }
+				FROM = { NOT = { original_tag = ENG } }
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
@@ -304,6 +314,11 @@ ENG_yarrow_shipbuilders_organization = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+
 		}
 	}
 	
@@ -317,13 +332,16 @@ ENG_yarrow_shipbuilders_organization = {
 		}
 
 		IF = {
-			limit = { FROM = { original_tag = BUL } }
+			limit = { FROM = { NOT = { original_tag = ENG } } }
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
 					has_country_flag = has_invited_yarrow_mio_flag 
 				}
 			}
+		}
+		IF = {
+			limit = { FROM = { original_tag = BUL } } 
 			FROM = {
 				OR = {
 					is_subject = no
@@ -346,6 +364,10 @@ ENG_john_brown_organization = {
 			AND = {
 				tag = BUL #This one is an additional option for Bulgaria with AAT 
 				has_dlc = "Battle for the Bosporus"
+			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
 			}
 		}
 	}
@@ -529,6 +551,11 @@ ENG_fairey_aviation_organization = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+
 		}
 	}
 	
@@ -542,7 +569,7 @@ ENG_fairey_aviation_organization = {
 		}
 
 		IF = {
-			limit = { FROM = { original_tag = BUL } }
+			limit = { FROM = { NOT = { original_tag = ENG } } }
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
@@ -676,6 +703,11 @@ ENG_vauxhall_automotive_organization = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+
 		}
 	}
 	
@@ -701,7 +733,7 @@ ENG_vauxhall_automotive_organization = {
 
 		IF = {
 			limit = {
-				FROM = { original_tag = BUL }
+				FROM = { NOT = { original_tag = ENG } }
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt

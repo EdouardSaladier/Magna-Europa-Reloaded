@@ -4133,6 +4133,11 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HUN_license_foreign_designs"
 			add_ideas = HUN_license_foreign
+			
+			IF = {
+				limit = { has_dlc = "Arms Against Tyranny"}
+				unlock_decision_category_tooltip = foreign_mio_decisions_category
+			}
 		}
 	}
 

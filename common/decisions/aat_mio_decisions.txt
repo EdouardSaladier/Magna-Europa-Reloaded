@@ -12,9 +12,15 @@ foreign_mio_decisions_category = {
 		targets = { GER }
 		
 		allowed = {
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
+			OR = {
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -26,6 +32,10 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -34,6 +44,14 @@ foreign_mio_decisions_category = {
 		available = {
 			GER = { 
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = GER
+				}
+				has_completed_focus = HUN_trade_deal_with_germany
 			}
 			IF = {
 				limit = { original_tag = BUL }
@@ -107,6 +125,10 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -118,6 +140,10 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -126,6 +152,14 @@ foreign_mio_decisions_category = {
 		available = {
 			GER = { 
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = GER
+				}
+				has_completed_focus = HUN_trade_deal_with_germany
 			}
 			IF = {
 				limit = { original_tag = BUL }
@@ -193,18 +227,55 @@ foreign_mio_decisions_category = {
 		targets = { GER }
 		
 		allowed = {
-			always = no 
+			OR = {
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
+			}
 		}
 
 		visible = {
 			GER = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
+			IF = {
+				limit = { original_tag = BUL }
+				has_completed_focus = BUL_contract_foreign_companies
+			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE = {
+				always = no 
+			}
 		}
 
 		available = {
 			GER = { 
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = GER
+				}
+				has_completed_focus = HUN_trade_deal_with_germany
+			}
+			IF = {
+				limit = { original_tag = BUL }
+				OR = {
+					is_subject = no
+					is_subject_of = GER
+				}
+				#is_in_faction_with = GER
+				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 
@@ -244,7 +315,11 @@ foreign_mio_decisions_category = {
 				AND = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
-				} 
+				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -256,6 +331,10 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -265,7 +344,14 @@ foreign_mio_decisions_category = {
 			GER = { 
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
-
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = GER
+				}
+				has_completed_focus = HUN_trade_deal_with_germany
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -332,18 +418,55 @@ foreign_mio_decisions_category = {
 		targets = { GER }
 		
 		allowed = {
-			always = no 
+			OR = {
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
+			} 
 		}
 
 		visible = {
 			GER = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
+			IF = {
+				limit = { original_tag = BUL }
+				has_completed_focus = BUL_contract_foreign_companies
+			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE = {
+				always = no 
+			}
 		}
 
 		available = {
 			GER = { 
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = GER
+				}
+				has_completed_focus = HUN_trade_deal_with_germany
+			}
+			IF = {
+				limit = { original_tag = BUL }
+				OR = {
+					is_subject = no
+					is_subject_of = GER
+				}
+				#is_in_faction_with = GER
+				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 
@@ -384,6 +507,10 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -395,6 +522,10 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -404,7 +535,14 @@ foreign_mio_decisions_category = {
 			SOV = { 
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
-
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = SOV
+				}
+				has_completed_focus = HUN_the_hungarian_red_army
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -477,6 +615,10 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -491,6 +633,10 @@ foreign_mio_decisions_category = {
 					has_completed_focus = BUL_a_black_sea_fleet
 				}
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -500,7 +646,15 @@ foreign_mio_decisions_category = {
 			SOV = { 
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
-
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = SOV
+				}
+				has_completed_focus = HUN_the_hungarian_red_army
+				has_completed_focus = HUN_dockyards
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -575,6 +729,10 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -586,6 +744,10 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -595,7 +757,14 @@ foreign_mio_decisions_category = {
 			SOV = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
-
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = SOV
+				}
+				has_completed_focus = HUN_the_hungarian_red_army
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -666,7 +835,11 @@ foreign_mio_decisions_category = {
 				AND = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
-				} 
+				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -678,6 +851,10 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -687,7 +864,14 @@ foreign_mio_decisions_category = {
 			SOV = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
-
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = SOV
+				}
+				has_completed_focus = HUN_the_hungarian_red_army
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -761,6 +945,10 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -772,6 +960,10 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -781,7 +973,14 @@ foreign_mio_decisions_category = {
 			ENG = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
-
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = ENG
+				}
+				has_completed_focus = HUN_responsible_government
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -854,6 +1053,10 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -868,6 +1071,10 @@ foreign_mio_decisions_category = {
 					has_completed_focus = BUL_a_black_sea_fleet
 				}
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -877,7 +1084,15 @@ foreign_mio_decisions_category = {
 			ENG = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
-
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = ENG
+				}
+				has_completed_focus = HUN_responsible_government
+				has_completed_focus = HUN_dockyards
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -951,6 +1166,10 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -965,6 +1184,10 @@ foreign_mio_decisions_category = {
 					has_completed_focus = BUL_a_black_sea_fleet
 				}
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -974,7 +1197,15 @@ foreign_mio_decisions_category = {
 			ENG = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
-
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = ENG
+				}
+				has_completed_focus = HUN_responsible_government
+				has_completed_focus = HUN_dockyards
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -1048,6 +1279,10 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -1059,6 +1294,10 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -1068,7 +1307,14 @@ foreign_mio_decisions_category = {
 			ENG = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
-
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = ENG
+				}
+				has_completed_focus = HUN_responsible_government
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -1141,6 +1387,10 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -1152,6 +1402,10 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -1160,6 +1414,14 @@ foreign_mio_decisions_category = {
 		available = {
 			ENG = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = ENG
+				}
+				has_completed_focus = HUN_responsible_government
 			}
 			IF = {
 				limit = { original_tag = BUL }
@@ -1235,6 +1497,10 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -1246,6 +1512,10 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -1255,7 +1525,14 @@ foreign_mio_decisions_category = {
 			ITA = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
-
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = ITA
+				}
+				has_completed_focus = HUN_renew_the_rome_protocols
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -1328,6 +1605,10 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -1342,6 +1623,10 @@ foreign_mio_decisions_category = {
 					has_completed_focus = BUL_a_black_sea_fleet
 				}
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -1351,7 +1636,15 @@ foreign_mio_decisions_category = {
 			ITA = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
-
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = ITA
+				}
+				has_completed_focus = HUN_renew_the_rome_protocols
+				has_completed_focus = HUN_dockyards
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -1425,6 +1718,10 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
 			}
 		}
 
@@ -1436,6 +1733,10 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
+			ELSE_IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
 			ELSE = {
 				always = no 
 			}
@@ -1445,7 +1746,14 @@ foreign_mio_decisions_category = {
 			ITA = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
-
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = ITA
+				}
+				has_completed_focus = HUN_renew_the_rome_protocols
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -1702,18 +2010,38 @@ foreign_mio_decisions_category = {
 		targets = { FRA }
 		
 		allowed = {
-			always = no
+			OR = {
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
+			}
 		}
 
 		visible = {
 			FRA = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
+			IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE = {
+				always = no 
+			}
 		}
 
 		available = {
 			FRA = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = FRA
+				}
+				has_completed_focus = HUN_responsible_government
 			}
 		}
 
@@ -1749,12 +2077,24 @@ foreign_mio_decisions_category = {
 		targets = { FRA }
 		
 		allowed = {
-			always = no
+			OR = {
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
+			}
 		}
 
 		visible = {
 			FRA = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
+			}
+			IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE = {
+				always = no 
 			}
 		}
 
@@ -1762,13 +2102,20 @@ foreign_mio_decisions_category = {
 			FRA = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = FRA
+				}
+				has_completed_focus = HUN_responsible_government
+			}
 		}
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = has_invited_FRA_bloch_organization_flag }
 			custom_effect_tooltip = available_mio_tt
 			show_mio_tooltip = FRA_bloch_organization
-			
 		}
 		
 		ai_will_do = {
@@ -1795,18 +2142,38 @@ foreign_mio_decisions_category = {
 		targets = { FRA }
 		
 		allowed = {
-			always = no
+			OR = {
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
+			}
 		}
 
 		visible = {
 			FRA = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
+			IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE = {
+				always = no 
+			}
 		}
 
 		available = {
 			FRA = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = FRA
+				}
+				has_completed_focus = HUN_responsible_government
 			}
 		}
 
@@ -1843,18 +2210,37 @@ foreign_mio_decisions_category = {
 		targets = { SWE }
 		
 		allowed = {
-			always = no
+			OR = {
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
+			} 
 		}
 
 		visible = {
 			SWE = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
+			IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE = {
+				always = no 
+			}
 		}
 
 		available = {
 			SWE = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = SWE
+				}
 			}
 		}
 
@@ -1890,18 +2276,37 @@ foreign_mio_decisions_category = {
 		targets = { SWE }
 		
 		allowed = {
-			always = no
+			OR = {
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
+			} 
 		}
 
 		visible = {
 			SWE = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
+			IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE = {
+				always = no 
+			}
 		}
 
 		available = {
 			SWE = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = SWE
+				}
 			}
 		}
 
@@ -1936,18 +2341,37 @@ foreign_mio_decisions_category = {
 		targets = { SWE }
 		
 		allowed = {
-			always = no
+			OR = {
+				AND = {
+					tag = HUN
+					has_dlc = "Death or Dishonor"
+				}
+			}
 		}
 
 		visible = {
 			SWE = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
+			IF = {
+				limit = { original_tag = HUN }
+				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE = {
+				always = no 
+			}
 		}
 
 		available = {
 			SWE = {
 				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = SWE
+				}
 			}
 		}
 

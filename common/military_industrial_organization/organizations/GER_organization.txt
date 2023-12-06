@@ -55,6 +55,11 @@ GER_henschel_organization = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+
 		}
 	}
 
@@ -69,7 +74,7 @@ GER_henschel_organization = {
 
 		IF = {
 			limit = { 
-				FROM = { original_tag = BUL } 
+				FROM = { NOT = { original_tag = GER } }
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
@@ -364,6 +369,11 @@ GER_heinkel_organization = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+
 			NOR_AAT = yes
 		}
 	}
@@ -379,7 +389,7 @@ GER_heinkel_organization = {
 
 		IF = {
 			limit = {
-				FROM = { original_tag = BUL }
+				FROM = { NOT = { original_tag = GER } }
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
@@ -387,6 +397,9 @@ GER_heinkel_organization = {
 					has_country_flag = has_invited_heinkel_mio_flag
 				}
 			}
+		}
+		IF = {
+			limit = { FROM = { original_tag = BUL } } 
 			FROM = { 
 				OR = {
 					is_subject = no
@@ -496,6 +509,11 @@ GER_opel_organization = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+
 		}
 	}
 	
@@ -509,13 +527,16 @@ GER_opel_organization = {
 		}
 
 		IF = {
-			limit = { FROM = { original_tag = BUL } }
+			limit = { FROM = { NOT = { original_tag = GER } } }
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
 					has_country_flag = has_invited_opel_mio_flag
 				}
 			}
+		}
+		IF = {
+			limit = { FROM = { original_tag = BUL } } 
 			FROM = { 
 				OR = {
 					is_subject = no

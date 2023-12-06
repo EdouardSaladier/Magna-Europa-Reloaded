@@ -13,7 +13,42 @@ FRA_renault_organization = {
 	include = generic_infantry_tank_organization
 	icon = GFX_idea_renault
 	allowed = {	
-		tag = FRA
+		OR = {
+			tag = FRA
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+		}
+	}
+	visible = {
+		IF = {
+			limit = {
+				FROM = { original_tag = HUN }
+			}
+			FROM = { has_completed_focus = HUN_license_foreign_designs }
+		}
+	}
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = FRA } }
+			}
+			FROM = { NOT = { has_war_with = FRA } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = FRA } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_FRA_renault_organization_flag
+				}
+			}
+		}
 	}
 
 	initial_trait = {
@@ -170,7 +205,42 @@ FRA_bloch_organization = {
 	include = generic_medium_aircraft_organization
 	icon = GFX_idea_bloch
 	allowed = {	
-		tag = FRA
+		OR = {
+			tag = FRA
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+		}
+	}
+	visible = {
+		IF = {
+			limit = {
+				FROM = { original_tag = HUN }
+			}
+			FROM = { has_completed_focus = HUN_license_foreign_designs }
+		}
+	}
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = FRA } }
+			}
+			FROM = { NOT = { has_war_with = FRA } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = FRA } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_FRA_bloch_organization_flag
+				}
+			}
+		}
 	}
 }
 
@@ -270,8 +340,43 @@ FRA_mas_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_mas
 	
-	allowed = {	
-		tag = FRA
+	allowed = {
+		OR = {
+			tag = FRA
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+		}
+	}
+	visible = {
+		IF = {
+			limit = {
+				FROM = { original_tag = HUN }
+			}
+			FROM = { has_completed_focus = HUN_license_foreign_designs }
+		}
+	}
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = FRA } }
+			}
+			FROM = { NOT = { has_war_with = FRA } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = FRA } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_FRA_mas_organization_flag
+				}
+			}
+		}
 	}
 }
 

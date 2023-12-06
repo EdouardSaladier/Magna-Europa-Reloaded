@@ -24,6 +24,11 @@ ITA_fiat_organization = {
 				tag = BUL 
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+
 		}
 	}
 	
@@ -49,19 +54,22 @@ ITA_fiat_organization = {
 			}
 		}
 		IF = {
-			limit = { FROM = { original_tag = BUL } }
+			limit = { FROM = { NOT = { original_tag = ITA } } }
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
 					has_country_flag = has_invited_fiat_mio_flag
 				}
 			}
-			FROM = {
+		}
+		IF = {
+			limit = { FROM = { original_tag = BUL } } 
+			FROM = { 
 				OR = {
 					is_subject = no
-					is_subject_of = ITA
+					is_subject_of = GER
 				}
-				#is_in_faction_with = ITA
+				#is_in_faction_with = GER
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
@@ -114,6 +122,11 @@ ITA_crda_organization = {
 				tag = BUL 
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+
 		}
 	}
 	
@@ -131,19 +144,22 @@ ITA_crda_organization = {
 		}
 
 		IF = {
-			limit = { FROM = { original_tag = BUL } }
+			limit = { FROM = { NOT = { original_tag = ITA } } }
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
 					has_country_flag = has_invited_crda_mio_flag
 				}
 			}
-			FROM = {
+		}
+		IF = {
+			limit = { FROM = { original_tag = BUL } } 
+			FROM = { 
 				OR = {
 					is_subject = no
-					is_subject_of = ITA
+					is_subject_of = GER
 				}
-				#is_in_faction_with = ITA
+				#is_in_faction_with = GER
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
@@ -816,6 +832,11 @@ ITA_lancia_organization = {
 				tag = BUL 
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+
 		}
 	}
 	
@@ -833,19 +854,22 @@ ITA_lancia_organization = {
 		}
 		
 		IF = {
-			limit = { FROM = { original_tag = BUL } }
+			limit = { FROM = { NOT = { original_tag = ITA } } }
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
 					has_country_flag = has_invited_lancia_mio_flag
 				}
 			}
-			FROM = {
+		}
+		IF = {
+			limit = { FROM = { original_tag = BUL } } 
+			FROM = { 
 				OR = {
 					is_subject = no
-					is_subject_of = ITA
+					is_subject_of = GER
 				}
-				#is_in_faction_with = ITA
+				#is_in_faction_with = GER
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
