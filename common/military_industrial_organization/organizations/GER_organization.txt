@@ -28,14 +28,7 @@ GER_porsche_organization = {
 			}
 			FROM = { NOT = { has_war_with = GER } }
 		}
-
 		IF = {
-			limit = {
-				FROM = { tag = MEX }
-			}
-			FROM = { is_in_faction_with = GER }
-		}
-		ELSE_IF = {
 			limit = {
 				FROM = { tag = NOR }
 			}
@@ -59,7 +52,10 @@ GER_henschel_organization = {
 				tag = HUN 
 				has_dlc = "Death or Dishonor"
 			}
-
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
+			}
 		}
 	}
 
@@ -82,7 +78,6 @@ GER_henschel_organization = {
 					has_country_flag = has_invited_henschel_mio_flag
 				}
 			}
-			
 		}
 		IF = {
 			limit = { FROM = { original_tag = BUL } } 
@@ -242,7 +237,11 @@ GER_messerschmitt_organization = {
 	allowed = {	
 		OR = {
 			tag = GER
-			NOR_AAT = yes 
+			NOR_AAT = yes
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
+			}
 		}
 	}
 
@@ -260,6 +259,18 @@ GER_messerschmitt_organization = {
 				FROM = { original_tag = NOR }
 			}
 			FROM = { has_completed_focus = NOR_invite_german_engineers }
+		}
+		
+		IF = {
+			limit = {
+				FROM = { NOT  = { original_tag = GER } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_messerschmitt_mio_flag
+				}
+			}
 		}
 	}
 
@@ -308,7 +319,21 @@ GER_junkers_organization = {
 	icon = GFX_idea_junkers
 	
 	allowed = {	 
-		tag = GER
+		OR = {
+			tag = GER 
+			AND = {
+				tag = BUL
+				has_dlc = "Battle for the Bosporus"
+			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Death or Dishonor"
+			}
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
+			}
+		}
 	}
 
 	available = {
@@ -513,7 +538,6 @@ GER_opel_organization = {
 				tag = HUN 
 				has_dlc = "Death or Dishonor"
 			}
-
 		}
 	}
 	

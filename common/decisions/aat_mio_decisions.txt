@@ -21,6 +21,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -35,6 +39,10 @@ foreign_mio_decisions_category = {
 			ELSE_IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_study_foreign_tanks
 			}
 			ELSE = {
 				always = no 
@@ -61,6 +69,18 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = GER
 				NOT = { has_completed_focus = BUL_nationalization }
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = GER
+				}
+				#is_in_faction_with = GER
+				OR = {
+					has_completed_focus = POL_seek_german_alignment
+					has_completed_focus = POL_beck_ribbentrop
+				}
 			}
 		}
 
@@ -109,6 +129,76 @@ foreign_mio_decisions_category = {
 	}
 
 	# planes
+	
+	invite_GER_messerschmitt_organization = {
+
+		icon = generic_air
+
+		cost = 50
+
+		fire_only_once = yes
+
+		targets = { GER }
+
+		allowed = {
+			OR = {
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
+			}
+		}
+
+		visible = {
+			GER = {
+				mio_original_country_exists_and_not_at_war_with_ROOT = yes
+			}
+			IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_fighter_modernisation
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			GER = { 
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = GER
+				}
+				#is_in_faction_with = GER
+				OR = {
+					has_completed_focus = POL_seek_german_alignment
+					has_completed_focus = POL_beck_ribbentrop
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_messerschmitt_mio_flag }
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = GER_messerschmitt_organization
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				GER = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				GER = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+	
 	invite_GER_heinkel_organization = {
 
 		icon = generic_air
@@ -236,6 +326,11 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -250,6 +345,10 @@ foreign_mio_decisions_category = {
 			ELSE_IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_air_modernisations_programme
 			}
 			ELSE = {
 				always = no 
@@ -276,6 +375,18 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = GER
 				NOT = { has_completed_focus = BUL_nationalization }
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = GER
+				}
+				#is_in_faction_with = GER
+				OR = {
+					has_completed_focus = POL_seek_german_alignment
+					has_completed_focus = POL_beck_ribbentrop
+				}
 			}
 		}
 
@@ -511,6 +622,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -525,6 +640,10 @@ foreign_mio_decisions_category = {
 			ELSE_IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_study_foreign_tanks
 			}
 			ELSE = {
 				always = no 
@@ -551,6 +670,14 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = SOV
 				NOT = { has_completed_focus = BUL_nationalization }
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = SOV
+				}
+				has_completed_focus = POL_KPP_focus
 			}
 		}
 
@@ -619,6 +746,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -636,6 +767,10 @@ foreign_mio_decisions_category = {
 			ELSE_IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_the_twin_threats
 			}
 			ELSE = {
 				always = no 
@@ -664,6 +799,14 @@ foreign_mio_decisions_category = {
 				#is_in_faction_with = SOV
 				has_completed_focus = BUL_a_black_sea_fleet
 				NOT = { has_completed_focus = BUL_nationalization }
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = SOV
+				}
+				has_completed_focus = POL_KPP_focus
 			}
 		}
 
@@ -713,6 +856,72 @@ foreign_mio_decisions_category = {
 	}
 
 	#Planes
+	invite_SOV_mig_design_bureau_organization = {
+
+		icon = generic_air
+
+		cost = 50
+
+		fire_only_once = yes 
+
+		targets = { SOV }
+		
+		allowed = {
+			OR = {
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
+			}
+		}
+
+		visible = {
+			SOV = {
+				mio_original_country_exists_and_not_at_war_with_ROOT = yes
+			}
+			IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_fighter_modernisation
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			SOV = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = SOV
+				}
+				has_completed_focus = POL_KPP_focus
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_mig_design_bureau_mio_flag }
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = SOV_mig_design_bureau_organization		
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				SOV = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				SOV = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+	
+	
 	invite_SOV_ilyushin_design_bureau_organization = {
 
 		icon = generic_air
@@ -733,6 +942,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -747,6 +960,10 @@ foreign_mio_decisions_category = {
 			ELSE_IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_air_modernisations_programme
 			}
 			ELSE = {
 				always = no 
@@ -773,6 +990,14 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = SOV
 				NOT = { has_completed_focus = BUL_nationalization }
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = SOV
+				}
+				has_completed_focus = POL_KPP_focus
 			}
 		}
 
@@ -949,6 +1174,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -963,6 +1192,10 @@ foreign_mio_decisions_category = {
 			ELSE_IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_study_foreign_tanks
 			}
 			ELSE = {
 				always = no 
@@ -980,6 +1213,19 @@ foreign_mio_decisions_category = {
 					is_subject_of = ENG
 				}
 				has_completed_focus = HUN_responsible_government
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = ENG
+				}
+				OR = {
+					has_completed_focus = POL_align_with_the_west
+					has_completed_focus = POL_preserve_bougoise_democracy
+					has_completed_focus = POL_trust_in_the_west
+					has_completed_focus = POL_ROM_join_allies
+				}
 			}
 			IF = {
 				limit = { original_tag = BUL }
@@ -1057,6 +1303,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -1074,6 +1324,10 @@ foreign_mio_decisions_category = {
 			ELSE_IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_the_twin_threats
 			}
 			ELSE = {
 				always = no 
@@ -1102,6 +1356,19 @@ foreign_mio_decisions_category = {
 				#is_in_faction_with = ENG
 				has_completed_focus = BUL_a_black_sea_fleet
 				NOT = { has_completed_focus = BUL_nationalization }
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = ENG
+				}
+				OR = {
+					has_completed_focus = POL_align_with_the_west
+					has_completed_focus = POL_preserve_bougoise_democracy
+					has_completed_focus = POL_trust_in_the_west
+					has_completed_focus = POL_ROM_join_allies
+				}
 			}
 		}
 
@@ -1170,6 +1437,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -1187,6 +1458,10 @@ foreign_mio_decisions_category = {
 			ELSE_IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_the_twin_threats
 			}
 			ELSE = {
 				always = no 
@@ -1215,6 +1490,19 @@ foreign_mio_decisions_category = {
 				#is_in_faction_with = ENG
 				has_completed_focus = BUL_a_black_sea_fleet
 				NOT = { has_completed_focus = BUL_nationalization }
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = ENG
+				}
+				OR = {
+					has_completed_focus = POL_align_with_the_west
+					has_completed_focus = POL_preserve_bougoise_democracy
+					has_completed_focus = POL_trust_in_the_west
+					has_completed_focus = POL_ROM_join_allies
+				}
 			}
 		}
 
@@ -1263,6 +1551,77 @@ foreign_mio_decisions_category = {
 		}
 	}
 	# Planes 
+	
+	invite_ENG_supermarine_organization = {
+
+		icon = generic_air
+
+		cost = 50
+
+		fire_only_once = yes 
+
+		targets = { ENG }
+		
+		allowed = {
+			OR = {
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
+			}
+		}
+
+		visible = {
+			ENG = {
+				mio_original_country_exists_and_not_at_war_with_ROOT = yes
+			}
+			IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_fighter_modernisation
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			ENG = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = ENG
+				}
+				OR = {
+					has_completed_focus = POL_align_with_the_west
+					has_completed_focus = POL_preserve_bougoise_democracy
+					has_completed_focus = POL_trust_in_the_west
+					has_completed_focus = POL_ROM_join_allies
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_ENG_supermarine_organization_flag }
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = ENG_supermarine_organization
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				ENG = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				ENG = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+	
 	invite_ENG_fairey_aviation_organization = {
 
 		icon = generic_air
@@ -1283,6 +1642,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -1297,6 +1660,10 @@ foreign_mio_decisions_category = {
 			ELSE_IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_air_modernisations_programme
 			}
 			ELSE = {
 				always = no 
@@ -1323,6 +1690,19 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = ENG
 				NOT = { has_completed_focus = BUL_nationalization }
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = ENG
+				}
+				OR = {
+					has_completed_focus = POL_align_with_the_west
+					has_completed_focus = POL_preserve_bougoise_democracy
+					has_completed_focus = POL_trust_in_the_west
+					has_completed_focus = POL_ROM_join_allies
+				}
 			}
 		}
 
@@ -1501,6 +1881,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -1515,6 +1899,10 @@ foreign_mio_decisions_category = {
 			ELSE_IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_study_foreign_tanks
 			}
 			ELSE = {
 				always = no 
@@ -1532,6 +1920,14 @@ foreign_mio_decisions_category = {
 					is_subject_of = ITA
 				}
 				has_completed_focus = HUN_renew_the_rome_protocols
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = ITA
+				}
+				has_completed_focus = POL_italian_alliance
 			}
 			IF = {
 				limit = { original_tag = BUL }
@@ -1609,6 +2005,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -1626,6 +2026,10 @@ foreign_mio_decisions_category = {
 			ELSE_IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_the_twin_threats
 			}
 			ELSE = {
 				always = no 
@@ -1654,6 +2058,14 @@ foreign_mio_decisions_category = {
 				#is_in_faction_with = ITA
 				has_completed_focus = BUL_a_black_sea_fleet
 				NOT = { has_completed_focus = BUL_nationalization }
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = ITA
+				}
+				has_completed_focus = POL_italian_alliance
 			}
 		}
 
@@ -2015,6 +2427,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -2025,6 +2441,10 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_study_foreign_tanks
 			}
 			ELSE = {
 				always = no 
@@ -2042,6 +2462,13 @@ foreign_mio_decisions_category = {
 					is_subject_of = FRA
 				}
 				has_completed_focus = HUN_responsible_government
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = FRA
+				}
 			}
 		}
 
@@ -2066,6 +2493,71 @@ foreign_mio_decisions_category = {
 	} 
 
 	# Planes
+	
+	invite_FRA_morane_saulnier_organization = {
+
+		icon = generic_air
+
+		cost = 50
+
+		fire_only_once = yes 
+		
+		targets = { FRA }
+		
+		allowed = {
+			OR = {
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
+			}
+		}
+
+		visible = {
+			FRA = {
+				mio_original_country_exists_and_not_at_war_with_ROOT = yes
+			}
+			IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_fighter_modernisation
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			FRA = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = FRA
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_FRA_morane_saulnier_flag }
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = FRA_morane_saulnier_organization
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				FRA = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				FRA = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+	
 	invite_FRA_bloch_organization = {
 
 		icon = generic_air
@@ -2082,6 +2574,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -2092,6 +2588,10 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_air_modernisations_programme
 			}
 			ELSE = {
 				always = no 
@@ -2109,6 +2609,13 @@ foreign_mio_decisions_category = {
 					is_subject_of = FRA
 				}
 				has_completed_focus = HUN_responsible_government
+			}
+			IF = {
+				limit = { original_tag = POL }
+				OR = {
+					is_subject = no
+					is_subject_of = FRA
+				}
 			}
 		}
 
@@ -2215,6 +2722,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			} 
 		}
 
@@ -2225,6 +2736,10 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_study_foreign_tanks
 			}
 			ELSE = {
 				always = no 
@@ -2237,6 +2752,13 @@ foreign_mio_decisions_category = {
 			}
 			IF = {
 				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = SWE
+				}
+			}
+			IF = {
+				limit = { original_tag = POL }
 				OR = {
 					is_subject = no
 					is_subject_of = SWE
@@ -2346,6 +2868,10 @@ foreign_mio_decisions_category = {
 					tag = HUN
 					has_dlc = "Death or Dishonor"
 				}
+				AND = {
+					tag = POL 
+					has_dlc = "No Step Back"
+				}
 			}
 		}
 
@@ -2356,6 +2882,10 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = HUN }
 				has_completed_focus = HUN_license_foreign_designs
+			}
+			ELSE_IF = {
+				limit = { original_tag = POL }
+				has_completed_focus = POL_artillery_modernisation
 			}
 			ELSE = {
 				always = no 
@@ -2368,6 +2898,13 @@ foreign_mio_decisions_category = {
 			}
 			IF = {
 				limit = { original_tag = HUN }
+				OR = {
+					is_subject = no
+					is_subject_of = SWE
+				}
+			}
+			IF = {
+				limit = { original_tag = POL }
 				OR = {
 					is_subject = no
 					is_subject_of = SWE

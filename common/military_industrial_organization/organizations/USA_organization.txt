@@ -256,7 +256,7 @@ USA_north_american_aviation_organization = {
 	icon = GFX_idea_north_american_aviation
 	
 	allowed = {	
-		tag = USA 
+		tag = USA
 	}
 	
 	add_trait = {
@@ -513,17 +513,6 @@ USA_ford_motor_company_organization = {
 		}
 	}
 	
-	visible = {
-		IF = { 
-			limit = {
-				FROM = { tag = POL }
-			}
-			FROM = {
-				has_country_flag = POL_ford_motors
-			}
-		}
-	}
-	
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
@@ -531,6 +520,17 @@ USA_ford_motor_company_organization = {
 				FROM = { NOT = { original_tag = USA } }
 			}
 			FROM = { NOT = { has_war_with = USA } }
+		}
+		IF = {
+			limit = {
+				FROM = { original_tag = POL }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = POL_ford_motors
+				}
+			}
 		}
 
 		IF = {

@@ -28,7 +28,10 @@ ITA_fiat_organization = {
 				tag = HUN 
 				has_dlc = "Death or Dishonor"
 			}
-
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
+			}
 		}
 	}
 	
@@ -126,7 +129,10 @@ ITA_crda_organization = {
 				tag = HUN 
 				has_dlc = "Death or Dishonor"
 			}
-
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
+			}
 		}
 	}
 	

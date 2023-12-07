@@ -1465,6 +1465,17 @@ focus_tree = {
 				category = armor
 			}
 			#50% armor research
+			
+			IF = {
+				limit = { has_dlc = "Arms Against Tyranny"}
+				custom_effect_tooltip = can_invites_mio_tt
+				show_mio_tooltip = ENG_vickers_armstrong_eng_organization
+				show_mio_tooltip = FRA_renault_organization
+				show_mio_tooltip = SWE_landsverk_organization
+				show_mio_tooltip = SOV_okmo_organization
+				show_mio_tooltip = GER_henschel_organization
+				show_mio_tooltip = ITA_fiat_organization
+			}
 		}
 	}
 
@@ -1521,6 +1532,12 @@ focus_tree = {
 				category = artillery
 			}
 			#1 x 50% for Artillery Equipment
+			
+			IF = {
+				limit = { has_dlc = "Arms Against Tyranny"}
+				custom_effect_tooltip = can_invites_mio_tt
+				show_mio_tooltip = SWE_bofors_organization
+			}
 		}
 	}
 
@@ -1717,6 +1734,15 @@ focus_tree = {
 				category = light_fighter
 			}
 			#1x50% research bonus to fighter models
+			
+			IF = {
+				limit = { has_dlc = "Arms Against Tyranny"}
+				custom_effect_tooltip = can_invites_mio_tt
+				show_mio_tooltip = FRA_morane_saulnier_organization
+				show_mio_tooltip = ENG_supermarine_organization
+				show_mio_tooltip = GER_messerschmitt_organization
+				show_mio_tooltip = SOV_mig_design_bureau_organization
+			}
 		}
 	}
 
@@ -1887,6 +1913,15 @@ focus_tree = {
 				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
+			}
+			
+			IF = {
+				limit = { has_dlc = "Arms Against Tyranny"}
+				custom_effect_tooltip = can_invites_mio_tt
+				show_mio_tooltip = ENG_fairey_aviation_organization
+				show_mio_tooltip = FRA_bloch_organization
+				show_mio_tooltip = GER_junkers_organization
+				show_mio_tooltip = SOV_ilyushin_design_bureau_organization
 			}
 			
 		}
@@ -15675,6 +15710,15 @@ focus_tree = {
 				category = naval_doctrine
 			}
 			#1x50% bonus to Naval Doctrine Research
+			
+			IF = {
+				limit = { has_dlc = "Arms Against Tyranny"}
+				custom_effect_tooltip = can_invites_mio_tt
+				show_mio_tooltip = ENG_yarrow_shipbuilders_organization
+				show_mio_tooltip = ENG_john_brown_organization
+				show_mio_tooltip = ITA_crda_organization
+				show_mio_tooltip = SOV_nevskoye_design_bureau_organization
+			}
 		}
 	}
 

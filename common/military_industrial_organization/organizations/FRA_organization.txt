@@ -19,16 +19,13 @@ FRA_renault_organization = {
 				tag = HUN 
 				has_dlc = "Death or Dishonor"
 			}
-		}
-	}
-	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = HUN }
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
 			}
-			FROM = { has_completed_focus = HUN_license_foreign_designs }
 		}
 	}
+	
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
@@ -196,8 +193,34 @@ FRA_morane_saulnier_organization = {
 	include = generic_light_aircraft_organization
 	icon = GFX_idea_morane_saulnier
 	allowed = {	
-		tag = FRA 
-		has_dlc = "Arms Against Tyranny"
+		OR = {
+			tag = FRA
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
+			}
+		}
+	}
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = FRA } }
+			}
+			FROM = { NOT = { has_war_with = FRA } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = FRA } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_FRA_morane_saulnier_flag
+				}
+			}
+		}
 	}
 }
 
@@ -211,14 +234,10 @@ FRA_bloch_organization = {
 				tag = HUN 
 				has_dlc = "Death or Dishonor"
 			}
-		}
-	}
-	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = HUN }
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
 			}
-			FROM = { has_completed_focus = HUN_license_foreign_designs }
 		}
 	}
 	available = {
@@ -314,17 +333,6 @@ FRA_somua_organization = {
 		}
 	}
 
-	visible = {
-		IF = { 
-			limit = {
-				FROM = { tag = POL }
-			}
-			FROM = {
-				has_country_flag = POL_somua_motors
-			}
-		}
-	}
-
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
@@ -332,6 +340,17 @@ FRA_somua_organization = {
 				FROM = { NOT = { original_tag = FRA } }
 			}
 			FROM = { NOT = { has_war_with = FRA } }
+		}
+		IF = {
+			limit = {
+				FROM = { original_tag = POL }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = POL_somua_motors
+				}
+			}
 		}
 	}
 }
@@ -347,14 +366,6 @@ FRA_mas_organization = {
 				tag = HUN 
 				has_dlc = "Death or Dishonor"
 			}
-		}
-	}
-	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = HUN }
-			}
-			FROM = { has_completed_focus = HUN_license_foreign_designs }
 		}
 	}
 	available = {

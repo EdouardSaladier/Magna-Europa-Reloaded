@@ -348,7 +348,10 @@ SOV_okmo_organization = {
 				tag = HUN 
 				has_dlc = "Death or Dishonor"
 			}
-
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
+			}
 		}
 	}
 
@@ -778,7 +781,10 @@ SOV_nevskoye_design_bureau_organization = {
 				tag = HUN 
 				has_dlc = "Death or Dishonor"
 			}
-
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
+			}
 		}
 	}
 	
@@ -1482,7 +1488,13 @@ SOV_mig_design_bureau_organization = {
 	icon = GFX_idea_mig_design_bureau
 	
 	allowed = {	
-		tag = SOV
+		OR = {
+			tag = SOV 
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
+			}
+		}
 	}
 
 	available = {
@@ -1492,6 +1504,15 @@ SOV_mig_design_bureau_organization = {
 				FROM = { NOT = { original_tag = SOV } }
 			}
 			FROM = { NOT = { has_war_with = SOV } }
+		}
+		IF = {
+			limit = { FROM = { NOT = { original_tag = SOV } } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_mig_design_bureau_mio_flag
+				}
+			}
 		}
 	}
 
@@ -1635,7 +1656,10 @@ SOV_ilyushin_design_bureau_organization = {
 				tag = HUN 
 				has_dlc = "Death or Dishonor"
 			}
-
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
+			}
 		}
 	}
 	

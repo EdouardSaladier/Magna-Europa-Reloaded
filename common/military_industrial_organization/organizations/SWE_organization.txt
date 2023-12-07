@@ -19,15 +19,10 @@ SWE_landsverk_organization = {
 				tag = HUN 
 				has_dlc = "Death or Dishonor"
 			}
-		}
-	}
-
-	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = HUN }
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
 			}
-			FROM = { has_completed_focus = HUN_license_foreign_designs }
 		}
 	}
 
@@ -250,6 +245,10 @@ SWE_bofors_organization = {
 			AND = {
 				tag = HUN 
 				has_dlc = "Death or Dishonor"
+			}
+			AND = {
+				tag = POL 
+				has_dlc = "No Step Back"
 			}
 		}
 	}
