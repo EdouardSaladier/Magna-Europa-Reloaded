@@ -2748,6 +2748,21 @@
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = small_plane_airframe
+					seller_tags = { GER } 
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = small_plane_cas_airframe
+					seller_tags = { GER } 
+				}
+			}
 		}
 	}	
 
@@ -3920,6 +3935,21 @@
 				add_opinion_modifier = {
 					target = ROOT 
 					modifier = SWI_bought_equipment_from_us
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = small_plane_airframe
+					seller_tags = { USA } 
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = small_plane_cas_airframe
+					seller_tags = { USA } 
 				}
 			}
 		}
@@ -9382,16 +9412,24 @@
 			log = "[GetDateText]: [Root.GetName]: Focus SWI_swiss_armored_divisions"
 			if = {
 				limit = {
-					has_idea = SWI_Berna
+					has_aat = yes 
+				}
+				mio:SWI_berna_organization = {
+					add_mio_funds = 1500
+				}
+
+			}
+			else_if = {
+				limit = {
+					has_idea = SWI_berna
 				}
 				swap_ideas = {
-					remove_idea = SWI_Berna
-					add_idea = SWI_Berna_2
+					remove_idea = SWI_berna
+					add_idea = SWI_berna_2
 				}
 			}
-			else = 
-			{
-				show_ideas_tooltip = SWI_Berna_2
+			else = {
+				show_ideas_tooltip = SWI_berna_2
 			}
 			army_experience = 150
 			add_tech_bonus = {

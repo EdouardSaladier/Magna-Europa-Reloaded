@@ -5123,6 +5123,16 @@ focus_tree = {
 				}
 			}
 			add_equipment_to_stockpile = { type = motorized_equipment amount = 275 }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 250
+					equipment_type = motorized_equipment
+					seller_tags = { USA } 
+				}
+			}
 		}
 	}
 
