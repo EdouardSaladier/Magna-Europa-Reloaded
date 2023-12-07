@@ -363,8 +363,12 @@
 					active = yes
 				}
 			}
-			add_to_tech_sharing_group = ROM_invite_german_advisors_tech_group
-			GER = { add_to_tech_sharing_group = ROM_invite_german_advisors_tech_group }
+			add_doctrine_cost_reduction = {
+				name = ROM_invite_german_advisors
+			    cost_reduction = 0.35
+			    uses = 2
+			    category = land_doctrine
+			}
 		}
 	}
 
@@ -895,13 +899,11 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ROM_joint_allied_staff_college"
-			add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group
-			ENG = { add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group }
-			if = {
-				limit = {
-					FRA = { is_in_faction_with = ENG }
-				}
-				FRA = { add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group }
+			add_doctrine_cost_reduction = {
+				name = ROM_joint_allied_staff_college
+			    cost_reduction = 0.35
+			    uses = 2
+			    category = land_doctrine
 			}
 		}
 	}
@@ -1155,10 +1157,10 @@
 				limit = {
 					has_state_flag = ROM_malaxa_IC
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1172,14 +1174,14 @@
 					ROOT = { has_full_control_of_state = PREV } 
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = ROM_malaxa_IC
@@ -1306,10 +1308,10 @@
 				limit = {
 					has_state_flag = ROM_invest_in_the_iar_AF1
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1323,20 +1325,33 @@
 					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
 						building = arms_factory
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = ROM_invest_in_the_iar_AF1
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_iar
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ROM_iar_organization
+				mio:ROM_iar_organization = {
+					complete_mio_trait = generic_mio_trait_heavily_armed_aircraft
+					add_mio_funds = 2500
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = ROM_iar
+			}
 		}
 	}
 
@@ -1858,13 +1873,6 @@
 				popularity = 65
 			}
 			remove_ideas = neutrality_idea
-			hidden_effect = {
-				country_event = {
-					id = DOD_romania.163
-					days = 5
-					random_days = 10
-				}
-			}
 		}		
 	}
 
@@ -2038,7 +2046,7 @@
 		id = ROM_revise_the_constitution
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = ROM_institute_royal_dictatorship }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
@@ -2074,7 +2082,7 @@
 		id = ROM_the_royal_foundation
 		icon = GFX_focus_research
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 
@@ -2107,7 +2115,7 @@
 		id = ROM_crack_down_on_extremism
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ROM_institute_royal_dictatorship }
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
@@ -2168,7 +2176,7 @@
 		y = 2
 		relative_position_id = ROM_institute_royal_dictatorship
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -2370,6 +2378,12 @@
 					custom_effect_tooltip = ROM_appoint_soviet_friendly_government_tooltip
 				}
 			}
+			hidden_effect = {
+				if = { 
+					limit = { has_idea = ROM_national_christian_party_in_power }
+					remove_ideas = ROM_national_christian_party_in_power
+				}
+			}
 		}
 	}
 
@@ -2377,7 +2391,7 @@
 		id = ROM_appoint_german_friendly_government
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = -2
+		x = 3
 		y = 1
 		relative_position_id = ROM_flexible_foreign_policy
 
@@ -2670,7 +2684,7 @@
 		icon = GFX_focus_rom_abdicate
 		prerequisite = { focus = ROM_iron_guard focus = ROM_securitate focus = ROM_national_christian_party}
 		mutually_exclusive = { focus = ROM_handle_the_king }
-		x = -1				
+		x = 1				
 		y = 2
 		relative_position_id = ROM_appoint_soviet_friendly_government
 
@@ -2848,7 +2862,7 @@
 		id = ROM_appoint_allied_friendly_government
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = 3
+		x = -2
 		y = 1
 		relative_position_id = ROM_flexible_foreign_policy
 
@@ -2965,6 +2979,12 @@
 					}
 				}
 			}
+			hidden_effect = {
+				if = { 
+					limit = { has_idea = ROM_national_christian_party_in_power }
+					remove_ideas = ROM_national_christian_party_in_power
+				}
+			}
 		}
 	}
 
@@ -3033,7 +3053,7 @@
 	focus = {
 		id = ROM_expand_the_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 31
+		x = 32
 		y = 0
 
 		cost = 10
@@ -3115,7 +3135,8 @@
 			}
 		}
 	}
-focus = {
+	
+	focus = {
 		id = ROM_white_squadron_focus
 		icon = GFX_goal_generic_build_airforce
 		x = 0
@@ -3213,7 +3234,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus ROM_air_defense"
 			add_doctrine_cost_reduction = {
 				name = ROM_air_defense
-				cost_reduction = 0.25
+				cost_reduction = 0.50
 				uses = 2
 				category = cat_operational_integrity
 			}
@@ -3251,7 +3272,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus ROM_ground_support"
 			add_doctrine_cost_reduction = {
 				name = ROM_ground_support
-				cost_reduction = 0.25
+				cost_reduction = 0.50
 				uses = 2
 				category = battlefield_support_tree
 			}
@@ -3512,26 +3533,67 @@ focus = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ROM_iar_80"
-			#Give generic fighter bonus if fighter_2 already researched
 			if = {
-				limit = {
-					has_tech = fighter2
-				}
-				add_tech_bonus = {
-					name = ROM_iar_80
-					bonus = 1.0
-					ahead_reduction = 2
-					uses = 1
-					category = light_fighter
-				}
-				else = {
+				limit = { NOT = { has_dlc = "By Blood Alone" } }
+				if = {
+					limit = {
+						has_tech = fighter2
+					}
 					add_tech_bonus = {
 						name = ROM_iar_80
 						bonus = 1.0
 						ahead_reduction = 2
 						uses = 1
-						technology = fighter2
+						category = light_fighter
+					}
+					else = {
+						add_tech_bonus = {
+							name = ROM_iar_80
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = fighter2
+						}
+					}
+				}
+			}
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				if = {
+					limit = {
+						NOT = { has_tech = improved_small_airframe }
+					}
+					add_tech_bonus = {
+						name = ROM_iar_80
+						bonus = 1.0
+						ahead_reduction = 2
+						uses = 1
+						technology = improved_small_airframe
+					}
+					create_equipment_variant = {
+						name = "IAR 80"
+						type = small_plane_airframe_2
+						modules = {
+							fixed_main_weapon_slot = light_mg_4x
+							fixed_auxiliary_weapon_slot_1 = light_mg_2x
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = empty
+						}
+						icon = "GFX_ROM_fighter2_medium"
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "IAR 80"
+						type = small_plane_airframe_2
+						allow_without_tech = yes #Makes no difference since appropriate tech is already researched, but it improves tooltip
+						modules = {
+							fixed_main_weapon_slot = light_mg_4x
+							fixed_auxiliary_weapon_slot_1 = light_mg_2x
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = empty
+						}
+						icon = "GFX_ROM_fighter2_medium"
 					}
 				}
 			}
@@ -3657,7 +3719,7 @@ focus = {
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 39
+		x = 40
 		y = 0
 
 		cost = 10
@@ -3680,7 +3742,7 @@ focus = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ROM_army_maneuvers"
-			army_experience = 25
+			army_experience = 50
 		}
 	}
 
@@ -4227,6 +4289,10 @@ focus = {
 						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7" 
 						owner = ROM
 					}
+					create_unit = {
+						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7" 
+						owner = ROM
+					}
 				}
 			}			
 		}
@@ -4294,8 +4360,20 @@ focus = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ROM_mobile_tank_destroyers"
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_leonidas_works
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ROM_leonidas_works_organization
+				mio:ROM_leonidas_works_organization = {
+					add_mio_funds = 2500
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = ROM_leonidas_works
+			}
 		}
 	}
 
@@ -4344,7 +4422,7 @@ focus = {
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 46
+		x = 47
 		y = 0
 
 		cost = 10
@@ -4432,8 +4510,25 @@ focus = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ROM_coastal_defense_navy"
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_coastal_defense_navy_designer
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ROM_galati_shipyard_organization
+				mio:ROM_galati_shipyard_organization = {
+					add_mio_funds = 2500
+				}
+#					unlock_mio_trait_tooltip  = {
+#						department = ROM_mio_department_design_ship_capital_screen_weapons
+#						trait = ROM_mio_trait_coastal_defense_weapons
+#					}
+			}
+
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = ROM_coastal_defense_navy_designer
+			}
 		}
 	}
 
@@ -4612,8 +4707,23 @@ focus = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ROM_black_sea_dominance"			
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_black_sea_dominance_designer
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ROM_Braila_organization
+				mio:ROM_Braila_organization = {
+					add_mio_size = 1
+					add_mio_funds = 500
+				}
+
+			}
+
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = ROM_black_sea_dominance_designer
+			}
 		}
 	}
 

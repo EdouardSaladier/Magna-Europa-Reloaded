@@ -1609,46 +1609,78 @@ focus_tree = {
 
 		available = {
 			has_country_flag = invited_motor_co
-			OR = {
-				has_idea = POL_vauxhall
-				has_idea = POL_ford
-				has_idea = POL_somua
+			IF = {
+				limit = { NOT = { has_dlc = "Arms Against Tyranny" } }
+				OR = {
+					has_idea = POL_vauxhall
+					has_idea = POL_ford
+					has_idea = POL_somua
+				}
 			}
 		}
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus POL_adaptive_designs"
-			if = {
+			IF = {
 				limit = {
-					has_idea = POL_vauxhall
+					has_dlc = "Arms Against Tyranny"
 				}
-				swap_ideas = {
-					remove_idea = POL_vauxhall
-					add_idea = POL_vauxhall_free
+				IF = { 
+					limit = { has_country_flag = POL_somua_motors }
+					mio:FRA_somua_organization = {
+						add_mio_funds = 500
+						add_mio_funds_gain_factor = 0.1
+					}
+
+				}
+				IF = { 
+					limit = { has_country_flag = POL_vauxhall_motors }
+					mio:ENG_vauxhall_organization = {
+						add_mio_funds = 500
+						add_mio_funds_gain_factor = 0.1
+					}
+				}
+				IF = { 
+					limit = { has_country_flag = POL_ford_motors }
+					mio:USA_ford_motor_company_organization = {
+						add_mio_funds = 500
+						add_mio_funds_gain_factor = 0.1
+					}
 				}
 			}
-			else_if = {
-				limit = {
-					has_idea = POL_somua
+			ELSE = {
+
+				if = {
+					limit = {
+						has_idea = POL_vauxhall
+					}
+					swap_ideas = {
+						remove_idea = POL_vauxhall
+						add_idea = POL_vauxhall_free
+					}
 				}
-				swap_ideas = {
-					remove_idea = POL_somua
-					add_idea = POL_somua_free
+				else_if = {
+					limit = {
+						has_idea = POL_somua
+					}
+					swap_ideas = {
+						remove_idea = POL_somua
+						add_idea = POL_somua_free
+					}
 				}
-			}
-			else_if = {
-				limit = {
-					has_idea = POL_ford
+				else_if = {
+					limit = {
+						has_idea = POL_ford
+					}
+					swap_ideas = {
+						remove_idea = POL_ford
+						add_idea = POL_ford_free
+					}
 				}
-				swap_ideas = {
-					remove_idea = POL_ford
-					add_idea = POL_ford_free
+				else = {
+					custom_effect_tooltip = POL_motors_become_free_tt
 				}
-			}
-			else = {
-				custom_effect_tooltip = POL_motors_become_free_tt
 			}
 		}
 	}
@@ -13999,8 +14031,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_finno_polish_pact"
-			FIN = {
-				country_event = { id = poland.16 days = 1 }
+			if = {
+				limit = {
+					FIN = { has_idea = FIN_the_lone_wolf }
+				}
+				custom_effect_tooltip = FIN_the_lone_wolf_no_faction_tt
+			}
+			else = {
+				FIN = {
+					country_event = { id = poland.16 days = 1 }
+				}
 			}
 			unlock_decision_tooltip = POL_diplomatic_mission_to_DEN
 			unlock_decision_tooltip = POL_diplomatic_mission_to_SWE
@@ -14016,6 +14056,7 @@ focus_tree = {
 			is_faction_leader = yes
 			DEN = {
 				is_in_faction = no
+				is_subject = no
 				NOT = { has_war_with = ROOT }
 			}
 		}
@@ -15494,6 +15535,10 @@ focus_tree = {
 		cost = 10
 		
 		relative_position_id = POL_ban_the_nazi_party
+		
+		available = {
+			has_full_control_of_state = 280
+		}
 
 		ai_will_do = {
 			factor = 2
@@ -15601,6 +15646,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		
+		available = {
+			any_owned_state = {
+				is_coastal = yes 
+				is_controlled_by = ROOT
+			}
+		}	
 
 		available_if_capitulated = yes
 

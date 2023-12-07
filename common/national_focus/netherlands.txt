@@ -1466,7 +1466,19 @@ focus_tree = {
 		}
 		prerequisite = { focus = HOL_finish_the_noordoostpolder }
 		prerequisite = { focus = HOL_the_maastunnel }"
-			custom_effect_tooltip = HOL_expand_the_artillerieinrichtingen_tt
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = HOL_hih_siderius_organization
+				mio:HOL_hih_siderius_organization = {
+					add_mio_funds = 500
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = HOL_expand_the_artillerieinrichtingen_tt
+			}
 			402 = {
 				if = {
 					limit = {
@@ -1731,7 +1743,19 @@ focus_tree = {
 			has_full_control_of_state = 358
 		}
 		prerequisite = { focus = HOL_expand_the_ijmuiden_steel_mill }"
-			custom_effect_tooltip = HOL_fokker_tt
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = HOL_fokker_organization
+				mio:HOL_fokker_organization = {
+					add_mio_funds = 500
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = HOL_fokker_tt
+			}
 			358 = {
 				if = {
 					limit = {
@@ -1912,7 +1936,20 @@ focus_tree = {
 			has_full_control_of_state = 402
 		}
 		prerequisite = { focus = HOL_friesland_agricultural_impetus }"
-			custom_effect_tooltip = HOL_daf_tt
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = HOL_daf_organization
+				mio:HOL_daf_organization = {
+					add_mio_funds = 500
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = HOL_daf_tt
+			}
+
 			402 = {
 				if = {
 					limit = {
@@ -3506,6 +3543,7 @@ focus_tree = {
 					name = "Design 1047 Battlecruiser"
 					type = ship_hull_heavy_2
 					parent_version = 0
+					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
 					modules = {
 						fixed_ship_battery_slot = ship_heavy_battery_1
 						fixed_ship_anti_air_slot = ship_anti_air_2
@@ -4440,6 +4478,17 @@ focus_tree = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = medium_tank_chassis
+					seller_tags = { GER } 
+				}
+			}
+			
 			add_offsite_building = { type = arms_factory level = 4 }
 		}
 	}
@@ -6780,6 +6829,7 @@ focus_tree = {
 					capital_scope = {
 						is_on_continent = europe
 					}
+					is_subject = no
 					is_major = no
 					has_government = democratic
 					NOT = { is_in_faction_with = ROOT }
