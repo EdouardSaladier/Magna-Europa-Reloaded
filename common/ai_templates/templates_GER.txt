@@ -40,7 +40,7 @@ armored_GER = {
 			}
 		}
 		
-		target_width = 36.0
+		target_width = 18.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -117,16 +117,13 @@ armored_GER = {
 	
 		upgrade_prio = {
 			factor = 2
-			
+
 			modifier = {
-				factor = 0
-				NOT = {
-					has_tech = improved_heavy_tank_chassis
-				}
+				factor = 1
 			}
 		}
 		
-		target_width = 36.0
+		target_width = 18.0
 		width_weight = 2.0
 		column_swap_factor = 0.5
 		
@@ -236,7 +233,7 @@ armored_GER = {
 			}
 		}
 		
-		target_width = 40.0
+		target_width = 20.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 
@@ -355,7 +352,7 @@ armored_GER = {
 			}
 		}
 		
-		target_width = 40.0
+		target_width = 20.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 		
@@ -424,7 +421,6 @@ armored_GER = {
 			mechanized
 			medium_sp_artillery_brigade
 			medium_sp_anti_air_brigade
-			#motorized_rocket_brigade 
 			engineer
 			mot_recon
 			armored_car_recon
@@ -433,7 +429,6 @@ armored_GER = {
 			maintenance_company
 			logistics_company
 			artillery
-			#anti_tank
 		}
 		
 		replace_at_match = 0.95
@@ -467,7 +462,7 @@ armored_GER = {
 			}
 		}
 		
-		target_width = 40.0
+		target_width = 20.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 		
@@ -537,7 +532,6 @@ armored_GER = {
 			mechanized
 			medium_sp_artillery_brigade
 			medium_sp_anti_air_brigade
-			#motorized_rocket_brigade 
 			engineer
 			mot_recon
 			armored_car_recon
@@ -546,7 +540,6 @@ armored_GER = {
 			maintenance_company
 			logistics_company
 			artillery
-			#anti_tank
 		}
 		
 		replace_at_match = 0.95
@@ -568,7 +561,7 @@ armored_GER = {
 			}
 		}
 		
-		target_width = 40.0
+		target_width = 20.0
 		width_weight = 3.0
 		column_swap_factor = 0.5
 		
@@ -701,7 +694,7 @@ garrison_GER = {
 			}
 		}
 		
-		target_width = 16.0
+		target_width = 8.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -796,7 +789,7 @@ infantry_GER = {
 			factor = 6
 		}
 		
-		target_width = 54.0
+		target_width = 27.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -891,7 +884,7 @@ infantry_GER = {
 			has_equipment = {artillery_equipment > 500}
 		}
 		
-		target_width = 54.0
+		target_width = 27.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -982,7 +975,7 @@ infantry_GER = {
 			}
 		}
 		
-		target_width = 54.0
+		target_width = 27.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -1046,19 +1039,16 @@ infantry_GER = {
 		allowed_types = {
 			infantry		
 			engineer
-			#recon
-			#field_hospital
-			#anti_tank
 			artillery
 			anti_tank_brigade
 			artillery_brigade
 			anti_air
+			anti_tank
 		}
 	}
 }
 
 motorized_GER = {
-
 	available_for = {
 		GER
 	}
@@ -1072,8 +1062,6 @@ motorized_GER = {
 	}
 	
 	match_to_count = 0.8
-
-
 	motorized_GER = {
 	
 		reinforce_prio = 0
@@ -1081,7 +1069,6 @@ motorized_GER = {
 	
 		upgrade_prio = {
 			factor = 2
-
 			modifier = {
 				factor = 1
 			}
@@ -1155,7 +1142,6 @@ motorized_GER = {
 			mot_artillery_brigade
 			infantry
 			motorized_rocket_brigade 
-
 			engineer
 			mot_recon
 			armored_car_recon
@@ -1163,7 +1149,6 @@ motorized_GER = {
 			signal_company
 			maintenance_company
 			logistics_company
-
 			anti_tank
 			military_police
 			artillery
@@ -1172,9 +1157,7 @@ motorized_GER = {
 		}
 	}
 }
-
 mechanized_GER = {
-
 	available_for = {
 		GER
 	}
@@ -1188,8 +1171,6 @@ mechanized_GER = {
 	}
 	
 	match_to_count = 0.8
-
-
 	mechanized_GER = {
 	
 		reinforce_prio = 0
@@ -1197,7 +1178,6 @@ mechanized_GER = {
 	
 		upgrade_prio = {
 			factor = 2
-
 			modifier = {
 				factor = 1
 			}
@@ -1271,7 +1251,6 @@ mechanized_GER = {
 			mot_artillery_brigade
 			infantry
 			motorized_rocket_brigade 
-
 			engineer
 			mot_recon
 			armored_car_recon
@@ -1279,7 +1258,6 @@ mechanized_GER = {
 			signal_company
 			maintenance_company
 			logistics_company
-
 			anti_tank
 			military_police
 			artillery
@@ -1288,6 +1266,7 @@ mechanized_GER = {
 		}
 	}
 }
+
 
 mountaineers_GER = {
 
@@ -1322,7 +1301,7 @@ mountaineers_GER = {
 			}
 		}
 		
-		target_width = 44.0
+		target_width = 22.0
 		width_weight = 3
 		column_swap_factor = 0.2
 		
@@ -1390,6 +1369,8 @@ mountaineers_GER = {
 			field_hospital
 			logistics_company
 			anti_tank
+			artillery_brigade
+			engineer
 		}
 	}
 }
@@ -1427,7 +1408,7 @@ marines_GER = {
 			}
 		}
 		
-		target_width = 48.0
+		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -1493,6 +1474,10 @@ marines_GER = {
 			marine
 			engineer
 			logistics_company
+			artillery_brigade
+			artillery
+			anti_tank
+			recon
 		}
 	}
 }
@@ -1531,7 +1516,7 @@ paratroopers_GER = {
 			}
 		}
 		
-		target_width = 36.0
+		target_width = 18.0
 		width_weight = 3.0
 		column_swap_factor = 0.5
 		
@@ -1656,7 +1641,7 @@ anti_armor_GER = {
 			}
 		}
 		
-		target_width = 32.0
+		target_width = 16.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -1725,11 +1710,11 @@ anti_armor_GER = {
 			artillery
 			anti_tank_brigade
 			artillery_brigade
-
+			recon
 		}
 	}
 	
-	light_armor_anti_amor_GER = {
+	light_armor_anti_armor_GER = {
 	
 		upgrade_prio = {
 			factor = 2
@@ -1754,7 +1739,7 @@ anti_armor_GER = {
 			}
 		}
 	
-		target_width = 34.0
+		target_width = 17.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 		
@@ -1856,7 +1841,7 @@ anti_armor_GER = {
 			}
 		}
 		
-		target_width = 34.0
+		target_width = 17.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 		
@@ -1945,36 +1930,36 @@ anti_armor_GER = {
 	}
 }
 
-	# REGIMENTS:
-	#infantry
-	#light_armor
-	#super_heavy_armor
-	#modern_armor
-	#heavy_armor
-	#medium_armor
-	#light_armor
-	#anti_tank
-	#cavalry
-	#motorized
-	#mechanized
-	#marine
-	#mountaineers
-	#paratrooper
-	#rocket_artillery
-	#light_tank_destroyer
-	#anti_air
-	#artillery
+# REGIMENTS:
+# infantry
+# light_armor
+# super_heavy_armor
+# modern_armor
+# heavy_armor
+# medium_armor
+# light_armor
+# anti_tank
+# cavalry
+# motorized
+# mechanized
+# marine
+# mountaineers
+# paratrooper
+# rocket_artillery
+# light_tank_destroyer
+# anti_air
+# artillery
 
-	# SUPPORT:
-	#engineer
-	#recon
-	#signal_company
-	#maintenance_company
-	#anti_tank_brigade
-	#anti_air_brigade
-	#artillery_brigade
-	#field_hospital
-	#logistics_company
-	#military_police
-	#light_sp_anti_air_brigade
-	#light_sp_artillery_brigade
+# SUPPORT:
+# engineer
+# recon
+# signal_company
+# maintenance_company
+# anti_tank_brigade
+# anti_air_brigade
+# artillery_brigade
+# field_hospital
+# logistics_company
+# military_police
+# light_sp_anti_air_brigade
+# light_sp_artillery_brigade

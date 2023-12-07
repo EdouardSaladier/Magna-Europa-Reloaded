@@ -44,7 +44,7 @@ armored_SOV = {
 			has_equipment = { light_tank_chassis < 500 }
 		}
 
-		target_width = 40.0
+		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 
@@ -128,7 +128,7 @@ armored_SOV = {
 			}
 		}
 
-		target_width = 39.8
+		target_width = 19.9
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -239,7 +239,7 @@ armored_SOV = {
 			}
 		}
 
-		target_width = 60.0
+		target_width = 30.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 
@@ -350,7 +350,7 @@ armored_SOV = {
 			}
 		}
 
-		target_width = 60.0
+		target_width = 30.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 
@@ -457,7 +457,7 @@ armored_SOV = {
 			}
 		}
 
-		target_width = 60.0
+		target_width = 30.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -572,7 +572,7 @@ infantry_SOV = {
 			}
 		}
 
-		target_width = 40.0
+		target_width = 27.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -626,7 +626,8 @@ infantry_SOV = {
 			}
 
 			regiments = {
-				infantry = 10
+				infantry = 9
+				artillery_brigade = 2
 			}
 		}
 
@@ -642,7 +643,7 @@ infantry_SOV = {
 			artillery
 	#		anti_air
 			rocket_artillery
-	#		anti_tank_brigade
+			anti_tank_brigade
 			artillery_brigade
 			rocket_artillery_brigade
 	#		light_tank_destroyer_brigade
@@ -674,8 +675,8 @@ infantry_SOV = {
 			has_equipment = {artillery_equipment > 4000}
 		}
 
-		target_width = 44.0
-		width_weight = 0.9
+		target_width = 27.0
+		width_weight = 1.0
 		column_swap_factor = 0.5
 
 		stat_weights = {
@@ -729,8 +730,8 @@ infantry_SOV = {
 			}
 
 			regiments = {
-				infantry = 7
-				artillery_brigade = 2
+				infantry = 9
+				artillery_brigade = 3
 			}
 		}
 
@@ -746,7 +747,7 @@ infantry_SOV = {
 			artillery
 			anti_air
 			rocket_artillery
-	#		anti_tank_brigade
+			anti_tank_brigade
 			artillery_brigade
 			rocket_artillery_brigade
 	#		light_tank_destroyer_brigade
@@ -788,7 +789,7 @@ mountaineers_SOV = {
 			}
 		}
 
-		target_width = 39.8
+		target_width = 19.9
 		width_weight = 3
 		column_swap_factor = 0.2
 
@@ -855,6 +856,8 @@ mountaineers_SOV = {
 			field_hospital
 			logistics_company
 			anti_tank
+			artillery_brigade
+			engineer
 		}
 	}
 }
@@ -892,7 +895,7 @@ marines_SOV = {
 			}
 		}
 
-		target_width = 40.0
+		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 
@@ -948,11 +951,11 @@ marines_SOV = {
 			}
 		}
 
-
 		allowed_types = {
 			marine
 			engineer
 			logistics_company
+			recon
 		}
 	}
 }
@@ -990,7 +993,7 @@ paratroopers_SOV = {
 			}
 		}
 
-		target_width = 19.8
+		target_width = 9.9
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -1099,7 +1102,7 @@ garrison_SOV = {
 		reinforce_prio = 0
 		custom_icon = 7
 
-		target_width = 2.0
+		target_width = 1.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -1162,7 +1165,6 @@ garrison_SOV = {
 }
 
 motorized_SOV = {
-
 	available_for = {
 		SOV
 	}
@@ -1176,8 +1178,6 @@ motorized_SOV = {
 	}
 	
 	match_to_count = 0.8
-
-
 	motorized_SOV = {
 	
 		reinforce_prio = 0
@@ -1185,7 +1185,6 @@ motorized_SOV = {
 	
 		upgrade_prio = {
 			factor = 2
-
 			modifier = {
 				factor = 1
 			}
@@ -1258,7 +1257,6 @@ motorized_SOV = {
 			mechanized
 			infantry
 			motorized_rocket_brigade 
-
 			engineer
 			mot_recon
 			armored_car_recon
@@ -1266,7 +1264,6 @@ motorized_SOV = {
 			signal_company
 			maintenance_company
 			logistics_company
-
 			anti_tank
 			military_police
 			artillery
@@ -1275,9 +1272,7 @@ motorized_SOV = {
 		}
 	}
 }
-
 mechanized_SOV = {
-
 	available_for = {
 		SOV
 	}
@@ -1291,8 +1286,6 @@ mechanized_SOV = {
 	}
 	
 	match_to_count = 0.8
-
-
 	mechanized_SOV = {
 	
 		reinforce_prio = 0
@@ -1300,7 +1293,6 @@ mechanized_SOV = {
 	
 		upgrade_prio = {
 			factor = 2
-
 			modifier = {
 				factor = 1
 			}
@@ -1374,7 +1366,6 @@ mechanized_SOV = {
 			mot_artillery_brigade
 			infantry
 			motorized_rocket_brigade 
-
 			engineer
 			mot_recon
 			armored_car_recon
@@ -1382,7 +1373,6 @@ mechanized_SOV = {
 			signal_company
 			maintenance_company
 			logistics_company
-
 			anti_tank
 			military_police
 			artillery
@@ -1391,6 +1381,7 @@ mechanized_SOV = {
 		}
 	}
 }
+
 
 
 anti_armor_SOV = {
@@ -1442,7 +1433,7 @@ anti_armor_SOV = {
 			}
 		}
 
-		target_width = 32.0
+		target_width = 16.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -1511,19 +1502,18 @@ anti_armor_SOV = {
 			anti_tank
 			military_police
 			artillery
-	#		anti_air
 			rocket_artillery
 			anti_tank_brigade
 			artillery_brigade
 			rocket_artillery_brigade
-	#		light_tank_destroyer_brigade
-	#		medium_tank_destroyer_brigade
 			mot_artillery_brigade
 			mot_anti_tank_brigade
+			motorized
+			mot_recon
 		}
 	}
 
-	light_armor_anti_amor_SOV = {
+	light_armor_anti_armor_SOV = {
 
 		upgrade_prio = {
 			factor = 1
@@ -1548,7 +1538,7 @@ anti_armor_SOV = {
 			}
 		}
 
-		target_width = 34
+		target_width = 17
 		width_weight = 1.0
 		column_swap_factor = 0.1
 
@@ -1616,6 +1606,7 @@ anti_armor_SOV = {
 			anti_tank
 			light_tank_destroyer_brigade
 			mot_artillery_brigade
+			recon
 		}
 
 		replace_at_match = 0.4
@@ -1648,7 +1639,7 @@ anti_armor_SOV = {
 			}
 		}
 
-		target_width = 34
+		target_width = 17
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -1731,6 +1722,7 @@ anti_armor_SOV = {
 			artillery
 			anti_air
 			rocket_artillery
+			recon
 		}
 	}
 }

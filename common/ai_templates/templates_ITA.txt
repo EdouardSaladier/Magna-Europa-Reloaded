@@ -40,7 +40,7 @@ armored_ITA = {
 			}
 		}
 		
-		target_width = 24.0 
+		target_width = 12.0 
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -128,7 +128,7 @@ armored_ITA = {
 			}
 		}
 		
-		target_width = 40.0
+		target_width = 20.0
 		width_weight = 2.0
 		column_swap_factor = 0.5
 		
@@ -234,7 +234,7 @@ armored_ITA = {
 			}
 		}
 		
-		target_width = 16.0
+		target_width = 8.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 
@@ -355,7 +355,7 @@ armored_ITA = {
 			}
 		}
 		
-		target_width = 20.0
+		target_width = 10.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 		
@@ -463,7 +463,7 @@ armored_ITA = {
 			}
 		}
 		
-		target_width = 20.0
+		target_width = 10.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 		
@@ -562,7 +562,7 @@ armored_ITA = {
 			}
 		}
 		
-		target_width = 30.0
+		target_width = 15.0
 		width_weight = 3.0
 		column_swap_factor = 0.5
 		
@@ -679,7 +679,7 @@ garrison_ITA = {
 			}
 		}
 		
-		target_width = 10.0
+		target_width = 5.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -774,7 +774,7 @@ infantry_ITA = {
 			}
 		}
 	
-		target_width = 40.0
+		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -886,7 +886,7 @@ mountaineers_ITA = {
 			}
 		}
 		
-		target_width = 39.8
+		target_width = 19.9
 		width_weight = 3
 		column_swap_factor = 0.2
 		
@@ -953,6 +953,8 @@ mountaineers_ITA = {
 			field_hospital
 			logistics_company
 			anti_tank
+			artillery_brigade
+			engineer
 		}
 	}
 }
@@ -990,7 +992,7 @@ marines_ITA = {
 			}
 		}
 		
-		target_width = 40.0
+		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 		
@@ -1046,11 +1048,11 @@ marines_ITA = {
 			}
 		}
 
-		
 		allowed_types = {
 			marine
 			engineer
 			logistics_company
+			recon
 		}
 	}
 }
@@ -1089,7 +1091,7 @@ paratroopers_ITA = {
 			}
 		}
 		
-		target_width = 19.8
+		target_width = 9.9
 		width_weight = 3.0
 		column_swap_factor = 0.1
 		
@@ -1189,7 +1191,7 @@ militia_ITA = {
 			factor = 1
 		}
 		
-		target_width = 39.8
+		target_width = 9.9
 		width_weight = 3.0
 		column_swap_factor = 0.1
 		
