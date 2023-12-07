@@ -747,3 +747,28 @@ extra_states_for_this_one_dumbass_trigger = {
 		state = 41
 	}
 }
+is_skaneland = {
+	OR = {
+		state = 212
+		state = 202
+		state = 203
+		state = 184
+	}
+}
+is_jutland = {
+	OR = {
+		state = 139
+		state = 246
+		state = 104
+		state = 228
+		state = 223
+		state = 197
+		state = 34
+		state = 15
+		state = 76
+		state = 181
+		state = 120
+		state = 140
+		state = 144
+	}
+}
