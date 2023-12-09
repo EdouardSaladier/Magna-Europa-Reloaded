@@ -51,9 +51,20 @@ if = { #DLC
 	set_cosmetic_tag = BUL_neutrality
 
 	#IDEAS SETUP
+	if = {
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+		}
+		add_ideas = BUL_army_restrictions_aat
+	}
+	if = {
+		limit = {
+			NOT = {	has_dlc = "Arms Against Tyranny" }
+		}
+		add_ideas = BUL_army_restrictions
+	}
 	add_ideas = { #DLC
 		BUL_second_national_catastrophe
-		BUL_army_restrictions
 		BUL_imro_01
 		volunteer_only
 	}
@@ -132,7 +143,7 @@ if = { #DLC
 	#Plot Against Boris
 	set_variable = { BUL_regicide_execution_time = 90 }
 	#Free Balkan States dynamic modifier (NS)
-	set_variable = { BUL_our_duty_in_the_balkans_consumer_goods_modifier = -0.01 }
+	set_variable = { BUL_our_duty_in_the_balkans_consumer_goods_modifier = -0.03 }
 	set_variable = { BUL_our_duty_in_the_balkans_stability_modifier = 0.05 }
 	#Monthly extra chance of Boris dieing of "natural causes" (increased by 5 each month from 1943.1.1)
 	set_variable = { BUL_tsar_boris_death_monthly_probability_factor = 0 }
@@ -353,6 +364,7 @@ set_technology = { #VANILLA & DLC
 	tech_trucks = 1		
 	tech_engineers = 1
 	motorised_infantry = 1
+	tech_mountaineers = 1
 #	early_fighter = 1
 	fuel_silos = 1
 	basic_train = 1

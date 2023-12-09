@@ -45,6 +45,7 @@ if = {
 			iw_medium_airframe = 1
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
+			air_torpedoe_1 = 1
 		}
 	else = {
 		set_air_oob = "GER_1936_air_legacy"
@@ -179,6 +180,8 @@ set_variable = { var = ger_gateway_to_europe_influence value = 0 }
 
 set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
+set_variable = { GER_narvik_shipments = 0 }
+set_variable = { GER_narvik_civs = 0 }
 set_research_slots = 4
 set_convoys = 200
 set_stability = 0.75 
@@ -186,8 +189,8 @@ set_war_support = 0.3
 
 #Trade
 create_import = {
-	resource = tungsten
-	factories = 1
+	resource = steel
+	factories = 2
 	exporter = SWE
 }
 
@@ -315,6 +318,7 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		nationalities = { GER }
+		gender = male
 	}
 
 	create_operative_leader = {
@@ -324,6 +328,7 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		nationalities = { GER }
+		gender = male
 	}
 	create_operative_leader = {
 		name = "Eleysa Bazna"
@@ -332,6 +337,7 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		nationalities = { GER TUR }
+		gender = male
 	}
 }
 
@@ -453,6 +459,7 @@ if = {
 	create_equipment_variant = {
 		name = "Panzer II Ausf. A"
 		type = light_tank_chassis_2
+		design_team = mio:GER_daimler_benz_organization
 		parent_version = 0
 		modules = {
 			main_armament_slot = tank_auto_cannon
@@ -770,6 +777,7 @@ if = {
 	create_equipment_variant = {
 		name = "Ju 86"
 		type = tac_bomber_equipment_0
+		design_team = mio:GER_junkers_organization
 		upgrades = {
 			plane_tac_bomb_upgrade = 5
 			plane_range_upgrade = 5
@@ -782,6 +790,7 @@ if = {
 	create_equipment_variant = {
 		name = "Do 17"
 		type = tac_bomber_equipment_0
+		design_team = mio:GER_dornier_organization
 		upgrades = {
 			plane_tac_bomb_upgrade = 5
 			plane_range_upgrade = 1
@@ -799,6 +808,7 @@ if = {
 	create_equipment_variant = {
 		name = "Do 23"
 		type = medium_plane_airframe_0
+		design_team = mio:GER_dornier_organization
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = empty
@@ -815,6 +825,7 @@ if = {
 	create_equipment_variant = {
 		name = "Ju 86"
 		type = medium_plane_airframe_0
+		design_team = mio:GER_junkers_organization
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = empty
@@ -832,6 +843,7 @@ if = {
 	create_equipment_variant = {
 		name = "He 111"
 		type = medium_plane_airframe_1
+		design_team = mio:GER_heinkel_organization
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
@@ -849,6 +861,7 @@ if = {
 	create_equipment_variant = {
 		name = "Do 17"
 		type = small_plane_cas_airframe_0
+		design_team = mio:GER_dornier_organization
 		modules = {
 			fixed_main_weapon_slot = small_bomb_bay
 			engine_type_slot = engine_1_2x
@@ -860,6 +873,7 @@ if = {
 	create_equipment_variant = {
 		name = "He 51" #also covers Ar 68
 		type = small_plane_airframe_0
+		design_team = mio:GER_heinkel_organization
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
 			engine_type_slot = engine_1_1x
@@ -880,6 +894,7 @@ if = {
 	create_equipment_variant = {
 		name = "Bf 109 D"
 		type = small_plane_airframe_1
+		design_team = mio:GER_messerschmitt_organization
 		modules = {
 			fixed_main_weapon_slot = light_mg_4x
 			engine_type_slot = engine_2_1x
@@ -890,6 +905,7 @@ if = {
 	create_equipment_variant = {
 		name = "Bf 109 T"
 		type = cv_small_plane_airframe_1
+		design_team = mio:GER_messerschmitt_organization
 		modules = {
 			fixed_main_weapon_slot = light_mg_4x
 			engine_type_slot = engine_2_1x
@@ -900,6 +916,7 @@ if = {
 	create_equipment_variant = {
 		name = "Ju 87"
 		type = small_plane_cas_airframe_1
+		design_team = mio:GER_junkers_organization
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
 			engine_type_slot = engine_2_1x
@@ -911,6 +928,7 @@ if = {
 	create_equipment_variant = {
 		name = "Ju 87 C-1"
 		type = cv_small_plane_cas_airframe_1
+		design_team = mio:GER_junkers_organization
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
 			engine_type_slot = engine_2_1x
@@ -922,6 +940,7 @@ if = {
 	create_equipment_variant = {
 		name = "Do 22"
 		type = small_plane_naval_bomber_airframe_1
+		design_team = mio:GER_dornier_organization
 		modules = {
 			fixed_main_weapon_slot = torpedo_mounting
 			engine_type_slot = engine_1_1x

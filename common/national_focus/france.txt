@@ -111,7 +111,7 @@
 				set_state_flag = FRA_autoroutes_target
 				}
 			}
-			AQT = {
+			GYE = {
 				random_core_state = {
 					limit = { 
 						is_core_of = ROOT 
@@ -3302,6 +3302,18 @@
 		x = 4
 		y = 1
 		
+		offset = {
+			x = -8
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = FRA_revive_the_national_bloc
+			}
+		}
+		
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws
 			focus = FRA_protect_the_rights_of_man
@@ -5149,7 +5161,7 @@
 		
 		prerequisite = {
 			focus = FRA_revive_the_national_bloc
-			
+		}	
 		cost = 10
 
 		ai_will_do = {

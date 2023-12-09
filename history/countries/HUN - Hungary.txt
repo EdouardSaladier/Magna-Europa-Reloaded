@@ -41,18 +41,6 @@ set_technology = {
 	fuel_silos = 1
 	basic_train = 1
 }
-
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	give_guarantee = AUS
-	add_ideas = {
-		disarmed_nation
-	#	HUN_treaty_of_triannon
-	}
-}
-
 if = {
 	limit = {
 		NOT = {
@@ -65,9 +53,7 @@ if = {
 }
 if = {
 	limit = {
-		
 		has_dlc = "No Step Back"
-		
 	}
 	set_technology = {
 		gwtank_chassis = 1
@@ -83,7 +69,16 @@ if = {
 	give_guarantee = AUS
 	add_ideas = {
 		disarmed_nation
-		HUN_treaty_of_triannon
+	}
+	if = {
+		limit = { has_dlc = "Arms Against Tyranny" }
+		add_ideas = { HUN_treaty_of_triannon_aat }
+	}
+	if = {
+		limit = {
+			NOT = { has_dlc = "Arms Against Tyranny" }
+		}
+		add_ideas = { HUN_treaty_of_triannon }
 	}
 }
 if = {

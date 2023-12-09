@@ -91,12 +91,52 @@ FRA_renault_organization = {
 }
 
 FRA_hotchkiss_organization = {
-	include = generic_mobile_tank_organization
+	include = generic_tank_refurbishment_plant_organization
 	icon = GFX_idea_generic_tank_manufacturer_3
 	allowed = {	
 		tag = FRA 
 		has_dlc = "Arms Against Tyranny"
 	}
+}
+
+FRA_somua_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_somua
+	
+	allowed = {	
+		OR = {
+			tag = FRA 
+			AND = {
+				tag = POL # If Poland sets up a local one
+				OR = {
+					has_dlc = "Poland: United and Ready"
+					has_dlc = "No Step Back"
+				}
+			}
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = FRA } }
+			}
+			FROM = { NOT = { has_war_with = FRA } }
+		}
+		IF = {
+			limit = {
+				FROM = { original_tag = POL }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = POL_somua_motors
+				}
+			}
+		}
+	}
+	
 	add_trait = { 
 		token = FRA_mio_trait_l_35
 		name = FRA_mio_trait_l_35
@@ -109,29 +149,19 @@ FRA_hotchkiss_organization = {
 			ap_attack = 0.05
 		}  
 	}
-
 	override_trait = {
 		token = generic_mio_gunner_sight_improvements
 		position = { x=-1 y=2}
-	}
+	}	
 }
 
-FRA_apx_organization = {
+FRA_amx_organization = { # TODO set up correct from focus if needed
 	include = generic_medium_tank_organization
-	icon = GFX_idea_FRA_atelier_puteaux
+	icon = GFX_idea_generic_tank_manufacturer_2
 	allowed = {	
 		tag = FRA 
-		has_dlc = "Arms Against Tyranny"
 	}
 }
-
-#FRA_amx_organization = { # TODO set up correct from focus if needed
-#	include = generic_mobile_tank_organization
-#	icon = GFX_idea_generic_tank_manufacturer_2
-#	allowed = {	
-#		tag = FRA 
-#	}
-#}
 
 #####################
 
@@ -316,45 +346,6 @@ FRA_panhard_organization = {
 	}
 }
 
-FRA_somua_organization = {
-	include = generic_motorized_mechanized_organization
-	icon = GFX_idea_somua
-	
-	allowed = {	
-		OR = {
-			tag = FRA 
-			AND = {
-				tag = POL # If Poland sets up a local one
-				OR = {
-					has_dlc = "Poland: United and Ready"
-					has_dlc = "No Step Back"
-				}
-			}
-		}
-	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = FRA } }
-			}
-			FROM = { NOT = { has_war_with = FRA } }
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = POL }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = POL_somua_motors
-				}
-			}
-		}
-	}
-}
-
 FRA_mas_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_mas
@@ -388,6 +379,24 @@ FRA_mas_organization = {
 				}
 			}
 		}
+	}
+}
+
+FRA_peugeot_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_generic_motorized_equipment_manufacturer_3
+	allowed = {	
+		tag = FRA 
+		has_dlc = "La Resistance"
+	}
+}
+
+FRA_apx_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_FRA_atelier_puteaux
+	allowed = {	
+		tag = FRA 
+		has_dlc = "Arms Against Tyranny"
 	}
 }
 

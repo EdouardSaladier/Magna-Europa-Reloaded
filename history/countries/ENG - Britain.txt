@@ -48,6 +48,7 @@ if = {
 			iw_large_airframe = 1
 			basic_medium_airframe = 1
 			basic_small_airframe = 1
+			air_torpedoe_1 = 1
 		}
 	else = {
 		set_air_oob = "ENG_1936_air_legacy"
@@ -627,6 +628,7 @@ if = {
 	create_equipment_variant = {
 		name = "Medium Mk. II"
 		type = medium_tank_chassis_0
+		design_team = mio:ENG_vickers_armstrong_eng_organization
 		parent_version = 0
 		modules = {
 			main_armament_slot = tank_small_cannon

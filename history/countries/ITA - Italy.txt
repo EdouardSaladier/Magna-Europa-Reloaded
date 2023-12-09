@@ -230,7 +230,7 @@ set_variable = { ITA_re_modifier_army_sub_unit_militia_defence_factor = 0 }
 set_variable = { ITA_re_modifier_army_sub_unit_militia_attack_factor = 0 }
 set_variable = { ITA_re_modifier_army_sub_unit_militia_speed_factor = 0 }
 set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = 0 }
-set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = 0 }
+set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor = 0 }
 set_variable = { ITA_re_special_forces_out_of_supply_factor = 0 }
 set_variable = { ITA_re_conscription_factor = 0 }
 set_variable = { ITA_re_command_power_gain_mult = 0 }
@@ -476,6 +476,7 @@ if = {
 			basic_medium_airframe = 1
 			photo_reconnaisance = 1
 			survivability_studies = 1
+			air_torpedoe_1 = 1
 		}
 		add_tech_bonus = {
 			bonus = 0.5
@@ -1089,6 +1090,13 @@ if = {
 		obsolete = yes
 		icon = "GFX_gwtank_medium"
 	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_0
+		amount = 150
+		variant_name = "Fiat 3000/21"
+	}
+	
 	create_equipment_variant = {
 		name = "Fiat 3000/30"
 		type = light_tank_chassis_0
@@ -1107,6 +1115,13 @@ if = {
 		obsolete = yes
 		icon = "GFX_gwtank_medium"
 	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_0
+		amount = 40
+		variant_name = "Fiat 3000/30"
+	}
+	
 	create_equipment_variant = {
 		name = "CV29"
 		type = light_tank_chassis_1
@@ -1264,6 +1279,17 @@ if = {
 			ship_armor_upgrade = 2
 			ship_gun_upgrade = 2
 		}
+	}
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	add_equipment_to_stockpile = {
+		type = gw_tank_equipment
+		amount = 190
+		producer = ITA
+		variant_name = "Fiat 3000"
 	}
 }
 if = {
