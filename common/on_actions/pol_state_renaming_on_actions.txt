@@ -63,6 +63,13 @@ on_actions = {
 						FROM.FROM = { set_state_name = "Gdingen" }
 						set_province_name = { id = 10920 name = "Gdingen" }
 					}
+					else_if = {
+						limit = {
+							ROOT = { original_tag = KSH }
+						}
+						FROM.FROM = { set_state_name = "Gdiniô" }
+						set_province_name = { id = 10920 name = "Gdiniô" }
+					}
 					else = {
 						FROM.FROM = { reset_state_name = yes }
 						reset_province_name = 10920
@@ -105,6 +112,22 @@ on_actions = {
 						ROOT = { is_german = yes }
 					}
 					FROM.FROM = { set_state_name = "Konitz" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 1979 } } #Hel
+				if = {
+					limit = {
+						ROOT = { is_german = yes }
+					}
+					FROM.FROM = { set_state_name = "Hel" }
+					else_if = {
+						limit = { ROOT = { original_tag = KSH } }
+						FROM.FROM = { set_state_name = "Hél" }
+					}
 					else = {
 						FROM.FROM = { reset_state_name = yes }
 					}

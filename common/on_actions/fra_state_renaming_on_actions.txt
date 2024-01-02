@@ -125,6 +125,52 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
+			#Mont Blanc
+            if = {
+                limit = { FROM.FROM = { state = 750 } }
+				if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Monte Bianco" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Modane
+            if = {
+                limit = { FROM.FROM = { state = 771 } }
+				if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Modana" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Montgenèvre
+            if = {
+                limit = { FROM.FROM = { state = 842 } }
+				if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Monginevro" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Flanders
 			if = {
 				limit = { FROM.FROM = { state = 1342 } }
 				if = {
