@@ -437,3 +437,39 @@ is_lithuanian = {
 		original_tag = LTM #Lithuania Minor (Prussian Lit)
 	}
 }
+
+is_belarusian = {
+	OR = {
+		original_tag = BLR
+		original_tag = PLS
+	}
+}
+
+is_ukrainian = {
+	OR = {
+		original_tag = UKR
+		original_tag = VLH
+		original_tag = PLD
+		original_tag = ZAP
+		original_tag = ODS
+		original_tag = SLB
+		original_tag = DKR
+		original_tag = WUK
+	}
+}
+
+is_russian = {
+	OR = {
+		original_tag = SOV
+		original_tag = RUS
+		original_tag = DNB
+	}
+}
+
+is_east_slavic = {
+	OR = {
+		is_russian = yes
+		is_ukrainian = yes
+		is_belarusian = yes
+	}
+}
