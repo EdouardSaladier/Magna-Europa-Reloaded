@@ -1267,25 +1267,26 @@ on_actions = {
 				}
 			}
 			#Suceava
-		   if = {
-				limit = {
-					FROM.FROM = { state = 1597 }
-				}
+			if = {
+				limit = { FROM.FROM = { state = 1597 } }
 				if = {
-					limit = {
-						ROOT = {
-							is_german = yes
-						}
-					}
+					limit = { ROOT = { is_german = yes } }
 					FROM.FROM = { set_state_name = "Sutschawa" }
-					set_province_name = {
-						id = 20389
-						name = "Sutschawa"
+					set_province_name = { id = 20389 name = "Sutschawa" }
+					else_if = {
+						limit = { ROOT = { is_russian = yes } }
+						FROM.FROM = { set_state_name = "Suchava" }
+						set_province_name = { id = 20389 name = "Suchava" }
 					}
-				}
-				else = {
-					FROM.FROM = { reset_state_name = yes }
-					reset_province_name = 20389
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Sučava" }
+						set_province_name = { id = 20389 name = "Sučava" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 20389
+					}
 				}
 			}
 			#Storojinet
@@ -1301,6 +1302,14 @@ on_actions = {
 					}
 					FROM.FROM = { set_state_name = "Storozynetz" }
 				}
+				else_if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Storozhynets" }
+				}
+				else_if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Storožynets'" }
+				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
 				}
@@ -1311,59 +1320,65 @@ on_actions = {
 					FROM.FROM = { state = 1598 }
 				}
 				if = {
-					limit = {
-						ROOT = {
-							is_german = yes
-						}
-					}
+					limit = { ROOT = { is_german = yes } }
 					FROM.FROM = { set_state_name = "Radautz" }
-					set_province_name = {
-						id = 5863
-						name = "Radautz"
+					set_province_name = { id = 5863 name = "Radautz" }
+					else_if = {
+						limit = { ROOT = { is_russian = yes } }
+						FROM.FROM = { set_state_name = "Radovtsy" }
+						set_province_name = { id = 5863 name = "Radovtsy" }
 					}
-				}
-				else = {
-					FROM.FROM = { reset_state_name = yes }
-					reset_province_name = 5863
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Radivtsi" }
+						set_province_name = { id = 5863 name = "Radivtsi" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 5863
+					}
 				}
 			}
 			#Cernauti
-		   if = {
-				limit = {
-					FROM.FROM = { state = 1599 }
-				}
+			if = { #Cernauti
+				limit = { FROM.FROM = { state = 1599 } }
 				if = {
-					limit = {
-						ROOT = {
-							is_german = yes
-						}
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Chernovtsy" }
+					set_province_name = { id = "13410" name = "Chernovtsy" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Černivtsi" }
+						set_province_name = { id = "13410" name = "Černivtsi" }
 					}
-					FROM.FROM = { set_state_name = "Czernowitz" }
-					set_province_name = {
-						id = 13410
-						name = "Czernowitz"
+					else_if = {
+						limit = { ROOT = { is_german = yes } }
+						FROM.FROM = { set_state_name = "Czernowitz" }
+						set_province_name = { id = "13410" name = "Czernowitz" }
 					}
-				}
-				else = {
-					FROM.FROM = { reset_state_name = yes }
-					reset_province_name = 13410
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 13410
+					}
 				}
 			}
 			#Campulung
-		   if = {
-				limit = {
-					FROM.FROM = { state = 629 }
-				}
+			if = {
+				limit = { FROM.FROM = { state = 629 }}
 				if = {
-					limit = {
-						ROOT = {
-							is_german = yes
-						}
+					limit = { ROOT = { is_german = yes } }
+					FROM.FROM = { set_state_name = "Kimpolung" }
+					else_if = {
+						limit = { ROOT = { is_russian = yes } }
+						FROM.FROM = { set_state_name = "Dolgopol'ye" }
 					}
-					FROM.FROM = { set_state_name = "Langenau" }
-				}
-				else = {
-					FROM.FROM = { reset_state_name = yes }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Dovhopill'ja" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
 				}
 			}
 			#Bazargic
@@ -1415,6 +1430,210 @@ on_actions = {
 				else = {
 					FROM.FROM = { reset_state_name = yes }
 					reset_province_name = 7492
+				}
+			}
+			#Bucovina
+			#Bessarabia
+			if = { #Chelmenti
+				limit = { FROM.FROM = { state = 2980 } }
+				if = {
+					limit = {
+						ROOT = { is_east_slavic = yes }
+					}
+					FROM.FROM = { set_state_name = "Kel'mentsi" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Hertsa
+				limit = { FROM.FROM = { state = 1600 } }
+				if = {
+					limit = {
+						ROOT = { is_east_slavic = yes }
+					}
+					FROM.FROM = { set_state_name = "Hertsa" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Hotin
+				limit = { FROM.FROM = { state = 592 } }
+				if = {
+					limit = {
+						ROOT = { is_ukrainian = yes }
+					}
+					FROM.FROM = { set_state_name = "Hotyn" }
+					set_province_name = { id = "7390" name = "Hotyn" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 7390
+					}
+				}
+			}
+			if = { #Stefan Voda
+				limit = { FROM.FROM = { state = 2745 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Shtefan-Vodye" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Shtefan-Vode" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Tighina
+				limit = { FROM.FROM = { state = 1603 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Bendery" }
+					set_province_name = { id = 8735 name = "Bendery" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Bendery" }
+						set_province_name = { id = 8735 name = "Bendery" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 8735
+					}
+				}
+			}
+			if = { #Gagauzia
+				limit = { FROM.FROM = { state = 2744 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Gagauzija" }
+					set_province_name = { id = 707 name = "Komrat" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Hahauzija" }
+						set_province_name = { id = 707 name = "Komrat" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Cahul
+				limit = { FROM.FROM = { state = 1602 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Kagul" }
+					set_province_name = { id = 8049 name = "Kagul" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Kahul" }
+						set_province_name = { id = 8049 name = "Kahul" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 8049
+					}
+				}
+			}
+			if = { #Lapusna
+				limit = { FROM.FROM = { state = 1604 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Lepushna" }
+					set_province_name = { id = 20392 name = "Kishinyov" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Lepushna" }
+						set_province_name = { id = 20392 name = "Kyshynív" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 20392
+					}
+				}
+			}
+			if = { #Orhei
+				limit = { FROM.FROM = { state = 1605 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Orgeev" }
+					set_province_name = { id = 13805 name = "Orgeev" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Orhiiv" }
+						set_province_name = { id = 13805 name = "Orhiiv" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 13805
+					}
+				}
+			}
+			if = { #Balti
+				limit = { FROM.FROM = { state = 600 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Beltsy" }
+					set_province_name = { id = 20391 name = "Beltsy" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Bjel'tsi" }
+						set_province_name = { id = 20391 name = "Bjel'tsi" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 20391
+					}
+				}
+			}
+			if = { #Balti
+				limit = { FROM.FROM = { state = 1606 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Soroki" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Soroky" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			#Budjak
+			if = { #Cetatea-Alba
+				limit = { FROM.FROM = { state = 1601 } }
+				if = {
+					limit = {
+						ROOT = { s_russian = yes }
+					}
+					FROM.FROM = { set_state_name = "Bilhorod-Dnistrovs'kyj" }
+					set_province_name = { id = "924" name = "Bilhorod-Dnistrovs'kyj" }
+					else_if = {
+						set_state_name = "Belgorod-Dnestrovskij"
+						set_province_name = { id = "924" name = "Belgorod-Dnestrovskij" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 924
+					}
+				}
+			}
+			if = { #Ismail
+				limit = { FROM.FROM = { state = 794 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Izmail" }
+					set_province_name = { id = 9320 name = "Izmail" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Izmaïl" }
+						set_province_name = { id = 9320 name = "Izmaïl" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
 				}
 			}
 		}

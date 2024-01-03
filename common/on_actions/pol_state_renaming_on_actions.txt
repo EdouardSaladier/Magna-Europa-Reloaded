@@ -1385,8 +1385,8 @@ on_actions = {
 					}
 				}
 			}
-			if = {
-				limit = { FROM.FROM = { state = 1153 } } #Brzesc
+			if = { #Brzesc
+				limit = { FROM.FROM = { state = 1153 } }
 				if = {
 					limit = { ROOT = { is_belarusian = yes } }
 					FROM.FROM = { set_state_name = "Berastse" }
@@ -1403,6 +1403,7 @@ on_actions = {
 					}
 					else = {
 						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 19923
 					}
 				}
 			}
@@ -1857,6 +1858,235 @@ on_actions = {
 					else = {
 						FROM.FROM = { reset_state_name = yes }
 						reset_province_name = 12912
+					}
+				}
+			}
+			#Volhynia
+			if = { #Kowel
+				limit = { FROM.FROM = { state = 992 } }
+				if = {
+					limit = { ROOT = { is_east_slavic = yes } }
+					FROM.FROM = { set_state_name = "Kovel'" }
+					set_province_name = { id = 12211 name = "Kovel'" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 12211
+					}
+				}
+			}
+			if = { #Kamien Koszirsky
+				limit = { FROM.FROM = { state = 1088 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Kamin'-Kašyrs'kyj" }
+					else_if = {
+						limit = { ROOT = { is_russian = yes } }
+						FROM.FROM = { set_state_name = "Kamen'-Kashirskiy" }
+					}
+					else_if = {
+						limit = { ROOT = { is_belarusian = yes } }
+						FROM.FROM = { set_state_name = "Kamen'-Kašyrski" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Luboml
+				limit = { FROM.FROM = { state = 1041 } }
+				if = {
+					limit = { ROOT = { is_belarusian = yes } }
+					FROM.FROM = { set_state_name = "Ljubaml'" }
+					else_if = {
+						limit = { ROOT = { is_east_slavic = yes } }
+						FROM.FROM = { set_state_name = "Ljuboml'" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Nowowolynsk
+				limit = { FROM.FROM = { state = 434 } }
+				if = {
+					limit = { ROOT = { is_belarusian = yes } }
+					FROM.FROM = { set_state_name = "Novavalynsk" }
+					set_province_name = { id = 2165 name = "Novavalynsk" }
+					else_if = {
+						limit = { ROOT = { is_east_slavic = yes } }
+						FROM.FROM = { set_state_name = "Novovolynsk" }
+						set_province_name = { id = 2165 name = "Novovolynsk" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 2165
+					}
+				}
+			}
+			if = { #Luck
+				limit = { FROM.FROM = { state = 1030 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Luts'k" }
+					set_province_name = { id = 12451 name = "Luts'k" }
+					else_if = {
+						limit = { ROOT = { is_east_slavic = yes } }
+						FROM.FROM = { set_state_name = "Lutsk" }
+						set_province_name = { id = 12451 name = "Lutsk" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 12451
+					}
+				}
+			}
+			if = { #Dubno
+				limit = { FROM.FROM = { state = 1110 } }
+				if = {
+					limit = { ROOT = { is_belarusian = yes } }
+					FROM.FROM = { set_state_name = "Dubna" }
+					set_province_name = { id = 3385 name = "Dubna" }
+					else_if = {
+						limit = { ROOT = { is_east_slavic = yes } }
+						FROM.FROM = { set_state_name = "Dubno" }
+						set_province_name = { id = 3385 name = "Dubno" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 3385
+					}
+				}
+			}
+			if = { #Krzemieniec
+				limit = { FROM.FROM = { state = 459 } }
+				if = {
+					limit = { ROOT = { is_belarusian = yes } }
+					FROM.FROM = { set_state_name = "Kremenets'" }
+					set_province_name = { id = 12713 name = "Kremenets'" }
+					else_if = {
+						limit = { ROOT = { is_east_slavic = yes } }
+						FROM.FROM = { set_state_name = "Kremenets" }
+						set_province_name = { id = 12713 name = "Kremenets" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 12713
+					}
+				}
+			}
+			if = { #Rowne
+				limit = { FROM.FROM = { state = 671 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Rovno" }
+					set_province_name = { id = 19915 name = "Rovno" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Rivne" }
+						set_province_name = { id = 19915 name = "Rivne" }
+					}
+					else_if = {
+						limit = { ROOT = { is_belarusian = yes } }
+						FROM.FROM = { set_state_name = "Roŭna" }
+						set_province_name = { id = 19915 name = "Roŭna" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 19915
+					}
+				}
+			}
+			if = { #Kostopol
+				limit = { FROM.FROM = { state = 2538 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Kostopol'" }
+					set_province_name = { id = 6615 name = "Kostopol'" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Kostopil'" }
+						set_province_name = { id = 6615 name = "Kostopil'" }
+					}
+					else_if = {
+						limit = { ROOT = { is_belarusian = yes } }
+						FROM.FROM = { set_state_name = "Kastopil'" }
+						set_province_name = { id = 6615 name = "Kastopil'" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 6615
+					}
+				}
+			}
+			if = { #Wlodzimierzec
+				limit = { FROM.FROM = { state = 1129 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Vladimirets" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Volodymyrets'" }
+					}
+					else_if = {
+						limit = { ROOT = { is_belarusian = yes } }
+						FROM.FROM = { set_state_name = "Valadymyrets'" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Pohost Zarzeczny
+				limit = { FROM.FROM = { state = 2258 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Zarechnoe" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Zarične" }
+					}
+					else_if = {
+						limit = { ROOT = { is_belarusian = yes } }
+						FROM.FROM = { set_state_name = "Zarečnaje" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Dabrowica
+				limit = { FROM.FROM = { state = 2259 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Dubrovitsa" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Dubrovytsja" }
+					}
+					else_if = {
+						limit = { ROOT = { is_belarusian = yes } }
+						FROM.FROM = { set_state_name = "Dubrovitsa" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Glinno
+				limit = { FROM.FROM = { state = 2319 } }
+				if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Glynnoe" }
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						FROM.FROM = { set_state_name = "Glynne" }
+					}
+					else_if = {
+						limit = { ROOT = { is_belarusian = yes } }
+						FROM.FROM = { set_state_name = "Glynne" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
 					}
 				}
 			}
