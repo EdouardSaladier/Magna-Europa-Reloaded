@@ -500,71 +500,71 @@ focus_tree = {
 				# french atlantic coast
 				custom_trigger_tooltip = {
 					tooltip = mer_GER_atlantikwall_controls_french_coast
-					has_full_control_of_state = 845
-					has_full_control_of_state = 803
-					has_full_control_of_state = 760
-					has_full_control_of_state = 725
-					has_full_control_of_state = 684
-					has_full_control_of_state = 634
-					has_full_control_of_state = 615
-					has_full_control_of_state = 583
-					has_full_control_of_state = 578
-					has_full_control_of_state = 587
-					has_full_control_of_state = 534
-					has_full_control_of_state = 551
-					has_full_control_of_state = 517
-					has_full_control_of_state = 505
-					has_full_control_of_state = 448
-					has_full_control_of_state = 2874
-					has_full_control_of_state = 472
-					has_full_control_of_state = 2333
+					845 = { is_controlled_by_ROOT_or_ally = yes }
+					803 = { is_controlled_by_ROOT_or_ally = yes }
+					760 = { is_controlled_by_ROOT_or_ally = yes }
+					725 = { is_controlled_by_ROOT_or_ally = yes }
+					684 = { is_controlled_by_ROOT_or_ally = yes }
+					634 = { is_controlled_by_ROOT_or_ally = yes }
+					615 = { is_controlled_by_ROOT_or_ally = yes }
+					583 = { is_controlled_by_ROOT_or_ally = yes }
+					578 = { is_controlled_by_ROOT_or_ally = yes }
+					587 = { is_controlled_by_ROOT_or_ally = yes }
+					534 = { is_controlled_by_ROOT_or_ally = yes }
+					551 = { is_controlled_by_ROOT_or_ally = yes }
+					517 = { is_controlled_by_ROOT_or_ally = yes }
+					505 = { is_controlled_by_ROOT_or_ally = yes }
+					448 = { is_controlled_by_ROOT_or_ally = yes }
+					2874 = { is_controlled_by_ROOT_or_ally = yes }
+					472 = { is_controlled_by_ROOT_or_ally = yes }
+					2333 = { is_controlled_by_ROOT_or_ally = yes }
 				}
 				# belgian coast
 				custom_trigger_tooltip = {
 					tooltip = mer_GER_atlantikwall_controls_belgian_coast
-					has_full_control_of_state = 454
-					has_full_control_of_state = 455
+					454 = { is_controlled_by_ROOT_or_ally = yes }
+					455 = { is_controlled_by_ROOT_or_ally = yes }
 				}
 				# western dutch coast
 				custom_trigger_tooltip = {
 					tooltip = mer_GER_atlantikwall_controls_western_dutch_coast
-					has_full_control_of_state = 1974
-					has_full_control_of_state = 451
-					has_full_control_of_state = 2332
-					has_full_control_of_state = 402
-					has_full_control_of_state = 358
+					1974 = { is_controlled_by_ROOT_or_ally = yes }
+					451 = { is_controlled_by_ROOT_or_ally = yes }
+					2332 = { is_controlled_by_ROOT_or_ally = yes }
+					402 = { is_controlled_by_ROOT_or_ally = yes }
+					358 = { is_controlled_by_ROOT_or_ally = yes }
 				}
 				# danish atlantic coast
 				custom_trigger_tooltip = {
 					tooltip = mer_GER_atlantikwall_controls_danish_atlantic_coast
-					has_full_control_of_state = 246
-					has_full_control_of_state = 228
-					has_full_control_of_state = 197
-					has_full_control_of_state = 181
-					has_full_control_of_state = 144
-					has_full_control_of_state = 140
+					246 = { is_controlled_by_ROOT_or_ally = yes }
+					228 = { is_controlled_by_ROOT_or_ally = yes }
+					197 = { is_controlled_by_ROOT_or_ally = yes }
+					181 = { is_controlled_by_ROOT_or_ally = yes }
+					144 = { is_controlled_by_ROOT_or_ally = yes }
+					140 = { is_controlled_by_ROOT_or_ally = yes }
 				}
 				# norwegian coast
 				custom_trigger_tooltip = {
 					tooltip = mer_GER_atlantikwall_controls_norwegian_coast
-					has_full_control_of_state = 124
-					has_full_control_of_state = 106
-					has_full_control_of_state = 131
-					has_full_control_of_state = 123
-					has_full_control_of_state = 132
-					has_full_control_of_state = 147
-					has_full_control_of_state = 128
-					has_full_control_of_state = 111
-					has_full_control_of_state = 92
-					has_full_control_of_state = 75
-					has_full_control_of_state = 71
-					has_full_control_of_state = 53
-					has_full_control_of_state = 25
-					has_full_control_of_state = 2703
-					has_full_control_of_state = 2700
-					has_full_control_of_state = 13
-					has_full_control_of_state = 4
-					has_full_control_of_state = 2701
+					124 = { is_controlled_by_ROOT_or_ally = yes }
+					106 = { is_controlled_by_ROOT_or_ally = yes }
+					131 = { is_controlled_by_ROOT_or_ally = yes }
+					123 = { is_controlled_by_ROOT_or_ally = yes }
+					132 = { is_controlled_by_ROOT_or_ally = yes }
+					147 = { is_controlled_by_ROOT_or_ally = yes }
+					128 = { is_controlled_by_ROOT_or_ally = yes }
+					111 = { is_controlled_by_ROOT_or_ally = yes }
+					92 = { is_controlled_by_ROOT_or_ally = yes }
+					75 = { is_controlled_by_ROOT_or_ally = yes }
+					71 = { is_controlled_by_ROOT_or_ally = yes }
+					53 = { is_controlled_by_ROOT_or_ally = yes }
+					25 = { is_controlled_by_ROOT_or_ally = yes }
+					2703 = { is_controlled_by_ROOT_or_ally = yes }
+					2700 = { is_controlled_by_ROOT_or_ally = yes }
+					13 = { is_controlled_by_ROOT_or_ally = yes }
+					4 = { is_controlled_by_ROOT_or_ally = yes }
+					2701 = { is_controlled_by_ROOT_or_ally = yes }
 				}
 			}
 		}
