@@ -312,13 +312,35 @@ is_low_german = {
 		original_tag = LBK
 	}
 }
+is_reichskommissariat = {
+	OR = {
+		original_tag = RKN
+		original_tag = RKB
+		original_tag = RKU
+		original_tag = RKO
+		original_tag = RKM
+		original_tag = RKK
+		original_tag = RKS
+		original_tag = RKD
+		original_tag = RKT
+		original_tag = RKG
+		original_tag = RKW
+	}
+}
 is_german = {
 	OR = {
 		is_high_german = yes
 		is_middle_german = yes
 		is_low_german = yes
+		is_reichskommissariat = yes
+		original_tag = GGV
+		original_tag = MCS
 		original_tag = GER
 		original_tag = WSL
+		original_tag = RPB
+		original_tag = MVF
+		has_cosmetic_tag = OZAK
+		has_cosmetic_tag = OZAV
 	}
 }
 is_hungarian = {
