@@ -1,0 +1,33 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 1805 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Felsőőr" }
+					else = {
+						FROM.FROM = { reset_state_name =  yes }
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 621 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Kismarton" }
+					set_province_name = { id = 7959 name = "Kismarton" }
+					else = {
+						FROM.FROM = { reset_state_name =  yes }
+						reset_province_name = 7959
+					}
+				}
+			}
+		}
+	}
+}

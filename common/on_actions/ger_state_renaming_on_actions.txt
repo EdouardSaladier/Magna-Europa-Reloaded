@@ -1402,7 +1402,7 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						ROOT = { original_tag = SOV NOT = { has_character = SOV_mikhail_kalinin } }
+						ROOT = { is_russian = yes NOT = { has_character = SOV_mikhail_kalinin } }
 					}
 					FROM.FROM = { set_state_name = "Kjonigsberg" }
 					set_province_name = { id = 19906 name = "Kjonigsberg" }
@@ -1460,6 +1460,11 @@ on_actions = {
 					limit = { ROOT = { original_tag = SOV has_government = communism } }
 					FROM.FROM = { set_state_name = "Sovetsk" }
 					set_province_name = { id = 10752 name = "Sovetsk" }
+				}
+				else_if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Tylzha" }
+					set_province_name = { id = 10752 name = "Tylzha" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }

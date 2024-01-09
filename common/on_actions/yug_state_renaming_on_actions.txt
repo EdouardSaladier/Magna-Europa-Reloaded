@@ -969,6 +969,21 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
+			#Karlobag
+		   if = {
+				limit = { FROM.FROM = { state = 2924 } }
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Karlopagó" }
+				}
+				else_if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Carlopago" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 			#Lovinac
 		   if = {
 				limit = { FROM.FROM = { state = 2829 } }

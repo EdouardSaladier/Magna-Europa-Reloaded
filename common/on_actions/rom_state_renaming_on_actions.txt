@@ -378,6 +378,31 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
+			#Recea
+		   if = {
+				limit = {
+					FROM.FROM = { state = 2860 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_hungarian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Krasznarécse" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_german = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Krasna" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 			#Campeni
 		   if = {
 				limit = {
@@ -589,7 +614,7 @@ on_actions = {
 							is_german = yes
 						}
 					}
-					FROM.FROM = { set_state_name = "Kleine Kokel" }
+					FROM.FROM = { set_state_name = "Kleine Kokelburg" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
@@ -1606,13 +1631,19 @@ on_actions = {
 				limit = { FROM.FROM = { state = 1601 } }
 				if = {
 					limit = {
-						ROOT = { s_russian = yes }
+						ROOT = { is_russian = yes }
 					}
-					FROM.FROM = { set_state_name = "Bilhorod-Dnistrovs'kyj" }
-					set_province_name = { id = "924" name = "Bilhorod-Dnistrovs'kyj" }
+					FROM.FROM = { set_state_name = "Belgorod-Dnestrovskij" }
+					set_province_name = { id = "924" name = "Belgorod-Dnestrovskij" }
 					else_if = {
-						set_state_name = "Belgorod-Dnestrovskij"
-						set_province_name = { id = "924" name = "Belgorod-Dnestrovskij" }
+						limit = { ROOT = { is_ukrainian = yes } }
+						set_state_name = "Bilhorod-Dnistrovs'kyj"
+						set_province_name = { id = "924" name = "Bilhorod-Dnistrovs'kyj" }
+					}
+					else_if = {
+						limit = { ROOT = { original_tag = GRE } }
+						set_state_name = "Maurokastron"
+						set_province_name = { id = "924" name = "Maurokastron" }
 					}
 					else = {
 						FROM.FROM = { reset_state_name = yes }

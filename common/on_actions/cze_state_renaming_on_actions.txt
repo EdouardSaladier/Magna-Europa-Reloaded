@@ -1,0 +1,447 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = { #Bardejov
+				limit = { FROM.FROM = { state = 2313 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Bardijiv" }
+					else_if = {
+						limit = { ROOT = { original_tag = CRP } }
+						FROM.FROM = { set_state_name = "Bardejev" }
+					}
+					else_if = {
+						limit = { ROOT = { is_hungarian = yes } }
+						FROM.FROM = { set_state_name = "Bártfa" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Sobrance
+				limit = { FROM.FROM = { state = 562 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Sobranci" }
+					else_if = {
+						limit = { ROOT = { original_tag = CRP } }
+						FROM.FROM = { set_state_name = "Sobrantsji" }
+					}
+					else_if = {
+						limit = { ROOT = { is_hungarian = yes } }
+						FROM.FROM = { set_state_name = "Szobránc" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Vel'ke Berezne
+				limit = { FROM.FROM = { state = 2929 } }
+				if = {
+					limit = { ROOT = { OR = { is_ukrainian = yes original_tag = CRP } } }
+					FROM.FROM = { set_state_name = "Velykyj Bereznyj" }
+					else_if = {
+						limit = { ROOT = { is_hungarian = yes } }
+						FROM.FROM = { set_state_name = "Nagy Berezny" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Perechyn
+				limit = { FROM.FROM = { state = 1607 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Perečyn" }
+					else_if = {
+						limit = { ROOT = { is_hungarian = yes } }
+						1607 = { set_state_name = "Perecseny" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = { #Northern Maramures
+				limit = { FROM.FROM = { state = 564 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Pivničnyj Marmaroščyna" }
+					set_province_name = { id = 5734 name = "Khust" }
+					else_if = {
+						limit = { ROOT = { is_hungarian = yes } }
+						FROM.FROM = { set_state_name = "Észak-Máramaros" }
+						set_province_name = { id = 5734 name = "Huszt" }
+					}
+					else_if = {
+						limit = { ROOT = { original_tag = CRP } }
+						FROM.FROM = { set_state_name = "Severnyj Maramoroš" }
+						set_province_name = { id = 5734 name = "Khust" }
+					}
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 5734
+					}
+				}
+			}
+			if = { #Uzhorod
+				limit = { FROM.FROM = { state = 593 } }
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Ungvár" }
+					set_province_name = { id = 13287 name = "Ungvár" }
+					set_province_name = { id = 2281 name = "Munkács" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 13287
+						reset_province_name = 2281
+					}
+				}
+			}
+			if = { #Bereg
+				limit = { FROM.FROM = { state = 1608 } }
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					set_province_name = { id = 8775 name = "Nagyszőlős" }
+					else_if = {
+						limit = { ROOT = { is_german = yes } }
+						set_province_name = { id = 8775 name = "Wynohradiw" }
+					}
+					else_if = {
+						limit = { ROOT = { is_ukrainian = yes } }
+						set_province_name = { id = 8775 name = "Vynohradiv" }
+					}
+					else_if = {
+						limit = { ROOT = { is_russian = yes } }
+						set_province_name = { id = 8775 name = "Vinogradov" }
+					}
+					else_if = {
+						limit = { ROOT = { original_tag = CRP } }
+						set_province_name = { id = 8775 name = "Syvlyush" }
+					}
+					else = {
+						reset_province_name = 8775
+					}
+				}
+			}
+			if = { #Cap
+				limit = {
+					FROM.FROM = { state = 2930 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Csap" }
+				}
+				else_if = {
+					limit = { ROOT = { is_russian = yes } }
+					FROM.FROM = { set_state_name = "Chop" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = { #Kralovec nad Tisau
+				limit = {
+					FROM.FROM = { state = 2246 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Királyháza" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 610 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Komárom" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 1439 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Bars és Hont" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 591 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Malacka" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2663 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Csaca" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2660 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Námesztó" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2661 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Késmárk" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2247 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Visk" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2662 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Pöstyén" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 555 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Trencsén" }
+					set_province_name = { id = 13146 name = "Trencsén" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 13146
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 577 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Zsolna" }
+					set_province_name = { id = 13016 name = "Zsolna" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 13016
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 550 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Eperjes" }
+					set_province_name = { id = 7661 name = "Eperjes" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 7661
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 1442 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Kassa" }
+					set_province_name = { id = 13239 name = "Kassa" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 13239
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 574 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Garam" }
+					set_province_name = { id = 13248 name = "Besztercebánya" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 13248
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 569 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Lőcse" }
+					set_province_name = { id = 3605 name = "Rozsnyó" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 3605
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 1438 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Gömör és Kishont" }
+					set_province_name = { id = 13403 name = "Losonc" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 13403
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 580 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Érsekújvár és Kishont" }
+					set_province_name = { id = 20075 name = "Érsekújvár" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 20075
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 541 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Tátra" }
+					set_province_name = { id = 13091 name = "Turócszentmárton" }
+					set_province_name = { id = 13101 name = "Poprád" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 13091
+					reset_province_name = 13101
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 586 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Nyitria" }
+					set_province_name = { id = 4579 name = "Nyitria" }
+					set_province_name = { id = 9477 name = "Privigye" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 4579
+					reset_province_name = 9477
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 1437 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Pozsony" }
+					set_province_name = { id = 20070 name = "Pozsony" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 20070
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 2978 }
+				}
+				if = {
+					limit = { ROOT = { is_hungarian = yes } }
+					FROM.FROM = { set_state_name = "Nagyszombat" }
+					set_province_name = { id = 13354 name = "Nagyszombat" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 13354
+					}
+				}
+			}
+		}
+	}
+}
