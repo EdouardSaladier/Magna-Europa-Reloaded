@@ -1440,6 +1440,20 @@ on_actions = {
 					reset_province_name = 14572
 				}
 			}
+			if = { #Durostor
+				limit = {
+					FROM.FROM = { state = 1579 }
+				}
+				if = {
+					limit = {
+						ROOT = { original_tag = BUL }
+					}
+					FROM.FROM = { set_state_name = "Silistra" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 			#Tulcea
 			if = {
 				limit = {
