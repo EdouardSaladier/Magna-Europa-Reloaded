@@ -7867,7 +7867,7 @@ country_event = {
 	option = {
 		name = germany.129.a
 		trigger = {
-			is_in_faction = no
+			is_in_faction = yes
 		}
 		ai_chance = {
 			base = 10
