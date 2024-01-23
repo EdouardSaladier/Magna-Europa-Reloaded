@@ -813,3 +813,51 @@ is_unlikely_country_tag = {
 ETH_is_horn_of_africa_original_tag = {
 	
 }
+state_is_in_the_baltic_sea = { # Checks if the state borders the Baltic Sea
+	is_coastal = yes 
+	OR = {	
+		region = 117
+		region = 113
+		region = 112
+		region = 111
+		region = 28
+		region = 161
+		region = 56
+		region = 27
+		region = 9
+		region = 95
+		region = 40
+		region = 123
+		region = 165
+		region = 124
+		region = 119
+		state = 98
+		state = 14
+	}
+	NOT = {
+		state = 184
+		state = 148
+		state = 2885
+	}
+}
+is_scandinavian_northern_sea_state = {
+	is_coastal = yes 
+	OR = {
+		is_core_of = SHL
+		region = 26
+		region = 122
+		region = 121
+		region = 120
+		state = 4
+		state = 2701
+	}
+}
+is_danish_belt_state = { # Checks if state should be considered to be around the Danish Belt 
+	is_coastal = yes 
+	OR = {
+		region = 64
+		region = 26
+		region = 122
+		region = 123
+	}
+} 
