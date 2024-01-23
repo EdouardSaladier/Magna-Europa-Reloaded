@@ -13,9 +13,14 @@ on_actions = {
 					set_province_name = { id = 19762 name = "Perpinyà" }
 				}
 				else_if = {
-					limit = { ROOT = { is_spanish = yes is_catalan = no } }
+					limit = { ROOT = { is_spanish = yes } }
 					FROM.FROM = { set_state_name = "Rosellon" }
 					set_province_name = { id = 19762 name = "Perpiñán" }
+				}
+				else_if = {
+					limit = { ROOT = { is_occitan = yes } }
+					FROM.FROM = { set_state_name = "Rosselhon" }
+					set_province_name = { id = 19762 name = "Perpinhan" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
@@ -29,20 +34,14 @@ on_actions = {
             if = {
                 limit = { FROM.FROM = { state = 866 } }
 				if = {
-					limit = {
-						ROOT = {
-							is_italian = yes
-							NOT = { original_tag = COR }
-						}
-					}
-					FROM.FROM = { set_state_name = "Ajaccio" }
-					set_province_name = { id = 8443 name = "Ajaccio" }
-				}
-				else_if = {
 					limit = { ROOT = { original_tag = COR } }
 					FROM.FROM = { set_state_name = "Pumonti" }
 					set_province_name = { id = 8443 name = "Ajacciu" }
-					
+				}
+				else_if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Ajaccio" }
+					set_province_name = { id = 8443 name = "Ajaccio" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
@@ -54,19 +53,17 @@ on_actions = {
                 limit = { FROM.FROM = { state = 1422 } }
 				if = {
 					limit = {
-						ROOT = {
-							is_italian = yes
-							NOT = { original_tag = COR }
-						}
-					}
-					FROM.FROM = { set_state_name = "Bastia" }
-				}
-				else_if = {
-					limit = {
 						ROOT = { original_tag = COR }
 					}
 					FROM.FROM = { set_state_name = "Cismonte" }
-					
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Bastia" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
@@ -77,29 +74,30 @@ on_actions = {
                 limit = { FROM.FROM = { state = 810 } }
 				if = {
 					limit = {
-						ROOT = {
-							is_italian = yes
-							NOT = { original_tag = LIG }
-						}
-					}
-					FROM.FROM = { set_state_name = "Nizza" }
-				}
-				else_if = {
-					limit = {
 						ROOT = { original_tag = LIG }
 					}
 					FROM.FROM = { set_state_name = "Nissa" }
-					
+					set_province_name = { id = 14643 name = "Nissa" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Nizza" }
+					set_province_name = { id = 14643 name = "Nizza" }
 				}
 				else_if = {
 					limit = {
 						ROOT = { is_occitan = yes }
 					}
 					FROM.FROM = { set_state_name = "Niça" }
-					
+					set_province_name = { id = 14643 name = "Niça" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 14643
 				}
 			}
 			#Menton
@@ -107,19 +105,17 @@ on_actions = {
                 limit = { FROM.FROM = { state = 817 } }
 				if = {
 					limit = {
-						ROOT = {
-							is_italian = yes
-							NOT = { original_tag = LIG }
-						}
-					}
-					FROM.FROM = { set_state_name = "Mentone" }
-				}
-				else_if = {
-					limit = {
 						ROOT = { original_tag = LIG }
 					}
 					FROM.FROM = { set_state_name = "Mentàn" }
-					
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Mentone" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
@@ -151,6 +147,10 @@ on_actions = {
 					}
 					FROM.FROM = { set_state_name = "Modana" }
 				}
+				else_if = {
+					limit = { ROOT = { is_arpitan = yes } }
+					FROM.FROM = { set_state_name = "Modâna" }
+				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
 				}
@@ -159,15 +159,329 @@ on_actions = {
             if = {
                 limit = { FROM.FROM = { state = 842 } }
 				if = {
+					limit = { ROOT = { original_tag = PIE } }
+					FROM.FROM = { set_state_name = "Monznèiver" }
+				}
+				else_if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Monginevro" }
+				}
+				else_if = {
+					limit = { ROOT = { is_occitan = yes } }
+					FROM.FROM = { set_state_name = "Montginebre" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Haute-Savoie
+            if = {
+                limit = { FROM.FROM = { state = 2851 } }
+				if = {
 					limit = {
 						ROOT = {
 							is_italian = yes
 						}
 					}
-					FROM.FROM = { set_state_name = "Monginevro" }
+					FROM.FROM = { set_state_name = "Alta Savoia" }
+					set_province_name = { id = 375 name = "Tonone" }
+				}
+				else_if = {
+					limit = { ROOT = { is_arpitan = yes } }
+					FROM.FROM = { set_state_name = "Hiôta-Savouè" }
+					set_province_name = { id = 375 name = "Tonon" }
 				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 375
+				}
+			}
+			#Lyon
+            if = {
+                limit = { FROM.FROM = { state = 747 } }
+				if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Lione" }
+					set_province_name = { id = 8147 name = "Lione" }
+				}
+				else_if = {
+					limit = { ROOT = { is_arpitan = yes } }
+					FROM.FROM = { set_state_name = "Liyon" }
+					set_province_name = { id = 8147 name = "Liyon" }
+				}
+				else_if = {
+					limit = { ROOT = { is_occitan = yes } }
+					FROM.FROM = { set_state_name = "Lion" }
+					set_province_name = { id = 8147 name = "Lion" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 8147
+				}
+			}
+			#Annecy
+            if = {
+                limit = { FROM.FROM = { state = 719 } }
+				if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Annesì" }
+					set_province_name = { id = 2451 name = "Annesì" }
+				}
+				else_if = {
+					limit = { ROOT = { is_arpitan = yes } }
+					FROM.FROM = { set_state_name = "Ènneci" }
+					set_province_name = { id = 2451 name = "Ènneci" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 2451
+				}
+			}
+			#Chambéry
+            if = {
+                limit = { FROM.FROM = { state = 746 } }
+				if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Ciamberì" }
+					set_province_name = { id = 9644 name = "Ciamberì" }
+				}
+				else_if = {
+					limit = { ROOT = { is_arpitan = yes } }
+					FROM.FROM = { set_state_name = "Chambèri" }
+					set_province_name = { id = 9644 name = "Chambèri" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 9644
+				}
+			}
+			#Barcelonnette
+            if = {
+                limit = { FROM.FROM = { state = 2855 } }
+				if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Barcellonetta" }
+				}
+				else_if = {
+					limit = { ROOT = { is_occitan = yes } }
+					FROM.FROM = { set_state_name = "Barcilona de Provença" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Hautes-Alpes Orientales
+            if = {
+                limit = { FROM.FROM = { state = 2854 } }
+				if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Brianzoni" }
+				}
+				else_if = {
+					limit = { ROOT = { is_occitan = yes } }
+					FROM.FROM = { set_state_name = "Briançon" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Hautes-Alpes Occidentales
+            if = {
+                limit = { FROM.FROM = { state = 780 } }
+				if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Alte Alpi" }
+				}
+				else_if = {
+					limit = { ROOT = { is_occitan = yes } }
+					FROM.FROM = { set_state_name = "Auts Aups" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Vallée de la Romanche
+            if = {
+                limit = { FROM.FROM = { state = 2853 } }
+				if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Valle della Romanche" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Isère
+            if = {
+                limit = { FROM.FROM = { state = 749 } }
+				if = {
+					limit = {
+						ROOT = {
+							is_italian = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Isara" }
+					set_province_name = { id = 1933 name = "Granopoli" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_arpitan = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Isera" }
+					set_province_name = { id = 1933 name = "Grenoblo" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							is_occitan = yes
+						}
+					}
+					FROM.FROM = { set_state_name = "Isèra" }
+					set_province_name = { id = 1933 name = "Grenòble" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 1933
+				}
+			}
+			#Basses-Alpes
+            if = {
+                limit = { FROM.FROM = { state = 799 } }
+				if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Basse Alpi" }
+					set_province_name = { id = 14604 name = "Manòsca" }
+				}
+				else_if = {
+					limit = { ROOT = { is_occitan = yes } }
+					FROM.FROM = { set_state_name = "Basseis Aups" }
+					set_province_name = { id = 14604 name = "Manòsca" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 14604
+				}
+			}
+			#Grasse
+            if = {
+                limit = { FROM.FROM = { state = 825 } }
+				if = {
+					limit = { ROOT = { OR = { is_italian = yes is_occitan = yes } } }
+					FROM.FROM = { set_state_name = "Grassa" }
+					set_province_name = { id = 8486 name = "Grassa" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 8486
+				}
+			}
+			#Var
+            if = {
+                limit = { FROM.FROM = { state = 829 } }
+				if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Varo" }
+					set_province_name = { id = 14737 name = "Tolone" }
+				}
+				if = {
+					limit = { ROOT = { is_occitan = yes } }
+					set_province_name = { id = 14737 name = "Tolon" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 14737
+				}
+			}
+			#Vienne
+            if = {
+                limit = { FROM.FROM = { state = 2544 } }
+				if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Vienna" }
+					set_province_name = { id = 14283 name = "Vienna" }
+				}
+				else_if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Viana" }
+					set_province_name = { id = 14283 name = "Viana" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 14283
+				}
+			}
+			#Drôme
+            if = {
+                limit = { FROM.FROM = { state = 773 } }
+				if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Droma" }
+					set_province_name = { id = 19845 name = "Valenza" }
+					set_province_name = { id = 9592 name = "Romans sull'Isara" }
+				}
+				else_if = {
+					limit = { ROOT = { is_occitan = yes } }
+					FROM.FROM = { set_state_name = "Droma" }
+					set_province_name = { id = 19845 name = "Valença" }
+					set_province_name = { id = 9592 name = "Rumans" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 19845
+					reset_province_name = 9592
+				}
+			}
+			#Vaucluse
+            if = {
+                limit = { FROM.FROM = { state = 808 } }
+				if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Valchiusa" }
+					set_province_name = { id = 14611 name = "Avignone" }
+					set_province_name = { id = 14576 name = "Arausio" }
+				}
+				else_if = {
+					limit = { ROOT = { is_occitan = yes } }
+					FROM.FROM = { set_state_name = "Vauclusa" }
+					set_province_name = { id = 14611 name = "Avignoun" }
+					set_province_name = { id = 14576 name = "Arenjo" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 14611
+					reset_province_name = 14576
+				}
+			}
+			#Bouches-du-Rhône
+            if = {
+                limit = { FROM.FROM = { state = 824 } }
+				if = {
+					limit = { ROOT = { is_italian = yes } }
+					FROM.FROM = { set_state_name = "Bocche del Rodano" }
+					set_province_name = { id = 8560 name = "Marsiglia" }
+					set_province_name = { id = 8806 name = "Arli" }
+					set_province_name = { id = 14667 name = "Acqui di Provenza" }
+				}
+				else_if = {
+					limit = { ROOT = { is_occitan = yes } }
+					FROM.FROM = { set_state_name = "Bocas de Ròse" }
+					set_province_name = { id = 8560 name = "Marselha" }
+					set_province_name = { id = 8806 name = "Arle" }
+					set_province_name = { id = 14667 name = "Ais de Provença" }
+					set_province_name = { id = 8802 name = "Miramàs" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 8560
+					reset_province_name = 8806
+					reset_province_name = 14667
+					reset_province_name = 8802
 				}
 			}
 			#Flanders
