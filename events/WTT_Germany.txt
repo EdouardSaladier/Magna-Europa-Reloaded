@@ -116,7 +116,7 @@ country_event = {
 					division = "division_template = \"SS-Sturmbrigade\" start_experience_factor = 0.1" 
 					owner = event_target:fascist_germany_civil_war
 					allow_spawning_on_enemy_provs = yes
-					count = 3
+					count = 4
 				}
 			}
 		}
@@ -135,16 +135,27 @@ country_event = {
 			every_state = {
 				limit = {
 					is_owned_by = GER
-					any_neighbor_state = {
-						is_owned_by = event_target:fascist_germany_civil_war
-						
-					}	
+					OR = {
+						any_neighbor_state = {
+							is_owned_by = event_target:fascist_germany_civil_war
+							
+						}
+						state = 1706
+						state = 1702
+						state = 1707
+						state = 431
+						state = 1746
+						state = 1771
+						state = 1763
+						state = 1738
+						state = 433
+					}
 				}
 				create_unit = {
 					division = "division_template = \"Landsturmregiment\" start_experience_factor = 0.1" 
 					owner = GER
 					allow_spawning_on_enemy_provs = yes
-					count = 3
+					count = 4
 				}
 			}
 		GER_august_von_mackensen = {
