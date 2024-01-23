@@ -1998,28 +1998,45 @@ country_event = {
 		every_owned_state = {
 			limit = {
 				is_core_of = SLO
-				NOT = {
-					state = 1438
-					state = 1442
-					state = 1439
-					state = 610
-					state = 580
-				}
 			}
 			transfer_state_to = SLO
 		}
 		FROM = {
 			puppet = SLO
 		}
-		every_owned_state = {
+		if = {
 			limit = {
-				region = 8
+				GER = {
+					has_government = democratic 
+				}
 			}
-			transfer_state_to = GER
+			GER = { puppet = CZE }
+			CZE = { set_cosmetic_tag = CZE_ONLY }
+			else = {
+				every_owned_state = {
+					limit = {
+						region = 8
+					}
+					transfer_state_to = GER
+				}
+				every_state = {
+					limit = {
+						is_core_of = SDT
+					}
+					add_core_of = GER 
+				}
+			}
 		}
+		
 		if = {
 			limit = {
 				country_exists = HUN
+				HUN = {
+					OR = {
+						is_in_faction_with = ROM 
+						is_subject_of = ROM 
+					}
+				}
 			}
 			HUN = {
 				transfer_state = 1438
@@ -2027,22 +2044,21 @@ country_event = {
 				transfer_state = 1439
 				transfer_state = 610
 				transfer_state = 580
-				if = {
-					limit = { is_subject_of = FROM }
-					transfer_state = 562
-					transfer_state = 1607
-					transfer_state = 1608
-					transfer_state = 564
-					transfer_state = 2247
+				transfer_state = 2930
+			}
+			if = {
+				limit = { HUN = { owns_state = 631 } }
+				transfer_state = 562
+				transfer_state = 1607
+				transfer_state = 1608
+				transfer_state = 564
+				transfer_state = 593
+				transfer_state = 2247
+				transfer_state = 2246
+				transfer_state = 2929
+				else = {
+					release_puppet = CRP
 				}
-			}
-		}
-		if = {
-			limit = {
-				country_exists = POL
-			}
-			POL = {
-				transfer_state = 526
 			}
 		}
 	}
