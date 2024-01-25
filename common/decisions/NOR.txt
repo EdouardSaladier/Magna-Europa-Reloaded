@@ -198,7 +198,7 @@
 	NOR_test_mobile_gov = {
 		complete_effect = {
 			NOR_set_mobile_government_variables = yes 
-			110 = {
+			124 = {
 				NOR_set_as_government_hq = yes 		
 			}
 			complete_national_focus = NOR_continue_nygaardsvold_government
@@ -208,11 +208,6 @@
 			complete_national_focus = NOR_rearm_for_defense
 			complete_national_focus = NOR_patrol_our_coast			
 			every_owned_state = {
-				limit = {
-					NOT = {
-						state = 922
-					}
-				}
 				NOR_start_state_preparation = yes 
 				NOR_start_state_preparation = yes 
 				NOR_start_state_preparation = yes 
@@ -234,7 +229,7 @@
 			ENG = { add_to_faction = NOR }
 			every_controlled_state = {
 				limit = {
-					NOT = { state = 110 }
+					NOT = { state = 124 }
 				}
 				set_state_controller_to = GER
 			}
@@ -248,7 +243,7 @@
 	NOR_generate_militias = {
 		complete_effect = {
 			set_country_flag = NOR_going_dem_historical
-			110 = {
+			124 = {
 				NOR_spawn_militias_in_state = yes 
 				NOR_spawn_militias_in_state = yes 
 				NOR_spawn_militias_in_state = yes 
@@ -273,7 +268,7 @@ NOR_exile_decisions_category = { # Unique versions of normal in exile decisiosn 
 
 		available = {
 			has_capitulated = no 
-			110 = {
+			124 = {
 				OR = {
 					is_fully_controlled_by = ROOT 
 					is_fully_controlled_by = FROM 
@@ -674,16 +669,16 @@ NOR_exile_decisions_category = { # Unique versions of normal in exile decisiosn 
 		state_target = yes
 		
 		targets = {
-			state = 110 # Oslofjord
-			state = 921 # Telemark
-			state = 922 # Agder
-			state = 142 # Vestlandet
-			state = 920 # Opplandene 
-			state = 143 # Trondelag
-			state = 923 # Helgeland
-			state = 144 # Nordland 
-			state = 924 # Troms 
-			state = 925 # Finnmark
+			state = 124 # Oslofjord
+			state = 123 # Telemark
+			state = 147 # Agder
+			state = 111 # Vestlandet
+			state = 83 # Opplandene 
+			state = 71 # Trondelag
+			state = 53 # Helgeland
+			state = 25 # Nordland 
+			state = 13 # Troms 
+			state = 4 # Finnmark
 		}
 
 		visible = {
@@ -751,15 +746,15 @@ NOR_exile_decisions_category = { # Unique versions of normal in exile decisiosn 
 		state_target = yes 
 
 		targets = {
-			state = 921 # Telemark
-			state = 922 # Agder
-			state = 142 # Vestlandet
-			state = 920 # Opplandene 
-			state = 143 # Trondelag
-			state = 923 # Helgeland
-			state = 144 # Nordland 
-			state = 924 # Troms 
-			state = 925 # Finnmark
+			state = 123 # Telemark
+			state = 147 # Agder
+			state = 111 # Vestlandet
+			state = 83 # Opplandene 
+			state = 71 # Trondelag
+			state = 53 # Helgeland
+			state = 25 # Nordland 
+			state = 13 # Troms 
+			state = 4 # Finnmark
 		}
 
 		target_trigger = {
@@ -861,22 +856,22 @@ NOR_democratic_preparation_decisions_category = {
 
 
 		targets = {
-			state = 110 # Oslofjord
-			state = 921 # Telemark
-			state = 922 # Agder
-			state = 142 # Vestlandet
-			state = 920 # Opplandene 
-			state = 143 # Trondelag
-			state = 923 # Helgeland
-			state = 144 # Nordland 
-			state = 924 # Troms 
-			state = 925 # Finnmark
+			state = 124 # Oslofjord
+			state = 123 # Telemark
+			state = 147 # Agder
+			state = 111 # Vestlandet
+			state = 83 # Opplandene 
+			state = 71 # Trondelag
+			state = 53 # Helgeland
+			state = 25 # Nordland 
+			state = 13 # Troms 
+			state = 4 # Finnmark
 		}
 
 		target_trigger = {
 			FROM = {
 				is_core_of = NOR
-				NOT = {	state = 914	} # Not Jan Mayen 
+				NOT = {	state = 1822	} # Not Jan Mayen 
 				OR = {
 					NOT = { has_variable = NOR_state_preparation }
 					check_variable = { NOR_state_preparation < 3 }
@@ -1152,16 +1147,16 @@ NOR_historical_deploy_prep_decisions_category = {
 		state_target = yes 
 
 		targets = {
-			state = 110 # Oslofjord
-			state = 921 # Telemark
-			state = 922 # Agder
-			state = 142 # Vestlandet
-			state = 920 # Opplandene 
-			state = 143 # Trondelag
-			state = 923 # Helgeland
-			state = 144 # Nordland 
-			state = 924 # Troms 
-			state = 925 # Finnmark
+			state = 124 # Oslofjord
+			state = 123 # Telemark
+			state = 147 # Agder
+			state = 111 # Vestlandet
+			state = 83 # Opplandene 
+			state = 71 # Trondelag
+			state = 53 # Helgeland
+			state = 25 # Nordland 
+			state = 13 # Troms 
+			state = 4 # Finnmark
 		}
 
 		target_root_trigger = {
@@ -1302,7 +1297,7 @@ NOR_historical_deploy_prep_decisions_category = {
 		 
 		target_trigger = {
 			FROM = {
-				NOT = {	state = 914	} # Not Jan Mayen 
+				NOT = {	state = 1822	} # Not Jan Mayen 
 				is_core_of = ROOT 
 				any_neighbor_state = { state = NOR.NOR_mobile_government_hq }
 				has_variable = NOR_state_preparation
@@ -1310,16 +1305,16 @@ NOR_historical_deploy_prep_decisions_category = {
 		}
 		
 		targets = {
-			state = 110 # Oslofjord
-			state = 921 # Telemark
-			state = 922 # Agder
-			state = 142 # Vestlandet
-			state = 920 # Opplandene 
-			state = 143 # Trondelag
-			state = 923 # Helgeland
-			state = 144 # Nordland 
-			state = 924 # Troms 
-			state = 925 # Finnmark
+			state = 124 # Oslofjord
+			state = 123 # Telemark
+			state = 147 # Agder
+			state = 111 # Vestlandet
+			state = 83 # Opplandene 
+			state = 71 # Trondelag
+			state = 53 # Helgeland
+			state = 25 # Nordland 
+			state = 13 # Troms 
+			state = 4 # Finnmark
 		}
 
 		cost = 10
@@ -1471,22 +1466,22 @@ NOR_allied_democratic_preparation_decisions_category = {
 		custom_cost_text = decision_cost_alt_dem_prepare_convoy_pp
 		
 		targets = {
-			state = 110 # Oslofjord
-			state = 921 # Telemark
-			state = 922 # Agder
-			state = 142 # Vestlandet
-			state = 920 # Opplandene 
-			state = 143 # Trondelag
-			state = 923 # Helgeland
-			state = 144 # Nordland 
-			state = 924 # Troms 
-			state = 925 # Finnmark
+			state = 124 # Oslofjord
+			state = 123 # Telemark
+			state = 147 # Agder
+			state = 111 # Vestlandet
+			state = 83 # Opplandene 
+			state = 71 # Trondelag
+			state = 53 # Helgeland
+			state = 25 # Nordland 
+			state = 13 # Troms 
+			state = 4 # Finnmark
 		}
 
 		target_trigger = {
 			FROM = {
 				is_core_of = NOR
-				NOT = {	state = 914	} # Not Jan Mayen 
+				NOT = {	state = 1822	} # Not Jan Mayen 
 				OR = {
 					NOT = { has_variable = NOR_state_preparation }
 					check_variable = { NOR_state_preparation < 3 }
@@ -1989,22 +1984,22 @@ NOR_fascist_preparation_decisions_category = {
 		state_target = yes
 
 		targets = {
-			state = 110 # Oslofjord
-			state = 921 # Telemark
-			state = 922 # Agder
-			state = 142 # Vestlandet
-			state = 920 # Opplandene 
-			state = 143 # Trondelag
-			state = 923 # Helgeland
-			state = 144 # Nordland 
-			state = 924 # Troms 
-			state = 925 # Finnmark
+			state = 124 # Oslofjord
+			state = 123 # Telemark
+			state = 147 # Agder
+			state = 111 # Vestlandet
+			state = 83 # Opplandene 
+			state = 71 # Trondelag
+			state = 53 # Helgeland
+			state = 25 # Nordland 
+			state = 13 # Troms 
+			state = 4 # Finnmark
 		}
 
 		target_trigger = {
 			FROM = {
 				is_core_of = NOR
-				NOT = {	state = 914	} # Not Jan Mayen 
+				NOT = {	state = 1822	} # Not Jan Mayen 
 				OR = {
 					check_variable = { NOR_state_preparation < 3 }
 					has_state_flag = NOR_preparing_state
@@ -2239,15 +2234,15 @@ NOR_fascist_deploy_prep_decisions_category = {
 		state_target = yes 
 
 		targets = {
-			state = 921 # Telemark
-			state = 922 # Agder
-			state = 142 # Vestlandet
-			state = 920 # Opplandene 
-			state = 143 # Trondelag
-			state = 923 # Helgeland
-			state = 144 # Nordland 
-			state = 924 # Troms 
-			state = 925 # Finnmark
+			state = 123 # Telemark
+			state = 147 # Agder
+			state = 111 # Vestlandet
+			state = 83 # Opplandene 
+			state = 71 # Trondelag
+			state = 53 # Helgeland
+			state = 25 # Nordland 
+			state = 13 # Troms 
+			state = 4 # Finnmark
 		}
 
 		target_root_trigger = {
@@ -2268,7 +2263,7 @@ NOR_fascist_deploy_prep_decisions_category = {
 		target_trigger = {
 			FROM = {
 				is_core_of = ROOT 
-				NOT = {	state = 914	} # Not Jan Mayen 
+				NOT = {	state = 1822	} # Not Jan Mayen 
 				OR = {
 					has_variable = NOR_state_preparation
 					has_state_flag = NOR_deploying_prep_in_state 
@@ -2435,22 +2430,22 @@ NOR_communist_preparation_decisions_category = {
 		state_target = yes
 
 		targets = {	
-			state = 921 # Telemark
-			state = 922 # Agder
-			state = 142 # Vestlandet
-			state = 920 # Opplandene 
-			state = 143 # Trondelag
-			state = 923 # Helgeland
-			state = 144 # Nordland 
-			state = 924 # Troms 
-			state = 925 # Finnmark
+			state = 123 # Telemark
+			state = 147 # Agder
+			state = 111 # Vestlandet
+			state = 83 # Opplandene 
+			state = 71 # Trondelag
+			state = 53 # Helgeland
+			state = 25 # Nordland 
+			state = 13 # Troms 
+			state = 4 # Finnmark
 		}
 
 		target_trigger = {
 			FROM = {
 				is_core_of = NOR
-				NOT = {	state = 914	} # Not Jan Mayen 
-				NOT = { state = 110 } # Not Oslofjord 
+				NOT = {	state = 1822	} # Not Jan Mayen 
+				NOT = { state = 124 } # Not Oslofjord 
 				OR = {
 					check_variable = { NOR_state_preparation < 3 }
 					has_state_flag = NOR_preparing_state
@@ -2552,22 +2547,22 @@ NOR_monarchist_preparation_decisions_category = {
 		state_target = yes
 
 		targets = {	
-			state = 110 # Oslofjord
-			state = 921 # Telemark
-			state = 922 # Agder
-			state = 142 # Vestlandet
-			state = 920 # Opplandene 
-			state = 143 # Trondelag
-			state = 923 # Helgeland
-			state = 144 # Nordland 
-			state = 924 # Troms 
-			state = 925 # Finnmark
+			state = 124 # Oslofjord
+			state = 123 # Telemark
+			state = 147 # Agder
+			state = 111 # Vestlandet
+			state = 83 # Opplandene 
+			state = 71 # Trondelag
+			state = 53 # Helgeland
+			state = 25 # Nordland 
+			state = 13 # Troms 
+			state = 4 # Finnmark
 		}
 		
 		target_trigger = {
 			FROM = {
 				is_core_of = NOR
-				NOT = {	state = 914	} # Not Jan Mayen 
+				NOT = {	state = 1822	} # Not Jan Mayen 
 				OR = {
 					check_variable = { NOR_state_preparation < 3 }
 					has_state_flag = NOR_preparing_state

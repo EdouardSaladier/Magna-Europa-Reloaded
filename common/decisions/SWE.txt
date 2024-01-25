@@ -1556,10 +1556,10 @@ SWE_mines = {
 
 		visible = {
 			NOT = {
-				666 = {
+				2704 = {
 					has_dynamic_modifier = { modifier = SWE_blown_up_mines }
 				}
-				837 = {
+				2711 = {
 					has_dynamic_modifier = { modifier = SWE_blown_up_mines }
 				}
 			}
@@ -1568,8 +1568,8 @@ SWE_mines = {
 		cost = 15
 		available = {
 			has_war = yes
-			controls_province = 11155 #Gällivare
-			controls_province = 3095 #Kiruna
+			controls_province = 2521 #Gällivare
+			controls_province = 1527 #Kiruna
 		}
 
 		cancel_trigger = {
@@ -1577,8 +1577,8 @@ SWE_mines = {
 			NOT = {
 				ROOT = {
 					OR = {
-						controls_province = 11155 #Gällivare 
-						controls_province = 3095 #Kiruna
+						controls_province = 2521 #Gällivare 
+						controls_province = 1527 #Kiruna
 					}
 				}
 			}
@@ -1620,15 +1620,15 @@ SWE_mines = {
 	SWE_repair_the_mines = {
 
 		visible = {
-			controls_province = 11155 #Gällivare
-			controls_province = 3095 #Kiruna
-			controls_state = 918
+			controls_province = 2521 #Gällivare
+			controls_province = 1527 #Kiruna
+			controls_state = 2704
 			OR = {
-				666 = {
+				2711 = {
 					has_dynamic_modifier = { modifier = SWE_blown_up_mines }
 				}
 
-				918 = {
+				2704 = {
 					has_dynamic_modifier = { modifier = SWE_blown_up_mines }
 				}
 			}
@@ -1638,17 +1638,17 @@ SWE_mines = {
 			civilian_factory_use = 15
 		}
 		available = {
-			controls_province = 11155 #Gällivare
-			controls_province = 3095 #Kiruna
-			controls_state = 918
+			controls_province = 2521 #Gällivare
+			controls_province = 1527 #Kiruna
+			controls_state = 2704
 		}
 
 		cancel_trigger = {
 			NOT = {
 				OR = {
-					controls_province = 11155 #Gällivare
-					controls_province = 3095 #Kiruna
-					controls_state = 918
+					controls_province = 2521 #Gällivare
+					controls_province = 1527 #Kiruna
+					controls_state = 2704
 				}
 			}
 		}
@@ -1656,13 +1656,13 @@ SWE_mines = {
 		days_remove = 120
 
 		remove_effect = {
-			666 = {
+			2704 = {
 				remove_dynamic_modifier = {
 					modifier = SWE_blown_up_mines
 				}
 			}
 
-			918 = {
+			2521 = {
 				remove_dynamic_modifier = {
 					modifier = SWE_blown_up_mines
 				}
@@ -3142,9 +3142,9 @@ SWE_royalist_buildup = {
 		        is_fully_controlled_by = ROOT
 		        NOT = { has_state_flag = SWE_royalist_march_occured }
 				OR = {
-					state = 140 #Göteborg
+					state = 148 #Göteborg
 					state = 141 #Stockholm
-					state = 138 #Skåne
+					state = 212 #Skåne
 				}
 		    }
 		}
