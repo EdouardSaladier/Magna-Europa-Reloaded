@@ -1,0 +1,455 @@
+
+on_actions = {
+
+	on_state_control_changed = {
+		effect = {
+			#Proskuriv
+			if = {
+				limit = { FROM.FROM = { state = 493 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Proskuriv" }
+					set_province_name = { id = 478 name = "Proskuriv" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 478
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2102 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Starokostjantyniv" }
+					set_province_name = { id = 12811 name = "Starokostjantyniv" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 478
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2495 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Izyaslav" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2496 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Polonne" }
+					set_province_name = { id = 4206 name = "Polonne" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 4206
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2041 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Šepetivka" }
+					set_province_name = { id = 12723 name = "Šepetivka" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 12723
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2040 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Kamjanets'-Podil's'kyj" }
+					set_province_name = { id = 4939 name = "Kamjanets'-Podil's'kyj" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 4939
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2688 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Dunaïvtsi" }
+					set_province_name = { id = 4574 name = "Dunaïvtsi" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 4574
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2494 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Letyčev" }
+					set_province_name = { id = 4895 name = "Letyčev" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 4895
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2497 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Nova Ušytsja" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Vinnytsia
+			if = {
+				limit = { FROM.FROM = { state = 527 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Vinnytsja" }
+					set_province_name = { id = 13034 name = "Vinnytsja" }
+					set_province_name = { id = 510 name = "Illinci" }
+					set_province_name = { id = 13140 name = "Nemyriv" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 13034
+					reset_province_name = 510
+					reset_province_name = 13140
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2048 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Khmilnyk" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2052 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Žmerynka" }
+					set_province_name = { id = 13182 name = "Žmerynka" }
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Șmerinca" }
+					set_province_name = { id = 13182 name = "Șmerinca" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 13182
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2051 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Mohyliv-Podil's'kyj" }
+					set_province_name = { id = 3461 name = "Mohyliv-Podil's'kyj" }
+					set_province_name = { id = 5626 name = "Jampil'" }
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Moghilau" }
+					set_province_name = { id = 3461 name = "Moghilau" }
+					set_province_name = { id = 5626 name = "Iampol" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 3461
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2049 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Hajsyn" }
+					set_province_name = { id = 13233 name = "Hajsyn" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 13233
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2050 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Ladyžyn" }
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Ladîjîn" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 565 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Tomašpil'" }
+					set_province_name = { id = 9303 name = "Tul'čyn" }
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Tomașpil" }
+					set_province_name = { id = 9303 name = "Tulciîn" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 9303
+				}
+			}
+			#Transnistria
+			if = {
+				limit = { FROM.FROM = { state = 2681 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Rybnytsja" }
+					set_province_name = { id = 20390 name = "Rybnytsja" }
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Rîbnița" }
+					set_province_name = { id = 20390 name = "Rîbnița" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 617 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Tyraspil'" }
+					set_province_name = { id = 20450 name = "Tyraspil'" }
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Tiraspol" }
+					set_province_name = { id = 20450 name = "Tiraspol" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			#Odesa
+			if = {
+				limit = { FROM.FROM = { state = 2038 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Balta" }
+					set_province_name = { id = 13569 name = "Podil's'k" }
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Balta" }
+					set_province_name = { id = 13569 name = "Bârzula" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2682 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Anan'ïv" }
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Ananiev" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2046 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Rodzil'na" }
+					set_province_name = { id = 13927 name = "Rozdil'na" }
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Radzelnaia" }
+					set_province_name = { id = 13927 name = "Rozdilna" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 13927
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2047 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Ljubašívka" }
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Liubașivka" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 613 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Berezivka" }
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Berezivka" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2045 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Odesa" }
+					set_province_name = { id = 14022 name = "Odesa" }
+					set_province_name = { id = 3104 name = "Južne" }
+					
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Odesa" }
+					set_province_name = { id = 14022 name = "Odesa" }
+					set_province_name = { id = 3104 name = "Iujnîi" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 14022
+					reset_province_name = 3104
+				}
+			}
+			#Mykolaiv
+			if = {
+				limit = { FROM.FROM = { state = 2061 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Kryve Ozero" }
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Krîve Ozero" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2063 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Domanivka" }
+					
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Domanivka" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 618 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Očakiv" }
+					set_province_name = { id = 9345 name = "Očakiv" }
+					
+				}
+				else_if = {
+					limit = { ROOT = { is_romanian = yes } }
+					FROM.FROM = { set_state_name = "Oceacov" }
+					set_province_name = { id = 9345 name = "Oceacov" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 9345
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 614 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Mykolaïv" }
+					set_province_name = { id = 13888 name = "Mykolaïv" }
+					set_province_name = { id = 15855 name = "Nova Odesa" }
+					
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 13888
+					reset_province_name = 15855
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2062 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Voznesens'k" }
+					set_province_name = { id = 13652 name = "Južnoukraïns'k" }
+					
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 13652
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2064 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Baštanka" }
+					set_province_name = { id = 2926 name = "Baštanka" }
+					set_province_name = { id = 13844 name = "Snihurivka" }
+					set_province_name = { id = 7054 name = "Novyj Buh" }
+					
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 2926
+					reset_province_name = 13844
+					reset_province_name = 7054
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 2060 } }
+				if = {
+					limit = { ROOT = { is_ukrainian = yes } }
+					FROM.FROM = { set_state_name = "Pervomajs'k" }
+					set_province_name = { id = 5108 name = "Pervomajs'k" }
+					
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+					reset_province_name = 5108
+				}
+			}
+		}
+	}
+}
