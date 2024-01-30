@@ -11559,13 +11559,35 @@ focus_tree = {
 		relative_position_id = ITA_expand_the_royal_guard
 		cost = 5
 		available = {
-			ITA_is_ruled_by_a_monarchy = yes
-			44 = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
+			custom_trigger_tooltip = {
+				tooltip = ITA_is_ruled_by_a_monarchy
+				ITA_is_ruled_by_a_monarchy = yes
 			}
-			103 = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
+			custom_trigger_tooltip = {
+				tooltip = ALB_states_controlled_or_subject
+				ALB = {
+					all_core_state = {
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = CRO_coastal_controlled_or_subject
+				CRO = {
+					all_core_state = {
+						if = {
+							limit = { is_coastal = yes }
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+				}	
+			}
+		#	44 = {
+		#		state_is_fully_controlled_by_ROOT_or_subject = yes
+		#	}
+		#	103 = {
+		#		state_is_fully_controlled_by_ROOT_or_subject = yes
+		#	}
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_BALANCE_OF_POWER}

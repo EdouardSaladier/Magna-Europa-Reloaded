@@ -1519,7 +1519,7 @@ on_actions = {
 			}
 			#Vis
 		   if = {
-				limit = { FROM.FROM = { state = 2915 } }
+				limit = { FROM.FROM = { state = 2916 } }
 				if = {
 					limit = { ROOT = { OR = { is_german = yes is_italian = yes } } }
 					FROM.FROM = { set_state_name = "Lissa" }
