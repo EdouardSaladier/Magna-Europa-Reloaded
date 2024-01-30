@@ -2204,7 +2204,7 @@
 		id = ROM_appoint_soviet_friendly_government
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ROM_flexible_foreign_policy
 
