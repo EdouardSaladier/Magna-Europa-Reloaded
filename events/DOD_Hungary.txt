@@ -4090,6 +4090,11 @@ country_event = {
 		name = DOD_hungary.107.a
 		ai_chance = {
 			factor = 50
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes 
+				HUN = { is_ai = yes }
+			}
 		}
 		HUN = { country_event = DOD_hungary.108 }
 		hidden_effect = {
