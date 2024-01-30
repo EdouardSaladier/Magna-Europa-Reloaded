@@ -5314,6 +5314,7 @@ focus_tree = {
 					option = HIDE
 				}
 				has_completed_focus = ENG_revisit_colonial_policy
+				
 			}
 		}
 		offset = {
@@ -5365,6 +5366,9 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
+			NOT = {
+				has_completed_focus = ENG_a_change_in_course
+			}
 		}
 		
 		offset = {
