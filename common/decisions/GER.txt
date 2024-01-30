@@ -1198,7 +1198,8 @@ GER_reichskommissariats = {
 								}
 								region = 56
 								region = 28
-								
+								state = 146
+								state = 157
 								state = 2134
 								state = 2161
 								state = 2135
@@ -1292,6 +1293,8 @@ GER_reichskommissariats = {
 						state = 2135
 						state = 2136
 						state = 2697
+						state = 146
+						state = 157
 					}
 					NOT = {
 						is_owned_by = event_target:BLT_WITH_GER
