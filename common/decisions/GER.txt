@@ -1301,9 +1301,12 @@ GER_reichskommissariats = {
 					}
 					if = {
 						limit = {
-							event_target:BLT_WITH_GER = {
+							random_other_country = {
+								limit = {
+									tag = event_target:BLT_WITH_GER
+								}
 								is_ai = no
-							}	
+							}
 						}
 						NOT = {
 							is_controlled_by = event_target:BLT_WITH_GER
