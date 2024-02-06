@@ -1769,6 +1769,28 @@ focus_tree = {
 			else = {
 				custom_effect_tooltip = ITA_new_industrialization_program_generic_tt
 			}
+			
+			if = {
+				limit = { NOT = { has_completed_focus = ITA_new_ricostruzione_industriale } }
+				if = {
+					limit = {
+						has_dlc = "Arms Against Tyranny"
+					}
+					custom_effect_tooltip = available_mio_tt
+					show_mio_tooltip = ITA_officine_meccaniche_organization
+					mio:ITA_officine_meccaniche_organization = {
+						complete_mio_trait = ITA_mio_trait_new_ricostruzione_iundustriale_motorized
+						complete_mio_trait = ITA_mio_trait_new_ricostruzione_iundustriale_mechanized
+						complete_mio_trait = ITA_mio_trait_new_ricostruzione_iundustriale_train
+						add_mio_size = 3
+					}
+				}
+				else = {
+					custom_effect_tooltip = available_designer
+					show_ideas_tooltip = ITA_officine_meccaniche
+				}
+			}
+			
 			1381 = { upgrade_state_category = yes set_state_name = "Apuania" }
 			set_victory_points = { province = 14595 value = 10 }
 			set_province_name = { id = 14595 name = "Apuania" }
@@ -17425,23 +17447,25 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0.05 }
 			custom_effect_tooltip = ITA_new_ricostruzione_industriale_military_industry_dm_tt
-
 			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
+				limit = { NOT = { has_completed_focus = ITA_new_industrialization_program } }
+				if = {
+					limit = {
+						has_dlc = "Arms Against Tyranny"
+					}
+					custom_effect_tooltip = available_mio_tt
+					show_mio_tooltip = ITA_officine_meccaniche_organization
+					mio:ITA_officine_meccaniche_organization = {
+						complete_mio_trait = ITA_mio_trait_new_ricostruzione_iundustriale_motorized
+						complete_mio_trait = ITA_mio_trait_new_ricostruzione_iundustriale_mechanized
+						complete_mio_trait = ITA_mio_trait_new_ricostruzione_iundustriale_train
+						add_mio_size = 3
+					}
 				}
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = ITA_officine_meccaniche_organization
-				mio:ITA_officine_meccaniche_organization = {
-					complete_mio_trait = ITA_mio_trait_new_ricostruzione_iundustriale_motorized
-					complete_mio_trait = ITA_mio_trait_new_ricostruzione_iundustriale_mechanized
-					complete_mio_trait = ITA_mio_trait_new_ricostruzione_iundustriale_train
-					add_mio_size = 3
+				else = {
+					custom_effect_tooltip = available_designer
+					show_ideas_tooltip = ITA_officine_meccaniche
 				}
-			}
-			else = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = ITA_officine_meccaniche
 			}
 		}
 	}
