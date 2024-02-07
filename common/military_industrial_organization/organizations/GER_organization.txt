@@ -34,6 +34,11 @@ GER_porsche_organization = {
 			}
 			FROM = { has_completed_focus = NOR_invite_german_engineers }
 		}
+		ELSE = {
+			FROM = {
+				controls_state = 1771
+			}
+		}
 	}
 }
 
@@ -90,6 +95,11 @@ GER_henschel_organization = {
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
+		ELSE = {
+			FROM = {
+				controls_state = 1738
+			}
+		}
 	}
 }
 
@@ -115,6 +125,12 @@ GER_man_organization = {
 			}
 			FROM = { NOT = { has_war_with = GER } }
 		}
+		ELSE = {
+			FROM = {
+				controls_state = 1781
+				controls_state = 1778
+			}
+		}
 	}
 }
 
@@ -126,7 +142,22 @@ GER_daimler_benz_organization = {
 	allowed = {	
 		tag = GER 
 	}
-
+	
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = GER } }
+			}
+			FROM = { NOT = { has_war_with = GER } }
+		}
+		ELSE = {
+			FROM = {
+				controls_state = 1771
+			}
+		}
+	}
+	
 	tree_header_text = {
 		text = mio_header_tank_construction
 		x = 3
@@ -209,6 +240,21 @@ GER_germaniawerft_organization = {
 	allowed = {	
 		tag = GER 
 	}
+	
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = GER } }
+			}
+			FROM = { NOT = { has_war_with = GER } }
+		}
+		ELSE = {
+			FROM = {
+				controls_state = 1706
+			}
+		}
+	}
 }
 
 GER_blohm_und_voss_organization = {
@@ -217,6 +263,21 @@ GER_blohm_und_voss_organization = {
 	
 	allowed = {	
 		tag = GER 
+	}
+	
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = GER } }
+			}
+			FROM = { NOT = { has_war_with = GER } }
+		}
+		ELSE = {
+			FROM = {
+				controls_state = 1702
+			}
+		}
 	}
 }
 
@@ -270,6 +331,11 @@ GER_messerschmitt_organization = {
 				FROM = {
 					has_country_flag = has_invited_messerschmitt_mio_flag
 				}
+			}
+		}
+		ELSE = {
+			FROM = {
+				controls_state = 1781
 			}
 		}
 	}
@@ -356,6 +422,11 @@ GER_junkers_organization = {
 				}
 			}
 		}
+		ELSE = {
+			FROM = {
+				controls_state = 353
+			}
+		}
 	}
 
 	add_trait = {
@@ -380,6 +451,21 @@ GER_focke_wulf_organization = {
 	
 	allowed = {	
 		tag = GER 
+	}
+	
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = GER } }
+			}
+			FROM = { NOT = { has_war_with = GER } }
+		}
+		ELSE = {
+			FROM = {
+				controls_state = 1707
+			}
+		}
 	}
 }
 
@@ -440,6 +526,11 @@ GER_heinkel_organization = {
 			}
 			FROM = { has_completed_focus = NOR_invite_german_engineers }
 		}
+		ELSE = {
+			FROM = {
+				controls_state = 1699
+			}
+		}
 	}
 }
 
@@ -449,6 +540,22 @@ GER_dornier_organization = {
 	
 	allowed = {	
 		tag = GER 
+	}
+	
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = GER } }
+			}
+			FROM = { NOT = { has_war_with = GER } }
+		}
+		ELSE = {
+			FROM = {
+				controls_state = 581
+				controls_state = 2549
+			}
+		}
 	}
 }
 
@@ -485,6 +592,11 @@ GER_rheinmetall_organization = {
 			}
 			FROM = { NOT = { has_war_with = GER } }
 		}
+		ELSE = {
+			FROM = {
+				controls_state = 431
+			}
+		}
 	}
 }
 
@@ -514,6 +626,11 @@ GER_mauser_organization = {
 				FROM = {
 					has_country_flag = has_invited_GER_mauser_organization_flag
 				}
+			}
+		}
+		ELSE = {
+			FROM = {
+				controls_state = 581
 			}
 		}
 	}
@@ -574,5 +691,10 @@ GER_opel_organization = {
 			limit = { FROM = { original_tag = ROM } }
 			FROM = { has_country_flag = GER_mot_chosen }
 		}	
+		ELSE = {
+			FROM = {
+				controls_state = 516
+			}
+		}
 	}
 }
