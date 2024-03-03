@@ -270,7 +270,16 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HUN_demand_a_referendum"
-			AUS = { country_event = { id = DOD_hungary.1 } }
+			if = {
+				limit = { AUS = { NOT = { is_guaranteed_by = ITA } } }
+				AUS = { country_event = { id = DOD_hungary.1 } }
+				custom_effect_tooltip = HUN_demand_referendum_tt
+			}
+			else = {
+				
+				ITA = { custom_effect_tooltip = HUN_ITA_guarantee_AUS_tt country_event = { id = DOD_hungary.500 } }
+				custom_effect_tooltip = HUN_demand_referendum_ITA_tt
+			}
 		}
 	}
 
@@ -606,10 +615,20 @@ focus_tree = {
 
 		bypass = {
 			is_subject = no
-			VNT = {
-				all_core_state = {
-					is_owned_by = HUN
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = HUN_controls_veneto_tt
+					VNT = {
+						all_core_state = {
+							is_owned_by = HUN
+						}
+					}
 				}
+				custom_trigger_tooltip = {
+					tooltip = HUN_no_italian_support_tt
+					has_country_flag = HUN_Italy_supported_AH_flag
+				}
+				742 = { OWNER = { is_in_faction_with = HUN } }
 			}
 		}
 
@@ -1455,7 +1474,9 @@ focus_tree = {
 			}
 			
 			#make Horthy or King dude leader. depending on focus picked earlier
-			
+			#LOLLO'S NOTE: 		Eventually I'll remove this BS, since Horthy was never fascist
+			#LOLLO'S NOTE 2:	I'll instead make Hungary more likely to align with Germany or Italy
+			#					depending on other stuff
 			if = {
 				limit = {
 					has_completed_focus = HUN_strengthen_fascists

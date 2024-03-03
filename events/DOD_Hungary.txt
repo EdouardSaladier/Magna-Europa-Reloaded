@@ -1134,7 +1134,15 @@ country_event = {
 
 	option = { #Excellent!
 		name = DOD_hungary.42.a
-		remove_ideas = HUN_treaty_of_triannon
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			remove_ideas = HUN_treaty_of_triannon_aat
+		}
+		else = {
+			remove_ideas = HUN_treaty_of_triannon
+		}
 		news_event = { id = news.298 days = 1 }
 	}
 	
@@ -5061,10 +5069,26 @@ country_event = {
 	option = {# 
 		name = DOD_hungary.142.a
 		if = {
-			limit = { has_idea = HUN_treaty_of_triannon }
-			swap_ideas = {
-				remove_idea = HUN_treaty_of_triannon
-				add_idea = HUN_treaty_of_triannon_3
+			limit = { 
+				OR = {
+					has_idea = HUN_treaty_of_triannon 
+					has_idea = HUN_treaty_of_triannon_aat
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				swap_ideas = {
+					remove_idea = HUN_treaty_of_triannon_aat
+					add_idea = Hun_treaty_of_triannon_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = HUN_treaty_of_triannon
+					add_idea = Hun_treaty_of_triannon_3
+				}
 			}
 		}
 		if = {
@@ -5337,7 +5361,15 @@ country_event = {
 			factor = 80
 		}
 		add_threat = 5
-		remove_ideas = HUN_treaty_of_triannon
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			remove_ideas = HUN_treaty_of_triannon_aat
+		}
+		else = {
+			remove_ideas = HUN_treaty_of_triannon
+		}
 	}
 
 }
@@ -8885,6 +8917,144 @@ country_event = {
 		if = {
 			limit = { has_idea = HUN_treaty_of_triannon_2 }
 			remove_ideas = HUN_treaty_of_triannon_2
+		}
+	}
+}
+
+#Hungary demands Austrian Referendum
+country_event = {
+	id = DOD_hungary.500
+	title = DOD_hungary.500.t
+	desc = DOD_hungary.500.d
+	
+	is_triggered_only = yes
+	
+	option = { #Yea sure
+		name = DOD_hungary.500.a
+		ai_chance = {
+			base = 6
+			modifier = {
+				add = 1
+				has_opinion = { target = HUN value > 59 }
+			}
+			modifier = {
+				add = 1
+				has_opinion = { target = HUN value > 69 }
+			}
+			modifier = {
+				add = 1
+				has_opinion = { target = HUN value > 79 }
+			}
+			modifier = {
+				add = 1
+				has_opinion = { target = HUN value > 89 }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					is_in_faction_with = HUN
+					has_guaranteed = HUN
+					is_historical_focus_on = yes
+				}
+			}
+		}
+		diplomatic_relation = { country = AUS relation = guarantee active = no }
+		effect_tooltip = { AUS = { country_event = { id = DOD_hungary.1 } } }
+		hidden_effect = { HUN = { set_country_flag = HUN_Italy_supported_AH_flag AUS = { country_event = { id = DOD_hungary.1 } } } }
+	}
+	
+	option = { #Nah
+		name = DOD_hungary.500.b
+		ai_chance = {
+			base = 4
+			modifier = {
+				add = -1
+				has_opinion = { target = HUN value > 59 }
+			}
+			modifier = {
+				add = -1
+				has_opinion = { target = HUN value > 69 }
+			}
+			modifier = {
+				add = -1
+				has_opinion = { target = HUN value > 79 }
+			}
+			modifier = {
+				add = -1
+				has_opinion = { target = HUN value > 89 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_in_faction_with = HUN
+					has_guaranteed = HUN
+					is_historical_focus_on = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				always = no
+			}
+		}
+		HUN = { country_event = { id = DOD_hungary.501 } }
+	}
+}
+
+country_event = {
+	id = DOD_hungary.501
+	title = DOD_hungary.501.t
+	desc = DOD_hungary.501.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DOD_hungary.501.a
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		create_wargoal = {
+			type = annex_everything
+			target = AUS
+		}
+	}
+	
+	option = {
+		name = DOD_hungary.501.b
+		
+		ai_chance = {
+			base = 1
+		}
+		
+		uncomplete_national_focus = HUN_demand_a_referendum
+		uncomplete_national_focus = HUN_invite_the_habsburg_prince
+		unlock_national_focus = HUN_elect_a_fascist_king
+		effect_tooltip = { complete_national_focus = HUN_renounce_the_treaty_of_trianon }
+		hidden_effect = {
+			unlock_national_focus = HUN_renounce_the_treaty_of_trianon
+			add_threat = 1
+			if = {
+				limit = { 
+					FRA = { 
+						has_completed_focus = FRA_strengthen_the_little_entente 
+						exists = yes
+						is_subject = no
+					} 
+
+				}
+				FRA = { country_event = { id = DOD_hungary.40 } }
+			}
+			if = {
+				limit = { 
+					OR = {
+						NOT = { FRA = { has_completed_focus = FRA_strengthen_the_little_entente } } 
+						FRA = { exists = no }
+						FRA = { is_subject = yes }
+					}
+				} #Romania gets the event if France not engaged in Balkans
+				ROM = { country_event = { id = DOD_hungary.40 } }	 
+			}
 		}
 	}
 }

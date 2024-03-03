@@ -38,3 +38,8 @@
  CRO_coastal_controlled_or_subject:0 "All §Y[CRO.GetAdjective]§! coastal core states: are controlled by [FROM.GetFlag]§Y[FROM.GetNameDef]§! or any §Y[FROM.GetAdjective] subject§!"
  ITA_is_ruled_by_a_monarchy:0 "§Y$ITA_vittorio_emanuele_iii$§! or §Y$ITA_prince_umberto_king$§! is the current country leader"
  ITA_controls_monfalcone:0 "Controls §YMonfalcone (Gorizia)§! province"
+ HUN_no_italian_support_tt:0 "Has received §Y[ITA.GetAdjective]§! support in the unification referendum"
+ HUN_controls_veneto_tt:0 "Controls all §YVenetian§! states"
+ HUN_demand_referendum_ITA_tt:0 "\nThey will be more likely to accept if they have a §Hhigh opinion§! of us"
+ HUN_demand_referendum_tt:0 "\nThey will be more likely to submit if:\n- They have a §Hhigh opinion§! of us\n- We have completed the focus §H$HUN_reintegrate_the_railroads$§!"
+ HUN_ITA_guarantee_AUS_tt:0 "As guarantor of §H[AUS.GetNonIdeologyAdjective]§! independence:\n"
