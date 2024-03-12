@@ -1539,6 +1539,14 @@ on_actions = {
 					limit = { ROOT = { original_tag = SOV } }
 					FROM.FROM = { set_state_name = "Mamonovo" }
 				}
+				else_if = {
+					limit = { ROOT = { is_polish = yes } }
+					FROM.FROM = { set_state_name = "Świętomiejsce" }
+				}
+				else_if = {
+					limit = { ROOT = { is_lithuanian = yes } }
+					FROM.FROM = { set_state_name = "Šventpilis" }
+				}
 				else = {
 					FROM.FROM = { reset_state_name = yes }
 				}
