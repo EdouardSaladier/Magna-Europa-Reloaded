@@ -1,6 +1,4 @@
 
-#TO-DO LIST: SKAGERRAK, DANISH BELTS
-
 adjacency_rule =
 {
 	name = "BOSPHORUS_STRAIT"
@@ -854,4 +852,42 @@ adjacency_rule =
 	
 	icon = 18520
 	offset = { 0 0 0 }
+}
+adjacency_rule =
+{
+	name = "DOVER_STRAIT"
+
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 12192 8709 73 12325 }
+	
+	icon = 8709
+	offset = { 13 0 -7 }
 }
