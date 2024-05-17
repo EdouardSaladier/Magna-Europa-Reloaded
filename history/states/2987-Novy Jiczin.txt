@@ -1,7 +1,6 @@
-
 state={
-	id=1428
-	name="STATE_1428"
+	id=2987
+	name="STATE_2987"
 
 	history={
 		owner = CZE
@@ -9,19 +8,16 @@ state={
 		add_core_of = MRV
 		add_core_of = SDT
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 
 		}
-		add_core_of = SIL
-		add_core_of = UPS
 
 	}
-
 	provinces={
-		596 2167 12600 12624 20067 
+		8770 12904 
 	}
-	manpower=131608
+	manpower=65500
+	state_category=pastoral
 	buildings_max_level_factor=1.000
-	state_category=rural
 	local_supplies=0.000
 }

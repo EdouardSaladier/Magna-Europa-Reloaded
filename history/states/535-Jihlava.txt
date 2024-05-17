@@ -2,25 +2,29 @@
 state={
 	id=535
 	name="STATE_535"
-	provinces={
-		1498 1506 3687 4284 6408 8722 9290 12964 13031 13090 20065 
-	}
+
 	history={
 		owner = CZE
 		add_core_of = CZE
 		add_core_of = MRV
 		buildings = {
 			infrastructure = 4
+
 		}
-        victory_points = {
-            12964 5 #Jihlava
-        }
-        victory_points = {
-            13031 2 #Třebíč
-        }
-    }
+		victory_points = {
+			12964 5 
+		}
+		victory_points = {
+			13031 2 
+		}
+
+	}
+
+	provinces={
+		1498 1506 3687 4284 6408 8722 9290 12964 13031 13090 20065 
+	}
 	manpower=418900
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }
