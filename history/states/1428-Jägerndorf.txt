@@ -2,6 +2,7 @@
 state={
 	id=1428
 	name="STATE_1428"
+
 	history={
 		owner = CZE
 		add_core_of = CZE
@@ -9,12 +10,15 @@ state={
 		add_core_of = SDT
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = SIL
 		add_core_of = UPS
+
 	}
+
 	provinces={
-		2167 12600 12624 
+		596 2167 12600 12624 20067 
 	}
 	manpower=131608
 	buildings_max_level_factor=1.000

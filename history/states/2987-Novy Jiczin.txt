@@ -1,0 +1,23 @@
+state={
+	id=2987
+	name="STATE_2987"
+
+	history={
+		owner = CZE
+		add_core_of = CZE
+		add_core_of = MRV
+		add_core_of = SDT
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+	provinces={
+		8770 12904 
+	}
+	manpower=65500
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
