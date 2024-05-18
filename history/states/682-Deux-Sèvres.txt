@@ -2,25 +2,25 @@
 state={
 	id=682
 	name="STATE_682"
-	provinces={
-		6377 8757 8787 9066 13890 13938 13979 14019 14110 19844 19858 
-	}
+
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = POI
 		buildings = {
 			infrastructure = 4
+
 		}
-        victory_points = {
-            19858 5 #Niort
-        }
-        victory_points = {
-            13890 2 #Bressuire
-        }
-    }
-	manpower=308800
+		victory_points = {
+			19858 5 
+		}
+	}
+
+	provinces={
+		8757 9066 13979 14110 19844 19858 
+	}
+	manpower=194544
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = city
 }

@@ -1,0 +1,27 @@
+
+state={
+	id=2988
+	name="STATE_2988"
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = PRV
+		add_core_of = OCC
+		victory_points = {
+			14636 2 
+		}
+	}
+
+	provinces={
+		14576 14636 
+	}
+	manpower=24550
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

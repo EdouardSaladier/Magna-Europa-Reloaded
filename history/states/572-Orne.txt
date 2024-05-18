@@ -2,22 +2,26 @@
 state={
 	id=572
 	name="STATE_572"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
-        victory_points = {
-            13294 2 #Alençon
-        }
+		victory_points = {
+			13294 2 
+		}
 		buildings = {
 			infrastructure = 4
+
 		}
 		add_core_of = NMD
-    }
-	provinces={
-		5588 6319 7890 8009 8201 9001 13199 13294 13311 13336 20501 
+
 	}
-	manpower=269300
+
+	provinces={
+		8009 9001 13294 20501 
+	}
+	manpower=152693
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_town
 	local_supplies=0.000
 }

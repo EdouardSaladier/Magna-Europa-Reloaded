@@ -2,20 +2,24 @@
 state={
 	id=595
 	name="STATE_595"
-	provinces={
-		2226 3100 5635 7749 13422 13453 13470 13533 20505 
-	}
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = MNE
 		buildings = {
 			infrastructure = 4
+
 		}
-        victory_points = {
-            2226 5 #Laval
-        }
-    }
+		victory_points = {
+			2226 5 
+		}
+
+	}
+
+	provinces={
+		2226 3100 5635 13422 13453 20505 
+	}
 	manpower=251300
 	buildings_max_level_factor=1.000
 	state_category=city

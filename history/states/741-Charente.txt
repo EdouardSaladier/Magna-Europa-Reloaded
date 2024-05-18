@@ -2,23 +2,27 @@
 state={
 	id=741
 	name="STATE_741"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = POI
 		add_core_of = AGM
-        victory_points = {
-            3088 2 #Angoulême
-        }
+		victory_points = {
+			3088 2 
+		}
 		buildings = {
 			infrastructure = 4
+
 		}
-    }
+
+	}
+
 	provinces={
-		3088 5198 8439 9649 14183 14203 14268 
+		3088 5765 8439 9649 13748 14183 14203 14268 
 	}
 	manpower=247440
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = large_town
 }

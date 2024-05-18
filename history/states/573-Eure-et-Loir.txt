@@ -1,19 +1,26 @@
+
 state={
 	id=573
 	name="STATE_573"
+
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = ORL
-		victory_points = { 5238 2 }
+		victory_points = {
+			5238 2 
+		}
 		buildings = {
 			infrastructure = 4
 		}
-    }
-	provinces={
-		145 5238 6557 7362 8509 13211 13268 13295 13392 13393 
+
 	}
-	manpower=252700
+
+	provinces={
+		5238 6557 7362 8509 13211 13295 13392 13393 
+	}
+	manpower=176890
 	buildings_max_level_factor=1.000
-	state_category = city
+	state_category=large_town
+	local_supplies=0.000
 }
