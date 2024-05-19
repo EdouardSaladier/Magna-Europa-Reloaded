@@ -1,7 +1,8 @@
+
 state={
 	id=3013
 	name="STATE_3013"
-	
+
 	history={
 		owner = FRA
 		add_core_of = FRA
@@ -9,13 +10,14 @@ state={
 		add_core_of = GAS
 		buildings = {
 			infrastructure = 3
+
 		}
+
 	}
-	
+
 	provinces={
-		14634 
+		7342 14634 
 	}
-	
 	manpower=24690
 	buildings_max_level_factor=1.000
 	state_category=pastoral

@@ -2,9 +2,7 @@
 state={
 	id=751
 	name="STATE_751"
-	provinces={
-		1208 4472 5522 6198 9362 14220 14261 14291 14342 
-	}
+
 	history={
 		owner = FRA
 		add_core_of = FRA
@@ -12,13 +10,19 @@ state={
 		add_core_of = OCC
 		buildings = {
 			infrastructure = 3
+
 		}
-        victory_points = {
-            14342 5 #Brive-la-Gaillarde
-        }
-    }
+		victory_points = {
+			14342 5 
+		}
+
+	}
+
+	provinces={
+		1208 4472 5522 6198 9362 13166 14220 14261 14291 14342 
+	}
 	manpower=262700
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

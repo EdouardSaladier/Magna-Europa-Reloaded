@@ -1,24 +1,29 @@
+
 state={
 	id=2613
 	name="STATE_2613"
-	provinces={
-		6841 13795 
-	}
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = BGN
 		add_core_of = ARP
 		add_core_of = FRC
-        victory_points = {
-            6841 2 #Audincourt
-        }
+		victory_points = {
+			6841 2 
+		}
 		buildings = {
 			infrastructure = 4
+
 		}
+
+	}
+
+	provinces={
+		6841 
 	}
 	manpower=51816
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

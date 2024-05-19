@@ -8,23 +8,18 @@ state={
 		add_core_of = FRA
 		buildings = {
 			infrastructure = 3
-
 		}
 		add_core_of = ALS
 		victory_points = {
 			19848 5 
 		}
-		victory_points = {
-			19849 10 
-		}
-
 	}
 
 	provinces={
-		2276 7841 13484 13538 17071 17872 19848 19849 
+		2276 7841 13484 13538 17071 17872 19848 
 	}
-	manpower=507600
+	manpower=304560
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=city
 	local_supplies=0.000
 }

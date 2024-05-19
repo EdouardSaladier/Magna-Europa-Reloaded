@@ -2,21 +2,21 @@
 state={
 	id=789
 	name="STATE_789"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
-        victory_points = {
-            5521 2 #Étampes
-        }
+		
 		buildings = {
 			infrastructure = 4
 		}
-    }
-	provinces={
-		5521 6187 9387 13245 13285 
 	}
-	manpower=287400
+
+	provinces={
+		9387 13245 13285 
+	}
+	manpower=172440
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = city
 }
