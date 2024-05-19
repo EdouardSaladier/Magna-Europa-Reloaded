@@ -1,6 +1,8 @@
+
 state={
 	id=717
 	name="STATE_717"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
@@ -9,15 +11,19 @@ state={
 		add_core_of = MCH
 		buildings = {
 			infrastructure = 3
+
 		}
 		victory_points = {
-			14111 1 #Guéret
+			14111 1 
 		}
-    }
-	provinces={
-		4949 6384 7226 9011 9416 14070 14111 14159 14180 
+
 	}
-	manpower=201800
+
+	provinces={
+		4949 6384 7226 9416 14070 14111 14159 
+	}
+	manpower=181620
 	buildings_max_level_factor=1.000
-	state_category = large_town
+	state_category=large_town
+	local_supplies=0.000
 }

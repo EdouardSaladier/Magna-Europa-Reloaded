@@ -1,18 +1,24 @@
+
 state={
 	id=672
 	name="STATE_672"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = BRY
 		buildings = {
 			infrastructure = 3
+
 		}
-    }
+
+	}
+
 	provinces={
-		1340 6366 6843 13869 13883 13935 
+		1340 6366 6843 13883 13935 
 	}
 	manpower=115480
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category=rural
+	local_supplies=0.000
 }

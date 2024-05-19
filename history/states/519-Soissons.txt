@@ -2,22 +2,26 @@
 state={
 	id=519
 	name="STATE_519"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = PIC
-        victory_points = {
-            13003 2 #Soissons
-        }
+		victory_points = {
+			13003 2 
+		}
 		buildings = {
 			infrastructure = 4
+
 		}
-    }
-	provinces={
-		1797 2482 13003 13068 
+
 	}
-	manpower=169610
+
+	provinces={
+		1797 13003 
+	}
+	manpower=118727
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = town
 }

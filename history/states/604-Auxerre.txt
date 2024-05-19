@@ -2,22 +2,26 @@
 state={
 	id=604
 	name="STATE_604"
+
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = BGN
-        victory_points = {
-            9560 2 #Auxerre
-        }
+		victory_points = {
+			9560 2 
+		}
 		buildings = {
 			infrastructure = 4
+
 		}
-    }
-	provinces={
-		1126 1341 2190 9560 13629 19835 
+
 	}
-	manpower=149435
+
+	provinces={
+		2190 9560 
+	}
+	manpower=73222
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }

@@ -1,0 +1,22 @@
+state={
+	id=3019
+	name="STATE_3019"
+	
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = TNE
+		buildings = {
+			infrastructure = 3
+		}
+    }
+	
+	provinces={
+		13891 
+	}
+	
+	manpower=22104
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

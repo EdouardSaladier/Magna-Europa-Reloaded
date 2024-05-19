@@ -10,20 +10,22 @@ state={
 		add_core_of = HNT
 		buildings = {
 			infrastructure = 4
+
 		}
 		victory_points = {
-			8296 2 #Valenciennes
+			8296 2 
 		}
 		victory_points = {
-			6087 2 #Maubeuge
+			6087 2 
 		}
+
 	}
 
 	provinces={
-		5138 6087 8296 9654 12659 
+		5138 6087 6200 8296 9654 12659 
 	}
 	manpower=580068
-	state_category=large_city
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
 }

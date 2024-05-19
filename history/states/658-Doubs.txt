@@ -2,24 +2,28 @@
 state={
 	id=658
 	name="STATE_658"
+
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = BGN
 		add_core_of = ARP
 		add_core_of = FRC
 		buildings = {
 			infrastructure = 4
+
 		}
 		victory_points = {
-			19841 10 #Besançon
+			19841 10 
 		}
 		victory_points = {
-			5794 2 #Pontarlier
+			5794 2 
 		}
+
 	}
+
 	provinces={
-		1235 5794 13702 13737 13749 13804 13925 19841 
+		1235 5794 13702 13749 13804 13925 19841 
 	}
 	manpower=252984
 	buildings_max_level_factor=1.000
