@@ -2,18 +2,22 @@
 state={
 	id=37
 	name="STATE_37"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		buildings = {
 			infrastructure = 4
+
 		}
-    }
-	provinces={
-		3954 8310 13417 
+
 	}
-	manpower=409300
+
+	provinces={
+		8310 13417 
+	}
+	manpower=286510
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

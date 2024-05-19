@@ -2,33 +2,43 @@
 state={
 	id=517
 	name="STATE_517"
-	provinces={
-		2730 2928 3654 3939 5088 6317 6803 8716 9167 9378 12759 12770 12821 12856 12898 12899 12957 
-	}
+
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 4
-			6317 = { naval_base = 1 }
-			12898 = { naval_base = 5 }
+			12770 = {
+				naval_base = 1
+
+			}
+			12898 = {
+				naval_base = 5
+
+			}
+
 		}
 		add_core_of = NMD
-	    victory_points = {
-            12898 10 #Le Havre
+		victory_points = {
+			12898 10 
 		}
-        victory_points = {
-            12957 15 #Rouen
-        }
-        victory_points = {
-            2730 2 #Fécamp
-        }
-        victory_points = {
-            6317 2 #Dieppe
-        }
-    }
-	manpower=915600
+		victory_points = {
+			12957 15 
+		}
+		victory_points = {
+			2730 2 
+		}
+		victory_points = {
+			12770 2 
+		}
+
+	}
+
+	provinces={
+		2730 2928 3654 3939 5088 6803 8716 9167 9378 12770 12898 12899 12957 
+	}
+	manpower=824040
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
-	state_category = large_city
 }

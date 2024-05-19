@@ -1,0 +1,21 @@
+state={
+	id=3068
+	name="STATE_3068"
+	
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = MNE
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	
+	provinces={
+		8842 
+	}
+	manpower=14965
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

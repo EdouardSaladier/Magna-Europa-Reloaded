@@ -9,16 +9,18 @@ state={
 		add_core_of = MNE
 		buildings = {
 			infrastructure = 4
+
 		}
 		victory_points = {
 			6919 10 
 		}
+
 	}
 
 	provinces={
-		4362 4502 6919 7016 8842 13454 13518 13534 13578 13596 
+		4362 4502 6919 7016 13454 13518 13534 13578 13596 
 	}
-	manpower=349650
+	manpower=334650
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

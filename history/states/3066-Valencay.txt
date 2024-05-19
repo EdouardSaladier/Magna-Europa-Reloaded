@@ -1,0 +1,22 @@
+state={
+	id=3066
+	name="STATE_3066"
+	
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = BRY
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	provinces={
+		2470 
+	}
+	
+	manpower=19893
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

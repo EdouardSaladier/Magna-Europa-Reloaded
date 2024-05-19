@@ -2,19 +2,23 @@
 state={
 	id=678
 	name="STATE_678"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = BGN
-        victory_points = {
-            2934 2 #Chalon-sur-Saône
-        }
+		victory_points = {
+			2934 2 
+		}
 		buildings = {
 			infrastructure = 4
+
 		}
-    }
+
+	}
+
 	provinces={
-		1899 2934 3303 6863 7544 13875 
+		1899 2934 3303 6863 13875 
 	}
 	manpower=289135
 	buildings_max_level_factor=1.000

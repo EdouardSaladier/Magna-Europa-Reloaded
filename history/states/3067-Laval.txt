@@ -1,0 +1,26 @@
+state={
+	id=3067
+	name="STATE_3067"
+	
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = MNE
+		buildings = {
+			infrastructure = 4
+
+		}
+		victory_points = {
+			2226 5 
+		}
+
+	}
+	
+	provinces={
+		2226 13422 13453 20505 
+	}
+	manpower=150780
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}
