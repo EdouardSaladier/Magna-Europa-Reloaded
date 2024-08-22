@@ -1,28 +1,34 @@
+
 state={
 	id=637
 	name="STATE_637"
-	provinces={
-		673 2526 5178 6195 6727 8134 8561 13617 13670 13692 13700 13722 13748 13762 13834 
-	}
+
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		add_core_of = ANJ
 		buildings = {
 			infrastructure = 4
 			air_base = 2
 		}
-        victory_points = {
-            13722 10 #Angers
-        }
 		victory_points = {
-            13834 5 #Cholet
-        }
-        victory_points = {
-            5178 2 #Saumur
-        }
-    }
-	manpower=477700
+			13722 10 
+		}
+		victory_points = {
+			13834 5 
+		}
+		victory_points = {
+			5178 2 
+		}
+
+	}
+
+	provinces={
+		673 2526 5178 6195 6727 8134 8561 13617 13670 13692 13700 13722 13762 13834 
+	}
+	
+	manpower=334390
 	buildings_max_level_factor=1.000
-	state_category = city
+	state_category=city
+	local_supplies=0.000
 }

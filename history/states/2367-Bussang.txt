@@ -2,19 +2,23 @@
 state={
 	id=2367
 	name="STATE_2367"
+
 	history={
 		owner = FRA
-		add_core_of =FRA
-		add_core_of =LOR
+		add_core_of = FRA
+		add_core_of = LOR
 		buildings = {
 			infrastructure = 2
+
 		}
-    }
+
+	}
+
 	provinces={
 		13423 13483 
 	}
 	manpower=28369
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

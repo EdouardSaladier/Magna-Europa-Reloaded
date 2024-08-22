@@ -2,19 +2,23 @@
 state={
 	id=2365
 	name="STATE_2365"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = PIC
 		buildings = {
 			infrastructure = 4
+
 		}
-    }
+
+	}
+
 	provinces={
-		4143 7234 8378 12766 12823 
+		4143 7234 8378 12823 
 	}
 	manpower=122850
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

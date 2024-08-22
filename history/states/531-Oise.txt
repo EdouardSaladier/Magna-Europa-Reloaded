@@ -1,3 +1,4 @@
+
 state={
 	id=531
 	name="STATE_531"
@@ -5,24 +6,25 @@ state={
 		steel=20.000
 		aluminium=4.000
 	}
-	provinces={
-		2498 3935 6429 6865 7646 7739 8352 8744 12900 12937 12952 12976 13002 13027 
-	}
 	history={
 		owner = FRA
 		add_core_of = FRA
-		add_core_of = PIC
 		buildings = {
 			infrastructure = 4
+
 		}
-        victory_points = {
-            8352 5 #Beauvais
-        }
-        victory_points = {
-            12952 2 #Compiègne
-        }
-    }
-	manpower=402600
+		victory_points = {
+			8352 5 
+		}
+
+	}
+
+	provinces={
+		2498 7739 8352 12900 13002 13027 
+	}
+	
+	manpower=225456
 	buildings_max_level_factor=1.000
-	state_category = city
+	state_category=large_town
+	local_supplies=0.000
 }

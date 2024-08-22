@@ -2,21 +2,24 @@
 state={
 	id=442
 	name="STATE_442"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
-		add_core_of = PIC
-        victory_points = {
-            3866 2 #Laon
-        }
+		victory_points = {
+			3866 2 
+		}
 		buildings = {
 			infrastructure = 4
+
 		}
+
 	}
+
 	provinces={
-		3866 12870 12894 
+		3866 12894 
 	}
-	manpower=81196
+	manpower=56837
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

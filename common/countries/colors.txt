@@ -688,8 +688,8 @@ ARP = {
 	color_ui = rgb { 190 93 154 }
 }
 PRV = {
-	color = rgb { 145 37 20 }
-	color_ui = rgb { 145 37 20 }
+	color = rgb { 93 160 163 }
+	color_ui = rgb { 93 160 163 }
 }
 NMD = {
 	color = rgb { 234 0 18 }
@@ -708,36 +708,36 @@ ALS = {
 	color_ui = rgb  { 246 223 35 }
 }
 MNE = {
-	color = rgb  { 64 224 208 }
-	color_ui = rgb  { 64 224 208 }
+	color = rgb  { 215 92 96 }
+	color_ui = rgb  { 215 92 96 }
 }
 TNE = {
-	color = rgb  { 0 149 182 }
-	color_ui = rgb  { 0 149 182 }
+	color = rgb  { 0 148 182 }
+	color_ui = rgb  { 0 148 182 }
 }
 BRY = {
-	color = rgb  { 0 134 153 }
-	color_ui = rgb  { 0 134 153 }
+	color = rgb  { 135 100 197 }
+	color_ui = rgb  { 135 100 197 }
 }
 BBN = {
 	color = rgb  { 8 37 103 }
 	color_ui = rgb  { 8 37 103 }
 }
 FRC = {
-	color = rgb  { 40 85 145 }
-	color_ui = rgb  { 40 85 145 }
+	color = rgb  { 171 61 100 }
+	color_ui = rgb  { 171 61 100 }
 }
 LDC = {
-	color = rgb  { 90 80 190 }
-	color_ui = rgb  { 90 80 190 }
+	color = rgb  { 163 170 148 }
+	color_ui = rgb  { 163 170 148 }
 }
 GYE = {
-	color = rgb  { 43 24 226 }
-	color_ui = rgb  { 43 24 226 }
+	color = rgb  { 109 7 26 }
+	color_ui = rgb  { 109 7 26 }
 }
 GAS = {
-	color = rgb  { 81 30 243 }
-	color_ui = rgb  { 81 30 243 }
+	color = rgb  { 106 74 178 }
+	color_ui = rgb  { 106 74 178 }
 }
 BEA = {
 	color = rgb  { 155 50 150 }
@@ -748,24 +748,84 @@ FIX = {
 	color_ui = rgb  { 70 60 170 }
 }
 MCH = {
-	color = rgb  { 20 5 150 }
-	color_ui = rgb  { 20 5 150 }
+	color = rgb  { 72 154 166 }
+	color_ui = rgb  { 72 154 166 }
 }
 AGM = {
-	color = rgb  { 43 24 226 }
-	color_ui = rgb  { 43 24 226 }
+	color = rgb  { 212 128 80 }
+	color_ui = rgb  { 212 128 80 }
 }
 SNT = {
-	color = rgb  { 60 40 250 }
-	color_ui = rgb  { 60 40 250 }
+	color = rgb  { 165 95 185 }
+	color_ui = rgb  { 165 95 185 }
 }
 ANS = {
-	color = rgb  { 35 20 200 }
-	color_ui = rgb  { 35 20 200 }
+	color = rgb  { 135 43 155 }
+	color_ui = rgb  { 135 43 155 }
 }
 NVN = {
-	color = rgb  { 30 75 165 }
-	color_ui = rgb  { 30 75 165 }
+	color = rgb  { 195 104 228 }
+	color_ui = rgb  { 195 104 228 }
+}
+SMS = {
+	color = rgb  { 112 61 229 }
+	color_ui = rgb  { 112 61 229 }
+}
+CTV = {
+	color = rgb  { 211 220 178 }
+	color_ui = rgb  { 211 220 178 }
+}
+PCH = {
+	color = rgb  { 131 137 113 }
+	color_ui = rgb  { 131 137 113 }
+}
+ORA = {
+	color = rgb  { 208 104 44 }
+	color_ui = rgb  { 208 104 44 }
+}
+LMS = {
+	color = rgb  { 35 10 255 }
+	color_ui = rgb  { 35 10 255 }
+}
+AVG = {
+	color = rgb  { 218 155 75 }
+	color_ui = rgb  { 218 155 75 }
+}
+POI = {
+	color = rgb  { 87 121 207 }
+	color_ui = rgb  { 87 121 207 }
+}
+ANJ = {
+	color = rgb  { 19 153 109 }
+	color_ui = rgb  { 19 153 109 }
+}
+PIC = {
+	color = rgb  { 190 163 117 }
+	color_ui = rgb  { 190 163 117 }
+}
+ATI = {
+	color = rgb  { 88 163 123 }
+	color_ui = rgb  { 88 163 123 }
+}
+CMP = {
+	color = rgb  { 179 108 122 }
+	color_ui = rgb  { 179 108 122 }
+}
+BGN = {
+	color = rgb  { 148 30 70 }
+	color_ui = rgb  { 148 30 70 }
+}
+LOR = {
+	color = rgb  { 115 142 205 }
+	color_ui = rgb  { 115 142 205 }
+}
+DAU = {
+	color = rgb  { 93 194 122 }
+	color_ui = rgb  { 93 194 122 }
+}
+LYO = {
+	color = rgb  { 73 121 85 }
+	color_ui = rgb  { 73 121 85 }
 }
 
 ###Yugoslavian Releasables

@@ -5,8 +5,8 @@ state={
 
 	history={
 		owner = FRA
-		add_core_of =FRA
-		add_core_of =LOR
+		add_core_of = FRA
+		add_core_of = LOR
 		buildings = {
 			infrastructure = 4
 			air_base = 5
@@ -21,7 +21,7 @@ state={
 	provinces={
 		9356 17274 19846 19847 
 	}
-	manpower=345600
+	manpower=315600
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

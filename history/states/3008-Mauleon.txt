@@ -1,0 +1,23 @@
+state={
+	id=3008
+	name="STATE_3008"
+	
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = NAV
+		add_core_of = GAS
+	}
+	
+	provinces={
+		7899 
+	}
+	
+	manpower=24804
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

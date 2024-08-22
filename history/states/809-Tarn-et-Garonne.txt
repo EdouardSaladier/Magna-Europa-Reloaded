@@ -2,9 +2,7 @@
 state={
 	id=809
 	name="STATE_809"
-	provinces={
-		2015 2606 4016 14634 
-	}
+
 	history={
 		owner = FRA
 		add_core_of = FRA
@@ -12,13 +10,19 @@ state={
 		add_core_of = GYE
 		buildings = {
 			infrastructure = 3
+
 		}
-        victory_points = {
-            4016 5 #Montauban
-        }
-    }
-	manpower=164600
+		victory_points = {
+			4016 5 
+		}
+
+	}
+
+	provinces={
+		2015 2606 4016 
+	}
+	manpower=123450
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = town
 }

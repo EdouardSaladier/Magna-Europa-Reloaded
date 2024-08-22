@@ -1,0 +1,21 @@
+state={
+	id=3002
+	name="STATE_3002"
+	
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = ANJ
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	
+	provinces={
+		1109 2504 
+	}
+	manpower=39884
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

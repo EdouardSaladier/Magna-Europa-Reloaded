@@ -1,0 +1,22 @@
+state={
+	id=3016
+	name="STATE_3016"
+	
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = OCC
+		add_core_of = LDC
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	
+	provinces={
+		1217 
+	}
+	manpower=11306
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

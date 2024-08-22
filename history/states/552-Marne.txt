@@ -2,9 +2,7 @@
 state={
 	id=552
 	name="STATE_552"
-	provinces={
-		1882 3520 3818 7085 8206 8956 9368 13053 13152 13153 13169 13185 13217 13229 13257 19850 
-	}
+
 	history={
 		owner = FRA
 		add_core_of = FRA
@@ -14,15 +12,20 @@ state={
 			industrial_complex = 1
 			air_base = 10
 		}
-        victory_points = {
-            19850 10 #Reims
-        }
 		victory_points = {
-            13169 5 #Châlons-en-Champagne
-        }
-    }
-	manpower=410200
+			19850 10 
+		}
+		victory_points = {
+			13169 5 
+		}
+
+	}
+
+	provinces={
+		3520 3818 7085 8206 8956 9368 13053 13152 13153 13169 13217 13229 13257 19850 
+	}
+	manpower=370200
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

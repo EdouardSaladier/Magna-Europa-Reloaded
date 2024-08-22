@@ -2,9 +2,7 @@
 state={
 	id=807
 	name="STATE_807"
-	provinces={
-		1248 2258 3697 4755 9123 14554 14610 14617 14635 14642 
-	}
+
 	history={
 		owner = FRA
 		add_core_of = FRA
@@ -14,15 +12,20 @@ state={
 			infrastructure = 3
 			industrial_complex = 2
 		}
-        victory_points = {
-            14642 10 #Nimes
-        }
-        victory_points = {
-            9123 2 #Alès
-        }
-    }
+		victory_points = {
+			14642 10 
+		}
+		victory_points = {
+			9123 2 
+		}
+
+	}
+
+	provinces={
+		1248 2258 3697 4755 9123 14554 14617 14635 14642 
+	}
 	manpower=395300
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

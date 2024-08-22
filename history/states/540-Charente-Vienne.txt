@@ -2,6 +2,7 @@
 state={
 	id=540
 	name="STATE_540"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
@@ -10,12 +11,15 @@ state={
 		add_core_of = AGM
 		buildings = {
 			infrastructure = 3
+
 		}
-    }
-	provinces={
-		5765 14192 19821 
+
 	}
-	manpower=61860
+
+	provinces={
+		4572 14192 19821 
+	}
+	manpower=43302
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

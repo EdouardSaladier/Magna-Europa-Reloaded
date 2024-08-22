@@ -2,9 +2,7 @@
 state={
 	id=638
 	name="STATE_638"
-	provinces={
-		6613 13630 13679 
-	}
+
 	history={
 		owner = FRA
 		add_core_of = FRA
@@ -12,11 +10,17 @@ state={
 		add_core_of = BGN
 		buildings = {
 			infrastructure = 4
+
 		}
-        victory_points = {
-            6613 5 #Belfort
-        }
-    }
+		victory_points = {
+			6613 5 
+		}
+
+	}
+
+	provinces={
+		6613 13679 
+	}
 	manpower=99500
 	buildings_max_level_factor=1.000
 	state_category=rural

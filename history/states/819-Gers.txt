@@ -1,22 +1,28 @@
+
 state={
 	id=819
 	name="STATE_819"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = OCC
 		add_core_of = GAS
-        victory_points = {
-            14658 2 #Auch
-        }
+		victory_points = {
+			14447 2 
+		}
 		buildings = {
 			infrastructure = 3
+
 		}
-    }
-	provinces={
-		824 2216 4124 6941 14639 14646 14658 
+
 	}
-	manpower=192500
+
+	provinces={
+		4124 6941 14447 14646 
+	}
+	manpower=134750
 	buildings_max_level_factor=1.000
-	state_category = town
+	state_category=town
+	local_supplies=0.000
 }

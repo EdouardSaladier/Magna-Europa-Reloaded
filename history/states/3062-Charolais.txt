@@ -1,0 +1,22 @@
+state={
+	id=3062
+	name="STATE_3062"
+	
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = BGN
+		add_core_of = NVN
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	
+	provinces={
+		6491 
+	}
+	manpower=24970
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

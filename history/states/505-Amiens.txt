@@ -2,23 +2,26 @@
 state={
 	id=505
 	name="STATE_505"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = PIC
 		victory_points = {
-			19885 10 #Amiens
+			19885 10 
 		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 		}
-    }
+
+	}
+
 	provinces={
-		6562 12716 12771 12797 12835 19885 
+		6562 12716 12771 19885 
 	}
 	manpower=257125
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

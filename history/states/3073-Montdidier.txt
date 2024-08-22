@@ -1,0 +1,22 @@
+state={
+	id=3073
+	name="STATE_3073"
+	
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = PIC
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	
+	provinces={
+		12797 12835 
+	}
+	
+	manpower=25712
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

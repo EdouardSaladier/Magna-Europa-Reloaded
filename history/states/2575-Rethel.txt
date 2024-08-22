@@ -2,20 +2,23 @@
 state={
 	id=2575
 	name="STATE_2575"
-	provinces={
-		497 3177 
-	}
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = CMP
 		buildings = {
 			infrastructure = 4
+
 		}
 
 	}
+
+	provinces={
+		497 3177 7544 
+	}
 	manpower=8213
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

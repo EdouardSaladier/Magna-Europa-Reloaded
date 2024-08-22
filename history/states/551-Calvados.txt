@@ -1,3 +1,4 @@
+
 state={
 	id=551
 	name="STATE_551"
@@ -5,25 +6,33 @@ state={
 		steel=21.000
 	}
 	provinces={
-		70 2067 4942 5771 7950 8605 8815 12983 12991 13052 13087 13123 13158 13159 
+		70 2067 4942 7950 8605 8815 12983 12991 13052 13087 13123 13158 13159 
 	}
+	
+	resources={
+		steel=21.000
+	}
+
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 4
 			2067 = { naval_base = 2 }
 			industrial_complex = 1
 		}
 		add_core_of = NMD
-        victory_points = {
-            2067 10 #Caen
-        }
-        victory_points = {
-            13052 2 #Lisieux
-        }
-    }
-	manpower=404900
+		victory_points = {
+			2067 10 
+		}
+		victory_points = {
+			13052 2 
+		}
+
+	}
+
+	manpower=364410
 	buildings_max_level_factor=1.000
-	state_category = city
+	state_category=city
+	local_supplies=0.000
 }

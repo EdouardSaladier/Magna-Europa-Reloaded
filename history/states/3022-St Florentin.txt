@@ -1,0 +1,24 @@
+
+state={
+	id=3022
+	name="STATE_3022"
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = CMP
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		3799 6234 13418 
+	}
+	manpower=36679
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

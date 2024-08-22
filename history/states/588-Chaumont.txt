@@ -2,25 +2,29 @@
 state={
 	id=588
 	name="STATE_588"
+
 	history={
 		owner = FRA
 		add_core_of = FRA
 		add_core_of = CMP
-        victory_points = {
-            13307 2 #Saint-Dizier
-        }
-        victory_points = {
-            2444 2 #Chaumont
-        }
+		victory_points = {
+			13307 2 
+		}
+		victory_points = {
+			2444 2 
+		}
 		buildings = {
 			infrastructure = 4
+
 		}
-    }
+
+	}
+
 	provinces={
-		2444 3235 6624 13307 
+		2444 3235 13307 
 	}
 	manpower=103675
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }

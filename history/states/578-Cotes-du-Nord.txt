@@ -1,25 +1,34 @@
+
 state={
 	id=578
 	name="STATE_578"
-	provinces={
-		913 2022 3188 6013 8588 9003 13256 13330 13349 13350 13434 
-	}
+
 	history={
 		owner = FRA
-		add_core_of =FRA
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 4
-			13330 = { naval_base = 1 }
+			13330 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = BRI
-        victory_points = {
-            13330 5 #Saint-Brieuc
-        }
-        victory_points = {
-            8588 2 #Lannion
-        }
-    }
+		victory_points = {
+			13330 5 
+		}
+		victory_points = {
+			8588 2 
+		}
+
+	}
+
+	provinces={
+		913 2022 3188 6013 8588 9003 13256 13330 13349 13350 
+	}
 	manpower=531800
 	buildings_max_level_factor=1.000
-	state_category = large_city
+	state_category=large_city
+	local_supplies=0.000
 }

@@ -2,6 +2,7 @@
 state={
 	id=500
 	name="STATE_500"
+
 	history={
 		owner = BEL
 		add_core_of = BEL
@@ -15,11 +16,13 @@ state={
 		}
 		add_core_of = WLN
 		victory_points = {
-            7962 1 #Marche-en-Famenne
-        }
-    }
+			7962 1 
+		}
+
+	}
+
 	provinces={
-		2150 2929 7944 7962 12671 12726 12736 12806 12844 12880 12909 
+		2150 2929 7944 7962 12726 12736 12844 12880 
 	}
 	manpower=222800
 	buildings_max_level_factor=1.000

@@ -1,0 +1,22 @@
+state={
+	id=3047
+	name="STATE_3047"
+	
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ALS
+	}
+	
+	provinces={
+		8998 
+	}
+	
+	manpower=142360
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

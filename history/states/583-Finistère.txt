@@ -2,9 +2,7 @@
 state={
 	id=583
 	name="STATE_583"
-	provinces={
-		4572 4718 5809 9327 13340 13346 13362 13465 13492 13525 13526 13556 13585 19819 19820 
-	}
+
 	history={
 		owner = FRA
 		add_core_of = FRA
@@ -13,16 +11,23 @@ state={
 			13346 = { naval_base = 10 }
 			dockyard = 3
 		}
+		
 		add_core_of = BRI
-        victory_points = {
-            13346 10 #Brest
-        }
 		victory_points = {
-            13526 5 #Quimper
-        }
-    }
+			13346 10 
+		}
+		victory_points = {
+			13526 5 
+		}
+
+	}
+
+	provinces={
+		4718 5809 9327 13340 13346 13362 13465 13492 13525 13526 13556 13585 19819 19820 
+	}
+	
 	manpower=756800
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
-	state_category = large_city
 }
