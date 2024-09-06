@@ -819,6 +819,13 @@ country_event = {
 				add_core_of = PREV
 				event_target:vichy_france = { transfer_state = PREV }
 			}
+			every_state = {
+				limit = {
+					is_core_of = COR
+				}
+				if = { limit = { is_controlled_by = ITA } transfer_state_to = ITA }
+				else = { event_target:vichy_france = { transfer_state = PREV } }
+			}
 			set_capital = { state = 699 }
 			set_politics = {
 				ruling_party = neutrality
@@ -949,9 +956,9 @@ country_event = {
 					if = {
 						limit = { has_dlc = "Together for Victory" }
 						event_target:vichy_france = { set_autonomy = { target = PREV autonomy_state = autonomy_colony } }
-					}
-					else = {
-						event_target:vichy_france = { puppet = PREV }
+						else = {
+							event_target:vichy_france = { puppet = PREV }
+						}
 					}
 				}
 				
