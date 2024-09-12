@@ -5347,14 +5347,15 @@ country_event = {
 		name = germany.87.a
 		custom_effect_tooltip = mer_GER_danzig_or_war_approved_transfer_tt
 		hidden_effect = {
-			# transfer west prussia
-			transfer_state = 287
-			transfer_state = 310
-			transfer_state = 2567
-			transfer_state = 546
-			transfer_state = 2341
-			transfer_state = 264
-			transfer_state = 267
+			DNZ = {
+				every_core_state = {
+					add_core_of = ROOT
+				}
+			}
+			annex_country = {
+				target = DNZ
+				transfer_troops = no
+			}
 			# core west prussia
 			add_state_core = 287
 			add_state_core = 310
@@ -5363,6 +5364,16 @@ country_event = {
 			add_state_core = 2341
 			add_state_core = 264
 			add_state_core = 267
+			add_state_core = 1979
+			# transfer west prussia
+			transfer_state = 287
+			transfer_state = 310
+			transfer_state = 2567
+			transfer_state = 546
+			transfer_state = 2341
+			transfer_state = 264
+			transfer_state = 267
+			transfer_state = 1979
 			# lose posnan claims
 			remove_state_claim = 80
 			remove_state_claim = 335
