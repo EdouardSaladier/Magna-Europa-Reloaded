@@ -1,29 +1,24 @@
 import os
-import unicodedata
+from unidecode import unidecode
 
-def remove_accents(input_str):
-    """Remove accents from a string."""
-    return ''.join(
-        char for char in unicodedata.normalize('NFD', input_str)
-        if unicodedata.category(char) != 'Mn'
-    )
+# Define the folder path where your .txt files are located
+folder_path = 'states'
 
-def rename_txt_files(folder_path):
-    """Rename all .txt files in the folder by replacing accented characters in their names."""
-    try:
-        for filename in os.listdir(folder_path):
-            if filename.endswith('.txt'):
-                new_name = remove_accents(filename)
-                old_file_path = os.path.join(folder_path, filename)
-                new_file_path = os.path.join(folder_path, new_name)
+# Iterate through all files in the specified directory
+for filename in os.listdir(folder_path):
+    # Only consider .txt files
+    if filename.endswith('.txt'):
+        # Replace special characters using unidecode and replace @ with a
+        new_filename = unidecode(filename)  # This will handle special characters
+        new_filename = new_filename.replace('@', 'a')  # Replace @ with a
 
-                # Rename the file
-                os.rename(old_file_path, new_file_path)
-                print(f"Renamed: {filename} -> {new_name}")
+        # Construct the full paths for the old and new filenames
+        old_file_path = os.path.join(folder_path, filename)
+        new_file_path = os.path.join(folder_path, new_filename)
 
-    except Exception as e:
-        print(f"An error occurred: {e}")
+        # Rename the file if the new filename is different from the old one
+        if old_file_path != new_file_path:
+            os.rename(old_file_path, new_file_path)
+            print(f'Renamed: {filename} -> {new_filename}')
 
-# Example usage
-folder_path = input("Enter the path to the folder containing .txt files: ")
-rename_txt_files(folder_path)
+print("Renaming completed!")
