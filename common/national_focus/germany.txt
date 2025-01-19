@@ -374,10 +374,10 @@ focus_tree = {
 		cost = 5
 		available = {
 			OR ={
-				763 = { #Köningsberg
+				252 = { #Köningsberg
 					is_owned_and_controlled_by = ROOT
 				}
-				56 = { #Weser-Ems
+				322 = { #Weser-Ems
 					is_owned_and_controlled_by = ROOT
 				}
 			}
@@ -388,19 +388,19 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					763 = { #Köningsberg
+					252 = { #Köningsberg
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				763 = { set_state_category = large_city }
+				252 = { set_state_category = large_city }
 			}
 			if = {
 				limit = {
-					56 = { #Weser-Ems
+					322 = { #Weser-Ems
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				56 = { set_state_category = large_city }
+				322 = { set_state_category = large_city }
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -582,7 +582,7 @@ focus_tree = {
 		relative_position_id = GER_industrial_expansion
 		cost = 10
 		available = {
-			42 = {
+			431 = {
 				is_fully_controlled_by = ROOT
 				is_demilitarized_zone = no
 			}
@@ -594,7 +594,7 @@ focus_tree = {
 		completion_reward = {
 			if = {	
 				limit = {
-					42 = {
+					431 = {
 						is_fully_controlled_by = ROOT
 						free_building_slots = {
 							building = industrial_complex
@@ -603,7 +603,7 @@ focus_tree = {
 						}
 					}
 				}
-				42 = {
+				431 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
@@ -620,7 +620,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			42 = {
+			431 = {
 				add_resource = {
 					type = steel
 					amount = 8
@@ -675,35 +675,35 @@ focus_tree = {
 
 			if = {
 				limit = {
-					909 = {
+					1709 = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				909 = { add_extra_state_shared_building_slots = 1 }
+				1709 = { add_extra_state_shared_building_slots = 1 }
 			}
 			if = {
 				limit = {
-					61 = {
+					1701 = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				61 = { add_extra_state_shared_building_slots = 1 }
+				1701 = { add_extra_state_shared_building_slots = 1 }
 			}
 			if = {
 				limit = {
-					62 = {
+					1611 = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				62 = { add_extra_state_shared_building_slots = 1 }
+				1611 = { add_extra_state_shared_building_slots = 1 }
 			}
 			if = {
 				limit = {
-					63 = {
+					1631 = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				63 = { add_extra_state_shared_building_slots = 1 }
+				1631 = { add_extra_state_shared_building_slots = 1 }
 			}
 			if = {
 				limit = {
@@ -736,10 +736,10 @@ focus_tree = {
 		cost = 10
 		available = {
 			OR ={
-				59 = { #Hannover
+				352 = { #Hannover
 					is_owned_and_controlled_by = ROOT
 				}
-				978 = { #Baden
+				1764 = { #Baden
 					is_owned_and_controlled_by = ROOT
 				}
 			}
@@ -751,19 +751,19 @@ focus_tree = {
 			
 			if = {
 				limit = {
-					59 = { #Hannover
+					352 = { #Hannover
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				59 = { set_state_category = metropolis }
+				352 = { set_state_category = metropolis }
 			}
 			if = {
 				limit = {
-					978 = { #Baden
+					1764 = { #Baden
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				978 = { set_state_category = metropolis }
+				1764 = { set_state_category = metropolis }
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1040,26 +1040,105 @@ focus_tree = {
 		cost = 5
 		available = {
 			OR = {
-				has_full_control_of_state = 64 #Brandenburg
-				has_full_control_of_state = 59 #Hannover
-				has_full_control_of_state = 60 #Thüringen
-				has_full_control_of_state = 54 #Franken
+				# has_full_control_of_state = 64 #brandenburg
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_brandenburg_trigger_tt
+					has_full_control_of_state = 1651
+					has_full_control_of_state = 3
+					has_full_control_of_state = 1652
+					has_full_control_of_state = 1650
+					has_full_control_of_state = 1638
+					has_full_control_of_state = 1639
+					has_full_control_of_state = 327
+					has_full_control_of_state = 1641
+					has_full_control_of_state = 2592
+					has_full_control_of_state = 1643
+				}
+				# has_full_control_of_state = 59 #hannover
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_hannover_trigger_tt
+					has_full_control_of_state = 352
+					has_full_control_of_state = 1725
+					has_full_control_of_state = 1722
+					has_full_control_of_state = 2571
+					has_full_control_of_state = 1702
+					has_full_control_of_state = 2570
+					has_full_control_of_state = 1721
+					has_full_control_of_state = 1707
+				}
+				# has_full_control_of_state = 60 #thüringen
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_thuringen_trigger_tt
+					has_full_control_of_state = 1685
+					has_full_control_of_state = 440
+					has_full_control_of_state = 1686
+				}
+				# has_full_control_of_state = 54 #franken
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_franken_trigger_tt
+					has_full_control_of_state = 1778
+					has_full_control_of_state = 1779
+					has_full_control_of_state = 1789
+					has_full_control_of_state = 1790
+				}
 			}
 		}
 		bypass = {
 			has_civil_war = no
-			NOT = { has_full_control_of_state = 64 }
-			NOT = {	has_full_control_of_state = 59 }
-			NOT = {	has_full_control_of_state = 60 }
-			NOT = {	has_full_control_of_state = 54 }
+			NOT = { 
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_brandenburg_trigger_tt
+					has_full_control_of_state = 1651
+					has_full_control_of_state = 3
+					has_full_control_of_state = 1652
+					has_full_control_of_state = 1650
+					has_full_control_of_state = 1638
+					has_full_control_of_state = 1639
+					has_full_control_of_state = 327
+					has_full_control_of_state = 1641
+					has_full_control_of_state = 2592
+					has_full_control_of_state = 1643
+				}
+			}
+			NOT = {	
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_hannover_trigger_tt
+					has_full_control_of_state = 352
+					has_full_control_of_state = 1725
+					has_full_control_of_state = 1722
+					has_full_control_of_state = 2571
+					has_full_control_of_state = 1702
+					has_full_control_of_state = 2570
+					has_full_control_of_state = 1721
+					has_full_control_of_state = 1707
+				}
+			}
+			NOT = {	
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_thuringen_trigger_tt
+					has_full_control_of_state = 1685
+					has_full_control_of_state = 440
+					has_full_control_of_state = 1686
+				}
+			}
+			NOT = {
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_franken_trigger_tt
+					has_full_control_of_state = 1778
+					has_full_control_of_state = 1779
+					has_full_control_of_state = 1789
+					has_full_control_of_state = 1790
+				}
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GER_autobahn"
 			custom_effect_tooltip = GER_autobahn_tt
 			hidden_effect = {
-				64 = {
+				1651 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
 						add_building_construction = {
@@ -1069,18 +1148,7 @@ focus_tree = {
 						}
 					}
 				}
-				59 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-
-						add_building_construction = {
-							type = infrastructure
-							level = 5
-							instant_build = yes
-						}
-					}
-				}
-				60 = {
+				3 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
 						add_building_construction = {
@@ -1090,7 +1158,227 @@ focus_tree = {
 						}
 					}
 				}
-				54 = {
+				1652 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1650 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1638 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1639 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				327 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1641 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				2592 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1643 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				352 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1725 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1722 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				2571 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1702 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				2570 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1721 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1707 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1685 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				440 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1686 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1778 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1779 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1789 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				1790 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
 						add_building_construction = {
@@ -1125,7 +1413,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					51 = {
+					2338 = {
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -1133,7 +1421,7 @@ focus_tree = {
 						}
 					}
 				}
-				51 = {
+				2338 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
@@ -1143,13 +1431,13 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			51 = {
+			2338 = {
 				add_building_construction = {
 					type = dam
 					level = 1
 					instant_build = yes
 					province = {
-						id = 3547
+						id = 12404
 					}
 				}
 			}
@@ -1227,7 +1515,7 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						59 = {
+						352 = {
 							is_fully_controlled_by = ROOT
 							free_building_slots = {
 								building = arms_factory
@@ -1236,7 +1524,7 @@ focus_tree = {
 							}
 						}
 					}
-					59 = { #Hannover
+					352 = { #Hannover
 						add_extra_state_shared_building_slots = 3
 						add_building_construction = {
 							type = arms_factory
@@ -1267,7 +1555,7 @@ focus_tree = {
 			else_if = { #if at peace
 				if = {
 					limit = {
-						59 = {
+						352 = {
 							is_fully_controlled_by = ROOT
 							free_building_slots = {
 								building = arms_factory
@@ -1276,7 +1564,7 @@ focus_tree = {
 							}
 						}
 					}
-					59 = { #Hannover
+					352 = { #Hannover
 						add_extra_state_shared_building_slots = 2
 						add_building_construction = {
 							type = industrial_complex
@@ -1318,17 +1606,53 @@ focus_tree = {
 		cost = 5
 		available = {
 			OR = {
-				53 = { #Niederbayern
-					state_is_fully_controlled_by_ROOT_or_subject = yes
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_niederbayern_trigger_tt
+					has_full_control_of_state = 1785
+					has_full_control_of_state = 1786
+					has_full_control_of_state = 554
+					has_full_control_of_state = 520
+					has_full_control_of_state = 1783
+					has_full_control_of_state = 1782
+					has_full_control_of_state = 1787
+					has_full_control_of_state = 1784
 				}
-				52 = { #Oberbayern
-					state_is_fully_controlled_by_ROOT_or_subject = yes
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_oderbayern_trigger_tt
+					has_full_control_of_state = 1790
+					has_full_control_of_state = 1791
+					has_full_control_of_state = 1789
+					has_full_control_of_state = 1781
+					has_full_control_of_state = 1780
+					has_full_control_of_state = 576
+					has_full_control_of_state = 567
+					has_full_control_of_state = 1788
 				}
-				152 = { #Upper Austria
-					state_is_fully_controlled_by_ROOT_or_subject = yes
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_upper_austria_trigger_tt
+					has_full_control_of_state = 1798
+					has_full_control_of_state = 582
+					has_full_control_of_state = 1811
+					has_full_control_of_state = 1800
+					has_full_control_of_state = 1809
+					has_full_control_of_state = 1795
 				}
-				4 = { #Lower Austria
-					state_is_fully_controlled_by_ROOT_or_subject = yes
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_lower_austria_trigger_tt
+					has_full_control_of_state = 1799
+					has_full_control_of_state = 1801
+					has_full_control_of_state = 1802
+					has_full_control_of_state = 1803
+					has_full_control_of_state = 1804
+					has_full_control_of_state = 1812
+					has_full_control_of_state = 1813
+					has_full_control_of_state = 568
+					has_full_control_of_state = 621
+					has_full_control_of_state = 1814
+					has_full_control_of_state = 1815
+					has_full_control_of_state = 1816
+					has_full_control_of_state = 1817
+					has_full_control_of_state = 1818
 				}
 			}
 		}
@@ -1340,82 +1664,581 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = GER_expand_the_reichsautobahn_south_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					53 = { #Niederbayern
-						infrastructure < 5
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						1785 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1785 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
 					}
 				}
-				53 = { 
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					52 = { #Oberbayern
-						infrastructure < 5
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-				52 = { 
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					152 = { #Upper Austria
-						infrastructure < 5
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-				152 = { 
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					4 = { #Lower Austria
-						infrastructure < 5
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-				4 = { 
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
 
-			if = {
-				limit = {
-					52 = { #Oberbayern
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+				if = {
+					limit = {
+						1786 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
 					}
-					152 = { #Upper Austria
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					4 = { #Lower Austria
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+					1786 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
 					}
 				}
-				#Regensburg - Wien
-				build_railway = {
-					path = { 9515 9681 3703 9665 11651 704 11666 }
+
+				if = {
+					limit = {
+						554 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					554 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						520 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					520 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1783 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1783 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1782 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1782 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1787 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1787 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1784 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1784 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1790 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1790 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1791 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1791 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1789 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1789 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1781 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1781 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1780 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1780 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						576 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					576 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						567 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					567 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1788 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1788 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1798 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1798 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						582 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					582 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1811 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1811 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1800 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1800 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1809 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1809 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1795 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1795 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1799 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1799 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1801 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1801 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1802 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1802 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1803 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1803 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1804 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1804 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1812 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1812 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1813 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1813 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						568 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					568 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						621 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					621 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1814 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1814 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1815 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1815 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1816 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1816 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1817 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1817 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1818 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1818 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
 				}
 			}
 		}
@@ -1432,17 +2255,46 @@ focus_tree = {
 		cost = 5
 		available = {
 			OR = {
-				68 = { #Ostmark
-					state_is_fully_controlled_by_ROOT_or_subject = yes
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_ostmark_trigger_tt
+					has_full_control_of_state = 1627
+					has_full_control_of_state = 1629
+					has_full_control_of_state = 339
+					has_full_control_of_state = 1630
+					has_full_control_of_state = 1649
+					has_full_control_of_state = 1648
+					has_full_control_of_state = 1647
 				}
-				63 = { #Hinterpommern
-					state_is_fully_controlled_by_ROOT_or_subject = yes
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_hinterpommern_trigger_tt
+					has_full_control_of_state = 1623
+					has_full_control_of_state = 1624
+					has_full_control_of_state = 2568
+					has_full_control_of_state = 263
+					has_full_control_of_state = 2559
+					has_full_control_of_state = 1625
+					has_full_control_of_state = 2560
+					has_full_control_of_state = 1628
+					has_full_control_of_state = 2561
+					has_full_control_of_state = 301
+					has_full_control_of_state = 2666
+					has_full_control_of_state = 273
+					has_full_control_of_state = 1626
+					has_full_control_of_state = 295
 				}
-				807 = { #Gdynia
-					state_is_fully_controlled_by_ROOT_or_subject = yes
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_gdynia_trigger_tt
+					has_full_control_of_state = 267
+					has_full_control_of_state = 264
+					has_full_control_of_state = 2341
+					has_full_control_of_state = 546
+					has_full_control_of_state = 2567
+					has_full_control_of_state = 1795
 				}
-				85 = { #Danzig
-					state_is_fully_controlled_by_ROOT_or_subject = yes
+				custom_trigger_tooltip = {
+					tooltip = mer_GER_autobahn_danzig_trigger_tt
+					has_full_control_of_state = 280
+					has_full_control_of_state = 2729
 				}
 			}
 		}
@@ -1454,85 +2306,471 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = GER_expand_the_reichsautobahn_east_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					68 = { #Ostmark
-						infrastructure < 5
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						1627 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1627 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
 					}
 				}
-				68 = { 
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					63 = { #Hinterpommern
-						infrastructure < 5
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-				63 = { 
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					807 = { #Gdynia
-						infrastructure < 5
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-				807 = { 
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					85 = { #Danzig
-						infrastructure < 5
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-				85 = { 
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
 
-			if = {
-				limit = {
-					63 = { #Hinterpommern
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+				if = {
+					limit = {
+						1629 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
 					}
-					807 = { #Gdynia
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					85 = { #Danzig
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+					1629 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
 					}
 				}
-				#Köslin - Danzig
-				build_railway = {
-					path = { 11372 11343 9263 362 }
+
+				if = {
+					limit = {
+						339 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					339 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1630 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1630 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1649 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1649 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1648 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1648 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1647 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1647 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1623 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1623 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1624 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1624 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						2568 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					2568 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						263 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					263 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						2559 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					2559 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1625 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1625 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						2560 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					2560 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1628 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1628 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						2561 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					2561 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						301 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					301 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						2666 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					2666 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						273 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					273 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1626 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1626 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						295 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					295 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						267 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					267 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						264 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					264 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						2341 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					2341 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						546 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					546 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						2567 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					2567 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						1795 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					1795 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						280 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					280 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						2729 = { 
+							infrastructure < 5
+							state_is_fully_controlled_by_ROOT_or_subject = yes
+						}
+					}
+					2729 = { 
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
 				}
 			}
-		}
 	}
 
 	focus = {
@@ -1560,7 +2798,7 @@ focus_tree = {
 				limit = {
 					is_fully_controlled_by = ROOT
 				}
-				prioritize = { 56 }
+				prioritize = { 322 }
 				add_resource = {
 					type = tungsten
 					amount = 2
@@ -1781,7 +3019,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				prioritize = { 59 }
+				prioritize = { 392 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -2072,7 +3310,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				prioritize = { 65 }
+				prioritize = { 1673 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = synthetic_refinery
@@ -2188,7 +3426,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				prioritize = { 57 }
+				prioritize = { 433 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = synthetic_refinery
@@ -2282,7 +3520,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				prioritize = { 65 }
+				prioritize = { 418 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = synthetic_refinery
@@ -3436,8 +4674,8 @@ focus_tree = {
 
 			if = {
 				limit = {
-					controls_state = 54
-					54 = {
+					controls_state = 1778
+					1778 = {
 						free_building_slots = {
 							building = arms_factory
 							size > 0
@@ -3445,7 +4683,7 @@ focus_tree = {
 						}
 					}
 				}
-				54 = { #Franken
+				1778 = { #Franken
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -3855,7 +5093,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_war = yes
-			51 = {
+			1751 = {
 				is_fully_controlled_by = ROOT
 			}
 
@@ -3865,7 +5103,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			51 = { #Rhineland
+			1751 = { #Rhineland
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -3982,9 +5220,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					controls_state = 64
+					controls_state = 1650
 				}
-				64 = { #Brandenburg
+				1650 = { #Brandenburg
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -4866,9 +6104,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					controls_state = 59
+					controls_state = 352
 				}
-				59 = { #Hannover
+				352 = { #Hannover
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -5794,70 +7032,75 @@ focus_tree = {
 			has_war_with_major = yes
 			has_tech = cavity_magnatron
 			custom_trigger_tooltip = {
-				tooltip = GER_controls_atlantic_coast_brittany_finnmark_tt
 				OR = {
-					925 = { #Finnmark
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+					# french atlantic coast
+					custom_trigger_tooltip = {
+						tooltip = mer_GER_atlantikwall_controls_french_coast
+						845 = { is_controlled_by_ROOT_or_ally = yes }
+						803 = { is_controlled_by_ROOT_or_ally = yes }
+						760 = { is_controlled_by_ROOT_or_ally = yes }
+						725 = { is_controlled_by_ROOT_or_ally = yes }
+						684 = { is_controlled_by_ROOT_or_ally = yes }
+						634 = { is_controlled_by_ROOT_or_ally = yes }
+						615 = { is_controlled_by_ROOT_or_ally = yes }
+						583 = { is_controlled_by_ROOT_or_ally = yes }
+						578 = { is_controlled_by_ROOT_or_ally = yes }
+						587 = { is_controlled_by_ROOT_or_ally = yes }
+						534 = { is_controlled_by_ROOT_or_ally = yes }
+						551 = { is_controlled_by_ROOT_or_ally = yes }
+						517 = { is_controlled_by_ROOT_or_ally = yes }
+						505 = { is_controlled_by_ROOT_or_ally = yes }
+						448 = { is_controlled_by_ROOT_or_ally = yes }
+						2874 = { is_controlled_by_ROOT_or_ally = yes }
+						472 = { is_controlled_by_ROOT_or_ally = yes }
+						2333 = { is_controlled_by_ROOT_or_ally = yes }
 					}
-					924 = { #Troms
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+					# belgian coast
+					custom_trigger_tooltip = {
+						tooltip = mer_GER_atlantikwall_controls_belgian_coast
+						454 = { is_controlled_by_ROOT_or_ally = yes }
+						455 = { is_controlled_by_ROOT_or_ally = yes }
 					}
-					144 = { #Nordland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+					# western dutch coast
+					custom_trigger_tooltip = {
+						tooltip = mer_GER_atlantikwall_controls_western_dutch_coast
+						1974 = { is_controlled_by_ROOT_or_ally = yes }
+						451 = { is_controlled_by_ROOT_or_ally = yes }
+						2332 = { is_controlled_by_ROOT_or_ally = yes }
+						402 = { is_controlled_by_ROOT_or_ally = yes }
+						358 = { is_controlled_by_ROOT_or_ally = yes }
 					}
-					923 = { #Helgeland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+					# danish atlantic coast
+					custom_trigger_tooltip = {
+						tooltip = mer_GER_atlantikwall_controls_danish_atlantic_coast
+						246 = { is_controlled_by_ROOT_or_ally = yes }
+						228 = { is_controlled_by_ROOT_or_ally = yes }
+						197 = { is_controlled_by_ROOT_or_ally = yes }
+						181 = { is_controlled_by_ROOT_or_ally = yes }
+						144 = { is_controlled_by_ROOT_or_ally = yes }
+						140 = { is_controlled_by_ROOT_or_ally = yes }
 					}
-					143 = { #Trondelag
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					142 = { #Vestlandet
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					922 = { #Agder
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					921 = { #Telemark
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					110 = { #Oslo
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					915 = { #Halland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					140 = { #Västergötland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					99 = { #Jylland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					912 = { #Sonderjylland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					36 = { #Friesland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					7 = { #Holland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					35 = { #Brabant
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					6 = { #Vlaanderen
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					29 = { #Nord-Pas-de_calais
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					785 = { #Picardy
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					15 = { #Normandy
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					14 = { #Brittany
-						state_is_fully_controlled_by_ROOT_or_subject = yes
+					# norwegian coast
+					custom_trigger_tooltip = {
+						tooltip = mer_GER_atlantikwall_controls_norwegian_coast
+						124 = { is_controlled_by_ROOT_or_ally = yes }
+						106 = { is_controlled_by_ROOT_or_ally = yes }
+						131 = { is_controlled_by_ROOT_or_ally = yes }
+						123 = { is_controlled_by_ROOT_or_ally = yes }
+						132 = { is_controlled_by_ROOT_or_ally = yes }
+						147 = { is_controlled_by_ROOT_or_ally = yes }
+						128 = { is_controlled_by_ROOT_or_ally = yes }
+						111 = { is_controlled_by_ROOT_or_ally = yes }
+						92 = { is_controlled_by_ROOT_or_ally = yes }
+						75 = { is_controlled_by_ROOT_or_ally = yes }
+						71 = { is_controlled_by_ROOT_or_ally = yes }
+						53 = { is_controlled_by_ROOT_or_ally = yes }
+						25 = { is_controlled_by_ROOT_or_ally = yes }
+						2703 = { is_controlled_by_ROOT_or_ally = yes }
+						2700 = { is_controlled_by_ROOT_or_ally = yes }
+						13 = { is_controlled_by_ROOT_or_ally = yes }
+						4 = { is_controlled_by_ROOT_or_ally = yes }
+						2701 = { is_controlled_by_ROOT_or_ally = yes }
 					}
 				}
 			}
@@ -5880,32 +7123,55 @@ focus_tree = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 					is_coastal = yes 
 					OR = {
-						state = 925
-						state = 924
+						state = 845
+						state = 803
+						state = 760
+						state = 725
+						state = 684
+						state = 634
+						state = 615
+						state = 583
+						state = 578
+						state = 587
+						state = 534
+						state = 551
+						state = 517
+						state = 505
+						state = 448
+						state = 2874
+						state = 472
+						state = 2333
+						state = 454
+						state = 455
+						state = 1974
+						state = 451
+						state = 2332
+						state = 402
+						state = 358
+						state = 246
+						state = 228
+						state = 197
+						state = 181
 						state = 144
-						state = 923
-						state = 143
-						state = 142
-						state = 922
-						state = 921
-						state = 110
-						state = 915
 						state = 140
-						state = 99
-						state = 912
-						state = 909
-						state = 58 
-						state = 59
-						state = 56
-						state = 36
-						state = 7
-						state = 35
-						state = 6
-						state = 977
-						state = 29
-						state = 785
-						state = 15
-						state = 14
+						state = 124
+						state = 106
+						state = 131
+						state = 123
+						state = 132
+						state = 147
+						state = 128
+						state = 111
+						state = 92
+						state = 75
+						state = 71
+						state = 53
+						state = 25
+						state = 2703
+						state = 2700
+						state = 13
+						state = 4
+						state = 2701
 					}
 				}
 				add_building_construction = {
@@ -6098,9 +7364,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					controls_state = 59
+					controls_state = 352
 				}
-				59 = { #Hannover
+				352 = { #Hannover
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -6383,11 +7649,11 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					56 = {
+					314 = {
 						is_fully_controlled_by = ROOT
 					}
 				}
-				56 = {
+				314 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
@@ -6706,7 +7972,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				prioritize = { 807 }
+				prioritize = { 280 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -7227,14 +8493,26 @@ focus_tree = {
 		relative_position_id = GER_re_establish_the_seekriegsleitung
 		cost = 5
 		available = { #These states start out with naval bases in western France
-			14 = { #Brittany
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
-			23 = { #Poitou
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
-			19 = { #Aquitaine
-				state_is_fully_controlled_by_ROOT_or_subject = yes
+			custom_trigger_tooltip = {
+				tooltip = mer_GER_atlantikwall_controls_french_coast
+				845 = { is_controlled_by_ROOT_or_ally = yes }
+				803 = { is_controlled_by_ROOT_or_ally = yes }
+				760 = { is_controlled_by_ROOT_or_ally = yes }
+				725 = { is_controlled_by_ROOT_or_ally = yes }
+				684 = { is_controlled_by_ROOT_or_ally = yes }
+				634 = { is_controlled_by_ROOT_or_ally = yes }
+				615 = { is_controlled_by_ROOT_or_ally = yes }
+				583 = { is_controlled_by_ROOT_or_ally = yes }
+				578 = { is_controlled_by_ROOT_or_ally = yes }
+				587 = { is_controlled_by_ROOT_or_ally = yes }
+				534 = { is_controlled_by_ROOT_or_ally = yes }
+				551 = { is_controlled_by_ROOT_or_ally = yes }
+				517 = { is_controlled_by_ROOT_or_ally = yes }
+				505 = { is_controlled_by_ROOT_or_ally = yes }
+				448 = { is_controlled_by_ROOT_or_ally = yes }
+				2874 = { is_controlled_by_ROOT_or_ally = yes }
+				472 = { is_controlled_by_ROOT_or_ally = yes }
+				2333 = { is_controlled_by_ROOT_or_ally = yes }
 			}
 
 		}
@@ -7250,19 +8528,25 @@ focus_tree = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 					is_coastal = yes 
 					naval_base < 10
-					OR = { #Atlantic Coast from Brittany to Sevilla
-						state = 14
-						state = 30
-						state = 23
-						state = 19
-						state = 806
-						state = 792
-						state = 790
-						state = 171
-						state = 180
-						state = 112
-						state = 179
-						state = 169
+					OR = { #Atlantic Coast from Brittany to Labourd #I'm not fucking doing it to Sevilla
+						state = 845
+						state = 803
+						state = 760
+						state = 725
+						state = 684
+						state = 634
+						state = 615
+						state = 583
+						state = 578
+						state = 587
+						state = 534
+						state = 551
+						state = 517
+						state = 505
+						state = 448
+						state = 2874
+						state = 472
+						state = 2333
 					}
 				}
 				add_building_construction = {
@@ -7280,19 +8564,25 @@ focus_tree = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 					is_coastal = yes 
 					coastal_bunker < 10
-					OR = { #Atlantic Coast from Brittany to Sevilla
-						state = 14
-						state = 30
-						state = 23
-						state = 19
-						state = 806
-						state = 792
-						state = 790
-						state = 171
-						state = 180
-						state = 112
-						state = 179
-						state = 169
+					OR = { #Atlantic Coast from Brittany to Labourd
+						state = 845
+						state = 803
+						state = 760
+						state = 725
+						state = 684
+						state = 634
+						state = 615
+						state = 583
+						state = 578
+						state = 587
+						state = 534
+						state = 551
+						state = 517
+						state = 505
+						state = 448
+						state = 2874
+						state = 472
+						state = 2333
 					}
 				}
 				add_building_construction = {
@@ -7321,40 +8611,22 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = GER_controls_an_atantic_island_tt
 				OR = {
-					914 = { #Jan Mayen
+					1822 = { #Jan Mayen
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					100 = { #Iceland
+					159 = { #Iceland
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					101 = { #Greenland
+					90 = { #Faroes
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					337 = { #Faroes
+					116 = { #Shetlands
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					933 = { #Shetlands
+					320 = { #Ireland
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					134 = { #Ireland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					119 = { #North Ireland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					178 = { #The Canaries
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					698 = { #The Azores
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					696 = { #Bermuda
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					697 = { #Madeira
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					702 = { #Cape Verde
+					253 = { #North Ireland
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
@@ -7379,18 +8651,12 @@ focus_tree = {
 					is_coastal = yes 
 					naval_base < 10
 					OR = { #Atlantic Islands from Greenland to Cape Verde
-						state = 914
-						state = 101
-						state = 100
-						state = 337
-						state = 933
-						state = 134
-						state = 119
-						state = 178
-						state = 698
-						state = 696
-						state = 697
-						state = 702
+						state = 1822
+						state = 159
+						state = 90
+						state = 116
+						state = 320
+						state = 253
 					}
 				}
 				add_building_construction = {
@@ -7409,25 +8675,12 @@ focus_tree = {
 					is_coastal = yes 
 					coastal_bunker < 10
 					OR = { #Atlantic Islands from Greenland to the Falklands
-						state = 101
-						#state = 914 #Not you Jan Mayen
-						state = 100
-						state = 337
-						state = 933
-						state = 134
-						state = 119
-						state = 178
-						state = 698
-						state = 696
-						state = 697
-						state = 702
-						state = 703
-						state = 704
-						state = 297
-						state = 705
-						state = 697
-						state = 720
-						state = 299
+						state = 1822
+						state = 159
+						state = 90
+						state = 116
+						state = 320
+						state = 253
 					}
 				}
 				add_building_construction = {
@@ -8451,7 +9704,7 @@ focus_tree = {
 
 				if = {
 					limit = {
-						controls_state = 16 #PARIS
+						controls_state = 571 #PARIS
 					}
 					GER_create_operative_coco_chanel = yes
 				}
@@ -8668,45 +9921,16 @@ focus_tree = {
 		completion_reward = {
 			add_named_threat = { threat = 5 name = GER_integrate_czechoslovakia }
 			### CLAIMS
-			if = {
-				limit = {
-					69 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 69
-			}
-			if = {
-				limit = {
-					972 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 972
-			}
-			if = {
-				limit = {
-					74 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 74
-			}
+			add_state_claim = 1433
+			add_state_claim = 1432
+			add_state_claim = 1431
+			add_state_claim = 1430
+			add_state_claim = 522
+			add_state_claim = 498
+			add_state_claim = 1434
+			add_state_claim = 471
+			add_state_claim = 473
+			add_state_claim = 1435
 			if = {
 				limit = {
 					CZE = {
@@ -8729,9 +9953,16 @@ focus_tree = {
 						limit = {
 							is_owned_and_controlled_by = CZE
 							OR = {
-								state = 69
-								state = 972
-								state = 74
+								state = 1433
+								state = 1432
+								state = 1431
+								state = 1430
+								state = 522
+								state = 498
+								state = 1434
+								state = 471
+								state = 473
+								state = 1435
 							}
 						}
 						add_core_of = PREV
@@ -8794,12 +10025,45 @@ focus_tree = {
 					}
 				}
 				GER = {
-					owns_state = 4
-					owns_state = 152
-					owns_state = 153
-					owns_state = 848
-					owns_state = 975
-					owns_state = 976
+					custom_trigger_tooltip = {
+						tooltip = mer_GER_owns_all_of_austria
+						owns_state = 1792
+						owns_state = 1793
+						owns_state = 1794
+						owns_state = 1795
+						owns_state = 1796
+						owns_state = 1797
+						owns_state = 1798
+						owns_state = 1799
+						owns_state = 1800
+						owns_state = 1801
+						owns_state = 1802
+						owns_state = 1803
+						owns_state = 1804
+						owns_state = 1805
+						owns_state = 1806
+						owns_state = 1807
+						owns_state = 1808
+						owns_state = 1809
+						owns_state = 1810
+						owns_state = 1811
+						owns_state = 1812
+						owns_state = 1813
+						owns_state = 1814
+						owns_state = 1815
+						owns_state = 1816
+						owns_state = 1817
+						owns_state = 1818
+						owns_state = 568
+						owns_state = 582
+						owns_state = 621
+						owns_state = 625
+						owns_state = 635
+						owns_state = 644
+						owns_state = 654
+						owns_state = 679
+						owns_state = 681
+					}
 				}
 			}
 		}
@@ -8884,12 +10148,42 @@ focus_tree = {
 					AUS = {
 						has_civil_war = no
 						OR = {
-							owns_state = 4
-							owns_state = 152
-							owns_state = 153
-							owns_state = 848
-							owns_state = 975
-							owns_state = 976
+							owns_state = 1792
+							owns_state = 1793
+							owns_state = 1794
+							owns_state = 1795
+							owns_state = 1796
+							owns_state = 1797
+							owns_state = 1798
+							owns_state = 1799
+							owns_state = 1800
+							owns_state = 1801
+							owns_state = 1802
+							owns_state = 1803
+							owns_state = 1804
+							owns_state = 1805
+							owns_state = 1806
+							owns_state = 1807
+							owns_state = 1808
+							owns_state = 1809
+							owns_state = 1810
+							owns_state = 1811
+							owns_state = 1812
+							owns_state = 1813
+							owns_state = 1814
+							owns_state = 1815
+							owns_state = 1816
+							owns_state = 1817
+							owns_state = 1818
+							owns_state = 568
+							owns_state = 582
+							owns_state = 621
+							owns_state = 625
+							owns_state = 635
+							owns_state = 644
+							owns_state = 654
+							owns_state = 679
+							owns_state = 681
 						}
 					}
 				}
@@ -8944,14 +10238,43 @@ focus_tree = {
 						original_tag = AUS
 						has_civil_war = yes
 						OR = {
-							owns_state = 4
-							owns_state = 152
-							owns_state = 153
-							owns_state = 848
-							owns_state = 975
-							owns_state = 976
+							owns_state = 1792
+							owns_state = 1793
+							owns_state = 1794
+							owns_state = 1795
+							owns_state = 1796
+							owns_state = 1797
+							owns_state = 1798
+							owns_state = 1799
+							owns_state = 1800
+							owns_state = 1801
+							owns_state = 1802
+							owns_state = 1803
+							owns_state = 1804
+							owns_state = 1805
+							owns_state = 1806
+							owns_state = 1807
+							owns_state = 1808
+							owns_state = 1809
+							owns_state = 1810
+							owns_state = 1811
+							owns_state = 1812
+							owns_state = 1813
+							owns_state = 1814
+							owns_state = 1815
+							owns_state = 1816
+							owns_state = 1817
+							owns_state = 1818
+							owns_state = 568
+							owns_state = 582
+							owns_state = 621
+							owns_state = 625
+							owns_state = 635
+							owns_state = 644
+							owns_state = 654
+							owns_state = 679
+							owns_state = 681
 						}
-						
 					}
 					ITA = {
 						NOT = {
@@ -8990,95 +10313,19 @@ focus_tree = {
 				}
 			}
 
-			if = {
-				limit = {
-					4 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
+			every_state = {
+				limit = { 
+					is_core_of = AUS 
+					owner = {
+						NOT = {
+							tag = AUS
+						}
+						NOT = {
+							is_in_faction_with = ROOT
 						}
 					}
 				}
-				add_state_core = 4
-			}
-			if = {
-				limit = {
-					152 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 152
-			}
-			if = {
-				limit = {
-					153 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 153
-			}
-			if = {
-				limit = {
-					848 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 848
-			}
-			IF = {
-				limit = {
-					975 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 975
-			}
-			IF = {
-				limit = {
-					976 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 976
+				add_core_of = GER
 			}
 		}
 	}
@@ -35392,9 +36639,9 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_full_control_of_state = 763
+					has_full_control_of_state = 252
 				}
-				763 = {
+				252 = {
 					custom_effect_tooltip = GER_see_to_the_eastern_front_tt2
 					hidden_effect = {
 						add_building_construction = {
