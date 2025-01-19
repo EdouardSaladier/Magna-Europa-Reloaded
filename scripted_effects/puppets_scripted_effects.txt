@@ -1,0 +1,52 @@
+set_subject_cosmetic_tags = {
+	every_country = {
+		limit = {
+			OR = {
+				is_subject_of = ENG
+				is_subject_of = FRA
+			}
+		}
+		if = {
+			limit = {
+				tag = UAE
+				is_subject_of = ENG
+			}
+			set_cosmetic_tag = UAE_UK
+		}
+		if = {
+			limit = {
+				tag = BHR
+				is_subject_of = ENG
+			}
+			set_cosmetic_tag = BHR_UK
+		}
+		if = {
+			limit = {
+				tag = QAT
+				is_subject_of = ENG
+			}
+			set_cosmetic_tag = QAT_UK
+		}
+		if = {
+			limit = {
+				tag = KUW
+				is_subject_of = ENG
+			}
+			set_cosmetic_tag = KUW_UK
+		}
+		if = {
+			limit = {
+				tag = TUN
+				is_subject_of = FRA
+			}
+			set_cosmetic_tag = TUN_FR
+		}
+		if = {
+			limit = {
+				tag = MOR
+				is_subject_of = FRA
+			}
+			set_cosmetic_tag = MOR_FR
+		}
+	}
+}

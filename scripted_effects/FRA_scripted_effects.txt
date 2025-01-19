@@ -1,0 +1,304 @@
+#	Example:
+# 
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+
+
+remove_worker_shortage_effect = {	
+	if = {
+		limit = { has_idea = FRA_worker_shortage }
+		remove_ideas = FRA_worker_shortage
+	}
+	else_if = {
+		limit = { has_idea = FRA_full_employment }
+		remove_ideas = FRA_full_employment
+	}
+}
+
+remove_occupation_cost_effect = {
+	if = {
+		limit = { has_idea = FRA_occupation_costs_1 }
+		remove_ideas = FRA_occupation_costs_1
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_2
+		}
+		remove_ideas = FRA_occupation_costs_2
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_3
+		}
+		remove_ideas = FRA_occupation_costs_3
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_4
+		}
+		remove_ideas = FRA_occupation_costs_4
+	}
+}
+
+reduce_occupation_cost_effect = {
+	if = {
+		limit = { has_idea = FRA_occupation_costs_1 }
+		remove_ideas = FRA_occupation_costs_1
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_2
+		}
+		swap_ideas = {
+			remove_idea = FRA_occupation_costs_2
+			add_idea = FRA_occupation_costs_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_3
+		}
+		swap_ideas = {
+			remove_idea = FRA_occupation_costs_3
+			add_idea = FRA_occupation_costs_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_4
+		}
+		swap_ideas = {
+			remove_idea = FRA_occupation_costs_4
+			add_idea = FRA_occupation_costs_3
+		}
+	}
+}
+
+increase_occupation_cost_effect = {
+	if = {
+		limit = {
+			has_idea = FRA_occupation_costs_3
+		}
+		swap_ideas = {
+			remove_idea = FRA_occupation_costs_3
+			add_idea = FRA_occupation_costs_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_2
+		}
+		swap_ideas = {
+			remove_idea = FRA_occupation_costs_2
+			add_idea = FRA_occupation_costs_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_1
+		}
+		swap_ideas = {
+			remove_idea = FRA_occupation_costs_1
+			add_idea = FRA_occupation_costs_2
+		}
+	}
+	else_if = {
+		limit = { 
+			NOT = { 
+				has_idea = FRA_occupation_costs_1
+				has_idea = FRA_occupation_costs_2
+				has_idea = FRA_occupation_costs_3
+				has_idea = FRA_occupation_costs_4 
+			}
+		}
+		add_ideas = FRA_occupation_costs_1
+	}
+}
+
+FRA_congress_of_paris_italian_claims_setup_effect = { #UNUSED
+	add_state_claim = 452
+	add_state_claim = 447
+	add_state_claim = 446
+	add_state_claim = 457
+	add_state_claim = 456
+	add_state_claim = 551
+	add_state_claim = 549
+	add_state_claim = 269
+	add_state_claim = 547
+	add_state_claim = 548
+	add_state_claim = 546
+}
+
+FRA_congress_of_paris_portugese_claims_setup_effect = {#UNUSED
+	add_state_claim = 295
+	add_state_claim = 771
+	add_state_claim = 770
+	add_state_claim = 545
+	add_state_claim = 542
+	add_state_claim = 541
+	add_state_claim = 681
+	add_state_claim = 275
+	add_state_claim = 719
+}
+
+FRA_right_wing_riot_effect = {
+	if = {
+		limit = {
+			has_idea = FRA_political_violence
+		}
+		country_event = lar_france_political_violence.1
+	}
+}
+FRA_communism_riot_effect = {
+	if = {
+		limit = {
+			has_idea = FRA_political_violence
+		}
+		country_event = lar_france_political_violence.2
+	}
+}
+
+FRA_transfer_indochina_effect = { #UNUSED
+}
+
+FRA_transfer_syria_effect = {
+	if = {
+		limit = {
+			LEB = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = LEB
+		LEB = { set_cosmetic_tag = LEB_FR }
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = SYR
+				is_core_of = LEB
+			}
+			is_controlled_by = ROOT
+		}
+		transfer_state_to = ROOT
+	}
+	if = {
+		limit = {
+			ALW = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = ALW
+		ALW = { set_cosmetic_tag = ALW_FR }
+	}
+	if = {
+		limit = {
+			JDZ = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = JDZ
+		JDZ = { set_cosmetic_tag = JDZ_FR }
+	}
+	if = {
+		limit = {
+			SYR = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = SYR
+		SYR = { set_cosmetic_tag = SYR_FR }
+	}
+}
+
+FRA_transfer_north_africa_effect = {
+	if = {
+		limit = {
+			TUN = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = TUN
+		TUN = { set_cosmetic_tag = TUN_FR }
+	}
+	if = {
+		limit = {
+			MOR = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = MOR
+		MOR = { set_cosmetic_tag = MOR_FR }
+	}
+	if = {
+		limit = {
+			ALG = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}	
+		}
+		puppet = ALG
+		drop_cosmetic_tag = yes
+	}
+	else_if = {
+		limit = {
+			ALG = {
+				all_core_state = {
+					CONTROLLER = { original_tag = FRA }
+				}
+			}
+		}
+		ALG = {
+			every_core_state = {
+				transfer_state_to = ROOT
+			}
+		}
+	}
+}
+
+FRA_transfer_central_africa_effect = { #UNUSED
+	
+}
+FRA_transfer_western_africa_effect = { #UNUSED
+	
+}

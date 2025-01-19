@@ -1,0 +1,422 @@
+﻿focus_tree = {
+	id = rk_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = RKN
+				tag = RKG
+				tag = RKB
+				tag = MVF
+				tag = GGV
+				tag = RKU
+				tag = RKM
+				tag = RKO
+				tag = RKS
+				tag = RKT
+				tag = RKK
+			}
+		}
+	}
+	
+
+	default = no
+	focus = {
+		id = RK_brutal_repression
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 10
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = GER_brutal_repression
+		}
+	}
+	focus = {
+		id = RK_pro-german_propaganda
+		icon = GFX_focus_generic_fascist_propaganda
+		x = 8
+		y = 1
+
+		cost = 5
+		prerequisite = { focus = RK_brutal_repression }
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = RK_local_recruitment
+		icon = GFX_focus_generic_military_mission
+		x = 7
+		y = 2
+
+		cost = 5
+		prerequisite = { focus = RK_pro-german_propaganda }
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = GER_nazi_sympathisers
+		}
+	}
+	focus = {
+		id = RK_encourage_german_immigration
+		icon = GFX_focus_generic_treaty
+		x = 9
+		y = 2
+
+		cost = 5
+		prerequisite = { focus = RK_pro-german_propaganda }
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = GER_german_immigration
+			add_manpower = 8000
+		}
+	}
+	focus = {
+		id = RK_expell_minorities
+		icon = GFX_goal_generic_demand_territory
+		x = 8
+		y = 3
+
+		cost = 5
+		prerequisite = { focus = RK_encourage_german_immigration focus = RK_local_recruitment }
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.1
+			random_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = ROOT
+							tag = GER
+						}
+					}
+					any_core_state = {
+						is_controlled_by = ROOT
+					}
+					any_core_state = {
+						NOT = { is_controlled_by = ROOT }
+					}
+				}
+				random_state = {
+					limit = {
+						is_core_of = PREV
+						NOT = {
+							is_controlled_by = ROOT
+							is_owned_by = GER
+						}
+					}
+					add_manpower = 20000
+					if = {
+						limit = {
+							NOT = {
+								is_controlled_by = PREV
+							}
+							compliance > 20
+						}
+						add_compliance = -20
+					}
+				}
+				random_state = {
+					limit = {
+						is_core_of = PREV
+						NOT = {
+							is_controlled_by = ROOT
+							is_owned_by = GER
+						}
+					}
+					add_manpower = 20000
+					if = {
+						limit = {
+							NOT = {
+								is_controlled_by = PREV
+							}
+							compliance > 20
+						}
+						add_compliance = -20
+					}
+				}
+				random_state = {
+					limit = {
+						is_core_of = PREV
+						NOT = {
+							is_controlled_by = ROOT
+							is_owned_by = GER
+						}
+					}
+					add_manpower = 20000
+					if = {
+						limit = {
+							NOT = {
+								is_controlled_by = PREV
+							}
+							compliance > 20
+						}
+						add_compliance = -20
+					}
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					NOT = {
+						is_core_of = ROOT
+					}
+					is_controlled_by = ROOT
+					compliance < 50
+					state_population > 60000
+				}
+				add_compliance = 40
+				add_manpower = -20000
+			}
+			random_controlled_state = {
+				limit = {
+					NOT = {
+						is_core_of = ROOT
+					}
+					is_controlled_by = ROOT
+					compliance < 50
+					state_population > 60000
+				}
+				add_compliance = 40
+				add_manpower = -20000
+			}
+			random_controlled_state = {
+				limit = {
+					NOT = {
+						is_core_of = ROOT
+					}
+					is_controlled_by = ROOT
+					compliance < 50
+					state_population > 60000
+				}
+				add_compliance = 40
+				add_manpower = -20000
+			}
+			
+		}
+	}
+	focus = {
+		id = RK_request_german_garrisons
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 12
+		y = 1
+
+		cost = 5
+		prerequisite = { focus = RK_brutal_repression }
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			GER = { country_event = germany.129 }
+		}
+	}
+	focus = {
+		id = RK_seize_local_weapon_caches
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 10
+		y = 1
+
+		cost = 5
+		prerequisite = { focus = RK_brutal_repression }
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			hidden_effect = {
+				random_country = {
+					limit = {
+						any_core_state = {
+							is_controlled_by = ROOT
+						}
+					}
+					save_event_target_as = root_controls_core_state
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 8000
+				producer = event_target:root_controls_core_state
+			}
+		}
+	}
+	focus = {
+		id = RK_crush_radical_elements
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 11
+		y = 2
+
+		cost = 10
+		prerequisite = { focus = RK_request_german_garrisons }
+		prerequisite = { focus = RK_seize_local_weapon_caches }
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			unlock_decision_tooltip = crush_radical_elements
+		}
+	}
+	focus = {
+		id = RK_formal_annexation
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 4
+
+		cost = 10
+		prerequisite = { focus = RK_crush_radical_elements }
+		prerequisite = { focus = RK_expell_minorities }
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			all_controlled_state = {
+				compliance > 40
+			}
+			capital_scope = {
+				is_controlled_by = ROOT
+			}
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_claimed_by = ROOT
+				}
+				transfer_state_to = ROOT
+			}
+			load_focus_tree = generic_focus
+		}
+	}
+}

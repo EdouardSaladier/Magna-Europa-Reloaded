@@ -1,0 +1,1094 @@
+﻿###########################
+# MER Events
+###########################
+
+add_namespace = mer_event
+
+# join the allies
+
+country_event = {
+	id = mer_event.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.1 FROM = [From.GetName]" }
+	title = mer_event.1.t
+	desc = mer_event.1.desc
+	picture = GFX_report_event_ast_navy
+	trigger = {
+		tag = USA
+		has_government = democratic
+		date > 1941.12.01
+		ENG = { 
+			exists = yes
+			has_government = democratic
+			is_faction_leader = yes
+			has_war_with = GER
+		}
+		NOT = { is_in_faction_with = ENG }
+	}
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mer_event.1.a #accept
+		ai_chance = {
+			factor = 200
+		}
+		ENG = { add_to_faction = USA }
+		hidden_effect = {
+			news_event = { days = 1 id = edo_news.1 }
+			if = {
+				limit = {
+					HOL = {
+						is_in_faction_with = ENG
+						has_capitulated = yes
+					}
+				}
+				HOL = { set_country_flag = indonesia_will_fall }
+				news_event = { days = 3 id = edo_news.2 }
+			}
+		}
+	}
+	option = {
+		name = mer_event.1.b #refuse
+		ai_chance = {
+			factor = 0
+		}
+		
+	}
+}
+
+country_event = {
+	id = mer_event.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.2 FROM = [From.GetName]" }
+	title = mer_event.2.t
+	desc = mer_event.2.desc
+	picture = GFX_report_event_ast_navy
+	trigger = {
+		tag = USA
+		has_government = democratic
+		date > 1942.01.01
+		ENG = { 
+			exists = yes
+			has_government = democratic
+			is_faction_leader = yes
+			has_war = yes
+		}
+		FRA = {
+			is_in_faction_with = ENG
+			has_capitulated = yes
+		}
+		is_in_faction_with = ENG
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mer_event.2.a #accept
+		ai_chance = {
+			factor = 200
+		}
+		set_faction_leader = yes
+		set_faction_name = UNITED_NATION
+	}
+	option = {
+		name = mer_event.2.b #refuse
+		ai_chance = {
+			factor = 0
+		}
+		
+	}
+}
+
+country_event = {
+	id = mer_event.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.3 FROM = [From.GetName]" }
+	title = mer_event.3.t
+	desc = mer_event.3.desc
+	picture = GFX_report_event_degaulle_churchill
+	trigger = {
+		tag = FRA
+		has_government = democratic
+		has_war = yes
+		has_capitulated = no
+		ENG = { 
+			exists = yes
+			has_government = democratic
+			is_faction_leader = yes
+			has_war = yes
+		}
+		is_in_faction_with = ENG
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mer_event.3.a #accept
+		ai_chance = {
+			factor = 200
+		}
+		set_faction_name = ENTENTE_CORDIALE
+	}
+	option = {
+		name = mer_event.3.b #refuse
+		ai_chance = {
+			factor = 0
+		}
+		
+	}
+}
+
+country_event = {
+	id = mer_event.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.4 FROM = [From.GetName]" }
+	title = mer_event.4.t
+	desc = mer_event.4.desc
+	picture = GFX_report_event_ast_navy
+	trigger = {
+		tag = IRE
+		has_government = democratic
+		date > 1937.12.28
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mer_event.4.a #accept
+		ai_chance = {
+			factor = 200
+		}
+		ENG = {
+			end_puppet = IRE
+		}
+		drop_cosmetic_tag = yes
+		leave_faction = yes
+		if = {
+			limit = { NOT = { has_idea = neutrality_idea } }
+			add_ideas = neutrality_idea
+		}
+		remove_ideas = IRE_free_state_idea
+	}
+	option = {
+		name = mer_event.4.b #refuse
+		ai_chance = {
+			factor = 0
+		}
+		ENG = {
+			end_puppet = IRE
+		}
+		drop_cosmetic_tag = yes
+	}
+}
+
+country_event = {
+	id = mer_event.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.5 FROM = [From.GetName]" }
+	title = mer_event.5.t
+	desc = mer_event.5.desc
+	picture = GFX_report_event_ast_navy
+	trigger = {
+		tag = FRA
+		date > 1936.12.2
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = mer_event.5.a #accept
+		ai_chance = {
+			factor = 200
+		}
+		SYR = {
+			annex_country = {
+				target = ALW
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = JDZ
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = mer_event.5.b #refuse
+		ai_chance = {
+			factor = 0
+		}
+		end_puppet = SYR
+		SYR = {
+			drop_cosmetic_tag = yes
+			leave_faction = yes
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SYR
+			expire = 0
+		}
+	}
+}
+
+country_event = {
+	id = mer_event.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.6 FROM = [From.GetName]" }
+	title = mer_event.6.t
+	desc = mer_event.6.desc
+	picture = GFX_report_event_ast_navy
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mer_event.6.a #accept
+		ai_chance = {
+			factor = 200
+		}
+		every_state = {
+			limit = {
+				is_yugoslav_istria = yes
+			}
+			add_core_of = YUG
+		}
+	}
+}
+
+country_event = {
+	id = mer_event.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.7 FROM = [From.GetName]" }
+	title = mer_event.7.t
+	desc = mer_event.7.desc
+	trigger = {
+		tag = GER
+		has_government = fascism
+		is_in_faction_with = ITA
+		is_faction_leader = yes
+	}
+	fire_only_once = yes
+	hidden = yes
+	immediate = {
+		GER = { set_faction_name = ROME_BERLIN_FACTION }
+	}
+}
+
+country_event = {
+	id = mer_event.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.8 FROM = [From.GetName]" }
+	title = mer_event.8.t
+	desc = mer_event.8.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	immediate = {
+		LIE = {
+			add_named_threat = { threat = 15 name = JAP_intervene_in_china }
+		}
+	}
+}
+country_event = {
+	id = mer_event.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.9 FROM = [From.GetName]" }
+	title = mer_event.9.t
+	desc = mer_event.9.desc
+	trigger = {
+		OR = {
+			tag = SPA
+			tag = SPB 
+			tag = SPC 
+			tag = SPD
+		}
+		all_controlled_state = {
+			is_spanish_colony_groups = yes
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	immediate = {
+			random_country = {
+				limit = {
+					controls_state = 951
+					OR = {
+						tag = SPA
+						tag = SPB 
+						tag = SPC 
+						tag = SPD
+						tag = SPR
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { NOT = { has_war_with = PREV } }
+					}
+					every_state = {
+						limit = {
+							is_spanish_colony_groups = yes
+							controller = {
+								all_controlled_state = {
+									is_spanish_colony_groups = yes
+								}
+								OR = {
+									tag = ROOT 
+									tag = SPA
+									tag = SPB 
+									tag = SPC 
+									tag = SPD
+									tag = SPR
+								}
+							}
+						}
+						transfer_state_to = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						is_spanish_colony_groups = yes
+						controller = { tag = ROOT }
+					}
+					set_state_controller_to = PREV
+				}
+			}
+		add_ideas = decreased_surrender_idea_2
+	}
+	
+}
+country_event = {
+	id = mer_event.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.10 FROM = [From.GetName]" }
+	title = mer_event.10.t
+	desc = mer_event.10.desc
+	trigger = {
+		tag = ITA
+		any_other_country = {
+			original_tag = ITA
+			all_owned_state = {
+				region = 66
+			}
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	immediate = {
+		random_other_country = {
+			limit = {
+				original_tag = ITA 
+				all_owned_state = {
+					region = 66
+				}
+			}
+			ROOT = {
+				annex_country = {
+					target = PREV 
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mer_event.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.1 FROM = [From.GetName]" }
+	title = mer_event.11.t
+	desc = mer_event.11.desc
+	picture = GFX_report_event_ast_navy
+	trigger = {
+		tag = HOL
+		has_country_flag = indonesia_will_fall
+		has_capitulated = yes
+		date > 1942.03.07
+	}
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	immediate = {
+		add_resource = {
+			type = rubber
+			amount = -420
+			state = 2975
+		}
+		add_resource = {
+			type = oil
+			amount = -80
+			state = 2975
+		}
+		add_resource = {
+			type = aluminium
+			amount = -40
+			state = 2975
+		}
+		
+		hidden_effect = {
+			news_event = { days = 1 id = edo_news.3 }
+			country_event = { days = 1256 id = mer_event.12 }
+		}
+	}
+}
+
+country_event = {
+	id = mer_event.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.1 FROM = [From.GetName]" }
+	title = mer_event.12.t
+	desc = mer_event.12.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	immediate = {
+		add_resource = {
+			type = rubber
+			amount = 420
+			state = 2975
+		}
+		add_resource = {
+			type = oil
+			amount = 80
+			state = 2975
+		}
+		add_resource = {
+			type = aluminium
+			amount = 40
+			state = 2975
+		}
+		
+		hidden_effect = {
+			news_event = { days = 1 id = edo_news.4 }
+		}
+	}
+}
+
+country_event = { #Macedonia borders for Bulgaria claims
+	id = mer_event.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.13 FROM = [From.GetName]" }
+	title = mer_event.13.t
+	desc = mer_event.13.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = { #Historical
+		name = mer_event.13.a 
+		country_event = { id = mer_event.14 hours = 3 random_hours = 3 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 904
+						state = 959
+						state = 2796
+					}
+				}
+				set_state_flag = BUL_claim_excluded
+			}
+			888 = { set_state_flag = BUL_nonclaim_included }
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = { #Ahistorical - stick w/ claims
+		name = mer_event.13.b
+		country_event = { id = mer_event.14 hours = 3 random_hours = 3 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+			modifier = {
+				OR = {
+					NOT = { has_government = fascism }
+					has_country_flag = ENG_ditched_the_italians_flag
+					ITA = { 
+						NOT = {  
+							has_country_leader = {
+								character = ITA_benito_mussolini
+								ruling_only = yes
+							}
+						} 
+					}
+				}
+				factor = 3
+			}
+		}
+	}
+	
+	option = { #Ahistorical - go out with WWI occupation
+		name = mer_event.13.c
+		country_event = { id = mer_event.14 hours = 3 random_hours = 3 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 796
+						state = 862
+						state = 1509
+						state = 2960
+						state = 1992
+						state = 1508
+						state = 1991
+						state = 2806
+						state = 2596
+						state = 1996
+						state = 2013
+					}
+				}
+				set_state_flag = BUL_nonclaim_included
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+			modifier = {
+				has_government = neutrality
+				factor = 4
+			}
+		}
+	}
+}
+
+country_event = { #Dobrudja borders for Bulgaria claims
+	id = mer_event.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.14 FROM = [From.GetName]" }
+	title = mer_event.14.t
+	desc = mer_event.14.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = { #Historical
+		name = mer_event.14.a 
+		country_event = { id = mer_event.15 hours = 3 random_hours = 3 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = { #Ahistorical - give northern too w/ exceptions
+		name = mer_event.14.b
+		country_event = { id = mer_event.15 hours = 3 random_hours = 3 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = DOB
+					NOT = {
+						has_state_flag = BUL_historical_bulgarian_claim_flag
+						state = 2886
+						state = 2902
+					}
+				}
+				set_state_flag = BUL_nonclaim_included
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+			modifier = {
+				has_government = neutrality
+				factor = 4
+			}
+		}
+	}
+}
+
+country_event = { #Thrace borders for Bulgaria claims
+	id = mer_event.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.15 FROM = [From.GetName]" }
+	title = mer_event.15.t
+	desc = mer_event.15.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = { #Historical
+		name = mer_event.15.a 
+		country_event = { id = mer_event.16 hours = 3 random_hours = 3 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 1969
+						state = 2005
+						state = 1545
+						state = 1546
+						state = 2748
+						state = 2940
+						state = 969
+					}
+				}
+				set_state_flag = BUL_claim_excluded
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = { #Ahistorical - stick w/ claims
+		name = mer_event.15.b
+		country_event = { id = mer_event.16 hours = 3 random_hours = 3 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+			modifier = {
+				OR = {
+					NOT = { has_government = fascism }
+					has_country_flag = ENG_ditched_the_italians_flag
+					ITA = { 
+						NOT = {  
+							has_country_leader = {
+								character = ITA_benito_mussolini
+								ruling_only = yes
+							}
+						} 
+					}
+				}
+				factor = 3
+			}
+		}
+	}
+	
+	option = { #Ahistorical - go all out
+		name = mer_event.15.c
+		country_event = { id = mer_event.16 hours = 3 random_hours = 3 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 2000
+						state = 2940
+						state = 941
+						state = 1547
+						state = 1557
+						state = 969
+						state = 2923
+						state = 2020
+						state = 1544
+					}
+				}
+				set_state_flag = BUL_nonclaim_included
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+			modifier = {
+				has_government = neutrality
+				factor = 4
+			}
+		}
+	}
+}
+
+country_event = { #Include parts of Eastern Thrace?
+	id = mer_event.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.16 FROM = [From.GetName]" }
+	title = mer_event.16.t
+	desc = mer_event.16.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = { #No
+		name = mer_event.16.a 
+		country_event = { id = mer_event.17 hours = 12 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = { #Yes
+		name = mer_event.16.b
+		country_event = { id = mer_event.17 hours = 12 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 928
+						state = 906
+						state = 2753
+						state = 2754
+					}
+				}
+				set_state_flag = BUL_nonclaim_included
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event = { #Finalization
+	id = mer_event.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.17 FROM = [From.GetName]" }
+	title = mer_event.17.t
+	desc = mer_event.17.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = mer_event.17.a 
+		every_state = {
+			limit = {
+				OR = {
+					has_state_flag = BUL_historical_bulgarian_claim_flag
+					has_state_flag = BUL_nonclaim_included
+				}
+				NOT = { has_state_flag = BUL_claim_excluded }
+				controller = {
+					NOT = { tag = BUL }
+				}
+			}
+			set_state_flag = BUL_bulgarian_claim_warranted_flag
+			add_dynamic_modifier = { modifier = bulgarian_territorial_expansion_arranged }
+		}
+		BUL = { country_event = { id = bftb_bulgarian_claims.2 hours = 16 random_hours = 8 } }
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = { #A call for help
+	id = mer_event.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.18 FROM = [From.GetName]" }
+	title = mer_event.18.t
+	desc = mer_event.18.desc
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mer_event.18.a 
+		GER = { country_event = { id = mer_event.19 hours = 1 } }
+	}
+}
+
+country_event = { #Response to Carpatho-Ukraine call for help
+	id = mer_event.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.19 FROM = [From.GetName]" }
+	title = mer_event.19.t
+	desc = mer_event.19.desc
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { #Ok
+		name = mer_event.19.a 
+		puppet = CRP
+		CRP = { country_event = { id = mer_event.22 hours = 1 } }
+		HUN = { country_event = { id = mer_event.23 hours = 1 } }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+	option = { #No
+		name = mer_event.19.b 
+		CRP = { country_event = { id = mer_event.20 hours = 1 } }
+		HUN = { country_event = { id = mer_event.21 hours = 1 } }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				HUN = { is_friend_or_potential_friend_of_GER = yes }
+				factor = 0.02
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mer_event.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.20 FROM = [From.GetName]" }
+	title = mer_event.20.t
+	desc = mer_event.20.desc
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { #We are screwed
+		name = mer_event.20.a 
+	}
+}
+
+country_event = {
+	id = mer_event.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.21 FROM = [From.GetName]" }
+	title = mer_event.21.t
+	desc = mer_event.21.desc
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { #Move in
+		name = mer_event.21.a 
+		declare_war_on = {
+			target = CRP
+			type = annex_everything
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = { #No
+		name = mer_event.21.b 
+		ai_chance = {
+			factor = 25
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mer_event.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.22 FROM = [From.GetName]" }
+	title = mer_event.22.t
+	desc = mer_event.22.desc
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { #Thank goodness
+		name = mer_event.22.a 
+		effect_tooltip = {
+			FROM = { puppet = ROOT }
+		}
+	}
+}
+
+country_event = {
+	id = mer_event.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.23 FROM = [From.GetName]" }
+	title = mer_event.23.t
+	desc = mer_event.23.desc
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { #Really Germany
+		name = mer_event.23.a 
+		add_opinion_modifier = {
+			target = GER
+			modifier = large_decrease
+		}
+		ai_chance = {
+			factor = 75
+			modifier = {
+				HUN = { is_friend_or_potential_friend_of_GER = yes }
+				factor = 1.5
+			}
+		}
+	}
+	
+	option = { #Don't respond
+		name = mer_event.23.b 
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = { #Karelia - confirm or continue
+	id = mer_event.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.24 FROM = [From.GetName]" }
+	title = mer_event.24.t
+	desc = mer_event.24.desc
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { #Confirm
+		name = mer_event.24.a 
+		every_state = {
+			limit = {
+				OR = {
+					state = 2783
+					state = 36
+					state = 29
+				}
+			}
+			transfer_state_to = SOV
+			add_core_of = SOV
+		}
+		transfer_state = 105
+		every_state = {
+			limit = {
+				OR = {
+					state = 62
+					state = 74
+				}
+			}
+			transfer_state_to = FIN
+			add_core_of = FIN
+		}
+		every_state = {
+			limit = {
+				is_core_of = FIN
+				is_claimed_by = SOV
+			}
+			remove_claim_by = SOV
+		}
+		hidden_effect = {
+			SOV = {
+				country_event = { hours = 18 id = news.13 }
+			}
+		}
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = { #Continue
+		name = mer_event.24.b 
+		FIN = {
+			country_event = { id = mer_event.25 hours = 16 random_hours = 8 }
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+# Soviet Ultimatum number 2
+country_event = {
+	id = mer_event.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.25 FROM = [From.GetName]" }
+	title = mer_event.25.t
+	desc = mer_event.25.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Accept new demands
+		name = finland.1.a
+		ai_chance = { 
+			base = 10
+			modifier = { # Don't accept if in a faction that can protect them
+				factor = 0
+				NOT = { is_in_faction_with = FROM }
+				OR = {
+					any_other_country = {
+						is_major = yes
+						OR = {
+							is_in_faction_with = FIN
+							has_guaranteed = FIN
+						}
+					}
+					has_idea = anti_soviet_pact
+				}
+			}
+		}
+		FROM = {
+			country_event = { days = 2 id = mer_event.26 }
+		}
+		effect_tooltip = {
+			FROM = {
+				transfer_state = 2783
+				transfer_state = 36
+				transfer_state = 105
+				transfer_state = 77
+				transfer_state = 100
+				transfer_state = 113
+				transfer_state = 29
+			}
+		}
+	}
+	option = { # Refuse
+		name = finland.1.b
+		ai_chance = {
+			base = 90
+			modifier = {
+				factor = 0
+				is_in_faction_with = FROM
+			}
+		}
+		FROM = {
+			country_event = { days = 2 id = mer_event.27 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_claimed_state
+					target = FIN
+				}
+			}
+		}
+	}
+}
+
+# Finland Accepts Demands
+country_event = {
+	id = mer_event.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.26 FROM = [From.GetName]" }
+	title = soviet.12.t
+	desc = mer_event.26.d
+	picture = GFX_report_event_soviet_finnish_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mer_event.26.a
+		SOV = {
+			transfer_state = 2783
+			transfer_state = 36
+			transfer_state = 105
+			transfer_state = 77
+			transfer_state = 100
+			transfer_state = 113
+			transfer_state = 29
+		}
+	}
+}
+
+# Finland Refuses Demands
+country_event = {
+	id = mer_event.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mer_event.27 FROM = [From.GetName]" }
+	title = soviet.13.t
+	desc = soviet.13.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.13.a
+		create_wargoal = {
+			type = take_claimed_state
+			target = FIN
+		}				
+		hidden_effect = {
+			SOV = {
+				country_event = { days = 1 id = news.12 }				
+			}
+		}
+	}
+}

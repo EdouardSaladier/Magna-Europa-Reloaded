@@ -1,0 +1,46 @@
+do_country_renames = {
+	ROOT = {
+		every_owned_state = {
+			do_all_renames = yes
+		}
+	}
+}
+
+do_all_renames = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = GER
+					tag = AUS
+					tag = GGV
+					tag = RKN
+					tag = RKB
+					tag = MVF
+					tag = RKS
+					tag = RKU
+					tag = RKD
+					tag = RKG
+					tag = RKO
+					tag = RKM
+					tag = RKK
+					tag = RKT
+				}
+			}
+		}
+		
+		do_german_renames = yes
+	}
+	
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = CZE
+				}
+			}
+		}
+		
+		do_czech_renames = yes
+	}
+}
