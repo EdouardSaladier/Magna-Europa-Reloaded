@@ -30,6 +30,7 @@ peace_decisions = {
 					NOT = {
 						is_core_of = ROOT
 						is_claimed_by = ROOT
+						is_contested = yes
 					}
 				}
 				NOT = { has_government = democratic }
@@ -77,6 +78,7 @@ peace_decisions = {
 					NOT = {
 						is_core_of = ROOT
 						is_claimed_by = ROOT
+						is_contested = yes
 					}
 				}
 				has_government = democratic
@@ -134,6 +136,131 @@ peace_decisions = {
 		
 		complete_effect = {
 			country_event = peace.1
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	eupen_malmedy  = {
+		
+		visible = {
+			FROM ={
+				485 = {
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				OR = {
+					BEL = { owns_state = 2370 }
+					WLN = { owns_state = 2370 }
+					LEG = { owns_state = 2370 }
+					LUX = { owns_state = 2370 }
+					2370 = {
+						is_core_of = ROOT
+					}
+					2370 = {
+						is_claimed_by = ROOT
+					}
+				}
+			}
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			country_event = peace.2
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	belgian_luxembourg  = {
+		
+		visible = {
+			FROM ={
+				2368 = {
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				500 = {
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				2370 = {
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				2369 = {
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				OR = {
+					BEL = { exists = yes }
+					WLN = { exists = yes }
+					LEG = { exists = yes }
+					NMR = { exists = yes }
+				}
+			}
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			country_event = peace.3
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	brussels = {
+		
+		visible = {
+			FROM ={
+				2969 = {
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				OR = {
+					BEL = { owns_state = 470 }
+					FLA = { owns_state = 470 }
+					BRB = { owns_state = 470 }
+					470 = {
+						is_core_of = ROOT
+					}
+					470 = {
+						is_claimed_by = ROOT
+					}
+				}
+			}
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			country_event = peace.4
 		}
 		
 		ai_will_do = {

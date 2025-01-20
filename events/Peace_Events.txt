@@ -209,6 +209,7 @@ country_event = {
 				BEL = { exists = yes }
 				WLN = { exists = yes }
 			}
+			LUX  = {exists = yes }
 		}
 		if = {
 			limit = {
@@ -235,6 +236,15 @@ country_event = {
 	
 	option = {
 		name = peace.3.c #Give the Belgian Luxembourg back to Luxembourg, the rest to Belgium/its remnants
+		trigger = {
+			OR = {
+				BEL = { exists = yes }
+				WLN = { exists = yes }
+				LEG = { exists = yes }
+				NMR = { exists = yes }
+			}
+			LUX  = {exists = yes }
+		}
 		ai_chance = {
 			base = 1
 		}
@@ -274,6 +284,9 @@ country_event = {
 	
 	option = {
 		name = peace.3.d #Give it all to Luxembourg
+		trigger = {
+			LUX  = {exists = yes }
+		}
 		ai_chance = {
 			base = 1
 		}
