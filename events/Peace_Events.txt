@@ -1,0 +1,369 @@
+﻿###########################
+# Yugoslavian Events
+###########################
+
+add_namespace = peace
+
+country_event = {
+	id = peace.1 # Peace - Belgium Fate
+	immediate = { log = "[GetDateText]: [Root.GetName]: event peace.1 FROM = [From.GetName]" }
+	title = peace.1.t
+	desc = peace.1.d
+	picture = GFX_report_event_military_planning
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = peace.1.a #Belgium Whole
+		ai_chance = {
+			base = 1
+		}
+		ROOT = { save_event_target_as = root_overlord }
+		BEL = {
+			save_event_target_as = release_state
+			release_decision_effect = yes
+		}
+	}
+
+	option = {
+		name = peace.1.b #Divide between Flanders and Wallonia
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		ROOT = { save_event_target_as = root_overlord }
+		FLA = {
+			save_event_target_as = release_state
+			release_decision_effect = yes
+		}
+		WLN = {
+			save_event_target_as = release_state
+			release_decision_effect = yes
+		}
+	}
+	
+	option = {
+		name = peace.1.c #Balkanise Belgium
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		ROOT = { save_event_target_as = root_overlord }
+		LEG = {
+			save_event_target_as = release_state
+			release_decision_effect = yes
+		}
+		NMR = {
+			save_event_target_as = release_state
+			release_decision_effect = yes
+		}
+		HNT = {
+			save_event_target_as = release_state
+			release_decision_effect = yes
+		}
+		LIM = {
+			save_event_target_as = release_state
+			release_decision_effect = yes
+		}
+		BRB = {
+			save_event_target_as = release_state
+			release_decision_effect = yes
+		}
+		FLA = {
+			save_event_target_as = release_state
+			release_decision_effect = yes
+		}
+	}
+}
+
+country_event = {
+	id = peace.2 # Peace - Eupen-Malmedy
+	immediate = { log = "[GetDateText]: [Root.GetName]: event peace.1 FROM = [From.GetName]" }
+	title = peace.2.t
+	desc = peace.2.d
+	picture = GFX_report_event_military_planning
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = peace.2.a #Give it to Belgium
+		trigger = {
+			OR = {
+				BEL = { owns_state = 2370 }
+				WLN = { owns_state = 2370 }
+				LEG = { owns_state = 2370 }
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = {
+				BEL = { exists = yes }
+			}
+			BEL = {
+				transfer_state = 485
+			}
+		}
+		else_if = {
+			limit = {
+				WLN = { exists = yes }
+			}
+			WLN = {
+				transfer_state = 485
+			}
+		}
+		else_if = {
+			limit = {
+				LEG = { exists = yes }
+			}
+			LEG = {
+				transfer_state = 485
+				add_state_core = 485
+			}
+		}
+	}
+
+	option = {
+		name = peace.2.b #Give it to Germany
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			GER = { exists = yes }
+		}
+		GER = {
+			transfer_state = 485
+		}
+	}
+	
+	option = {
+		name = peace.2.c #Give it to Luxembourg
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			LUX = { owns_state = 2370 }
+		}
+		LUX = {
+			transfer_state = 485
+			add_state_core = 485
+		}
+	}
+}
+
+country_event = {
+	id = peace.3 # Peace - Belgian Luxembourg
+	immediate = { log = "[GetDateText]: [Root.GetName]: event peace.1 FROM = [From.GetName]" }
+	title = peace.3.t
+	desc = peace.3.d
+	picture = GFX_report_event_military_planning
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = peace.3.a #Give it all to Belgium
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				BEL = { exists = yes }
+				WLN = { exists = yes }
+			}
+		}
+		if = {
+			limit = {
+				BEL = { exists = yes }
+			}
+			BEL = {
+				transfer_state = 2368
+				transfer_state = 500
+				transfer_state = 2370
+				transfer_state = 2369
+			}
+		}
+		else = {
+			WLN = {
+				transfer_state = 2368
+				transfer_state = 500
+				transfer_state = 2370
+				transfer_state = 2369
+			}
+		}
+	}
+	
+	option = {
+		name = peace.3.b #Give Arlon to Luxembourg, the rest to Belgium
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				BEL = { exists = yes }
+				WLN = { exists = yes }
+			}
+		}
+		if = {
+			limit = {
+				BEL = { exists = yes }
+			}
+			BEL = {
+				transfer_state = 500
+				transfer_state = 2370
+				transfer_state = 2369
+			}
+		}
+		else = {
+			WLN = {
+				transfer_state = 500
+				transfer_state = 2370
+				transfer_state = 2369
+			}
+		}
+		LUX  = {
+			transfer_state = 2368
+			add_state_core = 2368
+		}
+	}
+	
+	option = {
+		name = peace.3.c #Give the Belgian Luxembourg back to Luxembourg, the rest to Belgium/its remnants
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = {
+				BEL = { exists = yes }
+			}
+			BEL = {
+				transfer_state = 2370
+				transfer_state = 2369
+			}
+		}
+		else_if = {
+			limit = {
+				WLN = { exists = yes }
+			}
+			WLN = {
+				transfer_state = 2370
+				transfer_state = 2369
+			}
+		}
+		else = {
+			LEG = {
+				transfer_state = 2370
+			}
+			NMR = {
+				transfer_state = 2369
+			}
+		}
+		LUX  = {
+			transfer_state = 2368
+			add_state_core = 2368
+			transfer_state = 500
+			add_state_core = 500
+		}
+	}
+	
+	option = {
+		name = peace.3.d #Give it all to Luxembourg
+		ai_chance = {
+			base = 1
+		}
+		LUX  = {
+			transfer_state = 2368
+			add_state_core = 2368
+			transfer_state = 500
+			add_state_core = 500
+			transfer_state = 2370
+			add_state_core = 2370
+			transfer_state = 2369
+			add_state_core = 2369
+		}
+	}
+}
+
+country_event = {
+	id = peace.4 # Peace - Brussells
+	immediate = { log = "[GetDateText]: [Root.GetName]: event peace.1 FROM = [From.GetName]" }
+	title = peace.4.t
+	desc = peace.4.d
+	picture = GFX_report_event_military_planning
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = peace.4.a #Belgian Brussells
+		trigger = {
+			BEL = { owns_state = 470 }
+		}
+		ai_chance = {
+			base = 1
+		}
+		BEL = {
+			transfer_state = 2969
+		}
+	}
+	
+	option = {
+		name = peace.4.b #Give it to Belgium
+		trigger = {
+			OR = {
+				FLA = { owns_state = 470 }
+				BRB = { owns_state = 470 }
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = {
+				FLA = { owns_state = 470 }
+			}
+			FLA = {
+				transfer_state = 2969
+				add_state_core = 2969
+			}
+		}
+		else = {
+			BRB = {
+				transfer_state = 2969
+				add_state_core = 2969
+			}
+		}
+	}
+	
+	option = {
+		name = peace.4.c #Wallonian Brussells
+		trigger = {
+			WLN = { owns_state = 422 }
+		}
+		ai_chance = {
+			base = 1
+		}
+		WLN = {
+			transfer_state = 2969
+			add_state_core = 2969
+		}
+	}
+
+	option = {
+		name = peace.4.d #Independant Brussells
+		ai_chance = {
+			base = 1
+		}
+		ROOT = { save_event_target_as = root_overlord }
+		BRU = {
+			transfer_state = 2969
+			save_event_target_as = release_state
+			release_decision_effect = yes
+		}
+	}
+}

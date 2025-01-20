@@ -1,0 +1,143 @@
+peace_decisions = {
+
+	give_back_ally_core  = {
+		
+		target_array = this.faction_members
+		
+		visible = {
+			AND = {
+				NOT = {
+					is_puppet = yes
+				}
+				NOT = {
+					AND = {
+						ROOT = { original_tag = GER }
+						OR = { 
+							FROM = { original_tag = POL }
+							FROM = { original_tag = SOV }
+							FROM = { original_tag = BLR }
+							FROM = { original_tag = UKR }
+							FROM = { original_tag = GEO }
+							FROM = { original_tag = CZE }
+						}
+					}
+				}
+				any_owned_state = {
+					OR = {
+						is_core_of = FROM
+						is_claimed_by = FROM
+					}
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				NOT = { has_government = democratic }
+			}
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = FROM
+						is_claimed_by = FROM
+					}
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				
+				FROM = { transfer_state  = PREV }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	give_back_core  = {
+		
+		target_array = this.neighbors
+		
+		visible = {
+			AND = {
+				NOT = {
+					is_puppet = yes
+				}
+				any_owned_state = {
+					OR = {
+						is_core_of = FROM
+						is_claimed_by = FROM
+					}
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				has_government = democratic
+				FROM = { exists = yes }
+			}
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = FROM
+						is_claimed_by = FROM
+					}
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				
+				FROM = { transfer_state  = PREV }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	fate_of_belgium  = {
+		
+		visible = {
+			BEL = { exists = no }
+			FROM ={
+				470 = {
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				422 = {
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+			}
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			country_event = peace.1
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+}

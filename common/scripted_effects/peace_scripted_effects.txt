@@ -1,0 +1,27 @@
+release_decision_effect = {
+	event_target:root_overlord = {
+		every_owned_state = {
+			limit = {
+				is_core_of = event_target:release_state
+				NOT = {
+					is_core_of = event_target:root_overlord
+					is_claimed_by = event_target:root_overlord
+					is_contested = yes
+				}
+			}
+			event_target:release_state = { transfer_state  = PREV }
+		}
+		puppet = event_target:release_state
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			set_autonomy = {
+				target = event_target:release_state
+				autonomous_state = autonomy_supervised_state
+				end_wars = no
+				end_civil_wars = no
+			}	
+		}
+	}
+}

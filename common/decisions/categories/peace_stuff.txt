@@ -1,0 +1,12 @@
+peace_decisions = {
+	icon = generic_political_actions
+	visible = {
+		NOT = {
+			AND = {
+				tag = GER
+				has_government = fascism
+			}
+		}
+		NOT = { ROOT = { is_puppet = yes } }
+	}
+}
