@@ -7,6 +7,9 @@ state={
 		buildings = {
 			infrastructure = 3
 			fuel_silo = 1
+			5868 = { #Not exact match with historical location but has supplies
+				air_facility = 1 #Representing Peenemünde's Research Facilities
+			}
 		}
 		add_core_of = PRE
 		add_core_of = POM
