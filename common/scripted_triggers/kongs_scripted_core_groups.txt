@@ -1,0 +1,256 @@
+#this is stupid fml
+
+is_granada_group = {
+	OR = {
+		state = 1086
+		state = 1083
+		state = 1103
+	}
+}
+is_sevilla_group = {
+	OR = {
+		state = 1079
+		state = 1115
+		state = 1078
+	}
+}
+is_cordoba_group = {
+	OR = {
+		state = 1058
+		state = 1063
+	}
+}
+is_extremadura_group = {
+	OR = {
+		is_core_of = EXT
+	}
+}
+is_murcia_group = {
+	OR = {
+		is_core_of = MUR
+	}
+}
+is_valencia_group = {
+	OR = {
+		is_core_of = VAL
+	}
+}
+is_catalonia_group = {
+	OR = {
+		AND = {
+			is_core_of = CAT
+			NOT = {
+				state = 871
+			}
+		}
+	}
+}
+is_ciudad_group = {
+	OR = {
+		state = 1029
+		state = 999
+	}
+}
+is_west_aragon_group = {
+	OR = {
+		state = 880
+		state = 2327
+		state = 939i
+	}
+}
+is_east_aragon_group = {
+	OR = {
+		state = 870
+	}
+}
+is_galicia_group = {
+	OR = {
+		is_core_of = GLC
+	}
+}
+is_asturias_group = {
+	OR = {
+		is_core_of = ATR
+		is_core_of = CBR
+	}
+}
+is_guadalajara_group = {
+	OR = {
+		state = 940
+		state = 980
+	}
+}
+is_navarra_group = {
+	OR = {
+		state = 854
+	}
+}
+is_pais_group = {
+	OR = {
+		state = 851
+		state = 860
+		state = 849
+	}
+}
+is_burgos_group = {
+	OR = {
+		state = 859
+		state = 883
+		state = 901
+	}
+}
+is_valladolid_group = {
+	OR = {
+		state = 864
+		state = 897
+	}
+}
+is_madrid_group = {
+	OR = {
+		state = 926
+		state = 950
+		state = 951
+	}
+}
+is_salamanca_group = {
+	OR = {
+		state = 943
+	}
+}
+is_leon_group = {
+	OR = {
+		state = 898
+		state = 857
+	}
+}
+is_mainland_spain_vanilla_groups = {
+	OR = {
+		is_leon_group = yes
+		is_salamanca_group = yes
+		is_madrid_group = yes
+		is_valladolid_group = yes
+		is_burgos_group = yes
+		is_pais_group = yes
+		is_navarra_group = yes
+		is_guadalajara_group = yes
+		is_asturias_group = yes
+		is_galicia_group = yes
+		is_ciudad_group = yes
+		is_catalonia_group = yes
+		is_valencia_group = yes
+		is_murcia_group = yes
+		is_extremadura_group = yes
+		is_cordoba_group = yes
+		is_sevilla_group = yes
+		is_granada_group = yes
+		is_east_aragon_group = yes
+		is_west_aragon_group = yes
+	}
+}
+## COLONIES ##
+is_balearic_group = {
+	OR = {
+		is_core_of = BAL
+	}
+}
+is_spanish_nafrica_group = {
+	OR = {
+		state = 1160
+		state = 1181
+		state = 1177
+		state = 1189
+		state = 1182
+		state = 893
+		state = 1852
+	}
+}
+is_canary_group = {
+	OR = {
+		state = 1858
+		state = 1824
+	}
+}
+is_spanish_sahara_group = {
+	OR = {
+		state = 1323
+		state = 2843
+		state = 1335
+		state = 2844
+	}
+}
+is_spanish_morocco_group = {
+	OR = {
+		state = 1857
+		state = 1976
+	}
+}
+is_spanish_colony_groups = {
+	OR = {
+		is_spanish_morocco_group = yes
+		is_spanish_sahara_group = yes
+		is_canary_group = yes
+		is_spanish_nafrica_group = yes
+		is_balearic_group = yes
+	}
+}
+is_spanish_actual_colony_groups = {
+	OR = {
+		is_spanish_sahara_group = yes
+		is_spanish_morocco_group = yes
+	}
+}
+is_anarchist_group = {
+	OR = {
+		is_east_aragon_group = yes
+		is_west_aragon_group = yes
+		is_catalonia_group = yes
+	}
+}
+
+## KURDISTAN CORE GROUPS ##
+is_diyabakir_group = {
+	OR = {
+		state = 1085
+		state = 1960
+		state = 1091
+		state = 1059
+		state = 1065
+	}
+}
+is_hakkari_group = {
+	OR = {
+		state = 1092
+		state = 1077
+		state = 1071
+		state = 1957
+		state = 1062
+	}
+}
+is_van_group = {
+	OR = {
+		state = 1039
+		state = 1051
+		state = 1033
+		state = 1018
+		state = 1013
+		state = 1004
+		state = 1001
+		state = 2248
+	}
+}
+is_tunceli_group = {
+	OR = {
+		state = 1047
+		state = 1031
+		state = 1958
+		state = 1012
+	}
+}
+is_kurdish_group = {
+	OR = {
+		is_tunceli_group = yes 
+		is_van_group = yes 
+		is_hakkari_group = yes
+		is_diyabakir_group = yes
+	}
+}

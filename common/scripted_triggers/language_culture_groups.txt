@@ -1,0 +1,497 @@
+is_tuscan = {
+	OR = {
+		original_tag = TUS #Tuscany
+		original_tag = LCC #Lucca
+		original_tag = SNA #Siena
+		original_tag = PIS #Pisa
+	}
+}
+is_emilian = {
+	OR = {
+		original_tag = MCR #Massa-Carrara
+		original_tag = MDN #Modena
+		original_tag = BLG #Bologna
+		original_tag = FRR #Ferrara
+		original_tag = PRM #Parma
+		original_tag = MTV #Mantova
+	}
+}
+is_lombard = {
+	OR = {
+		original_tag = LOM #Lombardy
+		original_tag = PAV #Pavia
+	}
+}
+is_northern_italian = {
+	OR = {
+		is_emilian = yes
+		is_lombard = yes
+		original_tag = PIE #Piedmont
+		original_tag = VOS #Val d'Ossola (Partisan Republic)
+		original_tag = LIG #Liguria
+		original_tag = RMG #Romagna
+		original_tag = SMR #San Marino
+		original_tag = VNT #Veneto
+		original_tag = SUT #South Tyrol (Entirety of Tridentine Venetia, slight majority Italian)
+	}
+}
+is_northern_italian_core = {
+	OR = {
+		is_core_of = MCR
+		is_core_of = MDN
+		is_core_of = BLG
+		is_core_of = FRR
+		is_core_of = PRM
+		is_core_of = MTV
+		is_core_of = LOM
+		is_core_of = PAV
+		is_core_of = MTV
+		is_core_of = PIE
+		is_core_of = VOS
+		is_core_of = LOM
+		is_core_of = LIG
+		is_core_of = RMG
+		is_core_of = SMR
+		is_core_of = VNT
+		is_core_of = FRI
+		is_core_of = AOS
+		is_core_of = TST
+		is_core_of = SUT
+		is_core_of = JUL
+	}
+}
+is_central_italian = {
+	OR = {
+		is_tuscan = yes
+		original_tag = LAZ #Lazio
+		original_tag = VAT #Vatican
+		original_tag = UMB #Umbria
+		original_tag = MAR #Marches
+		original_tag = COR #Corsica
+	}
+}
+
+is_southern_italian = {
+	OR = {
+		original_tag = ABR #Abruzzo
+		original_tag = MLS #Molise
+		original_tag = NAP #Naples
+		original_tag = PUG #Apulia
+		original_tag = LUC #Lucania (Basilicata)
+		original_tag = CAL #Calabria
+	}
+}
+is_southern_italian_core = {
+	OR = {
+		is_core_of = ABR #Abruzzo
+		is_core_of = MLS #Molise
+		is_core_of = NAP #Naples
+		is_core_of = PUG #Apulia
+		is_core_of = LUC #Lucania (Basilicata)
+		is_core_of = CAL #Calabria
+		is_core_of = SIC #Sicily
+	}
+}
+is_italian = {
+	OR = {
+		is_northern_italian = yes
+		is_central_italian = yes
+		is_southern_italian = yes
+		original_tag = ITA #Italy
+		original_tag = SIC #Sicily
+		original_tag = SRD #Sardinia
+		original_tag = TST #Trieste
+		original_tag = FRI #Friuli
+		original_tag = FIU #Fiume
+		original_tag = LDN #Ladinia
+		original_tag = JUL #Julian March
+		original_tag = IST #Istria
+		original_tag = GOR #Gorizia
+	}
+}
+
+is_occitan = {
+	OR = {
+		original_tag = OCC
+		original_tag = AVG
+		original_tag = GAS
+		original_tag = GYE
+		original_tag = BEA
+		original_tag = FIX
+		original_tag = LDC
+		original_tag = AQT
+		original_tag = PRV
+		original_tag = NZA
+		original_tag = LMS
+	}
+}
+is_d_oil = {
+	OR = {
+		original_tag = FRA
+		original_tag = PIC
+		original_tag = NMD
+		original_tag = POI
+		original_tag = ANJ
+		original_tag = CMP
+		original_tag = LOR
+		original_tag = LYO
+		original_tag = BGN
+		original_tag = ORL
+		original_tag = ATI
+		original_tag = WLN
+		original_tag = HNT
+		original_tag = LEG
+		original_tag = NMR
+		original_tag = DAU
+		original_tag = ANS
+		original_tag = SNT
+		original_tag = AGM
+		original_tag = MNE
+		original_tag = TNE
+		original_tag = FRC
+		original_tag = BRY
+		original_tag = BBN
+		original_tag = NVN
+	}
+}
+
+is_arpitan = {
+	OR = {
+		original_tag = AOS
+		original_tag = VLS
+		original_tag = ARP
+		original_tag = RMD
+		original_tag = SAV
+	}
+}
+is_french = { 
+	OR = {
+		is_d_oil = yes
+		is_occitan = yes
+	}
+}
+
+is_frisian = {
+	OR = {
+		original_tag = EFR
+		original_tag = NFR
+		original_tag = WFR
+	}
+}
+is_dutch = {
+	OR = {
+		original_tag = HOL
+		original_tag = FLA
+		original_tag = BRB
+		original_tag = LIM
+	}
+}
+
+is_catalan = {
+	OR = {
+		original_tag = CAT
+		original_tag = VAL
+		original_tag = BAL
+		original_tag = ADR
+	}
+}
+is_castilian = {
+	OR = {
+		original_tag = SPR
+		original_tag = ARA
+		original_tag = ADU
+		original_tag = MUR
+		original_tag = EXT
+		original_tag = ATR
+		original_tag = CBR
+		original_tag = CNR
+		original_tag = LEO
+		original_tag = CSV
+		original_tag = CSM
+		original_tag = MDR
+	}
+}
+is_spanish = {
+	OR = {
+		is_catalan = yes
+		is_castilian = yes
+	}
+}
+is_iberian = {
+	OR = {
+		is_spanish = yes
+		original_tag = POR
+		original_tag = GLC
+		original_tag = NAV
+	}
+}
+
+is_austrian = {
+	OR = {
+		original_tag = AUS
+		original_tag = STR
+		original_tag = TIR
+		original_tag = KRT
+		original_tag = BUR
+		original_tag = SLZ
+	}
+}
+
+is_swiss = {
+	OR = {
+		original_tag = SWI
+		original_tag = VOR
+		original_tag = LIE
+	}
+}
+
+is_prussian = {
+	OR = {
+		original_tag = PRE
+		original_tag = ESP
+		original_tag = WPR
+		original_tag = WSP
+		original_tag = WRM
+	}
+}
+
+is_high_german = {
+	OR = {
+		original_tag = BAY
+		original_tag = FRN
+		original_tag = WUR
+		original_tag = BDN
+		original_tag = HOZ
+		original_tag = ALS
+		is_austrian = yes
+		is_swiss = yes
+	}
+}
+is_thuringian = {
+	OR = {
+		original_tag = THU
+		original_tag = SXW
+		original_tag = SXA
+		original_tag = SXC
+		original_tag = SXM
+		original_tag = RGR
+		original_tag = RGE
+		original_tag = SRU
+		original_tag = SSD
+	}
+}
+is_middle_german = {
+	OR = {
+		is_thuringian = yes
+		original_tag = HES
+		original_tag = HSN
+		original_tag = HSK
+		original_tag = BPA
+		original_tag = SAA
+		original_tag = SXN
+		original_tag = BRL
+		original_tag = SLS
+		original_tag = RHN
+	}
+}
+is_low_german = {
+	OR = {
+		is_prussian = yes
+		original_tag = BRN
+		original_tag = HNV
+		original_tag = SLH
+		original_tag = SLW
+		original_tag = HLS
+		original_tag = MKW
+		original_tag = MKS
+		original_tag = PMR
+		original_tag = ANH
+		original_tag = WST
+		original_tag = BRW
+		original_tag = HAM
+		original_tag = LBK
+	}
+}
+is_reichskommissariat = {
+	OR = {
+		original_tag = RKN
+		original_tag = RKB
+		original_tag = RKU
+		original_tag = RKO
+		original_tag = RKM
+		original_tag = RKK
+		original_tag = RKS
+		original_tag = RKD
+		original_tag = RKT
+		original_tag = RKG
+		original_tag = RKW
+	}
+}
+is_german = {
+	OR = {
+		is_high_german = yes
+		is_middle_german = yes
+		is_low_german = yes
+		is_reichskommissariat = yes
+		original_tag = GGV
+		original_tag = MCS
+		original_tag = GER
+		original_tag = WSL
+		original_tag = RPB
+		original_tag = MVF
+		has_cosmetic_tag = OZAK
+		has_cosmetic_tag = OZAV
+	}
+}
+is_hungarian = {
+	OR = {
+		original_tag = HUN
+		original_tag = SZE
+	}
+}
+is_serbocroatian = {
+	OR = {
+		original_tag = SER
+		original_tag = CRO
+		original_tag = BOS
+		original_tag = HRZ
+		original_tag = MNT
+		original_tag = VJV
+		original_tag = DLM
+		original_tag = KRJ
+		original_tag = WBS
+		original_tag = SRP
+		original_tag = HZB
+		original_tag = SDZ
+	}
+}
+is_bulgaromacedonian = {
+	OR = {
+		original_tag = BUL
+		original_tag = MAC
+		original_tag = RUM
+	}
+}
+is_yugoslav = {
+	OR = {
+		is_serbocroatian = yes
+		is_bulgaromacedonian = yes
+		original_tag = SLV
+		original_tag = YUG
+	}
+}
+is_romanian = {
+	OR = {
+		original_tag = ROM
+		original_tag = MOL
+		original_tag = TRA
+		original_tag = WLC
+		original_tag = DOB
+		original_tag = BUC
+		original_tag = BNT
+	}
+}
+is_greek = {
+	OR = {
+		original_tag = GRE
+		original_tag = CYP
+		original_tag = SAM
+		original_tag = ICA
+		original_tag = CRT
+		original_tag = MMA
+		original_tag = NER
+	}
+}
+is_albanian = {
+	OR = {
+		original_tag = ALB
+		original_tag = CAB
+		original_tag = KOS
+	}
+}
+is_balkan = {
+	OR = {
+		is_romanian = yes
+		is_yugoslav = yes
+		is_hungarian = yes
+		is_albanian = yes
+		is_greek = yes
+	}
+}
+
+is_polish = {
+	OR = {
+		original_tag = POL #Poland
+		original_tag = UPS #Upper Silesia
+		original_tag = CSN #Cieszyn
+		original_tag = GAL #Galicia
+		original_tag = MLP #Malopolska
+		original_tag = WKP #Wielkopolska
+		original_tag = MZV #Mazovia
+		original_tag = MAS #Masuria
+		original_tag = PML #Pomerelia
+		original_tag = CLT #Central Lithuania
+	}
+}
+
+is_czech = {
+	OR = {
+		original_tag = BOH
+		original_tag = MRV
+	}
+}
+
+is_czechoslovak = {
+	OR = {
+		is_czech = yes
+		original_tag = SLO
+		original_tag = CZE
+	}
+}
+
+is_lithuanian = {
+	OR = {
+		original_tag = LIT #Lithuania
+		original_tag = DKJ #Dzukija
+		original_tag = AKS #Aukstatija
+		original_tag = SVK #Suvalkija
+		original_tag = SMG #Samogitia
+		original_tag = LTM #Lithuania Minor (Prussian Lit)
+	}
+}
+
+is_belarusian = {
+	OR = {
+		original_tag = BLR
+		original_tag = PLS
+	}
+}
+
+is_ukrainian = {
+	OR = {
+		original_tag = UKR
+		original_tag = VLH
+		original_tag = PLD
+		original_tag = ZAP
+		original_tag = ODS
+		original_tag = SLB
+		original_tag = DKR
+		original_tag = WUK
+	}
+}
+
+is_russian = {
+	OR = {
+		original_tag = SOV
+		original_tag = RUS
+		original_tag = DNB
+	}
+}
+
+is_east_slavic = {
+	OR = {
+		is_russian = yes
+		is_ukrainian = yes
+		is_belarusian = yes
+	}
+}

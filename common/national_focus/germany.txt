@@ -9283,17 +9283,110 @@ focus_tree = {
 		cost = 5
 
 		bypass = {
-			42 = { is_demilitarized_zone = no } #RHINELAND
-			51 = { is_demilitarized_zone = no } #MOSSELLAND
-			978 = { is_demilitarized_zone = no } #BADEN
+			custom_trigger_tooltip = {
+				tooltip = mer_GER_rhineland_bypass
+				1763 = { is_demilitarized_zone = no }
+				589 = { is_demilitarized_zone = no }
+				1766 = { is_demilitarized_zone = no }
+				1764 = { is_demilitarized_zone = no }
+				2583 = { is_demilitarized_zone = no }
+				556 = { is_demilitarized_zone = no }
+				1765 = { is_demilitarized_zone = no }
+				1747 = { is_demilitarized_zone = no }
+				516 = { is_demilitarized_zone = no }
+				1744 = { is_demilitarized_zone = no }
+				1746 = { is_demilitarized_zone = no }
+				2580 = { is_demilitarized_zone = no }
+				474 = { is_demilitarized_zone = no }
+				1745 = { is_demilitarized_zone = no }
+				483 = { is_demilitarized_zone = no }
+				475 = { is_demilitarized_zone = no }
+				465 = { is_demilitarized_zone = no }
+				431 = { is_demilitarized_zone = no }
+				2584 = { is_demilitarized_zone = no }
+				1749 = { is_demilitarized_zone = no }
+				424 = { is_demilitarized_zone = no }
+				1730 = { is_demilitarized_zone = no }
+				1748 = { is_demilitarized_zone = no }
+				423 = { is_demilitarized_zone = no }
+				1750 = { is_demilitarized_zone = no }
+				2718 = { is_demilitarized_zone = no }
+				2338 = { is_demilitarized_zone = no }
+				1751 = { is_demilitarized_zone = no }
+				460 = { is_demilitarized_zone = no }
+				2339 = { is_demilitarized_zone = no }
+				477 = { is_demilitarized_zone = no }
+				469 = { is_demilitarized_zone = no }
+				503 = { is_demilitarized_zone = no }
+				1752 = { is_demilitarized_zone = no }
+				488 = { is_demilitarized_zone = no }
+				1753 = { is_demilitarized_zone = no }
+				2337 = { is_demilitarized_zone = no }
+				537 = { is_demilitarized_zone = no }
+				2343 = { is_demilitarized_zone = no }
+				1758 = { is_demilitarized_zone = no }
+				1760 = { is_demilitarized_zone = no }
+				506 = { is_demilitarized_zone = no }
+				1756 = { is_demilitarized_zone = no }
+				521 = { is_demilitarized_zone = no }
+				1757 = { is_demilitarized_zone = no }
+				524 = { is_demilitarized_zone = no }
+				2340 = { is_demilitarized_zone = no }
+				2719 = { is_demilitarized_zone = no }
+			}
 		}
 
 		available = {
 			is_subject = no
 			has_government = fascism
-			42 = { is_fully_controlled_by = ROOT } #RHINELAND
-			51 = { is_fully_controlled_by = ROOT } #MOSSELLAND
-			978 = { is_fully_controlled_by = ROOT } #BADEN
+			1763 = { is_fully_controlled_by = ROOT }
+			589 = { is_fully_controlled_by = ROOT }
+			1766 = { is_fully_controlled_by = ROOT }
+			1764 = { is_fully_controlled_by = ROOT }
+			2583 = { is_fully_controlled_by = ROOT }
+			556 = { is_fully_controlled_by = ROOT }
+			1765 = { is_fully_controlled_by = ROOT }
+			1747 = { is_fully_controlled_by = ROOT }
+			516 = { is_fully_controlled_by = ROOT }
+			1744 = { is_fully_controlled_by = ROOT }
+			1746 = { is_fully_controlled_by = ROOT }
+			2580 = { is_fully_controlled_by = ROOT }
+			474 = { is_fully_controlled_by = ROOT }
+			1745 = { is_fully_controlled_by = ROOT }
+			483 = { is_fully_controlled_by = ROOT }
+			475 = { is_fully_controlled_by = ROOT }
+			465 = { is_fully_controlled_by = ROOT }
+			431 = { is_fully_controlled_by = ROOT }
+			2584 = { is_fully_controlled_by = ROOT }
+			1749 = { is_fully_controlled_by = ROOT }
+			424 = { is_fully_controlled_by = ROOT }
+			1730 = { is_fully_controlled_by = ROOT }
+			1748 = { is_fully_controlled_by = ROOT }
+			423 = { is_fully_controlled_by = ROOT }
+			1750 = { is_fully_controlled_by = ROOT }
+			2718 = { is_fully_controlled_by = ROOT }
+			2338 = { is_fully_controlled_by = ROOT }
+			1751 = { is_fully_controlled_by = ROOT }
+			460 = { is_fully_controlled_by = ROOT }
+			2339 = { is_fully_controlled_by = ROOT }
+			477 = { is_fully_controlled_by = ROOT }
+			469 = { is_fully_controlled_by = ROOT }
+			503 = { is_fully_controlled_by = ROOT }
+			1752 = { is_fully_controlled_by = ROOT }
+			488 = { is_fully_controlled_by = ROOT }
+			1753 = { is_fully_controlled_by = ROOT }
+			2337 = { is_fully_controlled_by = ROOT }
+			537 = { is_fully_controlled_by = ROOT }
+			2343 = { is_fully_controlled_by = ROOT }
+			1758 = { is_fully_controlled_by = ROOT }
+			1760 = { is_fully_controlled_by = ROOT }
+			506 = { is_fully_controlled_by = ROOT }
+			1756 = { is_fully_controlled_by = ROOT }
+			521 = { is_fully_controlled_by = ROOT }
+			1757 = { is_fully_controlled_by = ROOT }
+			524 = { is_fully_controlled_by = ROOT }
+			2340 = { is_fully_controlled_by = ROOT }
+			2719 = { is_fully_controlled_by = ROOT }
 		}
 		
 		ai_will_do = {
@@ -9304,9 +9397,57 @@ focus_tree = {
 
 		completion_reward = {
 
-			42 = { set_demilitarized_zone = no }
-			51 = { set_demilitarized_zone = no }
-			978 = { set_demilitarized_zone = no }
+			custom_effect_tooltip = mer_GER_rhineland_remilitarized_states_tt
+			hidden_effect = { # oh boy
+				1763 = { set_demilitarized_zone = no }
+				589 = { set_demilitarized_zone = no }
+				1766 = { set_demilitarized_zone = no }
+				1764 = { set_demilitarized_zone = no }
+				2583 = { set_demilitarized_zone = no }
+				556 = { set_demilitarized_zone = no }
+				1765 = { set_demilitarized_zone = no }
+				1747 = { set_demilitarized_zone = no }
+				516 = { set_demilitarized_zone = no }
+				1744 = { set_demilitarized_zone = no }
+				1746 = { set_demilitarized_zone = no }
+				2580 = { set_demilitarized_zone = no }
+				474 = { set_demilitarized_zone = no }
+				1745 = { set_demilitarized_zone = no }
+				483 = { set_demilitarized_zone = no }
+				475 = { set_demilitarized_zone = no }
+				465 = { set_demilitarized_zone = no }
+				431 = { set_demilitarized_zone = no }
+				2584 = { set_demilitarized_zone = no }
+				1749 = { set_demilitarized_zone = no }
+				424 = { set_demilitarized_zone = no }
+				1730 = { set_demilitarized_zone = no }
+				1748 = { set_demilitarized_zone = no }
+				423 = { set_demilitarized_zone = no }
+				1750 = { set_demilitarized_zone = no }
+				2718 = { set_demilitarized_zone = no }
+				2338 = { set_demilitarized_zone = no }
+				1751 = { set_demilitarized_zone = no }
+				460 = { set_demilitarized_zone = no }
+				2339 = { set_demilitarized_zone = no }
+				477 = { set_demilitarized_zone = no }
+				469 = { set_demilitarized_zone = no }
+				503 = { set_demilitarized_zone = no }
+				1752 = { set_demilitarized_zone = no }
+				488 = { set_demilitarized_zone = no }
+				1753 = { set_demilitarized_zone = no }
+				2337 = { set_demilitarized_zone = no }
+				537 = { set_demilitarized_zone = no }
+				2343 = { set_demilitarized_zone = no }
+				1758 = { set_demilitarized_zone = no }
+				1760 = { set_demilitarized_zone = no }
+				506 = { set_demilitarized_zone = no }
+				1756 = { set_demilitarized_zone = no }
+				521 = { set_demilitarized_zone = no }
+				1757 = { set_demilitarized_zone = no }
+				524 = { set_demilitarized_zone = no }
+				2340 = { set_demilitarized_zone = no }
+				2719 = { set_demilitarized_zone = no }
+			}	#AHHHHHHH it wasn't that bad, consider using the nudger for help #shouldve done is_demilitarized_zone and every_state scope lmao
 			set_global_flag = rhineland_remilitarized
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			custom_effect_tooltip = generic_skip_one_line_tt
