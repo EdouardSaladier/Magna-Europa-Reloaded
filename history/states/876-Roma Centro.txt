@@ -9,7 +9,14 @@ state={
 		add_core_of = LAZ
 		buildings = {
 			infrastructure = 4
-
+			20009 = {
+                landmark_colosseum = {
+                    level = 1
+                    allowed = {
+                        has_dlc = "Gotterdammerung"
+                    }
+                }
+            }
 		}
 		victory_points = {
 			20009 80 

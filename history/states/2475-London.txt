@@ -13,6 +13,14 @@ state={
 			industrial_complex = 2
 			arms_factory = 1
 			anti_air_building = 3
+			12038 = { 
+			    landmark_big_ben = {
+			        allowed = {
+			            has_dlc = "Gotterdammerung"
+			        }
+			        level = 1
+			    }
+			}
 		}
 		victory_points = {
 			12038 80 
