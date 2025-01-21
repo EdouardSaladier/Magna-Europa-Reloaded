@@ -9937,16 +9937,13 @@ focus_tree = {
 		completion_reward = {
 			add_named_threat = { threat = 5 name = GER_integrate_czechoslovakia }
 			### CLAIMS
-			add_state_claim = 1433
-			add_state_claim = 1432
-			add_state_claim = 1431
-			add_state_claim = 1430
-			add_state_claim = 522
-			add_state_claim = 498
-			add_state_claim = 1434
-			add_state_claim = 471
-			add_state_claim = 473
-			add_state_claim = 1435
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = CZE
+					is_sudetenland = yes
+				}
+				add_claim_by = PREV
+			}
 			if = {
 				limit = {
 					CZE = {
@@ -9968,18 +9965,7 @@ focus_tree = {
 					every_state = {
 						limit = {
 							is_owned_and_controlled_by = CZE
-							OR = {
-								state = 1433
-								state = 1432
-								state = 1431
-								state = 1430
-								state = 522
-								state = 498
-								state = 1434
-								state = 471
-								state = 473
-								state = 1435
-							}
+							is_sudetenland = yes
 						}
 						add_core_of = PREV
 					}

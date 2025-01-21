@@ -3177,6 +3177,13 @@ country_event = {
 					producer = ROOT
 				}
 			}
+			
+			every_state = {
+				limit = {
+					is_soviet_karelia = yes
+				}
+				add_claim_by = FROM
+			}
 		}
 		custom_effect_tooltip = FIN_pact_for_continuation_war_ger_tt
 
@@ -3336,6 +3343,13 @@ country_event = {
 				amount = 300
 				producer = FROM
 			}
+		}
+		
+		every_state = {
+			limit = {
+				is_soviet_karelia = yes
+			}
+			add_claim_by = ROOT
 		}
 
 		FIN_pact_for_continuation_war_start = yes

@@ -3948,11 +3948,18 @@ country_event = {
 	
 	option = {
 		name = bftb_greece.51.a #aid - guns
-		trigger = {
-			has_equipment = { infantry_equipment > 1250 }
-		}
+		#trigger = {
+		#	has_equipment = { infantry_equipment > 1250 }
+		#}
 		ai_chance = {
 			factor = 100
+		}
+		hidden_effect = {
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment
+				amount = 1250
+				producer = ENG
+			}	
 		}
 		send_equipment = { 
 			equipment = infantry_equipment
@@ -3967,11 +3974,18 @@ country_event = {
 	}
 	option = {
 		name = bftb_greece.51.b #aid - support
-		trigger = {
-			has_equipment = { support_equipment > 150 }
-		}
+		#trigger = {
+		#	has_equipment = { support_equipment > 150 }
+		#}
 		ai_chance = {
 			factor = 75
+		}
+		hidden_effect = {
+			add_equipment_to_stockpile = { 
+				type = support_equipment
+				amount = 150
+				producer = ENG
+			}	
 		}
 		send_equipment = { 
 			equipment = support_equipment
@@ -3987,6 +4001,9 @@ country_event = {
 	}
 	option = {
 		name = bftb_greece.51.c #no aid
+		ai_chance = {
+			factor = 15
+		}
 		hidden_effect = { 
 			GRE = {
 				country_event = { id = bftb_greece.54 days = 1 }
@@ -5176,7 +5193,7 @@ country_event = {
 		create_country_leader = {
 			name = "Adolfos I"
 			desc = "POLITICS_ADOLFOS_I_DESC"
-			picture = GFX_portrait_Adolfos_I
+			picture = GFX_portrait_GRE_adolfos_i
 			expire = "1965.1.1"
 			ideology = gen_nazism
 			traits = {

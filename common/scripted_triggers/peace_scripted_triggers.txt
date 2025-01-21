@@ -252,3 +252,22 @@ is_southern_slovakia = {
 		state = 2246
 	}
 }
+
+is_soviet_karelia = {
+	OR = {
+		state = 2709
+		state = 19
+		state = 2785
+		state = 39
+		state = 38
+		state = 52
+		state = 30
+		state = 24
+		state = 62
+		state = 59
+		state = 74
+		state = 57
+		state = 2437
+		state = 2459
+	}
+}

@@ -21,6 +21,10 @@ country_event = {
 				modifier = tizard_relations
 			}
 		}
+		add_breakthrough_progress = {
+			specialization = specialization_air
+			value = 0.75
+		}
 		add_tech_bonus = {
 			name = tizard_mission_focus
 			uses = 1
@@ -41,7 +45,7 @@ country_event = {
 		#add_opinion_modifier = { target = ENG modifier = tizard_refused }
 		ENG = {
 			country_event = { days = 1 id = britain.3 }
-		}
+		}	
 	}
 
 	option = {
@@ -76,6 +80,10 @@ country_event = {
 			name = tizard_mission_focus
 			bonus = 1.0
 			category = light_fighter
+		}
+		add_breakthrough_progress = {
+			specialization = specialization_air
+			value = 0.75
 		}
 		add_tech_bonus = {
 			name = tizard_mission_focus
@@ -401,7 +409,7 @@ country_event = {
 		ROOT = {
 			add_ai_strategy = {
 				type = alliance
-				id = "ENG"
+				id = ENG
 				value = 200
 			}
 		}
@@ -461,7 +469,7 @@ country_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event britain.14 FROM = [From.GetName]" }
 	title = britain.14.t
 	desc = britain.14.d
-	picture = GFX_report_event_hitler_croatia_handshake
+	picture = [GetHitlerCroatianHandshakeEventPicture]
 
 	is_triggered_only = yes
 	

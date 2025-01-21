@@ -9698,7 +9698,7 @@ country_event = { #Denmark gains a Puppet
 
 	option = { #Great
 		name = denmark_expansion_event.301.a #Intentional
-		ROOT = { puppet = FROM }
+		puppet = FROM 
 	}
 }
 country_event = { #FROM doesn't want to become a Puppet

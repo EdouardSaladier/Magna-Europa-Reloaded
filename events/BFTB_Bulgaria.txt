@@ -4268,37 +4268,38 @@ country_event = {
 		hidden_effect = {
 			GER = { country_event = bftb_bulgarian_claims.5 }
 		
-		if = {
-			limit = {
-				any_state = {
-					OR = {
-						is_controlled_by = GER
-						controller = {
-							is_in_faction_with = GER
-							NOT = { tag = BUL }
-							NOT = { owns_state = PREV } #Not owner (it should be actually occupating the state -> Also prevents the issue in YUG with IMRO removing the core)
-							NOT = { PREV = { is_core_of = PREV } }
-						}
-					}
-				}
-			}
-			every_state = {
+			if = {
 				limit = {
-					has_state_flag = BUL_bulgarian_claim_warranted_flag
-					OR = {
-						is_controlled_by = GER
-						controller = {
-							is_in_faction_with = GER
-							NOT = { tag = BUL }
-							NOT = { owns_state = PREV } #Not owner (it should be actually occupating the state -> Also prevents the issue in YUG with IMRO removing the core)
-							NOT = { PREV = { is_core_of = PREV } }
+					any_state = {
+						OR = {
+							is_controlled_by = GER
+							controller = {
+								is_in_faction_with = GER
+								NOT = { original_tag = BUL }
+								NOT = { owns_state = PREV } #Not owner (it should be actually occupating the state -> Also prevents the issue in YUG with IMRO removing the core)
+								NOT = { PREV = { is_core_of = controller } }
+							}
 						}
 					}
 				}
-				controller = { country_event = bftb_bulgarian_claims.6 }
-				remove_dynamic_modifier = { modifier = bulgarian_territorial_expansion_arranged }
+
+				every_state = {
+					limit = {
+						has_state_flag = BUL_bulgarian_claim_warranted_flag
+						OR = {
+							is_controlled_by = GER
+							controller = {
+								is_in_faction_with = GER
+								NOT = { original_tag = BUL }
+								NOT = { owns_state = PREV } #Not owner (it should be actually occupating the state -> Also prevents the issue in YUG with IMRO removing the core)
+								#PREV = { NOT = { is_core_of = controller } }
+							}
+						}
+					}
+					controller = { country_event = bftb_bulgarian_claims.6 }
+					remove_dynamic_modifier = { modifier = bulgarian_territorial_expansion_arranged }
+				}
 			}
-		}
 		}
 	}
 
@@ -4310,21 +4311,25 @@ country_event = {
 			modifier = BUL_honored_bulgarian_claims
 		}
 
-		every_state = {
-			limit = {
-				has_state_flag = BUL_bulgarian_claim_warranted_flag
-				OR = {
-					is_controlled_by = GER
-					controller = {
-						is_in_faction_with = GER
-						NOT = { tag = BUL }
+		custom_effect_tooltip = if_they_accept_tt
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					has_state_flag = BUL_bulgarian_claim_warranted_flag
+					OR = {
+						is_controlled_by = GER
+						controller = {
+							is_in_faction_with = GER
+							NOT = { original_tag = BUL }
+						}
+					}	
+					NOT = { is_core_of = controller } 
+				}
+				BUL = {
+					transfer_state = PREV
+					hidden_effect = {
+						set_state_controller = PREV
 					}
-				}		
-			}
-			BUL = {
-				transfer_state = PREV
-				hidden_effect = {
-					set_state_controller = PREV
 				}
 			}
 		}
@@ -4345,7 +4350,8 @@ country_event = {
 
 	option = {
 		name = bftb_bulgarian_claims.5.a
-
+		
+		custom_effect_tooltip = if_they_accept_tt
 		effect_tooltip = {
 			BUL = {
 				add_opinion_modifier = { 
@@ -4381,14 +4387,65 @@ country_event = {
 
 	option = {
 		name = bftb_bulgarian_claims.6.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 1.5
+				is_historical_focus_on = yes
+			}
+		}
 
-		effect_tooltip = {
+
+		every_state = {
+			limit = {
+				has_state_flag = BUL_bulgarian_claim_warranted_flag
+				is_controlled_by = ROOT	
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+			BUL = {
+				transfer_state = PREV
+				hidden_effect = {
+					set_state_controller = PREV
+				}
+			}
+		}
+
+	}
+	
+	option = {
+		name = bftb_bulgarian_claims.6.b
+		ai_chance = {
+			base = 0
+		}
+
+		BUL = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BUL_hindered_planned_expansion
+			}	
+		}
+
+		GER = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BUL_hindered_planned_expansion
+			}	
+		}
+		
+		hidden_effect = {
 			every_state = {
 				limit = {
 					has_state_flag = BUL_bulgarian_claim_warranted_flag
-					is_controlled_by = ROOT		
+					OR = {
+						is_controlled_by = GER
+						controller = {
+							is_in_faction_with = GER
+						}
+					}		
 				}
-				BUL = { set_state_controller = PREV }
+				clr_state_flag = BUL_bulgarian_claim_warranted_flag
 			}
 		}
 	}
@@ -7701,7 +7758,7 @@ country_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event bftb_bulgaria_balkan_federation.8 FROM = [From.GetName]" }
 	title = bftb_bulgaria_balkan_federation.8.t
 	desc = bftb_bulgaria_balkan_federation.8.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_generic_handshake
 
 	is_triggered_only = yes
 

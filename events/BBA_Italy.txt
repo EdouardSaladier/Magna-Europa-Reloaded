@@ -3791,22 +3791,45 @@ country_event = {
 	option = { 
 		name = BBA_italy_naval_cooperation_programs.17.a
 
-		create_equipment_variant = {
-			name = "CB Class"
-			type = ship_hull_midget_submarine
-			name_group = ITA_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
 			}
-		}
+			create_equipment_variant = {
+				name = "CB Class"
+				type = ship_hull_midget_submarine
+				name_group = ITA_SS_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_torpedo_slot = ship_torpedo_sub_2
+					fixed_ship_engine_slot = sub_ship_engine_2
+				}
+			}
 
-		create_ship = { type = ship_hull_midget_submarine equipment_variant = "CB Class" creator = FROM }
-		create_ship = { type = ship_hull_midget_submarine equipment_variant = "CB Class" creator = FROM }
-		create_ship = { type = ship_hull_midget_submarine equipment_variant = "CB Class" creator = FROM }
-		create_ship = { type = ship_hull_midget_submarine equipment_variant = "CB Class" creator = FROM }
-		create_ship = { type = ship_hull_midget_submarine equipment_variant = "CB Class" creator = FROM }
+			create_ship = { type = ship_hull_midget_submarine equipment_variant = "CB Class" creator = FROM }
+			create_ship = { type = ship_hull_midget_submarine equipment_variant = "CB Class" creator = FROM }
+			create_ship = { type = ship_hull_midget_submarine equipment_variant = "CB Class" creator = FROM }
+			create_ship = { type = ship_hull_midget_submarine equipment_variant = "CB Class" creator = FROM }
+			create_ship = { type = ship_hull_midget_submarine equipment_variant = "CB Class" creator = FROM }
+		}
+		else = {
+			create_equipment_variant = {
+				name = "CB Class"
+				type = midget_submarine
+				name_group = ITA_SS_HISTORICAL
+				parent_version = 0
+				upgrades = {
+					sub_torpedo_upgrade = 2
+					sub_engine_upgrade = 2
+				}
+			}
+			
+			create_ship = { type = midget_submarine equipment_variant = "CB Class" creator = FROM }
+			create_ship = { type = midget_submarine equipment_variant = "CB Class" creator = FROM }
+			create_ship = { type = midget_submarine equipment_variant = "CB Class" creator = FROM }
+			create_ship = { type = midget_submarine equipment_variant = "CB Class" creator = FROM }
+			create_ship = { type = midget_submarine equipment_variant = "CB Class" creator = FROM }
+		}
 	}
 }
 
@@ -7338,8 +7361,13 @@ country_event = {
 		ITA = {
 			transfer_state = 1466
 			transfer_state = 708
+			transfer_state = 2965
 		}
 		708 = {
+			add_core_of = ITA
+			remove_core_of = SWI
+		}
+		2965 = {
 			add_core_of = ITA
 			remove_core_of = SWI
 		}
@@ -7364,14 +7392,20 @@ country_event = {
 	option = { 
 		name = BBA_italy_interaction_events.3.a
 
-		846 = {
+		708 = {
+			add_claim_by = ITA
+		}
+		2965 = {
+			add_claim_by = ITA
+		}
+		1466 = {
 			add_claim_by = ITA
 		}
 		ITA = {
 			create_wargoal = {
 				type = take_state_focus
 				target = SWI
-				generator = { 846 }
+				generator = { 708 1466 2965 }
 			}
 		}	
 	}
@@ -8047,7 +8081,7 @@ country_event = {
 			base = 70
 		}
 
-		ITA = {
+		FROM = {
 			country_event = {
 			    id = BBA_italy_interaction_events.19
 			    days = 1
@@ -8064,7 +8098,7 @@ country_event = {
 			base = 30
 		}
 
-		ITA = {
+		FROM = {
 			country_event = {
 			    id = BBA_italy_interaction_events.20
 			    days = 1
@@ -8088,22 +8122,17 @@ country_event = {
 	option = { 
 		name = BBA_italy_interaction_events.19.a 
 
-		GRE = {
-			transfer_state = 164
+		FROM = {
+			transfer_state = 1554
 		}
-		GRE = {
+		FROM = {
 			add_opinion_modifier = {
-			    target = ITA
+			    target = ROOT
 			    modifier = ITA_sold_stuff_to_us
 			}
 			add_ideas = ITA_dodecanese_treaty_idea
 		}
-		if = {
-			limit = {
-				NOT = { is_in_faction_with = FROM }
-			}
-			FROM = { add_to_faction = GRE }
-		}
+		add_to_faction = FROM
 	}
 }
 
@@ -8121,11 +8150,9 @@ country_event = {
 	option = { 
 		name = BBA_italy_interaction_events.20.a 
 
-		ITA = {
-			add_opinion_modifier = {
-			    target = GRE
-			    modifier = faction_traitor
-			}
+		add_opinion_modifier = {
+		    target = FROM
+		    modifier = faction_traitor
 		}
 	}
 }
@@ -8150,7 +8177,7 @@ country_event = {
 			base = 70
 		}
 
-		ITA = {
+		FROM = {
 			country_event = {
 			    id = BBA_italy_interaction_events.22
 			    days = 1
@@ -8167,7 +8194,7 @@ country_event = {
 			base = 30
 		}
 
-		ITA = {
+		FROM = {
 			country_event = {
 			    id = BBA_italy_interaction_events.23
 			    days = 1
@@ -8191,22 +8218,17 @@ country_event = {
 	option = { 
 		name = BBA_italy_interaction_events.22.a 
 
-		TUR = {
-			transfer_state = 164
+		FROM = {
+			transfer_state = 1554
 		}
-		TUR = {
+		FROM = {
 			add_opinion_modifier = {
-			    target = ITA
+			    target = ROOT
 			    modifier = ITA_sold_stuff_to_us
 			}
 			add_ideas = ITA_dodecanese_treaty_idea
 		}
-		if = {
-			limit = {
-				NOT = { is_in_faction_with = FROM }
-			}
-			FROM = { add_to_faction = TUR }
-		}
+		add_to_faction = FROM
 	}
 }
 
@@ -8224,11 +8246,9 @@ country_event = {
 	option = { 
 		name = BBA_italy_interaction_events.23.a 
 
-		ITA = {
-			add_opinion_modifier = {
-			    target = TUR
-			    modifier = faction_traitor
-			}
+		add_opinion_modifier = {
+		    target = FROM
+		    modifier = faction_traitor
 		}
 	}
 }
@@ -8242,6 +8262,8 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 	
 	is_triggered_only = yes
+	
+	fire_only_once = yes
 
 	# Fight alone
 	option = { 
@@ -8259,6 +8281,13 @@ country_event = {
 			}
 		}
 		add_war_support = 0.15
+		
+		AUS = {
+			country_event = {
+				id = AUS_political_events.106
+				hours = 12
+			}
+		}
 	}
 
 	# Request Assistance
@@ -8276,21 +8305,39 @@ country_event = {
 		GER = {
 			country_event = {
 			    id = BBA_italy_interaction_events.25
-			    days = 4
-			}
-		}
-
-		ENG = {
-			country_event = {
-			    id = BBA_italy_interaction_events.27
 			    days = 1
 			}
 		}
 
-		FRA = {
-			country_event = {
-			    id = BBA_italy_interaction_events.28
-			    days = 1
+		IF = {
+			limit = {
+				ENG = {
+					NOT = {
+						has_guaranteed = AUS
+					}
+				}
+			}
+			ENG = {
+				country_event = {
+				    id = BBA_italy_interaction_events.27
+				    days = 12
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				FRA = {
+					NOT = {
+						has_guaranteed = AUS
+					}
+				}
+			}
+			FRA = {
+				country_event = {
+				    id = BBA_italy_interaction_events.28
+				    days = 12
+				}
 			}
 		}
 
@@ -8308,6 +8355,13 @@ country_event = {
 				set_country_flag = ITA_italy_asks_ethiopian_host_for_help
 			}
 		}
+		
+		AUS = {
+			country_event = {
+				id = AUS_political_events.106
+				days = 1
+			}
+		}
 	}
 
 	# Back down, cower in fear and wait for your demise
@@ -8322,7 +8376,6 @@ country_event = {
 			country_event = {
 			    id = BBA_italy_interaction_events.26
 			    days = 1
-			    random = 2
 			}
 		}
 		add_war_support = -0.1
@@ -8332,6 +8385,19 @@ country_event = {
 			    country = AUS
 			    relation = guarantee
 			    active = no
+			}
+			
+			add_ai_strategy = { #cancel and then some
+				type = protect 
+				id = FROM
+				value = -100
+			}
+		}
+		
+		AUS = {
+			country_event = {
+				id = AUS_political_events.105
+				hours = 12
 			}
 		}
 	}
@@ -8354,13 +8420,7 @@ country_event = {
 		ai_chance = { 
 			base = 90
 		}
-
-		GER = {
-			declare_war_on = {
-			    target = AUS
-			    type = annex_everything
-			}
-		}
+		
 		every_state = {
 			limit = {
 				has_state_flag = AUS_INITIAL_STATE
@@ -8382,12 +8442,6 @@ country_event = {
 		add_popularity = {
 		    ideology = fascism
 		    popularity = -0.3
-		}
-
-		hidden_effect = {
-			every_country = {
-				news_event = { hours = 6 id = BBA_italy_interaction_events_news.1 }
-			}
 		}
 	}
 }
@@ -8428,50 +8482,7 @@ country_event = {
 
 	# alright.. on to the next one I guess
 	option = { 
-		name = BBA_italy_interaction_events.26.a 
-
-		every_state = {
-			limit = {
-				has_state_flag = AUS_INITIAL_STATE
-				is_owned_by = AUS
-			}
-			add_core_of = GER
-		}
-		AUS = {
-			every_unit_leader = {
-				set_nationality = GER
-			}
-		}
-		annex_country = { target = AUS transfer_troops = yes }
-		add_political_power = 75
-		set_country_flag = AUS_annexed
-		add_war_support = 0.1
-		add_stability = 0.05
-		USA = {
-			set_country_flag = { flag = USA_anschluss_window days = 60 value = 1 }
-		}
-		custom_effect_tooltip = anschluss_mefo_bills_tt
-		hidden_effect = { # Having it appear twice might be confusing
-			GER_mefo_bills_level_down = yes
-			GER_mefo_bills_level_down = yes
-		}
-		custom_effect_tooltip = anschluss_mefo_bills_double_reduction
-		add_to_variable = { var = GER_mefo_bill_counter value = -10 }
-
-		if = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-				country_exists = YUG
-				YUG = { has_war = no }
-			}
-			country_event = {
-				id = DOD_yugoslavia.30
-				days = 4
-			}
-		}
-		hidden_effect = {
-			news_event = { hours = 6 id = news.36 }
-		}
+		name = BBA_italy_interaction_events.26.a
 	}
 }
 
@@ -8497,7 +8508,7 @@ country_event = {
 		ai_chance = { 
 			base = 50
 			modifier = {
-				add = 15
+				add = 150
 				ITA = {
 					has_dino_grandi = yes
 				}
@@ -8526,13 +8537,7 @@ country_event = {
 		}
 
 		ai_chance = { 
-			base = 50
-			modifier = {
-				add = 15
-				ITA = {
-					has_dino_grandi = yes
-				}
-			}
+			base = 0
 		}
 		custom_effect_tooltip = ITA_if_Italy_accepts_tt
 		effect_tooltip = {
@@ -8593,7 +8598,7 @@ country_event = {
 		ai_chance = { 
 			base = 50
 			modifier = {
-				add = 15
+				add = 150
 				ITA = {
 					has_dino_grandi = yes
 				}
