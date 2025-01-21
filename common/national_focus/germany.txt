@@ -9285,108 +9285,24 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = mer_GER_rhineland_bypass
-				1763 = { is_demilitarized_zone = no }
-				589 = { is_demilitarized_zone = no }
-				1766 = { is_demilitarized_zone = no }
-				1764 = { is_demilitarized_zone = no }
-				2583 = { is_demilitarized_zone = no }
-				556 = { is_demilitarized_zone = no }
-				1765 = { is_demilitarized_zone = no }
-				1747 = { is_demilitarized_zone = no }
-				516 = { is_demilitarized_zone = no }
-				1744 = { is_demilitarized_zone = no }
-				1746 = { is_demilitarized_zone = no }
-				2580 = { is_demilitarized_zone = no }
-				474 = { is_demilitarized_zone = no }
-				1745 = { is_demilitarized_zone = no }
-				483 = { is_demilitarized_zone = no }
-				475 = { is_demilitarized_zone = no }
-				465 = { is_demilitarized_zone = no }
-				431 = { is_demilitarized_zone = no }
-				2584 = { is_demilitarized_zone = no }
-				1749 = { is_demilitarized_zone = no }
-				424 = { is_demilitarized_zone = no }
-				1730 = { is_demilitarized_zone = no }
-				1748 = { is_demilitarized_zone = no }
-				423 = { is_demilitarized_zone = no }
-				1750 = { is_demilitarized_zone = no }
-				2718 = { is_demilitarized_zone = no }
-				2338 = { is_demilitarized_zone = no }
-				1751 = { is_demilitarized_zone = no }
-				460 = { is_demilitarized_zone = no }
-				2339 = { is_demilitarized_zone = no }
-				477 = { is_demilitarized_zone = no }
-				469 = { is_demilitarized_zone = no }
-				503 = { is_demilitarized_zone = no }
-				1752 = { is_demilitarized_zone = no }
-				488 = { is_demilitarized_zone = no }
-				1753 = { is_demilitarized_zone = no }
-				2337 = { is_demilitarized_zone = no }
-				537 = { is_demilitarized_zone = no }
-				2343 = { is_demilitarized_zone = no }
-				1758 = { is_demilitarized_zone = no }
-				1760 = { is_demilitarized_zone = no }
-				506 = { is_demilitarized_zone = no }
-				1756 = { is_demilitarized_zone = no }
-				521 = { is_demilitarized_zone = no }
-				1757 = { is_demilitarized_zone = no }
-				524 = { is_demilitarized_zone = no }
-				2340 = { is_demilitarized_zone = no }
-				2719 = { is_demilitarized_zone = no }
+				all_state  = {
+					limit  = {
+						is_rhineland_dmz = yes
+					}
+					is_demilitarized_zone = no
+				}
 			}
 		}
 
 		available = {
 			is_subject = no
 			has_government = fascism
-			1763 = { is_fully_controlled_by = ROOT }
-			589 = { is_fully_controlled_by = ROOT }
-			1766 = { is_fully_controlled_by = ROOT }
-			1764 = { is_fully_controlled_by = ROOT }
-			2583 = { is_fully_controlled_by = ROOT }
-			556 = { is_fully_controlled_by = ROOT }
-			1765 = { is_fully_controlled_by = ROOT }
-			1747 = { is_fully_controlled_by = ROOT }
-			516 = { is_fully_controlled_by = ROOT }
-			1744 = { is_fully_controlled_by = ROOT }
-			1746 = { is_fully_controlled_by = ROOT }
-			2580 = { is_fully_controlled_by = ROOT }
-			474 = { is_fully_controlled_by = ROOT }
-			1745 = { is_fully_controlled_by = ROOT }
-			483 = { is_fully_controlled_by = ROOT }
-			475 = { is_fully_controlled_by = ROOT }
-			465 = { is_fully_controlled_by = ROOT }
-			431 = { is_fully_controlled_by = ROOT }
-			2584 = { is_fully_controlled_by = ROOT }
-			1749 = { is_fully_controlled_by = ROOT }
-			424 = { is_fully_controlled_by = ROOT }
-			1730 = { is_fully_controlled_by = ROOT }
-			1748 = { is_fully_controlled_by = ROOT }
-			423 = { is_fully_controlled_by = ROOT }
-			1750 = { is_fully_controlled_by = ROOT }
-			2718 = { is_fully_controlled_by = ROOT }
-			2338 = { is_fully_controlled_by = ROOT }
-			1751 = { is_fully_controlled_by = ROOT }
-			460 = { is_fully_controlled_by = ROOT }
-			2339 = { is_fully_controlled_by = ROOT }
-			477 = { is_fully_controlled_by = ROOT }
-			469 = { is_fully_controlled_by = ROOT }
-			503 = { is_fully_controlled_by = ROOT }
-			1752 = { is_fully_controlled_by = ROOT }
-			488 = { is_fully_controlled_by = ROOT }
-			1753 = { is_fully_controlled_by = ROOT }
-			2337 = { is_fully_controlled_by = ROOT }
-			537 = { is_fully_controlled_by = ROOT }
-			2343 = { is_fully_controlled_by = ROOT }
-			1758 = { is_fully_controlled_by = ROOT }
-			1760 = { is_fully_controlled_by = ROOT }
-			506 = { is_fully_controlled_by = ROOT }
-			1756 = { is_fully_controlled_by = ROOT }
-			521 = { is_fully_controlled_by = ROOT }
-			1757 = { is_fully_controlled_by = ROOT }
-			524 = { is_fully_controlled_by = ROOT }
-			2340 = { is_fully_controlled_by = ROOT }
-			2719 = { is_fully_controlled_by = ROOT }
+			all_state  = {
+				limit  = {
+					is_rhineland_dmz = yes
+				}
+				is_fully_controlled_by = ROOT
+			}
 		}
 		
 		ai_will_do = {
@@ -9399,54 +9315,12 @@ focus_tree = {
 
 			custom_effect_tooltip = mer_GER_rhineland_remilitarized_states_tt
 			hidden_effect = { # oh boy
-				1763 = { set_demilitarized_zone = no }
-				589 = { set_demilitarized_zone = no }
-				1766 = { set_demilitarized_zone = no }
-				1764 = { set_demilitarized_zone = no }
-				2583 = { set_demilitarized_zone = no }
-				556 = { set_demilitarized_zone = no }
-				1765 = { set_demilitarized_zone = no }
-				1747 = { set_demilitarized_zone = no }
-				516 = { set_demilitarized_zone = no }
-				1744 = { set_demilitarized_zone = no }
-				1746 = { set_demilitarized_zone = no }
-				2580 = { set_demilitarized_zone = no }
-				474 = { set_demilitarized_zone = no }
-				1745 = { set_demilitarized_zone = no }
-				483 = { set_demilitarized_zone = no }
-				475 = { set_demilitarized_zone = no }
-				465 = { set_demilitarized_zone = no }
-				431 = { set_demilitarized_zone = no }
-				2584 = { set_demilitarized_zone = no }
-				1749 = { set_demilitarized_zone = no }
-				424 = { set_demilitarized_zone = no }
-				1730 = { set_demilitarized_zone = no }
-				1748 = { set_demilitarized_zone = no }
-				423 = { set_demilitarized_zone = no }
-				1750 = { set_demilitarized_zone = no }
-				2718 = { set_demilitarized_zone = no }
-				2338 = { set_demilitarized_zone = no }
-				1751 = { set_demilitarized_zone = no }
-				460 = { set_demilitarized_zone = no }
-				2339 = { set_demilitarized_zone = no }
-				477 = { set_demilitarized_zone = no }
-				469 = { set_demilitarized_zone = no }
-				503 = { set_demilitarized_zone = no }
-				1752 = { set_demilitarized_zone = no }
-				488 = { set_demilitarized_zone = no }
-				1753 = { set_demilitarized_zone = no }
-				2337 = { set_demilitarized_zone = no }
-				537 = { set_demilitarized_zone = no }
-				2343 = { set_demilitarized_zone = no }
-				1758 = { set_demilitarized_zone = no }
-				1760 = { set_demilitarized_zone = no }
-				506 = { set_demilitarized_zone = no }
-				1756 = { set_demilitarized_zone = no }
-				521 = { set_demilitarized_zone = no }
-				1757 = { set_demilitarized_zone = no }
-				524 = { set_demilitarized_zone = no }
-				2340 = { set_demilitarized_zone = no }
-				2719 = { set_demilitarized_zone = no }
+				every_state  = {
+					limit  = {
+						is_rhineland_dmz = yes
+					}
+					set_demilitarized_zone = no
+				}
 			}	#AHHHHHHH it wasn't that bad, consider using the nudger for help #shouldve done is_demilitarized_zone and every_state scope lmao
 			set_global_flag = rhineland_remilitarized
 			custom_effect_tooltip = GER_rhineland_ultimatum
@@ -10169,42 +10043,12 @@ focus_tree = {
 				GER = {
 					custom_trigger_tooltip = {
 						tooltip = mer_GER_owns_all_of_austria
-						owns_state = 1792
-						owns_state = 1793
-						owns_state = 1794
-						owns_state = 1795
-						owns_state = 1796
-						owns_state = 1797
-						owns_state = 1798
-						owns_state = 1799
-						owns_state = 1800
-						owns_state = 1801
-						owns_state = 1802
-						owns_state = 1803
-						owns_state = 1804
-						owns_state = 1805
-						owns_state = 1806
-						owns_state = 1807
-						owns_state = 1808
-						owns_state = 1809
-						owns_state = 1810
-						owns_state = 1811
-						owns_state = 1812
-						owns_state = 1813
-						owns_state = 1814
-						owns_state = 1815
-						owns_state = 1816
-						owns_state = 1817
-						owns_state = 1818
-						owns_state = 568
-						owns_state = 582
-						owns_state = 621
-						owns_state = 625
-						owns_state = 635
-						owns_state = 644
-						owns_state = 654
-						owns_state = 679
-						owns_state = 681
+						all_state  = {
+							limit  = {
+								is_austria = yes
+							}
+							is_fully_controlled_by = GER
+						}
 					}
 				}
 			}
@@ -10289,44 +10133,12 @@ focus_tree = {
 					country_exists = AUS
 					AUS = {
 						has_civil_war = no
-						OR = {
-							owns_state = 1792
-							owns_state = 1793
-							owns_state = 1794
-							owns_state = 1795
-							owns_state = 1796
-							owns_state = 1797
-							owns_state = 1798
-							owns_state = 1799
-							owns_state = 1800
-							owns_state = 1801
-							owns_state = 1802
-							owns_state = 1803
-							owns_state = 1804
-							owns_state = 1805
-							owns_state = 1806
-							owns_state = 1807
-							owns_state = 1808
-							owns_state = 1809
-							owns_state = 1810
-							owns_state = 1811
-							owns_state = 1812
-							owns_state = 1813
-							owns_state = 1814
-							owns_state = 1815
-							owns_state = 1816
-							owns_state = 1817
-							owns_state = 1818
-							owns_state = 568
-							owns_state = 582
-							owns_state = 621
-							owns_state = 625
-							owns_state = 635
-							owns_state = 644
-							owns_state = 654
-							owns_state = 679
-							owns_state = 681
+					}
+					all_state  = {
+						limit  = {
+							is_austria = yes
 						}
+						is_fully_controlled_by = AUS
 					}
 				}
 				if = {
@@ -10379,43 +10191,11 @@ focus_tree = {
 					any_other_country = {
 						original_tag = AUS
 						has_civil_war = yes
-						OR = {
-							owns_state = 1792
-							owns_state = 1793
-							owns_state = 1794
-							owns_state = 1795
-							owns_state = 1796
-							owns_state = 1797
-							owns_state = 1798
-							owns_state = 1799
-							owns_state = 1800
-							owns_state = 1801
-							owns_state = 1802
-							owns_state = 1803
-							owns_state = 1804
-							owns_state = 1805
-							owns_state = 1806
-							owns_state = 1807
-							owns_state = 1808
-							owns_state = 1809
-							owns_state = 1810
-							owns_state = 1811
-							owns_state = 1812
-							owns_state = 1813
-							owns_state = 1814
-							owns_state = 1815
-							owns_state = 1816
-							owns_state = 1817
-							owns_state = 1818
-							owns_state = 568
-							owns_state = 582
-							owns_state = 621
-							owns_state = 625
-							owns_state = 635
-							owns_state = 644
-							owns_state = 654
-							owns_state = 679
-							owns_state = 681
+						all_state  = {
+							limit  = {
+								is_austria = yes
+							}
+							is_fully_controlled_by = PREV
 						}
 					}
 					ITA = {
@@ -11072,133 +10852,14 @@ focus_tree = {
 
 		bypass = {
 			OR = {
-				AND = {
-					473 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
+				all_state = {
+					limit = {
+						is_sudetenland = yes
 					}
-					471 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					1434 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					1435 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					498 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					504 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					499 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					522 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					1428 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					1430 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					1431 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					1432 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					1433 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					507 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					2987 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					1977 = {
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
+					controller = {
+						OR = {
+							has_war_with = GER
+							tag = ROOT
 						}
 					}
 				}
@@ -11237,236 +10898,25 @@ focus_tree = {
 
 		completion_reward = {
 			### CLAIMS
-						if = {
+			every_state = {
 				limit = {
-					473 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
+					is_sudetenland = yes
+					controller = {
+						NOT = {
+							tag = ROOT
+							is_subject_of = ROOT
 						}
 					}
 				}
-				add_state_claim = 473
-			}
-			if = {
-				limit = {
-					471 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 471
-			}
-			if = {
-				limit = {
-					1434 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 1434
-			}
-			if = {
-				limit = {
-					1435 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 1435
-			}
-			if = {
-				limit = {
-					498 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 498
-			}
-			if = {
-				limit = {
-					504 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 504
-			}
-			if = {
-				limit = {
-					499 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 499
-			}
-			if = {
-				limit = {
-					522 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 522
-			}
-			if = {
-				limit = {
-					1428 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 1428
-			}
-			if = {
-				limit = {
-					1430 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 1430
-			}
-			if = {
-				limit = {
-					1431 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 1431
-			}
-			if = {
-				limit = {
-					1432 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 1432
-			}
-			if = {
-				limit = {
-					1433 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 1433
-			}
-			if = {
-				limit = {
-					507 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 507
-			}
-			if = {
-				limit = {
-					2987 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 2987
-			}
-			if = {
-				limit = {
-					1977 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 1977
+				add_claim_by = GER
 			}
 
 			### EVENT CHAIN - MUNICH CONFERENCE (CZE is always involved) ###
 			if = {
 				limit = {
 					CZE = {
-						OR = {
-							controls_state = 473
-							controls_state = 471
-							controls_state = 1434
-							controls_state = 1435
-							controls_state = 498
-							controls_state = 504
-							controls_state = 499
-							controls_state = 522
-							controls_state = 1428
-							controls_state = 1430
-							controls_state = 1431
-							controls_state = 1432
-							controls_state = 1433
-							controls_state = 507
-							controls_state = 2987
-							controls_state = 1977
+						any_controlled_state = {
+							is_sudetenland = yes
 						}
 					}
 				}
@@ -11512,23 +10962,8 @@ focus_tree = {
 							is_subject = no
 							NOT = { is_in_faction_with = GER }
 							NOT = { has_war_with = ENG }
-							OR = {
-								controls_state = 473
-								controls_state = 471
-								controls_state = 1434
-								controls_state = 1435
-								controls_state = 498
-								controls_state = 504
-								controls_state = 499
-								controls_state = 522
-								controls_state = 1428
-								controls_state = 1430
-								controls_state = 1431
-								controls_state = 1432
-								controls_state = 1433
-								controls_state = 507
-								controls_state = 2987
-								controls_state = 1977
+							any_controlled_state = {
+								is_sudetenland = yes
 							}
 						}
 						OR = {
@@ -11576,23 +11011,8 @@ focus_tree = {
 				limit = {
 					any_other_country = {
 						NOT = { tag = CZE }
-						OR = {
-							controls_state = 473
-							controls_state = 471
-							controls_state = 1434
-							controls_state = 1435
-							controls_state = 498
-							controls_state = 504
-							controls_state = 499
-							controls_state = 522
-							controls_state = 1428
-							controls_state = 1430
-							controls_state = 1431
-							controls_state = 1432
-							controls_state = 1433
-							controls_state = 507
-							controls_state = 2987
-							controls_state = 1977
+						any_controlled_state = {
+							is_sudetenland = yes
 						}
 						NOT = { has_war_with = ROOT }
 					}
@@ -11600,23 +11020,8 @@ focus_tree = {
 				every_other_country = {
 					limit = {
 						NOT = { tag = CZE }
-						OR = {
-							controls_state = 473
-							controls_state = 471
-							controls_state = 1434
-							controls_state = 1435
-							controls_state = 498
-							controls_state = 504
-							controls_state = 499
-							controls_state = 522
-							controls_state = 1428
-							controls_state = 1430
-							controls_state = 1431
-							controls_state = 1432
-							controls_state = 1433
-							controls_state = 507
-							controls_state = 2987
-							controls_state = 1977
+						any_controlled_state = {
+							is_sudetenland = yes
 						}
 						NOT = { has_war_with = ROOT }
 					}
@@ -11661,28 +11066,18 @@ focus_tree = {
 						CZE = { 
 							custom_trigger_tooltip = {
 								tooltip = mer_GER_first_vienna_award_controls_southern_slovakia
-								controls_state = 610
-								controls_state = 580
-								controls_state = 1439
-								controls_state = 1438
-								controls_state = 1442
-								controls_state = 2930
-								controls_state = 593
-								controls_state = 2246
+								any_controlled_state = {
+									is_southern_slovakia = yes
+								}
 							}
 						} 
 					}
 					NOT = { 
 						custom_trigger_tooltip = {
 							tooltip = mer_GER_first_vienna_award_owns_southern_slovakia
-							owns_state = 610
-							owns_state = 580
-							owns_state = 1439
-							owns_state = 1438
-							owns_state = 1442
-							owns_state = 2930
-							owns_state = 593
-							owns_state = 2246
+							any_controlled_state = {
+								is_southern_slovakia = yes
+							}
 						}
 					}
 				}
@@ -11701,23 +11096,11 @@ focus_tree = {
 					has_government = fascism
 				}
 			}
-			OR = {
-				owns_state = 473
-				owns_state = 471
-				owns_state = 1434
-				owns_state = 1435
-				owns_state = 498
-				owns_state = 504
-				owns_state = 499
-				owns_state = 522
-				owns_state = 1428
-				owns_state = 1430
-				owns_state = 1431
-				owns_state = 1432
-				owns_state = 1433
-				owns_state = 507
-				owns_state = 2987
-				owns_state = 1977
+			any_state = {
+				limit = {
+					is_sudetenland = yes
+				}
+				is_controlled_by = ROOT
 			}
 		}
 
@@ -11792,21 +11175,12 @@ focus_tree = {
 				}
 				NOT = {
 					country_exists = CZE
-					489 = { is_controlled_by = ROOT }
-					513 = { is_controlled_by = ROOT }
-					514 = { is_controlled_by = ROOT }
-					523 = { is_controlled_by = ROOT }
-					528 = { is_controlled_by = ROOT }
-					529 = { is_controlled_by = ROOT }
-					532 = { is_controlled_by = ROOT }
-					533 = { is_controlled_by = ROOT }
-					535 = { is_controlled_by = ROOT }
-					536 = { is_controlled_by = ROOT }
-					539 = { is_controlled_by = ROOT }
-					1425 = { is_controlled_by = ROOT }
-					1426 = { is_controlled_by = ROOT }
-					1427 = { is_controlled_by = ROOT }
-					1429 = { is_controlled_by = ROOT }
+					all_state = {
+						limit = {
+							is_sudetenland = yes
+						}
+						is_controlled_by = ROOT
+					}
 				}
 				any_allied_country = {
 					has_subject = CZE
@@ -11850,82 +11224,19 @@ focus_tree = {
 					CZE = {
 						exists = no
 					}
-										489 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					513 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					514 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					523 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					528 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					529 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					532 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					533 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					535 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					536 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					539 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					1425 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					1426 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					1427 = {
-						is_controlled_by = ROOT
-						NOT = { is_claimed_by = ROOT }
-					}
-					1429 = {
-						is_controlled_by = ROOT
+					all_state = {
+						limit = {
+							is_sudetenland = yes
+						}
 						NOT = { is_claimed_by = ROOT }
 					}
 				}
-				add_state_claim = 489
-				add_state_claim = 513
-				add_state_claim = 514
-				add_state_claim = 523
-				add_state_claim = 528
-				add_state_claim = 529
-				add_state_claim = 532
-				add_state_claim = 533
-				add_state_claim = 535
-				add_state_claim = 536
-				add_state_claim = 539
-				add_state_claim = 1425
-				add_state_claim = 1426
-				add_state_claim = 1427
-				add_state_claim = 1429
+				every_state = {
+					limit = {
+						is_sudetenland = yes
+					}
+					add_claim_by = GER
+				}
 				if = { #Don't get claims or wargoal on Romania or its puppet if you agreed to split CZE with them
 					limit = {
 						NOT = {
@@ -12004,21 +11315,12 @@ focus_tree = {
 				limit = {
 					CZE = { exists = yes }
 				}
-				add_state_claim = 489
-				add_state_claim = 513
-				add_state_claim = 514
-				add_state_claim = 523
-				add_state_claim = 528
-				add_state_claim = 529
-				add_state_claim = 532
-				add_state_claim = 533
-				add_state_claim = 535
-				add_state_claim = 536
-				add_state_claim = 539
-				add_state_claim = 1425
-				add_state_claim = 1426
-				add_state_claim = 1427
-				add_state_claim = 1429
+				every_state = {
+					limit = {
+						is_sudetenland = yes
+					}
+					add_claim_by = GER
+				}
 				create_wargoal = {
 					type = annex_everything
 					target = CZE
@@ -15529,9 +14831,16 @@ focus_tree = {
 					has_war = yes
 					is_subject = yes
 				}
-				NOT = { owns_state = 731 }
-				NOT = { owns_state = 184 }
-				NOT = { owns_state = 185 }
+				any_state = { #Epirus
+					limit = {
+						OR = {
+							is_epirus = yes
+							is_central_macedonia = yes
+							is_west_thrace = yes
+						}
+					}
+					NOT  = { is_fully_controlled_by = GRE }
+				}
 			}
 			NOT = {
 				GRE = {
@@ -15577,10 +14886,16 @@ focus_tree = {
 			is_subject = no
 			GRE = { 
 				has_war = no 
-				is_subject = no
-				controls_state = 185 #Epirus
-				controls_state = 731 #Central Macedonia
-				controls_state = 184 #Thrace
+				all_state = { #Epirus
+					limit = {
+						OR = {
+							is_epirus = yes
+							is_central_macedonia = yes
+							is_west_thrace = yes
+						}
+					}
+					is_fully_controlled_by = GRE
+				}
 			}
 			OR = {
 				AND = {
@@ -15773,56 +15088,92 @@ focus_tree = {
 				effect_tooltip = {
 					if = {
 						limit = {
-							185 = { #Epirus
+							all_owned_state = { #Epirus
+								limit = {
+									is_epirus = yes
+								}
 								is_fully_controlled_by = GRE
 							}
 						}
-						GER = { transfer_state = 185 }
-						set_global_flag = GER_second_ljubljana_award_GER_185
+						every_state = { #Epirus
+							limit = {
+								is_epirus = yes
+								is_fully_controlled_by = GRE
+							}
+							transfer_state_to = GER
+						}
+						set_global_flag = GER_second_ljubljana_award_GER_Epirus
 					}
 					if = {
 						limit = {
-							731 = { #Central Macedonia
+							all_owned_state = { #Central Macedonia
+								limit = {
+									is_central_macedonia = yes
+								}
 								is_fully_controlled_by = GRE
 							}
 						}
-						GER = { transfer_state = 731 }
-						set_global_flag = GER_second_ljubljana_award_GER_731
+						every_state = { #Central Macedonia
+							limit = {
+								is_central_macedonia = yes
+								is_fully_controlled_by = GRE
+							}
+							transfer_state_to = GER
+						}
+						set_global_flag = GER_second_ljubljana_award_GER_Macedonia
 					}
 					if = {
 						limit = {
-							184 = { #Thrace
+							all_owned_state = { #West Thrace
+								limit = {
+									is_west_thrace = yes
+								}
 								is_fully_controlled_by = GRE
 							}
 						}
-						GER = { transfer_state = 184 }
-						set_global_flag = GER_second_ljubljana_award_GER_184
+						every_state = { #West Thrace
+							limit = {
+								is_west_thrace = yes
+								is_fully_controlled_by = GRE
+							}
+							transfer_state_to = GER
+						}
+						set_global_flag = GER_second_ljubljana_award_GER_Thrace
 					}
 				}
 				hidden_effect = {
 					if = {
 						limit = {
-							185 = { #Epirus
+							all_owned_state = { #Epirus
+								limit = {
+									is_epirus = yes
+								}
 								is_fully_controlled_by = GRE
 							}
 						}
-						set_global_flag = GER_second_ljubljana_award_GER_185
+						set_global_flag = GER_second_ljubljana_award_GER_Epirus
 					}
 					if = {
 						limit = {
-							731 = { #Central Macedonia
+							all_owned_state = { #Central Macedonia
+								limit = {
+									is_central_macedonia = yes
+								}
 								is_fully_controlled_by = GRE
 							}
 						}
-						set_global_flag = GER_second_ljubljana_award_GER_731
+						set_global_flag = GER_second_ljubljana_award_GER_Macedonia
 					}
 					if = {
 						limit = {
-							184 = { #Thrace
+							all_owned_state = { #West Thrace
+								limit = {
+									is_west_thrace = yes
+								}
 								is_fully_controlled_by = GRE
 							}
 						}
-						set_global_flag = GER_second_ljubljana_award_GER_184
+						set_global_flag = GER_second_ljubljana_award_GER_Thrace
 					}
 				}
 			}			

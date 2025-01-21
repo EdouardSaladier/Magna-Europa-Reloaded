@@ -8,3 +8,247 @@ is_contested = {
 		state = 2969
 	}
 }
+
+is_evros = {
+	OR = {
+		state = 910
+		state = 2005
+		state = 2006
+		state = 1969
+	}
+}
+
+is_west_thrace = {
+	OR = {
+		state = 937
+		state = 2751
+		state = 2756
+		state = 2840
+		state = 2016
+		state = 929
+		state = 1548
+		state = 1549
+	}
+}
+
+is_central_macedonia = {
+	OR = {
+		state = 1546
+		state = 2940
+		state = 2000
+		state = 1547
+		state = 1557
+		state = 941
+		state = 2748
+		state = 1545
+		state = 2923
+		state = 969
+		state = 2922
+	}
+}
+
+is_epirus = {
+	OR = {
+		state = 995
+		state = 1541
+		state = 1542
+		state = 1543
+		state = 1550
+	}
+}
+
+is_rhineland_dmz= {
+	OR = {
+		state = 1763
+		state = 589
+		state = 1766
+		state = 1764
+		state = 2583
+		state = 556
+		state = 1765
+		state = 1747
+		state = 516
+		state = 1744
+		state = 1746
+		state = 2580
+		state = 474
+		state = 1745
+		state = 483
+		state = 475
+		state = 465
+		state = 431
+		state = 2584
+		state = 1749
+		state = 424
+		state = 1730
+		state = 1748
+		state = 423
+		state = 1750
+		state = 2718
+		state = 2338
+		state = 1751
+		state = 460
+		state = 2339
+		state = 477
+		state = 469
+		state = 503
+		state = 1752
+		state = 488
+		state = 1753
+		state = 2337
+		state = 537
+		state = 2343
+		state = 1758
+		state = 1760
+		state = 506
+		state = 1756
+		state = 521
+		state = 1757
+		state = 524
+		state = 2340
+		state = 2719
+	}
+}
+
+is_tyrol = {
+	OR = {
+		state = 645
+		state = 1792
+		state = 644
+		state = 1793
+		state = 679
+	}
+}
+
+is_salzburg = {
+	OR = {
+		state = 1794
+		state = 625
+		state = 1795
+	}
+}
+
+is_upper_austria = {
+	OR = {
+		state = 1798
+		state = 1799
+		state = 1800
+		state = 582
+	}
+}
+
+is_wien = {
+	OR = {
+		state = 1814
+		state = 1815
+		state = 1816
+		state = 1817
+		state = 1818
+	}
+}
+
+is_lower_austria = {
+	OR = {
+		state = 1811
+		state = 1812
+		state = 1813
+		state = 1801
+		state = 1802
+		state = 1803
+		state = 1804
+		state = 568
+	}
+}
+
+is_carinthia = {
+	OR = {
+		state = 1797
+		state = 681
+		state = 1796
+	}
+}
+
+is_styria = {
+	OR = {
+		state = 1809
+		state = 635
+		state = 1808
+		state = 1807
+		state = 1810
+		state = 1806
+	}
+}
+
+is_burhenland = {
+	OR = {
+		state = 1805
+		state = 621
+	}
+}
+
+is_austria = {
+	OR = {
+		is_tyrol = yes
+		is_salzburg = yes
+		is_upper_austria = yes
+		is_lower_austria = yes
+		is_wien = yes
+		is_carinthia = yes
+		is_styria = yes
+		is_burhenland = yes
+	}
+}
+
+is_sudetenland = {
+	OR = {
+		state = 473
+		state = 471
+		state = 1434
+		state = 1435
+		state = 498
+		state = 504
+		state = 499
+		state = 522
+		state = 1428
+		state = 1430
+		state = 1431
+		state = 1432
+		state = 1433
+		state = 507
+		state = 2987
+		state = 1977
+	}
+}
+
+is_bohemia = {
+	OR = {
+		state = 489
+		state = 513
+		state = 514
+		state = 523
+		state = 528
+		state = 529
+		state = 532
+		state = 533
+		state = 535
+		state = 536
+		state = 539
+		state = 1425
+		state = 1426
+		state = 1427
+		state = 1429
+	}
+}
+
+is_southern_slovakia = {
+	OR = {
+		state = 610
+		state = 580
+		state = 1439
+		state = 1438
+		state = 1442
+		state = 2930
+		state = 593
+		state = 2246
+	}
+}
