@@ -8135,6 +8135,17 @@
 			}
 			if = {
 				limit = {
+					3077 = {
+						is_controlled_by = ROOT
+					}
+				}
+				 3077 = {
+					transfer_state_to = ROOT
+					set_state_flag = FRA_ANNEX_FLAG
+				}
+			}
+			if = {
+				limit = {
 					524 = {
 						is_controlled_by = ROOT
 					}
@@ -8593,6 +8604,17 @@
 			}
 			if = {
 				limit = {
+					3078 = {
+						is_controlled_by = ROOT
+					}
+				}
+				3078 = {
+					transfer_state_to = ROOT
+					set_state_flag = FRA_ANNEX_FLAG
+				}
+			}
+			if = {
+				limit = {
 					1704 = {
 						is_controlled_by = ROOT
 					}
@@ -8674,6 +8696,7 @@
 							state = 1678
 							state = 1679
 							state = 440
+							state = 3084
 						}
 						is_controlled_by = FRA
 					}
@@ -8691,6 +8714,7 @@
 						OR = {
 							is_core_of = THU
 							state = 1689
+							state = 3088
 							state = 2533
 							state = 1682
 							state = 1683

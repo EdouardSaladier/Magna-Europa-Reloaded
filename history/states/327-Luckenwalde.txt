@@ -1,8 +1,9 @@
-
 state={
 	id=327
 	name="STATE_327"
-
+	provinces={
+		4240 4484 5248 20582 
+	}
 	history={
 		owner = GER
 		add_core_of = GER
@@ -13,11 +14,7 @@ state={
 		add_core_of = BRN
 
 	}
-
-	provinces={
-		680 4240 4484 4787 5248 8569 20582 
-	}
-	manpower=307885
+	manpower=276885
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

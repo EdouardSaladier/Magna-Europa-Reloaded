@@ -1,7 +1,9 @@
-
 state={
 	id=301
 	name="STATE_301"
+	provinces={
+		3349 11344 11399 
+	}
 	history={
 		owner = GER
 		add_core_of = GER
@@ -18,9 +20,6 @@ state={
 		victory_points = {
 			748 5 #Schneidemühl
 		}
-	}
-	provinces={
-		748 3349 11344 11399 
 	}
 	manpower=53349
 	buildings_max_level_factor=1.000

@@ -1,26 +1,20 @@
 state={
-	id=1223
-	name="STATE_1223"
-	resources={
-		oil=3.000
-	}
+	id=3081
+	name="STATE_3081"
 	provinces={
-		948 2320 2778 12722 12787 12847 12859 12905 
+		12780 
 	}
 	history={
 		owner = POL
 		add_core_of = POL
-		victory_points = {
-			12722 2 #Bochnia
-		}
 		buildings = {
 			infrastructure = 3
 		}
 		add_core_of = GAL
 		add_core_of = MLP
   	}
-	manpower=266800
+	manpower=37234
+	state_category=pastoral
 	buildings_max_level_factor=1.000
-	state_category=city
 	local_supplies=0.000
 }

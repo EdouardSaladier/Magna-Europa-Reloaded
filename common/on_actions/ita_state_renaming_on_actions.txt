@@ -2999,6 +2999,35 @@ on_actions = {
 					FROM.FROM = { reset_state_name = yes }
 				}
 			}
+			#Pinguente
+			if = {
+				limit = {
+					FROM.FROM = { state = 3082 }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								is_yugoslav = yes
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Buzet" }
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								is_german = yes
+							}
+						}
+					}
+					FROM.FROM = { set_state_name = "Pinquent" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+			}
 			#Aquileia
 			if = {
 				limit = {

@@ -1,24 +1,20 @@
 state={
-	id=1746
-	name="STATE_1746"
+	id=3087
+	name="STATE_3087"
 	provinces={
-		12673 20728 
+		12042 
 	}
 	history={
 		owner = GER
 		add_core_of = GER
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
 		}
 		add_core_of = PRE
-		victory_points = {
-			12673 40 
-		}
-		set_demilitarized_zone = yes
-	}
-	manpower=571499
+		add_core_of = SXP
+    }
+	manpower=38954
+	state_category=pastoral
 	buildings_max_level_factor=1.000
-	state_category=large_city
 	local_supplies=0.000
 }

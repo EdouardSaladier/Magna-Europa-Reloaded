@@ -1856,7 +1856,6 @@ on_actions = {
 					is_ai = no # Slight cheat, but the ai needs some support
 				}
 				random_list = {
-					80 = { } # No effect
 					20 = { 
 						set_country_flag = SOV_civil_war_triggered_flag 
 						country_event = {

@@ -145,6 +145,7 @@ country_event = {
 						state = 1707
 						state = 431
 						state = 1746
+						state = 3083
 						state = 1771
 						state = 1763
 						state = 1738
@@ -323,6 +324,7 @@ country_event = {
 							NOT = {
 								state = 1638
 								state = 327
+								state = 3086
 								state = 1639
 								is_core_of = BRL
 								state = 1644
@@ -416,10 +418,12 @@ country_event = {
 							state = 1711
 							state = 2566
 							state = 327
+							state = 3086
 							state = 2592
 							state = 1644
 							state = 365
 							state = 441
+							state = 3085
 							state = 424
 							state = 1749
 							state = 431
@@ -1180,6 +1184,7 @@ country_event = {
 		hidden_effect = {
 			# west prussia
 			add_state_claim = 287
+			add_state_claim = 3079
 			add_state_claim = 310
 			add_state_claim = 2567
 			add_state_claim = 546
@@ -1188,6 +1193,7 @@ country_event = {
 			add_state_claim = 267
 			# posnan
 			add_state_claim = 80
+			add_state_claim = 3080
 			add_state_claim = 335
 			add_state_claim = 243
 			add_state_claim = 79
@@ -1307,9 +1313,6 @@ country_event = {
 			}
 			country_event = { id = wtt_germany.25 days = 1 random_days = 2 }
 			random_list = {
-				80 = {
-					# No effect
-				}
 				20 = {
 					remove_ideas = GER_the_great_red_menace
 				}

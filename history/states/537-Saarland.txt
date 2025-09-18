@@ -1,10 +1,9 @@
-
 state={
 	id=537
 	name="STATE_537"
 	resources={
-		steel=12
-		aluminium = 10
+		steel=12.000
+		aluminium=10.000
 	}
 	history={
 		owner = GER
@@ -24,11 +23,10 @@ state={
 		set_demilitarized_zone = yes
 
 	}
-
 	provinces={
-		6453 9312 9478 12993 13047 
+		6453 9312 9478 13047 
 	}
-	manpower=588080
+	manpower=540080
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

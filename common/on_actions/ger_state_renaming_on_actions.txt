@@ -22,6 +22,19 @@ on_actions = {
 					reset_province_name = 6453
 				}
             }
+			#Homburg - Hombourg)
+            if = {
+                limit = {
+                    FROM.FROM = { state = 3077 }
+                }
+				if = {
+					limit = { ROOT = { is_french = yes } }
+					FROM.FROM = { set_state_name = "Hombourg" }
+				}
+				else = {
+					FROM.FROM = { reset_state_name = yes }
+				}
+            }
 			# Kreuznach - Rhin et Moselle - Creusenac
 			if = {
                 limit = {

@@ -1,8 +1,9 @@
-
 state={
 	id=762
 	name="STATE_762"
-
+	provinces={
+		5331 7915 
+	}
 	history={
 		owner = ITA
 		add_core_of = ITA
@@ -21,10 +22,6 @@ state={
 			5331 5 
 		}
 
-	}
-
-	provinces={
-		5331 7915 14408 
 	}
 	manpower=136425
 	buildings_max_level_factor=1.000

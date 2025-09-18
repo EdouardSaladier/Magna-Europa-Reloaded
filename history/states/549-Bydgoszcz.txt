@@ -1,15 +1,15 @@
-
 state={
 	id=549
 	name="STATE_549"
 	provinces={
-		5827 6691 7830 8503 9431 11367 
+		5827 6691 7045 7830 8503 9431 11367
 	}
 	history={
 		owner = POL
 		
 		add_core_of = POL
 		add_core_of = WKP
+		add_core_of = WPR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -20,6 +20,6 @@ state={
   	}
 	manpower=223100
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = large_town
 }

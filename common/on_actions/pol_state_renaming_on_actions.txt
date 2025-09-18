@@ -187,6 +187,18 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = { FROM.FROM = { state = 3079 } } #Dzialowo
+				if = {
+					limit = {
+						ROOT = { is_german = yes }
+					}
+					FROM.FROM = { set_state_name = "Soldau" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
 			#Greater Poland (Poznan)
 			if = {
 				limit = { FROM.FROM = { state = 549 } } #Bydgoszcz
@@ -301,6 +313,18 @@ on_actions = {
 					else = {
 						FROM.FROM = { reset_state_name = yes }
 						reset_province_name = 1781
+					}
+				}
+			}
+			if = {
+				limit = { FROM.FROM = { state = 3080 } } #Odolanow
+				if = {
+					limit = {
+						ROOT = { is_german = yes }
+					}
+					FROM.FROM = { set_state_name = "Adelnau" }
+					else = {
+						FROM.FROM = { reset_state_name = yes }
 					}
 				}
 			}

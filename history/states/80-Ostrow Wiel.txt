@@ -1,9 +1,8 @@
-
 state={
 	id=80
 	name="STATE_80"
 	provinces={
-		1221 1781 6623 8287 11836 11892 11921 12045 12112 12172 
+		1781 6623 8287 11836 11892 11921 12045 12112 12172 
 	}
 	history={
 		owner = POL
@@ -17,8 +16,8 @@ state={
 		}
 		
   	}
-	manpower=354000
+	manpower=341100
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
-	state_category = city
 }

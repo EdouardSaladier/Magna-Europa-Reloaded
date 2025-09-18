@@ -1,14 +1,13 @@
 state={
-	id=2908
-	name="STATE_2908"
+	id=3082
+	name="STATE_3082"
 	provinces={
-		14357 14408 
+		14308 
 	}
 	history={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = CRO
-		add_core_of = LBN
 		add_core_of = JUL
 		add_core_of = IST
 		buildings = {
@@ -17,9 +16,8 @@ state={
 		}
 
 	}
-
-	manpower=32943
+	manpower=8422
+	state_category=wasteland
 	buildings_max_level_factor=1.000
-	state_category=pastoral
 	local_supplies=0.000
 }

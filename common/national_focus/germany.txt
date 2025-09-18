@@ -3596,6 +3596,7 @@ focus_tree = {
 					has_full_control_of_state = 1638
 					has_full_control_of_state = 1639
 					has_full_control_of_state = 327
+					has_full_control_of_state = 3086
 					has_full_control_of_state = 1641
 					has_full_control_of_state = 2592
 					has_full_control_of_state = 1643
@@ -3617,6 +3618,7 @@ focus_tree = {
 					tooltip = mer_GER_autobahn_thuringen_trigger_tt
 					has_full_control_of_state = 1685
 					has_full_control_of_state = 440
+					has_full_control_of_state = 3084
 					has_full_control_of_state = 1686
 				}
 				# has_full_control_of_state = 54 #franken
@@ -3695,6 +3697,16 @@ focus_tree = {
 					}
 				}
 				327 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				3086 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
 						add_building_construction = {
@@ -3825,6 +3837,16 @@ focus_tree = {
 					}
 				}
 				440 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				3084 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
 						add_building_construction = {
@@ -5308,6 +5330,7 @@ focus_tree = {
 				516 = { is_demilitarized_zone = no }
 				1744 = { is_demilitarized_zone = no }
 				1746 = { is_demilitarized_zone = no }
+				3083 = { is_demilitarized_zone = no }
 				2580 = { is_demilitarized_zone = no }
 				474 = { is_demilitarized_zone = no }
 				1745 = { is_demilitarized_zone = no }
@@ -5335,6 +5358,7 @@ focus_tree = {
 				1753 = { is_demilitarized_zone = no }
 				2337 = { is_demilitarized_zone = no }
 				537 = { is_demilitarized_zone = no }
+				3077 = { is_demilitarized_zone = no }
 				2343 = { is_demilitarized_zone = no }
 				1758 = { is_demilitarized_zone = no }
 				1760 = { is_demilitarized_zone = no }
@@ -5366,6 +5390,7 @@ focus_tree = {
 				516 = { set_demilitarized_zone = no }
 				1744 = { set_demilitarized_zone = no }
 				1746 = { set_demilitarized_zone = no }
+				3083 = { set_demilitarized_zone = no }
 				2580 = { set_demilitarized_zone = no }
 				474 = { set_demilitarized_zone = no }
 				1745 = { set_demilitarized_zone = no }
@@ -5393,6 +5418,7 @@ focus_tree = {
 				1753 = { set_demilitarized_zone = no }
 				2337 = { set_demilitarized_zone = no }
 				537 = { set_demilitarized_zone = no }
+				3077 = { set_demilitarized_zone = no }
 				2343 = { set_demilitarized_zone = no }
 				1758 = { set_demilitarized_zone = no }
 				1760 = { set_demilitarized_zone = no }
@@ -6207,6 +6233,7 @@ focus_tree = {
 			custom_effect_tooltip = mer_GER_claims_on_danzig_corridor_tt
 			hidden_effect = {
 				287 = { add_claim_by = GER }
+				3079 = { add_claim_by = GER }
 				310 = { add_claim_by = GER }
 				2567 = { add_claim_by = GER }
 				546 = { add_claim_by = GER }
@@ -6218,6 +6245,7 @@ focus_tree = {
 			custom_effect_tooltip = mer_GER_claims_on_poznan_tt
 			hidden_effect = {
 				80 = { add_claim_by = GER }
+				3080 = { add_claim_by = GER }
 				335 = { add_claim_by = GER }
 				243 = { add_claim_by = GER }
 				79 = { add_claim_by = GER }
@@ -6261,6 +6289,14 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = mer_GER_danzig_or_war_poland_owns_controls_danzig_tt
 				287 = {
+					owner = {
+						original_tag = POL
+					}
+					controller = {
+						original_tag = POL
+					}
+				}
+				3079 = {
 					owner = {
 						original_tag = POL
 					}
@@ -6355,6 +6391,14 @@ focus_tree = {
 								original_tag = POL
 							}
 						}
+						3079 = {
+							owner = {
+								original_tag = POL
+							}
+							controller = {
+								original_tag = POL
+							}
+						}
 						310 = {
 							owner = {
 								original_tag = POL
@@ -6435,6 +6479,12 @@ focus_tree = {
 			if = {
 				limit = {
 					287 = {
+						controller = {
+							tag = POL
+							has_civil_war = no
+						}
+					}
+					3079 = {
 						controller = {
 							tag = POL
 							has_civil_war = no
@@ -9321,6 +9371,7 @@ focus_tree = {
 				516 = { set_demilitarized_zone = no }
 				1744 = { set_demilitarized_zone = no }
 				1746 = { set_demilitarized_zone = no }
+				3083 = { set_demilitarized_zone = no }
 				2580 = { set_demilitarized_zone = no }
 				474 = { set_demilitarized_zone = no }
 				1745 = { set_demilitarized_zone = no }
@@ -9348,6 +9399,7 @@ focus_tree = {
 				1753 = { set_demilitarized_zone = no }
 				2337 = { set_demilitarized_zone = no }
 				537 = { set_demilitarized_zone = no }
+				3077 = { set_demilitarized_zone = no }
 				2343 = { set_demilitarized_zone = no }
 				1758 = { set_demilitarized_zone = no }
 				1760 = { set_demilitarized_zone = no }
@@ -10960,6 +11012,7 @@ focus_tree = {
 					owns_state = 267
 					hidden_trigger = {
 						owns_state = 287
+						owns_state = 3079
 						owns_state = 310
 						owns_state = 2567
 						owns_state = 546
@@ -10970,6 +11023,7 @@ focus_tree = {
 					owns_state = 122
 					hidden_trigger = {
 						owns_state = 80
+						owns_state = 3080
 						owns_state = 335
 						owns_state = 243
 						owns_state = 79

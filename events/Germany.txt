@@ -3890,6 +3890,7 @@ country_event = {
 			516 = { set_demilitarized_zone = yes }
 			1744 = { set_demilitarized_zone = yes }
 			1746 = { set_demilitarized_zone = yes }
+			3083 = { set_demilitarized_zone = yes }
 			2580 = { set_demilitarized_zone = yes }
 			474 = { set_demilitarized_zone = yes }
 			1745 = { set_demilitarized_zone = yes }
@@ -3917,6 +3918,7 @@ country_event = {
 			1753 = { set_demilitarized_zone = yes }
 			2337 = { set_demilitarized_zone = yes }
 			537 = { set_demilitarized_zone = yes }
+			3077 = { set_demilitarized_zone = yes }
 			2343 = { set_demilitarized_zone = yes }
 			1758 = { set_demilitarized_zone = yes }
 			1760 = { set_demilitarized_zone = yes }
@@ -4052,6 +4054,7 @@ country_event = {
 			516 = { set_demilitarized_zone = yes }
 			1744 = { set_demilitarized_zone = yes }
 			1746 = { set_demilitarized_zone = yes }
+			3083 = { set_demilitarized_zone = yes }
 			2580 = { set_demilitarized_zone = yes }
 			474 = { set_demilitarized_zone = yes }
 			1745 = { set_demilitarized_zone = yes }
@@ -4079,6 +4082,7 @@ country_event = {
 			1753 = { set_demilitarized_zone = yes }
 			2337 = { set_demilitarized_zone = yes }
 			537 = { set_demilitarized_zone = yes }
+			3077 = { set_demilitarized_zone = yes }
 			2343 = { set_demilitarized_zone = yes }
 			1758 = { set_demilitarized_zone = yes }
 			1760 = { set_demilitarized_zone = yes }
@@ -4808,7 +4812,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = POL
-					generator = { 287 310 2567 546 2341 264 267 }
+					generator = { 287 3079 310 2567 546 2341 264 267 }
 				}
 			}
 		}
@@ -4997,6 +5001,7 @@ country_event = {
 		custom_effect_tooltip = mer_GER_claims_on_danzig_corridor_tt
 		hidden_effect = {
 			287 = { transfer_state_to = GER }
+			3079 = { transfer_state_to = GER }
 			310 = { transfer_state_to = GER }
 			2567 = { transfer_state_to = GER }
 			546 = { transfer_state_to = GER }
@@ -5052,7 +5057,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = POL
-			generator = { 287 310 2567 546 2341 264 267 1979 }
+			generator = { 287 3079 310 2567 546 2341 264 267 1979 }
 		}
 	}
 }
@@ -5326,7 +5331,7 @@ country_event = {
 				declare_war_on = {
 					target = POL
 					type = take_state
-					generator = { 287 310 2567 546 2341 264 267 }
+					generator = { 287 3079 310 2567 546 2341 264 267 }
 				}
 			}
 		}
@@ -5358,6 +5363,7 @@ country_event = {
 			}
 			# core west prussia
 			add_state_core = 287
+			add_state_core = 3079
 			add_state_core = 310
 			add_state_core = 2567
 			add_state_core = 546
@@ -5367,6 +5373,7 @@ country_event = {
 			add_state_core = 1979
 			# transfer west prussia
 			transfer_state = 287
+			transfer_state = 3079
 			transfer_state = 310
 			transfer_state = 2567
 			transfer_state = 546
@@ -5471,12 +5478,13 @@ country_event = {
 		}
 		create_wargoal = {
 			type = take_state
-			generator = { 287 310 2567 546 2341 264 267 }
+			generator = { 287 3079 310 2567 546 2341 264 267 }
 			target = POL
 		}
 		custom_effect_tooltip = mer_GER_danzig_or_war_cores_on_west_prussia
 		hidden_effect = {
 			add_state_core = 287
+			add_state_core = 3079
 			add_state_core = 310
 			add_state_core = 2567
 			add_state_core = 546
