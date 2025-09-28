@@ -1,0 +1,20 @@
+state={
+	id=3093
+	name="STATE_3093"
+	provinces={
+		12226 
+	}
+	history={
+	    owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HSN
+		add_core_of = HES
+    }
+	manpower=4853
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

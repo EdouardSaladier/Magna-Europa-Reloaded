@@ -2,7 +2,7 @@ state={
 	id=2580
 	name="STATE_2580"
 	provinces={
-		12583 
+		16215 
 	}
 	history={
 		owner = GER
@@ -10,11 +10,12 @@ state={
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = HES
-		set_demilitarized_zone = yes
+		add_core_of = PRE
+		add_core_of = HSN
+		add_core_of = HSH
 	}
-	manpower=53340
-	state_category=pastoral
+	manpower=43340
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

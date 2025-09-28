@@ -1,8 +1,9 @@
-
 state={
 	id=478
 	name="STATE_478"
-
+	provinces={
+		12482 12534 12583 20717 
+	}
 	history={
 		owner = GER
 		add_core_of = GER
@@ -14,11 +15,7 @@ state={
 			12482 5 #Giessen
 		}
 	}
-
-	provinces={
-		12482 12534 20717 
-	}
-	manpower=213360
+	manpower=253360
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000

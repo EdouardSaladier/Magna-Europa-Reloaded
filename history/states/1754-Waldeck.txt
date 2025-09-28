@@ -2,7 +2,7 @@ state={
 	id=1754
 	name="STATE_1754"
 	provinces={
-		9669 12226 
+		9669 12131 20720 
 	}
 	history={
 	    owner = GER
@@ -12,8 +12,8 @@ state={
 		}
 		add_core_of = WDK
     }
-	manpower=24491
+	manpower=20491
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
-	state_category = pastoral
 }

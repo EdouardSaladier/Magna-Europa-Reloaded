@@ -1,8 +1,8 @@
 state={
-	id=2585
-	name="STATE_2585"
+	id=3100
+	name="STATE_3100"
 	provinces={
-		6415 12377 12414 12606 
+		18983 
 	}
 	history={
 		owner = GER
@@ -12,13 +12,10 @@ state={
 		}
 		add_core_of = PRE
 		add_core_of = HSN
-		add_core_of = NAS
-		victory_points = {
-			6415 2 #Dillenburg
-		}
+		add_core_of = HSK
 	}
-	manpower=160501
-	state_category=town
+	manpower=8457
+	state_category=wasteland
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

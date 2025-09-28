@@ -1,0 +1,21 @@
+state={
+	id=3111
+	name="STATE_3111"
+	provinces={
+		1102 11860 11915 16544 
+	}
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = PRE
+		add_core_of = BRN
+		add_core_of = LUS
+	}
+	manpower=24775
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

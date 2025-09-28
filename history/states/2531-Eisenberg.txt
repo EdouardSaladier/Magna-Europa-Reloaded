@@ -1,6 +1,9 @@
 state={
 	id=2531
 	name="STATE_2531"
+	provinces={
+		7559 12337 12415 
+	}
 	history={
 		owner = GER
 		add_core_of = GER
@@ -10,11 +13,8 @@ state={
 		add_core_of = THU
 		add_core_of = SXA
     }
-	provinces={
-		7559 12337 12415 
-	}
-	manpower=167780
-	state_category=town
+	manpower=164380
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

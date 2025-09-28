@@ -1,8 +1,9 @@
-
 state={
 	id=474
 	name="STATE_474"
-
+	provinces={
+		12543 12606 12611 
+	}
 	history={
 		owner = GER
 		add_core_of = GER
@@ -12,14 +13,9 @@ state={
 		add_core_of = PRE
 		add_core_of = HSN
 		add_core_of = NAS
-		set_demilitarized_zone = yes
 		victory_points = {
             12543 2
         }
-	}
-
-	provinces={
-		12543 12611 
 	}
 	manpower=107000
 	buildings_max_level_factor=1.000

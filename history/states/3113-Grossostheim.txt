@@ -1,0 +1,21 @@
+state={
+	id=3113
+	name="STATE_3113"
+	provinces={
+		20726 
+	}
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BAY
+		add_core_of = FRN
+		set_demilitarized_zone = yes
+	}
+	manpower=24832
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

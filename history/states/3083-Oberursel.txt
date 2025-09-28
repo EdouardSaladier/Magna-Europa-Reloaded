@@ -2,7 +2,7 @@ state={
 	id=3083
 	name="STATE_3083"
 	provinces={
-		8507 12623 
+		8507 
 	}
 	history={
 		owner = GER
@@ -15,8 +15,8 @@ state={
 		add_core_of = NAS
 		set_demilitarized_zone = yes
 	}
-	manpower=120493
-	state_category=rural
+	manpower=67493
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

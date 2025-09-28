@@ -1,7 +1,9 @@
-
 state={
 	id=463
 	name="STATE_463"
+	provinces={
+		9364 12294 18367 20632 
+	}
 	history={
 		owner = GER
 		add_core_of = GER
@@ -14,9 +16,6 @@ state={
 			12294 2 #Eisenach
 		}
     }
-	provinces={
-		9364 12294 20632 
-	}
 	manpower=161201
 	buildings_max_level_factor=1.000
 	state_category=town

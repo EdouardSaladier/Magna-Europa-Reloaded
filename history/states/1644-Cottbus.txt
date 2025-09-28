@@ -1,8 +1,9 @@
-
 state={
 	id=1644
 	name="STATE_1644"
-
+	provinces={
+		7802 9553 18477 20565 
+	}
 	history={
 		owner = GER
 		add_core_of = GER
@@ -15,12 +16,8 @@ state={
 		add_core_of = LUS
 		victory_points = { 20565 5 }
 	}
-
-	provinces={
-		1102 6443 7802 8870 9495 9553 11860 11915 12043 20565 
-	}
-	manpower=257327
+	manpower=170327
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_town
 	local_supplies=0.000
 }

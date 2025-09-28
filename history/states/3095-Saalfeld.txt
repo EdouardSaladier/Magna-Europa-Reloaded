@@ -1,0 +1,23 @@
+state={
+	id=3095
+	name="STATE_3095"
+	provinces={
+		16356 20626 
+	}
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = THU
+		add_core_of = SXM
+		victory_points = {
+			20626 2 #Saalfeld
+		}
+    }
+	manpower=38642
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

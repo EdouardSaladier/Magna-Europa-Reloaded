@@ -1,0 +1,20 @@
+state={
+	id=2585
+	name="STATE_2585"
+	provinces={
+		12377 12414 
+	}
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = PRE
+		add_core_of = HSN
+	}
+	manpower=38647
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

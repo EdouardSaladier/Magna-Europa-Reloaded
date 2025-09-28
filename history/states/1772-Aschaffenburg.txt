@@ -1,8 +1,9 @@
-
 state={
 	id=1772
 	name="STATE_1772"
-
+	provinces={
+		5131 7211 7238 8989 12710 20765 
+	}
 	history={
 		owner = GER
 		add_core_of = GER
@@ -15,11 +16,7 @@ state={
 			12710 5 #Aschaffenburg
 		}
 	}
-
-	provinces={
-		5131 7211 7238 8989 12710 20726 20765 
-	}
-	manpower=236542
+	manpower=212542
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000

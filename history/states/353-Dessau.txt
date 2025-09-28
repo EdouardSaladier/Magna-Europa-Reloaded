@@ -1,9 +1,8 @@
-
 state={
 	id=353
 	name="STATE_353"
 	provinces={
-		3680 11868 11895 11985 20636 
+		2874 4050 17307 20636 
 	}
 	history={
 		owner = GER
@@ -13,10 +12,10 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = ANH
-		victory_points = { 3680 5 }
+		victory_points = { 2874 5 }
     }
-	manpower=287918
+	manpower=152918
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = city
 }

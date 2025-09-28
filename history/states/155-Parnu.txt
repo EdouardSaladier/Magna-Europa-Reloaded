@@ -1,9 +1,11 @@
-
 state={
 	id=155
 	name="STATE_155"
 	resources={
 		steel=3.000
+	}
+	provinces={
+		4597 4969 5934 10126 10165 10192 16682 17086 17211 19978 19981 
 	}
 	history={
 		owner = EST
@@ -17,10 +19,6 @@ state={
 			16682 2 
 		}
 
-	}
-
-	provinces={
-		4597 4969 5934 10126 10165 10192 16682 17086 19978 19981 
 	}
 	manpower=94700
 	buildings_max_level_factor=1.000

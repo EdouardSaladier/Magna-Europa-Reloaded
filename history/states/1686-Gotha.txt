@@ -1,7 +1,9 @@
-
 state={
 	id=1686
 	name="STATE_1686"
+	resources={
+		steel=5.000
+	}
 	history={
 		owner = GER
 		add_core_of = GER
@@ -12,10 +14,7 @@ state={
 		add_core_of = SXC
     }
 	provinces={
-		2943 7501 12267 18720 18815 
-	}
-	resources={
-		steel=5
+		2943 7501 12267 18720 18815 18879 
 	}
 	manpower=257456
 	buildings_max_level_factor=1.000

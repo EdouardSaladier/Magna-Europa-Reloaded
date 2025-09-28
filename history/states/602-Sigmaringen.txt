@@ -1,7 +1,9 @@
-
 state={
 	id=602
 	name="STATE_602"
+	provinces={
+		2168 13441 17921 
+	}
 	history={
 		owner = GER
 		victory_points = {
@@ -14,11 +16,8 @@ state={
 		add_core_of = PRE
 		add_core_of = HOZ
     }
-	provinces={
-		2168 13441 20747 
-	}
-	manpower=73169
+	manpower=55169
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
-	state_category = pastoral
 }
